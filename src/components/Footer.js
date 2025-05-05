@@ -6,7 +6,7 @@ const Footer = () => {
         <footer className="footer">
             <div className="footer__about">
                 <h1>GSoC Hub</h1>
-                <p>If you find an issue on the site, you can report it <a href="https://github.com/heyimshivam/" target="__blank">here</a>.</p>
+                <p>If you find an issue on the site, you can report it <a href="https://github.com/heyimShivam/gsoc-hub/issues" target="__blank">here</a>.</p>
                 <p>Click on “<span className='new-issue'>New issue</span>”, then provide a clear description along with relevant screenshots.</p>
                 <p>Visit the official Google Summer of Code website by clicking <a href="https://summerofcode.withgoogle.com/" target="__blank">here</a>.</p>
             </div>
