@@ -25,7 +25,7 @@ const FilterNav = ({ mobileNav }) => {
     const organizationContext = useContext(OrganizationContext);
     const navigate = useNavigate();
     const location = useLocation();
-    const [screenSizeSmall, setScreenSizeSmall] = useState(false);
+    const [screenSizeSmall, setScreenSizeSmall] = useState(true);
     const updateSearch = (value) => {
         setOrgName(value.toLowerCase());
 
@@ -47,6 +47,7 @@ const FilterNav = ({ mobileNav }) => {
 
     useEffect(() => {
         handleResize();
+
         orgContext.UpdateOrgsAccTOFilters();
         window.addEventListener('resize', handleResize);
         return () => {
