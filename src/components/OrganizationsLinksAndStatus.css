@@ -1,0 +1,53 @@
+.org-links-and-status-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 3px;
+}
+
+.org-links {
+    padding: 3px 5px;
+    background-color: #A91D3A;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+.org-links:hover {
+    background-color: #C73659;
+    cursor: pointer;
+}
+
+.active-inactive-btn {
+    background-color: #A91D3A;
+    position: relative;
+    height: 44px;
+    width: 106px;
+    margin: 8px 4px;
+    border-radius: 7px;
+}
+
+.active-inactive-btn p {
+    position: absolute;
+    top: -6px;
+    right: 14px;
+}
+
+.active-inactive-btn .dot {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 13px;
+    padding: 6px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.green {
+    background-color: green;
+}
+
+.red {
+    background-color: red;
+}

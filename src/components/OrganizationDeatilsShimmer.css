@@ -1,0 +1,76 @@
+.OrganizationDeatilsShimmer {}
+
+.org-detail-main-comp {
+    display: flex;
+    flex-wrap: wrap;
+    /* margin-top: -32px; */
+}
+
+.OrganizationDeatilsShimmer-firsthalf {
+    height: 750px;
+}
+
+.shimmer {
+    position: relative;
+    overflow: hidden;
+    background: #f6f7f8;
+    border-radius: 4px;
+}
+
+.shimmer::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -120px;
+    height: 100%;
+    width: 120px;
+    background: linear-gradient(to right, transparent 0%, #e0e0e0 50%, transparent 100%);
+    animation: shimmer 0.8s infinite linear;
+}
+
+@keyframes shimmer {
+    0% {
+        left: -120px;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+.blurred-box {
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.02);
+}
+
+.blurred-box::after {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    background: inherit;
+    filter: blur(10px);
+    opacity: 0.05;
+    z-index: -1;
+}
+
+.first-half {
+    width: 600px;
+    background-color: #1e1e1e;
+    padding: 30px;
+    margin: 5px;
+    border-radius: 6px;
+}
+
+.sec-half {
+    width: calc(100% - 620px);
+    padding: 10px;
+    background-color: #1e1e1e;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 5px;
+}

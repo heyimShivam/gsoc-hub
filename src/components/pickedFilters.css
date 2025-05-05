@@ -1,0 +1,83 @@
+.pick-area {
+    position: relative;
+    width: 90%;
+    padding: 20px 30px;
+    border-radius: 3px;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    margin-top: 40px;
+}
+
+.pick-area stack {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+}
+
+.applied-filter-text {
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    font-family: monospace;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.picker-search {
+    border: 1px solid #A91D3A;
+    background-color: #333333;
+    color: white;
+    border-radius: 25px;
+    padding: 2px 15px;
+    position: relative;
+    width: 280px;
+}
+
+.picker-search input {
+    background-color: #15151500;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 100;
+    border: none;
+    outline: none;
+    width: 235px;
+}
+
+.picker-search-icon {
+    color: #A91D3A;
+    transform: scale(0.85);
+    position: absolute;
+    bottom: 3px;
+    right: 5px;
+}
+
+.tool-tip-picker-search {
+    position: absolute;
+    top: 40px;
+    background-color: white;
+    color: #333;
+    width: 100%;
+    left: 0px;
+    z-index: 50;
+    border-radius: 6px;
+}
+
+.tool-tip-picker-search::after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    margin-left: -10px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent white;
+    transform: rotate(360deg);
+}
+
+.picker-search-options {
+    padding: 5px 10px;
+    border-bottom: 1px solid #33333333;
+}
+
+.picker-search-options:hover {
+    background-color: rgba(128, 128, 128, 0.2);
+}

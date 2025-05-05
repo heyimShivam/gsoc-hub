@@ -1,0 +1,44 @@
+.sub-component-heading {
+    font-weight: 700;
+}
+
+.org-contributors {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid red;
+    padding: 10px 0px;
+}
+
+.contributor-info {
+    padding: 0 12px;
+    padding-left: 0px;
+    border-radius: 100px;
+    border: 1px solid rgba(128, 128, 128, 0.747);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    display: inline-flex;
+    align-items: center;
+    height: 32px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-bottom: 8px;
+}
+
+.contributor-info:hover {
+    cursor: pointer;
+}
+
+.contributor-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: scale-down;
+    padding: 0;
+    margin: 0;
+    margin-right: 8px;
+}
+
+.contributor-github {
+    font-weight: 300;
+    padding-right: 5px;
+}

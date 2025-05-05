@@ -1,0 +1,41 @@
+.all-orgs {
+    position: relative;
+    margin: 0px 15px;
+}
+
+.all-organizations-component {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+
+.organization-cards {
+    margin: 20px;
+}
+
+.up-arrow {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    background-color: #A91D3A;
+    border-radius: 50%;
+    padding: 8px 10px;
+}
+
+.total-orgs-number {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: -35px;
+}
+
+.total-orgs-text {
+    background-color: #A91D3A;
+    padding: 2px 12px;
+    font-weight: 500;
+    border-radius: 1px;
+}

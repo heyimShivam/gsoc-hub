@@ -1,0 +1,64 @@
+.repo-deatil-card {
+    margin: 10px;
+    background-color: #d9d9d925;
+    padding: 15px 20px;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    width: 400px;
+    cursor: pointer;
+}
+
+.repo-title {
+    width: 100%;
+    text-align: center;
+    font-weight: 800;
+    color: whitesmoke;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin: 25px 0px;
+}
+
+.repo-topics {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+}
+
+.repo-topic {
+    padding: 4px 10px;
+    margin: 5px 2px;
+    border-radius: 19px;
+    font-weight: 450;
+    color: #2f81f7;
+    background-color: rgba(56, 139, 253, 0.1);
+}
+
+.repo-lan {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.lan {
+    padding: 5px 10px;
+    border: 1px solid white;
+    color: white;
+    margin: 3px 5px;
+}
+
+.repo-link {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.repo-link-details {
+    margin: 0px 8px;
+    font-style: italic;
+}
+
+.repo-head {
+    font-weight: 650;
+}

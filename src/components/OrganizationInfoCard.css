@@ -1,0 +1,125 @@
+.organization-info-card {
+    border-radius: 8px;
+    background-color: #1b1b1a;
+    /* background-color: rgba(51, 51, 51, 0.226); */
+    width: 320px;
+    height: 100%;
+    padding-bottom: 5px;
+    color: #eaeaea;
+    z-index: 5;
+}
+
+.orgs-info-cards .organization-info-card {
+    margin-bottom: 15px;
+}
+
+.organization-info-card:hover {
+    cursor: pointer;
+    box-shadow: #A91D3A 0px 0px 10px 3px;
+}
+
+.organization-image {
+    width: 100%;
+    height: 190px;
+    object-fit: scale-down;
+    padding: 35px;
+    border-radius: 8px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.org-deatils-mix {
+    padding: 0px 20px;
+}
+
+.organization-name {
+    color: #A91D3A;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: italic;
+    padding-top: 3px;
+    font-size: 22px;
+}
+
+.title-icon {
+    padding-right: 5px;
+    padding-top: 5px;
+}
+
+.title-info-cards {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.organization-description {
+    color: #B4B4B4;
+    margin-top: -15px;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.organization-categorie {
+    width: fit-content;
+    padding: 2px 8px;
+    background-color: #C73659;
+    color: white;
+    margin-top: 7px;
+    margin-bottom: 0px;
+    margin-right: 5px;
+    border-radius: 2px;
+}
+
+.years-box {
+    margin-top: 5px;
+}
+
+.organization-cat-year-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.organization-year-card {
+    padding: 3px 8px;
+    margin: 2px;
+    border-radius: 2px;
+    background-color: royalblue;
+}
+
+.org-image-div {
+    position: relative;
+}
+
+.circle {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translate(0%, -50%);
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.acitve {
+    background-color: #2ecc71;
+}
+
+.inacitve {
+    background-color: red;
+}
+
+.acitve-org-display {
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+    background-color: #A91D3A;
+    padding: 5px 20px 5px 40px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-weight: 300;
+    font-family: "Inter", sans-serif;
+}

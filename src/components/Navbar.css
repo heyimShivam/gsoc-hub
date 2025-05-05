@@ -1,0 +1,41 @@
+.navbar-component {
+    background-color: #A91D3A;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 55px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.float-class {
+    float: left;
+}
+
+.navbar-component .title {
+    font-size: 28px;
+    position: relative;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.title {
+    font-size: 25px;
+    margin: 20px 0px;
+    font-weight: 700;
+}
+
+.fitler-search-div {
+    width: 100%;
+}
+
+@media only screen and (max-width: 515px) {
+    .navbar-component .title {
+        width: 185px;
+    }
+}

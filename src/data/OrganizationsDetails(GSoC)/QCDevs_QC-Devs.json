@@ -1,0 +1,61 @@
+{
+  "name": "QC-Devs",
+  "image_url": "https://summerofcode.withgoogle.com/media/org/qc-devs/nywcx8edxlpsz2kg-360.png",
+  "image_background_color": "#ffffff",
+  "description": "Sustainable software for quantum chemistry & more",
+  "url": "https://qcdevs.org/",
+  "category": [
+    "Science and medicine"
+  ],
+  "topics": [
+    "data science",
+    "scientific visualization",
+    "quantum chemistry",
+    "Computational Science",
+    "numerical algorithms"
+  ],
+  "technologies": [
+    "python",
+    "github",
+    "c++",
+    "julia",
+    "jupyter"
+  ],
+  "irc_channel": null,
+  "contact_email": "mailto:qcdevs@qcdevs.org",
+  "mailing_list": null,
+  "twitter_url": "https://twitter.com/QCDevs",
+  "blog_url": null,
+  "facebook_url": null,
+  "year": [
+    2024,
+    2025
+  ],
+  "projects": {
+    "2024": [
+      {
+        "title": "ModelHamiltonian: API and Interface Improvement",
+        "short_description": "Sometimes, in the context of quantum chemistry, the quantum state of a system in a crystal or molecule can be well described only by its occupation...",
+        "description": "Sometimes, in the context of quantum chemistry, the quantum state of a system in a crystal or molecule can be well described only by its occupation and/or spin operators. The goal of Model Hamiltonians, one of the APIs of the QC-Devs, is to create a framework for constructing the models and outputting them into a format that is possible for traditional Python packages solving Quantum Many-Body problems. \n\n\nIn some cases, it is more convenient to think only about the occupation number of an atomic (or functional moiety), which constitutes an occupation-based Hamiltonian. The most general occupation-number Hamiltonian we consider is the generalized Pariser-Parr-Pople + pairing (PPP+P) Hamiltonian. For some other phenomena, it’s convenient to write the Hamiltonian only in function of the spin operators. This constitutes the Spin-based Hamiltonians and can be exemplified by the Heisenberg model.\n\nOn the other hand, for some materials like superconductors, it’s necessary to combine both types of models at the same time, in a class known as occupation-and-spin-based Hamiltonians, where the most known is the t-J-U-V model, which can be expressed as a sum of the Heisenberg XXZ and the PPP hamiltonian.\n\n\nThe package already includes implemented occupation-based and spin-based Hamiltonians. However, there is still a need for additional occupation- and spin-based Hamiltonians.\n\n\nThe primary objective of this project is to implement occupation-and-spin-based Hamiltonians, which involves the following steps:\n\n\n1. Establish a dictionary-based database to include standard constants defining various atoms and their connectivity types.\n2. Develop an API that integrates the existing code with the occupation- and spin-based Hamiltonians.\n3. Design and execute tests for the implemented API to ensure its reliability and functionality.\n4. Develop utility functions to generate model Hamiltonians in formats compatible with external programs, such as FCIDump and Triqs.",
+        "student_name": "Giovanni BENEDETTI DA ROSA",
+        "code_url": null,
+        "proposal_id": "w9iJ3Aim",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/6uDYrj5i"
+      },
+      {
+        "title": "Selector: Interactive Web Interface for Chemical Subset Selection",
+        "short_description": "In the rapidly evolving field of computational chemistry, the Selector project aims to tackle the subset selection problem critical for drug...",
+        "description": "In the rapidly evolving field of computational chemistry, the Selector project aims to tackle the subset selection problem critical for drug discovery by developing an accessible, interactive web interface. Leveraging the Streamlit framework, this initiative seeks to simplify the complex process of selecting representative subsets from vast datasets of chemical compounds, making advanced computational tools more user-friendly for medicinal chemists. The proposed solution involves the integration of Python and Docker technologies to ensure a seamless, scalable deployment on Hugging Face Spaces. Through this project, we anticipate delivering a robust, intuitive platform that enhances decision-making in drug discovery by facilitating efficient navigation and analysis of chemical space.",
+        "student_name": "Jun Xia",
+        "code_url": null,
+        "proposal_id": "35QORlx2",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/JpL7n5Ji"
+      }
+    ],
+    "2025": []
+  },
+  "githubID": "QC-Devs",
+  "repositories": [],
+  "contributorsDetails": [],
+  "activeOrg": false
+}

@@ -1,0 +1,121 @@
+{
+  "name": "Society for Arts and Technology (SAT)",
+  "image_url": "https://summerofcode.withgoogle.com/media/org/society-for-arts-and-technology-sat/pkgrduycyoh0wxmf-360.png",
+  "image_background_color": "#ffffff",
+  "description": "Technological tools for creativity and industry",
+  "url": "https://sat.qc.ca",
+  "category": [
+    "Data",
+    "Media"
+  ],
+  "topics": [
+    "web",
+    "graphics",
+    "cloud",
+    "multimedia",
+    "accessibility",
+    "computer vision",
+    "Telepresence",
+    "digital arts"
+  ],
+  "technologies": [
+    "python",
+    "javascript",
+    "opengl",
+    "c++",
+    "supercollider",
+    "qt",
+    "esp32"
+  ],
+  "irc_channel": "https://app.element.io/#/room/#sat-gsoc:matrix.org",
+  "contact_email": null,
+  "mailing_list": "https://gitlab.com/sat-mtl/collaborations/google-summer-of-code/-/issues",
+  "twitter_url": "https://twitter.com/SATmontreal",
+  "blog_url": null,
+  "facebook_url": "https://www.facebook.com/SATmontreal",
+  "year": [
+    2022,
+    2023,
+    2025
+  ],
+  "projects": {
+    "2022": [
+      {
+        "title": "Face Tracking to Improve Accessibility and Interaction in the Metaverse with Satellite",
+        "short_description": "The \"metaverse\" has seen exceptional interest in both tech and the wider market. However, metaverse software currently on the market, from Second...",
+        "description": "The \"metaverse\" has seen exceptional interest in both tech and the wider market. However, metaverse software currently on the market, from Second Life to Horizon Worlds, either limit input to traditional input devices like mice and keyboards, or require expensive gear in the form of VR headsets and specialized controllers. In this project we aim at integrating interaction techniques that rely on human facial and body gestures, similar to these employed in high-fidelity telepresence systems like Google’s Starline, that we will apply to a hybrid presence system and with low-cost hardware to enable accessibility and affordability. This GSoC project aims to perform much needed research into using face tracking as a viable means to improve the accessibility of 3D virtual spaces, much like those found in the metaverse. The result benefits all users, whether or not they have specific needs for accessibility: improved interaction vectors and empathy channels liberate all users. Face tracking software built upon open source technologies will be integrated with Satellite/Mozilla Hubs to provide this crucial feature, enabling a practical testbed for future innovation in hybrid telepresence interaction.",
+        "student_name": "Matt Wiese",
+        "code_url": "https://sat-mtl.gitlab.io/collaborations/google-summer-of-code/posts/2022-contributions/matthewwiese-satellite-face-tracking/work-product-matthewwiese/",
+        "project_url": "https://summerofcode.withgoogle.com/archive/2022/projects/ve25fc1w/"
+      },
+      {
+        "title": "Add support of Unix permission in the Shmdata library",
+        "short_description": "The Shmdata library provides a layer to share streams of framed data between processes via shared memory. It supports any kind of data stream: it has...",
+        "description": "The Shmdata library provides a layer to share streams of framed data between processes via shared memory. It supports any kind of data stream: it has been used with multichannel audio, video frames, 3D models, OSC messages, and various others types of data. Shmdata is server-less, but requires applications to link data streams using socket path (e.g. \"/tmp/my-shmdata-stream\"). Shmdata is very fast and allows processes to access data streams without the need for extra copies.\n\nHowever, permissions are not supported, and any stream shared on the system with Shmdata is accessible system-wide. The project will enable the possibility for a Shmdata user to configure streams permission using shared memory right setting at the API level.\n\nWhen sharing data between processes via shared memory, not all components of the data need to be visible to everyone. Different groups might need to access different data, furthermore, some data might only be needed to be visible to the owner of the files. In such cases, the permissions that would have to be implemented are combinations of 'read', 'write' and 'execute' permissions that would be given to the owner, group or common user(i.e. everyone else).\n\nPermissions would be 'none', 'execute only', 'write only', 'write and execute', 'read only', 'read and execute', 'read and write', 'read, write and execute' with corresponding values of 0-7 respectively.\n\nDELIVERABLES\n\n* Providing an option for users to restrict or openly share data streams via these file/ directory access modes: read, write and execute/traverse.\n\n* Changing data access permissions.\n\n* Documentation for the improvements made.\n\n* Incorporation of ACL to assist with Unix file permissions. (optional/if time allows).",
+        "student_name": "Vanshita Verma",
+        "code_url": "https://sat-mtl.gitlab.io/collaborations/google-summer-of-code/posts/2022-contributions/vanshitaverma-add-support-of-unix-permission-in-the-shmdata-library/work-product-vanshitaverma/",
+        "project_url": "https://summerofcode.withgoogle.com/archive/2022/projects/xNd20Xxl/"
+      },
+      {
+        "title": "Create a WebUI for data mapping and software control in embedded systems",
+        "short_description": "Open Source tools, such as those developed by SAT, have been widely used for a variety of applications by academics and independent users. The tools...",
+        "description": "Open Source tools, such as those developed by SAT, have been widely used for a variety of applications by academics and independent users. The tools benefit users a lot and make their work easier, more efficient, and less stressful, but most of them need lengthy setups and installations, which are not very user-friendly. \n\nThis GSoC project attempts to integrate tools like SATIE and LivePose into a bespoke WebUI and make them accessible. The UI will be responsible for software configuration, deploying an  audio synthesizer on the back-end, etc. \n\nThe WebUI will be capable of deploying the tools (start/stop LivePose and SATIE, control Jack Audio parameters, and request reboot/service restart) and\nbasically remotely launching (and possibly integrating and mapping) SAT tools in embedded systems based on the Raspberry Pi generic computer running Linux. \n\nAny program or product's goal is to provide users with a rich and interactive experience; similarly, our WebUI will serve as an entry point to those tools with simple customizations that will make users' life much easier.\n\n\nDeliverables:\n 1. Create the Server ( Embedded system ) backend with the tools set up and operational.\n2. Create a backend for the WebUI.\n3. Connect both the backends with a suitable bridge.\n4. Develop the Frontend UI for launching and configuring the tools.",
+        "student_name": "Yash_Raj",
+        "code_url": "https://sat-mtl.gitlab.io/collaborations/google-summer-of-code/posts/2022-contributions/tiger-yash-webui-for-data-mapping-and-software-control/work-product-tiger-yash/",
+        "project_url": "https://summerofcode.withgoogle.com/archive/2022/projects/fhWh7het/"
+      }
+    ],
+    "2023": [
+      {
+        "title": "Motion Capture in WebXR: a search for the uniqueness in replaying live performances",
+        "short_description": "Live performances and concerts promote a sense of uniqueness. It happens for two main reasons: the relationship between the artist and the public;...",
+        "description": "Live performances and concerts promote a sense of uniqueness. It happens for two main reasons: the relationship between the artist and the public; and the relationship between the audience itself. It is a space in time where artists respond to the public as much as the public responds to the artists. Also, every person in the audience is surrounded by other people having similar feelings and sensations. \n\nSearching to create related energy and experience via live performances in Extended Reality, this proposal aims to develop a platform prototype to generate a fluid XR experience for users by reliving live performances through motion capture. The key technologies for this goal are: MediaPipe Pose, open source software for pose detection in a live streaming context, and WebXR for the development and hosting of virtual reality and augmented reality experiences on the web.\n\nLive performances have no analog due to their unique energy and feeling of shared experience. XR's experience with concerts and live performances does not necessarily wants to exist as a copy of performances in real-life, but as a proposal of different interactions. Therefore Extended Reality can create its paradigm in art and technology.",
+        "student_name": "Fanny",
+        "code_url": "https://sat-mtl.gitlab.io/collaborations/google-summer-of-code/posts/2023-contributions/caciliefanny/motion-capture-in-webxr/",
+        "proposal_id": "4XGjx0h4",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2023/projects/ZjzzYxSd"
+      },
+      {
+        "title": "Development of Generalizable SATIE Mappers that Optimized Audio Spatialization Flexibility",
+        "short_description": "SATIE(Spatial Audio Toolkit for Immersive Environments) can be used for audio spatialization. It is an audio spatialization engine programmed in...",
+        "description": "SATIE(Spatial Audio Toolkit for Immersive Environments) can be used for audio spatialization. It is an audio spatialization engine programmed in SuperCollider that can render dense audio scenes to large multi-channel loudspeaker systems in real time. This lower-level audio rendering process maintains a dynamic DSP graph created and controlled via OSC messages from the external process.\n\n\nSATIE can be used not only for sound object control (location, propagation, etc.) but it can also be used for Haptic Floor dedicated to large immersive spaces. In this project, however, we focus on a function of SATIE is that implementing geometry understanding at a spatializer level. In this case, we usually apply the current version of SATIE mappers plugin to perform this function. A mapper plugin does not process audio, it can be used for provide for non-generic control and geometric computation of lower-level spatialization parameters. However, it still has limitations that need to be programmed for each use case. In order to perfect it and improve its efficiency, we need to design and implement the generalizable SATIE mappers that could get all loaded spatializers and set them at a relative distance concerning each other. In other words, it is necessary to make each different spatializer in different positions recognize the relative position of each other. The proposed mappers will be designed to overcome these limitations and will be tested with different spatializer configurations. This project will provide SATIE with a powerful and flexible tool that will enable users to create rich and diverse sound spatial effects in different scenarios.",
+        "student_name": "Haokun Song",
+        "code_url": "https://sat-mtl.gitlab.io/collaborations/google-summer-of-code/posts/2023-contributions/kuk1song-development-of-generalizable-satie-mappers/work-product-kuk1song/",
+        "proposal_id": "1SiBxJo7",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2023/projects/JoEdoUzG"
+      },
+      {
+        "title": "Audio to Haptic interaction design with ForceHost and Feelix supporting DeformableHapticSurfaces",
+        "short_description": "Haptics, as a multidisciplinary field, has applications within the Medical, Consumer and Entertainment domains, to name a few, and despite their...",
+        "description": "Haptics, as a multidisciplinary field, has applications within the Medical, Consumer and Entertainment domains, to name a few, and despite their widespread presence in our phones to provide the user with a vibrotactile feedback response (a subset of haptics), haptics have very minimally been explored by artists as a tool for authoring immersive arts. The proposed project aims to create low-cost affordable haptic devices with one or mutliple degrees of freedom and authoring tools for artists to implement into their artwork immersive haptics and interactive audio. In the near future, artists can then use the proposed toolkit to benefit from Haptic floors being deployed into immersive art spaces like the Dome at SAT.\nThe authoring tools Feelix, a ”haptic authoring tool developed to support the design and integration of force feedback and shape change in user interfaces”, and ForceHost, a toolchain that uses the functional sound synthesis and processing programming language FAUST that compiles firmware for audio-haptic applications, will be extended for use with the DeformableHapticSurfaces, a work-in-progress and open-source toolkit for interactive multi-linear DoF deformable surfaces, to create and demo the proposed immersive haptic and audio interaction toolkit. Support for audio input will also be added into Feelix potentially with ForceHost as an input modality so that ForceHost developed tools can interface their audio with the Haptic floor.",
+        "student_name": "Maxwell Gentili-Morin",
+        "code_url": "https://sat-mtl.gitlab.io/collaborations/google-summer-of-code/posts/2023-contributions/maxw3llgm/work-product-maxw3llgm-audio-to-haptic-interaction-design-with-feelix-supporting-torquetuner/",
+        "proposal_id": "P8OFraFy",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2023/projects/YmhosRcH"
+      },
+      {
+        "title": "Building Immersive Learning Experiences",
+        "short_description": "The proposed project aims to support teaching in hybrid telepresence settings by developing and embedding examplar explorable explanations into the...",
+        "description": "The proposed project aims to support teaching in hybrid telepresence settings by developing and embedding examplar explorable explanations into the Satellite hub, an immersive 3D social web environment developed at the Society for Arts and Technology (SAT) using Mozilla Hubs. Explorable explanations are interactive documents that use visualizations, animations, and simulations to help learners understand complex concepts. The project will integrate explorable explanations in Mozilla Hubs used for Satellite by adapting Spoke to defining dynamic assets with interactivity. This integration will allow for the creation of immersive and interactive educational environments that cater to diverse abilities in learning and allow learners to play with parameters to deepen their understanding of the concepts.\nThe project seeks to create synergy by interconnecting various cultural and artistic contents in the Satellite hub and embedding explorable explanations to enhance the learning experience. The explorable explanations will be designed to cater to a broad audience and facilitate access to learning.\nThe project will involve prototyping examplar explorable explanations and embedding them in Satellite / Mozilla Hubs, leveraging the capabilities of the platform to provide an immersive learning experience. The aim is to enhance the teaching of digital arts concepts in hybrid telepresence campus settings and promote interactivity and innovation in teaching, leveraging emerging technologies to enhance the learning experience. Ultimately, the project will contribute to promoting interactivity and innovation in teaching, leveraging emerging technologies to enhance the learning experience.",
+        "student_name": "Pedro Andrade",
+        "code_url": "https://sat-mtl.gitlab.io/collaborations/google-summer-of-code/posts/2023-contributions/pedroansa1/work-product-pedroansa1-building-immersive-learning-experiences/",
+        "proposal_id": "SJZUE3X5",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2023/projects/ZJTheXqH"
+      },
+      {
+        "title": "Replace OpenGL by a multi-API rendering library in Splash.",
+        "short_description": "The Splash projection mapping software allows for controlling multiple video projectors together to build a single projection. It is able to adapt to...",
+        "description": "The Splash projection mapping software allows for controlling multiple video projectors together to build a single projection. It is able to adapt to virtually any real geometry, as long as the surface is diffuse. Its rendering engine is built using the OpenGL API. It currently runs on platforms capable of running Linux and handling an OpenGL 4.5\ncontext, and has been tested successfully on x86_64 (with NVIDIA, AMD and Intel graphic cards) and aarch64 (with NVIDIA graphic cards).\n\nHowever to be able to: a) optimize it further and b) support more platforms (for example Raspberry Pi), it would be interesting to support more graphics API. To do this it is envisioned to replace direct use of OpenGL with an intermediate, multi-API rendering library.\n\n\n\nWork Done: 1) Investigating available rendering libraries and APIs supported by the Raspberry Pi 4. 2) Modifying Splash's OpenGL 4.5 code to work with OpenGL ES and thus the Raspberry Pi 4. 3) Merging the old OpenGL and the new OpenGL ES codepaths to allow one binary to run both. 4). Pulling out graphics code such that application classes are only responsible for application logic, they just use the provided graphics API specific implementation. 5) Rudamentary performance profiling. 6) Bug fixes to application and graphics code.",
+        "student_name": "Tarek Yasser",
+        "code_url": "https://sat-mtl.gitlab.io/collaborations/google-summer-of-code/posts/2023-contributions/knockerpulsar/replace-opengl-by-a-multi-api-rendering-library/",
+        "proposal_id": "T4SU35pF",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2023/projects/UlGCj7qL"
+      }
+    ],
+    "2025": []
+  },
+  "githubID": "NA",
+  "activeOrg": false,
+  "repositories": [],
+  "contributorsDetails": []
+}
