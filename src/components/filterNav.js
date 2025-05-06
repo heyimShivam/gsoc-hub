@@ -36,7 +36,7 @@ const FilterNav = ({ mobileNav }) => {
         if (location?.pathname !== '/organization')
             navigate("/organization");
     }
-
+    const lastYear = orgContext.totalGsocYears[orgContext.totalGsocYears.length - 1];
     const handleResize = () => {
         if (window.innerWidth < 1215) {
             setScreenSizeSmall(true);
@@ -211,7 +211,7 @@ const FilterNav = ({ mobileNav }) => {
                             </div>
                             <div className="checkbox" >
                                 <input type="checkbox" style={{ transform: 'scale(1.3)' }} id="only-this-year" name="only-this-year" value={"-20"} onChange={selectYear} checked={orgContext.selectedGsocYears.indexOf("-20") !== -1}></input>
-                                <label htmlFor='only-this-year'>Only in {orgContext.totalGsocYears[orgContext.totalGsocYears.length - 1]}</label><br></br>
+                                <label htmlFor='only-this-year'>Only in {lastYear}</label><br></br>
                             </div>
                             {
                                 [...orgContext.totalGsocYears].reverse()?.slice(0, 8).map((year, index) =>
@@ -320,10 +320,10 @@ const FilterNav = ({ mobileNav }) => {
                             <input className="filters-search" type="text" placeholder="Search year here." value={yearSearchInput} onChange={(value => filterYear(value.target.value))}></input>
                             <SearchIcon className='search-icon-filter-nav' />
                         </div>
-                        <div className="checkbox" >
+                        {yearSearchInput === '' ? <div className="checkbox" >
                             <input type="checkbox" style={{ transform: 'scale(1.3)' }} id="only-this-year" name="only-this-year" value={"-20"} onChange={selectYear} checked={orgContext.selectedGsocYears.indexOf("-20") !== -1}></input>
-                            <label htmlFor='only-this-year'>Only in {orgContext.totalGsocYears[orgContext.totalGsocYears.length - 1]}</label><br></br>
-                        </div>
+                            <label htmlFor='only-this-year'>Only in {lastYear}</label><br></br>
+                        </div> : <></>}
                         {
                             [...orgContext.totalGsocYears].reverse()?.slice(0, 8).map((year, index) =>
                                 <div className="checkbox" key={index}>
