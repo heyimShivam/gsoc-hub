@@ -18,7 +18,7 @@ const FilterNav = ({ mobileNav }) => {
     const [openShowMoreFilterModal, setOpenShowMoreFilterModal] = useState(false);
     const [topicSearchInput, setTopicSearchInput] = useState("");
     const [technologieSearchInput, setTechnologieSearchInput] = useState("");
-    ; const [yearSearchInput, setYearSearchInput] = useState("");
+    const [yearSearchInput, setYearSearchInput] = useState("");
     const [categorieSearchInput, setCategorieSearchInput] = useState("");
     const [modalNav, setModalNav] = useState("totalTopics");
     const [orgName, setOrgName] = useState("");
@@ -60,12 +60,25 @@ const FilterNav = ({ mobileNav }) => {
         orgContext.selectedTotalcategories
     ]);
 
+    function resetInputs() {
+        setTopicSearchInput('');
+        filterTopics('');
+        setTechnologieSearchInput('');
+        filterTechnologies('');
+        setYearSearchInput('');
+        filterYear('');
+        setCategorieSearchInput('');
+        filterCategories('');
+    }
+
     function handleOpenModal() {
+        resetInputs();
         setOpenShowMoreFilterModal(true);
     }
 
     const handleCloseModal = () => {
         setOpenShowMoreFilterModal(false);
+        resetInputs();
     }
 
     function selectYear(value) {
