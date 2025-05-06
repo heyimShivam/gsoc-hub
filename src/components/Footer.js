@@ -27,7 +27,7 @@ const Footer = () => {
                     <FavoriteIcon sx={{ fontSize: 12 }} /> </span>
                 by
                 <a className="heyimshivam" href="https://github.com/heyimshivam/" target="__blank">
-                    heyimshivam
+                    Shivam Chaudhary
                 </a>
             </span>
         </footer>
