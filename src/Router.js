@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 
 import Home from "./pages/home";
+import PageNotFound from "./pages/PageNotFound";
 import App from "./App";
 import OpensourceTimeline from "./pages/OpensourceTimeline";
 import AllOrganizations from "./pages/AllOrganizations";
@@ -29,6 +30,10 @@ const Router = createBrowserRouter([
             }
         ],
     },
+    {
+        path: "*",
+        element: <PageNotFound />
+    }
 ]);
 
 export default Router;

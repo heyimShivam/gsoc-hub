@@ -3,6 +3,7 @@ import { Outlet } from 'react-router-dom';
 import OrganizationState from './context/OrganizationState';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import { Analytics } from '@vercel/analytics/react';
 import { useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 
@@ -40,6 +41,7 @@ function App() {
             <Outlet />
           </div>
         </div>
+        <Analytics />
       </OrganizationState>
     </ThemeProvider>
   );
