@@ -29,7 +29,7 @@ const HomeOrganization = () => {
         };
     }, []);
     return (<div className="home-org-component component">
-        <div className="component-heading">Organizations</div>
+        <h1 className="component-heading">Google Summer of Code, All Organizations</h1>
         <div className="orgs-preview orgs-preview-component-background" id="org-component">
             <div className="orgs-info-cards">
                 {
