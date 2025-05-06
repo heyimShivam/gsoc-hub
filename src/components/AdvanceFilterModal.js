@@ -96,7 +96,7 @@ const AdvanceFilterModal = ({
                     {
                         modalNav === "totalGsocYears" && orgContext.totalGsocYears ? (
                             <>
-                                <div className="checkbox" >
+                                <div className="checkbox-modal">
                                     <input type="checkbox" style={{ transform: 'scale(1.3)' }} id="only-this-year" name="only-this-year" value={"-20"} onChange={selectYear} checked={orgContext.selectedGsocYears.indexOf("-20") !== -1}></input>
                                     <label htmlFor='only-this-year'>Only in {orgContext.totalGsocYears[orgContext.totalGsocYears.length - 1]}</label><br></br>
                                 </div>
