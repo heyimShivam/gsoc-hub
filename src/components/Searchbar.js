@@ -26,7 +26,7 @@ const Searchbar = ({ toggleSidebar }) => {
     useEffect(() => {
         const handler = setTimeout(() => {
             setDebouncedOrgName(orgName.toLowerCase());
-        }, 300);
+        }, 600);
 
         return () => clearTimeout(handler);
     }, [orgName]);
