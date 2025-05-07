@@ -20,7 +20,7 @@ const FilterNav = ({ mobileNav }) => {
     const [technologieSearchInput, setTechnologieSearchInput] = useState("");
     const [yearSearchInput, setYearSearchInput] = useState("");
     const [categorieSearchInput, setCategorieSearchInput] = useState("");
-    const [modalNav, setModalNav] = useState("totalTopics");
+    const [modalNav, setModalNav] = useState("totalGsocYears");
     const [orgName, setOrgName] = useState("");
     const organizationContext = useContext(OrganizationContext);
     const navigate = useNavigate();
@@ -54,10 +54,11 @@ const FilterNav = ({ mobileNav }) => {
             window.removeEventListener('resize', handleResize);
         };
     }, [
+        orgContext.selectedStatus,
         orgContext.selectedGsocYears,
         orgContext.selectedTotalTopics,
         orgContext.selectedTotalTechnologies,
-        orgContext.selectedTotalcategories
+        orgContext.selectedTotalcategories,
     ]);
 
     function resetInputs() {
@@ -98,6 +99,25 @@ const FilterNav = ({ mobileNav }) => {
         }
 
         orgContext.updateFilterData("selectedGsocYears", currData);
+    }
+
+    function selectStatus(value) {
+        // State Mutation Issue
+        // Earlier we are directly modifying currData (which is orgContext.selectedGsocYears, orgContext.selectedTotalTechnologies, etc.)
+        // instead of creating a new array.
+        // React may not detect state updates when you mutate the array directly.
+        // Fix: Create a new array before updating the state let currData = [...orgContext.selectedGsocYears];.
+
+        let currData = [...orgContext.selectedStatus];
+        let eleIndex = currData.indexOf(value);
+
+        if (eleIndex !== -1) {
+            currData.splice(eleIndex, 1);
+        } else {
+            currData.push(value);
+        }
+
+        orgContext.updateFilterData("selectedStatus", currData);
     }
 
     function selectTechnologies(value) {
@@ -316,11 +336,11 @@ const FilterNav = ({ mobileNav }) => {
             : <></>}
         {/* Advance Filter Modal */}
         {
-            openShowMoreFilterModal ? <AdvanceFilterModal activePage={modalNav} handleCloseModal={handleCloseModal} selectCategories={selectCategories} selectYear={selectYear} selectTechnologies={selectTechnologies} selectTopics={selectTopics} /> : <></>
+            openShowMoreFilterModal ? <AdvanceFilterModal activePage={modalNav} handleCloseModal={handleCloseModal} selectCategories={selectCategories} selectStatus={selectStatus} selectYear={selectYear} selectTechnologies={selectTechnologies} selectTopics={selectTopics} /> : <></>
         }
 
         <div className="picked-filters">
-            <PickedFilters selectYear={selectYear} selectCategories={selectCategories} selectTechnologies={selectTechnologies} selectTopics={selectTopics} />
+            <PickedFilters selectYear={selectYear} selectCategories={selectCategories} selectTechnologies={selectTechnologies} selectTopics={selectTopics} selectStatus={selectStatus} />
         </div>
     </>);
     else return (<>
@@ -425,11 +445,11 @@ const FilterNav = ({ mobileNav }) => {
 
             {/* Advance Filter Modal */}
             {
-                openShowMoreFilterModal ? <AdvanceFilterModal activePage={modalNav} handleCloseModal={handleCloseModal} selectCategories={selectCategories} selectYear={selectYear} selectTechnologies={selectTechnologies} selectTopics={selectTopics} /> : <></>
+                openShowMoreFilterModal ? <AdvanceFilterModal activePage={modalNav} handleCloseModal={handleCloseModal} selectStatus={selectStatus} selectCategories={selectCategories} selectYear={selectYear} selectTechnologies={selectTechnologies} selectTopics={selectTopics} /> : <></>
             }
         </div>
         <div className="picked-filters">
-            <PickedFilters selectYear={selectYear} selectCategories={selectCategories} selectTechnologies={selectTechnologies} selectTopics={selectTopics} />
+            <PickedFilters selectYear={selectYear} selectCategories={selectCategories} selectTechnologies={selectTechnologies} selectTopics={selectTopics} selectStatus={selectStatus} />
         </div>
     </>);
 }

@@ -15,7 +15,8 @@ const AdvanceFilterModal = ({
     selectCategories,
     selectYear,
     selectTechnologies,
-    selectTopics
+    selectTopics,
+    selectStatus
 }) => {
     const orgContext = useContext(OrganizationContext);
     const [advanceFilterInput, setAdvanceFilterInput] = useState("");
@@ -97,16 +98,34 @@ const AdvanceFilterModal = ({
                         modalNav === "totalGsocYears" && orgContext.totalGsocYears ? (
                             <>
                                 <div className="checkbox-modal">
-                                    <input type="checkbox" style={{ transform: 'scale(1.3)' }} id="only-this-year" name="only-this-year" value={"-20"} onChange={selectYear} checked={orgContext.selectedGsocYears.indexOf("-20") !== -1}></input>
-                                    <label htmlFor='only-this-year'>Only in {orgContext.totalGsocYears[orgContext.totalGsocYears.length - 1]}</label><br></br>
+                                    <div className="checkbox-modal">
+                                        <input type="checkbox" style={{ transform: 'scale(1.3)' }} id="only-this-year" name="only-this-year" value={"-20"} onChange={selectYear} checked={orgContext.selectedGsocYears.indexOf("-20") !== -1}></input>
+                                        <label htmlFor='only-this-year'>Only in {orgContext.totalGsocYears[orgContext.totalGsocYears.length - 1]}</label><br></br>
+                                    </div>
+                                    {
+                                        orgContext.totalGsocYears.map((year, index) =>
+                                            <div className="checkbox-modal" key={index}>
+                                                <input type="checkbox" style={{ transform: 'scale(1.2)' }} id={year} name={year} value={year} onChange={selectYear} checked={orgContext.selectedGsocYears.indexOf(year.toString()) !== -1} />
+                                                <label htmlFor={year}>{year}</label><br></br>
+                                            </div>)
+                                    }
                                 </div>
-                                {
-                                    orgContext.totalGsocYears.map((year, index) =>
-                                        <div className="checkbox-modal" key={index}>
-                                            <input type="checkbox" style={{ transform: 'scale(1.2)' }} id={year} name={year} value={year} onChange={selectYear} checked={orgContext.selectedGsocYears.indexOf(year.toString()) !== -1} />
-                                            <label htmlFor={year}>{year}</label><br></br>
-                                        </div>)
-                                }
+                            </>
+                        ) : <></>
+                    }
+                    {
+                        modalNav === "status" && orgContext.totalGsocYears ? (
+                            <>
+                                <div className="checkbox-modal">
+                                    <div className="checkbox-modal">
+                                        <input type="checkbox" style={{ transform: 'scale(1.2)' }} id={"active"} name={"active"} value={"active"} onChange={() => { selectStatus("active") }} checked={orgContext.selectedStatus.indexOf("active") !== -1} />
+                                        <label htmlFor={"active"}>Active</label><br></br>
+                                    </div>
+                                    <div className="checkbox-modal">
+                                        <input type="checkbox" style={{ transform: 'scale(1.2)' }} id={"inactive"} name={"inactive"} value={"inactive"} onChange={() => { selectStatus("inactive") }} checked={orgContext.selectedStatus.indexOf("inactive") !== -1} />
+                                        <label htmlFor={"inactive"}>Inactive</label><br></br>
+                                    </div>
+                                </div>
                             </>
                         ) : <></>
                     }
@@ -128,6 +147,10 @@ const AdvanceFilterModal = ({
                     <div onClick={() => updateModalNav("totalTopics")}
                         className={modalNav === "totalTopics" ? "active-modal" : ""}>
                         Topics
+                    </div>
+                    <div onClick={() => updateModalNav("status")}
+                        className={modalNav === "status" ? "active-modal" : ""}>
+                        Status
                     </div>
                 </div>
             </div>

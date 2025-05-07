@@ -10,6 +10,7 @@ const OrganizationState = (props) => {
     const [totalcategories, setTotalcategories] = useState(organizationsDetailsObject.totalCategories);
     const [totalTechnologies, setTotalTechnologies] = useState(organizationsDetailsObject.totalTechnologies);
     const [selectedGsocYears, setSelectedGsocYears] = useState([]);
+    const [selectedStatus, setSelectedStatus] = useState([]);
     const [selectedTotalTopics, setSelectedTotalTopics] = useState([]);
     const [selectedTotalcategories, setSelectedTotalcategories] = useState([]);
     const [selectedTotalTechnologies, setSelectedTotalTechnologies] = useState([]);
@@ -62,6 +63,7 @@ const OrganizationState = (props) => {
         setSelectedTotalTopics([]);
         setSelectedTotalTechnologies([]);
         setSelectedTotalcategories([]);
+        setSelectedStatus([]);
 
         // Need to update this after async operations.
         setTimeout(() => {
@@ -103,7 +105,8 @@ const OrganizationState = (props) => {
         selectedGsocYears: 0,
         selectedTotalTopics: 0,
         selectedTotalTechnologies: 0,
-        selectedTotalcategories: 0
+        selectedTotalcategories: 0,
+        selectedTotalStatus: 0
     };
 
     function isSubset(array1, array2) {
@@ -114,13 +117,15 @@ const OrganizationState = (props) => {
         const selectedGSoCYearInNumber = selectedGsocYears.map(value => Number(value));
 
         let tempData = [];
-        
+
         organizationsDetailsObject.orgData.map((mainOrgData) => {
             if (selectedGsocYears.length === 0 || isSubset(selectedGSoCYearInNumber, mainOrgData.year) || (selectedGSoCYearInNumber.includes(-20) && mainOrgData.year.length === 1 && mainOrgData.year[0] === organizationsDetailsObject.totalGsocYears[organizationsDetailsObject.totalGsocYears.length - 1])) {
                 if (selectedTotalTopics.length === 0 || isSubset(selectedTotalTopics, mainOrgData.topics)) {
                     if (selectedTotalTechnologies.length === 0 || isSubset(selectedTotalTechnologies, mainOrgData.technologies)) {
                         if (selectedTotalcategories.length === 0 || isSubset(selectedTotalcategories, mainOrgData.category)) {
-                            tempData.push(mainOrgData);
+                            if (selectedStatus.length === 0 || selectedStatus.length === 2 || (mainOrgData.activeOrg && isSubset(selectedStatus, ["active"])) || (!mainOrgData.activeOrg && isSubset(selectedStatus, ["inactive"]))) {
+                                tempData.push(mainOrgData);
+                            }
                         }
                     }
                 }
@@ -151,10 +156,16 @@ const OrganizationState = (props) => {
             filtersHash.selectedTotalcategories = data.length;
         }
 
+        if (filterName === "selectedStatus") {
+            setSelectedStatus(data);
+            filtersHash.selectedTotalStatus = data.length;
+        }
+
         if (filtersHash.selectedGsocYears === 0 &&
             filtersHash.selectedTotalTopics === 0 &&
             filtersHash.selectedTotalTechnologies === 0 &&
-            filtersHash.selectedTotalcategories === 0) {
+            filtersHash.selectedTotalcategories === 0 &&
+            filtersHash.selectedTotalStatus === 0) {
             setAllorgSelected(true);
         } else {
             setAllorgSelected(false);
@@ -168,6 +179,7 @@ const OrganizationState = (props) => {
         totalcategories,
         totalTechnologies,
         selectedGsocYears,
+        selectedStatus,
         selectedTotalTopics,
         selectedTotalTechnologies,
         selectedTotalcategories,

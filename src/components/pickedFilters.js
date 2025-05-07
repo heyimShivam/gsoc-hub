@@ -9,7 +9,8 @@ const PickedFilters = ({
     selectYear,
     selectCategories,
     selectTechnologies,
-    selectTopics }) => {
+    selectTopics,
+    selectStatus }) => {
 
     const orgContext = useContext(OrganizationContext);
     const [pickerSearchText, setPickerSearchText] = useState('');
@@ -91,13 +92,19 @@ const PickedFilters = ({
         {(orgContext.selectedGsocYears.length > 0) ||
             (orgContext.selectedTotalcategories.length > 0) ||
             (orgContext.selectedTotalTechnologies.length > 0) ||
-            (orgContext.selectedTotalTopics.length > 0) ?
+            (orgContext.selectedTotalTopics.length > 0) ||
+            (orgContext.selectedStatus.length > 0) ?
             <div className="pick-area">
                 <div className="applied-filter-text">
                     Applied Filters
                 </div>
 
                 <Stack direction="row" spacing={1} useFlexGap flexWrap="wrap">
+                    {
+                        orgContext.selectedStatus.map((value, index) =>
+                            <Chip color="warning" label={value} onDelete={() => { selectStatus(value) }} key={value + index} />
+                        )
+                    }
                     {
                         orgContext.selectedGsocYears.map((value, index) =>
                             (value === "-20") ? <Chip color="primary" label={`Only in ${orgContext.totalGsocYears[orgContext.totalGsocYears.length - 1]}`} onDelete={() => { selectYear({ target: { value: value } }) }} key={value + index + 20} />
