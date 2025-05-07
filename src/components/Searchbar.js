@@ -10,19 +10,34 @@ import { useNavigate, useLocation } from 'react-router-dom';
 const Searchbar = ({ toggleSidebar }) => {
     const [orgName, setOrgName] = useState("");
     const organizationContext = useContext(OrganizationContext);
+    const [debouncedOrgName, setDebouncedOrgName] = useState("");
     const navigate = useNavigate();
     const location = useLocation();
     const [showMenuIcon, setShowMenuIcon] = useState(false);
 
-    const updateSearch = (value) => {
-        setOrgName(value.toLowerCase());
-
+    const filterOrgCall = (value) => {
         const filterData = filterByOrgName(value.toLowerCase());
-
         organizationContext.filterOrgs(filterData);
 
         if (location?.pathname !== '/organization')
             navigate("/organization");
+    }
+
+    useEffect(() => {
+        const handler = setTimeout(() => {
+            setDebouncedOrgName(orgName.toLowerCase());
+        }, 300);
+
+        return () => clearTimeout(handler);
+    }, [orgName]);
+
+
+    useEffect(() => {
+        filterOrgCall(debouncedOrgName);
+    }, [debouncedOrgName]);
+
+    const updateSearch = (value) => {
+        setOrgName(value.toLowerCase());
     }
 
     useEffect(() => {

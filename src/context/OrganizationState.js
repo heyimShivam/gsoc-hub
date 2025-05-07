@@ -65,7 +65,7 @@ const OrganizationState = (props) => {
     }
 
     const filterOrgs = (updatedData) => {
-        setOrgsData(updatedData);
+        setOrgsData([...updatedData]);
 
         setSelectedGsocYears([]);
         setSelectedTotalTopics([]);
@@ -73,10 +73,9 @@ const OrganizationState = (props) => {
         setSelectedTotalcategories([]);
         setSelectedStatus([]);
 
-        // Need to update this after async operations.
         setTimeout(() => {
-            setFilteredOrgsData(updatedData);
-        });
+            setFilteredOrgsData([...updatedData]);
+        }, 10);
     }
 
 
