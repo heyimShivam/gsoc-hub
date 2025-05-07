@@ -16,7 +16,7 @@ const OrganizationInfoCard = ({
     githubID,
     activeOrg,
 }) => {
-    const navigate = useNavigate()
+    const navigate = useNavigate();
 
     const showMoreOrganizationDetails = () => {
         const url = name.toLowerCase().replace(/[ /]/g, '-');
