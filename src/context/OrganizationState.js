@@ -65,17 +65,23 @@ const OrganizationState = (props) => {
     }
 
     const filterOrgs = (updatedData) => {
-        setOrgsData([...updatedData]);
+        setOrgsData(updatedData);
 
-        setSelectedGsocYears([]);
-        setSelectedTotalTopics([]);
-        setSelectedTotalTechnologies([]);
-        setSelectedTotalcategories([]);
-        setSelectedStatus([]);
+        if (selectedGsocYears.length > 0)
+            setSelectedGsocYears([]);
+        if (selectedTotalTopics.length > 0)
+            setSelectedTotalTopics([]);
+        if (selectedTotalTechnologies.length > 0)
+            setSelectedTotalTechnologies([]);
+        if (selectedTotalcategories.length > 0)
+            setSelectedTotalcategories([]);
+        if (selectedStatus.length > 0)
+            setSelectedStatus([]);
 
+        // this is added here becuase selectedGsocYears and all are dependency in the the use effect.
         setTimeout(() => {
-            setFilteredOrgsData([...updatedData]);
-        }, 10);
+            setFilteredOrgsData(updatedData);
+        });
     }
 
 
