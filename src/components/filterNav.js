@@ -255,7 +255,7 @@ const FilterNav = ({ mobileNav }) => {
                                 )
                             }
                             {
-                                orgContext.totalGsocYears?.length > 9 ? <div className="checkbox more-tag" onClick={() => showMorefilters("totalGsocYears")}>
+                                orgContext.totalGsocYears?.length > 9 ? <div className="checkbox more-tag" style={{ cursor: 'pointer' }} onClick={() => showMorefilters("totalGsocYears")}>
                                     <div>+ More</div>
                                 </div> : <></>
                             }
@@ -279,7 +279,7 @@ const FilterNav = ({ mobileNav }) => {
                                 )
                             }
                             {
-                                orgContext.totalcategories?.length > 9 ? <div className="checkbox more-tag" onClick={() => showMorefilters("totalcategories")}>
+                                orgContext.totalcategories?.length > 9 ? <div className="checkbox more-tag" style={{ cursor: 'pointer' }} onClick={() => showMorefilters("totalcategories")}>
                                     <div>+ More</div>
                                 </div> : <></>
                             }
@@ -302,7 +302,7 @@ const FilterNav = ({ mobileNav }) => {
                                 )
                             }
                             {
-                                orgContext.totalTechnologies?.length > 9 ? <div className="checkbox more-tag" onClick={() => showMorefilters("totalTechnologies")}>
+                                orgContext.totalTechnologies?.length > 9 ? <div className="checkbox more-tag" style={{ cursor: 'pointer' }} onClick={() => showMorefilters("totalTechnologies")}>
                                     <div>+ More</div>
                                 </div> : <></>
                             }
@@ -325,7 +325,7 @@ const FilterNav = ({ mobileNav }) => {
                                 )
                             }
                             {
-                                orgContext.totalTopics?.length > 9 ? <div className="checkbox more-tag" onClick={() => showMorefilters("totalTopics")}>
+                                orgContext.totalTopics?.length > 9 ? <div className="checkbox more-tag" style={{ cursor: 'pointer' }} onClick={() => showMorefilters("totalTopics")}>
                                     <div>+ More</div>
                                 </div> : <></>
                             }
@@ -366,7 +366,7 @@ const FilterNav = ({ mobileNav }) => {
                             )
                         }
                         {
-                            orgContext.totalGsocYears?.length > 9 ? <div className="checkbox more-tag" onClick={() => showMorefilters("totalGsocYears")}>
+                            orgContext.totalGsocYears?.length > 9 ? <div className="checkbox more-tag" style={{ cursor: 'pointer' }} onClick={() => showMorefilters("totalGsocYears")}>
                                 <div>+ More</div>
                             </div> : <></>
                         }
@@ -388,7 +388,7 @@ const FilterNav = ({ mobileNav }) => {
                             )
                         }
                         {
-                            orgContext.totalcategories?.length > 9 ? <div className="checkbox more-tag" onClick={() => showMorefilters("totalcategories")}>
+                            orgContext.totalcategories?.length > 9 ? <div className="checkbox more-tag" style={{ cursor: 'pointer' }} onClick={() => showMorefilters("totalcategories")}>
                                 <div>+ More</div>
                             </div> : <></>
                         }
@@ -410,7 +410,7 @@ const FilterNav = ({ mobileNav }) => {
                             )
                         }
                         {
-                            orgContext.totalTechnologies?.length > 9 ? <div className="checkbox more-tag" onClick={() => showMorefilters("totalTechnologies")}>
+                            orgContext.totalTechnologies?.length > 9 ? <div className="checkbox more-tag" style={{ cursor: 'pointer' }} onClick={() => showMorefilters("totalTechnologies")}>
                                 <div>+ More</div>
                             </div> : <></>
                         }
@@ -432,7 +432,7 @@ const FilterNav = ({ mobileNav }) => {
                             )
                         }
                         {
-                            orgContext.totalTopics?.length > 9 ? <div className="checkbox more-tag" onClick={() => showMorefilters("totalTopics")}>
+                            orgContext.totalTopics?.length > 9 ? <div style={{ cursor: 'pointer' }} className="checkbox more-tag" onClick={() => showMorefilters("totalTopics")}>
                                 <div>+ More</div>
                             </div> : <></>
                         }
