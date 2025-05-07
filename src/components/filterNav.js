@@ -237,6 +237,21 @@ const FilterNav = ({ mobileNav }) => {
 
                     <div className="filters-mobile-sec">
                         <div className='mobile-sidenav-filter'>
+                            <div className="mobile-nav-headings">Status</div>
+                            <div className="checkbox">
+                                <input type="checkbox" style={{ transform: 'scale(1.3)' }} id={"active"} name={"active"} value={"active"} onChange={() => { selectStatus("active") }} checked={orgContext.selectedStatus.indexOf("active") !== -1} />
+                                <label htmlFor={"active"}>Active</label><br></br>
+                            </div>
+                            <div className="checkbox">
+                                <input type="checkbox" style={{ transform: 'scale(1.3)' }} id={"inactive"} name={"inactive"} value={"inactive"} onChange={() => { selectStatus("inactive") }} checked={orgContext.selectedStatus.indexOf("inactive") !== -1} />
+                                <label htmlFor={"inactive"}>Inactive</label><br></br>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div className="filters-mobile-sec">
+                        <div className='mobile-sidenav-filter'>
                             <div className="mobile-nav-headings">Years</div>
                             <div className="fitler-search-div-mobile">
                                 <input style={{ width: "90%" }} className="filters-search-mobile" type="text" placeholder="Search year here." value={yearSearchInput} onChange={(value => filterYear(value.target.value))}></input>
