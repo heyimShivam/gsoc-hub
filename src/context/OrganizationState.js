@@ -17,9 +17,17 @@ const OrganizationState = (props) => {
     const [allorgSelected, setAllorgSelected] = useState(true);
     const [allGSoCFilterValues, setAllGSoCFilterValues] = useState([]);
     const [openMobileNav, setOpenMobileNav] = useState(false);
+    const [mobileNavclosingAnimation, setMobileNavclosingAnimation] = useState(true);
 
     const updateOpenMobileNav = () => {
-        setOpenMobileNav(!openMobileNav);
+        setMobileNavclosingAnimation(!mobileNavclosingAnimation);
+        if (openMobileNav) {
+            setTimeout(() => {
+                setOpenMobileNav(!openMobileNav);
+            }, 500);
+        } else {
+            setOpenMobileNav(!openMobileNav);
+        }
     }
 
     const formAllGSoCFilterValues = () => {
@@ -187,6 +195,7 @@ const OrganizationState = (props) => {
         filteredOrgsData,
         allGSoCFilterValues,
         openMobileNav,
+        mobileNavclosingAnimation,
         updateOpenMobileNav,
         filterOrgs,
         removefiltersOrgsData,

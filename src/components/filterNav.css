@@ -249,6 +249,34 @@
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
 }
 
+.slide-in {
+    animation: slideIn 0.5s forwards;
+}
+
+.slide-out {
+    animation: slideOut 0.5s forwards;
+}
+
+@keyframes slideIn {
+    from {
+        margin-left: -1000px;
+    }
+
+    to {
+        margin-left: 0;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        margin-left: 0;
+    }
+
+    to {
+        margin-left: -1000px;
+    }
+}
+
 .sidebar::-webkit-scrollbar {
     width: 10px;
     height: 20px;

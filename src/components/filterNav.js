@@ -227,7 +227,7 @@ const FilterNav = ({ mobileNav }) => {
 
     if (screenSizeSmall) return (<>
         {orgContext.openMobileNav ?
-            <div className="sidebar">
+            <div className={`sidebar ${orgContext.mobileNavclosingAnimation ? 'slide-out' : 'slide-in'}`} id="sidebar">
                 <div>
                     <div className="mobile-nav-headings">Search Organization Here</div>
                     <div className="fitler-search-div-mobile">
