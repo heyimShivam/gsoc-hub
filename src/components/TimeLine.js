@@ -59,12 +59,13 @@ const TimeLine = () => {
                         <h2>What Do Active & Inactive Tags Mean?</h2>
                         <p>The Active/Inactive tags are just a quick reference to help you compare 2–3 organizations — not a primary filter.</p>
                         <p>We assign these tags based on the commit activity in the top 3 repositories over the past 50+ weeks. If the activity crosses a certain threshold, the org is tagged Active; otherwise, it's Inactive.</p>
-                        <p>But don’t rely on this alone! An org might:
+                        <div>
+                            <p>But don’t rely on this alone! An org might:</p>
                             <ul>
                                 <li>Take a short break or go inactive temporarily.</li>
                                 <li>Be working on a big PR merged all at once (which counts as 1, even if it had lots of work inside).</li>
                             </ul>
-                        </p>
+                        </div>
                         <p>So, treat these tags as a starting point, not a final decision-maker.</p>
                         <p>Active? Great!</p>
                         <p>Inactive? Dig a little deeper — it might still be a solid choice.</p>
