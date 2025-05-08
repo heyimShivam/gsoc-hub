@@ -79,7 +79,7 @@ const OrganizationState = (props) => {
         // this is added here becuase selectedGsocYears and all are dependency in the the use effect.
         setTimeout(() => {
             setFilteredOrgsData(updatedData);
-        });
+        }, 100);
     }
 
 
