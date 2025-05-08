@@ -14,13 +14,18 @@ const Searchbar = ({ toggleSidebar }) => {
     const navigate = useNavigate();
     const location = useLocation();
     const [showMenuIcon, setShowMenuIcon] = useState(false);
+    const debouncedOrgNameLastCall = useRef("");
 
     const filterOrgCall = (value) => {
-        const filterData = filterByOrgName(value.toLowerCase());
-        organizationContext.filterOrgs(filterData);
 
         if (location?.pathname !== '/organization')
             navigate("/organization");
+
+        const filterData = filterByOrgName(value.toLowerCase());
+
+        setTimeout(() => {
+            organizationContext.filterOrgs(filterData);
+        });
     }
 
     useEffect(() => {
@@ -33,7 +38,10 @@ const Searchbar = ({ toggleSidebar }) => {
 
 
     useEffect(() => {
-        filterOrgCall(debouncedOrgName);
+        if (debouncedOrgNameLastCall.current !== debouncedOrgName) {
+            debouncedOrgNameLastCall.current = debouncedOrgName;
+            filterOrgCall(debouncedOrgName);
+        }
     }, [debouncedOrgName]);
 
     const updateSearch = (value) => {
