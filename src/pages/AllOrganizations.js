@@ -18,8 +18,6 @@ const AllOrganizations = () => {
 
     useEffect(() => {
         setOrgsData([...orgContext.filteredOrgsData]);
-        console.log(orgContext.filteredOrgsData);
-        console.log(orgsData);
     }, [
         orgContext.filteredOrgsData
     ]);

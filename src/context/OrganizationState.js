@@ -65,8 +65,6 @@ const OrganizationState = (props) => {
     }
 
     const filterOrgs = (updatedData) => {
-        setOrgsData(updatedData);
-
         if (selectedGsocYears.length > 0)
             setSelectedGsocYears([]);
         if (selectedTotalTopics.length > 0)
