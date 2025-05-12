@@ -26,7 +26,7 @@
     font-weight: 300;
     font-family: 'roboto';
     background-color: transparent;
-    color: white;
+    color: hsl(210, 40%, 98%);
     padding: 16px 60px;
     font-size: 16px;
     border: none;
@@ -56,7 +56,7 @@
 
 .dropdown-content .checkbox {
     background-color: hsl(217.2 32.6% 17.5%);
-    color: white;
+    color: hsl(210, 40%, 98%);
     padding: 12px 16px;
     text-decoration: none;
     width: 100%;
@@ -192,7 +192,7 @@
     transform: translate(-50%, -50%);
     background-color: #28282B;
     z-index: 999;
-    color: white;
+    color: hsl(210, 40%, 98%);
     padding: 25px;
     border-radius: 9px;
     width: 900px;
@@ -218,7 +218,7 @@
 .search-input-modal {
     width: 92%;
     border: 1px solid gray;
-    background-color: white;
+    background-color: hsl(210, 40%, 98%);
     border-radius: 3px;
     margin-bottom: 2px;
     display: flex;
@@ -239,7 +239,7 @@
 .search-input-modal .search-icon-modal {
     margin-left: 5px;
     margin-right: 15px;
-    background-color: white;
+    background-color: hsl(210, 40%, 98%);
     color: #28282B;
 }
 
@@ -261,8 +261,8 @@
     left: 0;
     width: 75vw;
     height: calc(100vh - 72px);
-    background-color: #151515;
-    color: white;
+    background-color: #050713;
+    color: hsl(210, 40%, 98%);
     z-index: 999;
     padding: 15px 12px;
     overflow-y: scroll;
@@ -331,7 +331,7 @@
 
 .mobile-nav-headings {
     margin-bottom: 15px;
-    color: white;
+    color: hsl(210, 40%, 98%);
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 1px;
@@ -343,7 +343,7 @@
 
 .filters-mobile-sec {
     margin-top: 25px;
-    background-color: #1e1e1e;
+    /* background-color: #1e1e1e; */
     padding: 18px;
     border-radius: 6px;
     position: relative;
@@ -366,13 +366,11 @@
 }
 
 .fitler-search-div-mobile {
-    border-bottom: 1px solid white;
     position: relative;
     width: 100%;
     height: 100%;
-    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
-    background-color: #343434;
-    color: white;
+    background-color: hsl(217.2 32.6% 17.5%);
+    color: hsl(210, 40%, 98%);
     margin-bottom: 10px;
     border-radius: 3px;
 }
@@ -383,15 +381,16 @@
     padding: 10px;
     border: none;
     border-top-left-radius: 3px;
-    background-color: #343434;
-    color: white;
+    border: none;
+    background-color: hsl(217.2 32.6% 17.5%);
+    color: hsl(210 40% 98%);
     outline: none;
 }
 
 
 .mobile-sidenav-filter .checkbox {
     background-color: transparent;
-    color: white;
+    color: hsl(210, 40%, 98%);
     padding: 9px 0px;
     text-decoration: none;
     /* width: 100%; */
