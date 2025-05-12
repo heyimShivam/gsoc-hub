@@ -95,10 +95,6 @@ const PickedFilters = ({
             (orgContext.selectedTotalTopics.length > 0) ||
             (orgContext.selectedStatus.length > 0) ?
             <div className="pick-area">
-                <div className="applied-filter-text">
-                    Applied Filters
-                </div>
-
                 <Stack direction="row" spacing={1} useFlexGap flexWrap="wrap">
                     {
                         orgContext.selectedStatus.map((value, index) =>
