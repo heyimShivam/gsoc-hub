@@ -10,7 +10,7 @@ const Home = () => {
         <HomePageAnimationBG />
         {/* <HomeOrganization /> */}
         <TimeLine />
-        <div className="component " style={{ marginBottom: '0px' }}>
+        <div style={{ marginBottom: '0px' }}>
             <Footer />
         </div>
     </div>);

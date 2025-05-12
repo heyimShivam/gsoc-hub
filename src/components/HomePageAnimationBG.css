@@ -45,13 +45,19 @@
     cursor: pointer;
 }
 
+.org-title {
+    text-align: center;
+}
+
 .home-description {
     font-size: 19px;
     font-weight: 400;
-    width: 30%;
+    max-width: 450px;
+    margin: 0px 5px;
     justify-content: center;
     text-align: center;
     align-items: center;
+    color: hsl(210, 40%, 90%);
     margin-bottom: 20px;
 }
 
@@ -100,7 +106,7 @@
 .gradient-bg {
     width: 100%;
     height: 100vh;
-    filter: blur(10px);
+    filter: blur(120px);
     position: relative;
     background: linear-gradient(40deg, var(--color-bg1), var(--color-bg2));
     top: 0;

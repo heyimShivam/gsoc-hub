@@ -25,11 +25,6 @@ function OrganizationDetailsMainComponent({ details }) {
                     <p className="org-heading-desc">{details.description}</p>
                     <div className="org-category">
                         <p className="org-category-item org-first-category">{details.category[0]}</p>
-                        {
-                            details.category.length > 1 ?
-                                <p className="org-category-item org-sec-category">+ More</p>
-                                : <></>
-                        }
                     </div>
                     {details.activeOrg ?
                         <div className="acitev-btn">
