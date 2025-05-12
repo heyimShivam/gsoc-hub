@@ -15,7 +15,7 @@ function OrganizationDetailsMainComponent({ details }) {
     });
 
     return (<div className="org-detail-main-comp">
-        <div className="first-half blurred-box">
+        <div className="first-half ">
             <div className="org-image-name-desc">
                 <img className="org-image-main" src={details.image_url} alt={details.name} style={{ backgroundColor: details.image_background_color }} />
                 <div className="org-name-desc">
@@ -33,11 +33,11 @@ function OrganizationDetailsMainComponent({ details }) {
                     </div>
                     {details.activeOrg ?
                         <div className="acitev-btn">
-                            <div className="btn-active-inactive">
+                            <div className="btn-active-inactive active-colors">
                                 <div className="active circle"></div><div className='active-text'>Active</div>
                             </div>
                         </div> :
-                        <div className="acitev-btn">
+                        <div className="acitev-btn inactive-colors">
                             <div className="btn-active-inactive">
                                 <div className="inactive circle"></div><div className='active-text'>Inactive</div>
                             </div>
@@ -70,7 +70,7 @@ function OrganizationDetailsMainComponent({ details }) {
                 </div>
             </div>
         </div>
-        <div className="sec-half blurred-box">
+        <div className="sec-half ">
             {/* GRAPH */}
             <div style={{ marginBottom: "20px" }}>
                 <PreviousContributorInfo pastCompletedPojects={pastCompletedPojects} />

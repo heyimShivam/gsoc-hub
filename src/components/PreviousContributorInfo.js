@@ -11,15 +11,15 @@ const PreviousContributorInfo = ({
         zoomEnabled: true,
         backgroundColor: "transparent", // makes canvas background transparent
         axisX: {
-            lineColor: "white",
-            labelFontColor: "white",
+            lineColor: "hsl(210, 40%, 98%)",
+            labelFontColor: "hsl(210, 40%, 98%)",
         },
         axisY: {
-            lineColor: "white",
-            labelFontColor: "white",
+            lineColor: "hsl(210, 40%, 98%)",
+            labelFontColor: "hsl(210, 40%, 98%)",
         },
         toolTip: {
-            fontColor: "white",
+            fontColor: "hsl(210, 40%, 98%)",
             backgroundColor: "#333", // optional: make it match your theme
             cornerRadius: 5,
             fontSize: 14
@@ -27,9 +27,9 @@ const PreviousContributorInfo = ({
         data: [{
             type: "spline",
             markerType: "circle",
-            markerColor: "#A91D3A",
+            markerColor: "hsl(217 89% 61%)",
             lineThickness: 3,
-            color: "#C73659",
+            color: "hsl(217 89% 61%)",
             dataPoints: pastCompletedPojects
         }]
     };

@@ -1,11 +1,11 @@
 .sub-component-heading {
-    font-weight: 700;
+    font-weight: 400;
+    font-family: 'roboto', 'Courier New', Courier, monospace;
 }
 
 .org-contributors {
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid red;
     padding: 10px 0px;
 }
 
@@ -13,7 +13,8 @@
     padding: 0 12px;
     padding-left: 0px;
     border-radius: 100px;
-    border: 1px solid rgba(128, 128, 128, 0.747);
+    border: 1px solid hsl(217.2 32.6% 17.5%);
+    overflow: hidden;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     display: inline-flex;
     align-items: center;
@@ -22,6 +23,8 @@
     cursor: pointer;
     margin-right: 5px;
     margin-bottom: 8px;
+    color: hsl(210, 40%, 98%);
+    font-weight: 300;
 }
 
 .contributor-info:hover {

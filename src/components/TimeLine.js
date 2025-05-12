@@ -8,7 +8,7 @@ const TimeLine = () => {
 
     return (<div className="timeline-component component">
         <h1 className="component-heading">Getting the best out of the GSoC Hub: A Quick Guide</h1>
-        <div className="wesbite-guide-timeline component-background">
+        <div className="wesbite-guide-timeline">
             <section id="status-timeline" className="status-container">
                 <div className="status-timeline-block">
                     <div className="status-timeline-img status-picture">

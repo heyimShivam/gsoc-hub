@@ -5,7 +5,7 @@
 }
 
 .btn-more-repos {
-    background-color: #A91D3A;
+    background-color: hsl(217 89% 61%);
     border-radius: 2px;
     cursor: pointer;
     padding: 4px 9px;
@@ -14,13 +14,14 @@
 .organization-details {
     margin: 0px 25px;
     margin-top: -7px;
+    color: hsl(210, 40%, 98%);
 }
 
 .organization-details .organization-name {
     text-align: center;
     font-size: 40px;
     font-weight: 750;
-    color: white;
+    color: hsl(210, 40%, 98%);
     font-style: italic;
 }
 
@@ -45,7 +46,7 @@
 }
 
 .organization-name-background {
-    background-color: #A91D3A;
+    background-color: hsl(217 89% 61%);
     padding: 25px;
     border-radius: 10px;
     position: relative;
@@ -74,7 +75,7 @@
     position: relative;
     height: 10px;
     width: 100%;
-    color: white;
+    color: hsl(210, 40%, 98%);
     text-align: center;
     margin-top: 30px;
     margin-bottom: 10px;
@@ -113,11 +114,11 @@
 .org-year-card {
     padding: 5px 7px;
     margin: 2px;
-    background-color: royalblue;
+    background-color: hsl(217 89% 61%);
 }
 
 .org-technologies {
-    border: 1px solid white;
+    border: 1px solid hsl(210, 40%, 98%);
     padding: 5px 15px;
     margin: 5px;
     border-radius: 5px;
@@ -154,10 +155,11 @@
     align-items: center;
     display: relative;
 
-    background-color: #1e1e1e;
+    background-color: #050713;
     padding: 18px 0px;
     margin: 3px;
     border-radius: 6px;
+    border: 1px solid hsl(217.2 32.6% 17.5%);
 }
 
 .title {
@@ -206,11 +208,12 @@
     justify-content: center;
     align-items: center;
 
-    background-color: #1e1e1e;
+    background-color: #050713;
     padding: 15px 0px;
     margin: 8px 0px;
     border-radius: 6px;
     padding-bottom: 32px;
+    border: 1px solid hsl(217.2 32.6% 17.5%);
 }
 
 .inner-organizations-all-repo {

@@ -57,7 +57,7 @@ const OrganizationDetails = ({ orgName, githubIDpassed }) => {
                 <OrganizationDetailsMainComponent details={orgDetails} />
                 {
                     pastCompletedPojects && pastCompletedPojects.length > 0 && pastProjectSelectedYear >= 0 ?
-                        <div className="past-projects-component-main blurred-box">
+                        <div className="past-projects-component-main">
                             <div className="title">
                                 Past projects accomplished under Google Summer of Code
                             </div>
@@ -74,7 +74,7 @@ const OrganizationDetails = ({ orgName, githubIDpassed }) => {
                             <div className="projects-per-year">
                                 {orgDetails.year.map((year, index) => {
                                     if (pastCompletedPojects[index].completedProjects.length === 0) return <div key={index}></div>
-                                    return <p onClick={() => { setPastProjectSelectedYear(index) }} className="org-year-card" key={index} style={pastProjectSelectedYear === index ? { backgroundColor: "#A91D3A" } : { backgroundColor: "#333" }}>{year}</p>
+                                    return <p onClick={() => { setPastProjectSelectedYear(index) }} className="org-year-card" key={index} style={pastProjectSelectedYear === index ? { backgroundColor: "hsl(217 89% 61%)" } : { backgroundColor: "#333" }}>{year}</p>
                                 })}
                             </div>
                         </div>
@@ -82,7 +82,7 @@ const OrganizationDetails = ({ orgName, githubIDpassed }) => {
                 }
 
                 {orgReposDetail.length > 0 ?
-                    <div className="organizations-all-repos blurred-box">
+                    <div className="organizations-all-repos">
                         <div className="title">
                             Organization Repositories
                         </div>
