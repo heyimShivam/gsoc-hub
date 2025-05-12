@@ -25,7 +25,7 @@ const AllOrganizations = () => {
         <div className="all-orgs">
             <FilterNav />
             <div className="total-orgs-number">
-                <p className="total-orgs-text">{orgsData.length} results</p>
+                <p className="total-orgs-text">Found {orgsData.length} organizations.</p>
             </div>
             <div className="all-organizations-component">
                 {

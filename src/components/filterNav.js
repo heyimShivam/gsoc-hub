@@ -362,7 +362,7 @@ const FilterNav = ({ mobileNav }) => {
         <div className="filters">
             <div className="filters-options">
                 <div className="dropdown">
-                    <button className="dropbtn">Year</button>
+                    <button className="dropbtn first">Year</button>
                     <div className="dropdown-content">
                         <div className="fitler-search-div">
                             <input className="filters-search" type="text" placeholder="Search year here." value={yearSearchInput} onChange={(value => filterYear(value.target.value))}></input>

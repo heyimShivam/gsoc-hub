@@ -64,9 +64,7 @@ const OrganizationDetails = ({ orgName, githubIDpassed }) => {
                             <div className="past-projects-component">
                                 {
                                     pastCompletedPojects[pastProjectSelectedYear].completedProjects.map((value, index) => {
-                                        return <div key={index}>
-                                            <PastProjectDetailCard projectDetails={value} projectNumber={index + 1} />
-                                        </div>
+                                        return <PastProjectDetailCard key={index} projectDetails={value} projectNumber={index + 1} />
                                     })
                                 }
                                 {
@@ -75,7 +73,7 @@ const OrganizationDetails = ({ orgName, githubIDpassed }) => {
                             </div>
                             <div className="projects-per-year">
                                 {orgDetails.year.map((year, index) => {
-                                    if (pastCompletedPojects[index].completedProjects.length === 0) return <div> key={index}</div>
+                                    if (pastCompletedPojects[index].completedProjects.length === 0) return <div key={index}></div>
                                     return <p onClick={() => { setPastProjectSelectedYear(index) }} className="org-year-card" key={index} style={pastProjectSelectedYear === index ? { backgroundColor: "#A91D3A" } : { backgroundColor: "#333" }}>{year}</p>
                                 })}
                             </div>

@@ -1,6 +1,7 @@
 .all-orgs {
     position: relative;
-    margin: 0px 15px;
+    padding: 0px 15px;
+    width: 100%;
 }
 
 .all-organizations-component {
@@ -10,7 +11,7 @@
     flex-wrap: wrap;
     width: 100%;
     box-sizing: border-box;
-    margin-top: 30px;
+    margin-top: 5px;
 }
 
 .organization-cards {
@@ -27,15 +28,14 @@
 }
 
 .total-orgs-number {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    margin-bottom: -35px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px 40px;
 }
 
 .total-orgs-text {
-    background-color: #A91D3A;
-    padding: 2px 12px;
-    font-weight: 500;
-    border-radius: 1px;
+    color: hsl(215 20.2% 65.1%);
+    font-size: 0.875rem;
+    font-family: 'roboto';
+    font-weight: 300;
 }

@@ -15,9 +15,9 @@ const Navbar = () => {
     const goToHomePage = () => {
         navigate("/");
     }
-
+    
     return (<>
-        <div className="navbar-component">
+        <div className="navbar-component back-color">
             <div className="float-class title text-color" style={{ cursor: 'pointer' }} onClick={goToHomePage}>
                 GSoC HUB
             </div>

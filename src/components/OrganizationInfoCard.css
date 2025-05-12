@@ -1,12 +1,10 @@
 .organization-info-card {
     border-radius: 8px;
-    background-color: #1b1b1a;
-    /* background-color: rgba(51, 51, 51, 0.226); */
     width: 320px;
     height: 100%;
     padding-bottom: 5px;
-    color: #eaeaea;
     z-index: 5;
+    font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .orgs-info-cards .organization-info-card {
@@ -15,7 +13,6 @@
 
 .organization-info-card:hover {
     cursor: pointer;
-    box-shadow: #A91D3A 0px 0px 10px 3px;
 }
 
 .organization-image {
@@ -24,22 +21,20 @@
     object-fit: scale-down;
     padding: 35px;
     border-radius: 8px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
 }
 
 .org-deatils-mix {
-    padding: 0px 20px;
+    padding: 0px 2px;
 }
 
 .organization-name {
-    color: #A91D3A;
-    font-family: "Inter", sans-serif;
+    font-family: "roboto", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: italic;
+    font-weight: 400;
     padding-top: 3px;
     font-size: 22px;
+    position: relative;
+    width: 100%;
 }
 
 .title-icon {
@@ -51,42 +46,55 @@
     display: flex;
     justify-content: left;
     align-items: center;
+    margin-top: 17px;
+    font-weight: 300;
+    font-size: 18px;
+    color: hsl(210, 40%, 98%);
 }
 
 .organization-description {
-    color: #B4B4B4;
+    color: hsl(215 20.2% 65.1%);
     margin-top: -15px;
     font-size: 14px;
     margin-bottom: 12px;
+    font-weight: 300;
 }
 
-.organization-categorie {
+.organization-technologies {
     width: fit-content;
-    padding: 2px 8px;
-    background-color: #C73659;
-    color: white;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    color: hsl(210 40% 80%);
     margin-top: 7px;
     margin-bottom: 0px;
     margin-right: 5px;
-    border-radius: 2px;
+    border-radius: 15px;
+    font-weight: 300;
+    font-size: 15px;
 }
 
 .years-box {
-    margin-top: 5px;
+    padding: 0px;
+    padding-top: 6px;
+    margin: 0px;
 }
 
 .organization-cat-year-card {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 2px;
     margin-bottom: 15px;
 }
 
 .organization-year-card {
-    padding: 3px 8px;
-    margin: 2px;
+    margin: 0px;
+    padding-right: 12px;
+    padding-bottom: 10px;
     border-radius: 2px;
-    background-color: royalblue;
+    color: hsl(210 40% 80%);
+    font-weight: 300;
+    font-size: 15px;
 }
 
 .org-image-div {
@@ -112,14 +120,26 @@
     background-color: red;
 }
 
+.active-colors {
+    background-color: rgb(52, 168, 83, 35%);
+    color: rgb(52 168 83);
+    border: 1px solid rgb(52, 168, 83, 10%);
+}
+
+.inactive-colors {
+    background-color: rgb(234, 67, 53, 35%);
+    color: rgb(234, 67, 53);
+    border: 1px solid rgb(234, 67, 53, 10%);
+}
+
 .acitve-org-display {
     position: absolute;
-    bottom: -10px;
-    right: 0;
-    background-color: #A91D3A;
-    padding: 5px 20px 5px 40px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    font-weight: 300;
-    font-family: "Inter", sans-serif;
+    bottom: 3px;
+    right: 0px;
+    font-size: 13px;
+    padding: 4px 12px;
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
