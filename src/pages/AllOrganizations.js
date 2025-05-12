@@ -22,16 +22,19 @@ const AllOrganizations = () => {
     const [current, setCurrent] = useState(1);
 
     const getData = (current, pageSize) => {
-        // Normally you should get the data from the server
         return orgsData.slice((current - 1) * pageSize, current * pageSize);
     };
 
     let widthofOrganizationComponent;
+
     const handleResize = () => {
-        const cardWidth = 250 + 35 + 35 + 35;
+        const cardWidth = document.getElementsByClassName("organization-cards")[0].clientWidth;
         const componentWidth = widthofOrganizationComponent.clientWidth;
-        let sub = (25 % Math.floor(componentWidth / cardWidth));
-        setPerPage(25 - sub);
+        console.log(cardWidth);
+        console.log(componentWidth);
+        console.log(Math.floor((componentWidth / cardWidth)));
+        let sub = (3 * Math.floor(componentWidth / cardWidth));
+        setPerPage(sub);
         setSize(perPage);
     };
 
