@@ -28,8 +28,8 @@ const AllOrganizations = () => {
     let widthofOrganizationComponent;
 
     const handleResize = () => {
-        const cardWidth = document.getElementsByClassName("organization-cards")[0].clientWidth;
-        const componentWidth = widthofOrganizationComponent.clientWidth;
+        const cardWidth = document.getElementsByClassName("organization-cards")[0]?.clientWidth || 1;
+        const componentWidth = widthofOrganizationComponent?.clientWidth;
 
         // This code help us to create only three completely filled rows in the pagination.
         let sub = (3 * Math.floor(componentWidth / cardWidth));

@@ -13,7 +13,7 @@ const HomeOrganization = () => {
     }
     const handleResize = () => {
         const cardWidth = 320 + 16;
-        const componentWidth = orgDisplayComponent.clientWidth;
+        const componentWidth = orgDisplayComponent?.clientWidth;
         setNoOfOrgsInHomePage(Math.floor(componentWidth / cardWidth));
     };
     let orgDisplayComponent;
