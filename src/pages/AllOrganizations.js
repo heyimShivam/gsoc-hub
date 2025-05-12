@@ -30,9 +30,8 @@ const AllOrganizations = () => {
     const handleResize = () => {
         const cardWidth = document.getElementsByClassName("organization-cards")[0].clientWidth;
         const componentWidth = widthofOrganizationComponent.clientWidth;
-        console.log(cardWidth);
-        console.log(componentWidth);
-        console.log(Math.floor((componentWidth / cardWidth)));
+
+        // This code help us to create only three completely filled rows in the pagination.
         let sub = (3 * Math.floor(componentWidth / cardWidth));
         setPerPage(sub);
         setSize(perPage);
