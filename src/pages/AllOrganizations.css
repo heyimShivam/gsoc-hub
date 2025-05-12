@@ -39,3 +39,29 @@
     font-family: 'roboto';
     font-weight: 300;
 }
+
+.table-filter-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.pagination-data .MuiPaginationItem-root {
+    color: white;
+}
+
+.pagination-data .MuiPaginationItem-root:hover {
+    background-color: rgb(52, 168, 83, 35%)
+}
+
+.pagination-data .MuiPaginationItem-root.Mui-selected {
+    background-color: rgb(52, 168, 83, 35%);
+    color: rgb(52 168 83);
+}
+
+.MuiPaginationItem-root.Mui-selected {
+    background-color: rgb(52, 168, 83, 35%);
+    color: rgb(52 168 83);
+}
