@@ -8,13 +8,18 @@
     position: fixed;
     top: 0;
     z-index: 999;
+    -moz-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    width: 100vw;
 }
 
 .float-class {
     float: left;
 }
 
-.navbar-component .title {
+.navbar-component .nav-title {
     font-size: 28px;
     position: relative;
     font-family: "roboto", "Lilita One", sans-serif;
@@ -22,7 +27,7 @@
     font-style: normal;
 }
 
-.title {
+.nav-title {
     font-size: 25px;
     margin: 20px 0px;
     font-weight: 700;
@@ -32,18 +37,8 @@
     width: 100%;
 }
 
-.back-color {
-    -moz-transition: all 0.2s ease-in;
-    /* WebKit */
-    -webkit-transition: all 0.2s ease-in;
-    /* Opera */
-    -o-transition: all 0.2s ease-in;
-    /* Standard */
-    transition: all 0.2s ease-in;
-}
-
 @media only screen and (max-width: 515px) {
-    .navbar-component .title {
+    .navbar-component .nav-title {
         width: 185px;
     }
 }

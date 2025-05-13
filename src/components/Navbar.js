@@ -28,7 +28,7 @@ const Navbar = () => {
 
     return (<>
         <div className={`navbar-component ${scrolled ? "back-color" : ""}`}>
-            <div className="float-class title text-color" style={{ cursor: 'pointer' }} onClick={goToHomePage}>
+            <div className="float-class nav-title text-color" style={{ cursor: 'pointer' }} onClick={goToHomePage}>
                 GSoC HUB
             </div>
             <div className="float-class search-bar-component " style={{ float: "right" }}>
