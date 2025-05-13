@@ -190,7 +190,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #28282B;
+    background-color: hsl(217.2 32.6% 17.5%);
     z-index: 999;
     color: hsl(210, 40%, 98%);
     padding: 25px;
@@ -253,6 +253,8 @@
     justify-content: center;
     align-items: center;
     border-top: 1px solid rgba(0, 0, 0, 0.208);
+    font-family: 'roboto', 'Courier New', Courier, monospace;
+    font-weight: 400;
 }
 
 .sidebar {
@@ -321,11 +323,11 @@
 }
 
 .modal-footer div:hover {
-    color: #a91d39a2;
+    color: hsl(217 89% 80%);
 }
 
 .active-modal {
-    color: #A91D3A;
+    color: hsl(217 89% 61%);
 }
 
 

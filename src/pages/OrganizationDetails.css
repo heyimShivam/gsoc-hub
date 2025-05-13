@@ -114,7 +114,14 @@
 .org-year-card {
     padding: 5px 7px;
     margin: 2px;
+}
+
+.acitveBgBtn {
     background-color: hsl(217 89% 61%);
+}
+
+.inactiveBgBtn {
+    background-color: #333;
 }
 
 .org-technologies {
@@ -186,7 +193,7 @@
 
 .projects-per-year .org-year-card:hover {
     cursor: pointer;
-    background-color: rgba(65, 105, 225, 0.845);
+    background-color: hsla(217, 89%, 61%, 0.8);
 }
 
 .past-projects-component::-webkit-scrollbar {

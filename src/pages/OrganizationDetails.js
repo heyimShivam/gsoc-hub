@@ -74,7 +74,7 @@ const OrganizationDetails = ({ orgName, githubIDpassed }) => {
                             <div className="projects-per-year">
                                 {orgDetails.year.map((year, index) => {
                                     if (pastCompletedPojects[index].completedProjects.length === 0) return <div key={index}></div>
-                                    return <p onClick={() => { setPastProjectSelectedYear(index) }} className="org-year-card" key={index} style={pastProjectSelectedYear === index ? { backgroundColor: "hsl(217 89% 61%)" } : { backgroundColor: "#333" }}>{year}</p>
+                                    return <p className={`org-year-card ${pastProjectSelectedYear === index ? 'acitveBgBtn' : 'inactiveBgBtn'}`} onClick={() => { setPastProjectSelectedYear(index) }} key={index}>{year}</p>
                                 })}
                             </div>
                         </div>
