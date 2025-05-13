@@ -38,18 +38,20 @@ const OrganizationInfoCard = ({
         <div className="org-deatils-mix">
             <h3 className="organization-name">{name}</h3>
             <p className="organization-description">{description}</p>
-            <div className="title-info-cards">
-                Technologies
-            </div>
-            <div className="organization-cat-year-card">
-                {
-                    Array.isArray(technologies) ?
-                        technologies.slice(0, 4).map((val, index) => <p className="organization-technologies" key={index}>{val}, </p>) :
-                        <p className="organization-technologies">{technologies}, </p>
-                }
-                {
-                    Array.isArray(technologies) && technologies.length > 4 ? <p className="organization-technologies">+ {technologies.length - 4} more.</p> : <></>
-                }
+            <div className="back-solid-info">
+                <div className="title-info-cards">
+                    Technologies
+                </div>
+                <div className="organization-cat-year-card">
+                    {
+                        Array.isArray(technologies) ?
+                            technologies.slice(0, 4).map((val, index) => <p className="organization-technologies" key={index}>{val}, </p>) :
+                            <p className="organization-technologies">{technologies}, </p>
+                    }
+                    {
+                        Array.isArray(technologies) && technologies.length > 4 ? <p className="organization-technologies">+ {technologies.length - 4} more.</p> : <></>
+                    }
+                </div>
             </div>
             <div className="title-info-cards">
                 Years

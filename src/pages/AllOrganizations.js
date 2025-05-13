@@ -73,6 +73,8 @@ const AllOrganizations = () => {
                     className="pagination-data"
                     count={Math.ceil(orgsData.length / size)}
                     page={current}
+                    siblingCount={3}
+                    boundaryCount={1}
                     onChange={(event, value) => { setCurrent(value) }}
                 />
             </div>

@@ -32,6 +32,16 @@
     width: 100%;
 }
 
+.back-color {
+    -moz-transition: all 0.2s ease-in;
+    /* WebKit */
+    -webkit-transition: all 0.2s ease-in;
+    /* Opera */
+    -o-transition: all 0.2s ease-in;
+    /* Standard */
+    transition: all 0.2s ease-in;
+}
+
 @media only screen and (max-width: 515px) {
     .navbar-component .title {
         width: 185px;

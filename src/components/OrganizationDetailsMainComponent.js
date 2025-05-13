@@ -27,8 +27,8 @@ function OrganizationDetailsMainComponent({ details }) {
                         <p className="org-category-item org-first-category">{details.category[0]}</p>
                     </div>
                     {details.activeOrg ?
-                        <div className="acitev-btn">
-                            <div className="btn-active-inactive active-colors">
+                        <div className="acitev-btn active-colors">
+                            <div className="btn-active-inactive">
                                 <div className="active circle"></div><div className='active-text'>Active</div>
                             </div>
                         </div> :
