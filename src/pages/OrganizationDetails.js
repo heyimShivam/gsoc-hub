@@ -67,17 +67,14 @@ const OrganizationDetails = ({ orgName, githubIDpassed }) => {
 
     return (<>
         <Helmet>
-            {/* Dynamic Title */}
             <title>{`${orgNameInComponent} – GSoC Organization | GSoC Hub`}</title>
             <meta name="title" content={`${orgNameInComponent} – GSoC Organization | GSoC Hub`} />
 
-            {/* Dynamic Description */}
             <meta
                 name="description"
                 content={`Explore ${orgNameInComponent}, a Google Summer of Code organization. Discover past completed projects, repositories, tech stacks, and more.`}
             />
 
-            {/* Keywords: add some org-specific plus general */}
             <meta
                 name="keywords"
                 content={`Google Summer of Code, GSoC,  GSoc ${orgNameInComponent}, ${orgNameInComponent}, GSoC organizations, gsoc hub, gsoc org explorer, gsoc projects, gsoc repositories`}
@@ -85,7 +82,6 @@ const OrganizationDetails = ({ orgName, githubIDpassed }) => {
 
             <meta name="robots" content="index, follow" />
 
-            {/* Canonical */}
             <link
                 rel="canonical"
                 href={`https://www.gsochub.com/organization/${encodeURIComponent(orgNameInComponent)}/${encodeURIComponent(githubInComponent)}`}
