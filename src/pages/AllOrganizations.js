@@ -84,7 +84,7 @@ const AllOrganizations = () => {
                     property="og:description"
                     content={`Explore all Google Summer of Code (GSoC) organizations and easily filter them by tech stack, active years, status (active or inactive), topics, and more to find the perfect fit for your open source contribution goals.`}
                 />
-                <meta property="og:image" content="https://www.gsochub.com/GSoC hub socialmedia.png" />
+                <meta property="og:image" content="https://www.gsochub.com/og-image.png" />
 
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta
@@ -96,7 +96,7 @@ const AllOrganizations = () => {
                     name="twitter:description"
                     content={`Explore all Google Summer of Code (GSoC) organizations and easily filter them by tech stack, active years, status (active or inactive), topics, and more to find the perfect fit for your open source contribution goals.`}
                 />
-                <meta name="twitter:image" content="https://www.gsochub.com/GSoC hub socialmedia.png" />
+                <meta name="twitter:image" content="https://www.gsochub.com/og-image.png" />
             </Helmet>
 
             <div className="all-orgs">

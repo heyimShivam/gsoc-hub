@@ -98,7 +98,7 @@ const OrganizationDetails = ({ orgName, githubIDpassed }) => {
                 property="og:description"
                 content={`Explore ${orgNameInComponent}, a Google Summer of Code organization. Discover past completed projects, repositories, tech stacks, and more.`}
             />
-            <meta property="og:image" content="https://www.gsochub.com/GSoC hub socialmedia.png" />
+            <meta property="og:image" content="https://www.gsochub.com/og-image.png" />
 
             {/* Twitter */}
             <meta name="twitter:card" content="summary_large_image" />
@@ -111,7 +111,7 @@ const OrganizationDetails = ({ orgName, githubIDpassed }) => {
                 name="twitter:description"
                 content={`Explore ${orgNameInComponent}, a Google Summer of Code organization. Discover past completed projects, repositories, tech stacks, and more.`}
             />
-            <meta name="twitter:image" content="https://www.gsochub.com/GSoC hub socialmedia.png" />
+            <meta name="twitter:image" content="https://www.gsochub.com/og-image.png" />
         </Helmet>
 
         {orgDetails ?
