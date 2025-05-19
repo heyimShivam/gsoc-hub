@@ -9,7 +9,7 @@ const HomePageAnimationBG = () => {
         <div class="text-container">
             <div className="org-title">GSoC Hub</div>
             <div className="home-description">
-                GSoC HUB is a tool designed to help you find the perfect organization by exploring past GSoC orgs using filters that match your interests—so you can walk into GSoC with confidence.
+                GSoC Hub helps you find the right Google Summer of Code organization. Browse past organizations and use smart filters to find those that match your interests, so you can confidently choose the best organizations.
             </div>
             <div className="explore-btn" onClick={viewAllorganization}>Explore</div>
         </div>
