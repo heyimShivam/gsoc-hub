@@ -5,6 +5,7 @@ import RepoDetailCard from "../components/RepoDetailCard";
 import OrganizationDetailsShimmer from '../components/OrganizationDeatilsShimmer';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import Footer from "../components/Footer";
+import { useParams } from 'react-router-dom';
 
 import "./OrganizationDetails.css";
 const OrganizationDetails = ({ orgName, githubIDpassed }) => {
@@ -12,6 +13,9 @@ const OrganizationDetails = ({ orgName, githubIDpassed }) => {
     const [orgDetails, setOrgDetails] = useState();
     const [pastProjectSelectedYear, setPastProjectSelectedYear] = useState(0);
     const [pastCompletedPojects, setPastCompletedPojects] = useState([{}]);
+    const [githubInComponent, setGithubInComponent] = useState(githubIDpassed);
+    const [orgNameInComponent, setOrgNameInComponent] = useState(orgName);
+    const { urlOrgName, urlGithubID } = useParams();
 
     const scrollToTop = () => {
         document.documentElement.scrollTo({
@@ -26,7 +30,7 @@ const OrganizationDetails = ({ orgName, githubIDpassed }) => {
     }
 
     const loadOrganizationData = async () => {
-        const data = await import(`../data/OrganizationsDetails(GSoC)/${cleanString(orgName, githubIDpassed)}.json`);
+        const data = await import(`../data/OrganizationsDetails(GSoC)/${cleanString(orgNameInComponent, githubInComponent)}.json`);
 
         setOrgDetails(data.default);
         setOrgReposDetail(data.default.repositories);
@@ -48,8 +52,17 @@ const OrganizationDetails = ({ orgName, githubIDpassed }) => {
     }
 
     useEffect(() => {
-        loadOrganizationData();
-    }, []);
+        if (!orgNameInComponent && !githubInComponent) {
+            setOrgNameInComponent(decodeURIComponent(urlOrgName));
+            setGithubInComponent(decodeURIComponent(urlGithubID));
+        }
+    }, [urlOrgName, urlGithubID]);
+
+    useEffect(() => {
+        if (orgNameInComponent && githubInComponent) {
+            loadOrganizationData();
+        }
+    }, [orgNameInComponent, githubInComponent]);
 
     return (<>
         {orgDetails ?

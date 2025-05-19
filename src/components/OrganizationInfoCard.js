@@ -19,13 +19,11 @@ const OrganizationInfoCard = ({
     const navigate = useNavigate();
 
     const showMoreOrganizationDetails = () => {
-        const url = name.toLowerCase().replace(/[ /]/g, '-');
-
-        navigate("/organization/" + url, {
+        navigate(`/organization/${encodeURIComponent(name)}/${encodeURIComponent(githubID)}`, {
             state: {
                 githubID: githubID,
                 orgName: name,
-            },
+            }
         });
     }
 

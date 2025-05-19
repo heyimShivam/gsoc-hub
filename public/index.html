@@ -6,45 +6,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#000000" />
 
-  <!-- SEO Meta Tags -->
-  <title>GSoC Hub – Explore and Filter Google Summer of Code Organizations</title>
+  <!-- Primary Meta Tags -->
+  <title>GSoC Hub – Smartly Filter Google Summer of Code Organizations</title>
+  <meta name="title" content="GSoC Hub – Smartly Filter Google Summer of Code Organizations">
   <meta name="description"
-    content="GSoC Hub helps you discover all the organizations that have ever participated in Google Summer of Code. You can easily filter them by tech stack, year, category, and topic to find the best fit for your GSoC journey.">
+    content="Effortlessly discover and filter Google Summer of Code organizations by technology stack, program year, topics, categories, and more. GSoC Hub is the ultimate filtering tool to simplify your search for the perfect open source organization.">
   <meta name="keywords"
-    content="Google Summer of Code,gsoc, GSoC organizations, GSoC filters, open source internships, open source orgs, gsoc hub, gsoc orgs by tech, gsoc 2026, gsoc 2025 orgs, gsoc history, organization participated in gsoc in, organization participated in gsoc in web development">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://gsoc-hub.vercel.app">
+    content="Google Summer of Code, GSoC, GSoC organizations, GSoC filtering tool, open source internships, technology stack, program year, open source organizations, gsoc hub, gsoc org explorer, gsoc categories, gsoc topics">
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.gsochub.com/" />
 
-  <!-- PWA & Icons -->
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.gsochub.com/" />
+  <meta property="og:title" content="GSoC Hub – Smartly Filter Google Summer of Code Organizations" />
+  <meta property="og:description"
+    content="Effortlessly discover and filter Google Summer of Code organizations by technology stack, program year, topics, categories, and more. GSoC Hub is the ultimate filtering tool to simplify your search for the perfect open source organization." />
+  <meta property="og:image" content="https://www.gsochub.com/og-image.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://www.gsochub.com/" />
+  <meta name="twitter:title" content="GSoC Hub – Smartly Filter Google Summer of Code Organizations" />
+  <meta name="twitter:description"
+    content="Effortlessly discover and filter Google Summer of Code organizations by technology stack, program year, topics, categories, and more. GSoC Hub is the ultimate filtering tool to simplify your search for the perfect open source organization." />
+  <meta name="twitter:image" content="https://www.gsochub.com/og-image.png" />
+
+  <!-- Favicon -->
   <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <!-- Fonts: Preconnect & Preload -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lilita+One&display=swap"
-    rel="stylesheet">
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Inter:ital,wght@0,400;1,400&family=Dancing+Script:wght@400;700&family=Lilita+One&display=swap"
+    rel="stylesheet" />
 
   <!-- Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <script src="https://kit.fontawesome.com/3b161c540c.js" crossorigin="anonymous"></script>
 
-  <!-- Social Media Meta Tags -->
-  <meta property="og:title" content="GSoC Hub – Explore and Filter GSoC Organizations" />
-  <meta property="og:description"
-    content="Discover every Google Summer of Code (GSoC) organization from 2005 to today. Filter by technology, year, and category to find the best fit for your open source journey." />
-  <meta property="og:url" content="https://gsoc-hub.vercel.app" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://gsoc-hub.vercel.app/og-image.png" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="GSoC Hub – Filter and Find Your Ideal GSoC Organization" />
-  <meta name="twitter:description"
-    content="Use filters to find Google Summer of Code organizations by tech stack, year, and category. Ideal for first-time contributors." />
-  <meta name="twitter:image" content="https://gsoc-hub.vercel.app/og-image.png" />
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "url": "https://www.gsochub.com/",
+    "name": "GSoC Hub",
+    "description": "Effortlessly discover and filter Google Summer of Code organizations by technology stack, program year, topics, categories, and more. GSoC Hub is the ultimate filtering tool to simplify your search for the perfect open source organization.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://www.gsochub.com/organization/{search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
 </head>
 
 <body class="back-color">

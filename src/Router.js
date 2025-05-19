@@ -25,7 +25,7 @@ const Router = createBrowserRouter([
                 element: <AllOrganizations />,
             },
             {
-                path: "/organization/:organizationID",
+                path: "/organization/:urlOrgName/:urlGithubID",
                 element: <LazyOrganizationDetails />,
             }
         ],
