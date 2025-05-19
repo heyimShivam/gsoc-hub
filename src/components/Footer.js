@@ -5,7 +5,7 @@ const Footer = () => {
     return (<div className="footer-component">
         <footer className="footer">
             <div className="footer__about">
-                <img src="/og-image.png" alt='gsoc-hub' className='gsoc-hub-logo'></img>
+                <img src="/gsochub.png" alt='gsoc-hub' className='gsoc-hub-logo'></img>
                 <p>If you find an issue on the site, you can report it <a href="https://github.com/heyimShivam/gsoc-hub/issues" target="__blank">here</a>.</p>
                 <p>Click on “<span className='new-issue'>New issue</span>”, then provide a clear description along with relevant screenshots.</p>
                 <p>Visit the official Google Summer of Code website by clicking <a href="https://summerofcode.withgoogle.com/" target="__blank">here</a>.</p>
