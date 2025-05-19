@@ -6,6 +6,7 @@ import OrganizationDetailsShimmer from '../components/OrganizationDeatilsShimmer
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import Footer from "../components/Footer";
 import { useParams } from 'react-router-dom';
+import { Helmet } from "react-helmet";
 
 import "./OrganizationDetails.css";
 const OrganizationDetails = ({ orgName, githubIDpassed }) => {
@@ -65,6 +66,58 @@ const OrganizationDetails = ({ orgName, githubIDpassed }) => {
     }, [orgNameInComponent, githubInComponent]);
 
     return (<>
+        <Helmet>
+            {/* Dynamic Title */}
+            <title>{`${orgNameInComponent} – GSoC Organization | GSoC Hub`}</title>
+            <meta name="title" content={`${orgNameInComponent} – GSoC Organization | GSoC Hub`} />
+
+            {/* Dynamic Description */}
+            <meta
+                name="description"
+                content={`Explore ${orgNameInComponent}, a Google Summer of Code organization. Discover past completed projects, repositories, tech stacks, and more.`}
+            />
+
+            {/* Keywords: add some org-specific plus general */}
+            <meta
+                name="keywords"
+                content={`Google Summer of Code, GSoC,  GSoc ${orgNameInComponent}, ${orgNameInComponent}, GSoC organizations, gsoc hub, gsoc org explorer, gsoc projects, gsoc repositories`}
+            />
+
+            <meta name="robots" content="index, follow" />
+
+            {/* Canonical */}
+            <link
+                rel="canonical"
+                href={`https://www.gsochub.com/organization/${encodeURIComponent(orgNameInComponent)}/${encodeURIComponent(githubInComponent)}`}
+            />
+
+            {/* Open Graph */}
+            <meta property="og:type" content="website" />
+            <meta
+                property="og:url"
+                content={`https://www.gsochub.com/organization/${encodeURIComponent(orgNameInComponent)}/${encodeURIComponent(githubInComponent)}`}
+            />
+            <meta property="og:title" content={`${orgNameInComponent} – GSoC Organization | GSoC Hub`} />
+            <meta
+                property="og:description"
+                content={`Explore ${orgNameInComponent}, a Google Summer of Code organization. Discover past completed projects, repositories, tech stacks, and more.`}
+            />
+            <meta property="og:image" content="https://www.gsochub.com/GSoC hub socialmedia.png" />
+
+            {/* Twitter */}
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta
+                name="twitter:url"
+                content={`https://www.gsochub.com/organization/${encodeURIComponent(orgNameInComponent)}/${encodeURIComponent(githubInComponent)}`}
+            />
+            <meta name="twitter:title" content={`${orgNameInComponent} – GSoC Organization | GSoC Hub`} />
+            <meta
+                name="twitter:description"
+                content={`Explore ${orgNameInComponent}, a Google Summer of Code organization. Discover past completed projects, repositories, tech stacks, and more.`}
+            />
+            <meta name="twitter:image" content="https://www.gsochub.com/GSoC hub socialmedia.png" />
+        </Helmet>
+
         {orgDetails ?
             <div className="organization-details">
                 <OrganizationDetailsMainComponent details={orgDetails} />
@@ -118,7 +171,8 @@ const OrganizationDetails = ({ orgName, githubIDpassed }) => {
                 </div>
                 <Footer />
             </div>
-            : <><OrganizationDetailsShimmer></OrganizationDetailsShimmer><Footer /></>}
+            : <><OrganizationDetailsShimmer></OrganizationDetailsShimmer><Footer /></>
+        }
     </>);
 }
 

@@ -5,6 +5,7 @@ import Pagination from '@mui/material/Pagination';
 import "./AllOrganizations.css";
 import FilterNav from "../components/filterNav";
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
+import { Helmet } from "react-helmet";
 
 const AllOrganizations = () => {
     const orgContext = useContext(OrganizationContext);
@@ -52,37 +53,84 @@ const AllOrganizations = () => {
     }, [orgContext.filteredOrgsData]);
 
     return (
-        <div className="all-orgs">
-            <FilterNav />
-            <div className="total-orgs-number">
-                <p className="total-orgs-text">Found {orgsData.length} organizations.</p>
-            </div>
+        <>
+            <Helmet>
+                <title>{`All GSoC organizations | GSoC Hub`}</title>
+                <meta name="title" content={`All GSoC Organization | GSoC Hub`} />
 
-            <div className="all-organizations-component" id="all-organizations-component">
-                {
-                    getData(current, size).map((value, index) => {
-                        return <div className="organization-cards" key={index} >
-                            <OrganizationInfoCard {...value} />
-                        </div>
-                    })
-                }
-            </div>
-
-            <div className="table-filter-info">
-                <Pagination
-                    className="pagination-data"
-                    count={Math.ceil(orgsData.length / size)}
-                    page={current}
-                    siblingCount={3}
-                    boundaryCount={1}
-                    onChange={(event, value) => { setCurrent(value) }}
+                <meta
+                    name="description"
+                    content={`Explore all Google Summer of Code (GSoC) organizations and easily filter them by tech stack, active years, status (active or inactive), topics, and more to find the perfect fit for your open source contribution goals.`}
                 />
-            </div>
+                <meta
+                    name="keywords"
+                    content={`Google Summer of Code, GSoC,  GSoc all organizations, gsoc organizations in year , gsoc hub, gsoc org explorer`}
+                />
 
-            <div className="up-arrow" onClick={scrollToTop}>
-                <ExpandLessIcon />
+                <meta name="robots" content="index, follow" />
+
+                <link
+                    rel="canonical"
+                    href={`https://www.gsochub.com/organization/`}
+                />
+
+                <meta property="og:type" content="website" />
+                <meta
+                    property="og:url"
+                    content={`https://www.gsochub.com/organization/`}
+                />
+                <meta property="og:title" content={`All GSoC organizations | GSoC Hub`} />
+                <meta
+                    property="og:description"
+                    content={`Explore all Google Summer of Code (GSoC) organizations and easily filter them by tech stack, active years, status (active or inactive), topics, and more to find the perfect fit for your open source contribution goals.`}
+                />
+                <meta property="og:image" content="https://www.gsochub.com/GSoC hub socialmedia.png" />
+
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta
+                    name="twitter:url"
+                    content={`https://www.gsochub.com/organization/`}
+                />
+                <meta name="twitter:title" content={`All GSoC organizations | GSoC Hub`} />
+                <meta
+                    name="twitter:description"
+                    content={`Explore all Google Summer of Code (GSoC) organizations and easily filter them by tech stack, active years, status (active or inactive), topics, and more to find the perfect fit for your open source contribution goals.`}
+                />
+                <meta name="twitter:image" content="https://www.gsochub.com/GSoC hub socialmedia.png" />
+            </Helmet>
+
+            <div className="all-orgs">
+                <FilterNav />
+                <div className="total-orgs-number">
+                    <p className="total-orgs-text">Found {orgsData.length} organizations.</p>
+                </div>
+
+                <div className="all-organizations-component" id="all-organizations-component">
+                    {
+                        getData(current, size).map((value, index) => {
+                            return <div className="organization-cards" key={index} >
+                                <OrganizationInfoCard {...value} />
+                            </div>
+                        })
+                    }
+                </div>
+
+                <div className="table-filter-info">
+                    <Pagination
+                        className="pagination-data"
+                        count={Math.ceil(orgsData.length / size)}
+                        page={current}
+                        siblingCount={3}
+                        boundaryCount={1}
+                        onChange={(event, value) => { setCurrent(value) }}
+                    />
+                </div>
+
+                <div className="up-arrow" onClick={scrollToTop}>
+                    <ExpandLessIcon />
+                </div>
             </div>
-        </div>
+        </>
     );
 }
 
