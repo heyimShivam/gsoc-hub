@@ -31,7 +31,7 @@ const OrganizationInfoCard = ({
     return (<Link className="a-info-card" to={`/organization/${encodeURIComponent(name)}/${encodeURIComponent(githubID)}`}>
         <div className="organization-info-card back-color">
             <div className="org-image-div">
-                <img src={image_url} style={{ backgroundColor: image_background_color }} className="organization-image" alt={name + " image"} />
+                <img src={image_url} style={{ backgroundColor: image_background_color }} className="organization-image" alt={name + " google summer of code"} />
                 {activeOrg ? <span className="acitve-org-display active-colors">Active</span> :
                     <span className="acitve-org-display inactive-colors">Inactive</span>}
             </div>

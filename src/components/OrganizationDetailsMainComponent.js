@@ -17,7 +17,7 @@ function OrganizationDetailsMainComponent({ details }) {
     return (<div className="org-detail-main-comp">
         <div className="first-half ">
             <div className="org-image-name-desc">
-                <img className="org-image-main" src={details.image_url} alt={details.name} style={{ backgroundColor: details.image_background_color }} />
+                <img className="org-image-main" src={details.image_url} alt={details.name + 'GSoC Hub'} style={{ backgroundColor: details.image_background_color }} />
                 <div className="org-name-desc">
                     <h1 className="org-heading-name">
                         {details.name}

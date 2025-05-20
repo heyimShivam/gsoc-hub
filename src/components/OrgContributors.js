@@ -19,7 +19,7 @@ function OrgContributors({ contributorsDeatils, githubID }) {
             })
         }
         <div className="contributor-info" onClick={() => goToUserAccount(`https://github.com/${githubID}`)}>
-            <img className="contributor-image" src="https://github.githubassets.com/favicons/favicon-dark.png" alt="" />
+            <img className="contributor-image" src="https://github.githubassets.com/favicons/favicon-dark.png" alt="github-logo" />
             <div className="contributor-github">+ View more</div>
         </div>
     </div>)
