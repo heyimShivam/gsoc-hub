@@ -25,6 +25,7 @@ const Searchbar = ({ toggleSidebar }) => {
 
         setTimeout(() => {
             organizationContext.filterOrgs(filterData);
+            organizationContext.updateCurrenPageInAllOrgsPagination(1);
         });
     }
 

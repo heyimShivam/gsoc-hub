@@ -20,7 +20,6 @@ const AllOrganizations = () => {
 
     const [perPage, setPerPage] = useState(25);
     const [size, setSize] = useState(perPage);
-    const [current, setCurrent] = useState(1);
 
     const getData = (current, pageSize) => {
         return orgsData.slice((current - 1) * pageSize, current * pageSize);
@@ -40,7 +39,6 @@ const AllOrganizations = () => {
 
     useEffect(() => {
         setOrgsData([...orgContext.filteredOrgsData]);
-        setCurrent(1);
 
         // eslint-disable-next-line react-hooks/exhaustive-deps
         widthofOrganizationComponent = document.getElementById("all-organizations-component");
@@ -107,7 +105,7 @@ const AllOrganizations = () => {
 
                 <div className="all-organizations-component" id="all-organizations-component">
                     {
-                        getData(current, size).map((value, index) => {
+                        getData(orgContext.currenPageInAllOrgsPagination, size).map((value, index) => {
                             return <div className="organization-cards" key={index} >
                                 <OrganizationInfoCard {...value} />
                             </div>
@@ -119,10 +117,10 @@ const AllOrganizations = () => {
                     <Pagination
                         className="pagination-data"
                         count={Math.ceil(orgsData.length / size)}
-                        page={current}
+                        page={orgContext.currenPageInAllOrgsPagination}
                         siblingCount={3}
                         boundaryCount={1}
-                        onChange={(event, value) => { setCurrent(value) }}
+                        onChange={(event, value) => { orgContext.updateCurrenPageInAllOrgsPagination(value) }}
                     />
                 </div>
 
