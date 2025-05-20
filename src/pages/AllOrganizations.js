@@ -97,6 +97,7 @@ const AllOrganizations = () => {
                 <meta name="twitter:image" content="https://www.gsochub.com/og-image.png" />
 
                 {/* advertisment */}
+                <meta name="google-adsense-account" content="ca-pub-8760620301329485"></meta>
                 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8760620301329485"
                     crossorigin="anonymous"></script>
             </Helmet>
