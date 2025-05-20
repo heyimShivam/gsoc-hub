@@ -95,6 +95,10 @@ const AllOrganizations = () => {
                     content={`Explore all Google Summer of Code (GSoC) organizations and easily filter them by tech stack, active years, status (active or inactive), topics, and more to find the perfect fit for your open source contribution goals.`}
                 />
                 <meta name="twitter:image" content="https://www.gsochub.com/og-image.png" />
+
+                {/* advertisment */}
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8760620301329485"
+                    crossorigin="anonymous"></script>
             </Helmet>
 
             <div className="all-orgs">

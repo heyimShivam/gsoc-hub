@@ -87,6 +87,10 @@ const OrganizationDetails = ({ orgName, githubIDpassed }) => {
                 href={`https://www.gsochub.com/organization/${encodeURIComponent(orgNameInComponent)}/${encodeURIComponent(githubInComponent)}`}
             />
 
+            {/* advertisment */}
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8760620301329485"
+                crossorigin="anonymous"></script>
+
             {/* Open Graph */}
             <meta property="og:type" content="website" />
             <meta
