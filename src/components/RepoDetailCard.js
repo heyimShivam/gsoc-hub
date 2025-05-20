@@ -14,9 +14,9 @@ const RepoDetailCard = ({
     }, []);
 
     return (<div className="repo-deatil-card" onClick={openInNewTab}>
-        <div className="repo-title">
+        <h3 className="repo-title">
             {deatils.name}
-        </div>
+        </h3>
         <div className="repo-desc">
             {deatils.description}
         </div>

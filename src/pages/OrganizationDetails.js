@@ -120,9 +120,9 @@ const OrganizationDetails = ({ orgName, githubIDpassed }) => {
                 {
                     pastCompletedPojects && pastCompletedPojects.length > 0 && pastProjectSelectedYear >= 0 ?
                         <div className="past-projects-component-main">
-                            <div className="title">
+                            <h1 className="title">
                                 Past projects accomplished under Google Summer of Code
-                            </div>
+                            </h1>
                             <div className="past-projects-component">
                                 {
                                     pastCompletedPojects[pastProjectSelectedYear].completedProjects.map((value, index) => {
@@ -145,9 +145,9 @@ const OrganizationDetails = ({ orgName, githubIDpassed }) => {
 
                 {orgReposDetail.length > 0 ?
                     <div className="organizations-all-repos">
-                        <div className="title">
+                        <h1 className="title">
                             Organization Repositories
-                        </div>
+                        </h1>
                         <div className="inner-organizations-all-repo">
                             <div className="organizations-repos">
                                 {

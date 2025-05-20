@@ -7,12 +7,12 @@ const PastProjectDetailCard = ({ projectDetails, projectNumber }) => {
 
     return (<div className="past-project-card" onClick={openInNewTab}>
         <div className="past-project-number">#{projectNumber}</div>
-        <div className="past-project-title">
+        <h3 className="past-project-title">
             {projectDetails.title}
-        </div>
-        <div className="past-project-short_description">
+        </h3>
+        <p className="past-project-short_description">
             {projectDetails.short_description}
-        </div>
+        </p>
         <div className="past-project-student_name">
             -{projectDetails.student_name}
         </div>

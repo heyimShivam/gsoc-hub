@@ -19,9 +19,9 @@ function OrganizationDetailsMainComponent({ details }) {
             <div className="org-image-name-desc">
                 <img className="org-image-main" src={details.image_url} alt={details.name} style={{ backgroundColor: details.image_background_color }} />
                 <div className="org-name-desc">
-                    <p className="org-heading-name">
+                    <h1 className="org-heading-name">
                         {details.name}
-                    </p>
+                    </h1>
                     <p className="org-heading-desc">{details.description}</p>
                     <div className="org-category">
                         <p className="org-category-item org-first-category">{details.category[0]}</p>
