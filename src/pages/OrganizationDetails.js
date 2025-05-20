@@ -9,13 +9,13 @@ import { useParams } from 'react-router-dom';
 import { Helmet } from "react-helmet";
 
 import "./OrganizationDetails.css";
-const OrganizationDetails = ({ orgName, githubIDpassed }) => {
+const OrganizationDetails = () => {
     const [orgReposDetail, setOrgReposDetail] = useState([]);
     const [orgDetails, setOrgDetails] = useState();
     const [pastProjectSelectedYear, setPastProjectSelectedYear] = useState(0);
     const [pastCompletedPojects, setPastCompletedPojects] = useState([{}]);
-    const [githubInComponent, setGithubInComponent] = useState(githubIDpassed);
-    const [orgNameInComponent, setOrgNameInComponent] = useState(orgName);
+    const [githubInComponent, setGithubInComponent] = useState();
+    const [orgNameInComponent, setOrgNameInComponent] = useState();
     const { urlOrgName, urlGithubID } = useParams();
 
     const scrollToTop = () => {
@@ -157,12 +157,12 @@ const OrganizationDetails = ({ orgName, githubIDpassed }) => {
                             <div className="organizations-repos">
                                 {
                                     orgReposDetail.slice(0, 9).map((value, index) => {
-                                        return <RepoDetailCard key={value.id} githubID={githubIDpassed} index={index} deatils={value} />
+                                        return <RepoDetailCard key={value.id} githubID={githubInComponent} index={index} deatils={value} />
                                     })
                                 }
                             </div>
                             {
-                                orgReposDetail.length > 9 ? <div className="more-organizations-repos"><span className="btn-more-repos" onClick={() => { goToOrgRepo(githubIDpassed) }}>+ More Repositories</span></div> : <></>
+                                orgReposDetail.length > 9 ? <div className="more-organizations-repos"><span className="btn-more-repos" onClick={() => { goToOrgRepo(githubInComponent) }}>+ More Repositories</span></div> : <></>
                             }
                         </div>
                     </div>
