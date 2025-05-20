@@ -15,7 +15,29 @@
     margin: 8px 12px;
     padding: 15px;
     height: 850px;
-    /* overflow-y: scroll; */
+    overflow: auto;
+    border-radius: 8px;
+    position: relative;
+}
+
+.content-component::-webkit-scrollbar {
+    width: 0px;
+}
+
+/* Track */
+.content-component::-webkit-scrollbar-track {
+    background: #333;
+}
+
+/* Handle */
+.content-component::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 3px;
+}
+
+/* Hover Handle */
+.content-component::-webkit-scrollbar-thumb:hover {
+    background: rgba(69, 85, 112, 0.85)
 }
 
 .Other-deatails {
@@ -88,4 +110,53 @@
     margin-bottom: 5px;
     margin-right: 5px;
     border-radius: 1px;
+}
+
+.compare-org-items {
+    padding: 15px 25px;
+    font-weight: 400;
+    border: 1px solid hsl(217.2 32.6% 17.5%);
+}
+
+.search-compare-org {
+    width: 100%;
+    padding: 15px 25px;
+    border: 1px solid hsl(217.2 32.6% 17.5%);
+}
+
+.content-component-action-btns {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.second-org-component-search-area {
+    position: relative;
+}
+
+.compare-org-name {
+    cursor: pointer;
+    text-decoration: none;
+    color: hsl(217 89% 61%);
+}
+
+.comparison-factor-btn {
+    margin-top: 30px;
+}
+
+.compare-org-name-goto-btn {
+    padding: 10px 40px;
+    text-decoration: none;
+    cursor: pointer;
+    /* background-color: hsl(217 89% 61%); */
+    border: 1px solid hsl(217.2 32.6% 17.5%);
+    color: white;
+    border-radius: 7px;
+    font-weight: 500;
+}
+
+.compare-org-name-goto-btn:hover {
+    background-color: hsl(217 89% 64%);
+    color: white;
+    transition: ease-in-out 0.6s;
 }
