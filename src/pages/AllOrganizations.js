@@ -6,10 +6,16 @@ import "./AllOrganizations.css";
 import FilterNav from "../components/filterNav";
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import { Helmet } from "react-helmet";
+import { useLocation, useSearchParams } from "react-router-dom";
 
 const AllOrganizations = () => {
+    const location = useLocation();
+    const [searchParams, setSearchParams] = useSearchParams();
+    const [canonicalUrl, setCanonicalUrl] = useState(`https://www.gsochub.com${location.pathname}`);
     const orgContext = useContext(OrganizationContext);
     const [orgsData, setOrgsData] = useState([...orgContext.filteredOrgsData]);
+    const [currentPage, setCurrentPage] = useState(1);
+
     const scrollToTop = () => {
         document.documentElement.scrollTo({
             top: 0,
@@ -18,37 +24,49 @@ const AllOrganizations = () => {
         });
     }
 
-    const [perPage, setPerPage] = useState(25);
+    const [perPage, setPerPage] = useState(24);
     const [size, setSize] = useState(perPage);
 
     const getData = (current, pageSize) => {
         return orgsData.slice((current - 1) * pageSize, current * pageSize);
     };
 
-    let widthofOrganizationComponent;
-
-    const handleResize = () => {
-        const cardWidth = document.getElementsByClassName("organization-cards")[0]?.clientWidth || 1;
-        const componentWidth = widthofOrganizationComponent?.clientWidth;
-
-        // This code help us to create only three completely filled rows in the pagination.
-        let sub = (3 * Math.floor(componentWidth / cardWidth));
-        setPerPage(sub);
-        setSize(perPage);
-    };
+    const updatePage = (value) => {
+        if (value === 1) {
+            setSearchParams();
+            setCurrentPage(1);
+        } else {
+            setSearchParams({ page: value });
+        }
+        scrollToTop();
+    }
 
     useEffect(() => {
         setOrgsData([...orgContext.filteredOrgsData]);
-
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-        widthofOrganizationComponent = document.getElementById("all-organizations-component");
-        handleResize();
-        widthofOrganizationComponent.addEventListener('resize', handleResize);
-
-        return () => {
-            widthofOrganizationComponent.removeEventListener('resize', handleResize);
-        };
     }, [orgContext.filteredOrgsData]);
+
+    useEffect(() => {
+        const params = new URLSearchParams(location.search);
+        const page = parseInt(params.get("page"), 10);
+        const totalPages = Math.ceil(orgsData.length / size);
+
+        const isValidPage = !isNaN(page) && page >= 1 && page <= totalPages;
+
+        const canonical = (!isValidPage || page === 1)
+            ? `https://www.gsochub.com${location.pathname}`
+            : `https://www.gsochub.com${location.pathname}?page=${page}`;
+        setCanonicalUrl(canonical);
+
+        if (!isValidPage || page === 1) {
+            setSearchParams();
+        }
+
+        if (isValidPage && !isNaN(page)) {
+            setCurrentPage(page);
+        } else {
+            setCurrentPage(1);
+        }
+    }, [location.pathname, location.search, orgsData.length, size]);
 
     return (
         <>
@@ -69,13 +87,26 @@ const AllOrganizations = () => {
 
                 <link
                     rel="canonical"
-                    href={`https://www.gsochub.com/organization/`}
+                    href={canonicalUrl}
                 />
+
+                {currentPage > 1 && (
+                    <link
+                        rel="prev"
+                        href={`https://www.gsochub.com${location.pathname}?page=${currentPage - 1}`}
+                    />
+                )}
+                {currentPage < Math.ceil(orgsData.length / size) && (
+                    <link
+                        rel="next"
+                        href={`https://www.gsochub.com${location.pathname}?page=${currentPage + 1}`}
+                    />
+                )}
 
                 <meta property="og:type" content="website" />
                 <meta
                     property="og:url"
-                    content={`https://www.gsochub.com/organization/`}
+                    content={`https://www.gsochub.com/organization`}
                 />
                 <meta property="og:title" content={`All GSoC organization | GSoC Hub`} />
                 <meta
@@ -87,7 +118,7 @@ const AllOrganizations = () => {
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta
                     name="twitter:url"
-                    content={`https://www.gsochub.com/organization/`}
+                    content={`https://www.gsochub.com/organization`}
                 />
                 <meta name="twitter:title" content={`All GSoC organization | GSoC Hub`} />
                 <meta
@@ -110,7 +141,7 @@ const AllOrganizations = () => {
 
                 <div className="all-organizations-component" id="all-organizations-component">
                     {
-                        getData(orgContext.currenPageInAllOrgsPagination, size).map((value, index) => {
+                        getData(currentPage, size).map((value, index) => {
                             return <div className="organization-cards" key={index} >
                                 <OrganizationInfoCard {...value} />
                             </div>
@@ -122,10 +153,10 @@ const AllOrganizations = () => {
                     <Pagination
                         className="pagination-data"
                         count={Math.ceil(orgsData.length / size)}
-                        page={orgContext.currenPageInAllOrgsPagination}
+                        page={currentPage}
                         siblingCount={3}
                         boundaryCount={1}
-                        onChange={(event, value) => { orgContext.updateCurrenPageInAllOrgsPagination(value) }}
+                        onChange={(event, value) => { updatePage(value) }}
                     />
                 </div>
 

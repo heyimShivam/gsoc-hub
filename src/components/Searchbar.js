@@ -17,15 +17,11 @@ const Searchbar = ({ toggleSidebar }) => {
     const debouncedOrgNameLastCall = useRef("");
 
     const filterOrgCall = (value) => {
-
-        if (location?.pathname !== '/organization')
-            navigate("/organization");
-
         const filterData = filterByOrgName(value.toLowerCase());
 
         setTimeout(() => {
             organizationContext.filterOrgs(filterData);
-            organizationContext.updateCurrenPageInAllOrgsPagination(1);
+            navigate("/organization");
         });
     }
 

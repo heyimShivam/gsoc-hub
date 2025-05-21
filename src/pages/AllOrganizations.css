@@ -5,14 +5,39 @@
 }
 
 .all-organizations-component {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
     box-sizing: border-box;
-    margin-top: 5px;
+    width: 100%;
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 25px;
 }
+
+@media (max-width: 2200px) {
+    .all-organizations-component {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+@media (max-width: 1800px) {
+    .all-organizations-component {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 1190px) {
+    .all-organizations-component {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 650px) {
+    .all-organizations-component {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+}
+
 
 .organization-cards {
     margin-top: 10px;

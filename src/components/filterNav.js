@@ -26,6 +26,11 @@ const FilterNav = ({ mobileNav }) => {
     const navigate = useNavigate();
     const location = useLocation();
     const [screenSizeSmall, setScreenSizeSmall] = useState(true);
+
+    const navigateToOrganizationFirstPage = () => {
+        navigate("/organization");
+    }
+
     const updateSearch = (value) => {
         setOrgName(value.toLowerCase());
 
@@ -33,9 +38,9 @@ const FilterNav = ({ mobileNav }) => {
 
         organizationContext.filterOrgs(filterData);
 
-        if (location?.pathname !== '/organization')
-            navigate("/organization");
+        navigateToOrganizationFirstPage();
     }
+
     const lastYear = orgContext.totalGsocYears[orgContext.totalGsocYears.length - 1];
     const handleResize = () => {
         if (window.innerWidth < 1215) {
@@ -99,6 +104,7 @@ const FilterNav = ({ mobileNav }) => {
         }
 
         orgContext.updateFilterData("selectedGsocYears", currData);
+        navigateToOrganizationFirstPage();
     }
 
     function selectStatus(value) {
@@ -118,6 +124,7 @@ const FilterNav = ({ mobileNav }) => {
         }
 
         orgContext.updateFilterData("selectedStatus", currData);
+        navigateToOrganizationFirstPage();
     }
 
     function selectTechnologies(value) {
@@ -137,6 +144,7 @@ const FilterNav = ({ mobileNav }) => {
         }
 
         orgContext.updateFilterData("selectedTotalTechnologies", currData);
+        navigateToOrganizationFirstPage();
     }
 
     function selectCategories(value) {
@@ -156,6 +164,7 @@ const FilterNav = ({ mobileNav }) => {
         }
 
         orgContext.updateFilterData("selectedTotalcategories", currData);
+        navigateToOrganizationFirstPage();
     }
 
     function selectTopics(value) {
@@ -175,6 +184,7 @@ const FilterNav = ({ mobileNav }) => {
         }
 
         orgContext.updateFilterData("selectedTotalTopics", currData);
+        navigateToOrganizationFirstPage();
     }
 
     function showMorefilters(filterType) {
