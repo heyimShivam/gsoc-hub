@@ -6,15 +6,16 @@ import "./AllOrganizations.css";
 import FilterNav from "../components/filterNav";
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import { Helmet } from "react-helmet";
-import { useLocation, useSearchParams } from "react-router-dom";
+import { useLocation, useSearchParams, useNavigate } from "react-router-dom";
 
 const AllOrganizations = () => {
     const location = useLocation();
     const [searchParams, setSearchParams] = useSearchParams();
-    const [canonicalUrl, setCanonicalUrl] = useState(`https://www.gsochub.com${location.pathname}`);
+    const [canonicalUrl, setCanonicalUrl] = useState('https://www.gsochub.com/organization');
     const orgContext = useContext(OrganizationContext);
     const [orgsData, setOrgsData] = useState([...orgContext.filteredOrgsData]);
     const [currentPage, setCurrentPage] = useState(1);
+    const navigate = useNavigate();
 
     const scrollToTop = () => {
         document.documentElement.scrollTo({
@@ -58,7 +59,8 @@ const AllOrganizations = () => {
         setCanonicalUrl(canonical);
 
         if (!isValidPage || page === 1) {
-            setSearchParams();
+            // this will replace the old entry with new entry so that user does not need to press back button twice.
+            navigate(location.pathname, { replace: true });
         }
 
         if (isValidPage && !isNaN(page)) {

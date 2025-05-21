@@ -5,13 +5,14 @@ const HomePageAnimationBG = () => {
     const viewAllorganization = () => {
         navigate("/organization");
     }
+
     return (<>
         <div className="text-container">
             <h1 className="org-title">GSoC Hub</h1>
             <h2 className="home-description">
                 GSoC Hub helps you find the right Google Summer of Code organization. Browse past organizations and use smart filters to find those that match your interests, so you can confidently choose the best organizations.
             </h2>
-            <div className="explore-btn" onClick={viewAllorganization}>Explore</div>
+            <div className="explore-btn" onClick={() => { viewAllorganization() }}>Explore</div>
         </div>
         <div className="gradient-bg">
             <svg>
