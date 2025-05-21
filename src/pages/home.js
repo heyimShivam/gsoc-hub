@@ -20,7 +20,7 @@ const Home = () => {
             />
             <meta
                 name="keywords"
-                content="Google Summer of Code, GSoC, GSoC organizations, GSoC filtering tool, open source internships, technology stack, program year, open source organizations, gsoc hub, gsoc org explorer, gsoc categories, gsoc topics, gsoc 2025 org, gsoc 2026 orgs, gsoc 2027 orgs"
+                content="gsoc organizations, Google Summer of Code, gsoc, gsoc filtering tool, gsoc hub, filter gsoc orgs, gsoc org explorer, gsoc categories, gsoc topics, gsoc 2025 org, gsoc 2026 orgs, gsoc 2027 orgs"
             />
             <meta name="robots" content="index, follow" />
             <link rel="canonical" href="https://www.gsochub.com/" />

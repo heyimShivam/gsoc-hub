@@ -82,7 +82,7 @@ const AllOrganizations = () => {
                 />
                 <meta
                     name="keywords"
-                    content={`Google Summer of Code, GSoC,  GSoc all organizations, gsoc organizations in year , gsoc hub, gsoc org explorer`}
+                    content={`Google Summer of Code organizations, GSoC organizations,  GSoc all organizations, gsoc organizations in year , gsoc hub, gsoc org explorer, filter gsoc organizations`}
                 />
 
                 <meta name="robots" content="index, follow" />

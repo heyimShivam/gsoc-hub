@@ -77,7 +77,7 @@ const OrganizationDetails = () => {
 
             <meta
                 name="keywords"
-                content={`Google Summer of Code, GSoC,  GSoc ${orgNameInComponent}, ${orgNameInComponent}, GSoC organizations, gsoc hub, gsoc org explorer, gsoc projects, gsoc repositories`}
+                content={`Google Summer of Code ${orgNameInComponent}, gsoc ${orgNameInComponent}, ${orgNameInComponent} in gsoc, gsoc hub, ${orgNameInComponent} gsoc org, ${orgNameInComponent} gsoc projects, ${orgNameInComponent} gsoc repositories`}
             />
 
             <meta name="robots" content="index, follow" />
