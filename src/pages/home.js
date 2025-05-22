@@ -71,13 +71,14 @@ const Home = () => {
             <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8760620301329485"
                 crossorigin="anonymous"></script>
             {/* JSON-LD Structured Data */}
-            <script type="application/ld+json">
+            <script type="application/ld+json" key="structured-data">
                 {`
         {
           "@context": "https://schema.org",
           "@type": "WebSite",
           "url": "https://www.gsochub.com/",
           "name": "GSoC Hub",
+          "alternateName": "Google Summer of Code Organizations Hub",
           "description": "Effortlessly discover and filter Google Summer of Code organizations by tech stack, program year, topics, categories, and more. GSoC Hub is the ultimate filtering tool to simplify your search for the perfect open source organization.",
           "potentialAction": {
             "@type": "SearchAction",
