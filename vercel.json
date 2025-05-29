@@ -16,20 +16,7 @@
             "has": [
                 {
                     "type": "host",
-                    "value": "www.gsochub.com",
-                    "protocol": "http"
-                }
-            ],
-            "destination": "https://www.gsochub.com/:path*",
-            "permanent": true
-        },
-        {
-            "source": "/:path*",
-            "has": [
-                {
-                    "type": "host",
-                    "value": "gsochub.com",
-                    "protocol": "http"
+                    "value": "www.gsochub.com"
                 }
             ],
             "destination": "https://www.gsochub.com/:path*",
