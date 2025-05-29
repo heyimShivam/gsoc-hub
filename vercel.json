@@ -1,19 +1,39 @@
 {
-  "redirects": [
-    {
-      "source": "http://gsochub.com/:path*",
-      "destination": "https://www.gsochub.com/:path*",
-      "permanent": true
-    },
-    {
-      "source": "https://gsochub.com/:path*",
-      "destination": "https://www.gsochub.com/:path*",
-      "permanent": true
-    },
-    {
-      "source": "http://www.gsochub.com/:path*",
-      "destination": "https://www.gsochub.com/:path*",
-      "permanent": true
-    }
-  ]
+    "redirects": [
+        {
+            "source": "/:path*",
+            "has": [
+                {
+                    "type": "host",
+                    "value": "gsochub.com"
+                }
+            ],
+            "destination": "https://www.gsochub.com/:path*",
+            "permanent": true
+        },
+        {
+            "source": "/:path*",
+            "has": [
+                {
+                    "type": "host",
+                    "value": "www.gsochub.com",
+                    "protocol": "http"
+                }
+            ],
+            "destination": "https://www.gsochub.com/:path*",
+            "permanent": true
+        },
+        {
+            "source": "/:path*",
+            "has": [
+                {
+                    "type": "host",
+                    "value": "gsochub.com",
+                    "protocol": "http"
+                }
+            ],
+            "destination": "https://www.gsochub.com/:path*",
+            "permanent": true
+        }
+    ]
 }
