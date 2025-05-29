@@ -5,13 +5,12 @@ import RepoDetailCard from "../components/RepoDetailCard";
 import OrganizationDetailsShimmer from '../components/OrganizationDeatilsShimmer';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import Footer from "../components/Footer";
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { Helmet } from "react-helmet";
 
 import "./OrganizationDetails.css";
 const OrganizationDetails = () => {
     const [orgReposDetail, setOrgReposDetail] = useState([]);
-    const navigate = useNavigate();
     const [orgDetails, setOrgDetails] = useState();
     const [pastProjectSelectedYear, setPastProjectSelectedYear] = useState(0);
     const [pastCompletedPojects, setPastCompletedPojects] = useState([{}]);
@@ -37,7 +36,6 @@ const OrganizationDetails = () => {
             data = await import(`../data/OrganizationsDetails(GSoC)/${cleanString(orgNameInComponent, githubInComponent)}.json`);
         } catch (error) {
             console.error("Page Not Found select vaild URL!");
-            navigate("/organization");
             return;
         }
 
