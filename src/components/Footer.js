@@ -6,18 +6,18 @@ const Footer = () => {
         <footer className="footer">
             <div className="footer__about">
                 <img src="/gsochub.png" alt='gsoc orgs gsoc-hub-log' className='gsoc-hub-logo'></img>
-                <p>If you find an issue on the site, you can report it <a href="https://github.com/heyimShivam/gsoc-hub/issues" target="__blank">here</a>.</p>
+                <p>If you find an issue on the site, you can report it <a href="https://github.com/heyimShivam/gsoc-hub/issues" alt="gsochub-issues-link" target="__blank">here</a>.</p>
                 <p>Click on “<span className='new-issue'>New issue</span>”, then provide a clear description along with relevant screenshots.</p>
-                <p>Visit the official Google Summer of Code website by clicking <a href="https://summerofcode.withgoogle.com/" target="__blank">here</a>.</p>
+                <p>Visit the official Google Summer of Code website by clicking <a href="https://summerofcode.withgoogle.com/" alt="google-summer-of-code-link" target="__blank">here</a>.</p>
             </div>
             <div className="footer__network">
-                <a href="https://linkedin.com/in/heyimshivam" target="_blank" rel="noopener noreferrer">
+                <a href="https://linkedin.com/in/heyimshivam" alt="heyimshivam-linkedin-link" target="_blank" rel="noopener noreferrer">
                     <i className="fa fa-linkedin"></i>
                 </a>
-                <a href="https://www.instagram.com/hey.imshivam/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/hey.imshivam/" alt="heyimshivam-instagram-link" target="_blank" rel="noopener noreferrer">
                     <i className="fa fa-instagram"></i>
                 </a>
-                <a href="https://github.com/heyimshivam" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/heyimshivam" alt="heyimshivam-github-link" target="_blank" rel="noopener noreferrer">
                     <i className="fa fa-github"></i>
                 </a>
             </div>
@@ -26,7 +26,7 @@ const Footer = () => {
                 Made with <span className="love-emoji">
                     <FavoriteIcon sx={{ fontSize: 12 }} /> </span>
                 by
-                <a className="heyimshivam" href="https://github.com/heyimshivam/" target="__blank">
+                <a className="heyimshivam" alt="heyimshivam-github-link" href="https://github.com/heyimshivam/" target="__blank">
                     Shivam Chaudhary
                 </a>
             </span>
