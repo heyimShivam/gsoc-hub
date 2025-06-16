@@ -97,32 +97,6 @@ const OrganizationDetails = () => {
             <meta name="google-adsense-account" content="ca-pub-8760620301329485"></meta>
             <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8760620301329485"
                 crossorigin="anonymous"></script>
-
-            {/* Open Graph */}
-            <meta property="og:type" content="website" />
-            <meta
-                property="og:url"
-                content={`https://www.gsochub.com/organization/${encodeURIComponent(orgNameInComponent)}/${encodeURIComponent(githubInComponent)}`}
-            />
-            <meta property="og:title" content={`${orgNameInComponent} – GSoC Organization | GSoC Hub`} />
-            <meta
-                property="og:description"
-                content={`Explore ${orgNameInComponent}, a Google Summer of Code organization. Discover past completed projects, repositories, tech stacks, and more.`}
-            />
-            <meta property="og:image" content="https://www.gsochub.com/og-image.png" />
-
-            {/* Twitter */}
-            <meta name="twitter:card" content="summary_large_image" />
-            <meta
-                name="twitter:url"
-                content={`https://www.gsochub.com/organization/${encodeURIComponent(orgNameInComponent)}/${encodeURIComponent(githubInComponent)}`}
-            />
-            <meta name="twitter:title" content={`${orgNameInComponent} – GSoC Organization | GSoC Hub`} />
-            <meta
-                name="twitter:description"
-                content={`Explore ${orgNameInComponent}, a Google Summer of Code organization. Discover past completed projects, repositories, tech stacks, and more.`}
-            />
-            <meta name="twitter:image" content="https://www.gsochub.com/og-image.png" />
         </Helmet>
 
         {orgDetails ?

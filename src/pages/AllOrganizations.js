@@ -73,9 +73,8 @@ const AllOrganizations = () => {
     return (
         <>
             <Helmet>
-                <title>{`All GSoC organization | GSoC Hub`}</title>
+                <title>All GSoC organization | GSoC Hub</title>
                 <meta name="title" content={`All GSoC Organization | GSoC Hub`} />
-
                 <meta
                     name="description"
                     content={`Explore all Google Summer of Code (GSoC) organizations and easily filter them by tech stack, active years, status (active or inactive), topics, and more to find the perfect fit for your open source contribution goals.`}
@@ -104,30 +103,6 @@ const AllOrganizations = () => {
                         href={`https://www.gsochub.com${location.pathname}?page=${currentPage + 1}`}
                     />
                 )}
-
-                <meta property="og:type" content="website" />
-                <meta
-                    property="og:url"
-                    content={`https://www.gsochub.com/organization`}
-                />
-                <meta property="og:title" content={`All GSoC organization | GSoC Hub`} />
-                <meta
-                    property="og:description"
-                    content={`Explore all Google Summer of Code (GSoC) organizations and easily filter them by tech stack, active years, status (active or inactive), topics, and more to find the perfect fit for your open source contribution goals.`}
-                />
-                <meta property="og:image" content="https://www.gsochub.com/og-image.png" />
-
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta
-                    name="twitter:url"
-                    content={`https://www.gsochub.com/organization`}
-                />
-                <meta name="twitter:title" content={`All GSoC organization | GSoC Hub`} />
-                <meta
-                    name="twitter:description"
-                    content={`Explore all Google Summer of Code (GSoC) organizations and easily filter them by tech stack, active years, status (active or inactive), topics, and more to find the perfect fit for your open source contribution goals.`}
-                />
-                <meta name="twitter:image" content="https://www.gsochub.com/og-image.png" />
 
                 {/* advertisment */}
                 <meta name="google-adsense-account" content="ca-pub-8760620301329485"></meta>
