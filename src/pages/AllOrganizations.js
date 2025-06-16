@@ -53,12 +53,12 @@ const AllOrganizations = () => {
 
         const isValidPage = !isNaN(page) && page >= 1 && page <= totalPages;
 
-        const canonical = (!isValidPage || page === 1)
+        const canonical = (page === 1 || !isValidPage)
             ? `https://www.gsochub.com${location.pathname}`
             : `https://www.gsochub.com${location.pathname}?page=${page}`;
         setCanonicalUrl(canonical);
 
-        if (!isValidPage || page === 1) {
+        if (page === 1 || !isValidPage) {
             // this will replace the old entry with new entry so that user does not need to press back button twice.
             navigate(location.pathname, { replace: true });
         }
