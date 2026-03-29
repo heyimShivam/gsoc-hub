@@ -29,7 +29,7 @@
   "contact_email": "mailto:ns-developers@isi.edu",
   "mailing_list": "https://groups.google.com/g/ns-developers",
   "twitter_url": null,
-  "blog_url": null,
+  "blog_url": "https://ns-3.zulipchat.com",
   "facebook_url": null,
   "year": [
     2017,
@@ -40,7 +40,8 @@
     2022,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2017": [
@@ -297,7 +298,45 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/vPuZgTe1"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "6LoWPAN Neighbor Discovery Protocol",
+        "short_description": "The 6LoWPAN-ND (RFCs 4944, 6775, and 8505) is a replacement for IPv6 DAD and NDP for 6LoWPAN networks, and it is important to ensure address...",
+        "description": "The 6LoWPAN-ND (RFCs 4944, 6775, and 8505) is a replacement for IPv6 DAD and NDP for 6LoWPAN networks, and it is important to ensure address uniqueness across a network that can potentially use different MAC/PHY layers.\nThere is a model for 6LoWPAN-ND, but it is still not merged in the main ns-3 branch. The goal is to clean up the implementation, remove an actual limitation due to a questionable assumption, and to add the support for multi-hop operations (EDAR and EDAC messages).",
+        "student_name": "Boh Jie Qi",
+        "code_url": "https://jieqiboh.me/blog/gsoc2025-6lowpan-nd/",
+        "proposal_id": "GwNPtExR",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/DCsjRKRt"
+      },
+      {
+        "title": "Upgrade the AQM Evaluation Suite for ns-3",
+        "short_description": "The AQM Evaluation Suite is an automated framework based on RFC 7928 that simplifies simulation setup, topology creation, traffic generation,...",
+        "description": "The AQM Evaluation Suite is an automated framework based on RFC 7928 that simplifies simulation setup, topology creation, traffic generation, execution, and results visualization of AQM algorithms in ns-3. Originally developed in 2017 and maintained until 2019, the suite now needs an upgrade to:\n    - Migrate its build system from waf to CMake\n    - Integrate support for state-of-the-art AQM algorithms and enhanced ECN functionalities\n    - Update simulation examples to reflect modern traffic control models and data center load balancing scenarios\n    - Package and publish the suite on the ns-3 App Store",
+        "student_name": "David Lin",
+        "code_url": "https://gitlab.com/nitk-surathkal/aqm-evaluation-suite",
+        "proposal_id": "36B3x0Ra",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/d7sZPqy6"
+      },
+      {
+        "title": "IPv6 Global Routing",
+        "short_description": "The aim of this project is to extend the functionality of GlobalRouting to Ipv6, while maintaining minimal code duplication. Global Routing is based...",
+        "description": "The aim of this project is to extend the functionality of GlobalRouting to Ipv6, while maintaining minimal code duplication.\n\nGlobal Routing is based on the OSPFv2 routing protocol and\nuses the Djikstra Shortest path algorithm to compute paths for a single area network\nconfiguration. The problem is that GlobalRouting doesn't work for IPv6, and that's a huge limitation. The goal of the project is to fix that limitation\n\nThe general Idea is to convert the Ipv4 Classes to Generic Template Classes and Handle Ipv6 based Implementation differences using a combination of Type Traits and Compile time if statements.\n\nDeliverables include a working implementation of Ipv6GlobalRouting which handles different Address Types in Ipv6, while also maintaining Minimal Code Duplication.",
+        "student_name": "Shashwat Patni",
+        "code_url": "https://shashwat-patni.github.io/Shashwat-patni.Ipv6GlobalRouting.github.io/",
+        "proposal_id": "coXzNk2y",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/wdNG4pyV"
+      },
+      {
+        "title": "NTN Helper and a LEO example for 5G NR",
+        "short_description": "Creation of Mobility and Orbit models for LEO Satellites along with a NTN Helper for GEO and LEO Satellites, and an example using the helper...",
+        "description": "Creation of Mobility and Orbit models for LEO Satellites along with a NTN Helper for GEO and LEO Satellites, and an example using the helper integrating LEO Satellites with 5G NR.",
+        "student_name": "Thiago Miyazaki",
+        "code_url": "https://www.nsnam.org/wiki/GSOC2025Ntn",
+        "proposal_id": "c229W0Wu",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/Z1PZUHaC"
+      }
+    ],
+    "2026": []
   },
   "githubID": "nsnam",
   "repositories": [
@@ -309,15 +348,15 @@
       "html_url": "https://github.com/nsnam/ns-3-dev-git",
       "description": "GitHub read-only mirror of ns-3-dev repository, will be kept in sync with main GitLab.com repository.  Please DO NOT file pull requests here; instead, file issues and merge requests at https://gitlab.com/nsnam/ns-3-dev/",
       "language": "C++",
-      "stargazers_count": 465,
-      "forks_count": 594,
+      "stargazers_count": 531,
+      "forks_count": 648,
       "open_issues_count": 0,
       "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
       },
       "topics": []
     },
@@ -351,7 +390,7 @@
       "node_id": "MDQ6VXNlcjk5ODEwOTg=",
       "avatar_url": "https://avatars.githubusercontent.com/u/9981098?v=4",
       "html_url": "https://github.com/sderonne",
-      "contributions": 1720
+      "contributions": 1819
     },
     {
       "login": "stavallo",
@@ -359,7 +398,7 @@
       "node_id": "MDQ6VXNlcjE1MjE1NDAy",
       "avatar_url": "https://avatars.githubusercontent.com/u/15215402?v=4",
       "html_url": "https://github.com/stavallo",
-      "contributions": 1290
+      "contributions": 1292
     },
     {
       "login": "TommyPec",
@@ -367,7 +406,7 @@
       "node_id": "MDQ6VXNlcjE2OTAyNg==",
       "avatar_url": "https://avatars.githubusercontent.com/u/169026?v=4",
       "html_url": "https://github.com/TommyPec",
-      "contributions": 1003
+      "contributions": 1046
     },
     {
       "login": "Gabrielcarvfer",
@@ -375,7 +414,7 @@
       "node_id": "MDQ6VXNlcjE2Nzg0NTQ=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1678454?v=4",
       "html_url": "https://github.com/Gabrielcarvfer",
-      "contributions": 648
+      "contributions": 784
     },
     {
       "login": "edalm",
@@ -383,7 +422,15 @@
       "node_id": "MDQ6VXNlcjc0Mzg3OTI=",
       "avatar_url": "https://avatars.githubusercontent.com/u/7438792?v=4",
       "html_url": "https://github.com/edalm",
-      "contributions": 585
+      "contributions": 653
+    },
+    {
+      "login": "stavallo-create",
+      "id": 271815605,
+      "node_id": "U_kgDOEDOTtQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/271815605?v=4",
+      "html_url": "https://github.com/stavallo-create",
+      "contributions": 378
     },
     {
       "login": "natale-p",
@@ -418,20 +465,20 @@
       "contributions": 125
     },
     {
+      "login": "a-andre",
+      "id": 13609565,
+      "node_id": "MDQ6VXNlcjEzNjA5NTY1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13609565?v=4",
+      "html_url": "https://github.com/a-andre",
+      "contributions": 109
+    },
+    {
       "login": "vedranmiletic",
       "id": 246061,
       "node_id": "MDQ6VXNlcjI0NjA2MQ==",
       "avatar_url": "https://avatars.githubusercontent.com/u/246061?v=4",
       "html_url": "https://github.com/vedranmiletic",
       "contributions": 98
-    },
-    {
-      "login": "a-andre",
-      "id": 13609565,
-      "node_id": "MDQ6VXNlcjEzNjA5NTY1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/13609565?v=4",
-      "html_url": "https://github.com/a-andre",
-      "contributions": 97
     },
     {
       "login": "mkbanchi",
@@ -498,6 +545,14 @@
       "contributions": 29
     },
     {
+      "login": "virsda00",
+      "id": 18130546,
+      "node_id": "MDQ6VXNlcjE4MTMwNTQ2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/18130546?v=4",
+      "html_url": "https://github.com/virsda00",
+      "contributions": 28
+    },
+    {
       "login": "bpswenson",
       "id": 1171270,
       "node_id": "MDQ6VXNlcjExNzEyNzA=",
@@ -546,11 +601,11 @@
       "contributions": 21
     },
     {
-      "login": "linlinjava",
-      "id": 4223779,
-      "node_id": "MDQ6VXNlcjQyMjM3Nzk=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/4223779?v=4",
-      "html_url": "https://github.com/linlinjava",
+      "login": "GallegosAlberto",
+      "id": 249870338,
+      "node_id": "U_kgDODuS4Ag",
+      "avatar_url": "https://avatars.githubusercontent.com/u/249870338?v=4",
+      "html_url": "https://github.com/GallegosAlberto",
       "contributions": 18
     },
     {
@@ -560,22 +615,6 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/43842218?v=4",
       "html_url": "https://github.com/bhaskar792",
       "contributions": 18
-    },
-    {
-      "login": "pagmatt",
-      "id": 6022882,
-      "node_id": "MDQ6VXNlcjYwMjI4ODI=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/6022882?v=4",
-      "html_url": "https://github.com/pagmatt",
-      "contributions": 17
-    },
-    {
-      "login": "AlessioBugetti",
-      "id": 38499721,
-      "node_id": "MDQ6VXNlcjM4NDk5NzIx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/38499721?v=4",
-      "html_url": "https://github.com/AlessioBugetti",
-      "contributions": 16
     },
     {
       "login": "mathieu-lacage",

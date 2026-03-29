@@ -65,21 +65,76 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/oBSgCjM7"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Efficient Cloud-Based Data Streaming for ML: Implementing Ice Chunk + Zarr 3 for PVNet Training",
+        "short_description": "This proposal describes a thorough implementation strategy for streamlining Zarr data straight from cloud storage using Ice Chunk and Zarr 3...",
+        "description": "This proposal describes a thorough implementation strategy for streamlining Zarr data straight from cloud storage using Ice Chunk and Zarr 3 technologies, thereby optimizing machine learning training workflows. The project's main goal is to incorporate these technologies into PVNet's training pipeline for processing NWP and satellite data. Creating a strong data access layer, intelligent prefetching techniques, flexible caching plans, and a smooth integration with PyTorch's data loading pipeline are all part of the implementation. A thorough benchmarking framework is also included in the project to gauge cost effectiveness and performance gains. \n\nFour stages make up the 175-hour schedule: preliminary setup and research, core cloud access mechanism implementation, performance benchmarking and optimization, and thorough documentation. The implementation of a cloud-aware PyTorch dataset, an adaptive prefetcher, and optimized chunk configuration based on access patterns are important technical advancements. By removing the requirement to locally download sizable datasets prior to training, the project seeks to revolutionize OpenClimatefix's use of cloud resources for machine learning training.",
+        "student_name": "Dakshbir",
+        "code_url": "https://gist.github.com/Dakshbir/4acb5f5d739ef8f92f062b44882b2e1a",
+        "proposal_id": "qi2sQGbf",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/Q8cKVlvw"
+      },
+      {
+        "title": "Adjuster This! TabPFN for Solar Forecast Error Adjustment",
+        "short_description": "Open Climate Fix’s Quartz Solar forecasting model uses a simple rule-based \"adjuster\" that averages recent forecast errors to correct incoming solar...",
+        "description": "Open Climate Fix’s Quartz Solar forecasting model uses a simple rule-based \"adjuster\" that averages recent forecast errors to correct incoming solar forecasts. While effective in stable conditions, this method is rigid and might be suboptimal under rapid weather transitions or atypical error patterns. This project aims to compare this rule-based logic with TabPFN, a transformer model for tabular data. It seeks to evaluate whether TabPFN or its time-series variant, TabPFN-TS, can predict adjustments based on features such as time, forecast horizon, recent errors, and more. Through experiments, one key goal is also to determine whether TabPFN improves forecast skill—specifically the P50 quantile forecast—over the current approach, and whether it is efficient enough for deployment.",
+        "student_name": "Gupta, Anshul",
+        "code_url": "https://gist.github.com/anshulg954/5f4423ee6b3d3151fa8d0d7fcd98d3eb",
+        "proposal_id": "4vR3Ne1K",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/T6DDfINT"
+      },
+      {
+        "title": "Open Data PVNet",
+        "short_description": "Open Data PVNet aims to democratize solar energy forecasting by extending the PVNet framework to work entirely with publicly available weather...",
+        "description": "Open Data PVNet aims to democratize solar energy forecasting by extending the PVNet framework to work entirely with publicly available weather datasets like GFS, DWD ICON, and ERA5. Current solar forecasting models often rely on proprietary data, creating barriers for researchers and developers in low-resource settings. This project will build a training pipeline based on open NWP data, enhance data preprocessing tools, and benchmark PVNet’s performance using these sources. Key deliverables include zarr-formatted datasets, an open-source training pipeline, performance evaluation scripts, and comprehensive documentation. The end goal is to make high-quality solar forecasting more accessible, scalable, and globally impactful.",
+        "student_name": "Siddharth899",
+        "code_url": "https://gist.github.com/siddharth7113/0a1142d3a947d064b8abac4e4f3a4891",
+        "proposal_id": "jLlmazUE",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/5GJMolBG"
+      },
+      {
+        "title": "Cloudcasting UI",
+        "short_description": "Open Climate Fix recent Cloudcasting model is able to predict clouds movements very accurately but for end user it’s hard to see or visualize the...",
+        "description": "Open Climate Fix recent Cloudcasting model is able to predict clouds movements very accurately but for end user it’s hard to see or visualize the results, this project aims to create a new dashboard similar to quartz-frontend that is already up and running, to visualize results from the cloudcasting model the dashboard will be build using Next.js and MapBox as base map layer, Sentry to log errors, and a minimal fastapi server written in python to preprocess zaar data and serve it to the frontend, this solution will be a proof of concept for the new MVP",
+        "student_name": "Suvan Banerjee",
+        "code_url": "https://gist.github.com/suvanbanerjee/f7085a03c5d0062062b13721518214ff",
+        "proposal_id": "ACzf9zDm",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/GXFLZMmW"
+      },
+      {
+        "title": "Improving Probabilistic Solar Forecasts",
+        "short_description": "This project aims to improve probabilistic solar forecasting by replacing traditional quantile regression with a more expressive Gaussian Mixture...",
+        "description": "This project aims to improve probabilistic solar forecasting by replacing traditional quantile regression with a more expressive Gaussian Mixture Model (GMM) approach. Instead of predicting fixed quantiles, the model will learn the parameters of a GMM to represent the full predictive distribution, capturing complex and multimodal uncertainties common in solar irradiance data. Deliverables include a GMM-based forecasting model, performance comparisons with quantile baselines, robust uncertainty evaluation, and well-documented code for reproducibility and future extension.",
+        "student_name": "Tara Murphy",
+        "code_url": "https://github.com/openclimatefix/pvnet/pull/448",
+        "proposal_id": "DN2ynSGd",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/tH7yq93f"
+      },
+      {
+        "title": "Quartz Solar - New data source in ML model",
+        "short_description": "This project aims to enhance PVNet, a multi-modal deep learning model for solar energy forecasting, by integrating aerosol data as an additional...",
+        "description": "This project aims to enhance PVNet, a multi-modal deep learning model for solar energy \nforecasting, by integrating aerosol data as an additional input feature. Aerosols like dust, \nsmoke, and haze significantly affect solar irradiance but are not currently accounted for in \nPVNet’s forecasting pipeline. The work involves identifying suitable open aerosol datasets, \npreprocessing and aligning them with existing NWP inputs, and incorporating them into the \nmodel architecture through a dedicated encoder. By comparing baseline and aerosol-aware \nmodels, we aim to assess the impact of aerosols on forecast accuracy. The final deliverables \nwill include updated data pipelines, modified model components, and performance \nevaluation. This project contributes toward more accurate, climate-aware solar forecasting \nusing open-source tools and public datasets.",
+        "student_name": "zaryab ali",
+        "code_url": "https://gist.github.com/zaryab-ali/031340ed3608e35d4b41fe50fd62c908",
+        "proposal_id": "knflRCYu",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/NrZHhgA3"
+      }
+    ]
   },
   "githubID": "openclimatefix",
   "repositories": [
     {
-      "id": 667449391,
-      "node_id": "R_kgDOJ8h4Lw",
-      "name": "PVNet-summation",
-      "full_name": "openclimatefix/PVNet-summation",
-      "html_url": "https://github.com/openclimatefix/PVNet-summation",
-      "description": "This project is used for training a model to sum the GSP predictions of PVNet into a national estimate",
+      "id": 734022554,
+      "node_id": "R_kgDOK8BLmg",
+      "name": "quartz-api",
+      "full_name": "openclimatefix/quartz-api",
+      "html_url": "https://github.com/openclimatefix/quartz-api",
+      "description": "Quartz API for solar and wind data",
       "language": "Python",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 4,
+      "stargazers_count": 10,
+      "forks_count": 33,
+      "open_issues_count": 33,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -90,6 +145,253 @@
       "topics": []
     },
     {
+      "id": 275135477,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyNzUxMzU0Nzc=",
+      "name": "metrics",
+      "full_name": "openclimatefix/metrics",
+      "html_url": "https://github.com/openclimatefix/metrics",
+      "description": "Toolkit to automatically collect OCF metrics and store them over time.",
+      "language": "JavaScript",
+      "stargazers_count": 4,
+      "forks_count": 3,
+      "open_issues_count": 11,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": [
+        "git-scraping",
+        "metrics-gathering"
+      ]
+    },
+    {
+      "id": 676464815,
+      "node_id": "R_kgDOKFIIrw",
+      "name": "uk-pv-forecast-blend",
+      "full_name": "openclimatefix/uk-pv-forecast-blend",
+      "html_url": "https://github.com/openclimatefix/uk-pv-forecast-blend",
+      "description": "Service to blend forecast together",
+      "language": "Python",
+      "stargazers_count": 2,
+      "forks_count": 4,
+      "open_issues_count": 9,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1045500075,
+      "node_id": "R_kgDOPlEQqw",
+      "name": "data-platform",
+      "full_name": "openclimatefix/data-platform",
+      "html_url": "https://github.com/openclimatefix/data-platform",
+      "description": "Data API and Storage Platform for OCF's Forecasts",
+      "language": "Go",
+      "stargazers_count": 2,
+      "forks_count": 0,
+      "open_issues_count": 1,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1114467197,
+      "node_id": "R_kgDOQm1rfQ",
+      "name": "nged-substation-forecast",
+      "full_name": "openclimatefix/nged-substation-forecast",
+      "html_url": "https://github.com/openclimatefix/nged-substation-forecast",
+      "description": "Forecast net demand at NGED's primary, BSP, and GSP substations. And more!",
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 20,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 941891200,
+      "node_id": "R_kgDOOCQegA",
+      "name": "airflow-dags",
+      "full_name": "openclimatefix/airflow-dags",
+      "html_url": "https://github.com/openclimatefix/airflow-dags",
+      "description": "DAGs describing the production workflows used at Open Climate Fix",
+      "language": "Python",
+      "stargazers_count": 2,
+      "forks_count": 16,
+      "open_issues_count": 19,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 601598725,
+      "node_id": "R_kgDOI9urBQ",
+      "name": "analysis-dashboard",
+      "full_name": "openclimatefix/analysis-dashboard",
+      "html_url": "https://github.com/openclimatefix/analysis-dashboard",
+      "description": "This is a Streamlit app for the OCF team that reports database statistics",
+      "language": "Python",
+      "stargazers_count": 8,
+      "forks_count": 21,
+      "open_issues_count": 35,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 321712240,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzMjE3MTIyNDA=",
+      "name": "quartz-frontend",
+      "full_name": "openclimatefix/quartz-frontend",
+      "html_url": "https://github.com/openclimatefix/quartz-frontend",
+      "description": "Front End repo for the Nowcasting project.",
+      "language": "TypeScript",
+      "stargazers_count": 108,
+      "forks_count": 36,
+      "open_issues_count": 101,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": [
+        "nowcasting"
+      ]
+    },
+    {
+      "id": 446786489,
+      "node_id": "R_kgDOGqFruQ",
+      "name": "ocf-infrastructure",
+      "full_name": "openclimatefix/ocf-infrastructure",
+      "html_url": "https://github.com/openclimatefix/ocf-infrastructure",
+      "description": "Infrastructure code for OCF's cloud environments",
+      "language": "HCL",
+      "stargazers_count": 7,
+      "forks_count": 22,
+      "open_issues_count": 16,
+      "license": null,
+      "topics": [
+        "devops",
+        "infrastructure",
+        "terraform"
+      ]
+    },
+    {
+      "id": 565799141,
+      "node_id": "R_kgDOIblo5Q",
+      "name": "pvnet",
+      "full_name": "openclimatefix/pvnet",
+      "html_url": "https://github.com/openclimatefix/pvnet",
+      "description": "PVnet main repo",
+      "language": "Python",
+      "stargazers_count": 49,
+      "forks_count": 48,
+      "open_issues_count": 14,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 835758806,
+      "node_id": "R_kgDOMdCq1g",
+      "name": "ocf-data-sampler",
+      "full_name": "openclimatefix/ocf-data-sampler",
+      "html_url": "https://github.com/openclimatefix/ocf-data-sampler",
+      "description": "A repo for sampling from weather data for renewable energy prediction",
+      "language": "Python",
+      "stargazers_count": 18,
+      "forks_count": 47,
+      "open_issues_count": 20,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 679676136,
+      "node_id": "R_kgDOKIMI6A",
+      "name": "uk-pvnet-app",
+      "full_name": "openclimatefix/uk-pvnet-app",
+      "html_url": "https://github.com/openclimatefix/uk-pvnet-app",
+      "description": "Application for running PVNet in production",
+      "language": "Python",
+      "stargazers_count": 3,
+      "forks_count": 24,
+      "open_issues_count": 12,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 895658029,
+      "node_id": "R_kgDONWKoLQ",
+      "name": "solar-consumer",
+      "full_name": "openclimatefix/solar-consumer",
+      "html_url": "https://github.com/openclimatefix/solar-consumer",
+      "description": "Pull and save solar generation and forecasts",
+      "language": "Python",
+      "stargazers_count": 8,
+      "forks_count": 29,
+      "open_issues_count": 24,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 402393162,
+      "node_id": "MDEwOlJlcG9zaXRvcnk0MDIzOTMxNjI=",
+      "name": "metnet",
+      "full_name": "openclimatefix/metnet",
+      "html_url": "https://github.com/openclimatefix/metnet",
+      "description": "PyTorch Implementation of Google Research's MetNet and MetNet-2",
+      "language": "Python",
+      "stargazers_count": 293,
+      "forks_count": 60,
+      "open_issues_count": 37,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": [
+        "pytorch"
+      ]
+    },
+    {
       "id": 402392585,
       "node_id": "MDEwOlJlcG9zaXRvcnk0MDIzOTI1ODU=",
       "name": "skillful_nowcasting",
@@ -97,9 +399,9 @@
       "html_url": "https://github.com/openclimatefix/skillful_nowcasting",
       "description": "Implementation of DeepMind's Deep Generative Model of Radar (DGMR)  https://arxiv.org/abs/2104.00954",
       "language": "Python",
-      "stargazers_count": 247,
-      "forks_count": 61,
-      "open_issues_count": 24,
+      "stargazers_count": 280,
+      "forks_count": 68,
+      "open_issues_count": 27,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -125,56 +427,11 @@
       "html_url": "https://github.com/openclimatefix/uk-pv-national-xg",
       "description": "National PV forecasting using Gradient Boosted Methods.",
       "language": "Jupyter Notebook",
-      "stargazers_count": 4,
+      "stargazers_count": 6,
       "forks_count": 5,
       "open_issues_count": 11,
       "license": null,
       "topics": []
-    },
-    {
-      "id": 472664260,
-      "node_id": "R_kgDOHCxIxA",
-      "name": "pvlive-consumer",
-      "full_name": "openclimatefix/pvlive-consumer",
-      "html_url": "https://github.com/openclimatefix/pvlive-consumer",
-      "description": "Collect GSP solar generation data from PVLive",
-      "language": "Python",
-      "stargazers_count": 0,
-      "forks_count": 4,
-      "open_issues_count": 4,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 516721349,
-      "node_id": "R_kgDOHsyKxQ",
-      "name": "ocf_datapipes",
-      "full_name": "openclimatefix/ocf_datapipes",
-      "html_url": "https://github.com/openclimatefix/ocf_datapipes",
-      "description": "OCF's DataPipe based dataloader for training and inference",
-      "language": "Python",
-      "stargazers_count": 14,
-      "forks_count": 13,
-      "open_issues_count": 1,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": [
-        "dataset",
-        "deep-learning",
-        "machine-learning",
-        "pytorch"
-      ]
     },
     {
       "id": 456496591,
@@ -186,8 +443,48 @@
       "language": "Python",
       "stargazers_count": 7,
       "forks_count": 11,
-      "open_issues_count": 19,
+      "open_issues_count": 18,
       "license": null,
+      "topics": []
+    },
+    {
+      "id": 460756134,
+      "node_id": "R_kgDOG3aUpg",
+      "name": "PVConsumer",
+      "full_name": "openclimatefix/PVConsumer",
+      "html_url": "https://github.com/openclimatefix/PVConsumer",
+      "description": "Consumer PV data from various sources",
+      "language": "Python",
+      "stargazers_count": 3,
+      "forks_count": 1,
+      "open_issues_count": 5,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 472664260,
+      "node_id": "R_kgDOHCxIxA",
+      "name": "pvlive-consumer",
+      "full_name": "openclimatefix/pvlive-consumer",
+      "html_url": "https://github.com/openclimatefix/pvlive-consumer",
+      "description": "Collect GSP solar generation data from PVLive",
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 6,
+      "open_issues_count": 5,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
       "topics": []
     },
     {
@@ -198,9 +495,9 @@
       "html_url": "https://github.com/openclimatefix/pvoutput",
       "description": "Python code for downloading PV data from PVOutput.org",
       "language": "Python",
-      "stargazers_count": 34,
-      "forks_count": 17,
-      "open_issues_count": 35,
+      "stargazers_count": 37,
+      "forks_count": 19,
+      "open_issues_count": 34,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -217,82 +514,16 @@
       ]
     },
     {
-      "id": 309434883,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzMDk0MzQ4ODM=",
-      "name": "Satip",
-      "full_name": "openclimatefix/Satip",
-      "html_url": "https://github.com/openclimatefix/Satip",
-      "description": "Satip contains the code necessary for retrieving, transforming and storing EUMETSAT data",
-      "language": "Jupyter Notebook",
-      "stargazers_count": 43,
-      "forks_count": 35,
-      "open_issues_count": 50,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": [
-        "eumetsat",
-        "gis",
-        "nowcasting",
-        "python",
-        "satellite-imagery"
-      ]
-    },
-    {
-      "id": 460756134,
-      "node_id": "R_kgDOG3aUpg",
-      "name": "PVConsumer",
-      "full_name": "openclimatefix/PVConsumer",
-      "html_url": "https://github.com/openclimatefix/PVConsumer",
-      "description": "Consumer PV data from various sources",
-      "language": "Python",
-      "stargazers_count": 3,
-      "forks_count": 1,
-      "open_issues_count": 6,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 565799141,
-      "node_id": "R_kgDOIblo5Q",
-      "name": "PVNet",
-      "full_name": "openclimatefix/PVNet",
-      "html_url": "https://github.com/openclimatefix/PVNet",
-      "description": "PVnet main repo",
-      "language": "Python",
-      "stargazers_count": 30,
-      "forks_count": 31,
-      "open_issues_count": 31,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
       "id": 461818412,
       "node_id": "R_kgDOG4bKLA",
       "name": "graph_weather",
       "full_name": "openclimatefix/graph_weather",
       "html_url": "https://github.com/openclimatefix/graph_weather",
-      "description": "PyTorch implementation of Ryan Keisler's 2022 \"Forecasting Global Weather with Graph Neural Networks\" paper (https://arxiv.org/abs/2202.07575)",
+      "description": "Graph-based weather forecasting models. Originally, PyTorch implementation of Ryan Keisler's 2022 \"Forecasting Global Weather with Graph Neural Networks\" paper (https://arxiv.org/abs/2202.07575)",
       "language": "Python",
-      "stargazers_count": 235,
-      "forks_count": 66,
-      "open_issues_count": 68,
+      "stargazers_count": 288,
+      "forks_count": 95,
+      "open_issues_count": 86,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -308,28 +539,6 @@
       ]
     },
     {
-      "id": 402393162,
-      "node_id": "MDEwOlJlcG9zaXRvcnk0MDIzOTMxNjI=",
-      "name": "metnet",
-      "full_name": "openclimatefix/metnet",
-      "html_url": "https://github.com/openclimatefix/metnet",
-      "description": "PyTorch Implementation of Google Research's MetNet and MetNet-2",
-      "language": "Python",
-      "stargazers_count": 265,
-      "forks_count": 54,
-      "open_issues_count": 33,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": [
-        "pytorch"
-      ]
-    },
-    {
       "id": 619894232,
       "node_id": "R_kgDOJPLV2A",
       "name": "nwp-consumer",
@@ -337,9 +546,9 @@
       "html_url": "https://github.com/openclimatefix/nwp-consumer",
       "description": "Microservice for consuming NWP data.",
       "language": "Python",
-      "stargazers_count": 11,
-      "forks_count": 7,
-      "open_issues_count": 22,
+      "stargazers_count": 17,
+      "forks_count": 10,
+      "open_issues_count": 25,
       "license": null,
       "topics": [
         "containerization",
@@ -350,119 +559,16 @@
       ]
     },
     {
-      "id": 941891200,
-      "node_id": "R_kgDOOCQegA",
-      "name": "airflow-dags",
-      "full_name": "openclimatefix/airflow-dags",
-      "html_url": "https://github.com/openclimatefix/airflow-dags",
-      "description": "DAGs describing the production workflows used at Open Climate Fix",
+      "id": 980775238,
+      "node_id": "R_kgDOOnVxRg",
+      "name": "site-forecast-app",
+      "full_name": "openclimatefix/site-forecast-app",
+      "html_url": "https://github.com/openclimatefix/site-forecast-app",
+      "description": "Site forecast app",
       "language": "Python",
       "stargazers_count": 1,
-      "forks_count": 3,
-      "open_issues_count": 5,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 446786489,
-      "node_id": "R_kgDOGqFruQ",
-      "name": "ocf-infrastructure",
-      "full_name": "openclimatefix/ocf-infrastructure",
-      "html_url": "https://github.com/openclimatefix/ocf-infrastructure",
-      "description": "Infrastructure code for OCF's cloud environments",
-      "language": "HCL",
-      "stargazers_count": 5,
-      "forks_count": 20,
+      "forks_count": 5,
       "open_issues_count": 14,
-      "license": null,
-      "topics": [
-        "devops",
-        "infrastructure",
-        "terraform"
-      ]
-    },
-    {
-      "id": 835758806,
-      "node_id": "R_kgDOMdCq1g",
-      "name": "ocf-data-sampler",
-      "full_name": "openclimatefix/ocf-data-sampler",
-      "html_url": "https://github.com/openclimatefix/ocf-data-sampler",
-      "description": "A repo for sampling from weather data for renewable energy prediction",
-      "language": "Python",
-      "stargazers_count": 9,
-      "forks_count": 30,
-      "open_issues_count": 30,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 986375809,
-      "node_id": "R_kgDOOsrmgQ",
-      "name": "gsoc-cloudcasting-ui",
-      "full_name": "openclimatefix/gsoc-cloudcasting-ui",
-      "html_url": "https://github.com/openclimatefix/gsoc-cloudcasting-ui",
-      "description": null,
-      "language": "Python",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 528712697,
-      "node_id": "R_kgDOH4OD-Q",
-      "name": "nowcasting-metrics",
-      "full_name": "openclimatefix/nowcasting-metrics",
-      "html_url": "https://github.com/openclimatefix/nowcasting-metrics",
-      "description": "Repo to automatically run metrics on the nowcasting forecast",
-      "language": "Python",
-      "stargazers_count": 1,
-      "forks_count": 4,
-      "open_issues_count": 2,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 275135477,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNzUxMzU0Nzc=",
-      "name": "metrics",
-      "full_name": "openclimatefix/metrics",
-      "html_url": "https://github.com/openclimatefix/metrics",
-      "description": "Toolkit to automatically collect OCF metrics and store them over time.",
-      "language": "JavaScript",
-      "stargazers_count": 4,
-      "forks_count": 3,
-      "open_issues_count": 9,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": [
-        "git-scraping",
-        "metrics-gathering"
-      ]
-    },
-    {
-      "id": 898565981,
-      "node_id": "R_kgDONY8HXQ",
-      "name": "open-data-pvnet",
-      "full_name": "openclimatefix/open-data-pvnet",
-      "html_url": "https://github.com/openclimatefix/open-data-pvnet",
-      "description": "Solar Forecasting using PVNet on Open Data",
-      "language": "Jupyter Notebook",
-      "stargazers_count": 29,
-      "forks_count": 29,
-      "open_issues_count": 31,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -480,9 +586,9 @@
       "html_url": "https://github.com/openclimatefix/uk-pv-national-gsp-api",
       "description": "API for hosting nowcasting solar predictions",
       "language": "Python",
-      "stargazers_count": 8,
-      "forks_count": 21,
-      "open_issues_count": 36,
+      "stargazers_count": 14,
+      "forks_count": 31,
+      "open_issues_count": 46,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -495,56 +601,16 @@
       ]
     },
     {
-      "id": 601598725,
-      "node_id": "R_kgDOI9urBQ",
-      "name": "analysis-dashboard",
-      "full_name": "openclimatefix/analysis-dashboard",
-      "html_url": "https://github.com/openclimatefix/analysis-dashboard",
-      "description": "This is a Streamlit app for the OCF team that reports database statistics",
-      "language": "Python",
-      "stargazers_count": 5,
-      "forks_count": 13,
-      "open_issues_count": 22,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 679676136,
-      "node_id": "R_kgDOKIMI6A",
-      "name": "uk-pvnet-app",
-      "full_name": "openclimatefix/uk-pvnet-app",
-      "html_url": "https://github.com/openclimatefix/uk-pvnet-app",
-      "description": "Application for running PVNet in production",
-      "language": "Python",
-      "stargazers_count": 2,
-      "forks_count": 20,
-      "open_issues_count": 14,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 321712240,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzMjE3MTIyNDA=",
-      "name": "quartz-frontend",
-      "full_name": "openclimatefix/quartz-frontend",
-      "html_url": "https://github.com/openclimatefix/quartz-frontend",
-      "description": "Front End repo for the Nowcasting project.",
-      "language": "TypeScript",
-      "stargazers_count": 103,
-      "forks_count": 25,
-      "open_issues_count": 73,
+      "id": 545968680,
+      "node_id": "R_kgDOIIrSKA",
+      "name": "diffusion_weather",
+      "full_name": "openclimatefix/diffusion_weather",
+      "html_url": "https://github.com/openclimatefix/diffusion_weather",
+      "description": "Testing out Diffusion-based models for weather and PV forecasting",
+      "language": "Dockerfile",
+      "stargazers_count": 18,
+      "forks_count": 4,
+      "open_issues_count": 9,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -553,34 +619,20 @@
         "node_id": "MDc6TGljZW5zZTEz"
       },
       "topics": [
-        "nowcasting"
+        "deep-learning"
       ]
     },
     {
-      "id": 676464815,
-      "node_id": "R_kgDOKFIIrw",
-      "name": "uk-pv-forecast-blend",
-      "full_name": "openclimatefix/uk-pv-forecast-blend",
-      "html_url": "https://github.com/openclimatefix/uk-pv-forecast-blend",
-      "description": "Service to blend forecast together",
+      "id": 585953731,
+      "node_id": "R_kgDOIuzxww",
+      "name": "pv-site-production",
+      "full_name": "openclimatefix/pv-site-production",
+      "html_url": "https://github.com/openclimatefix/pv-site-production",
+      "description": "Production service for PV site level forecasts",
       "language": "Python",
       "stargazers_count": 2,
       "forks_count": 4,
-      "open_issues_count": 4,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 895658029,
-      "node_id": "R_kgDONWKoLQ",
-      "name": "solar-consumer",
-      "full_name": "openclimatefix/solar-consumer",
-      "html_url": "https://github.com/openclimatefix/solar-consumer",
-      "description": "Pull and save solar generation and forecasts",
-      "language": "Python",
-      "stargazers_count": 2,
-      "forks_count": 15,
-      "open_issues_count": 7,
+      "open_issues_count": 6,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -591,32 +643,16 @@
       "topics": []
     },
     {
-      "id": 296267797,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyOTYyNjc3OTc=",
-      "name": "contributors",
-      "full_name": "openclimatefix/contributors",
-      "html_url": "https://github.com/openclimatefix/contributors",
-      "description": "Meta Repo for aggregating all contributors across Repos for OCF.",
-      "language": null,
-      "stargazers_count": 1,
-      "forks_count": 1,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": [
-        "all-contributors"
-      ]
-    },
-    {
-      "id": 980775238,
-      "node_id": "R_kgDOOnVxRg",
-      "name": "site-forecast-app",
-      "full_name": "openclimatefix/site-forecast-app",
-      "html_url": "https://github.com/openclimatefix/site-forecast-app",
-      "description": "Site forecast app",
-      "language": "Python",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 1,
+      "id": 719451266,
+      "node_id": "R_kgDOKuH0gg",
+      "name": "open-source-quartz-solar-forecast",
+      "full_name": "openclimatefix/open-source-quartz-solar-forecast",
+      "html_url": "https://github.com/openclimatefix/open-source-quartz-solar-forecast",
+      "description": "Open Source Solar Site Level Forecast",
+      "language": "Jupyter Notebook",
+      "stargazers_count": 127,
+      "forks_count": 105,
+      "open_issues_count": 60,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -627,93 +663,72 @@
       "topics": []
     },
     {
-      "id": 588129989,
-      "node_id": "R_kgDOIw4mxQ",
-      "name": "ocf-ml-metrics",
-      "full_name": "openclimatefix/ocf-ml-metrics",
-      "html_url": "https://github.com/openclimatefix/ocf-ml-metrics",
-      "description": "Collection of simple baseline models and metrics for standardized evaluation of OCF forecasting models",
+      "id": 1054161582,
+      "node_id": "R_kgDOPtU6rg",
+      "name": "global-solar-forecast",
+      "full_name": "openclimatefix/global-solar-forecast",
+      "html_url": "https://github.com/openclimatefix/global-solar-forecast",
+      "description": "Forecast and Dashboard for Global Solar Forecast",
       "language": "Python",
       "stargazers_count": 4,
-      "forks_count": 0,
-      "open_issues_count": 5,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": [
-        "metrics"
-      ]
+      "forks_count": 17,
+      "open_issues_count": 10,
+      "license": null,
+      "topics": []
     },
     {
-      "id": 480864626,
-      "node_id": "R_kgDOHKlpcg",
-      "name": "climatehackai",
-      "full_name": "openclimatefix/climatehackai",
-      "html_url": "https://github.com/openclimatefix/climatehackai",
-      "description": "Unified Repo for the models from the 2022 Climate Hack AI competition",
+      "id": 748131581,
+      "node_id": "R_kgDOLJeU_Q",
+      "name": "quartz-status",
+      "full_name": "openclimatefix/quartz-status",
+      "html_url": "https://github.com/openclimatefix/quartz-status",
+      "description": "Status API for Quartz ecosystem",
+      "language": "TypeScript",
+      "stargazers_count": 1,
+      "forks_count": 1,
+      "open_issues_count": 8,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1025445719,
+      "node_id": "R_kgDOPR8PVw",
+      "name": "uk-power-flow-to-solar-capacity",
+      "full_name": "openclimatefix/uk-power-flow-to-solar-capacity",
+      "html_url": "https://github.com/openclimatefix/uk-power-flow-to-solar-capacity",
+      "description": null,
       "language": "Python",
-      "stargazers_count": 10,
+      "stargazers_count": 2,
       "forks_count": 1,
       "open_issues_count": 1,
       "license": null,
-      "topics": [
-        "deep-learning",
-        "pytorch"
-      ]
+      "topics": []
     }
   ],
   "contributorsDetails": [
-    {
-      "login": "dfulu",
-      "id": 41546094,
-      "node_id": "MDQ6VXNlcjQxNTQ2MDk0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/41546094?v=4",
-      "html_url": "https://github.com/dfulu",
-      "contributions": 77
-    },
     {
       "login": "peterdudfield",
       "id": 34686298,
       "node_id": "MDQ6VXNlcjM0Njg2Mjk4",
       "avatar_url": "https://avatars.githubusercontent.com/u/34686298?v=4",
       "html_url": "https://github.com/peterdudfield",
-      "contributions": 19
+      "contributions": 138
     },
     {
-      "login": "pre-commit-ci[bot]",
-      "id": 66853113,
-      "node_id": "MDM6Qm90NjY4NTMxMTM=",
-      "avatar_url": "https://avatars.githubusercontent.com/in/68672?v=4",
-      "html_url": "https://github.com/apps/pre-commit-ci",
-      "contributions": 35
+      "login": "devsjc",
+      "id": 47188100,
+      "node_id": "MDQ6VXNlcjQ3MTg4MTAw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/47188100?v=4",
+      "html_url": "https://github.com/devsjc",
+      "contributions": 2
     },
     {
-      "login": "AUdaltsova",
-      "id": 43303448,
-      "node_id": "MDQ6VXNlcjQzMzAzNDQ4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/43303448?v=4",
-      "html_url": "https://github.com/AUdaltsova",
-      "contributions": 13
-    },
-    {
-      "login": "Sukh-P",
-      "id": 42407101,
-      "node_id": "MDQ6VXNlcjQyNDA3MTAx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/42407101?v=4",
-      "html_url": "https://github.com/Sukh-P",
-      "contributions": 3
-    },
-    {
-      "login": "jacobbieker",
-      "id": 7170359,
-      "node_id": "MDQ6VXNlcjcxNzAzNTk=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/7170359?v=4",
-      "html_url": "https://github.com/jacobbieker",
-      "contributions": 142
+      "login": "braddf",
+      "id": 41056982,
+      "node_id": "MDQ6VXNlcjQxMDU2OTgy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/41056982?v=4",
+      "html_url": "https://github.com/braddf",
+      "contributions": 15
     },
     {
       "login": "allcontributors[bot]",
@@ -721,64 +736,160 @@
       "node_id": "MDM6Qm90NDY0NDczMjE=",
       "avatar_url": "https://avatars.githubusercontent.com/in/23186?v=4",
       "html_url": "https://github.com/apps/allcontributors",
-      "contributions": 25
+      "contributions": 8
     },
     {
-      "login": "johmathe",
-      "id": 467643,
-      "node_id": "MDQ6VXNlcjQ2NzY0Mw==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/467643?v=4",
-      "html_url": "https://github.com/johmathe",
-      "contributions": 3
+      "login": "ADIMANV",
+      "id": 68527614,
+      "node_id": "MDQ6VXNlcjY4NTI3NjE0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/68527614?v=4",
+      "html_url": "https://github.com/ADIMANV",
+      "contributions": 4
     },
     {
-      "login": "rutkovskii",
-      "id": 70371908,
-      "node_id": "MDQ6VXNlcjcwMzcxOTA4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/70371908?v=4",
-      "html_url": "https://github.com/rutkovskii",
+      "login": "aryanbhosale",
+      "id": 36108149,
+      "node_id": "MDQ6VXNlcjM2MTA4MTQ5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/36108149?v=4",
+      "html_url": "https://github.com/aryanbhosale",
+      "contributions": 12
+    },
+    {
+      "login": "prashantpandeygit",
+      "id": 132379659,
+      "node_id": "U_kgDOB-P0Cw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/132379659?v=4",
+      "html_url": "https://github.com/prashantpandeygit",
       "contributions": 2
     },
     {
-      "login": "agijsberts",
-      "id": 1579083,
-      "node_id": "MDQ6VXNlcjE1NzkwODM=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1579083?v=4",
-      "html_url": "https://github.com/agijsberts",
+      "login": "anxkhn",
+      "id": 83116240,
+      "node_id": "MDQ6VXNlcjgzMTE2MjQw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/83116240?v=4",
+      "html_url": "https://github.com/anxkhn",
       "contributions": 1
     },
     {
-      "login": "Averagenormaljoe",
-      "id": 99669149,
-      "node_id": "U_kgDOBfDUnQ",
-      "avatar_url": "https://avatars.githubusercontent.com/u/99669149?v=4",
-      "html_url": "https://github.com/Averagenormaljoe",
+      "login": "confusedmatrix",
+      "id": 617309,
+      "node_id": "MDQ6VXNlcjYxNzMwOQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/617309?v=4",
+      "html_url": "https://github.com/confusedmatrix",
       "contributions": 1
     },
     {
-      "login": "Mews",
-      "id": 60406199,
-      "node_id": "MDQ6VXNlcjYwNDA2MTk5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/60406199?v=4",
-      "html_url": "https://github.com/Mews",
+      "login": "Copilot",
+      "id": 198982749,
+      "node_id": "BOT_kgDOC9w8XQ",
+      "avatar_url": "https://avatars.githubusercontent.com/in/1143301?v=4",
+      "html_url": "https://github.com/apps/copilot-swe-agent",
       "contributions": 1
     },
     {
-      "login": "victor30608",
-      "id": 43813476,
-      "node_id": "MDQ6VXNlcjQzODEzNDc2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/43813476?v=4",
-      "html_url": "https://github.com/victor30608",
+      "login": "DubraskaS",
+      "id": 87884444,
+      "node_id": "MDQ6VXNlcjg3ODg0NDQ0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/87884444?v=4",
+      "html_url": "https://github.com/DubraskaS",
       "contributions": 1
     },
     {
-      "login": "hchen19",
-      "id": 55314062,
-      "node_id": "MDQ6VXNlcjU1MzE0MDYy",
-      "avatar_url": "https://avatars.githubusercontent.com/u/55314062?v=4",
-      "html_url": "https://github.com/hchen19",
+      "login": "Edwardcg17",
+      "id": 123040852,
+      "node_id": "U_kgDOB1V0VA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/123040852?v=4",
+      "html_url": "https://github.com/Edwardcg17",
       "contributions": 1
+    },
+    {
+      "login": "katyalmohit",
+      "id": 128162892,
+      "node_id": "U_kgDOB6OcTA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/128162892?v=4",
+      "html_url": "https://github.com/katyalmohit",
+      "contributions": 20
+    },
+    {
+      "login": "ProfessionalCaddie",
+      "id": 180212671,
+      "node_id": "U_kgDOCr3Tvw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/180212671?v=4",
+      "html_url": "https://github.com/ProfessionalCaddie",
+      "contributions": 1
+    },
+    {
+      "login": "rahul-maurya11b",
+      "id": 98907006,
+      "node_id": "U_kgDOBeUzfg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/98907006?v=4",
+      "html_url": "https://github.com/rahul-maurya11b",
+      "contributions": 1
+    },
+    {
+      "login": "Sagarpillai",
+      "id": 217882826,
+      "node_id": "U_kgDODPygyg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/217882826?v=4",
+      "html_url": "https://github.com/Sagarpillai",
+      "contributions": 1
+    },
+    {
+      "login": "suvanbanerjee",
+      "id": 104707806,
+      "node_id": "U_kgDOBj223g",
+      "avatar_url": "https://avatars.githubusercontent.com/u/104707806?v=4",
+      "html_url": "https://github.com/suvanbanerjee",
+      "contributions": 1
+    },
+    {
+      "login": "ocf-bot",
+      "id": 65714859,
+      "node_id": "MDQ6VXNlcjY1NzE0ODU5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/65714859?v=4",
+      "html_url": "https://github.com/ocf-bot",
+      "contributions": 6911
+    },
+    {
+      "login": "flowirtz",
+      "id": 6052785,
+      "node_id": "MDQ6VXNlcjYwNTI3ODU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6052785?v=4",
+      "html_url": "https://github.com/flowirtz",
+      "contributions": 14
+    },
+    {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "html_url": "https://github.com/apps/dependabot",
+      "contributions": 9
+    },
+    {
+      "login": "JackKelly",
+      "id": 460756,
+      "node_id": "MDQ6VXNlcjQ2MDc1Ng==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/460756?v=4",
+      "html_url": "https://github.com/JackKelly",
+      "contributions": 1
+    },
+    {
+      "login": "PavanRaghavendraKulkarni",
+      "id": 66769833,
+      "node_id": "MDQ6VXNlcjY2NzY5ODMz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/66769833?v=4",
+      "html_url": "https://github.com/PavanRaghavendraKulkarni",
+      "contributions": 13
+    },
+    {
+      "login": "dfulu",
+      "id": 41546094,
+      "node_id": "MDQ6VXNlcjQxNTQ2MDk0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/41546094?v=4",
+      "html_url": "https://github.com/dfulu",
+      "contributions": 10
     }
   ],
-  "activeOrg": false
+  "activeOrg": true
 }

@@ -3,7 +3,7 @@
   "image_url": "https://summerofcode.withgoogle.com/media/org/national-resource-for-network-biology-nrnb/5uobjboaxnzrxyoj-360.png",
   "image_background_color": "#ffffff",
   "description": "Developing open source tools for network biology",
-  "url": "https://nrnb.org/gsoc.html",
+  "url": "https://nrnb.org",
   "category": [
     "Science and medicine"
   ],
@@ -39,13 +39,14 @@
     "rest",
     "xml",
     "json",
-    "css"
+    "css",
+    "LLM"
   ],
   "irc_channel": "https://github.com/nrnb/GoogleSummerOfCode/issues",
   "contact_email": "mailto:kristina.hanspers@gladstone.ucsf.edu",
   "mailing_list": "https://groups.google.com/g/cytoscape-helpdesk",
   "twitter_url": "https://twitter.com/cytoscape",
-  "blog_url": "https://nrnb.org/testimonials.html#profile-tab",
+  "blog_url": "https://groups.google.com/g/cytoscape-helpdesk",
   "facebook_url": null,
   "year": [
     2016,
@@ -57,7 +58,8 @@
     2022,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2016": [
@@ -985,7 +987,81 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/gk4SrGuW"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "SBOL2 SBOL3 Convertor Utility",
+        "short_description": "The Synthetic Biology Open Language (SBOL) serves as a vital community standard for representing biological designs, with version 3.1 offering mature...",
+        "description": "The Synthetic Biology Open Language (SBOL) serves as a vital community standard for representing biological designs, with version 3.1 offering mature capabilities for the entire Design-Build-Test-Learn cycle. Despite this advancement, a significant hurdle persists: the widespread use of the older SBOL2 format by crucial tools and large repositories like SynBioHub, coupled with the absence of a complete converter to bridge the gap with SBOL3. This incompatibility fragments the ecosystem, hinders the adoption of the latest standard, and limits seamless data exchange. \nThis project tackles this challenge by directly contributing to the development of the essential bidirectional Python converter between SBOL2 and SBOL3 within the sbol-utilities library. By implementing and testing conversion functionalities, this work aims to create the necessary infrastructure to unify the SBOL software landscape, enable smooth migration to SBOL3, facilitate interoperability, and unlock the full potential of the standard for the synthetic biology community.",
+        "student_name": "__Harsh_Sharma__",
+        "code_url": "https://github.com/GeneCodeSavvy/Google-Summer-of-Code/blob/main/gsoc_report.org",
+        "proposal_id": "RFrpAGaq",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/1PJYrp9q"
+      },
+      {
+        "title": "Developing a Highly Efficient Numerical ODE Solver in the Systems Biology Simulation Core Library",
+        "short_description": "The field of computational biology depends significantly on mathematical modeling to simulate complex biological simulations, often involving...",
+        "description": "The field of computational biology depends significantly on mathematical modeling to simulate complex biological simulations, often involving solution of large systems of ordinary differential equations, which describe dynamic biological processes. Accurate and efficient numerical solvers are essential for these simulations to predict correct behaviour. LSODA (Livermore Solver for Ordinary Differential equations Automatic) is a well-established ODE solver known for its ability to dynamically switch between stiff and nonstiff methods, making it particularly suitable for biological models where stiffness can vary over time. However, LSODA’s widely used implementations are primarily in C/C++ and Fortran, creating a barrier for researchers working in Java-based environments. This project aims to bridge that gap by implementing a robust, optimized, thoroughly tested, and fully functional Java-based version of the LSODA algorithm within the Systems Biology Simulation Core Library (SBSCL).",
+        "student_name": "Ayush Baranwal",
+        "code_url": "https://gist.github.com/baranwalayush/c9c55429d04c5834d29303a4969c67bb",
+        "proposal_id": "ROGM9hw7",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/gtQryewh"
+      },
+      {
+        "title": "SeqTrainer - creating datasets from SynBioHub to aid researchers in creating machine learning models",
+        "short_description": "In the realm of synthetic biology, there is a significant source of data in the form of models, genetic sequences, regulatory networks, and...",
+        "description": "In the realm of synthetic biology, there is a significant source of data in the form of models, genetic sequences, regulatory networks, and experimental results. Databases such as SynBioHub store this data represented by the Synthetic Biology Open Language (SBOL); using machine learning models, this data can be used by researchers to predict promoter activity, analyze protein-DNA interactions, and more. However, researchers must preprocess SBOL data before training their models, which can be time-consuming. Thus, this project aims to develop a Python package to automate the creation of datasets from data in SynBioHub. In doing so, we will first upload data from previous research to SynBioHub, create the package that returns data from SynBioHub in a format suitable for machine learning models, test the package on the data that was uploaded, explore the performance of a Graph Neural Network (GNN) on the data, and thoroughly document the package.",
+        "student_name": "cywong",
+        "code_url": "https://cywlol.github.io/posts",
+        "proposal_id": "jwNfsQPH",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/Z3Hk9SnE"
+      },
+      {
+        "title": "CySBML Reloaded: Smarter, Simpler, Automated",
+        "short_description": "CySBML Reloaded: Smarter, Simpler, Automated focuses on upgrading CySBML — a Cytoscape app for visualizing computational models encoded in SBML. The...",
+        "description": "CySBML Reloaded: Smarter, Simpler, Automated focuses on upgrading CySBML — a Cytoscape app for visualizing computational models encoded in SBML. The project will enhance usability, improve stability, and introduce automation features, making it easier for researchers to explore, validate, and interact with complex biomedical models through an intuitive and streamlined interface based on network visualization.\n\nThe main project outcomes of CySBML Reloaded: Smarter, Simpler, Automated will be a major release of CySBML, with an updated backend supporting automation features, an up-to-date frontend addressing usability issues, updated REST APIs, improved reading of SBML, and improved visualization capabilities such as network and cofactor collapse. This will allow us to integrate CySBML in modeling workflows based on Python/R.",
+        "student_name": "Hikmet Emre Kaya",
+        "code_url": "https://hikmetemrekaya.wordpress.com/2025/08/29/final-report-gsoc-2025/",
+        "proposal_id": "5yLIsVdr",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/YaV539XE"
+      },
+      {
+        "title": "Enhancing SBOannotator with LLM Integration & Dynamic Term Retrieval",
+        "short_description": "This proposal aims to transform SBOannotator from a static, hard-coded tool into a dynamic, intelligent system for annotating SBML models with...",
+        "description": "This proposal aims to transform SBOannotator from a static, hard-coded tool into a dynamic, intelligent system for annotating SBML models with Systems Biology Ontology terms.After initial discussions with mentor Nantia Leonidou, who provided valuable feedback on my approach, I've developed a comprehensive plan and initial implementation (PR #2 https://github.com/draeger-lab/SBOannotator/pull/2). \n\nBy implementing real-time SBO term retrieval, integrating multiple enzymatic data sources, and incorporating LLM-based annotation assistance, this project will significantly enhance both the accuracy and usability of SBOannotator while maintaining its core classification strengths. The addition of a standalone desktop GUI with interactive visualizations will make these powerful annotation capabilities accessible to a broader range of systems biology researchers.",
+        "student_name": "Jiahui Hu",
+        "code_url": "https://github.com/draeger-lab/SBOannotator/pull/7",
+        "proposal_id": "ygDDJOYD",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/UvnOXGwN"
+      },
+      {
+        "title": "VCell-AI: AI Analysis & Querying Platform",
+        "short_description": "The VCell-AI Platform is an AI-powered system for discovering, analyzing, and exploring biomodels, publications, and research papers from the VCell...",
+        "description": "The VCell-AI Platform is an AI-powered system for discovering, analyzing, and exploring biomodels, publications, and research papers from the VCell database. It supports both traditional database queries and AI-powered natural language searches through a chatbot, provides biomodel diagram analysis, and includes a vector-based knowledge base for document retrieval for VCell Software tutorials and guides. Built with Next.js and Tailwind CSS on the frontend, FastAPI and Python on the backend, and Qdrant for vector storage, the platform also integrates Langfuse for LLM observability and can run with locally hosted LLMs, offering researchers a fully functional, flexible, and user-friendly environment for scientific exploration.",
+        "student_name": "Kacem Mathlouthi",
+        "code_url": "https://gist.github.com/KacemMathlouthi/795de3bc265d11c46bef60c867461f14",
+        "proposal_id": "b0qQgPOZ",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/vFE5LPKW"
+      },
+      {
+        "title": "Enhancing the Systems Biology Simulation Core Library (SBSCL) with a Solver-Agnostic Framework...",
+        "short_description": "This project addresses the current incompatibility of the Systems Biology Simulation Core Library (SBSCL) with modern computing architectures,...",
+        "description": "This project addresses the current incompatibility of the Systems Biology Simulation Core Library (SBSCL) with modern computing architectures, specifically ARM-based processors. It restores its functionality on these newer hardware platforms. By creating a flexible, solver-agnostic abstraction layer, SBSCL will integrate a variety of linear optimization solvers, including both open-source (GLPK, CBC, SCIP) and commercial (CPLEX, Gurobi) options. The project also explores extending functionality with advanced constraint-based analysis methods, such as Flux Variability Analysis (FVA), further enhancing SBSCL’s analytical capabilities. Comprehensive validation, clear documentation, and example workflows will ensure easy use and broad adoption. Ultimately, these improvements will substantially enhance SBSCL’s usability, reproducibility, and overall user experience. As a result, researchers will spend less time on technical workarounds and more time focusing on biological questions.",
+        "student_name": "Michael-Gaas",
+        "code_url": "https://gsoc25michael.blogspot.com/2025/08/optsolvx-in-sbscl-solver-agnostic-lp.html",
+        "proposal_id": "OzdzflQ8",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/Yibmo4UH"
+      },
+      {
+        "title": "LLM-Powered Interactive Chat Interface for CellMinerCDB with GraphRAG Integration",
+        "short_description": "This project will develop an intelligent chat interface for CellMinerCDB, a cancer genomics database, using GraphRAG (Graph Retrieval-Augmented...",
+        "description": "This project will develop an intelligent chat interface for CellMinerCDB, a cancer genomics database, using GraphRAG (Graph Retrieval-Augmented Generation) to enhance accessibility for researchers. The system will convert natural language queries into executable R code and leverage knowledge graphs to provide context-aware responses about complex relationships between drugs, genes, and cancer cell lines.\n\nKey deliverables include: (1) A data bridge connecting R's CellMinerCDB with Python; (2) A GraphRAG component that builds and queries knowledge graphs from cancer genomics data; (3) NDEx integration for network visualization and sharing; and (4) A natural language interface powered by PandasAI. This project extends previous work by adding knowledge graph capabilities, improving entity recognition for cancer genomics terminology, and enabling standardized network sharing through NDEx.\n\nThe completed system will democratize access to complex cancer genomics data, promote reproducibility in research, and establish a foundation for natural language interfaces to biomedical databases.",
+        "student_name": "Milit S Patel",
+        "code_url": "https://github.com/MilitPatel/cellminercdb_pandasai",
+        "proposal_id": "FmdcdWuP",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/G0jh7cDV"
+      }
+    ],
+    "2026": []
   },
   "githubID": "nrnb",
   "repositories": [
@@ -997,8 +1073,8 @@
       "html_url": "https://github.com/nrnb/nrnb.github.io",
       "description": "website code for the national resource for network biology",
       "language": "HTML",
-      "stargazers_count": 6,
-      "forks_count": 35,
+      "stargazers_count": 7,
+      "forks_count": 43,
       "open_issues_count": 0,
       "license": null,
       "topics": []
@@ -1011,10 +1087,30 @@
       "html_url": "https://github.com/nrnb/GoogleSummerOfCode",
       "description": "Main documentation site for NRNB GSoC project ideas and resources",
       "language": null,
-      "stargazers_count": 141,
-      "forks_count": 47,
-      "open_issues_count": 14,
+      "stargazers_count": 166,
+      "forks_count": 59,
+      "open_issues_count": 19,
       "license": null,
+      "topics": []
+    },
+    {
+      "id": 1085353538,
+      "node_id": "R_kgDOQLEuQg",
+      "name": "gsoc2025_projects",
+      "full_name": "nrnb/gsoc2025_projects",
+      "html_url": "https://github.com/nrnb/gsoc2025_projects",
+      "description": null,
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "cc0-1.0",
+        "name": "Creative Commons Zero v1.0 Universal",
+        "spdx_id": "CC0-1.0",
+        "url": "https://api.github.com/licenses/cc0-1.0",
+        "node_id": "MDc6TGljZW5zZTY="
+      },
       "topics": []
     },
     {
@@ -1442,20 +1538,6 @@
       "open_issues_count": 0,
       "license": null,
       "topics": []
-    },
-    {
-      "id": 301547484,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzMDE1NDc0ODQ=",
-      "name": "gsoc2020yash_agrawal",
-      "full_name": "nrnb/gsoc2020yash_agrawal",
-      "html_url": "https://github.com/nrnb/gsoc2020yash_agrawal",
-      "description": "gsoc 2020 PR to graphspace",
-      "language": null,
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
     }
   ],
   "contributorsDetails": [
@@ -1465,7 +1547,7 @@
       "node_id": "MDQ6VXNlcjE0NDIxOTc=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1442197?v=4",
       "html_url": "https://github.com/khanspers",
-      "contributions": 10
+      "contributions": 3
     },
     {
       "login": "AlexanderPico",

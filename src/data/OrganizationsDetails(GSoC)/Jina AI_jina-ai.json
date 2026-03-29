@@ -46,21 +46,297 @@
   "githubID": "jina-ai",
   "repositories": [
     {
-      "id": 258267490,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNTgyNjc0OTA=",
-      "name": "jina-ai.github.io",
-      "full_name": "jina-ai/jina-ai.github.io",
-      "html_url": "https://github.com/jina-ai/jina-ai.github.io",
-      "description": "Homepage of Jina AI",
-      "language": "HTML",
-      "stargazers_count": 37,
-      "forks_count": 7,
+      "id": 1177644722,
+      "node_id": "R_kgDORjFusg",
+      "name": "OmniDocBench",
+      "full_name": "jina-ai/OmniDocBench",
+      "html_url": "https://github.com/jina-ai/OmniDocBench",
+      "description": "[CVPR 2025] A Comprehensive Benchmark for Document Parsing and Evaluation",
+      "language": "Python",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 1177863870,
+      "node_id": "R_kgDORjTGvg",
+      "name": "wikipedia-vector-demo",
+      "full_name": "jina-ai/wikipedia-vector-demo",
+      "html_url": "https://github.com/jina-ai/wikipedia-vector-demo",
+      "description": null,
+      "language": "TypeScript",
+      "stargazers_count": 1,
+      "forks_count": 1,
+      "open_issues_count": 0,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 1180602556,
+      "node_id": "R_kgDORl6QvA",
+      "name": "MMTEB-MCP",
+      "full_name": "jina-ai/MMTEB-MCP",
+      "html_url": "https://github.com/jina-ai/MMTEB-MCP",
+      "description": null,
+      "language": "Python",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1183354426,
+      "node_id": "R_kgDORoiOOg",
+      "name": "olmocr-bench",
+      "full_name": "jina-ai/olmocr-bench",
+      "html_url": "https://github.com/jina-ai/olmocr-bench",
+      "description": null,
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1180700598,
+      "node_id": "R_kgDORmAPtg",
+      "name": "cli",
+      "full_name": "jina-ai/cli",
+      "html_url": "https://github.com/jina-ai/cli",
+      "description": "All Jina AI APIs as Unix CLI commands. Search, read, embed, rerank - with pipes.",
+      "language": "Python",
+      "stargazers_count": 113,
+      "forks_count": 3,
+      "open_issues_count": 1,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "agent",
+        "ai",
+        "cli",
+        "embeddings",
+        "jina",
+        "llm-tools",
+        "nlp",
+        "rerank",
+        "search",
+        "unix"
+      ]
+    },
+    {
+      "id": 403624873,
+      "node_id": "MDEwOlJlcG9zaXRvcnk0MDM2MjQ4NzM=",
+      "name": ".github",
+      "full_name": "jina-ai/.github",
+      "html_url": "https://github.com/jina-ai/.github",
+      "description": "This repository stores github actions templates as described https://docs.github.com/en/actions/learn-github-actions/sharing-workflows-with-your-organization",
+      "language": null,
+      "stargazers_count": 11,
+      "forks_count": 9,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1034777076,
+      "node_id": "R_kgDOPa1x9A",
+      "name": "MCP",
+      "full_name": "jina-ai/MCP",
+      "html_url": "https://github.com/jina-ai/MCP",
+      "description": "Official Jina AI Remote MCP Server",
+      "language": "TypeScript",
+      "stargazers_count": 595,
+      "forks_count": 62,
+      "open_issues_count": 13,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "mcp",
+        "mcp-server"
+      ]
+    },
+    {
+      "id": 1167525683,
+      "node_id": "R_kgDORZcHMw",
+      "name": "jina-grep-cli",
+      "full_name": "jina-ai/jina-grep-cli",
+      "html_url": "https://github.com/jina-ai/jina-grep-cli",
+      "description": "Semantic grep powered by Jina embeddings v5 (MLX on Apple Silicon)",
+      "language": "Python",
+      "stargazers_count": 200,
+      "forks_count": 5,
+      "open_issues_count": 3,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "apple-silicon",
+        "cli",
+        "embeddings",
+        "grep",
+        "jina",
+        "jina-embeddings-v5",
+        "mlx",
+        "natural-language-search",
+        "semantic-search",
+        "vector-search"
+      ]
+    },
+    {
+      "id": 1178452682,
+      "node_id": "R_kgDORj3Cyg",
+      "name": "audio-embedding-kickstarter",
+      "full_name": "jina-ai/audio-embedding-kickstarter",
+      "html_url": "https://github.com/jina-ai/audio-embedding-kickstarter",
+      "description": null,
+      "language": "Python",
+      "stargazers_count": 8,
+      "forks_count": 0,
       "open_issues_count": 1,
       "license": null,
+      "topics": []
+    },
+    {
+      "id": 1174922075,
+      "node_id": "R_kgDORgfjWw",
+      "name": "embedding-fingerprints",
+      "full_name": "jina-ai/embedding-fingerprints",
+      "html_url": "https://github.com/jina-ai/embedding-fingerprints",
+      "description": "Identify which embedding model produced a vector using digit-level tokenization and a tiny transformer",
+      "language": "Python",
+      "stargazers_count": 17,
+      "forks_count": 1,
+      "open_issues_count": 0,
+      "license": null,
       "topics": [
-        "jina",
-        "landing-page"
+        "embedding-models",
+        "embeddings",
+        "fingerprinting",
+        "machine-learning",
+        "pytorch",
+        "reverse-engineering",
+        "transformer"
       ]
+    },
+    {
+      "id": 1155124840,
+      "node_id": "R_kgDORNnOaA",
+      "name": "embedding-inversion-demo",
+      "full_name": "jina-ai/embedding-inversion-demo",
+      "html_url": "https://github.com/jina-ai/embedding-inversion-demo",
+      "description": "Embedding Inversion via Conditional Masked Diffusion: recover original text from embedding vectors using parallel denoising. Live demo + training pipeline + technical report.",
+      "language": "Python",
+      "stargazers_count": 47,
+      "forks_count": 3,
+      "open_issues_count": 2,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "adaln",
+        "deep-learning",
+        "diffusion-language-model",
+        "embedding-attack",
+        "embedding-inversion",
+        "embedding-privacy",
+        "jina-embeddings",
+        "masked-diffusion",
+        "nlp",
+        "privacy-attack",
+        "pytorch",
+        "qwen3-embedding",
+        "text-embeddings",
+        "text-reconstruction",
+        "vec2text"
+      ]
+    },
+    {
+      "id": 879708616,
+      "node_id": "R_kgDONG9JyA",
+      "name": "meta-prompt",
+      "full_name": "jina-ai/meta-prompt",
+      "html_url": "https://github.com/jina-ai/meta-prompt",
+      "description": "For LLMs to better code with Jina API",
+      "language": "HTML",
+      "stargazers_count": 180,
+      "forks_count": 18,
+      "open_issues_count": 2,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 1024661239,
+      "node_id": "R_kgDOPRMW9w",
+      "name": "llama.cpp",
+      "full_name": "jina-ai/llama.cpp",
+      "html_url": "https://github.com/jina-ai/llama.cpp",
+      "description": "LLM inference in C/C++",
+      "language": "C++",
+      "stargazers_count": 9,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 1139397437,
+      "node_id": "R_kgDOQ-nTPQ",
+      "name": "jzip-compressor",
+      "full_name": "jina-ai/jzip-compressor",
+      "html_url": "https://github.com/jina-ai/jzip-compressor",
+      "description": "Compression for unit-norm embedding vectors using spherical coordinates",
+      "language": "C",
+      "stargazers_count": 79,
+      "forks_count": 8,
+      "open_issues_count": 2,
+      "license": null,
+      "topics": []
     },
     {
       "id": 922423439,
@@ -70,9 +346,9 @@
       "html_url": "https://github.com/jina-ai/node-DeepResearch",
       "description": "Keep searching, reading webpages, reasoning until it finds the answer (or exceeding the token budget)",
       "language": "TypeScript",
-      "stargazers_count": 4251,
-      "forks_count": 390,
-      "open_issues_count": 39,
+      "stargazers_count": 5133,
+      "forks_count": 455,
+      "open_issues_count": 52,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -86,15 +362,63 @@
       ]
     },
     {
-      "id": 934090141,
-      "node_id": "R_kgDON60VnQ",
-      "name": "deepsearch-ui",
-      "full_name": "jina-ai/deepsearch-ui",
-      "html_url": "https://github.com/jina-ai/deepsearch-ui",
-      "description": "Jina DeepSearch UI",
-      "language": "JavaScript",
-      "stargazers_count": 107,
-      "forks_count": 18,
+      "id": 1105683081,
+      "node_id": "R_kgDOQediiQ",
+      "name": "markitdown",
+      "full_name": "jina-ai/markitdown",
+      "html_url": "https://github.com/jina-ai/markitdown",
+      "description": "Python tool for converting files and office documents to Markdown.",
+      "language": "Python",
+      "stargazers_count": 4,
+      "forks_count": 1,
+      "open_issues_count": 0,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 1091587496,
+      "node_id": "R_kgDOQRBNqA",
+      "name": "bof-emnlp2025-embeddings-rerankers-smallLMs-for-better-search",
+      "full_name": "jina-ai/bof-emnlp2025-embeddings-rerankers-smallLMs-for-better-search",
+      "html_url": "https://github.com/jina-ai/bof-emnlp2025-embeddings-rerankers-smallLMs-for-better-search",
+      "description": "Nov. 7 EMNLP2025 BoF: Embeddings, Rerankers, Small LMs for Better Search",
+      "language": null,
+      "stargazers_count": 4,
+      "forks_count": 0,
+      "open_issues_count": 1,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1021791643,
+      "node_id": "R_kgDOPOdNmw",
+      "name": "jina-embeddings-v4-gguf",
+      "full_name": "jina-ai/jina-embeddings-v4-gguf",
+      "html_url": "https://github.com/jina-ai/jina-embeddings-v4-gguf",
+      "description": "A collection of GGUF and quantizations for jina-embeddings-v4",
+      "language": "Shell",
+      "stargazers_count": 35,
+      "forks_count": 1,
+      "open_issues_count": 1,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1038887977,
+      "node_id": "R_kgDOPewsKQ",
+      "name": "mlx-retrieval",
+      "full_name": "jina-ai/mlx-retrieval",
+      "html_url": "https://github.com/jina-ai/mlx-retrieval",
+      "description": "Train embedding and reranker models for retrieval tasks on Apple Silicon with MLX",
+      "language": "Python",
+      "stargazers_count": 177,
+      "forks_count": 10,
       "open_issues_count": 0,
       "license": {
         "key": "apache-2.0",
@@ -103,50 +427,13 @@
         "url": "https://api.github.com/licenses/apache-2.0",
         "node_id": "MDc6TGljZW5zZTI="
       },
-      "topics": []
-    },
-    {
-      "id": 784546140,
-      "node_id": "R_kgDOLsM5XA",
-      "name": "reader",
-      "full_name": "jina-ai/reader",
-      "html_url": "https://github.com/jina-ai/reader",
-      "description": "Convert any URL to an LLM-friendly input with a simple prefix https://r.jina.ai/",
-      "language": "TypeScript",
-      "stargazers_count": 8740,
-      "forks_count": 683,
-      "open_issues_count": 98,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
       "topics": [
-        "llm",
-        "proxy"
+        "apple-silicon",
+        "embeddings",
+        "mlx",
+        "mteb",
+        "reranker"
       ]
-    },
-    {
-      "id": 879708616,
-      "node_id": "R_kgDONG9JyA",
-      "name": "meta-prompt",
-      "full_name": "jina-ai/meta-prompt",
-      "html_url": "https://github.com/jina-ai/meta-prompt",
-      "description": "For LLMs to better code with Jina API",
-      "language": "HTML",
-      "stargazers_count": 147,
-      "forks_count": 12,
-      "open_issues_count": 2,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
     },
     {
       "id": 784039319,
@@ -170,7 +457,7 @@
       "html_url": "https://github.com/jina-ai/jina-sagemaker",
       "description": "Jina Embedding Models on AWS SageMaker",
       "language": "Jupyter Notebook",
-      "stargazers_count": 12,
+      "stargazers_count": 13,
       "forks_count": 1,
       "open_issues_count": 2,
       "license": {
@@ -187,6 +474,173 @@
       ]
     },
     {
+      "id": 1005541589,
+      "node_id": "R_kgDOO-9Y1Q",
+      "name": "mteb-jinavdr",
+      "full_name": "jina-ai/mteb-jinavdr",
+      "html_url": "https://github.com/jina-ai/mteb-jinavdr",
+      "description": "MTEB: Massive Text Embedding Benchmark",
+      "language": "Python",
+      "stargazers_count": 1,
+      "forks_count": 1,
+      "open_issues_count": 0,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 934090141,
+      "node_id": "R_kgDON60VnQ",
+      "name": "deepsearch-ui",
+      "full_name": "jina-ai/deepsearch-ui",
+      "html_url": "https://github.com/jina-ai/deepsearch-ui",
+      "description": "Jina DeepSearch UI",
+      "language": "JavaScript",
+      "stargazers_count": 128,
+      "forks_count": 23,
+      "open_issues_count": 0,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 1032923151,
+      "node_id": "R_kgDOPZEoDw",
+      "name": "gpt-oss",
+      "full_name": "jina-ai/gpt-oss",
+      "html_url": "https://github.com/jina-ai/gpt-oss",
+      "description": "gpt-oss-120b and gpt-oss-20b are two open-weight language models by OpenAI",
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 1,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 997358136,
+      "node_id": "R_kgDOO3J6OA",
+      "name": "jina-vdr",
+      "full_name": "jina-ai/jina-vdr",
+      "html_url": "https://github.com/jina-ai/jina-vdr",
+      "description": "Jina VDR is a multilingual, multi-domain benchmark for visual document retrieval",
+      "language": "Python",
+      "stargazers_count": 38,
+      "forks_count": 1,
+      "open_issues_count": 1,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": [
+        "embeddings",
+        "multi-modal",
+        "pdf-search",
+        "vidore",
+        "visual-document-retrieval"
+      ]
+    },
+    {
+      "id": 1023357905,
+      "node_id": "R_kgDOPP8z0Q",
+      "name": "jina-reranker-m0-gguf",
+      "full_name": "jina-ai/jina-reranker-m0-gguf",
+      "html_url": "https://github.com/jina-ai/jina-reranker-m0-gguf",
+      "description": "A collection of GGUF and quantizations for jina-embeddings-v4",
+      "language": null,
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1012708893,
+      "node_id": "R_kgDOPFy2HQ",
+      "name": "submodular-optimization",
+      "full_name": "jina-ai/submodular-optimization",
+      "html_url": "https://github.com/jina-ai/submodular-optimization",
+      "description": "Submodular optimization for context engineering: query fan-out, text selection, passage reranking",
+      "language": "Jupyter Notebook",
+      "stargazers_count": 78,
+      "forks_count": 11,
+      "open_issues_count": 0,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "context-engineering",
+        "submodular-optimization",
+        "submodularity"
+      ]
+    },
+    {
+      "id": 990392632,
+      "node_id": "R_kgDOOwgxOA",
+      "name": "correlations",
+      "full_name": "jina-ai/correlations",
+      "html_url": "https://github.com/jina-ai/correlations",
+      "description": "Simple UI for debugging correlations of text embeddings",
+      "language": "HTML",
+      "stargazers_count": 312,
+      "forks_count": 23,
+      "open_issues_count": 2,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 784546140,
+      "node_id": "R_kgDOLsM5XA",
+      "name": "reader",
+      "full_name": "jina-ai/reader",
+      "html_url": "https://github.com/jina-ai/reader",
+      "description": "Convert any URL to an LLM-friendly input with a simple prefix https://r.jina.ai/",
+      "language": "TypeScript",
+      "stargazers_count": 10414,
+      "forks_count": 783,
+      "open_issues_count": 127,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "llm",
+        "proxy"
+      ]
+    },
+    {
       "id": 962988194,
       "node_id": "R_kgDOOWYIog",
       "name": "image-assets",
@@ -199,513 +653,104 @@
       "open_issues_count": 0,
       "license": null,
       "topics": []
-    },
-    {
-      "id": 961945482,
-      "node_id": "R_kgDOOVYfig",
-      "name": "multimodal-reranker-test",
-      "full_name": "jina-ai/multimodal-reranker-test",
-      "html_url": "https://github.com/jina-ai/multimodal-reranker-test",
-      "description": "samples to evaluate a multimodal neural reranker",
-      "language": null,
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 240315046,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNDAzMTUwNDY=",
-      "name": "serve",
-      "full_name": "jina-ai/serve",
-      "html_url": "https://github.com/jina-ai/serve",
-      "description": "☁️ Build multimodal AI applications with cloud-native stack",
-      "language": "Python",
-      "stargazers_count": 21573,
-      "forks_count": 2226,
-      "open_issues_count": 17,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "cloud-native",
-        "cncf",
-        "deep-learning",
-        "docker",
-        "fastapi",
-        "framework",
-        "generative-ai",
-        "grpc",
-        "jaeger",
-        "kubernetes",
-        "llmops",
-        "machine-learning",
-        "microservice",
-        "mlops",
-        "multimodal",
-        "neural-search",
-        "opentelemetry",
-        "orchestration",
-        "pipeline",
-        "prometheus"
-      ]
-    },
-    {
-      "id": 939111049,
-      "node_id": "R_kgDON_myiQ",
-      "name": "node-serp",
-      "full_name": "jina-ai/node-serp",
-      "html_url": "https://github.com/jina-ai/node-serp",
-      "description": "LLM-as-SERP",
-      "language": "TypeScript",
-      "stargazers_count": 66,
-      "forks_count": 8,
-      "open_issues_count": 1,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 260711481,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNjA3MTE0ODE=",
-      "name": "api",
-      "full_name": "jina-ai/api",
-      "html_url": "https://github.com/jina-ai/api",
-      "description": "API schema of Jina command line interface exposed as JSON and YAML files.",
-      "language": "HTML",
-      "stargazers_count": 12,
-      "forks_count": 5,
-      "open_issues_count": 0,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "api-schema",
-        "jina",
-        "jina-command",
-        "json",
-        "yaml-files"
-      ]
-    },
-    {
-      "id": 918260035,
-      "node_id": "R_kgDONruJQw",
-      "name": "llm-query-expansion",
-      "full_name": "jina-ai/llm-query-expansion",
-      "html_url": "https://github.com/jina-ai/llm-query-expansion",
-      "description": "Query Expension for Better Query Embedding using LLMs",
-      "language": "Python",
-      "stargazers_count": 48,
-      "forks_count": 6,
-      "open_issues_count": 0,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "beir",
-        "embeddings",
-        "information-retrieval",
-        "ir",
-        "jina-embeddings",
-        "llm",
-        "query-expansion"
-      ]
-    },
-    {
-      "id": 517571905,
-      "node_id": "R_kgDOHtmFQQ",
-      "name": "Events",
-      "full_name": "jina-ai/Events",
-      "html_url": "https://github.com/jina-ai/Events",
-      "description": "public presentations and infographics in the Jina community.",
-      "language": "Jupyter Notebook",
-      "stargazers_count": 3,
-      "forks_count": 1,
-      "open_issues_count": 0,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 849248834,
-      "node_id": "R_kgDOMp6CQg",
-      "name": "vllm",
-      "full_name": "jina-ai/vllm",
-      "html_url": "https://github.com/jina-ai/vllm",
-      "description": "A high-throughput and memory-efficient inference and serving engine for LLMs",
-      "language": "Python",
-      "stargazers_count": 3,
-      "forks_count": 1,
-      "open_issues_count": 0,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 838831398,
-      "node_id": "R_kgDOMf-NJg",
-      "name": "late-chunking",
-      "full_name": "jina-ai/late-chunking",
-      "html_url": "https://github.com/jina-ai/late-chunking",
-      "description": "Code for explaining and evaluating late chunking (chunked pooling)",
-      "language": "Python",
-      "stargazers_count": 386,
-      "forks_count": 40,
-      "open_issues_count": 1,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 403624873,
-      "node_id": "MDEwOlJlcG9zaXRvcnk0MDM2MjQ4NzM=",
-      "name": ".github",
-      "full_name": "jina-ai/.github",
-      "html_url": "https://github.com/jina-ai/.github",
-      "description": "This repository stores github actions templates as described https://docs.github.com/en/actions/learn-github-actions/sharing-workflows-with-your-organization",
-      "language": null,
-      "stargazers_count": 11,
-      "forks_count": 9,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 749848261,
-      "node_id": "R_kgDOLLHGxQ",
-      "name": "openclip",
-      "full_name": "jina-ai/openclip",
-      "html_url": "https://github.com/jina-ai/openclip",
-      "description": "An open source implementation of CLIP",
-      "language": "Python",
-      "stargazers_count": 21,
-      "forks_count": 3,
-      "open_issues_count": 5,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 790639614,
-      "node_id": "R_kgDOLyAz_g",
-      "name": "puppeteer-extra-plugin-page-proxy",
-      "full_name": "jina-ai/puppeteer-extra-plugin-page-proxy",
-      "html_url": "https://github.com/jina-ai/puppeteer-extra-plugin-page-proxy",
-      "description": "Additional module to use with 'puppeteer' for setting proxies per page basis.",
-      "language": null,
-      "stargazers_count": 3,
-      "forks_count": 1,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 688818431,
-      "node_id": "R_kgDOKQ6I_w",
-      "name": "mteb-long-documents",
-      "full_name": "jina-ai/mteb-long-documents",
-      "html_url": "https://github.com/jina-ai/mteb-long-documents",
-      "description": "MTEB: Massive Text Embedding Benchmark",
-      "language": "Python",
-      "stargazers_count": 3,
-      "forks_count": 1,
-      "open_issues_count": 0,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 440788087,
-      "node_id": "R_kgDOGkXkdw",
-      "name": "fastapi",
-      "full_name": "jina-ai/fastapi",
-      "html_url": "https://github.com/jina-ai/fastapi",
-      "description": null,
-      "language": "Python",
-      "stargazers_count": 8,
-      "forks_count": 2,
-      "open_issues_count": 1,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 340007629,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzNDAwMDc2Mjk=",
-      "name": "workshops",
-      "full_name": "jina-ai/workshops",
-      "html_url": "https://github.com/jina-ai/workshops",
-      "description": null,
-      "language": "Jupyter Notebook",
-      "stargazers_count": 20,
-      "forks_count": 12,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 818949028,
-      "node_id": "R_kgDOMNArpA",
-      "name": "chunking",
-      "full_name": "jina-ai/chunking",
-      "html_url": "https://github.com/jina-ai/chunking",
-      "description": null,
-      "language": "Python",
-      "stargazers_count": 7,
-      "forks_count": 3,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 627959104,
-      "node_id": "R_kgDOJW3lQA",
-      "name": "thinkgpt",
-      "full_name": "jina-ai/thinkgpt",
-      "html_url": "https://github.com/jina-ai/thinkgpt",
-      "description": "Agent techniques to augment your LLM and push it beyong its limits",
-      "language": "Python",
-      "stargazers_count": 1576,
-      "forks_count": 137,
-      "open_issues_count": 16,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 751661500,
-      "node_id": "R_kgDOLM1xvA",
-      "name": "ColBERT",
-      "full_name": "jina-ai/ColBERT",
-      "html_url": "https://github.com/jina-ai/ColBERT",
-      "description": "ColBERT: state-of-the-art neural search (SIGIR'20, TACL'21, NeurIPS'21, NAACL'22, CIKM'22, ACL'23, EMNLP'23)",
-      "language": "Python",
-      "stargazers_count": 5,
-      "forks_count": 0,
-      "open_issues_count": 1,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 795521000,
-      "node_id": "R_kgDOL2qv6A",
-      "name": "terminal-news",
-      "full_name": "jina-ai/terminal-news",
-      "html_url": "https://github.com/jina-ai/terminal-news",
-      "description": "Access Jina AI news via ssh guest@news.jina.ai",
-      "language": "Python",
-      "stargazers_count": 13,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "ssh",
-        "textualize",
-        "tui"
-      ]
-    },
-    {
-      "id": 394994747,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzOTQ5OTQ3NDc=",
-      "name": "finetuner",
-      "full_name": "jina-ai/finetuner",
-      "html_url": "https://github.com/jina-ai/finetuner",
-      "description": ":dart: Task-oriented embedding tuning for BERT, CLIP, etc.",
-      "language": "Python",
-      "stargazers_count": 1497,
-      "forks_count": 69,
-      "open_issues_count": 8,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "bert",
-        "few-shot-learning",
-        "fine-tuning",
-        "finetuning",
-        "jina",
-        "metric-learning",
-        "negative-sampling",
-        "neural-search",
-        "openai-clip",
-        "pretrained-models",
-        "siamese-network",
-        "similarity-learning",
-        "transfer-learning",
-        "triplet-loss"
-      ]
-    },
-    {
-      "id": 635374751,
-      "node_id": "R_kgDOJd8Mnw",
-      "name": "vectordb",
-      "full_name": "jina-ai/vectordb",
-      "html_url": "https://github.com/jina-ai/vectordb",
-      "description": "A Python vector database you just need - no more, no less.",
-      "language": "Python",
-      "stargazers_count": 614,
-      "forks_count": 46,
-      "open_issues_count": 8,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "embedding-similarity",
-        "neural-search",
-        "sentence-embeddings",
-        "vector-database",
-        "vector-database-embedding",
-        "vector-search"
-      ]
-    },
-    {
-      "id": 762258723,
-      "node_id": "R_kgDOLW8lIw",
-      "name": "paper-sag",
-      "full_name": "jina-ai/paper-sag",
-      "html_url": "https://github.com/jina-ai/paper-sag",
-      "description": null,
-      "language": null,
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 748029494,
-      "node_id": "R_kgDOLJYGNg",
-      "name": "azure-metered-billing-accelerator",
-      "full_name": "jina-ai/azure-metered-billing-accelerator",
-      "html_url": "https://github.com/jina-ai/azure-metered-billing-accelerator",
-      "description": null,
-      "language": "F#",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
     }
   ],
   "contributorsDetails": [
     {
-      "login": "hanxiao",
-      "id": 2041322,
-      "node_id": "MDQ6VXNlcjIwNDEzMjI=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/2041322?v=4",
-      "html_url": "https://github.com/hanxiao",
-      "contributions": 411
+      "login": "ouyanglinke",
+      "id": 113978928,
+      "node_id": "U_kgDOBssuMA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/113978928?v=4",
+      "html_url": "https://github.com/ouyanglinke",
+      "contributions": 45
     },
     {
-      "login": "shazhou2015",
-      "id": 11716841,
-      "node_id": "MDQ6VXNlcjExNzE2ODQx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/11716841?v=4",
-      "html_url": "https://github.com/shazhou2015",
-      "contributions": 21
+      "login": "ZZZZZQT",
+      "id": 140687272,
+      "node_id": "U_kgDOCGK3qA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/140687272?v=4",
+      "html_url": "https://github.com/ZZZZZQT",
+      "contributions": 8
     },
     {
-      "login": "jina-bot",
-      "id": 62694369,
-      "node_id": "MDQ6VXNlcjYyNjk0MzY5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/62694369?v=4",
-      "html_url": "https://github.com/jina-bot",
-      "contributions": 254
+      "login": "numb3r3",
+      "id": 35718120,
+      "node_id": "MDQ6VXNlcjM1NzE4MTIw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/35718120?v=4",
+      "html_url": "https://github.com/numb3r3",
+      "contributions": 7
     },
     {
-      "login": "mapleeit",
-      "id": 4194287,
-      "node_id": "MDQ6VXNlcjQxOTQyODc=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/4194287?v=4",
-      "html_url": "https://github.com/mapleeit",
-      "contributions": 117
+      "login": "general10",
+      "id": 29281318,
+      "node_id": "MDQ6VXNlcjI5MjgxMzE4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/29281318?v=4",
+      "html_url": "https://github.com/general10",
+      "contributions": 4
     },
     {
-      "login": "Roshanjossey",
-      "id": 8488446,
-      "node_id": "MDQ6VXNlcjg0ODg0NDY=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/8488446?v=4",
-      "html_url": "https://github.com/Roshanjossey",
-      "contributions": 41
+      "login": "changdazhou",
+      "id": 142379845,
+      "node_id": "U_kgDOCHyLRQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/142379845?v=4",
+      "html_url": "https://github.com/changdazhou",
+      "contributions": 3
+    },
+    {
+      "login": "FangdongWang",
+      "id": 112860159,
+      "node_id": "U_kgDOBrob_w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/112860159?v=4",
+      "html_url": "https://github.com/FangdongWang",
+      "contributions": 3
+    },
+    {
+      "login": "kiddoray",
+      "id": 74587995,
+      "node_id": "MDQ6VXNlcjc0NTg3OTk1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/74587995?v=4",
+      "html_url": "https://github.com/kiddoray",
+      "contributions": 2
+    },
+    {
+      "login": "wangbinDL",
+      "id": 69186975,
+      "node_id": "MDQ6VXNlcjY5MTg2OTc1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/69186975?v=4",
+      "html_url": "https://github.com/wangbinDL",
+      "contributions": 2
+    },
+    {
+      "login": "hotelll",
+      "id": 45009029,
+      "node_id": "MDQ6VXNlcjQ1MDA5MDI5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/45009029?v=4",
+      "html_url": "https://github.com/hotelll",
+      "contributions": 1
+    },
+    {
+      "login": "vc1492a",
+      "id": 2057896,
+      "node_id": "MDQ6VXNlcjIwNTc4OTY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2057896?v=4",
+      "html_url": "https://github.com/vc1492a",
+      "contributions": 1
+    },
+    {
+      "login": "chaserRen",
+      "id": 32838822,
+      "node_id": "MDQ6VXNlcjMyODM4ODIy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/32838822?v=4",
+      "html_url": "https://github.com/chaserRen",
+      "contributions": 1
+    },
+    {
+      "login": "dt-yy",
+      "id": 102640628,
+      "node_id": "U_kgDOBh4r9A",
+      "avatar_url": "https://avatars.githubusercontent.com/u/102640628?v=4",
+      "html_url": "https://github.com/dt-yy",
+      "contributions": 1
     },
     {
       "login": "nomagick",
@@ -713,104 +758,16 @@
       "node_id": "MDQ6VXNlcjU2NTg2OQ==",
       "avatar_url": "https://avatars.githubusercontent.com/u/565869?v=4",
       "html_url": "https://github.com/nomagick",
+      "contributions": 35
+    },
+    {
+      "login": "hanxiao",
+      "id": 2041322,
+      "node_id": "MDQ6VXNlcjIwNDEzMjI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2041322?v=4",
+      "html_url": "https://github.com/hanxiao",
       "contributions": 23
-    },
-    {
-      "login": "DresAaron",
-      "id": 127167174,
-      "node_id": "U_kgDOB5Rqxg",
-      "avatar_url": "https://avatars.githubusercontent.com/u/127167174?v=4",
-      "html_url": "https://github.com/DresAaron",
-      "contributions": 14
-    },
-    {
-      "login": "SmartCodeDavid",
-      "id": 30002112,
-      "node_id": "MDQ6VXNlcjMwMDAyMTEy",
-      "avatar_url": "https://avatars.githubusercontent.com/u/30002112?v=4",
-      "html_url": "https://github.com/SmartCodeDavid",
-      "contributions": 9
-    },
-    {
-      "login": "alexcg1",
-      "id": 4182659,
-      "node_id": "MDQ6VXNlcjQxODI2NTk=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/4182659?v=4",
-      "html_url": "https://github.com/alexcg1",
-      "contributions": 5
-    },
-    {
-      "login": "Shubhamsaboo",
-      "id": 31396011,
-      "node_id": "MDQ6VXNlcjMxMzk2MDEx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/31396011?v=4",
-      "html_url": "https://github.com/Shubhamsaboo",
-      "contributions": 3
-    },
-    {
-      "login": "pswu11",
-      "id": 48913707,
-      "node_id": "MDQ6VXNlcjQ4OTEzNzA3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/48913707?v=4",
-      "html_url": "https://github.com/pswu11",
-      "contributions": 3
-    },
-    {
-      "login": "Gikiman",
-      "id": 50768559,
-      "node_id": "MDQ6VXNlcjUwNzY4NTU5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/50768559?v=4",
-      "html_url": "https://github.com/Gikiman",
-      "contributions": 2
-    },
-    {
-      "login": "devin-ai-integration[bot]",
-      "id": 158243242,
-      "node_id": "BOT_kgDOCW6Zqg",
-      "avatar_url": "https://avatars.githubusercontent.com/in/811515?v=4",
-      "html_url": "https://github.com/apps/devin-ai-integration",
-      "contributions": 20
-    },
-    {
-      "login": "ArnoChenFx",
-      "id": 24894259,
-      "node_id": "MDQ6VXNlcjI0ODk0MjU5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/24894259?v=4",
-      "html_url": "https://github.com/ArnoChenFx",
-      "contributions": 2
-    },
-    {
-      "login": "florian-hoenicke",
-      "id": 11627845,
-      "node_id": "MDQ6VXNlcjExNjI3ODQ1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/11627845?v=4",
-      "html_url": "https://github.com/florian-hoenicke",
-      "contributions": 1
-    },
-    {
-      "login": "IgorDuino",
-      "id": 74809945,
-      "node_id": "MDQ6VXNlcjc0ODA5OTQ1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/74809945?v=4",
-      "html_url": "https://github.com/IgorDuino",
-      "contributions": 1
-    },
-    {
-      "login": "Zaehyeon2",
-      "id": 26452565,
-      "node_id": "MDQ6VXNlcjI2NDUyNTY1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/26452565?v=4",
-      "html_url": "https://github.com/Zaehyeon2",
-      "contributions": 1
-    },
-    {
-      "login": "paul5007",
-      "id": 19560793,
-      "node_id": "MDQ6VXNlcjE5NTYwNzkz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/19560793?v=4",
-      "html_url": "https://github.com/paul5007",
-      "contributions": 1
     }
   ],
-  "activeOrg": true
+  "activeOrg": false
 }

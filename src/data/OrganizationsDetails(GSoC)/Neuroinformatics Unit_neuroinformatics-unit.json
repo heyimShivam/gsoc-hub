@@ -22,30 +22,155 @@
     "napari"
   ],
   "irc_channel": "https://neuroinformatics.zulipchat.com",
-  "contact_email": "mailto:code@adamltyson.com",
+  "contact_email": "mailto:hello@neuroinformatics.dev",
   "mailing_list": null,
   "twitter_url": "https://x.com/swc_niu",
-  "blog_url": null,
+  "blog_url": "https://neuroinformatics.dev/blog/index.html",
   "facebook_url": null,
   "year": [
-    2025
+    2025,
+    2026
   ],
   "projects": {
-    "2025": []
+    "2025": [
+      {
+        "title": "BrainGlobe: Automating Region Selection in brainglobe-registration",
+        "short_description": "Synopsis: This project aims to enhance the brainglobe-registration tool by automating the selection of atlas regions for aligning 2D or 3D brain...",
+        "description": "Synopsis:\n\nThis project aims to enhance the brainglobe-registration tool by automating the selection of atlas regions for aligning 2D or 3D brain images to a standard anatomical reference via brainglobe-atlasapi. Currently, this process is manual, time-consuming, and subjective, posing a barrier to reproducibility and efficiency. By introducing a new preprocessing step that automatically identifies the optimal atlas region – using methods such as adaptive grid search, machine learning, or Bayesian optimisation – this project will streamline the workflow and improve accuracy. Deliverables include at least two implemented approaches, benchmarking, comprehensive testing, full documentation, and a blog post to showcase the new functionality.\n\nThis automation directly benefits my research in paediatric radiotherapy, where mapping histology images to an atlas is essential for analysing cellular behaviour across brain regions. By making this process faster and more robust, it not only enhances my own work but also enables broader adoption of BrainGlobe tools by researchers in neuroscience and healthcare, even those without extensive anatomical expertise.\n\nMinimal Set of Deliverables:\n\n•\tImplement a new preprocessing step to automatically select the atlas region.\n•\tCompare at least two region-selection methods (e.g., adaptive grid search vs ML/Bayesian optimisation).\n•\tAdd tests to validate the new functionality.\n•\tDocument the new pipeline and add usage instructions.\n•\tWrite a blog post showcasing the project and results.",
+        "student_name": "Saarah Hussain",
+        "code_url": "https://gist.github.com/saarah815/61269e705ddd3641f55f48eba5f90a6f",
+        "proposal_id": "xZdss07P",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/7Xk4Fl7t"
+      },
+      {
+        "title": "Datashuttle: Allow Google Drive or AWS as remote storage (Shrey)",
+        "short_description": "This is a proposal to extend Datashuttle's functionality to allow connections to Google Drive and AWS buckets as remote storage options. This project...",
+        "description": "This is a proposal to extend Datashuttle's functionality to allow connections to Google Drive and AWS buckets as remote storage options. This project aims to improves the flexibility and adoption of Datashuttle to allow neuroscience researchers use a variety of storage options with the most popular ones being Google Drive and AWS buckets.\n\nThis will be done by extending Rclone's wrapping of Datashuttle and extending the terminal user interface to allow connections to Google Drive and AWS buckets. \n\n**Deliverables**\n\n- Support for setting up connections to Google Drive and AWS and transferring data in the Datashuttle's Python API using Rclone.\n- TUI tabs and screens to enable users to setup connections to Google Drive and AWS and transfer data via the TUI.\n- Integration and TUI tests for the implemented features.\n- Documentation for setting up Google Drive or AWS as central storage.",
+        "student_name": "Shrey Singh",
+        "code_url": "https://neuroinformatics.dev/gsoc-2025-datashuttle",
+        "proposal_id": "MdUK4Ajz",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/33o1XAWV"
+      }
+    ],
+    "2026": []
   },
   "githubID": "neuroinformatics-unit",
   "repositories": [
+    {
+      "id": 852146718,
+      "node_id": "R_kgDOMsq6Hg",
+      "name": "dashboard",
+      "full_name": "neuroinformatics-unit/dashboard",
+      "html_url": "https://github.com/neuroinformatics-unit/dashboard",
+      "description": "Overview of all Neuroinformatics Unit repos",
+      "language": "Python",
+      "stargazers_count": 4,
+      "forks_count": 3,
+      "open_issues_count": 3,
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "topics": []
+    },
+    {
+      "id": 215753056,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMTU3NTMwNTY=",
+      "name": "fancylog",
+      "full_name": "neuroinformatics-unit/fancylog",
+      "html_url": "https://github.com/neuroinformatics-unit/fancylog",
+      "description": "Fancier logging with python.",
+      "language": "Python",
+      "stargazers_count": 16,
+      "forks_count": 13,
+      "open_issues_count": 13,
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "topics": []
+    },
+    {
+      "id": 531897428,
+      "node_id": "R_kgDOH7QcVA",
+      "name": "datashuttle",
+      "full_name": "neuroinformatics-unit/datashuttle",
+      "html_url": "https://github.com/neuroinformatics-unit/datashuttle",
+      "description": "Tool for the creation, validation and transfer of neuroscience project folders.",
+      "language": "Python",
+      "stargazers_count": 35,
+      "forks_count": 40,
+      "open_issues_count": 59,
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "topics": [
+        "data-management",
+        "neuroblueprint",
+        "neuroscience"
+      ]
+    },
+    {
+      "id": 1159910965,
+      "node_id": "R_kgDORSLWNQ",
+      "name": "OSCaR",
+      "full_name": "neuroinformatics-unit/OSCaR",
+      "html_url": "https://github.com/neuroinformatics-unit/OSCaR",
+      "description": "A python package for breeding scheme calculations.",
+      "language": "Python",
+      "stargazers_count": 1,
+      "forks_count": 1,
+      "open_issues_count": 16,
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "topics": []
+    },
+    {
+      "id": 1099971063,
+      "node_id": "R_kgDOQZA59w",
+      "name": "poseinterface",
+      "full_name": "neuroinformatics-unit/poseinterface",
+      "html_url": "https://github.com/neuroinformatics-unit/poseinterface",
+      "description": "Run pose estimation across frameworks",
+      "language": "Python",
+      "stargazers_count": 5,
+      "forks_count": 2,
+      "open_issues_count": 10,
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "topics": []
+    },
     {
       "id": 252519335,
       "node_id": "MDEwOlJlcG9zaXRvcnkyNTI1MTkzMzU=",
       "name": "movement",
       "full_name": "neuroinformatics-unit/movement",
       "html_url": "https://github.com/neuroinformatics-unit/movement",
-      "description": "A Python toolbox for analysing body movements across space and time",
+      "description": "A Python toolbox for analysing animal body movements across space and time",
       "language": "Python",
-      "stargazers_count": 182,
-      "forks_count": 62,
-      "open_issues_count": 132,
+      "stargazers_count": 270,
+      "forks_count": 133,
+      "open_issues_count": 199,
       "license": {
         "key": "bsd-3-clause",
         "name": "BSD 3-Clause \"New\" or \"Revised\" License",
@@ -64,26 +189,48 @@
       ]
     },
     {
-      "id": 869029853,
-      "node_id": "R_kgDOM8xX3Q",
-      "name": "photon-mosaic",
-      "full_name": "neuroinformatics-unit/photon-mosaic",
-      "html_url": "https://github.com/neuroinformatics-unit/photon-mosaic",
-      "description": "Automated and reproducible analysis of multiphoton calcium imaging datasets",
+      "id": 755144815,
+      "node_id": "R_kgDOLQKYbw",
+      "name": "ethology",
+      "full_name": "neuroinformatics-unit/ethology",
+      "html_url": "https://github.com/neuroinformatics-unit/ethology",
+      "description": "Mix-and-match computer vision tools for your animal behaviour analysis",
       "language": "Python",
-      "stargazers_count": 4,
-      "forks_count": 0,
-      "open_issues_count": 2,
+      "stargazers_count": 28,
+      "forks_count": 32,
+      "open_issues_count": 50,
       "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "topics": []
+    },
+    {
+      "id": 990655199,
+      "node_id": "R_kgDOOwwy3w",
+      "name": "smart-kages-movement",
+      "full_name": "neuroinformatics-unit/smart-kages-movement",
+      "html_url": "https://github.com/neuroinformatics-unit/smart-kages-movement",
+      "description": "Using the movement package to analysing mouse home cage monitoring data acquired in Smart-Kages and tracked with DeepLabCut.",
+      "language": "Jupyter Notebook",
+      "stargazers_count": 5,
+      "forks_count": 2,
+      "open_issues_count": 1,
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
       },
       "topics": [
-        "neuroscience",
-        "neuroscience-methods"
+        "behaviour",
+        "mouse",
+        "movement",
+        "tracking"
       ]
     },
     {
@@ -95,8 +242,8 @@
       "description": "A package to manage electrophysiology analysis.",
       "language": "Python",
       "stargazers_count": 23,
-      "forks_count": 15,
-      "open_issues_count": 23,
+      "forks_count": 17,
+      "open_issues_count": 28,
       "license": {
         "key": "bsd-3-clause",
         "name": "BSD 3-Clause \"New\" or \"Revised\" License",
@@ -111,6 +258,66 @@
       ]
     },
     {
+      "id": 1161943732,
+      "node_id": "R_kgDORUHatA",
+      "name": "driftmap_viewer",
+      "full_name": "neuroinformatics-unit/driftmap_viewer",
+      "html_url": "https://github.com/neuroinformatics-unit/driftmap_viewer",
+      "description": "Viewing drift-maps in Kilosort",
+      "language": "Python",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "open_issues_count": 4,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 564371102,
+      "node_id": "R_kgDOIaOeng",
+      "name": "neuroinformatics-unit.github.io",
+      "full_name": "neuroinformatics-unit/neuroinformatics-unit.github.io",
+      "html_url": "https://github.com/neuroinformatics-unit/neuroinformatics-unit.github.io",
+      "description": "Home website of the Neuroinformatics Unit",
+      "language": null,
+      "stargazers_count": 14,
+      "forks_count": 8,
+      "open_issues_count": 13,
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "topics": []
+    },
+    {
+      "id": 940723647,
+      "node_id": "R_kgDOOBJNvw",
+      "name": "zebras-stitching",
+      "full_name": "neuroinformatics-unit/zebras-stitching",
+      "html_url": "https://github.com/neuroinformatics-unit/zebras-stitching",
+      "description": "Exploring how to stitch drone imagery and animal trajectories",
+      "language": "Python",
+      "stargazers_count": 4,
+      "forks_count": 3,
+      "open_issues_count": 1,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
       "id": 656136265,
       "node_id": "R_kgDOJxvYSQ",
       "name": "derotation",
@@ -118,9 +325,9 @@
       "html_url": "https://github.com/neuroinformatics-unit/derotation",
       "description": "Derotate images acquired via multiphoton calcium imaging",
       "language": "Python",
-      "stargazers_count": 7,
-      "forks_count": 1,
-      "open_issues_count": 10,
+      "stargazers_count": 17,
+      "forks_count": 3,
+      "open_issues_count": 8,
       "license": {
         "key": "bsd-3-clause",
         "name": "BSD 3-Clause \"New\" or \"Revised\" License",
@@ -135,86 +342,22 @@
       ]
     },
     {
-      "id": 531897428,
-      "node_id": "R_kgDOH7QcVA",
-      "name": "datashuttle",
-      "full_name": "neuroinformatics-unit/datashuttle",
-      "html_url": "https://github.com/neuroinformatics-unit/datashuttle",
-      "description": "Tool for the creation, validation and transfer of neuroscience project folders.",
+      "id": 527945971,
+      "node_id": "R_kgDOH3fQ8w",
+      "name": "python-cookiecutter",
+      "full_name": "neuroinformatics-unit/python-cookiecutter",
+      "html_url": "https://github.com/neuroinformatics-unit/python-cookiecutter",
+      "description": "Utility to create a basic Python project structure with tests, CI etc.",
       "language": "Python",
-      "stargazers_count": 24,
-      "forks_count": 22,
-      "open_issues_count": 61,
+      "stargazers_count": 38,
+      "forks_count": 11,
+      "open_issues_count": 15,
       "license": {
         "key": "bsd-3-clause",
         "name": "BSD 3-Clause \"New\" or \"Revised\" License",
         "spdx_id": "BSD-3-Clause",
         "url": "https://api.github.com/licenses/bsd-3-clause",
         "node_id": "MDc6TGljZW5zZTU="
-      },
-      "topics": [
-        "data-management",
-        "neuroblueprint",
-        "neuroscience"
-      ]
-    },
-    {
-      "id": 573473216,
-      "node_id": "R_kgDOIi6BwA",
-      "name": "NeuroBlueprint",
-      "full_name": "neuroinformatics-unit/NeuroBlueprint",
-      "html_url": "https://github.com/neuroinformatics-unit/NeuroBlueprint",
-      "description": "Lightweight data specification for systems neuroscience, inspired by BIDS.",
-      "language": null,
-      "stargazers_count": 19,
-      "forks_count": 4,
-      "open_issues_count": 11,
-      "license": {
-        "key": "cc-by-4.0",
-        "name": "Creative Commons Attribution 4.0 International",
-        "spdx_id": "CC-BY-4.0",
-        "url": "https://api.github.com/licenses/cc-by-4.0",
-        "node_id": "MDc6TGljZW5zZTI1"
-      },
-      "topics": []
-    },
-    {
-      "id": 755144815,
-      "node_id": "R_kgDOLQKYbw",
-      "name": "ethology",
-      "full_name": "neuroinformatics-unit/ethology",
-      "html_url": "https://github.com/neuroinformatics-unit/ethology",
-      "description": "Mix-and-match computer vision tools for your animal behaviour analysis",
-      "language": "Python",
-      "stargazers_count": 17,
-      "forks_count": 18,
-      "open_issues_count": 40,
-      "license": {
-        "key": "bsd-3-clause",
-        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
-        "spdx_id": "BSD-3-Clause",
-        "url": "https://api.github.com/licenses/bsd-3-clause",
-        "node_id": "MDc6TGljZW5zZTU="
-      },
-      "topics": []
-    },
-    {
-      "id": 938242349,
-      "node_id": "R_kgDON-xxLQ",
-      "name": "qt-niu",
-      "full_name": "neuroinformatics-unit/qt-niu",
-      "html_url": "https://github.com/neuroinformatics-unit/qt-niu",
-      "description": "Reusable Qt elements",
-      "language": "Python",
-      "stargazers_count": 3,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
       },
       "topics": []
     },
@@ -226,7 +369,7 @@
       "html_url": "https://github.com/neuroinformatics-unit/swc-slack",
       "description": "Tools to interface with slack",
       "language": "Python",
-      "stargazers_count": 7,
+      "stargazers_count": 8,
       "forks_count": 1,
       "open_issues_count": 0,
       "license": {
@@ -246,7 +389,7 @@
       "html_url": "https://github.com/neuroinformatics-unit/slurmio",
       "description": "Python tools to read SLURM job parameters.",
       "language": "Python",
-      "stargazers_count": 7,
+      "stargazers_count": 8,
       "forks_count": 1,
       "open_issues_count": 0,
       "license": {
@@ -259,42 +402,22 @@
       "topics": []
     },
     {
-      "id": 215753056,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMTU3NTMwNTY=",
-      "name": "fancylog",
-      "full_name": "neuroinformatics-unit/fancylog",
-      "html_url": "https://github.com/neuroinformatics-unit/fancylog",
-      "description": "Fancier logging with python.",
+      "id": 938242349,
+      "node_id": "R_kgDON-xxLQ",
+      "name": "qt-niu",
+      "full_name": "neuroinformatics-unit/qt-niu",
+      "html_url": "https://github.com/neuroinformatics-unit/qt-niu",
+      "description": "Reusable Qt elements",
       "language": "Python",
-      "stargazers_count": 12,
-      "forks_count": 4,
-      "open_issues_count": 5,
+      "stargazers_count": 6,
+      "forks_count": 0,
+      "open_issues_count": 0,
       "license": {
-        "key": "bsd-3-clause",
-        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
-        "spdx_id": "BSD-3-Clause",
-        "url": "https://api.github.com/licenses/bsd-3-clause",
-        "node_id": "MDc6TGljZW5zZTU="
-      },
-      "topics": []
-    },
-    {
-      "id": 527945971,
-      "node_id": "R_kgDOH3fQ8w",
-      "name": "python-cookiecutter",
-      "full_name": "neuroinformatics-unit/python-cookiecutter",
-      "html_url": "https://github.com/neuroinformatics-unit/python-cookiecutter",
-      "description": "Utility to create a basic Python project structure with tests, CI etc.",
-      "language": "Python",
-      "stargazers_count": 28,
-      "forks_count": 5,
-      "open_issues_count": 14,
-      "license": {
-        "key": "bsd-3-clause",
-        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
-        "spdx_id": "BSD-3-Clause",
-        "url": "https://api.github.com/licenses/bsd-3-clause",
-        "node_id": "MDc6TGljZW5zZTU="
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
       },
       "topics": []
     },
@@ -306,9 +429,9 @@
       "html_url": "https://github.com/neuroinformatics-unit/actions",
       "description": "Re-usable GitHub Action scripts",
       "language": null,
-      "stargazers_count": 10,
-      "forks_count": 4,
-      "open_issues_count": 8,
+      "stargazers_count": 14,
+      "forks_count": 5,
+      "open_issues_count": 9,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -328,102 +451,8 @@
       "language": "Python",
       "stargazers_count": 7,
       "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 564371102,
-      "node_id": "R_kgDOIaOeng",
-      "name": "neuroinformatics-unit.github.io",
-      "full_name": "neuroinformatics-unit/neuroinformatics-unit.github.io",
-      "html_url": "https://github.com/neuroinformatics-unit/neuroinformatics-unit.github.io",
-      "description": "Home website of the Neuroinformatics Unit",
-      "language": null,
-      "stargazers_count": 10,
-      "forks_count": 0,
-      "open_issues_count": 12,
-      "license": {
-        "key": "bsd-3-clause",
-        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
-        "spdx_id": "BSD-3-Clause",
-        "url": "https://api.github.com/licenses/bsd-3-clause",
-        "node_id": "MDc6TGljZW5zZTU="
-      },
-      "topics": []
-    },
-    {
-      "id": 852146718,
-      "node_id": "R_kgDOMsq6Hg",
-      "name": "dashboard",
-      "full_name": "neuroinformatics-unit/dashboard",
-      "html_url": "https://github.com/neuroinformatics-unit/dashboard",
-      "description": "Overview of all Neuroinformatics Unit repos",
-      "language": "TypeScript",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "open_issues_count": 1,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 940176131,
-      "node_id": "R_kgDOOAnzAw",
-      "name": "gsoc",
-      "full_name": "neuroinformatics-unit/gsoc",
-      "html_url": "https://github.com/neuroinformatics-unit/gsoc",
-      "description": "A repository for our participation in Google Summer of Code",
-      "language": null,
-      "stargazers_count": 11,
-      "forks_count": 70,
       "open_issues_count": 1,
       "license": null,
-      "topics": []
-    },
-    {
-      "id": 948481350,
-      "node_id": "R_kgDOOIitRg",
-      "name": "slides-NIU-tea-hour",
-      "full_name": "neuroinformatics-unit/slides-NIU-tea-hour",
-      "html_url": "https://github.com/neuroinformatics-unit/slides-NIU-tea-hour",
-      "description": "Slides for the internal SWC tea hour",
-      "language": null,
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "bsd-3-clause",
-        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
-        "spdx_id": "BSD-3-Clause",
-        "url": "https://api.github.com/licenses/bsd-3-clause",
-        "node_id": "MDc6TGljZW5zZTU="
-      },
-      "topics": []
-    },
-    {
-      "id": 504493031,
-      "node_id": "R_kgDOHhHz5w",
-      "name": ".github",
-      "full_name": "neuroinformatics-unit/.github",
-      "html_url": "https://github.com/neuroinformatics-unit/.github",
-      "description": null,
-      "language": null,
-      "stargazers_count": 6,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
       "topics": []
     },
     {
@@ -436,7 +465,7 @@
       "language": null,
       "stargazers_count": 10,
       "forks_count": 1,
-      "open_issues_count": 12,
+      "open_issues_count": 15,
       "license": {
         "key": "cc-by-4.0",
         "name": "Creative Commons Attribution 4.0 International",
@@ -447,56 +476,16 @@
       "topics": []
     },
     {
-      "id": 938237505,
-      "node_id": "R_kgDON-xeQQ",
-      "name": "neuropixels_platform_paper",
-      "full_name": "neuroinformatics-unit/neuropixels_platform_paper",
-      "html_url": "https://github.com/neuroinformatics-unit/neuropixels_platform_paper",
-      "description": "Code used to generate figures for Siegle, Jia et al. (2019)",
-      "language": "Jupyter Notebook",
+      "id": 1143473557,
+      "node_id": "R_kgDORCgFlQ",
+      "name": "slides-trusted-by-design",
+      "full_name": "neuroinformatics-unit/slides-trusted-by-design",
+      "html_url": "https://github.com/neuroinformatics-unit/slides-trusted-by-design",
+      "description": "Slides for the \"Trusted by design\" talk, presented at FOSDEM 2026.",
+      "language": "Lua",
       "stargazers_count": 0,
       "forks_count": 0,
       "open_issues_count": 0,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 892171400,
-      "node_id": "R_kgDONS10iA",
-      "name": "poisson-numcodecs",
-      "full_name": "neuroinformatics-unit/poisson-numcodecs",
-      "html_url": "https://github.com/neuroinformatics-unit/poisson-numcodecs",
-      "description": "Numcodecs implementation of photon conversion using poisson statistics",
-      "language": "Python",
-      "stargazers_count": 0,
-      "forks_count": 1,
-      "open_issues_count": 0,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 791952530,
-      "node_id": "R_kgDOLzQ8kg",
-      "name": "translocator-models",
-      "full_name": "neuroinformatics-unit/translocator-models",
-      "html_url": "https://github.com/neuroinformatics-unit/translocator-models",
-      "description": "Evaluate the model for the translocator project",
-      "language": "Python",
-      "stargazers_count": 2,
-      "forks_count": 0,
-      "open_issues_count": 1,
       "license": {
         "key": "bsd-3-clause",
         "name": "BSD 3-Clause \"New\" or \"Revised\" License",
@@ -507,37 +496,106 @@
       "topics": []
     },
     {
-      "id": 614260200,
-      "node_id": "R_kgDOJJzd6A",
-      "name": "extracellular_ephys_dev",
-      "full_name": "neuroinformatics-unit/extracellular_ephys_dev",
-      "html_url": "https://github.com/neuroinformatics-unit/extracellular_ephys_dev",
-      "description": "A repository for formalising and testing extracellular ephys pipelines",
-      "language": "HTML",
+      "id": 1021393461,
+      "node_id": "R_kgDOPOE6NQ",
+      "name": "course-animals-in-motion",
+      "full_name": "neuroinformatics-unit/course-animals-in-motion",
+      "html_url": "https://github.com/neuroinformatics-unit/course-animals-in-motion",
+      "description": "A handbook about open-source tools for tracking animals in videos and quantifying behaviour.",
+      "language": "TeX",
+      "stargazers_count": 7,
+      "forks_count": 0,
+      "open_issues_count": 8,
+      "license": {
+        "key": "cc-by-4.0",
+        "name": "Creative Commons Attribution 4.0 International",
+        "spdx_id": "CC-BY-4.0",
+        "url": "https://api.github.com/licenses/cc-by-4.0",
+        "node_id": "MDc6TGljZW5zZTI1"
+      },
+      "topics": [
+        "animals",
+        "behavior",
+        "handbook",
+        "motion",
+        "movement",
+        "python",
+        "quarto",
+        "tracking"
+      ]
+    },
+    {
+      "id": 1141986965,
+      "node_id": "R_kgDORBFWlQ",
+      "name": "slides-movement-fosdem2026",
+      "full_name": "neuroinformatics-unit/slides-movement-fosdem2026",
+      "html_url": "https://github.com/neuroinformatics-unit/slides-movement-fosdem2026",
+      "description": "Slides about `movement`, presented at FOSDEM 2026.",
+      "language": "Lua",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "cc-by-4.0",
+        "name": "Creative Commons Attribution 4.0 International",
+        "spdx_id": "CC-BY-4.0",
+        "url": "https://api.github.com/licenses/cc-by-4.0",
+        "node_id": "MDc6TGljZW5zZTI1"
+      },
+      "topics": []
+    },
+    {
+      "id": 1135850438,
+      "node_id": "R_kgDOQ7Ozxg",
+      "name": "course-ephys-osss",
+      "full_name": "neuroinformatics-unit/course-ephys-osss",
+      "html_url": "https://github.com/neuroinformatics-unit/course-ephys-osss",
+      "description": "A repository to plan the extracellular electrophysiology course for OSSS 2026",
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 3,
+      "license": {
+        "key": "cc-by-4.0",
+        "name": "Creative Commons Attribution 4.0 International",
+        "spdx_id": "CC-BY-4.0",
+        "url": "https://api.github.com/licenses/cc-by-4.0",
+        "node_id": "MDc6TGljZW5zZTI1"
+      },
+      "topics": []
+    },
+    {
+      "id": 573473216,
+      "node_id": "R_kgDOIi6BwA",
+      "name": "NeuroBlueprint",
+      "full_name": "neuroinformatics-unit/NeuroBlueprint",
+      "html_url": "https://github.com/neuroinformatics-unit/NeuroBlueprint",
+      "description": "Lightweight data specification for systems neuroscience, inspired by BIDS.",
+      "language": null,
+      "stargazers_count": 21,
+      "forks_count": 5,
+      "open_issues_count": 14,
+      "license": {
+        "key": "cc-by-4.0",
+        "name": "Creative Commons Attribution 4.0 International",
+        "spdx_id": "CC-BY-4.0",
+        "url": "https://api.github.com/licenses/cc-by-4.0",
+        "node_id": "MDc6TGljZW5zZTI1"
+      },
+      "topics": []
+    },
+    {
+      "id": 1116912176,
+      "node_id": "R_kgDOQpK6MA",
+      "name": "slides-NIU-presentation-Japan-visitors",
+      "full_name": "neuroinformatics-unit/slides-NIU-presentation-Japan-visitors",
+      "html_url": "https://github.com/neuroinformatics-unit/slides-NIU-presentation-Japan-visitors",
+      "description": "Presenting the NIU to a team from Japan, reduced version of previous Tea Hour slides",
+      "language": null,
       "stargazers_count": 1,
       "forks_count": 0,
       "open_issues_count": 0,
       "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 905645897,
-      "node_id": "R_kgDONfsPSQ",
-      "name": "slides-qbatch-template-building",
-      "full_name": "neuroinformatics-unit/slides-qbatch-template-building",
-      "html_url": "https://github.com/neuroinformatics-unit/slides-qbatch-template-building",
-      "description": "Slides for NIU meeting about parallelising template building (and possibly other things)",
-      "language": "SCSS",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
         "key": "bsd-3-clause",
         "name": "BSD 3-Clause \"New\" or \"Revised\" License",
         "spdx_id": "BSD-3-Clause",
@@ -547,22 +605,42 @@
       "topics": []
     },
     {
-      "id": 891059295,
-      "node_id": "R_kgDONRx8Xw",
-      "name": "suite2p",
-      "full_name": "neuroinformatics-unit/suite2p",
-      "html_url": "https://github.com/neuroinformatics-unit/suite2p",
-      "description": "cell detection in calcium imaging recordings",
-      "language": "Jupyter Notebook",
+      "id": 1098481356,
+      "node_id": "R_kgDOQXl-zA",
+      "name": "slides-movement-cbias2025",
+      "full_name": "neuroinformatics-unit/slides-movement-cbias2025",
+      "html_url": "https://github.com/neuroinformatics-unit/slides-movement-cbias2025",
+      "description": "Slides about `movement`, presented at CBIAS 2025",
+      "language": "TeX",
       "stargazers_count": 0,
-      "forks_count": 0,
+      "forks_count": 1,
       "open_issues_count": 0,
       "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
+        "key": "cc-by-4.0",
+        "name": "Creative Commons Attribution 4.0 International",
+        "spdx_id": "CC-BY-4.0",
+        "url": "https://api.github.com/licenses/cc-by-4.0",
+        "node_id": "MDc6TGljZW5zZTI1"
+      },
+      "topics": []
+    },
+    {
+      "id": 893205063,
+      "node_id": "R_kgDONT06Rw",
+      "name": "beekeeping",
+      "full_name": "neuroinformatics-unit/beekeeping",
+      "html_url": "https://github.com/neuroinformatics-unit/beekeeping",
+      "description": "Managing video metadata for animal behaviour experiments",
+      "language": "Python",
+      "stargazers_count": 4,
+      "forks_count": 1,
+      "open_issues_count": 0,
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
       },
       "topics": []
     },
@@ -576,7 +654,7 @@
       "language": "Python",
       "stargazers_count": 5,
       "forks_count": 0,
-      "open_issues_count": 0,
+      "open_issues_count": 1,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -594,9 +672,9 @@
       "html_url": "https://github.com/neuroinformatics-unit/software-skills",
       "description": "Software skills training at the Sainsbury Wellcome Centre & Gatsby Computational Neuroscience Unit",
       "language": null,
-      "stargazers_count": 7,
+      "stargazers_count": 8,
       "forks_count": 0,
-      "open_issues_count": 1,
+      "open_issues_count": 0,
       "license": {
         "key": "cc-by-4.0",
         "name": "Creative Commons Attribution 4.0 International",
@@ -605,66 +683,152 @@
         "node_id": "MDc6TGljZW5zZTI1"
       },
       "topics": []
-    },
-    {
-      "id": 563958792,
-      "node_id": "R_kgDOIZ1UCA",
-      "name": "rsp-vision",
-      "full_name": "neuroinformatics-unit/rsp-vision",
-      "html_url": "https://github.com/neuroinformatics-unit/rsp-vision",
-      "description": "Analysis and visualization of calcium imaging data from retrosplenial cortex",
-      "language": "Python",
-      "stargazers_count": 8,
-      "forks_count": 0,
-      "open_issues_count": 23,
-      "license": {
-        "key": "bsd-3-clause",
-        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
-        "spdx_id": "BSD-3-Clause",
-        "url": "https://api.github.com/licenses/bsd-3-clause",
-        "node_id": "MDc6TGljZW5zZTU="
-      },
-      "topics": [
-        "neuroscience-methods"
-      ]
-    },
-    {
-      "id": 721612870,
-      "node_id": "R_kgDOKwLwRg",
-      "name": "course-behavioural-analysis",
-      "full_name": "neuroinformatics-unit/course-behavioural-analysis",
-      "html_url": "https://github.com/neuroinformatics-unit/course-behavioural-analysis",
-      "description": "Materials and slides for the video-based analysis of animal behaviour course.",
-      "language": "Jupyter Notebook",
-      "stargazers_count": 4,
-      "forks_count": 1,
-      "open_issues_count": 3,
-      "license": {
-        "key": "bsd-3-clause",
-        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
-        "spdx_id": "BSD-3-Clause",
-        "url": "https://api.github.com/licenses/bsd-3-clause",
-        "node_id": "MDc6TGljZW5zZTU="
-      },
-      "topics": []
     }
   ],
   "contributorsDetails": [
     {
-      "login": "niksirbi",
-      "id": 20923448,
-      "node_id": "MDQ6VXNlcjIwOTIzNDQ4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/20923448?v=4",
-      "html_url": "https://github.com/niksirbi",
-      "contributions": 86
+      "login": "ajhenry",
+      "id": 24923406,
+      "node_id": "MDQ6VXNlcjI0OTIzNDA2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/24923406?v=4",
+      "html_url": "https://github.com/ajhenry",
+      "contributions": 137
     },
     {
-      "login": "sfmig",
-      "id": 33267254,
-      "node_id": "MDQ6VXNlcjMzMjY3MjU0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/33267254?v=4",
-      "html_url": "https://github.com/sfmig",
-      "contributions": 47
+      "login": "hasan-dot",
+      "id": 34780972,
+      "node_id": "MDQ6VXNlcjM0NzgwOTcy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/34780972?v=4",
+      "html_url": "https://github.com/hasan-dot",
+      "contributions": 107
+    },
+    {
+      "login": "ipc103",
+      "id": 6826778,
+      "node_id": "MDQ6VXNlcjY4MjY3Nzg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6826778?v=4",
+      "html_url": "https://github.com/ipc103",
+      "contributions": 87
+    },
+    {
+      "login": "IgorTatarnikov",
+      "id": 61896994,
+      "node_id": "MDQ6VXNlcjYxODk2OTk0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/61896994?v=4",
+      "html_url": "https://github.com/IgorTatarnikov",
+      "contributions": 4
+    },
+    {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "html_url": "https://github.com/apps/dependabot",
+      "contributions": 6
+    },
+    {
+      "login": "JoannaaKL",
+      "id": 67866556,
+      "node_id": "MDQ6VXNlcjY3ODY2NTU2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/67866556?v=4",
+      "html_url": "https://github.com/JoannaaKL",
+      "contributions": 22
+    },
+    {
+      "login": "liliana3186",
+      "id": 12959012,
+      "node_id": "MDQ6VXNlcjEyOTU5MDEy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12959012?v=4",
+      "html_url": "https://github.com/liliana3186",
+      "contributions": 15
+    },
+    {
+      "login": "adamltyson",
+      "id": 13147259,
+      "node_id": "MDQ6VXNlcjEzMTQ3MjU5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13147259?v=4",
+      "html_url": "https://github.com/adamltyson",
+      "contributions": 7
+    },
+    {
+      "login": "darostegui",
+      "id": 61184284,
+      "node_id": "MDQ6VXNlcjYxMTg0Mjg0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/61184284?v=4",
+      "html_url": "https://github.com/darostegui",
+      "contributions": 9
+    },
+    {
+      "login": "Arbaaz123676",
+      "id": 208905841,
+      "node_id": "U_kgDODHOmcQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/208905841?v=4",
+      "html_url": "https://github.com/Arbaaz123676",
+      "contributions": 3
+    },
+    {
+      "login": "Lehcar",
+      "id": 37482914,
+      "node_id": "MDQ6VXNlcjM3NDgyOTE0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/37482914?v=4",
+      "html_url": "https://github.com/Lehcar",
+      "contributions": 2
+    },
+    {
+      "login": "jmeridth",
+      "id": 35014,
+      "node_id": "MDQ6VXNlcjM1MDE0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/35014?v=4",
+      "html_url": "https://github.com/jmeridth",
+      "contributions": 2
+    },
+    {
+      "login": "pre-commit-ci[bot]",
+      "id": 66853113,
+      "node_id": "MDM6Qm90NjY4NTMxMTM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/68672?v=4",
+      "html_url": "https://github.com/apps/pre-commit-ci",
+      "contributions": 45
+    },
+    {
+      "login": "JoeZiminski",
+      "id": 55797454,
+      "node_id": "MDQ6VXNlcjU1Nzk3NDU0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55797454?v=4",
+      "html_url": "https://github.com/JoeZiminski",
+      "contributions": 895
+    },
+    {
+      "login": "alessandrofelder",
+      "id": 10500965,
+      "node_id": "MDQ6VXNlcjEwNTAwOTY1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10500965?v=4",
+      "html_url": "https://github.com/alessandrofelder",
+      "contributions": 2
+    },
+    {
+      "login": "AlgoFoe",
+      "id": 88921846,
+      "node_id": "MDQ6VXNlcjg4OTIxODQ2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/88921846?v=4",
+      "html_url": "https://github.com/AlgoFoe",
+      "contributions": 2
+    },
+    {
+      "login": "AlexandroBerumen",
+      "id": 142856540,
+      "node_id": "U_kgDOCIPRXA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/142856540?v=4",
+      "html_url": "https://github.com/AlexandroBerumen",
+      "contributions": 1
+    },
+    {
+      "login": "STORM-codess",
+      "id": 191202632,
+      "node_id": "U_kgDOC2WFSA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/191202632?v=4",
+      "html_url": "https://github.com/STORM-codess",
+      "contributions": 1
     },
     {
       "login": "lochhh",
@@ -675,36 +839,44 @@
       "contributions": 1
     },
     {
-      "login": "pre-commit-ci[bot]",
-      "id": 66853113,
-      "node_id": "MDM6Qm90NjY4NTMxMTM=",
-      "avatar_url": "https://avatars.githubusercontent.com/in/68672?v=4",
-      "html_url": "https://github.com/apps/pre-commit-ci",
-      "contributions": 27
+      "login": "mscroggs",
+      "id": 9850599,
+      "node_id": "MDQ6VXNlcjk4NTA1OTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9850599?v=4",
+      "html_url": "https://github.com/mscroggs",
+      "contributions": 1
     },
     {
-      "login": "adamltyson",
-      "id": 13147259,
-      "node_id": "MDQ6VXNlcjEzMTQ3MjU5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/13147259?v=4",
-      "html_url": "https://github.com/adamltyson",
-      "contributions": 17
+      "login": "niksirbi",
+      "id": 20923448,
+      "node_id": "MDQ6VXNlcjIwOTIzNDQ4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20923448?v=4",
+      "html_url": "https://github.com/niksirbi",
+      "contributions": 4
     },
     {
-      "login": "willGraham01",
-      "id": 32364977,
-      "node_id": "MDQ6VXNlcjMyMzY0OTc3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/32364977?v=4",
-      "html_url": "https://github.com/willGraham01",
-      "contributions": 12
+      "login": "richarddushime",
+      "id": 45734838,
+      "node_id": "MDQ6VXNlcjQ1NzM0ODM4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/45734838?v=4",
+      "html_url": "https://github.com/richarddushime",
+      "contributions": 1
     },
     {
-      "login": "stellaprins",
-      "id": 30465823,
-      "node_id": "MDQ6VXNlcjMwNDY1ODIz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/30465823?v=4",
-      "html_url": "https://github.com/stellaprins",
-      "contributions": 5
+      "login": "svalbuenaa",
+      "id": 31705507,
+      "node_id": "MDQ6VXNlcjMxNzA1NTA3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/31705507?v=4",
+      "html_url": "https://github.com/svalbuenaa",
+      "contributions": 1
+    },
+    {
+      "login": "stephenlenzi",
+      "id": 12136220,
+      "node_id": "MDQ6VXNlcjEyMTM2MjIw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12136220?v=4",
+      "html_url": "https://github.com/stephenlenzi",
+      "contributions": 1
     },
     {
       "login": "b-peri",
@@ -712,71 +884,15 @@
       "node_id": "MDQ6VXNlcjc3Mjc5NTky",
       "avatar_url": "https://avatars.githubusercontent.com/u/77279592?v=4",
       "html_url": "https://github.com/b-peri",
-      "contributions": 4
+      "contributions": 8
     },
     {
-      "login": "DhruvSkyy",
-      "id": 49231411,
-      "node_id": "MDQ6VXNlcjQ5MjMxNDEx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/49231411?v=4",
-      "html_url": "https://github.com/DhruvSkyy",
-      "contributions": 4
-    },
-    {
-      "login": "Ishaan0132",
-      "id": 35690029,
-      "node_id": "MDQ6VXNlcjM1NjkwMDI5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/35690029?v=4",
-      "html_url": "https://github.com/Ishaan0132",
-      "contributions": 4
-    },
-    {
-      "login": "vigji",
-      "id": 10400212,
-      "node_id": "MDQ6VXNlcjEwNDAwMjEy",
-      "avatar_url": "https://avatars.githubusercontent.com/u/10400212?v=4",
-      "html_url": "https://github.com/vigji",
-      "contributions": 2
-    },
-    {
-      "login": "dependabot[bot]",
-      "id": 49699333,
-      "node_id": "MDM6Qm90NDk2OTkzMzM=",
-      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-      "html_url": "https://github.com/apps/dependabot",
-      "contributions": 2
-    },
-    {
-      "login": "github-actions[bot]",
-      "id": 41898282,
-      "node_id": "MDM6Qm90NDE4OTgyODI=",
-      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
-      "html_url": "https://github.com/apps/github-actions",
-      "contributions": 2
-    },
-    {
-      "login": "harsh-bhanushali-05",
-      "id": 109029538,
-      "node_id": "U_kgDOBn-oog",
-      "avatar_url": "https://avatars.githubusercontent.com/u/109029538?v=4",
-      "html_url": "https://github.com/harsh-bhanushali-05",
-      "contributions": 1
-    },
-    {
-      "login": "IgorTatarnikov",
-      "id": 61896994,
-      "node_id": "MDQ6VXNlcjYxODk2OTk0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/61896994?v=4",
-      "html_url": "https://github.com/IgorTatarnikov",
-      "contributions": 1
-    },
-    {
-      "login": "Kasra-Shirvanian",
-      "id": 164632798,
-      "node_id": "U_kgDOCdAY3g",
-      "avatar_url": "https://avatars.githubusercontent.com/u/164632798?v=4",
-      "html_url": "https://github.com/Kasra-Shirvanian",
-      "contributions": 1
+      "login": "cs7-shrey",
+      "id": 96627769,
+      "node_id": "U_kgDOBcJsOQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/96627769?v=4",
+      "html_url": "https://github.com/cs7-shrey",
+      "contributions": 8
     },
     {
       "login": "lauraporta",
@@ -784,30 +900,86 @@
       "node_id": "MDQ6VXNlcjI5MjE2MDA2",
       "avatar_url": "https://avatars.githubusercontent.com/u/29216006?v=4",
       "html_url": "https://github.com/lauraporta",
-      "contributions": 48
+      "contributions": 6
     },
     {
-      "login": "Lauraschwarz",
-      "id": 104347948,
-      "node_id": "U_kgDOBjg5LA",
-      "avatar_url": "https://avatars.githubusercontent.com/u/104347948?v=4",
-      "html_url": "https://github.com/Lauraschwarz",
+      "login": "ishan372or",
+      "id": 181570708,
+      "node_id": "U_kgDOCtKMlA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/181570708?v=4",
+      "html_url": "https://github.com/ishan372or",
+      "contributions": 2
+    },
+    {
+      "login": "sumana-2705",
+      "id": 110307215,
+      "node_id": "U_kgDOBpMnjw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/110307215?v=4",
+      "html_url": "https://github.com/sumana-2705",
+      "contributions": 2
+    },
+    {
+      "login": "Sushma-1706",
+      "id": 187420721,
+      "node_id": "U_kgDOCyvQMQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/187420721?v=4",
+      "html_url": "https://github.com/Sushma-1706",
+      "contributions": 2
+    },
+    {
+      "login": "AdityaGupta716",
+      "id": 222836259,
+      "node_id": "U_kgDODUg2Iw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/222836259?v=4",
+      "html_url": "https://github.com/AdityaGupta716",
       "contributions": 1
     },
     {
-      "login": "angkul07",
-      "id": 129066458,
-      "node_id": "U_kgDOB7Fl2g",
-      "avatar_url": "https://avatars.githubusercontent.com/u/129066458?v=4",
-      "html_url": "https://github.com/angkul07",
+      "login": "Transyltooniaa",
+      "id": 116881656,
+      "node_id": "U_kgDOBvd4-A",
+      "avatar_url": "https://avatars.githubusercontent.com/u/116881656?v=4",
+      "html_url": "https://github.com/Transyltooniaa",
       "contributions": 1
     },
     {
-      "login": "ivanvrlg",
-      "id": 131998802,
-      "node_id": "U_kgDOB94kUg",
-      "avatar_url": "https://avatars.githubusercontent.com/u/131998802?v=4",
-      "html_url": "https://github.com/ivanvrlg",
+      "login": "MoffittAndrew",
+      "id": 164888252,
+      "node_id": "U_kgDOCdP-vA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/164888252?v=4",
+      "html_url": "https://github.com/MoffittAndrew",
+      "contributions": 1
+    },
+    {
+      "login": "TheAnkushAgarwal",
+      "id": 96491776,
+      "node_id": "U_kgDOBcBZAA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/96491776?v=4",
+      "html_url": "https://github.com/TheAnkushAgarwal",
+      "contributions": 1
+    },
+    {
+      "login": "Planeshiffhter",
+      "id": 202428910,
+      "node_id": "U_kgDODBDR7g",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202428910?v=4",
+      "html_url": "https://github.com/Planeshiffhter",
+      "contributions": 1
+    },
+    {
+      "login": "parharti",
+      "id": 140067623,
+      "node_id": "U_kgDOCFlDJw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/140067623?v=4",
+      "html_url": "https://github.com/parharti",
+      "contributions": 1
+    },
+    {
+      "login": "yarikoptic",
+      "id": 39889,
+      "node_id": "MDQ6VXNlcjM5ODg5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/39889?v=4",
+      "html_url": "https://github.com/yarikoptic",
       "contributions": 1
     }
   ],

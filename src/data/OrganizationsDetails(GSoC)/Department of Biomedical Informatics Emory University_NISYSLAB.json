@@ -255,7 +255,35 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/5g7xbg4v"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Securing Linux Storage with ACLs: Open-Source Web Management Interface for Enhanced Data Protection",
+        "short_description": "Institutional departments, such as the Biomedical Informatics (BMI) Department of Emory University School of Medicine, manage vast amounts of data,...",
+        "description": "Institutional departments, such as the Biomedical Informatics (BMI) Department of Emory University School of Medicine, manage vast amounts of data, often reaching petabyte scales across multiple Linux-based storage servers. Researchers storing data in these systems need a streamlined way to modify ACLs to grant or revoke access for collaborators. Currently, the IT team at BMI is responsible for manually handling these ACL modifications, which is time-consuming, error-prone, and inefficient, especially as data volume and user demands grow.\n\nTo address this challenge at BMI and similar institutions worldwide, a Web Management Interface is needed to allow users to modify ACLs securely. This solution would eliminate the burden on IT teams by enabling on-demand permission management while ensuring security and reliability.\n\nThe proposed system will feature a robust and highly configurable backend, high-speed databases, orchestration daemons for file storage servers, and an intuitive frontend. The proposal includes an in-depth analysis of required components, high-level and low-level design considerations, technology selection, and the demonstration of a functional prototype as proof of concept.\n\nThe goal is to deliver a production-ready, secure, scalable, and reliable system for managing ACLs across multiple servers hosting filesystems such as NFS, BeeGFS, and others. This solution will streamline access control management and prepare it for deployment at BMI and other institutions worldwide, significantly reducing the manual workload for IT teams.",
+        "student_name": "_Aditya_Patil_",
+        "code_url": "https://pythonhacker24.github.io/gsoc-final-report-2025/",
+        "proposal_id": "byNWkCyC",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/FFAXDtDw"
+      },
+      {
+        "title": "Adaptive Closed-Loop Neuromodulation: An Agentic Framework Using Synthetic EEG Data",
+        "short_description": "This project focused on developing ACUMEN (Active Cross-Entropy Method with Uncertainty-driven Neural ODEs), a data-efficient framework for system...",
+        "description": "This project focused on developing ACUMEN (Active Cross-Entropy Method with Uncertainty-driven Neural ODEs), a data-efficient framework for system identification in healthcare. Unlike fixed or passive approaches, ACUMEN actively explores uncertain regions of physiological dynamics to accelerate learning. The goal was to build patient-specific models that can support adaptive therapies such as neuromodulation.\n\nAt its core, ACUMEN couples Neural Ordinary Differential Equations (Neural ODEs) with Cross-Entropy Method Model Predictive Control (CEM-MPC). An ensemble of Neural ODEs serves as a surrogate model for continuous-time physiological signals. Ensemble disagreement quantifies epistemic uncertainty, which then drives exploration: CEM-MPC plans candidate interventions and prioritizes those that maximize model uncertainty, enhanced with optimistic rollouts, novelty-based objectives, and adaptive scaling. This iterative process collects the most informative data, retrains the ensemble, and progressively refines predictions.\n\nKey Deliverables:\n\n1- A simulation pipeline using the RL-DBS environment to generate realistic EEG-like signals and stimulation effects.\n2- A dataset of stimulation–response pairs across clinically relevant ranges.\n3- A trained Neural ODE ensemble surrogate model with documented accuracy and uncertainty metrics.\n4- An uncertainty-driven RL environment with CEM-MPC–based exploration.\n5- Evaluation showing up to 24.2% error reduction and tighter uncertainty bands compared to random data collection.\n6- Open-source code, documentation, and final report.\n\nImpact:\nBy actively probing uncertain regions, ACUMEN reduces sample complexity and enables efficient, personalized system identification. This paves the way for safer, more effective closed-loop therapies in neuromodulation and beyond.",
+        "student_name": "Amirhossein Afkhami Ardekani",
+        "code_url": "https://github.com/amirmmi/ACUMEN-Agentic-Sytem-ID",
+        "proposal_id": "AaaS989y",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/JkPFPa6X"
+      },
+      {
+        "title": "Leveraging Diffusion Models to Enhance Segmentation Models for GI Tract Disorder Evaluation",
+        "short_description": "Acquiring neural fMRI and abdominal MRI data is inherently expensive and time-consuming, significantly limiting the volume of datasets available for...",
+        "description": "Acquiring neural fMRI and abdominal MRI data is inherently expensive and time-consuming, significantly limiting the volume of datasets available for advanced analysis. Consequently, the full potential of GI tract disease diagnosis and segmentation models remains unrealized, as limited datasets hinder their accuracy and generalizability.\n\nDiffusion models offer a promising solution to these challenges. By effectively learning intricate spatiotemporal patterns inherent in fMRI/MRI data, diffusion models can synthesize high-quality, realistic data samples. This capability augments available datasets, substantially enhancing the accuracy and reliability of GI tract semantic segmentation and disease diagnosis models.",
+        "student_name": "Miguel Aenlle",
+        "code_url": "https://github.com/miguelaenlle/GSOC-2025-Generative-AI-for-GI-Motility-Estimation",
+        "proposal_id": "GrZyZWMU",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/QB45Mcpx"
+      }
+    ]
   },
   "githubID": "NISYSLAB",
   "repositories": [
@@ -267,8 +295,8 @@
       "html_url": "https://github.com/NISYSLAB/Emory-BMI-GSoC",
       "description": "Emory BMI GSoC Project Ideas ",
       "language": null,
-      "stargazers_count": 113,
-      "forks_count": 26,
+      "stargazers_count": 118,
+      "forks_count": 27,
       "open_issues_count": 0,
       "license": {
         "key": "bsd-3-clause",
@@ -293,6 +321,20 @@
       ]
     },
     {
+      "id": 904383897,
+      "node_id": "R_kgDONefNmQ",
+      "name": "Neuroweaver_Studio",
+      "full_name": "NISYSLAB/Neuroweaver_Studio",
+      "html_url": "https://github.com/NISYSLAB/Neuroweaver_Studio",
+      "description": null,
+      "language": "Jupyter Notebook",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
       "id": 341416402,
       "node_id": "MDEwOlJlcG9zaXRvcnkzNDE0MTY0MDI=",
       "name": "Nexus_Platform",
@@ -315,7 +357,7 @@
       "description": "DHGWorkflow Composer",
       "language": "JavaScript",
       "stargazers_count": 5,
-      "forks_count": 24,
+      "forks_count": 28,
       "open_issues_count": 3,
       "license": {
         "key": "bsd-3-clause",
@@ -337,7 +379,7 @@
       "html_url": "https://github.com/NISYSLAB/VisualRLComposer",
       "description": "A Visual Composer for OpenAI Gym and RL algorithms",
       "language": "Python",
-      "stargazers_count": 6,
+      "stargazers_count": 7,
       "forks_count": 3,
       "open_issues_count": 1,
       "license": {
@@ -397,7 +439,7 @@
       "html_url": "https://github.com/NISYSLAB/LoopSim",
       "description": "Workflow Framework for Closed-Loop Neuromodulation Control Systems",
       "language": "Python",
-      "stargazers_count": 1,
+      "stargazers_count": 0,
       "forks_count": 3,
       "open_issues_count": 0,
       "license": {
@@ -439,7 +481,7 @@
       "node_id": "MDQ6VXNlcjE2NTAzMTM4",
       "avatar_url": "https://avatars.githubusercontent.com/u/16503138?v=4",
       "html_url": "https://github.com/zeydabadi",
-      "contributions": 51
+      "contributions": 56
     },
     {
       "login": "monjoybme",
@@ -466,6 +508,22 @@
       "contributions": 1
     },
     {
+      "login": "NISYS-Admin",
+      "id": 55160603,
+      "node_id": "MDQ6VXNlcjU1MTYwNjAz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55160603?v=4",
+      "html_url": "https://github.com/NISYS-Admin",
+      "contributions": 1
+    },
+    {
+      "login": "yusenz",
+      "id": 29244641,
+      "node_id": "MDQ6VXNlcjI5MjQ0NjQx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/29244641?v=4",
+      "html_url": "https://github.com/yusenz",
+      "contributions": 54
+    },
+    {
       "login": "annieemoryedu",
       "id": 40004130,
       "node_id": "MDQ6VXNlcjQwMDA0MTMw",
@@ -482,28 +540,12 @@
       "contributions": 67
     },
     {
-      "login": "yusenz",
-      "id": 29244641,
-      "node_id": "MDQ6VXNlcjI5MjQ0NjQx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/29244641?v=4",
-      "html_url": "https://github.com/yusenz",
-      "contributions": 54
-    },
-    {
       "login": "Paarisaa",
       "id": 31935028,
       "node_id": "MDQ6VXNlcjMxOTM1MDI4",
       "avatar_url": "https://avatars.githubusercontent.com/u/31935028?v=4",
       "html_url": "https://github.com/Paarisaa",
       "contributions": 10
-    },
-    {
-      "login": "NISYS-Admin",
-      "id": 55160603,
-      "node_id": "MDQ6VXNlcjU1MTYwNjAz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/55160603?v=4",
-      "html_url": "https://github.com/NISYS-Admin",
-      "contributions": 1
     }
   ],
   "activeOrg": false

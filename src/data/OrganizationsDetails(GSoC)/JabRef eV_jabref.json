@@ -2,7 +2,7 @@
   "name": "JabRef e.V.",
   "image_url": "https://summerofcode.withgoogle.com/media/org/jabref-ev/ylevworrwqf9bw9g-360.png",
   "image_background_color": "#ffffff",
-  "description": "Open Source bibliography manager",
+  "description": "Stay on top of your Literature",
   "url": "https://www.jabref.org/",
   "category": [
     "End user applications",
@@ -38,7 +38,8 @@
     2021,
     2022,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2019": [
@@ -108,10 +109,79 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/MfPL66UW"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "JabRef for Visual Studio Code (JabRef4VSCode)",
+        "short_description": "Users of LaTeX tend to use Visual Studio Code (VSCode) for editing their LaTeX and BibTeX files. Although JabRef can still be used as GUI, it would...",
+        "description": "Users of LaTeX tend to use Visual Studio Code (VSCode) for editing their LaTeX and BibTeX  files. Although JabRef can still be used as GUI, it would be beneficial to have JabRef's capabilities integrated in VSCode.\n\nIn this project, two main working streams are followed:\n\n1. Have JabRef's functionalities (e.g., integrity check) included as functionality in VSCode when editing `.bib` files (by implementing an LSP), \n2. Have JabRef's entry lookup functionality integrated in VSCode when editing `.tex` files",
+        "student_name": "palukku",
+        "code_url": "https://github.com/JabRef/jabref/wiki/GSoC-2025-%E2%80%90-LSP",
+        "proposal_id": "tmsiXzZw",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/6Z6Fqv6g"
+      },
+      {
+        "title": "Git Support for JabRef",
+        "short_description": "This project aims to improve Git-based collaboration in JabRef by building a reliable synchronization layer for BibTeX files. It treats Git changes...",
+        "description": "This project aims to improve Git-based collaboration in JabRef by building a reliable synchronization layer for BibTeX files. It treats Git changes as edits from remote collaborators and introduces support for conflict detection, a guided merge UI, and safe synchronization workflows. Key deliverables include a modular GitSyncService, a conflict resolution interface, integration with JabRef’s save flow, and secure credentials management. The result will be a smoother, more collaborative experience for researchers using version control in their bibliography workflows.",
+        "student_name": "Wanling",
+        "code_url": "https://github.com/JabRef/jabref/wiki/GSoC-2025-%E2%80%90-Git-Support-for-JabRef",
+        "proposal_id": "Uva3IUx2",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/R9UcJNpJ"
+      },
+      {
+        "title": "Integrating Walkthrough Feature in JabRef",
+        "short_description": "I aim to improve the Welcome page and create a walkthrough in JabRef. The walkthrough would: 1. Provide an overview of JabRef's core functionality 2....",
+        "description": "I aim to improve the Welcome page and create a walkthrough in JabRef. The walkthrough would:\n1. Provide an overview of JabRef's core functionality\n2. Ask users to select their user type\n3. Configure software with sensible default settings based on user type\n4. Demonstrate relevant features using a sample library\n\nThe walkthrough would be personalized based on the user's selected type, helping new users understand the features most relevant to their needs. Additional walkthroughs may be implemented depending on if there is additional time.",
+        "student_name": "Yubo",
+        "code_url": "https://github.com/JabRef/jabref/wiki/GSoC-2025-%E2%80%90-Walkthrough-and-Welcome-Tab",
+        "proposal_id": "SHtbcnCh",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/ae6W329p"
+      }
+    ],
+    "2026": []
   },
   "githubID": "jabref",
   "repositories": [
+    {
+      "id": 980839172,
+      "node_id": "R_kgDOOnZrBA",
+      "name": "jabref-demonstration-libraries",
+      "full_name": "JabRef/jabref-demonstration-libraries",
+      "html_url": "https://github.com/JabRef/jabref-demonstration-libraries",
+      "description": "JabRef demonstration libraries",
+      "language": "TeX",
+      "stargazers_count": 1,
+      "forks_count": 1,
+      "open_issues_count": 1,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 1121868073,
+      "node_id": "R_kgDOQt5ZKQ",
+      "name": "GSoC",
+      "full_name": "JabRef/GSoC",
+      "html_url": "https://github.com/JabRef/GSoC",
+      "description": "Guide for participating in Google Summer of Code with JabRef e.V.",
+      "language": "Shell",
+      "stargazers_count": 6,
+      "forks_count": 2,
+      "open_issues_count": 3,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
     {
       "id": 17634071,
       "node_id": "MDEwOlJlcG9zaXRvcnkxNzYzNDA3MQ==",
@@ -120,9 +190,9 @@
       "html_url": "https://github.com/JabRef/jabref",
       "description": "Graphical Java application for managing BibTeX and BibLaTeX (.bib) databases",
       "language": "Java",
-      "stargazers_count": 3889,
-      "forks_count": 2804,
-      "open_issues_count": 582,
+      "stargazers_count": 4298,
+      "forks_count": 3307,
+      "open_issues_count": 532,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -154,40 +224,6 @@
       ]
     },
     {
-      "id": 344841169,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzNDQ4NDExNjk=",
-      "name": "JabRefOnline",
-      "full_name": "JabRef/JabRefOnline",
-      "html_url": "https://github.com/JabRef/JabRefOnline",
-      "description": null,
-      "language": "TypeScript",
-      "stargazers_count": 36,
-      "forks_count": 14,
-      "open_issues_count": 70,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 70429378,
-      "node_id": "MDEwOlJlcG9zaXRvcnk3MDQyOTM3OA==",
-      "name": "downloads.jabref.org",
-      "full_name": "JabRef/downloads.jabref.org",
-      "html_url": "https://github.com/JabRef/downloads.jabref.org",
-      "description": "Repository for JabRef's download redirect.",
-      "language": "HTML",
-      "stargazers_count": 0,
-      "forks_count": 2,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
       "id": 46726791,
       "node_id": "MDEwOlJlcG9zaXRvcnk0NjcyNjc5MQ==",
       "name": "user-documentation",
@@ -195,9 +231,9 @@
       "html_url": "https://github.com/JabRef/user-documentation",
       "description": "User documentation of JabRef",
       "language": "CSS",
-      "stargazers_count": 48,
-      "forks_count": 118,
-      "open_issues_count": 80,
+      "stargazers_count": 51,
+      "forks_count": 135,
+      "open_issues_count": 96,
       "license": {
         "key": "cc-by-sa-4.0",
         "name": "Creative Commons Attribution Share Alike 4.0 International",
@@ -215,6 +251,153 @@
       ]
     },
     {
+      "id": 958059922,
+      "node_id": "R_kgDOORrVkg",
+      "name": "lsp-vscode-extension",
+      "full_name": "JabRef/lsp-vscode-extension",
+      "html_url": "https://github.com/JabRef/lsp-vscode-extension",
+      "description": null,
+      "language": "TypeScript",
+      "stargazers_count": 5,
+      "forks_count": 1,
+      "open_issues_count": 8,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 967512604,
+      "node_id": "R_kgDOOasSHA",
+      "name": "jabmap",
+      "full_name": "JabRef/jabmap",
+      "html_url": "https://github.com/JabRef/jabmap",
+      "description": "next-generation scientific mind mapping",
+      "language": "JavaScript",
+      "stargazers_count": 3,
+      "forks_count": 0,
+      "open_issues_count": 22,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 16218270,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNjIxODI3MA==",
+      "name": "JabRef-Browser-Extension",
+      "full_name": "JabRef/JabRef-Browser-Extension",
+      "html_url": "https://github.com/JabRef/JabRef-Browser-Extension",
+      "description": "Browser extension for JabRef to allow importing of new items directly from the browser.",
+      "language": "JavaScript",
+      "stargazers_count": 93,
+      "forks_count": 25,
+      "open_issues_count": 43,
+      "license": {
+        "key": "agpl-3.0",
+        "name": "GNU Affero General Public License v3.0",
+        "spdx_id": "AGPL-3.0",
+        "url": "https://api.github.com/licenses/agpl-3.0",
+        "node_id": "MDc6TGljZW5zZTE="
+      },
+      "topics": [
+        "bibliographic-references",
+        "bibtex",
+        "firefox",
+        "jabref"
+      ]
+    },
+    {
+      "id": 120523448,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMjA1MjM0NDg=",
+      "name": "afterburner.fx",
+      "full_name": "JabRef/afterburner.fx",
+      "html_url": "https://github.com/JabRef/afterburner.fx",
+      "description": "Improved afterburner.fx",
+      "language": "Java",
+      "stargazers_count": 8,
+      "forks_count": 4,
+      "open_issues_count": 2,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": [
+        "javafx"
+      ]
+    },
+    {
+      "id": 1137769967,
+      "node_id": "R_kgDOQ9D97w",
+      "name": "JabRef-Browser-Extension-fresh",
+      "full_name": "JabRef/JabRef-Browser-Extension-fresh",
+      "html_url": "https://github.com/JabRef/JabRef-Browser-Extension-fresh",
+      "description": null,
+      "language": "JavaScript",
+      "stargazers_count": 4,
+      "forks_count": 1,
+      "open_issues_count": 15,
+      "license": {
+        "key": "agpl-3.0",
+        "name": "GNU Affero General Public License v3.0",
+        "spdx_id": "AGPL-3.0",
+        "url": "https://api.github.com/licenses/agpl-3.0",
+        "node_id": "MDc6TGljZW5zZTE="
+      },
+      "topics": []
+    },
+    {
+      "id": 344841169,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzNDQ4NDExNjk=",
+      "name": "JabRefOnline",
+      "full_name": "JabRef/JabRefOnline",
+      "html_url": "https://github.com/JabRef/JabRefOnline",
+      "description": null,
+      "language": "TypeScript",
+      "stargazers_count": 38,
+      "forks_count": 21,
+      "open_issues_count": 60,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 1103400405,
+      "node_id": "R_kgDOQcSN1Q",
+      "name": "JabRef_LibreOffice_Converter",
+      "full_name": "JabRef/JabRef_LibreOffice_Converter",
+      "html_url": "https://github.com/JabRef/JabRef_LibreOffice_Converter",
+      "description": "A LibreOffice extension that converts JabRef references to plain text code and vice versa so that you can use your references with MS Office.",
+      "language": null,
+      "stargazers_count": 4,
+      "forks_count": 1,
+      "open_issues_count": 1,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
       "id": 45670717,
       "node_id": "MDEwOlJlcG9zaXRvcnk0NTY3MDcxNw==",
       "name": "jabref-koppor",
@@ -222,74 +405,9 @@
       "html_url": "https://github.com/JabRef/jabref-koppor",
       "description": "Collection of simple for JabRef issues. Please submit PRs to https://github.com/jabRef/jabref/.",
       "language": "Java",
-      "stargazers_count": 11,
-      "forks_count": 15,
-      "open_issues_count": 277,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 984979539,
-      "node_id": "R_kgDOOrWYUw",
-      "name": "jbang-catalog",
-      "full_name": "JabRef/jbang-catalog",
-      "html_url": "https://github.com/JabRef/jbang-catalog",
-      "description": null,
-      "language": null,
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 973808130,
-      "node_id": "R_kgDOOgsiAg",
-      "name": "jabref-action",
-      "full_name": "JabRef/jabref-action",
-      "html_url": "https://github.com/JabRef/jabref-action",
-      "description": "BibTeX GitHub Action",
-      "language": "TeX",
-      "stargazers_count": 2,
-      "forks_count": 0,
-      "open_issues_count": 2,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": [
-        "bbitex",
-        "biblatex",
-        "github-action",
-        "jabref"
-      ]
-    },
-    {
-      "id": 980839172,
-      "node_id": "R_kgDOOnZrBA",
-      "name": "jabref-demo-libraries",
-      "full_name": "JabRef/jabref-demo-libraries",
-      "html_url": "https://github.com/JabRef/jabref-demo-libraries",
-      "description": "JabRef demonstration libraries",
-      "language": "TeX",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
+      "stargazers_count": 13,
+      "forks_count": 16,
+      "open_issues_count": 274,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -308,8 +426,8 @@
       "description": "Repository for JabRef's blog",
       "language": "Shell",
       "stargazers_count": 11,
-      "forks_count": 12,
-      "open_issues_count": 8,
+      "forks_count": 19,
+      "open_issues_count": 9,
       "license": {
         "key": "cc-by-4.0",
         "name": "Creative Commons Attribution 4.0 International",
@@ -324,6 +442,46 @@
       ]
     },
     {
+      "id": 1075640487,
+      "node_id": "R_kgDOQBz4pw",
+      "name": "org.jabref.javafx.controls",
+      "full_name": "JabRef/org.jabref.javafx.controls",
+      "html_url": "https://github.com/JabRef/org.jabref.javafx.controls",
+      "description": "JavaFX utility classes",
+      "language": null,
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "open_issues_count": 1,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 1155679630,
+      "node_id": "R_kgDOROJFjg",
+      "name": "mslinks",
+      "full_name": "JabRef/mslinks",
+      "html_url": "https://github.com/JabRef/mslinks",
+      "description": "Java library for parsing and creating Windows shortcut files (.lnk)",
+      "language": "Java",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "wtfpl",
+        "name": "Do What The F*ck You Want To Public License",
+        "spdx_id": "WTFPL",
+        "url": "https://api.github.com/licenses/wtfpl",
+        "node_id": "MDc6TGljZW5zZTE4"
+      },
+      "topics": []
+    },
+    {
       "id": 17630189,
       "node_id": "MDEwOlJlcG9zaXRvcnkxNzYzMDE4OQ==",
       "name": "abbrv.jabref.org",
@@ -331,9 +489,9 @@
       "html_url": "https://github.com/JabRef/abbrv.jabref.org",
       "description": "A repository of abbreviations for references, e.g., for conferences, journals, institutes, etc.",
       "language": "Python",
-      "stargazers_count": 151,
+      "stargazers_count": 160,
       "forks_count": 81,
-      "open_issues_count": 17,
+      "open_issues_count": 16,
       "license": {
         "key": "cc0-1.0",
         "name": "Creative Commons Zero v1.0 Universal",
@@ -344,30 +502,77 @@
       "topics": []
     },
     {
-      "id": 41063845,
-      "node_id": "MDEwOlJlcG9zaXRvcnk0MTA2Mzg0NQ==",
-      "name": "JabCon",
-      "full_name": "JabRef/JabCon",
-      "html_url": "https://github.com/JabRef/JabCon",
-      "description": "JabRef Conference",
-      "language": "SCSS",
-      "stargazers_count": 2,
-      "forks_count": 2,
+      "id": 1097151118,
+      "node_id": "R_kgDOQWUyjg",
+      "name": "mvvmFX",
+      "full_name": "JabRef/mvvmFX",
+      "html_url": "https://github.com/JabRef/mvvmFX",
+      "description": "an Application Framework for implementing the MVVM Pattern with JavaFX",
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 3,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "javafx"
+      ]
+    },
+    {
+      "id": 1139342764,
+      "node_id": "R_kgDOQ-j9rA",
+      "name": "ltwa",
+      "full_name": "JabRef/ltwa",
+      "html_url": "https://github.com/JabRef/ltwa",
+      "description": null,
+      "language": null,
+      "stargazers_count": 1,
+      "forks_count": 0,
       "open_issues_count": 0,
       "license": null,
       "topics": []
     },
     {
-      "id": 120523448,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMjA1MjM0NDg=",
-      "name": "afterburner.fx",
-      "full_name": "JabRef/afterburner.fx",
-      "html_url": "https://github.com/JabRef/afterburner.fx",
-      "description": "Improved afterburner.fx",
-      "language": "Java",
-      "stargazers_count": 5,
+      "id": 973808130,
+      "node_id": "R_kgDOOgsiAg",
+      "name": "jabref-action",
+      "full_name": "JabRef/jabref-action",
+      "html_url": "https://github.com/JabRef/jabref-action",
+      "description": "BibTeX GitHub Action",
+      "language": "Shell",
+      "stargazers_count": 3,
       "forks_count": 3,
-      "open_issues_count": 2,
+      "open_issues_count": 1,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": [
+        "bbitex",
+        "biblatex",
+        "github-action",
+        "jabref"
+      ]
+    },
+    {
+      "id": 510465456,
+      "node_id": "R_kgDOHm0VsA",
+      "name": "icu",
+      "full_name": "JabRef/icu",
+      "html_url": "https://github.com/JabRef/icu",
+      "description": "🔀 This is a fork to send pull request",
+      "language": "C++",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "open_issues_count": 0,
       "license": {
         "key": "other",
         "name": "Other",
@@ -378,41 +583,16 @@
       "topics": []
     },
     {
-      "id": 16218270,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNjIxODI3MA==",
-      "name": "JabRef-Browser-Extension",
-      "full_name": "JabRef/JabRef-Browser-Extension",
-      "html_url": "https://github.com/JabRef/JabRef-Browser-Extension",
-      "description": "Browser extension for JabRef to allow importing of new items directly from the browser.",
-      "language": "JavaScript",
-      "stargazers_count": 87,
-      "forks_count": 22,
-      "open_issues_count": 49,
-      "license": {
-        "key": "agpl-3.0",
-        "name": "GNU Affero General Public License v3.0",
-        "spdx_id": "AGPL-3.0",
-        "url": "https://api.github.com/licenses/agpl-3.0",
-        "node_id": "MDc6TGljZW5zZTE="
-      },
-      "topics": [
-        "bibliographic-references",
-        "bibtex",
-        "firefox",
-        "jabref"
-      ]
-    },
-    {
-      "id": 244223260,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNDQyMjMyNjA=",
-      "name": "themes.jabref.org",
-      "full_name": "JabRef/themes.jabref.org",
-      "html_url": "https://github.com/JabRef/themes.jabref.org",
-      "description": "Custom themes for JabRef",
-      "language": "CSS",
-      "stargazers_count": 6,
-      "forks_count": 6,
-      "open_issues_count": 5,
+      "id": 984979539,
+      "node_id": "R_kgDOOrWYUw",
+      "name": "jbang-catalog",
+      "full_name": "JabRef/jbang-catalog",
+      "html_url": "https://github.com/JabRef/jbang-catalog",
+      "description": null,
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 1,
+      "open_issues_count": 0,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -440,6 +620,56 @@
         "url": "https://api.github.com/licenses/bsd-2-clause",
         "node_id": "MDc6TGljZW5zZTQ="
       },
+      "topics": [
+        "javafx"
+      ]
+    },
+    {
+      "id": 70429378,
+      "node_id": "MDEwOlJlcG9zaXRvcnk3MDQyOTM3OA==",
+      "name": "downloads.jabref.org",
+      "full_name": "JabRef/downloads.jabref.org",
+      "html_url": "https://github.com/JabRef/downloads.jabref.org",
+      "description": "Repository for JabRef's download redirect.",
+      "language": "HTML",
+      "stargazers_count": 0,
+      "forks_count": 2,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 41063845,
+      "node_id": "MDEwOlJlcG9zaXRvcnk0MTA2Mzg0NQ==",
+      "name": "JabCon",
+      "full_name": "JabRef/JabCon",
+      "html_url": "https://github.com/JabRef/JabCon",
+      "description": "JabRef Conference",
+      "language": "SCSS",
+      "stargazers_count": 2,
+      "forks_count": 2,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 244223260,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyNDQyMjMyNjA=",
+      "name": "themes.jabref.org",
+      "full_name": "JabRef/themes.jabref.org",
+      "html_url": "https://github.com/JabRef/themes.jabref.org",
+      "description": "Custom themes for JabRef",
+      "language": "CSS",
+      "stargazers_count": 6,
+      "forks_count": 6,
+      "open_issues_count": 5,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
       "topics": []
     },
     {
@@ -450,8 +680,8 @@
       "html_url": "https://github.com/JabRef/jstyles.jabref.org",
       "description": "OpenOffice style files for JabRef",
       "language": null,
-      "stargazers_count": 11,
-      "forks_count": 16,
+      "stargazers_count": 12,
+      "forks_count": 17,
       "open_issues_count": 1,
       "license": null,
       "topics": []
@@ -494,7 +724,9 @@
         "url": "https://api.github.com/licenses/bsd-3-clause",
         "node_id": "MDc6TGljZW5zZTU="
       },
-      "topics": []
+      "topics": [
+        "javafx"
+      ]
     },
     {
       "id": 532609285,
@@ -535,181 +767,6 @@
         "node_id": "MDc6TGljZW5zZTg="
       },
       "topics": []
-    },
-    {
-      "id": 37780098,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzNzc4MDA5OA==",
-      "name": "manuals.jabref.org",
-      "full_name": "JabRef/manuals.jabref.org",
-      "html_url": "https://github.com/JabRef/manuals.jabref.org",
-      "description": "JabRef user manuals",
-      "language": "TeX",
-      "stargazers_count": 2,
-      "forks_count": 1,
-      "open_issues_count": 2,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 369268651,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzNjkyNjg2NTE=",
-      "name": "JabRef-Word-Addin",
-      "full_name": "JabRef/JabRef-Word-Addin",
-      "html_url": "https://github.com/JabRef/JabRef-Word-Addin",
-      "description": null,
-      "language": "TypeScript",
-      "stargazers_count": 23,
-      "forks_count": 7,
-      "open_issues_count": 44,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 46176231,
-      "node_id": "MDEwOlJlcG9zaXRvcnk0NjE3NjIzMQ==",
-      "name": "www.jabref.org",
-      "full_name": "JabRef/www.jabref.org",
-      "html_url": "https://github.com/JabRef/www.jabref.org",
-      "description": "Old repository for JabRef's website. Please go to https://github.com/JabRef/JabRefOnline/ for the new repo.",
-      "language": "SCSS",
-      "stargazers_count": 8,
-      "forks_count": 13,
-      "open_issues_count": 0,
-      "license": {
-        "key": "cc-by-4.0",
-        "name": "Creative Commons Attribution 4.0 International",
-        "spdx_id": "CC-BY-4.0",
-        "url": "https://api.github.com/licenses/cc-by-4.0",
-        "node_id": "MDc6TGljZW5zZTI1"
-      },
-      "topics": [
-        "jabref",
-        "singlepage"
-      ]
-    },
-    {
-      "id": 41061368,
-      "node_id": "MDEwOlJlcG9zaXRvcnk0MTA2MTM2OA==",
-      "name": "cloudref",
-      "full_name": "JabRef/cloudref",
-      "html_url": "https://github.com/JabRef/cloudref",
-      "description": "CloudRef - collaboratively managing references in the cloud",
-      "language": "JavaScript",
-      "stargazers_count": 65,
-      "forks_count": 8,
-      "open_issues_count": 42,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": [
-        "academic",
-        "academic-publications",
-        "reference-manager",
-        "research-tool",
-        "web-app"
-      ]
-    },
-    {
-      "id": 56983614,
-      "node_id": "MDEwOlJlcG9zaXRvcnk1Njk4MzYxNA==",
-      "name": "faq.jabref.org",
-      "full_name": "JabRef/faq.jabref.org",
-      "html_url": "https://github.com/JabRef/faq.jabref.org",
-      "description": "Redirect to https://docs.jabref.org/faq",
-      "language": "HTML",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 510465456,
-      "node_id": "R_kgDOHm0VsA",
-      "name": "icu",
-      "full_name": "JabRef/icu",
-      "html_url": "https://github.com/JabRef/icu",
-      "description": "🔀 This is a fork to send pull request",
-      "language": null,
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 537791760,
-      "node_id": "R_kgDOIA4NEA",
-      "name": "jfxcentral-data",
-      "full_name": "JabRef/jfxcentral-data",
-      "html_url": "https://github.com/JabRef/jfxcentral-data",
-      "description": "The data repository for the JFXCentral website",
-      "language": null,
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 373295506,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzNzMyOTU1MDY=",
-      "name": "help.jabref.org",
-      "full_name": "JabRef/help.jabref.org",
-      "html_url": "https://github.com/JabRef/help.jabref.org",
-      "description": "Redirect pages to new help pages",
-      "language": "HTML",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 82076166,
-      "node_id": "MDEwOlJlcG9zaXRvcnk4MjA3NjE2Ng==",
-      "name": "layouts.jabref.org",
-      "full_name": "JabRef/layouts.jabref.org",
-      "html_url": "https://github.com/JabRef/layouts.jabref.org",
-      "description": "Collection of .layout files",
-      "language": null,
-      "stargazers_count": 20,
-      "forks_count": 8,
-      "open_issues_count": 1,
-      "license": null,
-      "topics": [
-        "jabref"
-      ]
-    },
-    {
-      "id": 242389109,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNDIzODkxMDk=",
-      "name": "translate.jabref.org",
-      "full_name": "JabRef/translate.jabref.org",
-      "html_url": "https://github.com/JabRef/translate.jabref.org",
-      "description": "Redirect to the translation page",
-      "language": "HTML",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
     }
   ],
   "contributorsDetails": [
@@ -719,15 +776,15 @@
       "node_id": "MDQ6VXNlcjEzNjY2NTQ=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1366654?v=4",
       "html_url": "https://github.com/koppor",
-      "contributions": 254
+      "contributions": 4617
     },
     {
-      "login": "Siedlerchr",
-      "id": 320228,
-      "node_id": "MDQ6VXNlcjMyMDIyOA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/320228?v=4",
-      "html_url": "https://github.com/Siedlerchr",
-      "contributions": 133
+      "login": "TimeTriggerx",
+      "id": 118464798,
+      "node_id": "U_kgDOBw-hHg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/118464798?v=4",
+      "html_url": "https://github.com/TimeTriggerx",
+      "contributions": 1
     },
     {
       "login": "dependabot[bot]",
@@ -735,7 +792,31 @@
       "node_id": "MDM6Qm90NDk2OTkzMzM=",
       "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
       "html_url": "https://github.com/apps/dependabot",
-      "contributions": 1828
+      "contributions": 1736
+    },
+    {
+      "login": "subhramit",
+      "id": 74734844,
+      "node_id": "MDQ6VXNlcjc0NzM0ODQ0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/74734844?v=4",
+      "html_url": "https://github.com/subhramit",
+      "contributions": 214
+    },
+    {
+      "login": "Siedlerchr",
+      "id": 320228,
+      "node_id": "MDQ6VXNlcjMyMDIyOA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/320228?v=4",
+      "html_url": "https://github.com/Siedlerchr",
+      "contributions": 3342
+    },
+    {
+      "login": "priyanshu16095",
+      "id": 147549268,
+      "node_id": "U_kgDOCMtsVA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/147549268?v=4",
+      "html_url": "https://github.com/priyanshu16095",
+      "contributions": 1
     },
     {
       "login": "tobiasdiez",
@@ -743,7 +824,7 @@
       "node_id": "MDQ6VXNlcjUwMzc2MDA=",
       "avatar_url": "https://avatars.githubusercontent.com/u/5037600?v=4",
       "html_url": "https://github.com/tobiasdiez",
-      "contributions": 662
+      "contributions": 1280
     },
     {
       "login": "stefan-kolb",
@@ -751,7 +832,7 @@
       "node_id": "MDQ6VXNlcjIxNDE1MDc=",
       "avatar_url": "https://avatars.githubusercontent.com/u/2141507?v=4",
       "html_url": "https://github.com/stefan-kolb",
-      "contributions": 10
+      "contributions": 1124
     },
     {
       "login": "simonharrer",
@@ -759,7 +840,7 @@
       "node_id": "MDQ6VXNlcjM3NTY5Mw==",
       "avatar_url": "https://avatars.githubusercontent.com/u/375693?v=4",
       "html_url": "https://github.com/simonharrer",
-      "contributions": 1
+      "contributions": 1115
     },
     {
       "login": "oscargus",
@@ -767,7 +848,7 @@
       "node_id": "MDQ6VXNlcjgxMTQ0OTc=",
       "avatar_url": "https://avatars.githubusercontent.com/u/8114497?v=4",
       "html_url": "https://github.com/oscargus",
-      "contributions": 1
+      "contributions": 984
     },
     {
       "login": "lenhard",
@@ -775,7 +856,7 @@
       "node_id": "MDQ6VXNlcjE1MTU3MDE=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1515701?v=4",
       "html_url": "https://github.com/lenhard",
-      "contributions": 2
+      "contributions": 828
     },
     {
       "login": "calixtus",
@@ -783,7 +864,7 @@
       "node_id": "MDQ6VXNlcjUwNDkxODc3",
       "avatar_url": "https://avatars.githubusercontent.com/u/50491877?v=4",
       "html_url": "https://github.com/calixtus",
-      "contributions": 14
+      "contributions": 538
     },
     {
       "login": "matthiasgeiger",
@@ -791,7 +872,7 @@
       "node_id": "MDQ6VXNlcjY3NjY1Mg==",
       "avatar_url": "https://avatars.githubusercontent.com/u/676652?v=4",
       "html_url": "https://github.com/matthiasgeiger",
-      "contributions": 30
+      "contributions": 429
     },
     {
       "login": "LinusDietz",
@@ -799,7 +880,7 @@
       "node_id": "MDQ6VXNlcjEyNTQwMDM=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1254003?v=4",
       "html_url": "https://github.com/LinusDietz",
-      "contributions": 39
+      "contributions": 320
     },
     {
       "login": "dependabot-preview[bot]",
@@ -818,20 +899,12 @@
       "contributions": 209
     },
     {
-      "login": "subhramit",
-      "id": 74734844,
-      "node_id": "MDQ6VXNlcjc0NzM0ODQ0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/74734844?v=4",
-      "html_url": "https://github.com/subhramit",
-      "contributions": 177
-    },
-    {
       "login": "mlep",
       "id": 6931104,
       "node_id": "MDQ6VXNlcjY5MzExMDQ=",
       "avatar_url": "https://avatars.githubusercontent.com/u/6931104?v=4",
       "html_url": "https://github.com/mlep",
-      "contributions": 74
+      "contributions": 110
     },
     {
       "login": "davidemdot",
@@ -839,7 +912,7 @@
       "node_id": "MDQ6VXNlcjEyOTU0MzE2",
       "avatar_url": "https://avatars.githubusercontent.com/u/12954316?v=4",
       "html_url": "https://github.com/davidemdot",
-      "contributions": 4
+      "contributions": 95
     },
     {
       "login": "Braunch",
@@ -855,7 +928,7 @@
       "node_id": "MDQ6VXNlcjIxMTk4MjMx",
       "avatar_url": "https://avatars.githubusercontent.com/u/21198231?v=4",
       "html_url": "https://github.com/HoussemNasri",
-      "contributions": 8
+      "contributions": 91
     },
     {
       "login": "chriba",
@@ -864,6 +937,14 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/15333371?v=4",
       "html_url": "https://github.com/chriba",
       "contributions": 84
+    },
+    {
+      "login": "renovate-bot",
+      "id": 25180681,
+      "node_id": "MDQ6VXNlcjI1MTgwNjgx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25180681?v=4",
+      "html_url": "https://github.com/renovate-bot",
+      "contributions": 82
     },
     {
       "login": "papatekken",
@@ -898,12 +979,20 @@
       "contributions": 54
     },
     {
+      "login": "InAnYan",
+      "id": 13097618,
+      "node_id": "MDQ6VXNlcjEzMDk3NjE4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13097618?v=4",
+      "html_url": "https://github.com/InAnYan",
+      "contributions": 48
+    },
+    {
       "login": "btut",
       "id": 10479048,
       "node_id": "MDQ6VXNlcjEwNDc5MDQ4",
       "avatar_url": "https://avatars.githubusercontent.com/u/10479048?v=4",
       "html_url": "https://github.com/btut",
-      "contributions": 2
+      "contributions": 47
     },
     {
       "login": "k3KAW8Pnf7mkmdSMPHz27",
@@ -911,7 +1000,7 @@
       "node_id": "MDQ6VXNlcjI1OTg2MzE=",
       "avatar_url": "https://avatars.githubusercontent.com/u/2598631?v=4",
       "html_url": "https://github.com/k3KAW8Pnf7mkmdSMPHz27",
-      "contributions": 2
+      "contributions": 45
     },
     {
       "login": "LyzardKing",
@@ -922,12 +1011,12 @@
       "contributions": 44
     },
     {
-      "login": "InAnYan",
-      "id": 13097618,
-      "node_id": "MDQ6VXNlcjEzMDk3NjE4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/13097618?v=4",
-      "html_url": "https://github.com/InAnYan",
-      "contributions": 41
+      "login": "mairdl",
+      "id": 15333533,
+      "node_id": "MDQ6VXNlcjE1MzMzNTMz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/15333533?v=4",
+      "html_url": "https://github.com/mairdl",
+      "contributions": 39
     },
     {
       "login": "Luggas4you",
@@ -936,126 +1025,6 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/127773292?v=4",
       "html_url": "https://github.com/Luggas4you",
       "contributions": 39
-    },
-    {
-      "login": "mairdl",
-      "id": 15333533,
-      "node_id": "MDQ6VXNlcjE1MzMzNTMz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/15333533?v=4",
-      "html_url": "https://github.com/mairdl",
-      "contributions": 6
-    },
-    {
-      "login": "obraliar",
-      "id": 15609468,
-      "node_id": "MDQ6VXNlcjE1NjA5NDY4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/15609468?v=4",
-      "html_url": "https://github.com/obraliar",
-      "contributions": 32
-    },
-    {
-      "login": "renovate[bot]",
-      "id": 29139614,
-      "node_id": "MDM6Qm90MjkxMzk2MTQ=",
-      "avatar_url": "https://avatars.githubusercontent.com/in/2740?v=4",
-      "html_url": "https://github.com/apps/renovate",
-      "contributions": 149
-    },
-    {
-      "login": "swcool",
-      "id": 529799,
-      "node_id": "MDQ6VXNlcjUyOTc5OQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/529799?v=4",
-      "html_url": "https://github.com/swcool",
-      "contributions": 14
-    },
-    {
-      "login": "mohit038-zz",
-      "id": 62339705,
-      "node_id": "MDQ6VXNlcjYyMzM5NzA1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/62339705?v=4",
-      "html_url": "https://github.com/mohit038-zz",
-      "contributions": 12
-    },
-    {
-      "login": "teertinker",
-      "id": 8830305,
-      "node_id": "MDQ6VXNlcjg4MzAzMDU=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/8830305?v=4",
-      "html_url": "https://github.com/teertinker",
-      "contributions": 4
-    },
-    {
-      "login": "t413",
-      "id": 326829,
-      "node_id": "MDQ6VXNlcjMyNjgyOQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/326829?v=4",
-      "html_url": "https://github.com/t413",
-      "contributions": 3
-    },
-    {
-      "login": "ThiloteE",
-      "id": 73715071,
-      "node_id": "MDQ6VXNlcjczNzE1MDcx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/73715071?v=4",
-      "html_url": "https://github.com/ThiloteE",
-      "contributions": 3
-    },
-    {
-      "login": "bettin",
-      "id": 386655,
-      "node_id": "MDQ6VXNlcjM4NjY1NQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/386655?v=4",
-      "html_url": "https://github.com/bettin",
-      "contributions": 2
-    },
-    {
-      "login": "boceckts",
-      "id": 15340757,
-      "node_id": "MDQ6VXNlcjE1MzQwNzU3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/15340757?v=4",
-      "html_url": "https://github.com/boceckts",
-      "contributions": 2
-    },
-    {
-      "login": "chochreiner",
-      "id": 134981,
-      "node_id": "MDQ6VXNlcjEzNDk4MQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/134981?v=4",
-      "html_url": "https://github.com/chochreiner",
-      "contributions": 2
-    },
-    {
-      "login": "reox",
-      "id": 431045,
-      "node_id": "MDQ6VXNlcjQzMTA0NQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/431045?v=4",
-      "html_url": "https://github.com/reox",
-      "contributions": 1
-    },
-    {
-      "login": "ctreude",
-      "id": 4130163,
-      "node_id": "MDQ6VXNlcjQxMzAxNjM=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/4130163?v=4",
-      "html_url": "https://github.com/ctreude",
-      "contributions": 1
-    },
-    {
-      "login": "sidhyatikku",
-      "id": 33092447,
-      "node_id": "MDQ6VXNlcjMzMDkyNDQ3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/33092447?v=4",
-      "html_url": "https://github.com/sidhyatikku",
-      "contributions": 1
-    },
-    {
-      "login": "ssokurenko",
-      "id": 1279563,
-      "node_id": "MDQ6VXNlcjEyNzk1NjM=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1279563?v=4",
-      "html_url": "https://github.com/ssokurenko",
-      "contributions": 1
     }
   ],
   "activeOrg": true

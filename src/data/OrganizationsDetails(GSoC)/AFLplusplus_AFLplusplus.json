@@ -36,7 +36,8 @@
     2022,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2020": [
@@ -125,41 +126,11 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/iVGBslto"
       }
     ],
-    "2025": []
+    "2025": [],
+    "2026": []
   },
   "githubID": "AFLplusplus",
   "repositories": [
-    {
-      "id": 306484908,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzMDY0ODQ5MDg=",
-      "name": "LibAFL",
-      "full_name": "AFLplusplus/LibAFL",
-      "html_url": "https://github.com/AFLplusplus/LibAFL",
-      "description": "Advanced Fuzzing Library - Slot your Fuzzer together in Rust! Scales across cores and machines. For Windows, Android, MacOS, Linux, no_std, ...",
-      "language": "Rust",
-      "stargazers_count": 2238,
-      "forks_count": 370,
-      "open_issues_count": 122,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": [
-        "afl",
-        "afl-fuzz",
-        "aflplusplus",
-        "binary-only",
-        "coverage-guided",
-        "frida",
-        "fuzzing",
-        "fuzzing-framework",
-        "libafl",
-        "rust"
-      ]
-    },
     {
       "id": 189044704,
       "node_id": "MDEwOlJlcG9zaXRvcnkxODkwNDQ3MDQ=",
@@ -168,9 +139,9 @@
       "html_url": "https://github.com/AFLplusplus/AFLplusplus",
       "description": "The fuzzer afl++ is afl with community patches, qemu 5.1 upgrade, collision-free coverage, enhanced laf-intel & redqueen, AFLfast++ power schedules, MOpt mutators, unicorn_mode, and a lot more!",
       "language": "C",
-      "stargazers_count": 5713,
-      "forks_count": 1114,
-      "open_issues_count": 34,
+      "stargazers_count": 6408,
+      "forks_count": 1266,
+      "open_issues_count": 29,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -197,16 +168,16 @@
       ]
     },
     {
-      "id": 433080123,
-      "node_id": "R_kgDOGdBHOw",
-      "name": "unicornafl",
-      "full_name": "AFLplusplus/unicornafl",
-      "html_url": "https://github.com/AFLplusplus/unicornafl",
-      "description": "AFL bindings for Unicorn-Engine",
-      "language": "Rust",
-      "stargazers_count": 77,
-      "forks_count": 34,
-      "open_issues_count": 4,
+      "id": 1115087134,
+      "node_id": "R_kgDOQnbhHg",
+      "name": "coresight-trace",
+      "full_name": "AFLplusplus/coresight-trace",
+      "html_url": "https://github.com/AFLplusplus/coresight-trace",
+      "description": "Hardware-Assisted Process Tracer for Fuzzing on ARM64 Linux",
+      "language": "C",
+      "stargazers_count": 1,
+      "forks_count": 1,
+      "open_issues_count": 0,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -217,13 +188,13 @@
       "topics": []
     },
     {
-      "id": 782981762,
-      "node_id": "R_kgDOLqtagg",
-      "name": "fuzzbench",
-      "full_name": "AFLplusplus/fuzzbench",
-      "html_url": "https://github.com/AFLplusplus/fuzzbench",
-      "description": "FuzzBench - Fuzzer benchmarking as a service.",
-      "language": "Python",
+      "id": 1115088764,
+      "node_id": "R_kgDOQnbnfA",
+      "name": "coresight-decoder",
+      "full_name": "AFLplusplus/coresight-decoder",
+      "html_url": "https://github.com/AFLplusplus/coresight-decoder",
+      "description": "CoreSight Decoder for Fuzzing ",
+      "language": "C++",
       "stargazers_count": 2,
       "forks_count": 1,
       "open_issues_count": 0,
@@ -237,16 +208,90 @@
       "topics": []
     },
     {
-      "id": 364632149,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzNjQ2MzIxNDk=",
-      "name": "qemu-libafl-bridge",
-      "full_name": "AFLplusplus/qemu-libafl-bridge",
-      "html_url": "https://github.com/AFLplusplus/qemu-libafl-bridge",
-      "description": "A patched QEMU that exposes an interface for LibAFL-based fuzzers",
-      "language": "C",
+      "id": 306484908,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzMDY0ODQ5MDg=",
+      "name": "LibAFL",
+      "full_name": "AFLplusplus/LibAFL",
+      "html_url": "https://github.com/AFLplusplus/LibAFL",
+      "description": "Advanced Fuzzing Library - Slot your Fuzzer together in Rust! Scales across cores and machines. For Windows, Android, MacOS, Linux, no_std, ...",
+      "language": "Rust",
+      "stargazers_count": 2523,
+      "forks_count": 463,
+      "open_issues_count": 188,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": [
+        "afl",
+        "afl-fuzz",
+        "aflplusplus",
+        "binary-only",
+        "coverage-guided",
+        "frida",
+        "fuzzing",
+        "fuzzing-framework",
+        "libafl",
+        "rust"
+      ]
+    },
+    {
+      "id": 782981762,
+      "node_id": "R_kgDOLqtagg",
+      "name": "fuzzbench",
+      "full_name": "AFLplusplus/fuzzbench",
+      "html_url": "https://github.com/AFLplusplus/fuzzbench",
+      "description": "FuzzBench - Fuzzer benchmarking as a service.",
+      "language": "Python",
+      "stargazers_count": 2,
+      "forks_count": 2,
+      "open_issues_count": 0,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 327668989,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzMjc2Njg5ODk=",
+      "name": "fuzzer-challenges",
+      "full_name": "AFLplusplus/fuzzer-challenges",
+      "html_url": "https://github.com/AFLplusplus/fuzzer-challenges",
+      "description": "Challenging testcases for fuzzers",
+      "language": "C++",
       "stargazers_count": 73,
-      "forks_count": 38,
-      "open_issues_count": 5,
+      "forks_count": 7,
+      "open_issues_count": 0,
+      "license": {
+        "key": "agpl-3.0",
+        "name": "GNU Affero General Public License v3.0",
+        "spdx_id": "AGPL-3.0",
+        "url": "https://api.github.com/licenses/agpl-3.0",
+        "node_id": "MDc6TGljZW5zZTE="
+      },
+      "topics": [
+        "fuzzing",
+        "testing"
+      ]
+    },
+    {
+      "id": 279336907,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyNzkzMzY5MDc=",
+      "name": "qemuafl",
+      "full_name": "AFLplusplus/qemuafl",
+      "html_url": "https://github.com/AFLplusplus/qemuafl",
+      "description": "This fork of QEMU enables fuzzing userspace ELF binaries under AFL++.",
+      "language": "C",
+      "stargazers_count": 85,
+      "forks_count": 55,
+      "open_issues_count": 8,
       "license": {
         "key": "other",
         "name": "Other",
@@ -257,22 +302,142 @@
       "topics": []
     },
     {
-      "id": 279336907,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNzkzMzY5MDc=",
-      "name": "qemuafl",
-      "full_name": "AFLplusplus/qemuafl",
-      "html_url": "https://github.com/AFLplusplus/qemuafl",
-      "description": "This fork of QEMU enables fuzzing userspace ELF binaries under AFL++.",
+      "id": 846010860,
+      "node_id": "R_kgDOMm0Z7A",
+      "name": "linux-qemu-image-builder",
+      "full_name": "AFLplusplus/linux-qemu-image-builder",
+      "html_url": "https://github.com/AFLplusplus/linux-qemu-image-builder",
+      "description": "Linux kernel VM builder to create customizable & ready-to-fuzz QEMU images",
+      "language": "Shell",
+      "stargazers_count": 10,
+      "forks_count": 1,
+      "open_issues_count": 0,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 1045114311,
+      "node_id": "R_kgDOPkstxw",
+      "name": "trait-winnower",
+      "full_name": "AFLplusplus/trait-winnower",
+      "html_url": "https://github.com/AFLplusplus/trait-winnower",
+      "description": "Reducing the number of trait requirements, because we have plenty!",
+      "language": "Rust",
+      "stargazers_count": 0,
+      "forks_count": 1,
+      "open_issues_count": 1,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 193283692,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxOTMyODM2OTI=",
+      "name": "afl-cov",
+      "full_name": "AFLplusplus/afl-cov",
+      "html_url": "https://github.com/AFLplusplus/afl-cov",
+      "description": "Produce code coverage results with gcov from afl-fuzz test cases",
+      "language": "Python",
+      "stargazers_count": 92,
+      "forks_count": 17,
+      "open_issues_count": 0,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "topics": []
+    },
+    {
+      "id": 364632149,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzNjQ2MzIxNDk=",
+      "name": "qemu-libafl-bridge",
+      "full_name": "AFLplusplus/qemu-libafl-bridge",
+      "html_url": "https://github.com/AFLplusplus/qemu-libafl-bridge",
+      "description": "A patched QEMU that exposes an interface for LibAFL-based fuzzers",
       "language": "C",
-      "stargazers_count": 83,
-      "forks_count": 47,
-      "open_issues_count": 10,
+      "stargazers_count": 94,
+      "forks_count": 48,
+      "open_issues_count": 9,
       "license": {
         "key": "other",
         "name": "Other",
         "spdx_id": "NOASSERTION",
         "url": null,
         "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 261392188,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyNjEzOTIxODg=",
+      "name": "Grammar-Mutator",
+      "full_name": "AFLplusplus/Grammar-Mutator",
+      "html_url": "https://github.com/AFLplusplus/Grammar-Mutator",
+      "description": "A grammar-based custom mutator for AFL++",
+      "language": "Python",
+      "stargazers_count": 271,
+      "forks_count": 23,
+      "open_issues_count": 6,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "afl",
+        "afl-fuzz",
+        "aflplusplus",
+        "fuzzing",
+        "grammar-fuzzer"
+      ]
+    },
+    {
+      "id": 1115087418,
+      "node_id": "R_kgDOQnbiOg",
+      "name": "udmabuf",
+      "full_name": "AFLplusplus/udmabuf",
+      "html_url": "https://github.com/AFLplusplus/udmabuf",
+      "description": "User space mappable dma buffer device driver for Linux.",
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "bsd-2-clause",
+        "name": "BSD 2-Clause \"Simplified\" License",
+        "spdx_id": "BSD-2-Clause",
+        "url": "https://api.github.com/licenses/bsd-2-clause",
+        "node_id": "MDc6TGljZW5zZTQ="
+      },
+      "topics": []
+    },
+    {
+      "id": 586937734,
+      "node_id": "R_kgDOIvv1hg",
+      "name": "tinyinst-rs",
+      "full_name": "AFLplusplus/tinyinst-rs",
+      "html_url": "https://github.com/AFLplusplus/tinyinst-rs",
+      "description": "Rust bindings for googleprojectzero/TinyInst",
+      "language": "Rust",
+      "stargazers_count": 25,
+      "forks_count": 9,
+      "open_issues_count": 0,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
       },
       "topics": []
     },
@@ -285,22 +450,22 @@
       "description": "the AFL++ website",
       "language": "HTML",
       "stargazers_count": 7,
-      "forks_count": 6,
+      "forks_count": 7,
       "open_issues_count": 3,
       "license": null,
       "topics": []
     },
     {
-      "id": 586937734,
-      "node_id": "R_kgDOIvv1hg",
-      "name": "tinyinst-rs",
-      "full_name": "AFLplusplus/tinyinst-rs",
-      "html_url": "https://github.com/AFLplusplus/tinyinst-rs",
-      "description": "Rust bindings for googleprojectzero/TinyInst",
+      "id": 433080123,
+      "node_id": "R_kgDOGdBHOw",
+      "name": "unicornafl",
+      "full_name": "AFLplusplus/unicornafl",
+      "html_url": "https://github.com/AFLplusplus/unicornafl",
+      "description": "AFL bindings for Unicorn-Engine",
       "language": "Rust",
-      "stargazers_count": 19,
-      "forks_count": 8,
-      "open_issues_count": 0,
+      "stargazers_count": 89,
+      "forks_count": 39,
+      "open_issues_count": 6,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -338,7 +503,7 @@
       "html_url": "https://github.com/AFLplusplus/lain",
       "description": "A structured fuzzing framework built in Rust",
       "language": "Rust",
-      "stargazers_count": 4,
+      "stargazers_count": 6,
       "forks_count": 2,
       "open_issues_count": 0,
       "license": {
@@ -365,26 +530,6 @@
       "topics": []
     },
     {
-      "id": 193283692,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxOTMyODM2OTI=",
-      "name": "afl-cov",
-      "full_name": "AFLplusplus/afl-cov",
-      "html_url": "https://github.com/AFLplusplus/afl-cov",
-      "description": "Produce code coverage results with gcov from afl-fuzz test cases",
-      "language": "Python",
-      "stargazers_count": 82,
-      "forks_count": 14,
-      "open_issues_count": 1,
-      "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
-      },
-      "topics": []
-    },
-    {
       "id": 439366505,
       "node_id": "R_kgDOGjAzaQ",
       "name": "StdFuzzer",
@@ -407,36 +552,10 @@
       "description": "Fuzzers implemented with libafl to evaluate several techniques on fuzzbench",
       "language": "Rust",
       "stargazers_count": 13,
-      "forks_count": 7,
+      "forks_count": 8,
       "open_issues_count": 1,
       "license": null,
       "topics": []
-    },
-    {
-      "id": 261392188,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNjEzOTIxODg=",
-      "name": "Grammar-Mutator",
-      "full_name": "AFLplusplus/Grammar-Mutator",
-      "html_url": "https://github.com/AFLplusplus/Grammar-Mutator",
-      "description": "A grammar-based custom mutator for AFL++",
-      "language": "Python",
-      "stargazers_count": 252,
-      "forks_count": 19,
-      "open_issues_count": 7,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "afl",
-        "afl-fuzz",
-        "aflplusplus",
-        "fuzzing",
-        "grammar-fuzzer"
-      ]
     },
     {
       "id": 756811644,
@@ -446,7 +565,7 @@
       "html_url": "https://github.com/AFLplusplus/libafl_qemu_artifacts",
       "description": null,
       "language": "Rust",
-      "stargazers_count": 24,
+      "stargazers_count": 28,
       "forks_count": 5,
       "open_issues_count": 1,
       "license": {
@@ -479,29 +598,6 @@
       "topics": []
     },
     {
-      "id": 327668989,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzMjc2Njg5ODk=",
-      "name": "fuzzer-challenges",
-      "full_name": "AFLplusplus/fuzzer-challenges",
-      "html_url": "https://github.com/AFLplusplus/fuzzer-challenges",
-      "description": "Challenging testcases for fuzzers",
-      "language": "C++",
-      "stargazers_count": 71,
-      "forks_count": 7,
-      "open_issues_count": 0,
-      "license": {
-        "key": "agpl-3.0",
-        "name": "GNU Affero General Public License v3.0",
-        "spdx_id": "AGPL-3.0",
-        "url": "https://api.github.com/licenses/agpl-3.0",
-        "node_id": "MDc6TGljZW5zZTE="
-      },
-      "topics": [
-        "fuzzing",
-        "testing"
-      ]
-    },
-    {
       "id": 462219009,
       "node_id": "R_kgDOG4znAQ",
       "name": "cargo-libafl",
@@ -509,7 +605,7 @@
       "html_url": "https://github.com/AFLplusplus/cargo-libafl",
       "description": "Fuzz Rust code with LibAFL",
       "language": "Rust",
-      "stargazers_count": 60,
+      "stargazers_count": 62,
       "forks_count": 10,
       "open_issues_count": 6,
       "license": {
@@ -536,6 +632,26 @@
       "topics": []
     },
     {
+      "id": 1115087805,
+      "node_id": "R_kgDOQnbjvQ",
+      "name": "CSAL",
+      "full_name": "AFLplusplus/CSAL",
+      "html_url": "https://github.com/AFLplusplus/CSAL",
+      "description": null,
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
       "id": 225018474,
       "node_id": "MDEwOlJlcG9zaXRvcnkyMjUwMTg0NzQ=",
       "name": "unicornafl_legacy",
@@ -543,7 +659,7 @@
       "html_url": "https://github.com/AFLplusplus/unicornafl_legacy",
       "description": "Unicorn CPU emulator framework (ARM, AArch64, M68K, Mips, Sparc, X86) adapted to afl++",
       "language": "C",
-      "stargazers_count": 44,
+      "stargazers_count": 45,
       "forks_count": 8,
       "open_issues_count": 4,
       "license": {
@@ -571,8 +687,8 @@
       "html_url": "https://github.com/AFLplusplus/AFL-Snapshot-LKM",
       "description": "A Linux Kernel Module that implements a fast snapshot mechanism for fuzzing.",
       "language": "C",
-      "stargazers_count": 138,
-      "forks_count": 25,
+      "stargazers_count": 141,
+      "forks_count": 26,
       "open_issues_count": 11,
       "license": null,
       "topics": [
@@ -613,22 +729,8 @@
       "html_url": "https://github.com/AFLplusplus/Fuzz-With-Wine-Demo",
       "description": "A set of helpers and examples to fuzz Win32 binaries with AFL++ QEMU",
       "language": "Python",
-      "stargazers_count": 69,
+      "stargazers_count": 70,
       "forks_count": 15,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 244369476,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNDQzNjk0NzY=",
-      "name": "Commit-Fuzzing-Demo",
-      "full_name": "AFLplusplus/Commit-Fuzzing-Demo",
-      "html_url": "https://github.com/AFLplusplus/Commit-Fuzzing-Demo",
-      "description": "This is an example library to show how to fuzz with AFL++ only the code modified by the last commit.",
-      "language": "Python",
-      "stargazers_count": 17,
-      "forks_count": 5,
       "open_issues_count": 0,
       "license": null,
       "topics": []
@@ -636,12 +738,28 @@
   ],
   "contributorsDetails": [
     {
+      "login": "vanhauser-thc",
+      "id": 7396244,
+      "node_id": "MDQ6VXNlcjczOTYyNDQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7396244?v=4",
+      "html_url": "https://github.com/vanhauser-thc",
+      "contributions": 2
+    },
+    {
+      "login": "hexcoder-",
+      "id": 8208996,
+      "node_id": "MDQ6VXNlcjgyMDg5OTY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8208996?v=4",
+      "html_url": "https://github.com/hexcoder-",
+      "contributions": 804
+    },
+    {
       "login": "domenukk",
       "id": 297744,
       "node_id": "MDQ6VXNlcjI5Nzc0NA==",
       "avatar_url": "https://avatars.githubusercontent.com/u/297744?v=4",
       "html_url": "https://github.com/domenukk",
-      "contributions": 586
+      "contributions": 590
     },
     {
       "login": "andreafioraldi",
@@ -652,236 +770,12 @@
       "contributions": 505
     },
     {
-      "login": "tokatoka",
-      "id": 19541930,
-      "node_id": "MDQ6VXNlcjE5NTQxOTMw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/19541930?v=4",
-      "html_url": "https://github.com/tokatoka",
-      "contributions": 12
-    },
-    {
-      "login": "rmalmain",
-      "id": 1078324,
-      "node_id": "MDQ6VXNlcjEwNzgzMjQ=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1078324?v=4",
-      "html_url": "https://github.com/rmalmain",
-      "contributions": 128
-    },
-    {
       "login": "devnexen",
       "id": 4922778,
       "node_id": "MDQ6VXNlcjQ5MjI3Nzg=",
       "avatar_url": "https://avatars.githubusercontent.com/u/4922778?v=4",
       "html_url": "https://github.com/devnexen",
       "contributions": 146
-    },
-    {
-      "login": "s1341",
-      "id": 5682183,
-      "node_id": "MDQ6VXNlcjU2ODIxODM=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/5682183?v=4",
-      "html_url": "https://github.com/s1341",
-      "contributions": 77
-    },
-    {
-      "login": "addisoncrump",
-      "id": 10711159,
-      "node_id": "MDQ6VXNlcjEwNzExMTU5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/10711159?v=4",
-      "html_url": "https://github.com/addisoncrump",
-      "contributions": 60
-    },
-    {
-      "login": "dependabot[bot]",
-      "id": 49699333,
-      "node_id": "MDM6Qm90NDk2OTkzMzM=",
-      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-      "html_url": "https://github.com/apps/dependabot",
-      "contributions": 51
-    },
-    {
-      "login": "WorksButNotTested",
-      "id": 62701594,
-      "node_id": "MDQ6VXNlcjYyNzAxNTk0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/62701594?v=4",
-      "html_url": "https://github.com/WorksButNotTested",
-      "contributions": 49
-    },
-    {
-      "login": "R9295",
-      "id": 15076206,
-      "node_id": "MDQ6VXNlcjE1MDc2MjA2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/15076206?v=4",
-      "html_url": "https://github.com/R9295",
-      "contributions": 38
-    },
-    {
-      "login": "riesentoaster",
-      "id": 27142200,
-      "node_id": "MDQ6VXNlcjI3MTQyMjAw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/27142200?v=4",
-      "html_url": "https://github.com/riesentoaster",
-      "contributions": 33
-    },
-    {
-      "login": "vanhauser-thc",
-      "id": 7396244,
-      "node_id": "MDQ6VXNlcjczOTYyNDQ=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/7396244?v=4",
-      "html_url": "https://github.com/vanhauser-thc",
-      "contributions": 3930
-    },
-    {
-      "login": "Marcondiro",
-      "id": 46560192,
-      "node_id": "MDQ6VXNlcjQ2NTYwMTky",
-      "avatar_url": "https://avatars.githubusercontent.com/u/46560192?v=4",
-      "html_url": "https://github.com/Marcondiro",
-      "contributions": 25
-    },
-    {
-      "login": "wtdcode",
-      "id": 30623163,
-      "node_id": "MDQ6VXNlcjMwNjIzMTYz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/30623163?v=4",
-      "html_url": "https://github.com/wtdcode",
-      "contributions": 53
-    },
-    {
-      "login": "langston-barrett",
-      "id": 4294323,
-      "node_id": "MDQ6VXNlcjQyOTQzMjM=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/4294323?v=4",
-      "html_url": "https://github.com/langston-barrett",
-      "contributions": 21
-    },
-    {
-      "login": "julihoh",
-      "id": 27196503,
-      "node_id": "MDQ6VXNlcjI3MTk2NTAz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/27196503?v=4",
-      "html_url": "https://github.com/julihoh",
-      "contributions": 21
-    },
-    {
-      "login": "Mrmaxmeier",
-      "id": 3913977,
-      "node_id": "MDQ6VXNlcjM5MTM5Nzc=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/3913977?v=4",
-      "html_url": "https://github.com/Mrmaxmeier",
-      "contributions": 21
-    },
-    {
-      "login": "evanrichter",
-      "id": 330292,
-      "node_id": "MDQ6VXNlcjMzMDI5Mg==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/330292?v=4",
-      "html_url": "https://github.com/evanrichter",
-      "contributions": 16
-    },
-    {
-      "login": "Evian-Zhang",
-      "id": 40831854,
-      "node_id": "MDQ6VXNlcjQwODMxODU0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/40831854?v=4",
-      "html_url": "https://github.com/Evian-Zhang",
-      "contributions": 16
-    },
-    {
-      "login": "cube0x8",
-      "id": 5074505,
-      "node_id": "MDQ6VXNlcjUwNzQ1MDU=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/5074505?v=4",
-      "html_url": "https://github.com/cube0x8",
-      "contributions": 13
-    },
-    {
-      "login": "novafacing",
-      "id": 30083762,
-      "node_id": "MDQ6VXNlcjMwMDgzNzYy",
-      "avatar_url": "https://avatars.githubusercontent.com/u/30083762?v=4",
-      "html_url": "https://github.com/novafacing",
-      "contributions": 9
-    },
-    {
-      "login": "mineo333",
-      "id": 17071016,
-      "node_id": "MDQ6VXNlcjE3MDcxMDE2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/17071016?v=4",
-      "html_url": "https://github.com/mineo333",
-      "contributions": 9
-    },
-    {
-      "login": "syheliel",
-      "id": 45957390,
-      "node_id": "MDQ6VXNlcjQ1OTU3Mzkw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/45957390?v=4",
-      "html_url": "https://github.com/syheliel",
-      "contributions": 9
-    },
-    {
-      "login": "mkravchik",
-      "id": 5304779,
-      "node_id": "MDQ6VXNlcjUzMDQ3Nzk=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/5304779?v=4",
-      "html_url": "https://github.com/mkravchik",
-      "contributions": 9
-    },
-    {
-      "login": "jejuisland87654",
-      "id": 175310928,
-      "node_id": "U_kgDOCnMIUA",
-      "avatar_url": "https://avatars.githubusercontent.com/u/175310928?v=4",
-      "html_url": "https://github.com/jejuisland87654",
-      "contributions": 9
-    },
-    {
-      "login": "ToSeven",
-      "id": 14891443,
-      "node_id": "MDQ6VXNlcjE0ODkxNDQz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/14891443?v=4",
-      "html_url": "https://github.com/ToSeven",
-      "contributions": 9
-    },
-    {
-      "login": "TeumessianFox",
-      "id": 25989110,
-      "node_id": "MDQ6VXNlcjI1OTg5MTEw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/25989110?v=4",
-      "html_url": "https://github.com/TeumessianFox",
-      "contributions": 9
-    },
-    {
-      "login": "maxammann",
-      "id": 905221,
-      "node_id": "MDQ6VXNlcjkwNTIyMQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/905221?v=4",
-      "html_url": "https://github.com/maxammann",
-      "contributions": 9
-    },
-    {
-      "login": "Nereuxofficial",
-      "id": 37740907,
-      "node_id": "MDQ6VXNlcjM3NzQwOTA3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/37740907?v=4",
-      "html_url": "https://github.com/Nereuxofficial",
-      "contributions": 8
-    },
-    {
-      "login": "expend20",
-      "id": 36543551,
-      "node_id": "MDQ6VXNlcjM2NTQzNTUx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/36543551?v=4",
-      "html_url": "https://github.com/expend20",
-      "contributions": 8
-    },
-    {
-      "login": "hexcoder-",
-      "id": 8208996,
-      "node_id": "MDQ6VXNlcjgyMDg5OTY=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/8208996?v=4",
-      "html_url": "https://github.com/hexcoder-",
-      "contributions": 803
     },
     {
       "login": "llzmb",
@@ -892,6 +786,22 @@
       "contributions": 132
     },
     {
+      "login": "wtdcode",
+      "id": 30623163,
+      "node_id": "MDQ6VXNlcjMwNjIzMTYz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/30623163?v=4",
+      "html_url": "https://github.com/wtdcode",
+      "contributions": 69
+    },
+    {
+      "login": "kcwu",
+      "id": 175566,
+      "node_id": "MDQ6VXNlcjE3NTU2Ng==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/175566?v=4",
+      "html_url": "https://github.com/kcwu",
+      "contributions": 64
+    },
+    {
       "login": "rhtenhove",
       "id": 10206967,
       "node_id": "MDQ6VXNlcjEwMjA2OTY3",
@@ -900,20 +810,28 @@
       "contributions": 61
     },
     {
+      "login": "WorksButNotTested",
+      "id": 62701594,
+      "node_id": "MDQ6VXNlcjYyNzAxNTk0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/62701594?v=4",
+      "html_url": "https://github.com/WorksButNotTested",
+      "contributions": 51
+    },
+    {
       "login": "schumilo",
       "id": 8689842,
       "node_id": "MDQ6VXNlcjg2ODk4NDI=",
       "avatar_url": "https://avatars.githubusercontent.com/u/8689842?v=4",
       "html_url": "https://github.com/schumilo",
-      "contributions": 42
+      "contributions": 48
     },
     {
-      "login": "kcwu",
-      "id": 175566,
-      "node_id": "MDQ6VXNlcjE3NTU2Ng==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/175566?v=4",
-      "html_url": "https://github.com/kcwu",
-      "contributions": 41
+      "login": "tokatoka",
+      "id": 19541930,
+      "node_id": "MDQ6VXNlcjE5NTQxOTMw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19541930?v=4",
+      "html_url": "https://github.com/tokatoka",
+      "contributions": 48
     },
     {
       "login": "h1994st",
@@ -930,6 +848,22 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/5111198?v=4",
       "html_url": "https://github.com/yuawn",
       "contributions": 38
+    },
+    {
+      "login": "Trowlett0",
+      "id": 98246324,
+      "node_id": "U_kgDOBdsetA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/98246324?v=4",
+      "html_url": "https://github.com/Trowlett0",
+      "contributions": 32
+    },
+    {
+      "login": "vi3tL0u1s",
+      "id": 142126903,
+      "node_id": "U_kgDOCHivNw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/142126903?v=4",
+      "html_url": "https://github.com/vi3tL0u1s",
+      "contributions": 32
     },
     {
       "login": "Microsvuln",
@@ -964,6 +898,14 @@
       "contributions": 22
     },
     {
+      "login": "kyakdan",
+      "id": 16192650,
+      "node_id": "MDQ6VXNlcjE2MTkyNjUw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16192650?v=4",
+      "html_url": "https://github.com/kyakdan",
+      "contributions": 20
+    },
+    {
       "login": "cjb",
       "id": 21217,
       "node_id": "MDQ6VXNlcjIxMjE3",
@@ -978,6 +920,14 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/43873720?v=4",
       "html_url": "https://github.com/rish9101",
       "contributions": 15
+    },
+    {
+      "login": "Jay-1409",
+      "id": 166749819,
+      "node_id": "U_kgDOCfBmew",
+      "avatar_url": "https://avatars.githubusercontent.com/u/166749819?v=4",
+      "html_url": "https://github.com/Jay-1409",
+      "contributions": 14
     },
     {
       "login": "adrianherrera",
@@ -996,6 +946,14 @@
       "contributions": 14
     },
     {
+      "login": "JoeyJiao",
+      "id": 776137,
+      "node_id": "MDQ6VXNlcjc3NjEzNw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/776137?v=4",
+      "html_url": "https://github.com/JoeyJiao",
+      "contributions": 13
+    },
+    {
       "login": "sigdevel",
       "id": 60114847,
       "node_id": "MDQ6VXNlcjYwMTE0ODQ3",
@@ -1012,14 +970,6 @@
       "contributions": 13
     },
     {
-      "login": "JoeyJiao",
-      "id": 776137,
-      "node_id": "MDQ6VXNlcjc3NjEzNw==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/776137?v=4",
-      "html_url": "https://github.com/JoeyJiao",
-      "contributions": 13
-    },
-    {
       "login": "choller",
       "id": 1140686,
       "node_id": "MDQ6VXNlcjExNDA2ODY=",
@@ -1028,36 +978,28 @@
       "contributions": 12
     },
     {
-      "login": "ThomasTNO",
-      "id": 49478940,
-      "node_id": "MDQ6VXNlcjQ5NDc4OTQw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/49478940?v=4",
-      "html_url": "https://github.com/ThomasTNO",
-      "contributions": 12
+      "login": "retrage",
+      "id": 4966021,
+      "node_id": "MDQ6VXNlcjQ5NjYwMjE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4966021?v=4",
+      "html_url": "https://github.com/retrage",
+      "contributions": 28
     },
     {
-      "login": "intrigus-lgtm",
-      "id": 60750685,
-      "node_id": "MDQ6VXNlcjYwNzUwNjg1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/60750685?v=4",
-      "html_url": "https://github.com/intrigus-lgtm",
-      "contributions": 11
+      "login": "ram9ir",
+      "id": 81588068,
+      "node_id": "MDQ6VXNlcjgxNTg4MDY4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/81588068?v=4",
+      "html_url": "https://github.com/ram9ir",
+      "contributions": 13
     },
     {
-      "login": "realmadsci",
-      "id": 71108352,
-      "node_id": "MDQ6VXNlcjcxMTA4MzUy",
-      "avatar_url": "https://avatars.githubusercontent.com/u/71108352?v=4",
-      "html_url": "https://github.com/realmadsci",
-      "contributions": 11
-    },
-    {
-      "login": "kyakdan",
-      "id": 16192650,
-      "node_id": "MDQ6VXNlcjE2MTkyNjUw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/16192650?v=4",
-      "html_url": "https://github.com/kyakdan",
-      "contributions": 10
+      "login": "mmxsrup",
+      "id": 19609323,
+      "node_id": "MDQ6VXNlcjE5NjA5MzIz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19609323?v=4",
+      "html_url": "https://github.com/mmxsrup",
+      "contributions": 200
     }
   ],
   "activeOrg": true

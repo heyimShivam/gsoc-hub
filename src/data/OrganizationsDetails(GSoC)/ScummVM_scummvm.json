@@ -42,7 +42,8 @@
     2022,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2016": [
@@ -319,7 +320,54 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/6jt9oG68"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Implementing minigame interface in qdEngine",
+        "short_description": "Last year, qdEngine was ported to ScummVM. However, not all games are supported yet. Games with advanced minigames are not playable, and some titles...",
+        "description": "Last year, qdEngine was ported to ScummVM. However, not all games are supported yet. Games with advanced minigames are not playable, and some titles need playtesting. This project will address these problems.\nMy first main goal is to implement the advanced minigame interface, which will help advanced minigames be playable. Secondly, I will be going through the rest of the games, identifying issues and fixing bugs along the way.",
+        "student_name": "Alikhan Balpykov",
+        "code_url": "https://blogs.scummvm.org/alikhan/2025/09/01/gsoc-summary/",
+        "proposal_id": "YhwSskYV",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/9h8o85NL"
+      },
+      {
+        "title": "Add Keymapper to more games",
+        "short_description": "This project adds keymapper support to numerous ScummVM game engines, allowing players to customize controls for a better experience across different...",
+        "description": "This project adds keymapper support to numerous ScummVM game engines, allowing players to customize controls for a better experience across different devices. It involves updating input handling in each engine, integrating ScummVM’s keymapper system, and thoroughly testing for functionality. This improves accessibility, playability, and helps preserve classic games for modern platforms.",
+        "student_name": "Aun Noman",
+        "code_url": "https://blogs.scummvm.org/prime/2025/08/31/gsoc-final-report/",
+        "proposal_id": "pvxF9F29",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/dI9Rr3YP"
+      },
+      {
+        "title": "Add Text-to-Speech Support to More Games",
+        "short_description": "Text-to-speech is a critical accessibility feature that is currently not present in many ScummVM engines. Adding text-to-speech to more engines can...",
+        "description": "Text-to-speech is a critical accessibility feature that is currently not present in many ScummVM engines. Adding text-to-speech to more engines can assist language learners and those with visual impairments, as well as standardize implementation of text-to-speech across engines. In this project, text-to-speech is implemented on an engine-by-engine basis by defining GUI options for text-to-speech; identifying procedures that display text, which may include objects, menus, dialogue, and other forms of text; cleaning up the text, if necessary; and feeding this text into text-to-speech. It aims to include full text-to-speech support for a variety of engines.",
+        "student_name": "Ellen Moon",
+        "code_url": "https://blogs.scummvm.org/ellen/2025/08/31/gsoc-final-work-product/",
+        "proposal_id": "Kbii2NzM",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/jLcJUtAS"
+      },
+      {
+        "title": "Expanding Director Engine compatibility in ScummVM",
+        "short_description": "The Macromedia Director engine is an incomplete engine in ScummVM. ScummVM has been working on it since 2020. It potentially adds a number of games...",
+        "description": "The Macromedia Director engine is an incomplete engine in ScummVM. ScummVM has been working on it since 2020. It potentially adds a number of games to the growing list of supported games in ScummVM. This proposal aims to add support for Director Engine to get it closer to that possibility. \n\nThis project proposes implementation of a number of unfinished functions including STUBed code and Director Xtras. The Lingo Dictionary will be helpful for figuring out the functionality offered by each STUBed function.\n\nThe main focus of this project is to restructure the Director engine's internal data structure of storing Director movie files (.dir and .dcr) which enables saving them in Director. The project by djsrv available on GitHub is a great reference for solving this problem.\n\nThe proposal also hopes to improve the support for a couple of director games namely, The Journeyman Project and Safecracker. Comparing these games to their original versions, this project hopes to make playable without any hiccups.",
+        "student_name": "Malhar Badve",
+        "code_url": "https://blogs.scummvm.org/superlemon/2025/08/31/expanding-director-engine-compatibility-in-scummvm/",
+        "proposal_id": "uSbdsjiw",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/zLwn3ie5"
+      },
+      {
+        "title": "System for Checking Game Files Integrity",
+        "short_description": "This project aims to finalize the system for verifying the integrity of game files within ScummVM. It introduces a server-client architecture where...",
+        "description": "This project aims to finalize the system for verifying the integrity of game files within ScummVM. It introduces a server-client architecture where hash-based checksums are computed for game files and compared against a curated database. The system provides moderators tools to validate, merge, and maintain the database. A major focus is on automating the pipeline, enhancing moderation tools, and addressing edge cases.",
+        "student_name": "Shivang Nagta",
+        "code_url": "https://blogs.scummvm.org/shivangnagta/2025/09/01/gsoc-final-blog/",
+        "proposal_id": "f7KtaOcd",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/YDOcc4ze"
+      }
+    ],
+    "2026": []
   },
   "githubID": "scummvm",
   "repositories": [
@@ -331,9 +379,9 @@
       "html_url": "https://github.com/scummvm/scummvm",
       "description": "ScummVM main repository",
       "language": "C++",
-      "stargazers_count": 2440,
-      "forks_count": 1126,
-      "open_issues_count": 33,
+      "stargazers_count": 2662,
+      "forks_count": 1271,
+      "open_issues_count": 36,
       "license": {
         "key": "gpl-3.0",
         "name": "GNU General Public License v3.0",
@@ -356,9 +404,9 @@
       "html_url": "https://github.com/scummvm/scummvm-web",
       "description": "Main ScummVM website",
       "language": "PHP",
-      "stargazers_count": 31,
-      "forks_count": 53,
-      "open_issues_count": 8,
+      "stargazers_count": 34,
+      "forks_count": 52,
+      "open_issues_count": 3,
       "license": {
         "key": "gpl-3.0",
         "name": "GNU General Public License v3.0",
@@ -372,17 +420,23 @@
       ]
     },
     {
-      "id": 5929822,
-      "node_id": "MDEwOlJlcG9zaXRvcnk1OTI5ODIy",
-      "name": "scummvm-sites",
-      "full_name": "scummvm/scummvm-sites",
-      "html_url": "https://github.com/scummvm/scummvm-sites",
-      "description": "Minor ScummVM sites",
-      "language": "HTML",
-      "stargazers_count": 9,
-      "forks_count": 23,
-      "open_issues_count": 0,
-      "license": null,
+      "id": 290177803,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyOTAxNzc4MDM=",
+      "name": "scummvm-icons",
+      "full_name": "scummvm/scummvm-icons",
+      "html_url": "https://github.com/scummvm/scummvm-icons",
+      "description": "Icons repository for ScummVM rich presence",
+      "language": "Python",
+      "stargazers_count": 23,
+      "forks_count": 25,
+      "open_issues_count": 3,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
       "topics": []
     },
     {
@@ -394,7 +448,7 @@
       "description": "ScummVM Dockerized buildbot configuration",
       "language": "Python",
       "stargazers_count": 8,
-      "forks_count": 13,
+      "forks_count": 14,
       "open_issues_count": 1,
       "license": {
         "key": "other",
@@ -402,46 +456,6 @@
         "spdx_id": "NOASSERTION",
         "url": null,
         "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 1358949,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMzU4OTQ5",
-      "name": "scummvm-tools",
-      "full_name": "scummvm/scummvm-tools",
-      "html_url": "https://github.com/scummvm/scummvm-tools",
-      "description": "ScummVM tools repository",
-      "language": "C++",
-      "stargazers_count": 69,
-      "forks_count": 55,
-      "open_issues_count": 9,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": []
-    },
-    {
-      "id": 273088947,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNzMwODg5NDc=",
-      "name": "director-tests",
-      "full_name": "scummvm/director-tests",
-      "html_url": "https://github.com/scummvm/director-tests",
-      "description": "Testing movies for Director development",
-      "language": "C",
-      "stargazers_count": 5,
-      "forks_count": 5,
-      "open_issues_count": 0,
-      "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
       },
       "topics": []
     },
@@ -454,7 +468,7 @@
       "description": "Game translations by the ScummVM team",
       "language": null,
       "stargazers_count": 3,
-      "forks_count": 5,
+      "forks_count": 4,
       "open_issues_count": 1,
       "license": {
         "key": "gpl-2.0",
@@ -462,6 +476,94 @@
         "spdx_id": "GPL-2.0",
         "url": "https://api.github.com/licenses/gpl-2.0",
         "node_id": "MDc6TGljZW5zZTg="
+      },
+      "topics": []
+    },
+    {
+      "id": 273088947,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyNzMwODg5NDc=",
+      "name": "director-tests",
+      "full_name": "scummvm/director-tests",
+      "html_url": "https://github.com/scummvm/director-tests",
+      "description": "Testing movies for Director development",
+      "language": "C",
+      "stargazers_count": 5,
+      "forks_count": 7,
+      "open_issues_count": 0,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "topics": []
+    },
+    {
+      "id": 171183448,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNzExODM0NDg=",
+      "name": "scummvm-bot",
+      "full_name": "scummvm/scummvm-bot",
+      "html_url": "https://github.com/scummvm/scummvm-bot",
+      "description": "Holds Scummette, the new IRC bot for #scummvm",
+      "language": "Ruby",
+      "stargazers_count": 1,
+      "forks_count": 3,
+      "open_issues_count": 1,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 5929822,
+      "node_id": "MDEwOlJlcG9zaXRvcnk1OTI5ODIy",
+      "name": "scummvm-sites",
+      "full_name": "scummvm/scummvm-sites",
+      "html_url": "https://github.com/scummvm/scummvm-sites",
+      "description": "Minor ScummVM sites",
+      "language": "HTML",
+      "stargazers_count": 10,
+      "forks_count": 26,
+      "open_issues_count": 1,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1034330455,
+      "node_id": "R_kgDOPaahVw",
+      "name": "gamos",
+      "full_name": "scummvm/gamos",
+      "html_url": "https://github.com/scummvm/gamos",
+      "description": "Engine for games created by Gamos, particularly Brother Pilots 1&2",
+      "language": "C++",
+      "stargazers_count": 3,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1358949,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMzU4OTQ5",
+      "name": "scummvm-tools",
+      "full_name": "scummvm/scummvm-tools",
+      "html_url": "https://github.com/scummvm/scummvm-tools",
+      "description": "ScummVM tools repository",
+      "language": "C++",
+      "stargazers_count": 74,
+      "forks_count": 62,
+      "open_issues_count": 9,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
       },
       "topics": []
     },
@@ -494,26 +596,6 @@
       "topics": []
     },
     {
-      "id": 290177803,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyOTAxNzc4MDM=",
-      "name": "scummvm-icons",
-      "full_name": "scummvm/scummvm-icons",
-      "html_url": "https://github.com/scummvm/scummvm-icons",
-      "description": "Icons repository for ScummVM rich presence",
-      "language": "Python",
-      "stargazers_count": 21,
-      "forks_count": 20,
-      "open_issues_count": 4,
-      "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
-      },
-      "topics": []
-    },
-    {
       "id": 576759209,
       "node_id": "R_kgDOImClqQ",
       "name": "scummvm-tutorial",
@@ -541,7 +623,7 @@
       "html_url": "https://github.com/scummvm/scummvm-shaders",
       "description": null,
       "language": "GLSL",
-      "stargazers_count": 3,
+      "stargazers_count": 4,
       "forks_count": 2,
       "open_issues_count": 0,
       "license": {
@@ -561,7 +643,7 @@
       "html_url": "https://github.com/scummvm/scummex",
       "description": "A tool to display the resources in SCUMM games.",
       "language": "C++",
-      "stargazers_count": 7,
+      "stargazers_count": 8,
       "forks_count": 2,
       "open_issues_count": 0,
       "license": {
@@ -570,26 +652,6 @@
         "spdx_id": "GPL-2.0",
         "url": "https://api.github.com/licenses/gpl-2.0",
         "node_id": "MDc6TGljZW5zZTg="
-      },
-      "topics": []
-    },
-    {
-      "id": 171183448,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNzExODM0NDg=",
-      "name": "scummvm-bot",
-      "full_name": "scummvm/scummvm-bot",
-      "html_url": "https://github.com/scummvm/scummvm-bot",
-      "description": "Holds Scummette, the new IRC bot for #scummvm",
-      "language": "Ruby",
-      "stargazers_count": 1,
-      "forks_count": 3,
-      "open_issues_count": 1,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
       },
       "topics": []
     }
@@ -601,7 +663,7 @@
       "node_id": "MDQ6VXNlcjU1MjgyOA==",
       "avatar_url": "https://avatars.githubusercontent.com/u/552828?v=4",
       "html_url": "https://github.com/dreammaster",
-      "contributions": 36
+      "contributions": 41
     },
     {
       "login": "sev-",
@@ -609,7 +671,7 @@
       "node_id": "MDQ6VXNlcjM2NTE4OA==",
       "avatar_url": "https://avatars.githubusercontent.com/u/365188?v=4",
       "html_url": "https://github.com/sev-",
-      "contributions": 1525
+      "contributions": 18
     },
     {
       "login": "fingolfin",
@@ -625,7 +687,7 @@
       "node_id": "MDQ6VXNlcjUxMDM5NQ==",
       "avatar_url": "https://avatars.githubusercontent.com/u/510395?v=4",
       "html_url": "https://github.com/bluegr",
-      "contributions": 139
+      "contributions": 142
     },
     {
       "login": "Strangerke",
@@ -641,7 +703,7 @@
       "node_id": "MDQ6VXNlcjQwNjkyNg==",
       "avatar_url": "https://avatars.githubusercontent.com/u/406926?v=4",
       "html_url": "https://github.com/aquadran",
-      "contributions": 54
+      "contributions": 55
     },
     {
       "login": "bgK",
@@ -657,7 +719,15 @@
       "node_id": "MDQ6VXNlcjU1MjEwNQ==",
       "avatar_url": "https://avatars.githubusercontent.com/u/552105?v=4",
       "html_url": "https://github.com/criezy",
-      "contributions": 257
+      "contributions": 1
+    },
+    {
+      "login": "neuromancer",
+      "id": 110782,
+      "node_id": "MDQ6VXNlcjExMDc4Mg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/110782?v=4",
+      "html_url": "https://github.com/neuromancer",
+      "contributions": 4
     },
     {
       "login": "clone2727",
@@ -668,20 +738,12 @@
       "contributions": 105
     },
     {
-      "login": "neuromancer",
-      "id": 110782,
-      "node_id": "MDQ6VXNlcjExMDc4Mg==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/110782?v=4",
-      "html_url": "https://github.com/neuromancer",
-      "contributions": 2174
-    },
-    {
       "login": "mgerhardy",
       "id": 577713,
       "node_id": "MDQ6VXNlcjU3NzcxMw==",
       "avatar_url": "https://avatars.githubusercontent.com/u/577713?v=4",
       "html_url": "https://github.com/mgerhardy",
-      "contributions": 2082
+      "contributions": 2102
     },
     {
       "login": "digitall",
@@ -697,7 +759,7 @@
       "node_id": "MDQ6VXNlcjM3NjU1OTA=",
       "avatar_url": "https://avatars.githubusercontent.com/u/3765590?v=4",
       "html_url": "https://github.com/mduggan",
-      "contributions": 1863
+      "contributions": 1974
     },
     {
       "login": "tag2015",
@@ -705,23 +767,7 @@
       "node_id": "MDQ6VXNlcjE2NzM4OTI=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1673892?v=4",
       "html_url": "https://github.com/tag2015",
-      "contributions": 181
-    },
-    {
-      "login": "somaen",
-      "id": 543402,
-      "node_id": "MDQ6VXNlcjU0MzQwMg==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/543402?v=4",
-      "html_url": "https://github.com/somaen",
-      "contributions": 1705
-    },
-    {
-      "login": "athrxx",
-      "id": 615731,
-      "node_id": "MDQ6VXNlcjYxNTczMQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/615731?v=4",
-      "html_url": "https://github.com/athrxx",
-      "contributions": 1580
+      "contributions": 39
     },
     {
       "login": "lephilousophe",
@@ -729,15 +775,15 @@
       "node_id": "MDQ6VXNlcjE0OTI5MTc=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1492917?v=4",
       "html_url": "https://github.com/lephilousophe",
-      "contributions": 44
+      "contributions": 2
     },
     {
-      "login": "ccawley2011",
-      "id": 19293424,
-      "node_id": "MDQ6VXNlcjE5MjkzNDI0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/19293424?v=4",
-      "html_url": "https://github.com/ccawley2011",
-      "contributions": 1429
+      "login": "somaen",
+      "id": 543402,
+      "node_id": "MDQ6VXNlcjU0MzQwMg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/543402?v=4",
+      "html_url": "https://github.com/somaen",
+      "contributions": 1706
     },
     {
       "login": "sluicebox",
@@ -745,7 +791,31 @@
       "node_id": "MDQ6VXNlcjIyMjA0OTM4",
       "avatar_url": "https://avatars.githubusercontent.com/u/22204938?v=4",
       "html_url": "https://github.com/sluicebox",
-      "contributions": 1423
+      "contributions": 1639
+    },
+    {
+      "login": "athrxx",
+      "id": 615731,
+      "node_id": "MDQ6VXNlcjYxNTczMQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/615731?v=4",
+      "html_url": "https://github.com/athrxx",
+      "contributions": 1595
+    },
+    {
+      "login": "ccawley2011",
+      "id": 19293424,
+      "node_id": "MDQ6VXNlcjE5MjkzNDI0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19293424?v=4",
+      "html_url": "https://github.com/ccawley2011",
+      "contributions": 1568
+    },
+    {
+      "login": "whoozle",
+      "id": 480115,
+      "node_id": "MDQ6VXNlcjQ4MDExNQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/480115?v=4",
+      "html_url": "https://github.com/whoozle",
+      "contributions": 1507
     },
     {
       "login": "DrMcCoy",
@@ -764,6 +834,14 @@
       "contributions": 1307
     },
     {
+      "login": "antoniou79",
+      "id": 1489205,
+      "node_id": "MDQ6VXNlcjE0ODkyMDU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1489205?v=4",
+      "html_url": "https://github.com/antoniou79",
+      "contributions": 144
+    },
+    {
       "login": "wjp",
       "id": 327756,
       "node_id": "MDQ6VXNlcjMyNzc1Ng==",
@@ -772,12 +850,20 @@
       "contributions": 60
     },
     {
-      "login": "antoniou79",
-      "id": 1489205,
-      "node_id": "MDQ6VXNlcjE0ODkyMDU=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1489205?v=4",
-      "html_url": "https://github.com/antoniou79",
-      "contributions": 142
+      "login": "AndywinXp",
+      "id": 11290886,
+      "node_id": "MDQ6VXNlcjExMjkwODg2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11290886?v=4",
+      "html_url": "https://github.com/AndywinXp",
+      "contributions": 1125
+    },
+    {
+      "login": "moralrecordings",
+      "id": 16875700,
+      "node_id": "MDQ6VXNlcjE2ODc1NzAw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16875700?v=4",
+      "html_url": "https://github.com/moralrecordings",
+      "contributions": 1112
     },
     {
       "login": "peres",
@@ -793,7 +879,7 @@
       "node_id": "MDQ6VXNlcjc2OTU5ODQy",
       "avatar_url": "https://avatars.githubusercontent.com/u/76959842?v=4",
       "html_url": "https://github.com/fracturehill",
-      "contributions": 971
+      "contributions": 984
     },
     {
       "login": "elasota",
@@ -801,23 +887,7 @@
       "node_id": "MDQ6VXNlcjExMzcyNzM=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1137273?v=4",
       "html_url": "https://github.com/elasota",
-      "contributions": 968
-    },
-    {
-      "login": "moralrecordings",
-      "id": 16875700,
-      "node_id": "MDQ6VXNlcjE2ODc1NzAw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/16875700?v=4",
-      "html_url": "https://github.com/moralrecordings",
-      "contributions": 952
-    },
-    {
-      "login": "AndywinXp",
-      "id": 11290886,
-      "node_id": "MDQ6VXNlcjExMjkwODg2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/11290886?v=4",
-      "html_url": "https://github.com/AndywinXp",
-      "contributions": 945
+      "contributions": 973
     },
     {
       "login": "Enderboi",
@@ -826,14 +896,6 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/585632?v=4",
       "html_url": "https://github.com/Enderboi",
       "contributions": 255
-    },
-    {
-      "login": "djsrv",
-      "id": 16441443,
-      "node_id": "MDQ6VXNlcjE2NDQxNDQz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/16441443?v=4",
-      "html_url": "https://github.com/djsrv",
-      "contributions": 36
     },
     {
       "login": "Mataniko",
@@ -849,7 +911,7 @@
       "node_id": "MDQ6VXNlcjYyMDAxNzA=",
       "avatar_url": "https://avatars.githubusercontent.com/u/6200170?v=4",
       "html_url": "https://github.com/Thunderforge",
-      "contributions": 356
+      "contributions": 8
     },
     {
       "login": "lotharsm",
@@ -857,7 +919,23 @@
       "node_id": "MDQ6VXNlcjExODgyNTc3",
       "avatar_url": "https://avatars.githubusercontent.com/u/11882577?v=4",
       "html_url": "https://github.com/lotharsm",
-      "contributions": 260
+      "contributions": 2
+    },
+    {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "html_url": "https://github.com/apps/dependabot",
+      "contributions": 262
+    },
+    {
+      "login": "IlDucci",
+      "id": 5641681,
+      "node_id": "MDQ6VXNlcjU2NDE2ODE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5641681?v=4",
+      "html_url": "https://github.com/IlDucci",
+      "contributions": 195
     },
     {
       "login": "jonathangray",
@@ -876,20 +954,12 @@
       "contributions": 170
     },
     {
-      "login": "IlDucci",
-      "id": 5641681,
-      "node_id": "MDQ6VXNlcjU2NDE2ODE=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/5641681?v=4",
-      "html_url": "https://github.com/IlDucci",
-      "contributions": 165
-    },
-    {
-      "login": "dependabot[bot]",
-      "id": 49699333,
-      "node_id": "MDM6Qm90NDk2OTkzMzM=",
-      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-      "html_url": "https://github.com/apps/dependabot",
-      "contributions": 154
+      "login": "yeager",
+      "id": 1206564,
+      "node_id": "MDQ6VXNlcjEyMDY1NjQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1206564?v=4",
+      "html_url": "https://github.com/yeager",
+      "contributions": 44
     },
     {
       "login": "joostp",
@@ -905,7 +975,15 @@
       "node_id": "MDQ6VXNlcjYwMzQ0NA==",
       "avatar_url": "https://avatars.githubusercontent.com/u/603444?v=4",
       "html_url": "https://github.com/SupSuper",
-      "contributions": 40
+      "contributions": 53
+    },
+    {
+      "login": "djsrv",
+      "id": 16441443,
+      "node_id": "MDQ6VXNlcjE2NDQxNDQz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16441443?v=4",
+      "html_url": "https://github.com/djsrv",
+      "contributions": 36
     },
     {
       "login": "ScummVM-Translations",
@@ -914,14 +992,6 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/44945042?v=4",
       "html_url": "https://github.com/ScummVM-Translations",
       "contributions": 30
-    },
-    {
-      "login": "yeager",
-      "id": 1206564,
-      "node_id": "MDQ6VXNlcjEyMDY1NjQ=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1206564?v=4",
-      "html_url": "https://github.com/yeager",
-      "contributions": 26
     },
     {
       "login": "materiagris",
@@ -946,6 +1016,110 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/4173813?v=4",
       "html_url": "https://github.com/tobiatesan",
       "contributions": 22
+    },
+    {
+      "login": "GandalfTheWhite80",
+      "id": 71585967,
+      "node_id": "MDQ6VXNlcjcxNTg1OTY3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/71585967?v=4",
+      "html_url": "https://github.com/GandalfTheWhite80",
+      "contributions": 617
+    },
+    {
+      "login": "JenniBee",
+      "id": 782034,
+      "node_id": "MDQ6VXNlcjc4MjAzNA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/782034?v=4",
+      "html_url": "https://github.com/JenniBee",
+      "contributions": 12
+    },
+    {
+      "login": "BJNFNE",
+      "id": 58399929,
+      "node_id": "MDQ6VXNlcjU4Mzk5OTI5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/58399929?v=4",
+      "html_url": "https://github.com/BJNFNE",
+      "contributions": 12
+    },
+    {
+      "login": "Canuma",
+      "id": 3998328,
+      "node_id": "MDQ6VXNlcjM5OTgzMjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3998328?v=4",
+      "html_url": "https://github.com/Canuma",
+      "contributions": 8
+    },
+    {
+      "login": "dotdc",
+      "id": 12827900,
+      "node_id": "MDQ6VXNlcjEyODI3OTAw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12827900?v=4",
+      "html_url": "https://github.com/dotdc",
+      "contributions": 6
+    },
+    {
+      "login": "oleynik-af",
+      "id": 50670920,
+      "node_id": "MDQ6VXNlcjUwNjcwOTIw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/50670920?v=4",
+      "html_url": "https://github.com/oleynik-af",
+      "contributions": 5
+    },
+    {
+      "login": "jihill",
+      "id": 4391844,
+      "node_id": "MDQ6VXNlcjQzOTE4NDQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4391844?v=4",
+      "html_url": "https://github.com/jihill",
+      "contributions": 5
+    },
+    {
+      "login": "ToadisGit",
+      "id": 96375205,
+      "node_id": "U_kgDOBb6RpQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/96375205?v=4",
+      "html_url": "https://github.com/ToadisGit",
+      "contributions": 3
+    },
+    {
+      "login": "NekoFever",
+      "id": 5204912,
+      "node_id": "MDQ6VXNlcjUyMDQ5MTI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5204912?v=4",
+      "html_url": "https://github.com/NekoFever",
+      "contributions": 2
+    },
+    {
+      "login": "chkuendig",
+      "id": 748698,
+      "node_id": "MDQ6VXNlcjc0ODY5OA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/748698?v=4",
+      "html_url": "https://github.com/chkuendig",
+      "contributions": 1
+    },
+    {
+      "login": "epsimatic",
+      "id": 1821846,
+      "node_id": "MDQ6VXNlcjE4MjE4NDY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1821846?v=4",
+      "html_url": "https://github.com/epsimatic",
+      "contributions": 1
+    },
+    {
+      "login": "nightm4re94",
+      "id": 26114385,
+      "node_id": "MDQ6VXNlcjI2MTE0Mzg1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/26114385?v=4",
+      "html_url": "https://github.com/nightm4re94",
+      "contributions": 1
+    },
+    {
+      "login": "trembyle",
+      "id": 54326852,
+      "node_id": "MDQ6VXNlcjU0MzI2ODUy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/54326852?v=4",
+      "html_url": "https://github.com/trembyle",
+      "contributions": 1
     }
   ],
   "activeOrg": true

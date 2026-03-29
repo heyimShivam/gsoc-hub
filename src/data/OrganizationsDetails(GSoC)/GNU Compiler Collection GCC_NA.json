@@ -37,7 +37,8 @@
     2022,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2018": [
@@ -291,7 +292,63 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/Xl593raA"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Implementation of a simple in-memory  file system for running offloading tests  on NVIDIA GPUs",
+        "short_description": "This project aims to implement an in-memory, volatile file system for NVIDIA GPUs using the NVPTX backend in newlib. NVPTX offloading in GCC enables...",
+        "description": "This project aims to implement an in-memory, volatile file system for NVIDIA GPUs using the NVPTX backend in newlib. NVPTX offloading in GCC enables running tests on the GPU, but currently lacks proper file system support. The proposed solution involves two key objectives: (1) developing a lightweight file system driver that operates in the GPU’s VRAM, and (2) redirecting NVPTX system calls in newlib to interface with this in-memory file system. The file system will support basic operations such as file creation and deletion, without requiring recursive directory structures. This work will improve the runtime environment for NVPTX targets and potentially pave the way for future extensions, such as RPC-based host filesystem access or support for AMD GPUs via the AMD GCN backend.",
+        "student_name": "ArijitKD",
+        "code_url": "https://github.com/ArijitKD/GSoC2025-GCC",
+        "proposal_id": "yzcbD82n",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/hsckMPiN"
+      },
+      {
+        "title": "Fortran - 2018/202x",
+        "short_description": "This project aims to implement some new language features introduced in Fortran 2018 and Fortran 202x, enhancing gfortran's compatibility with newer...",
+        "description": "This project aims to implement some new language features introduced in Fortran 2018 and Fortran 202x, enhancing gfortran's compatibility with newer Fortran standards.",
+        "student_name": "c8ef",
+        "code_url": "https://gist.github.com/c8ef/84d311f97ab2e1a925073ea923736d00",
+        "proposal_id": "pqfuYXEU",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/doLDYuto"
+      },
+      {
+        "title": "Implementing Parallel Features on the GCC Ada Frontend",
+        "short_description": "The GNAT front end does not currently recognize the \"parallel\" keyword added as part of Ada 2022. The goal of this project is to add support in the...",
+        "description": "The GNAT front end does not currently recognize the \"parallel\" keyword added as part of Ada 2022.  The goal of this project is to add support in the GNAT parser for the two most important places where the \"parallel\" keyword is used, namely the parallel \"for\" loop, and the parallel \"do\" statement.",
+        "student_name": "Ethan McDonough",
+        "code_url": "https://gist.github.com/EthanLuisMcDonough/c77a4737b8bdc46c90e502615b03d841",
+        "proposal_id": "uec8fJ6T",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/Ex0T0sK7"
+      },
+      {
+        "title": "Tooling for running BPF GCC tests on a live kernel",
+        "short_description": "This project addresses the lack of execution tests for the BPF backend in GCC. While GCC has many compile-time tests, the BPF backend, which...",
+        "description": "This project addresses the lack of execution tests for the BPF backend in GCC. While GCC has many compile-time tests, the BPF backend, which generates eBPF code run by the Linux kernel, lacks runtime validation. The goal is to create a test tool that runs eBPF programs on a live kernel in a virtual environment (using QEMU), similar to the kernel's selftest infrastructure. The tool will load and execute BPF objects and report results, allowing us to catch regressions early. Next, this tool will be integrated into GCC's Dejagnu-based testing infrastructure, and a dedicated testsuite for the BPF target will be added to the GCC testsuite. This project will help ensure that compiler changes do not inadvertently generate eBPF code that the kernel verifier rejects.",
+        "student_name": "PiyushRaj927",
+        "code_url": "https://gcc.gnu.org/wiki/BPFRunTimeTests",
+        "proposal_id": "FIRiHKon",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/YhgWG1pn"
+      },
+      {
+        "title": "Rewrite Rust lints to operate on  frontend's HIR",
+        "short_description": "GCC Rust (gccrs) is an alternative Rust compiler frontend based on GCC, aiming for full integration into the GNU toolchain. This project focuses on...",
+        "description": "GCC Rust (gccrs) is an alternative Rust compiler frontend based on GCC, aiming for full integration into the GNU toolchain. This project focuses on improving the HIR (High-Level Intermediate Representation) visitor pattern and migrating lint checks from the middle-end to HIR. These improvements will enhance gccrs's overall code quality.",
+        "student_name": "Ryutaro Okada",
+        "code_url": "https://github.com/sakupan102/gsoc-2025",
+        "proposal_id": "vsCPaIwP",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/mYnazxTu"
+      },
+      {
+        "title": "gccrs: Improving match expressions & pattern matching",
+        "short_description": "This medium-sized project aims to improve pattern matching support in gccrs, the GCC frontend for Rust, by implementing compilation for the currently...",
+        "description": "This medium-sized project aims to improve pattern matching support in gccrs, the GCC frontend for Rust, by implementing compilation for the currently unsupported patterns (StructPattern, SlicePattern, RestPattern, etc.). The successful implementation of these features will bring gccrs a step closer to becoming a production-ready alternative Rust compiler, while providing valuable experience in compiler frontend development.",
+        "student_name": "Zhi Heng",
+        "code_url": "https://gist.github.com/Polygonalr/32a38ee1c0e4a0c5a8eaa4cd072fc335",
+        "proposal_id": "o8jortO7",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/T6KZYLtU"
+      }
+    ],
+    "2026": []
   },
   "githubID": "NA",
   "activeOrg": false,

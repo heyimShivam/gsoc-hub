@@ -33,7 +33,8 @@
     2022,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2021": [
@@ -806,7 +807,288 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/GNfjYVmg"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Foundation models for End-to-End event reconstruction",
+        "short_description": "Current deep learning models for CMS particle reconstruction are often task-specific. This project aims to develop versatile foundation models by...",
+        "description": "Current deep learning models for CMS particle reconstruction are often task-specific. This project aims to develop versatile foundation models by pre-training deep neural networks on unlabeled CMS End-to-End (E2E) detector data using various Self-Supervised Learning (SSL) strategies (MAE, I-JEPA, CAE, VAE). These models learn robust, general-purpose representations of particle interactions. We will then comprehensively benchmark these foundation models by adapting them for diverse downstream tasks including Particle Identification (Classification), Kinematics Estimation (Regression), Detector Super-Resolution, and High-Fidelity Event Generation (investigating VAEs and conditional Diffusion Models). Deliverables include the open-source codebase with reproducible pipelines, pre-trained model weights, detailed benchmarking results/analysis, and user-friendly documentation.",
+        "student_name": "Aaditya Porwal",
+        "code_url": "https://github.com/AADI-234/E2E-Aaditya/tree/mid-term/E2E_Foundation_Model_Aaditya_Porwal",
+        "proposal_id": "GSkyXouP",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/qZDekrLE"
+      },
+      {
+        "title": "Super-Resolution and Analysis of Gravitational Lensing Images",
+        "short_description": "This project develops an open-source, diffusion-based super-resolution (SR) pipeline for enhancing the resolution of gravitational lensing images....",
+        "description": "This project develops an open-source, diffusion-based super-resolution (SR) pipeline for enhancing the resolution of gravitational lensing images. High-resolution lensing data is often limited, and the project also aims to create a synthetic benchmark dataset of paired LSST-like low-resolution and Roman-like high-resolution images.\n\nThe developed pipeline will be compared against state-of-the-art SR approaches, with an analysis of their respective strengths and limitations. This project lays the groundwork for future applications of SR in downstream tasks such as classification and regression of lens properties.\n\nDeliverables include:\n\n- a synthetic benchmark dataset of paired low- and high-resolution gravitational lensing images;\n\n- a diffusion-based pipeline for SR;\n\n- comparative analysis of SR techniques on the benchmark dataset;\n\n - open-source code base and final report.",
+        "student_name": "Aleksandr Duplinskii",
+        "code_url": "https://medium.com/@al.duplinskiy/benchmarking-super-resolution-for-lsst-like-data-5d34c1e793dc",
+        "proposal_id": "9BB8gWtG",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/0Dpx7PkX"
+      },
+      {
+        "title": "Quantum Particle transformer for High Energy Physics Analysis at the LHC",
+        "short_description": "This proposal aims to build upon and expand the progress made in recent years on Quantum Vision Transformers (QViTs) for High Energy Physics (HEP)...",
+        "description": "This proposal aims to build upon and expand the progress made in recent years on Quantum Vision Transformers (QViTs) for High Energy Physics (HEP) analysis. Specifically, the project will adapt and extend the state-of-the-art Particle Transformer architecture, which has already demonstrated excellent performance in jet classification tasks, by integrating it with quantum components.",
+        "student_name": "Alessandro Tesi",
+        "code_url": "https://medium.com/@tesi.alessandro88/gsoc-25-quantum-particle-transformer-for-high-energy-physics-analysis-at-ml4sci-dad868fd53f2",
+        "proposal_id": "eaJnSjKY",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/1MGPehm9"
+      },
+      {
+        "title": "Discovering Hidden Symmetries in CMS Calorimetric Data via Semi-Supervised Learning",
+        "short_description": "This project tackles the challenge of learning hidden symmetries in complex, high-dimensional physics data using modern machine learning techniques....",
+        "description": "This project tackles the challenge of learning hidden symmetries in complex, high-dimensional physics data using modern machine learning techniques. In particular, we aim to discover symmetries directly from raw CMS calorimeter data using a semi-supervised learning pipeline—without relying on pre-defined augmentation strategies or prior knowledge of symmetry transformations.\r\n\r\nWe will build on recent advances in symmetry discovery such as adversarial learning, Lie algebra-based models, and general equivariant MLP construction. The proposed approach begins with a supervised baseline using known augmentations to validate the pipeline, followed by implementing a GAN-based or contrastive method to infer latent group actions and conserved quantities. Discovered symmetries will then be used to construct equivariant neural networks that are robust, interpretable, and data-efficient.\r\n\r\nBy the end of the project, we aim to deliver a fully working, open-source pipeline for symmetry discovery and equivariant modeling on CMS data—benchmarking its performance and generalization against traditional models. This work will contribute to the broader mission of physics-aware machine learning and enable more principled modeling of detector data in high-energy physics.",
+        "student_name": "Alexandra Murariu",
+        "code_url": "https://github.com/ML4SCI/E2E/pull/23",
+        "proposal_id": "9hIX9FDS",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/SiAABTM9"
+      },
+      {
+        "title": "Unsupervised super-resolution and analysis of observed lensing images",
+        "short_description": "Machine learning based analyses are proving to be very potent in understanding complex physical systems. This project aims to develop a reinforcement...",
+        "description": "Machine learning based analyses are proving to be very potent in understanding complex physical systems. This project aims to develop a reinforcement learning - CNN hybrid machinery that will perform unsupervised super-resolution and study of observed strong gravitational lensing images. The developed machinery will be useful in the study of data releases of upcoming lensing surveys.",
+        "student_name": "Anirudh Shankar",
+        "code_url": "https://medium.com/@anirudhshankar99/d978796728c6",
+        "proposal_id": "wcoImMz7",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/FN4tGXDE"
+      },
+      {
+        "title": "Q-MAML for Variational Quantum Algorithms for High Energy Physics Analysis at the LHC",
+        "short_description": "This project focuses on developing a new machine learning approach called Quantum Model-Agnostic Meta-Learning (Q-MAML) specifically for high-energy...",
+        "description": "This project focuses on developing a new machine learning approach called Quantum Model-Agnostic Meta-Learning (Q-MAML) specifically for high-energy physics (HEP) experiments like those at the Large Hadron Collider (LHC). These experiments produce massive amounts of data that change over time, making it challenging to train machine learning models effectively.\n\nQ-MAML uses quantum computing techniques with variational quantum circuits to enable \"few-shot learning.\" This means the models can quickly adapt to new data with very little retraining, which is crucial for the dynamic environment of particle colliders. The goal is to improve tasks like identifying particle collision patterns (event topology classification) and finding rare signals.\n\nThe project will develop a modular, open-source Q-MAML workflow that is compatible with both quantum simulators and actual quantum hardware, utilizing platforms like Qiskit and PennyLane. The performance of Q-MAML will be rigorously benchmarked against classical MAML and standard variational quantum algorithm (VQA) classifiers on physics-inspired tasks. These benchmarks will include detailed evaluations of training curves, adaptation behaviors, and resource analysis. The deliverables will consist of a fully documented codebase, interactive Jupyter notebooks for ease of use, and reproducible benchmarking tools. This work aims to establish a practical foundation for hybrid quantum-classical learning in scientific applications, particularly within the field of high-energy physics.",
+        "student_name": "arnavsinghal09",
+        "code_url": "https://medium.com/@arnavsinghal06/gsoc-25-final-evaluation-qmaml-for-vqas-for-high-energy-physics-data-at-lhc-ebc1a08fb9ca",
+        "proposal_id": "AVvumE5d",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/dHEy5F8z"
+      },
+      {
+        "title": "Physics Guided Machine Learning on Real Lensing Images",
+        "short_description": "The project aims to develop a physics-informed neural network framework to infer the properties and distribution of dark matter in the lensing galaxy...",
+        "description": "The project aims to develop a physics-informed neural network framework to infer the properties and distribution of dark matter in the lensing galaxy that undergoes strong gravitational lensing.  The most important part of the project is to create a model that works for real galaxies as well.  All work done so far has been on simulated datasets, and last year’s work was also limited to simulated datasets, not those generated from real datasets. This year’s work will focus more on  real simulated datasets, which cannot be classified by normal convolutional neural networks.",
+        "student_name": "Ashutosh Ojha",
+        "code_url": "https://github.com/ML4SCI/DeepLense/tree/main/DeepLense_Physics_Informed_Neural_Network_for_Dark_Matter_Morphology_Ashutosh_Ojha/Work%20on%20Real%20Lensing",
+        "proposal_id": "q99zIUs9",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/IfQvKrOC"
+      },
+      {
+        "title": "Discovery of hidden symmetries and conservation laws",
+        "short_description": "Because of its cylindrical shape, the Compact Muon Solenoid (CMS) detector has intrinsic rotational symmetries. Data analysis can be greatly improved...",
+        "description": "Because of its cylindrical shape, the Compact Muon Solenoid (CMS) detector has intrinsic rotational symmetries.  Data analysis can be greatly improved by taking advantage of these symmetries, especially in semi-supervised learning situations where labeled data is hard to come by.  Using learnable rotation matrices conditioned on class labels or contextual information, this study aims to create a novel generative model that learns and applies rotational symmetry transformations to CMS data.  Our goal is to find and utilize rotational symmetries by including this model into a GAN-like framework with a trained classifier. This will enhance data augmentation and model performance in semi-supervised CMS data processing.",
+        "student_name": "Avishikta_Bhattacharjee",
+        "code_url": "https://medium.com/@avishiktaa.bhattacharrjee/hidden-symmetry-and-generators-2dcdb18fbee4",
+        "proposal_id": "HaJCkaGs",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/XgeDrH4B"
+      },
+      {
+        "title": "Physics-Informed Performer for Symbolic Squared Amplitudes in HEP",
+        "short_description": "In high-energy physics (HEP), automating the symbolic computation of squared amplitudes is essential for predicting cross-sections and validating...",
+        "description": "In high-energy physics (HEP), automating the symbolic computation of squared amplitudes is essential for predicting cross-sections and validating theoretical models against experimental data. Current transformer-based approaches excel in sequence modeling but falter in capturing the relational structures and physical consistency required for HEP expressions, such as those involving gamma matrices and Mandelstam variables. To tackle this, I propose the Physics-Informed Performer (PIP), a novel framework that integrates the Performer transformer’s efficient kernel-based attention with a physics-informed tokenization scheme and a SymPy-based validation layer. This approach leverages Performer’s ability to handle long sequences, introduces tokens like <SQUARE> and <S> to embed HEP-specific operations and kinematics, and ensures symbolic accuracy through empirical post-processing. By focusing on data representation, PIP offers a computationally efficient alternative to traditional symbolic methods, tailored to the Task 1.2 dataset of amplitude-to-squared-amplitude mappings.",
+        "student_name": "Ayush Mishra A",
+        "code_url": "https://medium.com/@ayush89718/exploring-squared-amplitudes-in-high-energy-physics-with-ml4sci-my-gsoc-journey-part-2-2c1ff217f10e",
+        "proposal_id": "sJ5AUXx0",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/FAUugAQ0"
+      },
+      {
+        "title": "A Diffusion-Based Deep Learning Framework for Denoising Protoplanetary Disk Observations",
+        "short_description": "This project proposes ProtoDiff, a diffusion-based deep learning model designed to denoise astronomical observations of protoplanetary disks from...",
+        "description": "This project proposes ProtoDiff, a diffusion-based deep learning model designed to denoise astronomical observations of protoplanetary disks from telescopes like ALMA and VLT. Leveraging recent advances in score-based generative modeling, the model will be trained on synthetic disk simulations with realistic noise. ProtoDiff aims to outperform traditional denoising pipelines in both quality and efficiency, enabling cleaner reconstructions of planet-forming environments. The final deliverables will include open-source code, pretrained models, and documentation to support reproducible astrophysical data processing and accelerate research in planet formation studies.",
+        "student_name": "Chukwunwogor Faithful",
+        "code_url": "https://medium.com/@chukwuivnez/a-diffusion-based-deep-learning-framework-for-denoising-protoplanetary-disk-observations-gsoc-4870df837409",
+        "proposal_id": "XM31oQKL",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/HEfdSjzD"
+      },
+      {
+        "title": "Continual learning for data quality monitoring",
+        "short_description": "This project addresses the challenge of data drift in high-energy physics, where evolving detector conditions cause AI models for data quality...",
+        "description": "This project addresses the challenge of data drift in high-energy physics, where evolving detector conditions cause AI models for data quality monitoring to become obsolete. Fully retraining these models is computationally expensive and can lead to catastrophic forgetting of past information. To overcome this, we are implementing a parameter-efficient continual learning framework using a deep autoencoder. Our method involves freezing the large, pre-trained encoder-decoder core and only fine-tuning the lightweight outer convolutional layers to adapt to new data runs. This approach allows the model to adjust to new data distributions without altering its core knowledge, maintaining high classification performance (measured by ROC AUC) while reducing the number of trainable parameters by over 60%, thus offering a robust and sustainable solution for real-time data quality assurance.",
+        "student_name": "Daksh Mor",
+        "code_url": "https://medium.com/@daksh3982/exploring-machine-learning-for-hcal-data-quality-monitoring-06fee3c59bd0",
+        "proposal_id": "GjzEIe4u",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/LaROwUCf"
+      },
+      {
+        "title": "DeepLense: Gravitational Lens Finding Project",
+        "short_description": "This project aims to develop and optimize deep learning algorithms for identifying strong gravitational lenses within wide-field surveys such as the...",
+        "description": "This project aims to develop and optimize deep learning algorithms for identifying strong gravitational lenses within wide-field surveys such as the Hyper Suprime-Cam Subaru Strategic Program (HSC-SSP). The project will be executed in three phases, from convolutional neural networks, to ENNS, to vision transformers. The project will gradually increase in complexity until a satisfactory result has been achieved.",
+        "student_name": "DhruvSrivastava",
+        "code_url": "https://github.com/EnderNinja7/HEALSwin-PINN/tree/main",
+        "proposal_id": "TF0inRsc",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/22BgqGr7"
+      },
+      {
+        "title": "Exoplanet Atmosphere Characterization",
+        "short_description": "This project intends to develop cutting-edge machine-learning tools for spectral analysis to characterize the atmospheres of exoplanets. The project...",
+        "description": "This project intends to develop cutting-edge machine-learning tools for spectral analysis to characterize the atmospheres of exoplanets. The project will explore various state-of-the-art and recent techniques to build a robust and general model with strong regressional properties. The resultant models from our study will be benchmarked against pre-existing baselines based on the principles of statistics and atmospheric sciences. Additionally, relevant tutorials and documentation will be provided, keeping future developments in mind. We propose simulation-based inference, causal representation learning and domain-adapted transformers for atmospheric retrievals.",
+        "student_name": "Gaurav Shukla",
+        "code_url": null,
+        "proposal_id": "5l0JfF1W",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/2W9zeTPN"
+      },
+      {
+        "title": "Discovery of hidden symmetries and conservation laws",
+        "short_description": "This project aims to uncover fundamental symmetries and conserved laws hidden within complex high-energy physics data (specifically CMS datasets). It...",
+        "description": "This project aims to uncover fundamental symmetries and conserved laws hidden within complex high-energy physics data (specifically CMS datasets). It proposes a novel hybrid deep learning model that uniquely combines two approaches: 1) leveraging distributional invariance (inspired by GANs) to find transformations that preserve the data's structure without needing pre-defined knowledge, and 2) enforcing mathematical consistency by ensuring these transformations adhere to Lie algebra closure rules. Key steps involve developing and validating this model, deriving the explicit conserved quantities corresponding to the discovered symmetries (potentially using symbolic regression), applying the framework to CMS data, and using the findings to build and benchmark physics-aware deep learning models (e.g., for jet tagging). The ultimate goal is to create more robust, data-efficient, and interpretable models by directly incorporating the fundamental symmetries learned from the data itself.",
+        "student_name": "Green Kedia",
+        "code_url": "https://medium.com/@greenkedia10/the-geometry-beneath-revealing-hidden-symmetries-8cadf0c8118b",
+        "proposal_id": "8gKYpYtC",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/7sbHDzye"
+      },
+      {
+        "title": "Diffusion Models for Gravitational Lensing Simulation",
+        "short_description": "My project focuses on developing diffusion models for gravitational lensing simulations. I will implement and evaluate various diffusion-based...",
+        "description": "My project focuses on developing diffusion models for gravitational lensing simulations. I will implement and evaluate various diffusion-based architectures, including Diffusion Transformers (DiT) and Latent Diffusion Models (LDM). Conditional modeling techniques such as Classifier-Free Guidance and Conditional Flow Matching will also be explored. The project involves creating a diverse dataset of simulated gravitational lensing images under various astrophysical conditions for downstream tasks. All implementations, findings, and documentation will be open-sourced through a GitHub repository.",
+        "student_name": "hamees-sayed",
+        "code_url": "http://hamees-sayed.github.io/flowlensing",
+        "proposal_id": "XFJmmm4I",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/T27qiqDH"
+      },
+      {
+        "title": "Foundation Model for Gravitational Lensing",
+        "short_description": "This project aims to develop a vision foundation model for strong gravitational lensing by comparing various self-supervised learning techniques,...",
+        "description": "This project aims to develop a vision foundation model for strong gravitational lensing by comparing various self-supervised learning techniques, including contrastive learning, masked autoencoders, and the physics-informed I-JEPA model. The objective is to evaluate and benchmark these methods on diverse gravitational lensing datasets and to integrate physical priors into the I-JEPA framework for more meaningful representation learning. The resulting foundation model will be fine-tuned for multiple downstream tasks such as lens classification, super-resolution, parameter regression, and lens detection. Deliverables include a unified lensing dataset, comparative analysis of self-supervised methods, and a robust, physics-aware foundation model for gravitaional lensing images.",
+        "student_name": "J Rishi",
+        "code_url": null,
+        "proposal_id": "JnTywUNC",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/bDYOfWmR"
+      },
+      {
+        "title": "Latent Neural Signatures in Clinical vs. Neurotypical Dyads: A CEBRA Pipeline",
+        "short_description": "This project aims to develop a cutting-edge computational pipeline—\"Latent Neural Signatures in Clinical vs. Neurotypical Dyads: A CEBRA Pipeline\"—to...",
+        "description": "This project aims to develop a cutting-edge computational pipeline—\"Latent Neural Signatures in Clinical vs. Neurotypical Dyads: A CEBRA Pipeline\"—to decode and interpret complex neural dynamics during social interactions. By leveraging the CEBRA (Contrastive Embedding for Behavioral and Neural Analysis) framework, the pipeline will process and analyze time-locked 64-channel EEG data from interacting dyads (e.g., speaker-listener pairs). The goal is to generate robust, low-dimensional latent embeddings that capture key features such as neural synchrony, connectivity, and manifold geometry, ultimately distinguishing between clinical populations (e.g., individuals with Autism Spectrum Disorder) and neurotypical participants.\r\n\r\nTo achieve this, the project will integrate rigorous EEG preprocessing (artifact removal, filtering, epoching, and synchronization) with state-of-the-art contrastive learning methods. The pipeline will be built in a modular fashion, allowing for reproducible, open-source research and facilitating cross-disciplinary collaboration between machine learning experts and neuroscientists. Key deliverables include a fully functional end-to-end pipeline, comprehensive technical documentation and user guides, and detailed analysis reports with visualizations and quantitative metrics.\r\n\r\nThis approach promises not only to enhance our understanding of the neural substrates underlying social communication but also to provide a practical tool for clinical diagnostics and personalized intervention strategies.",
+        "student_name": "jeffreyhuang1009",
+        "code_url": "https://medium.com/@jeffreyhuang1009/cebra-based-data-processing-pipeline-for-mapping-time-locked-eeg-paired-sets-in-interacting-0dbec173a20f",
+        "proposal_id": "FLhs6QH4",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/n70Uehmn"
+      },
+      {
+        "title": "Data Processing Pipeline for the LSST",
+        "short_description": "The project, \"Data Processing Pipeline for the LSST,\" is designed to bridge the gap between the LSST data ecosystem and DeepLense's deep learning...",
+        "description": "The project, \"Data Processing Pipeline for the LSST,\" is designed to bridge the gap between the LSST data ecosystem and DeepLense's deep learning workflows. The proposal outlines the development of a modular, efficient pipeline that automatically retrieves relevant LSST images and catalogues via the official LSST Butler API, applies configurable preprocessing (such as cutout extraction, normalization, resizing, and channel management), and finally delivers analysis-ready data into DeepLense ML models for tasks like lens detection, classification, and super-resolution. Key deliverables include:\n1. A robust LSST Data Access Module that reliably fetches data.\n2. A flexible preprocessing module for transforming raw images into ML-compatible formats.\n3. Seamless integration with DeepLense’s deep learning workflows, enabling end-to-end processing.\n4. Comprehensive documentation and reusable, well-structured code.",
+        "student_name": "Kartik Mandar",
+        "code_url": "https://github.com/kartikmandar/RIPPLe",
+        "proposal_id": "MMa6Q3ix",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/HoQUCDWw"
+      },
+      {
+        "title": "Foundation models for symbolic regression tasks",
+        "short_description": "Problem: Symbolic regression is crucial for discovering underlying physical laws from data, but traditional methods are often computationally...",
+        "description": "Problem: Symbolic regression is crucial for discovering underlying physical laws from data, but traditional methods are often computationally expensive or lack generalization. Current approaches struggle with efficiency and adaptability across diverse scientific datasets.\n\nSolution: This project aims to develop a foundation model for symbolic regression by integrating transformer-based architectures (e.g., SymbolicGPT) with evolutionary algorithms and learned concept libraries (LASR). The model will leverage large-scale pretraining and fine-tuning to generalize across mathematical and physical datasets, combining the strengths of language models and evolutionary search for interpretable, efficient equation discovery.\n\nDeliverables:\nA transformer-based symbolic regression model with mathematical priors and curriculum learning.\n\nIntegration of a learned concept library for reusable abstractions.\n\nBenchmarks against SOTA models.\n\nOptimized, modular code for seamless LLM integration and open-source deployment.",
+        "student_name": "Krish Malik",
+        "code_url": "https://medium.com/@krishmalikus/learning-symbolic-expressions-from-data-clouds-d186f05435bd",
+        "proposal_id": "k7PTZhS3",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/RtrwLUB6"
+      },
+      {
+        "title": "Neural Harmony – Decoding Social Interactions with CEBRA-based framework for analysing EEG data",
+        "short_description": "This project aims to decode the neural dynamics of social interactions by adapting the CEBRA framework to analyze dyadic EEG data. Focusing on...",
+        "description": "This project aims to decode the neural dynamics of social interactions by adapting the CEBRA framework to analyze dyadic EEG data. Focusing on differences between neurotypical individuals and those with autism, the work will develop robust preprocessing pipelines, contrastive learning methods for neural synchrony, and interpretable clinical biomarkers. The deliverables include an open-source toolkit for EEG analysis, enabling researchers to study brain interactions with greater precision. This approach could advance early diagnosis and deepen our understanding of social brain function.",
+        "student_name": "Maria Glushanina",
+        "code_url": "https://medium.com/@mariya.glushanina/extending-cebra-to-dyadic-neural-dynamics-my-google-summer-of-code-journey-5459134af50c",
+        "proposal_id": "FCAs123g",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/Rjgy9LB6"
+      },
+      {
+        "title": "Quantum Diffusion Model for HEP",
+        "short_description": "Diffusion models have experienced rapid growth in usability, availability, and research. The classical algorithm consists of two main parts: a...",
+        "description": "Diffusion models have experienced rapid growth in usability, availability, and research. The classical algorithm consists of two main parts: a forward diffusion process and a learned denoising step. The forward diffusion process discretely applies noise to an image until it is unrecognizable. The denoising process reverses the noise, predicting the original image. Quantum techniques, such as parametric quantum circuits, could be applied to both parts to create a fully quantum model that could run on a quantum computer, speeding up training time. This model would be trained on multiple high energy physics datasets, such as the quark and gluon dataset for generating quark and gluon jets, alongside a classical diffusion model, and the results could be evaluated taking into account resources, time, and quality. Furthermore, a mathematically-driven approach would provide the theoretical foundations of quantum diffusion models in addition to experimental results.",
+        "student_name": "Masha",
+        "code_url": "https://github.com/mashathepotato/GSoC-Quantum-Diffusion-Model",
+        "proposal_id": "9P7GWtJS",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/zoK9XWAM"
+      },
+      {
+        "title": "Implementation of Quantum Generative Adversarial Networks to Perform HEP Analysis at the LHC",
+        "short_description": "This project aims to implement a Quantum Generative Adversarial Network (QGAN) using the Pennylane framework to explore the advantages of quantum...",
+        "description": "This project aims to implement a Quantum Generative Adversarial Network (QGAN) using the Pennylane framework to explore the advantages of quantum machine learning in High Energy Physics. By leveraging entangling quantum circuits and variational optimization, the QGAN will be trained to model complex data distributions. The project will include a direct comparison between classical GANs and QGANs on identical tasks, evaluating performance through training speed, sample quality, and robustness to mode collapse. Deliverables include a fully functional QGAN model, benchmarking reports, noise sensitivity analysis, and an open-source code repository with documentation.",
+        "student_name": "Maya Ma",
+        "code_url": "https://medium.com/@maya030928/exploring-quantum-generative-adversarial-network-with-gsoc-d4fdf3b3dedd",
+        "proposal_id": "2zCnp4ft",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/4zV712HN"
+      },
+      {
+        "title": "Building a Foundational Model for Symbolic Regression in High Energy Physics",
+        "short_description": "This project proposes the development of a foundational model for symbolic regression tailored to high energy physics (HEP). Symbolic regression can...",
+        "description": "This project proposes the development of a foundational model for symbolic regression tailored to high energy physics (HEP). Symbolic regression can be used to rapidly provide solutions to scientific problems with high computational complexity or even intractable tasks, discovering symbolic expressions that describe underlying physical laws. While many approaches have been explored, this project focuses on building a foundation model which incorporates knowledge about the task of symbolic regression and common data representations for physical systems. The model will target accurate and interpretable prediction of squared amplitudes and cross sections—two core quantities in particle physics. Leveraging physics‑informed representations, symbolic machine learning, and simulation data, the project will explore how to integrate domain knowledge into learning algorithms to enhance scientific validity. Over 28 weeks, the project will progress through phases of theoretical investigation, foundation model design, simulation‑based data generation, model development, and integration. Deliverables will include a curated dataset, pre‑trained foundation model, symbolic models, and a final report, with broader goals of improving interpretability and reliability in physics‑informed AI.",
+        "student_name": "Miche",
+        "code_url": "https://github.com/michemarall/SYMBA/blob/foundation_model_miche_maral/SYMBA_HEP/SYMBAHEP_Foundation_Model_Miche_Maral/README.md",
+        "proposal_id": "LQGqJfZb",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/OEZlYZ6G"
+      },
+      {
+        "title": "State-space models for squared amplitude calculation in high-energy physics",
+        "short_description": "One of the most important physical quantities in particle physics is the cross section, or a probability that a particular process takes place in the...",
+        "description": "One of the most important physical quantities in particle physics is the cross section, or a probability that a particular process takes place in the interaction of elementary particles. Its measure provides a testable link between theory and experiment. It is obtained theoretically mainly by calculating the squared amplitude. While the calculation of amplitudes for a particular expression is trivial, mapping it to a squared amplitude is computationally expensive. Previous works demonstrated that transformer-based (vanilla and KAN-infused) models can map amplitudes to squared amplitudes substantially faster and with high accuracy. However, transformers suffer from quadratic complexity due to self-attention, making them less efficient when handling extremely long sequences. Additionally, they may struggle with structured, hierarchical dependencies that naturally arise in amplitude computations. Inspired by Classical State Space theory, State Space Sequence Models (SSMs) emerged as a promising class of architectures for sequence modelling. These models can be interpreted as a combination of RNNs and CNNs. These models have near-linear scaling with sequence length, making them effective for long-range dependencies. This project will explore using SSMs for squared amplitude calculations.\n\nThere are 2 major aims of this project\n\n1. To develop novel hybrid models that combine state-space models (SSMs) with attention mechanisms for squared amplitude calculations.\n\n2. A systematic evaluation of already existing models and SSMs on feynman interaction datasets and their scalability with respect to dataset size, maximum sequence length etc.",
+        "student_name": "Prasanth Naidu",
+        "code_url": "https://medium.com/@prasanthnaidu31k/state-space-models-for-squared-amplitude-calculations-618b9ea4a4fd",
+        "proposal_id": "RazuRQdv",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/yq2sYd99"
+      },
+      {
+        "title": "Quantum Kolmogorov-Arnold Networks for High Energy Physics Analysis at the LHC",
+        "short_description": "This project explores Quantum Kolmogorov–Arnold Networks (QKANs) as a novel and interpretable architecture for analyzing collider data from the...",
+        "description": "This project explores Quantum Kolmogorov–Arnold Networks (QKANs) as a novel and interpretable architecture for analyzing collider data from the High-Luminosity LHC. Inspired by the Kolmogorov–Arnold theorem, QKANs decompose complex multivariate functions into compositions of univariate ones—translated into quantum models using parameterized circuits and Chebyshev-based activations. QKANs leverage quantum singular value transformation (QSVT), block-encoding, and variational unitaries to efficiently model high-dimensional, nonlinear relationships in jet physics tasks like quark-gluon tagging.\n\nThe goal is to develop scalable and NISQ-compatible QKAN layers using the Pennylane framework and benchmark them against classical MLPs and spline-based KANs on realistic HEP datasets. This includes implementing quantum-friendly activation functions, evaluating noise robustness, and integrating hybrid QKAN layers selectively across high-impact features. The final deliverables will include a modular, open-source codebase, training pipelines, evaluation reports, and insights into symbolic function discovery in collider physics. This project contributes to building transparent, compact, and hardware-efficient quantum models for the next generation of scientific discovery at the LHC.",
+        "student_name": "Ria Khatoniar",
+        "code_url": "https://medium.com/@riakhatoniar1234/gsoc-2025-quantum-kolmogorov-arnold-networks-for-high-energy-physics-analysis-at-the-lhc-a98207bf6d4c",
+        "proposal_id": "cHqKJ0BJ",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/TNdAnfnC"
+      },
+      {
+        "title": "Next-Generation Transformer Models for Symbolic Calculations of Squared Amplitudes in HEP",
+        "short_description": "In particle physics, a cross section is a measure of the likelihood that particles will interact or scatter with one another when they collide. It is...",
+        "description": "In particle physics, a cross section is a measure of the likelihood that particles will interact or scatter with one another when they collide. It is a fundamental quantity and its computation can become time intensive. This project aims to apply state-of-the-art machine learning techniques, particularly transformer-based models, for the generation of symbolic representations of the squared amplitudes in HEP. The proposed sequence-to-sequence system aims to improve upon the existing time-intensive processes of calculations of the squared amplitude .  This project builds upon the previous work which includes vanilla models, and extends it further to advanced transformer models.",
+        "student_name": "Ritesh Bhalerao",
+        "code_url": "https://github.com/Riteshbhalerao11/GSoC_25",
+        "proposal_id": "bDzvTm9P",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/niqGYrnh"
+      },
+      {
+        "title": "Graph Representation Learning for Fast Detector Simulation",
+        "short_description": "High-fidelity detector simulations are critical for accurate analysis in particle physics, but traditional Monte Carlo-based methods are...",
+        "description": "High-fidelity detector simulations are critical for accurate analysis in particle physics, but traditional Monte Carlo-based methods are computationally expensive. DeepFalcon introduced a promising approach using Graph Variational Autoencoders (GVAE) that treat particle hits as graph nodes, enabling faster inference while maintaining high accuracy. This implementation used CMS Open Data of boosted top quark jets and considered only the ECAL layer of the detector, achieving a 400× speedup in reconstructing jets compared to traditional simulations. The model architecture employed GraphSAGE layers and mincut pooling, while training used Adam optimizer with a hybrid loss function combining MSE and KL divergence.\n\nHowever, the current approach is limited to single-layer detector responses and doesn't fully capture the correlations between multiple detector components.\n\nThis project aims to extend DeepFalcon’s GVAE architecture to support multi-layer detector systems, specifically incorporating Tracker, ECAL, and HCAL layers simultaneously. The proposal is structured into two phases:\n\nPhase I will focus on enhancing the graph data representation by including all three detector layers and designing optimized connectivity patterns that capture spatial and inter-layer dependencies.\n\nPhase II will explore advanced pooling techniques and alternative message-passing strategies to improve latent representation quality and model generalization, while maintaining fast inference speeds.\n\nAll components will be implemented using Python and relevant machine learning libraries such as PyTorch Geometric. Expected deliverables include a multi-layer GVAE model, benchmark comparisons against existing results, and detailed analysis of the architectural choices.\n\nThis project contributes toward advancing fast simulation techniques in high-energy physics by enabling more comprehensive and scalable detector modeling.",
+        "student_name": "Rushil Singha",
+        "code_url": "https://medium.com/@rushilsingha18/gsoc-25-part-ii-graph-representation-learning-for-fast-detector-simulation-at-ml4sci-8713f8433013",
+        "proposal_id": "LGxRuMRq",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/pLGb5JlM"
+      },
+      {
+        "title": "Physics informed neural network diffusion equation",
+        "short_description": "This project aims at incorporating Physics informed neural network (PINN) based ODE solvers into the Diffusion probabilistic models(DPM) , to build a...",
+        "description": "This project aims at incorporating Physics informed neural network (PINN) based ODE solvers into the Diffusion probabilistic models(DPM) , to build a fast and efficient sampler for high dimensional complex probability distribution.  Diffusion models are characterized by a probability flow ODE equation which needs to solved using numerical solvers to generate samples from the target probability distribution. In this project we replace the numerical ODE solvers with PINNs which are trained to represent the solution of the probability flow ODEs over a domain of values. This enables us to amortize the large upfront cost of training PINN to fast sampling speed once the model is trained. \n\nDifferent variants of PINN like models with hard constrains on initial/boundary conditions, augmented Lagrangian based models, can-PINN and neural operator based methods will be systematically tested on different non Gaussian 3D probability distribution like [ Mixture of Gaussian, 3D helical, Torodial distribution and Concentric spherical shells ]. I will be testing both single objective optimization and  multi objective optimization techniques to handle the physical loss term and MSE loss term in PINN training. \n\nA systematic analysis of different variants of PINNs to solve the probability flow ODE will be presented with metrics to quantify the PINN representation error  and comparison between the true probability distribution and samples from PINNDE.\n\nDepending on the viability of the results on the above mentioned tests, PINNDE method will be used on the fast colorimeter simulation challenge 2022 benchmark dataset 1.",
+        "student_name": "Sijil",
+        "code_url": "https://github.com/sijil-jose/GENIE/tree/PINNDE/Physics_Informed_Neural_Network_Diffusion_Equation_Sijil_Jose",
+        "proposal_id": "JSMaIzdZ",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/uGmyAV1q"
+      },
+      {
+        "title": "Quantum Machine Learning For Exoplanet Characterization",
+        "short_description": "This project investigates the potential of quantum machine learning methods, such as quantum feature encoding and quantum neural networks (QNNs), for...",
+        "description": "This project investigates the potential of quantum machine learning methods, such as  quantum feature encoding and quantum neural networks (QNNs), for the characterization of exoplanet atmospheres using transmission spectra. The goal is to assess how well quantum representations preserve and separate atmospheric features compared to classical approaches, and to determine whether QML-based models can provide meaningful advantages in estimating atmospheric properties and identifying molecular signatures. Performance is  benchmarked against established classical models to evaluate both the scientific utility and the practical feasibility of QML in this domain.",
+        "student_name": "Sourish Phate",
+        "code_url": "https://github.com/sourishphate/QML_For_Exoplanet_Characterization_EXXA_GSoC_2025",
+        "proposal_id": "bbSF7Hhy",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/xIJEvndL"
+      },
+      {
+        "title": "Foundation Models for Exoplanet Characterization",
+        "short_description": "The project aims at building foundational models suitable for characterizing the vast astronomical data and emphasizing their use case for various...",
+        "description": "The project aims at building foundational models suitable for characterizing the vast astronomical data and emphasizing their use case for various downstream tasks. Collecting suitable datasets, training the models on simulated datasets and applying them on real observational datasets. The main purpose of the project is to develop a suitable deep learning approach for these astronomical datasets which is able to overcome the specific instrument differences for the different observations.",
+        "student_name": "Tanmay Singhal",
+        "code_url": "https://github.com/ML4SCI/EXXA/tree/main/FOUNDATION_MODELS_FOR_EXOPLANET_CHARACTERIZATION",
+        "proposal_id": "qdl5158j",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/T6ZNRVxa"
+      },
+      {
+        "title": "A Self-Supervised, Physics-Informed Hybrid Transformer Framework for Multi-Tasks in HEP",
+        "short_description": "Accurately classifying particle collisions—whether distinguishing quark- from gluon-initiated jets or isolating Higgs events from complex...",
+        "description": "Accurately classifying particle collisions—whether distinguishing quark- from\ngluon-initiated jets or isolating Higgs events from complex backgrounds—requires\nmodels that capture both fundamental conservation laws and the inherent geo-\nmetric invariances of the detector environment. This work presents a hybrid\nself-supervised framework that leverages physics-informed deep learning to ad-\ndress these challenges. Our approach utilizes a masked transformer encoder to\nlearn conservation of momentum and energy by reconstructing masked particle\nfeatures, while a Lorentz-Equivariant Geometric Algebra Transformer (L-GATr)\nencodes the space-time symmetries present in collision events. By integrating\nthese complementary embeddings into task-specific cross-attention decoders, the\nframework effectively fuses physical and geometric information to enhance event\nclassification and mass reconstruction, thereby advancing the performance and\ninterpretability of machine learning in high-energy physics.",
+        "student_name": "Thanh P Nguyen",
+        "code_url": "https://github.com/ML4SCI/CMS",
+        "proposal_id": "NNOo5u5D",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/MyOKgQ1j"
+      }
+    ],
+    "2026": []
   },
   "githubID": "ML4SCI",
   "repositories": [
@@ -818,71 +1100,9 @@
       "html_url": "https://github.com/ML4SCI/ML4SCI.github.io",
       "description": "Machine Learning for Science github site",
       "language": "HTML",
-      "stargazers_count": 29,
-      "forks_count": 90,
+      "stargazers_count": 51,
+      "forks_count": 132,
       "open_issues_count": 1,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 575175684,
-      "node_id": "R_kgDOIkh8BA",
-      "name": "SYMBAHEP",
-      "full_name": "ML4SCI/SYMBAHEP",
-      "html_url": "https://github.com/ML4SCI/SYMBAHEP",
-      "description": "SYMBA-HEP project",
-      "language": "Python",
-      "stargazers_count": 7,
-      "forks_count": 6,
-      "open_issues_count": 0,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 508061164,
-      "node_id": "R_kgDOHkhl7A",
-      "name": "SYMBA",
-      "full_name": "ML4SCI/SYMBA",
-      "html_url": "https://github.com/ML4SCI/SYMBA",
-      "description": "Repo for the SYMBA project",
-      "language": "Jupyter Notebook",
-      "stargazers_count": 0,
-      "forks_count": 7,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 395797616,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzOTU3OTc2MTY=",
-      "name": "CMS",
-      "full_name": "ML4SCI/CMS",
-      "html_url": "https://github.com/ML4SCI/CMS",
-      "description": null,
-      "language": "Jupyter Notebook",
-      "stargazers_count": 1,
-      "forks_count": 4,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 395803277,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzOTU4MDMyNzc=",
-      "name": "QMLHEP",
-      "full_name": "ML4SCI/QMLHEP",
-      "html_url": "https://github.com/ML4SCI/QMLHEP",
-      "description": null,
-      "language": "Jupyter Notebook",
-      "stargazers_count": 19,
-      "forks_count": 20,
-      "open_issues_count": 0,
       "license": null,
       "topics": []
     },
@@ -894,23 +1114,9 @@
       "html_url": "https://github.com/ML4SCI/DeepLense",
       "description": null,
       "language": "Jupyter Notebook",
-      "stargazers_count": 39,
-      "forks_count": 36,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 395797710,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzOTU3OTc3MTA=",
-      "name": "E2E",
-      "full_name": "ML4SCI/E2E",
-      "html_url": "https://github.com/ML4SCI/E2E",
-      "description": null,
-      "language": "Jupyter Notebook",
-      "stargazers_count": 8,
-      "forks_count": 13,
-      "open_issues_count": 0,
+      "stargazers_count": 70,
+      "forks_count": 114,
+      "open_issues_count": 119,
       "license": null,
       "topics": []
     },
@@ -922,9 +1128,9 @@
       "html_url": "https://github.com/ML4SCI/GENIE",
       "description": null,
       "language": "Jupyter Notebook",
-      "stargazers_count": 0,
-      "forks_count": 2,
-      "open_issues_count": 1,
+      "stargazers_count": 4,
+      "forks_count": 20,
+      "open_issues_count": 14,
       "license": null,
       "topics": []
     },
@@ -936,9 +1142,93 @@
       "html_url": "https://github.com/ML4SCI/EXXA",
       "description": null,
       "language": "Jupyter Notebook",
+      "stargazers_count": 7,
+      "forks_count": 16,
+      "open_issues_count": 11,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 395803277,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzOTU4MDMyNzc=",
+      "name": "QMLHEP",
+      "full_name": "ML4SCI/QMLHEP",
+      "html_url": "https://github.com/ML4SCI/QMLHEP",
+      "description": null,
+      "language": "Jupyter Notebook",
+      "stargazers_count": 31,
+      "forks_count": 30,
+      "open_issues_count": 4,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 508061164,
+      "node_id": "R_kgDOHkhl7A",
+      "name": "SYMBA",
+      "full_name": "ML4SCI/SYMBA",
+      "html_url": "https://github.com/ML4SCI/SYMBA",
+      "description": "Repo for the SYMBA project",
+      "language": "Jupyter Notebook",
+      "stargazers_count": 3,
+      "forks_count": 19,
+      "open_issues_count": 4,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 395797616,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzOTU3OTc2MTY=",
+      "name": "CMS",
+      "full_name": "ML4SCI/CMS",
+      "html_url": "https://github.com/ML4SCI/CMS",
+      "description": null,
+      "language": "Jupyter Notebook",
       "stargazers_count": 4,
-      "forks_count": 4,
-      "open_issues_count": 0,
+      "forks_count": 16,
+      "open_issues_count": 8,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 995611711,
+      "node_id": "R_kgDOO1fUPw",
+      "name": "NeuroDyads",
+      "full_name": "ML4SCI/NeuroDyads",
+      "html_url": "https://github.com/ML4SCI/NeuroDyads",
+      "description": null,
+      "language": "Jupyter Notebook",
+      "stargazers_count": 4,
+      "forks_count": 5,
+      "open_issues_count": 1,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 814464596,
+      "node_id": "R_kgDOMIu-VA",
+      "name": "DeepLearnHackathon",
+      "full_name": "ML4SCI/DeepLearnHackathon",
+      "html_url": "https://github.com/ML4SCI/DeepLearnHackathon",
+      "description": null,
+      "language": "Jupyter Notebook",
+      "stargazers_count": 14,
+      "forks_count": 9,
+      "open_issues_count": 2,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 395797710,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzOTU3OTc3MTA=",
+      "name": "E2E",
+      "full_name": "ML4SCI/E2E",
+      "html_url": "https://github.com/ML4SCI/E2E",
+      "description": null,
+      "language": "Jupyter Notebook",
+      "stargazers_count": 12,
+      "forks_count": 23,
+      "open_issues_count": 4,
       "license": null,
       "topics": []
     },
@@ -957,40 +1247,6 @@
       "topics": []
     },
     {
-      "id": 814464596,
-      "node_id": "R_kgDOMIu-VA",
-      "name": "DeepLearnHackathon",
-      "full_name": "ML4SCI/DeepLearnHackathon",
-      "html_url": "https://github.com/ML4SCI/DeepLearnHackathon",
-      "description": null,
-      "language": "Jupyter Notebook",
-      "stargazers_count": 12,
-      "forks_count": 8,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 671634953,
-      "node_id": "R_kgDOKAhWCQ",
-      "name": "SYMBA_Pytorch",
-      "full_name": "ML4SCI/SYMBA_Pytorch",
-      "html_url": "https://github.com/ML4SCI/SYMBA_Pytorch",
-      "description": null,
-      "language": "Python",
-      "stargazers_count": 11,
-      "forks_count": 3,
-      "open_issues_count": 0,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": []
-    },
-    {
       "id": 541469455,
       "node_id": "R_kgDOIEYrDw",
       "name": "Anomaly-Detection",
@@ -999,7 +1255,7 @@
       "description": null,
       "language": "Jupyter Notebook",
       "stargazers_count": 1,
-      "forks_count": 2,
+      "forks_count": 3,
       "open_issues_count": 0,
       "license": null,
       "topics": []
@@ -1027,8 +1283,8 @@
       "description": null,
       "language": "Jupyter Notebook",
       "stargazers_count": 6,
-      "forks_count": 8,
-      "open_issues_count": 0,
+      "forks_count": 10,
+      "open_issues_count": 1,
       "license": null,
       "topics": []
     },
@@ -1041,7 +1297,7 @@
       "description": "Particle Masking AutoEncoder",
       "language": "Jupyter Notebook",
       "stargazers_count": 1,
-      "forks_count": 4,
+      "forks_count": 3,
       "open_issues_count": 0,
       "license": {
         "key": "gpl-3.0",
@@ -1060,8 +1316,8 @@
       "html_url": "https://github.com/ML4SCI/FASEROH",
       "description": null,
       "language": "Python",
-      "stargazers_count": 1,
-      "forks_count": 4,
+      "stargazers_count": 4,
+      "forks_count": 7,
       "open_issues_count": 0,
       "license": null,
       "topics": []
@@ -1088,8 +1344,8 @@
       "html_url": "https://github.com/ML4SCI/ML4SCI_GSoC",
       "description": null,
       "language": "Python",
-      "stargazers_count": 8,
-      "forks_count": 10,
+      "stargazers_count": 12,
+      "forks_count": 11,
       "open_issues_count": 0,
       "license": null,
       "topics": []
@@ -1102,8 +1358,8 @@
       "html_url": "https://github.com/ML4SCI/ML4SCIHackathon",
       "description": null,
       "language": "Jupyter Notebook",
-      "stargazers_count": 20,
-      "forks_count": 19,
+      "stargazers_count": 23,
+      "forks_count": 20,
       "open_issues_count": 0,
       "license": null,
       "topics": []
@@ -1158,9 +1414,9 @@
       "html_url": "https://github.com/ML4SCI/MLBender",
       "description": null,
       "language": "Python",
-      "stargazers_count": 3,
-      "forks_count": 4,
-      "open_issues_count": 0,
+      "stargazers_count": 4,
+      "forks_count": 6,
+      "open_issues_count": 5,
       "license": null,
       "topics": []
     },
@@ -1194,7 +1450,7 @@
       "node_id": "MDQ6VXNlcjIxMzIzMjE=",
       "avatar_url": "https://avatars.githubusercontent.com/u/2132321?v=4",
       "html_url": "https://github.com/emanueleusai",
-      "contributions": 7
+      "contributions": 3
     },
     {
       "login": "pelmer",
@@ -1211,6 +1467,14 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/1511937?v=4",
       "html_url": "https://github.com/jouvin",
       "contributions": 152
+    },
+    {
+      "login": "ereinha",
+      "id": 74273926,
+      "node_id": "MDQ6VXNlcjc0MjczOTI2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/74273926?v=4",
+      "html_url": "https://github.com/ereinha",
+      "contributions": 2
     },
     {
       "login": "peremato",
@@ -1237,14 +1501,6 @@
       "contributions": 78
     },
     {
-      "login": "ereinha",
-      "id": 74273926,
-      "node_id": "MDQ6VXNlcjc0MjczOTI2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/74273926?v=4",
-      "html_url": "https://github.com/ereinha",
-      "contributions": 66
-    },
-    {
       "login": "Shra1-25",
       "id": 42185680,
       "node_id": "MDQ6VXNlcjQyMTg1Njgw",
@@ -1269,19 +1525,19 @@
       "contributions": 52
     },
     {
-      "login": "valassi",
-      "id": 3473550,
-      "node_id": "MDQ6VXNlcjM0NzM1NTA=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/3473550?v=4",
-      "html_url": "https://github.com/valassi",
-      "contributions": 44
-    },
-    {
       "login": "Andrew-McNab-UK",
       "id": 4834885,
       "node_id": "MDQ6VXNlcjQ4MzQ4ODU=",
       "avatar_url": "https://avatars.githubusercontent.com/u/4834885?v=4",
       "html_url": "https://github.com/Andrew-McNab-UK",
+      "contributions": 44
+    },
+    {
+      "login": "valassi",
+      "id": 3473550,
+      "node_id": "MDQ6VXNlcjM0NzM1NTA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3473550?v=4",
+      "html_url": "https://github.com/valassi",
       "contributions": 44
     },
     {
@@ -1301,6 +1557,14 @@
       "contributions": 34
     },
     {
+      "login": "pranath-reddy",
+      "id": 28773805,
+      "node_id": "MDQ6VXNlcjI4NzczODA1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/28773805?v=4",
+      "html_url": "https://github.com/pranath-reddy",
+      "contributions": 1
+    },
+    {
       "login": "mwt5345",
       "id": 10762501,
       "node_id": "MDQ6VXNlcjEwNzYyNTAx",
@@ -1315,14 +1579,6 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/5013581?v=4",
       "html_url": "https://github.com/eduardo-rodrigues",
       "contributions": 26
-    },
-    {
-      "login": "pranath-reddy",
-      "id": 28773805,
-      "node_id": "MDQ6VXNlcjI4NzczODA1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/28773805?v=4",
-      "html_url": "https://github.com/pranath-reddy",
-      "contributions": 25
     },
     {
       "login": "astrofyz",
@@ -1421,36 +1677,196 @@
       "contributions": 9
     },
     {
-      "login": "vbaules",
-      "id": 68289697,
-      "node_id": "MDQ6VXNlcjY4Mjg5Njk3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/68289697?v=4",
-      "html_url": "https://github.com/vbaules",
-      "contributions": 13
+      "login": "lucasjvds",
+      "id": 60625769,
+      "node_id": "MDQ6VXNlcjYwNjI1NzY5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/60625769?v=4",
+      "html_url": "https://github.com/lucasjvds",
+      "contributions": 47
     },
     {
-      "login": "Riteshbhalerao11",
-      "id": 105015931,
-      "node_id": "U_kgDOBkJqew",
-      "avatar_url": "https://avatars.githubusercontent.com/u/105015931?v=4",
-      "html_url": "https://github.com/Riteshbhalerao11",
+      "login": "Saranga7",
+      "id": 53959645,
+      "node_id": "MDQ6VXNlcjUzOTU5NjQ1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/53959645?v=4",
+      "html_url": "https://github.com/Saranga7",
+      "contributions": 44
+    },
+    {
+      "login": "iyersreehari",
+      "id": 81473601,
+      "node_id": "MDQ6VXNlcjgxNDczNjAx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/81473601?v=4",
+      "html_url": "https://github.com/iyersreehari",
+      "contributions": 41
+    },
+    {
+      "login": "sachdevkartik",
+      "id": 77142935,
+      "node_id": "MDQ6VXNlcjc3MTQyOTM1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/77142935?v=4",
+      "html_url": "https://github.com/sachdevkartik",
+      "contributions": 37
+    },
+    {
+      "login": "ghatotkachhh",
+      "id": 147921851,
+      "node_id": "U_kgDOCNEbuw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/147921851?v=4",
+      "html_url": "https://github.com/ghatotkachhh",
+      "contributions": 34
+    },
+    {
+      "login": "aduplins",
+      "id": 111073516,
+      "node_id": "U_kgDOBp7Y7A",
+      "avatar_url": "https://avatars.githubusercontent.com/u/111073516?v=4",
+      "html_url": "https://github.com/aduplins",
+      "contributions": 29
+    },
+    {
+      "login": "yaashwardhan",
+      "id": 75460020,
+      "node_id": "MDQ6VXNlcjc1NDYwMDIw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/75460020?v=4",
+      "html_url": "https://github.com/yaashwardhan",
+      "contributions": 21
+    },
+    {
+      "login": "ani-ninini",
+      "id": 85023382,
+      "node_id": "MDQ6VXNlcjg1MDIzMzgy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/85023382?v=4",
+      "html_url": "https://github.com/ani-ninini",
       "contributions": 7
     },
     {
-      "login": "hakim770",
-      "id": 108374134,
-      "node_id": "U_kgDOBnWodg",
-      "avatar_url": "https://avatars.githubusercontent.com/u/108374134?v=4",
-      "html_url": "https://github.com/hakim770",
-      "contributions": 6
+      "login": "AtalGupta",
+      "id": 117012160,
+      "node_id": "U_kgDOBvl2wA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/117012160?v=4",
+      "html_url": "https://github.com/AtalGupta",
+      "contributions": 5
     },
     {
-      "login": "SergeiML",
-      "id": 17829085,
-      "node_id": "MDQ6VXNlcjE3ODI5MDg1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/17829085?v=4",
-      "html_url": "https://github.com/SergeiML",
+      "login": "AllenWrong",
+      "id": 37206177,
+      "node_id": "MDQ6VXNlcjM3MjA2MTc3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/37206177?v=4",
+      "html_url": "https://github.com/AllenWrong",
+      "contributions": 4
+    },
+    {
+      "login": "zysymu",
+      "id": 47951223,
+      "node_id": "MDQ6VXNlcjQ3OTUxMjIz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/47951223?v=4",
+      "html_url": "https://github.com/zysymu",
+      "contributions": 4
+    },
+    {
+      "login": "claussss",
+      "id": 48916506,
+      "node_id": "MDQ6VXNlcjQ4OTE2NTA2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/48916506?v=4",
+      "html_url": "https://github.com/claussss",
+      "contributions": 3
+    },
+    {
+      "login": "mrinath123",
+      "id": 46323270,
+      "node_id": "MDQ6VXNlcjQ2MzIzMjcw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46323270?v=4",
+      "html_url": "https://github.com/mrinath123",
+      "contributions": 3
+    },
+    {
+      "login": "kingjuno",
+      "id": 69108486,
+      "node_id": "MDQ6VXNlcjY5MTA4NDg2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/69108486?v=4",
+      "html_url": "https://github.com/kingjuno",
+      "contributions": 2
+    },
+    {
+      "login": "EnderNinja7",
+      "id": 20242184,
+      "node_id": "MDQ6VXNlcjIwMjQyMTg0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20242184?v=4",
+      "html_url": "https://github.com/EnderNinja7",
+      "contributions": 2
+    },
+    {
+      "login": "anirudhshankar99",
+      "id": 159251307,
+      "node_id": "U_kgDOCX37aw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/159251307?v=4",
+      "html_url": "https://github.com/anirudhshankar99",
+      "contributions": 2
+    },
+    {
+      "login": "Apoorva99",
+      "id": 31269492,
+      "node_id": "MDQ6VXNlcjMxMjY5NDky",
+      "avatar_url": "https://avatars.githubusercontent.com/u/31269492?v=4",
+      "html_url": "https://github.com/Apoorva99",
       "contributions": 1
+    },
+    {
+      "login": "archilk",
+      "id": 12486001,
+      "node_id": "MDQ6VXNlcjEyNDg2MDAx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12486001?v=4",
+      "html_url": "https://github.com/archilk",
+      "contributions": 1
+    },
+    {
+      "login": "hamees-sayed",
+      "id": 98336593,
+      "node_id": "U_kgDOBdx_UQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/98336593?v=4",
+      "html_url": "https://github.com/hamees-sayed",
+      "contributions": 1
+    },
+    {
+      "login": "kartikmandar",
+      "id": 92812266,
+      "node_id": "U_kgDOBYgz6g",
+      "avatar_url": "https://avatars.githubusercontent.com/u/92812266?v=4",
+      "html_url": "https://github.com/kartikmandar",
+      "contributions": 1
+    },
+    {
+      "login": "RishiPurna2000",
+      "id": 107097374,
+      "node_id": "U_kgDOBmItHg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/107097374?v=4",
+      "html_url": "https://github.com/RishiPurna2000",
+      "contributions": 1
+    },
+    {
+      "login": "sijil-jose",
+      "id": 151777976,
+      "node_id": "U_kgDOCQvyuA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/151777976?v=4",
+      "html_url": "https://github.com/sijil-jose",
+      "contributions": 39
+    },
+    {
+      "login": "DarthRevan07",
+      "id": 116935350,
+      "node_id": "U_kgDOBvhKtg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/116935350?v=4",
+      "html_url": "https://github.com/DarthRevan07",
+      "contributions": 3
+    },
+    {
+      "login": "rushil23451",
+      "id": 162873099,
+      "node_id": "U_kgDOCbU_Cw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/162873099?v=4",
+      "html_url": "https://github.com/rushil23451",
+      "contributions": 3
     }
   ],
   "activeOrg": false

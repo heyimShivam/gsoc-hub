@@ -28,7 +28,8 @@
   "facebook_url": null,
   "year": [
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2024": [
@@ -105,7 +106,63 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/lpCjiX2J"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Hamiltonian Neural Networks",
+        "short_description": "This project aims to implement Hamiltonian Neural Networks (HNN) within the DeepChem framework using PyTorch. HNNs are designed to model physical...",
+        "description": "This project aims to implement Hamiltonian Neural Networks (HNN) within the DeepChem framework using PyTorch. HNNs are designed to model physical systems where energy conservation and structured dynamics are essential. Instead of learning system dynamics directly, HNNs learn a scalar Hamiltonian function and compute derivatives using Hamilton’s equations, offering better generalization and long-term stability.",
+        "student_name": "Abhay_Shinde",
+        "code_url": "https://forum.deepchem.io/t/final-report-hamiltonian-neural-network/2219",
+        "proposal_id": "tvupICqa",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/NBfvsztr"
+      },
+      {
+        "title": "Model-Parallel DeepChem Model Training",
+        "short_description": "This project aims to significantly enhance the DeepChem library by integrating PyTorch Lightning to enable efficient multi-GPU training. Currently,...",
+        "description": "This project aims to significantly enhance the DeepChem library by integrating PyTorch Lightning to enable efficient multi-GPU training. Currently, DeepChem is primarily limited to single-GPU use, hindering work with large models and datasets common in scientific machine learning. The project will introduce wrapper classes for DeepChem's datasets and PyTorch-based models, making them compatible with Lightning's distributed training paradigms and also with the base classes of deepchem. This will provide users with a seamless way to scale their training across multiple GPUs, drastically reducing computation time and enabling research on more complex problems within the DeepChem ecosystem.",
+        "student_name": "Bhuvanmdev",
+        "code_url": "https://forum.deepchem.io/t/gsoc-25-model-parallel-deepchem-model-training-final-report/2226",
+        "proposal_id": "cDzTeHH4",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/TQng0tTL"
+      },
+      {
+        "title": "Porting Chemception Model to PyTorch",
+        "short_description": "This project ports the Chemception model—a deep CNN for molecular property prediction—from TensorFlow to PyTorch.DeepChem has been shifting its...",
+        "description": "This project ports the Chemception model—a deep CNN for molecular property prediction—from TensorFlow to PyTorch.DeepChem has been shifting its backend from TensorFlow to PyTorch. This transition requires the porting of models that were previously built in TensorFlow to PyTorch.",
+        "student_name": "Bibhusundar Mohapatra",
+        "code_url": "https://forum.deepchem.io/t/gsoc-25-porting-chemception-model-to-pytorch-final-report/2225",
+        "proposal_id": "cvylHyCF",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/M5sBGg3d"
+      },
+      {
+        "title": "Integrating Single Cell RNA-seq modeling into Deepchem",
+        "short_description": "This project proposes integrating ACTINN, a neural network for automated cell type identification in single-cell RNA sequencing (scRNA-seq) data,...",
+        "description": "This project proposes integrating ACTINN, a neural network for automated cell type identification in single-cell RNA sequencing (scRNA-seq) data, into the DeepChem framework. \n\n​Integrating ACTINN into DeepChem would mark the framework's inaugural inclusion of a single-cell deep learning model, significantly expanding its capabilities in the burgeoning field of single-cell analysis.\n\nBy incorporating ACTINN, DeepChem can offer researchers a powerful tool for automated cell type identification, streamlining workflows in single-cell analysis and fostering deeper insights into cellular heterogeneity.",
+        "student_name": "Harindhar",
+        "code_url": "https://forum.deepchem.io/t/gsoc-25-integrating-single-cell-rna-seq-modeling-into-deepchem-final-report/2222",
+        "proposal_id": "Y6une4zu",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/y70fgXcU"
+      },
+      {
+        "title": "Implement a Wishlist Model - Fourier Neural Operator",
+        "short_description": "This project aims to implement the Fourier Neural Operator (FNO) in DeepChem, expanding its support for solving complex partial differential...",
+        "description": "This project aims to implement the Fourier Neural Operator (FNO) in DeepChem, expanding its support for solving complex partial differential equations (PDEs) in scientific machine learning. Traditional neural networks often struggle with PDEs due to their reliance on fixed-grid discretization. FNO addresses this by operating in the frequency domain, learning resolution-invariant mappings between function spaces using the Fourier transform, making it both scalable and efficient.\nThe project involves developing a new SpectralConv layer and a high-level FourierNeuralOperator class compatible with DeepChem’s PyTorch backend. The implementation will be modular, enabling future extensions such as Physics-Informed Neural Operators (PINO). Deliverables include the FNO model, unit tests, and a comprehensive tutorial.",
+        "student_name": "Shrisharanyan Vasu",
+        "code_url": "https://forum.deepchem.io/t/gsoc-25-final-report-fourier-neural-operator/2221",
+        "proposal_id": "12kztAE7",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/pCUg5nMr"
+      },
+      {
+        "title": "Developing Modality Support for Antibody Drug Conjugates (ADCs)",
+        "short_description": "Antibody-Drug Conjugates (ADCs) represent a promising class of cancer therapeutics designed to selectively target cancer cells while minimizing...",
+        "description": "Antibody-Drug Conjugates (ADCs) represent a promising class of cancer therapeutics designed to selectively target cancer cells while minimizing damage to healthy cells. Unlike conventional chemotherapeutic agents, which often cause off-target effects and severe side effects, ADCs combine the specificity of monoclonal antibodies with the potency of cytotoxic payloads. This project focuses on integrating ADC research tools into DeepChem to facilitate computational exploration for researchers. My contributions include developing tutorials and implementing ADCNet, a deep learning framework tailored for ADCs, to bridge the gap between ongoing ADC research and accessible computational tools.",
+        "student_name": "Sonali Lipsa Patra",
+        "code_url": "https://forum.deepchem.io/t/gsoc-25-project-improving-new-drug-modality-support/2155/10",
+        "proposal_id": "CrhqvG2Q",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/5Kf7jqft"
+      }
+    ],
+    "2026": []
   },
   "githubID": "deepchem",
   "repositories": [
@@ -117,9 +174,9 @@
       "html_url": "https://github.com/deepchem/deepchem",
       "description": "Democratizing Deep-Learning for Drug Discovery, Quantum Chemistry, Materials Science and Biology",
       "language": "Python",
-      "stargazers_count": 5969,
-      "forks_count": 1860,
-      "open_issues_count": 778,
+      "stargazers_count": 6643,
+      "forks_count": 2196,
+      "open_issues_count": 1049,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -144,9 +201,9 @@
       "html_url": "https://github.com/deepchem/deepchem.github.io",
       "description": "The DeepChem Website",
       "language": "HTML",
-      "stargazers_count": 3,
-      "forks_count": 13,
-      "open_issues_count": 3,
+      "stargazers_count": 4,
+      "forks_count": 18,
+      "open_issues_count": 7,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -164,9 +221,9 @@
       "html_url": "https://github.com/deepchem/deepchem-gui",
       "description": "A simple web GUI for DeepChem",
       "language": "JavaScript",
-      "stargazers_count": 59,
+      "stargazers_count": 64,
       "forks_count": 19,
-      "open_issues_count": 7,
+      "open_issues_count": 8,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -184,7 +241,7 @@
       "html_url": "https://github.com/deepchem/torchchem",
       "description": "An experimental repo for experimenting with PyTorch models",
       "language": "Python",
-      "stargazers_count": 35,
+      "stargazers_count": 38,
       "forks_count": 14,
       "open_issues_count": 5,
       "license": {
@@ -224,9 +281,9 @@
       "html_url": "https://github.com/deepchem/DeepLearningLifeSciences",
       "description": "Example code from the book \"Deep Learning for the Life Sciences\"",
       "language": "Jupyter Notebook",
-      "stargazers_count": 371,
-      "forks_count": 156,
-      "open_issues_count": 12,
+      "stargazers_count": 401,
+      "forks_count": 158,
+      "open_issues_count": 13,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -244,8 +301,8 @@
       "html_url": "https://github.com/deepchem/moleculenet",
       "description": "Moleculenet.ai Datasets And Splits",
       "language": "Jupyter Notebook",
-      "stargazers_count": 98,
-      "forks_count": 21,
+      "stargazers_count": 105,
+      "forks_count": 22,
       "open_issues_count": 24,
       "license": {
         "key": "mit",
@@ -292,7 +349,7 @@
       "html_url": "https://github.com/deepchem/jaxchem",
       "description": "JAXChem is a JAX-based deep learning library for complex and versatile chemical modeling",
       "language": "Python",
-      "stargazers_count": 79,
+      "stargazers_count": 81,
       "forks_count": 10,
       "open_issues_count": 1,
       "license": null,
@@ -320,8 +377,8 @@
       "html_url": "https://github.com/deepchem/deepdock",
       "description": "An experimental package for deep learning for molecular docking",
       "language": "Python",
-      "stargazers_count": 20,
-      "forks_count": 7,
+      "stargazers_count": 21,
+      "forks_count": 8,
       "open_issues_count": 2,
       "license": {
         "key": "mit",
@@ -450,7 +507,7 @@
       "node_id": "MDQ6VXNlcjEwNTc2NzY=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1057676?v=4",
       "html_url": "https://github.com/rbharath",
-      "contributions": 41
+      "contributions": 13
     },
     {
       "login": "tonydavis629",
@@ -541,11 +598,11 @@
       "contributions": 160
     },
     {
-      "login": "Suzukazole",
+      "login": "ashwin957",
       "id": 65379684,
       "node_id": "MDQ6VXNlcjY1Mzc5Njg0",
       "avatar_url": "https://avatars.githubusercontent.com/u/65379684?v=4",
-      "html_url": "https://github.com/Suzukazole",
+      "html_url": "https://github.com/ashwin957",
       "contributions": 153
     },
     {
@@ -581,6 +638,14 @@
       "contributions": 121
     },
     {
+      "login": "JoseAntonioSiguenza",
+      "id": 80292371,
+      "node_id": "MDQ6VXNlcjgwMjkyMzcx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/80292371?v=4",
+      "html_url": "https://github.com/JoseAntonioSiguenza",
+      "contributions": 117
+    },
+    {
       "login": "shaipranesh2",
       "id": 80086120,
       "node_id": "MDQ6VXNlcjgwMDg2MTIw",
@@ -597,14 +662,6 @@
       "contributions": 110
     },
     {
-      "login": "JoseAntonioSiguenza",
-      "id": 80292371,
-      "node_id": "MDQ6VXNlcjgwMjkyMzcx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/80292371?v=4",
-      "html_url": "https://github.com/JoseAntonioSiguenza",
-      "contributions": 98
-    },
-    {
       "login": "kanpuriyanawab",
       "id": 51750587,
       "node_id": "MDQ6VXNlcjUxNzUwNTg3",
@@ -618,7 +675,7 @@
       "node_id": "U_kgDOBeBoJQ",
       "avatar_url": "https://avatars.githubusercontent.com/u/98592805?v=4",
       "html_url": "https://github.com/riya-singh28",
-      "contributions": 84
+      "contributions": 85
     },
     {
       "login": "mufeili",
@@ -627,6 +684,14 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/19576924?v=4",
       "html_url": "https://github.com/mufeili",
       "contributions": 77
+    },
+    {
+      "login": "ARY2260",
+      "id": 75680850,
+      "node_id": "MDQ6VXNlcjc1NjgwODUw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/75680850?v=4",
+      "html_url": "https://github.com/ARY2260",
+      "contributions": 64
     },
     {
       "login": "apappu97",
@@ -642,14 +707,6 @@
       "node_id": "MDQ6VXNlcjE3NjA5ODI=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1760982?v=4",
       "html_url": "https://github.com/evanfeinberg",
-      "contributions": 63
-    },
-    {
-      "login": "ARY2260",
-      "id": 75680850,
-      "node_id": "MDQ6VXNlcjc1NjgwODUw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/75680850?v=4",
-      "html_url": "https://github.com/ARY2260",
       "contributions": 63
     },
     {
@@ -738,6 +795,22 @@
       "node_id": "MDQ6VXNlcjU0OTIwMTgx",
       "avatar_url": "https://avatars.githubusercontent.com/u/54920181?v=4",
       "html_url": "https://github.com/alat-rights",
+      "contributions": 1
+    },
+    {
+      "login": "prasadkawthekar",
+      "id": 5846057,
+      "node_id": "MDQ6VXNlcjU4NDYwNTc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5846057?v=4",
+      "html_url": "https://github.com/prasadkawthekar",
+      "contributions": 11
+    },
+    {
+      "login": "gorbondiga",
+      "id": 11924761,
+      "node_id": "MDQ6VXNlcjExOTI0NzYx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11924761?v=4",
+      "html_url": "https://github.com/gorbondiga",
       "contributions": 1
     }
   ],

@@ -2,7 +2,7 @@
   "name": "Drupal Association",
   "image_url": "https://summerofcode.withgoogle.com/media/org/drupal-association/kfbn4ws0uftixkho-360.png",
   "image_background_color": "#ffffff",
-  "description": "The best open source digital experience platform",
+  "description": "Build Bold Digital Experiences on Best Open Source",
   "url": "https://drupal.org",
   "category": [
     "Web"
@@ -59,7 +59,8 @@
     2022,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2016": [
@@ -344,7 +345,72 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/Jc3UfWka"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Entity Display Manager Module",
+        "short_description": "The Entity Display Manager module aims to simplify how entity displays are handled in Drupal. Currently, managing view modes and form displays across...",
+        "description": "The Entity Display Manager module aims to simplify how entity displays are handled in Drupal. Currently, managing view modes and form displays across different entities can be tedious and repetitive. This project will introduce a centralized, user-friendly interface to configure, duplicate, and synchronize entity displays efficiently. By providing intuitive tools and supporting bulk operations, the module will improve developer productivity and site-building experience in Drupal.",
+        "student_name": "Chinmayi D S",
+        "code_url": "https://docs.google.com/document/d/18ab4Z1Wa0P3Mq0FOfDaIt6LHuIojXWfvHfYF8GOys-c/edit?usp=sharing",
+        "proposal_id": "OsVF96dD",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/ykLQlcjx"
+      },
+      {
+        "title": "Integration of Augmentor AI plugin with DALL·E 3 OPEN AI model",
+        "short_description": "This proposal aims to integrate OpenAI's dall·e 3 model into Augmentor's plugin framework, simplifying content creation by allowing the generation of...",
+        "description": "This proposal aims to integrate OpenAI's dall·e 3 model into Augmentor's plugin framework, simplifying content creation by allowing the generation of high-quality images directly within Drupal using text prompts. \n\nThis project will involve developing a user-friendly interface for configuring image generation parameters and previewing results, integrating OpenAI API into Augmentor's module, and documenting the integration along the way.",
+        "student_name": "Furo",
+        "code_url": "https://git.drupalcode.org/project/augmentor_dalle_3",
+        "proposal_id": "9e6AcCS6",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/GMSbojWG"
+      },
+      {
+        "title": "AI-Powered Unified Accessibility Compliance Suite for Drupal - GSoC 2025 Proposal",
+        "short_description": "This project proposes an AI-powered accessibility auditing and remediation toolkit tailored for Drupal environments. It integrates automated...",
+        "description": "This project proposes an AI-powered accessibility auditing and remediation toolkit tailored for Drupal environments. It integrates automated accessibility scanners (e.g., Deque Axe API), and NLP models (such as GPT-4 or BLIP-2) to suggest intelligent alt-text and identify layout/media accessibility issues. A dynamic dashboard will be built to track scan results, remediation progress, and generate compliance documentation in formats like PDF and CSV.\nThe system will be developed using Symfony (backend), HTML+Twig (frontend templating), and MongoDB (for storing audit results and history). Key components include API communication layers, a feedback system for rating AI suggestions, and tight workflow integration with Drupal, enabling accessibility checks before content is published. The architecture emphasizes modularity, ethical AI use, and compatibility with WCAG standards.",
+        "student_name": "Ned9776",
+        "code_url": "https://gist.github.com/DelcrossN/f61556d74277765523cadaab3df4d1e8",
+        "proposal_id": "4WbiBZXE",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/XafQwRPZ"
+      },
+      {
+        "title": "Assisting Modules in Drupal 11 Compatibility",
+        "short_description": "This project focuses on upgrading high-impact modules in Drupal to be fully compatible with the upcoming Drupal 11 release. The work includes...",
+        "description": "This project focuses on upgrading high-impact modules in Drupal to be fully compatible with the upcoming Drupal 11 release. The work includes identifying deprecated code, replacing it with supported APIs, writing automated tests, and ensuring backward compatibility. The deliverables will be high-quality, merge-ready module upgrades that support the Drupal ecosystem and reduce technical debt. The upgrades will follow Drupal's coding standards and be closely coordinated with module maintainers.",
+        "student_name": "RAJAS SAMSE",
+        "code_url": "https://docs.google.com/document/d/1TM0u8h_KPgApcamA8Gjd2LRmWRvGDT3AuUiSqJqMVVk/edit?usp=sharing",
+        "proposal_id": "VZvQ3nAy",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/Rmosgrai"
+      },
+      {
+        "title": "Vector Search Integration for Drupal: FAISS & Elasticsearch",
+        "short_description": "This project aims to bring AI-powered semantic search to Drupal by integrating FAISS and Elasticsearch as pluggable vector search backends. FAISS...",
+        "description": "This project aims to bring AI-powered semantic search to Drupal by integrating FAISS and Elasticsearch as pluggable vector search backends. FAISS offers fast, in-memory similarity search ideal for local use, while Elasticsearch supports distributed, scalable search for production. The goal is to build two provider modules under a shared VectorProviderInterface, allowing developers to switch between backends easily. The project will include embedding generation (via OpenAI or HuggingFace), indexing, Top-K similarity search, and admin configuration UI, along with Search API integration and a \"Similar Content\" block. This will give Drupal users modern search capabilities and lay the groundwork for future vector backend integrations.",
+        "student_name": "Rigzin Yangdol",
+        "code_url": "https://medium.com/@andorig68/my-google-summer-of-code-journey-from-dentist-to-drupal-developer-bf61d98a5d9e",
+        "proposal_id": "XKgYbYkL",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/0117Q39b"
+      },
+      {
+        "title": "Appwrite Integration Module for Drupal: Secure BaaS Integration for Modern Web Workflows",
+        "short_description": "This project aims to develop a robust, secure, and extensible Drupal module that integrates with Appwrite, an open-source backend-as-a-service...",
+        "description": "This project aims to develop a robust, secure, and extensible Drupal module that integrates with Appwrite, an open-source backend-as-a-service (BaaS). The module will enable seamless support for Appwrite’s authentication, file storage, and database APIs within Drupal’s architecture. By bridging these platforms, the module will empower developers to build dynamic, serverless applications while leveraging Drupal’s powerful CMS capabilities. The project will prioritize modularity, configurability, and maintainability, ensuring that it aligns with both Appwrite’s evolving API surface and Drupal’s best practices.\n\nProject Goals:\nDevelop a Drupal module that connects with Appwrite’s OAuth-based authentication system (supporting providers like Google, GitHub, Apple, etc.).\nEnable media file management by integrating with Appwrite's object storage APIs, reducing the dependency on traditional cloud storage solutions.\nIntegrate Appwrite’s document database to store and retrieve structured Drupal content efficiently.\nCreate an intuitive configuration interface within Drupal for managing all Appwrite-related settings.",
+        "student_name": "Ritesh_Kumar_Singh",
+        "code_url": "https://gist.github.com/riteshdavv/a4530c8e44162db6a3e3ac64ab8c3b25",
+        "proposal_id": "D2TbqNLU",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/5QrB2MPf"
+      },
+      {
+        "title": "AI-Powered Media Caption Generator",
+        "short_description": "The AI-Powered Media Caption Generator is a smart Drupal module designed to automatically generate engaging and customizable captions for uploaded...",
+        "description": "The AI-Powered Media Caption Generator is a smart Drupal module designed to automatically generate engaging and customizable captions for uploaded media using artificial intelligence. It leverages Google Vision API for image understanding and OpenAI along with Hugging Face Transformers for natural language captioning. Users can tailor the captions by choosing the tone, length (0–2000 characters), keywords, and emoji usage. A Python-based backend (using FastAPI or Flask) powers the AI caption generation and offers API support for optional integration with Drupal. The user interface will be built directly within Drupal to ensure a seamless media management and captioning experience.",
+        "student_name": "Soham Lad",
+        "code_url": "https://medium.com/@ladsoham14202sk/56f34d81a459",
+        "proposal_id": "Q3EhoM22",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/irxh4wgB"
+      }
+    ],
+    "2026": []
   },
   "githubID": "drupalassociation",
   "repositories": [
@@ -853,14 +919,6 @@
       "contributions": 2
     },
     {
-      "login": "arielsalvo",
-      "id": 6566048,
-      "node_id": "MDQ6VXNlcjY1NjYwNDg=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/6566048?v=4",
-      "html_url": "https://github.com/arielsalvo",
-      "contributions": 2
-    },
-    {
       "login": "ironpinguin",
       "id": 137306,
       "node_id": "MDQ6VXNlcjEzNzMwNg==",
@@ -893,6 +951,14 @@
       "contributions": 1
     },
     {
+      "login": "prachetasp",
+      "id": 3642289,
+      "node_id": "MDQ6VXNlcjM2NDIyODk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3642289?v=4",
+      "html_url": "https://github.com/prachetasp",
+      "contributions": 1
+    },
+    {
       "login": "andrewkroh",
       "id": 4565752,
       "node_id": "MDQ6VXNlcjQ1NjU3NTI=",
@@ -915,6 +981,246 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/32147222?v=4",
       "html_url": "https://github.com/kindlehl",
       "contributions": 1
+    },
+    {
+      "login": "GrahamCampbell",
+      "id": 2829600,
+      "node_id": "MDQ6VXNlcjI4Mjk2MDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2829600?v=4",
+      "html_url": "https://github.com/GrahamCampbell",
+      "contributions": 433
+    },
+    {
+      "login": "m4tthumphrey",
+      "id": 582971,
+      "node_id": "MDQ6VXNlcjU4Mjk3MQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/582971?v=4",
+      "html_url": "https://github.com/m4tthumphrey",
+      "contributions": 169
+    },
+    {
+      "login": "fbourigault",
+      "id": 1116116,
+      "node_id": "MDQ6VXNlcjExMTYxMTY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1116116?v=4",
+      "html_url": "https://github.com/fbourigault",
+      "contributions": 110
+    },
+    {
+      "login": "m1guelpf",
+      "id": 23558090,
+      "node_id": "MDQ6VXNlcjIzNTU4MDkw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/23558090?v=4",
+      "html_url": "https://github.com/m1guelpf",
+      "contributions": 32
+    },
+    {
+      "login": "drumm",
+      "id": 39292,
+      "node_id": "MDQ6VXNlcjM5Mjky",
+      "avatar_url": "https://avatars.githubusercontent.com/u/39292?v=4",
+      "html_url": "https://github.com/drumm",
+      "contributions": 18
+    },
+    {
+      "login": "tobiasetter",
+      "id": 24449919,
+      "node_id": "MDQ6VXNlcjI0NDQ5OTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/24449919?v=4",
+      "html_url": "https://github.com/tobiasetter",
+      "contributions": 15
+    },
+    {
+      "login": "omarlopesino",
+      "id": 3202817,
+      "node_id": "MDQ6VXNlcjMyMDI4MTc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3202817?v=4",
+      "html_url": "https://github.com/omarlopesino",
+      "contributions": 13
+    },
+    {
+      "login": "gaooulong",
+      "id": 128565219,
+      "node_id": "U_kgDOB6m_4w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/128565219?v=4",
+      "html_url": "https://github.com/gaooulong",
+      "contributions": 13
+    },
+    {
+      "login": "Artistan",
+      "id": 801349,
+      "node_id": "MDQ6VXNlcjgwMTM0OQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/801349?v=4",
+      "html_url": "https://github.com/Artistan",
+      "contributions": 12
+    },
+    {
+      "login": "sidneymarieanne",
+      "id": 23741257,
+      "node_id": "MDQ6VXNlcjIzNzQxMjU3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/23741257?v=4",
+      "html_url": "https://github.com/sidneymarieanne",
+      "contributions": 11
+    },
+    {
+      "login": "jubianchi",
+      "id": 327237,
+      "node_id": "MDQ6VXNlcjMyNzIzNw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/327237?v=4",
+      "html_url": "https://github.com/jubianchi",
+      "contributions": 11
+    },
+    {
+      "login": "radutopala",
+      "id": 647137,
+      "node_id": "MDQ6VXNlcjY0NzEzNw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/647137?v=4",
+      "html_url": "https://github.com/radutopala",
+      "contributions": 9
+    },
+    {
+      "login": "donkidd",
+      "id": 325242,
+      "node_id": "MDQ6VXNlcjMyNTI0Mg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/325242?v=4",
+      "html_url": "https://github.com/donkidd",
+      "contributions": 8
+    },
+    {
+      "login": "violuke",
+      "id": 6420347,
+      "node_id": "MDQ6VXNlcjY0MjAzNDc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6420347?v=4",
+      "html_url": "https://github.com/violuke",
+      "contributions": 7
+    },
+    {
+      "login": "gilmiriam",
+      "id": 26138458,
+      "node_id": "MDQ6VXNlcjI2MTM4NDU4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/26138458?v=4",
+      "html_url": "https://github.com/gilmiriam",
+      "contributions": 7
+    },
+    {
+      "login": "jdecool",
+      "id": 433926,
+      "node_id": "MDQ6VXNlcjQzMzkyNg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/433926?v=4",
+      "html_url": "https://github.com/jdecool",
+      "contributions": 7
+    },
+    {
+      "login": "glaubinix",
+      "id": 442056,
+      "node_id": "MDQ6VXNlcjQ0MjA1Ng==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/442056?v=4",
+      "html_url": "https://github.com/glaubinix",
+      "contributions": 6
+    },
+    {
+      "login": "moufmouf",
+      "id": 1290952,
+      "node_id": "MDQ6VXNlcjEyOTA5NTI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1290952?v=4",
+      "html_url": "https://github.com/moufmouf",
+      "contributions": 5
+    },
+    {
+      "login": "vinkla",
+      "id": 499192,
+      "node_id": "MDQ6VXNlcjQ5OTE5Mg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/499192?v=4",
+      "html_url": "https://github.com/vinkla",
+      "contributions": 5
+    },
+    {
+      "login": "laurenzgamper",
+      "id": 2470546,
+      "node_id": "MDQ6VXNlcjI0NzA1NDY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2470546?v=4",
+      "html_url": "https://github.com/laurenzgamper",
+      "contributions": 5
+    },
+    {
+      "login": "SirFlip",
+      "id": 6735323,
+      "node_id": "MDQ6VXNlcjY3MzUzMjM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6735323?v=4",
+      "html_url": "https://github.com/SirFlip",
+      "contributions": 5
+    },
+    {
+      "login": "glensc",
+      "id": 199095,
+      "node_id": "MDQ6VXNlcjE5OTA5NQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/199095?v=4",
+      "html_url": "https://github.com/glensc",
+      "contributions": 5
+    },
+    {
+      "login": "alfredbez",
+      "id": 1001186,
+      "node_id": "MDQ6VXNlcjEwMDExODY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1001186?v=4",
+      "html_url": "https://github.com/alfredbez",
+      "contributions": 4
+    },
+    {
+      "login": "cdaguerre",
+      "id": 4642448,
+      "node_id": "MDQ6VXNlcjQ2NDI0NDg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4642448?v=4",
+      "html_url": "https://github.com/cdaguerre",
+      "contributions": 4
+    },
+    {
+      "login": "mirko-jtl",
+      "id": 50579203,
+      "node_id": "MDQ6VXNlcjUwNTc5MjAz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/50579203?v=4",
+      "html_url": "https://github.com/mirko-jtl",
+      "contributions": 4
+    },
+    {
+      "login": "MujibAzizi",
+      "id": 1754708,
+      "node_id": "MDQ6VXNlcjE3NTQ3MDg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1754708?v=4",
+      "html_url": "https://github.com/MujibAzizi",
+      "contributions": 4
+    },
+    {
+      "login": "jimmy4o4",
+      "id": 19704458,
+      "node_id": "MDQ6VXNlcjE5NzA0NDU4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19704458?v=4",
+      "html_url": "https://github.com/jimmy4o4",
+      "contributions": 4
+    },
+    {
+      "login": "Seretos",
+      "id": 18718900,
+      "node_id": "MDQ6VXNlcjE4NzE4OTAw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/18718900?v=4",
+      "html_url": "https://github.com/Seretos",
+      "contributions": 3
+    },
+    {
+      "login": "c33s",
+      "id": 649209,
+      "node_id": "MDQ6VXNlcjY0OTIwOQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/649209?v=4",
+      "html_url": "https://github.com/c33s",
+      "contributions": 3
+    },
+    {
+      "login": "tvbeek",
+      "id": 2026498,
+      "node_id": "MDQ6VXNlcjIwMjY0OTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2026498?v=4",
+      "html_url": "https://github.com/tvbeek",
+      "contributions": 3
     }
   ],
   "activeOrg": false

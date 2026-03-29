@@ -35,7 +35,7 @@
   "irc_channel": "https://slack.cbioportal.org",
   "contact_email": null,
   "mailing_list": "https://groups.google.com/forum/#!forum/cbioportal-gsoc",
-  "twitter_url": "https://twitter.com/cbioportal",
+  "twitter_url": "https://x.com/cbioportal",
   "blog_url": null,
   "facebook_url": null,
   "year": [
@@ -45,7 +45,8 @@
     2022,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2016": [
@@ -347,30 +348,39 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/ZnoBajlM"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Automated Metadata Harmonization Tool",
+        "short_description": "This project aims to automate metadata harmonization for cBioPortal, a widely used platform for cancer genomics research. Currently, metadata from...",
+        "description": "This project aims to automate metadata harmonization for cBioPortal, a widely used platform for cancer genomics research. Currently, metadata from different studies often uses inconsistent terms, limiting cross-study analysis and making it harder to apply AI/ML models effectively, while manual harmonization is time-consuming and not scalable. To address this, I propose building an automated metadata harmonization tool using fine-tuned biomedical sentence transformer models to semantically match and standardize metadata terms. The pipeline will include data preprocessing, semantic matching, low-confidence flagging, and expert validation, with interfaces to support expert review. The key deliverables are a fully functional metadata harmonization pipeline, semantic similarity models fine-tuned on curated biomedical data, a persistent vector database for scalable and reproducible retrieval, and documentation with testing coverage. This tool will reduce manual curation time by over 70%, improve metadata consistency, and enhance the platform’s readiness for AI-driven research.",
+        "student_name": "Changchang Li",
+        "code_url": "https://docs.google.com/document/d/1_-rwTFqmjbuw63UsNHDO-QRReFwK64t5/edit?usp=sharing&ouid=102757373613963498240&rtpof=true&sd=true",
+        "proposal_id": "YFWb8mY9",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/NzVvml1R"
+      },
+      {
+        "title": "Show Variant Allele Frequency on the Plots Tab and OncoPrint",
+        "short_description": "This project aims to enhance cBioportal's analytical capabilities by integrating Variant Allele Frequency (VAF) visualization into the Plots Tab and...",
+        "description": "This project aims to enhance cBioportal's analytical capabilities by integrating Variant Allele Frequency (VAF) visualization into the Plots Tab and OncoPrint views. Currently, in Plots Tab we can visualize mutation types of particular gene across different cancer types but it is not possible to visualize VAF data for different samples across different cancer types. It is very crucial for researchers to understand mutation clonality and prevalence across cohorts through VAF. Similarly in OncoPrint view we cannot add tracks for VAF heatmaps across different genes. The proposed solution has two components. For the Plots Tab, we will introduce VAF (linked to a specific gene) as a selectable numerical data type of mutation for plot axes. Existing plot components will then automatically render Box-Scatter or Scatter plots. For OncoPrint, we will implement gene-specific VAF heatmap tracks displayed below the main alteration grid. VAF heatmaps corresponding to primary displayed mutations with a dedicated 0-1 color scale.",
+        "student_name": "Rishi Prasad Sulakhe",
+        "code_url": "https://gist.github.com/rishisulakhe/27aefc35bf879c58ab216179eba9d45a",
+        "proposal_id": "wgcfmlC3",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/8scNjJhi"
+      },
+      {
+        "title": "AI/LLM Generated gene alteration and expression based subtyping for each tumor type",
+        "short_description": "The project aims to enhance the cBioPortal platform by generating a list of recommended default genes for each OncoTree code, which are often used...",
+        "description": "The project aims to enhance the cBioPortal platform by generating a list of recommended default genes for each OncoTree code, which are often used for molecular classification of specific cancer subtypes. This will improve the effectiveness of the cBioPortal database by prioritizing the display of relevant genes to each disease subtype. To achieve this goal, a Large Language Model (LLM) such as GPT-4o, will be fine-tuned with prompt engineering and Retrieval-Augmented Generation (RAG) techniques to provide domain-specific knowledge and context. The goal is to train the LLM to connect relevant genes to each OncoTree code. \nApproach:\nLLM Selection: GPT-4o is a strong candidate due to its versatility and performance in various NLP tasks.\nPrompt Engineering: Develop efficient prompts for the selected LLM to generate gene lists.\nRAG Component: Implement a RAG component to provide context to the LLM and enhance accuracy using e-utilities to retrieve curated literature from NCBI GeneReviews and ClinVar.\nValidation: Cross-reference the generated gene lists with expert-curated resources like ClinGen and variant frequencies in cBioPortal, and COSMIC.\nEvaluation: Continuously monitor the model's performance using validation sets and adjust hyperparameters as needed.\nDeployment: Integrate the solution into the cBioPortal platform such as sorting variants on patient view pages by relevant genes first.\nConclusion: Completion of this project will significantly improve the usability of cBioPortal, providing users like researchers and clinicians with relevant gene and pathway information based on the cancer type they are exploring.",
+        "student_name": "Suhasini Lulla",
+        "code_url": "https://github.com/SuhasiniLulla/GSoC_2025",
+        "proposal_id": "vDWYtBH5",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/2AJ2V3qf"
+      }
+    ],
+    "2026": []
   },
   "githubID": "cBioPortal",
   "repositories": [
-    {
-      "id": 40321883,
-      "node_id": "MDEwOlJlcG9zaXRvcnk0MDMyMTg4Mw==",
-      "name": "oncotree",
-      "full_name": "cBioPortal/oncotree",
-      "html_url": "https://github.com/cBioPortal/oncotree",
-      "description": null,
-      "language": "Java",
-      "stargazers_count": 44,
-      "forks_count": 28,
-      "open_issues_count": 38,
-      "license": {
-        "key": "cc-by-4.0",
-        "name": "Creative Commons Attribution 4.0 International",
-        "spdx_id": "CC-BY-4.0",
-        "url": "https://api.github.com/licenses/cc-by-4.0",
-        "node_id": "MDc6TGljZW5zZTI1"
-      },
-      "topics": []
-    },
     {
       "id": 66571349,
       "node_id": "MDEwOlJlcG9zaXRvcnk2NjU3MTM0OQ==",
@@ -379,9 +389,9 @@
       "html_url": "https://github.com/cBioPortal/cbioportal-frontend",
       "description": "React Frontend of cBioPortal :tada:",
       "language": "TypeScript",
-      "stargazers_count": 123,
-      "forks_count": 342,
-      "open_issues_count": 19,
+      "stargazers_count": 142,
+      "forks_count": 420,
+      "open_issues_count": 64,
       "license": {
         "key": "agpl-3.0",
         "name": "GNU Affero General Public License v3.0",
@@ -403,9 +413,9 @@
       "html_url": "https://github.com/cBioPortal/cbioportal",
       "description": "cBioPortal for Cancer Genomics",
       "language": "Java",
-      "stargazers_count": 790,
-      "forks_count": 666,
-      "open_issues_count": 290,
+      "stargazers_count": 984,
+      "forks_count": 845,
+      "open_issues_count": 350,
       "license": {
         "key": "agpl-3.0",
         "name": "GNU Affero General Public License v3.0",
@@ -421,26 +431,6 @@
       ]
     },
     {
-      "id": 884931179,
-      "node_id": "R_kgDONL76aw",
-      "name": "cbioportal-test",
-      "full_name": "cBioPortal/cbioportal-test",
-      "html_url": "https://github.com/cBioPortal/cbioportal-test",
-      "description": "Tests for cBioPortal.",
-      "language": "HTML",
-      "stargazers_count": 1,
-      "forks_count": 4,
-      "open_issues_count": 0,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
       "id": 710444446,
       "node_id": "R_kgDOKliFng",
       "name": "cbioportal-core",
@@ -448,23 +438,9 @@
       "html_url": "https://github.com/cBioPortal/cbioportal-core",
       "description": "Externalized cBioPortal Core",
       "language": "Java",
-      "stargazers_count": 2,
-      "forks_count": 19,
-      "open_issues_count": 25,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 63335718,
-      "node_id": "MDEwOlJlcG9zaXRvcnk2MzMzNTcxOA==",
-      "name": "datahub",
-      "full_name": "cBioPortal/datahub",
-      "html_url": "https://github.com/cBioPortal/datahub",
-      "description": "A centralized location for storing curated data from cBioPortal",
-      "language": "HTML",
-      "stargazers_count": 189,
-      "forks_count": 121,
-      "open_issues_count": 109,
+      "stargazers_count": 4,
+      "forks_count": 25,
+      "open_issues_count": 47,
       "license": null,
       "topics": []
     },
@@ -476,9 +452,187 @@
       "html_url": "https://github.com/cBioPortal/cbioportal-docker-compose",
       "description": "Run cBioPortal using Docker Compose",
       "language": "Shell",
-      "stargazers_count": 17,
-      "forks_count": 49,
-      "open_issues_count": 8,
+      "stargazers_count": 23,
+      "forks_count": 58,
+      "open_issues_count": 9,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1192718006,
+      "node_id": "R_kgDORxdutg",
+      "name": "seed_db_test",
+      "full_name": "cBioPortal/seed_db_test",
+      "html_url": "https://github.com/cBioPortal/seed_db_test",
+      "description": null,
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1151566825,
+      "node_id": "R_kgDORKOD6Q",
+      "name": "cbioportal-cell-explorer",
+      "full_name": "cBioPortal/cbioportal-cell-explorer",
+      "html_url": "https://github.com/cBioPortal/cbioportal-cell-explorer",
+      "description": null,
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "forks_count": 1,
+      "open_issues_count": 17,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 256577788,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyNTY1Nzc3ODg=",
+      "name": "cbioportal-publisher",
+      "full_name": "cBioPortal/cbioportal-publisher",
+      "html_url": "https://github.com/cBioPortal/cbioportal-publisher",
+      "description": "Auto publish cBioPortal modules",
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 3,
+      "open_issues_count": 1,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 884931179,
+      "node_id": "R_kgDONL76aw",
+      "name": "cbioportal-test",
+      "full_name": "cBioPortal/cbioportal-test",
+      "html_url": "https://github.com/cBioPortal/cbioportal-test",
+      "description": "Tests for cBioPortal.",
+      "language": "HTML",
+      "stargazers_count": 0,
+      "forks_count": 2,
+      "open_issues_count": 1,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 1080209422,
+      "node_id": "R_kgDOQGKwDg",
+      "name": "LibreChat",
+      "full_name": "cBioPortal/LibreChat",
+      "html_url": "https://github.com/cBioPortal/LibreChat",
+      "description": "Enhanced ChatGPT Clone: Features Agents, MCP, DeepSeek, Anthropic, AWS, OpenAI, Responses API, Azure, Groq, o1, GPT-5, Mistral, OpenRouter, Vertex AI, Gemini, Artifacts, AI model switching, message search, Code Interpreter, langchain, DALL-E-3, OpenAPI Actions, Functions, Secure Multi-User Auth, Presets, open-source for self-hosting. Active.",
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 1,
+      "open_issues_count": 4,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 50116158,
+      "node_id": "MDEwOlJlcG9zaXRvcnk1MDExNjE1OA==",
+      "name": "GSoC",
+      "full_name": "cBioPortal/GSoC",
+      "html_url": "https://github.com/cBioPortal/GSoC",
+      "description": "Documentation repository of Google Summer of Code (GSoC) project ideas for cBioPortal and related projects",
+      "language": null,
+      "stargazers_count": 200,
+      "forks_count": 64,
+      "open_issues_count": 33,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 710437906,
+      "node_id": "R_kgDOKlhsEg",
+      "name": "maf",
+      "full_name": "cBioPortal/maf",
+      "html_url": "https://github.com/cBioPortal/maf",
+      "description": "Utility classes for the Mutation Annotation Format (MAF)",
+      "language": "Java",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 1,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 63335718,
+      "node_id": "MDEwOlJlcG9zaXRvcnk2MzMzNTcxOA==",
+      "name": "datahub",
+      "full_name": "cBioPortal/datahub",
+      "html_url": "https://github.com/cBioPortal/datahub",
+      "description": "A centralized location for storing curated data from cBioPortal",
+      "language": "HTML",
+      "stargazers_count": 202,
+      "forks_count": 142,
+      "open_issues_count": 155,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 40321883,
+      "node_id": "MDEwOlJlcG9zaXRvcnk0MDMyMTg4Mw==",
+      "name": "oncotree",
+      "full_name": "cBioPortal/oncotree",
+      "html_url": "https://github.com/cBioPortal/oncotree",
+      "description": null,
+      "language": "Go",
+      "stargazers_count": 47,
+      "forks_count": 30,
+      "open_issues_count": 45,
+      "license": {
+        "key": "cc-by-4.0",
+        "name": "Creative Commons Attribution 4.0 International",
+        "spdx_id": "CC-BY-4.0",
+        "url": "https://api.github.com/licenses/cc-by-4.0",
+        "node_id": "MDc6TGljZW5zZTI1"
+      },
+      "topics": []
+    },
+    {
+      "id": 1023930475,
+      "node_id": "R_kgDOPQfwaw",
+      "name": "cbioportal-mcp",
+      "full_name": "cBioPortal/cbioportal-mcp",
+      "html_url": "https://github.com/cBioPortal/cbioportal-mcp",
+      "description": null,
+      "language": "Python",
+      "stargazers_count": 6,
+      "forks_count": 8,
+      "open_issues_count": 19,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1019638521,
+      "node_id": "R_kgDOPMZy-Q",
+      "name": "cbioportal-mcp-qa",
+      "full_name": "cBioPortal/cbioportal-mcp-qa",
+      "html_url": "https://github.com/cBioPortal/cbioportal-mcp-qa",
+      "description": null,
+      "language": "Python",
+      "stargazers_count": 3,
+      "forks_count": 2,
+      "open_issues_count": 14,
       "license": null,
       "topics": []
     },
@@ -497,30 +651,50 @@
       "topics": []
     },
     {
-      "id": 673103082,
-      "node_id": "R_kgDOKB686g",
-      "name": ".github",
-      "full_name": "cBioPortal/.github",
-      "html_url": "https://github.com/cBioPortal/.github",
-      "description": "README for cBioPortal Org Page",
-      "language": null,
-      "stargazers_count": 0,
-      "forks_count": 1,
-      "open_issues_count": 1,
+      "id": 52113688,
+      "node_id": "MDEwOlJlcG9zaXRvcnk1MjExMzY4OA==",
+      "name": "cancerhotspots",
+      "full_name": "cBioPortal/cancerhotspots",
+      "html_url": "https://github.com/cBioPortal/cancerhotspots",
+      "description": "Cancer Hotspots",
+      "language": "JavaScript",
+      "stargazers_count": 6,
+      "forks_count": 10,
+      "open_issues_count": 7,
+      "license": {
+        "key": "agpl-3.0",
+        "name": "GNU Affero General Public License v3.0",
+        "spdx_id": "AGPL-3.0",
+        "url": "https://api.github.com/licenses/agpl-3.0",
+        "node_id": "MDc6TGljZW5zZTE="
+      },
+      "topics": []
+    },
+    {
+      "id": 122997152,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMjI5OTcxNTI=",
+      "name": "clinical-data-dictionary",
+      "full_name": "cBioPortal/clinical-data-dictionary",
+      "html_url": "https://github.com/cBioPortal/clinical-data-dictionary",
+      "description": "Clinical Attribute Web Service for retrieving clinical attribute names and metadata.",
+      "language": "Java",
+      "stargazers_count": 6,
+      "forks_count": 9,
+      "open_issues_count": 8,
       "license": null,
       "topics": []
     },
     {
-      "id": 962166718,
-      "node_id": "R_kgDOOVl_vg",
-      "name": "temp-genie-page",
-      "full_name": "cBioPortal/temp-genie-page",
-      "html_url": "https://github.com/cBioPortal/temp-genie-page",
+      "id": 1144654450,
+      "node_id": "R_kgDORDoKcg",
+      "name": "cbioportal-vitessce-proxy",
+      "full_name": "cBioPortal/cbioportal-vitessce-proxy",
+      "html_url": "https://github.com/cBioPortal/cbioportal-vitessce-proxy",
       "description": null,
-      "language": "HTML",
+      "language": "TypeScript",
       "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
+      "forks_count": 1,
+      "open_issues_count": 3,
       "license": null,
       "topics": []
     },
@@ -532,9 +706,9 @@
       "html_url": "https://github.com/cBioPortal/datahub-study-curation-tools",
       "description": "Contains tools used by cBioPortal data curators when preparing data for upload into the datahub repos.",
       "language": "HTML",
-      "stargazers_count": 19,
-      "forks_count": 16,
-      "open_issues_count": 4,
+      "stargazers_count": 22,
+      "forks_count": 20,
+      "open_issues_count": 7,
       "license": {
         "key": "agpl-3.0",
         "name": "GNU Affero General Public License v3.0",
@@ -542,54 +716,6 @@
         "url": "https://api.github.com/licenses/agpl-3.0",
         "node_id": "MDc6TGljZW5zZTE="
       },
-      "topics": []
-    },
-    {
-      "id": 50116158,
-      "node_id": "MDEwOlJlcG9zaXRvcnk1MDExNjE1OA==",
-      "name": "GSoC",
-      "full_name": "cBioPortal/GSoC",
-      "html_url": "https://github.com/cBioPortal/GSoC",
-      "description": "Documentation repository of Google Summer of Code (GSoC) project ideas for cBioPortal and related projects",
-      "language": null,
-      "stargazers_count": 135,
-      "forks_count": 49,
-      "open_issues_count": 28,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 847091327,
-      "node_id": "R_kgDOMn2Wfw",
-      "name": "cbiohubpy",
-      "full_name": "cBioPortal/cbiohubpy",
-      "html_url": "https://github.com/cBioPortal/cbiohubpy",
-      "description": "Python package and CLI tool simplifying the analysis of data from cBioPortal",
-      "language": "Python",
-      "stargazers_count": 1,
-      "forks_count": 1,
-      "open_issues_count": 0,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 910277780,
-      "node_id": "R_kgDONkG8lA",
-      "name": "roadmap",
-      "full_name": "cBioPortal/roadmap",
-      "html_url": "https://github.com/cBioPortal/roadmap",
-      "description": "cBioPortal Public Roadmap",
-      "language": null,
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "open_issues_count": 23,
-      "license": null,
       "topics": []
     },
     {
@@ -602,17 +728,45 @@
       "language": null,
       "stargazers_count": 0,
       "forks_count": 1,
+      "open_issues_count": 1,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 673103082,
+      "node_id": "R_kgDOKB686g",
+      "name": ".github",
+      "full_name": "cBioPortal/.github",
+      "html_url": "https://github.com/cBioPortal/.github",
+      "description": "README for cBioPortal Org Page",
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 2,
+      "open_issues_count": 1,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1119379130,
+      "node_id": "R_kgDOQrheug",
+      "name": "cbioportal-article-classification",
+      "full_name": "cBioPortal/cbioportal-article-classification",
+      "html_url": "https://github.com/cBioPortal/cbioportal-article-classification",
+      "description": "Tool for fetching, classifying, and analyzing papers that cite cBioPortal",
+      "language": "Python",
+      "stargazers_count": 3,
+      "forks_count": 0,
       "open_issues_count": 0,
       "license": null,
       "topics": []
     },
     {
-      "id": 890602381,
-      "node_id": "R_kgDONRWDjQ",
-      "name": "kc-user-importer",
-      "full_name": "cBioPortal/kc-user-importer",
-      "html_url": "https://github.com/cBioPortal/kc-user-importer",
-      "description": "Keycloak Legacy Light Client and user import scripts ",
+      "id": 1101567308,
+      "node_id": "R_kgDOQaiVTA",
+      "name": "msk-ecosystems-validator",
+      "full_name": "cBioPortal/msk-ecosystems-validator",
+      "html_url": "https://github.com/cBioPortal/msk-ecosystems-validator",
+      "description": null,
       "language": "Python",
       "stargazers_count": 0,
       "forks_count": 0,
@@ -621,106 +775,44 @@
       "topics": []
     },
     {
-      "id": 839909775,
-      "node_id": "R_kgDOMhABjw",
-      "name": "cbio-jupyter",
-      "full_name": "cBioPortal/cbio-jupyter",
-      "html_url": "https://github.com/cBioPortal/cbio-jupyter",
+      "id": 1073856030,
+      "node_id": "R_kgDOQAG-Hg",
+      "name": "clickhouse-only-importer-prototype",
+      "full_name": "cBioPortal/clickhouse-only-importer-prototype",
+      "html_url": "https://github.com/cBioPortal/clickhouse-only-importer-prototype",
       "description": null,
-      "language": "JavaScript",
-      "stargazers_count": 1,
-      "forks_count": 1,
+      "language": "Go",
+      "stargazers_count": 0,
+      "forks_count": 0,
       "open_issues_count": 0,
       "license": null,
       "topics": []
     },
     {
-      "id": 122997152,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMjI5OTcxNTI=",
-      "name": "clinical-data-dictionary",
-      "full_name": "cBioPortal/clinical-data-dictionary",
-      "html_url": "https://github.com/cBioPortal/clinical-data-dictionary",
-      "description": "Clinical Attribute Web Service for retrieving clinical attribute names and metadata.",
-      "language": "Java",
-      "stargazers_count": 5,
-      "forks_count": 7,
-      "open_issues_count": 7,
+      "id": 1081553239,
+      "node_id": "R_kgDOQHcxVw",
+      "name": "cellxgene-dash",
+      "full_name": "cBioPortal/cellxgene-dash",
+      "html_url": "https://github.com/cBioPortal/cellxgene-dash",
+      "description": null,
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
       "license": null,
       "topics": []
     },
     {
-      "id": 322355655,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzMjIzNTU2NTU=",
-      "name": "codebook",
-      "full_name": "cBioPortal/codebook",
-      "html_url": "https://github.com/cBioPortal/codebook",
-      "description": "A community shared resource of Python and R Notebooks that utilize the cBioPortal API for various analysis recipes",
-      "language": "Jupyter Notebook",
-      "stargazers_count": 9,
-      "forks_count": 14,
-      "open_issues_count": 2,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 797787235,
-      "node_id": "R_kgDOL41EYw",
-      "name": "rfc80-team",
-      "full_name": "cBioPortal/rfc80-team",
-      "html_url": "https://github.com/cBioPortal/rfc80-team",
-      "description": "repository to hold issues for the rfc80 development / deployment team",
+      "id": 1058045538,
+      "node_id": "R_kgDOPxB-Yg",
+      "name": "mcp_experiments",
+      "full_name": "cBioPortal/mcp_experiments",
+      "html_url": "https://github.com/cBioPortal/mcp_experiments",
+      "description": "cBioPortal MCP Experiments",
       "language": null,
       "stargazers_count": 0,
       "forks_count": 0,
-      "open_issues_count": 14,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 710437906,
-      "node_id": "R_kgDOKlhsEg",
-      "name": "maf",
-      "full_name": "cBioPortal/maf",
-      "html_url": "https://github.com/cBioPortal/maf",
-      "description": "Utility classes for the Mutation Annotation Format (MAF)",
-      "language": "Java",
-      "stargazers_count": 0,
-      "forks_count": 0,
       "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 52113688,
-      "node_id": "MDEwOlJlcG9zaXRvcnk1MjExMzY4OA==",
-      "name": "cancerhotspots",
-      "full_name": "cBioPortal/cancerhotspots",
-      "html_url": "https://github.com/cBioPortal/cancerhotspots",
-      "description": "Cancer Hotspots",
-      "language": "JavaScript",
-      "stargazers_count": 6,
-      "forks_count": 9,
-      "open_issues_count": 7,
-      "license": {
-        "key": "agpl-3.0",
-        "name": "GNU Affero General Public License v3.0",
-        "spdx_id": "AGPL-3.0",
-        "url": "https://api.github.com/licenses/agpl-3.0",
-        "node_id": "MDc6TGljZW5zZTE="
-      },
-      "topics": []
-    },
-    {
-      "id": 145452448,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNDU0NTI0NDg=",
-      "name": "MobxPromise",
-      "full_name": "cBioPortal/MobxPromise",
-      "html_url": "https://github.com/cBioPortal/MobxPromise",
-      "description": "Provides an observable interface for a computed promise.",
-      "language": "TypeScript",
-      "stargazers_count": 3,
-      "forks_count": 3,
-      "open_issues_count": 1,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -728,20 +820,6 @@
         "url": "https://api.github.com/licenses/mit",
         "node_id": "MDc6TGljZW5zZTEz"
       },
-      "topics": []
-    },
-    {
-      "id": 720169216,
-      "node_id": "R_kgDOKuzpAA",
-      "name": "cache_warmer",
-      "full_name": "cBioPortal/cache_warmer",
-      "html_url": "https://github.com/cBioPortal/cache_warmer",
-      "description": null,
-      "language": "JavaScript",
-      "stargazers_count": 0,
-      "forks_count": 1,
-      "open_issues_count": 0,
-      "license": null,
       "topics": []
     },
     {
@@ -752,20 +830,20 @@
       "html_url": "https://github.com/cBioPortal/session-service",
       "description": null,
       "language": "Java",
-      "stargazers_count": 7,
-      "forks_count": 18,
-      "open_issues_count": 14,
+      "stargazers_count": 8,
+      "forks_count": 21,
+      "open_issues_count": 13,
       "license": null,
       "topics": []
     },
     {
-      "id": 639486129,
-      "node_id": "R_kgDOJh3IsQ",
-      "name": "cbioportal-clickhouse-pilot",
-      "full_name": "cBioPortal/cbioportal-clickhouse-pilot",
-      "html_url": "https://github.com/cBioPortal/cbioportal-clickhouse-pilot",
-      "description": null,
-      "language": null,
+      "id": 1010793284,
+      "node_id": "R_kgDOPD97RA",
+      "name": "h5ad2cbioportaldb",
+      "full_name": "cBioPortal/h5ad2cbioportaldb",
+      "html_url": "https://github.com/cBioPortal/h5ad2cbioportaldb",
+      "description": "Python CLI tool for importing h5ad single-cell files into cBioPortal's ClickHouse database",
+      "language": "Python",
       "stargazers_count": 0,
       "forks_count": 0,
       "open_issues_count": 0,
@@ -773,216 +851,28 @@
       "topics": []
     },
     {
-      "id": 230331816,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMzAzMzE4MTY=",
-      "name": "svg2pdf.js",
-      "full_name": "cBioPortal/svg2pdf.js",
-      "html_url": "https://github.com/cBioPortal/svg2pdf.js",
-      "description": "A javascript-only SVG to PDF conversion utility that runs in the browser leveraging jsPDF.",
-      "language": "HTML",
-      "stargazers_count": 0,
-      "forks_count": 2,
-      "open_issues_count": 0,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 449306521,
-      "node_id": "R_kgDOGsffmQ",
-      "name": "cbioportal-frontend-archive-1",
-      "full_name": "cBioPortal/cbioportal-frontend-archive-1",
-      "html_url": "https://github.com/cBioPortal/cbioportal-frontend-archive-1",
-      "description": "Archived version of cbioportal-frontend before rewriting history to remove large objects",
-      "language": "TypeScript",
-      "stargazers_count": 0,
+      "id": 992783067,
+      "node_id": "R_kgDOOyyq2w",
+      "name": "cBioPubChat",
+      "full_name": "cBioPortal/cBioPubChat",
+      "html_url": "https://github.com/cBioPortal/cBioPubChat",
+      "description": "LLM-powered chatbot for exploring cBioPortal publications.",
+      "language": "Python",
+      "stargazers_count": 2,
       "forks_count": 1,
       "open_issues_count": 1,
-      "license": {
-        "key": "agpl-3.0",
-        "name": "GNU Affero General Public License v3.0",
-        "spdx_id": "AGPL-3.0",
-        "url": "https://api.github.com/licenses/agpl-3.0",
-        "node_id": "MDc6TGljZW5zZTE="
-      },
-      "topics": []
-    },
-    {
-      "id": 92182345,
-      "node_id": "MDEwOlJlcG9zaXRvcnk5MjE4MjM0NQ==",
-      "name": "gdc-et-pipeline",
-      "full_name": "cBioPortal/gdc-et-pipeline",
-      "html_url": "https://github.com/cBioPortal/gdc-et-pipeline",
-      "description": "GSoC : Spring-batch based system to extract and transform GDC hosted data to suitable cBioPortal file formats.",
-      "language": "Java",
-      "stargazers_count": 0,
-      "forks_count": 4,
-      "open_issues_count": 13,
-      "license": {
-        "key": "agpl-3.0",
-        "name": "GNU Affero General Public License v3.0",
-        "spdx_id": "AGPL-3.0",
-        "url": "https://api.github.com/licenses/agpl-3.0",
-        "node_id": "MDc6TGljZW5zZTE="
-      },
-      "topics": []
-    },
-    {
-      "id": 469783626,
-      "node_id": "R_kgDOHABUSg",
-      "name": "documentation",
-      "full_name": "cBioPortal/documentation",
-      "html_url": "https://github.com/cBioPortal/documentation",
-      "description": null,
-      "language": "CSS",
-      "stargazers_count": 0,
-      "forks_count": 1,
-      "open_issues_count": 2,
       "license": null,
       "topics": []
     }
   ],
   "contributorsDetails": [
     {
-      "login": "sheridancbio",
-      "id": 7747489,
-      "node_id": "MDQ6VXNlcjc3NDc0ODk=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/7747489?v=4",
-      "html_url": "https://github.com/sheridancbio",
-      "contributions": 147
-    },
-    {
-      "login": "averyniceday",
-      "id": 18199796,
-      "node_id": "MDQ6VXNlcjE4MTk5Nzk2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/18199796?v=4",
-      "html_url": "https://github.com/averyniceday",
-      "contributions": 95
-    },
-    {
-      "login": "zhx828",
-      "id": 5400599,
-      "node_id": "MDQ6VXNlcjU0MDA1OTk=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/5400599?v=4",
-      "html_url": "https://github.com/zhx828",
-      "contributions": 272
-    },
-    {
-      "login": "ritikakundra",
-      "id": 12007862,
-      "node_id": "MDQ6VXNlcjEyMDA3ODYy",
-      "avatar_url": "https://avatars.githubusercontent.com/u/12007862?v=4",
-      "html_url": "https://github.com/ritikakundra",
-      "contributions": 57
-    },
-    {
-      "login": "mandawilson",
-      "id": 1458628,
-      "node_id": "MDQ6VXNlcjE0NTg2Mjg=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1458628?v=4",
-      "html_url": "https://github.com/mandawilson",
-      "contributions": 35
-    },
-    {
-      "login": "bprize15",
-      "id": 148106517,
-      "node_id": "U_kgDOCNPtFQ",
-      "avatar_url": "https://avatars.githubusercontent.com/u/148106517?v=4",
-      "html_url": "https://github.com/bprize15",
-      "contributions": 25
-    },
-    {
-      "login": "zheins",
-      "id": 10240498,
-      "node_id": "MDQ6VXNlcjEwMjQwNDk4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/10240498?v=4",
-      "html_url": "https://github.com/zheins",
-      "contributions": 8
-    },
-    {
-      "login": "ao508",
-      "id": 15623749,
-      "node_id": "MDQ6VXNlcjE1NjIzNzQ5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/15623749?v=4",
-      "html_url": "https://github.com/ao508",
-      "contributions": 6
-    },
-    {
-      "login": "rmadupuri",
-      "id": 34350829,
-      "node_id": "MDQ6VXNlcjM0MzUwODI5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/34350829?v=4",
-      "html_url": "https://github.com/rmadupuri",
-      "contributions": 6
-    },
-    {
-      "login": "yichaoS",
-      "id": 5973438,
-      "node_id": "MDQ6VXNlcjU5NzM0Mzg=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/5973438?v=4",
-      "html_url": "https://github.com/yichaoS",
-      "contributions": 15
-    },
-    {
-      "login": "dependabot[bot]",
-      "id": 49699333,
-      "node_id": "MDM6Qm90NDk2OTkzMzM=",
-      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-      "html_url": "https://github.com/apps/dependabot",
-      "contributions": 3
-    },
-    {
-      "login": "n1zea144",
-      "id": 366003,
-      "node_id": "MDQ6VXNlcjM2NjAwMw==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/366003?v=4",
-      "html_url": "https://github.com/n1zea144",
-      "contributions": 3
-    },
-    {
-      "login": "ihuerga",
-      "id": 1105275,
-      "node_id": "MDQ6VXNlcjExMDUyNzU=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1105275?v=4",
-      "html_url": "https://github.com/ihuerga",
-      "contributions": 2
-    },
-    {
-      "login": "NishchayRajput",
-      "id": 121144841,
-      "node_id": "U_kgDOBziGCQ",
-      "avatar_url": "https://avatars.githubusercontent.com/u/121144841?v=4",
-      "html_url": "https://github.com/NishchayRajput",
-      "contributions": 1
-    },
-    {
-      "login": "Rima-Waleed",
-      "id": 113367837,
-      "node_id": "U_kgDOBsHbHQ",
-      "avatar_url": "https://avatars.githubusercontent.com/u/113367837?v=4",
-      "html_url": "https://github.com/Rima-Waleed",
-      "contributions": 1
-    },
-    {
-      "login": "sbabyanusha",
-      "id": 61431648,
-      "node_id": "MDQ6VXNlcjYxNDMxNjQ4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/61431648?v=4",
-      "html_url": "https://github.com/sbabyanusha",
-      "contributions": 1
-    },
-    {
       "login": "alisman",
       "id": 186521,
       "node_id": "MDQ6VXNlcjE4NjUyMQ==",
       "avatar_url": "https://avatars.githubusercontent.com/u/186521?v=4",
       "html_url": "https://github.com/alisman",
-      "contributions": 2986
+      "contributions": 1
     },
     {
       "login": "inodb",
@@ -990,7 +880,7 @@
       "node_id": "MDQ6VXNlcjEzMzQwMDQ=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1334004?v=4",
       "html_url": "https://github.com/inodb",
-      "contributions": 1871
+      "contributions": 5
     },
     {
       "login": "onursumer",
@@ -998,7 +888,7 @@
       "node_id": "MDQ6VXNlcjM2MDQxOTg=",
       "avatar_url": "https://avatars.githubusercontent.com/u/3604198?v=4",
       "html_url": "https://github.com/onursumer",
-      "contributions": 658
+      "contributions": 1267
     },
     {
       "login": "adamabeshouse",
@@ -1006,7 +896,7 @@
       "node_id": "MDQ6VXNlcjYzNjIzMg==",
       "avatar_url": "https://avatars.githubusercontent.com/u/636232?v=4",
       "html_url": "https://github.com/adamabeshouse",
-      "contributions": 630
+      "contributions": 62
     },
     {
       "login": "kalletlak",
@@ -1014,7 +904,7 @@
       "node_id": "MDQ6VXNlcjEyOTU2ODcw",
       "avatar_url": "https://avatars.githubusercontent.com/u/12956870?v=4",
       "html_url": "https://github.com/kalletlak",
-      "contributions": 396
+      "contributions": 256
     },
     {
       "login": "pvannierop",
@@ -1022,7 +912,15 @@
       "node_id": "MDQ6VXNlcjc0NTg4NQ==",
       "avatar_url": "https://avatars.githubusercontent.com/u/745885?v=4",
       "html_url": "https://github.com/pvannierop",
-      "contributions": 272
+      "contributions": 156
+    },
+    {
+      "login": "zhx828",
+      "id": 5400599,
+      "node_id": "MDQ6VXNlcjU0MDA1OTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5400599?v=4",
+      "html_url": "https://github.com/zhx828",
+      "contributions": 945
     },
     {
       "login": "dippindots",
@@ -1030,7 +928,15 @@
       "node_id": "MDQ6VXNlcjE1NzQ4OTgw",
       "avatar_url": "https://avatars.githubusercontent.com/u/15748980?v=4",
       "html_url": "https://github.com/dippindots",
-      "contributions": 231
+      "contributions": 20
+    },
+    {
+      "login": "gblaih",
+      "id": 56288120,
+      "node_id": "MDQ6VXNlcjU2Mjg4MTIw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/56288120?v=4",
+      "html_url": "https://github.com/gblaih",
+      "contributions": 1
     },
     {
       "login": "leexgh",
@@ -1038,7 +944,7 @@
       "node_id": "MDQ6VXNlcjE2ODY5NjAz",
       "avatar_url": "https://avatars.githubusercontent.com/u/16869603?v=4",
       "html_url": "https://github.com/leexgh",
-      "contributions": 141
+      "contributions": 143
     },
     {
       "login": "ersinciftci",
@@ -1046,7 +952,7 @@
       "node_id": "MDQ6VXNlcjM1OTU3MDQ=",
       "avatar_url": "https://avatars.githubusercontent.com/u/3595704?v=4",
       "html_url": "https://github.com/ersinciftci",
-      "contributions": 82
+      "contributions": 366
     },
     {
       "login": "adufilie",
@@ -1062,7 +968,7 @@
       "node_id": "MDQ6VXNlcjIwMjc4MDEz",
       "avatar_url": "https://avatars.githubusercontent.com/u/20278013?v=4",
       "html_url": "https://github.com/oplantalech",
-      "contributions": 71
+      "contributions": 3
     },
     {
       "login": "zainasir",
@@ -1070,7 +976,7 @@
       "node_id": "MDQ6VXNlcjQ5NTQzMjE2",
       "avatar_url": "https://avatars.githubusercontent.com/u/49543216?v=4",
       "html_url": "https://github.com/zainasir",
-      "contributions": 65
+      "contributions": 1
     },
     {
       "login": "Luke-Sikina",
@@ -1086,7 +992,7 @@
       "node_id": "MDQ6VXNlcjQ5Mjk0MzE=",
       "avatar_url": "https://avatars.githubusercontent.com/u/4929431?v=4",
       "html_url": "https://github.com/fedde-s",
-      "contributions": 50
+      "contributions": 487
     },
     {
       "login": "tamaccount",
@@ -1097,20 +1003,12 @@
       "contributions": 48
     },
     {
-      "login": "gblaih",
-      "id": 56288120,
-      "node_id": "MDQ6VXNlcjU2Mjg4MTIw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/56288120?v=4",
-      "html_url": "https://github.com/gblaih",
-      "contributions": 39
-    },
-    {
       "login": "haynescd",
       "id": 33608920,
       "node_id": "MDQ6VXNlcjMzNjA4OTIw",
       "avatar_url": "https://avatars.githubusercontent.com/u/33608920?v=4",
       "html_url": "https://github.com/haynescd",
-      "contributions": 39
+      "contributions": 19
     },
     {
       "login": "jagnathan",
@@ -1126,7 +1024,7 @@
       "node_id": "MDQ6VXNlcjMzMjIwODcx",
       "avatar_url": "https://avatars.githubusercontent.com/u/33220871?v=4",
       "html_url": "https://github.com/TJMKuijpers",
-      "contributions": 20
+      "contributions": 1
     },
     {
       "login": "amirinenik",
@@ -1145,6 +1043,14 @@
       "contributions": 18
     },
     {
+      "login": "fuzhaoyuan",
+      "id": 22309533,
+      "node_id": "MDQ6VXNlcjIyMzA5NTMz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/22309533?v=4",
+      "html_url": "https://github.com/fuzhaoyuan",
+      "contributions": 16
+    },
+    {
       "login": "ngocnn1104",
       "id": 31291004,
       "node_id": "MDQ6VXNlcjMxMjkxMDA0",
@@ -1153,11 +1059,19 @@
       "contributions": 16
     },
     {
-      "login": "fuzhaoyuan",
-      "id": 22309533,
-      "node_id": "MDQ6VXNlcjIyMzA5NTMz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/22309533?v=4",
-      "html_url": "https://github.com/fuzhaoyuan",
+      "login": "yichaoS",
+      "id": 5973438,
+      "node_id": "MDQ6VXNlcjU5NzM0Mzg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5973438?v=4",
+      "html_url": "https://github.com/yichaoS",
+      "contributions": 100
+    },
+    {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "html_url": "https://github.com/apps/dependabot",
       "contributions": 14
     },
     {
@@ -1182,7 +1096,7 @@
       "node_id": "MDQ6VXNlcjg0MDg5NQ==",
       "avatar_url": "https://avatars.githubusercontent.com/u/840895?v=4",
       "html_url": "https://github.com/jjgao",
-      "contributions": 11
+      "contributions": 3169
     },
     {
       "login": "ecerami",
@@ -1190,7 +1104,31 @@
       "node_id": "MDQ6VXNlcjEwMDkwNjY=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1009066?v=4",
       "html_url": "https://github.com/ecerami",
-      "contributions": 10
+      "contributions": 644
+    },
+    {
+      "login": "n1zea144",
+      "id": 366003,
+      "node_id": "MDQ6VXNlcjM2NjAwMw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/366003?v=4",
+      "html_url": "https://github.com/n1zea144",
+      "contributions": 2167
+    },
+    {
+      "login": "gideonite",
+      "id": 2163686,
+      "node_id": "MDQ6VXNlcjIxNjM2ODY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2163686?v=4",
+      "html_url": "https://github.com/gideonite",
+      "contributions": 818
+    },
+    {
+      "login": "armish",
+      "id": 7809,
+      "node_id": "MDQ6VXNlcjc4MDk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7809?v=4",
+      "html_url": "https://github.com/armish",
+      "contributions": 315
     },
     {
       "login": "pieterlukasse",
@@ -1198,7 +1136,159 @@
       "node_id": "MDQ6VXNlcjI5MDAzMDM=",
       "avatar_url": "https://avatars.githubusercontent.com/u/2900303?v=4",
       "html_url": "https://github.com/pieterlukasse",
+      "contributions": 190
+    },
+    {
+      "login": "sheridancbio",
+      "id": 7747489,
+      "node_id": "MDQ6VXNlcjc3NDc0ODk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7747489?v=4",
+      "html_url": "https://github.com/sheridancbio",
+      "contributions": 11
+    },
+    {
+      "login": "zheins",
+      "id": 10240498,
+      "node_id": "MDQ6VXNlcjEwMjQwNDk4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10240498?v=4",
+      "html_url": "https://github.com/zheins",
+      "contributions": 157
+    },
+    {
+      "login": "istemi-bahceci",
+      "id": 8645080,
+      "node_id": "MDQ6VXNlcjg2NDUwODA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8645080?v=4",
+      "html_url": "https://github.com/istemi-bahceci",
+      "contributions": 109
+    },
+    {
+      "login": "JiaoJiao123",
+      "id": 13951023,
+      "node_id": "MDQ6VXNlcjEzOTUxMDIz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13951023?v=4",
+      "html_url": "https://github.com/JiaoJiao123",
+      "contributions": 97
+    },
+    {
+      "login": "ao508",
+      "id": 15623749,
+      "node_id": "MDQ6VXNlcjE1NjIzNzQ5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/15623749?v=4",
+      "html_url": "https://github.com/ao508",
+      "contributions": 90
+    },
+    {
+      "login": "nschultz-sketch",
+      "id": 266164024,
+      "node_id": "U_kgDOD91XOA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/266164024?v=4",
+      "html_url": "https://github.com/nschultz-sketch",
+      "contributions": 79
+    },
+    {
+      "login": "mandawilson",
+      "id": 1458628,
+      "node_id": "MDQ6VXNlcjE0NTg2Mjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1458628?v=4",
+      "html_url": "https://github.com/mandawilson",
+      "contributions": 71
+    },
+    {
+      "login": "spcar7",
+      "id": 4613495,
+      "node_id": "MDQ6VXNlcjQ2MTM0OTU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4613495?v=4",
+      "html_url": "https://github.com/spcar7",
+      "contributions": 69
+    },
+    {
+      "login": "tmazor",
+      "id": 10508276,
+      "node_id": "MDQ6VXNlcjEwNTA4Mjc2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10508276?v=4",
+      "html_url": "https://github.com/tmazor",
+      "contributions": 67
+    },
+    {
+      "login": "ritikakundra",
+      "id": 12007862,
+      "node_id": "MDQ6VXNlcjEyMDA3ODYy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12007862?v=4",
+      "html_url": "https://github.com/ritikakundra",
+      "contributions": 61
+    },
+    {
+      "login": "JREastonMarks",
+      "id": 852003,
+      "node_id": "MDQ6VXNlcjg1MjAwMw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/852003?v=4",
+      "html_url": "https://github.com/JREastonMarks",
+      "contributions": 28
+    },
+    {
+      "login": "forus",
+      "id": 492175,
+      "node_id": "MDQ6VXNlcjQ5MjE3NQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/492175?v=4",
+      "html_url": "https://github.com/forus",
+      "contributions": 16
+    },
+    {
+      "login": "sbabyanusha",
+      "id": 61431648,
+      "node_id": "MDQ6VXNlcjYxNDMxNjQ4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/61431648?v=4",
+      "html_url": "https://github.com/sbabyanusha",
       "contributions": 10
+    },
+    {
+      "login": "rmadupuri",
+      "id": 34350829,
+      "node_id": "MDQ6VXNlcjM0MzUwODI5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/34350829?v=4",
+      "html_url": "https://github.com/rmadupuri",
+      "contributions": 5
+    },
+    {
+      "login": "nr23730",
+      "id": 20756025,
+      "node_id": "MDQ6VXNlcjIwNzU2MDI1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20756025?v=4",
+      "html_url": "https://github.com/nr23730",
+      "contributions": 5
+    },
+    {
+      "login": "jamesqo",
+      "id": 9159214,
+      "node_id": "MDQ6VXNlcjkxNTkyMTQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9159214?v=4",
+      "html_url": "https://github.com/jamesqo",
+      "contributions": 5
+    },
+    {
+      "login": "MatthijsPon",
+      "id": 63122826,
+      "node_id": "MDQ6VXNlcjYzMTIyODI2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/63122826?v=4",
+      "html_url": "https://github.com/MatthijsPon",
+      "contributions": 3
+    },
+    {
+      "login": "Copilot",
+      "id": 198982749,
+      "node_id": "BOT_kgDOC9w8XQ",
+      "avatar_url": "https://avatars.githubusercontent.com/in/1143301?v=4",
+      "html_url": "https://github.com/apps/copilot-swe-agent",
+      "contributions": 1
+    },
+    {
+      "login": "sgicbpc",
+      "id": 152502226,
+      "node_id": "U_kgDOCRb_0g",
+      "avatar_url": "https://avatars.githubusercontent.com/u/152502226?v=4",
+      "html_url": "https://github.com/sgicbpc",
+      "contributions": 1
     }
   ],
   "activeOrg": true

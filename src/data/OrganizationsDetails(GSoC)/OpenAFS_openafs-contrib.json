@@ -2,7 +2,7 @@
   "name": "OpenAFS",
   "image_url": "https://summerofcode.withgoogle.com/media/org/openafs/hhf0h2zemmqes7kt-360.png",
   "image_background_color": "#ffffff",
-  "description": "An opensource distributed filesystem product.",
+  "description": "An open source distributed filesystem.",
   "url": "https://www.openafs.org",
   "category": [
     "Data",
@@ -32,7 +32,8 @@
   "facebook_url": null,
   "year": [
     2022,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2022": [
@@ -53,10 +54,44 @@
         "project_url": "https://summerofcode.withgoogle.com/archive/2022/projects/OctjqIBP/"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Implementing Multi-page Folio Support in OpenAFS Linux Kernel Module",
+        "short_description": "This project enhances the OpenAFS Linux kernel module with multi-page folio support, addressing a key performance limitation in the current...",
+        "description": "This project enhances the OpenAFS Linux kernel module with multi-page folio support, addressing a key performance limitation in the current implementation. OpenAFS currently interacts with the Linux kernel's memory management system through single-page operations, despite recent kernel versions offering folio APIs capable of managing multiple contiguous pages as a single unit.\n\nI will implement comprehensive multi-page folio support in OpenAFS by modifying key components of the cache manager, particularly focusing on the VFS interface layer where the largest performance benefits can be realized. The implementation will optimize read and write paths to efficiently handle larger memory regions while maintaining backward compatibility with older kernel versions through autoconf detection and conditional compilation.\n\nBy the end of the project, I will deliver: (1) A complete implementation of multi-page folio support that improves performance, especially for sequential read operations common in application deployment; (2) A comprehensive testing framework verifying functionality across multiple kernel versions; (3) Detailed performance benchmarks demonstrating throughput and resource utilization improvements; and (4) Thorough documentation of implementation details to facilitate future maintenance. All code will be submitted as incremental, well-structured patches adhering to OpenAFS coding standards.",
+        "student_name": "Sushil Pandey",
+        "code_url": "https://docs.google.com/document/d/1EtV4LZotdTTuC9wVTKG11skJIzH4_LUK9jkP30_QFFs/edit?usp=sharing",
+        "proposal_id": "5qLpnxuN",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/ChCleqd6"
+      },
+      {
+        "title": "Develop a GNOME Shell Extension for OpenAFS",
+        "short_description": "This project aims to develop a GNOME Shell extension that provides a user-friendly graphical interface for managing the OpenAFS client on Linux...",
+        "description": "This project aims to develop a GNOME Shell extension that provides a user-friendly graphical interface for managing the OpenAFS client on Linux desktops. OpenAFS, a distributed file system widely used in academic and research environments, currently relies on command-line tools, which can be intimidating for users accustomed to graphical interfaces. The extension will integrate into the GNOME Shell top bar, offering a dropdown menu to start/stop the OpenAFS client, acquire and manage authentication tokens, and display key status information such as token expiration and cell connectivity. Deliverables include a fully functional extension with client control, token management, status indicators, and notifications, all developed using GJS and GNOME Shell APIs. The project will be completed over 12 weeks, with iterative development and testing to ensure a polished, user-friendly tool.",
+        "student_name": "Tejas Sonawane",
+        "code_url": "https://github.com/openafs-contrib/gnome-shell-extension-openafs/blob/main/GSoC_Final_Report.md",
+        "proposal_id": "PEI60rdE",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/dS7QYyMI"
+      }
+    ],
+    "2026": []
   },
   "githubID": "openafs-contrib",
   "repositories": [
+    {
+      "id": 31771524,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzMTc3MTUyNA==",
+      "name": "afsbotcfg",
+      "full_name": "openafs-contrib/afsbotcfg",
+      "html_url": "https://github.com/openafs-contrib/afsbotcfg",
+      "description": "OpenAFS buildbot configuration",
+      "language": "Python",
+      "stargazers_count": 2,
+      "forks_count": 6,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
     {
       "id": 163530014,
       "node_id": "MDEwOlJlcG9zaXRvcnkxNjM1MzAwMTQ=",
@@ -65,9 +100,9 @@
       "html_url": "https://github.com/openafs-contrib/ansible-openafs",
       "description": "Ansible Collection for the OpenAFS Distributed Filesystem",
       "language": "Python",
-      "stargazers_count": 8,
+      "stargazers_count": 9,
       "forks_count": 9,
-      "open_issues_count": 0,
+      "open_issues_count": 1,
       "license": {
         "key": "bsd-2-clause",
         "name": "BSD 2-Clause \"Simplified\" License",
@@ -101,40 +136,6 @@
       "topics": []
     },
     {
-      "id": 31771524,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzMTc3MTUyNA==",
-      "name": "afsbotcfg",
-      "full_name": "openafs-contrib/afsbotcfg",
-      "html_url": "https://github.com/openafs-contrib/afsbotcfg",
-      "description": "OpenAFS buildbot configuration",
-      "language": "Python",
-      "stargazers_count": 2,
-      "forks_count": 6,
-      "open_issues_count": 1,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 137937598,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMzc5Mzc1OTg=",
-      "name": "robotframework-openafslibrary",
-      "full_name": "openafs-contrib/robotframework-openafslibrary",
-      "html_url": "https://github.com/openafs-contrib/robotframework-openafslibrary",
-      "description": "Robot Framework library for OpenAFS",
-      "language": "Python",
-      "stargazers_count": 1,
-      "forks_count": 3,
-      "open_issues_count": 1,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
       "id": 362942833,
       "node_id": "MDEwOlJlcG9zaXRvcnkzNjI5NDI4MzM=",
       "name": "buildbot",
@@ -155,6 +156,100 @@
       "topics": []
     },
     {
+      "id": 137937598,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMzc5Mzc1OTg=",
+      "name": "robotframework-openafslibrary",
+      "full_name": "openafs-contrib/robotframework-openafslibrary",
+      "html_url": "https://github.com/openafs-contrib/robotframework-openafslibrary",
+      "description": "Robot Framework library for OpenAFS",
+      "language": "Python",
+      "stargazers_count": 1,
+      "forks_count": 4,
+      "open_issues_count": 0,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 49237189,
+      "node_id": "MDEwOlJlcG9zaXRvcnk0OTIzNzE4OQ==",
+      "name": "cellcc",
+      "full_name": "openafs-contrib/cellcc",
+      "html_url": "https://github.com/openafs-contrib/cellcc",
+      "description": "Framework for syncing volumes across AFS cells",
+      "language": "Perl",
+      "stargazers_count": 0,
+      "forks_count": 4,
+      "open_issues_count": 0,
+      "license": {
+        "key": "isc",
+        "name": "ISC License",
+        "spdx_id": "ISC",
+        "url": "https://api.github.com/licenses/isc",
+        "node_id": "MDc6TGljZW5zZTEw"
+      },
+      "topics": []
+    },
+    {
+      "id": 180598772,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxODA1OTg3NzI=",
+      "name": "openafs-packaging",
+      "full_name": "openafs-contrib/openafs-packaging",
+      "html_url": "https://github.com/openafs-contrib/openafs-packaging",
+      "description": null,
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 998231670,
+      "node_id": "R_kgDOO3_Odg",
+      "name": "gnome-shell-extension-openafs",
+      "full_name": "openafs-contrib/gnome-shell-extension-openafs",
+      "html_url": "https://github.com/openafs-contrib/gnome-shell-extension-openafs",
+      "description": "Displays OpenAFS token status in the GNOME panel",
+      "language": "JavaScript",
+      "stargazers_count": 4,
+      "forks_count": 5,
+      "open_issues_count": 3,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "topics": []
+    },
+    {
+      "id": 502065862,
+      "node_id": "R_kgDOHezqxg",
+      "name": "fabs",
+      "full_name": "openafs-contrib/fabs",
+      "html_url": "https://github.com/openafs-contrib/fabs",
+      "description": null,
+      "language": "Python",
+      "stargazers_count": 4,
+      "forks_count": 2,
+      "open_issues_count": 0,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
       "id": 6767969,
       "node_id": "MDEwOlJlcG9zaXRvcnk2NzY3OTY5",
       "name": "afs-tools",
@@ -171,26 +266,6 @@
         "spdx_id": "ISC",
         "url": "https://api.github.com/licenses/isc",
         "node_id": "MDc6TGljZW5zZTEw"
-      },
-      "topics": []
-    },
-    {
-      "id": 502065862,
-      "node_id": "R_kgDOHezqxg",
-      "name": "fabs",
-      "full_name": "openafs-contrib/fabs",
-      "html_url": "https://github.com/openafs-contrib/fabs",
-      "description": null,
-      "language": "Python",
-      "stargazers_count": 4,
-      "forks_count": 1,
-      "open_issues_count": 0,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
       },
       "topics": []
     },
@@ -217,8 +292,8 @@
       "description": "OpenAFS Filesystem Stress Testing Framework",
       "language": "C",
       "stargazers_count": 2,
-      "forks_count": 3,
-      "open_issues_count": 2,
+      "forks_count": 4,
+      "open_issues_count": 3,
       "license": {
         "key": "bsd-2-clause",
         "name": "BSD 2-Clause \"Simplified\" License",
@@ -283,26 +358,6 @@
       "topics": []
     },
     {
-      "id": 49237189,
-      "node_id": "MDEwOlJlcG9zaXRvcnk0OTIzNzE4OQ==",
-      "name": "cellcc",
-      "full_name": "openafs-contrib/cellcc",
-      "html_url": "https://github.com/openafs-contrib/cellcc",
-      "description": "Framework for syncing volumes across AFS cells",
-      "language": "Perl",
-      "stargazers_count": 0,
-      "forks_count": 4,
-      "open_issues_count": 0,
-      "license": {
-        "key": "isc",
-        "name": "ISC License",
-        "spdx_id": "ISC",
-        "url": "https://api.github.com/licenses/isc",
-        "node_id": "MDc6TGljZW5zZTEw"
-      },
-      "topics": []
-    },
-    {
       "id": 119130429,
       "node_id": "MDEwOlJlcG9zaXRvcnkxMTkxMzA0Mjk=",
       "name": "afsutil",
@@ -340,20 +395,6 @@
         "url": null,
         "node_id": "MDc6TGljZW5zZTA="
       },
-      "topics": []
-    },
-    {
-      "id": 180598772,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxODA1OTg3NzI=",
-      "name": "openafs-rpm-packaging",
-      "full_name": "openafs-contrib/openafs-rpm-packaging",
-      "html_url": "https://github.com/openafs-contrib/openafs-rpm-packaging",
-      "description": null,
-      "language": null,
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
       "topics": []
     },
     {
@@ -438,15 +479,7 @@
       "node_id": "MDQ6VXNlcjExMTAyMjY=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1110226?v=4",
       "html_url": "https://github.com/meffie",
-      "contributions": 870
-    },
-    {
-      "login": "rbrunckhorst",
-      "id": 86586033,
-      "node_id": "MDQ6VXNlcjg2NTg2MDMz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/86586033?v=4",
-      "html_url": "https://github.com/rbrunckhorst",
-      "contributions": 7
+      "contributions": 874
     },
     {
       "login": "CheyenneWills",
@@ -457,6 +490,30 @@
       "contributions": 6
     },
     {
+      "login": "asedeno",
+      "id": 28302,
+      "node_id": "MDQ6VXNlcjI4MzAy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/28302?v=4",
+      "html_url": "https://github.com/asedeno",
+      "contributions": 1
+    },
+    {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "html_url": "https://github.com/apps/dependabot",
+      "contributions": 10
+    },
+    {
+      "login": "rbrunckhorst",
+      "id": 86586033,
+      "node_id": "MDQ6VXNlcjg2NTg2MDMz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/86586033?v=4",
+      "html_url": "https://github.com/rbrunckhorst",
+      "contributions": 7
+    },
+    {
       "login": "mvita",
       "id": 7241786,
       "node_id": "MDQ6VXNlcjcyNDE3ODY=",
@@ -465,20 +522,20 @@
       "contributions": 16
     },
     {
-      "login": "dependabot[bot]",
-      "id": 49699333,
-      "node_id": "MDM6Qm90NDk2OTkzMzM=",
-      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-      "html_url": "https://github.com/apps/dependabot",
-      "contributions": 9
-    },
-    {
       "login": "rissson",
       "id": 18313093,
       "node_id": "MDQ6VXNlcjE4MzEzMDkz",
       "avatar_url": "https://avatars.githubusercontent.com/u/18313093?v=4",
       "html_url": "https://github.com/rissson",
       "contributions": 4
+    },
+    {
+      "login": "gsvolt",
+      "id": 46934,
+      "node_id": "MDQ6VXNlcjQ2OTM0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46934?v=4",
+      "html_url": "https://github.com/gsvolt",
+      "contributions": 29
     },
     {
       "login": "sna-cmarko",

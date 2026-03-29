@@ -31,7 +31,7 @@
     "angular",
     "kotlin"
   ],
-  "irc_channel": "https://bit.ly/mifos-slack",
+  "irc_channel": "https://mifos.short.gy/slack",
   "contact_email": "mailto:info@mifos.org",
   "mailing_list": "https://mifos.org/resources/community/communications/",
   "twitter_url": "https://twitter.com/mifos",
@@ -46,7 +46,8 @@
     2022,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2016": [
@@ -798,21 +799,140 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/pxKTLC5J"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Reactive Loan Risk Assessment Engine for Mifos",
+        "short_description": "Provide financial institutions with real-time insights into loan risk, helping them make better lending decisions. A reactive backend ensures the...",
+        "description": "Provide financial institutions with real-time insights into loan risk, helping them make better lending decisions.\nA reactive backend ensures the system can handle a growing number of requests as Mifos deployments expand.\nImproved risk assessment can lead to more responsible lending practices, ultimately benefiting underserved communities.\nCreate a dedicated microservice in Java that handles loan risk assessment asynchronously.\nUtilize reactive programming paradigms to ensure scalability and high throughput.\n\nDesign and implement a configurable risk scoring model that can incorporate multiple factors such as client financial history, repayment behavior, and external credit ratings.\nAllow for model tuning via configuration, so institutions can adapt the scoring criteria to local requirements.",
+        "student_name": "Abhinav R Cillanki",
+        "code_url": "https://gist.github.com/JebronLames32/b74ff1ac089722d9db8530d610b5e9fb",
+        "proposal_id": "dTGax7Ha",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/v2MnBbus"
+      },
+      {
+        "title": "AI bot for community support",
+        "short_description": "The Mifos community has grown significantly over the years, along with the increasing number of projects and discussions happening across its...",
+        "description": "The Mifos community has grown significantly over the years, along with the increasing \nnumber of projects and discussions happening across its platforms. Newcomers, as well \nas contributors unfamiliar with specific parts of the ecosystem, often struggle to \nnavigate and understand the breadth of information shared. While the general Slack \nchannels host a wealth of discussions, support is inconsistent and depends on the \navailability and responsiveness of community members. Similarly, valuable insights are \noften scattered across community blogs, mailing lists, and Jira tickets, making it \nchallenging to locate relevant information quickly. \nTo address these challenges, this project proposes the development of an AI-powered \nchatbot that leverages messages from Slack channels, posts from community blogs, \nupdates from Jira, and other conversational and announcement platforms used by the \nMifos Initiative. The chatbot will be capable of answering queries related to project \nupdates, community decisions, usage guidance, and more—based on real-time \ninformation and past conversations. The core system will utilize a Retrieval-Augmented \nGeneration (RAG) pipeline to dynamically pull relevant data from these sources and \nserve accurate responses to user questions. The system will also evaluate different vector \nstores and embedding strategies to optimize retrieval from unstructured conversational \ndata. \nBy the end of the project, the Mifos Initiative will have an intelligent AI assistant that \nsignificantly improves community support, provides instant clarity on ongoing \ndiscussions, and makes the ecosystem more approachable for contributors at all levels.",
+        "student_name": "Aru Sharma",
+        "code_url": "https://github.com/openMF/community-ai/tree/main/community-chatbot",
+        "proposal_id": "xRV5rENJ",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/ffITbKjg"
+      },
+      {
+        "title": "AI-Driven Architectural Test for MIFOS Payment Hub EE",
+        "short_description": "The MIFOS Payment Hub EE (PH-EE) is a microservice-based financial infrastructure requiring high availability, security, and resilience. However,...",
+        "description": "The MIFOS Payment Hub EE (PH-EE) is a microservice-based financial infrastructure requiring high availability, security, and resilience. However, systematic architectural testing—especially under failure and stress conditions—is currently limited.\n\nThis project introduces an AI-driven testing framework designed to assess and improve PH-EE’s robustness by simulating faults, generating and analyzing synthetic logs, and applying machine learning models to detect anomalies and predict failures.\n\nUsing tools like OpenTelemetry, Prometheus, Elasticsearch/Kibana, and Isolation Forest/Time-Series models, the framework will monitor service behavior, generate failure scenarios, and highlight weak points in system architecture. It will provide visual dashboards, anomaly tagging, and metrics to guide debugging and resilience improvements.\n\nDeliverables include:\nArchitecture mapping and categorization of critical PH-EE components\nSynthetic log generation simulating realistic failure patterns\nIntegration of AI-based anomaly detection models\nDashboards and visualization for observability (Grafana, Kibana)\nA reproducible proof-of-concept and documentation\n\nThis project will empower MIFOS developers and adopters with actionable insights to improve system health, scalability, and fault tolerance through intelligent architectural testing",
+        "student_name": "Azah Norbline",
+        "code_url": "https://github.com/openMF/ph-ee-ai-arch-test",
+        "proposal_id": "cvm3k0hc",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/SHr7TT0a"
+      },
+      {
+        "title": "Build new Modern Web UI for Mifos X using ShadCN Reusable Components",
+        "short_description": "This project proposes building a new, modern web UI for Mifos X using React, Tailwind CSS, TypeScript, and ShadCN components. The new Mifos X will be...",
+        "description": "This project proposes building a new, modern web UI for Mifos X using React, Tailwind CSS, TypeScript, and ShadCN components. The new Mifos X will be integrated with the Apache Fineract backend using the official TypeScript API client to ensure seamless data flow and backend connectivity. Deliverables include a fully responsive, modular UI for Mifos X modules and complete integration with Fineract APIs. The new Mifos X will enhance user experience and provide a solid foundation for future improvements.",
+        "student_name": "Craig Rosario",
+        "code_url": "https://gist.github.com/Craig-Rosario/985588b2576f45686340557d5299c89a",
+        "proposal_id": "PQsVVIjf",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/A2cgOvZ1"
+      },
+      {
+        "title": "Mifos Gazelle: Support for ARM",
+        "short_description": "The problem I am trying to solve is to add ARM support. Right now, when the CircleCI pipeline is triggered, it pushes a Docker image that only...",
+        "description": "The problem I am trying to solve is to add ARM support. Right now, when the CircleCI pipeline is triggered, it pushes a Docker image that only supports the AMD64 architecture and does not support ARM architecture. I plan to solve this issue by using Docker's buildx functionality to build multi-architecture images. As a deliverable by the end of the tenure, we will have a shell script which, when run, will execute the circleci/config.yml associated with the repository. This will result in the creation of maintainable and portable code.",
+        "student_name": "Devarsh D Shah",
+        "code_url": "https://mifosforge.jira.com/browse/GAZ-12",
+        "proposal_id": "KphnwOht",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/6mc2LbTU"
+      },
+      {
+        "title": "Usability Improvements for Mifos X Web App",
+        "short_description": "The Mifos X Web App is an important tool that helps provide financial services to people around the world. This project aims to make the app easier...",
+        "description": "The Mifos X Web App is an important tool that helps provide financial services to people around the world. This project aims to make the app easier to use and more modern. We’ll finish switching it over to use a TypeScript client generated from OpenAPI, update it to the latest version of Angular, and improve the design so it’s more user-friendly. We’ll also work on better translations, accessibility for all users, and add clearer data visualizations using Apache Superset. These changes will make the app faster, more efficient, and easier for everyone to use.",
+        "student_name": "Gopi Kishan",
+        "code_url": "https://gist.github.com/gkbishnoi07/e6bb2b5d43262dd07dc035531b4dfba9",
+        "proposal_id": "WKvoD8zG",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/SbIHv90C"
+      },
+      {
+        "title": "Making Mobile Wallet Deployment-Ready for G2P and Merchant Use Cases",
+        "short_description": "The Mifos Mobile Wallet is a powerful reference application aimed at accelerating financial inclusion. However, to be effectively used in real-world...",
+        "description": "The Mifos Mobile Wallet is a powerful reference application aimed at accelerating financial inclusion. However, to be effectively used in real-world deployments especially for Government-to-Person (G2P) disbursements and merchant transactions it requires further enhancements.\n\nThis project will make the mobile wallet production-ready by addressing technical gaps and extending its capabilities. Key goals include integrating the latest version of the Mifos Payment Hub EE for seamless payments, implementing support for Request-to-Pay (R2P) using the Mifos notification framework, strengthening security, and updating the wallet to use the latest fineract-client-kmp-sdk.\n\nTo support scale and usability, CI/CD pipelines will be added for automating iOS and desktop app deployments using GitHub Actions and Fastlane. The final deliverable will be a robust, secure, and cross-platform wallet ready for real-life G2P and merchant use cases, aligned with open digital finance standards like those championed by the Open Wallet Foundation.",
+        "student_name": "Hekmatullah Amin",
+        "code_url": "https://gist.github.com/HekmatullahAmin/4e968cd7345d55968b0936ee617fef87",
+        "proposal_id": "abZfC7Rc",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/isymcaV0"
+      },
+      {
+        "title": "Integrate Mifos X with Workflow Engine/Process  Automation Tool",
+        "short_description": "As stated in the Mifos Forge, Users of Mifos have long had a need to have greater control and flexibility over creating loan and customer onboarding...",
+        "description": "As stated in the Mifos Forge, Users of Mifos have long had a need to have greater control and flexibility over creating loan and customer onboarding workflows that incorporate internal processes/steps as well as processes involving external systems. This project would center around creating an external integration with a workflow engine such as Flowable or jBPM using the Mifos X REST API as the glue. The auto-generated client library from the back-end enforces the contract between the workflow engine and the core banking system. The core banking and its REST API act as the glue. The result would be a UI-driven workflow engine to allow non-technical users to define these new custom workflows, where they could drag and drop the different steps of the process.",
+        "student_name": "Hossam Hatem Ragab",
+        "code_url": "https://gist.github.com/7ossam7atem1/75f84de1cad86e5e7e45f7ded911b7a9",
+        "proposal_id": "Q9a6NGc9",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/eyVE2lTg"
+      },
+      {
+        "title": "Generative AI to Improve Mifos Documentation",
+        "short_description": "The Mifos and Apache Fineract platforms, while offering comprehensive core banking solutions, present challenges in documentation due to their...",
+        "description": "The Mifos and Apache Fineract platforms, while offering comprehensive core banking solutions, present challenges in documentation due to their technical complexity and extensive domain-specific knowledge. To address this, the proposed project aims to leverage a class of large language models (LLMs) based on transformer architectures(especially reasoning based), to enhance documentation accessibility and user support. Building upon a preliminary LLM developed in 2024, the 2025 initiative will focus on scaling this system across the full documentation set, which involves scraping all the necessary sites,sublinks,slack channels and even youtube videos via their transcripts. This new project aims to completely revamp the way a normal Q&A chatbot does by leveraging state of the art models and latest techniques.",
+        "student_name": "Keshav Arora",
+        "code_url": "https://github.com/openMF/mcp-mifosx-self-service",
+        "proposal_id": "UbuerORo",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/RaFQCvIE"
+      },
+      {
+        "title": "Extend and Evolve UI Library of common components across all Mobile Apps",
+        "short_description": "This project aims to address the inconsistency and redundancy found across customer-facing mobile applications built on the Mifos and Fineract...",
+        "description": "This project aims to address the inconsistency and redundancy found across customer-facing mobile applications built on the Mifos and Fineract platforms. Many of these apps share common screens and workflows, but their UI components are often rebuilt from scratch, leading to fragmented design, longer development times, and poor maintainability.\n\nTo solve this, I propose to develop a unified, reusable UI component library using Jetpack Compose Multiplatform, ensuring compatibility across mobile, web, and desktop platforms. These components will be derived from shared workflows and designed according to updated design standards and guidelines developed in collaboration with our design lead. We will break down existing flows into base-level elements and reconstruct them into modular, scalable UI components.\n\nThe deliverables will include: A set of core, reusable UI components built with Compose Multiplatform, shared design system with updated design principles and standards, Git-based repository to house the UI components and associated documentation, Sample screens and workflows implemented in a reference fintech app and documentation outlining how to integrate and update apps using the shared UI library.",
+        "student_name": "Saksham_Gupta",
+        "code_url": "https://drive.google.com/file/d/1MvKzmpJakq47v5otjWfdVAp0z1jGU--v/view?usp=sharing",
+        "proposal_id": "icGD4gCz",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/94oYzKFZ"
+      },
+      {
+        "title": "Kotlin Multiplatform App Template Framework",
+        "short_description": "I propose to enhance the Mifos Initiative's Kotlin Multiplatform (KMP) Multi-Module Project Generator to streamline cross-platform application...",
+        "description": "I propose to enhance the Mifos Initiative's Kotlin Multiplatform (KMP) Multi-Module Project Generator to streamline cross-platform application development and make it more valuable for developers.\n\nMy plan is to create a customizable Material Design 3 component layer for a consistent UI across platforms, implement a unified configuration system, and enhance GitHub Actions workflows for comprehensive CI/CD. I'll develop pre-built infrastructure components (networking, database, storage), streamline dependency management with Gradle plugins, improve the sync directories system, add a type-safe API client with Ktorfit, and automate library publishing to Maven Central.\n\nWith my experience in Kotlin (3+ years) and Kotlin Multiplatform (2+ years), plus my extensive contributions to Mifos projects, I have the technical foundation to implement these enhancements successfully. I've created a detailed 15-week implementation plan with clear deliverables for each stage.\n\nThese improvements will transform the KMP Project Generator into a more powerful and user-friendly tool, benefiting both the Mifos ecosystem and the broader KMP community by reducing development time and ensuring best practices across platforms.",
+        "student_name": "Sk Niyaj Ali",
+        "code_url": "https://niyajali.github.io/niyajali/gsoc-report.html",
+        "proposal_id": "GIKah1xN",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/hJVB1kT5"
+      },
+      {
+        "title": "Mifos Gazelle: Profile/Demo Creator",
+        "short_description": "The Mifos Gazelle Profile/Demo Creator project aimed to improve the deployment experience and simplify environment configuration for demonstrations...",
+        "description": "The Mifos Gazelle Profile/Demo Creator project aimed to improve the deployment experience and simplify environment configuration for demonstrations and storyboarding. The main deliverable was a sophisticated demo-creator tool that allows organizations to set up Mifos Gazelle with custom deployments and create tailored demo data files for specific use cases and scenarios",
+        "student_name": "yashsharma127",
+        "code_url": "https://siuuu.hashnode.dev/gazelle-demo-creator-tui-and-configini-driven-deployments-gsoc-2025-with-mifos",
+        "proposal_id": "hmQtZFY1",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/pzO8onoq"
+      },
+      {
+        "title": "Credit Bureau Integration Phase 5: Plugin-Based Credit Bureau Integration and FICO Scoring",
+        "short_description": "This project proposes to improve Mifos X's loan origination capabilities by introducing a flexible, plugin-based architecture for integrating credit...",
+        "description": "This project proposes to improve Mifos X's loan origination capabilities by introducing a flexible, plugin-based architecture for integrating credit bureaus. At present, the system supports only a single provider and is tightly coupled, which makes it difficult to extend. The proposed work aims to address this by building a generalized plugin interface, enabling integration with multiple providers, and incorporating a FICO-based credit scoring mechanism. Additionally, I hope to enhance the user experience through new interfaces that support better credit insights during loan processing. The intention is to contribute a reusable and maintainable solution that aligns with Mifos X’s mission of accessible and responsible financial services.",
+        "student_name": "Yu Wati Nyi",
+        "code_url": "https://gist.github.com/yuwatidora/9f429ca56fec8c509ddc0bda2580ea31",
+        "proposal_id": "3WrM2IvT",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/GhKSEn86"
+      }
+    ],
+    "2026": []
   },
   "githubID": "openmf",
   "repositories": [
     {
-      "id": 300084129,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzMDAwODQxMjk=",
-      "name": "mifos-reporting-plugin",
-      "full_name": "openMF/mifos-reporting-plugin",
-      "html_url": "https://github.com/openMF/mifos-reporting-plugin",
-      "description": "Mifos® Reporting Plugin for Apache Fineract®",
+      "id": 761591308,
+      "node_id": "R_kgDOLWT2DA",
+      "name": "security-plugin",
+      "full_name": "openMF/security-plugin",
+      "html_url": "https://github.com/openMF/security-plugin",
+      "description": "Self Service Plugin for Apache Fineract",
       "language": "Java",
-      "stargazers_count": 28,
-      "forks_count": 51,
-      "open_issues_count": 2,
+      "stargazers_count": 6,
+      "forks_count": 9,
+      "open_issues_count": 3,
       "license": {
         "key": "mpl-2.0",
         "name": "Mozilla Public License 2.0",
@@ -823,6 +943,167 @@
       "topics": []
     },
     {
+      "id": 1116169083,
+      "node_id": "R_kgDOQodjew",
+      "name": "mifos-x-group-banking",
+      "full_name": "openMF/mifos-x-group-banking",
+      "html_url": "https://github.com/openMF/mifos-x-group-banking",
+      "description": null,
+      "language": "Kotlin",
+      "stargazers_count": 4,
+      "forks_count": 3,
+      "open_issues_count": 0,
+      "license": {
+        "key": "mpl-2.0",
+        "name": "Mozilla Public License 2.0",
+        "spdx_id": "MPL-2.0",
+        "url": "https://api.github.com/licenses/mpl-2.0",
+        "node_id": "MDc6TGljZW5zZTE0"
+      },
+      "topics": []
+    },
+    {
+      "id": 1086593168,
+      "node_id": "R_kgDOQMQYkA",
+      "name": "mifos-x-open-banking",
+      "full_name": "openMF/mifos-x-open-banking",
+      "html_url": "https://github.com/openMF/mifos-x-open-banking",
+      "description": null,
+      "language": "Kotlin",
+      "stargazers_count": 1,
+      "forks_count": 2,
+      "open_issues_count": 0,
+      "license": {
+        "key": "mpl-2.0",
+        "name": "Mozilla Public License 2.0",
+        "spdx_id": "MPL-2.0",
+        "url": "https://api.github.com/licenses/mpl-2.0",
+        "node_id": "MDc6TGljZW5zZTE0"
+      },
+      "topics": []
+    },
+    {
+      "id": 955487988,
+      "node_id": "R_kgDOOPOW9A",
+      "name": "mcp-mifosx",
+      "full_name": "openMF/mcp-mifosx",
+      "html_url": "https://github.com/openMF/mcp-mifosx",
+      "description": "Model Context Protocol - MCP for Mifos X",
+      "language": "Java",
+      "stargazers_count": 19,
+      "forks_count": 28,
+      "open_issues_count": 7,
+      "license": {
+        "key": "mpl-2.0",
+        "name": "Mozilla Public License 2.0",
+        "spdx_id": "MPL-2.0",
+        "url": "https://api.github.com/licenses/mpl-2.0",
+        "node_id": "MDc6TGljZW5zZTE0"
+      },
+      "topics": [
+        "agentic",
+        "agentic-ai",
+        "ai",
+        "backoffice",
+        "banking",
+        "corebanking",
+        "financialinclusion",
+        "fintech",
+        "llm",
+        "loan",
+        "savings"
+      ]
+    },
+    {
+      "id": 300084129,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzMDAwODQxMjk=",
+      "name": "mifos-reporting-plugin",
+      "full_name": "openMF/mifos-reporting-plugin",
+      "html_url": "https://github.com/openMF/mifos-reporting-plugin",
+      "description": "Mifos® X Reporting Plugin module - compatible with Apache Fineract® backend",
+      "language": "Java",
+      "stargazers_count": 34,
+      "forks_count": 82,
+      "open_issues_count": 5,
+      "license": {
+        "key": "mpl-2.0",
+        "name": "Mozilla Public License 2.0",
+        "spdx_id": "MPL-2.0",
+        "url": "https://api.github.com/licenses/mpl-2.0",
+        "node_id": "MDc6TGljZW5zZTE0"
+      },
+      "topics": []
+    },
+    {
+      "id": 134337850,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMzQzMzc4NTA=",
+      "name": "web-app",
+      "full_name": "openMF/web-app",
+      "html_url": "https://github.com/openMF/web-app",
+      "description": "Mifos X Web App is the Web-UI component of Mifos X. It currently uses Apache Fineract as the backend and leverages the popular Angular framework.  Main Branch is the latest Stable Release, Dev should be used for all development ahead of release.",
+      "language": "TypeScript",
+      "stargazers_count": 356,
+      "forks_count": 898,
+      "open_issues_count": 45,
+      "license": {
+        "key": "mpl-2.0",
+        "name": "Mozilla Public License 2.0",
+        "spdx_id": "MPL-2.0",
+        "url": "https://api.github.com/licenses/mpl-2.0",
+        "node_id": "MDc6TGljZW5zZTE0"
+      },
+      "topics": [
+        "angular-7",
+        "angular-material-7",
+        "hacktoberfest",
+        "mifosx-platform",
+        "scss",
+        "typescript"
+      ]
+    },
+    {
+      "id": 997563432,
+      "node_id": "R_kgDOO3WcKA",
+      "name": "mifos-gazelle-demo-creator",
+      "full_name": "openMF/mifos-gazelle-demo-creator",
+      "html_url": "https://github.com/openMF/mifos-gazelle-demo-creator",
+      "description": "This repo contains the code for the demo creator for Mifos Gazelle. Note this is currently WIP. ",
+      "language": "Python",
+      "stargazers_count": 5,
+      "forks_count": 8,
+      "open_issues_count": 3,
+      "license": {
+        "key": "mpl-2.0",
+        "name": "Mozilla Public License 2.0",
+        "spdx_id": "MPL-2.0",
+        "url": "https://api.github.com/licenses/mpl-2.0",
+        "node_id": "MDc6TGljZW5zZTE0"
+      },
+      "topics": []
+    },
+    {
+      "id": 845649120,
+      "node_id": "R_kgDOMmeU4A",
+      "name": "community-ai",
+      "full_name": "openMF/community-ai",
+      "html_url": "https://github.com/openMF/community-ai",
+      "description": "This repo is a set of Mifos Community AI tools that support the Mifos products. Mifos X , Payment Hub EE, Mifos Gazelle. It is managed in Jira https://mifosforge.jira.com/jira/software/c/projects/AI/boards/100",
+      "language": "Jupyter Notebook",
+      "stargazers_count": 13,
+      "forks_count": 45,
+      "open_issues_count": 10,
+      "license": {
+        "key": "mpl-2.0",
+        "name": "Mozilla Public License 2.0",
+        "spdx_id": "MPL-2.0",
+        "url": "https://api.github.com/licenses/mpl-2.0",
+        "node_id": "MDc6TGljZW5zZTE0"
+      },
+      "topics": [
+        "hacktoberfest"
+      ]
+    },
+    {
       "id": 51283437,
       "node_id": "MDEwOlJlcG9zaXRvcnk1MTI4MzQzNw==",
       "name": "fineract",
@@ -830,9 +1111,9 @@
       "html_url": "https://github.com/openMF/fineract",
       "description": "Mirror of Apache Fineract (Incubating)",
       "language": "Java",
-      "stargazers_count": 56,
-      "forks_count": 135,
-      "open_issues_count": 0,
+      "stargazers_count": 64,
+      "forks_count": 170,
+      "open_issues_count": 3,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -843,16 +1124,150 @@
       "topics": []
     },
     {
-      "id": 761591308,
-      "node_id": "R_kgDOLWT2DA",
-      "name": "security-plugin",
-      "full_name": "openMF/security-plugin",
-      "html_url": "https://github.com/openMF/security-plugin",
-      "description": "Self Service Plugin for Apache Fineract",
+      "id": 903453348,
+      "node_id": "R_kgDONdmapA",
+      "name": "mifos-x-actionhub-publish-ios-on-firebase",
+      "full_name": "openMF/mifos-x-actionhub-publish-ios-on-firebase",
+      "html_url": "https://github.com/openMF/mifos-x-actionhub-publish-ios-on-firebase",
+      "description": "This GitHub Action automates the process of building and publishing iOS applications to Firebase App Distribution. It handles the build process, signing, and deployment using Fastlane.",
+      "language": null,
+      "stargazers_count": 2,
+      "forks_count": 3,
+      "open_issues_count": 4,
+      "license": {
+        "key": "mpl-2.0",
+        "name": "Mozilla Public License 2.0",
+        "spdx_id": "MPL-2.0",
+        "url": "https://api.github.com/licenses/mpl-2.0",
+        "node_id": "MDc6TGljZW5zZTE0"
+      },
+      "topics": [
+        "fastlane",
+        "firebase",
+        "ios-firebase"
+      ]
+    },
+    {
+      "id": 833170344,
+      "node_id": "R_kgDOMakrqA",
+      "name": "mifos-gazelle",
+      "full_name": "openMF/mifos-gazelle",
+      "html_url": "https://github.com/openMF/mifos-gazelle",
+      "description": "Mifos-Gazelle is a DPI as a Service offering a Deployable Package for Mifos X, Payment Hub EE, and VNext. With other DPGs planned",
+      "language": "Shell",
+      "stargazers_count": 22,
+      "forks_count": 49,
+      "open_issues_count": 13,
+      "license": {
+        "key": "mpl-2.0",
+        "name": "Mozilla Public License 2.0",
+        "spdx_id": "MPL-2.0",
+        "url": "https://api.github.com/licenses/mpl-2.0",
+        "node_id": "MDc6TGljZW5zZTE0"
+      },
+      "topics": []
+    },
+    {
+      "id": 266915292,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyNjY5MTUyOTI=",
+      "name": "digital-bank-ui",
+      "full_name": "openMF/digital-bank-ui",
+      "html_url": "https://github.com/openMF/digital-bank-ui",
+      "description": "Digital Bank user interface for staff on top of Fineract CN ",
+      "language": "TypeScript",
+      "stargazers_count": 19,
+      "forks_count": 29,
+      "open_issues_count": 43,
+      "license": {
+        "key": "mpl-2.0",
+        "name": "Mozilla Public License 2.0",
+        "spdx_id": "MPL-2.0",
+        "url": "https://api.github.com/licenses/mpl-2.0",
+        "node_id": "MDc6TGljZW5zZTE0"
+      },
+      "topics": []
+    },
+    {
+      "id": 996193806,
+      "node_id": "R_kgDOO2C2Dg",
+      "name": "mifos-x-credit-bureau-plugin",
+      "full_name": "openMF/mifos-x-credit-bureau-plugin",
+      "html_url": "https://github.com/openMF/mifos-x-credit-bureau-plugin",
+      "description": null,
       "language": "Java",
-      "stargazers_count": 4,
+      "stargazers_count": 5,
       "forks_count": 7,
-      "open_issues_count": 3,
+      "open_issues_count": 14,
+      "license": {
+        "key": "mpl-2.0",
+        "name": "Mozilla Public License 2.0",
+        "spdx_id": "MPL-2.0",
+        "url": "https://api.github.com/licenses/mpl-2.0",
+        "node_id": "MDc6TGljZW5zZTE0"
+      },
+      "topics": []
+    },
+    {
+      "id": 59611171,
+      "node_id": "MDEwOlJlcG9zaXRvcnk1OTYxMTE3MQ==",
+      "name": "mifos-mobile",
+      "full_name": "openMF/mifos-mobile",
+      "html_url": "https://github.com/openMF/mifos-mobile",
+      "description": "Repository for the Mifos Mobile Banking App for clients",
+      "language": "Kotlin",
+      "stargazers_count": 344,
+      "forks_count": 824,
+      "open_issues_count": 19,
+      "license": {
+        "key": "mpl-2.0",
+        "name": "Mozilla Public License 2.0",
+        "spdx_id": "MPL-2.0",
+        "url": "https://api.github.com/licenses/mpl-2.0",
+        "node_id": "MDc6TGljZW5zZTE0"
+      },
+      "topics": [
+        "compose-multiplatform",
+        "desktop-app",
+        "ios-app",
+        "jetpack-compose",
+        "kotlin",
+        "kotlin-multiplatform",
+        "mifosx",
+        "mvvm-architecture",
+        "webapp"
+      ]
+    },
+    {
+      "id": 544912284,
+      "node_id": "R_kgDOIHqznA",
+      "name": "message-consumer",
+      "full_name": "openMF/message-consumer",
+      "html_url": "https://github.com/openMF/message-consumer",
+      "description": null,
+      "language": "Java",
+      "stargazers_count": 3,
+      "forks_count": 8,
+      "open_issues_count": 6,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 877702384,
+      "node_id": "R_kgDONFCs8A",
+      "name": "mifos-pch-switch-client",
+      "full_name": "openMF/mifos-pch-switch-client",
+      "html_url": "https://github.com/openMF/mifos-pch-switch-client",
+      "description": "Mifos vNext Client",
+      "language": "Java",
+      "stargazers_count": 0,
+      "forks_count": 6,
+      "open_issues_count": 7,
       "license": {
         "key": "mpl-2.0",
         "name": "Mozilla Public License 2.0",
@@ -871,8 +1286,8 @@
       "description": null,
       "language": "Java",
       "stargazers_count": 0,
-      "forks_count": 2,
-      "open_issues_count": 3,
+      "forks_count": 3,
+      "open_issues_count": 11,
       "license": {
         "key": "mpl-2.0",
         "name": "Mozilla Public License 2.0",
@@ -883,15 +1298,55 @@
       "topics": []
     },
     {
-      "id": 134337850,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMzQzMzc4NTA=",
-      "name": "web-app",
-      "full_name": "openMF/web-app",
-      "html_url": "https://github.com/openMF/web-app",
-      "description": "Mifos X Web App is the Web-UI component of Mifos X. It currently uses Apache Fineract as the backend and leverages the popular Angular framework.  Main Branch is the latest Stable Release, Dev should be used for all development ahead of release.",
-      "language": "TypeScript",
-      "stargazers_count": 278,
-      "forks_count": 656,
+      "id": 997580935,
+      "node_id": "R_kgDOO3Xghw",
+      "name": "mifos-x-reactive-loan-module",
+      "full_name": "openMF/mifos-x-reactive-loan-module",
+      "html_url": "https://github.com/openMF/mifos-x-reactive-loan-module",
+      "description": "This repo contains the reactive loan risk assessment module for Mifos X. This repo is currently work in progress.",
+      "language": "Java",
+      "stargazers_count": 2,
+      "forks_count": 6,
+      "open_issues_count": 11,
+      "license": {
+        "key": "mpl-2.0",
+        "name": "Mozilla Public License 2.0",
+        "spdx_id": "MPL-2.0",
+        "url": "https://api.github.com/licenses/mpl-2.0",
+        "node_id": "MDc6TGljZW5zZTE0"
+      },
+      "topics": []
+    },
+    {
+      "id": 980305332,
+      "node_id": "R_kgDOOm5FtA",
+      "name": "mifos-security-plugin",
+      "full_name": "openMF/mifos-security-plugin",
+      "html_url": "https://github.com/openMF/mifos-security-plugin",
+      "description": "Mifos X Security Plugin ",
+      "language": "Java",
+      "stargazers_count": 0,
+      "forks_count": 2,
+      "open_issues_count": 4,
+      "license": {
+        "key": "mpl-2.0",
+        "name": "Mozilla Public License 2.0",
+        "spdx_id": "MPL-2.0",
+        "url": "https://api.github.com/licenses/mpl-2.0",
+        "node_id": "MDc6TGljZW5zZTE0"
+      },
+      "topics": []
+    },
+    {
+      "id": 982216357,
+      "node_id": "R_kgDOOotupQ",
+      "name": "mifos-workflow",
+      "full_name": "openMF/mifos-workflow",
+      "html_url": "https://github.com/openMF/mifos-workflow",
+      "description": null,
+      "language": "Java",
+      "stargazers_count": 4,
+      "forks_count": 9,
       "open_issues_count": 6,
       "license": {
         "key": "mpl-2.0",
@@ -900,120 +1355,25 @@
         "url": "https://api.github.com/licenses/mpl-2.0",
         "node_id": "MDc6TGljZW5zZTE0"
       },
-      "topics": [
-        "angular-7",
-        "angular-material-7",
-        "hacktoberfest",
-        "mifosx-platform",
-        "scss",
-        "typescript"
-      ]
-    },
-    {
-      "id": 955487988,
-      "node_id": "R_kgDOOPOW9A",
-      "name": "mcp-mifosx",
-      "full_name": "openMF/mcp-mifosx",
-      "html_url": "https://github.com/openMF/mcp-mifosx",
-      "description": "Model Context Protocol - MCP for Mifos X",
-      "language": "Java",
-      "stargazers_count": 7,
-      "forks_count": 5,
-      "open_issues_count": 2,
-      "license": null,
       "topics": []
     },
     {
-      "id": 376707504,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzNzY3MDc1MDQ=",
-      "name": "ph-ee-bulk-processor",
-      "full_name": "openMF/ph-ee-bulk-processor",
-      "html_url": "https://github.com/openMF/ph-ee-bulk-processor",
-      "description": null,
-      "language": "Java",
-      "stargazers_count": 2,
-      "forks_count": 18,
-      "open_issues_count": 15,
-      "license": {
-        "key": "mpl-2.0",
-        "name": "Mozilla Public License 2.0",
-        "spdx_id": "MPL-2.0",
-        "url": "https://api.github.com/licenses/mpl-2.0",
-        "node_id": "MDc6TGljZW5zZTE0"
-      },
-      "topics": []
-    },
-    {
-      "id": 892238806,
-      "node_id": "R_kgDONS571g",
-      "name": "mifos-passcode-cmp",
-      "full_name": "openMF/mifos-passcode-cmp",
-      "html_url": "https://github.com/openMF/mifos-passcode-cmp",
-      "description": "Passcode library for compose multi-platform project.",
+      "id": 18864134,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxODg2NDEzNA==",
+      "name": "mifos-x-field-officer-app",
+      "full_name": "openMF/mifos-x-field-officer-app",
+      "html_url": "https://github.com/openMF/mifos-x-field-officer-app",
+      "description": "Mifos X Field Officer Application ",
       "language": "Kotlin",
-      "stargazers_count": 0,
-      "forks_count": 3,
-      "open_issues_count": 7,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 94566365,
-      "node_id": "MDEwOlJlcG9zaXRvcnk5NDU2NjM2NQ==",
-      "name": "mobile-wallet",
-      "full_name": "openMF/mobile-wallet",
-      "html_url": "https://github.com/openMF/mobile-wallet",
-      "description": "A reference implementation of Mifos platform wallet and payment capabilities ",
-      "language": "Kotlin",
-      "stargazers_count": 255,
-      "forks_count": 484,
-      "open_issues_count": 9,
+      "stargazers_count": 232,
+      "forks_count": 685,
+      "open_issues_count": 23,
       "license": {
         "key": "other",
         "name": "Other",
         "spdx_id": "NOASSERTION",
         "url": null,
         "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": [
-        "android",
-        "cmp",
-        "compose-multiplatform",
-        "compose-multiplatform-sample",
-        "fineract",
-        "hacktoberfest",
-        "kmm",
-        "kmp",
-        "kotlin",
-        "kotlin-multiplatform",
-        "kotlin-multiplatform-mobile",
-        "kotlin-multiplatform-sample",
-        "wallet"
-      ]
-    },
-    {
-      "id": 18864134,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxODg2NDEzNA==",
-      "name": "android-client",
-      "full_name": "openMF/android-client",
-      "html_url": "https://github.com/openMF/android-client",
-      "description": "Mifos X Field Officer Application ",
-      "language": "Kotlin",
-      "stargazers_count": 212,
-      "forks_count": 617,
-      "open_issues_count": 13,
-      "license": {
-        "key": "mpl-2.0",
-        "name": "Mozilla Public License 2.0",
-        "spdx_id": "MPL-2.0",
-        "url": "https://api.github.com/licenses/mpl-2.0",
-        "node_id": "MDc6TGljZW5zZTE0"
       },
       "topics": [
         "android-application",
@@ -1032,150 +1392,35 @@
       ]
     },
     {
-      "id": 878606241,
-      "node_id": "R_kgDONF53oQ",
-      "name": "kmp-project-template",
-      "full_name": "openMF/kmp-project-template",
-      "html_url": "https://github.com/openMF/kmp-project-template",
-      "description": "The Kotlin Multiplatform Multi-module Template generator simplifies cross-platform development by enabling shared business logic and UI components across Android, iOS, Desktop, and Web, while retaining native platform functionality.",
-      "language": "Kotlin",
-      "stargazers_count": 17,
-      "forks_count": 15,
-      "open_issues_count": 2,
-      "license": {
-        "key": "mpl-2.0",
-        "name": "Mozilla Public License 2.0",
-        "spdx_id": "MPL-2.0",
-        "url": "https://api.github.com/licenses/mpl-2.0",
-        "node_id": "MDc6TGljZW5zZTE0"
-      },
-      "topics": [
-        "compose-multiplatform",
-        "kmp",
-        "kmp-template",
-        "kmp-wizard",
-        "kotlin-multiplatform",
-        "wizard"
-      ]
-    },
-    {
-      "id": 833170344,
-      "node_id": "R_kgDOMakrqA",
-      "name": "mifos-gazelle",
-      "full_name": "openMF/mifos-gazelle",
-      "html_url": "https://github.com/openMF/mifos-gazelle",
-      "description": "Mifos-Gazelle is a DPI as a Service offering a Deployable Package for Mifos X, Payment Hub EE, and VNext. With other DPGs planned",
-      "language": "Shell",
-      "stargazers_count": 16,
-      "forks_count": 23,
-      "open_issues_count": 16,
-      "license": {
-        "key": "mpl-2.0",
-        "name": "Mozilla Public License 2.0",
-        "spdx_id": "MPL-2.0",
-        "url": "https://api.github.com/licenses/mpl-2.0",
-        "node_id": "MDc6TGljZW5zZTE0"
-      },
-      "topics": []
-    },
-    {
-      "id": 544912284,
-      "node_id": "R_kgDOIHqznA",
-      "name": "message-consumer",
-      "full_name": "openMF/message-consumer",
-      "html_url": "https://github.com/openMF/message-consumer",
-      "description": null,
-      "language": "Java",
-      "stargazers_count": 2,
-      "forks_count": 4,
-      "open_issues_count": 7,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 243861063,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNDM4NjEwNjM=",
-      "name": "ph-ee-connector-ams-mifos",
-      "full_name": "openMF/ph-ee-connector-ams-mifos",
-      "html_url": "https://github.com/openMF/ph-ee-connector-ams-mifos",
-      "description": "Account Management System connector microservice for Mifos. ",
-      "language": "Java",
-      "stargazers_count": 4,
-      "forks_count": 26,
-      "open_issues_count": 4,
-      "license": {
-        "key": "mpl-2.0",
-        "name": "Mozilla Public License 2.0",
-        "spdx_id": "MPL-2.0",
-        "url": "https://api.github.com/licenses/mpl-2.0",
-        "node_id": "MDc6TGljZW5zZTE0"
-      },
-      "topics": []
-    },
-    {
-      "id": 59611171,
-      "node_id": "MDEwOlJlcG9zaXRvcnk1OTYxMTE3MQ==",
-      "name": "mifos-mobile",
-      "full_name": "openMF/mifos-mobile",
-      "html_url": "https://github.com/openMF/mifos-mobile",
-      "description": "Repository for the Mifos Mobile Banking App for clients",
-      "language": "Kotlin",
-      "stargazers_count": 310,
-      "forks_count": 736,
-      "open_issues_count": 4,
-      "license": {
-        "key": "mpl-2.0",
-        "name": "Mozilla Public License 2.0",
-        "spdx_id": "MPL-2.0",
-        "url": "https://api.github.com/licenses/mpl-2.0",
-        "node_id": "MDc6TGljZW5zZTE0"
-      },
-      "topics": [
-        "android-application",
-        "hilt-dependency-injection",
-        "jetpack-compose",
-        "kotlin",
-        "kotlin-flows",
-        "mifosx",
-        "mvvm-architecture"
-      ]
-    },
-    {
-      "id": 877702384,
-      "node_id": "R_kgDONFCs8A",
-      "name": "mifos-vnext-client",
-      "full_name": "openMF/mifos-vnext-client",
-      "html_url": "https://github.com/openMF/mifos-vnext-client",
-      "description": "Mifos vNext Client",
-      "language": "Java",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 1,
-      "license": {
-        "key": "mpl-2.0",
-        "name": "Mozilla Public License 2.0",
-        "spdx_id": "MPL-2.0",
-        "url": "https://api.github.com/licenses/mpl-2.0",
-        "node_id": "MDc6TGljZW5zZTE0"
-      },
-      "topics": []
-    },
-    {
-      "id": 982216357,
-      "node_id": "R_kgDOOotupQ",
-      "name": "mifos-workflow",
-      "full_name": "openMF/mifos-workflow",
-      "html_url": "https://github.com/openMF/mifos-workflow",
+      "id": 973839355,
+      "node_id": "R_kgDOOgub-w",
+      "name": "mifos-x-actionhub-publish-library-kmp",
+      "full_name": "openMF/mifos-x-actionhub-publish-library-kmp",
+      "html_url": "https://github.com/openMF/mifos-x-actionhub-publish-library-kmp",
       "description": null,
       "language": null,
+      "stargazers_count": 2,
+      "forks_count": 1,
+      "open_issues_count": 6,
+      "license": {
+        "key": "mpl-2.0",
+        "name": "Mozilla Public License 2.0",
+        "spdx_id": "MPL-2.0",
+        "url": "https://api.github.com/licenses/mpl-2.0",
+        "node_id": "MDc6TGljZW5zZTE0"
+      },
+      "topics": []
+    },
+    {
+      "id": 1155464088,
+      "node_id": "R_kgDORN77mA",
+      "name": "mifos-x-reporting-plugin-birt",
+      "full_name": "openMF/mifos-x-reporting-plugin-birt",
+      "html_url": "https://github.com/openMF/mifos-x-reporting-plugin-birt",
+      "description": "Mifos® X Reporting Plugin module - compatible with Apache Fineract® backend that is using BIRT",
+      "language": "Java",
       "stargazers_count": 0,
-      "forks_count": 0,
+      "forks_count": 7,
       "open_issues_count": 0,
       "license": {
         "key": "mpl-2.0",
@@ -1187,30 +1432,16 @@
       "topics": []
     },
     {
-      "id": 755402942,
-      "node_id": "R_kgDOLQaIvg",
-      "name": "mifosx-platform",
-      "full_name": "openMF/mifosx-platform",
-      "html_url": "https://github.com/openMF/mifosx-platform",
-      "description": "Mifos X on Docker Compose",
-      "language": "Shell",
-      "stargazers_count": 7,
-      "forks_count": 5,
-      "open_issues_count": 1,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 268524716,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNjg1MjQ3MTY=",
-      "name": "fineract-android-sdk",
-      "full_name": "openMF/fineract-android-sdk",
-      "html_url": "https://github.com/openMF/fineract-android-sdk",
-      "description": "This is architecture repository for mifos-android-sdk",
+      "id": 94566365,
+      "node_id": "MDEwOlJlcG9zaXRvcnk5NDU2NjM2NQ==",
+      "name": "mifos-pay",
+      "full_name": "openMF/mifos-pay",
+      "html_url": "https://github.com/openMF/mifos-pay",
+      "description": "A reference implementation of Mifos platform wallet and payment capabilities ",
       "language": "Kotlin",
-      "stargazers_count": 9,
-      "forks_count": 15,
-      "open_issues_count": 27,
+      "stargazers_count": 316,
+      "forks_count": 539,
+      "open_issues_count": 19,
       "license": {
         "key": "mpl-2.0",
         "name": "Mozilla Public License 2.0",
@@ -1220,8 +1451,99 @@
       },
       "topics": [
         "android",
-        "architecture"
+        "cmp",
+        "compose-multiplatform",
+        "compose-multiplatform-sample",
+        "fineract",
+        "hacktoberfest",
+        "kmm",
+        "kmp",
+        "kotlin",
+        "kotlin-multiplatform",
+        "kotlin-multiplatform-mobile",
+        "kotlin-multiplatform-sample",
+        "wallet"
       ]
+    },
+    {
+      "id": 1128933602,
+      "node_id": "R_kgDOQ0oo4g",
+      "name": "ph-ee-connector-mccbs",
+      "full_name": "openMF/ph-ee-connector-mccbs",
+      "html_url": "https://github.com/openMF/ph-ee-connector-mccbs",
+      "description": "Connector for Payment Hub EE to Mastercard Cross Border Services Solution - Currently this is a demo and non-production. All commits should be to dev, dev to Main is done at point of release. ",
+      "language": "Java",
+      "stargazers_count": 0,
+      "forks_count": 1,
+      "open_issues_count": 0,
+      "license": {
+        "key": "mpl-2.0",
+        "name": "Mozilla Public License 2.0",
+        "spdx_id": "MPL-2.0",
+        "url": "https://api.github.com/licenses/mpl-2.0",
+        "node_id": "MDc6TGljZW5zZTE0"
+      },
+      "topics": []
+    },
+    {
+      "id": 623803554,
+      "node_id": "R_kgDOJS58og",
+      "name": "ph-ee-identity-account-mapper",
+      "full_name": "openMF/ph-ee-identity-account-mapper",
+      "html_url": "https://github.com/openMF/ph-ee-identity-account-mapper",
+      "description": "Identity Account Mapper Module for Payment Hub EE",
+      "language": "Java",
+      "stargazers_count": 2,
+      "forks_count": 12,
+      "open_issues_count": 8,
+      "license": {
+        "key": "mpl-2.0",
+        "name": "Mozilla Public License 2.0",
+        "spdx_id": "MPL-2.0",
+        "url": "https://api.github.com/licenses/mpl-2.0",
+        "node_id": "MDc6TGljZW5zZTE0"
+      },
+      "topics": []
+    },
+    {
+      "id": 302049630,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzMDIwNDk2MzA=",
+      "name": "ph-ee-connector-gsma-mm",
+      "full_name": "openMF/ph-ee-connector-gsma-mm",
+      "html_url": "https://github.com/openMF/ph-ee-connector-gsma-mm",
+      "description": "Connector for Payment Hub EE for GSMA Mobile Money API",
+      "language": "Java",
+      "stargazers_count": 4,
+      "forks_count": 17,
+      "open_issues_count": 8,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 243861701,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyNDM4NjE3MDE=",
+      "name": "ph-ee-operations-app",
+      "full_name": "openMF/ph-ee-operations-app",
+      "html_url": "https://github.com/openMF/ph-ee-operations-app",
+      "description": "Operations web application",
+      "language": "Java",
+      "stargazers_count": 5,
+      "forks_count": 36,
+      "open_issues_count": 17,
+      "license": {
+        "key": "mpl-2.0",
+        "name": "Mozilla Public License 2.0",
+        "spdx_id": "MPL-2.0",
+        "url": "https://api.github.com/licenses/mpl-2.0",
+        "node_id": "MDc6TGljZW5zZTE0"
+      },
+      "topics": []
     },
     {
       "id": 197382845,
@@ -1232,8 +1554,8 @@
       "description": "Mobile based PPI survey tool powered by Google's on device machine learning SDK, MLKit. ",
       "language": "Jupyter Notebook",
       "stargazers_count": 18,
-      "forks_count": 17,
-      "open_issues_count": 78,
+      "forks_count": 18,
+      "open_issues_count": 77,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -1250,16 +1572,16 @@
       ]
     },
     {
-      "id": 980305332,
-      "node_id": "R_kgDOOm5FtA",
-      "name": "mifos-security-plugin",
-      "full_name": "openMF/mifos-security-plugin",
-      "html_url": "https://github.com/openMF/mifos-security-plugin",
-      "description": "Mifos X Security Plugin ",
-      "language": null,
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
+      "id": 997500091,
+      "node_id": "R_kgDOO3Skuw",
+      "name": "mifos-x-web-app-react",
+      "full_name": "openMF/mifos-x-web-app-react",
+      "html_url": "https://github.com/openMF/mifos-x-web-app-react",
+      "description": "This repo is for the react version of the Mifos-X web-app.  This is currently not recommended for deployment and is work in progress. Main branch contains release code.",
+      "language": "TypeScript",
+      "stargazers_count": 10,
+      "forks_count": 41,
+      "open_issues_count": 29,
       "license": {
         "key": "mpl-2.0",
         "name": "Mozilla Public License 2.0",
@@ -1267,161 +1589,6 @@
         "url": "https://api.github.com/licenses/mpl-2.0",
         "node_id": "MDc6TGljZW5zZTE0"
       },
-      "topics": []
-    },
-    {
-      "id": 973839355,
-      "node_id": "R_kgDOOgub-w",
-      "name": "mifos-x-actionhub-publish-library-kmp",
-      "full_name": "openMF/mifos-x-actionhub-publish-library-kmp",
-      "html_url": "https://github.com/openMF/mifos-x-actionhub-publish-library-kmp",
-      "description": null,
-      "language": null,
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 1,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 668872515,
-      "node_id": "R_kgDOJ94vQw",
-      "name": "fineract-advancly",
-      "full_name": "openMF/fineract-advancly",
-      "html_url": "https://github.com/openMF/fineract-advancly",
-      "description": "Apache Fineract",
-      "language": "Java",
-      "stargazers_count": 1,
-      "forks_count": 10,
-      "open_issues_count": 0,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 896620812,
-      "node_id": "R_kgDONXFZDA",
-      "name": "mifos-x-actionhub",
-      "full_name": "openMF/mifos-x-actionhub",
-      "html_url": "https://github.com/openMF/mifos-x-actionhub",
-      "description": "GitHub Actions Workflows for Multi-Platform App Development",
-      "language": null,
-      "stargazers_count": 2,
-      "forks_count": 3,
-      "open_issues_count": 5,
-      "license": null,
-      "topics": [
-        "actions",
-        "ci-cd",
-        "github-actions",
-        "kmp-sample"
-      ]
-    },
-    {
-      "id": 116408172,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMTY0MDgxNzI=",
-      "name": "mifos-passcode",
-      "full_name": "openMF/mifos-passcode",
-      "html_url": "https://github.com/openMF/mifos-passcode",
-      "description": "Library for passcode generation on different mobile apps. ",
-      "language": "Kotlin",
-      "stargazers_count": 17,
-      "forks_count": 36,
-      "open_issues_count": 33,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 912924551,
-      "node_id": "R_kgDONmofhw",
-      "name": "mifos-x-app-health-kmp",
-      "full_name": "openMF/mifos-x-app-health-kmp",
-      "html_url": "https://github.com/openMF/mifos-x-app-health-kmp",
-      "description": null,
-      "language": "Kotlin",
-      "stargazers_count": 2,
-      "forks_count": 1,
-      "open_issues_count": 23,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 903453348,
-      "node_id": "R_kgDONdmapA",
-      "name": "mifos-x-actionhub-publish-ios-on-firebase",
-      "full_name": "openMF/mifos-x-actionhub-publish-ios-on-firebase",
-      "html_url": "https://github.com/openMF/mifos-x-actionhub-publish-ios-on-firebase",
-      "description": null,
-      "language": null,
-      "stargazers_count": 2,
-      "forks_count": 2,
-      "open_issues_count": 1,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 964692928,
-      "node_id": "R_kgDOOYALwA",
-      "name": "mifos-x-actionhub-publish-ios-on-appstore",
-      "full_name": "openMF/mifos-x-actionhub-publish-ios-on-appstore",
-      "html_url": "https://github.com/openMF/mifos-x-actionhub-publish-ios-on-appstore",
-      "description": null,
-      "language": null,
-      "stargazers_count": 0,
-      "forks_count": 1,
-      "open_issues_count": 1,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": []
-    },
-    {
-      "id": 243860795,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNDM4NjA3OTU=",
-      "name": "ph-ee-connector-channel",
-      "full_name": "openMF/ph-ee-connector-channel",
-      "html_url": "https://github.com/openMF/ph-ee-connector-channel",
-      "description": "Channel connector microservice",
-      "language": "Java",
-      "stargazers_count": 4,
-      "forks_count": 31,
-      "open_issues_count": 5,
-      "license": {
-        "key": "mpl-2.0",
-        "name": "Mozilla Public License 2.0",
-        "spdx_id": "MPL-2.0",
-        "url": "https://api.github.com/licenses/mpl-2.0",
-        "node_id": "MDc6TGljZW5zZTE0"
-      },
-      "topics": []
-    },
-    {
-      "id": 903453006,
-      "node_id": "R_kgDONdmZTg",
-      "name": "mifos-x-actionhub-publish-ios-on-appstore-testflight",
-      "full_name": "openMF/mifos-x-actionhub-publish-ios-on-appstore-testflight",
-      "html_url": "https://github.com/openMF/mifos-x-actionhub-publish-ios-on-appstore-testflight",
-      "description": null,
-      "language": null,
-      "stargazers_count": 0,
-      "forks_count": 2,
-      "open_issues_count": 0,
-      "license": null,
       "topics": []
     }
   ],
@@ -1432,15 +1599,7 @@
       "node_id": "MDQ6VXNlcjQ2NjQwMjU4",
       "avatar_url": "https://avatars.githubusercontent.com/u/46640258?v=4",
       "html_url": "https://github.com/IOhacker",
-      "contributions": 200
-    },
-    {
-      "login": "fintecheand0",
-      "id": 10892046,
-      "node_id": "MDQ6VXNlcjEwODkyMDQ2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/10892046?v=4",
-      "html_url": "https://github.com/fintecheand0",
-      "contributions": 106
+      "contributions": 83
     },
     {
       "login": "renovate[bot]",
@@ -1448,304 +1607,24 @@
       "node_id": "MDM6Qm90MjkxMzk2MTQ=",
       "avatar_url": "https://avatars.githubusercontent.com/in/2740?v=4",
       "html_url": "https://github.com/apps/renovate",
-      "contributions": 63
+      "contributions": 71
     },
     {
-      "login": "francisguchie",
-      "id": 22683654,
-      "node_id": "MDQ6VXNlcjIyNjgzNjU0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/22683654?v=4",
-      "html_url": "https://github.com/francisguchie",
-      "contributions": 43
+      "login": "revanthkumarJ",
+      "id": 146642552,
+      "node_id": "U_kgDOCL2WeA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/146642552?v=4",
+      "html_url": "https://github.com/revanthkumarJ",
+      "contributions": 3
     },
     {
-      "login": "EmanuelCR03",
-      "id": 169113502,
-      "node_id": "U_kgDOChR3ng",
-      "avatar_url": "https://avatars.githubusercontent.com/u/169113502?v=4",
-      "html_url": "https://github.com/EmanuelCR03",
-      "contributions": 41
-    },
-    {
-      "login": "vorburger",
-      "id": 298598,
-      "node_id": "MDQ6VXNlcjI5ODU5OA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/298598?v=4",
-      "html_url": "https://github.com/vorburger",
-      "contributions": 409
-    },
-    {
-      "login": "willymwai",
-      "id": 3677734,
-      "node_id": "MDQ6VXNlcjM2Nzc3MzQ=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/3677734?v=4",
-      "html_url": "https://github.com/willymwai",
-      "contributions": 6
-    },
-    {
-      "login": "tomasAscencio",
-      "id": 72768200,
-      "node_id": "MDQ6VXNlcjcyNzY4MjAw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/72768200?v=4",
-      "html_url": "https://github.com/tomasAscencio",
-      "contributions": 2
-    },
-    {
-      "login": "rrpawar96",
-      "id": 20750973,
-      "node_id": "MDQ6VXNlcjIwNzUwOTcz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/20750973?v=4",
-      "html_url": "https://github.com/rrpawar96",
-      "contributions": 2
-    },
-    {
-      "login": "adonay28",
-      "id": 745101,
-      "node_id": "MDQ6VXNlcjc0NTEwMQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/745101?v=4",
-      "html_url": "https://github.com/adonay28",
+      "login": "therajanmaurya",
+      "id": 5724482,
+      "node_id": "MDQ6VXNlcjU3MjQ0ODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5724482?v=4",
+      "html_url": "https://github.com/therajanmaurya",
       "contributions": 1
-    },
-    {
-      "login": "bharathcgowda",
-      "id": 65952533,
-      "node_id": "MDQ6VXNlcjY1OTUyNTMz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/65952533?v=4",
-      "html_url": "https://github.com/bharathcgowda",
-      "contributions": 1
-    },
-    {
-      "login": "vishwasbabu",
-      "id": 542697,
-      "node_id": "MDQ6VXNlcjU0MjY5Nw==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/542697?v=4",
-      "html_url": "https://github.com/vishwasbabu",
-      "contributions": 1413
-    },
-    {
-      "login": "keithwoodlock",
-      "id": 1131294,
-      "node_id": "MDQ6VXNlcjExMzEyOTQ=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1131294?v=4",
-      "html_url": "https://github.com/keithwoodlock",
-      "contributions": 1034
-    },
-    {
-      "login": "renovate-bot",
-      "id": 25180681,
-      "node_id": "MDQ6VXNlcjI1MTgwNjgx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/25180681?v=4",
-      "html_url": "https://github.com/renovate-bot",
-      "contributions": 587
-    },
-    {
-      "login": "johnw65",
-      "id": 1265866,
-      "node_id": "MDQ6VXNlcjEyNjU4NjY=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1265866?v=4",
-      "html_url": "https://github.com/johnw65",
-      "contributions": 550
-    },
-    {
-      "login": "adamsaghy",
-      "id": 7602740,
-      "node_id": "MDQ6VXNlcjc2MDI3NDA=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/7602740?v=4",
-      "html_url": "https://github.com/adamsaghy",
-      "contributions": 346
-    },
-    {
-      "login": "nazeer1100126",
-      "id": 13728454,
-      "node_id": "MDQ6VXNlcjEzNzI4NDU0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/13728454?v=4",
-      "html_url": "https://github.com/nazeer1100126",
-      "contributions": 315
-    },
-    {
-      "login": "pramodn02",
-      "id": 4900563,
-      "node_id": "MDQ6VXNlcjQ5MDA1NjM=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/4900563?v=4",
-      "html_url": "https://github.com/pramodn02",
-      "contributions": 313
-    },
-    {
-      "login": "galovics",
-      "id": 4701389,
-      "node_id": "MDQ6VXNlcjQ3MDEzODk=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/4701389?v=4",
-      "html_url": "https://github.com/galovics",
-      "contributions": 263
-    },
-    {
-      "login": "dependabot[bot]",
-      "id": 49699333,
-      "node_id": "MDM6Qm90NDk2OTkzMzM=",
-      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-      "html_url": "https://github.com/apps/dependabot",
-      "contributions": 129
-    },
-    {
-      "login": "taskain7",
-      "id": 21197432,
-      "node_id": "MDQ6VXNlcjIxMTk3NDMy",
-      "avatar_url": "https://avatars.githubusercontent.com/u/21197432?v=4",
-      "html_url": "https://github.com/taskain7",
-      "contributions": 125
-    },
-    {
-      "login": "thesmallstar",
-      "id": 42006277,
-      "node_id": "MDQ6VXNlcjQyMDA2Mjc3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/42006277?v=4",
-      "html_url": "https://github.com/thesmallstar",
-      "contributions": 118
-    },
-    {
-      "login": "ruchiD",
-      "id": 4112941,
-      "node_id": "MDQ6VXNlcjQxMTI5NDE=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/4112941?v=4",
-      "html_url": "https://github.com/ruchiD",
-      "contributions": 111
-    },
-    {
-      "login": "ashok-conflux",
-      "id": 3381118,
-      "node_id": "MDQ6VXNlcjMzODExMTg=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/3381118?v=4",
-      "html_url": "https://github.com/ashok-conflux",
-      "contributions": 105
-    },
-    {
-      "login": "ptuomola",
-      "id": 2398858,
-      "node_id": "MDQ6VXNlcjIzOTg4NTg=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/2398858?v=4",
-      "html_url": "https://github.com/ptuomola",
-      "contributions": 103
-    },
-    {
-      "login": "rajuan",
-      "id": 3582507,
-      "node_id": "MDQ6VXNlcjM1ODI1MDc=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/3582507?v=4",
-      "html_url": "https://github.com/rajuan",
-      "contributions": 91
-    },
-    {
-      "login": "vidakovic",
-      "id": 380079,
-      "node_id": "MDQ6VXNlcjM4MDA3OQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/380079?v=4",
-      "html_url": "https://github.com/vidakovic",
-      "contributions": 91
-    },
-    {
-      "login": "reluxa",
-      "id": 5830589,
-      "node_id": "MDQ6VXNlcjU4MzA1ODk=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/5830589?v=4",
-      "html_url": "https://github.com/reluxa",
-      "contributions": 70
-    },
-    {
-      "login": "ShruthiRajaram",
-      "id": 26407376,
-      "node_id": "MDQ6VXNlcjI2NDA3Mzc2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/26407376?v=4",
-      "html_url": "https://github.com/ShruthiRajaram",
-      "contributions": 67
-    },
-    {
-      "login": "madhukar547",
-      "id": 1306008,
-      "node_id": "MDQ6VXNlcjEzMDYwMDg=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1306008?v=4",
-      "html_url": "https://github.com/madhukar547",
-      "contributions": 66
-    },
-    {
-      "login": "percyashu",
-      "id": 40401381,
-      "node_id": "MDQ6VXNlcjQwNDAxMzgx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/40401381?v=4",
-      "html_url": "https://github.com/percyashu",
-      "contributions": 62
-    },
-    {
-      "login": "mifoscontributer",
-      "id": 4463683,
-      "node_id": "MDQ6VXNlcjQ0NjM2ODM=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/4463683?v=4",
-      "html_url": "https://github.com/mifoscontributer",
-      "contributions": 59
-    },
-    {
-      "login": "chandrikamohith",
-      "id": 7772768,
-      "node_id": "MDQ6VXNlcjc3NzI3Njg=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/7772768?v=4",
-      "html_url": "https://github.com/chandrikamohith",
-      "contributions": 56
-    },
-    {
-      "login": "b0c1",
-      "id": 339029,
-      "node_id": "MDQ6VXNlcjMzOTAyOQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/339029?v=4",
-      "html_url": "https://github.com/b0c1",
-      "contributions": 56
-    },
-    {
-      "login": "goutham-M",
-      "id": 4115587,
-      "node_id": "MDQ6VXNlcjQxMTU1ODc=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/4115587?v=4",
-      "html_url": "https://github.com/goutham-M",
-      "contributions": 49
-    },
-    {
-      "login": "avikganguly01",
-      "id": 4125030,
-      "node_id": "MDQ6VXNlcjQxMjUwMzA=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/4125030?v=4",
-      "html_url": "https://github.com/avikganguly01",
-      "contributions": 47
-    },
-    {
-      "login": "magyari-adam",
-      "id": 1348018,
-      "node_id": "MDQ6VXNlcjEzNDgwMTg=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1348018?v=4",
-      "html_url": "https://github.com/magyari-adam",
-      "contributions": 42
-    },
-    {
-      "login": "fynmanoj",
-      "id": 56669674,
-      "node_id": "MDQ6VXNlcjU2NjY5Njc0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/56669674?v=4",
-      "html_url": "https://github.com/fynmanoj",
-      "contributions": 41
-    },
-    {
-      "login": "Nayan",
-      "id": 21154,
-      "node_id": "MDQ6VXNlcjIxMTU0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/21154?v=4",
-      "html_url": "https://github.com/Nayan",
-      "contributions": 41
-    },
-    {
-      "login": "xurror",
-      "id": 45751948,
-      "node_id": "MDQ6VXNlcjQ1NzUxOTQ4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/45751948?v=4",
-      "html_url": "https://github.com/xurror",
-      "contributions": 37
     }
   ],
-  "activeOrg": true
+  "activeOrg": false
 }

@@ -118,9 +118,9 @@
       "html_url": "https://github.com/macports/macports-ports",
       "description": "The MacPorts ports tree",
       "language": "Tcl",
-      "stargazers_count": 1618,
-      "forks_count": 1373,
-      "open_issues_count": 68,
+      "stargazers_count": 1753,
+      "forks_count": 1472,
+      "open_issues_count": 125,
       "license": {
         "key": "other",
         "name": "Other",
@@ -145,9 +145,9 @@
       "html_url": "https://github.com/macports/macports-base",
       "description": "The MacPorts command-line client",
       "language": "Tcl",
-      "stargazers_count": 901,
-      "forks_count": 259,
-      "open_issues_count": 32,
+      "stargazers_count": 980,
+      "forks_count": 277,
+      "open_issues_count": 40,
       "license": {
         "key": "bsd-3-clause",
         "name": "BSD 3-Clause \"New\" or \"Revised\" License",
@@ -164,44 +164,16 @@
       ]
     },
     {
-      "id": 67515064,
-      "node_id": "MDEwOlJlcG9zaXRvcnk2NzUxNTA2NA==",
-      "name": "macports.github.io",
-      "full_name": "macports/macports.github.io",
-      "html_url": "https://github.com/macports/macports.github.io",
-      "description": "News posts for the MacPorts website",
-      "language": "HTML",
-      "stargazers_count": 12,
-      "forks_count": 13,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 70365097,
-      "node_id": "MDEwOlJlcG9zaXRvcnk3MDM2NTA5Nw==",
-      "name": "macports-guide",
-      "full_name": "macports/macports-guide",
-      "html_url": "https://github.com/macports/macports-guide",
-      "description": "A guide for MacPorts users and developers",
-      "language": "CSS",
-      "stargazers_count": 114,
-      "forks_count": 60,
-      "open_issues_count": 1,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 70365101,
-      "node_id": "MDEwOlJlcG9zaXRvcnk3MDM2NTEwMQ==",
-      "name": "macports-www",
-      "full_name": "macports/macports-www",
-      "html_url": "https://github.com/macports/macports-www",
-      "description": "The MacPorts website",
-      "language": "PHP",
-      "stargazers_count": 16,
-      "forks_count": 17,
-      "open_issues_count": 2,
+      "id": 70365093,
+      "node_id": "MDEwOlJlcG9zaXRvcnk3MDM2NTA5Mw==",
+      "name": "mpbb",
+      "full_name": "macports/mpbb",
+      "html_url": "https://github.com/macports/mpbb",
+      "description": "A build automation tool for MacPorts’ Buildbot setup",
+      "language": "Tcl",
+      "stargazers_count": 24,
+      "forks_count": 15,
+      "open_issues_count": 4,
       "license": null,
       "topics": []
     },
@@ -214,7 +186,7 @@
       "description": "Support files for MacPorts' continuous integration",
       "language": null,
       "stargazers_count": 4,
-      "forks_count": 4,
+      "forks_count": 6,
       "open_issues_count": 0,
       "license": {
         "key": "bsd-2-clause",
@@ -226,16 +198,58 @@
       "topics": []
     },
     {
-      "id": 70365093,
-      "node_id": "MDEwOlJlcG9zaXRvcnk3MDM2NTA5Mw==",
-      "name": "mpbb",
-      "full_name": "macports/mpbb",
-      "html_url": "https://github.com/macports/mpbb",
-      "description": "A build automation tool for MacPorts’ Buildbot setup",
-      "language": "Tcl",
-      "stargazers_count": 23,
+      "id": 70365097,
+      "node_id": "MDEwOlJlcG9zaXRvcnk3MDM2NTA5Nw==",
+      "name": "macports-guide",
+      "full_name": "macports/macports-guide",
+      "html_url": "https://github.com/macports/macports-guide",
+      "description": "A guide for MacPorts users and developers",
+      "language": "CSS",
+      "stargazers_count": 128,
+      "forks_count": 68,
+      "open_issues_count": 1,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 67515064,
+      "node_id": "MDEwOlJlcG9zaXRvcnk2NzUxNTA2NA==",
+      "name": "macports.github.io",
+      "full_name": "macports/macports.github.io",
+      "html_url": "https://github.com/macports/macports.github.io",
+      "description": "News posts for the MacPorts website",
+      "language": "HTML",
+      "stargazers_count": 13,
       "forks_count": 13,
-      "open_issues_count": 4,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 70365101,
+      "node_id": "MDEwOlJlcG9zaXRvcnk3MDM2NTEwMQ==",
+      "name": "macports-www",
+      "full_name": "macports/macports-www",
+      "html_url": "https://github.com/macports/macports-www",
+      "description": "The MacPorts website",
+      "language": "PHP",
+      "stargazers_count": 17,
+      "forks_count": 18,
+      "open_issues_count": 2,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 70365098,
+      "node_id": "MDEwOlJlcG9zaXRvcnk3MDM2NTA5OA==",
+      "name": "macports-infrastructure",
+      "full_name": "macports/macports-infrastructure",
+      "html_url": "https://github.com/macports/macports-infrastructure",
+      "description": "Tools for managing MacPorts’ infrastructure",
+      "language": "Python",
+      "stargazers_count": 18,
+      "forks_count": 23,
+      "open_issues_count": 11,
       "license": null,
       "topics": []
     },
@@ -247,9 +261,9 @@
       "html_url": "https://github.com/macports/macports-webapp",
       "description": "Web application to display information about ports, build history and installation statistics",
       "language": "Python",
-      "stargazers_count": 64,
+      "stargazers_count": 74,
       "forks_count": 31,
-      "open_issues_count": 34,
+      "open_issues_count": 45,
       "license": {
         "key": "bsd-2-clause",
         "name": "BSD 2-Clause \"Simplified\" License",
@@ -260,20 +274,6 @@
       "topics": []
     },
     {
-      "id": 70365098,
-      "node_id": "MDEwOlJlcG9zaXRvcnk3MDM2NTA5OA==",
-      "name": "macports-infrastructure",
-      "full_name": "macports/macports-infrastructure",
-      "html_url": "https://github.com/macports/macports-infrastructure",
-      "description": "Tools for managing MacPorts’ infrastructure",
-      "language": "Tcl",
-      "stargazers_count": 17,
-      "forks_count": 23,
-      "open_issues_count": 10,
-      "license": null,
-      "topics": []
-    },
-    {
       "id": 154461557,
       "node_id": "MDEwOlJlcG9zaXRvcnkxNTQ0NjE1NTc=",
       "name": "macports-legacy-support",
@@ -281,15 +281,35 @@
       "html_url": "https://github.com/macports/macports-legacy-support",
       "description": "MacPorts support for missing functions in legacy macOS versions",
       "language": "C",
-      "stargazers_count": 45,
-      "forks_count": 30,
-      "open_issues_count": 1,
+      "stargazers_count": 55,
+      "forks_count": 34,
+      "open_issues_count": 2,
       "license": {
         "key": "other",
         "name": "Other",
         "spdx_id": "NOASSERTION",
         "url": null,
         "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 94675167,
+      "node_id": "MDEwOlJlcG9zaXRvcnk5NDY3NTE2Nw==",
+      "name": "mpbot-github",
+      "full_name": "macports/mpbot-github",
+      "html_url": "https://github.com/macports/mpbot-github",
+      "description": "Bot to manage and test GitHub pull requests for MacPorts",
+      "language": "Go",
+      "stargazers_count": 7,
+      "forks_count": 8,
+      "open_issues_count": 1,
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
       },
       "topics": []
     },
@@ -315,30 +335,10 @@
       "html_url": "https://github.com/macports/macports-contrib",
       "description": "Tools for working on the MacPorts ports tree",
       "language": "Ruby",
-      "stargazers_count": 34,
+      "stargazers_count": 33,
       "forks_count": 25,
       "open_issues_count": 2,
       "license": null,
-      "topics": []
-    },
-    {
-      "id": 94675167,
-      "node_id": "MDEwOlJlcG9zaXRvcnk5NDY3NTE2Nw==",
-      "name": "mpbot-github",
-      "full_name": "macports/mpbot-github",
-      "html_url": "https://github.com/macports/mpbot-github",
-      "description": "Bot to manage and test GitHub pull requests for MacPorts",
-      "language": "Go",
-      "stargazers_count": 7,
-      "forks_count": 7,
-      "open_issues_count": 1,
-      "license": {
-        "key": "bsd-3-clause",
-        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
-        "spdx_id": "BSD-3-Clause",
-        "url": "https://api.github.com/licenses/bsd-3-clause",
-        "node_id": "MDc6TGljZW5zZTU="
-      },
       "topics": []
     },
     {
@@ -385,7 +385,7 @@
       "language": "Python",
       "stargazers_count": 8,
       "forks_count": 12,
-      "open_issues_count": 12,
+      "open_issues_count": 13,
       "license": {
         "key": "bsd-3-clause",
         "name": "BSD 3-Clause \"New\" or \"Revised\" License",
@@ -605,7 +605,7 @@
       "node_id": "MDQ6VXNlcjQyOTIwOQ==",
       "avatar_url": "https://avatars.githubusercontent.com/u/429209?v=4",
       "html_url": "https://github.com/ryandesign",
-      "contributions": 309
+      "contributions": 99
     },
     {
       "login": "dbevans",
@@ -613,7 +613,7 @@
       "node_id": "MDQ6VXNlcjg5MDE1MjY=",
       "avatar_url": "https://avatars.githubusercontent.com/u/8901526?v=4",
       "html_url": "https://github.com/dbevans",
-      "contributions": 21344
+      "contributions": 21923
     },
     {
       "login": "barracuda156",
@@ -629,7 +629,7 @@
       "node_id": "MDQ6VXNlcjEwNzU2OTk=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1075699?v=4",
       "html_url": "https://github.com/jmroot",
-      "contributions": 2238
+      "contributions": 273
     },
     {
       "login": "herbygillot",
@@ -637,7 +637,7 @@
       "node_id": "MDQ6VXNlcjYxODM3Ng==",
       "avatar_url": "https://avatars.githubusercontent.com/u/618376?v=4",
       "html_url": "https://github.com/herbygillot",
-      "contributions": 12959
+      "contributions": 15
     },
     {
       "login": "reneeotten",
@@ -645,15 +645,7 @@
       "node_id": "MDQ6VXNlcjEyMTc3Njk2",
       "avatar_url": "https://avatars.githubusercontent.com/u/12177696?v=4",
       "html_url": "https://github.com/reneeotten",
-      "contributions": 9181
-    },
-    {
-      "login": "stromnov",
-      "id": 100656,
-      "node_id": "MDQ6VXNlcjEwMDY1Ng==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/100656?v=4",
-      "html_url": "https://github.com/stromnov",
-      "contributions": 8359
+      "contributions": 12290
     },
     {
       "login": "Schamschula",
@@ -661,7 +653,15 @@
       "node_id": "MDQ6VXNlcjEzMzk0MDU4",
       "avatar_url": "https://avatars.githubusercontent.com/u/13394058?v=4",
       "html_url": "https://github.com/Schamschula",
-      "contributions": 8259
+      "contributions": 9372
+    },
+    {
+      "login": "stromnov",
+      "id": 100656,
+      "node_id": "MDQ6VXNlcjEwMDY1Ng==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/100656?v=4",
+      "html_url": "https://github.com/stromnov",
+      "contributions": 8508
     },
     {
       "login": "michaelld",
@@ -688,20 +688,20 @@
       "contributions": 23
     },
     {
+      "login": "judaew",
+      "id": 41125715,
+      "node_id": "MDQ6VXNlcjQxMTI1NzE1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/41125715?v=4",
+      "html_url": "https://github.com/judaew",
+      "contributions": 4141
+    },
+    {
       "login": "nerdling",
       "id": 717953,
       "node_id": "MDQ6VXNlcjcxNzk1Mw==",
       "avatar_url": "https://avatars.githubusercontent.com/u/717953?v=4",
       "html_url": "https://github.com/nerdling",
       "contributions": 61
-    },
-    {
-      "login": "judaew",
-      "id": 41125715,
-      "node_id": "MDQ6VXNlcjQxMTI1NzE1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/41125715?v=4",
-      "html_url": "https://github.com/judaew",
-      "contributions": 3841
     },
     {
       "login": "cjones051073",
@@ -733,7 +733,7 @@
       "node_id": "MDQ6VXNlcjI4MTE3NQ==",
       "avatar_url": "https://avatars.githubusercontent.com/u/281175?v=4",
       "html_url": "https://github.com/larryv",
-      "contributions": 124
+      "contributions": 52
     },
     {
       "login": "mojca",
@@ -741,7 +741,7 @@
       "node_id": "MDQ6VXNlcjE1NjA2",
       "avatar_url": "https://avatars.githubusercontent.com/u/15606?v=4",
       "html_url": "https://github.com/mojca",
-      "contributions": 8
+      "contributions": 16
     },
     {
       "login": "mascguy",
@@ -749,7 +749,15 @@
       "node_id": "MDQ6VXNlcjYyMTU2ODgy",
       "avatar_url": "https://avatars.githubusercontent.com/u/62156882?v=4",
       "html_url": "https://github.com/mascguy",
-      "contributions": 2570
+      "contributions": 2624
+    },
+    {
+      "login": "breun",
+      "id": 102921,
+      "node_id": "MDQ6VXNlcjEwMjkyMQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/102921?v=4",
+      "html_url": "https://github.com/breun",
+      "contributions": 2512
     },
     {
       "login": "l2dy",
@@ -757,7 +765,7 @@
       "node_id": "MDQ6VXNlcjE0MzI5MDk3",
       "avatar_url": "https://avatars.githubusercontent.com/u/14329097?v=4",
       "html_url": "https://github.com/l2dy",
-      "contributions": 29
+      "contributions": 2
     },
     {
       "login": "mf2k",
@@ -773,7 +781,7 @@
       "node_id": "MDQ6VXNlcjgwMzQw",
       "avatar_url": "https://avatars.githubusercontent.com/u/80340?v=4",
       "html_url": "https://github.com/raimue",
-      "contributions": 766
+      "contributions": 12
     },
     {
       "login": "blair",
@@ -789,7 +797,7 @@
       "node_id": "MDQ6VXNlcjM1NzM0OA==",
       "avatar_url": "https://avatars.githubusercontent.com/u/357348?v=4",
       "html_url": "https://github.com/neverpanic",
-      "contributions": 755
+      "contributions": 25
     },
     {
       "login": "seanfarley",
@@ -805,7 +813,7 @@
       "node_id": "MDQ6VXNlcjQwMTc5Mg==",
       "avatar_url": "https://avatars.githubusercontent.com/u/401792?v=4",
       "html_url": "https://github.com/blb",
-      "contributions": 104
+      "contributions": 2
     },
     {
       "login": "kencu",
@@ -814,14 +822,6 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/21211439?v=4",
       "html_url": "https://github.com/kencu",
       "contributions": 2046
-    },
-    {
-      "login": "breun",
-      "id": 102921,
-      "node_id": "MDQ6VXNlcjEwMjkyMQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/102921?v=4",
-      "html_url": "https://github.com/breun",
-      "contributions": 2023
     },
     {
       "login": "skymoo",
@@ -869,7 +869,7 @@
       "node_id": "MDQ6VXNlcjE2ODQwNw==",
       "avatar_url": "https://avatars.githubusercontent.com/u/168407?v=4",
       "html_url": "https://github.com/pguyot",
-      "contributions": 286
+      "contributions": 288
     },
     {
       "login": "lilyball",

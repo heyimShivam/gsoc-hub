@@ -39,7 +39,8 @@
     2018,
     2022,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2017": [
@@ -182,10 +183,83 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/zvmYzPzC"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Advanced Audio Settings",
+        "short_description": "This project aims to provide in-meeting settings for advanced audio controls in Jitsi Meet such as Acoustic Echo Cancellation (AEC), Noise...",
+        "description": "This project aims to provide in-meeting settings for advanced audio controls in Jitsi Meet such as Acoustic Echo Cancellation (AEC), Noise Suppression (NS), Gain Control (AGC) and Stereo. Modifying the jitsi/lib-jitsi-meet library will enable the configuration of media tracks, allowing advanced user audio settings to be toggled during a conference. The expected deliverables are:\n• New section in Jitsi Meet audio settings, allowing users participating in a\nconference to toggle echo cancellation, auto gain control, noise suppression and\nstereo.",
+        "student_name": "Hugo Lavernhe",
+        "code_url": "https://docs.google.com/document/d/1DUzw9D49LO43btNefYQbkrhsjmhI95TL6u75zj-ZRJc/edit?usp=sharing",
+        "proposal_id": "dljIHkdU",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/UWepEOaO"
+      },
+      {
+        "title": "Audio Switchboard API",
+        "short_description": "This document proposes a detailed architecture on how to implement the Audio Switchboard API. This idea enables numerous features, including...",
+        "description": "This document proposes a detailed architecture on how to implement the Audio Switchboard API. This idea enables numerous features, including translation layers and lightweight breakout rooms, as described in the idea page.\nThis proposal introduces a metadata-based mechanism to manage audio streams. The implementation involves extending jitsi-meet to handle metadata, and Jitsi Videobridge (JVB) to handle signaling from senders and filtering requests from receivers. Senders attach metadata to their streams, such as spoken language or breakout room identifiers, while receivers specify criteria for the streams they wish to receive. JVB processes these inputs, filtering and forwarding only the matching streams.",
+        "student_name": "Kota",
+        "code_url": "https://docs.google.com/document/d/1Rjyg9VBusOajm2ryh5wFCbxPEOh_WCr80-yU-FYif1I/edit?usp=sharing",
+        "proposal_id": "ZmMACkGK",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/aBy319rB"
+      },
+      {
+        "title": "Meeting stats with rtcstats",
+        "short_description": "With rtcstats, it is possible to gather a lot of information about meeting quality and logs. However, it is difficult for self-hosting users to...",
+        "description": "With rtcstats, it is possible to gather a lot of information about meeting quality and logs. However, it is difficult for self-hosting users to analyze and monitor meetings using rtcstats in Jitsi Meet. The goal of this project is to make it easier for self-hosting users to deploy and use rtcstats with Jitsi Meet. To achieve this, I propose to add rtcstats Docker containers to docker-jitsi-meet, with support for both AWS and MongoDB integration options.",
+        "student_name": "Kota Nakagawa",
+        "code_url": "https://gist.github.com/Taukon/9164ad2edc802ff5fa6ab92ca7320d60",
+        "proposal_id": "l9smbjEK",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/4vpZjG1n"
+      },
+      {
+        "title": "lib-jitsi-meet goes TypeScript",
+        "short_description": "The lib-jitsi-meet library a core component of the Jitsi ecosystem, facilitates signaling and media negotiation in Jitsi Meet. While some parts of...",
+        "description": "The lib-jitsi-meet library a core component of the Jitsi ecosystem, facilitates signaling and media negotiation in Jitsi Meet. While some parts of the library have been migrated to TypeScript, a significant portion remains in JavaScript, leading to inconsistencies in type definitions and maintainability challenges and increased risk of runtime issues.\n\nThis project aims to fully migrate lib-jitsi-meet to TypeScript, enhance the existing typedoc-generated documentation, ensuring a well-typed, and maintainable codebase that enhances both developer productivity and the reliability of the Jitsi Ecosystem",
+        "student_name": "naman9271",
+        "code_url": "https://gist.github.com/naman9271/b0858874dd6e73a95f7b2fd56d7a8de6",
+        "proposal_id": "bm779X6t",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/kUscsdYM"
+      },
+      {
+        "title": "Whiteboard Improvements",
+        "short_description": "Jitsi Meet’s current whiteboard—built on an outdated Excalidraw fork and Socket.IO v2.5—only supports basic “smart objects,” lacks file/image upload,...",
+        "description": "Jitsi Meet’s current whiteboard—built on an outdated Excalidraw fork and Socket.IO v2.5—only supports basic “smart objects,” lacks file/image upload, and suffers from performance and maintenance challenges. This project will:\nUpgrade real‑time transport by moving to Socket.IO 4.x and optimizing WebSocket message flow (batching, compression) for lower latency.\nMigrate to the latest Excalidraw release, ensuring full compatibility with Jitsi Meet and access to new drawing features.\n\nImplement a pluggable storage backend (starting with MiniIO) so users can share files directly on the whiteboard.\n\nDeliverables:\n-A collaboration server upgraded to Socket.IO 4.x with measurable performance gains\n-An updated Jitsi whiteboard using the newest Excalidraw version\n-A modular storageBackend abstraction plus working MiniIO module",
+        "student_name": "Yash Gussian",
+        "code_url": "https://github.com/yashop7/GSOC-2025-JITSI/blob/main/README.md",
+        "proposal_id": "86at6zQP",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/yzlBjFkK"
+      }
+    ],
+    "2026": []
   },
   "githubID": "jitsi",
   "repositories": [
+    {
+      "id": 76293911,
+      "node_id": "MDEwOlJlcG9zaXRvcnk3NjI5MzkxMQ==",
+      "name": "jitsi-meet-electron",
+      "full_name": "jitsi/jitsi-meet-electron",
+      "html_url": "https://github.com/jitsi/jitsi-meet-electron",
+      "description": "Jitsi Meet desktop application powered by :electron:",
+      "language": "JavaScript",
+      "stargazers_count": 1604,
+      "forks_count": 501,
+      "open_issues_count": 13,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "electron",
+        "jitsi",
+        "jitsi-meet",
+        "video-conferencing",
+        "webrtc"
+      ]
+    },
     {
       "id": 567440734,
       "node_id": "R_kgDOIdJ1Xg",
@@ -194,9 +268,9 @@
       "html_url": "https://github.com/jitsi/infra-configuration",
       "description": "Scripts for configuration jitsi services",
       "language": "Shell",
-      "stargazers_count": 16,
-      "forks_count": 17,
-      "open_issues_count": 19,
+      "stargazers_count": 19,
+      "forks_count": 21,
+      "open_issues_count": 17,
       "license": null,
       "topics": []
     },
@@ -208,9 +282,9 @@
       "html_url": "https://github.com/jitsi/infra-provisioning",
       "description": "Scripts for provisioning cloud resources for jitsi services",
       "language": "Shell",
-      "stargazers_count": 14,
-      "forks_count": 11,
-      "open_issues_count": 40,
+      "stargazers_count": 19,
+      "forks_count": 17,
+      "open_issues_count": 55,
       "license": null,
       "topics": []
     },
@@ -221,10 +295,10 @@
       "full_name": "jitsi/lib-jitsi-meet",
       "html_url": "https://github.com/jitsi/lib-jitsi-meet",
       "description": "A low-level JS video API that allows adding a completely custom video experience to web apps.",
-      "language": "JavaScript",
-      "stargazers_count": 1366,
-      "forks_count": 1158,
-      "open_issues_count": 9,
+      "language": "TypeScript",
+      "stargazers_count": 1413,
+      "forks_count": 1178,
+      "open_issues_count": 23,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -242,9 +316,9 @@
       "html_url": "https://github.com/jitsi/jitsi-meet",
       "description": "Jitsi Meet - Secure, Simple and Scalable Video Conferences that you use as a standalone app or embed in your web application.",
       "language": "TypeScript",
-      "stargazers_count": 25532,
-      "forks_count": 7190,
-      "open_issues_count": 175,
+      "stargazers_count": 28892,
+      "forks_count": 7831,
+      "open_issues_count": 231,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -273,9 +347,9 @@
       "html_url": "https://github.com/jitsi/jicofo",
       "description": "JItsi COnference FOcus is a server side focus component used in Jitsi Meet conferences.",
       "language": "Kotlin",
-      "stargazers_count": 328,
-      "forks_count": 355,
-      "open_issues_count": 24,
+      "stargazers_count": 340,
+      "forks_count": 368,
+      "open_issues_count": 22,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -294,8 +368,8 @@
       "description": "Jitsi Meet meta debian package",
       "language": "Shell",
       "stargazers_count": 19,
-      "forks_count": 23,
-      "open_issues_count": 0,
+      "forks_count": 25,
+      "open_issues_count": 1,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -306,42 +380,22 @@
       "topics": []
     },
     {
-      "id": 99116560,
-      "node_id": "MDEwOlJlcG9zaXRvcnk5OTExNjU2MA==",
-      "name": "jitsi-meet-spot",
-      "full_name": "jitsi/jitsi-meet-spot",
-      "html_url": "https://github.com/jitsi/jitsi-meet-spot",
-      "description": "Physical meetings rooms, reimagined.",
-      "language": "JavaScript",
-      "stargazers_count": 73,
-      "forks_count": 41,
-      "open_issues_count": 6,
+      "id": 530158026,
+      "node_id": "R_kgDOH5mRyg",
+      "name": "excalidraw-backend",
+      "full_name": "jitsi/excalidraw-backend",
+      "html_url": "https://github.com/jitsi/excalidraw-backend",
+      "description": "Excalidraw collaboration backend for Jitsi",
+      "language": "TypeScript",
+      "stargazers_count": 34,
+      "forks_count": 44,
+      "open_issues_count": 5,
       "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 652562190,
-      "node_id": "R_kgDOJuVPDg",
-      "name": "skynet",
-      "full_name": "jitsi/skynet",
-      "html_url": "https://github.com/jitsi/skynet",
-      "description": "AI core services for Jitsi",
-      "language": "Python",
-      "stargazers_count": 56,
-      "forks_count": 17,
-      "open_issues_count": 8,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
       },
       "topics": []
     },
@@ -353,7 +407,7 @@
       "html_url": "https://github.com/jitsi/jitsi-autoscaler",
       "description": "Jitsi Autoscaler microservice",
       "language": "TypeScript",
-      "stargazers_count": 30,
+      "stargazers_count": 31,
       "forks_count": 21,
       "open_issues_count": 8,
       "license": {
@@ -366,20 +420,6 @@
       "topics": []
     },
     {
-      "id": 942237339,
-      "node_id": "R_kgDOOClmmw",
-      "name": "jitsi-slack-bolt",
-      "full_name": "jitsi/jitsi-slack-bolt",
-      "html_url": "https://github.com/jitsi/jitsi-slack-bolt",
-      "description": "Jitsi Meet meetings in Slack",
-      "language": "Python",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
       "id": 9657943,
       "node_id": "MDEwOlJlcG9zaXRvcnk5NjU3OTQz",
       "name": "jitsi-videobridge",
@@ -387,9 +427,9 @@
       "html_url": "https://github.com/jitsi/jitsi-videobridge",
       "description": "Jitsi Videobridge is a WebRTC compatible video router or SFU that lets build highly scalable video conferencing infrastructure (i.e., up to hundreds of conferences per server).",
       "language": "Kotlin",
-      "stargazers_count": 2973,
-      "forks_count": 1002,
-      "open_issues_count": 172,
+      "stargazers_count": 3070,
+      "forks_count": 1027,
+      "open_issues_count": 177,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -400,16 +440,90 @@
       "topics": []
     },
     {
-      "id": 22720188,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMjcyMDE4OA==",
-      "name": "jigasi",
-      "full_name": "jitsi/jigasi",
-      "html_url": "https://github.com/jitsi/jigasi",
-      "description": "Jigasi: a server-side application acting as a gateway to Jitsi Meet conferences. Currently allows regular SIP clients to join meetings and provides transcription capabilities.",
+      "id": 1104408932,
+      "node_id": "R_kgDOQdPxZA",
+      "name": "opus-transcriber-proxy",
+      "full_name": "jitsi/opus-transcriber-proxy",
+      "html_url": "https://github.com/jitsi/opus-transcriber-proxy",
+      "description": "Cloudflare worker proxying from Jitsi Videobridge websockets to OpenAI transcribers",
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "forks_count": 1,
+      "open_issues_count": 2,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 1044584686,
+      "node_id": "R_kgDOPkMY7g",
+      "name": "jitsi-test-lab",
+      "full_name": "jitsi/jitsi-test-lab",
+      "html_url": "https://github.com/jitsi/jitsi-test-lab",
+      "description": "An application for manual testing and experimentation with Jitsi Meet and Jitsi as a Service",
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "forks_count": 2,
+      "open_issues_count": 0,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 39528390,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzOTUyODM5MA==",
+      "name": "jitsi-maven-repository",
+      "full_name": "jitsi/jitsi-maven-repository",
+      "html_url": "https://github.com/jitsi/jitsi-maven-repository",
+      "description": null,
+      "language": null,
+      "stargazers_count": 72,
+      "forks_count": 231,
+      "open_issues_count": 1,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 43829218,
+      "node_id": "MDEwOlJlcG9zaXRvcnk0MzgyOTIxOA==",
+      "name": "jicoco",
+      "full_name": "jitsi/jicoco",
+      "html_url": "https://github.com/jitsi/jicoco",
+      "description": "Jitsi Common Components",
+      "language": "Kotlin",
+      "stargazers_count": 18,
+      "forks_count": 56,
+      "open_issues_count": 3,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 200293665,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMDAyOTM2NjU=",
+      "name": "jitsi-srtp",
+      "full_name": "jitsi/jitsi-srtp",
+      "html_url": "https://github.com/jitsi/jitsi-srtp",
+      "description": "SRTP implementation for Jitsi",
       "language": "Java",
-      "stargazers_count": 556,
-      "forks_count": 309,
-      "open_issues_count": 69,
+      "stargazers_count": 30,
+      "forks_count": 37,
+      "open_issues_count": 6,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -427,9 +541,9 @@
       "html_url": "https://github.com/jitsi/jibri",
       "description": "Jitsi BRoadcasting Infrastructure",
       "language": "Kotlin",
-      "stargazers_count": 619,
-      "forks_count": 316,
-      "open_issues_count": 88,
+      "stargazers_count": 651,
+      "forks_count": 322,
+      "open_issues_count": 95,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -442,50 +556,16 @@
       ]
     },
     {
-      "id": 39528390,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzOTUyODM5MA==",
-      "name": "jitsi-maven-repository",
-      "full_name": "jitsi/jitsi-maven-repository",
-      "html_url": "https://github.com/jitsi/jitsi-maven-repository",
-      "description": null,
-      "language": null,
-      "stargazers_count": 70,
-      "forks_count": 234,
-      "open_issues_count": 1,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 43829218,
-      "node_id": "MDEwOlJlcG9zaXRvcnk0MzgyOTIxOA==",
-      "name": "jicoco",
-      "full_name": "jitsi/jicoco",
-      "html_url": "https://github.com/jitsi/jicoco",
-      "description": "Jitsi Common Components",
-      "language": "Kotlin",
-      "stargazers_count": 18,
-      "forks_count": 58,
-      "open_issues_count": 4,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 24684177,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNDY4NDE3Nw==",
-      "name": "jitsi-meet-torture",
-      "full_name": "jitsi/jitsi-meet-torture",
-      "html_url": "https://github.com/jitsi/jitsi-meet-torture",
-      "description": null,
+      "id": 39038469,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzOTAzODQ2OQ==",
+      "name": "ice4j",
+      "full_name": "jitsi/ice4j",
+      "html_url": "https://github.com/jitsi/ice4j",
+      "description": "A Java implementation of the ICE protocol",
       "language": "Java",
-      "stargazers_count": 175,
-      "forks_count": 152,
-      "open_issues_count": 31,
+      "stargazers_count": 476,
+      "forks_count": 236,
+      "open_issues_count": 49,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -494,20 +574,25 @@
         "node_id": "MDc6TGljZW5zZTI="
       },
       "topics": [
-        "hacktoberfest"
+        "ice",
+        "java",
+        "nat",
+        "nat-traversal",
+        "rfc5245",
+        "webrtc"
       ]
     },
     {
-      "id": 178438272,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNzg0MzgyNzI=",
-      "name": "jitsi-xmpp-extensions",
-      "full_name": "jitsi/jitsi-xmpp-extensions",
-      "html_url": "https://github.com/jitsi/jitsi-xmpp-extensions",
-      "description": "Common library holding all jitsi specific smack xmpp extensions.",
-      "language": "Java",
-      "stargazers_count": 17,
-      "forks_count": 51,
-      "open_issues_count": 7,
+      "id": 119590200,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMTk1OTAyMDA=",
+      "name": "js-utils",
+      "full_name": "jitsi/js-utils",
+      "html_url": "https://github.com/jitsi/js-utils",
+      "description": "Utilities for Jitsi JS projects",
+      "language": "TypeScript",
+      "stargazers_count": 33,
+      "forks_count": 65,
+      "open_issues_count": 10,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -518,16 +603,16 @@
       "topics": []
     },
     {
-      "id": 109871898,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMDk4NzE4OTg=",
-      "name": "Smack",
-      "full_name": "jitsi/Smack",
-      "html_url": "https://github.com/jitsi/Smack",
-      "description": "A highly modular and portable open source XMPP client library written in Java for JVMs (JavaSE) and Android",
-      "language": "Java",
-      "stargazers_count": 4,
-      "forks_count": 8,
-      "open_issues_count": 0,
+      "id": 652562190,
+      "node_id": "R_kgDOJuVPDg",
+      "name": "skynet",
+      "full_name": "jitsi/skynet",
+      "html_url": "https://github.com/jitsi/skynet",
+      "description": "AI core services for Jitsi",
+      "language": "Python",
+      "stargazers_count": 69,
+      "forks_count": 31,
+      "open_issues_count": 9,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -538,18 +623,27 @@
       "topics": []
     },
     {
-      "id": 316054931,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzMTYwNTQ5MzE=",
-      "name": "jvb-rtcstats-push",
-      "full_name": "jitsi/jvb-rtcstats-push",
-      "html_url": "https://github.com/jitsi/jvb-rtcstats-push",
-      "description": null,
+      "id": 96358121,
+      "node_id": "MDEwOlJlcG9zaXRvcnk5NjM1ODEyMQ==",
+      "name": "jitsi-meet-electron-sdk",
+      "full_name": "jitsi/jitsi-meet-electron-sdk",
+      "html_url": "https://github.com/jitsi/jitsi-meet-electron-sdk",
+      "description": "Jitsi Meet SDK for Electron",
       "language": "JavaScript",
-      "stargazers_count": 0,
-      "forks_count": 4,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
+      "stargazers_count": 81,
+      "forks_count": 93,
+      "open_issues_count": 14,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "electron",
+        "jitsi"
+      ]
     },
     {
       "id": 141265446,
@@ -559,9 +653,9 @@
       "html_url": "https://github.com/jitsi/docker-jitsi-meet",
       "description": "Jitsi Meet on Docker",
       "language": "Lua",
-      "stargazers_count": 3248,
-      "forks_count": 1427,
-      "open_issues_count": 193,
+      "stargazers_count": 3534,
+      "forks_count": 1550,
+      "open_issues_count": 17,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -577,16 +671,16 @@
       ]
     },
     {
-      "id": 96358121,
-      "node_id": "MDEwOlJlcG9zaXRvcnk5NjM1ODEyMQ==",
-      "name": "jitsi-meet-electron-sdk",
-      "full_name": "jitsi/jitsi-meet-electron-sdk",
-      "html_url": "https://github.com/jitsi/jitsi-meet-electron-sdk",
-      "description": "Jitsi Meet SDK for Electron",
-      "language": "JavaScript",
-      "stargazers_count": 80,
-      "forks_count": 86,
-      "open_issues_count": 13,
+      "id": 22720188,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMjcyMDE4OA==",
+      "name": "jigasi",
+      "full_name": "jitsi/jigasi",
+      "html_url": "https://github.com/jitsi/jigasi",
+      "description": "Jigasi: a server-side application acting as a gateway to Jitsi Meet conferences. Currently allows regular SIP clients to join meetings and provides transcription capabilities.",
+      "language": "Java",
+      "stargazers_count": 605,
+      "forks_count": 333,
+      "open_issues_count": 74,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -594,155 +688,33 @@
         "url": "https://api.github.com/licenses/apache-2.0",
         "node_id": "MDc6TGljZW5zZTI="
       },
-      "topics": [
-        "electron",
-        "jitsi"
-      ]
+      "topics": []
     },
     {
-      "id": 784453090,
-      "node_id": "R_kgDOLsHN4g",
-      "name": "ljm-getting-started",
-      "full_name": "jitsi/ljm-getting-started",
-      "html_url": "https://github.com/jitsi/ljm-getting-started",
-      "description": "Getting started with lib-jitsi-meet and JaaS",
-      "language": "JavaScript",
-      "stargazers_count": 4,
-      "forks_count": 1,
-      "open_issues_count": 0,
+      "id": 235818506,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMzU4MTg1MDY=",
+      "name": "gsoc-ideas",
+      "full_name": "jitsi/gsoc-ideas",
+      "html_url": "https://github.com/jitsi/gsoc-ideas",
+      "description": "Google Summer of Code ideas",
+      "language": null,
+      "stargazers_count": 82,
+      "forks_count": 31,
+      "open_issues_count": 12,
       "license": null,
       "topics": []
     },
     {
-      "id": 76293911,
-      "node_id": "MDEwOlJlcG9zaXRvcnk3NjI5MzkxMQ==",
-      "name": "jitsi-meet-electron",
-      "full_name": "jitsi/jitsi-meet-electron",
-      "html_url": "https://github.com/jitsi/jitsi-meet-electron",
-      "description": "Jitsi Meet desktop application powered by :electron:",
+      "id": 275107086,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyNzUxMDcwODY=",
+      "name": "rtcstats-server",
+      "full_name": "jitsi/rtcstats-server",
+      "html_url": "https://github.com/jitsi/rtcstats-server",
+      "description": "Server for https://github.com/fippo/rtcstats",
       "language": "JavaScript",
-      "stargazers_count": 1550,
-      "forks_count": 478,
-      "open_issues_count": 11,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "electron",
-        "jitsi",
-        "jitsi-meet",
-        "video-conferencing",
-        "webrtc"
-      ]
-    },
-    {
-      "id": 179303735,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNzkzMDM3MzU=",
-      "name": "jitsi-meet-sdk-samples",
-      "full_name": "jitsi/jitsi-meet-sdk-samples",
-      "html_url": "https://github.com/jitsi/jitsi-meet-sdk-samples",
-      "description": "Jitsi Meet mobile SDK examples (Android, iOS and React Native)",
-      "language": "Swift",
-      "stargazers_count": 303,
-      "forks_count": 245,
-      "open_issues_count": 79,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "android",
-        "ios",
-        "jitsi",
-        "jitsi-meet",
-        "react-native",
-        "real-time-communications",
-        "rtc",
-        "sdk"
-      ]
-    },
-    {
-      "id": 9657553,
-      "node_id": "MDEwOlJlcG9zaXRvcnk5NjU3NTUz",
-      "name": "libjitsi",
-      "full_name": "jitsi/libjitsi",
-      "html_url": "https://github.com/jitsi/libjitsi",
-      "description": "Advanced Java media library for secure real-time audio/video communication.",
-      "language": "Java",
-      "stargazers_count": 643,
-      "forks_count": 284,
-      "open_issues_count": 43,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "audio",
-        "dtls",
-        "java",
-        "libjitsi",
-        "rtp",
-        "srtp",
-        "stream",
-        "video",
-        "video-communication",
-        "webrtc"
-      ]
-    },
-    {
-      "id": 9653752,
-      "node_id": "MDEwOlJlcG9zaXRvcnk5NjUzNzUy",
-      "name": "jitsi",
-      "full_name": "jitsi/jitsi",
-      "html_url": "https://github.com/jitsi/jitsi",
-      "description": "Jitsi is an audio/video and chat communicator that supports protocols such as SIP, XMPP/Jabber, IRC and many other useful features.",
-      "language": "Java",
-      "stargazers_count": 4210,
-      "forks_count": 981,
-      "open_issues_count": 217,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "audio",
-        "chat",
-        "icq",
-        "instant-messaging",
-        "irc",
-        "jabber",
-        "java",
-        "jitsi",
-        "sip",
-        "video",
-        "xmpp",
-        "xmpp-client"
-      ]
-    },
-    {
-      "id": 95793589,
-      "node_id": "MDEwOlJlcG9zaXRvcnk5NTc5MzU4OQ==",
-      "name": "robotjs",
-      "full_name": "jitsi/robotjs",
-      "html_url": "https://github.com/jitsi/robotjs",
-      "description": "Node.js Desktop Automation. ",
-      "language": "C",
-      "stargazers_count": 76,
-      "forks_count": 25,
-      "open_issues_count": 2,
+      "stargazers_count": 15,
+      "forks_count": 23,
+      "open_issues_count": 6,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -753,17 +725,106 @@
       "topics": []
     },
     {
-      "id": 194257331,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxOTQyNTczMzE=",
-      "name": "jitsi-meet-release-notes",
-      "full_name": "jitsi/jitsi-meet-release-notes",
-      "html_url": "https://github.com/jitsi/jitsi-meet-release-notes",
-      "description": "Release notes for Jitsi Meet: the web frontend, mobile apps and mobile SDKs",
-      "language": null,
-      "stargazers_count": 80,
-      "forks_count": 43,
+      "id": 1017428724,
+      "node_id": "R_kgDOPKS69A",
+      "name": "jitsi-meet-file-sharing-service",
+      "full_name": "jitsi/jitsi-meet-file-sharing-service",
+      "html_url": "https://github.com/jitsi/jitsi-meet-file-sharing-service",
+      "description": null,
+      "language": "TypeScript",
+      "stargazers_count": 3,
+      "forks_count": 5,
+      "open_issues_count": 6,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 119112856,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMTkxMTI4NTY=",
+      "name": "strophejs",
+      "full_name": "jitsi/strophejs",
+      "html_url": "https://github.com/jitsi/strophejs",
+      "description": "Strophe.js is an XMPP library for JavaScript",
+      "language": "JavaScript",
+      "stargazers_count": 1,
+      "forks_count": 4,
       "open_issues_count": 0,
-      "license": null,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 275106843,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyNzUxMDY4NDM=",
+      "name": "rtcstats",
+      "full_name": "jitsi/rtcstats",
+      "html_url": "https://github.com/jitsi/rtcstats",
+      "description": null,
+      "language": "JavaScript",
+      "stargazers_count": 7,
+      "forks_count": 16,
+      "open_issues_count": 0,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 226353835,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMjYzNTM4MzU=",
+      "name": "handbook",
+      "full_name": "jitsi/handbook",
+      "html_url": "https://github.com/jitsi/handbook",
+      "description": "The Jitsi Handbook",
+      "language": "JavaScript",
+      "stargazers_count": 222,
+      "forks_count": 506,
+      "open_issues_count": 15,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "documentation",
+        "jitsi"
+      ]
+    },
+    {
+      "id": 1058003715,
+      "node_id": "R_kgDOPw_bAw",
+      "name": "cloudflare-ts-bundler-worker",
+      "full_name": "jitsi/cloudflare-ts-bundler-worker",
+      "html_url": "https://github.com/jitsi/cloudflare-ts-bundler-worker",
+      "description": "Bundle Up As A Service",
+      "language": "TypeScript",
+      "stargazers_count": 2,
+      "forks_count": 1,
+      "open_issues_count": 6,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
       "topics": []
     },
     {
@@ -791,36 +852,64 @@
         "video-conferencing",
         "webrtc"
       ]
-    },
-    {
-      "id": 200293665,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMDAyOTM2NjU=",
-      "name": "jitsi-srtp",
-      "full_name": "jitsi/jitsi-srtp",
-      "html_url": "https://github.com/jitsi/jitsi-srtp",
-      "description": "SRTP implementation for Jitsi",
-      "language": "Java",
-      "stargazers_count": 25,
-      "forks_count": 37,
-      "open_issues_count": 6,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
     }
   ],
   "contributorsDetails": [
     {
-      "login": "aaronkvanmeerten",
-      "id": 3082616,
-      "node_id": "MDQ6VXNlcjMwODI2MTY=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/3082616?v=4",
-      "html_url": "https://github.com/aaronkvanmeerten",
-      "contributions": 800
+      "login": "saghul",
+      "id": 317464,
+      "node_id": "MDQ6VXNlcjMxNzQ2NA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/317464?v=4",
+      "html_url": "https://github.com/saghul",
+      "contributions": 3
+    },
+    {
+      "login": "csett86",
+      "id": 1392875,
+      "node_id": "MDQ6VXNlcjEzOTI4NzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1392875?v=4",
+      "html_url": "https://github.com/csett86",
+      "contributions": 195
+    },
+    {
+      "login": "akshitkrnagpal",
+      "id": 15872348,
+      "node_id": "MDQ6VXNlcjE1ODcyMzQ4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/15872348?v=4",
+      "html_url": "https://github.com/akshitkrnagpal",
+      "contributions": 48
+    },
+    {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "html_url": "https://github.com/apps/dependabot",
+      "contributions": 45
+    },
+    {
+      "login": "hristoterezov",
+      "id": 1729265,
+      "node_id": "MDQ6VXNlcjE3MjkyNjU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1729265?v=4",
+      "html_url": "https://github.com/hristoterezov",
+      "contributions": 31
+    },
+    {
+      "login": "andrei-gavrilescu",
+      "id": 51706180,
+      "node_id": "MDQ6VXNlcjUxNzA2MTgw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51706180?v=4",
+      "html_url": "https://github.com/andrei-gavrilescu",
+      "contributions": 2
+    },
+    {
+      "login": "ovari",
+      "id": 17465872,
+      "node_id": "MDQ6VXNlcjE3NDY1ODcy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/17465872?v=4",
+      "html_url": "https://github.com/ovari",
+      "contributions": 7
     },
     {
       "login": "damencho",
@@ -828,23 +917,47 @@
       "node_id": "MDQ6VXNlcjMyNjMwOTg=",
       "avatar_url": "https://avatars.githubusercontent.com/u/3263098?v=4",
       "html_url": "https://github.com/damencho",
-      "contributions": 40
+      "contributions": 57
     },
     {
-      "login": "bgrozev",
-      "id": 3264699,
-      "node_id": "MDQ6VXNlcjMyNjQ2OTk=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/3264699?v=4",
-      "html_url": "https://github.com/bgrozev",
-      "contributions": 62
+      "login": "horymury",
+      "id": 39557534,
+      "node_id": "MDQ6VXNlcjM5NTU3NTM0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/39557534?v=4",
+      "html_url": "https://github.com/horymury",
+      "contributions": 2
     },
     {
-      "login": "sawall",
-      "id": 656957,
-      "node_id": "MDQ6VXNlcjY1Njk1Nw==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/656957?v=4",
-      "html_url": "https://github.com/sawall",
-      "contributions": 310
+      "login": "virtuacoplenny",
+      "id": 1243084,
+      "node_id": "MDQ6VXNlcjEyNDMwODQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1243084?v=4",
+      "html_url": "https://github.com/virtuacoplenny",
+      "contributions": 4
+    },
+    {
+      "login": "awlx",
+      "id": 6527744,
+      "node_id": "MDQ6VXNlcjY1Mjc3NDQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6527744?v=4",
+      "html_url": "https://github.com/awlx",
+      "contributions": 4
+    },
+    {
+      "login": "ujdhesa",
+      "id": 1289252,
+      "node_id": "MDQ6VXNlcjEyODkyNTI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1289252?v=4",
+      "html_url": "https://github.com/ujdhesa",
+      "contributions": 3
+    },
+    {
+      "login": "thttg",
+      "id": 28702320,
+      "node_id": "MDQ6VXNlcjI4NzAyMzIw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/28702320?v=4",
+      "html_url": "https://github.com/thttg",
+      "contributions": 3
     },
     {
       "login": "jallamsetty1",
@@ -852,7 +965,159 @@
       "node_id": "MDQ6VXNlcjU0MzI0NjUy",
       "avatar_url": "https://avatars.githubusercontent.com/u/54324652?v=4",
       "html_url": "https://github.com/jallamsetty1",
-      "contributions": 10
+      "contributions": 13
+    },
+    {
+      "login": "miwie",
+      "id": 934730,
+      "node_id": "MDQ6VXNlcjkzNDczMA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/934730?v=4",
+      "html_url": "https://github.com/miwie",
+      "contributions": 2
+    },
+    {
+      "login": "jrie",
+      "id": 5701785,
+      "node_id": "MDQ6VXNlcjU3MDE3ODU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5701785?v=4",
+      "html_url": "https://github.com/jrie",
+      "contributions": 2
+    },
+    {
+      "login": "i-celeste-aurora",
+      "id": 10852644,
+      "node_id": "MDQ6VXNlcjEwODUyNjQ0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10852644?v=4",
+      "html_url": "https://github.com/i-celeste-aurora",
+      "contributions": 2
+    },
+    {
+      "login": "emcho",
+      "id": 1817019,
+      "node_id": "MDQ6VXNlcjE4MTcwMTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1817019?v=4",
+      "html_url": "https://github.com/emcho",
+      "contributions": 2
+    },
+    {
+      "login": "depressiveRobot",
+      "id": 6043497,
+      "node_id": "MDQ6VXNlcjYwNDM0OTc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6043497?v=4",
+      "html_url": "https://github.com/depressiveRobot",
+      "contributions": 1
+    },
+    {
+      "login": "milotype",
+      "id": 43657314,
+      "node_id": "MDQ6VXNlcjQzNjU3MzE0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43657314?v=4",
+      "html_url": "https://github.com/milotype",
+      "contributions": 1
+    },
+    {
+      "login": "NeroBurner",
+      "id": 9076163,
+      "node_id": "MDQ6VXNlcjkwNzYxNjM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9076163?v=4",
+      "html_url": "https://github.com/NeroBurner",
+      "contributions": 1
+    },
+    {
+      "login": "PeterDaveHello",
+      "id": 3691490,
+      "node_id": "MDQ6VXNlcjM2OTE0OTA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3691490?v=4",
+      "html_url": "https://github.com/PeterDaveHello",
+      "contributions": 1
+    },
+    {
+      "login": "TheEvilSkeleton",
+      "id": 50847364,
+      "node_id": "MDQ6VXNlcjUwODQ3MzY0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/50847364?v=4",
+      "html_url": "https://github.com/TheEvilSkeleton",
+      "contributions": 1
+    },
+    {
+      "login": "Ribero",
+      "id": 2266264,
+      "node_id": "MDQ6VXNlcjIyNjYyNjQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2266264?v=4",
+      "html_url": "https://github.com/Ribero",
+      "contributions": 1
+    },
+    {
+      "login": "rogeriomq",
+      "id": 5284140,
+      "node_id": "MDQ6VXNlcjUyODQxNDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5284140?v=4",
+      "html_url": "https://github.com/rogeriomq",
+      "contributions": 1
+    },
+    {
+      "login": "RudraSen2",
+      "id": 91307601,
+      "node_id": "MDQ6VXNlcjkxMzA3NjAx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/91307601?v=4",
+      "html_url": "https://github.com/RudraSen2",
+      "contributions": 1
+    },
+    {
+      "login": "aadiexii",
+      "id": 150658600,
+      "node_id": "U_kgDOCPreKA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/150658600?v=4",
+      "html_url": "https://github.com/aadiexii",
+      "contributions": 1
+    },
+    {
+      "login": "taivlam",
+      "id": 47955724,
+      "node_id": "MDQ6VXNlcjQ3OTU1NzI0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/47955724?v=4",
+      "html_url": "https://github.com/taivlam",
+      "contributions": 1
+    },
+    {
+      "login": "TallTed",
+      "id": 2559602,
+      "node_id": "MDQ6VXNlcjI1NTk2MDI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2559602?v=4",
+      "html_url": "https://github.com/TallTed",
+      "contributions": 1
+    },
+    {
+      "login": "to-ba",
+      "id": 4720606,
+      "node_id": "MDQ6VXNlcjQ3MjA2MDY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4720606?v=4",
+      "html_url": "https://github.com/to-ba",
+      "contributions": 1
+    },
+    {
+      "login": "aaronkvanmeerten",
+      "id": 3082616,
+      "node_id": "MDQ6VXNlcjMwODI2MTY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3082616?v=4",
+      "html_url": "https://github.com/aaronkvanmeerten",
+      "contributions": 876
+    },
+    {
+      "login": "bgrozev",
+      "id": 3264699,
+      "node_id": "MDQ6VXNlcjMyNjQ2OTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3264699?v=4",
+      "html_url": "https://github.com/bgrozev",
+      "contributions": 67
+    },
+    {
+      "login": "sawall",
+      "id": 656957,
+      "node_id": "MDQ6VXNlcjY1Njk1Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/656957?v=4",
+      "html_url": "https://github.com/sawall",
+      "contributions": 370
     },
     {
       "login": "mihhu",
@@ -868,7 +1133,7 @@
       "node_id": "U_kgDOBjTg8Q",
       "avatar_url": "https://avatars.githubusercontent.com/u/104128753?v=4",
       "html_url": "https://github.com/rpurdel",
-      "contributions": 6
+      "contributions": 9
     },
     {
       "login": "oanaianc",
@@ -887,12 +1152,12 @@
       "contributions": 6
     },
     {
-      "login": "andrei-gavrilescu",
-      "id": 51706180,
-      "node_id": "MDQ6VXNlcjUxNzA2MTgw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/51706180?v=4",
-      "html_url": "https://github.com/andrei-gavrilescu",
-      "contributions": 1
+      "login": "JonathanLennox",
+      "id": 4006649,
+      "node_id": "MDQ6VXNlcjQwMDY2NDk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4006649?v=4",
+      "html_url": "https://github.com/JonathanLennox",
+      "contributions": 6
     },
     {
       "login": "nils-ohlmeier",
@@ -903,36 +1168,12 @@
       "contributions": 4
     },
     {
-      "login": "saghul",
-      "id": 317464,
-      "node_id": "MDQ6VXNlcjMxNzQ2NA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/317464?v=4",
-      "html_url": "https://github.com/saghul",
-      "contributions": 3
-    },
-    {
       "login": "ltorje-8x8",
       "id": 156182956,
       "node_id": "U_kgDOCU8prA",
       "avatar_url": "https://avatars.githubusercontent.com/u/156182956?v=4",
       "html_url": "https://github.com/ltorje-8x8",
-      "contributions": 3
-    },
-    {
-      "login": "horymury",
-      "id": 39557534,
-      "node_id": "MDQ6VXNlcjM5NTU3NTM0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/39557534?v=4",
-      "html_url": "https://github.com/horymury",
-      "contributions": 2
-    },
-    {
-      "login": "JonathanLennox",
-      "id": 4006649,
-      "node_id": "MDQ6VXNlcjQwMDY2NDk=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/4006649?v=4",
-      "html_url": "https://github.com/JonathanLennox",
-      "contributions": 4
+      "contributions": 1
     },
     {
       "login": "gpolitis",

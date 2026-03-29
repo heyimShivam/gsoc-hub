@@ -30,9 +30,9 @@
     "ai",
     "fuzz-testing"
   ],
-  "irc_channel": "https://wiki.linuxfoundation.org/gsoc/google-summer-code-2025#contact_us",
+  "irc_channel": "https://github.com/LinuxFoundationGSoC/ProjectIdeas/wiki/Google-Summer-of-Code-2026#contact-us",
   "contact_email": "mailto:till@linux.com",
-  "mailing_list": "https://wiki.linuxfoundation.org/gsoc/google-summer-code-2025#contact_us",
+  "mailing_list": "https://github.com/LinuxFoundationGSoC/ProjectIdeas/wiki/Google-Summer-of-Code-2026#contact-us",
   "twitter_url": "https://twitter.com/Open_Printing",
   "blog_url": "https://linuxfoundation.org/blog/",
   "facebook_url": null,
@@ -46,7 +46,8 @@
     2022,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2016": [
@@ -1043,10 +1044,261 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/UztKr6k8"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "IIO Driver for ADE9113",
+        "short_description": "Create a Linux IIO driver for Analog Devices, Inc.'s ADE9113 Isolated, Sigma-Delta Analog to Digital Converter. Upstream the driver and associated...",
+        "description": "Create a Linux IIO driver for Analog Devices, Inc.'s ADE9113 Isolated, Sigma-Delta Analog to Digital Converter. Upstream the driver and associated device tree documentation.",
+        "student_name": "abhinjai",
+        "code_url": "https://github.com/analogdevicesinc/linux/pull/2854",
+        "proposal_id": "00st6oF2",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/ENS6gMck"
+      },
+      {
+        "title": "App Store: A Secure, User-Friendly Application Platform for Embedded Linux IVI Systems",
+        "short_description": "Problem: Embedded Linux systems, particularly for In-Vehicle Infotainment (IVI), lack a user-friendly, secure application store that matches the...",
+        "description": "Problem: Embedded Linux systems, particularly for In-Vehicle Infotainment (IVI), lack a user-friendly, secure application store that matches the seamless experience of mobile platforms. Existing solutions often fall short in providing curated app access, robust security, and support for diverse app types, limiting their adoption in production-ready environments.\n\nSolution: The Flatpak App Store addresses this by delivering a modern application store for embedded Linux. Built with Flutter for an intuitive UI, it leverages Flatpak for secure, sandboxed app distribution and integrates advanced features like MutualTLS, DRM playback, and Android app support via crosvm. A 22-week implementation plan ensures a scalable, production-ready solution, with cloud APIs for app management and user reviews, tailored to IVI use cases.\n\nDeliverables:\n\nA fully functional Flatpak App Store application with browsing, installation, and review capabilities.\nSecure architecture featuring MutualTLS, sandboxing, and secret storage.\nSupport for Flutter, Native Linux, and Android apps, with DRM playback integration.\nPackaged Flatpak app and repository setup for deployment.\nComprehensive documentation and test suite for IVI production readiness.\nThis project will empower embedded Linux users with a reliable, mobile-like app store experience, enhancing IVI system functionality and security.",
+        "student_name": "Ahmed Wafdy",
+        "code_url": "https://ahmedadelwafdy7.github.io/#/blog",
+        "proposal_id": "Aclo9V7e",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/l9ir7nwf"
+      },
+      {
+        "title": "Intelligent Camera Stream Integration and Warning System (ICSW)",
+        "short_description": "The proposed implementation is planned to include building the camera-based warning system, starting from the low-level driver implementation,...",
+        "description": "The proposed implementation is planned to include building the camera-based warning system, starting from the low-level driver implementation, creating necessary logic inside PipeWire nodes, training AI models for objects detection, and designing the suitable User Interface using Flutter. The final product would be a Warning System that leverages implemented inference models (e.g. Object Detection) and accordingly issues a visual alert in response to critical conditions, such as the detection of an object in the blind spot, or a very low time-to-collision.",
+        "student_name": "Amr Elkenawy",
+        "code_url": "https://aelkenawy.github.io/gsoc25-tlf-project-summary/",
+        "proposal_id": "O8NEwg2T",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/YUBlZH0X"
+      },
+      {
+        "title": "Conformance Checker for SPDX AI SBOM",
+        "short_description": "Adding support of a new file format (SPDX 3.0) and a new compliance standard (EU Artificial Intelligence Act) for SPDX SBOM Conformance Checker. This...",
+        "description": "Adding support of a new file format (SPDX 3.0) and a new compliance standard (EU Artificial Intelligence Act) for SPDX SBOM Conformance Checker.\n\nThis proposal introduces two key capabilities:\n\n1) SPDX 3.0 Parsing: Add ability to parse SBOMs in SPDX 3.0 JSON format and build a computational model of the SBOM for further processing.\n\n2) EU AI Act Compliance Checks: Add ability to assess SBOM conformance against selected provisions of the EU AI Act. For example, concerning Article 49 (Registration), the checker will analyze the SBOM to determine if it includes the information mandated by Annex VIII, providing users with a clear report on present and missing data elements.",
+        "student_name": "Arthit Suriyawongkul",
+        "code_url": "https://github.com/spdx/ntia-conformance-checker",
+        "proposal_id": "sxDdYkC1",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/CeR3hQTq"
+      },
+      {
+        "title": "Porting Printing to Zephyr",
+        "short_description": "Current driverless print servers can be complex and resource-demanding in large part since they only run on full-scale operating systems like Linux....",
+        "description": "Current driverless print servers can be complex and resource-demanding in large part since they only run on full-scale operating systems like Linux. This project aims to port the different elements of OpenPrinting's printing stack (CUPS, libcupsfilters, etc.) to the Zephyr OS for simple future print server development on embedded devices. This will consist of systematically adding Zephyr modules and commits to the OS itself for each part of the printing stack. Importantly, Zephyr replacements and ports must also be used instead of the current Linux dependencies. This leads to further investigation into the capabilities of the Zephyr OS to support technologies such as Ghostscript and print buffering. Lastly, the stack must be tested on hardware to verify functionality and view benchmarks such as power consumption.",
+        "student_name": "Hubert Guan",
+        "code_url": "https://hubertyguan.github.io/GSoC-2025/posts/final/",
+        "proposal_id": "XISI8NDP",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/f9CKDFJW"
+      },
+      {
+        "title": "Stabilizing and extending patch-hub for a v1.0.0 release",
+        "short_description": "patch-hub, a sub-project of kw, diverged from its parent around July 2024 to accommodate a broader scope. Since then, it has introduced several...",
+        "description": "patch-hub, a sub-project of kw, diverged from its parent around July 2024 to accommodate a broader scope. Since then, it has introduced several end-user features, but remains in pre-release at version 0.1.5.\n\nThis proposal aims to push patch-hub to a stable v1.0.0 release by delivering a complete and streamlined maintainer workflow—from receiving patches to reviewing, testing, and providing feedback—while also addressing architectural concerns, improving modularity, and strengthening the testing and documentation infrastructure.",
+        "student_name": "Ivin Joel Abraham",
+        "code_url": "https://blog.ivinjoelabraham.com/posts/kworkflow-gsoc/",
+        "proposal_id": "TY8PMQVS",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/tPajUL8q"
+      },
+      {
+        "title": "GNOME Control Center: Finalizing the New Printing Architecture for GNOME",
+        "short_description": "The latest CUPS 3.x versions support only driverless printing through the new IPP Everywhere architecture. Modern printers predominantly use...",
+        "description": "The latest CUPS 3.x versions support only driverless printing through the new IPP Everywhere architecture. Modern printers predominantly use driverless technology, supporting IPP printing and automatically configuring themselves via CUPS. Unlike traditional setups, these IPP printers do not require a permanent print queue. However, many printers still rely on drivers (PPD + filter).\r\n\r\nTo address this, the Genome Control Center (GCC) must be adapted to support both driver-based and driverless printers. While significant progress has been made, substantial work remains before this new approach can be fully integrated into GCC. The project aims to complete all remaining tasks, ensuring a seamless user experience for GCC printers while refining all aspects for the final release.",
+        "student_name": "K_V",
+        "code_url": "https://medium.com/@kaushik.vishwakarma2003/gsoc-2025-thelinuxfoundation-advancing-printer-management-in-gnome-control-center-c36a1ce8ae07",
+        "proposal_id": "plJCX1VX",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/PTiuC47E"
+      },
+      {
+        "title": "Google Summer of Code 2025: IIO Driver",
+        "short_description": "I am going to write the code for the ADE9113 IIO Driver and the related device tree documentation. I will also provide a comprehensive tutorial...",
+        "description": "I am going to write the code for the ADE9113 IIO Driver and the related device tree documentation. I will also provide a comprehensive tutorial detailing the development process and the steps to create the driver, along with a functional demo showcasing the driver working with the hardware. In the end, this work will be submitted for inclusion in the upstream Linux Kernel.",
+        "student_name": "Marilene Andrade Garcia",
+        "code_url": "https://marilenegarcia.github.io/GSoC/GSoC.html",
+        "proposal_id": "EfFmziR2",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/c9zg3p6z"
+      },
+      {
+        "title": "Rust bindings for libcups2/3",
+        "short_description": "This project will create comprehensive Rust bindings and idiomatic wrappers for CUPS (Common UNIX Printing System), enabling Rust applications to...",
+        "description": "This project will create comprehensive Rust bindings and idiomatic wrappers for CUPS (Common UNIX Printing System), enabling Rust applications to fully interact with printers. We'll develop a layered architecture with low-level FFI bindings, safe Rust abstractions, and a DBus/zbus service layer for secure application integration. The implementation will balance leveraging existing C code in libcups while providing memory safety and ergonomic APIs. Key deliverables include core libcups bindings, an idiomatic Rust API, async support through tokio, a secure DBus service, and integration with the Common Print Dialog Backend (CPDB) for COSMIC desktop environment compatibility",
+        "student_name": "Mintu Gogoi",
+        "code_url": "https://github.com/Gmin2/cups-rs",
+        "proposal_id": "XEbBOcnd",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/Vxc0sLQU"
+      },
+      {
+        "title": "Integrating OSS-Fuzz for Go-Based and Python-Based OpenPrinting Projects",
+        "short_description": "The OpenPrinting ecosystem includes several utilities for driverless printing, protocol implementation, and printer management, including projects...",
+        "description": "The OpenPrinting ecosystem includes several utilities for driverless printing, protocol implementation, and printer management, including projects written in Go and Python. These polyglot projects currently lack fuzz testing, making them prone to undetected bugs and security issues. This project proposes integrating such polyglot OpenPrinting projects, namely ipp-usb, goipp, pycups, and pyppd, into OSS-Fuzz to enable continuous, large-scale fuzzing. The work will include evaluating current unit tests, improving coverage where lacking, identifying suitable fuzzing targets based on test coverage and risk, developing fuzz harnesses, and integrating the projects into OSS-Fuzz. This effort will help expand OSS-Fuzz coverage across OpenPrinting projects, further strengthening their overall security and reliability.",
+        "student_name": "Mohammed Imaduddin",
+        "code_url": "https://github.com/OpenPrinting/fuzzing/blob/main/contributions/GSoC%202025%20-%20Integrating%20OSS-Fuzz%20for%20Go-Based%20and%20Python-Based%20OpenPrinting%20Projects/Final%20report.md",
+        "proposal_id": "UMRGLJDt",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/rBWHXaha"
+      },
+      {
+        "title": "Modernize OpenPrinting Website with Next.js",
+        "short_description": "The OpenPrinting website is an essential platform for Linux printing resources. The current system lacks modern UI enhancements and optimized SEO....",
+        "description": "The OpenPrinting website is an essential platform for Linux printing resources. The current system lacks modern UI enhancements and optimized SEO. Additionally, the existing Foomatic lookup page relies on SQL and dynamic web technologies, which I will be migrating to a fully static implementation. This transition will eliminate dependencies on an SQL server and a web server, with everything being managed exclusively on GitHub.\n\nThis project aims to modernize the OpenPrinting website by migrating it to Next.js, a powerful React framework that ensures scalability, performance optimization, and maintainability. The transition will include:\n\n- Rebuilding the site with a modular, component-based Next.js architecture.\n- Migrating the Foomatic lookup page to a static page for improved efficiency.\n- Implementing Server-Side Rendering (SSR) and Static Site Generation (SSG) to optimize performance.\n- Deploying the new website with a CI/CD pipeline for automated updates and maintenance.",
+        "student_name": "Rudra Pratap Singh",
+        "code_url": "https://medium.com/@rudransh.iitm/static-pages-dynamic-impact-my-gsoc-2025-journey-119a2544f4c9",
+        "proposal_id": "enfDa5bz",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/YEV4FNMy"
+      },
+      {
+        "title": "Automotive Grade Linux (AGL) - meta-ros",
+        "short_description": "The integration of the Robot Operating System (ROS) Framework as an option within Automotive Grade Linux (AGL) through the meta-ros yocto layer is an...",
+        "description": "The integration of the Robot Operating System (ROS) Framework as an option within Automotive Grade Linux (AGL) through the meta-ros yocto layer is an important step in upgrading vehicle technology using automotive systems. This project is important for several reasons:\n* Bridging the Gap Between Robotics and Automotive Software\n* Expanding AGL’s Capabilities\n* Advancing Open-Source Development\n* Enhancing Real-World Use Cases",
+        "student_name": "Saalim Quadri",
+        "code_url": "https://github.com/danascape/GSoC25-AGL-ROS2",
+        "proposal_id": "DXTLvuuQ",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/OwFx8eRG"
+      },
+      {
+        "title": "OpenPrinting Image Output Verification Framework",
+        "short_description": "Currently, OpenPrinting's testing only looks for errors or crashes; it does not automatically verify the content of print or scan output. This...",
+        "description": "Currently, OpenPrinting's testing only looks for errors or crashes; it does not automatically verify the content of print or scan output. This project uses OpenCV to create an automated tool that fills this gap. By analyzing controlled test images, the tool will verify key output characteristics essential for print quality: page completeness and order, correct orientation and scaling, expected color properties, and appropriate density/sharpness. Deliverables include the verification tool designed for integration into OpenPrinting's CI pipeline, a methodology for defining suitable test images, and comprehensive documentation. This project will significantly enhance the reliability and quality assurance of open-source printing solutions.",
+        "student_name": "Sanskar2303",
+        "code_url": null,
+        "proposal_id": "Gh20a21n",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/aFApa0Ws"
+      },
+      {
+        "title": "Porting pyCUPS to CUPS 3.x API and implementing it in system config printer",
+        "short_description": "Currently, PyCups support upto libcups 2.4.x. PyCups being written using the C extensions for Python, is very tough to maintain, and to implement new...",
+        "description": "Currently, PyCups support upto libcups 2.4.x. PyCups being written using the C extensions for Python, is very tough to maintain, and to implement new features in. Also, there is a very small scope of implementing automation for creating the python bindings of libcups.\nAfter PyCups is ported to libcups 3.x, I'll implement the same API for system-config-printer. So, that distros still shipping old libcups 2.4.x can slowly stop shipping the library. And libcups 2.4.x can be deprecated. Immensely helping the printing APIs and libraries.",
+        "student_name": "Soumyadeep Ghosh",
+        "code_url": "https://soumyadghosh.github.io/website/interns/gsoc-2025/gsoc-final-submission",
+        "proposal_id": "FFe0juMO",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/S3e2JPY8"
+      },
+      {
+        "title": "Enhancing the Functionality of spdx-license-diff",
+        "short_description": "The spdx-license-diff browser extension compares selected text on a webpage against the SPDX License List, showing the best matching license and a...",
+        "description": "The spdx-license-diff browser extension compares selected text on a\nwebpage against the SPDX License List, showing the best matching license and a\nsimilarity percentage. The tool is currently broken in modern browsers due to\nChrome’s Manifest V3 migration and Firefox compatibility issues. This project will\nrestore compatibility, enhance its matching accuracy based on SPDX guidelines,\nimprove the user interface and ensure accessibility compliance.",
+        "student_name": "Sujal Bhor",
+        "code_url": "https://github.com/spdx/spdx-license-diff",
+        "proposal_id": "uuMOkRgQ",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/TwtGeZ4X"
+      },
+      {
+        "title": "Add Virtual DAI component to SOF",
+        "short_description": "The project aims to implement a Virtual Digital Audio Interface (DAI) for the Sound Open Firmware (SOF) to facilitate debugging, rapid prototyping....",
+        "description": "The project aims to implement a Virtual Digital Audio Interface (DAI) for the Sound Open Firmware (SOF) to facilitate debugging, rapid prototyping. The Virtual DAI will support two directions: playback, which consumes data similarly to /dev/null, and capture, which generates data like /dev/zero or /dev/urandom. Expected outcomes include successfully merging the Virtual DAI component upstream, enabling simple playback and record pipelines, logging and discarding output frames for playback, and generating zero-filled frames for recording.",
+        "student_name": "Suraj Sonawane",
+        "code_url": "https://gist.github.com/SurajSonawane2415/f3a5362d27ae7520a632c89a07c3d9b6",
+        "proposal_id": "zPRSobBO",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/hf59vme1"
+      },
+      {
+        "title": "KDE Print Manager vs. CUPS 3.x",
+        "short_description": "The KDE Print Manager, a critical component of the KDE desktop environment, requires updates to support the advancements introduced in CUPS 3.x. This...",
+        "description": "The KDE Print Manager, a critical component of the KDE desktop environment, \nrequires updates to support the advancements introduced in CUPS 3.x. This project \naims to modernize the Print Manager by enabling compatibility with CUPS 3.x while \nmaintaining backward compatibility with CUPS 2.x. The focus will be on \nincorporating support for IPP (Internet Printing Protocol) print destinations, which \nallow users to print to driverless network printers, IPP-over-USB printers, and \nPrinter Applications without the need for traditional CUPS queues or PPD files.",
+        "student_name": "Tarun Srivastava",
+        "code_url": "https://github.com/Lord-Morpheus/GSOC-2025?tab=readme-ov-file#google-summer-of-code-2025---project-summary",
+        "proposal_id": "EpyQ1IBd",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/VON8sRJK"
+      },
+      {
+        "title": "Running Open-Source ML Models on HiFi4 DSP with Zephyr RTOS",
+        "short_description": "This proposal tackles the challenge of efficiently running machine learning models on resource-constrained HiFi4 DSPs using Zephyr RTOS. The approach...",
+        "description": "This proposal tackles the challenge of efficiently running machine learning models on resource-constrained HiFi4 DSPs using Zephyr RTOS. The approach begins by deploying and validating open-source ML models (e.g., temperature prediction, micro-speech) on an emulated Xtensa platform before porting and optimizing TensorFlow Lite Micro for HiFi4 DSP using NXP’s AN13970 guide. Deliverables include an optimized ML framework for DSPs, a working sample application, comprehensive documentation, and upstream contributions to Zephyr.",
+        "student_name": "Thong Phan",
+        "code_url": "https://thongp.super.site/projects/gsoc2025",
+        "proposal_id": "uEhFiiRa",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/L81rDpY3"
+      },
+      {
+        "title": "Rust bindings for cpdb-libs",
+        "short_description": "The Common Print Dialog Backends (cpdb-libs) library from OpenPrinting serves as a bridge between application print dialogs (like GTK, Qt,...",
+        "description": "The Common Print Dialog Backends (cpdb-libs) library from OpenPrinting serves as a bridge between application print dialogs (like GTK, Qt, LibreOffice, Firefox, Chromium, etc.) and diverse print technologies (such as CUPS/IPP and cloud printing services). It decouples application UIs from backend print systems, enabling more flexible and rapid integration of new print technologies across all platforms. While it's natively written in C, bindings are required for other languages. Rust, known for its safety and concurrency advantages, currently lacks such bindings. This project aims to develop safe and idiomatic Rust bindings for cpdb-libs, enabling seamless integration of modern print backend capabilities in Rust-based applications.",
+        "student_name": "Titiksha Bansal",
+        "code_url": "https://github.com/TitikshaBansal/cpdb-rs",
+        "proposal_id": "mycHYbkB",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/Z88JfqZq"
+      },
+      {
+        "title": "GTK Print Dialog: Modern dialog with built-in preview in main view",
+        "short_description": "We are trying to solve the problem of print dialogs in the gtk. The actual gtk contains a very simplistic approach regarding the print dialogs which...",
+        "description": "We are trying to solve the problem of print dialogs in the gtk. The actual gtk contains a very simplistic approach regarding the print dialogs which need to be improved. As gtk is a parent library for most of the softwares. So its print dialogs need to be updated, as its affecting the most of the softwares relying on them. So, I am determined to solve the process of print dialog and provide it a modern look of print dialog which contains the print preview and print dialog in same pane. The steps i choose to work on came from the great research i did on the software that have this modern dialog. Escpecially i got attracted with the approach of the libreoffice. below are the steps :\n1. Add the return button to the print preview pane in gtk. \n2. Sync the print dialog setting with the print preview pane in gtk.\n3. Extend the class of print preview so that other softwares could write there own algorithm for it. \n4. Combine the print preivew pane and print dialog into one.",
+        "student_name": "VididVidid",
+        "code_url": "https://github.com/OpenPrinting/libpdfrip",
+        "proposal_id": "PjWBTOfH",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/HcP5bOK2"
+      },
+      {
+        "title": "Utilizing OSS-Fuzz-Gen to Improve Fuzz Testing  for OpenPrinting Projects",
+        "short_description": "This project aims to improve fuzz testing for OpenPrinting’s C/C++ codebases by leveraging OSS-Fuzz-Gen, a new framework that uses Large Language...",
+        "description": "This project aims to improve fuzz testing for OpenPrinting’s C/C++ codebases by leveraging OSS-Fuzz-Gen, a new framework that uses Large Language Models (LLMs) to assist fuzz testing. While some OpenPrinting projects are already integrated into Google’s OSS-Fuzz, current fuzzing efforts achieve limited runtime coverage (e.g., only 11.84% for cups), leaving many functions untested. \nTo address this, the project will (1) refine existing fuzzers, (2) improve corpus and dictionary quality using LLMs, and (3) generate additional fuzz harnesses with OSS-Fuzz-Gen to improve the coverage. This will enhance test depth, uncover hidden vulnerabilities, and strengthen the security of OpenPrinting projects.",
+        "student_name": "Zixuan Liu",
+        "code_url": "https://github.com/OpenPrinting/fuzzing/blob/main/contributions/GSoC%202025%20-%20Utilizing%20OSS-Fuzz-Gen%20to%20Improve%20Fuzz%20Testing%20for%20OpenPrinting%20Projects/Final%20report.md",
+        "proposal_id": "2uy1aOmj",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/gRbcUkWB"
+      }
+    ],
+    "2026": []
   },
   "githubID": "linuxfoundation",
   "repositories": [
+    {
+      "id": 1019777347,
+      "node_id": "R_kgDOPMiRQw",
+      "name": "lfx-v2-ui",
+      "full_name": "linuxfoundation/lfx-v2-ui",
+      "html_url": "https://github.com/linuxfoundation/lfx-v2-ui",
+      "description": "LFX v2 UI",
+      "language": "TypeScript",
+      "stargazers_count": 2,
+      "forks_count": 0,
+      "open_issues_count": 15,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 194341141,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxOTQzNDExNDE=",
+      "name": "easycla",
+      "full_name": "linuxfoundation/easycla",
+      "html_url": "https://github.com/linuxfoundation/easycla",
+      "description": null,
+      "language": "Go",
+      "stargazers_count": 73,
+      "forks_count": 49,
+      "open_issues_count": 137,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 1016239466,
+      "node_id": "R_kgDOPJKVag",
+      "name": "lfx-v2-committee-service",
+      "full_name": "linuxfoundation/lfx-v2-committee-service",
+      "html_url": "https://github.com/linuxfoundation/lfx-v2-committee-service",
+      "description": "LFX v2 Platform Committee Service",
+      "language": "Go",
+      "stargazers_count": 0,
+      "forks_count": 1,
+      "open_issues_count": 5,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
     {
       "id": 170801983,
       "node_id": "MDEwOlJlcG9zaXRvcnkxNzA4MDE5ODM=",
@@ -1055,9 +1307,213 @@
       "html_url": "https://github.com/linuxfoundation/lfevents",
       "description": "For the Linux Foundation Events website events.linuxfoundation.org",
       "language": "PHP",
-      "stargazers_count": 23,
-      "forks_count": 8,
-      "open_issues_count": 16,
+      "stargazers_count": 25,
+      "forks_count": 10,
+      "open_issues_count": 62,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 595224681,
+      "node_id": "R_kgDOI3poaQ",
+      "name": "easycla-landing-page",
+      "full_name": "linuxfoundation/easycla-landing-page",
+      "html_url": "https://github.com/linuxfoundation/easycla-landing-page",
+      "description": null,
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 11,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 508240664,
+      "node_id": "R_kgDOHksjGA",
+      "name": "crowd.dev",
+      "full_name": "linuxfoundation/crowd.dev",
+      "html_url": "https://github.com/linuxfoundation/crowd.dev",
+      "description": "LFX Community Data Platform (CDP)",
+      "language": "TypeScript",
+      "stargazers_count": 3360,
+      "forks_count": 731,
+      "open_issues_count": 64,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "cdp",
+        "community",
+        "open-source"
+      ]
+    },
+    {
+      "id": 1168874792,
+      "node_id": "R_kgDORaudKA",
+      "name": "lfx-mcp",
+      "full_name": "linuxfoundation/lfx-mcp",
+      "html_url": "https://github.com/linuxfoundation/lfx-mcp",
+      "description": "LFX MCP (Model Context Protocol) Server",
+      "language": "Go",
+      "stargazers_count": 6,
+      "forks_count": 3,
+      "open_issues_count": 4,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 918237746,
+      "node_id": "R_kgDONrsyMg",
+      "name": "insights",
+      "full_name": "linuxfoundation/insights",
+      "html_url": "https://github.com/linuxfoundation/insights",
+      "description": "Insights into the world's most critical open source software.",
+      "language": "TypeScript",
+      "stargazers_count": 200,
+      "forks_count": 45,
+      "open_issues_count": 76,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 1016239415,
+      "node_id": "R_kgDOPJKVNw",
+      "name": "lfx-v2-mailing-list-service",
+      "full_name": "linuxfoundation/lfx-v2-mailing-list-service",
+      "html_url": "https://github.com/linuxfoundation/lfx-v2-mailing-list-service",
+      "description": "LFX v2 Platform Mailing List Service",
+      "language": "Go",
+      "stargazers_count": 0,
+      "forks_count": 1,
+      "open_issues_count": 2,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 1008027355,
+      "node_id": "R_kgDOPBVG2w",
+      "name": "lfx-v2-helm",
+      "full_name": "linuxfoundation/lfx-v2-helm",
+      "html_url": "https://github.com/linuxfoundation/lfx-v2-helm",
+      "description": "LFX v2 Platform Helm Charts",
+      "language": "Go Template",
+      "stargazers_count": 1,
+      "forks_count": 4,
+      "open_issues_count": 2,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 1139437941,
+      "node_id": "R_kgDOQ-pxdQ",
+      "name": "lfx-v2-survey-service",
+      "full_name": "linuxfoundation/lfx-v2-survey-service",
+      "html_url": "https://github.com/linuxfoundation/lfx-v2-survey-service",
+      "description": "LFX v2 Platform Survey Service",
+      "language": "Go",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 1,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 1086738243,
+      "node_id": "R_kgDOQMZPQw",
+      "name": "lfx-v1-sync-helper",
+      "full_name": "linuxfoundation/lfx-v1-sync-helper",
+      "html_url": "https://github.com/linuxfoundation/lfx-v1-sync-helper",
+      "description": "LFX v1<>v2 data sync helper",
+      "language": "Go",
+      "stargazers_count": 0,
+      "forks_count": 1,
+      "open_issues_count": 2,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 1172845216,
+      "node_id": "R_kgDORegyoA",
+      "name": "lfx-v2-member-service",
+      "full_name": "linuxfoundation/lfx-v2-member-service",
+      "html_url": "https://github.com/linuxfoundation/lfx-v2-member-service",
+      "description": "LFX v2 Platform Member Service",
+      "language": "Go",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 1,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 1167830233,
+      "node_id": "R_kgDORZus2Q",
+      "name": "lfx-changelog",
+      "full_name": "linuxfoundation/lfx-changelog",
+      "html_url": "https://github.com/linuxfoundation/lfx-changelog",
+      "description": null,
+      "language": "TypeScript",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "open_issues_count": 0,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -1075,7 +1531,7 @@
       "html_url": "https://github.com/linuxfoundation/lfx-ui",
       "description": null,
       "language": "TypeScript",
-      "stargazers_count": 3,
+      "stargazers_count": 4,
       "forks_count": 2,
       "open_issues_count": 0,
       "license": {
@@ -1088,16 +1544,96 @@
       "topics": []
     },
     {
-      "id": 614104459,
-      "node_id": "R_kgDOJJp9iw",
-      "name": "auth0-cas-server-go",
-      "full_name": "linuxfoundation/auth0-cas-server-go",
-      "html_url": "https://github.com/linuxfoundation/auth0-cas-server-go",
-      "description": "Authentication proxy for CAS services, written in Go and inspired by \"auth0-cas-server\"",
+      "id": 1183403038,
+      "node_id": "R_kgDORolMHg",
+      "name": "lfx-skills",
+      "full_name": "linuxfoundation/lfx-skills",
+      "html_url": "https://github.com/linuxfoundation/lfx-skills",
+      "description": null,
+      "language": "Shell",
+      "stargazers_count": 4,
+      "forks_count": 0,
+      "open_issues_count": 18,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 1058905043,
+      "node_id": "R_kgDOPx2b0w",
+      "name": "lfx-v2-auth-service",
+      "full_name": "linuxfoundation/lfx-v2-auth-service",
+      "html_url": "https://github.com/linuxfoundation/lfx-v2-auth-service",
+      "description": "LFX v2 Platform Auth Service",
+      "language": "Go",
+      "stargazers_count": 0,
+      "forks_count": 2,
+      "open_issues_count": 3,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 1016860203,
+      "node_id": "R_kgDOPJwOKw",
+      "name": "lfx-v2-query-service",
+      "full_name": "linuxfoundation/lfx-v2-query-service",
+      "html_url": "https://github.com/linuxfoundation/lfx-v2-query-service",
+      "description": "LFX v2 Platform Query Service",
+      "language": "Go",
+      "stargazers_count": 0,
+      "forks_count": 3,
+      "open_issues_count": 1,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 1016239360,
+      "node_id": "R_kgDOPJKVAA",
+      "name": "lfx-v2-project-service",
+      "full_name": "linuxfoundation/lfx-v2-project-service",
+      "html_url": "https://github.com/linuxfoundation/lfx-v2-project-service",
+      "description": "LFX v2 Platform Project Service",
+      "language": "Go",
+      "stargazers_count": 0,
+      "forks_count": 4,
+      "open_issues_count": 6,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 1016239389,
+      "node_id": "R_kgDOPJKVHQ",
+      "name": "lfx-v2-meeting-service",
+      "full_name": "linuxfoundation/lfx-v2-meeting-service",
+      "html_url": "https://github.com/linuxfoundation/lfx-v2-meeting-service",
+      "description": "LFX v2 Platform Meeting Service",
       "language": "Go",
       "stargazers_count": 0,
       "forks_count": 1,
-      "open_issues_count": 0,
+      "open_issues_count": 6,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -1108,16 +1644,56 @@
       "topics": []
     },
     {
-      "id": 781812519,
-      "node_id": "R_kgDOLpmDJw",
-      "name": "cdn-maintenance-toggle",
-      "full_name": "linuxfoundation/cdn-maintenance-toggle",
-      "html_url": "https://github.com/linuxfoundation/cdn-maintenance-toggle",
-      "description": "Python script to deploy/remove Cloudfront maintenance pages",
-      "language": "Python",
+      "id": 1139437894,
+      "node_id": "R_kgDOQ-pxRg",
+      "name": "lfx-v2-voting-service",
+      "full_name": "linuxfoundation/lfx-v2-voting-service",
+      "html_url": "https://github.com/linuxfoundation/lfx-v2-voting-service",
+      "description": "LFX v2 Platform Voting Service",
+      "language": "Go",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "open_issues_count": 1,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 1024472555,
+      "node_id": "R_kgDOPRA16w",
+      "name": "lfx-v2-access-check",
+      "full_name": "linuxfoundation/lfx-v2-access-check",
+      "html_url": "https://github.com/linuxfoundation/lfx-v2-access-check",
+      "description": "LFX v2 Platform Access Check",
+      "language": "Go",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 1,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 1016860184,
+      "node_id": "R_kgDOPJwOGA",
+      "name": "lfx-v2-indexer-service",
+      "full_name": "linuxfoundation/lfx-v2-indexer-service",
+      "html_url": "https://github.com/linuxfoundation/lfx-v2-indexer-service",
+      "description": "LFX v2 Platform Indexer Service",
+      "language": "Go",
       "stargazers_count": 0,
       "forks_count": 2,
-      "open_issues_count": 1,
+      "open_issues_count": 5,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -1128,44 +1704,100 @@
       "topics": []
     },
     {
-      "id": 855990417,
-      "node_id": "R_kgDOMwVgkQ",
-      "name": "lfx-ui-components",
-      "full_name": "linuxfoundation/lfx-ui-components",
-      "html_url": "https://github.com/linuxfoundation/lfx-ui-components",
-      "description": null,
+      "id": 1019777325,
+      "node_id": "R_kgDOPMiRLQ",
+      "name": "lfx-v2-fga-sync",
+      "full_name": "linuxfoundation/lfx-v2-fga-sync",
+      "html_url": "https://github.com/linuxfoundation/lfx-v2-fga-sync",
+      "description": "LFX v2 Platform FGA Sync",
+      "language": "Go",
+      "stargazers_count": 0,
+      "forks_count": 2,
+      "open_issues_count": 3,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 1180116135,
+      "node_id": "R_kgDORlckpw",
+      "name": "github-action-gate",
+      "full_name": "linuxfoundation/github-action-gate",
+      "html_url": "https://github.com/linuxfoundation/github-action-gate",
+      "description": "GitHub App that gates GitHub Actions workflows and jobs with ownership attestations — vouch for who owns a workflow before it merges or runs",
       "language": "TypeScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 1045157656,
+      "node_id": "R_kgDOPkvXGA",
+      "name": "lfx-architecture-decisions",
+      "full_name": "linuxfoundation/lfx-architecture-decisions",
+      "html_url": "https://github.com/linuxfoundation/lfx-architecture-decisions",
+      "description": "LF Product - Architecture Decision Records (ADRs)",
+      "language": null,
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "open_issues_count": 2,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 1009225933,
+      "node_id": "R_kgDOPCeQzQ",
+      "name": "lfx-engineering",
+      "full_name": "linuxfoundation/lfx-engineering",
+      "html_url": "https://github.com/linuxfoundation/lfx-engineering",
+      "description": null,
+      "language": "HTML",
       "stargazers_count": 0,
       "forks_count": 0,
       "open_issues_count": 1,
-      "license": null,
-      "topics": []
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": [
+        "ai",
+        "onboarding",
+        "training"
+      ]
     },
     {
-      "id": 855990271,
-      "node_id": "R_kgDOMwVf_w",
-      "name": "lfx-ng-schematics",
-      "full_name": "linuxfoundation/lfx-ng-schematics",
-      "html_url": "https://github.com/linuxfoundation/lfx-ng-schematics",
+      "id": 1169615926,
+      "node_id": "R_kgDORbbsNg",
+      "name": "aaif-mcp-server",
+      "full_name": "linuxfoundation/aaif-mcp-server",
+      "html_url": "https://github.com/linuxfoundation/aaif-mcp-server",
       "description": null,
-      "language": "TypeScript",
+      "language": "Python",
       "stargazers_count": 0,
       "forks_count": 0,
-      "open_issues_count": 2,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 502103544,
-      "node_id": "R_kgDOHe19-A",
-      "name": "lf-podcast",
-      "full_name": "linuxfoundation/lf-podcast",
-      "html_url": "https://github.com/linuxfoundation/lf-podcast",
-      "description": "From the Linux Foundation office in New York City, welcome to \"The Untold Stories of Open Source\". Each week we explore the people who are supporting Open Source projects, how they became involved with it, and the problems they faced along the way.",
-      "language": "JavaScript",
-      "stargazers_count": 87,
-      "forks_count": 29,
-      "open_issues_count": 20,
+      "open_issues_count": 0,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -1173,230 +1805,137 @@
         "url": "https://api.github.com/licenses/apache-2.0",
         "node_id": "MDc6TGljZW5zZTI="
       },
-      "topics": [
-        "cncf",
-        "finos",
-        "hyperledger",
-        "linuxfoundation",
-        "open-source",
-        "openjs-foundation",
-        "openssf",
-        "security"
-      ]
-    },
-    {
-      "id": 750998693,
-      "node_id": "R_kgDOLMNUpQ",
-      "name": "traefik",
-      "full_name": "linuxfoundation/traefik",
-      "html_url": "https://github.com/linuxfoundation/traefik",
-      "description": "The Cloud Native Application Proxy",
-      "language": null,
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
       "topics": []
     },
     {
-      "id": 701492217,
-      "node_id": "R_kgDOKc_r-Q",
-      "name": "lowdefy-plugin-axios-oauth2-client-credentials",
-      "full_name": "linuxfoundation/lowdefy-plugin-axios-oauth2-client-credentials",
-      "html_url": "https://github.com/linuxfoundation/lowdefy-plugin-axios-oauth2-client-credentials",
-      "description": "Community plugin for HTTP client_credentials grant auth in Lowdefy",
-      "language": "JavaScript",
-      "stargazers_count": 1,
-      "forks_count": 2,
-      "open_issues_count": 0,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": [
-        "internal-tools",
-        "lowdefy",
-        "lowdefy-community",
-        "lowdefy-plugins",
-        "oauth2"
-      ]
-    },
-    {
-      "id": 512889421,
-      "node_id": "R_kgDOHpISTQ",
-      "name": "lfx-resources",
-      "full_name": "linuxfoundation/lfx-resources",
-      "html_url": "https://github.com/linuxfoundation/lfx-resources",
-      "description": "LFX Resources",
-      "language": null,
-      "stargazers_count": 13,
-      "forks_count": 4,
-      "open_issues_count": 3,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 261850401,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNjE4NTA0MDE=",
-      "name": "code-janitor",
-      "full_name": "linuxfoundation/code-janitor",
-      "html_url": "https://github.com/linuxfoundation/code-janitor",
-      "description": "Code Janitor linguistic review tool",
-      "language": "Python",
-      "stargazers_count": 7,
-      "forks_count": 3,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 261849673,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNjE4NDk2NzM=",
-      "name": "foss-barcode",
-      "full_name": "linuxfoundation/foss-barcode",
-      "html_url": "https://github.com/linuxfoundation/foss-barcode",
-      "description": "FOSS Bar Code Tracker",
-      "language": "Python",
-      "stargazers_count": 4,
-      "forks_count": 4,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 261848981,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNjE4NDg5ODE=",
-      "name": "dep-checker",
-      "full_name": "linuxfoundation/dep-checker",
-      "html_url": "https://github.com/linuxfoundation/dep-checker",
-      "description": "A dependency checker tool from The Linux Foundation",
-      "language": "Python",
-      "stargazers_count": 12,
-      "forks_count": 6,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 104771545,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMDQ3NzE1NDU=",
-      "name": "real-time-linux",
-      "full_name": "linuxfoundation/real-time-linux",
-      "html_url": "https://github.com/linuxfoundation/real-time-linux",
+      "id": 1169674343,
+      "node_id": "R_kgDORbfQZw",
+      "name": "aaif-onboarding-marketplace",
+      "full_name": "linuxfoundation/aaif-onboarding-marketplace",
+      "html_url": "https://github.com/linuxfoundation/aaif-onboarding-marketplace",
       "description": null,
       "language": null,
       "stargazers_count": 0,
       "forks_count": 0,
       "open_issues_count": 0,
-      "license": null,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 1080806238,
+      "node_id": "R_kgDOQGvLXg",
+      "name": "lfx-v2-mockdata",
+      "full_name": "linuxfoundation/lfx-v2-mockdata",
+      "html_url": "https://github.com/linuxfoundation/lfx-v2-mockdata",
+      "description": "LFX v2 Mock Data Tooling",
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 1,
+      "open_issues_count": 4,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
       "topics": []
     }
   ],
   "contributorsDetails": [
-    {
-      "login": "cjyabraham",
-      "id": 463160,
-      "node_id": "MDQ6VXNlcjQ2MzE2MA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/463160?v=4",
-      "html_url": "https://github.com/cjyabraham",
-      "contributions": 1302
-    },
-    {
-      "login": "thetwopct",
-      "id": 10615884,
-      "node_id": "MDQ6VXNlcjEwNjE1ODg0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/10615884?v=4",
-      "html_url": "https://github.com/thetwopct",
-      "contributions": 228
-    },
-    {
-      "login": "fuerzastudio",
-      "id": 52936031,
-      "node_id": "MDQ6VXNlcjUyOTM2MDMx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/52936031?v=4",
-      "html_url": "https://github.com/fuerzastudio",
-      "contributions": 14
-    },
-    {
-      "login": "dependabot[bot]",
-      "id": 49699333,
-      "node_id": "MDM6Qm90NDk2OTkzMzM=",
-      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-      "html_url": "https://github.com/apps/dependabot",
-      "contributions": 5
-    },
-    {
-      "login": "dankohn",
-      "id": 3083270,
-      "node_id": "MDQ6VXNlcjMwODMyNzA=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/3083270?v=4",
-      "html_url": "https://github.com/dankohn",
-      "contributions": 2
-    },
-    {
-      "login": "daniloalvess",
-      "id": 6590844,
-      "node_id": "MDQ6VXNlcjY1OTA4NDQ=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/6590844?v=4",
-      "html_url": "https://github.com/daniloalvess",
-      "contributions": 2
-    },
-    {
-      "login": "andycochran",
-      "id": 409279,
-      "node_id": "MDQ6VXNlcjQwOTI3OQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/409279?v=4",
-      "html_url": "https://github.com/andycochran",
-      "contributions": 1
-    },
-    {
-      "login": "arjun-kshirsagar",
-      "id": 146163103,
-      "node_id": "U_kgDOCLZFnw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/146163103?v=4",
-      "html_url": "https://github.com/arjun-kshirsagar",
-      "contributions": 1
-    },
-    {
-      "login": "marco-s",
-      "id": 1022459,
-      "node_id": "MDQ6VXNlcjEwMjI0NTk=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1022459?v=4",
-      "html_url": "https://github.com/marco-s",
-      "contributions": 1
-    },
-    {
-      "login": "UditNayak",
-      "id": 142026166,
-      "node_id": "U_kgDOCHcltg",
-      "avatar_url": "https://avatars.githubusercontent.com/u/142026166?v=4",
-      "html_url": "https://github.com/UditNayak",
-      "contributions": 1
-    },
-    {
-      "login": "kriva03",
-      "id": 43015689,
-      "node_id": "MDQ6VXNlcjQzMDE1Njg5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/43015689?v=4",
-      "html_url": "https://github.com/kriva03",
-      "contributions": 1
-    },
     {
       "login": "asithade",
       "id": 3814354,
       "node_id": "MDQ6VXNlcjM4MTQzNTQ=",
       "avatar_url": "https://avatars.githubusercontent.com/u/3814354?v=4",
       "html_url": "https://github.com/asithade",
-      "contributions": 37
+      "contributions": 2
+    },
+    {
+      "login": "manishdixitlfx",
+      "id": 142783321,
+      "node_id": "U_kgDOCIKzWQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/142783321?v=4",
+      "html_url": "https://github.com/manishdixitlfx",
+      "contributions": 12
+    },
+    {
+      "login": "bramwelt",
+      "id": 324567,
+      "node_id": "MDQ6VXNlcjMyNDU2Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/324567?v=4",
+      "html_url": "https://github.com/bramwelt",
+      "contributions": 25
+    },
+    {
+      "login": "jordane",
+      "id": 342364,
+      "node_id": "MDQ6VXNlcjM0MjM2NA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/342364?v=4",
+      "html_url": "https://github.com/jordane",
+      "contributions": 29
+    },
+    {
+      "login": "agaetep",
+      "id": 82597086,
+      "node_id": "MDQ6VXNlcjgyNTk3MDg2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/82597086?v=4",
+      "html_url": "https://github.com/agaetep",
+      "contributions": 17
+    },
+    {
+      "login": "niravpatel27",
+      "id": 37451437,
+      "node_id": "MDQ6VXNlcjM3NDUxNDM3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/37451437?v=4",
+      "html_url": "https://github.com/niravpatel27",
+      "contributions": 13
+    },
+    {
+      "login": "mauriciozanettisalomao",
+      "id": 25565880,
+      "node_id": "MDQ6VXNlcjI1NTY1ODgw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25565880?v=4",
+      "html_url": "https://github.com/mauriciozanettisalomao",
+      "contributions": 162
+    },
+    {
+      "login": "AlanSherman",
+      "id": 1022557,
+      "node_id": "MDQ6VXNlcjEwMjI1NTc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1022557?v=4",
+      "html_url": "https://github.com/AlanSherman",
+      "contributions": 4
+    },
+    {
+      "login": "andrest50",
+      "id": 56457791,
+      "node_id": "MDQ6VXNlcjU2NDU3Nzkx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/56457791?v=4",
+      "html_url": "https://github.com/andrest50",
+      "contributions": 57
+    },
+    {
+      "login": "mrautela365",
+      "id": 212964156,
+      "node_id": "U_kgDODLGTPA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/212964156?v=4",
+      "html_url": "https://github.com/mrautela365",
+      "contributions": 7
+    },
+    {
+      "login": "MRashad26",
+      "id": 81649923,
+      "node_id": "MDQ6VXNlcjgxNjQ5OTIz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/81649923?v=4",
+      "html_url": "https://github.com/MRashad26",
+      "contributions": 4
     },
     {
       "login": "dealako",
@@ -1404,16 +1943,256 @@
       "node_id": "MDQ6VXNlcjUxOTYwOQ==",
       "avatar_url": "https://avatars.githubusercontent.com/u/519609?v=4",
       "html_url": "https://github.com/dealako",
+      "contributions": 1676
+    },
+    {
+      "login": "lukaszgryglicki",
+      "id": 2469783,
+      "node_id": "MDQ6VXNlcjI0Njk3ODM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2469783?v=4",
+      "html_url": "https://github.com/lukaszgryglicki",
+      "contributions": 848
+    },
+    {
+      "login": "nickmango",
+      "id": 81645226,
+      "node_id": "MDQ6VXNlcjgxNjQ1MjI2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/81645226?v=4",
+      "html_url": "https://github.com/nickmango",
+      "contributions": 834
+    },
+    {
+      "login": "wanyaland",
+      "id": 2846731,
+      "node_id": "MDQ6VXNlcjI4NDY3MzE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2846731?v=4",
+      "html_url": "https://github.com/wanyaland",
+      "contributions": 456
+    },
+    {
+      "login": "SellJamHere",
+      "id": 2972980,
+      "node_id": "MDQ6VXNlcjI5NzI5ODA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2972980?v=4",
+      "html_url": "https://github.com/SellJamHere",
+      "contributions": 270
+    },
+    {
+      "login": "zaclittleberry",
+      "id": 2008027,
+      "node_id": "MDQ6VXNlcjIwMDgwMjc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2008027?v=4",
+      "html_url": "https://github.com/zaclittleberry",
+      "contributions": 252
+    },
+    {
+      "login": "mun5424",
+      "id": 8988939,
+      "node_id": "MDQ6VXNlcjg5ODg5Mzk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8988939?v=4",
+      "html_url": "https://github.com/mun5424",
+      "contributions": 251
+    },
+    {
+      "login": "amolsontakke3576",
+      "id": 56335654,
+      "node_id": "MDQ6VXNlcjU2MzM1NjU0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/56335654?v=4",
+      "html_url": "https://github.com/amolsontakke3576",
+      "contributions": 247
+    },
+    {
+      "login": "fevega1",
+      "id": 7077599,
+      "node_id": "MDQ6VXNlcjcwNzc1OTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7077599?v=4",
+      "html_url": "https://github.com/fevega1",
+      "contributions": 230
+    },
+    {
+      "login": "runzedong",
+      "id": 11761275,
+      "node_id": "MDQ6VXNlcjExNzYxMjc1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11761275?v=4",
+      "html_url": "https://github.com/runzedong",
+      "contributions": 205
+    },
+    {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "html_url": "https://github.com/apps/dependabot",
+      "contributions": 171
+    },
+    {
+      "login": "edouardpoitras",
+      "id": 14075649,
+      "node_id": "MDQ6VXNlcjE0MDc1NjQ5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14075649?v=4",
+      "html_url": "https://github.com/edouardpoitras",
+      "contributions": 152
+    },
+    {
+      "login": "umeshlumbhani247",
+      "id": 129035502,
+      "node_id": "U_kgDOB7Ds7g",
+      "avatar_url": "https://avatars.githubusercontent.com/u/129035502?v=4",
+      "html_url": "https://github.com/umeshlumbhani247",
+      "contributions": 143
+    },
+    {
+      "login": "prasannamahajan",
+      "id": 1476068,
+      "node_id": "MDQ6VXNlcjE0NzYwNjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1476068?v=4",
+      "html_url": "https://github.com/prasannamahajan",
+      "contributions": 143
+    },
+    {
+      "login": "rinkeshbhutwala",
+      "id": 52558117,
+      "node_id": "MDQ6VXNlcjUyNTU4MTE3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/52558117?v=4",
+      "html_url": "https://github.com/rinkeshbhutwala",
+      "contributions": 114
+    },
+    {
+      "login": "makkalot",
+      "id": 8519,
+      "node_id": "MDQ6VXNlcjg1MTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8519?v=4",
+      "html_url": "https://github.com/makkalot",
+      "contributions": 113
+    },
+    {
+      "login": "ngozi-ekekwe",
+      "id": 11598255,
+      "node_id": "MDQ6VXNlcjExNTk4MjU1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11598255?v=4",
+      "html_url": "https://github.com/ngozi-ekekwe",
+      "contributions": 75
+    },
+    {
+      "login": "Xosmond",
+      "id": 11930063,
+      "node_id": "MDQ6VXNlcjExOTMwMDYz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11930063?v=4",
+      "html_url": "https://github.com/Xosmond",
+      "contributions": 62
+    },
+    {
+      "login": "ninz",
+      "id": 1752652,
+      "node_id": "MDQ6VXNlcjE3NTI2NTI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1752652?v=4",
+      "html_url": "https://github.com/ninz",
+      "contributions": 45
+    },
+    {
+      "login": "csavulalfx",
+      "id": 100182937,
+      "node_id": "U_kgDOBfirmQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/100182937?v=4",
+      "html_url": "https://github.com/csavulalfx",
+      "contributions": 35
+    },
+    {
+      "login": "whaley",
+      "id": 166648,
+      "node_id": "MDQ6VXNlcjE2NjY0OA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/166648?v=4",
+      "html_url": "https://github.com/whaley",
+      "contributions": 29
+    },
+    {
+      "login": "thakurveerendras",
+      "id": 75417507,
+      "node_id": "MDQ6VXNlcjc1NDE3NTA3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/75417507?v=4",
+      "html_url": "https://github.com/thakurveerendras",
+      "contributions": 27
+    },
+    {
+      "login": "snyk-bot",
+      "id": 19733683,
+      "node_id": "MDQ6VXNlcjE5NzMzNjgz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19733683?v=4",
+      "html_url": "https://github.com/snyk-bot",
+      "contributions": 26
+    },
+    {
+      "login": "dsuarezlogans",
+      "id": 10699738,
+      "node_id": "MDQ6VXNlcjEwNjk5NzM4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10699738?v=4",
+      "html_url": "https://github.com/dsuarezlogans",
+      "contributions": 25
+    },
+    {
+      "login": "delmarc",
+      "id": 357531,
+      "node_id": "MDQ6VXNlcjM1NzUzMQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/357531?v=4",
+      "html_url": "https://github.com/delmarc",
+      "contributions": 24
+    },
+    {
+      "login": "ErnestG",
+      "id": 1740935,
+      "node_id": "MDQ6VXNlcjE3NDA5MzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1740935?v=4",
+      "html_url": "https://github.com/ErnestG",
+      "contributions": 23
+    },
+    {
+      "login": "dibyaranjanlf",
+      "id": 56246319,
+      "node_id": "MDQ6VXNlcjU2MjQ2MzE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/56246319?v=4",
+      "html_url": "https://github.com/dibyaranjanlf",
+      "contributions": 21
+    },
+    {
+      "login": "mlehotskylf",
+      "id": 49538656,
+      "node_id": "MDQ6VXNlcjQ5NTM4NjU2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/49538656?v=4",
+      "html_url": "https://github.com/mlehotskylf",
+      "contributions": 19
+    },
+    {
+      "login": "hnexokonkwo",
+      "id": 6864018,
+      "node_id": "MDQ6VXNlcjY4NjQwMTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6864018?v=4",
+      "html_url": "https://github.com/hnexokonkwo",
+      "contributions": 17
+    },
+    {
+      "login": "danparsons",
+      "id": 182043,
+      "node_id": "MDQ6VXNlcjE4MjA0Mw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/182043?v=4",
+      "html_url": "https://github.com/danparsons",
+      "contributions": 17
+    },
+    {
+      "login": "emsearcy",
+      "id": 1682693,
+      "node_id": "MDQ6VXNlcjE2ODI2OTM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1682693?v=4",
+      "html_url": "https://github.com/emsearcy",
       "contributions": 1
     },
     {
-      "login": "jordancclive",
-      "id": 5431582,
-      "node_id": "MDQ6VXNlcjU0MzE1ODI=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/5431582?v=4",
-      "html_url": "https://github.com/jordancclive",
+      "login": "lf-itx",
+      "id": 47228263,
+      "node_id": "MDQ6VXNlcjQ3MjI4MjYz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/47228263?v=4",
+      "html_url": "https://github.com/lf-itx",
       "contributions": 1
     }
   ],
-  "activeOrg": false
+  "activeOrg": true
 }

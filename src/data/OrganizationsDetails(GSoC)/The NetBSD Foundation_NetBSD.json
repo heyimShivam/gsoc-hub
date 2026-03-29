@@ -54,7 +54,8 @@
     2022,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2016": [
@@ -360,7 +361,36 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/W5JmdBcW"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Enhancing Support for NAT64 Protocol Translation in NetBSD",
+        "short_description": "NAT64 is a transition mechanism from IPv6 to IPv4. it enables IPv6-only clients to communicate with IPv4-only servers. Despite the growing adoption...",
+        "description": "NAT64 is a transition mechanism from IPv6 to IPv4. it enables IPv6-only clients to communicate with IPv4-only servers. Despite the growing adoption of IPv6, many legacy systems still rely on IPv4. Implementing NAT64 support in NPF will enhance its networking capabilities, ensuring seamless communication between IPv6 and IPv4 networks.\n\nProject Goals:\nThe following are the project goals but not limited to this alone:\n- Extend NPF to support IPv6-to-IPv4 translation\n- Optimize NAT64 processing within NPF to ensure minimal latency and efficient packet handling, especially in high-traffic environments.\n- Passing the information to the kernel, and modifying the kernel packet filter code to process the user/group filtering options and allow/drop packets, in addition to Implementing a robust and efficient NAT64 mechanism within NPF packet filters.\n\nDeliverables:\nWith a commitment and devotion of 40 hours per week, the project is expected to be completed within 2 months and some days.\n\nGuidance from Mentors, personal research, reference implementations from sample codes or other open-source projects (such as Tayga and Jool) can serve as guides to ensure a standards-compliant solution and project completion.\n\nMost importantly, Code reviews from mentors and others will definitely help me to solve problems.",
+        "student_name": "Dennis  O.I",
+        "code_url": "https://github.com/dchidindu5/NAT_GSOC2025/blob/557d879eb1cb8c62b61ce772177ce94f03c35487/MidReport.md",
+        "proposal_id": "bTQbAafj",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/p2rxlbUv"
+      },
+      {
+        "title": "Asynchronous I/O Framework",
+        "short_description": "The aim is to refine the capabilities of asynchronous I/O within NetBSD. A program that utilizes asynchronous I/O is able to invoke multiple file...",
+        "description": "The aim is to refine the capabilities of asynchronous I/O within NetBSD. A program that utilizes asynchronous I/O is able to invoke multiple file operations and continue executing without blocking on their explicit completion. The guiding principle is to keep submission cheap, coalesce work sensibly, and only spawn worker threads when the kernel would otherwise block. Today much of the path within the kernel still behaves synchronously; even so there are performance gains when working with different files, and the work lays the groundwork for future optimizations in concurrency on the same file. We are investigating practical paths forward by drawing on designs that decouple submission from waiting so the system may stall less, with a clear route towards maximal parallelism as lower layers mature (e.g. the buffer cache).",
+        "student_name": "Ethan Miller",
+        "code_url": "https://blog.netbsd.org/tnf/entry/gsoc2025_asynchronous_i_o_framework",
+        "proposal_id": "wwxQYEIt",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/DyO9DOU3"
+      },
+      {
+        "title": "Using bubblewrap to add sandboxing to NetBSD",
+        "short_description": "NetBSD allows the execution of Linux binaries with compat_linux, a NetBSD kernel module that translates Linux system calls into NetBSD system calls....",
+        "description": "NetBSD allows the execution of Linux binaries with compat_linux, a NetBSD kernel module that translates Linux system calls into NetBSD system calls. But, not all of Linux's system calls have been implemented in compat_linux, which means that not all Linux applications can be ran on NetBSD.\n\nOne relevant application that can't be ran is bubblewrap, a tool for constructing sandbox environments. By tracing the system calls executed by the bubblewrap Linux binary and comparing with the ones in compat_linux's source code, we can identify the system calls that need to be implemented.\n\nOne required but currently missing Linux system call is unshare, a system call to create Linux namespaces, which provide isolation of multiple parts from the host, this makes it a complicated system call to emulate.\nUnshare will be the main system call of this project but there will be others as well, such as the capabilities family of system calls, we will study each system call individually to understand if we need to create a completely new system call, or if we can simply translate the Linux system call's arguments to ones used by an equivalent NetBSD system call.\n\nThe successful completion of this project will result in a patch to compat_linux, which will allow bubblewrap to be ran on NetBSD under compat_linux, bringing a new way of sandboxing to NetBSD.",
+        "student_name": "Vasyl Lanko",
+        "code_url": "https://blog.netbsd.org/tnf/entry/gsoc2025_bubblewrap_sandboxing",
+        "proposal_id": "C0Ezt3or",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/KvbHxbzO"
+      }
+    ],
+    "2026": []
   },
   "githubID": "NetBSD",
   "repositories": [
@@ -372,23 +402,9 @@
       "html_url": "https://github.com/NetBSD/pkgsrc",
       "description": "Automatic conversion of the NetBSD pkgsrc CVS module, use with care",
       "language": "Makefile",
-      "stargazers_count": 326,
-      "forks_count": 167,
-      "open_issues_count": 18,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 88439547,
-      "node_id": "MDEwOlJlcG9zaXRvcnk4ODQzOTU0Nw==",
-      "name": "src",
-      "full_name": "NetBSD/src",
-      "html_url": "https://github.com/NetBSD/src",
-      "description": "Automatic conversion of the NetBSD src CVS module, use with care. Please submit bugs/changes via https://gnats.netbsd.org",
-      "language": "C",
-      "stargazers_count": 779,
-      "forks_count": 302,
-      "open_issues_count": 9,
+      "stargazers_count": 376,
+      "forks_count": 174,
+      "open_issues_count": 23,
       "license": null,
       "topics": []
     },
@@ -400,9 +416,23 @@
       "html_url": "https://github.com/NetBSD/pkgsrc-wip",
       "description": "Work-in-progress packages for pkgsrc, the portable package system from NetBSD [mirror]",
       "language": "Makefile",
-      "stargazers_count": 67,
-      "forks_count": 48,
-      "open_issues_count": 0,
+      "stargazers_count": 71,
+      "forks_count": 50,
+      "open_issues_count": 1,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 88439547,
+      "node_id": "MDEwOlJlcG9zaXRvcnk4ODQzOTU0Nw==",
+      "name": "src",
+      "full_name": "NetBSD/src",
+      "html_url": "https://github.com/NetBSD/src",
+      "description": "Automatic conversion of the NetBSD src CVS module, use with care. Please submit bugs/changes via https://gnats.netbsd.org",
+      "language": "C",
+      "stargazers_count": 905,
+      "forks_count": 346,
+      "open_issues_count": 16,
       "license": null,
       "topics": []
     },
@@ -414,8 +444,8 @@
       "html_url": "https://github.com/NetBSD/xsrc",
       "description": "Automatic conversion of the NetBSD xsrc CVS module, use with care",
       "language": "C",
-      "stargazers_count": 30,
-      "forks_count": 18,
+      "stargazers_count": 32,
+      "forks_count": 21,
       "open_issues_count": 0,
       "license": null,
       "topics": []
@@ -429,7 +459,7 @@
       "description": "The missing GNU ld replacement from LLVM",
       "language": "C++",
       "stargazers_count": 3,
-      "forks_count": 6,
+      "forks_count": 5,
       "open_issues_count": 0,
       "license": null,
       "topics": []
@@ -442,8 +472,8 @@
       "html_url": "https://github.com/NetBSD/triforce4netbsd",
       "description": "Collaboration for the using Triforce with NetBSD",
       "language": "C",
-      "stargazers_count": 7,
-      "forks_count": 3,
+      "stargazers_count": 9,
+      "forks_count": 2,
       "open_issues_count": 0,
       "license": null,
       "topics": []
@@ -457,7 +487,7 @@
       "description": "Portable release of the NetBSD constant database",
       "language": null,
       "stargazers_count": 4,
-      "forks_count": 3,
+      "forks_count": 2,
       "open_issues_count": 0,
       "license": {
         "key": "bsd-2-clause",
@@ -476,7 +506,7 @@
       "node_id": "MDQ6VXNlcjIyMjE4NDQ=",
       "avatar_url": "https://avatars.githubusercontent.com/u/2221844?v=4",
       "html_url": "https://github.com/0-wiz-0",
-      "contributions": 10432
+      "contributions": 10490
     },
     {
       "login": "jsonn",
@@ -492,7 +522,7 @@
       "node_id": "MDQ6VXNlcjM2NDIyNg==",
       "avatar_url": "https://avatars.githubusercontent.com/u/364226?v=4",
       "html_url": "https://github.com/ryoon",
-      "contributions": 11510
+      "contributions": 1003
     },
     {
       "login": "alarixnia",
@@ -500,7 +530,7 @@
       "node_id": "MDQ6VXNlcjI5NTQyOTI5",
       "avatar_url": "https://avatars.githubusercontent.com/u/29542929?v=4",
       "html_url": "https://github.com/alarixnia",
-      "contributions": 10153
+      "contributions": 727
     },
     {
       "login": "johnnylam88",
@@ -511,12 +541,20 @@
       "contributions": 9015
     },
     {
+      "login": "0323pin",
+      "id": 90570748,
+      "node_id": "MDQ6VXNlcjkwNTcwNzQ4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/90570748?v=4",
+      "html_url": "https://github.com/0323pin",
+      "contributions": 1253
+    },
+    {
       "login": "rillig",
       "id": 3233724,
       "node_id": "MDQ6VXNlcjMyMzM3MjQ=",
       "avatar_url": "https://avatars.githubusercontent.com/u/3233724?v=4",
       "html_url": "https://github.com/rillig",
-      "contributions": 7877
+      "contributions": 8045
     },
     {
       "login": "msk",
@@ -524,15 +562,7 @@
       "node_id": "MDQ6VXNlcjE5MTk1",
       "avatar_url": "https://avatars.githubusercontent.com/u/19195?v=4",
       "html_url": "https://github.com/msk",
-      "contributions": 7983
-    },
-    {
-      "login": "0323pin",
-      "id": 90570748,
-      "node_id": "MDQ6VXNlcjkwNTcwNzQ4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/90570748?v=4",
-      "html_url": "https://github.com/0323pin",
-      "contributions": 7423
+      "contributions": 1208
     },
     {
       "login": "schmonz",
@@ -540,7 +570,7 @@
       "node_id": "MDQ6VXNlcjExNTA4OQ==",
       "avatar_url": "https://avatars.githubusercontent.com/u/115089?v=4",
       "html_url": "https://github.com/schmonz",
-      "contributions": 6395
+      "contributions": 6729
     },
     {
       "login": "depressed-pho",
@@ -548,7 +578,7 @@
       "node_id": "MDQ6VXNlcjQzODg2MA==",
       "avatar_url": "https://avatars.githubusercontent.com/u/438860?v=4",
       "html_url": "https://github.com/depressed-pho",
-      "contributions": 5557
+      "contributions": 5617
     },
     {
       "login": "jperkin",
@@ -556,7 +586,7 @@
       "node_id": "MDQ6VXNlcjEyODA0Mg==",
       "avatar_url": "https://avatars.githubusercontent.com/u/128042?v=4",
       "html_url": "https://github.com/jperkin",
-      "contributions": 5451
+      "contributions": 5607
     },
     {
       "login": "tnn2",
@@ -564,7 +594,23 @@
       "node_id": "MDQ6VXNlcjY5NjgzNzM=",
       "avatar_url": "https://avatars.githubusercontent.com/u/6968373?v=4",
       "html_url": "https://github.com/tnn2",
-      "contributions": 5030
+      "contributions": 1502
+    },
+    {
+      "login": "iamleot",
+      "id": 6260382,
+      "node_id": "MDQ6VXNlcjYyNjAzODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6260382?v=4",
+      "html_url": "https://github.com/iamleot",
+      "contributions": 3449
+    },
+    {
+      "login": "dhgutteridge",
+      "id": 16064588,
+      "node_id": "MDQ6VXNlcjE2MDY0NTg4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16064588?v=4",
+      "html_url": "https://github.com/dhgutteridge",
+      "contributions": 3866
     },
     {
       "login": "stoned",
@@ -575,28 +621,12 @@
       "contributions": 3800
     },
     {
-      "login": "iamleot",
-      "id": 6260382,
-      "node_id": "MDQ6VXNlcjYyNjAzODI=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/6260382?v=4",
-      "html_url": "https://github.com/iamleot",
-      "contributions": 3659
-    },
-    {
       "login": "mamash",
       "id": 228279,
       "node_id": "MDQ6VXNlcjIyODI3OQ==",
       "avatar_url": "https://avatars.githubusercontent.com/u/228279?v=4",
       "html_url": "https://github.com/mamash",
       "contributions": 3554
-    },
-    {
-      "login": "dhgutteridge",
-      "id": 16064588,
-      "node_id": "MDQ6VXNlcjE2MDY0NTg4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/16064588?v=4",
-      "html_url": "https://github.com/dhgutteridge",
-      "contributions": 3541
     },
     {
       "login": "he32",
@@ -620,7 +650,7 @@
       "node_id": "MDQ6VXNlcjg2NjMzMA==",
       "avatar_url": "https://avatars.githubusercontent.com/u/866330?v=4",
       "html_url": "https://github.com/bsiegert",
-      "contributions": 2198
+      "contributions": 568
     },
     {
       "login": "coypoop",
@@ -628,7 +658,7 @@
       "node_id": "MDQ6VXNlcjE0ODU3Njc0",
       "avatar_url": "https://avatars.githubusercontent.com/u/14857674?v=4",
       "html_url": "https://github.com/coypoop",
-      "contributions": 1905
+      "contributions": 594
     },
     {
       "login": "tsutsui",
@@ -636,7 +666,7 @@
       "node_id": "MDQ6VXNlcjMwNTQ0ODA=",
       "avatar_url": "https://avatars.githubusercontent.com/u/3054480?v=4",
       "html_url": "https://github.com/tsutsui",
-      "contributions": 5830
+      "contributions": 5912
     },
     {
       "login": "fcambus",
@@ -652,7 +682,7 @@
       "node_id": "MDQ6VXNlcjg3MTE0Mw==",
       "avatar_url": "https://avatars.githubusercontent.com/u/871143?v=4",
       "html_url": "https://github.com/reedjc",
-      "contributions": 1457
+      "contributions": 877
     },
     {
       "login": "khorben",
@@ -660,7 +690,7 @@
       "node_id": "MDQ6VXNlcjEwODE3MjQ=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1081724?v=4",
       "html_url": "https://github.com/khorben",
-      "contributions": 1316
+      "contributions": 703
     },
     {
       "login": "krytarowski",
@@ -671,20 +701,20 @@
       "contributions": 1631
     },
     {
+      "login": "suominen",
+      "id": 1939855,
+      "node_id": "MDQ6VXNlcjE5Mzk4NTU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1939855?v=4",
+      "html_url": "https://github.com/suominen",
+      "contributions": 1041
+    },
+    {
       "login": "jdolecek-zz",
       "id": 620699,
       "node_id": "MDQ6VXNlcjYyMDY5OQ==",
       "avatar_url": "https://avatars.githubusercontent.com/u/620699?v=4",
       "html_url": "https://github.com/jdolecek-zz",
       "contributions": 3747
-    },
-    {
-      "login": "suominen",
-      "id": 1939855,
-      "node_id": "MDQ6VXNlcjE5Mzk4NTU=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1939855?v=4",
-      "html_url": "https://github.com/suominen",
-      "contributions": 973
     },
     {
       "login": "kleink",
@@ -700,15 +730,135 @@
       "node_id": "MDQ6VXNlcjg5NjQxNDc1",
       "avatar_url": "https://avatars.githubusercontent.com/u/89641475?v=4",
       "html_url": "https://github.com/nikkicoon",
-      "contributions": 916
+      "contributions": 350
     },
     {
-      "login": "fraggerfox",
-      "id": 189939,
-      "node_id": "MDQ6VXNlcjE4OTkzOQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/189939?v=4",
-      "html_url": "https://github.com/fraggerfox",
-      "contributions": 786
+      "login": "zaydogan",
+      "id": 13858471,
+      "node_id": "MDQ6VXNlcjEzODU4NDcx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13858471?v=4",
+      "html_url": "https://github.com/zaydogan",
+      "contributions": 867
+    },
+    {
+      "login": "kiaderouiche",
+      "id": 5559353,
+      "node_id": "MDQ6VXNlcjU1NTkzNTM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5559353?v=4",
+      "html_url": "https://github.com/kiaderouiche",
+      "contributions": 2912
+    },
+    {
+      "login": "makoto-fujiwara",
+      "id": 1632442,
+      "node_id": "MDQ6VXNlcjE2MzI0NDI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1632442?v=4",
+      "html_url": "https://github.com/makoto-fujiwara",
+      "contributions": 1820
+    },
+    {
+      "login": "obache",
+      "id": 272081,
+      "node_id": "MDQ6VXNlcjI3MjA4MQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/272081?v=4",
+      "html_url": "https://github.com/obache",
+      "contributions": 1671
+    },
+    {
+      "login": "markvuw",
+      "id": 142191272,
+      "node_id": "U_kgDOCHmqqA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/142191272?v=4",
+      "html_url": "https://github.com/markvuw",
+      "contributions": 1318
+    },
+    {
+      "login": "gdt",
+      "id": 515284,
+      "node_id": "MDQ6VXNlcjUxNTI4NA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/515284?v=4",
+      "html_url": "https://github.com/gdt",
+      "contributions": 1042
+    },
+    {
+      "login": "yorickhardy",
+      "id": 45015436,
+      "node_id": "MDQ6VXNlcjQ1MDE1NDM2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/45015436?v=4",
+      "html_url": "https://github.com/yorickhardy",
+      "contributions": 900
+    },
+    {
+      "login": "iquiw",
+      "id": 238681,
+      "node_id": "MDQ6VXNlcjIzODY4MQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/238681?v=4",
+      "html_url": "https://github.com/iquiw",
+      "contributions": 889
+    },
+    {
+      "login": "miwarin",
+      "id": 250465,
+      "node_id": "MDQ6VXNlcjI1MDQ2NQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/250465?v=4",
+      "html_url": "https://github.com/miwarin",
+      "contributions": 653
+    },
+    {
+      "login": "outpaddling",
+      "id": 11299711,
+      "node_id": "MDQ6VXNlcjExMjk5NzEx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11299711?v=4",
+      "html_url": "https://github.com/outpaddling",
+      "contributions": 479
+    },
+    {
+      "login": "kikadf",
+      "id": 1190081,
+      "node_id": "MDQ6VXNlcjExOTAwODE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1190081?v=4",
+      "html_url": "https://github.com/kikadf",
+      "contributions": 463
+    },
+    {
+      "login": "steleto",
+      "id": 6526866,
+      "node_id": "MDQ6VXNlcjY1MjY4NjY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6526866?v=4",
+      "html_url": "https://github.com/steleto",
+      "contributions": 386
+    },
+    {
+      "login": "nbyouri",
+      "id": 2135560,
+      "node_id": "MDQ6VXNlcjIxMzU1NjA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2135560?v=4",
+      "html_url": "https://github.com/nbyouri",
+      "contributions": 380
+    },
+    {
+      "login": "michaelbaeuerle",
+      "id": 81162390,
+      "node_id": "MDQ6VXNlcjgxMTYyMzkw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/81162390?v=4",
+      "html_url": "https://github.com/michaelbaeuerle",
+      "contributions": 367
+    },
+    {
+      "login": "ghen2",
+      "id": 23522924,
+      "node_id": "MDQ6VXNlcjIzNTIyOTI0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/23522924?v=4",
+      "html_url": "https://github.com/ghen2",
+      "contributions": 319
+    },
+    {
+      "login": "Rhialto",
+      "id": 6436498,
+      "node_id": "MDQ6VXNlcjY0MzY0OTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6436498?v=4",
+      "html_url": "https://github.com/Rhialto",
+      "contributions": 304
     },
     {
       "login": "zoulasc",
@@ -716,7 +866,7 @@
       "node_id": "MDQ6VXNlcjU3OTU3Mw==",
       "avatar_url": "https://avatars.githubusercontent.com/u/579573?v=4",
       "html_url": "https://github.com/zoulasc",
-      "contributions": 28873
+      "contributions": 29335
     },
     {
       "login": "thorpej",
@@ -724,7 +874,7 @@
       "node_id": "MDQ6VXNlcjM3NDc5NjIw",
       "avatar_url": "https://avatars.githubusercontent.com/u/37479620?v=4",
       "html_url": "https://github.com/thorpej",
-      "contributions": 13851
+      "contributions": 14308
     },
     {
       "login": "mrgtwentythree",
@@ -732,7 +882,7 @@
       "node_id": "MDQ6VXNlcjYxMTY1Mjcz",
       "avatar_url": "https://avatars.githubusercontent.com/u/61165273?v=4",
       "html_url": "https://github.com/mrgtwentythree",
-      "contributions": 8770
+      "contributions": 9006
     },
     {
       "login": "lukem",
@@ -740,7 +890,7 @@
       "node_id": "MDQ6VXNlcjYyOTE0Mw==",
       "avatar_url": "https://avatars.githubusercontent.com/u/629143?v=4",
       "html_url": "https://github.com/lukem",
-      "contributions": 6270
+      "contributions": 6283
     },
     {
       "login": "skrll",
@@ -748,7 +898,7 @@
       "node_id": "MDQ6VXNlcjE2NTE4NTk=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1651859?v=4",
       "html_url": "https://github.com/skrll",
-      "contributions": 5977
+      "contributions": 6221
     },
     {
       "login": "jaredmcneill",
@@ -756,7 +906,7 @@
       "node_id": "MDQ6VXNlcjE5OTIzNzY=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1992376?v=4",
       "html_url": "https://github.com/jaredmcneill",
-      "contributions": 5913
+      "contributions": 5977
     },
     {
       "login": "MartinHusemann",
@@ -764,7 +914,7 @@
       "node_id": "MDQ6VXNlcjEzMTg0OTc0",
       "avatar_url": "https://avatars.githubusercontent.com/u/13184974?v=4",
       "html_url": "https://github.com/MartinHusemann",
-      "contributions": 4957
+      "contributions": 5026
     },
     {
       "login": "msaitoh",
@@ -772,7 +922,7 @@
       "node_id": "MDQ6VXNlcjYxNDAyMzY=",
       "avatar_url": "https://avatars.githubusercontent.com/u/6140236?v=4",
       "html_url": "https://github.com/msaitoh",
-      "contributions": 4237
+      "contributions": 4238
     },
     {
       "login": "doranand",
@@ -780,7 +930,7 @@
       "node_id": "MDQ6VXNlcjI4NzMxMTg4",
       "avatar_url": "https://avatars.githubusercontent.com/u/28731188?v=4",
       "html_url": "https://github.com/doranand",
-      "contributions": 4012
+      "contributions": 4013
     },
     {
       "login": "yamt",
@@ -788,7 +938,7 @@
       "node_id": "MDQ6VXNlcjE4NDUzNzc=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1845377?v=4",
       "html_url": "https://github.com/yamt",
-      "contributions": 3455
+      "contributions": 3527
     },
     {
       "login": "snarkophilus",
@@ -796,7 +946,15 @@
       "node_id": "MDQ6VXNlcjUxMjU2MzIz",
       "avatar_url": "https://avatars.githubusercontent.com/u/51256323?v=4",
       "html_url": "https://github.com/snarkophilus",
-      "contributions": 3264
+      "contributions": 3267
+    },
+    {
+      "login": "m00nbsd",
+      "id": 42475391,
+      "node_id": "MDQ6VXNlcjQyNDc1Mzkx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/42475391?v=4",
+      "html_url": "https://github.com/m00nbsd",
+      "contributions": 2767
     },
     {
       "login": "gnuoyd",
@@ -812,15 +970,7 @@
       "node_id": "MDQ6VXNlcjE3NjI0NTM4",
       "avatar_url": "https://avatars.githubusercontent.com/u/17624538?v=4",
       "html_url": "https://github.com/nbuwe",
-      "contributions": 2514
-    },
-    {
-      "login": "sauclovian",
-      "id": 86267752,
-      "node_id": "MDQ6VXNlcjg2MjY3NzUy",
-      "avatar_url": "https://avatars.githubusercontent.com/u/86267752?v=4",
-      "html_url": "https://github.com/sauclovian",
-      "contributions": 2461
+      "contributions": 2557
     },
     {
       "login": "hppallan",
@@ -828,7 +978,15 @@
       "node_id": "U_kgDOCojJFA",
       "avatar_url": "https://avatars.githubusercontent.com/u/176736532?v=4",
       "html_url": "https://github.com/hppallan",
-      "contributions": 2363
+      "contributions": 2471
+    },
+    {
+      "login": "sauclovian",
+      "id": 86267752,
+      "node_id": "MDQ6VXNlcjg2MjY3NzUy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/86267752?v=4",
+      "html_url": "https://github.com/sauclovian",
+      "contributions": 2467
     },
     {
       "login": "rokuyama",
@@ -836,7 +994,7 @@
       "node_id": "MDQ6VXNlcjIzNDk2MjE2",
       "avatar_url": "https://avatars.githubusercontent.com/u/23496216?v=4",
       "html_url": "https://github.com/rokuyama",
-      "contributions": 2086
+      "contributions": 2118
     },
     {
       "login": "ozaki-r",
@@ -844,7 +1002,7 @@
       "node_id": "MDQ6VXNlcjE4MTIwNjQ=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1812064?v=4",
       "html_url": "https://github.com/ozaki-r",
-      "contributions": 1765
+      "contributions": 1792
     },
     {
       "login": "enami",
@@ -860,7 +1018,7 @@
       "node_id": "MDQ6VXNlcjIxNDUxMTk=",
       "avatar_url": "https://avatars.githubusercontent.com/u/2145119?v=4",
       "html_url": "https://github.com/jakllsch",
-      "contributions": 1521
+      "contributions": 1523
     },
     {
       "login": "rsmarples",
@@ -868,7 +1026,7 @@
       "node_id": "MDQ6VXNlcjYwNzkwNzg=",
       "avatar_url": "https://avatars.githubusercontent.com/u/6079078?v=4",
       "html_url": "https://github.com/rsmarples",
-      "contributions": 1494
+      "contributions": 1514
     },
     {
       "login": "manu0401",
@@ -876,15 +1034,7 @@
       "node_id": "MDQ6VXNlcjcxMjU2NDU=",
       "avatar_url": "https://avatars.githubusercontent.com/u/7125645?v=4",
       "html_url": "https://github.com/manu0401",
-      "contributions": 1377
-    },
-    {
-      "login": "netbsdis",
-      "id": 77064293,
-      "node_id": "MDQ6VXNlcjc3MDY0Mjkz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/77064293?v=4",
-      "html_url": "https://github.com/netbsdis",
-      "contributions": 1227
+      "contributions": 1387
     }
   ],
   "activeOrg": true

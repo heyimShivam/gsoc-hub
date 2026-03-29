@@ -56,7 +56,8 @@
     2022,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2016": [
@@ -627,30 +628,66 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/6xi6NP33"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Improving the k-File to BRL-CAD Converter & proposal for BRL-CAD database to k-File converter.",
+        "short_description": "This project is intended to improve the interoperability between LS‑DYNA and BRL‑CAD by enhancing the existing k‑g converter and by implementing a...",
+        "description": "This project is intended to improve the interoperability between LS‑DYNA and BRL‑CAD by enhancing the existing k‑g converter and by implementing a new g‑k converter. The primary goal is to facilitate a seamless data exchange between LS‑DYNA keyword files and BRL‑CAD geometry databases, ultimately streamlining workflows for users who need to transition between advanced simulation and detailed geometric modeling.",
+        "student_name": "Andrea Braghin",
+        "code_url": "https://github.com/BraghinAndrea/GSoC2025-project-log/blob/main/final-report.md",
+        "proposal_id": "MqwC7E60",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/nbISmgHl"
+      },
+      {
+        "title": "Developing a MOOSE-based Console for arbalest: a first step to merge arbalest and qged",
+        "short_description": "This project sets out to take the initial step in merging BRL-CAD's two in-development GUIs: \"arbalest\" and \"qged\". The primary objective is to...",
+        "description": "This project sets out to take the initial step in merging BRL-CAD's two in-development GUIs: \"arbalest\" and \"qged\". The primary objective is to transfer qged's sophisticated GED console, which works via low-level calls to BRL-CAD's core libraries (such as libged and librt), into arbalest, while preserving the application's distinctive clean and easy-to-scale architecture. To support this endeavor, I will also expand BRL-CAD's new lightweight, modular, object-oriented API, known as \"MOOSE\". In addition to these core tasks, I will tackle compatibility issues related to arbalest’s Qt widgets to ensure proper display across different OSs, as well as resolve various GUI-related bugs.",
+        "student_name": "Lorenzo Pegorari",
+        "code_url": "https://lorenzopegorari.github.io/GSoC25-report/",
+        "proposal_id": "1vXUwuc9",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/25f08iuM"
+      },
+      {
+        "title": "Web Application to create and check BIM project exchange requirements for IfcOpenShell",
+        "short_description": "Information Delivery Specification (IDS) is a standard for defining information requirements in a computer interpretable form, written in XML....",
+        "description": "Information Delivery Specification (IDS) is a standard for defining information requirements in a computer interpretable form, written in XML.\nManually writing XML in compliance with the IDS schema can be an extremely difficult task for non-technical BIM users, giving rise to a need for a web interface to compose IDS specifications in a user-friendly manner.\n\nThe current implementation suffers from bugs, outdated UI, and lacks important authoring usability features. The primary goal of this proposal is to rebuild the web app on a new foundation - the IfcOpenShell WASM build, eliminating the need for a API backend, improving privacy, and enabling innovative features like in-browser IFC compliance checking, contextual autocompletions, and enhanced UX/UI.\n\nThe new implementation will be comprised of 3 modules:\n1) IDS Module - for composing and editing IDS specifications in a user-friendly way.\n2) WASM Module - to interface with IfcOpenShell WASM.\n3) Application Module  - built with Svelte 5 and shadcn-ui to deliver a modern, responsive UI.\n\nAdditionally, this proposal introduces a built-in XML (IDS) editor, in-browser audit report generation, and integration with Bonsai’s websocket-based Web UI system for fetching \"smart context\" from Blender.",
+        "student_name": "Sayan Jyoti Das",
+        "code_url": "https://seyan.co/blog/gsoc-2025-wrap-up/",
+        "proposal_id": "r3JGISyx",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/888lO1F8"
+      },
+      {
+        "title": "BRL-CAD OGV Migration",
+        "short_description": "This project proposes a complete rewrite of BRL-CAD's existing OGV, which currently uses Meteor.js, an older framework no longer actively maintained....",
+        "description": "This project proposes a complete rewrite of BRL-CAD's existing OGV, which currently uses Meteor.js, an older framework no longer actively maintained. I suggest converting it to a more stable and maintainable framework. I plan to use Next.js, a modern  React-based framework, for the frontend. SCSS/SASS will be used for styling, Nest.js will be used as the backend framework for better efficiency and type-safety, and Three.js will be used for modelling 3-D graphics on the web. Additionally, the frontend will be redesigned following industry-standard UI/UX best practices.. Also, it will be made sure to use libraries that have LTS support and are correctly maintained.",
+        "student_name": "Simarjot_Singh",
+        "code_url": "https://gist.github.com/simarjot0032/2d5e2670c18300c56c5c45409101f829",
+        "proposal_id": "buAwoXIN",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/tp9RLaEx"
+      },
+      {
+        "title": "Development and Build Support for Native Windows",
+        "short_description": "OpenSCAD currently supports Windows development/build setup through 2 key ways: MSYS2 and MXE. A MSVC based build has instructions circa 2012, but...",
+        "description": "OpenSCAD currently supports Windows development/build setup through 2 key ways: MSYS2 and MXE. A MSVC based build has instructions circa 2012, but with significant changes in project structure, and updated/new third party libraries and dependencies, it would be useful to work on adding modern MSVC build support for Windows. Currently, most CI builds use MSYS2 instructions, which has a Unix style build system. The benefits of adding support for MSVC builds include having executable and library outputs (.exe/.dll), vcpkg support for third party libraries OpenSCAD depends on, and support for parallel builds for speed.",
+        "student_name": "Sparsh N",
+        "code_url": "https://github.com/openscad/openscad/issues/6123",
+        "proposal_id": "NXeaQrRY",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/MPJPiTJb"
+      },
+      {
+        "title": "Add polygon fillet algorithm for manifold",
+        "short_description": "While filleting is a common and essential modeling technique, its implementation in existing mesh processing libraries is often limited or absent....",
+        "description": "While filleting is a common and essential modeling technique, its implementation in existing mesh processing libraries is often limited or absent. This project aims to address this gap by developing a robust and efficient polygon fillet algorithm specifically for the Manifold library. The initial phase of the project will concentrate on the 2D domain, with the goal of providing a user-ready implementation. Future work will involve extending this algorithm to support 3D mesh filleting.",
+        "student_name": "Trzeth",
+        "code_url": "https://github.com/elalish/manifold/pull/1294",
+        "proposal_id": "BhPoGR5T",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/LNlkt0XJ"
+      }
+    ],
+    "2026": []
   },
   "githubID": "BRL-CAD",
   "repositories": [
-    {
-      "id": 747988614,
-      "node_id": "R_kgDOLJVmhg",
-      "name": "geogram",
-      "full_name": "BRL-CAD/geogram",
-      "html_url": "https://github.com/BRL-CAD/geogram",
-      "description": "[DEPENDENCY] a programming library with geometric algorithms",
-      "language": "C++",
-      "stargazers_count": 0,
-      "forks_count": 1,
-      "open_issues_count": 1,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
     {
       "id": 834115583,
       "node_id": "R_kgDOMbeX_w",
@@ -673,9 +710,9 @@
       "html_url": "https://github.com/BRL-CAD/brlcad",
       "description": "BRL-CAD is a powerful cross-platform open source combinatorial solid modeling system",
       "language": "Tcl",
-      "stargazers_count": 825,
-      "forks_count": 172,
-      "open_issues_count": 63,
+      "stargazers_count": 962,
+      "forks_count": 219,
+      "open_issues_count": 82,
       "license": {
         "key": "other",
         "name": "Other",
@@ -688,16 +725,16 @@
       ]
     },
     {
-      "id": 256281313,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNTYyODEzMTM=",
-      "name": "MOOSE",
-      "full_name": "BRL-CAD/MOOSE",
-      "html_url": "https://github.com/BRL-CAD/MOOSE",
-      "description": "BRL-CAD's new object-oriented API",
-      "language": "C++",
-      "stargazers_count": 8,
-      "forks_count": 3,
-      "open_issues_count": 0,
+      "id": 1134947463,
+      "node_id": "R_kgDOQ6Xshw",
+      "name": "ogv-viewer",
+      "full_name": "BRL-CAD/ogv-viewer",
+      "html_url": "https://github.com/BRL-CAD/ogv-viewer",
+      "description": null,
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 4,
       "license": null,
       "topics": []
     },
@@ -709,157 +746,23 @@
       "html_url": "https://github.com/BRL-CAD/bext",
       "description": "Repository for managing external 3rd party resources",
       "language": "C",
-      "stargazers_count": 0,
+      "stargazers_count": 1,
       "forks_count": 4,
       "open_issues_count": 1,
       "license": null,
       "topics": []
     },
     {
-      "id": 333453302,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzMzM0NTMzMDI=",
-      "name": "rtcmp",
-      "full_name": "BRL-CAD/rtcmp",
-      "html_url": "https://github.com/BRL-CAD/rtcmp",
-      "description": "Utilities to compare different raytracing engines",
-      "language": "C++",
-      "stargazers_count": 0,
-      "forks_count": 1,
-      "open_issues_count": 0,
-      "license": {
-        "key": "lgpl-2.1",
-        "name": "GNU Lesser General Public License v2.1",
-        "spdx_id": "LGPL-2.1",
-        "url": "https://api.github.com/licenses/lgpl-2.1",
-        "node_id": "MDc6TGljZW5zZTEx"
-      },
-      "topics": []
-    },
-    {
-      "id": 711988699,
-      "node_id": "R_kgDOKnAV2w",
-      "name": "manifold",
-      "full_name": "BRL-CAD/manifold",
-      "html_url": "https://github.com/BRL-CAD/manifold",
-      "description": "DEPENDENCY:  Geometry library for topological robustness",
-      "language": "C++",
-      "stargazers_count": 0,
-      "forks_count": 1,
-      "open_issues_count": 0,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 693401425,
-      "node_id": "R_kgDOKVR3UQ",
-      "name": "libdeflate",
-      "full_name": "BRL-CAD/libdeflate",
-      "html_url": "https://github.com/BRL-CAD/libdeflate",
-      "description": "DEPENDENCY: libdeflate - library for DEFLATE/zlib/gzip compression and decompression",
-      "language": "C",
+      "id": 1185283799,
+      "node_id": "R_kgDORqX-1w",
+      "name": "bullet3",
+      "full_name": "BRL-CAD/bullet3",
+      "html_url": "https://github.com/BRL-CAD/bullet3",
+      "description": "DEPENDENCY:  Bullet Physics SDK: real-time collision detection and multi-physics simulation for VR, games, visual effects, robotics, machine learning etc.",
+      "language": null,
       "stargazers_count": 0,
       "forks_count": 0,
       "open_issues_count": 0,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 836432537,
-      "node_id": "R_kgDOMdrymQ",
-      "name": "GeometricTools",
-      "full_name": "BRL-CAD/GeometricTools",
-      "html_url": "https://github.com/BRL-CAD/GeometricTools",
-      "description": "A collection of source code for computing in the fields of mathematics, geometry, graphics, image analysis and physics.",
-      "language": "C++",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "bsl-1.0",
-        "name": "Boost Software License 1.0",
-        "spdx_id": "BSL-1.0",
-        "url": "https://api.github.com/licenses/bsl-1.0",
-        "node_id": "MDc6TGljZW5zZTI4"
-      },
-      "topics": []
-    },
-    {
-      "id": 692577835,
-      "node_id": "R_kgDOKUfmKw",
-      "name": "astyle",
-      "full_name": "BRL-CAD/astyle",
-      "html_url": "https://github.com/BRL-CAD/astyle",
-      "description": "DEPENDENCY:  Artistic Style automatic source code formatter (https://sourceforge.net/projects/astyle)",
-      "language": "C++",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 692632417,
-      "node_id": "R_kgDOKUi7YQ",
-      "name": "netpbm",
-      "full_name": "BRL-CAD/netpbm",
-      "html_url": "https://github.com/BRL-CAD/netpbm",
-      "description": "DEPENDENCY:  NETPBM image library",
-      "language": "C",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 863043189,
-      "node_id": "R_kgDOM3D-dQ",
-      "name": "Clipper2",
-      "full_name": "BRL-CAD/Clipper2",
-      "html_url": "https://github.com/BRL-CAD/Clipper2",
-      "description": "DEPENDENCY: Polygon Clipping and Offsetting - C++, C# and Delphi",
-      "language": "C++",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "bsl-1.0",
-        "name": "Boost Software License 1.0",
-        "spdx_id": "BSL-1.0",
-        "url": "https://api.github.com/licenses/bsl-1.0",
-        "node_id": "MDc6TGljZW5zZTI4"
-      },
-      "topics": []
-    },
-    {
-      "id": 269344050,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNjkzNDQwNTA=",
-      "name": "arbalest",
-      "full_name": "BRL-CAD/arbalest",
-      "html_url": "https://github.com/BRL-CAD/arbalest",
-      "description": "The project aims to create a geometry editor for BRL-CAD",
-      "language": "C++",
-      "stargazers_count": 29,
-      "forks_count": 17,
-      "open_issues_count": 6,
       "license": {
         "key": "other",
         "name": "Other",
@@ -867,6 +770,34 @@
         "url": null,
         "node_id": "MDc6TGljZW5zZTA="
       },
+      "topics": []
+    },
+    {
+      "id": 517180320,
+      "node_id": "R_kgDOHtOLoA",
+      "name": "models",
+      "full_name": "BRL-CAD/models",
+      "html_url": "https://github.com/BRL-CAD/models",
+      "description": "Various public, open source geometric models used as test cases",
+      "language": null,
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1134948153,
+      "node_id": "R_kgDOQ6XvOQ",
+      "name": "ogv-conversion-module",
+      "full_name": "BRL-CAD/ogv-conversion-module",
+      "html_url": "https://github.com/BRL-CAD/ogv-conversion-module",
+      "description": null,
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 3,
+      "license": null,
       "topics": []
     },
     {
@@ -879,7 +810,7 @@
       "language": "C++",
       "stargazers_count": 0,
       "forks_count": 2,
-      "open_issues_count": 1,
+      "open_issues_count": 0,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -899,7 +830,7 @@
       "language": null,
       "stargazers_count": 17,
       "forks_count": 28,
-      "open_issues_count": 0,
+      "open_issues_count": 2,
       "license": {
         "key": "bsd-3-clause",
         "name": "BSD 3-Clause \"New\" or \"Revised\" License",
@@ -910,73 +841,13 @@
       "topics": []
     },
     {
-      "id": 876915764,
-      "node_id": "R_kgDONESsNA",
-      "name": "tinygltf",
-      "full_name": "BRL-CAD/tinygltf",
-      "html_url": "https://github.com/BRL-CAD/tinygltf",
-      "description": "DEPENDENCY: Header only C++11 tiny glTF 2.0 library",
-      "language": null,
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 693921163,
-      "node_id": "R_kgDOKVxliw",
-      "name": "OpenShadingLanguage",
-      "full_name": "BRL-CAD/OpenShadingLanguage",
-      "html_url": "https://github.com/BRL-CAD/OpenShadingLanguage",
-      "description": "DEPENDENCY:  Open Shading Language - advanced shading language for production GI renderers",
-      "language": "C++",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "bsd-3-clause",
-        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
-        "spdx_id": "BSD-3-Clause",
-        "url": "https://api.github.com/licenses/bsd-3-clause",
-        "node_id": "MDc6TGljZW5zZTU="
-      },
-      "topics": []
-    },
-    {
-      "id": 871383595,
-      "node_id": "R_kgDOM_BCKw",
-      "name": "Imath",
-      "full_name": "BRL-CAD/Imath",
-      "html_url": "https://github.com/BRL-CAD/Imath",
-      "description": "DEPENDENCY:  Imath is a C++ and python library of 2D and 3D vector, matrix, and math operations for computer graphics",
-      "language": null,
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "bsd-3-clause",
-        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
-        "spdx_id": "BSD-3-Clause",
-        "url": "https://api.github.com/licenses/bsd-3-clause",
-        "node_id": "MDc6TGljZW5zZTU="
-      },
-      "topics": []
-    },
-    {
-      "id": 863031639,
-      "node_id": "R_kgDOM3DRVw",
-      "name": "glm",
-      "full_name": "BRL-CAD/glm",
-      "html_url": "https://github.com/BRL-CAD/glm",
-      "description": "DEPENDENCY: OpenGL Mathematics (GLM)",
-      "language": null,
+      "id": 692800422,
+      "node_id": "R_kgDOKUtLpg",
+      "name": "stepcode",
+      "full_name": "BRL-CAD/stepcode",
+      "html_url": "https://github.com/BRL-CAD/stepcode",
+      "description": "DEPENDENCY:  STEPcode - libraries and utilities for reading and writing STEP Part 21 exchange files.",
+      "language": "C",
       "stargazers_count": 0,
       "forks_count": 0,
       "open_issues_count": 0,
@@ -987,6 +858,60 @@
         "url": null,
         "node_id": "MDc6TGljZW5zZTA="
       },
+      "topics": []
+    },
+    {
+      "id": 726199150,
+      "node_id": "R_kgDOK0jrbg",
+      "name": "mmesh",
+      "full_name": "BRL-CAD/mmesh",
+      "html_url": "https://github.com/BRL-CAD/mmesh",
+      "description": "DEPENDENCY: Library for Alexis Naveros's meshing routines",
+      "language": "C",
+      "stargazers_count": 1,
+      "forks_count": 1,
+      "open_issues_count": 0,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 693680059,
+      "node_id": "R_kgDOKVi3uw",
+      "name": "libtiff",
+      "full_name": "BRL-CAD/libtiff",
+      "html_url": "https://github.com/BRL-CAD/libtiff",
+      "description": "DEPENDENCY:  libtiff - Tag Image File Format support",
+      "language": "C",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 692913419,
+      "node_id": "R_kgDOKU0FCw",
+      "name": "qt",
+      "full_name": "BRL-CAD/qt",
+      "html_url": "https://github.com/BRL-CAD/qt",
+      "description": "DEPENDENCY: Qt libraries",
+      "language": "C++",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 2,
+      "license": null,
       "topics": []
     },
     {
@@ -1010,13 +935,87 @@
       "topics": []
     },
     {
-      "id": 692839023,
-      "node_id": "R_kgDOKUvibw",
-      "name": "opennurbs",
-      "full_name": "BRL-CAD/opennurbs",
-      "html_url": "https://github.com/BRL-CAD/opennurbs",
-      "description": "DEPENDENCY:  OpenNURBS library",
+      "id": 692579079,
+      "node_id": "R_kgDOKUfrBw",
+      "name": "LIEF",
+      "full_name": "BRL-CAD/LIEF",
+      "html_url": "https://github.com/BRL-CAD/LIEF",
+      "description": "DEPENDENCY:  LIEF - Library to Instrument Executable Formats",
       "language": "C++",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 693406480,
+      "node_id": "R_kgDOKVSLEA",
+      "name": "pugixml",
+      "full_name": "BRL-CAD/pugixml",
+      "html_url": "https://github.com/BRL-CAD/pugixml",
+      "description": "DEPENDENCY:  pugixml - light-weight, simple and fast XML parser for C++ with XPath support",
+      "language": "C++",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 692790568,
+      "node_id": "R_kgDOKUslKA",
+      "name": "lmdb",
+      "full_name": "BRL-CAD/lmdb",
+      "html_url": "https://github.com/BRL-CAD/lmdb",
+      "description": "DEPENDENCY:  LMDB - Lightning Memory-Mapped Database Manager",
+      "language": "C",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 693674817,
+      "node_id": "R_kgDOKVijQQ",
+      "name": "libjpeg-turbo",
+      "full_name": "BRL-CAD/libjpeg-turbo",
+      "html_url": "https://github.com/BRL-CAD/libjpeg-turbo",
+      "description": "DEPENDENCY:  libjpeg-turbo",
+      "language": "C",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 692802307,
+      "node_id": "R_kgDOKUtTAw",
+      "name": "sqlite3",
+      "full_name": "BRL-CAD/sqlite3",
+      "html_url": "https://github.com/BRL-CAD/sqlite3",
+      "description": "DEPENDENCY:  SQLite - a small SQL database engine. ",
+      "language": "C",
       "stargazers_count": 0,
       "forks_count": 0,
       "open_issues_count": 0,
@@ -1090,32 +1089,12 @@
       "topics": []
     },
     {
-      "id": 693406480,
-      "node_id": "R_kgDOKVSLEA",
-      "name": "pugixml",
-      "full_name": "BRL-CAD/pugixml",
-      "html_url": "https://github.com/BRL-CAD/pugixml",
-      "description": "DEPENDENCY:  pugixml - light-weight, simple and fast XML parser for C++ with XPath support",
-      "language": "C++",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 692802307,
-      "node_id": "R_kgDOKUtTAw",
-      "name": "sqlite3",
-      "full_name": "BRL-CAD/sqlite3",
-      "html_url": "https://github.com/BRL-CAD/sqlite3",
-      "description": "DEPENDENCY:  SQLite - a small SQL database engine. ",
+      "id": 692621663,
+      "node_id": "R_kgDOKUiRXw",
+      "name": "libpng",
+      "full_name": "BRL-CAD/libpng",
+      "html_url": "https://github.com/BRL-CAD/libpng",
+      "description": "DEPENDENCY:  LIBPNG: Portable Network Graphics support",
       "language": "C",
       "stargazers_count": 0,
       "forks_count": 0,
@@ -1130,47 +1109,95 @@
       "topics": []
     },
     {
-      "id": 692795623,
-      "node_id": "R_kgDOKUs45w",
-      "name": "eigen",
-      "full_name": "BRL-CAD/eigen",
-      "html_url": "https://github.com/BRL-CAD/eigen",
-      "description": "DEPENDENCY:  Eigen - a C++ template library for linear algebra",
+      "id": 333453302,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzMzM0NTMzMDI=",
+      "name": "rtcmp",
+      "full_name": "BRL-CAD/rtcmp",
+      "html_url": "https://github.com/BRL-CAD/rtcmp",
+      "description": "Utilities to compare different raytracing engines",
       "language": "C++",
       "stargazers_count": 0,
-      "forks_count": 0,
+      "forks_count": 1,
       "open_issues_count": 0,
       "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
+        "key": "lgpl-2.1",
+        "name": "GNU Lesser General Public License v2.1",
+        "spdx_id": "LGPL-2.1",
+        "url": "https://api.github.com/licenses/lgpl-2.1",
+        "node_id": "MDc6TGljZW5zZTEx"
       },
       "topics": []
     },
     {
-      "id": 692790568,
-      "node_id": "R_kgDOKUslKA",
-      "name": "lmdb",
-      "full_name": "BRL-CAD/lmdb",
-      "html_url": "https://github.com/BRL-CAD/lmdb",
-      "description": "DEPENDENCY:  LMDB - Lightning Memory-Mapped Database Manager",
-      "language": "C",
+      "id": 1084345657,
+      "node_id": "R_kgDOQKHNOQ",
+      "name": "brl-cad-web",
+      "full_name": "BRL-CAD/brl-cad-web",
+      "html_url": "https://github.com/BRL-CAD/brl-cad-web",
+      "description": "New BRL-CAD Landing page Build in 2022",
+      "language": null,
       "stargazers_count": 0,
       "forks_count": 0,
+      "open_issues_count": 3,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 256281313,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyNTYyODEzMTM=",
+      "name": "MOOSE",
+      "full_name": "BRL-CAD/MOOSE",
+      "html_url": "https://github.com/BRL-CAD/MOOSE",
+      "description": "BRL-CAD's new object-oriented API",
+      "language": "C++",
+      "stargazers_count": 8,
+      "forks_count": 4,
       "open_issues_count": 0,
       "license": null,
       "topics": []
     },
     {
-      "id": 693680059,
-      "node_id": "R_kgDOKVi3uw",
-      "name": "libtiff",
-      "full_name": "BRL-CAD/libtiff",
-      "html_url": "https://github.com/BRL-CAD/libtiff",
-      "description": "DEPENDENCY:  libtiff - Tag Image File Format support",
+      "id": 692601586,
+      "node_id": "R_kgDOKUhC8g",
+      "name": "lemon",
+      "full_name": "BRL-CAD/lemon",
+      "html_url": "https://github.com/BRL-CAD/lemon",
+      "description": "DEPENDENCY:  Lemon Parser Generator",
       "language": "C",
+      "stargazers_count": 0,
+      "forks_count": 1,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 269344050,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyNjkzNDQwNTA=",
+      "name": "arbalest",
+      "full_name": "BRL-CAD/arbalest",
+      "html_url": "https://github.com/BRL-CAD/arbalest",
+      "description": "The project aims to create a geometry editor for BRL-CAD",
+      "language": "C++",
+      "stargazers_count": 32,
+      "forks_count": 16,
+      "open_issues_count": 5,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 692614564,
+      "node_id": "R_kgDOKUh1pA",
+      "name": "strclear",
+      "full_name": "BRL-CAD/strclear",
+      "html_url": "https://github.com/BRL-CAD/strclear",
+      "description": "Utility for clearing/replacing strings in binary and text files",
+      "language": "C++",
       "stargazers_count": 0,
       "forks_count": 0,
       "open_issues_count": 0,
@@ -1184,162 +1211,274 @@
       "topics": []
     },
     {
-      "id": 692579079,
-      "node_id": "R_kgDOKUfrBw",
-      "name": "LIEF",
-      "full_name": "BRL-CAD/LIEF",
-      "html_url": "https://github.com/BRL-CAD/LIEF",
-      "description": "DEPENDENCY:  LIEF - Library to Instrument Executable Formats",
+      "id": 747988614,
+      "node_id": "R_kgDOLJVmhg",
+      "name": "geogram",
+      "full_name": "BRL-CAD/geogram",
+      "html_url": "https://github.com/BRL-CAD/geogram",
+      "description": "[DEPENDENCY] a programming library with geometric algorithms",
       "language": "C++",
       "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
+      "forks_count": 1,
+      "open_issues_count": 1,
       "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
       },
       "topics": []
     }
   ],
   "contributorsDetails": [
     {
-      "login": "BrunoLevy",
-      "id": 19478253,
-      "node_id": "MDQ6VXNlcjE5NDc4MjUz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/19478253?v=4",
-      "html_url": "https://github.com/BrunoLevy",
-      "contributions": 1291
-    },
-    {
-      "login": "p12tic",
-      "id": 1056711,
-      "node_id": "MDQ6VXNlcjEwNTY3MTE=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1056711?v=4",
-      "html_url": "https://github.com/p12tic",
-      "contributions": 7
-    },
-    {
-      "login": "kevinbentley",
-      "id": 5625396,
-      "node_id": "MDQ6VXNlcjU2MjUzOTY=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/5625396?v=4",
-      "html_url": "https://github.com/kevinbentley",
-      "contributions": 5
-    },
-    {
-      "login": "sebmestrallet",
-      "id": 94627691,
-      "node_id": "U_kgDOBaPnaw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/94627691?v=4",
-      "html_url": "https://github.com/sebmestrallet",
-      "contributions": 5
-    },
-    {
-      "login": "tksuoran",
-      "id": 994606,
-      "node_id": "MDQ6VXNlcjk5NDYwNg==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/994606?v=4",
-      "html_url": "https://github.com/tksuoran",
-      "contributions": 4
-    },
-    {
-      "login": "jdumas",
-      "id": 578702,
-      "node_id": "MDQ6VXNlcjU3ODcwMg==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/578702?v=4",
-      "html_url": "https://github.com/jdumas",
-      "contributions": 4
-    },
-    {
-      "login": "hesiod",
-      "id": 3159881,
-      "node_id": "MDQ6VXNlcjMxNTk4ODE=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/3159881?v=4",
-      "html_url": "https://github.com/hesiod",
-      "contributions": 3
-    },
-    {
-      "login": "kxxt",
-      "id": 18085551,
-      "node_id": "MDQ6VXNlcjE4MDg1NTUx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/18085551?v=4",
-      "html_url": "https://github.com/kxxt",
-      "contributions": 3
-    },
-    {
-      "login": "FabienPean",
-      "id": 9134757,
-      "node_id": "MDQ6VXNlcjkxMzQ3NTc=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/9134757?v=4",
-      "html_url": "https://github.com/FabienPean",
-      "contributions": 2
-    },
-    {
-      "login": "arnaudmathias",
-      "id": 4369601,
-      "node_id": "MDQ6VXNlcjQzNjk2MDE=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/4369601?v=4",
-      "html_url": "https://github.com/arnaudmathias",
-      "contributions": 1
-    },
-    {
-      "login": "daichi-ishida",
-      "id": 36416130,
-      "node_id": "MDQ6VXNlcjM2NDE2MTMw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/36416130?v=4",
-      "html_url": "https://github.com/daichi-ishida",
-      "contributions": 1
-    },
-    {
-      "login": "lrineau",
-      "id": 5746675,
-      "node_id": "MDQ6VXNlcjU3NDY2NzU=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/5746675?v=4",
-      "html_url": "https://github.com/lrineau",
-      "contributions": 1
-    },
-    {
-      "login": "weynaa",
-      "id": 9591359,
-      "node_id": "MDQ6VXNlcjk1OTEzNTk=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/9591359?v=4",
-      "html_url": "https://github.com/weynaa",
-      "contributions": 1
-    },
-    {
-      "login": "wszqkzqk",
-      "id": 12961135,
-      "node_id": "MDQ6VXNlcjEyOTYxMTM1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/12961135?v=4",
-      "html_url": "https://github.com/wszqkzqk",
-      "contributions": 1
-    },
-    {
-      "login": "cdcseacave",
-      "id": 2802670,
-      "node_id": "MDQ6VXNlcjI4MDI2NzA=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/2802670?v=4",
-      "html_url": "https://github.com/cdcseacave",
-      "contributions": 1
-    },
-    {
-      "login": "r-value",
-      "id": 30104163,
-      "node_id": "MDQ6VXNlcjMwMTA0MTYz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/30104163?v=4",
-      "html_url": "https://github.com/r-value",
-      "contributions": 1
-    },
-    {
       "login": "starseeker",
       "id": 238416,
       "node_id": "MDQ6VXNlcjIzODQxNg==",
       "avatar_url": "https://avatars.githubusercontent.com/u/238416?v=4",
       "html_url": "https://github.com/starseeker",
-      "contributions": 5
+      "contributions": 23691
+    },
+    {
+      "login": "brlcad",
+      "id": 940391,
+      "node_id": "MDQ6VXNlcjk0MDM5MQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/940391?v=4",
+      "html_url": "https://github.com/brlcad",
+      "contributions": 19277
+    },
+    {
+      "login": "mikemuuss",
+      "id": 68029014,
+      "node_id": "MDQ6VXNlcjY4MDI5MDE0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/68029014?v=4",
+      "html_url": "https://github.com/mikemuuss",
+      "contributions": 10730
+    },
+    {
+      "login": "unacknowledged",
+      "id": 57919081,
+      "node_id": "MDQ6VXNlcjU3OTE5MDgx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/57919081?v=4",
+      "html_url": "https://github.com/unacknowledged",
+      "contributions": 5172
+    },
+    {
+      "login": "DaytonaJohn",
+      "id": 12189166,
+      "node_id": "MDQ6VXNlcjEyMTg5MTY2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12189166?v=4",
+      "html_url": "https://github.com/DaytonaJohn",
+      "contributions": 3449
+    },
+    {
+      "login": "carlmoore",
+      "id": 68098888,
+      "node_id": "MDQ6VXNlcjY4MDk4ODg4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/68098888?v=4",
+      "html_url": "https://github.com/carlmoore",
+      "contributions": 2909
+    },
+    {
+      "login": "erikg",
+      "id": 328255,
+      "node_id": "MDQ6VXNlcjMyODI1NQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/328255?v=4",
+      "html_url": "https://github.com/erikg",
+      "contributions": 1945
+    },
+    {
+      "login": "nickreed",
+      "id": 5342503,
+      "node_id": "MDQ6VXNlcjUzNDI1MDM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5342503?v=4",
+      "html_url": "https://github.com/nickreed",
+      "contributions": 1740
+    },
+    {
+      "login": "tbrowder",
+      "id": 1039060,
+      "node_id": "MDQ6VXNlcjEwMzkwNjA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1039060?v=4",
+      "html_url": "https://github.com/tbrowder",
+      "contributions": 1635
+    },
+    {
+      "login": "iraytrace",
+      "id": 3651273,
+      "node_id": "MDQ6VXNlcjM2NTEyNzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3651273?v=4",
+      "html_url": "https://github.com/iraytrace",
+      "contributions": 1634
+    },
+    {
+      "login": "ejno",
+      "id": 5529404,
+      "node_id": "MDQ6VXNlcjU1Mjk0MDQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5529404?v=4",
+      "html_url": "https://github.com/ejno",
+      "contributions": 836
+    },
+    {
+      "login": "gdurfee0",
+      "id": 26694017,
+      "node_id": "MDQ6VXNlcjI2Njk0MDE3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/26694017?v=4",
+      "html_url": "https://github.com/gdurfee0",
+      "contributions": 710
+    },
+    {
+      "login": "phildykstra",
+      "id": 49668302,
+      "node_id": "MDQ6VXNlcjQ5NjY4MzAy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/49668302?v=4",
+      "html_url": "https://github.com/phildykstra",
+      "contributions": 706
+    },
+    {
+      "login": "drossberg",
+      "id": 33295041,
+      "node_id": "MDQ6VXNlcjMzMjk1MDQx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/33295041?v=4",
+      "html_url": "https://github.com/drossberg",
+      "contributions": 673
+    },
+    {
+      "login": "f4alt",
+      "id": 54115478,
+      "node_id": "MDQ6VXNlcjU0MTE1NDc4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/54115478?v=4",
+      "html_url": "https://github.com/f4alt",
+      "contributions": 596
+    },
+    {
+      "login": "paul-tanenbaum",
+      "id": 68672209,
+      "node_id": "MDQ6VXNlcjY4NjcyMjA5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/68672209?v=4",
+      "html_url": "https://github.com/paul-tanenbaum",
+      "contributions": 574
+    },
+    {
+      "login": "r-weiss",
+      "id": 68672685,
+      "node_id": "MDQ6VXNlcjY4NjcyNjg1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/68672685?v=4",
+      "html_url": "https://github.com/r-weiss",
+      "contributions": 543
+    },
+    {
+      "login": "phoenixyjll",
+      "id": 16497885,
+      "node_id": "MDQ6VXNlcjE2NDk3ODg1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16497885?v=4",
+      "html_url": "https://github.com/phoenixyjll",
+      "contributions": 413
+    },
+    {
+      "login": "indianlarry",
+      "id": 57951776,
+      "node_id": "MDQ6VXNlcjU3OTUxNzc2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/57951776?v=4",
+      "html_url": "https://github.com/indianlarry",
+      "contributions": 375
+    },
+    {
+      "login": "jlowenz",
+      "id": 7329885,
+      "node_id": "MDQ6VXNlcjczMjk4ODU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7329885?v=4",
+      "html_url": "https://github.com/jlowenz",
+      "contributions": 241
+    },
+    {
+      "login": "zerolevel",
+      "id": 6005321,
+      "node_id": "MDQ6VXNlcjYwMDUzMjE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6005321?v=4",
+      "html_url": "https://github.com/zerolevel",
+      "contributions": 228
+    },
+    {
+      "login": "gar-moss",
+      "id": 10568474,
+      "node_id": "MDQ6VXNlcjEwNTY4NDc0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10568474?v=4",
+      "html_url": "https://github.com/gar-moss",
+      "contributions": 224
+    },
+    {
+      "login": "hinesley",
+      "id": 938827,
+      "node_id": "MDQ6VXNlcjkzODgyNw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/938827?v=4",
+      "html_url": "https://github.com/hinesley",
+      "contributions": 221
+    },
+    {
+      "login": "joshbaker22",
+      "id": 141415098,
+      "node_id": "U_kgDOCG3Sug",
+      "avatar_url": "https://avatars.githubusercontent.com/u/141415098?v=4",
+      "html_url": "https://github.com/joshbaker22",
+      "contributions": 209
+    },
+    {
+      "login": "paul-stay",
+      "id": 68562238,
+      "node_id": "MDQ6VXNlcjY4NTYyMjM4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/68562238?v=4",
+      "html_url": "https://github.com/paul-stay",
+      "contributions": 204
+    },
+    {
+      "login": "mad-ant",
+      "id": 19212022,
+      "node_id": "MDQ6VXNlcjE5MjEyMDIy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19212022?v=4",
+      "html_url": "https://github.com/mad-ant",
+      "contributions": 194
+    },
+    {
+      "login": "vcosta",
+      "id": 1638760,
+      "node_id": "MDQ6VXNlcjE2Mzg3NjA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1638760?v=4",
+      "html_url": "https://github.com/vcosta",
+      "contributions": 182
+    },
+    {
+      "login": "abhijitnandy2011",
+      "id": 4038054,
+      "node_id": "MDQ6VXNlcjQwMzgwNTQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4038054?v=4",
+      "html_url": "https://github.com/abhijitnandy2011",
+      "contributions": 132
+    },
+    {
+      "login": "vladbogo",
+      "id": 5010835,
+      "node_id": "MDQ6VXNlcjUwMTA4MzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5010835?v=4",
+      "html_url": "https://github.com/vladbogo",
+      "contributions": 121
+    },
+    {
+      "login": "irpguardian",
+      "id": 59673185,
+      "node_id": "MDQ6VXNlcjU5NjczMTg1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/59673185?v=4",
+      "html_url": "https://github.com/irpguardian",
+      "contributions": 119
+    },
+    {
+      "login": "simarjot0032",
+      "id": 97881183,
+      "node_id": "U_kgDOBdWMXw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/97881183?v=4",
+      "html_url": "https://github.com/simarjot0032",
+      "contributions": 16
     }
   ],
   "activeOrg": true

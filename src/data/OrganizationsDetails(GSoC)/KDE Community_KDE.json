@@ -54,7 +54,8 @@
     2022,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2016": [
@@ -1308,132 +1309,164 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/b6Z8XXHL"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Porting ISO Image Writer GUI to Kirigami",
+        "short_description": "The current KDE ISO Image Writer has an outdated interface and lacks features like direct ISO downloads and other nice-to-have features. This...",
+        "description": "The current KDE ISO Image Writer has an outdated interface and lacks features like direct ISO downloads and other nice-to-have features. This proposal aims to Modernize the app using Kirigami for a responsive UI, integrate distribution repositories for direct ISO downloads, fix UI inconsistencies along with some nice to have features like a progress bar.\n\nDeliverables:\n\n    A polished Kirigami-based UI.\n    Backend support for downloading and writing ISOs.\n    Pre-authentication and cross-platform improvements.\n    Documentation and testing.\n\nThe resulting port of ISO Image writer will be a more user-friendly tool for creating bootable USB drives across Linux, Windows, and macOS.",
+        "student_name": "@AkkiSingh",
+        "code_url": "https://community.kde.org/GSoC/2025/StatusReports/holychicken",
+        "proposal_id": "kQTWeSyz",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/NsnXJcxf"
+      },
+      {
+        "title": "Improving Kdenlive timeline markers",
+        "short_description": "Kdenlive currently supports single-point timeline markers, which limits efficiency for workflows that require marking time ranges, such as highlight...",
+        "description": "Kdenlive currently supports single-point timeline markers, which limits efficiency for workflows that require marking time ranges, such as highlight editing or collaborative annotations. This project proposes enhancing Kdenlive's marker system by introducing duration-based markers that define a clear start and end time.\n\nThe project will extend the marker data model to support a duration attribute while maintaining backward compatibility. The UI will be updated to visualize range markers as colored regions on the timeline, with interactive handles for resizing and editing. These markers will be integrated with key features like zone-to-marker conversion, search and navigation, rendering specific ranges, and import/export capabilities-streamlining workflows and aligning Kdenlive with professional editing tools.",
+        "student_name": "Ajay Chauhan 1",
+        "code_url": "https://community.kde.org/GSoC/2025/StatusReports/Ajay_Chauhan",
+        "proposal_id": "eoUDx07I",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/sfesp3KZ"
+      },
+      {
+        "title": "Expanding the KDE Mentorship and Recruitment Website",
+        "short_description": "The KDE Mentorship website plays a important role in onboarding new contributors to the KDE community. However, the current site lacks a modern,...",
+        "description": "The KDE Mentorship website plays a important role in onboarding new contributors to the KDE community.\nHowever, the current site lacks a modern, user-friendly UI, and doesn’t fully support KDE’s future goals of recruitment and engagement.\nThis project aims to redesign the website into a contributor onboarding and recruitment platform. \nIt will organize the site into clear sections: Mentorship Programs, Communication Channels, Resources, Community Engagement and Recruitment Services.\nThe project will be built using HuGo for static site generation,  Go for the backend logic such as personalized resource recommendations and contributor assessment.\nDeliverables include a fully responsive  website which shows all the mentorship program details, resource recommendations, contributor testimonials, and a recruitment pathfinder system.\nThis project directly aligns with KDE’s goal: \"KDE Needs You\" ,\nwhich aims to bring more contributors into the community for next two years.",
+        "student_name": "Anish Tak",
+        "code_url": "https://community.kde.org/GSoC/2025/StatusReports/Anish_Tak",
+        "proposal_id": "n0Cycyz4",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/rlwNxSAK"
+      },
+      {
+        "title": "Enhancing GCompris Server with GUI Sub-Programs for Dataset Creation",
+        "short_description": "This project aims to enhance the GCompris educational suite by introducing a set of intuitive, GUI-based tools tailored for teachers. These tools...",
+        "description": "This project aims to enhance the GCompris educational suite by introducing a set of intuitive, GUI-based tools tailored for teachers. These tools will allow educators to easily create and manage custom datasets for various activities, improving adaptability and personalization in the learning experience.\n\nThe activities targeted for dataset creation include:\n\n    1.Grammar Analysis\n    2.Graduated Lines\n    3.Decimal Numbers\n    4. Share\n    5.Fractions Create\n\nThe core of the solution involves building user-friendly interfaces using QML, allowing teachers to input data without dealing with raw JSON or technical configurations. On the backend, we will enhance and adapt the activity logic using JavaScript to ensure compatibility with both newly created and existing datasets. These tools will be implemented as modular plugins integrated into the GCompris infrastructure.\n\nBy empowering teachers to contribute customized content directly, the project fosters a more dynamic and inclusive educational environment, catering to diverse learning needs.",
+        "student_name": "Ashutosh Singh26",
+        "code_url": "https://community.kde.org/GSoC/2025/StatusReports/AshutoshSingh#Work_Report",
+        "proposal_id": "dnCc3RsB",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/1uDvux79"
+      },
+      {
+        "title": "Expanding OSS-Fuzz Integration Across KDE Libraries",
+        "short_description": "Fuzzing is an automated testing technique that feeds random or unexpected inputs to programs to find bugs and security issues. OSS-Fuzz is a SaaS by...",
+        "description": "Fuzzing is an automated testing technique that feeds random or unexpected inputs to programs to find bugs and security issues. OSS-Fuzz is a SaaS by Google that continuously runs fuzzers against open source projects to catch these issues early. This project aims to expand OSS-Fuzz integration across more KDE libraries, focusing on those that handle external inputs like file parsers and thumbnail generators, which are prone to parsing and memory bugs. By identifying high-priority targets, writing and setting up dedicated fuzzers, the goal is to catch potential vulnerabilities early and improve the security and stability of the KDE ecosystem.",
+        "student_name": "Azhar Momin",
+        "code_url": "https://community.kde.org/GSoC/2025/StatusReports/AzharMomin",
+        "proposal_id": "twZU8mVI",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/HGa6a2Vn"
+      },
+      {
+        "title": "Developing Karton, the KDE Virtual Machine Manager",
+        "short_description": "The KDE Community will benefit greatly from a native Qt Quick/Kirigami virtual machine manager. Currently, KDE users must use GTK-based VMMs such as...",
+        "description": "The KDE Community will benefit greatly from a native Qt Quick/Kirigami virtual machine manager. Currently, KDE users must use GTK-based VMMs such as virt-manager or GNOME Boxes. Karton, the KDE Virtual Machine Manager, will be able to better integrate with Plasma and can align with the goals of KDE.  This project will use the libvirt API rather than the QEMU CLI, which abstracts away some of the low-level implementation details and potentially allow for the app to be cross-platform. \n\nA custom graphical viewer will need to be implemented using the SPICE protocol. Registering mouse and keyboard input callbacks should also allow users to interact with virtual machines. Virtual machines created with Karton should be fully customizable through libvirt's domain XML file format. Karton should also have the feature to create snapshots in order to load previous and save states of the virtual machine. \n\nOverall, the ultimate goal is to create a polished virtual machine manager that is able to replace our available alternatives.",
+        "student_name": "Derek Lin",
+        "code_url": "https://blogs.kde.org/2025/08/28/gsoc-2025-final-project-blog-developing-karton-the-kde-virtual-machine-manager/",
+        "proposal_id": "YkCKwSKW",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/phUCjPUf"
+      },
+      {
+        "title": "Akonadi resources - Remove QtWidgets dependency",
+        "short_description": "The primary goal of this project is to refactor Akonadi’s agents and resources by decoupling their configuration dialogs from their underlying logic....",
+        "description": "The primary goal of this project is to refactor Akonadi’s agents and resources by\ndecoupling their configuration dialogs from their underlying logic. This change will\nallow us to remove the inclusion of heavy QtWidgets header files, which currently\nlead to unnecessary memory usage. Reducing this overhead is essential for making\nthe Merkuro suite fully usable on mobile devices, where resource constraints are\ncritical.\nAt present, many components load their GUI elements by default, unnecessarily\nincreasing the memory footprint and hindering performance on resource-constrained\nplatforms. By refactoring these configuration dialogs into separate, dynamically\nloaded plugins, the agents and resources can run leaner and more efficiently (it\nwould save around 15-20 Mib of RAM per agent/resource) while still providing\nfull-featured configuration interfaces when needed by host applications.\nProject Deliverables\n● Refactor as many as reasonably possible of the selected Akonadi agents\nand resources within the GSoC timeframe. The goal is not necessarily to port\nall agents, but to make meaningful progress and establish a repeatable\npattern for others to follow, ensuring the project is successful even if not every\ntarget is completed.\n● Eliminate embedded QtWidgets dependencies—such as replacing\nQApplication with QCoreApplication—in their primary functionality.\n● Identify and replace additional usages of QtWidgets beyond the configuration\ndialogs—such as QMessageBox instances used to show error messages.\n● Modify build configurations (CMake files) to strip out unnecessary UI files and\nreduce dependencies, thereby lowering memory usage.\n● Create dedicated configuration plugins that encapsulate the GUI functionality\npreviously embedded within agents and resources.\n● Test and document all changes to verify that memory usage is indeed reduced\nand that the new plugin-based configuration system functions correctly across\nboth desktop and mobile environments.",
+        "student_name": "Pabarino",
+        "code_url": "https://community.kde.org/GSoC/2025/StatusReports/PabloAri%C3%B1o",
+        "proposal_id": "xNCrlYeV",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/0Qcb864C"
+      },
+      {
+        "title": "Selection Action Bar",
+        "short_description": "KDE’s painting application Krita does not have a floating action bar for selection tools. When users work with selections on a layer in Krita, there...",
+        "description": "KDE’s painting application Krita does not have a floating action bar for selection tools. When users work with selections on a layer in Krita, there is no UI to display common selection actions. This makes it difficult for non-keyboard users to switch between modes and is not intuitive for new or experienced user interaction. The idea is to create a toggleable floating toolbar that will allow users to switch between commonly used actions without having to read deep into user manuals or require a keyboard shortcut. This feature would improve accessibility and the overall experience of users by introducing an ‘on-screen’ toggleable shortcut for common selection actions. My goal is to develop the UI, test rigorously, join the community, get user feedback, and create documentation through user guides and tutorials.",
+        "student_name": "rossrosales",
+        "code_url": "https://community.kde.org/GSoC/2025/StatusReports/Rossr",
+        "proposal_id": "UmZMYqkq",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/ANWyc6fI"
+      },
+      {
+        "title": "Modernize Account Management with QML",
+        "short_description": "This project aims to modernize the account management system in Merkuro by porting resource configurations to QML, enhancing usability across...",
+        "description": "This project aims to modernize the account management system in Merkuro by porting resource configurations to QML, enhancing usability across platforms. The focus will be on building a shared infrastructure that supports both QWidget and QML configurations and porting singlefileresource-based resources to QML, ensuring backward compatibility while enabling modern UI development. This foundation will make it easier and more consistent to adopt QML-based modern UI development in the future.",
+        "student_name": "Shubham  Shinde",
+        "code_url": "https://community.kde.org/GSoC/2025/StatusReports/ShubhamShinde",
+        "proposal_id": "2xTaw9Ia",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/7gZfxxeY"
+      },
+      {
+        "title": "Integrate KTextEditor into Cantor",
+        "short_description": "Cantor is a core tool in the KDE ecosystem that focuses on scientific computing and interactive analysis. It supports mathematical modeling and data...",
+        "description": "Cantor is a core tool in the KDE ecosystem that focuses on scientific computing and interactive analysis. It supports mathematical modeling and data visualization through engines such as Python, Julia, and Maxima. In order to improve its text editing experience and maintainability, this project plans to deeply integrate the KTextEditor framework to transform Cantor into a more \"developer-friendly\" scientific research platform. By using QGraphicsProxyWidget to seamlessly replace existing custom cells, professional functions such as Vi editing mode, intelligent code completion, dynamic syntax highlighting (supporting user-defined symbol injection) are implemented, while simplifying the code structure and reducing redundant component code. This improvement not only aligns Cantor's editing experience with KDE professional tools such as Kate and KDevelop, but also lays the foundation for future integrated debuggers, version control and other advanced functions by sharing the KTextEditor plug-in ecosystem.",
+        "student_name": "SIMple-lives",
+        "code_url": "https://community.kde.org/GSoC/2025/StatusReports/simplelives",
+        "proposal_id": "90vfESSr",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/SScmFOOS"
+      },
+      {
+        "title": "Mankala: Developing a cross-platform App with Multiplayer Support",
+        "short_description": "This project aims to develop a cross-platform application for Mankala using Qt and QML, extending the capabilities of the existing MankalaEngine...",
+        "description": "This project aims to develop a cross-platform application for Mankala using Qt and QML, extending the capabilities of the existing MankalaEngine maintained by the KDE Community. The application will feature a responsive, touch-friendly interface and support both local gameplay modes and real-time multiplayer using the Extensible Messaging and Presence Protocol. By combining a modern UI with networked communication, the project seeks to bring traditional Mankala gameplay to mobile devices while promoting open-source tools and accessibility.",
+        "student_name": "Srisharan V S",
+        "code_url": "https://community.kde.org/GSoC/2025/StatusReports/SrisharanVS",
+        "proposal_id": "Gbdqa8KQ",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/TWsh0ytJ"
+      },
+      {
+        "title": "Python virtual environments in Cantor",
+        "short_description": "Implement the Python virtual environment switching function based on Cantor, so that the virtual environment switching function can be implemented in...",
+        "description": "Implement the Python virtual environment switching function based on Cantor, so that the virtual environment switching function can be implemented in Cantor's application settings.\nIf time permits, I can explore the following:\n1. Support switching between different virtual environments: venv, conda\n2. Support virtual environment management (create, delete) and package management\n3. Support environment management for different Python versions\n\nThe key points to achieve this:\n1. Understand the principles of Python virtual environment management\n2. Read Cantor and Python environment related codes to understand how Cantor interacts with the Python interpreter\n3. Implement system environment switching through C++ and apply it in Cantor\n4. Ensure the compatibility of different Python environments(if an exception occurs)\n5. Write test cases to verify the reliability of the code\n6. Implement a switching process that interacts well with users\n7. Record the implementation process for subsequent development and maintenance",
+        "student_name": "Zheng JiaHong",
+        "code_url": "https://community.kde.org/GSoC/2025/StatusReports/ZhengJiahong",
+        "proposal_id": "smr9eeCg",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/wDIDmwxD"
+      }
+    ],
+    "2026": []
   },
   "githubID": "KDE",
   "repositories": [
     {
-      "id": 440034203,
-      "node_id": "R_kgDOGjpjmw",
-      "name": "kiss",
-      "full_name": "KDE/kiss",
-      "html_url": "https://github.com/KDE/kiss",
-      "description": "KDE Initial System Setup",
-      "language": "QML",
+      "id": 955367317,
+      "node_id": "R_kgDOOPG_lQ",
+      "name": "qxmpp",
+      "full_name": "KDE/qxmpp",
+      "html_url": "https://github.com/KDE/qxmpp",
+      "description": "C++ XMPP client and server library",
+      "language": "C++",
       "stargazers_count": 3,
+      "forks_count": 1,
+      "open_issues_count": 0,
+      "license": {
+        "key": "lgpl-2.1",
+        "name": "GNU Lesser General Public License v2.1",
+        "spdx_id": "LGPL-2.1",
+        "url": "https://api.github.com/licenses/lgpl-2.1",
+        "node_id": "MDc6TGljZW5zZTEx"
+      },
+      "topics": []
+    },
+    {
+      "id": 879525288,
+      "node_id": "R_kgDONGx9qA",
+      "name": "kde-linux",
+      "full_name": "KDE/kde-linux",
+      "html_url": "https://github.com/KDE/kde-linux",
+      "description": "KDE Linux project",
+      "language": "Shell",
+      "stargazers_count": 22,
       "forks_count": 3,
       "open_issues_count": 0,
       "license": null,
       "topics": []
     },
     {
-      "id": 202128551,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMDIxMjg1NTE=",
-      "name": "kirigami-addons",
-      "full_name": "KDE/kirigami-addons",
-      "html_url": "https://github.com/KDE/kirigami-addons",
-      "description": "Add-ons for the Kirigami framework",
-      "language": "C",
-      "stargazers_count": 19,
-      "forks_count": 7,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 42736075,
-      "node_id": "MDEwOlJlcG9zaXRvcnk0MjczNjA3NQ==",
-      "name": "plasma-workspace",
-      "full_name": "KDE/plasma-workspace",
-      "html_url": "https://github.com/KDE/plasma-workspace",
-      "description": "Various components needed to run a Plasma-based environment",
+      "id": 42720230,
+      "node_id": "MDEwOlJlcG9zaXRvcnk0MjcyMDIzMA==",
+      "name": "kate",
+      "full_name": "KDE/kate",
+      "html_url": "https://github.com/KDE/kate",
+      "description": "Advanced text editor",
       "language": "C++",
-      "stargazers_count": 236,
+      "stargazers_count": 988,
       "forks_count": 99,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 42719584,
-      "node_id": "MDEwOlJlcG9zaXRvcnk0MjcxOTU4NA==",
-      "name": "kwin",
-      "full_name": "KDE/kwin",
-      "html_url": "https://github.com/KDE/kwin",
-      "description": "Easy to use, but flexible, Wayland Compositor",
-      "language": "C++",
-      "stargazers_count": 568,
-      "forks_count": 118,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 47668556,
-      "node_id": "MDEwOlJlcG9zaXRvcnk0NzY2ODU1Ng==",
-      "name": "mailcommon",
-      "full_name": "KDE/mailcommon",
-      "html_url": "https://github.com/KDE/mailcommon",
-      "description": "Library which provides support for mail applications",
-      "language": "C++",
-      "stargazers_count": 7,
-      "forks_count": 4,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 42726138,
-      "node_id": "MDEwOlJlcG9zaXRvcnk0MjcyNjEzOA==",
-      "name": "rkward",
-      "full_name": "KDE/rkward",
-      "html_url": "https://github.com/KDE/rkward",
-      "description": "Easily extensible and easy-to-use IDE/GUI for R",
-      "language": "C++",
-      "stargazers_count": 22,
-      "forks_count": 5,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 978049739,
-      "node_id": "R_kgDOOkvayw",
-      "name": "kde-qdoc-common",
-      "full_name": "KDE/kde-qdoc-common",
-      "html_url": "https://github.com/KDE/kde-qdoc-common",
-      "description": "Common files for KDE's API documentation (using QDoc)",
-      "language": "CSS",
-      "stargazers_count": 1,
-      "forks_count": 1,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 42732404,
-      "node_id": "MDEwOlJlcG9zaXRvcnk0MjczMjQwNA==",
-      "name": "kphotoalbum",
-      "full_name": "KDE/kphotoalbum",
-      "html_url": "https://github.com/KDE/kphotoalbum",
-      "description": "Photo Album for easy organization of your images",
-      "language": "C++",
-      "stargazers_count": 17,
-      "forks_count": 5,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 42718970,
-      "node_id": "MDEwOlJlcG9zaXRvcnk0MjcxODk3MA==",
-      "name": "kstars",
-      "full_name": "KDE/kstars",
-      "html_url": "https://github.com/KDE/kstars",
-      "description": "Desktop Planetarium",
-      "language": "C++",
-      "stargazers_count": 234,
-      "forks_count": 113,
       "open_issues_count": 0,
       "license": null,
       "topics": []
@@ -1446,43 +1479,29 @@
       "html_url": "https://github.com/KDE/neochat",
       "description": "A client for matrix, the decentralized communication protocol",
       "language": "C++",
-      "stargazers_count": 174,
-      "forks_count": 16,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 66922941,
-      "node_id": "MDEwOlJlcG9zaXRvcnk2NjkyMjk0MQ==",
-      "name": "kmail",
-      "full_name": "KDE/kmail",
-      "html_url": "https://github.com/KDE/kmail",
-      "description": "State-of-the-art feature-rich email client that supports many protocols",
-      "language": "C++",
-      "stargazers_count": 71,
+      "stargazers_count": 213,
       "forks_count": 19,
       "open_issues_count": 0,
       "license": null,
       "topics": []
     },
     {
-      "id": 42723921,
-      "node_id": "MDEwOlJlcG9zaXRvcnk0MjcyMzkyMQ==",
-      "name": "kdevelop",
-      "full_name": "KDE/kdevelop",
-      "html_url": "https://github.com/KDE/kdevelop",
-      "description": "Cross-platform IDE for C, C++, Python, QML/JavaScript and PHP",
+      "id": 42717634,
+      "node_id": "MDEwOlJlcG9zaXRvcnk0MjcxNzYzNA==",
+      "name": "kdegraphics-thumbnailers",
+      "full_name": "KDE/kdegraphics-thumbnailers",
+      "html_url": "https://github.com/KDE/kdegraphics-thumbnailers",
+      "description": "Thumbnailers for various graphics file formats",
       "language": "C++",
-      "stargazers_count": 536,
-      "forks_count": 104,
+      "stargazers_count": 6,
+      "forks_count": 3,
       "open_issues_count": 0,
       "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
       },
       "topics": []
     },
@@ -1494,8 +1513,8 @@
       "html_url": "https://github.com/KDE/labplot",
       "description": "LabPlot is a FREE, open source and cross-platform Data Visualization and Analysis software accessible to everyone.",
       "language": "C++",
-      "stargazers_count": 295,
-      "forks_count": 53,
+      "stargazers_count": 445,
+      "forks_count": 58,
       "open_issues_count": 0,
       "license": null,
       "topics": [
@@ -1511,6 +1530,68 @@
       ]
     },
     {
+      "id": 47667167,
+      "node_id": "MDEwOlJlcG9zaXRvcnk0NzY2NzE2Nw==",
+      "name": "libksieve",
+      "full_name": "KDE/libksieve",
+      "html_url": "https://github.com/KDE/libksieve",
+      "description": "Library which manages Sieve support",
+      "language": "C++",
+      "stargazers_count": 10,
+      "forks_count": 4,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 42723268,
+      "node_id": "MDEwOlJlcG9zaXRvcnk0MjcyMzI2OA==",
+      "name": "kdenlive",
+      "full_name": "KDE/kdenlive",
+      "html_url": "https://github.com/KDE/kdenlive",
+      "description": "Free and open source video editor, based on MLT Framework and KDE Frameworks",
+      "language": "C++",
+      "stargazers_count": 4837,
+      "forks_count": 392,
+      "open_issues_count": 0,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "topics": []
+    },
+    {
+      "id": 42729679,
+      "node_id": "MDEwOlJlcG9zaXRvcnk0MjcyOTY3OQ==",
+      "name": "kdepim-runtime",
+      "full_name": "KDE/kdepim-runtime",
+      "html_url": "https://github.com/KDE/kdepim-runtime",
+      "description": "Akonadi agents and resources",
+      "language": "C++",
+      "stargazers_count": 17,
+      "forks_count": 6,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 665778244,
+      "node_id": "R_kgDOJ674RA",
+      "name": "merkuro",
+      "full_name": "KDE/merkuro",
+      "html_url": "https://github.com/KDE/merkuro",
+      "description": "Merkuro is a application suite designed to make handling your emails, calendars, contacts, and tasks simple.",
+      "language": "QML",
+      "stargazers_count": 66,
+      "forks_count": 4,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
       "id": 42733646,
       "node_id": "MDEwOlJlcG9zaXRvcnk0MjczMzY0Ng==",
       "name": "print-manager",
@@ -1518,36 +1599,22 @@
       "html_url": "https://github.com/KDE/print-manager",
       "description": "A tool for managing print jobs and printers",
       "language": "C++",
-      "stargazers_count": 21,
+      "stargazers_count": 27,
       "forks_count": 6,
       "open_issues_count": 0,
       "license": null,
       "topics": []
     },
     {
-      "id": 42733222,
-      "node_id": "MDEwOlJlcG9zaXRvcnk0MjczMzIyMg==",
-      "name": "kdeplasma-addons",
-      "full_name": "KDE/kdeplasma-addons",
-      "html_url": "https://github.com/KDE/kdeplasma-addons",
-      "description": "All kind of add-ons to improve your Plasma experience",
-      "language": "C++",
-      "stargazers_count": 102,
-      "forks_count": 26,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 42730886,
-      "node_id": "MDEwOlJlcG9zaXRvcnk0MjczMDg4Ng==",
-      "name": "plasma-desktop",
-      "full_name": "KDE/plasma-desktop",
-      "html_url": "https://github.com/KDE/plasma-desktop",
-      "description": "Plasma for the Desktop",
-      "language": "C++",
-      "stargazers_count": 950,
-      "forks_count": 116,
+      "id": 192710473,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxOTI3MTA0NzM=",
+      "name": "pology",
+      "full_name": "KDE/pology",
+      "html_url": "https://github.com/KDE/pology",
+      "description": "Library and collection of tools for in-depth processing of PO files",
+      "language": "Python",
+      "stargazers_count": 10,
+      "forks_count": 4,
       "open_issues_count": 0,
       "license": {
         "key": "other",
@@ -1559,15 +1626,117 @@
       "topics": []
     },
     {
-      "id": 42736243,
-      "node_id": "MDEwOlJlcG9zaXRvcnk0MjczNjI0Mw==",
-      "name": "kio",
-      "full_name": "KDE/kio",
-      "html_url": "https://github.com/KDE/kio",
-      "description": "KIO",
+      "id": 416726012,
+      "node_id": "R_kgDOGNa7_A",
+      "name": "documentation-docs-kdenlive-org",
+      "full_name": "KDE/documentation-docs-kdenlive-org",
+      "html_url": "https://github.com/KDE/documentation-docs-kdenlive-org",
+      "description": "Documentation for Kdenlive",
+      "language": "Python",
+      "stargazers_count": 7,
+      "forks_count": 2,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 42729747,
+      "node_id": "MDEwOlJlcG9zaXRvcnk0MjcyOTc0Nw==",
+      "name": "smb4k",
+      "full_name": "KDE/smb4k",
+      "html_url": "https://github.com/KDE/smb4k",
+      "description": "Advanced network neighborhood browser and Samba share mounting utility",
       "language": "C++",
-      "stargazers_count": 70,
-      "forks_count": 22,
+      "stargazers_count": 38,
+      "forks_count": 10,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 42729064,
+      "node_id": "MDEwOlJlcG9zaXRvcnk0MjcyOTA2NA==",
+      "name": "breeze-icons",
+      "full_name": "KDE/breeze-icons",
+      "html_url": "https://github.com/KDE/breeze-icons",
+      "description": "Breeze icon theme.",
+      "language": "C++",
+      "stargazers_count": 278,
+      "forks_count": 57,
+      "open_issues_count": 0,
+      "license": {
+        "key": "lgpl-2.1",
+        "name": "GNU Lesser General Public License v2.1",
+        "spdx_id": "LGPL-2.1",
+        "url": "https://api.github.com/licenses/lgpl-2.1",
+        "node_id": "MDc6TGljZW5zZTEx"
+      },
+      "topics": []
+    },
+    {
+      "id": 66907301,
+      "node_id": "MDEwOlJlcG9zaXRvcnk2NjkwNzMwMQ==",
+      "name": "pim-sieve-editor",
+      "full_name": "KDE/pim-sieve-editor",
+      "html_url": "https://github.com/KDE/pim-sieve-editor",
+      "description": "Application to assist with editing IMAP Sieve filters",
+      "language": "C++",
+      "stargazers_count": 11,
+      "forks_count": 4,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 717895419,
+      "node_id": "R_kgDOKso2-w",
+      "name": "glaxnimate",
+      "full_name": "KDE/glaxnimate",
+      "html_url": "https://github.com/KDE/glaxnimate",
+      "description": "Simple vector animation program.",
+      "language": "C++",
+      "stargazers_count": 20,
+      "forks_count": 3,
+      "open_issues_count": 0,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 42724343,
+      "node_id": "MDEwOlJlcG9zaXRvcnk0MjcyNDM0Mw==",
+      "name": "ark",
+      "full_name": "KDE/ark",
+      "html_url": "https://github.com/KDE/ark",
+      "description": "File archiver by KDE",
+      "language": "C++",
+      "stargazers_count": 139,
+      "forks_count": 27,
+      "open_issues_count": 0,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 901098041,
+      "node_id": "R_kgDONbWqOQ",
+      "name": "documentation-docs-labplot-org",
+      "full_name": "KDE/documentation-docs-labplot-org",
+      "html_url": "https://github.com/KDE/documentation-docs-labplot-org",
+      "description": "Documentation for Labplot",
+      "language": "Python",
+      "stargazers_count": 2,
+      "forks_count": 1,
       "open_issues_count": 0,
       "license": null,
       "topics": []
@@ -1587,29 +1756,15 @@
       "topics": []
     },
     {
-      "id": 982053447,
-      "node_id": "R_kgDOOojyRw",
-      "name": "kaichat",
-      "full_name": "KDE/kaichat",
-      "html_url": "https://github.com/KDE/kaichat",
-      "description": "Chat interface for AI models such as ollama",
+      "id": 42723921,
+      "node_id": "MDEwOlJlcG9zaXRvcnk0MjcyMzkyMQ==",
+      "name": "kdevelop",
+      "full_name": "KDE/kdevelop",
+      "html_url": "https://github.com/KDE/kdevelop",
+      "description": "Cross-platform IDE for C, C++, Python, QML/JavaScript and PHP",
       "language": "C++",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 95888955,
-      "node_id": "MDEwOlJlcG9zaXRvcnk5NTg4ODk1NQ==",
-      "name": "ruqola",
-      "full_name": "KDE/ruqola",
-      "html_url": "https://github.com/KDE/ruqola",
-      "description": "KDE client for Rocket Chat",
-      "language": "C++",
-      "stargazers_count": 55,
-      "forks_count": 17,
+      "stargazers_count": 574,
+      "forks_count": 105,
       "open_issues_count": 0,
       "license": {
         "key": "other",
@@ -1618,130 +1773,6 @@
         "url": null,
         "node_id": "MDc6TGljZW5zZTA="
       },
-      "topics": []
-    },
-    {
-      "id": 42715907,
-      "node_id": "MDEwOlJlcG9zaXRvcnk0MjcxNTkwNw==",
-      "name": "akonadi",
-      "full_name": "KDE/akonadi",
-      "html_url": "https://github.com/KDE/akonadi",
-      "description": "Cross-desktop storage service for PIM data providing concurrent access",
-      "language": "C++",
-      "stargazers_count": 28,
-      "forks_count": 8,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 131281613,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMzEyODE2MTM=",
-      "name": "itinerary",
-      "full_name": "KDE/itinerary",
-      "html_url": "https://github.com/KDE/itinerary",
-      "description": "Itinerary and boarding pass management application",
-      "language": "C++",
-      "stargazers_count": 45,
-      "forks_count": 5,
-      "open_issues_count": 0,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 42723268,
-      "node_id": "MDEwOlJlcG9zaXRvcnk0MjcyMzI2OA==",
-      "name": "kdenlive",
-      "full_name": "KDE/kdenlive",
-      "html_url": "https://github.com/KDE/kdenlive",
-      "description": "Free and open source video editor, based on MLT Framework and KDE Frameworks",
-      "language": "C++",
-      "stargazers_count": 3747,
-      "forks_count": 302,
-      "open_issues_count": 0,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": []
-    },
-    {
-      "id": 42721069,
-      "node_id": "MDEwOlJlcG9zaXRvcnk0MjcyMTA2OQ==",
-      "name": "bluedevil",
-      "full_name": "KDE/bluedevil",
-      "html_url": "https://github.com/KDE/bluedevil",
-      "description": "Bluedevil adds Bluetooth capabilities to KDE Plasma",
-      "language": "C++",
-      "stargazers_count": 33,
-      "forks_count": 9,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 182519497,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxODI1MTk0OTc=",
-      "name": "maui-pix",
-      "full_name": "KDE/maui-pix",
-      "html_url": "https://github.com/KDE/maui-pix",
-      "description": "Image gallery application",
-      "language": "QML",
-      "stargazers_count": 12,
-      "forks_count": 2,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 147917643,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNDc5MTc2NDM=",
-      "name": "mauikit",
-      "full_name": "KDE/mauikit",
-      "html_url": "https://github.com/KDE/mauikit",
-      "description": "Templated convergent controls and multi-platform utilities for Maui applications",
-      "language": "QML",
-      "stargazers_count": 33,
-      "forks_count": 8,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 870158827,
-      "node_id": "R_kgDOM92R6w",
-      "name": "md4qt",
-      "full_name": "KDE/md4qt",
-      "html_url": "https://github.com/KDE/md4qt",
-      "description": "Header-only C++ library for parsing Markdown.",
-      "language": "C++",
-      "stargazers_count": 3,
-      "forks_count": 1,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 42716730,
-      "node_id": "MDEwOlJlcG9zaXRvcnk0MjcxNjczMA==",
-      "name": "kcoreaddons",
-      "full_name": "KDE/kcoreaddons",
-      "html_url": "https://github.com/KDE/kcoreaddons",
-      "description": "KCoreAddons",
-      "language": "C++",
-      "stargazers_count": 23,
-      "forks_count": 8,
-      "open_issues_count": 0,
-      "license": null,
       "topics": []
     },
     {
@@ -1752,7 +1783,7 @@
       "html_url": "https://github.com/KDE/kpublictransport",
       "description": "Library to assist with accessing public transport timetables and other data",
       "language": "C++",
-      "stargazers_count": 23,
+      "stargazers_count": 25,
       "forks_count": 5,
       "open_issues_count": 0,
       "license": {
@@ -1765,282 +1796,190 @@
       "topics": []
     },
     {
-      "id": 101881660,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMDE4ODE2NjA=",
-      "name": "craft-blueprints-kde",
-      "full_name": "KDE/craft-blueprints-kde",
-      "html_url": "https://github.com/KDE/craft-blueprints-kde",
-      "description": "Project build blueprints for Craft - the meta build system and package manager",
-      "language": "Python",
-      "stargazers_count": 21,
-      "forks_count": 24,
+      "id": 1187895093,
+      "node_id": "R_kgDORs3XNQ",
+      "name": "package-compatibility-helper",
+      "full_name": "KDE/package-compatibility-helper",
+      "html_url": "https://github.com/KDE/package-compatibility-helper",
+      "description": "Provides support for running or finding alternatives to certain application package types on Linux",
+      "language": "C++",
+      "stargazers_count": 0,
+      "forks_count": 0,
       "open_issues_count": 0,
       "license": {
-        "key": "bsd-2-clause",
-        "name": "BSD 2-Clause \"Simplified\" License",
-        "spdx_id": "BSD-2-Clause",
-        "url": "https://api.github.com/licenses/bsd-2-clause",
-        "node_id": "MDc6TGljZW5zZTQ="
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "topics": []
+    },
+    {
+      "id": 42733731,
+      "node_id": "MDEwOlJlcG9zaXRvcnk0MjczMzczMQ==",
+      "name": "extra-cmake-modules",
+      "full_name": "KDE/extra-cmake-modules",
+      "html_url": "https://github.com/KDE/extra-cmake-modules",
+      "description": "Extra modules and scripts for CMake.",
+      "language": "CMake",
+      "stargazers_count": 152,
+      "forks_count": 51,
+      "open_issues_count": 0,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 42720259,
+      "node_id": "MDEwOlJlcG9zaXRvcnk0MjcyMDI1OQ==",
+      "name": "kmymoney",
+      "full_name": "KDE/kmymoney",
+      "html_url": "https://github.com/KDE/kmymoney",
+      "description": "Personal finance manager",
+      "language": "C++",
+      "stargazers_count": 195,
+      "forks_count": 45,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 42736243,
+      "node_id": "MDEwOlJlcG9zaXRvcnk0MjczNjI0Mw==",
+      "name": "kio",
+      "full_name": "KDE/kio",
+      "html_url": "https://github.com/KDE/kio",
+      "description": "KIO",
+      "language": "C++",
+      "stargazers_count": 82,
+      "forks_count": 25,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 42721797,
+      "node_id": "MDEwOlJlcG9zaXRvcnk0MjcyMTc5Nw==",
+      "name": "kconfig",
+      "full_name": "KDE/kconfig",
+      "html_url": "https://github.com/KDE/kconfig",
+      "description": "KConfig",
+      "language": "C++",
+      "stargazers_count": 28,
+      "forks_count": 14,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 42732786,
+      "node_id": "MDEwOlJlcG9zaXRvcnk0MjczMjc4Ng==",
+      "name": "libktorrent",
+      "full_name": "KDE/libktorrent",
+      "html_url": "https://github.com/KDE/libktorrent",
+      "description": "BitTorrent protocol implementation",
+      "language": "C++",
+      "stargazers_count": 17,
+      "forks_count": 5,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 127677921,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMjc2Nzc5MjE=",
+      "name": "kitinerary",
+      "full_name": "KDE/kitinerary",
+      "html_url": "https://github.com/KDE/kitinerary",
+      "description": "Data Model and Extraction System for Travel Reservation information",
+      "language": "C++",
+      "stargazers_count": 41,
+      "forks_count": 4,
+      "open_issues_count": 0,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 43975673,
+      "node_id": "MDEwOlJlcG9zaXRvcnk0Mzk3NTY3Mw==",
+      "name": "krita",
+      "full_name": "KDE/krita",
+      "html_url": "https://github.com/KDE/krita",
+      "description": "Krita is a free and open source cross-platform application that offers an end-to-end solution for creating digital art files from scratch built on the KDE and Qt frameworks.",
+      "language": "C++",
+      "stargazers_count": 9519,
+      "forks_count": 756,
+      "open_issues_count": 0,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
       },
       "topics": []
     }
   ],
   "contributorsDetails": [
     {
-      "login": "CarlSchwan",
-      "id": 23653902,
-      "node_id": "MDQ6VXNlcjIzNjUzOTAy",
-      "avatar_url": "https://avatars.githubusercontent.com/u/23653902?v=4",
-      "html_url": "https://github.com/CarlSchwan",
-      "contributions": 381
+      "login": "jlaine",
+      "id": 1567624,
+      "node_id": "MDQ6VXNlcjE1Njc2MjQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1567624?v=4",
+      "html_url": "https://github.com/jlaine",
+      "contributions": 1609
     },
     {
-      "login": "sowelipililimute",
-      "id": 20326855,
-      "node_id": "MDQ6VXNlcjIwMzI2ODU1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/20326855?v=4",
-      "html_url": "https://github.com/sowelipililimute",
-      "contributions": 29
+      "login": "manjeetdahiya",
+      "id": 331638,
+      "node_id": "MDQ6VXNlcjMzMTYzOA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/331638?v=4",
+      "html_url": "https://github.com/manjeetdahiya",
+      "contributions": 611
     },
     {
-      "login": "Merrit",
-      "id": 9575627,
-      "node_id": "MDQ6VXNlcjk1NzU2Mjc=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/9575627?v=4",
-      "html_url": "https://github.com/Merrit",
-      "contributions": 13
+      "login": "lnjX",
+      "id": 13557034,
+      "node_id": "MDQ6VXNlcjEzNTU3MDM0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13557034?v=4",
+      "html_url": "https://github.com/lnjX",
+      "contributions": 185
     },
     {
-      "login": "Pointedstick",
-      "id": 1097249,
-      "node_id": "MDQ6VXNlcjEwOTcyNDk=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1097249?v=4",
-      "html_url": "https://github.com/Pointedstick",
-      "contributions": 1
+      "login": "olesalscheider",
+      "id": 1006058,
+      "node_id": "MDQ6VXNlcjEwMDYwNTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1006058?v=4",
+      "html_url": "https://github.com/olesalscheider",
+      "contributions": 36
     },
     {
-      "login": "daPhipz",
-      "id": 30795174,
-      "node_id": "MDQ6VXNlcjMwNzk1MTc0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/30795174?v=4",
-      "html_url": "https://github.com/daPhipz",
-      "contributions": 1
-    },
-    {
-      "login": "vkrause",
-      "id": 629750,
-      "node_id": "MDQ6VXNlcjYyOTc1MA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/629750?v=4",
-      "html_url": "https://github.com/vkrause",
-      "contributions": 67
-    },
-    {
-      "login": "redstrate",
-      "id": 54911369,
-      "node_id": "MDQ6VXNlcjU0OTExMzY5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/54911369?v=4",
-      "html_url": "https://github.com/redstrate",
-      "contributions": 47
-    },
-    {
-      "login": "espidev",
-      "id": 7444510,
-      "node_id": "MDQ6VXNlcjc0NDQ1MTA=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/7444510?v=4",
-      "html_url": "https://github.com/espidev",
+      "login": "0xd34df00d",
+      "id": 51103,
+      "node_id": "MDQ6VXNlcjUxMTAz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51103?v=4",
+      "html_url": "https://github.com/0xd34df00d",
       "contributions": 31
     },
     {
-      "login": "nicolasfella",
-      "id": 6377822,
-      "node_id": "MDQ6VXNlcjYzNzc4MjI=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/6377822?v=4",
-      "html_url": "https://github.com/nicolasfella",
-      "contributions": 31
-    },
-    {
-      "login": "ratijas",
-      "id": 6737986,
-      "node_id": "MDQ6VXNlcjY3Mzc5ODY=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/6737986?v=4",
-      "html_url": "https://github.com/ratijas",
-      "contributions": 31
-    },
-    {
-      "login": "Montel",
-      "id": 1503769,
-      "node_id": "MDQ6VXNlcjE1MDM3Njk=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1503769?v=4",
-      "html_url": "https://github.com/Montel",
-      "contributions": 13
-    },
-    {
-      "login": "herzenschein",
-      "id": 30454577,
-      "node_id": "MDQ6VXNlcjMwNDU0NTc3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/30454577?v=4",
-      "html_url": "https://github.com/herzenschein",
-      "contributions": 13
-    },
-    {
-      "login": "arshubham",
-      "id": 14235191,
-      "node_id": "MDQ6VXNlcjE0MjM1MTkx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/14235191?v=4",
-      "html_url": "https://github.com/arshubham",
-      "contributions": 11
-    },
-    {
-      "login": "TobiasFella",
-      "id": 9750016,
-      "node_id": "MDQ6VXNlcjk3NTAwMTY=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/9750016?v=4",
-      "html_url": "https://github.com/TobiasFella",
-      "contributions": 9
-    },
-    {
-      "login": "claucambra",
-      "id": 70155116,
-      "node_id": "MDQ6VXNlcjcwMTU1MTE2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/70155116?v=4",
-      "html_url": "https://github.com/claucambra",
-      "contributions": 9
-    },
-    {
-      "login": "davidedmundson",
-      "id": 2776077,
-      "node_id": "MDQ6VXNlcjI3NzYwNzc=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/2776077?v=4",
-      "html_url": "https://github.com/davidedmundson",
-      "contributions": 8
-    },
-    {
-      "login": "mbruchert",
-      "id": 16508248,
-      "node_id": "MDQ6VXNlcjE2NTA4MjQ4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/16508248?v=4",
-      "html_url": "https://github.com/mbruchert",
-      "contributions": 6
-    },
-    {
-      "login": "kbroulik",
-      "id": 5594598,
-      "node_id": "MDQ6VXNlcjU1OTQ1OTg=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/5594598?v=4",
-      "html_url": "https://github.com/kbroulik",
-      "contributions": 4
-    },
-    {
-      "login": "HanYoung-uwu",
-      "id": 76819220,
-      "node_id": "MDQ6VXNlcjc2ODE5MjIw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/76819220?v=4",
-      "html_url": "https://github.com/HanYoung-uwu",
-      "contributions": 4
-    },
-    {
-      "login": "mogwa1",
-      "id": 4405330,
-      "node_id": "MDQ6VXNlcjQ0MDUzMzA=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/4405330?v=4",
-      "html_url": "https://github.com/mogwa1",
-      "contributions": 4
-    },
-    {
-      "login": "tsdgeos",
-      "id": 9051674,
-      "node_id": "MDQ6VXNlcjkwNTE2NzQ=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/9051674?v=4",
-      "html_url": "https://github.com/tsdgeos",
-      "contributions": 3
-    },
-    {
-      "login": "alex1701c",
-      "id": 38406607,
-      "node_id": "MDQ6VXNlcjM4NDA2NjA3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/38406607?v=4",
-      "html_url": "https://github.com/alex1701c",
-      "contributions": 3
-    },
-    {
-      "login": "awhiemstra",
-      "id": 9590386,
-      "node_id": "MDQ6VXNlcjk1OTAzODY=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/9590386?v=4",
-      "html_url": "https://github.com/awhiemstra",
-      "contributions": 3
-    },
-    {
-      "login": "BLumia",
-      "id": 10095765,
-      "node_id": "MDQ6VXNlcjEwMDk1NzY1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/10095765?v=4",
-      "html_url": "https://github.com/BLumia",
-      "contributions": 3
-    },
-    {
-      "login": "alcarazzam",
-      "id": 47950933,
-      "node_id": "MDQ6VXNlcjQ3OTUwOTMz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/47950933?v=4",
-      "html_url": "https://github.com/alcarazzam",
-      "contributions": 3
-    },
-    {
-      "login": "nmariusp",
-      "id": 107675943,
-      "node_id": "U_kgDOBmsBJw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/107675943?v=4",
-      "html_url": "https://github.com/nmariusp",
-      "contributions": 3
-    },
-    {
-      "login": "olib14",
-      "id": 107320647,
-      "node_id": "U_kgDOBmWVRw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/107320647?v=4",
-      "html_url": "https://github.com/olib14",
-      "contributions": 3
-    },
-    {
-      "login": "SeeLook",
-      "id": 945374,
-      "node_id": "MDQ6VXNlcjk0NTM3NA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/945374?v=4",
-      "html_url": "https://github.com/SeeLook",
-      "contributions": 2
-    },
-    {
-      "login": "SgAkErRu",
-      "id": 48139217,
-      "node_id": "MDQ6VXNlcjQ4MTM5MjE3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/48139217?v=4",
-      "html_url": "https://github.com/SgAkErRu",
-      "contributions": 2
-    },
-    {
-      "login": "hefee",
-      "id": 1238146,
-      "node_id": "MDQ6VXNlcjEyMzgxNDY=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1238146?v=4",
-      "html_url": "https://github.com/hefee",
-      "contributions": 2
-    },
-    {
-      "login": "notmart",
-      "id": 4526371,
-      "node_id": "MDQ6VXNlcjQ1MjYzNzE=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/4526371?v=4",
-      "html_url": "https://github.com/notmart",
-      "contributions": 2
-    },
-    {
-      "login": "jlskuz",
-      "id": 78424983,
-      "node_id": "MDQ6VXNlcjc4NDI0OTgz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/78424983?v=4",
-      "html_url": "https://github.com/jlskuz",
-      "contributions": 2
+      "login": "tehnick",
+      "id": 441190,
+      "node_id": "MDQ6VXNlcjQ0MTE5MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/441190?v=4",
+      "html_url": "https://github.com/tehnick",
+      "contributions": 14
     },
     {
       "login": "jbruechert",
@@ -2048,15 +1987,623 @@
       "node_id": "MDQ6VXNlcjEzNjA5Mzkz",
       "avatar_url": "https://avatars.githubusercontent.com/u/13609393?v=4",
       "html_url": "https://github.com/jbruechert",
+      "contributions": 14
+    },
+    {
+      "login": "melvo",
+      "id": 7458133,
+      "node_id": "MDQ6VXNlcjc0NTgxMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7458133?v=4",
+      "html_url": "https://github.com/melvo",
+      "contributions": 9
+    },
+    {
+      "login": "krnekit",
+      "id": 1368764,
+      "node_id": "MDQ6VXNlcjEzNjg3NjQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1368764?v=4",
+      "html_url": "https://github.com/krnekit",
+      "contributions": 8
+    },
+    {
+      "login": "LightZam",
+      "id": 5077142,
+      "node_id": "MDQ6VXNlcjUwNzcxNDI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5077142?v=4",
+      "html_url": "https://github.com/LightZam",
+      "contributions": 7
+    },
+    {
+      "login": "hipersayanX",
+      "id": 1249885,
+      "node_id": "MDQ6VXNlcjEyNDk4ODU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1249885?v=4",
+      "html_url": "https://github.com/hipersayanX",
+      "contributions": 4
+    },
+    {
+      "login": "mbroadst",
+      "id": 312966,
+      "node_id": "MDQ6VXNlcjMxMjk2Ng==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/312966?v=4",
+      "html_url": "https://github.com/mbroadst",
+      "contributions": 4
+    },
+    {
+      "login": "fbeutel",
+      "id": 2996606,
+      "node_id": "MDQ6VXNlcjI5OTY2MDY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2996606?v=4",
+      "html_url": "https://github.com/fbeutel",
+      "contributions": 4
+    },
+    {
+      "login": "Kaffeine",
+      "id": 374839,
+      "node_id": "MDQ6VXNlcjM3NDgzOQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/374839?v=4",
+      "html_url": "https://github.com/Kaffeine",
+      "contributions": 3
+    },
+    {
+      "login": "ogoffart",
+      "id": 959326,
+      "node_id": "MDQ6VXNlcjk1OTMyNg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/959326?v=4",
+      "html_url": "https://github.com/ogoffart",
+      "contributions": 3
+    },
+    {
+      "login": "jaragont",
+      "id": 4938344,
+      "node_id": "MDQ6VXNlcjQ5MzgzNDQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4938344?v=4",
+      "html_url": "https://github.com/jaragont",
+      "contributions": 3
+    },
+    {
+      "login": "kollix",
+      "id": 6557362,
+      "node_id": "MDQ6VXNlcjY1NTczNjI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6557362?v=4",
+      "html_url": "https://github.com/kollix",
       "contributions": 2
     },
     {
-      "login": "JackH3103",
-      "id": 23507259,
-      "node_id": "MDQ6VXNlcjIzNTA3MjU5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/23507259?v=4",
-      "html_url": "https://github.com/JackH3103",
+      "login": "oskaritimperi",
+      "id": 808235,
+      "node_id": "MDQ6VXNlcjgwODIzNQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/808235?v=4",
+      "html_url": "https://github.com/oskaritimperi",
       "contributions": 2
+    },
+    {
+      "login": "TheBluestBird",
+      "id": 7749177,
+      "node_id": "MDQ6VXNlcjc3NDkxNzc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7749177?v=4",
+      "html_url": "https://github.com/TheBluestBird",
+      "contributions": 2
+    },
+    {
+      "login": "allbabel",
+      "id": 3359186,
+      "node_id": "MDQ6VXNlcjMzNTkxODY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3359186?v=4",
+      "html_url": "https://github.com/allbabel",
+      "contributions": 1
+    },
+    {
+      "login": "lichtzeichner",
+      "id": 9092252,
+      "node_id": "MDQ6VXNlcjkwOTIyNTI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9092252?v=4",
+      "html_url": "https://github.com/lichtzeichner",
+      "contributions": 1
+    },
+    {
+      "login": "jankusanagi",
+      "id": 1359607,
+      "node_id": "MDQ6VXNlcjEzNTk2MDc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1359607?v=4",
+      "html_url": "https://github.com/jankusanagi",
+      "contributions": 1
+    },
+    {
+      "login": "leobasilio",
+      "id": 16745138,
+      "node_id": "MDQ6VXNlcjE2NzQ1MTM4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16745138?v=4",
+      "html_url": "https://github.com/leobasilio",
+      "contributions": 1
+    },
+    {
+      "login": "alkino",
+      "id": 286080,
+      "node_id": "MDQ6VXNlcjI4NjA4MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/286080?v=4",
+      "html_url": "https://github.com/alkino",
+      "contributions": 1
+    },
+    {
+      "login": "henry61024",
+      "id": 10781081,
+      "node_id": "MDQ6VXNlcjEwNzgxMDgx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10781081?v=4",
+      "html_url": "https://github.com/henry61024",
+      "contributions": 1
+    },
+    {
+      "login": "servonic",
+      "id": 8246141,
+      "node_id": "MDQ6VXNlcjgyNDYxNDE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8246141?v=4",
+      "html_url": "https://github.com/servonic",
+      "contributions": 1
+    },
+    {
+      "login": "hsitter",
+      "id": 809987,
+      "node_id": "MDQ6VXNlcjgwOTk4Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/809987?v=4",
+      "html_url": "https://github.com/hsitter",
+      "contributions": 537
+    },
+    {
+      "login": "Pointedstick",
+      "id": 1097249,
+      "node_id": "MDQ6VXNlcjEwOTcyNDk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1097249?v=4",
+      "html_url": "https://github.com/Pointedstick",
+      "contributions": 206
+    },
+    {
+      "login": "silverhadch",
+      "id": 158838697,
+      "node_id": "U_kgDOCXevqQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/158838697?v=4",
+      "html_url": "https://github.com/silverhadch",
+      "contributions": 60
+    },
+    {
+      "login": "fesdonomist",
+      "id": 71878148,
+      "node_id": "MDQ6VXNlcjcxODc4MTQ4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/71878148?v=4",
+      "html_url": "https://github.com/fesdonomist",
+      "contributions": 40
+    },
+    {
+      "login": "shocklateboy92",
+      "id": 856493,
+      "node_id": "MDQ6VXNlcjg1NjQ5Mw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/856493?v=4",
+      "html_url": "https://github.com/shocklateboy92",
+      "contributions": 25
+    },
+    {
+      "login": "eean",
+      "id": 20547,
+      "node_id": "MDQ6VXNlcjIwNTQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20547?v=4",
+      "html_url": "https://github.com/eean",
+      "contributions": 11
+    },
+    {
+      "login": "Merrit",
+      "id": 9575627,
+      "node_id": "MDQ6VXNlcjk1NzU2Mjc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9575627?v=4",
+      "html_url": "https://github.com/Merrit",
+      "contributions": 8
+    },
+    {
+      "login": "ryanabx",
+      "id": 56272643,
+      "node_id": "MDQ6VXNlcjU2MjcyNjQz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/56272643?v=4",
+      "html_url": "https://github.com/ryanabx",
+      "contributions": 7
+    },
+    {
+      "login": "vjr",
+      "id": 612302,
+      "node_id": "MDQ6VXNlcjYxMjMwMg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/612302?v=4",
+      "html_url": "https://github.com/vjr",
+      "contributions": 6
+    },
+    {
+      "login": "Akselmo",
+      "id": 13801236,
+      "node_id": "MDQ6VXNlcjEzODAxMjM2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13801236?v=4",
+      "html_url": "https://github.com/Akselmo",
+      "contributions": 4
+    },
+    {
+      "login": "xuars",
+      "id": 197080354,
+      "node_id": "U_kgDOC781Ig",
+      "avatar_url": "https://avatars.githubusercontent.com/u/197080354?v=4",
+      "html_url": "https://github.com/xuars",
+      "contributions": 4
+    },
+    {
+      "login": "aleixpol",
+      "id": 1282478,
+      "node_id": "MDQ6VXNlcjEyODI0Nzg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1282478?v=4",
+      "html_url": "https://github.com/aleixpol",
+      "contributions": 3
+    },
+    {
+      "login": "bcooksley",
+      "id": 43242,
+      "node_id": "MDQ6VXNlcjQzMjQy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43242?v=4",
+      "html_url": "https://github.com/bcooksley",
+      "contributions": 2
+    },
+    {
+      "login": "daniele47",
+      "id": 233149851,
+      "node_id": "U_kgDODeWVmw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/233149851?v=4",
+      "html_url": "https://github.com/daniele47",
+      "contributions": 2
+    },
+    {
+      "login": "ostfriese4",
+      "id": 144824657,
+      "node_id": "U_kgDOCKHZUQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/144824657?v=4",
+      "html_url": "https://github.com/ostfriese4",
+      "contributions": 2
+    },
+    {
+      "login": "Justinzobel",
+      "id": 1370117,
+      "node_id": "MDQ6VXNlcjEzNzAxMTc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1370117?v=4",
+      "html_url": "https://github.com/Justinzobel",
+      "contributions": 2
+    },
+    {
+      "login": "nicolasfella",
+      "id": 6377822,
+      "node_id": "MDQ6VXNlcjYzNzc4MjI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6377822?v=4",
+      "html_url": "https://github.com/nicolasfella",
+      "contributions": 2
+    },
+    {
+      "login": "nmariusp",
+      "id": 107675943,
+      "node_id": "U_kgDOBmsBJw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/107675943?v=4",
+      "html_url": "https://github.com/nmariusp",
+      "contributions": 2
+    },
+    {
+      "login": "renner0e",
+      "id": 80410025,
+      "node_id": "MDQ6VXNlcjgwNDEwMDI1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/80410025?v=4",
+      "html_url": "https://github.com/renner0e",
+      "contributions": 2
+    },
+    {
+      "login": "andrewgigena",
+      "id": 37125554,
+      "node_id": "MDQ6VXNlcjM3MTI1NTU0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/37125554?v=4",
+      "html_url": "https://github.com/andrewgigena",
+      "contributions": 1
+    },
+    {
+      "login": "GerardoGR",
+      "id": 828501,
+      "node_id": "MDQ6VXNlcjgyODUwMQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/828501?v=4",
+      "html_url": "https://github.com/GerardoGR",
+      "contributions": 1
+    },
+    {
+      "login": "gcala",
+      "id": 153917,
+      "node_id": "MDQ6VXNlcjE1MzkxNw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/153917?v=4",
+      "html_url": "https://github.com/gcala",
+      "contributions": 1
+    },
+    {
+      "login": "raploz",
+      "id": 40844298,
+      "node_id": "MDQ6VXNlcjQwODQ0Mjk4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40844298?v=4",
+      "html_url": "https://github.com/raploz",
+      "contributions": 1
+    },
+    {
+      "login": "johnandmegh",
+      "id": 112789658,
+      "node_id": "U_kgDOBrkImg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/112789658?v=4",
+      "html_url": "https://github.com/johnandmegh",
+      "contributions": 1
+    },
+    {
+      "login": "lw64",
+      "id": 80385965,
+      "node_id": "MDQ6VXNlcjgwMzg1OTY1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/80385965?v=4",
+      "html_url": "https://github.com/lw64",
+      "contributions": 1
+    },
+    {
+      "login": "OlivierPaquien",
+      "id": 133542447,
+      "node_id": "U_kgDOB_WyLw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/133542447?v=4",
+      "html_url": "https://github.com/OlivierPaquien",
+      "contributions": 1
+    },
+    {
+      "login": "slusallek",
+      "id": 4663590,
+      "node_id": "MDQ6VXNlcjQ2NjM1OTA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4663590?v=4",
+      "html_url": "https://github.com/slusallek",
+      "contributions": 1
+    },
+    {
+      "login": "Steinhagen",
+      "id": 4029937,
+      "node_id": "MDQ6VXNlcjQwMjk5Mzc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4029937?v=4",
+      "html_url": "https://github.com/Steinhagen",
+      "contributions": 1
+    },
+    {
+      "login": "christoph-cullmann",
+      "id": 1092741,
+      "node_id": "MDQ6VXNlcjEwOTI3NDE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1092741?v=4",
+      "html_url": "https://github.com/christoph-cullmann",
+      "contributions": 4877
+    },
+    {
+      "login": "Waqar144",
+      "id": 7696024,
+      "node_id": "MDQ6VXNlcjc2OTYwMjQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7696024?v=4",
+      "html_url": "https://github.com/Waqar144",
+      "contributions": 2034
+    },
+    {
+      "login": "dhaumann",
+      "id": 5610098,
+      "node_id": "MDQ6VXNlcjU2MTAwOTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5610098?v=4",
+      "html_url": "https://github.com/dhaumann",
+      "contributions": 1796
+    },
+    {
+      "login": "kasars",
+      "id": 15031118,
+      "node_id": "MDQ6VXNlcjE1MDMxMTE4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/15031118?v=4",
+      "html_url": "https://github.com/kasars",
+      "contributions": 612
+    },
+    {
+      "login": "ehamberg",
+      "id": 16063,
+      "node_id": "MDQ6VXNlcjE2MDYz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16063?v=4",
+      "html_url": "https://github.com/ehamberg",
+      "contributions": 514
+    },
+    {
+      "login": "anderslundx",
+      "id": 188790895,
+      "node_id": "U_kgDOC0C4bw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/188790895?v=4",
+      "html_url": "https://github.com/anderslundx",
+      "contributions": 513
+    },
+    {
+      "login": "Montel",
+      "id": 1503769,
+      "node_id": "MDQ6VXNlcjE1MDM3Njk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1503769?v=4",
+      "html_url": "https://github.com/Montel",
+      "contributions": 387
+    },
+    {
+      "login": "ssj-gz",
+      "id": 2984303,
+      "node_id": "MDQ6VXNlcjI5ODQzMDM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2984303?v=4",
+      "html_url": "https://github.com/ssj-gz",
+      "contributions": 378
+    },
+    {
+      "login": "zaufi",
+      "id": 548715,
+      "node_id": "MDQ6VXNlcjU0ODcxNQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/548715?v=4",
+      "html_url": "https://github.com/zaufi",
+      "contributions": 369
+    },
+    {
+      "login": "mnauw",
+      "id": 8546975,
+      "node_id": "MDQ6VXNlcjg1NDY5NzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8546975?v=4",
+      "html_url": "https://github.com/mnauw",
+      "contributions": 322
+    },
+    {
+      "login": "milianw",
+      "id": 57207,
+      "node_id": "MDQ6VXNlcjU3MjA3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/57207?v=4",
+      "html_url": "https://github.com/milianw",
+      "contributions": 289
+    },
+    {
+      "login": "tsdgeos",
+      "id": 9051674,
+      "node_id": "MDQ6VXNlcjkwNTE2NzQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9051674?v=4",
+      "html_url": "https://github.com/tsdgeos",
+      "contributions": 177
+    },
+    {
+      "login": "neundorf",
+      "id": 1304857,
+      "node_id": "MDQ6VXNlcjEzMDQ4NTc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1304857?v=4",
+      "html_url": "https://github.com/neundorf",
+      "contributions": 158
+    },
+    {
+      "login": "yurchor",
+      "id": 2255859,
+      "node_id": "MDQ6VXNlcjIyNTU4NTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2255859?v=4",
+      "html_url": "https://github.com/yurchor",
+      "contributions": 154
+    },
+    {
+      "login": "lueck-b",
+      "id": 53032793,
+      "node_id": "MDQ6VXNlcjUzMDMyNzkz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/53032793?v=4",
+      "html_url": "https://github.com/lueck-b",
+      "contributions": 130
+    },
+    {
+      "login": "dfaure",
+      "id": 102283,
+      "node_id": "MDQ6VXNlcjEwMjI4Mw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/102283?v=4",
+      "html_url": "https://github.com/dfaure",
+      "contributions": 118
+    },
+    {
+      "login": "p4bl0-",
+      "id": 8600047,
+      "node_id": "MDQ6VXNlcjg2MDAwNDc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8600047?v=4",
+      "html_url": "https://github.com/p4bl0-",
+      "contributions": 103
+    },
+    {
+      "login": "tchollingsworth",
+      "id": 964145,
+      "node_id": "MDQ6VXNlcjk2NDE0NQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/964145?v=4",
+      "html_url": "https://github.com/tchollingsworth",
+      "contributions": 95
+    },
+    {
+      "login": "wbsoft",
+      "id": 588454,
+      "node_id": "MDQ6VXNlcjU4ODQ1NA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/588454?v=4",
+      "html_url": "https://github.com/wbsoft",
+      "contributions": 93
+    },
+    {
+      "login": "ropez",
+      "id": 431220,
+      "node_id": "MDQ6VXNlcjQzMTIyMA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/431220?v=4",
+      "html_url": "https://github.com/ropez",
+      "contributions": 93
+    },
+    {
+      "login": "chehrlic",
+      "id": 756995,
+      "node_id": "MDQ6VXNlcjc1Njk5NQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/756995?v=4",
+      "html_url": "https://github.com/chehrlic",
+      "contributions": 93
+    },
+    {
+      "login": "goinnn",
+      "id": 1101467,
+      "node_id": "MDQ6VXNlcjExMDE0Njc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1101467?v=4",
+      "html_url": "https://github.com/goinnn",
+      "contributions": 88
+    },
+    {
+      "login": "jowenn",
+      "id": 5236596,
+      "node_id": "MDQ6VXNlcjUyMzY1OTY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5236596?v=4",
+      "html_url": "https://github.com/jowenn",
+      "contributions": 87
+    },
+    {
+      "login": "michel-ludwig",
+      "id": 24790731,
+      "node_id": "MDQ6VXNlcjI0NzkwNzMx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/24790731?v=4",
+      "html_url": "https://github.com/michel-ludwig",
+      "contributions": 85
+    },
+    {
+      "login": "mssola",
+      "id": 767943,
+      "node_id": "MDQ6VXNlcjc2Nzk0Mw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/767943?v=4",
+      "html_url": "https://github.com/mssola",
+      "contributions": 84
+    },
+    {
+      "login": "pinotree",
+      "id": 1129322,
+      "node_id": "MDQ6VXNlcjExMjkzMjI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1129322?v=4",
+      "html_url": "https://github.com/pinotree",
+      "contributions": 84
+    },
+    {
+      "login": "armbruer",
+      "id": 4569753,
+      "node_id": "MDQ6VXNlcjQ1Njk3NTM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4569753?v=4",
+      "html_url": "https://github.com/armbruer",
+      "contributions": 77
+    },
+    {
+      "login": "heirecka",
+      "id": 649320,
+      "node_id": "MDQ6VXNlcjY0OTMyMA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/649320?v=4",
+      "html_url": "https://github.com/heirecka",
+      "contributions": 75
+    },
+    {
+      "login": "tfry-git",
+      "id": 8535298,
+      "node_id": "MDQ6VXNlcjg1MzUyOTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8535298?v=4",
+      "html_url": "https://github.com/tfry-git",
+      "contributions": 68
+    },
+    {
+      "login": "mrpink17",
+      "id": 13852200,
+      "node_id": "MDQ6VXNlcjEzODUyMjAw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13852200?v=4",
+      "html_url": "https://github.com/mrpink17",
+      "contributions": 67
     }
   ],
   "activeOrg": true

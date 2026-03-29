@@ -39,7 +39,8 @@
     2018,
     2019,
     2020,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2018": [
@@ -88,7 +89,36 @@
         "project_url": "https://summerofcode.withgoogle.com/archive/2020/projects/5088690579177472/"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Enhancing AI Primitives in Neovim",
+        "short_description": "Neovim currently lacks built-in support for AI features. As a result, plugin developers need to reimplement the same core functionalities again and...",
+        "description": "Neovim currently lacks built-in support for AI features. As a result, plugin developers need to reimplement the same core functionalities again and again. This leads to duplication and inconsistencies in the plugin ecosystem.\n\nThis project aims to introduce AI-friendly primitives to streamline AI plugin development. It should add support for inline completion, buffer status indicators, a standardized progress API, and enhance prompt buffers with multiline support to be more friendly toward building AI-assisted workflows. These improvements should make it easy to integrate AI capabilities in Neovim while keeping Neovim performant, lightweight, and extensible as always.",
+        "student_name": "Shadman Saleh",
+        "code_url": "https://gist.github.com/shadmansaleh/e0442fe1d1d8431ecb0019c468dd159a",
+        "proposal_id": "ccWwAINZ",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/5QH1bGGq"
+      },
+      {
+        "title": "Remote ssh Editing",
+        "short_description": "A much wanted and highly requested feature for neovim is the ability to edit remote files over ssh seamlessly. There is no native way of doing so and...",
+        "description": "A much wanted and highly requested feature for neovim is the ability to edit remote files over ssh seamlessly. There is no native way of doing so and plugins do not feel as polished as expected. The aim of this project is to add such a feature to neovim.",
+        "student_name": "Siddhant Agarwal",
+        "code_url": "https://gist.github.com/siddhantdev/2994e6bb305442b7ca55f220b4aea9af",
+        "proposal_id": "NqleB6f5",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/cxwY8wMs"
+      },
+      {
+        "title": "AI-Driven API Enhancements with Broader Benefits",
+        "short_description": "This proposal aims to enhance Neovim’s API to support AI-powered features, while also bringing broader improvements to the editor's functionality....",
+        "description": "This proposal aims to enhance Neovim’s API to support AI-powered features, while also bringing broader improvements to the editor's functionality. While Neovim can provide some AI capabilities, current APIs are not convenient enough for handling complex tasks like streaming results or customizing AI interactions.\n\nTo solve this, the proposal focuses on three main areas:\n\n1. Enhanced LSP Support: Adding support for AI-related methods such as `textDocument/inlineCompletion` and improving LSP's handling of partial results with `PartialResultParam`.\n2. Progress Interface: Introducing a built-in progress interface (`vim.ui.progress`) to track and display long-running tasks, improving user experience during AI interactions.\n3. Prompt Buffer Improvements: Creating a new Lua API for multi-line and editable prompt buffers to facilitate interactive AI chats or REPL-like environments.\n\nBy addressing these areas, this project will provide a foundation for integrating AI into Neovim while offering general usability and extensibility improvements for all users.",
+        "student_name": "Yi Ming",
+        "code_url": "https://github.com/neovim/neovim/discussions/34254",
+        "proposal_id": "dMDGCOji",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/7Q85JtxY"
+      }
+    ],
+    "2026": []
   },
   "githubID": "neovim",
   "repositories": [
@@ -100,9 +130,9 @@
       "html_url": "https://github.com/neovim/neovim",
       "description": "Vim-fork focused on extensibility and usability",
       "language": "Vim Script",
-      "stargazers_count": 89641,
-      "forks_count": 6092,
-      "open_issues_count": 1968,
+      "stargazers_count": 97544,
+      "forks_count": 6683,
+      "open_issues_count": 1921,
       "license": {
         "key": "other",
         "name": "Other",
@@ -128,9 +158,9 @@
       "html_url": "https://github.com/neovim/neovim-snap",
       "description": "Snap package for Nvim",
       "language": "Shell",
-      "stargazers_count": 26,
-      "forks_count": 9,
-      "open_issues_count": 3,
+      "stargazers_count": 31,
+      "forks_count": 13,
+      "open_issues_count": 5,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -141,28 +171,6 @@
       "topics": []
     },
     {
-      "id": 21254536,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMTI1NDUzNg==",
-      "name": "doc",
-      "full_name": "neovim/doc",
-      "html_url": "https://github.com/neovim/doc",
-      "description": "Generated documentation and reports",
-      "language": "HTML",
-      "stargazers_count": 36,
-      "forks_count": 14,
-      "open_issues_count": 3,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "neovim"
-      ]
-    },
-    {
       "id": 688959145,
       "node_id": "R_kgDOKRCuqQ",
       "name": "neovim-releases",
@@ -170,34 +178,11 @@
       "html_url": "https://github.com/neovim/neovim-releases",
       "description": "Unsupported Nvim releases",
       "language": null,
-      "stargazers_count": 160,
-      "forks_count": 10,
-      "open_issues_count": 1,
+      "stargazers_count": 236,
+      "forks_count": 16,
+      "open_issues_count": 3,
       "license": null,
       "topics": []
-    },
-    {
-      "id": 395592557,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzOTU1OTI1NTc=",
-      "name": "tree-sitter-vimdoc",
-      "full_name": "neovim/tree-sitter-vimdoc",
-      "html_url": "https://github.com/neovim/tree-sitter-vimdoc",
-      "description": "Tree-sitter parser for Vim help files",
-      "language": "JavaScript",
-      "stargazers_count": 120,
-      "forks_count": 16,
-      "open_issues_count": 18,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "tree-sitter",
-        "tree-sitter-parser"
-      ]
     },
     {
       "id": 221512407,
@@ -207,9 +192,9 @@
       "html_url": "https://github.com/neovim/nvim-lspconfig",
       "description": "Quickstart configs for Nvim LSP",
       "language": "Lua",
-      "stargazers_count": 11945,
-      "forks_count": 2213,
-      "open_issues_count": 41,
+      "stargazers_count": 13466,
+      "forks_count": 2429,
+      "open_issues_count": 33,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -228,18 +213,45 @@
       ]
     },
     {
-      "id": 669459236,
-      "node_id": "R_kgDOJ-cjJA",
-      "name": "neovim-backup",
-      "full_name": "neovim/neovim-backup",
-      "html_url": "https://github.com/neovim/neovim-backup",
-      "description": "Backup Neovim GitHub issues, comments, discussions, etc.",
-      "language": null,
-      "stargazers_count": 2,
-      "forks_count": 0,
+      "id": 21366046,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMTM2NjA0Ng==",
+      "name": "deps",
+      "full_name": "neovim/deps",
+      "html_url": "https://github.com/neovim/deps",
+      "description": "Dependencies for Nvim CI",
+      "language": "C",
+      "stargazers_count": 16,
+      "forks_count": 10,
       "open_issues_count": 0,
       "license": null,
       "topics": []
+    },
+    {
+      "id": 30651283,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzMDY1MTI4Mw==",
+      "name": "node-client",
+      "full_name": "neovim/node-client",
+      "html_url": "https://github.com/neovim/node-client",
+      "description": "Nvim Node.js client and plugin host",
+      "language": "TypeScript",
+      "stargazers_count": 527,
+      "forks_count": 56,
+      "open_issues_count": 24,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": [
+        "neovim",
+        "nodejs",
+        "nvim",
+        "rpc",
+        "typescript",
+        "vim"
+      ]
     },
     {
       "id": 17078727,
@@ -249,9 +261,9 @@
       "html_url": "https://github.com/neovim/neovim.github.io",
       "description": "Neovim website",
       "language": "HTML",
-      "stargazers_count": 500,
-      "forks_count": 104,
-      "open_issues_count": 11,
+      "stargazers_count": 580,
+      "forks_count": 119,
+      "open_issues_count": 8,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -262,6 +274,42 @@
       "topics": []
     },
     {
+      "id": 669459236,
+      "node_id": "R_kgDOJ-cjJA",
+      "name": "neovim-backup",
+      "full_name": "neovim/neovim-backup",
+      "html_url": "https://github.com/neovim/neovim-backup",
+      "description": "Backup Neovim GitHub issues, comments, discussions, etc.",
+      "language": null,
+      "stargazers_count": 2,
+      "forks_count": 0,
+      "open_issues_count": 1,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 21254536,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMTI1NDUzNg==",
+      "name": "doc",
+      "full_name": "neovim/doc",
+      "html_url": "https://github.com/neovim/doc",
+      "description": "Generated documentation and reports",
+      "language": "HTML",
+      "stargazers_count": 37,
+      "forks_count": 14,
+      "open_issues_count": 4,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "neovim"
+      ]
+    },
+    {
       "id": 19920398,
       "node_id": "MDEwOlJlcG9zaXRvcnkxOTkyMDM5OA==",
       "name": "neovim-ruby",
@@ -269,8 +317,8 @@
       "html_url": "https://github.com/neovim/neovim-ruby",
       "description": "Ruby support for Neovim",
       "language": "Ruby",
-      "stargazers_count": 356,
-      "forks_count": 18,
+      "stargazers_count": 364,
+      "forks_count": 17,
       "open_issues_count": 1,
       "license": {
         "key": "mit",
@@ -289,17 +337,143 @@
       ]
     },
     {
-      "id": 21366046,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMTM2NjA0Ng==",
-      "name": "deps",
-      "full_name": "neovim/deps",
-      "html_url": "https://github.com/neovim/deps",
-      "description": "Dependencies for Nvim CI",
-      "language": "C",
-      "stargazers_count": 14,
-      "forks_count": 10,
+      "id": 19548750,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxOTU0ODc1MA==",
+      "name": "pynvim",
+      "full_name": "neovim/pynvim",
+      "html_url": "https://github.com/neovim/pynvim",
+      "description": "Python client and plugin host for Nvim",
+      "language": "Python",
+      "stargazers_count": 1695,
+      "forks_count": 130,
+      "open_issues_count": 50,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 80803709,
+      "node_id": "MDEwOlJlcG9zaXRvcnk4MDgwMzcwOQ==",
+      "name": "nvimdev.nvim",
+      "full_name": "neovim/nvimdev.nvim",
+      "html_url": "https://github.com/neovim/nvimdev.nvim",
+      "description": "Neovim plugin for working on Neovim",
+      "language": "Lua",
+      "stargazers_count": 80,
+      "forks_count": 12,
       "open_issues_count": 0,
       "license": null,
+      "topics": [
+        "developer-tools",
+        "neovim"
+      ]
+    },
+    {
+      "id": 395592557,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzOTU1OTI1NTc=",
+      "name": "tree-sitter-vimdoc",
+      "full_name": "neovim/tree-sitter-vimdoc",
+      "html_url": "https://github.com/neovim/tree-sitter-vimdoc",
+      "description": "Tree-sitter parser for Vim help files",
+      "language": "JavaScript",
+      "stargazers_count": 146,
+      "forks_count": 22,
+      "open_issues_count": 16,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "tree-sitter",
+        "tree-sitter-parser"
+      ]
+    },
+    {
+      "id": 456242360,
+      "node_id": "R_kgDOGzG0uA",
+      "name": "packspec",
+      "full_name": "neovim/packspec",
+      "html_url": "https://github.com/neovim/packspec",
+      "description": "ALPHA package dependencies spec",
+      "language": "Lua",
+      "stargazers_count": 246,
+      "forks_count": 6,
+      "open_issues_count": 17,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 31254787,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzMTI1NDc4Nw==",
+      "name": "libvterm",
+      "full_name": "neovim/libvterm",
+      "html_url": "https://github.com/neovim/libvterm",
+      "description": null,
+      "language": "C",
+      "stargazers_count": 182,
+      "forks_count": 58,
+      "open_issues_count": 0,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 145534201,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNDU1MzQyMDE=",
+      "name": "nvim.net",
+      "full_name": "neovim/nvim.net",
+      "html_url": "https://github.com/neovim/nvim.net",
+      "description": "Nvim .NET client and plugin host",
+      "language": "C#",
+      "stargazers_count": 95,
+      "forks_count": 16,
+      "open_issues_count": 8,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 152818885,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNTI4MTg4ODU=",
+      "name": "unibilium",
+      "full_name": "neovim/unibilium",
+      "html_url": "https://github.com/neovim/unibilium",
+      "description": "https://github.com/neovim/neovim/blob/master/MAINTAIN.md#third-party-dependencies",
+      "language": "C",
+      "stargazers_count": 30,
+      "forks_count": 9,
+      "open_issues_count": 0,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
       "topics": []
     },
     {
@@ -310,9 +484,9 @@
       "html_url": "https://github.com/neovim/go-client",
       "description": "Nvim Go client",
       "language": "Go",
-      "stargazers_count": 600,
-      "forks_count": 39,
-      "open_issues_count": 11,
+      "stargazers_count": 629,
+      "forks_count": 41,
+      "open_issues_count": 13,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -329,133 +503,6 @@
       ]
     },
     {
-      "id": 19548750,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxOTU0ODc1MA==",
-      "name": "pynvim",
-      "full_name": "neovim/pynvim",
-      "html_url": "https://github.com/neovim/pynvim",
-      "description": "Python client and plugin host for Nvim",
-      "language": "Python",
-      "stargazers_count": 1626,
-      "forks_count": 125,
-      "open_issues_count": 50,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 30651283,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzMDY1MTI4Mw==",
-      "name": "node-client",
-      "full_name": "neovim/node-client",
-      "html_url": "https://github.com/neovim/node-client",
-      "description": "Nvim Node.js client and plugin host",
-      "language": "TypeScript",
-      "stargazers_count": 510,
-      "forks_count": 51,
-      "open_issues_count": 23,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": [
-        "neovim",
-        "nodejs",
-        "nvim",
-        "rpc",
-        "typescript",
-        "vim"
-      ]
-    },
-    {
-      "id": 31254787,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzMTI1NDc4Nw==",
-      "name": "libvterm",
-      "full_name": "neovim/libvterm",
-      "html_url": "https://github.com/neovim/libvterm",
-      "description": null,
-      "language": "C",
-      "stargazers_count": 166,
-      "forks_count": 55,
-      "open_issues_count": 0,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 152818885,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNTI4MTg4ODU=",
-      "name": "unibilium",
-      "full_name": "neovim/unibilium",
-      "html_url": "https://github.com/neovim/unibilium",
-      "description": "https://github.com/neovim/neovim/blob/master/MAINTAIN.md#third-party-dependencies",
-      "language": "C",
-      "stargazers_count": 23,
-      "forks_count": 8,
-      "open_issues_count": 1,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 145534201,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNDU1MzQyMDE=",
-      "name": "nvim.net",
-      "full_name": "neovim/nvim.net",
-      "html_url": "https://github.com/neovim/nvim.net",
-      "description": "Nvim .NET client and plugin host",
-      "language": "C#",
-      "stargazers_count": 84,
-      "forks_count": 14,
-      "open_issues_count": 7,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 456242360,
-      "node_id": "R_kgDOGzG0uA",
-      "name": "packspec",
-      "full_name": "neovim/packspec",
-      "html_url": "https://github.com/neovim/packspec",
-      "description": "ALPHA package dependencies spec",
-      "language": "Lua",
-      "stargazers_count": 230,
-      "forks_count": 3,
-      "open_issues_count": 16,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
       "id": 517622509,
       "node_id": "R_kgDOHtpK7Q",
       "name": "winget-pkgs",
@@ -463,7 +510,7 @@
       "html_url": "https://github.com/neovim/winget-pkgs",
       "description": "The Microsoft community Windows Package Manager manifest repository",
       "language": null,
-      "stargazers_count": 1,
+      "stargazers_count": 2,
       "forks_count": 0,
       "open_issues_count": 0,
       "license": {
@@ -483,7 +530,7 @@
       "html_url": "https://github.com/neovim/libtermkey",
       "description": null,
       "language": "C",
-      "stargazers_count": 24,
+      "stargazers_count": 27,
       "forks_count": 12,
       "open_issues_count": 0,
       "license": {
@@ -503,7 +550,7 @@
       "html_url": "https://github.com/neovim/tree-sitter-c",
       "description": "C grammar for tree-sitter",
       "language": "JavaScript",
-      "stargazers_count": 2,
+      "stargazers_count": 3,
       "forks_count": 1,
       "open_issues_count": 0,
       "license": {
@@ -516,23 +563,6 @@
       "topics": []
     },
     {
-      "id": 80803709,
-      "node_id": "MDEwOlJlcG9zaXRvcnk4MDgwMzcwOQ==",
-      "name": "nvimdev.nvim",
-      "full_name": "neovim/nvimdev.nvim",
-      "html_url": "https://github.com/neovim/nvimdev.nvim",
-      "description": "Neovim plugin for working on Neovim",
-      "language": "Lua",
-      "stargazers_count": 77,
-      "forks_count": 12,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": [
-        "developer-tools",
-        "neovim"
-      ]
-    },
-    {
       "id": 23454816,
       "node_id": "MDEwOlJlcG9zaXRvcnkyMzQ1NDgxNg==",
       "name": "lua-client",
@@ -540,8 +570,8 @@
       "html_url": "https://github.com/neovim/lua-client",
       "description": "DEPRECATED",
       "language": "Lua",
-      "stargazers_count": 84,
-      "forks_count": 23,
+      "stargazers_count": 86,
+      "forks_count": 22,
       "open_issues_count": 4,
       "license": {
         "key": "apache-2.0",
@@ -560,7 +590,7 @@
       "html_url": "https://github.com/neovim/playground",
       "description": "Treesitter playground integrated into Neovim",
       "language": null,
-      "stargazers_count": 0,
+      "stargazers_count": 2,
       "forks_count": 1,
       "open_issues_count": 0,
       "license": {
@@ -580,7 +610,7 @@
       "html_url": "https://github.com/neovim/libuv",
       "description": "[DEPRECATED] Nvim 0.6+ uses upstream libuv, not this fork.",
       "language": "C",
-      "stargazers_count": 5,
+      "stargazers_count": 6,
       "forks_count": 2,
       "open_issues_count": 0,
       "license": {
@@ -600,8 +630,8 @@
       "html_url": "https://github.com/neovim/bot-ci",
       "description": "[DEPRECATED], now lives at https://github.com/neovim/doc",
       "language": null,
-      "stargazers_count": 23,
-      "forks_count": 21,
+      "stargazers_count": 24,
+      "forks_count": 20,
       "open_issues_count": 0,
       "license": {
         "key": "apache-2.0",
@@ -620,7 +650,7 @@
       "html_url": "https://github.com/neovim/marvim-bot",
       "description": "Proof of concept bot that interacts as Marvim",
       "language": "Rust",
-      "stargazers_count": 2,
+      "stargazers_count": 3,
       "forks_count": 2,
       "open_issues_count": 0,
       "license": null,
@@ -634,7 +664,7 @@
       "html_url": "https://github.com/neovim/python-gui",
       "description": "Proof-of-concept Nvim GUI. Not maintained.",
       "language": "Python",
-      "stargazers_count": 75,
+      "stargazers_count": 76,
       "forks_count": 19,
       "open_issues_count": 12,
       "license": {
@@ -654,8 +684,8 @@
       "html_url": "https://github.com/neovim/VSNvim",
       "description": "Nvim extension for Visual Studio 2017",
       "language": "C++",
-      "stargazers_count": 27,
-      "forks_count": 3,
+      "stargazers_count": 28,
+      "forks_count": 4,
       "open_issues_count": 0,
       "license": {
         "key": "apache-2.0",
@@ -674,7 +704,7 @@
       "html_url": "https://github.com/neovim/node-host",
       "description": "node.js host (for Nvim 0.2.0 or older)",
       "language": "Vim script",
-      "stargazers_count": 41,
+      "stargazers_count": 42,
       "forks_count": 7,
       "open_issues_count": 0,
       "license": {
@@ -694,7 +724,7 @@
       "html_url": "https://github.com/neovim/homebrew-neovim",
       "description": "Homebrew formula",
       "language": null,
-      "stargazers_count": 402,
+      "stargazers_count": 401,
       "forks_count": 73,
       "open_issues_count": 3,
       "license": {
@@ -714,7 +744,7 @@
       "node_id": "MDQ6VXNlcjM1NzY4MTcx",
       "avatar_url": "https://avatars.githubusercontent.com/u/35768171?v=4",
       "html_url": "https://github.com/zeertzjq",
-      "contributions": 5035
+      "contributions": 6400
     },
     {
       "login": "justinmk",
@@ -722,7 +752,7 @@
       "node_id": "MDQ6VXNlcjEzNTk0MjE=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1359421?v=4",
       "html_url": "https://github.com/justinmk",
-      "contributions": 7
+      "contributions": 1
     },
     {
       "login": "janlazo",
@@ -730,7 +760,7 @@
       "node_id": "MDQ6VXNlcjg3NDAwNTc=",
       "avatar_url": "https://avatars.githubusercontent.com/u/8740057?v=4",
       "html_url": "https://github.com/janlazo",
-      "contributions": 2466
+      "contributions": 2592
     },
     {
       "login": "bfredl",
@@ -738,7 +768,15 @@
       "node_id": "MDQ6VXNlcjEzNjMxMDQ=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1363104?v=4",
       "html_url": "https://github.com/bfredl",
-      "contributions": 2303
+      "contributions": 2388
+    },
+    {
+      "login": "clason",
+      "id": 2361214,
+      "node_id": "MDQ6VXNlcjIzNjEyMTQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2361214?v=4",
+      "html_url": "https://github.com/clason",
+      "contributions": 1575
     },
     {
       "login": "ZyX-I",
@@ -749,20 +787,12 @@
       "contributions": 1448
     },
     {
-      "login": "clason",
-      "id": 2361214,
-      "node_id": "MDQ6VXNlcjIzNjEyMTQ=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/2361214?v=4",
-      "html_url": "https://github.com/clason",
-      "contributions": 1442
-    },
-    {
       "login": "jamessan",
       "id": 112971,
       "node_id": "MDQ6VXNlcjExMjk3MQ==",
       "avatar_url": "https://avatars.githubusercontent.com/u/112971?v=4",
       "html_url": "https://github.com/jamessan",
-      "contributions": 1406
+      "contributions": 3
     },
     {
       "login": "dundargoc",
@@ -770,7 +800,7 @@
       "node_id": "MDQ6VXNlcjMzOTUzOTM2",
       "avatar_url": "https://avatars.githubusercontent.com/u/33953936?v=4",
       "html_url": "https://github.com/dundargoc",
-      "contributions": 1133
+      "contributions": 25
     },
     {
       "login": "tarruda",
@@ -786,7 +816,7 @@
       "node_id": "MDQ6VXNlcjc5MDQxODU=",
       "avatar_url": "https://avatars.githubusercontent.com/u/7904185?v=4",
       "html_url": "https://github.com/lewis6991",
-      "contributions": 682
+      "contributions": 1
     },
     {
       "login": "blueyed",
@@ -802,15 +832,7 @@
       "node_id": "MDQ6VXNlcjg5NjUyMDI=",
       "avatar_url": "https://avatars.githubusercontent.com/u/8965202?v=4",
       "html_url": "https://github.com/gpanders",
-      "contributions": 508
-    },
-    {
-      "login": "seandewar",
-      "id": 6256228,
-      "node_id": "MDQ6VXNlcjYyNTYyMjg=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/6256228?v=4",
-      "html_url": "https://github.com/seandewar",
-      "contributions": 402
+      "contributions": 524
     },
     {
       "login": "luukvbaal",
@@ -818,7 +840,15 @@
       "node_id": "MDQ6VXNlcjMxNzMwNzI5",
       "avatar_url": "https://avatars.githubusercontent.com/u/31730729?v=4",
       "html_url": "https://github.com/luukvbaal",
-      "contributions": 385
+      "contributions": 507
+    },
+    {
+      "login": "seandewar",
+      "id": 6256228,
+      "node_id": "MDQ6VXNlcjYyNTYyMjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6256228?v=4",
+      "html_url": "https://github.com/seandewar",
+      "contributions": 490
     },
     {
       "login": "mhinz",
@@ -827,6 +857,14 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/972014?v=4",
       "html_url": "https://github.com/mhinz",
       "contributions": 330
+    },
+    {
+      "login": "glepnir",
+      "id": 41671631,
+      "node_id": "MDQ6VXNlcjQxNjcxNjMx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/41671631?v=4",
+      "html_url": "https://github.com/glepnir",
+      "contributions": 270
     },
     {
       "login": "elmart",
@@ -853,6 +891,14 @@
       "contributions": 241
     },
     {
+      "login": "mfussenegger",
+      "id": 38700,
+      "node_id": "MDQ6VXNlcjM4NzAw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/38700?v=4",
+      "html_url": "https://github.com/mfussenegger",
+      "contributions": 227
+    },
+    {
       "login": "fwalch",
       "id": 339435,
       "node_id": "MDQ6VXNlcjMzOTQzNQ==",
@@ -869,20 +915,20 @@
       "contributions": 222
     },
     {
-      "login": "mfussenegger",
-      "id": 38700,
-      "node_id": "MDQ6VXNlcjM4NzAw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/38700?v=4",
-      "html_url": "https://github.com/mfussenegger",
-      "contributions": 220
-    },
-    {
       "login": "jszakmeister",
       "id": 448087,
       "node_id": "MDQ6VXNlcjQ0ODA4Nw==",
       "avatar_url": "https://avatars.githubusercontent.com/u/448087?v=4",
       "html_url": "https://github.com/jszakmeister",
       "contributions": 212
+    },
+    {
+      "login": "MariaSolOs",
+      "id": 62502207,
+      "node_id": "MDQ6VXNlcjYyNTAyMjA3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/62502207?v=4",
+      "html_url": "https://github.com/MariaSolOs",
+      "contributions": 199
     },
     {
       "login": "ckelsel",
@@ -914,7 +960,7 @@
       "node_id": "MDQ6VXNlcjg4NjA3NA==",
       "avatar_url": "https://avatars.githubusercontent.com/u/886074?v=4",
       "html_url": "https://github.com/teto",
-      "contributions": 163
+      "contributions": 164
     },
     {
       "login": "Shougo",
@@ -922,14 +968,6 @@
       "node_id": "MDQ6VXNlcjQxNDk1",
       "avatar_url": "https://avatars.githubusercontent.com/u/41495?v=4",
       "html_url": "https://github.com/Shougo",
-      "contributions": 161
-    },
-    {
-      "login": "glepnir",
-      "id": 41671631,
-      "node_id": "MDQ6VXNlcjQxNjcxNjMx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/41671631?v=4",
-      "html_url": "https://github.com/glepnir",
       "contributions": 161
     },
     {
@@ -941,20 +979,12 @@
       "contributions": 160
     },
     {
-      "login": "felipecrv",
-      "id": 207795,
-      "node_id": "MDQ6VXNlcjIwNzc5NQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/207795?v=4",
-      "html_url": "https://github.com/felipecrv",
-      "contributions": 157
-    },
-    {
       "login": "github-actions[bot]",
       "id": 41898282,
       "node_id": "MDM6Qm90NDE4OTgyODI=",
       "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
       "html_url": "https://github.com/apps/github-actions",
-      "contributions": 55
+      "contributions": 100
     },
     {
       "login": "hurricanehrndz",
@@ -965,12 +995,36 @@
       "contributions": 33
     },
     {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "html_url": "https://github.com/apps/dependabot",
+      "contributions": 9
+    },
+    {
       "login": "brianhuster",
       "id": 111893501,
       "node_id": "U_kgDOBqtb_Q",
       "avatar_url": "https://avatars.githubusercontent.com/u/111893501?v=4",
       "html_url": "https://github.com/brianhuster",
       "contributions": 2
+    },
+    {
+      "login": "ivocavalcante",
+      "id": 11679725,
+      "node_id": "MDQ6VXNlcjExNjc5NzI1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11679725?v=4",
+      "html_url": "https://github.com/ivocavalcante",
+      "contributions": 1
+    },
+    {
+      "login": "jcharlong",
+      "id": 58079248,
+      "node_id": "MDQ6VXNlcjU4MDc5MjQ4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/58079248?v=4",
+      "html_url": "https://github.com/jcharlong",
+      "contributions": 1
     },
     {
       "login": "mlalkaka",
@@ -986,14 +1040,6 @@
       "node_id": "MDQ6VXNlcjE2MDk4OTAx",
       "avatar_url": "https://avatars.githubusercontent.com/u/16098901?v=4",
       "html_url": "https://github.com/PretDB",
-      "contributions": 1
-    },
-    {
-      "login": "dependabot[bot]",
-      "id": 49699333,
-      "node_id": "MDM6Qm90NDk2OTkzMzM=",
-      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-      "html_url": "https://github.com/apps/dependabot",
       "contributions": 1
     }
   ],

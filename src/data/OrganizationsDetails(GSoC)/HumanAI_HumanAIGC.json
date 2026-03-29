@@ -29,7 +29,8 @@
   "facebook_url": null,
   "year": [
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2024": [
@@ -133,27 +134,155 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/PEvVr15z"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "End-to-end handwritten text recognition for early modern spanish documents",
+        "short_description": "This project focuses on end-to-end Handwritten Text Recognition (HTR) for early modern Spanish manuscripts. Unlike traditional OCR systems, which...",
+        "description": "This project focuses on end-to-end Handwritten Text Recognition (HTR) for early modern Spanish manuscripts. Unlike traditional OCR systems, which process isolated characters or lines, end-to-end HTR captures entire documents, preserving not only the text but also structural elements such as layout and reading order. Although this approach holds significant promise for both research and practical applications, it remains underexplored, especially for historical texts.\n\nThis project proposes to apply end-to-end HTR techniques to early modern Spanish manuscripts, a historically rich yet computationally challenging corpus. Leveraging recent advances in deep learning. The project aims to improve recognition accuracy on handwritten and printed texts from this period by building on models which focus on document-wide attention mechanisms, the system will be able to better handle complex layouts and diverse handwriting styles typical of early modern Spanish texts.\n\nUltimately, this research sits at the intersection of machine learning and historical document analysis, contributing both to technical innovation and cultural preservation. By improving the accessibility of early Spanish documents, the project not only supports scholars in the humanities but also contributes to the growing field of AI-driven humanities research. The integration of cutting-edge HTR models into historical workflows can open new possibilities for indexing, searching, and analyzing large volumes of archival material in a scalable, automated fashion.",
+        "student_name": "Aniket Junghare",
+        "code_url": "https://medium.com/@aniketjunghare999/renaissance-deciphering-early-modern-handwritten-texts-with-artificial-intelligence-314804d9be0c",
+        "proposal_id": "c5eyjx3g",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/53h89bdk"
+      },
+      {
+        "title": "End to End OCR System using Transformer Models",
+        "short_description": "Optical Character Recognition (OCR) technology has revolutionized document digitization. However, existing OCR tools like Adobe Acrobat and Google’s...",
+        "description": "Optical Character Recognition (OCR) technology has revolutionized document digitization. However, existing OCR tools like Adobe Acrobat and Google’s Pytesseract, they struggle with historical documents due to variations in font styles, image quality, degradation, and layouts. Text recognition from centuries-old works poses a significant challenge due to the complexity of early non-standard print forms, handwritten text and manuscripts.\r\nOver the past year, transformer-based models have been fine-tuned to improve transcription accuracy, particularly for degraded and complex historical texts. Training on a diverse dataset that combines expert transcriptions and synthetic data has enabled better generalization across various typographical styles.\r\nBuilding on this progress, we aim to expand the dataset, to help the model finetune to handle handwritten documents as well. Fine-tuning on larger datasets incorporating diverse typographical styles both printed and handwritten and also implementing Language Modeling & Contextual Understanding for post-processing, allowing for  contextual corrections based on 17th-century grammar to further enhancing the OCR accuracy. Additionally, we plan to develop and deploy a web or mobile-based annotation tool for historians, researchers, and institutions to validate and refine OCR outputs",
+        "student_name": "Arsh Ahmed Faisal Khan",
+        "code_url": "https://github.com/humanai-foundation/RenAIssance/tree/main/RenAIssance_Transformer_OCR_Arsh_Khan",
+        "proposal_id": "Bx2D55Q1",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/WvX5G3H0"
+      },
+      {
+        "title": "Healing Stones - Reconstructing digitized cultural heritage artifacts with artificial intelligence",
+        "short_description": "This project aims to develop an AI-powered system for the virtual reconstruction of fragmented cultural heritage artifacts, with a focus on Mayan...",
+        "description": "This project aims to develop an AI-powered system for the virtual reconstruction of fragmented cultural heritage artifacts, with a focus on Mayan stelae. These artifacts are often discovered in broken, randomly oriented, and partially eroded states, making manual reassembly both time-consuming and imprecise. The proposed solution combines geometric analysis, graph-based fragment matching, and machine learning techniques to automate the reconstruction process. By leveraging 3D scans of the fragments and training models on real geometric descriptors, the system will predict correct alignments and reassemble the stele in a digital space. The project will be implemented using Open3D for 3D processing and PyTorch for neural network training. This work not only aids in archaeological restoration efforts but also contributes to the broader field of digital heritage preservation.",
+        "student_name": "Atif_khan",
+        "code_url": "https://github.com/humanai-foundation/HealingStones/tree/main/Atif",
+        "proposal_id": "SvCkkykm",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/elgslkxD"
+      },
+      {
+        "title": "Communication Analysis Tool for Human-AI Interaction Driving Simulator Experiments",
+        "short_description": "I propose to make an AI-powered tool that can analyze complex communication data from driving simulator experiments at the Translational Research for...",
+        "description": "I propose to make an AI-powered tool that can analyze complex communication data from driving simulator experiments at the Translational Research for Injury Prevention (TRIP) Laboratory. The tool will process high-fidelity audiovisual data from six participants working together in networked simulators. Building on my previous work in audio extraction, transcription, sentiment analysis, and preliminary visualization, I want to create a complete solution that includes strong data pipelines, advanced NLP techniques (such as speaker diarization, NER, and topic modeling), dynamic reporting with interactive visualizations (heat maps, network graphs), and an easy-to-use user interface. The final product will be a fully functional prototype with full documentation that will help researchers learn more about how groups work together, how people talk to each other, and how drivers act in order to improve safety and inform the design of smart systems.",
+        "student_name": "eskayML",
+        "code_url": "https://github.com/humanai-foundation/ISSR/tree/main/ISSR_Communication_Analysis_Tool_Samuel_Kalu",
+        "proposal_id": "ossKqKrj",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/tDtErLvN"
+      },
+      {
+        "title": "Improving Renaissance Spanish OCR with CNN-RNN Hybrids and Weighted Learning",
+        "short_description": "Project Summary: Problem: Renaissance-era Spanish texts remain digitally inaccessible due to modern OCR systems' inability to process archaic glyphs...",
+        "description": "Project Summary:\n\n\nProblem: Renaissance-era Spanish texts remain digitally inaccessible due to modern OCR systems' inability to process archaic glyphs (ligatures, obsolete diacritics), degraded prints, and non-standard orthography. This limits scholars’ ability to analyze historical linguistic evolution and cultural heritage.\n\n\nSolution: Develop an open-source OCR system using a CNN-RNN hybrid architecture tailored for 17th-century Spanish. The model integrates weighted learning to address class imbalance (e.g., rare symbols like ſ or ç) and synthetic data augmentation to simulate historical print degradation. \n\n\nKey innovations include:\n\n\nWeighted loss functions (focal loss, class-aware cross-entropy) to prioritize underrepresented characters.\n\n\nRule-based post-processing (e.g., positional substitution of ſ → s).\n\n\nSynthetic training data with historical fonts and degradation simulations, alongside real data\n\n\nDeliverables:\n\n\nA trained OCR model achieving ≥80% character accuracy (CER ≤20%).\n\n\nEvaluation metrics (CER/WER) and symbol-specific performance analysis.\n\n\nCodebase with inference scripts, documentation, and sample transcriptions.\n\n\nImpact: This tool will empower digital humanists, archivists, and linguists to transcribe and analyze historical texts at scale, preserving cultural heritage and enabling new research into early modern Spanish. By open-sourcing the system, we aim to democratize access to underserved historical materials and inspire community-driven improvements.",
+        "student_name": "Kate O'Reilly",
+        "code_url": "https://medium.com/@katejudithoreilly/improving-renaissance-spanish-ocr-with-cnn-rnn-hybrids-and-weighted-learning-e97704266325",
+        "proposal_id": "jBlXvd9I",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/benininZ"
+      },
+      {
+        "title": "17th Century Spanish text recognition with transformer models",
+        "short_description": "This project addresses the challenge of accurately digitizing degraded 17th-century Spanish manuscripts, which suffer from irregular layouts, archaic...",
+        "description": "This project addresses the challenge of accurately digitizing degraded 17th-century Spanish manuscripts, which suffer from irregular layouts, archaic grammar, and low scan quality. The solution integrates a hybrid OCR pipeline: a Mask R-CNN model segments text blocks into lines, a fine-tuned TrOCR transformer recognizes printed/handwritten text, and a T5 + LLM hybrid system corrects errors while preserving historical grammar. An open-source annotation tool enables historians to validate outputs and expand datasets. Deliverables include: (1) a production-ready OCR pipeline, (2) post-correction module with fallback strategies, (3) annotation tool for dataset refinement, and (4) comprehensive documentation. This tool will enable scalable, accurate digitization of cultural heritage texts.",
+        "student_name": "Kulkarni Pranav P",
+        "code_url": "https://medium.com/@pranavesque/google-summer-of-code-enhancing-spanish-ocr-for-historical-documents-4cb408920d12",
+        "proposal_id": "xv7wy5Ot",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/vz3dxbtz"
+      },
+      {
+        "title": "renAIssance: Synthetic text generation with Generative Models",
+        "short_description": "For Historical Manuscripts, limited availability of data a limiting factor in training OCR or Layout Detection models. In this project I propose the...",
+        "description": "For Historical Manuscripts, limited availability of data a limiting factor in training OCR or Layout Detection models.\nIn this project I propose the WGAN architecture to generate synthetic renaissance style Image Data which can be used to improve OCR model performance on historical Spanish texts.",
+        "student_name": "SaarthakGupta",
+        "code_url": "https://medium.com/@_Sarthak004_/the-digital-scribe-my-gsoc-journey-teaching-ai-to-read-the-past-part-ii-99b0f615116a",
+        "proposal_id": "VyQ777u0",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/tBqjGdfq"
+      },
+      {
+        "title": "Automating text recognition & transliteration of historical documents with weighted CRNN models.",
+        "short_description": "This project aims to address the challenge of text recognition from historical Spanish printed sources dating back to the seventeenth century, a...",
+        "description": "This project aims to address the challenge of text recognition from historical Spanish printed sources dating back to the seventeenth century, a domain where existing Optical Character Recognition (OCR) tools often fail due to the complexity and variability of the texts. Leveraging hybrid end-to-end models based on a combination of \"Weighted CRNN architecture\" and \"CTC based beam-search decoding\", this project seeks to develop advanced machine learning techniques capable of accurately transcribing non-standard printed text. The final objective is to create an \"end-to-end solution/product\" for users, to directly scan a page and obtain its transcription using a smart AI tool.",
+        "student_name": "ShashankShekharSingh",
+        "code_url": "https://github.com/humanai-foundation/RenAIssance/pull/24",
+        "proposal_id": "KHrIDNDT",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/GjZqgamc"
+      },
+      {
+        "title": "Text Recognition with Transformer Models for Efficient Deployment",
+        "short_description": "This project addresses the challenge of making advanced Transformer-based OCR technology for historical documents accessible to non-technical users...",
+        "description": "This project addresses the challenge of making advanced Transformer-based OCR technology for historical documents accessible to non-technical users on standard hardware. Despite significant advances in OCR accuracy for complex historical texts, current solutions remain inaccessible to many historians, archivists, and researchers due to technical barriers and hardware requirements.\n\nThe solution involves developing an optimized, user-friendly OCR system specifically for historical documents through three main approaches: (1) implementing advanced model optimization techniques for efficient CPU inference, including kernel fusion, weight pruning, and knowledge distillation; (2) creating cross-platform deployment options for mobile devices and web browsers; and (3) developing an intuitive application interface with preprocessing controls and interactive correction capabilities.\n\nDeliverables will include:\n\n1) A quantized OCR model achieving at least 4x speedup on CPU with <1% accuracy loss.\n2) Browser-based inference capability: An enhanced Streamlit application with batch processing, export options and 1 click OCR.\n3) A benchmark suite comparing performance across hardware configurations\n4) Comprehensive documentation and tutorials for non-technical users\nThis project will democratize access to cutting-edge OCR technology, enabling broader participation in historical document digitization and analysis without specialized technical expertise.",
+        "student_name": "Utsav Rai",
+        "code_url": "https://github.com/humanai-foundation/RenAIssance/tree/main/RenAIssance_Transformer_OCR_Utsav_Rai",
+        "proposal_id": "9exeMlOt",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/SWLdu59R"
+      },
+      {
+        "title": "AI-Powered Behavioral Analysis for Mental Health Crisis Detection and Geospatial Trend Analysis",
+        "short_description": "This project aims to build an AI-driven behavioural monitoring system to detect mental health, suicide, and substance use crises in real time using...",
+        "description": "This project aims to build an AI-driven behavioural monitoring system to detect mental health, suicide, and substance use crises in real time using social media data. It will analyse engagement patterns and crisis-related language using NLP (TextBlob, BERT, LDA) and geotag posts for mapping regional distress trends. Deliverables include a sentiment and risk classification pipeline, geospatial heatmaps, and an interactive dashboard to help public health teams proactively identify and respond to emerging crises.",
+        "student_name": "Vishnu Sankhyan",
+        "code_url": "https://github.com/SparkFan626/gsoc2025-ai4mh",
+        "proposal_id": "EvNNMJGL",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/w3ZCPSZb"
+      },
+      {
+        "title": "Coding Actions and Fatalities in Militarized Interstate Confrontations",
+        "short_description": "This project builds a fully explainable NLP pipeline to identify and classify Military-Involved Conflicts (MIC) from raw text articles. Unlike...",
+        "description": "This project builds a fully explainable NLP pipeline to identify and classify Military-Involved Conflicts (MIC) from raw text articles. Unlike pretrained models, it uses a custom heuristic approach—extracting countries, actions, dates, fatalities, and sentiment based on rule-based logic. Though this results in longer processing times, it ensures complete transparency, flexibility, and interpretability, which is critical for social science and humanitarian research. The pipeline can later be scaled using models like BERT to enhance classification while retaining its explainable foundation.",
+        "student_name": "wJoshua",
+        "code_url": "https://medium.com/@joshjothom05/coding-actions-and-fatalities-in-militarized-interstate-confrontations-d24a6476f41e",
+        "proposal_id": "PrFGxrTN",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/Aec3lKEK"
+      },
+      {
+        "title": "ArtExtract",
+        "short_description": "This project aims to enhance the analysis of multispectral paintings by detecting hidden images and understanding their structural characteristics....",
+        "description": "This project aims to enhance the analysis of multispectral paintings by detecting hidden images and understanding their structural characteristics. While previous GSoC efforts utilized CNN-based Siamese networks for layer similarity learning, such models often struggle to capture high-level semantic and structural relationships critical to interpreting overpainted or restored artworks.\n\nTo address this limitation, this project proposes a Graph Neural Network (GNN)-based Siamese architecture that models both local features and their spatial/spectral relationships in graph form. The pipeline will begin with preprocessing multispectral data into region-based graphs, followed by training a GNN-Siamese model on the Multispectral Imaging (MSI) dataset using weak supervision.\n\nThe model will then be generalized to unlabeled datasets (e.g., CAVE, Harvard) through few-shot adaptation, and further enhanced via self-supervised pretraining using large-scale RGB art datasets (e.g., WikiArt, NGA), with pseudo-label generation for semi-supervised learning.",
+        "student_name": "YANG MING-CHUN",
+        "code_url": "https://github.com/humanai-foundation/ArtExtract/tree/main/ArtExtract_Mingchun",
+        "proposal_id": "I90pCKLi",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/7NT6U2W1"
+      },
+      {
+        "title": "AI-Powered Behavioral Analysis for Crisis Detection and Prevention",
+        "short_description": "This project aims to develop an AI-powered system that supports early detection and ongoing monitoring of suicide, substance use, and mental health...",
+        "description": "This project aims to develop an AI-powered system that supports early detection and ongoing monitoring of suicide, substance use, and mental health crises through social media analysis. By combining behavioral tracking, natural language processing (NLP), and geospatial trend mapping, the system will extract high-risk language patterns, identify regions of escalating distress, and visualize crisis trends over time. The final deliverables will include a structured crisis dataset, predictive risk indicators, and an interactive dashboard to help clinicians, nonprofits, and public health agencies make timely and informed decisions. This project addresses the limitations of delayed traditional health data by providing real-time insights into emerging community crises.",
+        "student_name": "Yixing (Spark) Fan",
+        "code_url": "https://github.com/humanai-foundation/ISSR/tree/main/ISSR_AI4MH_Yixing_Fan",
+        "proposal_id": "RintC6Ym",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/oiAp4mUW"
+      },
+      {
+        "title": "End-to-End Historical OCR Pipeline with 80%+ Accuracy",
+        "short_description": "The objective of this project is to develop a robust, end-to-end OCR pipeline capable of achieving at least 80% accuracy in recognizing characters...",
+        "description": "The objective of this project is to develop a robust, end-to-end OCR pipeline capable of achieving at least 80% accuracy in recognizing characters from early modern Spanish documents. The focus will be on leveraging recent advances in Handwritten Document Recognition (HDR), an emerging subfield of document analysis that integrates document layout and text recognition into a single model. By exploring both HDR-based and traditional approaches, the project aims to create a practical solution for historical document transcription as part of the RenAIssance initiative.",
+        "student_name": "Yukinori Yamamoto",
+        "code_url": "https://medium.com/@yamanko1234/building-a-handwritten-ocr-pipeline-for-historical-spanish-texts-b269a53663f1",
+        "proposal_id": "IwIcjtSD",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/XCiS1TH7"
+      }
+    ],
+    "2026": []
   },
   "githubID": "HumanAIGC",
   "repositories": [
     {
-      "id": 932553484,
-      "node_id": "R_kgDON5WjDA",
-      "name": "lite-avatar",
-      "full_name": "HumanAIGC/lite-avatar",
-      "html_url": "https://github.com/HumanAIGC/lite-avatar",
-      "description": null,
+      "id": 1044221568,
+      "node_id": "R_kgDOPj2OgA",
+      "name": "Wan2.2",
+      "full_name": "HumanAIGC/Wan2.2",
+      "html_url": "https://github.com/HumanAIGC/Wan2.2",
+      "description": "Wan: Open and Advanced Large-Scale Video Generative Models",
       "language": "Python",
-      "stargazers_count": 284,
-      "forks_count": 43,
-      "open_issues_count": 7,
+      "stargazers_count": 4,
+      "forks_count": 2,
+      "open_issues_count": 0,
       "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
       },
       "topics": []
     },
@@ -172,49 +301,58 @@
       "topics": []
     },
     {
-      "id": 957908950,
-      "node_id": "R_kgDOORiH1g",
-      "name": "omnitalker",
-      "full_name": "HumanAIGC/omnitalker",
-      "html_url": "https://github.com/HumanAIGC/omnitalker",
-      "description": "Project Page repo  of   OmniTalker: Real-Time Text-Driven Talking Head Generation with In-Context Audio-Visual Style Replication",
+      "id": 1167464065,
+      "node_id": "R_kgDORZYWgQ",
+      "name": "ucm-webpage",
+      "full_name": "HumanAIGC/ucm-webpage",
+      "html_url": "https://github.com/HumanAIGC/ucm-webpage",
+      "description": "Project Page for UCM: Unifying Camera Control and Memory with Time-aware Positional Encoding Warping for World Models",
       "language": "JavaScript",
-      "stargazers_count": 323,
-      "forks_count": 19,
+      "stargazers_count": 1,
+      "forks_count": 1,
       "open_issues_count": 0,
-      "license": null,
-      "topics": [
-        "audio-visual",
-        "diffusion-transformer",
-        "real-time",
-        "talking-head"
-      ]
-    },
-    {
-      "id": 955690000,
-      "node_id": "R_kgDOOPasEA",
-      "name": "chat-anyone",
-      "full_name": "HumanAIGC/chat-anyone",
-      "html_url": "https://github.com/HumanAIGC/chat-anyone",
-      "description": "project page for ChatAnyone",
-      "language": "JavaScript",
-      "stargazers_count": 106,
-      "forks_count": 6,
-      "open_issues_count": 3,
       "license": null,
       "topics": []
     },
     {
-      "id": 929740714,
-      "node_id": "R_kgDON2q3qg",
-      "name": "animate-anyone-2",
-      "full_name": "HumanAIGC/animate-anyone-2",
-      "html_url": "https://github.com/HumanAIGC/animate-anyone-2",
-      "description": "Project Page for Animate Anyone 2",
+      "id": 1122628768,
+      "node_id": "R_kgDOQun0oA",
+      "name": "knot_forcing_demo_page",
+      "full_name": "HumanAIGC/knot_forcing_demo_page",
+      "html_url": "https://github.com/HumanAIGC/knot_forcing_demo_page",
+      "description": "Project Page for Knot Forcing: Taming Autoregressive Video Diffusion Models for Real-time Infinite Interactive Portrait Animation",
       "language": "JavaScript",
-      "stargazers_count": 62,
-      "forks_count": 7,
-      "open_issues_count": 3,
+      "stargazers_count": 3,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1121579241,
+      "node_id": "R_kgDOQtnw6Q",
+      "name": "sync_anyone_demo_page",
+      "full_name": "HumanAIGC/sync_anyone_demo_page",
+      "html_url": "https://github.com/HumanAIGC/sync_anyone_demo_page",
+      "description": "Demo page for SyncAnyone",
+      "language": "JavaScript",
+      "stargazers_count": 3,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1044764191,
+      "node_id": "R_kgDOPkXWHw",
+      "name": "wan-s2v-webpage",
+      "full_name": "HumanAIGC/wan-s2v-webpage",
+      "html_url": "https://github.com/HumanAIGC/wan-s2v-webpage",
+      "description": "Wan-S2V: Audio-Driven Cinematic Video Generation",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
       "license": null,
       "topics": []
     },
@@ -226,9 +364,9 @@
       "html_url": "https://github.com/HumanAIGC/AnimateAnyone",
       "description": "Animate Anyone: Consistent and Controllable Image-to-Video Synthesis for Character Animation",
       "language": null,
-      "stargazers_count": 14733,
-      "forks_count": 995,
-      "open_issues_count": 80,
+      "stargazers_count": 14796,
+      "forks_count": 1008,
+      "open_issues_count": 82,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -239,6 +377,135 @@
       "topics": []
     },
     {
+      "id": 957908950,
+      "node_id": "R_kgDOORiH1g",
+      "name": "omnitalker",
+      "full_name": "HumanAIGC/omnitalker",
+      "html_url": "https://github.com/HumanAIGC/omnitalker",
+      "description": "[NeurIPS 2025]   OmniTalker: Real-Time Text-Driven Talking Head Generation with In-Context Audio-Visual Style Replication",
+      "language": "JavaScript",
+      "stargazers_count": 422,
+      "forks_count": 29,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": [
+        "audio-visual",
+        "diffusion-transformer",
+        "real-time",
+        "talking-head"
+      ]
+    },
+    {
+      "id": 1057937374,
+      "node_id": "R_kgDOPw7X3g",
+      "name": "wan-animate",
+      "full_name": "HumanAIGC/wan-animate",
+      "html_url": "https://github.com/HumanAIGC/wan-animate",
+      "description": "project page for \"Wan-Animate: Unified Character Animation and Replacement with Holistic Replication\"",
+      "language": "JavaScript",
+      "stargazers_count": 7,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 932553484,
+      "node_id": "R_kgDON5WjDA",
+      "name": "lite-avatar",
+      "full_name": "HumanAIGC/lite-avatar",
+      "html_url": "https://github.com/HumanAIGC/lite-avatar",
+      "description": null,
+      "language": "Python",
+      "stargazers_count": 427,
+      "forks_count": 71,
+      "open_issues_count": 15,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 1005445284,
+      "node_id": "R_kgDOO-3gpA",
+      "name": "SwapAnyHead",
+      "full_name": "HumanAIGC/SwapAnyHead",
+      "html_url": "https://github.com/HumanAIGC/SwapAnyHead",
+      "description": "Project page for ICCV 2025 paper \"Controllable and Expressive One-Shot Video Head Swapping\"",
+      "language": "JavaScript",
+      "stargazers_count": 13,
+      "forks_count": 1,
+      "open_issues_count": 3,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 991158475,
+      "node_id": "R_kgDOOxPgyw",
+      "name": "facial-motion-timeline-control",
+      "full_name": "HumanAIGC/facial-motion-timeline-control",
+      "html_url": "https://github.com/HumanAIGC/facial-motion-timeline-control",
+      "description": "Project Page for paper “Exploring Timeline Control for Facial Motion Generation” （CVPR 2025）",
+      "language": "JavaScript",
+      "stargazers_count": 5,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 987899113,
+      "node_id": "R_kgDOOuIk6Q",
+      "name": "MotionRAG-Diff",
+      "full_name": "HumanAIGC/MotionRAG-Diff",
+      "html_url": "https://github.com/HumanAIGC/MotionRAG-Diff",
+      "description": "Project page for MotionRAG-Diff",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 955690000,
+      "node_id": "R_kgDOOPasEA",
+      "name": "chat-anyone",
+      "full_name": "HumanAIGC/chat-anyone",
+      "html_url": "https://github.com/HumanAIGC/chat-anyone",
+      "description": "project page for ChatAnyone",
+      "language": "JavaScript",
+      "stargazers_count": 116,
+      "forks_count": 6,
+      "open_issues_count": 4,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 929740714,
+      "node_id": "R_kgDON2q3qg",
+      "name": "animate-anyone-2",
+      "full_name": "HumanAIGC/animate-anyone-2",
+      "html_url": "https://github.com/HumanAIGC/animate-anyone-2",
+      "description": "Project Page for ICCV 2025 Animate Anyone 2",
+      "language": "JavaScript",
+      "stargazers_count": 61,
+      "forks_count": 8,
+      "open_issues_count": 3,
+      "license": null,
+      "topics": []
+    },
+    {
       "id": 918167537,
       "node_id": "R_kgDONrof8Q",
       "name": "emote-portrait-alive-2",
@@ -246,7 +513,7 @@
       "html_url": "https://github.com/HumanAIGC/emote-portrait-alive-2",
       "description": null,
       "language": "JavaScript",
-      "stargazers_count": 14,
+      "stargazers_count": 17,
       "forks_count": 0,
       "open_issues_count": 1,
       "license": null,
@@ -260,7 +527,7 @@
       "html_url": "https://github.com/HumanAIGC/emote-portrait-alive",
       "description": null,
       "language": "JavaScript",
-      "stargazers_count": 81,
+      "stargazers_count": 82,
       "forks_count": 12,
       "open_issues_count": 2,
       "license": null,
@@ -274,9 +541,9 @@
       "html_url": "https://github.com/HumanAIGC/EMO",
       "description": "Emote Portrait Alive: Generating Expressive Portrait Videos with Audio2Video Diffusion Model under Weak Conditions",
       "language": null,
-      "stargazers_count": 7628,
-      "forks_count": 934,
-      "open_issues_count": 256,
+      "stargazers_count": 7632,
+      "forks_count": 935,
+      "open_issues_count": 257,
       "license": null,
       "topics": []
     },
@@ -316,9 +583,9 @@
       "html_url": "https://github.com/HumanAIGC/OutfitAnyone",
       "description": "Outfit Anyone: Ultra-high quality virtual try-on for Any Clothing and Any Person",
       "language": null,
-      "stargazers_count": 5866,
-      "forks_count": 440,
-      "open_issues_count": 54,
+      "stargazers_count": 5971,
+      "forks_count": 451,
+      "open_issues_count": 55,
       "license": null,
       "topics": []
     },
@@ -330,8 +597,8 @@
       "html_url": "https://github.com/HumanAIGC/MaTe3D",
       "description": "MaTe3D: Mask-guided Text-based 3D-aware Portrait Editing",
       "language": null,
-      "stargazers_count": 98,
-      "forks_count": 17,
+      "stargazers_count": 99,
+      "forks_count": 19,
       "open_issues_count": 3,
       "license": {
         "key": "apache-2.0",
@@ -370,8 +637,8 @@
       "html_url": "https://github.com/HumanAIGC/VividTalk",
       "description": "VividTalk: One-Shot Audio-Driven Talking Head Generation Based on 3D Hybrid Prior",
       "language": null,
-      "stargazers_count": 787,
-      "forks_count": 50,
+      "stargazers_count": 803,
+      "forks_count": 52,
       "open_issues_count": 15,
       "license": {
         "key": "apache-2.0",
@@ -404,8 +671,8 @@
       "html_url": "https://github.com/HumanAIGC/Cloth2Tex",
       "description": "Cloth2Tex: A Customized Cloth Texture Generation Pipeline for 3D Virtual Try-On",
       "language": "Python",
-      "stargazers_count": 491,
-      "forks_count": 135,
+      "stargazers_count": 518,
+      "forks_count": 139,
       "open_issues_count": 5,
       "license": {
         "key": "gpl-3.0",
@@ -419,20 +686,36 @@
   ],
   "contributorsDetails": [
     {
-      "login": "sudowind",
-      "id": 12236308,
-      "node_id": "MDQ6VXNlcjEyMjM2MzA4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/12236308?v=4",
-      "html_url": "https://github.com/sudowind",
-      "contributions": 3
+      "login": "WanX-Video-1",
+      "id": 199940953,
+      "node_id": "U_kgDOC-rbWQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/199940953?v=4",
+      "html_url": "https://github.com/WanX-Video-1",
+      "contributions": 14
     },
     {
-      "login": "TimSeven",
-      "id": 12681497,
-      "node_id": "MDQ6VXNlcjEyNjgxNDk3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/12681497?v=4",
-      "html_url": "https://github.com/TimSeven",
-      "contributions": 2
+      "login": "Steven-SWZhang",
+      "id": 134917139,
+      "node_id": "U_kgDOCAqsEw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/134917139?v=4",
+      "html_url": "https://github.com/Steven-SWZhang",
+      "contributions": 11
+    },
+    {
+      "login": "kelseyee",
+      "id": 182334647,
+      "node_id": "U_kgDOCt40tw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/182334647?v=4",
+      "html_url": "https://github.com/kelseyee",
+      "contributions": 6
+    },
+    {
+      "login": "helloyongyang",
+      "id": 37302878,
+      "node_id": "MDQ6VXNlcjM3MzAyODc4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/37302878?v=4",
+      "html_url": "https://github.com/helloyongyang",
+      "contributions": 5
     },
     {
       "login": "suruoxi",
@@ -440,7 +723,63 @@
       "node_id": "MDQ6VXNlcjc1OTE4NjA=",
       "avatar_url": "https://avatars.githubusercontent.com/u/7591860?v=4",
       "html_url": "https://github.com/suruoxi",
-      "contributions": 7
+      "contributions": 3
+    },
+    {
+      "login": "aluminumbox",
+      "id": 31685265,
+      "node_id": "MDQ6VXNlcjMxNjg1MjY1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/31685265?v=4",
+      "html_url": "https://github.com/aluminumbox",
+      "contributions": 2
+    },
+    {
+      "login": "DefTruth",
+      "id": 31974251,
+      "node_id": "MDQ6VXNlcjMxOTc0MjUx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/31974251?v=4",
+      "html_url": "https://github.com/DefTruth",
+      "contributions": 1
+    },
+    {
+      "login": "ishaangupta-YB",
+      "id": 52467684,
+      "node_id": "MDQ6VXNlcjUyNDY3Njg0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/52467684?v=4",
+      "html_url": "https://github.com/ishaangupta-YB",
+      "contributions": 1
+    },
+    {
+      "login": "SHYuanBest",
+      "id": 140951558,
+      "node_id": "U_kgDOCGbABg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/140951558?v=4",
+      "html_url": "https://github.com/SHYuanBest",
+      "contributions": 1
+    },
+    {
+      "login": "yitongh",
+      "id": 37362838,
+      "node_id": "MDQ6VXNlcjM3MzYyODM4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/37362838?v=4",
+      "html_url": "https://github.com/yitongh",
+      "contributions": 1
+    },
+    {
+      "login": "kabachuha",
+      "id": 14872007,
+      "node_id": "MDQ6VXNlcjE0ODcyMDA3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14872007?v=4",
+      "html_url": "https://github.com/kabachuha",
+      "contributions": 1
+    },
+    {
+      "login": "TimSeven",
+      "id": 12681497,
+      "node_id": "MDQ6VXNlcjEyNjgxNDk3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12681497?v=4",
+      "html_url": "https://github.com/TimSeven",
+      "contributions": 3
     },
     {
       "login": "verymadmatt",

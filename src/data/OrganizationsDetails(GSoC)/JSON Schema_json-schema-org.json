@@ -29,7 +29,8 @@
   "facebook_url": null,
   "year": [
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2024": [
@@ -61,7 +62,63 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/zUHIbtvx"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Better JSON Schema Errors",
+        "short_description": "JSON Schema validation errors are often cryptic and difficult to understand, making debugging frustrating for developers and end users. This project...",
+        "description": "JSON Schema validation errors are often cryptic and difficult to understand, making debugging frustrating for developers and end users.\nThis project aims to develop a JavaScript library that transforms raw JSON Schema validation outputs into clear, concise, and human-friendly error messages. It will maintain compatibility with the standard format while improving error readability, supporting multiple languages, and allowing customization.\nBy the end of the project, developers using standard-compliant JSON Schema validators will have access to a high-quality, user-centric Better JSON Schema errors—enhancing the developer experience and making debugging more intuitive for end users.",
+        "student_name": "Arpit Kuriyal",
+        "code_url": "https://gist.github.com/arpitkuriyal/81d1388b5077ac238abb978adaf3c8b0",
+        "proposal_id": "EC0DvpWX",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/eXZE2zjL"
+      },
+      {
+        "title": "Adaptation of component library in JSON Schema website",
+        "short_description": "The JSON Schema website currently uses custom UI components, which increases maintenance complexity and slows down updates. This project modernizes...",
+        "description": "The JSON Schema website currently uses custom UI components, which increases maintenance complexity and slows down updates. This project modernizes the site by integrating a UI library like ShadCN/UI and refactoring components into a modular, consistent system to improve maintainability and user experience.\n\nWork includes theming the UI library, updating layout and navigation with dark mode support, and improving Markdown rendering by refactoring StyledMarkdown.tsx into a more flexible and maintainable system. This will support advanced features like tables, tab groups, and a dynamic table of contents, while replacing legacy overrides with modern equivalents. All changes will be supported by clear documentation and implementation guide for future contributors.\n\nThe project will also resolve all related open issues, including long-standing bugs and enhancement suggestions tied to the adapted components.",
+        "student_name": "Idan levi",
+        "code_url": "https://gist.github.com/idanidan29/9bef3de7d31b5472d999e8517804fca0",
+        "proposal_id": "DazBWcvn",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/zBCXfgVo"
+      },
+      {
+        "title": "Interactive Visualization Tool For JSON Schema",
+        "short_description": "Understanding the relationships between JSON Schema properties, especially in cases of nested objects and complex structures, is crucial for learning...",
+        "description": "Understanding the relationships between JSON Schema properties, especially in cases of nested objects and complex structures, is crucial for learning and usability. However, new users often struggle to grasp the structure of JSON Schema effectively.\n    This project aims to visualize JSON Schema relationships using a graphical representation powered by Cytoscape.js, which is widely known for its predefined graph-based structures. For validation, we use AJV, a popular tool for JSON Schema validation, ensuring compliance with all JSON Schema dialects. The frontend is built with React.js, and no backend is required.\n    The primary focus of this project is to validate JSON Schema with strict compliance and visualize its structure accordingly. For future enhancements, we plan to integrate Monaco Editor for real-time schema editing, Tippy.js for interactive tooltips, and a dark mode for better accessibility—if time permits.",
+        "student_name": "Jagpreet Singh Rahi",
+        "code_url": "https://gist.github.com/jagpreetrahi/471b56396cb320d8adc6d7696ccaa891",
+        "proposal_id": "ATI3eY5H",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/oelB8kma"
+      },
+      {
+        "title": "Comprehensive JSON Schema linting for encouraging best practices and catching anti-patterns early",
+        "short_description": "The project aims to improve the JSON Schema Linting by focusing on defining, standardizing rules after reaching consensus on the anti-patterns and...",
+        "description": "The project aims to improve the JSON Schema Linting by focusing on defining,\nstandardizing rules after reaching consensus on the anti-patterns and best practices\nacross dialects. The goal is to publish each rule with a stable URL, allowing any linter to\nlink to them when reporting failures on the JSON Schema website. Additionally, the\nproject will involve the implementation of these linting rules by extending the\nSourcemeta JSON Schema CLI and other tooling.\nBy building a comprehensive and scalable linting framework, we aim to provide developers with a clear, consistent set of rules that can be universally applied across JSON Schema projects. This will not only improve the overall quality and reliability of schemas but will also help developers adhere more closely to best practices and avoid common mistakes. With the implementation of standardized rules, the linting process will be automated and easily applicable at scale, making it easier for developers to ensure their schemas are error-free and production-ready.",
+        "student_name": "Karan Palan",
+        "code_url": "https://github.com/Karan-Palan/GSoC-2025/blob/main/Final-report.md",
+        "proposal_id": "ZfKbEMNv",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/PjLfP7ZH"
+      },
+      {
+        "title": "Build a Java wrapper library for sourcemeta/blaze",
+        "short_description": "The goal of this project is to build a Java wrapper for the sourcemeta/blaze library, a high-performance JSON Schema validator written in C++....",
+        "description": "The goal of this project is to build a Java wrapper for the sourcemeta/blaze library, a high-performance JSON Schema validator written in C++. Currently, Java developers cannot directly leverage Blaze's capabilities due to the language barrier.\n\nTo solve this, I will develop a Java wrapper using the Foreign Function & Memory (FFM) API, eliminating the need for traditional JNI. This approach offers better performance, improved safety, easier maintainability, and is more aligned with modern Java (Java 21+).\n\nDeliverables include:\n- A production-ready Java wrapper using FFM to interface with Blaze.\n- Java-friendly APIs with minimal overhead and easy integration.\n- Complete documentation, usage examples, and sample applications.\n- CI/CD workflows using GitHub Actions for cross-platform build and test automation.\n- Publishing the library to Maven Central for wider adoption.\n\nThis wrapper will enable Java developers to perform fast, standards-compliant JSON schema validation using Blaze, all while staying within the Java ecosystem.",
+        "student_name": "Madhav Dhatrak",
+        "code_url": "https://github.com/MadhavDhatrak/Blaze4J.git",
+        "proposal_id": "D9xIs6Wp",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/c0uj8ubZ"
+      },
+      {
+        "title": "Automated Badge Issuance System",
+        "short_description": "The Simple Automated Badge Issuance System is designed to automate the process of issuing digital badges to users who complete the JSON Schema Tour....",
+        "description": "The Simple Automated Badge Issuance System is designed to automate the process of issuing digital badges to users who complete the JSON Schema Tour. The utilizes\nGoogle Sheets for collecting user data and integrates with Badgr, a platform for\nmanaging digital badges. The objective is to create a lightweight, reliable, and\neasy-to-maintain solution that eliminates manual intervention while ensuring scalability.\nThe project involves developing a script that interacts with Google Sheets to fetch user completion data, communicates with the Badgr API to issue badges, and incorporates proper error handling and logging mechanisms. Cloudflare Workers or an alternative hosting solution will be explored to ensure efficient and  execution of the automation process. The final deliverable will include an open-source  on\nGitHub, complete with clear documentation to enable others to use and adapt the\nsystem",
+        "student_name": "Prasanth S7",
+        "code_url": "https://gist.github.com/Prasanth-S7/701e1af7c0d896cbe742f49b8910495b",
+        "proposal_id": "zCoTyQUC",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/rdzjkCcT"
+      }
+    ],
+    "2026": []
   },
   "githubID": "json-schema-org",
   "repositories": [
@@ -73,9 +130,9 @@
       "html_url": "https://github.com/json-schema-org/JSON-Schema-Test-Suite",
       "description": "A language agnostic test suite for the JSON Schema specifications",
       "language": "Python",
-      "stargazers_count": 655,
-      "forks_count": 216,
-      "open_issues_count": 43,
+      "stargazers_count": 715,
+      "forks_count": 276,
+      "open_issues_count": 46,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -89,30 +146,6 @@
       ]
     },
     {
-      "id": 464916747,
-      "node_id": "R_kgDOG7YRCw",
-      "name": "website",
-      "full_name": "json-schema-org/website",
-      "html_url": "https://github.com/json-schema-org/website",
-      "description": "JSON Schema website",
-      "language": "HTML",
-      "stargazers_count": 99,
-      "forks_count": 272,
-      "open_issues_count": 169,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": [
-        "hacktoberfest",
-        "json-schema",
-        "jsonschema"
-      ]
-    },
-    {
       "id": 37983912,
       "node_id": "MDEwOlJlcG9zaXRvcnkzNzk4MzkxMg==",
       "name": "json-schema-spec",
@@ -120,9 +153,9 @@
       "html_url": "https://github.com/json-schema-org/json-schema-spec",
       "description": "The JSON Schema specification",
       "language": "JavaScript",
-      "stargazers_count": 4287,
-      "forks_count": 313,
-      "open_issues_count": 80,
+      "stargazers_count": 4913,
+      "forks_count": 416,
+      "open_issues_count": 65,
       "license": {
         "key": "other",
         "name": "Other",
@@ -139,16 +172,34 @@
       ]
     },
     {
-      "id": 795359528,
-      "node_id": "R_kgDOL2g5KA",
-      "name": "tour",
-      "full_name": "json-schema-org/tour",
-      "html_url": "https://github.com/json-schema-org/tour",
-      "description": "A tour of JSON Schema",
-      "language": "TypeScript",
-      "stargazers_count": 37,
-      "forks_count": 40,
-      "open_issues_count": 28,
+      "id": 788607498,
+      "node_id": "R_kgDOLwEyCg",
+      "name": "landscape",
+      "full_name": "json-schema-org/landscape",
+      "html_url": "https://github.com/json-schema-org/landscape",
+      "description": "The JSON Schema Landscape",
+      "language": null,
+      "stargazers_count": 21,
+      "forks_count": 37,
+      "open_issues_count": 12,
+      "license": null,
+      "topics": [
+        "hacktoberfest",
+        "json-schema",
+        "jsonschema"
+      ]
+    },
+    {
+      "id": 464916747,
+      "node_id": "R_kgDOG7YRCw",
+      "name": "website",
+      "full_name": "json-schema-org/website",
+      "html_url": "https://github.com/json-schema-org/website",
+      "description": "JSON Schema website",
+      "language": "HTML",
+      "stargazers_count": 152,
+      "forks_count": 449,
+      "open_issues_count": 328,
       "license": {
         "key": "other",
         "name": "Other",
@@ -163,24 +214,6 @@
       ]
     },
     {
-      "id": 788607498,
-      "node_id": "R_kgDOLwEyCg",
-      "name": "landscape",
-      "full_name": "json-schema-org/landscape",
-      "html_url": "https://github.com/json-schema-org/landscape",
-      "description": "The JSON Schema Landscape",
-      "language": null,
-      "stargazers_count": 17,
-      "forks_count": 27,
-      "open_issues_count": 7,
-      "license": null,
-      "topics": [
-        "hacktoberfest",
-        "json-schema",
-        "jsonschema"
-      ]
-    },
-    {
       "id": 357240247,
       "node_id": "MDEwOlJlcG9zaXRvcnkzNTcyNDAyNDc=",
       "name": "community",
@@ -188,9 +221,9 @@
       "html_url": "https://github.com/json-schema-org/community",
       "description": "A space to discuss community and organisational related things",
       "language": null,
-      "stargazers_count": 101,
-      "forks_count": 51,
-      "open_issues_count": 70,
+      "stargazers_count": 123,
+      "forks_count": 73,
+      "open_issues_count": 64,
       "license": null,
       "topics": [
         "community",
@@ -201,16 +234,32 @@
       ]
     },
     {
+      "id": 397207973,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzOTcyMDc5NzM=",
+      "name": ".github",
+      "full_name": "json-schema-org/.github",
+      "html_url": "https://github.com/json-schema-org/.github",
+      "description": "Our organization-wide Code of Conduct. Also see the community repository.",
+      "language": null,
+      "stargazers_count": 12,
+      "forks_count": 19,
+      "open_issues_count": 9,
+      "license": null,
+      "topics": [
+        "openjs-foundation"
+      ]
+    },
+    {
       "id": 821681302,
       "node_id": "R_kgDOMPnclg",
       "name": "conference",
       "full_name": "json-schema-org/conference",
       "html_url": "https://github.com/json-schema-org/conference",
       "description": "The JSON Schema conference website",
-      "language": "CSS",
-      "stargazers_count": 4,
-      "forks_count": 16,
-      "open_issues_count": 11,
+      "language": "HTML",
+      "stargazers_count": 7,
+      "forks_count": 25,
+      "open_issues_count": 18,
       "license": null,
       "topics": [
         "conference",
@@ -219,19 +268,27 @@
       ]
     },
     {
-      "id": 397207973,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzOTcyMDc5NzM=",
-      "name": ".github",
-      "full_name": "json-schema-org/.github",
-      "html_url": "https://github.com/json-schema-org/.github",
-      "description": "Our organization-wide Code of Conduct. Also see the community repository.",
-      "language": null,
-      "stargazers_count": 10,
-      "forks_count": 11,
-      "open_issues_count": 4,
-      "license": null,
+      "id": 795359528,
+      "node_id": "R_kgDOL2g5KA",
+      "name": "tour",
+      "full_name": "json-schema-org/tour",
+      "html_url": "https://github.com/json-schema-org/tour",
+      "description": "A tour of JSON Schema",
+      "language": "TypeScript",
+      "stargazers_count": 45,
+      "forks_count": 70,
+      "open_issues_count": 41,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
       "topics": [
-        "openjs-foundation"
+        "hacktoberfest",
+        "json-schema",
+        "jsonschema"
       ]
     },
     {
@@ -281,9 +338,9 @@
       "html_url": "https://github.com/json-schema-org/ecosystem",
       "description": "Showcasing and documenting the JSON Schema Ecosystem",
       "language": "JavaScript",
-      "stargazers_count": 4,
-      "forks_count": 10,
-      "open_issues_count": 9,
+      "stargazers_count": 7,
+      "forks_count": 22,
+      "open_issues_count": 21,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -319,7 +376,7 @@
       "html_url": "https://github.com/json-schema-org/referencing",
       "description": "Proposals for a possible specification encompassing the varying uses of \"$ref\"",
       "language": "Makefile",
-      "stargazers_count": 8,
+      "stargazers_count": 9,
       "forks_count": 1,
       "open_issues_count": 12,
       "license": {
@@ -354,7 +411,7 @@
       "description": "Help and clarify how JSON Schema can be interpreted from validation rules to data definition. This extends to how those data definitions can be represented in any programming language",
       "language": null,
       "stargazers_count": 20,
-      "forks_count": 4,
+      "forks_count": 2,
       "open_issues_count": 23,
       "license": null,
       "topics": []
@@ -387,9 +444,9 @@
       "html_url": "https://github.com/json-schema-org/json-schema-vocabularies",
       "description": "Experimental vocabularies under consideration for standardization",
       "language": null,
-      "stargazers_count": 60,
-      "forks_count": 10,
-      "open_issues_count": 45,
+      "stargazers_count": 65,
+      "forks_count": 13,
+      "open_issues_count": 46,
       "license": null,
       "topics": []
     },
@@ -401,7 +458,7 @@
       "html_url": "https://github.com/json-schema-org/vocab-database",
       "description": "A proposed JSON Schema vocabulary for common database use cases",
       "language": null,
-      "stargazers_count": 7,
+      "stargazers_count": 9,
       "forks_count": 4,
       "open_issues_count": 3,
       "license": null,
@@ -439,8 +496,8 @@
       "html_url": "https://github.com/json-schema-org/understanding-json-schema",
       "description": "A website aiming to provide more accessible documentation for JSON schema.",
       "language": "Python",
-      "stargazers_count": 1515,
-      "forks_count": 316,
+      "stargazers_count": 1511,
+      "forks_count": 311,
       "open_issues_count": 0,
       "license": {
         "key": "other",
@@ -462,7 +519,7 @@
       "description": "JSON Schema website",
       "language": "HTML",
       "stargazers_count": 293,
-      "forks_count": 213,
+      "forks_count": 208,
       "open_issues_count": 0,
       "license": null,
       "topics": [
@@ -479,7 +536,7 @@
       "description": "The JSON Schema blog",
       "language": "JavaScript",
       "stargazers_count": 5,
-      "forks_count": 7,
+      "forks_count": 6,
       "open_issues_count": 0,
       "license": {
         "key": "apache-2.0",
@@ -516,7 +573,7 @@
       "node_id": "MDQ6VXNlcjMyOTgyMg==",
       "avatar_url": "https://avatars.githubusercontent.com/u/329822?v=4",
       "html_url": "https://github.com/Julian",
-      "contributions": 22
+      "contributions": 14
     },
     {
       "login": "karenetheridge",
@@ -524,7 +581,7 @@
       "node_id": "MDQ6VXNlcjMwMzA1MQ==",
       "avatar_url": "https://avatars.githubusercontent.com/u/303051?v=4",
       "html_url": "https://github.com/karenetheridge",
-      "contributions": 154
+      "contributions": 30
     },
     {
       "login": "gregsdennis",
@@ -532,7 +589,15 @@
       "node_id": "MDQ6VXNlcjI2NzY4MDQ=",
       "avatar_url": "https://avatars.githubusercontent.com/u/2676804?v=4",
       "html_url": "https://github.com/gregsdennis",
-      "contributions": 29
+      "contributions": 3
+    },
+    {
+      "login": "jdesrosiers",
+      "id": 716571,
+      "node_id": "MDQ6VXNlcjcxNjU3MQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/716571?v=4",
+      "html_url": "https://github.com/jdesrosiers",
+      "contributions": 106
     },
     {
       "login": "epoberezkin",
@@ -564,15 +629,7 @@
       "node_id": "MDQ6VXNlcjI3NjI5MzA=",
       "avatar_url": "https://avatars.githubusercontent.com/u/2762930?v=4",
       "html_url": "https://github.com/ssilverman",
-      "contributions": 39
-    },
-    {
-      "login": "jdesrosiers",
-      "id": 716571,
-      "node_id": "MDQ6VXNlcjcxNjU3MQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/716571?v=4",
-      "html_url": "https://github.com/jdesrosiers",
-      "contributions": 25
+      "contributions": 16
     },
     {
       "login": "handrews",
@@ -580,7 +637,7 @@
       "node_id": "MDQ6VXNlcjIzNTgwMTU=",
       "avatar_url": "https://avatars.githubusercontent.com/u/2358015?v=4",
       "html_url": "https://github.com/handrews",
-      "contributions": 34
+      "contributions": 753
     },
     {
       "login": "santhosh-tekuri",
@@ -607,11 +664,27 @@
       "contributions": 15
     },
     {
+      "login": "kumari-Shristi",
+      "id": 215523406,
+      "node_id": "U_kgDODNigTg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/215523406?v=4",
+      "html_url": "https://github.com/kumari-Shristi",
+      "contributions": 13
+    },
+    {
       "login": "Zac-HD",
       "id": 12229877,
       "node_id": "MDQ6VXNlcjEyMjI5ODc3",
       "avatar_url": "https://avatars.githubusercontent.com/u/12229877?v=4",
       "html_url": "https://github.com/Zac-HD",
+      "contributions": 11
+    },
+    {
+      "login": "Vinit-Pandit",
+      "id": 106718914,
+      "node_id": "U_kgDOBlxmwg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/106718914?v=4",
+      "html_url": "https://github.com/Vinit-Pandit",
       "contributions": 11
     },
     {
@@ -623,20 +696,20 @@
       "contributions": 10
     },
     {
-      "login": "Vinit-Pandit",
-      "id": 106718914,
-      "node_id": "U_kgDOBlxmwg",
-      "avatar_url": "https://avatars.githubusercontent.com/u/106718914?v=4",
-      "html_url": "https://github.com/Vinit-Pandit",
-      "contributions": 10
-    },
-    {
       "login": "Relequestual",
       "id": 731158,
       "node_id": "MDQ6VXNlcjczMTE1OA==",
       "avatar_url": "https://avatars.githubusercontent.com/u/731158?v=4",
       "html_url": "https://github.com/Relequestual",
-      "contributions": 31
+      "contributions": 2
+    },
+    {
+      "login": "anmolbhadoriya5849",
+      "id": 176582128,
+      "node_id": "U_kgDOCoZt8A",
+      "avatar_url": "https://avatars.githubusercontent.com/u/176582128?v=4",
+      "html_url": "https://github.com/anmolbhadoriya5849",
+      "contributions": 9
     },
     {
       "login": "fge",
@@ -644,7 +717,7 @@
       "node_id": "MDQ6VXNlcjU1MDAwNg==",
       "avatar_url": "https://avatars.githubusercontent.com/u/550006?v=4",
       "html_url": "https://github.com/fge",
-      "contributions": 9
+      "contributions": 101
     },
     {
       "login": "notEthan",
@@ -660,7 +733,7 @@
       "node_id": "MDQ6VXNlcjE5MTIwMjg=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1912028?v=4",
       "html_url": "https://github.com/spacether",
-      "contributions": 6
+      "contributions": 7
     },
     {
       "login": "swaeberle",
@@ -677,6 +750,14 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/44164?v=4",
       "html_url": "https://github.com/kylef",
       "contributions": 6
+    },
+    {
+      "login": "jviotti",
+      "id": 2192773,
+      "node_id": "MDQ6VXNlcjIxOTI3NzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2192773?v=4",
+      "html_url": "https://github.com/jviotti",
+      "contributions": 1
     },
     {
       "login": "imax9000",
@@ -700,7 +781,7 @@
       "node_id": "MDQ6VXNlcjE5NTcxOTE=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1957191?v=4",
       "html_url": "https://github.com/geraintluff",
-      "contributions": 5
+      "contributions": 88
     },
     {
       "login": "awwright",
@@ -708,7 +789,7 @@
       "node_id": "MDQ6VXNlcjQzNzUxNw==",
       "avatar_url": "https://avatars.githubusercontent.com/u/437517?v=4",
       "html_url": "https://github.com/awwright",
-      "contributions": 5
+      "contributions": 192
     },
     {
       "login": "leadpony",
@@ -719,36 +800,52 @@
       "contributions": 4
     },
     {
-      "login": "marcus-kruse-gcx",
-      "id": 70746653,
-      "node_id": "MDQ6VXNlcjcwNzQ2NjUz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/70746653?v=4",
-      "html_url": "https://github.com/marcus-kruse-gcx",
+      "login": "Anshikakalpana",
+      "id": 183246958,
+      "node_id": "U_kgDOCuwgbg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/183246958?v=4",
+      "html_url": "https://github.com/Anshikakalpana",
       "contributions": 4
     },
     {
-      "login": "V02460",
-      "id": 1291108,
-      "node_id": "MDQ6VXNlcjEyOTExMDg=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1291108?v=4",
-      "html_url": "https://github.com/V02460",
-      "contributions": 4
+      "login": "kriszyp",
+      "id": 34054,
+      "node_id": "MDQ6VXNlcjM0MDU0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/34054?v=4",
+      "html_url": "https://github.com/kriszyp",
+      "contributions": 46
     },
     {
-      "login": "IreneKnapp",
-      "id": 157678,
-      "node_id": "MDQ6VXNlcjE1NzY3OA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/157678?v=4",
-      "html_url": "https://github.com/IreneKnapp",
-      "contributions": 4
+      "login": "nickl-",
+      "id": 1404606,
+      "node_id": "MDQ6VXNlcjE0MDQ2MDY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1404606?v=4",
+      "html_url": "https://github.com/nickl-",
+      "contributions": 36
     },
     {
-      "login": "amosonn",
-      "id": 3142573,
-      "node_id": "MDQ6VXNlcjMxNDI1NzM=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/3142573?v=4",
-      "html_url": "https://github.com/amosonn",
-      "contributions": 4
+      "login": "dlax",
+      "id": 1046124,
+      "node_id": "MDQ6VXNlcjEwNDYxMjQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1046124?v=4",
+      "html_url": "https://github.com/dlax",
+      "contributions": 26
+    },
+    {
+      "login": "garycourt",
+      "id": 158942,
+      "node_id": "MDQ6VXNlcjE1ODk0Mg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/158942?v=4",
+      "html_url": "https://github.com/garycourt",
+      "contributions": 16
+    },
+    {
+      "login": "adamvoss",
+      "id": 965439,
+      "node_id": "MDQ6VXNlcjk2NTQzOQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/965439?v=4",
+      "html_url": "https://github.com/adamvoss",
+      "contributions": 13
     },
     {
       "login": "benjagm",
@@ -756,7 +853,7 @@
       "node_id": "MDQ6VXNlcjQwMDA3NjU5",
       "avatar_url": "https://avatars.githubusercontent.com/u/40007659?v=4",
       "html_url": "https://github.com/benjagm",
-      "contributions": 538
+      "contributions": 75
     },
     {
       "login": "dependabot[bot]",
@@ -764,31 +861,103 @@
       "node_id": "MDM6Qm90NDk2OTkzMzM=",
       "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
       "html_url": "https://github.com/apps/dependabot",
-      "contributions": 82
+      "contributions": 7
     },
     {
-      "login": "musemind",
-      "id": 11320794,
-      "node_id": "MDQ6VXNlcjExMzIwNzk0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/11320794?v=4",
-      "html_url": "https://github.com/musemind",
-      "contributions": 55
+      "login": "nschonni",
+      "id": 1297909,
+      "node_id": "MDQ6VXNlcjEyOTc5MDk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1297909?v=4",
+      "html_url": "https://github.com/nschonni",
+      "contributions": 7
     },
     {
-      "login": "aku1310",
-      "id": 72210364,
-      "node_id": "MDQ6VXNlcjcyMjEwMzY0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/72210364?v=4",
-      "html_url": "https://github.com/aku1310",
-      "contributions": 45
+      "login": "dlongley",
+      "id": 168137,
+      "node_id": "MDQ6VXNlcjE2ODEzNw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/168137?v=4",
+      "html_url": "https://github.com/dlongley",
+      "contributions": 6
     },
     {
-      "login": "jviotti",
-      "id": 2192773,
-      "node_id": "MDQ6VXNlcjIxOTI3NzM=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/2192773?v=4",
-      "html_url": "https://github.com/jviotti",
-      "contributions": 34
+      "login": "davidlehn",
+      "id": 109587,
+      "node_id": "MDQ6VXNlcjEwOTU4Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/109587?v=4",
+      "html_url": "https://github.com/davidlehn",
+      "contributions": 6
+    },
+    {
+      "login": "lukem",
+      "id": 629143,
+      "node_id": "MDQ6VXNlcjYyOTE0Mw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/629143?v=4",
+      "html_url": "https://github.com/lukem",
+      "contributions": 6
+    },
+    {
+      "login": "chapel",
+      "id": 187515,
+      "node_id": "MDQ6VXNlcjE4NzUxNQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/187515?v=4",
+      "html_url": "https://github.com/chapel",
+      "contributions": 4
+    },
+    {
+      "login": "laurie71",
+      "id": 311960,
+      "node_id": "MDQ6VXNlcjMxMTk2MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/311960?v=4",
+      "html_url": "https://github.com/laurie71",
+      "contributions": 3
+    },
+    {
+      "login": "levbishop",
+      "id": 18673315,
+      "node_id": "MDQ6VXNlcjE4NjczMzE1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/18673315?v=4",
+      "html_url": "https://github.com/levbishop",
+      "contributions": 3
+    },
+    {
+      "login": "richievos",
+      "id": 2414,
+      "node_id": "MDQ6VXNlcjI0MTQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2414?v=4",
+      "html_url": "https://github.com/richievos",
+      "contributions": 3
+    },
+    {
+      "login": "hkosova",
+      "id": 8576823,
+      "node_id": "MDQ6VXNlcjg1NzY4MjM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8576823?v=4",
+      "html_url": "https://github.com/hkosova",
+      "contributions": 2
+    },
+    {
+      "login": "vanou",
+      "id": 8667089,
+      "node_id": "MDQ6VXNlcjg2NjcwODk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8667089?v=4",
+      "html_url": "https://github.com/vanou",
+      "contributions": 2
+    },
+    {
+      "login": "about-code",
+      "id": 6525873,
+      "node_id": "MDQ6VXNlcjY1MjU4NzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6525873?v=4",
+      "html_url": "https://github.com/about-code",
+      "contributions": 2
+    },
+    {
+      "login": "Michael-Obele",
+      "id": 70345027,
+      "node_id": "MDQ6VXNlcjcwMzQ1MDI3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/70345027?v=4",
+      "html_url": "https://github.com/Michael-Obele",
+      "contributions": 8
     },
     {
       "login": "DhairyaMajmudar",
@@ -796,15 +965,7 @@
       "node_id": "U_kgDOB28A2A",
       "avatar_url": "https://avatars.githubusercontent.com/u/124715224?v=4",
       "html_url": "https://github.com/DhairyaMajmudar",
-      "contributions": 34
-    },
-    {
-      "login": "OlliesWorld",
-      "id": 51091185,
-      "node_id": "MDQ6VXNlcjUxMDkxMTg1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/51091185?v=4",
-      "html_url": "https://github.com/OlliesWorld",
-      "contributions": 31
+      "contributions": 8
     },
     {
       "login": "DarhkVoyd",
@@ -812,7 +973,7 @@
       "node_id": "MDQ6VXNlcjc3NDc4NjU4",
       "avatar_url": "https://avatars.githubusercontent.com/u/77478658?v=4",
       "html_url": "https://github.com/DarhkVoyd",
-      "contributions": 29
+      "contributions": 8
     },
     {
       "login": "aialok",
@@ -820,136 +981,128 @@
       "node_id": "MDQ6VXNlcjY2NzcyMjkw",
       "avatar_url": "https://avatars.githubusercontent.com/u/66772290?v=4",
       "html_url": "https://github.com/aialok",
-      "contributions": 21
-    },
-    {
-      "login": "JeelRajodiya",
-      "id": 63534268,
-      "node_id": "MDQ6VXNlcjYzNTM0MjY4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/63534268?v=4",
-      "html_url": "https://github.com/JeelRajodiya",
-      "contributions": 10
-    },
-    {
-      "login": "the-json-schema-bot[bot]",
-      "id": 171232837,
-      "node_id": "BOT_kgDOCjTORQ",
-      "avatar_url": "https://avatars.githubusercontent.com/in/909251?v=4",
-      "html_url": "https://github.com/apps/the-json-schema-bot",
-      "contributions": 9
-    },
-    {
-      "login": "techmannih",
-      "id": 125847751,
-      "node_id": "U_kgDOB4BIxw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/125847751?v=4",
-      "html_url": "https://github.com/techmannih",
-      "contributions": 8
-    },
-    {
-      "login": "PaulWaller",
-      "id": 2253876,
-      "node_id": "MDQ6VXNlcjIyNTM4NzY=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/2253876?v=4",
-      "html_url": "https://github.com/PaulWaller",
-      "contributions": 8
-    },
-    {
-      "login": "Adi-204",
-      "id": 114283933,
-      "node_id": "U_kgDOBs_VnQ",
-      "avatar_url": "https://avatars.githubusercontent.com/u/114283933?v=4",
-      "html_url": "https://github.com/Adi-204",
-      "contributions": 8
-    },
-    {
-      "login": "Karan-Palan",
-      "id": 143683619,
-      "node_id": "U_kgDOCJBwIw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/143683619?v=4",
-      "html_url": "https://github.com/Karan-Palan",
       "contributions": 7
     },
     {
-      "login": "TamannaVerma99",
-      "id": 96949249,
-      "node_id": "U_kgDOBcdUAQ",
-      "avatar_url": "https://avatars.githubusercontent.com/u/96949249?v=4",
-      "html_url": "https://github.com/TamannaVerma99",
-      "contributions": 7
+      "login": "Utkarsh-123github",
+      "id": 114640932,
+      "node_id": "U_kgDOBtVIJA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114640932?v=4",
+      "html_url": "https://github.com/Utkarsh-123github",
+      "contributions": 3
     },
     {
-      "login": "starlightknown",
-      "id": 74637789,
-      "node_id": "MDQ6VXNlcjc0NjM3Nzg5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/74637789?v=4",
-      "html_url": "https://github.com/starlightknown",
-      "contributions": 7
+      "login": "vijay-x-dev",
+      "id": 146370607,
+      "node_id": "U_kgDOCLlwLw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/146370607?v=4",
+      "html_url": "https://github.com/vijay-x-dev",
+      "contributions": 3
     },
     {
-      "login": "idanidan29",
-      "id": 127854883,
-      "node_id": "U_kgDOB57pIw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/127854883?v=4",
-      "html_url": "https://github.com/idanidan29",
-      "contributions": 6
+      "login": "adityajha2005",
+      "id": 147301021,
+      "node_id": "U_kgDOCMeinQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/147301021?v=4",
+      "html_url": "https://github.com/adityajha2005",
+      "contributions": 3
     },
     {
-      "login": "Sahil-Shadwal",
-      "id": 119167601,
-      "node_id": "U_kgDOBxpacQ",
-      "avatar_url": "https://avatars.githubusercontent.com/u/119167601?v=4",
-      "html_url": "https://github.com/Sahil-Shadwal",
-      "contributions": 6
+      "login": "egekorkan",
+      "id": 20195407,
+      "node_id": "MDQ6VXNlcjIwMTk1NDA3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20195407?v=4",
+      "html_url": "https://github.com/egekorkan",
+      "contributions": 2
     },
     {
-      "login": "VivekJaiswal18",
-      "id": 96608169,
-      "node_id": "U_kgDOBcIfqQ",
-      "avatar_url": "https://avatars.githubusercontent.com/u/96608169?v=4",
-      "html_url": "https://github.com/VivekJaiswal18",
-      "contributions": 6
+      "login": "aspectivo",
+      "id": 176411181,
+      "node_id": "U_kgDOCoPSLQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/176411181?v=4",
+      "html_url": "https://github.com/aspectivo",
+      "contributions": 1
     },
     {
-      "login": "officeneerajsaini",
-      "id": 118799941,
-      "node_id": "U_kgDOBxS-RQ",
-      "avatar_url": "https://avatars.githubusercontent.com/u/118799941?v=4",
-      "html_url": "https://github.com/officeneerajsaini",
-      "contributions": 6
+      "login": "VIDIT45AGARWAL",
+      "id": 182922800,
+      "node_id": "U_kgDOCucuMA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/182922800?v=4",
+      "html_url": "https://github.com/VIDIT45AGARWAL",
+      "contributions": 1
     },
     {
-      "login": "divyaxdv",
-      "id": 95571773,
-      "node_id": "U_kgDOBbJPPQ",
-      "avatar_url": "https://avatars.githubusercontent.com/u/95571773?v=4",
-      "html_url": "https://github.com/divyaxdv",
-      "contributions": 5
+      "login": "seebi",
+      "id": 510452,
+      "node_id": "MDQ6VXNlcjUxMDQ1Mg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/510452?v=4",
+      "html_url": "https://github.com/seebi",
+      "contributions": 1
     },
     {
-      "login": "valeriahhdez",
-      "id": 17784817,
-      "node_id": "MDQ6VXNlcjE3Nzg0ODE3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/17784817?v=4",
-      "html_url": "https://github.com/valeriahhdez",
-      "contributions": 5
+      "login": "saurabhraghuvanshii",
+      "id": 165810072,
+      "node_id": "U_kgDOCeIPmA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/165810072?v=4",
+      "html_url": "https://github.com/saurabhraghuvanshii",
+      "contributions": 1
     },
     {
-      "login": "cbum-dev",
-      "id": 110410015,
-      "node_id": "U_kgDOBpS5Hw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/110410015?v=4",
-      "html_url": "https://github.com/cbum-dev",
-      "contributions": 5
+      "login": "untra",
+      "id": 3855429,
+      "node_id": "MDQ6VXNlcjM4NTU0Mjk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3855429?v=4",
+      "html_url": "https://github.com/untra",
+      "contributions": 1
     },
     {
-      "login": "iamAyushChamoli",
-      "id": 75367725,
-      "node_id": "MDQ6VXNlcjc1MzY3NzI1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/75367725?v=4",
-      "html_url": "https://github.com/iamAyushChamoli",
-      "contributions": 5
+      "login": "rishabhknowss",
+      "id": 97790876,
+      "node_id": "U_kgDOBdQrnA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/97790876?v=4",
+      "html_url": "https://github.com/rishabhknowss",
+      "contributions": 1
+    },
+    {
+      "login": "pavanydg",
+      "id": 113893382,
+      "node_id": "U_kgDOBsngBg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/113893382?v=4",
+      "html_url": "https://github.com/pavanydg",
+      "contributions": 1
+    },
+    {
+      "login": "SoftwareDeveloperYadavJi",
+      "id": 108917474,
+      "node_id": "U_kgDOBn3y4g",
+      "avatar_url": "https://avatars.githubusercontent.com/u/108917474?v=4",
+      "html_url": "https://github.com/SoftwareDeveloperYadavJi",
+      "contributions": 1
+    },
+    {
+      "login": "pubkey",
+      "id": 8926560,
+      "node_id": "MDQ6VXNlcjg5MjY1NjA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8926560?v=4",
+      "html_url": "https://github.com/pubkey",
+      "contributions": 1
+    },
+    {
+      "login": "archy-rock3t-cloud",
+      "id": 6429715,
+      "node_id": "MDQ6VXNlcjY0Mjk3MTU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6429715?v=4",
+      "html_url": "https://github.com/archy-rock3t-cloud",
+      "contributions": 1
+    },
+    {
+      "login": "AQIB-NAWAB",
+      "id": 115807186,
+      "node_id": "U_kgDOBucT0g",
+      "avatar_url": "https://avatars.githubusercontent.com/u/115807186?v=4",
+      "html_url": "https://github.com/AQIB-NAWAB",
+      "contributions": 1
     }
   ],
-  "activeOrg": true
+  "activeOrg": false
 }

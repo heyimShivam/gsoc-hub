@@ -53,9 +53,9 @@
     "LLM",
     "generative ai"
   ],
-  "irc_channel": "https://open.rocket.chat/channel/gsoc2025",
-  "contact_email": "mailto:gsoc+2025@rocket.chat",
-  "mailing_list": "https://forums.rocket.chat/c/gsoc/gsoc2025/111",
+  "irc_channel": "https://open.rocket.chat/channel/opensource2026",
+  "contact_email": "mailto:gsoc+2026@rocket.chat",
+  "mailing_list": "https://forums.rocket.chat/t/welcome-to-google-summer-of-code-2026-with-rocket-chat/22692",
   "twitter_url": "https://twitter.com/rocketchat4all",
   "blog_url": "https://rocket.chat/blog/",
   "facebook_url": null,
@@ -68,7 +68,8 @@
     2022,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2017": [
@@ -786,21 +787,234 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/eVxOuKT2"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Server Guide Agent",
+        "short_description": "This project aims to create a Rocket.Chat App that acts as an AI Assistant Agent, improving onboarding and community management through a...",
+        "description": "This project aims to create a Rocket.Chat App that acts as an AI Assistant Agent, improving onboarding and community management through a conversational interface. The app engages new users with a tailored chat, delivers a welcome message, shares server rules, and recommends relevant channels based on their needs all of which can be configured by admins. It also auto-assigns default rooms and allows users to perform common tasks like joining or leaving channels, inviting others, or using other app features without remembering Rocket.Chat slash commands , making servers more approachable for newcomers",
+        "student_name": "Abir Chakraborty",
+        "code_url": "https://github.com/RocketChat/AI_Server_Guide",
+        "proposal_id": "LaVOk5Tm",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/CCJEW8vy"
+      },
+      {
+        "title": "Convert endpoints to new Pattern",
+        "short_description": "This proposal addresses the current issues with Rocket.Chat’s API documentation, which is fragmented and manually maintained, leading to inconsistent...",
+        "description": "This proposal addresses the current issues with Rocket.Chat’s API documentation, which is fragmented and manually maintained, leading to inconsistent validations and outdated information. The plan is to convert all API endpoints to use the OpenAPI 3.1 standard, integrate AJV-based validation for both requests and responses, and merge all documentation into a single, interactive Swagger UI portal. The key deliverables include: A complete, OpenAPI 3.1 compliant API specification covering all endpoints. AJV-based validation integrated across the API to reduce runtime errors. A unified documentation portal accessible via /api-docs with interactive Swagger UI. This approach aims to improve developer experience, ensure type safety, and maintain backward compatibility while providing a robust, automated solution for API documentation and validation.",
+        "student_name": "Ahmed.Nasser",
+        "code_url": "https://github.com/search?q=org%3ARocketChat+author%3Aahmed-n-abdeltwab+&type=pullrequests&s=updated&o=desc",
+        "proposal_id": "RQVd8PcC",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/xzXXAcmX"
+      },
+      {
+        "title": "End to End Encrypted Message Handling for Ruqola",
+        "short_description": "Ruqola, a Qt-based Rocket.Chat client, currently lacks a robust implementation of end-to-end encryption (E2EE), making user communications vulnerable...",
+        "description": "Ruqola, a Qt-based Rocket.Chat client, currently lacks a robust implementation of end-to-end encryption (E2EE), making user communications vulnerable to interception. This project aims to design, implement, and integrate a complete E2EE workflow into Ruqola, ensuring secure messaging through strong cryptographic techniques.\n\nThe project consists of two phases:\n\nPhase 1: Encryption Sandbox\n\nDevelop a standalone Encryption Test GUI to prototype and validate E2EE workflows.\n\nImplement Master Key derivation (PBKDF2), RSA key pair generation, AES message encryption, and session key exchange.\n\nCreate unit tests for core encryption processes.\n\nPhase 2: Ruqola Integration\n\nIntegrate encryption into Ruqola’s communication system.\n\nEncrypt outgoing messages with session keys and decrypt incoming ones.\n\nProvide a user-friendly UI for encryption settings.\n\nBy the end of the project, Ruqola will have a fully functional E2EE system, securing user messages with cryptographic best practices while maintaining an intuitive user experience.",
+        "student_name": "Andro Ranogajec",
+        "code_url": "https://github.com/RocketChat/ruqola/pull/8",
+        "proposal_id": "4EBULt4a",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/RTuXxB1k"
+      },
+      {
+        "title": "Implement visual regression testing",
+        "short_description": "This project aims to implement visual regression testing pipeline for Rocket.Chat’s component library, Fuselage, using Loki. The current workflow...",
+        "description": "This project aims to implement visual regression testing pipeline for Rocket.Chat’s component library, Fuselage, using Loki. The current workflow lacks automated visual checks, making it difficult to detect unintended UI changes. By integrating Loki—a lightweight and self-hosted visual regression tool—with Storybook and GitHub Actions, The result will be a scalable, cost-effective, and developer-friendly solution that increases UI reliability and reduces manual review effort.\n\nDeliverables:\n    Loki integration with Storybook for Fuselage\n    Stable snapshot testing environment with consistent rendering\n    CI workflow integration to detect and report visual diffs\n    Visual regression coverage for Rocket.Chat screens",
+        "student_name": "Anshul Ivan Ekka",
+        "code_url": "https://github.com/RocketChat/fuselage/pull/1666",
+        "proposal_id": "Ci2EMXe6",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/JEmSNq7X"
+      },
+      {
+        "title": "AI Enhanced Message Composer Component",
+        "short_description": "This project is a significant upgrade to Rocket.Chat message composer elements to provide users, AI assistance in writing messages using...",
+        "description": "This project is a significant upgrade to Rocket.Chat message composer elements to provide users, AI assistance in writing messages using Context-sensitive spelling corrections, inline grammar correction recommendations, and clarity-enhancing rewording, Inline hinting are among the major features. The project also provides language translation, summarization, emoji, and tone control features. This project majorly improves the speed and clarity of message writing for users.",
+        "student_name": "Ayush Jitendra Kumar",
+        "code_url": "https://github.com/RocketChat/Rocket.Chat/pull/36526",
+        "proposal_id": "WAWHKm9o",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/Fy6XIAce"
+      },
+      {
+        "title": "Google Summer of Code Community Hub 2025",
+        "short_description": "The primary aim of this project will be the refactoring of a domain specific language compiler to produce Svelte components rather than React...",
+        "description": "The primary aim of this project will be the refactoring of a domain specific language compiler to produce Svelte components rather than React Components,  in order to enable the translation of components specified using minimal syntax to robust, secure and functional web applications at scale. Multiple components will be implemented using the new svelte framework , such as a video conferencing meet-your-mentor\ncomponent, and a gsoc\nLeaderboard component which would allow for the gamification of\ncontributions to the Rocket.Chat community. \n\n\nFinally, all components will be adapted to fully meet the pre-scaled “serverless” vision for the application, so components can be specified can be specified using terse syntax and transformed into full fledged applications at build time.  All of this will culminate in the implementation of a functional Community Hub to be used for future summers.",
+        "student_name": "Daniel Akinola",
+        "code_url": "https://gist.github.com/adaniel105/e8ccd77c911c7f7beab2807dae899098",
+        "proposal_id": "CAPGPl88",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/F5Xyt695"
+      },
+      {
+        "title": "AI Chat Workflows Automation App with multi-step reasoning",
+        "short_description": "Summary: AI-Powered Chat Automation for Rocket.Chat Problem: Setting up automated workflows in Rocket.Chat usually requires manual scripting, which...",
+        "description": "Summary: AI-Powered Chat Automation for Rocket.Chat\n\nProblem: Setting up automated workflows in Rocket.Chat usually requires manual scripting, which can be time-consuming and complex for non-technical users.\n\nSolution: We will build an LLM-powered app that lets users create and run automated workflows using simple natural language. It will:\n1. Allow users to define triggers (e.g., \"when someone mentions 'help'\") and actions (e.g., \"send them a message asking what they need help with\").\n2. Break down complex commands into steps and execute them safely.\n3. Prevent harmful actions with built-in safety checks.\n4. Let admins manage and review all workflows.\n\nDeliverables:\n1. A app that understands natural language commands.\n2. Multi-step workflow automation\n3. Error handling and admin controls for safety.\n4. Customizable automation for any Rocket.Chat server.\n\nThis project will save time by making chat automation easy and accessible for all users.",
+        "student_name": "Dhairyashil Shinde",
+        "code_url": "https://github.com/RocketChat/Apps.AutomatedChatWorkflows",
+        "proposal_id": "iO1t4m3G",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/JDHHtcgD"
+      },
+      {
+        "title": "Passkey-Based WebAuthn Authentication for Rocket.Chat",
+        "short_description": "The WebAuthn standard, now widely available on modern Android and iOS devices, enable convenient passwordless authentication satisfying 2FA...",
+        "description": "The WebAuthn standard, now widely available on modern Android and iOS devices, enable convenient passwordless authentication satisfying 2FA (biometrics and \"have device\"). Frequently this involves scanning a QR code followed by unintrusive biometrics such as FaceID on iOS. This project aims to integrate WebAuthn in Rocket.Chat authentication to offer a passwordless, secure login experience. The implementation needs to be aligned with Rocket.Chat’s existing authentication system while ensuring backward compatibility with all existing login methods.",
+        "student_name": "Fang Zihao",
+        "code_url": "https://gist.github.com/fzh075/c1704af925faf82ae27366c656373dac",
+        "proposal_id": "roRvSRAs",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/awy3zOzD"
+      },
+      {
+        "title": "Real Time Message Rendering in Message Composer",
+        "short_description": "Rocket.Chat’s Message Composer currently displays raw Markdown syntax and emoji shortcodes while composing a message, only applying formatting after...",
+        "description": "Rocket.Chat’s Message Composer currently displays raw Markdown syntax and emoji shortcodes while composing a message, only applying formatting after the message is sent. This impacts readability and usability, as users must interpret raw syntax instead of seeing the final formatted output.\n\nThis project will introduce real-time Markdown rendering and native emoji support in the Message Composer. Users will be able to see bold, italic, and other formatted text as they type, along with correctly rendered emojis. Additionally, the project will provide a proof-of-concept for migrating from Rocket.Chat’s third-party emoji pack to native emoji support.\n\nKey Deliverables:\n1. MVP implementation of real-time Markdown rendering in the Message Composer.\n2. Native emoji support, replacing the existing third-party emoji pack.\n3. Support for mentions with a defined style, ensuring visually distinct tags.\n4. Text sanitization to maintain security and prevent unintended behavior.\n5. Help tooltip for Markdown syntax, improving accessibility for new users.",
+        "student_name": "Ishan Mitra",
+        "code_url": "https://github.com/ishanmitra/gsoc25",
+        "proposal_id": "EKU6fngA",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/jvtFHWxr"
+      },
+      {
+        "title": "Code Review AI Assistant App for Rocket.Chat",
+        "short_description": "The Code Review Assistant app for Rocket.Chat addresses the common challenge of delayed code reviews, where pull requests often remain unattended for...",
+        "description": "The Code Review Assistant app for Rocket.Chat addresses the common challenge of delayed code reviews, where pull requests often remain unattended for extended periods. This app intelligently analyzes the files modified in a pull request, examines the commit history of those files, leverages the CODEOWNERS file, and reviews past activity to identify the most relevant reviewers and does preliminary LLM review. By notifying only the most appropriate contributors, the app streamlines the review process. Integrated directly within Rocket.Chat, it provides user-friendly reminders and updates, LLM does the sanity review, enabling developers to stay informed and collaborate more effectively on code reviews.",
+        "student_name": "Jannat Khan",
+        "code_url": "https://github.com/jannatkhandev/Google-Summer-of-Code-2025",
+        "proposal_id": "ObPcIEJP",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/qJr2dFHB"
+      },
+      {
+        "title": "Log in via QR code using mobile app",
+        "short_description": "This project proposes a short-lived, cryptographically signed QR code on the Rocket.Chat's web client login screen, which authenticated mobile app...",
+        "description": "This project proposes a short-lived, cryptographically signed QR code on the Rocket.Chat's web client login screen, which authenticated mobile app users can scan to log in to the web client instantly—eliminating the need for manual credential entry. By leveraging ephemeral tokens that refresh every 60 seconds and real-time notifications over WebSocket, the approach safeguards user sessions while streamlining the login experience. Specifically, the solution integrates secure token generation and validation in Node.js, a React-based desktop UI displaying the QR code, and a React Native-based scanner accessible only to authenticated mobile users. This modern, frictionless authentication method enhances both usability and security within the Rocket.Chat ecosystem.",
+        "student_name": "Jinendra Jain",
+        "code_url": "https://gist.github.com/jjinendra3/3f235daf903450cc6683aa3d8cd3c2c8",
+        "proposal_id": "wt7cVkQ1",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/QKpSo2cS"
+      },
+      {
+        "title": "Message Timestamp Date Picker Components",
+        "short_description": "This project aims to develop an intuitive Message Timestamp Date Picker for Rocket.Chat, replacing manual timestamp code entry with a user-friendly...",
+        "description": "This project aims to develop an intuitive Message Timestamp Date Picker for Rocket.Chat, replacing manual timestamp code entry with a user-friendly UI component. Currently, users must manually type complex codes like <t:1732557600>, which creates friction and is error-prone for non-technical users.\n\nI will solve this problem by implementing a comprehensive system with three layers: Core Utilities for timestamp conversion and validation, UI Components creating an intuitive modal with selection options and preview, and Integration Layer connecting to Rocket.Chat's existing systems.\n\nDeliverables include complete timestamp utility functions, TimestampPicker modal with intuitive inputs, message composer integration, rendering system for displaying formatted timestamps, comprehensive testing, and documentation. The solution will support all timestamp formats across platforms, significantly improving user experience when communicating time-based information.",
+        "student_name": "Jinghan Yu",
+        "code_url": "https://gist.github.com/jhanyu2019/1f6eadfbe68f8d0d64ce5b4d4bdce573",
+        "proposal_id": "jjNdFLwW",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/qpNU6Bwe"
+      },
+      {
+        "title": "Private Teams and Private Channels Administration Improvements",
+        "short_description": "This proposal aims to enhance Rocket.Chat’s administrative capabilities by enabling an optional override system that allows administrators to manage...",
+        "description": "This proposal aims to enhance Rocket.Chat’s administrative capabilities by enabling an optional override system that allows administrators to manage private teams and channels without being members. It includes configurable admin settings, permission override logic, audit logging, and user notifications to balance administrative control with user privacy. Core features include adding/removing users, modifying roles, and managing private team channels directly from the admin panel. Deliverables include backend permission logic updates, admin panel UI components, audit log infrastructure, notification settings, and full technical documentation.",
+        "student_name": "Lexie Huang",
+        "code_url": "https://docs.google.com/document/d/1b8FiQofOQnJxi4GFaOnay2toG8Xbho2OHE0mz0wG1xU/edit?usp=sharing",
+        "proposal_id": "DemjxE5w",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/ZCY9pasZ"
+      },
+      {
+        "title": "Trip Helper App",
+        "short_description": "This proposal outlines the development of an AI-powered Image Analysis App for Rocket.Chat. The project aims to introduce a feature that allows users...",
+        "description": "This proposal outlines the development of an AI-powered Image Analysis App for Rocket.Chat. The project aims to introduce a feature that allows users to simply upload images, while the app automatically analyzes them using a multi-modal Large Language Model (LLM). The app will process images to identify locations, landmarks, points of interest, or event venues and retrieve up-to-date event and happening information from the internet. By integrating advanced image reasoning with real-time data retrieval, this solution enhances situational awareness and provides users with valuable insights. This proposal seeks to streamline information discovery, improve engagement, boost productivity, and elevate the overall user experience within the Rocket.chat ecosystem.",
+        "student_name": "Piyush Bhatt",
+        "code_url": "https://github.com/thepiyush-303/GSoC-RocketChat-2025",
+        "proposal_id": "CDbkqro6",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/Ffe2Bu26"
+      },
+      {
+        "title": "Natural Language Bridge to Legacy Email",
+        "short_description": "The Natural Language Bridge to Legacy Email project represents a groundbreaking solution to one of modern communication's most persistent challenges:...",
+        "description": "The Natural Language Bridge to Legacy Email project represents a groundbreaking solution to one of modern communication's most persistent challenges: The continued widespread use of legacy email alongside newer messaging platforms. Despite the evolution of systems like Rocket.Chat, email remains deeply entrenched in global workflows and communities. This project elegantly bridges this divide by creating a seamless interface that allows Rocket.Chat users to interact with email systems through natural language commands, bringing legacy email functionality directly into the Rocket.Chat environment.\n\nBy leveraging advanced LLM capabilities, this integration will allow users to perform complex email operations without leaving their Rocket.Chat conversations. The app responds to natural language instructions, enabling email tasks to be completed with simple, intuitive commands that feel like conversational requests.",
+        "student_name": "Priyanshu Harshbodhi",
+        "code_url": "https://github.com/RocketChat/Apps.EmailBridgeNLP",
+        "proposal_id": "hsHtLvbO",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/GuuttcoV"
+      },
+      {
+        "title": "Maestro as Mobile UI Testing Framework",
+        "short_description": "The current mobile UI testing framework for the Rocket.Chat Mobile app, Detox, poses several challenges including flaky test results, steep debugging...",
+        "description": "The current mobile UI testing framework for the Rocket.Chat Mobile app, Detox, poses several challenges including flaky test results, steep debugging overhead, and limited cross-platform capabilities. This project proposes a complete migration to Maestro, a modern and actively-maintained mobile UI testing framework designed to deliver more stable tests, simplified test authoring, and enhanced developer experience.\n\nThe primary objective of this proposal is to improve the reliability, maintainability, and clarity of UI testing for the Rocket.Chat mobile codebase by setting up Maestro, converting existing tests, expanding test coverage, and integrating the testing pipeline into GitHub Actions CI/CD workflow.",
+        "student_name": "Rohit.Bansal",
+        "code_url": "https://github.com/Rohit3523/gsoc-2025",
+        "proposal_id": "sWybqrPg",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/w9Llkfyd"
+      },
+      {
+        "title": "Fuselage React Native compatibility (tamagui)",
+        "short_description": "There are many secondary goals for this project, but the main goal is to make the fuselage compatible with React Native. But also, we have figthing...",
+        "description": "There are many secondary goals for this project, but the main goal is to make the fuselage compatible with React Native. But also, we have figthing against the bundle size of the fuselage, and of course performance which is always a concern. Using the tamagui as a base, we can components that are compatible with both platforms, and in a efficient way.",
+        "student_name": "Thanisha Dewangan",
+        "code_url": "https://github.com/RocketChat/fuselage/pull/1746,https://github.com/RocketChat/fuselage/pull/1711,https://github.com/ThanishaDewangan/fuselage/tree/feature/tamagui-autocomplete,",
+        "proposal_id": "UQ9WjmO9",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/ihXUUDHE"
+      },
+      {
+        "title": "Messages scheduling",
+        "short_description": "Rocket.Chat users across multiple time zones need a way to schedule messages for optimal delivery, enhancing global collaboration. This project will...",
+        "description": "Rocket.Chat users across multiple time zones need a way to schedule messages for optimal delivery, enhancing global collaboration. \n\nThis project will implement a native message scheduling feature by integrating a scheduling UI, a cron job to send messages at the designated time, and a contextual bar UI to view and cancel scheduled messages. It will also support scheduling in threads, improve error handling, and include comprehensive documentation and unit tests. \n\nThe deliverables include a MongoDB collection for scheduled messages, APIs (chat.scheduleMessage, chat.getScheduledMessages, chat.cancelScheduledMessage), a cron job (sendScheduledMessages), scheduling and viewing/canceling UIs, thread support, error handling, documentation, and tests",
+        "student_name": "Thotsem Jajo",
+        "code_url": "https://github.com/sem22-dev/Gsoc-Rocketchat-2025-message-scheduling",
+        "proposal_id": "JYxRXL2I",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/NoRi8SdE"
+      },
+      {
+        "title": "Receipts Processor and Reporting App powered by Multi-modal LLMs",
+        "short_description": "This project automates receipt processing and expense reporting using OCR capabilities of multi-modal LLMs to address the time-consuming nature of...",
+        "description": "This project automates receipt processing and expense reporting using OCR capabilities of multi-modal LLMs  to address the time-consuming nature of manual expense tracking. Users upload receipts into designated chat channels—each representing a specific event, time period, or trip—where the system validates the image, extracts structured data such as amount, date, and items, and categorizes expenses automatically. The processed data is stored persistently, allowing users to generate detailed spending reports in various formats (daily, weekly, monthly, yearly, or custom date ranges), filter by specific channels, or view overall spending. Additional functionalities include natural language query support, optional slash command integration to perform actions like showing receipt data. All designed to streamline financial tracking by minimizing manual input and enabling efficient, structured querying of expense data.",
+        "student_name": "William Liu",
+        "code_url": "https://medium.com/@ashbornee/gsoc-2025-final-report-88a373b5ba7b",
+        "proposal_id": "lFFXdADO",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/B6ewDucB"
+      }
+    ],
+    "2026": []
   },
   "githubID": "RocketChat",
   "repositories": [
+    {
+      "id": 1179282784,
+      "node_id": "R_kgDORkptYA",
+      "name": "layne",
+      "full_name": "RocketChat/layne",
+      "html_url": "https://github.com/RocketChat/layne",
+      "description": "A doggo that helps look for security issues in your repositories.",
+      "language": "TypeScript",
+      "stargazers_count": 3,
+      "forks_count": 0,
+      "open_issues_count": 3,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 561486589,
+      "node_id": "R_kgDOIXea_Q",
+      "name": "dionisio-bot",
+      "full_name": "RocketChat/dionisio-bot",
+      "html_url": "https://github.com/RocketChat/dionisio-bot",
+      "description": null,
+      "language": "TypeScript",
+      "stargazers_count": 2,
+      "forks_count": 4,
+      "open_issues_count": 9,
+      "license": {
+        "key": "isc",
+        "name": "ISC License",
+        "spdx_id": "ISC",
+        "url": "https://api.github.com/licenses/isc",
+        "node_id": "MDc6TGljZW5zZTEw"
+      },
+      "topics": []
+    },
     {
       "id": 35866694,
       "node_id": "MDEwOlJlcG9zaXRvcnkzNTg2NjY5NA==",
       "name": "Rocket.Chat",
       "full_name": "RocketChat/Rocket.Chat",
       "html_url": "https://github.com/RocketChat/Rocket.Chat",
-      "description": "The communications platform that puts data protection first.",
+      "description": "The Secure CommsOS™ for mission-critical operations",
       "language": "TypeScript",
-      "stargazers_count": 42652,
-      "forks_count": 11750,
-      "open_issues_count": 3265,
+      "stargazers_count": 45039,
+      "forks_count": 13476,
+      "open_issues_count": 3659,
       "license": {
         "key": "other",
         "name": "Other",
@@ -828,11 +1042,11 @@
       "name": "Rocket.Chat.ReactNative",
       "full_name": "RocketChat/Rocket.Chat.ReactNative",
       "html_url": "https://github.com/RocketChat/Rocket.Chat.ReactNative",
-      "description": "Rocket.Chat mobile clients",
+      "description": "The Secure CommsOS™ for mission-critical operations",
       "language": "TypeScript",
-      "stargazers_count": 2189,
-      "forks_count": 1288,
-      "open_issues_count": 336,
+      "stargazers_count": 2375,
+      "forks_count": 1440,
+      "open_issues_count": 431,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -849,54 +1063,16 @@
       ]
     },
     {
-      "id": 983949963,
-      "node_id": "R_kgDOOqXiiw",
-      "name": "Apps.Trip.Helper",
-      "full_name": "RocketChat/Apps.Trip.Helper",
-      "html_url": "https://github.com/RocketChat/Apps.Trip.Helper",
-      "description": null,
-      "language": "TypeScript",
-      "stargazers_count": 0,
-      "forks_count": 1,
-      "open_issues_count": 0,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 286542361,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyODY1NDIzNjE=",
-      "name": "helm-charts",
-      "full_name": "RocketChat/helm-charts",
-      "html_url": "https://github.com/RocketChat/helm-charts",
-      "description": "Repository for RocketChat helm charts",
-      "language": "Smarty",
-      "stargazers_count": 40,
-      "forks_count": 70,
-      "open_issues_count": 48,
-      "license": null,
-      "topics": [
-        "helm",
-        "helm-charts",
-        "kubernetes"
-      ]
-    },
-    {
       "id": 38767563,
       "node_id": "MDEwOlJlcG9zaXRvcnkzODc2NzU2Mw==",
       "name": "Rocket.Chat.Electron",
       "full_name": "RocketChat/Rocket.Chat.Electron",
       "html_url": "https://github.com/RocketChat/Rocket.Chat.Electron",
-      "description": "Official  OSX, Windows, and Linux Desktop Clients for Rocket.Chat ",
+      "description": "The Secure CommsOS™ for mission-critical operations",
       "language": "TypeScript",
-      "stargazers_count": 1616,
-      "forks_count": 746,
-      "open_issues_count": 247,
+      "stargazers_count": 1681,
+      "forks_count": 815,
+      "open_issues_count": 256,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -920,6 +1096,27 @@
       ]
     },
     {
+      "id": 499187872,
+      "node_id": "R_kgDOHcEAoA",
+      "name": "EmbeddedChat",
+      "full_name": "RocketChat/EmbeddedChat",
+      "html_url": "https://github.com/RocketChat/EmbeddedChat",
+      "description": "An easy to use full-stack component  (ReactJS)  embedding Rocket.Chat into your webapp",
+      "language": "JavaScript",
+      "stargazers_count": 152,
+      "forks_count": 363,
+      "open_issues_count": 169,
+      "license": null,
+      "topics": [
+        "embeddedchat",
+        "javascript",
+        "npm",
+        "react",
+        "rocketchat",
+        "rocketchat-sdk"
+      ]
+    },
+    {
       "id": 887247713,
       "node_id": "R_kgDONOJTYQ",
       "name": "homeserver",
@@ -927,39 +1124,19 @@
       "html_url": "https://github.com/RocketChat/homeserver",
       "description": null,
       "language": "TypeScript",
-      "stargazers_count": 4,
-      "forks_count": 3,
-      "open_issues_count": 8,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 754850981,
-      "node_id": "R_kgDOLP4cpQ",
-      "name": "Rocket.Chat-Open-API",
-      "full_name": "RocketChat/Rocket.Chat-Open-API",
-      "html_url": "https://github.com/RocketChat/Rocket.Chat-Open-API",
-      "description": "An OpenAPI specification for the Rocket.Chat API.",
-      "language": null,
-      "stargazers_count": 9,
-      "forks_count": 5,
-      "open_issues_count": 3,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 157869456,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNTc4Njk0NTY=",
-      "name": "koko",
-      "full_name": "RocketChat/koko",
-      "html_url": "https://github.com/RocketChat/koko",
-      "description": "Rocket.Chat App Koko",
-      "language": "TypeScript",
-      "stargazers_count": 13,
-      "forks_count": 9,
-      "open_issues_count": 8,
-      "license": null,
-      "topics": []
+      "stargazers_count": 14,
+      "forks_count": 19,
+      "open_issues_count": 64,
+      "license": {
+        "key": "agpl-3.0",
+        "name": "GNU Affero General Public License v3.0",
+        "spdx_id": "AGPL-3.0",
+        "url": "https://api.github.com/licenses/agpl-3.0",
+        "node_id": "MDc6TGljZW5zZTE="
+      },
+      "topics": [
+        "hacktoberfest"
+      ]
     },
     {
       "id": 187953797,
@@ -969,9 +1146,9 @@
       "html_url": "https://github.com/RocketChat/fuselage",
       "description": "React port of Rocket.Chat's design system, Fuselage",
       "language": "TypeScript",
-      "stargazers_count": 125,
-      "forks_count": 183,
-      "open_issues_count": 81,
+      "stargazers_count": 153,
+      "forks_count": 247,
+      "open_issues_count": 131,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -988,43 +1165,300 @@
       ]
     },
     {
-      "id": 943513454,
-      "node_id": "R_kgDOODzfbg",
-      "name": "ruqola",
-      "full_name": "RocketChat/ruqola",
-      "html_url": "https://github.com/RocketChat/ruqola",
-      "description": "KDE client for Rocket Chat",
-      "language": "C++",
-      "stargazers_count": 1,
+      "id": 499106639,
+      "node_id": "R_kgDOHb_DTw",
+      "name": "Apps.teams.bridge",
+      "full_name": "RocketChat/Apps.teams.bridge",
+      "html_url": "https://github.com/RocketChat/Apps.teams.bridge",
+      "description": "Connecting collaborators across Rocket.Chat and Microsoft Teams",
+      "language": "TypeScript",
+      "stargazers_count": 7,
       "forks_count": 1,
-      "open_issues_count": 1,
+      "open_issues_count": 8,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1193720192,
+      "node_id": "R_kgDORya5gA",
+      "name": "netbird-connect",
+      "full_name": "RocketChat/netbird-connect",
+      "html_url": "https://github.com/RocketChat/netbird-connect",
+      "description": "Securely connect our GitHub Actions runners to our private VPN networks.",
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 182657052,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxODI2NTcwNTI=",
+      "name": "Opensource-Contribution-Leaderboard",
+      "full_name": "RocketChat/Opensource-Contribution-Leaderboard",
+      "html_url": "https://github.com/RocketChat/Opensource-Contribution-Leaderboard",
+      "description": "Open Source project contributors tracking leaderboard originally built with :heart:  in  NodeJS 😉 Vibecoded to new world standards from 2026 🚀",
+      "language": "JavaScript",
+      "stargazers_count": 45,
+      "forks_count": 57,
+      "open_issues_count": 8,
       "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": [
+        "ai",
+        "community-building",
+        "community-management",
+        "generative-ai",
+        "gsoc",
+        "gsoc-contribution-leaderboard",
+        "leaderboard",
+        "nodejs",
+        "opensource-projects",
+        "vibe",
+        "vibe-coded",
+        "vibe-coding",
+        "vibecoding"
+      ]
+    },
+    {
+      "id": 501010132,
+      "node_id": "R_kgDOHdzO1A",
+      "name": "marketplace-go",
+      "full_name": "RocketChat/marketplace-go",
+      "html_url": "https://github.com/RocketChat/marketplace-go",
+      "description": null,
+      "language": "Go",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 4,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
       },
       "topics": []
     },
     {
-      "id": 38838385,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzODgzODM4NQ==",
-      "name": "Docker.Official.Image",
-      "full_name": "RocketChat/Docker.Official.Image",
-      "html_url": "https://github.com/RocketChat/Docker.Official.Image",
-      "description": "Docker hub - community managed image",
-      "language": "Dockerfile",
-      "stargazers_count": 322,
-      "forks_count": 228,
-      "open_issues_count": 37,
+      "id": 743710865,
+      "node_id": "R_kgDOLFQgkQ",
+      "name": "google-summer-of-code",
+      "full_name": "RocketChat/google-summer-of-code",
+      "html_url": "https://github.com/RocketChat/google-summer-of-code",
+      "description": "Rocket.Chat as mentoring organization for Google Summer of Code",
+      "language": null,
+      "stargazers_count": 77,
+      "forks_count": 47,
+      "open_issues_count": 3,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 754850981,
+      "node_id": "R_kgDOLP4cpQ",
+      "name": "Rocket.Chat-Open-API",
+      "full_name": "RocketChat/Rocket.Chat-Open-API",
+      "html_url": "https://github.com/RocketChat/Rocket.Chat-Open-API",
+      "description": "An OpenAPI specification for the Rocket.Chat API.",
+      "language": null,
+      "stargazers_count": 13,
+      "forks_count": 12,
+      "open_issues_count": 4,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 496728482,
+      "node_id": "R_kgDOHZt5og",
+      "name": "RC4Conferences",
+      "full_name": "RocketChat/RC4Conferences",
+      "html_url": "https://github.com/RocketChat/RC4Conferences",
+      "description": "A set of scalable components for communities to build, manage, and run virtual conferences of any size.",
+      "language": "JavaScript",
+      "stargazers_count": 26,
+      "forks_count": 41,
+      "open_issues_count": 38,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 906054914,
+      "node_id": "R_kgDONgFNAg",
+      "name": "rag-data-loaders",
+      "full_name": "RocketChat/rag-data-loaders",
+      "html_url": "https://github.com/RocketChat/rag-data-loaders",
+      "description": "Data loader scripts",
+      "language": "Python",
+      "stargazers_count": 2,
+      "forks_count": 4,
+      "open_issues_count": 6,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 1114445106,
+      "node_id": "R_kgDOQm0VMg",
+      "name": "os_leaderboard",
+      "full_name": "RocketChat/os_leaderboard",
+      "html_url": "https://github.com/RocketChat/os_leaderboard",
+      "description": "Open Source Leaderboard v2",
+      "language": "TypeScript",
+      "stargazers_count": 3,
+      "forks_count": 8,
+      "open_issues_count": 9,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 286542361,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyODY1NDIzNjE=",
+      "name": "helm-charts",
+      "full_name": "RocketChat/helm-charts",
+      "html_url": "https://github.com/RocketChat/helm-charts",
+      "description": "Repository for RocketChat helm charts",
+      "language": "Shell",
+      "stargazers_count": 49,
+      "forks_count": 85,
+      "open_issues_count": 67,
       "license": null,
       "topics": [
-        "docker",
-        "dockerfile",
-        "nodejs",
-        "rocketchat"
+        "helm",
+        "helm-charts",
+        "kubernetes"
       ]
+    },
+    {
+      "id": 805433246,
+      "node_id": "R_kgDOMAHvng",
+      "name": "Apps.QuickReplies",
+      "full_name": "RocketChat/Apps.QuickReplies",
+      "html_url": "https://github.com/RocketChat/Apps.QuickReplies",
+      "description": null,
+      "language": "TypeScript",
+      "stargazers_count": 8,
+      "forks_count": 22,
+      "open_issues_count": 37,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 244423109,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyNDQ0MjMxMDk=",
+      "name": "Apps.RocketChat.Tester",
+      "full_name": "RocketChat/Apps.RocketChat.Tester",
+      "html_url": "https://github.com/RocketChat/Apps.RocketChat.Tester",
+      "description": "An app that provides endpoints to test Apps integration to Rocket.Chat",
+      "language": "TypeScript",
+      "stargazers_count": 8,
+      "forks_count": 9,
+      "open_issues_count": 6,
+      "license": null,
+      "topics": [
+        "hacktoberfest"
+      ]
+    },
+    {
+      "id": 79729687,
+      "node_id": "MDEwOlJlcG9zaXRvcnk3OTcyOTY4Nw==",
+      "name": "server-snap",
+      "full_name": "RocketChat/server-snap",
+      "html_url": "https://github.com/RocketChat/server-snap",
+      "description": "Rocket.Chat server snap",
+      "language": "Shell",
+      "stargazers_count": 19,
+      "forks_count": 18,
+      "open_issues_count": 28,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": [
+        "chat",
+        "chat-application",
+        "communication"
+      ]
+    },
+    {
+      "id": 811501526,
+      "node_id": "R_kgDOMF6H1g",
+      "name": "AgileBot",
+      "full_name": "RocketChat/AgileBot",
+      "html_url": "https://github.com/RocketChat/AgileBot",
+      "description": "AgileBot for GSoC 2024",
+      "language": "TypeScript",
+      "stargazers_count": 7,
+      "forks_count": 7,
+      "open_issues_count": 11,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 1046933657,
+      "node_id": "R_kgDOPmbwmQ",
+      "name": "rocket.chat-mobile-crypto",
+      "full_name": "RocketChat/rocket.chat-mobile-crypto",
+      "html_url": "https://github.com/RocketChat/rocket.chat-mobile-crypto",
+      "description": null,
+      "language": "Objective-C",
+      "stargazers_count": 0,
+      "forks_count": 2,
+      "open_issues_count": 4,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 769198575,
+      "node_id": "R_kgDOLdkJ7w",
+      "name": "Jobs",
+      "full_name": "RocketChat/Jobs",
+      "html_url": "https://github.com/RocketChat/Jobs",
+      "description": "Repository to share Rocket.Chat R&D Job openings",
+      "language": null,
+      "stargazers_count": 6,
+      "forks_count": 2,
+      "open_issues_count": 2,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
     },
     {
       "id": 384423322,
@@ -1047,76 +1481,35 @@
       "topics": []
     },
     {
-      "id": 248043641,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNDgwNDM2NDE=",
-      "name": "Rocket.Chat.Metrics",
-      "full_name": "RocketChat/Rocket.Chat.Metrics",
-      "html_url": "https://github.com/RocketChat/Rocket.Chat.Metrics",
-      "description": "Monitoring setup for Rocket.Chat servers",
-      "language": null,
-      "stargazers_count": 30,
-      "forks_count": 30,
-      "open_issues_count": 6,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
+      "id": 38838385,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzODgzODM4NQ==",
+      "name": "Docker.Official.Image",
+      "full_name": "RocketChat/Docker.Official.Image",
+      "html_url": "https://github.com/RocketChat/Docker.Official.Image",
+      "description": "Docker hub - community managed image",
+      "language": "Dockerfile",
+      "stargazers_count": 336,
+      "forks_count": 231,
+      "open_issues_count": 39,
+      "license": null,
+      "topics": [
+        "docker",
+        "dockerfile",
+        "nodejs",
+        "rocketchat"
+      ]
     },
     {
-      "id": 983945598,
-      "node_id": "R_kgDOOqXRfg",
-      "name": "Apps.Market.Bot",
-      "full_name": "RocketChat/Apps.Market.Bot",
-      "html_url": "https://github.com/RocketChat/Apps.Market.Bot",
-      "description": null,
-      "language": "TypeScript",
-      "stargazers_count": 0,
+      "id": 583510564,
+      "node_id": "R_kgDOIseqJA",
+      "name": "airlock",
+      "full_name": "RocketChat/airlock",
+      "html_url": "https://github.com/RocketChat/airlock",
+      "description": "Kubernetes operator that manages access and secrets for MongoDB clusters",
+      "language": "Go",
+      "stargazers_count": 6,
       "forks_count": 1,
-      "open_issues_count": 0,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 983952008,
-      "node_id": "R_kgDOOqXqiA",
-      "name": "Apps.Asana.Integration",
-      "full_name": "RocketChat/Apps.Asana.Integration",
-      "html_url": "https://github.com/RocketChat/Apps.Asana.Integration",
-      "description": null,
-      "language": null,
-      "stargazers_count": 0,
-      "forks_count": 1,
-      "open_issues_count": 0,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 94797545,
-      "node_id": "MDEwOlJlcG9zaXRvcnk5NDc5NzU0NQ==",
-      "name": "Rocket.Chat.Apps-cli",
-      "full_name": "RocketChat/Rocket.Chat.Apps-cli",
-      "html_url": "https://github.com/RocketChat/Rocket.Chat.Apps-cli",
-      "description": "The CLI for interacting with Rocket.Chat Apps",
-      "language": "TypeScript",
-      "stargazers_count": 48,
-      "forks_count": 31,
-      "open_issues_count": 30,
+      "open_issues_count": 4,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -1125,37 +1518,20 @@
         "node_id": "MDc6TGljZW5zZTEz"
       },
       "topics": [
-        "apps",
-        "cli",
-        "hacktoberfest",
-        "rocketchat-apps"
+        "sre-team"
       ]
     },
     {
-      "id": 743710865,
-      "node_id": "R_kgDOLFQgkQ",
-      "name": "google-summer-of-code",
-      "full_name": "RocketChat/google-summer-of-code",
-      "html_url": "https://github.com/RocketChat/google-summer-of-code",
-      "description": "Rocket.Chat as mentoring organization for Google Summer of Code",
-      "language": null,
-      "stargazers_count": 53,
-      "forks_count": 36,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 944443854,
-      "node_id": "R_kgDOOEsRzg",
-      "name": "Apps.Receipts.Processor",
-      "full_name": "RocketChat/Apps.Receipts.Processor",
-      "html_url": "https://github.com/RocketChat/Apps.Receipts.Processor",
-      "description": "Automatic expense reporter that reads all your receipts",
-      "language": "TypeScript",
-      "stargazers_count": 4,
-      "forks_count": 12,
-      "open_issues_count": 7,
+      "id": 1025807939,
+      "node_id": "R_kgDOPSSWQw",
+      "name": "rocketchat-compose",
+      "full_name": "RocketChat/rocketchat-compose",
+      "html_url": "https://github.com/RocketChat/rocketchat-compose",
+      "description": "Docker / Podman Compose ",
+      "language": "Shell",
+      "stargazers_count": 44,
+      "forks_count": 31,
+      "open_issues_count": 5,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -1174,8 +1550,8 @@
       "description": "The Rocket.Chat apps compiler.",
       "language": "TypeScript",
       "stargazers_count": 5,
-      "forks_count": 12,
-      "open_issues_count": 11,
+      "forks_count": 13,
+      "open_issues_count": 12,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -1190,229 +1566,82 @@
       ]
     },
     {
-      "id": 583510564,
-      "node_id": "R_kgDOIseqJA",
-      "name": "airlock",
-      "full_name": "RocketChat/airlock",
-      "html_url": "https://github.com/RocketChat/airlock",
-      "description": "Kubernetes operator that manages access and secrets for MongoDB clusters",
-      "language": "Go",
-      "stargazers_count": 6,
-      "forks_count": 1,
-      "open_issues_count": 2,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": [
-        "sre-team"
-      ]
-    },
-    {
-      "id": 949011234,
-      "node_id": "R_kgDOOJDDIg",
-      "name": "sytest",
-      "full_name": "RocketChat/sytest",
-      "html_url": "https://github.com/RocketChat/sytest",
-      "description": "Black-box integration testing for Matrix homeservers",
-      "language": "Perl",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 619892709,
-      "node_id": "R_kgDOJPLP5Q",
-      "name": "GSoC-Community-Hub",
-      "full_name": "RocketChat/GSoC-Community-Hub",
-      "html_url": "https://github.com/RocketChat/GSoC-Community-Hub",
-      "description": "Ready-to-run hub to engage and extend your Google Summer of Code Community",
-      "language": "Svelte",
-      "stargazers_count": 16,
-      "forks_count": 35,
-      "open_issues_count": 7,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": [
-        "community",
-        "community-project",
-        "component-architecture",
-        "full-stack",
-        "gsoc",
-        "javscript",
-        "nextjs"
-      ]
-    },
-    {
-      "id": 940183490,
-      "node_id": "R_kgDOOAoPwg",
-      "name": "Apps.TimeOff",
-      "full_name": "RocketChat/Apps.TimeOff",
-      "html_url": "https://github.com/RocketChat/Apps.TimeOff",
-      "description": "Automatically notifies others that you're currently on time off.",
+      "id": 1165785977,
+      "node_id": "R_kgDORXx7eQ",
+      "name": "todo-issue",
+      "full_name": "RocketChat/todo-issue",
+      "html_url": "https://github.com/RocketChat/todo-issue",
+      "description": "🤖 GitHub Action which creates Issues from comments in your code",
       "language": "TypeScript",
       "stargazers_count": 0,
       "forks_count": 0,
-      "open_issues_count": 1,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 797033168,
-      "node_id": "R_kgDOL4HC0A",
-      "name": "Apps.Chat.Summarize",
-      "full_name": "RocketChat/Apps.Chat.Summarize",
-      "html_url": "https://github.com/RocketChat/Apps.Chat.Summarize",
-      "description": "Summarize Rocket.Chat threads ",
-      "language": "TypeScript",
-      "stargazers_count": 7,
-      "forks_count": 19,
-      "open_issues_count": 8,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 811501526,
-      "node_id": "R_kgDOMF6H1g",
-      "name": "AgileBot",
-      "full_name": "RocketChat/AgileBot",
-      "html_url": "https://github.com/RocketChat/AgileBot",
-      "description": "AgileBot for GSoC 2024",
-      "language": "TypeScript",
-      "stargazers_count": 7,
-      "forks_count": 4,
-      "open_issues_count": 8,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 499106639,
-      "node_id": "R_kgDOHb_DTw",
-      "name": "Apps.teams.bridge",
-      "full_name": "RocketChat/Apps.teams.bridge",
-      "html_url": "https://github.com/RocketChat/Apps.teams.bridge",
-      "description": "Connecting collaborators across Rocket.Chat and Microsoft Teams",
-      "language": "TypeScript",
-      "stargazers_count": 7,
-      "forks_count": 1,
-      "open_issues_count": 6,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 797037986,
-      "node_id": "R_kgDOL4HVog",
-      "name": "Apps.AI.Newsletter.Generator.and.Publisher",
-      "full_name": "RocketChat/Apps.AI.Newsletter.Generator.and.Publisher",
-      "html_url": "https://github.com/RocketChat/Apps.AI.Newsletter.Generator.and.Publisher",
-      "description": "AI-powered newsletter app for Rocket.Chat: Generate and distribute newsletters for targeted audiences within your community.",
-      "language": "TypeScript",
-      "stargazers_count": 2,
-      "forks_count": 2,
       "open_issues_count": 3,
-      "license": null,
+      "license": {
+        "key": "isc",
+        "name": "ISC License",
+        "spdx_id": "ISC",
+        "url": "https://api.github.com/licenses/isc",
+        "node_id": "MDc6TGljZW5zZTEw"
+      },
       "topics": []
-    },
-    {
-      "id": 96138899,
-      "node_id": "MDEwOlJlcG9zaXRvcnk5NjEzODg5OQ==",
-      "name": "Rocket.Chat.Apps-engine",
-      "full_name": "RocketChat/Rocket.Chat.Apps-engine",
-      "html_url": "https://github.com/RocketChat/Rocket.Chat.Apps-engine",
-      "description": "The Rocket.Chat Apps engine and definitions.",
-      "language": "TypeScript",
-      "stargazers_count": 118,
-      "forks_count": 119,
-      "open_issues_count": 168,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": [
-        "apps",
-        "hacktoberfest",
-        "rocketchat-apps"
-      ]
-    },
-    {
-      "id": 499187872,
-      "node_id": "R_kgDOHcEAoA",
-      "name": "EmbeddedChat",
-      "full_name": "RocketChat/EmbeddedChat",
-      "html_url": "https://github.com/RocketChat/EmbeddedChat",
-      "description": "An easy to use full-stack component  (ReactJS)  embedding Rocket.Chat into your webapp",
-      "language": "JavaScript",
-      "stargazers_count": 138,
-      "forks_count": 301,
-      "open_issues_count": 221,
-      "license": null,
-      "topics": [
-        "embeddedchat",
-        "javascript",
-        "npm",
-        "react",
-        "rocketchat",
-        "rocketchat-sdk"
-      ]
-    },
-    {
-      "id": 79729687,
-      "node_id": "MDEwOlJlcG9zaXRvcnk3OTcyOTY4Nw==",
-      "name": "server-snap",
-      "full_name": "RocketChat/server-snap",
-      "html_url": "https://github.com/RocketChat/server-snap",
-      "description": "Rocket.Chat server snap",
-      "language": "Shell",
-      "stargazers_count": 19,
-      "forks_count": 19,
-      "open_issues_count": 28,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": [
-        "chat",
-        "chat-application",
-        "communication"
-      ]
     }
   ],
   "contributorsDetails": [
+    {
+      "login": "julio-rocketchat",
+      "id": 193944692,
+      "node_id": "U_kgDOC49cdA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193944692?v=4",
+      "html_url": "https://github.com/julio-rocketchat",
+      "contributions": 74
+    },
+    {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "html_url": "https://github.com/apps/github-actions",
+      "contributions": 6
+    },
+    {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "html_url": "https://github.com/apps/dependabot",
+      "contributions": 165
+    },
+    {
+      "login": "ggazzo",
+      "id": 5263975,
+      "node_id": "MDQ6VXNlcjUyNjM5NzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5263975?v=4",
+      "html_url": "https://github.com/ggazzo",
+      "contributions": 2029
+    },
+    {
+      "login": "sampaiodiego",
+      "id": 8591547,
+      "node_id": "MDQ6VXNlcjg1OTE1NDc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8591547?v=4",
+      "html_url": "https://github.com/sampaiodiego",
+      "contributions": 3198
+    },
+    {
+      "login": "KevLehman",
+      "id": 11577696,
+      "node_id": "MDQ6VXNlcjExNTc3Njk2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11577696?v=4",
+      "html_url": "https://github.com/KevLehman",
+      "contributions": 690
+    },
     {
       "login": "rodrigok",
       "id": 234261,
       "node_id": "MDQ6VXNlcjIzNDI2MQ==",
       "avatar_url": "https://avatars.githubusercontent.com/u/234261?v=4",
       "html_url": "https://github.com/rodrigok",
-      "contributions": 99
+      "contributions": 4352
     },
     {
       "login": "engelgabriel",
@@ -1421,22 +1650,6 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/1000217?v=4",
       "html_url": "https://github.com/engelgabriel",
       "contributions": 3309
-    },
-    {
-      "login": "sampaiodiego",
-      "id": 8591547,
-      "node_id": "MDQ6VXNlcjg1OTE1NDc=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/8591547?v=4",
-      "html_url": "https://github.com/sampaiodiego",
-      "contributions": 22
-    },
-    {
-      "login": "ggazzo",
-      "id": 5263975,
-      "node_id": "MDQ6VXNlcjUyNjM5NzU=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/5263975?v=4",
-      "html_url": "https://github.com/ggazzo",
-      "contributions": 105
     },
     {
       "login": "marceloschmidt",
@@ -1452,15 +1665,15 @@
       "node_id": "MDQ6VXNlcjIwODY4MDc4",
       "avatar_url": "https://avatars.githubusercontent.com/u/20868078?v=4",
       "html_url": "https://github.com/MartinSchoeler",
-      "contributions": 970
+      "contributions": 1050
     },
     {
-      "login": "MarcosSpessatto",
-      "id": 15324204,
-      "node_id": "MDQ6VXNlcjE1MzI0MjA0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/15324204?v=4",
-      "html_url": "https://github.com/MarcosSpessatto",
-      "contributions": 663
+      "login": "tassoevan",
+      "id": 2263066,
+      "node_id": "MDQ6VXNlcjIyNjMwNjY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2263066?v=4",
+      "html_url": "https://github.com/tassoevan",
+      "contributions": 676
     },
     {
       "login": "karlprieb",
@@ -1471,28 +1684,12 @@
       "contributions": 605
     },
     {
-      "login": "KevLehman",
-      "id": 11577696,
-      "node_id": "MDQ6VXNlcjExNTc3Njk2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/11577696?v=4",
-      "html_url": "https://github.com/KevLehman",
-      "contributions": 579
-    },
-    {
-      "login": "tassoevan",
-      "id": 2263066,
-      "node_id": "MDQ6VXNlcjIyNjMwNjY=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/2263066?v=4",
-      "html_url": "https://github.com/tassoevan",
-      "contributions": 552
-    },
-    {
       "login": "dougfabris",
       "id": 27704687,
       "node_id": "MDQ6VXNlcjI3NzA0Njg3",
       "avatar_url": "https://avatars.githubusercontent.com/u/27704687?v=4",
       "html_url": "https://github.com/dougfabris",
-      "contributions": 495
+      "contributions": 596
     },
     {
       "login": "gabriellsh",
@@ -1500,7 +1697,7 @@
       "node_id": "MDQ6VXNlcjQwODMwODIx",
       "avatar_url": "https://avatars.githubusercontent.com/u/40830821?v=4",
       "html_url": "https://github.com/gabriellsh",
-      "contributions": 464
+      "contributions": 545
     },
     {
       "login": "graywolf336",
@@ -1511,20 +1708,44 @@
       "contributions": 461
     },
     {
-      "login": "geekgonecrazy",
-      "id": 51996,
-      "node_id": "MDQ6VXNlcjUxOTk2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/51996?v=4",
-      "html_url": "https://github.com/geekgonecrazy",
-      "contributions": 442
-    },
-    {
       "login": "pierre-lehnen-rc",
       "id": 55164754,
       "node_id": "MDQ6VXNlcjU1MTY0NzU0",
       "avatar_url": "https://avatars.githubusercontent.com/u/55164754?v=4",
       "html_url": "https://github.com/pierre-lehnen-rc",
-      "contributions": 396
+      "contributions": 460
+    },
+    {
+      "login": "geekgonecrazy",
+      "id": 51996,
+      "node_id": "MDQ6VXNlcjUxOTk2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51996?v=4",
+      "html_url": "https://github.com/geekgonecrazy",
+      "contributions": 450
+    },
+    {
+      "login": "rocketchat-github-ci",
+      "id": 73214249,
+      "node_id": "MDQ6VXNlcjczMjE0MjQ5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/73214249?v=4",
+      "html_url": "https://github.com/rocketchat-github-ci",
+      "contributions": 335
+    },
+    {
+      "login": "juliajforesti",
+      "id": 60678893,
+      "node_id": "MDQ6VXNlcjYwNjc4ODkz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/60678893?v=4",
+      "html_url": "https://github.com/juliajforesti",
+      "contributions": 333
+    },
+    {
+      "login": "d-gubert",
+      "id": 1810309,
+      "node_id": "MDQ6VXNlcjE4MTAzMDk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1810309?v=4",
+      "html_url": "https://github.com/d-gubert",
+      "contributions": 321
     },
     {
       "login": "renatobecker",
@@ -1535,14 +1756,6 @@
       "contributions": 270
     },
     {
-      "login": "d-gubert",
-      "id": 1810309,
-      "node_id": "MDQ6VXNlcjE4MTAzMDk=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1810309?v=4",
-      "html_url": "https://github.com/d-gubert",
-      "contributions": 267
-    },
-    {
       "login": "Sing-Li",
       "id": 122633,
       "node_id": "MDQ6VXNlcjEyMjYzMw==",
@@ -1551,20 +1764,12 @@
       "contributions": 257
     },
     {
-      "login": "juliajforesti",
-      "id": 60678893,
-      "node_id": "MDQ6VXNlcjYwNjc4ODkz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/60678893?v=4",
-      "html_url": "https://github.com/juliajforesti",
-      "contributions": 247
-    },
-    {
-      "login": "rocketchat-github-ci",
-      "id": 73214249,
-      "node_id": "MDQ6VXNlcjczMjE0MjQ5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/73214249?v=4",
-      "html_url": "https://github.com/rocketchat-github-ci",
-      "contributions": 235
+      "login": "yash-rajpal",
+      "id": 58601732,
+      "node_id": "MDQ6VXNlcjU4NjAxNzMy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/58601732?v=4",
+      "html_url": "https://github.com/yash-rajpal",
+      "contributions": 234
     },
     {
       "login": "matheusbsilva137",
@@ -1575,28 +1780,12 @@
       "contributions": 220
     },
     {
-      "login": "murtaza98",
-      "id": 34130764,
-      "node_id": "MDQ6VXNlcjM0MTMwNzY0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/34130764?v=4",
-      "html_url": "https://github.com/murtaza98",
-      "contributions": 214
-    },
-    {
-      "login": "yash-rajpal",
-      "id": 58601732,
-      "node_id": "MDQ6VXNlcjU4NjAxNzMy",
-      "avatar_url": "https://avatars.githubusercontent.com/u/58601732?v=4",
-      "html_url": "https://github.com/yash-rajpal",
-      "contributions": 8
-    },
-    {
       "login": "tiagoevanp",
       "id": 17487063,
       "node_id": "MDQ6VXNlcjE3NDg3MDYz",
       "avatar_url": "https://avatars.githubusercontent.com/u/17487063?v=4",
       "html_url": "https://github.com/tiagoevanp",
-      "contributions": 198
+      "contributions": 213
     },
     {
       "login": "aleksandernsilva",
@@ -1604,15 +1793,15 @@
       "node_id": "MDQ6VXNlcjY0OTQ1NDM=",
       "avatar_url": "https://avatars.githubusercontent.com/u/6494543?v=4",
       "html_url": "https://github.com/aleksandernsilva",
-      "contributions": 159
+      "contributions": 205
     },
     {
-      "login": "dependabot[bot]",
-      "id": 49699333,
-      "node_id": "MDM6Qm90NDk2OTkzMzM=",
-      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-      "html_url": "https://github.com/apps/dependabot",
-      "contributions": 27
+      "login": "murtaza98",
+      "id": 34130764,
+      "node_id": "MDQ6VXNlcjM0MTMwNzY0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/34130764?v=4",
+      "html_url": "https://github.com/murtaza98",
+      "contributions": 179
     },
     {
       "login": "gmsecrieru",
@@ -1647,204 +1836,12 @@
       "contributions": 124
     },
     {
-      "login": "diegolmello",
-      "id": 804994,
-      "node_id": "MDQ6VXNlcjgwNDk5NA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/804994?v=4",
-      "html_url": "https://github.com/diegolmello",
-      "contributions": 905
-    },
-    {
-      "login": "reinaldonetof",
-      "id": 47038980,
-      "node_id": "MDQ6VXNlcjQ3MDM4OTgw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/47038980?v=4",
-      "html_url": "https://github.com/reinaldonetof",
-      "contributions": 391
-    },
-    {
-      "login": "dnlsilva",
-      "id": 18687097,
-      "node_id": "MDQ6VXNlcjE4Njg3MDk3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/18687097?v=4",
-      "html_url": "https://github.com/dnlsilva",
-      "contributions": 307
-    },
-    {
-      "login": "djorkaeffalexandre",
-      "id": 29778115,
-      "node_id": "MDQ6VXNlcjI5Nzc4MTE1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/29778115?v=4",
-      "html_url": "https://github.com/djorkaeffalexandre",
-      "contributions": 270
-    },
-    {
-      "login": "gerzonc",
-      "id": 36211892,
-      "node_id": "MDQ6VXNlcjM2MjExODky",
-      "avatar_url": "https://avatars.githubusercontent.com/u/36211892?v=4",
-      "html_url": "https://github.com/gerzonc",
-      "contributions": 239
-    },
-    {
-      "login": "AlexAlexandre",
-      "id": 14894380,
-      "node_id": "MDQ6VXNlcjE0ODk0Mzgw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/14894380?v=4",
-      "html_url": "https://github.com/AlexAlexandre",
-      "contributions": 104
-    },
-    {
-      "login": "OtavioStasiak",
-      "id": 91474186,
-      "node_id": "MDQ6VXNlcjkxNDc0MTg2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/91474186?v=4",
-      "html_url": "https://github.com/OtavioStasiak",
-      "contributions": 71
-    },
-    {
-      "login": "kresnaputra",
-      "id": 41157464,
-      "node_id": "MDQ6VXNlcjQxMTU3NDY0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/41157464?v=4",
-      "html_url": "https://github.com/kresnaputra",
-      "contributions": 29
-    },
-    {
-      "login": "Rohit3523",
-      "id": 40559587,
-      "node_id": "MDQ6VXNlcjQwNTU5NTg3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/40559587?v=4",
-      "html_url": "https://github.com/Rohit3523",
-      "contributions": 23
-    },
-    {
-      "login": "phriedrich",
-      "id": 470153,
-      "node_id": "MDQ6VXNlcjQ3MDE1Mw==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/470153?v=4",
-      "html_url": "https://github.com/phriedrich",
-      "contributions": 19
-    },
-    {
-      "login": "Prateek93a",
-      "id": 44807945,
-      "node_id": "MDQ6VXNlcjQ0ODA3OTQ1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/44807945?v=4",
-      "html_url": "https://github.com/Prateek93a",
-      "contributions": 19
-    },
-    {
-      "login": "try-catch-stack",
-      "id": 77742477,
-      "node_id": "MDQ6VXNlcjc3NzQyNDc3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/77742477?v=4",
-      "html_url": "https://github.com/try-catch-stack",
-      "contributions": 18
-    },
-    {
-      "login": "lingohub[bot]",
-      "id": 69908207,
-      "node_id": "MDM6Qm90Njk5MDgyMDc=",
-      "avatar_url": "https://avatars.githubusercontent.com/in/77526?v=4",
-      "html_url": "https://github.com/apps/lingohub",
-      "contributions": 18
-    },
-    {
-      "login": "pranavpandey1998official",
-      "id": 44601530,
-      "node_id": "MDQ6VXNlcjQ0NjAxNTMw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/44601530?v=4",
-      "html_url": "https://github.com/pranavpandey1998official",
-      "contributions": 18
-    },
-    {
-      "login": "EzequielDeOliveira",
-      "id": 37127457,
-      "node_id": "MDQ6VXNlcjM3MTI3NDU3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/37127457?v=4",
-      "html_url": "https://github.com/EzequielDeOliveira",
-      "contributions": 16
-    },
-    {
-      "login": "youssef-md",
-      "id": 29265857,
-      "node_id": "MDQ6VXNlcjI5MjY1ODU3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/29265857?v=4",
-      "html_url": "https://github.com/youssef-md",
-      "contributions": 16
-    },
-    {
-      "login": "IlarionHalushka",
-      "id": 25078524,
-      "node_id": "MDQ6VXNlcjI1MDc4NTI0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/25078524?v=4",
-      "html_url": "https://github.com/IlarionHalushka",
-      "contributions": 15
-    },
-    {
-      "login": "gilmarsquinelato",
-      "id": 4096165,
-      "node_id": "MDQ6VXNlcjQwOTYxNjU=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/4096165?v=4",
-      "html_url": "https://github.com/gilmarsquinelato",
-      "contributions": 12
-    },
-    {
-      "login": "Fishbowler",
-      "id": 2117083,
-      "node_id": "MDQ6VXNlcjIxMTcwODM=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/2117083?v=4",
-      "html_url": "https://github.com/Fishbowler",
-      "contributions": 9
-    },
-    {
-      "login": "aKn1ghtOut",
-      "id": 38764067,
-      "node_id": "MDQ6VXNlcjM4NzY0MDY3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/38764067?v=4",
-      "html_url": "https://github.com/aKn1ghtOut",
-      "contributions": 8
-    },
-    {
-      "login": "jjinendra3",
-      "id": 117433354,
-      "node_id": "U_kgDOBv_kCg",
-      "avatar_url": "https://avatars.githubusercontent.com/u/117433354?v=4",
-      "html_url": "https://github.com/jjinendra3",
-      "contributions": 7
-    },
-    {
-      "login": "philipbrito",
-      "id": 11776825,
-      "node_id": "MDQ6VXNlcjExNzc2ODI1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/11776825?v=4",
-      "html_url": "https://github.com/philipbrito",
-      "contributions": 6
-    },
-    {
-      "login": "devyaniChoubey",
-      "id": 52153085,
-      "node_id": "MDQ6VXNlcjUyMTUzMDg1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/52153085?v=4",
-      "html_url": "https://github.com/devyaniChoubey",
-      "contributions": 6
-    },
-    {
-      "login": "David-Tsui",
-      "id": 8610682,
-      "node_id": "MDQ6VXNlcjg2MTA2ODI=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/8610682?v=4",
-      "html_url": "https://github.com/David-Tsui",
-      "contributions": 5
-    },
-    {
-      "login": "brf153",
-      "id": 107868772,
-      "node_id": "U_kgDOBm3yZA",
-      "avatar_url": "https://avatars.githubusercontent.com/u/107868772?v=4",
-      "html_url": "https://github.com/brf153",
-      "contributions": 5
+      "login": "ricardogarim",
+      "id": 9621276,
+      "node_id": "MDQ6VXNlcjk2MjEyNzY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9621276?v=4",
+      "html_url": "https://github.com/ricardogarim",
+      "contributions": 123
     }
   ],
   "activeOrg": true

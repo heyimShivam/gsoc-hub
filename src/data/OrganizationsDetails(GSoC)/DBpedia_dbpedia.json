@@ -52,7 +52,8 @@
     2022,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2016": [
@@ -541,10 +542,159 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/9AzsjcUM"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Enhancing multilingual IE - DBpedia Hindi Chapter 2025",
+        "short_description": "DBpedia extracts structured information from Wikipedia into a multilingual knowledge graph (KG), but the Hindi DBpedia KG currently lacks extensive...",
+        "description": "DBpedia extracts structured information from Wikipedia into a multilingual knowledge graph (KG), but the Hindi DBpedia KG currently lacks extensive coverage, end to end extraction pipelines, and a publicly accessible SPARQL endpoint. This project, building on GSoC 2024 foundations, will enhance the Hindi KG by improving infobox mappings, refining neural extraction, and implementing link prediction. A structured approach will be taken to ensure a streamlined end-to-end neural extraction pipeline, leveraging multilingual models tailored for Hindi content. Finally, this enriched KG will be deployed through a public SPARQL endpoint, making structured Hindi knowledge broadly accessible.",
+        "student_name": "Aditya Venkatesh",
+        "code_url": "https://gist.github.com/advenk/8ce1bea298ca5c13829c8737bc21cc93",
+        "proposal_id": "x9ZPB8Zi",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/Cu3hqVyp"
+      },
+      {
+        "title": "Towards Amharic DBpedia",
+        "short_description": "Amharic Wikipedia lacks structured knowledge representation, which limits its integration into global knowledge graphs like DBpedia. This gap hinders...",
+        "description": "Amharic Wikipedia lacks structured knowledge representation, which limits its integration into global knowledge graphs like DBpedia. This gap hinders the accessibility, discoverability, and interoperability of Amharic content in multilingual semantic web applications.\nThis project proposes to enhance the Amharic chapter of DBpedia by extracting structured data from Amharic Wikipedia. It involves extending the DBpedia Extraction Framework to support Amharic, creating new mappings for infobox templates, and extracting rich semantic data such as citations, disambiguations, and anchor texts. The output will be published as RDF triples and made accessible via a user-friendly web interface, following FAIR (Findable, Accessible, Interoperable, Reusable) data principles.\nDeliverables\n•\tAn Amharic-compatible extension to the DBpedia Extraction Framework.\n•\tNew infobox mapping templates for Amharic Wikipedia.\n•\tAn automated extraction pipeline with support for citations, disambiguation, topical concepts, and personal data.\n•\tA structured knowledge graph (RDF triples) linked with English DBpedia and Wikidata.\n•\tA lightweight web interface with SPARQL querying and multilingual support.\n•\tComprehensive documentation covering setup, usage, and FAIR-compliant publishing.",
+        "student_name": "Andargachew Asfaw",
+        "code_url": "https://github.com/contact-andy/GSoC-25_DBpedia_Amharic_Chapter",
+        "proposal_id": "9WZIqsmf",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/gRkaQuQv"
+      },
+      {
+        "title": "Neural Extraction Framework: Enhancing DBpedia with Implicit Relation Mining",
+        "short_description": "The Neural Extraction Framework (NEF) enhances DBpedia by extracting and integrating implicit relationships from unstructured Wikipedia text,...",
+        "description": "The Neural Extraction Framework (NEF) enhances DBpedia by extracting and integrating implicit relationships from unstructured Wikipedia text, connections that are often overlooked by traditional infobox-based extraction. The updated system employs a strict, hybrid pipeline combining deep learning and symbolic grounding to ensure semantic precision. It begins with a Gemini-based extractor that identifies candidate RDF triples directly from text, enforcing short predicates and high-confidence outputs. Subjects and objects are then strictly grounded to DBpedia URIs through Redis-backed entity linking, while predicates are retrieved via cosine similarity search over precomputed DBpedia ontology embeddings. A second LLM disambiguator refines these candidates, selecting the most contextually appropriate triple and generating structured metadata such as similarity scores and ranking. The resulting triples are clean, validated, and ontology-aligned, ready for integration into DBpedia’s RDF graph. Deliverables include the full extraction pipeline, Redis and embedding modules, validation and disambiguation components, and command-line tools for dataset-scale deployment.",
+        "student_name": "Gandharva Naveen",
+        "code_url": "https://github.com/dbpedia/neural-extraction-framework/pull/21",
+        "proposal_id": "3ARXZ4KR",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/uQUHx6jo"
+      },
+      {
+        "title": "Improving Geo-Coordinate Extraction and Precision in DBpedia's Extraction Framework",
+        "short_description": "Many DBpedia entries, especially for cities in the Southern Hemisphere like South Africa, incorrectly store geo-coordinates with positive longitude...",
+        "description": "Many DBpedia entries, especially for cities in the Southern Hemisphere like South Africa, incorrectly store geo-coordinates with positive longitude values. Wikipedia's diverse coordinate template formats often fail to parse correctly, resulting in missing geographic data. These inaccuracies can result in incorrect mapping and spatial data interpretation.\n\nThis project aims to enhance DBpedia's Extraction Framework by:\n\nRefactoring GeoCoordinateParser.scala with robust input validation and hemisphere-aware sign correction.\n\nImplementing a flexible GeoCoordinateParserConfig system with regex patterns and parameter mapping.\n\nAdding unit tests and integration tests for validating geo-coordinate correctness.\n\nExtending the GeoCoordinatesMapping.scala file to parse and emit directional info.\n\nRefactoring and cleaning up legacy extraction logic to support consistent coordinate output.\n\nDeliverables:\n\nPatch to the Extraction Framework implementing these improvements.\n\nTest suite to validate parsing and extraction of directional metadata.\n\nDocumentation for contributors on how to test and extend the geo-coordinate logic.",
+        "student_name": "haniya konain",
+        "code_url": "https://github.com/haniyakonain/gsoc-2025-dbpedia-final-report",
+        "proposal_id": "qY5imFwO",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/3IYoXoD6"
+      },
+      {
+        "title": "Automating Wikimedia Dumps on Databus",
+        "short_description": "Wikimedia publishes their data dumps at dumps.wikimedia.org. Currently, these dumps are listed in HTML format, requiring manual parsing to track new...",
+        "description": "Wikimedia publishes their data dumps at dumps.wikimedia.org. Currently, these dumps are listed in HTML format, requiring manual parsing to track new releases. To automate the retrieval process, integrating the dumps into the Databus metadata knowledge graph. This will enable SPARQL queries to check for new versions of dumps, supporting DBpedia and other projects like DIEF by systematically converting them into RDF.",
+        "student_name": "tech0priyanshu",
+        "code_url": "https://github.com/dbpedia/wikimedia-dumps/tree/dev",
+        "proposal_id": "Uu77LXTS",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/VZZkMNmE"
+      }
+    ],
+    "2026": []
   },
   "githubID": "dbpedia",
   "repositories": [
+    {
+      "id": 28957195,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyODk1NzE5NQ==",
+      "name": "ontology-tracker",
+      "full_name": "dbpedia/ontology-tracker",
+      "html_url": "https://github.com/dbpedia/ontology-tracker",
+      "description": "Here we keep track of modification requests in the DBpedia Ontology ",
+      "language": "Java",
+      "stargazers_count": 41,
+      "forks_count": 19,
+      "open_issues_count": 33,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 8071225,
+      "node_id": "MDEwOlJlcG9zaXRvcnk4MDcxMjI1",
+      "name": "extraction-framework",
+      "full_name": "dbpedia/extraction-framework",
+      "html_url": "https://github.com/dbpedia/extraction-framework",
+      "description": "The software used to extract structured data from Wikipedia",
+      "language": "Scala",
+      "stargazers_count": 928,
+      "forks_count": 305,
+      "open_issues_count": 196,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 90620882,
+      "node_id": "MDEwOlJlcG9zaXRvcnk5MDYyMDg4Mg==",
+      "name": "chatbot",
+      "full_name": "dbpedia/chatbot",
+      "html_url": "https://github.com/dbpedia/chatbot",
+      "description": "DBpedia Chatbot",
+      "language": "Java",
+      "stargazers_count": 117,
+      "forks_count": 57,
+      "open_issues_count": 25,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "chatbot",
+        "dbpedia",
+        "dbpedia-chatbot",
+        "gsoc",
+        "question-answering"
+      ]
+    },
+    {
+      "id": 721701323,
+      "node_id": "R_kgDOKwRJyw",
+      "name": "databus-moss-frontend",
+      "full_name": "dbpedia/databus-moss-frontend",
+      "html_url": "https://github.com/dbpedia/databus-moss-frontend",
+      "description": "Databus MOSS Frontend",
+      "language": "Svelte",
+      "stargazers_count": 1,
+      "forks_count": 3,
+      "open_issues_count": 4,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 369814307,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzNjk4MTQzMDc=",
+      "name": "neural-extraction-framework",
+      "full_name": "dbpedia/neural-extraction-framework",
+      "html_url": "https://github.com/dbpedia/neural-extraction-framework",
+      "description": "Repository for the GSoC project 'Towards a Neural Extraction Framework'",
+      "language": "Jupyter Notebook",
+      "stargazers_count": 27,
+      "forks_count": 23,
+      "open_issues_count": 21,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 605605041,
+      "node_id": "R_kgDOJBjMsQ",
+      "name": "databus-python-client",
+      "full_name": "dbpedia/databus-python-client",
+      "html_url": "https://github.com/dbpedia/databus-python-client",
+      "description": null,
+      "language": "Python",
+      "stargazers_count": 10,
+      "forks_count": 15,
+      "open_issues_count": 17,
+      "license": null,
+      "topics": []
+    },
     {
       "id": 409587554,
       "node_id": "R_kgDOGGnPYg",
@@ -553,15 +703,35 @@
       "html_url": "https://github.com/dbpedia/databus",
       "description": "A digital factory platform for managing files online with stable IDs, high-quality metadata, powerful API and tools for building on data: find, access, make interoperable, re-use",
       "language": "JavaScript",
-      "stargazers_count": 44,
-      "forks_count": 19,
-      "open_issues_count": 71,
+      "stargazers_count": 67,
+      "forks_count": 27,
+      "open_issues_count": 97,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
         "spdx_id": "Apache-2.0",
         "url": "https://api.github.com/licenses/apache-2.0",
         "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 1082429942,
+      "node_id": "R_kgDOQISR9g",
+      "name": "group-artifact-definition",
+      "full_name": "dbpedia/group-artifact-definition",
+      "html_url": "https://github.com/dbpedia/group-artifact-definition",
+      "description": "Preliminary artifact definition for new fusion and new generation of release. First draft. Repo might be moved later. ",
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 1,
+      "open_issues_count": 0,
+      "license": {
+        "key": "cc0-1.0",
+        "name": "Creative Commons Zero v1.0 Universal",
+        "spdx_id": "CC0-1.0",
+        "url": "https://api.github.com/licenses/cc0-1.0",
+        "node_id": "MDc6TGljZW5zZTY="
       },
       "topics": []
     },
@@ -574,8 +744,8 @@
       "description": "Git repo / triple store hybrid graph storage",
       "language": "Scala",
       "stargazers_count": 5,
-      "forks_count": 0,
-      "open_issues_count": 11,
+      "forks_count": 3,
+      "open_issues_count": 15,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -586,23 +756,138 @@
       "topics": []
     },
     {
-      "id": 369814307,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzNjk4MTQzMDc=",
-      "name": "neural-extraction-framework",
-      "full_name": "dbpedia/neural-extraction-framework",
-      "html_url": "https://github.com/dbpedia/neural-extraction-framework",
-      "description": "Repository for the GSoC project 'Towards a Neural Extraction Framework'",
-      "language": "Jupyter Notebook",
-      "stargazers_count": 20,
-      "forks_count": 10,
+      "id": 881906374,
+      "node_id": "R_kgDONJDSxg",
+      "name": "databus-moss-server",
+      "full_name": "dbpedia/databus-moss-server",
+      "html_url": "https://github.com/dbpedia/databus-moss-server",
+      "description": null,
+      "language": "Java",
+      "stargazers_count": 0,
+      "forks_count": 1,
+      "open_issues_count": 1,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 982822712,
+      "node_id": "R_kgDOOpSvOA",
+      "name": "wikimedia-dumps",
+      "full_name": "dbpedia/wikimedia-dumps",
+      "html_url": "https://github.com/dbpedia/wikimedia-dumps",
+      "description": "This repo has script to publish only the job that publishes articlesdumprecombine for all wiki.",
+      "language": "Python",
+      "stargazers_count": 3,
+      "forks_count": 5,
+      "open_issues_count": 6,
+      "license": null,
+      "topics": [
+        "dbpedia",
+        "open-source",
+        "python",
+        "wikimedia"
+      ]
+    },
+    {
+      "id": 1037388231,
+      "node_id": "R_kgDOPdVJxw",
+      "name": "databus-vault-access",
+      "full_name": "dbpedia/databus-vault-access",
+      "html_url": "https://github.com/dbpedia/databus-vault-access",
+      "description": "Code to programmatically access the DBpedia Databus Vaults via the DBpedia Unified Account",
+      "language": "Shell",
+      "stargazers_count": 0,
+      "forks_count": 0,
       "open_issues_count": 1,
       "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
       },
+      "topics": []
+    },
+    {
+      "id": 1064588209,
+      "node_id": "R_kgDOP3RTsQ",
+      "name": "knowledge-graph-catalog",
+      "full_name": "dbpedia/knowledge-graph-catalog",
+      "html_url": "https://github.com/dbpedia/knowledge-graph-catalog",
+      "description": null,
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 16,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1046297209,
+      "node_id": "R_kgDOPl06eQ",
+      "name": "web-assets",
+      "full_name": "dbpedia/web-assets",
+      "html_url": "https://github.com/dbpedia/web-assets",
+      "description": "web assets to be delivered",
+      "language": "CSS",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 186857815,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxODY4NTc4MTU=",
+      "name": "databus-derive",
+      "full_name": "dbpedia/databus-derive",
+      "html_url": "https://github.com/dbpedia/databus-derive",
+      "description": null,
+      "language": "Scala",
+      "stargazers_count": 0,
+      "forks_count": 1,
+      "open_issues_count": 4,
+      "license": {
+        "key": "agpl-3.0",
+        "name": "GNU Affero General Public License v3.0",
+        "spdx_id": "AGPL-3.0",
+        "url": "https://api.github.com/licenses/agpl-3.0",
+        "node_id": "MDc6TGljZW5zZTE="
+      },
+      "topics": []
+    },
+    {
+      "id": 905921810,
+      "node_id": "R_kgDONf9FEg",
+      "name": "dbpedia-temporal",
+      "full_name": "dbpedia/dbpedia-temporal",
+      "html_url": "https://github.com/dbpedia/dbpedia-temporal",
+      "description": "DBpedia-TKG is an extension of the DBpedia framework that incorporates temporal dynamics, capturing the evolution of knowledge from Wikipedia over time",
+      "language": "Python",
+      "stargazers_count": 10,
+      "forks_count": 1,
+      "open_issues_count": 0,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "topics": []
+    },
+    {
+      "id": 995311936,
+      "node_id": "R_kgDOO1NBQA",
+      "name": "knowledge-graph-updates",
+      "full_name": "dbpedia/knowledge-graph-updates",
+      "html_url": "https://github.com/dbpedia/knowledge-graph-updates",
+      "description": null,
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
       "topics": []
     },
     {
@@ -626,20 +911,6 @@
       "topics": []
     },
     {
-      "id": 28957195,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyODk1NzE5NQ==",
-      "name": "ontology-tracker",
-      "full_name": "dbpedia/ontology-tracker",
-      "html_url": "https://github.com/dbpedia/ontology-tracker",
-      "description": "Here we keep track of modification requests in the DBpedia Ontology ",
-      "language": "Java",
-      "stargazers_count": 36,
-      "forks_count": 13,
-      "open_issues_count": 30,
-      "license": null,
-      "topics": []
-    },
-    {
       "id": 807553485,
       "node_id": "R_kgDOMCJJzQ",
       "name": "databus-moss",
@@ -647,9 +918,9 @@
       "html_url": "https://github.com/dbpedia/databus-moss",
       "description": "Docker Setup for MOSS",
       "language": null,
-      "stargazers_count": 3,
+      "stargazers_count": 4,
       "forks_count": 0,
-      "open_issues_count": 12,
+      "open_issues_count": 16,
       "license": null,
       "topics": []
     },
@@ -676,96 +947,8 @@
       "description": "POTS is a \"Polyparadigmatic Ontology Term Search\" allowing fuzzy semantic search on terms with fine-grained contextual filtering",
       "language": "Python",
       "stargazers_count": 1,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 721701323,
-      "node_id": "R_kgDOKwRJyw",
-      "name": "databus-moss-frontend",
-      "full_name": "dbpedia/databus-moss-frontend",
-      "html_url": "https://github.com/dbpedia/databus-moss-frontend",
-      "description": "Databus MOSS Frontend",
-      "language": "Svelte",
-      "stargazers_count": 1,
       "forks_count": 1,
-      "open_issues_count": 2,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 881906374,
-      "node_id": "R_kgDONJDSxg",
-      "name": "databus-moss-server",
-      "full_name": "dbpedia/databus-moss-server",
-      "html_url": "https://github.com/dbpedia/databus-moss-server",
-      "description": null,
-      "language": "Java",
-      "stargazers_count": 0,
-      "forks_count": 0,
       "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 905921810,
-      "node_id": "R_kgDONf9FEg",
-      "name": "dbpedia-temporal",
-      "full_name": "dbpedia/dbpedia-temporal",
-      "html_url": "https://github.com/dbpedia/dbpedia-temporal",
-      "description": "DBpedia-TKG is an extension of the DBpedia framework that incorporates temporal dynamics, capturing the evolution of knowledge from Wikipedia over time",
-      "language": "Python",
-      "stargazers_count": 4,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": []
-    },
-    {
-      "id": 90620882,
-      "node_id": "MDEwOlJlcG9zaXRvcnk5MDYyMDg4Mg==",
-      "name": "chatbot",
-      "full_name": "dbpedia/chatbot",
-      "html_url": "https://github.com/dbpedia/chatbot",
-      "description": "DBpedia Chatbot",
-      "language": "Java",
-      "stargazers_count": 110,
-      "forks_count": 42,
-      "open_issues_count": 21,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "chatbot",
-        "dbpedia",
-        "dbpedia-chatbot",
-        "gsoc",
-        "question-answering"
-      ]
-    },
-    {
-      "id": 8071225,
-      "node_id": "MDEwOlJlcG9zaXRvcnk4MDcxMjI1",
-      "name": "extraction-framework",
-      "full_name": "dbpedia/extraction-framework",
-      "html_url": "https://github.com/dbpedia/extraction-framework",
-      "description": "The software used to extract structured data from Wikipedia",
-      "language": "Scala",
-      "stargazers_count": 898,
-      "forks_count": 282,
-      "open_issues_count": 188,
       "license": null,
       "topics": []
     },
@@ -777,9 +960,9 @@
       "html_url": "https://github.com/dbpedia/dbpedia-lookup",
       "description": "A generic entity retrieval service for linked data. Contains presets to replicate the DBpedia Lookup service.",
       "language": "Java",
-      "stargazers_count": 47,
-      "forks_count": 13,
-      "open_issues_count": 8,
+      "stargazers_count": 50,
+      "forks_count": 14,
+      "open_issues_count": 12,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -797,7 +980,7 @@
       "html_url": "https://github.com/dbpedia/ontology-time-machine",
       "description": null,
       "language": "Python",
-      "stargazers_count": 11,
+      "stargazers_count": 12,
       "forks_count": 5,
       "open_issues_count": 20,
       "license": null,
@@ -811,9 +994,9 @@
       "html_url": "https://github.com/dbpedia/virtuoso-sparql-endpoint-quickstart",
       "description": "creates a docker image with Virtuoso preloaded with the latest DBpedia dataset",
       "language": "Shell",
-      "stargazers_count": 126,
-      "forks_count": 37,
-      "open_issues_count": 12,
+      "stargazers_count": 128,
+      "forks_count": 40,
+      "open_issues_count": 13,
       "license": {
         "key": "other",
         "name": "Other",
@@ -857,9 +1040,9 @@
       "html_url": "https://github.com/dbpedia/archivo",
       "description": "DBpedia Archivo - Augmented Ontology Archive powered by Databus",
       "language": "Python",
-      "stargazers_count": 25,
-      "forks_count": 7,
-      "open_issues_count": 29,
+      "stargazers_count": 26,
+      "forks_count": 8,
+      "open_issues_count": 30,
       "license": {
         "key": "agpl-3.0",
         "name": "GNU Affero General Public License v3.0",
@@ -933,200 +1116,20 @@
       "description": null,
       "language": null,
       "stargazers_count": 0,
-      "forks_count": 1,
-      "open_issues_count": 3,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 8047920,
-      "node_id": "MDEwOlJlcG9zaXRvcnk4MDQ3OTIw",
-      "name": "dbpedia",
-      "full_name": "dbpedia/dbpedia",
-      "html_url": "https://github.com/dbpedia/dbpedia",
-      "description": "Various tools for the DBpedia project - This does NOT contain the DBpedia extaction framework",
-      "language": "PHP",
-      "stargazers_count": 101,
-      "forks_count": 55,
-      "open_issues_count": 2,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 676653228,
-      "node_id": "R_kgDOKFTorA",
-      "name": "archivo-onto-term-search",
-      "full_name": "dbpedia/archivo-onto-term-search",
-      "html_url": "https://github.com/dbpedia/archivo-onto-term-search",
-      "description": null,
-      "language": "Java",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "unlicense",
-        "name": "The Unlicense",
-        "spdx_id": "Unlicense",
-        "url": "https://api.github.com/licenses/unlicense",
-        "node_id": "MDc6TGljZW5zZTE1"
-      },
-      "topics": []
-    },
-    {
-      "id": 145112551,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNDUxMTI1NTE=",
-      "name": "dev.dbpedia.org",
-      "full_name": "dbpedia/dev.dbpedia.org",
-      "html_url": "https://github.com/dbpedia/dev.dbpedia.org",
-      "description": "Developer Documentation at http://dev.dbpedia.org",
-      "language": "CSS",
-      "stargazers_count": 10,
-      "forks_count": 20,
-      "open_issues_count": 6,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 431049272,
-      "node_id": "R_kgDOGbFKOA",
-      "name": "marvin-config",
-      "full_name": "dbpedia/marvin-config",
-      "html_url": "https://github.com/dbpedia/marvin-config",
-      "description": "Public configuration files for MARVIN - the DBpedia Knowledge Graph extraction and release bot - running on the TIB servers",
-      "language": "HTML",
-      "stargazers_count": 4,
-      "forks_count": 4,
-      "open_issues_count": 4,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 186857815,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxODY4NTc4MTU=",
-      "name": "databus-derive",
-      "full_name": "dbpedia/databus-derive",
-      "html_url": "https://github.com/dbpedia/databus-derive",
-      "description": null,
-      "language": "Scala",
-      "stargazers_count": 0,
-      "forks_count": 1,
-      "open_issues_count": 3,
-      "license": {
-        "key": "agpl-3.0",
-        "name": "GNU Affero General Public License v3.0",
-        "spdx_id": "AGPL-3.0",
-        "url": "https://api.github.com/licenses/agpl-3.0",
-        "node_id": "MDc6TGljZW5zZTE="
-      },
-      "topics": []
-    },
-    {
-      "id": 605605041,
-      "node_id": "R_kgDOJBjMsQ",
-      "name": "databus-python-client",
-      "full_name": "dbpedia/databus-python-client",
-      "html_url": "https://github.com/dbpedia/databus-python-client",
-      "description": null,
-      "language": "Python",
-      "stargazers_count": 3,
-      "forks_count": 4,
-      "open_issues_count": 3,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 503300218,
-      "node_id": "R_kgDOHf_Aeg",
-      "name": "cmem-plugin-databus",
-      "full_name": "dbpedia/cmem-plugin-databus",
-      "html_url": "https://github.com/dbpedia/cmem-plugin-databus",
-      "description": "eccenca Corporate Memory build plugin to publish and load datasets from a DBpedia databus service.",
-      "language": "Python",
-      "stargazers_count": 5,
       "forks_count": 2,
-      "open_issues_count": 4,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "corporate-memory",
-        "eccenca",
-        "plugin"
-      ]
-    },
-    {
-      "id": 202974488,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMDI5NzQ0ODg=",
-      "name": "databus-mods",
-      "full_name": "dbpedia/databus-mods",
-      "html_url": "https://github.com/dbpedia/databus-mods",
-      "description": "Databus Mods (How To and Mod Ontology and Reference Implementation)",
-      "language": "Scala",
-      "stargazers_count": 5,
-      "forks_count": 3,
-      "open_issues_count": 4,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
+      "open_issues_count": 3,
+      "license": null,
       "topics": []
     }
   ],
   "contributorsDetails": [
     {
-      "login": "holycrab13",
-      "id": 3845517,
-      "node_id": "MDQ6VXNlcjM4NDU1MTc=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/3845517?v=4",
-      "html_url": "https://github.com/holycrab13",
-      "contributions": 1
-    },
-    {
-      "login": "Eisenbahnplatte",
-      "id": 18533014,
-      "node_id": "MDQ6VXNlcjE4NTMzMDE0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/18533014?v=4",
-      "html_url": "https://github.com/Eisenbahnplatte",
-      "contributions": 70
-    },
-    {
-      "login": "kurzum",
-      "id": 900758,
-      "node_id": "MDQ6VXNlcjkwMDc1OA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/900758?v=4",
-      "html_url": "https://github.com/kurzum",
-      "contributions": 31
-    },
-    {
-      "login": "manonthegithub",
-      "id": 10817016,
-      "node_id": "MDQ6VXNlcjEwODE3MDE2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/10817016?v=4",
-      "html_url": "https://github.com/manonthegithub",
-      "contributions": 93
-    },
-    {
-      "login": "m1ci",
-      "id": 977735,
-      "node_id": "MDQ6VXNlcjk3NzczNQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/977735?v=4",
-      "html_url": "https://github.com/m1ci",
-      "contributions": 21
-    },
-    {
-      "login": "JJ-Author",
-      "id": 2630603,
-      "node_id": "MDQ6VXNlcjI2MzA2MDM=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/2630603?v=4",
-      "html_url": "https://github.com/JJ-Author",
-      "contributions": 3
+      "login": "gcpdev",
+      "id": 6644593,
+      "node_id": "MDQ6VXNlcjY2NDQ1OTM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6644593?v=4",
+      "html_url": "https://github.com/gcpdev",
+      "contributions": 117
     },
     {
       "login": "yum-yab",
@@ -1134,55 +1137,335 @@
       "node_id": "MDQ6VXNlcjM3ODA0MTQ0",
       "avatar_url": "https://avatars.githubusercontent.com/u/37804144?v=4",
       "html_url": "https://github.com/yum-yab",
+      "contributions": 62
+    },
+    {
+      "login": "kurzum",
+      "id": 900758,
+      "node_id": "MDQ6VXNlcjkwMDc1OA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/900758?v=4",
+      "html_url": "https://github.com/kurzum",
+      "contributions": 92
+    },
+    {
+      "login": "JJ-Author",
+      "id": 2630603,
+      "node_id": "MDQ6VXNlcjI2MzA2MDM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2630603?v=4",
+      "html_url": "https://github.com/JJ-Author",
+      "contributions": 78
+    },
+    {
+      "login": "asanchez75",
+      "id": 383566,
+      "node_id": "MDQ6VXNlcjM4MzU2Ng==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/383566?v=4",
+      "html_url": "https://github.com/asanchez75",
+      "contributions": 6
+    },
+    {
+      "login": "joernhees",
+      "id": 464192,
+      "node_id": "MDQ6VXNlcjQ2NDE5Mg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/464192?v=4",
+      "html_url": "https://github.com/joernhees",
+      "contributions": 6
+    },
+    {
+      "login": "jimkont",
+      "id": 1047581,
+      "node_id": "MDQ6VXNlcjEwNDc1ODE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1047581?v=4",
+      "html_url": "https://github.com/jimkont",
       "contributions": 1
     },
     {
-      "login": "white-gecko",
-      "id": 1018168,
-      "node_id": "MDQ6VXNlcjEwMTgxNjg=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1018168?v=4",
-      "html_url": "https://github.com/white-gecko",
-      "contributions": 13
+      "login": "jcsahnwaldt",
+      "id": 607468,
+      "node_id": "MDQ6VXNlcjYwNzQ2OA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/607468?v=4",
+      "html_url": "https://github.com/jcsahnwaldt",
+      "contributions": 2759
     },
     {
-      "login": "SommerEngineering",
-      "id": 5158645,
-      "node_id": "MDQ6VXNlcjUxNTg2NDU=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/5158645?v=4",
-      "html_url": "https://github.com/SommerEngineering",
+      "login": "chile12",
+      "id": 3686379,
+      "node_id": "MDQ6VXNlcjM2ODYzNzk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3686379?v=4",
+      "html_url": "https://github.com/chile12",
+      "contributions": 415
+    },
+    {
+      "login": "jbrekle",
+      "id": 797614,
+      "node_id": "MDQ6VXNlcjc5NzYxNA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/797614?v=4",
+      "html_url": "https://github.com/jbrekle",
+      "contributions": 269
+    },
+    {
+      "login": "gaurav",
+      "id": 23979,
+      "node_id": "MDQ6VXNlcjIzOTc5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/23979?v=4",
+      "html_url": "https://github.com/gaurav",
+      "contributions": 261
+    },
+    {
+      "login": "mmorsey",
+      "id": 1165098,
+      "node_id": "MDQ6VXNlcjExNjUwOTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1165098?v=4",
+      "html_url": "https://github.com/mmorsey",
+      "contributions": 260
+    },
+    {
+      "login": "maxjakob",
+      "id": 851520,
+      "node_id": "MDQ6VXNlcjg1MTUyMA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/851520?v=4",
+      "html_url": "https://github.com/maxjakob",
+      "contributions": 253
+    },
+    {
+      "login": "rufex2001",
+      "id": 4811748,
+      "node_id": "MDQ6VXNlcjQ4MTE3NDg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4811748?v=4",
+      "html_url": "https://github.com/rufex2001",
+      "contributions": 136
+    },
+    {
+      "login": "Vehnem",
+      "id": 12629180,
+      "node_id": "MDQ6VXNlcjEyNjI5MTgw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12629180?v=4",
+      "html_url": "https://github.com/Vehnem",
+      "contributions": 126
+    },
+    {
+      "login": "jlareck",
+      "id": 25159436,
+      "node_id": "MDQ6VXNlcjI1MTU5NDM2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25159436?v=4",
+      "html_url": "https://github.com/jlareck",
+      "contributions": 120
+    },
+    {
+      "login": "termilion",
+      "id": 15726066,
+      "node_id": "MDQ6VXNlcjE1NzI2MDY2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/15726066?v=4",
+      "html_url": "https://github.com/termilion",
+      "contributions": 113
+    },
+    {
+      "login": "ninniuz",
+      "id": 3646303,
+      "node_id": "MDQ6VXNlcjM2NDYzMDM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3646303?v=4",
+      "html_url": "https://github.com/ninniuz",
+      "contributions": 110
+    },
+    {
+      "login": "alismayilov",
+      "id": 1295876,
+      "node_id": "MDQ6VXNlcjEyOTU4NzY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1295876?v=4",
+      "html_url": "https://github.com/alismayilov",
+      "contributions": 94
+    },
+    {
+      "login": "MrSerth",
+      "id": 7300329,
+      "node_id": "MDQ6VXNlcjczMDAzMjk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7300329?v=4",
+      "html_url": "https://github.com/MrSerth",
+      "contributions": 70
+    },
+    {
+      "login": "jimregan",
+      "id": 227350,
+      "node_id": "MDQ6VXNlcjIyNzM1MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/227350?v=4",
+      "html_url": "https://github.com/jimregan",
+      "contributions": 65
+    },
+    {
+      "login": "hadyelsahar",
+      "id": 1453243,
+      "node_id": "MDQ6VXNlcjE0NTMyNDM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1453243?v=4",
+      "html_url": "https://github.com/hadyelsahar",
+      "contributions": 50
+    },
+    {
+      "login": "wmaroy",
+      "id": 17851975,
+      "node_id": "MDQ6VXNlcjE3ODUxOTc1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/17851975?v=4",
+      "html_url": "https://github.com/wmaroy",
+      "contributions": 49
+    },
+    {
+      "login": "Nono314",
+      "id": 4988015,
+      "node_id": "MDQ6VXNlcjQ5ODgwMTU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4988015?v=4",
+      "html_url": "https://github.com/Nono314",
+      "contributions": 45
+    },
+    {
+      "login": "pablomendes",
+      "id": 712782,
+      "node_id": "MDQ6VXNlcjcxMjc4Mg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/712782?v=4",
+      "html_url": "https://github.com/pablomendes",
+      "contributions": 34
+    },
+    {
+      "login": "dies-und-lenes",
+      "id": 42644561,
+      "node_id": "MDQ6VXNlcjQyNjQ0NTYx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/42644561?v=4",
+      "html_url": "https://github.com/dies-und-lenes",
+      "contributions": 28
+    },
+    {
+      "login": "nilesh-c",
+      "id": 1786561,
+      "node_id": "MDQ6VXNlcjE3ODY1NjE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1786561?v=4",
+      "html_url": "https://github.com/nilesh-c",
+      "contributions": 28
+    },
+    {
+      "login": "feroshjacob",
+      "id": 1891572,
+      "node_id": "MDQ6VXNlcjE4OTE1NzI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1891572?v=4",
+      "html_url": "https://github.com/feroshjacob",
+      "contributions": 22
+    },
+    {
+      "login": "m1ci",
+      "id": 977735,
+      "node_id": "MDQ6VXNlcjk3NzczNQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/977735?v=4",
+      "html_url": "https://github.com/m1ci",
+      "contributions": 22
+    },
+    {
+      "login": "mammadori",
+      "id": 580542,
+      "node_id": "MDQ6VXNlcjU4MDU0Mg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/580542?v=4",
+      "html_url": "https://github.com/mammadori",
+      "contributions": 16
+    },
+    {
+      "login": "fumi",
+      "id": 207193,
+      "node_id": "MDQ6VXNlcjIwNzE5Mw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/207193?v=4",
+      "html_url": "https://github.com/fumi",
+      "contributions": 15
+    },
+    {
+      "login": "aditya-nambiar",
+      "id": 4807023,
+      "node_id": "MDQ6VXNlcjQ4MDcwMjM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4807023?v=4",
+      "html_url": "https://github.com/aditya-nambiar",
+      "contributions": 14
+    },
+    {
+      "login": "lukasjf",
+      "id": 18589848,
+      "node_id": "MDQ6VXNlcjE4NTg5ODQ4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/18589848?v=4",
+      "html_url": "https://github.com/lukasjf",
       "contributions": 11
     },
     {
-      "login": "Monniasza",
-      "id": 37037712,
-      "node_id": "MDQ6VXNlcjM3MDM3NzEy",
-      "avatar_url": "https://avatars.githubusercontent.com/u/37037712?v=4",
-      "html_url": "https://github.com/Monniasza",
+      "login": "boyan-simeonov",
+      "id": 7872144,
+      "node_id": "MDQ6VXNlcjc4NzIxNDQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7872144?v=4",
+      "html_url": "https://github.com/boyan-simeonov",
+      "contributions": 11
+    },
+    {
+      "login": "ram-g-athreya",
+      "id": 3251705,
+      "node_id": "MDQ6VXNlcjMyNTE3MDU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3251705?v=4",
+      "html_url": "https://github.com/ram-g-athreya",
+      "contributions": 174
+    },
+    {
+      "login": "vaibhav45sktech",
+      "id": 232676907,
+      "node_id": "U_kgDODd5eKw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/232676907?v=4",
+      "html_url": "https://github.com/vaibhav45sktech",
+      "contributions": 18
+    },
+    {
+      "login": "somerandomdude5",
+      "id": 30831147,
+      "node_id": "MDQ6VXNlcjMwODMxMTQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/30831147?v=4",
+      "html_url": "https://github.com/somerandomdude5",
+      "contributions": 11
+    },
+    {
+      "login": "RicardoUsbeck",
+      "id": 4354740,
+      "node_id": "MDQ6VXNlcjQzNTQ3NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4354740?v=4",
+      "html_url": "https://github.com/RicardoUsbeck",
+      "contributions": 9
+    },
+    {
+      "login": "AKSuman733",
+      "id": 146977592,
+      "node_id": "U_kgDOCMKzOA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/146977592?v=4",
+      "html_url": "https://github.com/AKSuman733",
       "contributions": 1
     },
     {
-      "login": "Tethet-18",
-      "id": 118007917,
-      "node_id": "U_kgDOBwiobQ",
-      "avatar_url": "https://avatars.githubusercontent.com/u/118007917?v=4",
-      "html_url": "https://github.com/Tethet-18",
+      "login": "JLLeitschuh",
+      "id": 1323708,
+      "node_id": "MDQ6VXNlcjEzMjM3MDg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1323708?v=4",
+      "html_url": "https://github.com/JLLeitschuh",
       "contributions": 1
     },
     {
-      "login": "gitbook-com[bot]",
-      "id": 92167642,
-      "node_id": "BOT_kgDOBX5d2g",
-      "avatar_url": "https://avatars.githubusercontent.com/in/143542?v=4",
-      "html_url": "https://github.com/apps/gitbook-com",
+      "login": "madanhk18",
+      "id": 109542799,
+      "node_id": "U_kgDOBod9jw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/109542799?v=4",
+      "html_url": "https://github.com/madanhk18",
       "contributions": 1
     },
     {
-      "login": "neradis",
-      "id": 4498846,
-      "node_id": "MDQ6VXNlcjQ0OTg4NDY=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/4498846?v=4",
-      "html_url": "https://github.com/neradis",
-      "contributions": 26
+      "login": "pawelborkar",
+      "id": 36134699,
+      "node_id": "MDQ6VXNlcjM2MTM0Njk5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/36134699?v=4",
+      "html_url": "https://github.com/pawelborkar",
+      "contributions": 1
+    },
+    {
+      "login": "yamalight",
+      "id": 365944,
+      "node_id": "MDQ6VXNlcjM2NTk0NA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/365944?v=4",
+      "html_url": "https://github.com/yamalight",
+      "contributions": 1
     }
   ],
   "activeOrg": false

@@ -8,7 +8,8 @@
     "Other",
     "Programming languages",
     "End user applications",
-    "Web"
+    "Web",
+    "Science and medicine"
   ],
   "topics": [
     "hardware",
@@ -54,7 +55,7 @@
   "contact_email": "mailto:info@eellak.gr",
   "mailing_list": "https://lists.ellak.gr/gsoc-developers/listinfo.html",
   "twitter_url": "https://twitter.com/eellak",
-  "blog_url": "admin@eellak.gr",
+  "blog_url": "https://gfoss.eu/",
   "facebook_url": null,
   "year": [
     2017,
@@ -64,7 +65,8 @@
     2022,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2017": [
@@ -594,10 +596,142 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/QW0rSsmj"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Analysis and System Design Proposal to myUni For GSOC 2025",
+        "short_description": "Problem Statement: The current MyUoM app for Greek universities is a central hub for students and faculty, but it's missing some key features. Right...",
+        "description": "Problem Statement:\n\nThe current MyUoM app for Greek universities is a central hub for students and faculty, but it's missing some key features. Right now, it lacks a solid login system, a scalable backend, and real-time updates from official university sources. Plus, there’s no easy way for other universities to customize or integrate the platform to fit their needs. This makes the app less flexible and limits its potential to be a truly unified solution for higher education in Greece.\n\nProposed Solution:\n\nI’m proposing MyUni—a unified, open-source platform that fixes these headaches. Built with a modern MERN stack (Next.js, Express.js, MySQL), MyUni will offer a scalable backend, real-time data syncing via APIs, and a flexible CMS for announcements and updates. It’ll support multiple universities with customizable branding and layouts, all wrapped in a user-friendly interface. Using TypeScript, microservices, and tools like Nginx and Redis, I’ll ensure it’s fast, secure, and ready to grow.\n\nDeliverables:\n\n By the end of GSoC 2025, I’ll deliver: \n\n- Web application that provide good user experience(UX) and has\ngood User Interface(UI).\n\n- Admin dashboard where myuni admin can able to handle CMS and more.\n\n- Student dashboard where student can able to take-care of their profile,\nnotifications of academics, and more.\n\n- Backend Architecture which serves as solution to all project requirements.\n\n- REST APIs with at least 95% test coverage.\n\n- REST APIs with modern design patterns.\n\n- Docker container image of entire app.",
+        "student_name": "Adil Kadival",
+        "code_url": "https://github.com/adilkadivala/GSoC-2025/blob/main/final-report.md",
+        "proposal_id": "IV123trV",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/tz6ymx0o"
+      },
+      {
+        "title": "Building a centralized hub for open-source Greek NLP datasets with GlossAPI",
+        "short_description": "This project addresses the lack of accessible, Greek high-quality datasets for training Large Language Models (LLMs). Although robust LLM frameworks...",
+        "description": "This project addresses the lack of accessible, Greek high-quality datasets for training Large Language Models (LLMs). Although robust LLM frameworks are widely available, open-source Greek-specific datasets are severely underrepresented, especially those that captures regional variations and dialects. This project's mission is to integrate Optical Character Recognition (OCR) capabilities into the processing pipeline and expand its dataset resources to support these linguistic nuances.",
+        "student_name": "Dimitrios Athanasopoulos",
+        "code_url": "https://github.com/jimmmyss/GSoC-2025",
+        "proposal_id": "SoXbhxvs",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/WaioHmfG"
+      },
+      {
+        "title": "Flexible GovDoc Scanner - Eftihis Drakakis",
+        "short_description": "Greece’s public business records, available through the GEMI portal, contain valuable information such as company names, founding dates, and key...",
+        "description": "Greece’s public business records, available through the GEMI portal, contain valuable information such as company names, founding dates, and key individuals, but much of it is locked away in difficult-to-search PDFs. To make this data more accessible, we’re building an open-source tool that transforms these documents into a searchable, user-friendly database—legally and ethically. Instead of scraping, we will systematically fetch records from Greece’s official Open Data Portal, extract metadata and text using OCR  and NLP tools , and organize everything in OpenSearch, which efficiently handles Greek text. A simple REST API will allow users to query companies, dates, and individuals while ensuring scalability, smart search, pagination, and overload protection. The project will provide an automated pipeline for downloading, processing, and indexing documents, along with clear documentation, Docker support, and easy cloud deployment. By unlocking these records, we’re not just solving a technical problem—we’re making public data truly public, empowering watchdogs, entrepreneurs, and citizens to better understand Greece’s business landscape.",
+        "student_name": "Eftihis D",
+        "code_url": "https://flexivian.github.io/govdoc-scanner/docs/gsoc/2025/overview",
+        "proposal_id": "guof8XAr",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/dKzwxQT9"
+      },
+      {
+        "title": "Extending the capabilities of OpenTRIM",
+        "short_description": "OpenTRIM is a C++ Monte Carlo simulation framework that models the interaction of ions with matter, tracking energy deposition and defect creation....",
+        "description": "OpenTRIM is a C++ Monte Carlo simulation framework that models the interaction of ions with matter, tracking energy deposition and defect creation. Currently, it includes a fixed tallying system for recording standard outputs, such as energy lost to ionization or defects. This project aims to extend OpenTRIM's capabilities by implementing a flexible, user-customizable tally system.\n\nThe new tally system will allow users to define, via JSON configuration, what simulation events to track (e.g., ion stopping, vacancy creation), how to bin data (e.g., in cylindrical or Cartesian coordinates), and what physical quantities to record (e.g., ion depth, deposited energy). It will be implemented as a new class hierarchy in C++, inheriting from the existing tally class, and will make use of the ArrayND data structure for multidimensional data storage.\n\nDeliverables include:\na) A customizable tally class with support for user-defined event handling\nb)JSON-configurable tally setup (geometry, energy bins, spatial bins, etc.)\nc) Sample tally implementations (e.g., ion range profiling)\nd) Unit tests, documentation, and tutorials for extending the system\n\nThis work will empower researchers and developers to tailor OpenTRIM output to their specific simulation needs, improving its usability and scientific value.",
+        "student_name": "Iridanos",
+        "code_url": "https://gist.github.com/Eridanous/5d6631b405922480fb78def99edb6930",
+        "proposal_id": "g8563JSa",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/4sZ62NJY"
+      },
+      {
+        "title": "PersonalAIs: Generative AI Agent for Personalized Music Recommendations",
+        "short_description": "PersonalAIs: Generative AI Agent for Personalized Music Recommendations This project aims to enhance music streaming experiences by building an AI...",
+        "description": "PersonalAIs: Generative AI Agent for Personalized Music Recommendations\n\nThis project aims to enhance music streaming experiences by building an AI agent that offers emotionally intelligent, personalized music recommendations. Traditional recommendation systems often overlook users’ real-time emotional states. To address this, we propose a full-stack solution that uses large language models (LLMs), emotion detection, and Spotify API integration to tailor music suggestions based on users’ mood and preferences.\n\nKey deliverables include:\n\t•\tA conversational chatbot UI for user interaction\n\t•\tEmotion detection using LLMs\n\t•\tIntegration with Spotify for real-time user data\n\t•\tA hybrid recommendation system (recall & rank) based on listening behavior and emotional context\n\t•\tA frontend-backend architecture for seamless user experience\n\nThis project will deliver a working prototype capable of understanding user emotions and musical tastes, and recommending tracks that resonate with the user’s current mood.",
+        "student_name": "Ke Ye",
+        "code_url": "https://github.com/eellak/gsoc2025-PersonalAIs",
+        "proposal_id": "wvyBf3Q0",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/AyCEnJDE"
+      },
+      {
+        "title": "Exploring and Abstracting Triplestore  Alternatives - Maira Papadopoulou",
+        "short_description": "This project aims to develop a Python library that abstracts multiple RDF triplestore systems into a unified, developer-friendly interface. By...",
+        "description": "This project aims to develop a Python library that abstracts multiple RDF triplestore systems into a unified, developer-friendly interface. By standardizing how applications interact with different SPARQL backends, the library will simplify the use of semantic web technologies and promote greater flexibility in backend selection. The work will involve comparative research on triplestore architectures, performance benchmarking, and the design of an extensible abstraction layer. Deliverables include a well-documented codebase, performance analysis, and integration of four triplestore systems, supported by real-world testing and usage examples.",
+        "student_name": "Maira Papadopoulou",
+        "code_url": "https://github.com/eellak/gsoc2025-triplestores",
+        "proposal_id": "5fvnArJs",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/xCZ8a9MZ"
+      },
+      {
+        "title": "Creating PyApothesis for Kinetic Monte Carlo Simulations",
+        "short_description": "The Ziff–Gulari–Barshad (ZGB) model describes how CO and O₂ molecules adsorb and react on a metal surface represented as a square lattice. CO...",
+        "description": "The Ziff–Gulari–Barshad (ZGB) model describes how CO and O₂ molecules adsorb and react on a metal surface represented as a square lattice. CO occupies a single site, while O₂ dissociates into two oxygen atoms placed on adjacent sites. When a CO and an O atom meet, they form CO₂, which leaves the surface and frees up space. As the CO partial pressure (yCO) changes, the surface transitions from oxygen-poisoned (no CO₂ production) to reactive (CO₂ formation) and eventually to CO-poisoned. Apothesis is a kinetic Monte Carlo simulator that models these surface reactions with high precision.\n\n\nBuilding on the ZGB model and the Apothesis simulator, PyApothesis provides a clean, Python-first workflow for running, analyzing, and sharing Kinetic Monte Carlo experiments. From a single script you can change simulation parameters (temperature, pressure, lattice size, seed), define custom adsorption/reaction/desorption processes, and run reproducible simulations — then immediately visualize results with publication-ready plots. PyApothesis includes time-series coverage plots, stacked-area composition views, process-rate and event-count analyses, spatial coverage maps and profiles, and real-time playback of the lattice (color-coded by species) to inspect microscopic behavior as it unfolds. It automatically produces a comprehensive analysis report (plots, logs, and statistical summaries) so users don’t have to dig through raw files, and it exposes hooks to incorporate lightweight ML models for surrogate predictions, parameter scans, or pattern detection directly from Python. Altogether, PyApothesis turns complex surface-kinetics simulations into an interactive, interpretable, and reproducible toolkit ideal for both researchers and students.",
+        "student_name": "Om Swastik",
+        "code_url": "https://www.notion.so/Google-Summer-of-Code-2025-25b26372a55580a09822c64ff0ed4dfc",
+        "proposal_id": "1hsA1Kh7",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/Hk2P4uiG"
+      },
+      {
+        "title": "Expanding HassIO Smart Home Capabilities via Low-Code Automation Development with SmAuto",
+        "short_description": "Smart home environments are increasingly popular, integrating a wide range of IoT devices to enhance user experience. However, the complexity of...",
+        "description": "Smart home environments are increasingly popular, integrating a wide range of IoT devices to enhance user experience. However, the complexity of managing these devices limits the realization of their full potential. SmAuto, originally developed by the ISSEL research team at AUTH, is a Domain Specific Language (DSL) that simplifies the creation of complex automation scenarios for smart environments through a textual and web-based low-code interface. Currently, SmAuto lacks features such as integration with external REST data sources, time delays, semantic annotations, and direct access to HomeAssistant (HA) entities, restricting its utility in advanced smart home setups.\n\nThis project aims to enhance SmAuto by:\n\n    Extending the DSL to support the REST protocol for accessing external data sources.\n    Introducing auxiliary concepts like Delay, Switches, and Compute nodes to enrich automation workflows.\n    Integrating SmAuto into HomeAssistant as an open-source addon, enabling users to design and deploy automations graphically using SmAuto’s low-code environment and HA’s existing entities.",
+        "student_name": "Venetis Charalampidis",
+        "code_url": "https://github.com/eellak/GSOC-2025-Expanding-HassIO",
+        "proposal_id": "aQVNAVJ0",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/QcCTOSbs"
+      }
+    ],
+    "2026": []
   },
   "githubID": "eellak",
   "repositories": [
+    {
+      "id": 659639963,
+      "node_id": "R_kgDOJ1FOmw",
+      "name": "glossAPI",
+      "full_name": "eellak/glossAPI",
+      "html_url": "https://github.com/eellak/glossAPI",
+      "description": "Greek Dataset Production from PDF+",
+      "language": "Python",
+      "stargazers_count": 128,
+      "forks_count": 32,
+      "open_issues_count": 3,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": [
+        "dataset",
+        "llm",
+        "opensource"
+      ]
+    },
+    {
+      "id": 1113057775,
+      "node_id": "R_kgDOQlfp7w",
+      "name": "glossapi-site",
+      "full_name": "eellak/glossapi-site",
+      "html_url": "https://github.com/eellak/glossapi-site",
+      "description": "A static website for the GlossAPI project",
+      "language": "HTML",
+      "stargazers_count": 3,
+      "forks_count": 1,
+      "open_issues_count": 2,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1003606910,
+      "node_id": "R_kgDOO9HTfg",
+      "name": "GSOC-2025-Expanding-HassIO",
+      "full_name": "eellak/GSOC-2025-Expanding-HassIO",
+      "html_url": "https://github.com/eellak/GSOC-2025-Expanding-HassIO",
+      "description": "Expanding HassIO Smart Home Capabilities via Low-Code Automation Development with SmAuto",
+      "language": "Python",
+      "stargazers_count": 2,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
     {
       "id": 185356785,
       "node_id": "MDEwOlJlcG9zaXRvcnkxODUzNTY3ODU=",
@@ -606,9 +740,9 @@
       "html_url": "https://github.com/eellak/gsoc2019-sphinx",
       "description": "Creation of an online Greek mail dictation system, using Sphinx and personalized acoustic/language model training",
       "language": "Python",
-      "stargazers_count": 19,
+      "stargazers_count": 21,
       "forks_count": 2,
-      "open_issues_count": 11,
+      "open_issues_count": 16,
       "license": {
         "key": "gpl-3.0",
         "name": "GNU General Public License v3.0",
@@ -635,49 +769,135 @@
       "html_url": "https://github.com/eellak/AI4Deliberation",
       "description": "Project development for AI4Deliberation by GlossAPI",
       "language": "Python",
+      "stargazers_count": 3,
+      "forks_count": 3,
+      "open_issues_count": 1,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 825607088,
+      "node_id": "R_kgDOMTXDsA",
+      "name": "gsoc2024-md-attractor",
+      "full_name": "eellak/gsoc2024-md-attractor",
+      "html_url": "https://github.com/eellak/gsoc2024-md-attractor",
+      "description": null,
+      "language": "Python",
+      "stargazers_count": 10,
+      "forks_count": 7,
+      "open_issues_count": 6,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1117533036,
+      "node_id": "R_kgDOQpwzbA",
+      "name": "glossapi-data-standardization",
+      "full_name": "eellak/glossapi-data-standardization",
+      "html_url": "https://github.com/eellak/glossapi-data-standardization",
+      "description": null,
+      "language": null,
+      "stargazers_count": 2,
+      "forks_count": 0,
+      "open_issues_count": 1,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1105995657,
+      "node_id": "R_kgDOQewniQ",
+      "name": "OmniDeck",
+      "full_name": "eellak/OmniDeck",
+      "html_url": "https://github.com/eellak/OmniDeck",
+      "description": "A central monitor system for multiple WordPress sites",
+      "language": null,
+      "stargazers_count": 1,
+      "forks_count": 2,
+      "open_issues_count": 1,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1114404814,
+      "node_id": "R_kgDOQmx3zg",
+      "name": "gordianot",
+      "full_name": "eellak/gordianot",
+      "html_url": "https://github.com/eellak/gordianot",
+      "description": "Gordia-not. An overtourism policy creation tool",
+      "language": null,
       "stargazers_count": 0,
       "forks_count": 0,
       "open_issues_count": 0,
       "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
       },
       "topics": []
     },
     {
       "id": 981957747,
       "node_id": "R_kgDOOod8cw",
-      "name": "gsoc2025-triplestores",
-      "full_name": "eellak/gsoc2025-triplestores",
-      "html_url": "https://github.com/eellak/gsoc2025-triplestores",
+      "name": "triplestore",
+      "full_name": "eellak/triplestore",
+      "html_url": "https://github.com/eellak/triplestore",
       "description": null,
-      "language": null,
+      "language": "Python",
+      "stargazers_count": 4,
+      "forks_count": 5,
+      "open_issues_count": 4,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 1007633333,
+      "node_id": "R_kgDOPA9DtQ",
+      "name": "gsoc2025-PersonalAIs",
+      "full_name": "eellak/gsoc2025-PersonalAIs",
+      "html_url": "https://github.com/eellak/gsoc2025-PersonalAIs",
+      "description": "GSOC 2025 Repository for PersonalAIs: Generative AI Agent for Personalized Music Recommendations",
+      "language": "TypeScript",
+      "stargazers_count": 16,
+      "forks_count": 3,
+      "open_issues_count": 2,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1045217170,
+      "node_id": "R_kgDOPky_kg",
+      "name": "openarchives_scraper",
+      "full_name": "eellak/openarchives_scraper",
+      "html_url": "https://github.com/eellak/openarchives_scraper",
+      "description": "Scraper for openarchives.gr",
+      "language": "Python",
       "stargazers_count": 0,
-      "forks_count": 1,
+      "forks_count": 0,
       "open_issues_count": 0,
       "license": null,
       "topics": []
     },
     {
-      "id": 659639963,
-      "node_id": "R_kgDOJ1FOmw",
-      "name": "glossAPI",
-      "full_name": "eellak/glossAPI",
-      "html_url": "https://github.com/eellak/glossAPI",
-      "description": "Ελληνικά κειμενικά δεδομένα - - Datasets in the Greek language",
+      "id": 1032984191,
+      "node_id": "R_kgDOPZIWfw",
+      "name": "Greek-Tesseract",
+      "full_name": "eellak/Greek-Tesseract",
+      "html_url": "https://github.com/eellak/Greek-Tesseract",
+      "description": null,
       "language": "Python",
-      "stargazers_count": 101,
-      "forks_count": 12,
-      "open_issues_count": 1,
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "open_issues_count": 0,
       "license": null,
-      "topics": [
-        "dataset",
-        "llm",
-        "opensource"
-      ]
+      "topics": []
     },
     {
       "id": 811227843,
@@ -687,7 +907,7 @@
       "html_url": "https://github.com/eellak/gsoc2024-DIY-IoT-Physics",
       "description": null,
       "language": "JavaScript",
-      "stargazers_count": 1,
+      "stargazers_count": 2,
       "forks_count": 1,
       "open_issues_count": 0,
       "license": null,
@@ -714,20 +934,6 @@
       "topics": []
     },
     {
-      "id": 825607088,
-      "node_id": "R_kgDOMTXDsA",
-      "name": "gsoc2024-md-attractor",
-      "full_name": "eellak/gsoc2024-md-attractor",
-      "html_url": "https://github.com/eellak/gsoc2024-md-attractor",
-      "description": null,
-      "language": "Python",
-      "stargazers_count": 7,
-      "forks_count": 5,
-      "open_issues_count": 6,
-      "license": null,
-      "topics": []
-    },
-    {
       "id": 503358214,
       "node_id": "R_kgDOHgCjBg",
       "name": "build-recorder",
@@ -735,9 +941,9 @@
       "html_url": "https://github.com/eellak/build-recorder",
       "description": null,
       "language": "C",
-      "stargazers_count": 27,
-      "forks_count": 8,
-      "open_issues_count": 31,
+      "stargazers_count": 31,
+      "forks_count": 11,
+      "open_issues_count": 33,
       "license": {
         "key": "lgpl-2.1",
         "name": "GNU Lesser General Public License v2.1",
@@ -775,9 +981,9 @@
       "html_url": "https://github.com/eellak/fossbot-platform",
       "description": null,
       "language": "TypeScript",
-      "stargazers_count": 7,
-      "forks_count": 5,
-      "open_issues_count": 3,
+      "stargazers_count": 11,
+      "forks_count": 6,
+      "open_issues_count": 4,
       "license": null,
       "topics": []
     },
@@ -787,11 +993,11 @@
       "name": "fossbot",
       "full_name": "eellak/fossbot",
       "html_url": "https://github.com/eellak/fossbot",
-      "description": null,
+      "description": "An open source educational robot ",
       "language": null,
-      "stargazers_count": 44,
-      "forks_count": 1,
-      "open_issues_count": 0,
+      "stargazers_count": 49,
+      "forks_count": 3,
+      "open_issues_count": 1,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -799,7 +1005,12 @@
         "url": "https://api.github.com/licenses/mit",
         "node_id": "MDc6TGljZW5zZTEz"
       },
-      "topics": []
+      "topics": [
+        "educational-project",
+        "open-source",
+        "openhardware",
+        "robot"
+      ]
     },
     {
       "id": 646700605,
@@ -809,7 +1020,7 @@
       "html_url": "https://github.com/eellak/fossbot-web-simulator",
       "description": null,
       "language": "GDScript",
-      "stargazers_count": 2,
+      "stargazers_count": 3,
       "forks_count": 0,
       "open_issues_count": 0,
       "license": {
@@ -829,8 +1040,8 @@
       "html_url": "https://github.com/eellak/gsoc2019-greek-morpho",
       "description": "Greek open source Morphological dictionary and application of it to Greek spelling tools",
       "language": "Python",
-      "stargazers_count": 32,
-      "forks_count": 3,
+      "stargazers_count": 37,
+      "forks_count": 5,
       "open_issues_count": 0,
       "license": {
         "key": "gpl-3.0",
@@ -903,8 +1114,8 @@
       "html_url": "https://github.com/eellak/gsoc2019-3gm",
       "description": "Greek Government Gazette Text Mining, Cross Linking and Codification",
       "language": "Python",
-      "stargazers_count": 9,
-      "forks_count": 1,
+      "stargazers_count": 10,
+      "forks_count": 2,
       "open_issues_count": 5,
       "license": {
         "key": "gpl-3.0",
@@ -924,8 +1135,8 @@
       "description": "Creation of a multi user audio first annotation tool - GSoC 2021",
       "language": "HTML",
       "stargazers_count": 29,
-      "forks_count": 6,
-      "open_issues_count": 8,
+      "forks_count": 8,
+      "open_issues_count": 9,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -964,7 +1175,7 @@
       "description": "Web-app of a Thesis management system",
       "language": "TypeScript",
       "stargazers_count": 17,
-      "forks_count": 5,
+      "forks_count": 7,
       "open_issues_count": 38,
       "license": {
         "key": "mit",
@@ -1012,8 +1223,8 @@
       "html_url": "https://github.com/eellak/gsoc2018-3gm",
       "description": "💫 Automated codification of Greek Legislation with NLP",
       "language": "Python",
-      "stargazers_count": 42,
-      "forks_count": 9,
+      "stargazers_count": 43,
+      "forks_count": 10,
       "open_issues_count": 24,
       "license": {
         "key": "gpl-3.0",
@@ -1035,180 +1246,104 @@
         "python3",
         "text-mining"
       ]
-    },
-    {
-      "id": 567284507,
-      "node_id": "R_kgDOIdATGw",
-      "name": "pdfcertgen",
-      "full_name": "eellak/pdfcertgen",
-      "html_url": "https://github.com/eellak/pdfcertgen",
-      "description": "Automated creation of participation certification in pdf using data from wordpress and ninja forms, writen in php",
-      "language": "PHP",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 506935218,
-      "node_id": "R_kgDOHjc3sg",
-      "name": "gsoc2022-Label-buddy",
-      "full_name": "eellak/gsoc2022-Label-buddy",
-      "html_url": "https://github.com/eellak/gsoc2022-Label-buddy",
-      "description": null,
-      "language": "Python",
-      "stargazers_count": 5,
-      "forks_count": 3,
-      "open_issues_count": 6,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 503709833,
-      "node_id": "R_kgDOHgYAiQ",
-      "name": "gsoc2022-apothesis",
-      "full_name": "eellak/gsoc2022-apothesis",
-      "html_url": "https://github.com/eellak/gsoc2022-apothesis",
-      "description": null,
-      "language": "C++",
-      "stargazers_count": 2,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 534177216,
-      "node_id": "R_kgDOH9blwA",
-      "name": "PrivateBin",
-      "full_name": "eellak/PrivateBin",
-      "html_url": "https://github.com/eellak/PrivateBin",
-      "description": "A minimalist, open source online pastebin where the server has zero knowledge of pasted data. Data is encrypted/decrypted in the browser using 256 bits AES.",
-      "language": "PHP",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 513556438,
-      "node_id": "R_kgDOHpw_1g",
-      "name": "framadate",
-      "full_name": "eellak/framadate",
-      "html_url": "https://github.com/eellak/framadate",
-      "description": "EELLAK's version of Framadate",
-      "language": "PHP",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 368839054,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzNjg4MzkwNTQ=",
-      "name": "gsoc2021-deepbots-evo",
-      "full_name": "eellak/gsoc2021-deepbots-evo",
-      "html_url": "https://github.com/eellak/gsoc2021-deepbots-evo",
-      "description": "Examples and use cases using the deepbots framework (https://github.com/aidudezzz/deepbots)  with the Webots robot simulator.",
-      "language": null,
-      "stargazers_count": 5,
-      "forks_count": 1,
-      "open_issues_count": 0,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": []
-    },
-    {
-      "id": 252117091,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNTIxMTcwOTE=",
-      "name": "open_elearn_gr",
-      "full_name": "eellak/open_elearn_gr",
-      "html_url": "https://github.com/eellak/open_elearn_gr",
-      "description": null,
-      "language": "PHP",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "open_issues_count": 7,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": []
-    },
-    {
-      "id": 503693610,
-      "node_id": "R_kgDOHgXBKg",
-      "name": "gsoc2022-help",
-      "full_name": "eellak/gsoc2022-help",
-      "html_url": "https://github.com/eellak/gsoc2022-help",
-      "description": null,
-      "language": null,
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
     }
   ],
   "contributorsDetails": [
-    {
-      "login": "PanosAntoniadis",
-      "id": 36973915,
-      "node_id": "MDQ6VXNlcjM2OTczOTE1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/36973915?v=4",
-      "html_url": "https://github.com/PanosAntoniadis",
-      "contributions": 249
-    },
-    {
-      "login": "dependabot[bot]",
-      "id": 49699333,
-      "node_id": "MDM6Qm90NDk2OTkzMzM=",
-      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-      "html_url": "https://github.com/apps/dependabot",
-      "contributions": 41
-    },
     {
       "login": "fffoivos",
       "id": 40921788,
       "node_id": "MDQ6VXNlcjQwOTIxNzg4",
       "avatar_url": "https://avatars.githubusercontent.com/u/40921788?v=4",
       "html_url": "https://github.com/fffoivos",
+      "contributions": 167
+    },
+    {
+      "login": "ninagial",
+      "id": 76437397,
+      "node_id": "MDQ6VXNlcjc2NDM3Mzk3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76437397?v=4",
+      "html_url": "https://github.com/ninagial",
+      "contributions": 32
+    },
+    {
+      "login": "roulikcat",
+      "id": 115097350,
+      "node_id": "U_kgDOBtw_Bg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/115097350?v=4",
+      "html_url": "https://github.com/roulikcat",
+      "contributions": 28
+    },
+    {
+      "login": "tgkarounos",
+      "id": 859980,
+      "node_id": "MDQ6VXNlcjg1OTk4MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/859980?v=4",
+      "html_url": "https://github.com/tgkarounos",
       "contributions": 24
+    },
+    {
+      "login": "joannamoura23",
+      "id": 125771266,
+      "node_id": "U_kgDOB38eAg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/125771266?v=4",
+      "html_url": "https://github.com/joannamoura23",
+      "contributions": 6
+    },
+    {
+      "login": "Mohsanaliac",
+      "id": 102421650,
+      "node_id": "U_kgDOBhrUkg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/102421650?v=4",
+      "html_url": "https://github.com/Mohsanaliac",
+      "contributions": 3
+    },
+    {
+      "login": "katzoi",
+      "id": 147196656,
+      "node_id": "U_kgDOCMYK8A",
+      "avatar_url": "https://avatars.githubusercontent.com/u/147196656?v=4",
+      "html_url": "https://github.com/katzoi",
+      "contributions": 2
+    },
+    {
+      "login": "KonstantinosPatt",
+      "id": 80281705,
+      "node_id": "MDQ6VXNlcjgwMjgxNzA1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/80281705?v=4",
+      "html_url": "https://github.com/KonstantinosPatt",
+      "contributions": 1
+    },
+    {
+      "login": "nikostsekos",
+      "id": 152228953,
+      "node_id": "U_kgDOCRLUWQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/152228953?v=4",
+      "html_url": "https://github.com/nikostsekos",
+      "contributions": 1
+    },
+    {
+      "login": "jimmmyss",
+      "id": 174013654,
+      "node_id": "U_kgDOCl881g",
+      "avatar_url": "https://avatars.githubusercontent.com/u/174013654?v=4",
+      "html_url": "https://github.com/jimmmyss",
+      "contributions": 24
+    },
+    {
+      "login": "myrsiniioannou",
+      "id": 6784557,
+      "node_id": "MDQ6VXNlcjY3ODQ1NTc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6784557?v=4",
+      "html_url": "https://github.com/myrsiniioannou",
+      "contributions": 1
+    },
+    {
+      "login": "YatesMold",
+      "id": 61589778,
+      "node_id": "MDQ6VXNlcjYxNTg5Nzc4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/61589778?v=4",
+      "html_url": "https://github.com/YatesMold",
+      "contributions": 9
     }
   ],
   "activeOrg": false

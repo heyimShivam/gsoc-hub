@@ -23,7 +23,8 @@
   "blog_url": "https://chaos.social/@nixos_org/",
   "facebook_url": null,
   "year": [
-    2024
+    2024,
+    2026
   ],
   "projects": {
     "2024": [
@@ -63,7 +64,8 @@
         "proposal_id": "DYIpCw6q",
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/fZjAmqMP"
       }
-    ]
+    ],
+    "2026": []
   },
   "githubID": "NixOS",
   "repositories": [
@@ -75,9 +77,9 @@
       "html_url": "https://github.com/NixOS/nixpkgs",
       "description": "Nix Packages collection & NixOS",
       "language": "Nix",
-      "stargazers_count": 20468,
-      "forks_count": 15709,
-      "open_issues_count": 17211,
+      "stargazers_count": 24079,
+      "forks_count": 18453,
+      "open_issues_count": 19652,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -94,128 +96,23 @@
       ]
     },
     {
-      "id": 51292491,
-      "node_id": "MDEwOlJlcG9zaXRvcnk1MTI5MjQ5MQ==",
-      "name": "nixos-hardware",
-      "full_name": "NixOS/nixos-hardware",
-      "html_url": "https://github.com/NixOS/nixos-hardware",
-      "description": "A collection of NixOS modules covering hardware quirks.",
-      "language": "Nix",
-      "stargazers_count": 2413,
-      "forks_count": 740,
-      "open_issues_count": 140,
+      "id": 2669041,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyNjY5MDQx",
+      "name": "hydra",
+      "full_name": "NixOS/hydra",
+      "html_url": "https://github.com/NixOS/hydra",
+      "description": "Hydra, the Nix-based continuous build system",
+      "language": "Perl",
+      "stargazers_count": 1443,
+      "forks_count": 339,
+      "open_issues_count": 388,
       "license": {
-        "key": "cc0-1.0",
-        "name": "Creative Commons Zero v1.0 Universal",
-        "spdx_id": "CC0-1.0",
-        "url": "https://api.github.com/licenses/cc0-1.0",
-        "node_id": "MDc6TGljZW5zZTY="
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
       },
-      "topics": []
-    },
-    {
-      "id": 772919507,
-      "node_id": "R_kgDOLhHQ0w",
-      "name": "nixpkgs-vet",
-      "full_name": "NixOS/nixpkgs-vet",
-      "html_url": "https://github.com/NixOS/nixpkgs-vet",
-      "description": "Tool to vet (check) Nixpkgs, including its pkgs/by-name directory",
-      "language": "Rust",
-      "stargazers_count": 40,
-      "forks_count": 9,
-      "open_issues_count": 26,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": [
-        "ci",
-        "nixpkgs"
-      ]
-    },
-    {
-      "id": 704670719,
-      "node_id": "R_kgDOKgBr_w",
-      "name": "nixpkgs-merge-bot",
-      "full_name": "NixOS/nixpkgs-merge-bot",
-      "html_url": "https://github.com/NixOS/nixpkgs-merge-bot",
-      "description": "Allows package maintainers to merge in nixpkgs",
-      "language": "Python",
-      "stargazers_count": 72,
-      "forks_count": 7,
-      "open_issues_count": 10,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": [
-        "build-with-buildbot"
-      ]
-    },
-    {
-      "id": 761682828,
-      "node_id": "R_kgDOLWZbjA",
-      "name": "marketing",
-      "full_name": "NixOS/marketing",
-      "html_url": "https://github.com/NixOS/marketing",
-      "description": "home of the marketing team #marketing:nixos.org",
-      "language": "TeX",
-      "stargazers_count": 12,
-      "forks_count": 3,
-      "open_issues_count": 0,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 3386088,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzMzg2MDg4",
-      "name": "nix",
-      "full_name": "NixOS/nix",
-      "html_url": "https://github.com/NixOS/nix",
-      "description": "Nix, the purely functional package manager",
-      "language": "C++",
-      "stargazers_count": 14303,
-      "forks_count": 1641,
-      "open_issues_count": 3634,
-      "license": {
-        "key": "lgpl-2.1",
-        "name": "GNU Lesser General Public License v2.1",
-        "spdx_id": "LGPL-2.1",
-        "url": "https://api.github.com/licenses/lgpl-2.1",
-        "node_id": "MDc6TGljZW5zZTEx"
-      },
-      "topics": [
-        "c-plus-plus",
-        "declarative-language",
-        "functional-programming",
-        "nix",
-        "package-manager"
-      ]
-    },
-    {
-      "id": 620203053,
-      "node_id": "R_kgDOJPeMLQ",
-      "name": "reproducible.nixos.org",
-      "full_name": "NixOS/reproducible.nixos.org",
-      "html_url": "https://github.com/NixOS/reproducible.nixos.org",
-      "description": null,
-      "language": "HTML",
-      "stargazers_count": 19,
-      "forks_count": 5,
-      "open_issues_count": 1,
-      "license": null,
       "topics": []
     },
     {
@@ -233,6 +130,105 @@
       "topics": []
     },
     {
+      "id": 1015608754,
+      "node_id": "R_kgDOPIj1sg",
+      "name": "nixpkgs-committers",
+      "full_name": "NixOS/nixpkgs-committers",
+      "html_url": "https://github.com/NixOS/nixpkgs-committers",
+      "description": "Tracking of changes to Nixpkgs committers",
+      "language": "Shell",
+      "stargazers_count": 13,
+      "forks_count": 15,
+      "open_issues_count": 7,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 14396900,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNDM5NjkwMA==",
+      "name": "nixos-homepage",
+      "full_name": "NixOS/nixos-homepage",
+      "html_url": "https://github.com/NixOS/nixos-homepage",
+      "description": "Sources for nixos.org",
+      "language": "Astro",
+      "stargazers_count": 366,
+      "forks_count": 359,
+      "open_issues_count": 81,
+      "license": null,
+      "topics": [
+        "nix",
+        "nixos"
+      ]
+    },
+    {
+      "id": 51292491,
+      "node_id": "MDEwOlJlcG9zaXRvcnk1MTI5MjQ5MQ==",
+      "name": "nixos-hardware",
+      "full_name": "NixOS/nixos-hardware",
+      "html_url": "https://github.com/NixOS/nixos-hardware",
+      "description": "A collection of NixOS modules covering hardware quirks.",
+      "language": "Nix",
+      "stargazers_count": 2999,
+      "forks_count": 903,
+      "open_issues_count": 265,
+      "license": {
+        "key": "cc0-1.0",
+        "name": "Creative Commons Zero v1.0 Universal",
+        "spdx_id": "CC0-1.0",
+        "url": "https://api.github.com/licenses/cc0-1.0",
+        "node_id": "MDc6TGljZW5zZTY="
+      },
+      "topics": []
+    },
+    {
+      "id": 10405571,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMDQwNTU3MQ==",
+      "name": "infra",
+      "full_name": "NixOS/infra",
+      "html_url": "https://github.com/NixOS/infra",
+      "description": "NixOS configurations for nixos.org and its servers [maintainers=@mweinelt, @Mic92, @arianvp, @vcunat, @jfly]",
+      "language": "Nix",
+      "stargazers_count": 343,
+      "forks_count": 132,
+      "open_issues_count": 92,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 639101935,
+      "node_id": "R_kgDOJhfr7w",
+      "name": "nixos-wiki-infra",
+      "full_name": "NixOS/nixos-wiki-infra",
+      "html_url": "https://github.com/NixOS/nixos-wiki-infra",
+      "description": "This project contains the setup of https://wiki.nixos.org",
+      "language": "Nix",
+      "stargazers_count": 77,
+      "forks_count": 14,
+      "open_issues_count": 16,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": [
+        "build-with-buildbot"
+      ]
+    },
+    {
       "id": 250712577,
       "node_id": "MDEwOlJlcG9zaXRvcnkyNTA3MTI1Nzc=",
       "name": "nixos-search",
@@ -240,9 +236,9 @@
       "html_url": "https://github.com/NixOS/nixos-search",
       "description": "Search NixOS packages and options",
       "language": "Elm",
-      "stargazers_count": 446,
-      "forks_count": 128,
-      "open_issues_count": 123,
+      "stargazers_count": 534,
+      "forks_count": 150,
+      "open_issues_count": 157,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -257,47 +253,62 @@
       ]
     },
     {
-      "id": 925030004,
-      "node_id": "R_kgDONyLWdA",
-      "name": "branding",
-      "full_name": "NixOS/branding",
-      "html_url": "https://github.com/NixOS/branding",
-      "description": "The home of the NixOS branding guide and media kit.",
-      "language": "Nix",
-      "stargazers_count": 8,
-      "forks_count": 1,
-      "open_issues_count": 1,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 14396900,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNDM5NjkwMA==",
-      "name": "nixos-homepage",
-      "full_name": "NixOS/nixos-homepage",
-      "html_url": "https://github.com/NixOS/nixos-homepage",
-      "description": "Sources for nixos.org",
-      "language": "Astro",
-      "stargazers_count": 345,
-      "forks_count": 341,
-      "open_issues_count": 86,
-      "license": null,
+      "id": 3386088,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzMzg2MDg4",
+      "name": "nix",
+      "full_name": "NixOS/nix",
+      "html_url": "https://github.com/NixOS/nix",
+      "description": "Nix, the purely functional package manager",
+      "language": "C++",
+      "stargazers_count": 16446,
+      "forks_count": 1877,
+      "open_issues_count": 3964,
+      "license": {
+        "key": "lgpl-2.1",
+        "name": "GNU Lesser General Public License v2.1",
+        "spdx_id": "LGPL-2.1",
+        "url": "https://api.github.com/licenses/lgpl-2.1",
+        "node_id": "MDc6TGljZW5zZTEx"
+      },
       "topics": [
+        "c-plus-plus",
+        "declarative-language",
+        "functional-programming",
         "nix",
-        "nixos"
+        "package-manager"
       ]
     },
     {
-      "id": 639101935,
-      "node_id": "R_kgDOJhfr7w",
-      "name": "nixos-wiki-infra",
-      "full_name": "NixOS/nixos-wiki-infra",
-      "html_url": "https://github.com/NixOS/nixos-wiki-infra",
-      "description": "This project contains the setup of https://wiki.nixos.org",
-      "language": "Nix",
-      "stargazers_count": 67,
-      "forks_count": 5,
-      "open_issues_count": 12,
+      "id": 639002175,
+      "node_id": "R_kgDOJhZmPw",
+      "name": "nix-installer",
+      "full_name": "NixOS/nix-installer",
+      "html_url": "https://github.com/NixOS/nix-installer",
+      "description": "A fork of the Determinate Nix Installer.",
+      "language": "Rust",
+      "stargazers_count": 206,
+      "forks_count": 13,
+      "open_issues_count": 29,
+      "license": {
+        "key": "lgpl-2.1",
+        "name": "GNU Lesser General Public License v2.1",
+        "spdx_id": "LGPL-2.1",
+        "url": "https://api.github.com/licenses/lgpl-2.1",
+        "node_id": "MDc6TGljZW5zZTEx"
+      },
+      "topics": []
+    },
+    {
+      "id": 772919507,
+      "node_id": "R_kgDOLhHQ0w",
+      "name": "nixpkgs-vet",
+      "full_name": "NixOS/nixpkgs-vet",
+      "html_url": "https://github.com/NixOS/nixpkgs-vet",
+      "description": "Tool to vet (check) Nixpkgs, including its pkgs/by-name directory",
+      "language": "Rust",
+      "stargazers_count": 66,
+      "forks_count": 16,
+      "open_issues_count": 36,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -306,74 +317,21 @@
         "node_id": "MDc6TGljZW5zZTEz"
       },
       "topics": [
-        "build-with-buildbot"
+        "ci",
+        "nixpkgs"
       ]
     },
     {
-      "id": 10405571,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMDQwNTU3MQ==",
-      "name": "infra",
-      "full_name": "NixOS/infra",
-      "html_url": "https://github.com/NixOS/infra",
-      "description": "NixOS configurations for nixos.org and its servers",
-      "language": "Nix",
-      "stargazers_count": 295,
-      "forks_count": 114,
-      "open_issues_count": 65,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 422648615,
-      "node_id": "R_kgDOGTEbJw",
-      "name": "moderation",
-      "full_name": "NixOS/moderation",
-      "html_url": "https://github.com/NixOS/moderation",
-      "description": "The home of the moderation team",
-      "language": null,
-      "stargazers_count": 25,
-      "forks_count": 6,
-      "open_issues_count": 4,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 462812660,
-      "node_id": "R_kgDOG5X19A",
-      "name": "nixos-metrics",
-      "full_name": "NixOS/nixos-metrics",
-      "html_url": "https://github.com/NixOS/nixos-metrics",
+      "id": 1095254519,
+      "node_id": "R_kgDOQUhB9w",
+      "name": "steering-committee",
+      "full_name": "NixOS/steering-committee",
+      "html_url": "https://github.com/NixOS/steering-committee",
       "description": null,
-      "language": "Rust",
-      "stargazers_count": 12,
+      "language": "Shell",
+      "stargazers_count": 16,
       "forks_count": 3,
-      "open_issues_count": 4,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 30425546,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzMDQyNTU0Ng==",
-      "name": "nixos-channel-scripts",
-      "full_name": "NixOS/nixos-channel-scripts",
-      "html_url": "https://github.com/NixOS/nixos-channel-scripts",
-      "description": "Tools to create channels from hydra jobsets",
-      "language": "Perl",
-      "stargazers_count": 34,
-      "forks_count": 31,
-      "open_issues_count": 15,
+      "open_issues_count": 1,
       "license": null,
       "topics": []
     },
@@ -385,9 +343,9 @@
       "html_url": "https://github.com/NixOS/amis",
       "description": "Home for NixOS AMI automation",
       "language": "Python",
-      "stargazers_count": 60,
-      "forks_count": 12,
-      "open_issues_count": 15,
+      "stargazers_count": 76,
+      "forks_count": 17,
+      "open_issues_count": 25,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -398,102 +356,28 @@
       "topics": []
     },
     {
-      "id": 300526139,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzMDA1MjYxMzk=",
-      "name": "release-wiki",
-      "full_name": "NixOS/release-wiki",
-      "html_url": "https://github.com/NixOS/release-wiki",
-      "description": null,
-      "language": null,
-      "stargazers_count": 24,
-      "forks_count": 23,
-      "open_issues_count": 9,
-      "license": {
-        "key": "cc0-1.0",
-        "name": "Creative Commons Zero v1.0 Universal",
-        "spdx_id": "CC0-1.0",
-        "url": "https://api.github.com/licenses/cc0-1.0",
-        "node_id": "MDc6TGljZW5zZTY="
-      },
-      "topics": []
-    },
-    {
-      "id": 778619815,
-      "node_id": "R_kgDOLmjLpw",
-      "name": "org",
-      "full_name": "NixOS/org",
-      "html_url": "https://github.com/NixOS/org",
-      "description": "Organisational documentation",
-      "language": "Shell",
-      "stargazers_count": 17,
-      "forks_count": 11,
-      "open_issues_count": 23,
+      "id": 685629450,
+      "node_id": "R_kgDOKN3gCg",
+      "name": "nix-security-tracker",
+      "full_name": "NixOS/nix-security-tracker",
+      "html_url": "https://github.com/NixOS/nix-security-tracker",
+      "description": "Web service for managing information on vulnerabilities in software distributed through Nixpkgs",
+      "language": "Python",
+      "stargazers_count": 80,
+      "forks_count": 31,
+      "open_issues_count": 137,
       "license": {
         "key": "mit",
         "name": "MIT License",
         "spdx_id": "MIT",
         "url": "https://api.github.com/licenses/mit",
         "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 2669041,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNjY5MDQx",
-      "name": "hydra",
-      "full_name": "NixOS/hydra",
-      "html_url": "https://github.com/NixOS/hydra",
-      "description": "Hydra, the Nix-based continuous build system",
-      "language": "Perl",
-      "stargazers_count": 1277,
-      "forks_count": 316,
-      "open_issues_count": 391,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": []
-    },
-    {
-      "id": 143292270,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNDMyOTIyNzA=",
-      "name": "nixfmt",
-      "full_name": "NixOS/nixfmt",
-      "html_url": "https://github.com/NixOS/nixfmt",
-      "description": "The official (but not yet stable) formatter for Nix code",
-      "language": "Haskell",
-      "stargazers_count": 1142,
-      "forks_count": 56,
-      "open_issues_count": 30,
-      "license": {
-        "key": "mpl-2.0",
-        "name": "Mozilla Public License 2.0",
-        "spdx_id": "MPL-2.0",
-        "url": "https://api.github.com/licenses/mpl-2.0",
-        "node_id": "MDc6TGljZW5zZTE0"
       },
       "topics": [
-        "formatter",
-        "haskell",
-        "nix"
+        "nixpkgs",
+        "security",
+        "vulnerabilities"
       ]
-    },
-    {
-      "id": 707271324,
-      "node_id": "R_kgDOKiganA",
-      "name": "flake-regressions",
-      "full_name": "NixOS/flake-regressions",
-      "html_url": "https://github.com/NixOS/flake-regressions",
-      "description": "Nix flake evaluation regression testing",
-      "language": "Nix",
-      "stargazers_count": 5,
-      "forks_count": 1,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
     },
     {
       "id": 715592275,
@@ -504,77 +388,10 @@
       "description": "Regression testing output for FlakeHub flakes",
       "language": "Nix",
       "stargazers_count": 0,
-      "forks_count": 0,
+      "forks_count": 1,
       "open_issues_count": 0,
       "license": null,
       "topics": []
-    },
-    {
-      "id": 67685297,
-      "node_id": "MDEwOlJlcG9zaXRvcnk2NzY4NTI5Nw==",
-      "name": "nix-idea",
-      "full_name": "NixOS/nix-idea",
-      "html_url": "https://github.com/NixOS/nix-idea",
-      "description": "Nix plugin for the IntelliJ IDEA IDE",
-      "language": "Java",
-      "stargazers_count": 191,
-      "forks_count": 30,
-      "open_issues_count": 14,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 81662501,
-      "node_id": "MDEwOlJlcG9zaXRvcnk4MTY2MjUwMQ==",
-      "name": "rfcs",
-      "full_name": "NixOS/rfcs",
-      "html_url": "https://github.com/NixOS/rfcs",
-      "description": "The Nix community RFCs",
-      "language": "Markdown",
-      "stargazers_count": 579,
-      "forks_count": 162,
-      "open_issues_count": 20,
-      "license": {
-        "key": "cc-by-sa-4.0",
-        "name": "Creative Commons Attribution Share Alike 4.0 International",
-        "spdx_id": "CC-BY-SA-4.0",
-        "url": "https://api.github.com/licenses/cc-by-sa-4.0",
-        "node_id": "MDc6TGljZW5zZTI2"
-      },
-      "topics": []
-    },
-    {
-      "id": 2161031,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMTYxMDMx",
-      "name": "cabal2nix",
-      "full_name": "NixOS/cabal2nix",
-      "html_url": "https://github.com/NixOS/cabal2nix",
-      "description": "Generate Nix build instructions from a Cabal file",
-      "language": "Haskell",
-      "stargazers_count": 369,
-      "forks_count": 155,
-      "open_issues_count": 88,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": [
-        "cabal",
-        "cabal2nix",
-        "hackage",
-        "haskell",
-        "nix",
-        "nixpkgs"
-      ]
     },
     {
       "id": 58043886,
@@ -583,10 +400,10 @@
       "full_name": "NixOS/nix.dev",
       "html_url": "https://github.com/NixOS/nix.dev",
       "description": "Official documentation for getting things done with Nix.",
-      "language": "Python",
-      "stargazers_count": 3062,
-      "forks_count": 279,
-      "open_issues_count": 128,
+      "language": "Nix",
+      "stargazers_count": 3694,
+      "forks_count": 319,
+      "open_issues_count": 150,
       "license": {
         "key": "cc-by-sa-4.0",
         "name": "Creative Commons Attribution Share Alike 4.0 International",
@@ -605,44 +422,197 @@
       ]
     },
     {
-      "id": 439705967,
-      "node_id": "R_kgDOGjVhbw",
-      "name": "calamares-nixos-extensions",
-      "full_name": "NixOS/calamares-nixos-extensions",
-      "html_url": "https://github.com/NixOS/calamares-nixos-extensions",
-      "description": "NixOS calamares [maintainer=@vlinkz]",
-      "language": "Python",
-      "stargazers_count": 34,
-      "forks_count": 31,
-      "open_issues_count": 16,
-      "license": null,
+      "id": 2161031,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMTYxMDMx",
+      "name": "cabal2nix",
+      "full_name": "NixOS/cabal2nix",
+      "html_url": "https://github.com/NixOS/cabal2nix",
+      "description": "Generate Nix build instructions from a Cabal file",
+      "language": "Haskell",
+      "stargazers_count": 398,
+      "forks_count": 158,
+      "open_issues_count": 95,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": [
+        "cabal",
+        "cabal2nix",
+        "hackage",
+        "haskell",
+        "nix",
+        "nixpkgs"
+      ]
+    },
+    {
+      "id": 347841046,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzNDc4NDEwNDY=",
+      "name": "nix-eval-jobs",
+      "full_name": "NixOS/nix-eval-jobs",
+      "html_url": "https://github.com/NixOS/nix-eval-jobs",
+      "description": "Parallel nix evaluator with a streamable json output [maintainers @Mic92, @adisbladis]",
+      "language": "C++",
+      "stargazers_count": 233,
+      "forks_count": 47,
+      "open_issues_count": 18,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "topics": [
+        "build-with-buildbot"
+      ]
+    },
+    {
+      "id": 751249089,
+      "node_id": "R_kgDOLMcmwQ",
+      "name": "GSoC",
+      "full_name": "NixOS/GSoC",
+      "html_url": "https://github.com/NixOS/GSoC",
+      "description": null,
+      "language": null,
+      "stargazers_count": 38,
+      "forks_count": 23,
+      "open_issues_count": 7,
+      "license": {
+        "key": "cc0-1.0",
+        "name": "Creative Commons Zero v1.0 Universal",
+        "spdx_id": "CC0-1.0",
+        "url": "https://api.github.com/licenses/cc0-1.0",
+        "node_id": "MDc6TGljZW5zZTY="
+      },
       "topics": []
     },
     {
-      "id": 25682132,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNTY4MjEzMg==",
-      "name": "nixos-artwork",
-      "full_name": "NixOS/nixos-artwork",
-      "html_url": "https://github.com/NixOS/nixos-artwork",
-      "description": "Nix related artwork",
-      "language": "OpenSCAD",
-      "stargazers_count": 411,
-      "forks_count": 87,
-      "open_issues_count": 27,
-      "license": null,
+      "id": 450257796,
+      "node_id": "R_kgDOGtZjhA",
+      "name": "bundlers",
+      "full_name": "NixOS/bundlers",
+      "html_url": "https://github.com/NixOS/bundlers",
+      "description": "Aggregated bundlers [maintainer=@tomberek, @Artturin] ",
+      "language": "Nix",
+      "stargazers_count": 144,
+      "forks_count": 19,
+      "open_issues_count": 11,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
       "topics": []
     },
     {
-      "id": 639002175,
-      "node_id": "R_kgDOJhZmPw",
-      "name": "experimental-nix-installer",
-      "full_name": "NixOS/experimental-nix-installer",
-      "html_url": "https://github.com/NixOS/experimental-nix-installer",
-      "description": "An experimental fork of the Determinate Nix Installer to explore upstreaming.",
+      "id": 108771239,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMDg3NzEyMzk=",
+      "name": "ofborg",
+      "full_name": "NixOS/ofborg",
+      "html_url": "https://github.com/NixOS/ofborg",
+      "description": "@ofborg tooling automation https://monitoring.ofborg.org/dashboard/db/ofborg",
       "language": "Rust",
-      "stargazers_count": 43,
-      "forks_count": 3,
+      "stargazers_count": 307,
+      "forks_count": 165,
+      "open_issues_count": 101,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 143292270,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNDMyOTIyNzA=",
+      "name": "nixfmt",
+      "full_name": "NixOS/nixfmt",
+      "html_url": "https://github.com/NixOS/nixfmt",
+      "description": "The official formatter for Nix code",
+      "language": "Haskell",
+      "stargazers_count": 1464,
+      "forks_count": 67,
+      "open_issues_count": 30,
+      "license": {
+        "key": "mpl-2.0",
+        "name": "Mozilla Public License 2.0",
+        "spdx_id": "MPL-2.0",
+        "url": "https://api.github.com/licenses/mpl-2.0",
+        "node_id": "MDc6TGljZW5zZTE0"
+      },
+      "topics": [
+        "formatter",
+        "haskell",
+        "nix"
+      ]
+    },
+    {
+      "id": 30425546,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzMDQyNTU0Ng==",
+      "name": "nixos-channel-scripts",
+      "full_name": "NixOS/nixos-channel-scripts",
+      "html_url": "https://github.com/NixOS/nixos-channel-scripts",
+      "description": "Tools to create channels from hydra jobsets",
+      "language": "Perl",
+      "stargazers_count": 38,
+      "forks_count": 29,
       "open_issues_count": 12,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 707271324,
+      "node_id": "R_kgDOKiganA",
+      "name": "flake-regressions",
+      "full_name": "NixOS/flake-regressions",
+      "html_url": "https://github.com/NixOS/flake-regressions",
+      "description": "Nix flake evaluation regression testing",
+      "language": "Nix",
+      "stargazers_count": 5,
+      "forks_count": 2,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 761682828,
+      "node_id": "R_kgDOLWZbjA",
+      "name": "marketing",
+      "full_name": "NixOS/marketing",
+      "html_url": "https://github.com/NixOS/marketing",
+      "description": "home of the marketing team #marketing:nixos.org",
+      "language": "TeX",
+      "stargazers_count": 15,
+      "forks_count": 3,
+      "open_issues_count": 0,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 1140751168,
+      "node_id": "R_kgDOQ_57QA",
+      "name": "nix-installer-action",
+      "full_name": "NixOS/nix-installer-action",
+      "html_url": "https://github.com/NixOS/nix-installer-action",
+      "description": null,
+      "language": "Nix",
+      "stargazers_count": 16,
+      "forks_count": 2,
+      "open_issues_count": 2,
       "license": {
         "key": "lgpl-2.1",
         "name": "GNU Lesser General Public License v2.1",
@@ -651,416 +621,86 @@
         "node_id": "MDc6TGljZW5zZTEx"
       },
       "topics": []
+    },
+    {
+      "id": 778619815,
+      "node_id": "R_kgDOLmjLpw",
+      "name": "org",
+      "full_name": "NixOS/org",
+      "html_url": "https://github.com/NixOS/org",
+      "description": "Organisational documentation",
+      "language": "Shell",
+      "stargazers_count": 34,
+      "forks_count": 28,
+      "open_issues_count": 31,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 462812660,
+      "node_id": "R_kgDOG5X19A",
+      "name": "nixos-metrics",
+      "full_name": "NixOS/nixos-metrics",
+      "html_url": "https://github.com/NixOS/nixos-metrics",
+      "description": null,
+      "language": "Rust",
+      "stargazers_count": 12,
+      "forks_count": 1,
+      "open_issues_count": 4,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 1008229949,
+      "node_id": "R_kgDOPBhePQ",
+      "name": "surveys",
+      "full_name": "NixOS/surveys",
+      "html_url": "https://github.com/NixOS/surveys",
+      "description": null,
+      "language": null,
+      "stargazers_count": 3,
+      "forks_count": 10,
+      "open_issues_count": 1,
+      "license": null,
+      "topics": []
     }
   ],
   "contributorsDetails": [
-    {
-      "login": "r-ryantm",
-      "id": 37933096,
-      "node_id": "MDQ6VXNlcjM3OTMzMDk2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/37933096?v=4",
-      "html_url": "https://github.com/r-ryantm",
-      "contributions": 85123
-    },
-    {
-      "login": "fabaff",
-      "id": 116184,
-      "node_id": "MDQ6VXNlcjExNjE4NA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/116184?v=4",
-      "html_url": "https://github.com/fabaff",
-      "contributions": 46157
-    },
-    {
-      "login": "SuperSandro2000",
-      "id": 7258858,
-      "node_id": "MDQ6VXNlcjcyNTg4NTg=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/7258858?v=4",
-      "html_url": "https://github.com/SuperSandro2000",
-      "contributions": 17
-    },
-    {
-      "login": "NickCao",
-      "id": 15247171,
-      "node_id": "MDQ6VXNlcjE1MjQ3MTcx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/15247171?v=4",
-      "html_url": "https://github.com/NickCao",
-      "contributions": 26
-    },
-    {
-      "login": "mweinelt",
-      "id": 131599,
-      "node_id": "MDQ6VXNlcjEzMTU5OQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/131599?v=4",
-      "html_url": "https://github.com/mweinelt",
-      "contributions": 22949
-    },
-    {
-      "login": "wegank",
-      "id": 9713184,
-      "node_id": "MDQ6VXNlcjk3MTMxODQ=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/9713184?v=4",
-      "html_url": "https://github.com/wegank",
-      "contributions": 19776
-    },
-    {
-      "login": "marsam",
-      "id": 65531,
-      "node_id": "MDQ6VXNlcjY1NTMx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/65531?v=4",
-      "html_url": "https://github.com/marsam",
-      "contributions": 17996
-    },
-    {
-      "login": "peti",
-      "id": 28323,
-      "node_id": "MDQ6VXNlcjI4MzIz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/28323?v=4",
-      "html_url": "https://github.com/peti",
-      "contributions": 17169
-    },
-    {
-      "login": "github-actions[bot]",
-      "id": 41898282,
-      "node_id": "MDM6Qm90NDE4OTgyODI=",
-      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
-      "html_url": "https://github.com/apps/github-actions",
-      "contributions": 13385
-    },
     {
       "login": "edolstra",
       "id": 1148549,
       "node_id": "MDQ6VXNlcjExNDg1NDk=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1148549?v=4",
       "html_url": "https://github.com/edolstra",
-      "contributions": 12409
+      "contributions": 2044
     },
     {
-      "login": "FRidh",
-      "id": 2129135,
-      "node_id": "MDQ6VXNlcjIxMjkxMzU=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/2129135?v=4",
-      "html_url": "https://github.com/FRidh",
-      "contributions": 11848
+      "login": "grahamc",
+      "id": 76716,
+      "node_id": "MDQ6VXNlcjc2NzE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76716?v=4",
+      "html_url": "https://github.com/grahamc",
+      "contributions": 5
     },
     {
-      "login": "Mic92",
-      "id": 96200,
-      "node_id": "MDQ6VXNlcjk2MjAw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/96200?v=4",
-      "html_url": "https://github.com/Mic92",
-      "contributions": 494
-    },
-    {
-      "login": "vcunat",
-      "id": 1785925,
-      "node_id": "MDQ6VXNlcjE3ODU5MjU=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1785925?v=4",
-      "html_url": "https://github.com/vcunat",
-      "contributions": 8399
-    },
-    {
-      "login": "dotlambda",
-      "id": 6806011,
-      "node_id": "MDQ6VXNlcjY4MDYwMTE=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/6806011?v=4",
-      "html_url": "https://github.com/dotlambda",
-      "contributions": 7522
-    },
-    {
-      "login": "jtojnar",
-      "id": 705123,
-      "node_id": "MDQ6VXNlcjcwNTEyMw==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/705123?v=4",
-      "html_url": "https://github.com/jtojnar",
-      "contributions": 7159
-    },
-    {
-      "login": "7c6f434c",
-      "id": 1891350,
-      "node_id": "MDQ6VXNlcjE4OTEzNTA=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1891350?v=4",
-      "html_url": "https://github.com/7c6f434c",
-      "contributions": 6700
-    },
-    {
-      "login": "figsoda",
-      "id": 40620903,
-      "node_id": "MDQ6VXNlcjQwNjIwOTAz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/40620903?v=4",
-      "html_url": "https://github.com/figsoda",
-      "contributions": 6637
-    },
-    {
-      "login": "bobby285271",
-      "id": 20080233,
-      "node_id": "MDQ6VXNlcjIwMDgwMjMz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/20080233?v=4",
-      "html_url": "https://github.com/bobby285271",
-      "contributions": 6541
-    },
-    {
-      "login": "Ma27",
-      "id": 6025220,
-      "node_id": "MDQ6VXNlcjYwMjUyMjA=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/6025220?v=4",
-      "html_url": "https://github.com/Ma27",
-      "contributions": 13
-    },
-    {
-      "login": "drupol",
-      "id": 252042,
-      "node_id": "MDQ6VXNlcjI1MjA0Mg==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/252042?v=4",
-      "html_url": "https://github.com/drupol",
-      "contributions": 6113
-    },
-    {
-      "login": "GaetanLepage",
-      "id": 33058747,
-      "node_id": "MDQ6VXNlcjMzMDU4NzQ3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/33058747?v=4",
-      "html_url": "https://github.com/GaetanLepage",
-      "contributions": 5365
-    },
-    {
-      "login": "K900",
-      "id": 386765,
-      "node_id": "MDQ6VXNlcjM4Njc2NQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/386765?v=4",
-      "html_url": "https://github.com/K900",
-      "contributions": 5124
-    },
-    {
-      "login": "natsukium",
-      "id": 25083790,
-      "node_id": "MDQ6VXNlcjI1MDgzNzkw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/25083790?v=4",
-      "html_url": "https://github.com/natsukium",
-      "contributions": 4657
-    },
-    {
-      "login": "fpletz",
-      "id": 114159,
-      "node_id": "MDQ6VXNlcjExNDE1OQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/114159?v=4",
-      "html_url": "https://github.com/fpletz",
-      "contributions": 4580
-    },
-    {
-      "login": "AndersonTorres",
-      "id": 5954806,
-      "node_id": "MDQ6VXNlcjU5NTQ4MDY=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/5954806?v=4",
-      "html_url": "https://github.com/AndersonTorres",
-      "contributions": 4577
-    },
-    {
-      "login": "pbsds",
-      "id": 140964,
-      "node_id": "MDQ6VXNlcjE0MDk2NA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/140964?v=4",
-      "html_url": "https://github.com/pbsds",
-      "contributions": 4408
-    },
-    {
-      "login": "Artturin",
-      "id": 56650223,
-      "node_id": "MDQ6VXNlcjU2NjUwMjIz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/56650223?v=4",
-      "html_url": "https://github.com/Artturin",
-      "contributions": 4355
-    },
-    {
-      "login": "ryantm",
-      "id": 4804,
-      "node_id": "MDQ6VXNlcjQ4MDQ=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/4804?v=4",
-      "html_url": "https://github.com/ryantm",
-      "contributions": 4059
-    },
-    {
-      "login": "romildo",
-      "id": 1217934,
-      "node_id": "MDQ6VXNlcjEyMTc5MzQ=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1217934?v=4",
-      "html_url": "https://github.com/romildo",
-      "contributions": 3796
-    },
-    {
-      "login": "NeQuissimus",
-      "id": 628342,
-      "node_id": "MDQ6VXNlcjYyODM0Mg==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/628342?v=4",
-      "html_url": "https://github.com/NeQuissimus",
-      "contributions": 3732
-    },
-    {
-      "login": "mexisme",
-      "id": 329349,
-      "node_id": "MDQ6VXNlcjMyOTM0OQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/329349?v=4",
-      "html_url": "https://github.com/mexisme",
-      "contributions": 161
-    },
-    {
-      "login": "lukateras",
-      "id": 1643293,
-      "node_id": "MDQ6VXNlcjE2NDMyOTM=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1643293?v=4",
-      "html_url": "https://github.com/lukateras",
-      "contributions": 111
-    },
-    {
-      "login": "bors[bot]",
-      "id": 26634292,
-      "node_id": "MDM6Qm90MjY2MzQyOTI=",
-      "avatar_url": "https://avatars.githubusercontent.com/in/1847?v=4",
-      "html_url": "https://github.com/apps/bors",
-      "contributions": 98
-    },
-    {
-      "login": "Lyndeno",
-      "id": 13490857,
-      "node_id": "MDQ6VXNlcjEzNDkwODU3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/13490857?v=4",
-      "html_url": "https://github.com/Lyndeno",
-      "contributions": 53
-    },
-    {
-      "login": "stigtsp",
-      "id": 75371,
-      "node_id": "MDQ6VXNlcjc1Mzcx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/75371?v=4",
-      "html_url": "https://github.com/stigtsp",
-      "contributions": 27
-    },
-    {
-      "login": "soopyc",
-      "id": 13762043,
-      "node_id": "MDQ6VXNlcjEzNzYyMDQz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/13762043?v=4",
-      "html_url": "https://github.com/soopyc",
-      "contributions": 26
-    },
-    {
-      "login": "LostAttractor",
-      "id": 46527539,
-      "node_id": "MDQ6VXNlcjQ2NTI3NTM5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/46527539?v=4",
-      "html_url": "https://github.com/LostAttractor",
-      "contributions": 21
-    },
-    {
-      "login": "dependabot[bot]",
-      "id": 49699333,
-      "node_id": "MDM6Qm90NDk2OTkzMzM=",
-      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-      "html_url": "https://github.com/apps/dependabot",
-      "contributions": 21
-    },
-    {
-      "login": "8bitbuddhist",
-      "id": 10094408,
-      "node_id": "MDQ6VXNlcjEwMDk0NDA4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/10094408?v=4",
-      "html_url": "https://github.com/8bitbuddhist",
-      "contributions": 20
-    },
-    {
-      "login": "mcdonc",
-      "id": 125174,
-      "node_id": "MDQ6VXNlcjEyNTE3NA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/125174?v=4",
-      "html_url": "https://github.com/mcdonc",
-      "contributions": 19
-    },
-    {
-      "login": "azazel75",
-      "id": 834719,
-      "node_id": "MDQ6VXNlcjgzNDcxOQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/834719?v=4",
-      "html_url": "https://github.com/azazel75",
-      "contributions": 18
-    },
-    {
-      "login": "ehmry",
-      "id": 537775,
-      "node_id": "MDQ6VXNlcjUzNzc3NQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/537775?v=4",
-      "html_url": "https://github.com/ehmry",
-      "contributions": 18
-    },
-    {
-      "login": "mitchmindtree",
-      "id": 4587373,
-      "node_id": "MDQ6VXNlcjQ1ODczNzM=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/4587373?v=4",
-      "html_url": "https://github.com/mitchmindtree",
-      "contributions": 17
-    },
-    {
-      "login": "rehno-lindeque",
-      "id": 337811,
-      "node_id": "MDQ6VXNlcjMzNzgxMQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/337811?v=4",
-      "html_url": "https://github.com/rehno-lindeque",
-      "contributions": 14
-    },
-    {
-      "login": "leifhelm",
-      "id": 31693262,
-      "node_id": "MDQ6VXNlcjMxNjkzMjYy",
-      "avatar_url": "https://avatars.githubusercontent.com/u/31693262?v=4",
-      "html_url": "https://github.com/leifhelm",
-      "contributions": 14
-    },
-    {
-      "login": "gngram",
-      "id": 131853076,
-      "node_id": "U_kgDOB9vrFA",
-      "avatar_url": "https://avatars.githubusercontent.com/u/131853076?v=4",
-      "html_url": "https://github.com/gngram",
-      "contributions": 14
-    },
-    {
-      "login": "matthiasdotsh",
-      "id": 142118899,
-      "node_id": "U_kgDOCHiP8w",
-      "avatar_url": "https://avatars.githubusercontent.com/u/142118899?v=4",
-      "html_url": "https://github.com/matthiasdotsh",
-      "contributions": 13
-    },
-    {
-      "login": "domenkozar",
-      "id": 126339,
-      "node_id": "MDQ6VXNlcjEyNjMzOQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/126339?v=4",
-      "html_url": "https://github.com/domenkozar",
-      "contributions": 13
-    },
-    {
-      "login": "999eagle",
-      "id": 1221984,
-      "node_id": "MDQ6VXNlcjEyMjE5ODQ=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1221984?v=4",
-      "html_url": "https://github.com/999eagle",
-      "contributions": 13
-    },
-    {
-      "login": "kjhoerr",
-      "id": 13242722,
-      "node_id": "MDQ6VXNlcjEzMjQyNzIy",
-      "avatar_url": "https://avatars.githubusercontent.com/u/13242722?v=4",
-      "html_url": "https://github.com/kjhoerr",
-      "contributions": 12
-    },
-    {
-      "login": "trueNAHO",
-      "id": 90870942,
-      "node_id": "MDQ6VXNlcjkwODcwOTQy",
-      "avatar_url": "https://avatars.githubusercontent.com/u/90870942?v=4",
-      "html_url": "https://github.com/trueNAHO",
-      "contributions": 12
+      "login": "rbvermaa",
+      "id": 353885,
+      "node_id": "MDQ6VXNlcjM1Mzg4NQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/353885?v=4",
+      "html_url": "https://github.com/rbvermaa",
+      "contributions": 458
     },
     {
       "login": "Ericson2314",
@@ -1068,39 +708,223 @@
       "node_id": "MDQ6VXNlcjEwNTUyNDU=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1055245?v=4",
       "html_url": "https://github.com/Ericson2314",
+      "contributions": 272
+    },
+    {
+      "login": "shlevy",
+      "id": 487050,
+      "node_id": "MDQ6VXNlcjQ4NzA1MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/487050?v=4",
+      "html_url": "https://github.com/shlevy",
+      "contributions": 136
+    },
+    {
+      "login": "cole-h",
+      "id": 28582702,
+      "node_id": "MDQ6VXNlcjI4NTgyNzAy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/28582702?v=4",
+      "html_url": "https://github.com/cole-h",
+      "contributions": 124
+    },
+    {
+      "login": "dasJ",
+      "id": 4971975,
+      "node_id": "MDQ6VXNlcjQ5NzE5NzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4971975?v=4",
+      "html_url": "https://github.com/dasJ",
+      "contributions": 121
+    },
+    {
+      "login": "Mic92",
+      "id": 96200,
+      "node_id": "MDQ6VXNlcjk2MjAw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/96200?v=4",
+      "html_url": "https://github.com/Mic92",
+      "contributions": 95
+    },
+    {
+      "login": "civodul",
+      "id": 1168435,
+      "node_id": "MDQ6VXNlcjExNjg0MzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1168435?v=4",
+      "html_url": "https://github.com/civodul",
+      "contributions": 87
+    },
+    {
+      "login": "Ma27",
+      "id": 6025220,
+      "node_id": "MDQ6VXNlcjYwMjUyMjA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6025220?v=4",
+      "html_url": "https://github.com/Ma27",
+      "contributions": 48
+    },
+    {
+      "login": "aszlig",
+      "id": 192147,
+      "node_id": "MDQ6VXNlcjE5MjE0Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/192147?v=4",
+      "html_url": "https://github.com/aszlig",
+      "contributions": 30
+    },
+    {
+      "login": "amaanq",
+      "id": 29718261,
+      "node_id": "MDQ6VXNlcjI5NzE4MjYx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/29718261?v=4",
+      "html_url": "https://github.com/amaanq",
+      "contributions": 29
+    },
+    {
+      "login": "delroth",
+      "id": 202798,
+      "node_id": "MDQ6VXNlcjIwMjc5OA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202798?v=4",
+      "html_url": "https://github.com/delroth",
+      "contributions": 20
+    },
+    {
+      "login": "knl",
+      "id": 361496,
+      "node_id": "MDQ6VXNlcjM2MTQ5Ng==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/361496?v=4",
+      "html_url": "https://github.com/knl",
+      "contributions": 20
+    },
+    {
+      "login": "kquick",
+      "id": 787421,
+      "node_id": "MDQ6VXNlcjc4NzQyMQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/787421?v=4",
+      "html_url": "https://github.com/kquick",
+      "contributions": 18
+    },
+    {
+      "login": "thufschmitt",
+      "id": 7226587,
+      "node_id": "MDQ6VXNlcjcyMjY1ODc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7226587?v=4",
+      "html_url": "https://github.com/thufschmitt",
+      "contributions": 18
+    },
+    {
+      "login": "mweinelt",
+      "id": 131599,
+      "node_id": "MDQ6VXNlcjEzMTU5OQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/131599?v=4",
+      "html_url": "https://github.com/mweinelt",
+      "contributions": 18
+    },
+    {
+      "login": "gilligan",
+      "id": 27668,
+      "node_id": "MDQ6VXNlcjI3NjY4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/27668?v=4",
+      "html_url": "https://github.com/gilligan",
+      "contributions": 16
+    },
+    {
+      "login": "domenkozar",
+      "id": 126339,
+      "node_id": "MDQ6VXNlcjEyNjMzOQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/126339?v=4",
+      "html_url": "https://github.com/domenkozar",
+      "contributions": 16
+    },
+    {
+      "login": "basvandijk",
+      "id": 576355,
+      "node_id": "MDQ6VXNlcjU3NjM1NQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/576355?v=4",
+      "html_url": "https://github.com/basvandijk",
+      "contributions": 16
+    },
+    {
+      "login": "andir",
+      "id": 638836,
+      "node_id": "MDQ6VXNlcjYzODgzNg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/638836?v=4",
+      "html_url": "https://github.com/andir",
+      "contributions": 14
+    },
+    {
+      "login": "samueldr",
+      "id": 132835,
+      "node_id": "MDQ6VXNlcjEzMjgzNQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/132835?v=4",
+      "html_url": "https://github.com/samueldr",
+      "contributions": 14
+    },
+    {
+      "login": "SuperSandro2000",
+      "id": 7258858,
+      "node_id": "MDQ6VXNlcjcyNTg4NTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7258858?v=4",
+      "html_url": "https://github.com/SuperSandro2000",
+      "contributions": 14
+    },
+    {
+      "login": "nlewo",
+      "id": 3425311,
+      "node_id": "MDQ6VXNlcjM0MjUzMTE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3425311?v=4",
+      "html_url": "https://github.com/nlewo",
+      "contributions": 13
+    },
+    {
+      "login": "twhitehead",
+      "id": 787843,
+      "node_id": "MDQ6VXNlcjc4Nzg0Mw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/787843?v=4",
+      "html_url": "https://github.com/twhitehead",
+      "contributions": 13
+    },
+    {
+      "login": "ajs124",
+      "id": 1229027,
+      "node_id": "MDQ6VXNlcjEyMjkwMjc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1229027?v=4",
+      "html_url": "https://github.com/ajs124",
+      "contributions": 12
+    },
+    {
+      "login": "groxxda",
+      "id": 5701271,
+      "node_id": "MDQ6VXNlcjU3MDEyNzE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5701271?v=4",
+      "html_url": "https://github.com/groxxda",
       "contributions": 11
     },
     {
-      "login": "tomfitzhenry",
-      "id": 61303,
-      "node_id": "MDQ6VXNlcjYxMzAz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/61303?v=4",
-      "html_url": "https://github.com/tomfitzhenry",
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "html_url": "https://github.com/apps/dependabot",
       "contributions": 11
     },
     {
-      "login": "matdibu",
-      "id": 24750154,
-      "node_id": "MDQ6VXNlcjI0NzUwMTU0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/24750154?v=4",
-      "html_url": "https://github.com/matdibu",
+      "login": "Mindavi",
+      "id": 9799623,
+      "node_id": "MDQ6VXNlcjk3OTk2MjM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9799623?v=4",
+      "html_url": "https://github.com/Mindavi",
       "contributions": 11
     },
     {
-      "login": "RadxaYuntian",
-      "id": 95260730,
-      "node_id": "U_kgDOBa2QOg",
-      "avatar_url": "https://avatars.githubusercontent.com/u/95260730?v=4",
-      "html_url": "https://github.com/RadxaYuntian",
-      "contributions": 11
-    },
-    {
-      "login": "fgaz",
-      "id": 8182846,
-      "node_id": "MDQ6VXNlcjgxODI4NDY=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/8182846?v=4",
-      "html_url": "https://github.com/fgaz",
+      "login": "firestack",
+      "id": 6913198,
+      "node_id": "MDQ6VXNlcjY5MTMxOTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6913198?v=4",
+      "html_url": "https://github.com/firestack",
       "contributions": 10
+    },
+    {
+      "login": "flexiondotorg",
+      "id": 304639,
+      "node_id": "MDQ6VXNlcjMwNDYzOQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/304639?v=4",
+      "html_url": "https://github.com/flexiondotorg",
+      "contributions": 1
     }
   ],
   "activeOrg": true

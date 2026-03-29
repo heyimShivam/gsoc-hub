@@ -30,7 +30,8 @@
   "year": [
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2023": [
@@ -100,7 +101,63 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/X7PDwP45"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "3D edition of masks",
+        "short_description": "InVesalius is an open-source software that enables synchronous 2D and 3D visualization of medical images, facilitating the reconstruction of computed...",
+        "description": "InVesalius is an open-source software that enables synchronous 2D and 3D visualization of medical images, facilitating the reconstruction of computed tomography (CT) and magnetic resonance imaging (MRI) data into three-dimensional models. It allows users to create masks easily through various preset parameters, such as predefined threshold values for different tissues and materials. However, in cases where automatic segmentation is insufficient, manual editing becomes necessary. This process can be quite slow and labor-intensive, as it requires editing each slice individually, which is particularly time-consuming for large volumes.\n\nImplementing a feature that enables mask creation through projections directly on the 3D rendering screen would significantly enhance InVesalius's usability and \nefficiency. Currently, mask editing in InVesalius requires a slice-by-slice approach, which can be repetitive and prone to errors. By allowing users to edit the entire volume simultaneously via 3D projections, the segmentation process would\nbe streamlined, saving time and increasing accuracy.",
+        "student_name": "Felipe Cybis Pereira",
+        "code_url": "https://felipecybis.github.io/posts/gsoc2025/",
+        "proposal_id": "wXxz5lp4",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/H1nIn5ni"
+      },
+      {
+        "title": "Add unit tests to InVesalius to ease the process of adding new features",
+        "short_description": "This project addresses the lack of automated testing in InVesalius, which currently relies on manual verification, slowing development and risking...",
+        "description": "This project addresses the lack of automated testing in InVesalius, which currently relies on manual verification, slowing development and risking regressions. By implementing a comprehensive pytest-based test suite (unit, functional, and GUI tests) and integrating GitHub Actions CI/CD, the project will ensure core functionalities like DICOM processing, 3D visualization, and GUI interactions remain stable as new features are added. Deliverables include:\n\n1)A structured test suite covering the entire inVesalius codebase.\n\n2)GitHub Actions workflows to automate testing on commits/pull requests.\n\n3)Mock file systems and dependency isolation for safe, repeatable tests.\n\n4)Well-documented test cases to guide future contributors.\nThis will reduce reviewer workload, accelerate debugging, and foster community growth by lowering the barrier to entry for new developers.",
+        "student_name": "Hrishav Deka",
+        "code_url": "https://github.com/hrishav77/GSOC-2025-Invesalius-Report/blob/main/README.md",
+        "proposal_id": "CNDgDUEe",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/QsOP2iEF"
+      },
+      {
+        "title": "Use GitHub actions to create installers for macOS",
+        "short_description": "The proposed project aims to automate the creation of nightly and release installers for InVesalius on macOS using GitHub Actions. By leveraging...",
+        "description": "The proposed project aims to automate the creation of nightly and release installers for InVesalius on macOS using GitHub Actions. By leveraging continuous integration workflows, this project will streamline the build, packaging, and distribution process, eliminating the need for manual compilation. The automation will utilize PyInstaller to generate macOS application bundles and installers while ensuring compatibility with system dependencies. This solution will enhance accessibility for macOS users, providing a reliable and up-to-date distribution method for InVesalius.",
+        "student_name": "Mann Patwa",
+        "code_url": "https://gist.github.com/mann-patwa/39f215aeb2aa6aa0de4b40ad3e351fce",
+        "proposal_id": "Xs0GcwTf",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/2LCxiDo6"
+      },
+      {
+        "title": "Simultaneous visualization and control of Two Robots for Dual Transcranial Magnetic Stimulation",
+        "short_description": "Development and integration of the functionality for simultaneous control of two robots, aimed at applying dual-site Transcranial Magnetic...",
+        "description": "Development and integration of the functionality for simultaneous control of two robots, aimed at applying dual-site Transcranial Magnetic Stimulation (TMS) in InVesalius (currently, support is provided for only one TMS coil attached to one robot). This feature is based on the existing implementation for the use of two or more coils, adapting it for multiple robots. The inclusion of this feature not only improves the speed, accuracy, and safety of the stimulatory process, but also enables the scientific exploration of interactive brain networks, by allowing concurrent, targeted TMS pulses to multiple brain areas.",
+        "student_name": "Márcio Campos",
+        "code_url": "https://github.com/MarcioCamposJr/Google-Summer-of-Code-2025-Invesalius/",
+        "proposal_id": "pcioYG3w",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/vG6Rv7zY"
+      },
+      {
+        "title": "Improvements in user response (loading and   saving files)",
+        "short_description": "InVesalius, a medical imaging tool, lacks user feedback during file loading and saving (e.g., .inv3 projects) and offers a basic, non-cancellable...",
+        "description": "InVesalius, a medical imaging tool, lacks user feedback during file loading and saving (e.g., .inv3 projects) and offers a basic, non-cancellable progress bar for volume rendering, frustrating users. This project aims to enhance usability by implementing a wxPython-based progress dialog with real-time updates and cancellation support. I’ll integrate this into invesalius/control.py and gui/frame.py, threading file operations (OpenPlistProject, SavePlistProject) and upgrading Volume.Render’s feedback with VTK-based stages. Deliverables include: (1) a cancellable progress dialog for .inv3 loading, (2) a similar dialog for saving, (3) a revamped volume rendering dialog with percentage updates, and (4) unit tests ensuring reliability. Built with Python, wxPython, and NumPy, this will make InVesalius more intuitive and responsive for researchers and clinicians.",
+        "student_name": "Shruti Parmar",
+        "code_url": "https://github.com/shrutiparmar2003/Google-Summer-of-Code-2025-Final-Report",
+        "proposal_id": "xd1jKFJr",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/D5nIVoDd"
+      },
+      {
+        "title": "Segment Brain in it's Subparts",
+        "short_description": "This project tackles the challenge of time-consuming manual brain segmentation in MRI by developing an automated tool using deep learning...",
+        "description": "This project tackles the challenge of time-consuming manual brain segmentation in MRI by developing an automated tool using deep learning (FastSurfer) to accurately segment key brain areas critical for TMS. The approach uses advanced CNN models to quickly and precisely divide the brain into subparts like the cortex, thalamus, and hippocampus. This helps accurately position the TMS coil for effective treatment.",
+        "student_name": "unichronic",
+        "code_url": "https://gist.github.com/unichronic/4d7f61048fda1312d5d30bb151ee4eb5",
+        "proposal_id": "7pp31Q1O",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/Thg42Q4y"
+      }
+    ],
+    "2026": []
   },
   "githubID": "invesalius",
   "repositories": [
@@ -112,9 +169,9 @@
       "html_url": "https://github.com/invesalius/invesalius3",
       "description": "3D medical imaging reconstruction software",
       "language": "Python",
-      "stargazers_count": 702,
-      "forks_count": 357,
-      "open_issues_count": 165,
+      "stargazers_count": 775,
+      "forks_count": 431,
+      "open_issues_count": 244,
       "license": {
         "key": "gpl-2.0",
         "name": "GNU General Public License v2.0",
@@ -134,6 +191,20 @@
       ]
     },
     {
+      "id": 594166602,
+      "node_id": "R_kgDOI2pDSg",
+      "name": "gsoc",
+      "full_name": "invesalius/gsoc",
+      "html_url": "https://github.com/invesalius/gsoc",
+      "description": "Google Summer of Code: Ideas, Announcements, questions and etc.",
+      "language": null,
+      "stargazers_count": 28,
+      "forks_count": 13,
+      "open_issues_count": 1,
+      "license": null,
+      "topics": []
+    },
+    {
       "id": 365324984,
       "node_id": "MDEwOlJlcG9zaXRvcnkzNjUzMjQ5ODQ=",
       "name": "inv3_plugins",
@@ -142,42 +213,8 @@
       "description": null,
       "language": "Python",
       "stargazers_count": 2,
-      "forks_count": 11,
-      "open_issues_count": 2,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 87458203,
-      "node_id": "MDEwOlJlcG9zaXRvcnk4NzQ1ODIwMw==",
-      "name": "invesalius.github.io",
-      "full_name": "invesalius/invesalius.github.io",
-      "html_url": "https://github.com/invesalius/invesalius.github.io",
-      "description": null,
-      "language": "HTML",
-      "stargazers_count": 0,
-      "forks_count": 7,
-      "open_issues_count": 2,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 594166602,
-      "node_id": "R_kgDOI2pDSg",
-      "name": "gsoc",
-      "full_name": "invesalius/gsoc",
-      "html_url": "https://github.com/invesalius/gsoc",
-      "description": "Google Summer of Code: Ideas, Announcements, questions and etc.",
-      "language": null,
-      "stargazers_count": 21,
-      "forks_count": 9,
-      "open_issues_count": 0,
+      "forks_count": 12,
+      "open_issues_count": 3,
       "license": null,
       "topics": []
     },
@@ -202,6 +239,26 @@
       "topics": []
     },
     {
+      "id": 87458203,
+      "node_id": "MDEwOlJlcG9zaXRvcnk4NzQ1ODIwMw==",
+      "name": "invesalius.github.io",
+      "full_name": "invesalius/invesalius.github.io",
+      "html_url": "https://github.com/invesalius/invesalius.github.io",
+      "description": null,
+      "language": "HTML",
+      "stargazers_count": 0,
+      "forks_count": 9,
+      "open_issues_count": 3,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
       "id": 687492834,
       "node_id": "R_kgDOKPpO4g",
       "name": "fmri-processing",
@@ -209,7 +266,7 @@
       "html_url": "https://github.com/invesalius/fmri-processing",
       "description": "Scripts and instructions for processing fMRI data",
       "language": null,
-      "stargazers_count": 0,
+      "stargazers_count": 1,
       "forks_count": 1,
       "open_issues_count": 1,
       "license": {
@@ -229,7 +286,7 @@
       "node_id": "MDQ6VXNlcjM1MTEwOA==",
       "avatar_url": "https://avatars.githubusercontent.com/u/351108?v=4",
       "html_url": "https://github.com/tfmoraes",
-      "contributions": 15
+      "contributions": 16
     },
     {
       "login": "paulojamorim",
@@ -237,7 +294,15 @@
       "node_id": "MDQ6VXNlcjgwODM2NA==",
       "avatar_url": "https://avatars.githubusercontent.com/u/808364?v=4",
       "html_url": "https://github.com/paulojamorim",
-      "contributions": 764
+      "contributions": 1
+    },
+    {
+      "login": "rmatsuda",
+      "id": 3440585,
+      "node_id": "MDQ6VXNlcjM0NDA1ODU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3440585?v=4",
+      "html_url": "https://github.com/rmatsuda",
+      "contributions": 1
     },
     {
       "login": "tatiana",
@@ -248,20 +313,12 @@
       "contributions": 494
     },
     {
-      "login": "rmatsuda",
-      "id": 3440585,
-      "node_id": "MDQ6VXNlcjM0NDA1ODU=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/3440585?v=4",
-      "html_url": "https://github.com/rmatsuda",
-      "contributions": 480
-    },
-    {
       "login": "sotodela",
       "id": 60348665,
       "node_id": "MDQ6VXNlcjYwMzQ4NjY1",
       "avatar_url": "https://avatars.githubusercontent.com/u/60348665?v=4",
       "html_url": "https://github.com/sotodela",
-      "contributions": 318
+      "contributions": 339
     },
     {
       "login": "okahilak",
@@ -269,7 +326,7 @@
       "node_id": "MDQ6VXNlcjQ5NjQxMTAz",
       "avatar_url": "https://avatars.githubusercontent.com/u/49641103?v=4",
       "html_url": "https://github.com/okahilak",
-      "contributions": 295
+      "contributions": 296
     },
     {
       "login": "vhosouza",
@@ -277,7 +334,7 @@
       "node_id": "MDQ6VXNlcjEwODE0MDY=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1081406?v=4",
       "html_url": "https://github.com/vhosouza",
-      "contributions": 172
+      "contributions": 1
     },
     {
       "login": "mahansh564",
@@ -312,6 +369,14 @@
       "contributions": 32
     },
     {
+      "login": "sh1vam31",
+      "id": 181079673,
+      "node_id": "U_kgDOCssOeQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/181079673?v=4",
+      "html_url": "https://github.com/sh1vam31",
+      "contributions": 22
+    },
+    {
       "login": "ruppert",
       "id": 1015030,
       "node_id": "MDQ6VXNlcjEwMTUwMzA=",
@@ -326,6 +391,22 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/115137338?v=4",
       "html_url": "https://github.com/mahanshul",
       "contributions": 15
+    },
+    {
+      "login": "MarcioCamposJr",
+      "id": 82606834,
+      "node_id": "MDQ6VXNlcjgyNjA2ODM0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/82606834?v=4",
+      "html_url": "https://github.com/MarcioCamposJr",
+      "contributions": 13
+    },
+    {
+      "login": "Prat260104",
+      "id": 185506971,
+      "node_id": "U_kgDOCw6cmw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/185506971?v=4",
+      "html_url": "https://github.com/Prat260104",
+      "contributions": 12
     },
     {
       "login": "LucasBetioli123",
@@ -344,6 +425,14 @@
       "contributions": 9
     },
     {
+      "login": "Kaipapurandeswarreddy",
+      "id": 176788036,
+      "node_id": "U_kgDOComSRA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/176788036?v=4",
+      "html_url": "https://github.com/Kaipapurandeswarreddy",
+      "contributions": 8
+    },
+    {
       "login": "omar-abdelgawad",
       "id": 113486195,
       "node_id": "U_kgDOBsOpcw",
@@ -360,6 +449,22 @@
       "contributions": 8
     },
     {
+      "login": "hrishav77",
+      "id": 93671440,
+      "node_id": "U_kgDOBZVQEA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/93671440?v=4",
+      "html_url": "https://github.com/hrishav77",
+      "contributions": 7
+    },
+    {
+      "login": "unichronic",
+      "id": 64604251,
+      "node_id": "MDQ6VXNlcjY0NjA0MjUx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/64604251?v=4",
+      "html_url": "https://github.com/unichronic",
+      "contributions": 7
+    },
+    {
       "login": "decode-soumyadipta",
       "id": 149158082,
       "node_id": "U_kgDOCOP4wg",
@@ -368,12 +473,12 @@
       "contributions": 2
     },
     {
-      "login": "unichronic",
-      "id": 64604251,
-      "node_id": "MDQ6VXNlcjY0NjA0MjUx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/64604251?v=4",
-      "html_url": "https://github.com/unichronic",
-      "contributions": 6
+      "login": "mann-patwa",
+      "id": 72660338,
+      "node_id": "MDQ6VXNlcjcyNjYwMzM4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/72660338?v=4",
+      "html_url": "https://github.com/mann-patwa",
+      "contributions": 5
     },
     {
       "login": "shumaari",
@@ -408,44 +513,20 @@
       "contributions": 5
     },
     {
-      "login": "thaismarchetti",
-      "id": 71387680,
-      "node_id": "MDQ6VXNlcjcxMzg3Njgw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/71387680?v=4",
-      "html_url": "https://github.com/thaismarchetti",
-      "contributions": 3
+      "login": "FelipeCybis",
+      "id": 41338087,
+      "node_id": "MDQ6VXNlcjQxMzM4MDg3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/41338087?v=4",
+      "html_url": "https://github.com/FelipeCybis",
+      "contributions": 4
     },
     {
-      "login": "hrishav77",
-      "id": 93671440,
-      "node_id": "U_kgDOBZVQEA",
-      "avatar_url": "https://avatars.githubusercontent.com/u/93671440?v=4",
-      "html_url": "https://github.com/hrishav77",
-      "contributions": 3
-    },
-    {
-      "login": "Abo-Omar-74",
-      "id": 100101295,
-      "node_id": "U_kgDOBfdsrw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/100101295?v=4",
-      "html_url": "https://github.com/Abo-Omar-74",
-      "contributions": 3
-    },
-    {
-      "login": "mann-patwa",
-      "id": 72660338,
-      "node_id": "MDQ6VXNlcjcyNjYwMzM4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/72660338?v=4",
-      "html_url": "https://github.com/mann-patwa",
-      "contributions": 3
-    },
-    {
-      "login": "hsinisal",
-      "id": 46311557,
-      "node_id": "MDQ6VXNlcjQ2MzExNTU3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/46311557?v=4",
-      "html_url": "https://github.com/hsinisal",
-      "contributions": 3
+      "login": "fabioaz",
+      "id": 2623213,
+      "node_id": "MDQ6VXNlcjI2MjMyMTM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2623213?v=4",
+      "html_url": "https://github.com/fabioaz",
+      "contributions": 1
     },
     {
       "login": "jsxs0",
@@ -453,15 +534,7 @@
       "node_id": "MDQ6VXNlcjQ0MjY2Mzcz",
       "avatar_url": "https://avatars.githubusercontent.com/u/44266373?v=4",
       "html_url": "https://github.com/jsxs0",
-      "contributions": 2
-    },
-    {
-      "login": "bryant1410",
-      "id": 3905501,
-      "node_id": "MDQ6VXNlcjM5MDU1MDE=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/3905501?v=4",
-      "html_url": "https://github.com/bryant1410",
-      "contributions": 2
+      "contributions": 1
     },
     {
       "login": "salahmohamed03",
@@ -472,5 +545,5 @@
       "contributions": 1
     }
   ],
-  "activeOrg": true
+  "activeOrg": false
 }

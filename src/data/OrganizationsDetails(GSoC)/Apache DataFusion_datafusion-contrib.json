@@ -28,10 +28,53 @@
     2025
   ],
   "projects": {
-    "2025": []
+    "2025": [
+      {
+        "title": "Supporting Correlated Subqueries in Apache DataFusion",
+        "short_description": "This project aims to implement comprehensive support for correlated subqueries in Apache DataFusion by applying Hyper's 'Unnesting Arbitrary Queries'...",
+        "description": "This project aims to implement comprehensive support for correlated subqueries in Apache DataFusion by applying Hyper's 'Unnesting Arbitrary Queries' framework. With a complete solution that can transform arbitrarily nested correlated subqueries into standard join operations through a systematic approach. The implementation will include enhancing the binding phase to handle multi-level nesting, implementing the core dependent join transformation algorithm, applying operator-specific pushdown rules for all relevant operators, and optimizing redundant operations. This approach provides a general solution that works for all types of subqueries (scalar, EXISTS, IN) and handles complex cases involving aggregations and multiple levels of correlation. By adopting this proven theoretical framework, DataFusion will gain robust SQL compatibility and significantly improved analytical capabilities, enabling users to express complex data relationships efficiently.",
+        "student_name": "renjj",
+        "code_url": "https://docs.google.com/document/d/1Ehzb7ZH7Kemsy5LVnfRb8VKVRORDsFt6OpnZwgvpGBs/edit?usp=sharing",
+        "proposal_id": "DOrDMlzI",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/zYjgxNUI"
+      },
+      {
+        "title": "Improving Spilling Execution in DataFusion",
+        "short_description": "Apache DataFusion is an in-memory query execution engine optimized for OLAP workloads using Apache Arrow's columnar format. However, to support...",
+        "description": "Apache DataFusion is an in-memory query execution engine optimized for OLAP workloads using Apache Arrow's columnar format. However, to support queries that exceed available memory, DataFusion must spill intermediate results (e.g., from sort or aggregate operators) to disk. As a continuation of the community effort on external query execution, this project aims to improve the robustness of spilling execution and explore further performance optimizations including compression.",
+        "student_name": "SeoYoung Lee",
+        "code_url": "https://github.com/ding-young/gsoc25/blob/main/final_report.md",
+        "proposal_id": "I2XMkMSN",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/3Ooae7Uu"
+      }
+    ]
   },
   "githubID": "datafusion-contrib",
   "repositories": [
+    {
+      "id": 782796446,
+      "node_id": "R_kgDOLqiGng",
+      "name": "datafusion-postgres",
+      "full_name": "datafusion-contrib/datafusion-postgres",
+      "html_url": "https://github.com/datafusion-contrib/datafusion-postgres",
+      "description": "Postgres protocol frontend for DataFusion",
+      "language": "Rust",
+      "stargazers_count": 136,
+      "forks_count": 29,
+      "open_issues_count": 13,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "datafusion",
+        "postgresql",
+        "rust"
+      ]
+    },
     {
       "id": 788046890,
       "node_id": "R_kgDOLvikKg",
@@ -40,9 +83,9 @@
       "html_url": "https://github.com/datafusion-contrib/datafusion-table-providers",
       "description": "DataFusion TableProviders for reading data from other systems",
       "language": "Rust",
-      "stargazers_count": 119,
-      "forks_count": 41,
-      "open_issues_count": 15,
+      "stargazers_count": 179,
+      "forks_count": 69,
+      "open_issues_count": 27,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -53,35 +96,269 @@
       "topics": []
     },
     {
-      "id": 783377560,
-      "node_id": "R_kgDOLrFkmA",
-      "name": "datafusion-wasm-playground",
-      "full_name": "datafusion-contrib/datafusion-wasm-playground",
-      "html_url": "https://github.com/datafusion-contrib/datafusion-wasm-playground",
-      "description": "Web based playground for Apache DataFusion via WASM",
-      "language": "TypeScript",
-      "stargazers_count": 13,
-      "forks_count": 4,
-      "open_issues_count": 3,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 791488716,
-      "node_id": "R_kgDOLy0ozA",
-      "name": "hdfs-native-object-store",
-      "full_name": "datafusion-contrib/hdfs-native-object-store",
-      "html_url": "https://github.com/datafusion-contrib/hdfs-native-object-store",
-      "description": "Native rust implementation of object_store HDFS",
+      "id": 1005113272,
+      "node_id": "R_kgDOO-jPuA",
+      "name": "datafusion-distributed",
+      "full_name": "datafusion-contrib/datafusion-distributed",
+      "html_url": "https://github.com/datafusion-contrib/datafusion-distributed",
+      "description": "Library for bringing distributed capabilities to Apache DataFusion",
       "language": "Rust",
-      "stargazers_count": 6,
-      "forks_count": 11,
+      "stargazers_count": 77,
+      "forks_count": 34,
+      "open_issues_count": 62,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "arrow",
+        "datafusion",
+        "distributed",
+        "distributed-computing",
+        "distributed-da",
+        "distributed-systems",
+        "query-e"
+      ]
+    },
+    {
+      "id": 921636526,
+      "node_id": "R_kgDONu8Org",
+      "name": "datafusion-flight-sql-server",
+      "full_name": "datafusion-contrib/datafusion-flight-sql-server",
+      "html_url": "https://github.com/datafusion-contrib/datafusion-flight-sql-server",
+      "description": "DataFusion FlightSQL Server",
+      "language": "Rust",
+      "stargazers_count": 27,
+      "forks_count": 14,
+      "open_issues_count": 1,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 962148612,
+      "node_id": "R_kgDOOVk5BA",
+      "name": "datafusion-tracing",
+      "full_name": "datafusion-contrib/datafusion-tracing",
+      "html_url": "https://github.com/datafusion-contrib/datafusion-tracing",
+      "description": " Integration of opentelemetry with the tracing crate",
+      "language": "Rust",
+      "stargazers_count": 25,
+      "forks_count": 5,
+      "open_issues_count": 5,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 753057778,
+      "node_id": "R_kgDOLOK_8g",
+      "name": "datafusion-federation",
+      "full_name": "datafusion-contrib/datafusion-federation",
+      "html_url": "https://github.com/datafusion-contrib/datafusion-federation",
+      "description": "Allow DataFusion to resolve queries across remote query engines while pushing down as much compute as possible down.",
+      "language": "Rust",
+      "stargazers_count": 173,
+      "forks_count": 28,
+      "open_issues_count": 6,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 796799268,
+      "node_id": "R_kgDOL34xJA",
+      "name": "datafusion-index-provider",
+      "full_name": "datafusion-contrib/datafusion-index-provider",
+      "html_url": "https://github.com/datafusion-contrib/datafusion-index-provider",
+      "description": "Prototype approaches to implementing Indexes in DataFusion",
+      "language": "Rust",
+      "stargazers_count": 10,
+      "forks_count": 2,
+      "open_issues_count": 2,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 1071625785,
+      "node_id": "R_kgDOP9-2OQ",
+      "name": "datafusion-variant",
+      "full_name": "datafusion-contrib/datafusion-variant",
+      "html_url": "https://github.com/datafusion-contrib/datafusion-variant",
+      "description": "user-defined functions for Variant handling in Datafusion",
+      "language": "Rust",
+      "stargazers_count": 13,
+      "forks_count": 10,
+      "open_issues_count": 22,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "datafusion",
+        "variant"
+      ]
+    },
+    {
+      "id": 969267028,
+      "node_id": "R_kgDOOcXXVA",
+      "name": "datafusion-tpch",
+      "full_name": "datafusion-contrib/datafusion-tpch",
+      "html_url": "https://github.com/datafusion-contrib/datafusion-tpch",
+      "description": "Native Rust TPCH support for Datafusion using tpchgen",
+      "language": "Rust",
+      "stargazers_count": 3,
+      "forks_count": 4,
+      "open_issues_count": 1,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "databases",
+        "datafusion",
+        "datafusion-testing",
+        "tpch",
+        "tpchgen-rs"
+      ]
+    },
+    {
+      "id": 1054423576,
+      "node_id": "R_kgDOPtk6GA",
+      "name": "geodatafusion",
+      "full_name": "datafusion-contrib/geodatafusion",
+      "html_url": "https://github.com/datafusion-contrib/geodatafusion",
+      "description": "Geometry and Geography Support for Apache DataFusion",
+      "language": "Rust",
+      "stargazers_count": 44,
+      "forks_count": 13,
+      "open_issues_count": 10,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 788911020,
+      "node_id": "R_kgDOLwXTrA",
+      "name": "datafusion-functions-json",
+      "full_name": "datafusion-contrib/datafusion-functions-json",
+      "html_url": "https://github.com/datafusion-contrib/datafusion-functions-json",
+      "description": "JSON support for DataFusion (unofficial)",
+      "language": "Rust",
+      "stargazers_count": 55,
+      "forks_count": 29,
+      "open_issues_count": 12,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 858890821,
+      "node_id": "R_kgDOMzGiRQ",
+      "name": "datafusion-extra-functions",
+      "full_name": "datafusion-contrib/datafusion-extra-functions",
+      "html_url": "https://github.com/datafusion-contrib/datafusion-extra-functions",
+      "description": "Various additional function packages for Apache DataFusion (unofficial)",
+      "language": "Rust",
+      "stargazers_count": 9,
+      "forks_count": 8,
+      "open_issues_count": 1,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "datafusion",
+        "rust"
+      ]
+    },
+    {
+      "id": 1187818875,
+      "node_id": "R_kgDORsytew",
+      "name": "datafusion-skills",
+      "full_name": "datafusion-contrib/datafusion-skills",
+      "html_url": "https://github.com/datafusion-contrib/datafusion-skills",
+      "description": null,
+      "language": null,
+      "stargazers_count": 11,
+      "forks_count": 0,
+      "open_issues_count": 1,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 745672734,
+      "node_id": "R_kgDOLHIQHg",
+      "name": "arrow-zarr",
+      "full_name": "datafusion-contrib/arrow-zarr",
+      "html_url": "https://github.com/datafusion-contrib/arrow-zarr",
+      "description": "Implementation of Zarr file format in Rust",
+      "language": "Rust",
+      "stargazers_count": 29,
+      "forks_count": 5,
+      "open_issues_count": 12,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 1179167121,
+      "node_id": "R_kgDORkipkQ",
+      "name": "datafusion-parx",
+      "full_name": "datafusion-contrib/datafusion-parx",
+      "html_url": "https://github.com/datafusion-contrib/datafusion-parx",
+      "description": null,
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 0,
       "open_issues_count": 0,
       "license": {
         "key": "apache-2.0",
@@ -100,9 +377,9 @@
       "html_url": "https://github.com/datafusion-contrib/datafusion-materialized-views",
       "description": "Incremental view maintenance & query rewriting for materialized views in DataFusion",
       "language": "Rust",
-      "stargazers_count": 33,
-      "forks_count": 2,
-      "open_issues_count": 3,
+      "stargazers_count": 70,
+      "forks_count": 17,
+      "open_issues_count": 9,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -120,6 +397,52 @@
       ]
     },
     {
+      "id": 876916842,
+      "node_id": "R_kgDONESwag",
+      "name": "orc-rust",
+      "full_name": "datafusion-contrib/orc-rust",
+      "html_url": "https://github.com/datafusion-contrib/orc-rust",
+      "description": "Rust implementation of Apache ORC",
+      "language": "Rust",
+      "stargazers_count": 30,
+      "forks_count": 21,
+      "open_issues_count": 24,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 497997122,
+      "node_id": "R_kgDOHa7VQg",
+      "name": "datafusion-c",
+      "full_name": "datafusion-contrib/datafusion-c",
+      "html_url": "https://github.com/datafusion-contrib/datafusion-c",
+      "description": "C language bindings for DataFusion",
+      "language": "C",
+      "stargazers_count": 21,
+      "forks_count": 7,
+      "open_issues_count": 5,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "apache-arrow",
+        "c",
+        "datafusion",
+        "glib",
+        "sql"
+      ]
+    },
+    {
       "id": 471244441,
       "node_id": "R_kgDOHBaemQ",
       "name": "datafusion-dft",
@@ -127,9 +450,9 @@
       "html_url": "https://github.com/datafusion-contrib/datafusion-dft",
       "description": "Batteries included CLI, TUI, and server implementations for DataFusion.",
       "language": "Rust",
-      "stargazers_count": 153,
-      "forks_count": 13,
-      "open_issues_count": 33,
+      "stargazers_count": 192,
+      "forks_count": 21,
+      "open_issues_count": 40,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -147,16 +470,116 @@
       ]
     },
     {
-      "id": 962148612,
-      "node_id": "R_kgDOOVk5BA",
-      "name": "datafusion-tracing",
-      "full_name": "datafusion-contrib/datafusion-tracing",
-      "html_url": "https://github.com/datafusion-contrib/datafusion-tracing",
-      "description": " Integration of opentelemetry with the tracing crate",
+      "id": 817858519,
+      "node_id": "R_kgDOML-H1w",
+      "name": "datafusion-sqlancer",
+      "full_name": "datafusion-contrib/datafusion-sqlancer",
+      "html_url": "https://github.com/datafusion-contrib/datafusion-sqlancer",
+      "description": "End-to-end SQL fuzz testing for DataFusion using SQLancer",
+      "language": "Java",
+      "stargazers_count": 12,
+      "forks_count": 4,
+      "open_issues_count": 13,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 713331229,
+      "node_id": "R_kgDOKoSSHQ",
+      "name": "datafusion-orc",
+      "full_name": "datafusion-contrib/datafusion-orc",
+      "html_url": "https://github.com/datafusion-contrib/datafusion-orc",
+      "description": "Implementation of Apache ORC file format use Apache Arrow in-memory format",
       "language": "Rust",
+      "stargazers_count": 47,
+      "forks_count": 24,
+      "open_issues_count": 4,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 791488716,
+      "node_id": "R_kgDOLy0ozA",
+      "name": "hdfs-native-object-store",
+      "full_name": "datafusion-contrib/hdfs-native-object-store",
+      "html_url": "https://github.com/datafusion-contrib/hdfs-native-object-store",
+      "description": "Native rust implementation of object_store HDFS",
+      "language": "Rust",
+      "stargazers_count": 12,
+      "forks_count": 14,
+      "open_issues_count": 0,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 821753675,
+      "node_id": "R_kgDOMPr3Sw",
+      "name": "datafusion-fiddle",
+      "full_name": "datafusion-contrib/datafusion-fiddle",
+      "html_url": "https://github.com/datafusion-contrib/datafusion-fiddle",
+      "description": null,
+      "language": "TypeScript",
+      "stargazers_count": 14,
+      "forks_count": 2,
+      "open_issues_count": 4,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 503397799,
+      "node_id": "R_kgDOHgE9pw",
+      "name": "datafusion-ruby",
+      "full_name": "datafusion-contrib/datafusion-ruby",
+      "html_url": "https://github.com/datafusion-contrib/datafusion-ruby",
+      "description": "Ruby bindings for DataFusion",
+      "language": "Ruby",
       "stargazers_count": 9,
-      "forks_count": 1,
-      "open_issues_count": 1,
+      "forks_count": 4,
+      "open_issues_count": 0,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 783377560,
+      "node_id": "R_kgDOLrFkmA",
+      "name": "datafusion-wasm-playground",
+      "full_name": "datafusion-contrib/datafusion-wasm-playground",
+      "html_url": "https://github.com/datafusion-contrib/datafusion-wasm-playground",
+      "description": "Web based playground for Apache DataFusion via WASM",
+      "language": "TypeScript",
+      "stargazers_count": 19,
+      "forks_count": 5,
+      "open_issues_count": 3,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -174,69 +597,9 @@
       "html_url": "https://github.com/datafusion-contrib/datafusion-wasm-bindings",
       "description": "WASM bindings for DataFusion",
       "language": "Rust",
-      "stargazers_count": 26,
-      "forks_count": 3,
+      "stargazers_count": 32,
+      "forks_count": 5,
       "open_issues_count": 6,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 788911020,
-      "node_id": "R_kgDOLwXTrA",
-      "name": "datafusion-functions-json",
-      "full_name": "datafusion-contrib/datafusion-functions-json",
-      "html_url": "https://github.com/datafusion-contrib/datafusion-functions-json",
-      "description": "JSON support for DataFusion (unofficial)",
-      "language": "Rust",
-      "stargazers_count": 40,
-      "forks_count": 19,
-      "open_issues_count": 11,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 753057778,
-      "node_id": "R_kgDOLOK_8g",
-      "name": "datafusion-federation",
-      "full_name": "datafusion-contrib/datafusion-federation",
-      "html_url": "https://github.com/datafusion-contrib/datafusion-federation",
-      "description": "Allow DataFusion to resolve queries across remote query engines while pushing down as much compute as possible down.",
-      "language": "Rust",
-      "stargazers_count": 130,
-      "forks_count": 23,
-      "open_issues_count": 3,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 921636526,
-      "node_id": "R_kgDONu8Org",
-      "name": "datafusion-flight-sql-server",
-      "full_name": "datafusion-contrib/datafusion-flight-sql-server",
-      "html_url": "https://github.com/datafusion-contrib/datafusion-flight-sql-server",
-      "description": "DataFusion FlightSQL Server",
-      "language": "Rust",
-      "stargazers_count": 12,
-      "forks_count": 6,
-      "open_issues_count": 1,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -254,8 +617,8 @@
       "html_url": "https://github.com/datafusion-contrib/datafusion-java",
       "description": "Java binding to Apache DataFusion",
       "language": "Java",
-      "stargazers_count": 81,
-      "forks_count": 14,
+      "stargazers_count": 85,
+      "forks_count": 15,
       "open_issues_count": 15,
       "license": {
         "key": "apache-2.0",
@@ -279,89 +642,9 @@
       "html_url": "https://github.com/datafusion-contrib/fs-hdfs",
       "description": null,
       "language": "C",
-      "stargazers_count": 6,
-      "forks_count": 7,
-      "open_issues_count": 3,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 876916842,
-      "node_id": "R_kgDONESwag",
-      "name": "orc-rust",
-      "full_name": "datafusion-contrib/orc-rust",
-      "html_url": "https://github.com/datafusion-contrib/orc-rust",
-      "description": "Rust implementation of Apache ORC",
-      "language": "Rust",
-      "stargazers_count": 20,
-      "forks_count": 13,
-      "open_issues_count": 27,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 745672734,
-      "node_id": "R_kgDOLHIQHg",
-      "name": "arrow-zarr",
-      "full_name": "datafusion-contrib/arrow-zarr",
-      "html_url": "https://github.com/datafusion-contrib/arrow-zarr",
-      "description": "Implementation of Zarr file format in Rust",
-      "language": "Rust",
-      "stargazers_count": 13,
-      "forks_count": 1,
-      "open_issues_count": 5,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 817858519,
-      "node_id": "R_kgDOML-H1w",
-      "name": "datafusion-sqlancer",
-      "full_name": "datafusion-contrib/datafusion-sqlancer",
-      "html_url": "https://github.com/datafusion-contrib/datafusion-sqlancer",
-      "description": "End-to-end SQL fuzz testing for DataFusion using SQLancer",
-      "language": "Java",
-      "stargazers_count": 11,
-      "forks_count": 2,
-      "open_issues_count": 10,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 713331229,
-      "node_id": "R_kgDOKoSSHQ",
-      "name": "datafusion-orc",
-      "full_name": "datafusion-contrib/datafusion-orc",
-      "html_url": "https://github.com/datafusion-contrib/datafusion-orc",
-      "description": "Implementation of Apache ORC file format use Apache Arrow in-memory format",
-      "language": "Rust",
-      "stargazers_count": 43,
-      "forks_count": 17,
-      "open_issues_count": 4,
+      "stargazers_count": 5,
+      "forks_count": 10,
+      "open_issues_count": 7,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -379,7 +662,7 @@
       "html_url": "https://github.com/datafusion-contrib/test-data",
       "description": "Standard DataFusion contrib test datasets",
       "language": "Roff",
-      "stargazers_count": 1,
+      "stargazers_count": 0,
       "forks_count": 0,
       "open_issues_count": 0,
       "license": {
@@ -399,264 +682,9 @@
       "html_url": "https://github.com/datafusion-contrib/datafusion-query-cache",
       "description": "results cache for Apache DataFusion",
       "language": "Rust",
-      "stargazers_count": 25,
-      "forks_count": 3,
-      "open_issues_count": 0,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 858890821,
-      "node_id": "R_kgDOMzGiRQ",
-      "name": "datafusion-functions-extra",
-      "full_name": "datafusion-contrib/datafusion-functions-extra",
-      "html_url": "https://github.com/datafusion-contrib/datafusion-functions-extra",
-      "description": "Various additional function packages for Apache DataFusion (unofficial)",
-      "language": "Rust",
-      "stargazers_count": 9,
+      "stargazers_count": 33,
       "forks_count": 5,
-      "open_issues_count": 1,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "aggregate-functions",
-        "datafusion"
-      ]
-    },
-    {
-      "id": 817016077,
-      "node_id": "R_kgDOMLKtDQ",
-      "name": "datafusion-functions-variant",
-      "full_name": "datafusion-contrib/datafusion-functions-variant",
-      "html_url": "https://github.com/datafusion-contrib/datafusion-functions-variant",
-      "description": "DataFusion package for the Open Variant type",
-      "language": "Rust",
-      "stargazers_count": 4,
-      "forks_count": 1,
-      "open_issues_count": 11,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 594411134,
-      "node_id": "R_kgDOI23-fg",
-      "name": "ray-sql",
-      "full_name": "datafusion-contrib/ray-sql",
-      "html_url": "https://github.com/datafusion-contrib/ray-sql",
-      "description": "Distributed SQL Query Engine in Python using Ray",
-      "language": "Rust",
-      "stargazers_count": 243,
-      "forks_count": 16,
-      "open_issues_count": 5,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 843507007,
-      "node_id": "R_kgDOMkblPw",
-      "name": "datafusion-table-provider-flight",
-      "full_name": "datafusion-contrib/datafusion-table-provider-flight",
-      "html_url": "https://github.com/datafusion-contrib/datafusion-table-provider-flight",
-      "description": "FlightSQL TableProvider for DataFusion",
-      "language": "Rust",
-      "stargazers_count": 4,
-      "forks_count": 1,
       "open_issues_count": 0,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 367487079,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzNjc0ODcwNzk=",
-      "name": "tpctools",
-      "full_name": "datafusion-contrib/tpctools",
-      "html_url": "https://github.com/datafusion-contrib/tpctools",
-      "description": "Tools for generating TPC-* datasets",
-      "language": "Rust",
-      "stargazers_count": 29,
-      "forks_count": 6,
-      "open_issues_count": 5,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 811805394,
-      "node_id": "R_kgDOMGMq0g",
-      "name": "datafusion-async-parquet-index",
-      "full_name": "datafusion-contrib/datafusion-async-parquet-index",
-      "html_url": "https://github.com/datafusion-contrib/datafusion-async-parquet-index",
-      "description": "Example of building external index on parquet files with an remote catalog",
-      "language": "Rust",
-      "stargazers_count": 6,
-      "forks_count": 1,
-      "open_issues_count": 0,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 796799268,
-      "node_id": "R_kgDOL34xJA",
-      "name": "datafusion-index-provider",
-      "full_name": "datafusion-contrib/datafusion-index-provider",
-      "html_url": "https://github.com/datafusion-contrib/datafusion-index-provider",
-      "description": "Prototype approaches to implementing Indexes in DataFusion",
-      "language": null,
-      "stargazers_count": 5,
-      "forks_count": 1,
-      "open_issues_count": 1,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 495946798,
-      "node_id": "R_kgDOHY-MLg",
-      "name": "datafusion-catalogprovider-glue",
-      "full_name": "datafusion-contrib/datafusion-catalogprovider-glue",
-      "html_url": "https://github.com/datafusion-contrib/datafusion-catalogprovider-glue",
-      "description": null,
-      "language": "Rust",
-      "stargazers_count": 21,
-      "forks_count": 4,
-      "open_issues_count": 3,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 764340944,
-      "node_id": "R_kgDOLY7q0A",
-      "name": "datafusion-sprox",
-      "full_name": "datafusion-contrib/datafusion-sprox",
-      "html_url": "https://github.com/datafusion-contrib/datafusion-sprox",
-      "description": "A DataFusion-powered Serverless S3 Proxy. ",
-      "language": "Rust",
-      "stargazers_count": 16,
-      "forks_count": 2,
-      "open_issues_count": 1,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 501457748,
-      "node_id": "R_kgDOHeOjVA",
-      "name": "bdt",
-      "full_name": "datafusion-contrib/bdt",
-      "html_url": "https://github.com/datafusion-contrib/bdt",
-      "description": "Boring Data Tool",
-      "language": "Rust",
-      "stargazers_count": 220,
-      "forks_count": 21,
-      "open_issues_count": 11,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "avro",
-        "convert",
-        "csv",
-        "json",
-        "parquet"
-      ]
-    },
-    {
-      "id": 497997122,
-      "node_id": "R_kgDOHa7VQg",
-      "name": "datafusion-c",
-      "full_name": "datafusion-contrib/datafusion-c",
-      "html_url": "https://github.com/datafusion-contrib/datafusion-c",
-      "description": "C language bindings for DataFusion",
-      "language": "C",
-      "stargazers_count": 20,
-      "forks_count": 5,
-      "open_issues_count": 6,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "apache-arrow",
-        "c",
-        "datafusion",
-        "glib",
-        "sql"
-      ]
-    },
-    {
-      "id": 470468071,
-      "node_id": "R_kgDOHArF5w",
-      "name": "datafusion-objectstore-hdfs",
-      "full_name": "datafusion-contrib/datafusion-objectstore-hdfs",
-      "html_url": "https://github.com/datafusion-contrib/datafusion-objectstore-hdfs",
-      "description": "HDFS based on Java implementation as a remote ObjectStore for DataFusion",
-      "language": "Rust",
-      "stargazers_count": 10,
-      "forks_count": 8,
-      "open_issues_count": 6,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -669,12 +697,148 @@
   ],
   "contributorsDetails": [
     {
+      "login": "sunng87",
+      "id": 221942,
+      "node_id": "MDQ6VXNlcjIyMTk0Mg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/221942?v=4",
+      "html_url": "https://github.com/sunng87",
+      "contributions": 184
+    },
+    {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "html_url": "https://github.com/apps/dependabot",
+      "contributions": 73
+    },
+    {
+      "login": "mjgarton",
+      "id": 11156949,
+      "node_id": "MDQ6VXNlcjExMTU2OTQ5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11156949?v=4",
+      "html_url": "https://github.com/mjgarton",
+      "contributions": 33
+    },
+    {
+      "login": "iPeluwa",
+      "id": 54927381,
+      "node_id": "MDQ6VXNlcjU0OTI3Mzgx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/54927381?v=4",
+      "html_url": "https://github.com/iPeluwa",
+      "contributions": 7
+    },
+    {
+      "login": "tonyalaribe",
+      "id": 6564482,
+      "node_id": "MDQ6VXNlcjY1NjQ0ODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6564482?v=4",
+      "html_url": "https://github.com/tonyalaribe",
+      "contributions": 4
+    },
+    {
+      "login": "madesroches-ubi",
+      "id": 6162425,
+      "node_id": "MDQ6VXNlcjYxNjI0MjU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6162425?v=4",
+      "html_url": "https://github.com/madesroches-ubi",
+      "contributions": 2
+    },
+    {
+      "login": "waynexia",
+      "id": 15380403,
+      "node_id": "MDQ6VXNlcjE1MzgwNDAz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/15380403?v=4",
+      "html_url": "https://github.com/waynexia",
+      "contributions": 2
+    },
+    {
+      "login": "simonvandel",
+      "id": 2770647,
+      "node_id": "MDQ6VXNlcjI3NzA2NDc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2770647?v=4",
+      "html_url": "https://github.com/simonvandel",
+      "contributions": 2
+    },
+    {
+      "login": "TwistingTwists",
+      "id": 11463027,
+      "node_id": "MDQ6VXNlcjExNDYzMDI3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11463027?v=4",
+      "html_url": "https://github.com/TwistingTwists",
+      "contributions": 1
+    },
+    {
+      "login": "aalexandrov",
+      "id": 1071946,
+      "node_id": "MDQ6VXNlcjEwNzE5NDY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1071946?v=4",
+      "html_url": "https://github.com/aalexandrov",
+      "contributions": 1
+    },
+    {
+      "login": "watford-ep",
+      "id": 215847611,
+      "node_id": "U_kgDODN2Suw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/215847611?v=4",
+      "html_url": "https://github.com/watford-ep",
+      "contributions": 1
+    },
+    {
+      "login": "singulared",
+      "id": 414425,
+      "node_id": "MDQ6VXNlcjQxNDQyNQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/414425?v=4",
+      "html_url": "https://github.com/singulared",
+      "contributions": 1
+    },
+    {
+      "login": "mshauneu",
+      "id": 5759779,
+      "node_id": "MDQ6VXNlcjU3NTk3Nzk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5759779?v=4",
+      "html_url": "https://github.com/mshauneu",
+      "contributions": 1
+    },
+    {
+      "login": "trueleo",
+      "id": 29176136,
+      "node_id": "MDQ6VXNlcjI5MTc2MTM2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/29176136?v=4",
+      "html_url": "https://github.com/trueleo",
+      "contributions": 7
+    },
+    {
+      "login": "vimeh",
+      "id": 14790730,
+      "node_id": "MDQ6VXNlcjE0NzkwNzMw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14790730?v=4",
+      "html_url": "https://github.com/vimeh",
+      "contributions": 3
+    },
+    {
+      "login": "madesroches",
+      "id": 8687857,
+      "node_id": "MDQ6VXNlcjg2ODc4NTc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8687857?v=4",
+      "html_url": "https://github.com/madesroches",
+      "contributions": 1
+    },
+    {
+      "login": "savs02",
+      "id": 114505153,
+      "node_id": "U_kgDOBtM1wQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114505153?v=4",
+      "html_url": "https://github.com/savs02",
+      "contributions": 1
+    },
+    {
       "login": "phillipleblanc",
       "id": 879445,
       "node_id": "MDQ6VXNlcjg3OTQ0NQ==",
       "avatar_url": "https://avatars.githubusercontent.com/u/879445?v=4",
       "html_url": "https://github.com/phillipleblanc",
-      "contributions": 97
+      "contributions": 118
     },
     {
       "login": "Sevenannn",
@@ -682,7 +846,7 @@
       "node_id": "U_kgDOB8K0Iw",
       "avatar_url": "https://avatars.githubusercontent.com/u/130200611?v=4",
       "html_url": "https://github.com/Sevenannn",
-      "contributions": 72
+      "contributions": 73
     },
     {
       "login": "sgrebnov",
@@ -690,7 +854,7 @@
       "node_id": "MDQ6VXNlcjk4MTU4MA==",
       "avatar_url": "https://avatars.githubusercontent.com/u/981580?v=4",
       "html_url": "https://github.com/sgrebnov",
-      "contributions": 60
+      "contributions": 62
     },
     {
       "login": "peasee",
@@ -701,12 +865,12 @@
       "contributions": 39
     },
     {
-      "login": "dependabot[bot]",
-      "id": 49699333,
-      "node_id": "MDM6Qm90NDk2OTkzMzM=",
-      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-      "html_url": "https://github.com/apps/dependabot",
-      "contributions": 31
+      "login": "hozan23",
+      "id": 119854621,
+      "node_id": "U_kgDOByTWHQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/119854621?v=4",
+      "html_url": "https://github.com/hozan23",
+      "contributions": 18
     },
     {
       "login": "ccciudatu",
@@ -717,12 +881,20 @@
       "contributions": 15
     },
     {
-      "login": "hozan23",
-      "id": 119854621,
-      "node_id": "U_kgDOByTWHQ",
-      "avatar_url": "https://avatars.githubusercontent.com/u/119854621?v=4",
-      "html_url": "https://github.com/hozan23",
-      "contributions": 11
+      "login": "nuno-faria",
+      "id": 26089290,
+      "node_id": "MDQ6VXNlcjI2MDg5Mjkw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/26089290?v=4",
+      "html_url": "https://github.com/nuno-faria",
+      "contributions": 13
+    },
+    {
+      "login": "lukekim",
+      "id": 80174,
+      "node_id": "MDQ6VXNlcjgwMTc0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/80174?v=4",
+      "html_url": "https://github.com/lukekim",
+      "contributions": 10
     },
     {
       "login": "y-f-u",
@@ -741,14 +913,6 @@
       "contributions": 6
     },
     {
-      "login": "crystalxyz",
-      "id": 45134936,
-      "node_id": "MDQ6VXNlcjQ1MTM0OTM2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/45134936?v=4",
-      "html_url": "https://github.com/crystalxyz",
-      "contributions": 3
-    },
-    {
       "login": "holicc",
       "id": 19146591,
       "node_id": "MDQ6VXNlcjE5MTQ2NTkx",
@@ -757,11 +921,27 @@
       "contributions": 3
     },
     {
-      "login": "nuno-faria",
-      "id": 26089290,
-      "node_id": "MDQ6VXNlcjI2MDg5Mjkw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/26089290?v=4",
-      "html_url": "https://github.com/nuno-faria",
+      "login": "alexanderbianchi",
+      "id": 75697973,
+      "node_id": "MDQ6VXNlcjc1Njk3OTcz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/75697973?v=4",
+      "html_url": "https://github.com/alexanderbianchi",
+      "contributions": 3
+    },
+    {
+      "login": "crystalxyz",
+      "id": 45134936,
+      "node_id": "MDQ6VXNlcjQ1MTM0OTM2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/45134936?v=4",
+      "html_url": "https://github.com/crystalxyz",
+      "contributions": 3
+    },
+    {
+      "login": "zeroshade",
+      "id": 555095,
+      "node_id": "MDQ6VXNlcjU1NTA5NQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/555095?v=4",
+      "html_url": "https://github.com/zeroshade",
       "contributions": 2
     },
     {
@@ -778,7 +958,15 @@
       "node_id": "MDQ6VXNlcjQ5MDY3Mw==",
       "avatar_url": "https://avatars.githubusercontent.com/u/490673?v=4",
       "html_url": "https://github.com/alamb",
-      "contributions": 2
+      "contributions": 1
+    },
+    {
+      "login": "askarbozcan",
+      "id": 53042567,
+      "node_id": "MDQ6VXNlcjUzMDQyNTY3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/53042567?v=4",
+      "html_url": "https://github.com/askarbozcan",
+      "contributions": 1
     },
     {
       "login": "gengteng",
@@ -797,59 +985,171 @@
       "contributions": 1
     },
     {
-      "login": "lukekim",
-      "id": 80174,
-      "node_id": "MDQ6VXNlcjgwMTc0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/80174?v=4",
-      "html_url": "https://github.com/lukekim",
+      "login": "krinart",
+      "id": 457589,
+      "node_id": "MDQ6VXNlcjQ1NzU4OQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/457589?v=4",
+      "html_url": "https://github.com/krinart",
       "contributions": 1
     },
     {
-      "login": "trueleo",
-      "id": 29176136,
-      "node_id": "MDQ6VXNlcjI5MTc2MTM2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/29176136?v=4",
-      "html_url": "https://github.com/trueleo",
+      "login": "gabotechs",
+      "id": 45515538,
+      "node_id": "MDQ6VXNlcjQ1NTE1NTM4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/45515538?v=4",
+      "html_url": "https://github.com/gabotechs",
+      "contributions": 122
+    },
+    {
+      "login": "jayshrivastava",
+      "id": 18633281,
+      "node_id": "MDQ6VXNlcjE4NjMzMjgx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/18633281?v=4",
+      "html_url": "https://github.com/jayshrivastava",
+      "contributions": 24
+    },
+    {
+      "login": "EdsonPetry",
+      "id": 124717297,
+      "node_id": "U_kgDOB28I8Q",
+      "avatar_url": "https://avatars.githubusercontent.com/u/124717297?v=4",
+      "html_url": "https://github.com/EdsonPetry",
+      "contributions": 9
+    },
+    {
+      "login": "JSOD11",
+      "id": 55005116,
+      "node_id": "MDQ6VXNlcjU1MDA1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55005116?v=4",
+      "html_url": "https://github.com/JSOD11",
+      "contributions": 9
+    },
+    {
+      "login": "robtandy",
+      "id": 1022200,
+      "node_id": "MDQ6VXNlcjEwMjIyMDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1022200?v=4",
+      "html_url": "https://github.com/robtandy",
+      "contributions": 9
+    },
+    {
+      "login": "adriangb",
+      "id": 1755071,
+      "node_id": "MDQ6VXNlcjE3NTUwNzE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1755071?v=4",
+      "html_url": "https://github.com/adriangb",
+      "contributions": 5
+    },
+    {
+      "login": "gene-bordegaray",
+      "id": 228799623,
+      "node_id": "U_kgDODaM0hw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/228799623?v=4",
+      "html_url": "https://github.com/gene-bordegaray",
+      "contributions": 4
+    },
+    {
+      "login": "LiaCastaneda",
+      "id": 181067558,
+      "node_id": "U_kgDOCsrfJg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/181067558?v=4",
+      "html_url": "https://github.com/LiaCastaneda",
+      "contributions": 4
+    },
+    {
+      "login": "ruchirK",
+      "id": 4015012,
+      "node_id": "MDQ6VXNlcjQwMTUwMTI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4015012?v=4",
+      "html_url": "https://github.com/ruchirK",
+      "contributions": 2
+    },
+    {
+      "login": "zuston",
+      "id": 8609142,
+      "node_id": "MDQ6VXNlcjg2MDkxNDI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8609142?v=4",
+      "html_url": "https://github.com/zuston",
+      "contributions": 2
+    },
+    {
+      "login": "marc-pydantic",
+      "id": 228450167,
+      "node_id": "U_kgDODZ3fdw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/228450167?v=4",
+      "html_url": "https://github.com/marc-pydantic",
+      "contributions": 2
+    },
+    {
+      "login": "jonathanc-n",
+      "id": 86070045,
+      "node_id": "MDQ6VXNlcjg2MDcwMDQ1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/86070045?v=4",
+      "html_url": "https://github.com/jonathanc-n",
+      "contributions": 2
+    },
+    {
+      "login": "ahmed-mez",
+      "id": 38987709,
+      "node_id": "MDQ6VXNlcjM4OTg3NzA5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/38987709?v=4",
+      "html_url": "https://github.com/ahmed-mez",
+      "contributions": 2
+    },
+    {
+      "login": "gferrate",
+      "id": 25205522,
+      "node_id": "MDQ6VXNlcjI1MjA1NTIy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25205522?v=4",
+      "html_url": "https://github.com/gferrate",
       "contributions": 1
     },
     {
-      "login": "waynexia",
-      "id": 15380403,
-      "node_id": "MDQ6VXNlcjE1MzgwNDAz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/15380403?v=4",
-      "html_url": "https://github.com/waynexia",
-      "contributions": 34
-    },
-    {
-      "login": "qstommyshu",
-      "id": 56746466,
-      "node_id": "MDQ6VXNlcjU2NzQ2NDY2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/56746466?v=4",
-      "html_url": "https://github.com/qstommyshu",
-      "contributions": 3
-    },
-    {
-      "login": "Eason0729",
-      "id": 30045503,
-      "node_id": "MDQ6VXNlcjMwMDQ1NTAz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/30045503?v=4",
-      "html_url": "https://github.com/Eason0729",
+      "login": "gabrielkerr",
+      "id": 12701210,
+      "node_id": "MDQ6VXNlcjEyNzAxMjEw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12701210?v=4",
+      "html_url": "https://github.com/gabrielkerr",
       "contributions": 1
     },
     {
-      "login": "rluvaton",
-      "id": 16746759,
-      "node_id": "MDQ6VXNlcjE2NzQ2NzU5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/16746759?v=4",
-      "html_url": "https://github.com/rluvaton",
+      "login": "geoffreyclaude",
+      "id": 119038772,
+      "node_id": "U_kgDOBxhjNA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/119038772?v=4",
+      "html_url": "https://github.com/geoffreyclaude",
       "contributions": 1
     },
     {
-      "login": "pranavJibhakate",
-      "id": 78021198,
-      "node_id": "MDQ6VXNlcjc4MDIxMTk4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/78021198?v=4",
-      "html_url": "https://github.com/pranavJibhakate",
+      "login": "kurtvolmar",
+      "id": 39112522,
+      "node_id": "MDQ6VXNlcjM5MTEyNTIy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/39112522?v=4",
+      "html_url": "https://github.com/kurtvolmar",
+      "contributions": 1
+    },
+    {
+      "login": "NGA-TRAN",
+      "id": 20850014,
+      "node_id": "MDQ6VXNlcjIwODUwMDE0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20850014?v=4",
+      "html_url": "https://github.com/NGA-TRAN",
+      "contributions": 1
+    },
+    {
+      "login": "cetra3",
+      "id": 6415435,
+      "node_id": "MDQ6VXNlcjY0MTU0MzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6415435?v=4",
+      "html_url": "https://github.com/cetra3",
+      "contributions": 1
+    },
+    {
+      "login": "sandugood",
+      "id": 141058955,
+      "node_id": "U_kgDOCGhjiw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/141058955?v=4",
+      "html_url": "https://github.com/sandugood",
       "contributions": 1
     }
   ],

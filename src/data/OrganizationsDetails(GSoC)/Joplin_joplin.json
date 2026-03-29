@@ -16,7 +16,9 @@
     "database",
     "search",
     "note-taking",
-    "office"
+    "office",
+    "security",
+    "AI/ML"
   ],
   "technologies": [
     "react",
@@ -38,7 +40,8 @@
     2020,
     2021,
     2022,
-    2024
+    2024,
+    2026
   ],
   "projects": {
     "2020": [
@@ -197,7 +200,8 @@
         "proposal_id": "4tNTM8Rq",
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/F5rtYZQU"
       }
-    ]
+    ],
+    "2026": []
   },
   "githubID": "joplin",
   "repositories": [
@@ -209,8 +213,8 @@
       "html_url": "https://github.com/joplin/plugins",
       "description": "Joplin official plugin repository",
       "language": null,
-      "stargazers_count": 1401,
-      "forks_count": 158,
+      "stargazers_count": 1570,
+      "forks_count": 172,
       "open_issues_count": 1,
       "license": null,
       "topics": [
@@ -220,54 +224,15 @@
       ]
     },
     {
-      "id": 863188670,
-      "node_id": "R_kgDOM3M2vg",
-      "name": "plugin-yesyoukan",
-      "full_name": "joplin/plugin-yesyoukan",
-      "html_url": "https://github.com/joplin/plugin-yesyoukan",
-      "description": "YesYouKan - Kanban plugin for Joplin",
-      "language": "TypeScript",
-      "stargazers_count": 25,
-      "forks_count": 2,
-      "open_issues_count": 8,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": [
-        "joplin",
-        "joplin-plugin",
-        "kanban",
-        "kanban-board"
-      ]
-    },
-    {
-      "id": 940308414,
-      "node_id": "R_kgDOOAv3vg",
-      "name": "voice-typing-models",
-      "full_name": "joplin/voice-typing-models",
-      "html_url": "https://github.com/joplin/voice-typing-models",
-      "description": null,
-      "language": "Jupyter Notebook",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
       "id": 752052803,
       "node_id": "R_kgDOLNNqQw",
       "name": "gsoc",
       "full_name": "joplin/gsoc",
       "html_url": "https://github.com/joplin/gsoc",
-      "description": "Joplin official Google Summer of Code 2025 repository",
+      "description": "Joplin official Google Summer of Code 2026 repository",
       "language": null,
-      "stargazers_count": 30,
-      "forks_count": 6,
+      "stargazers_count": 83,
+      "forks_count": 19,
       "open_issues_count": 0,
       "license": null,
       "topics": [
@@ -284,9 +249,9 @@
       "html_url": "https://github.com/joplin/plugin-templates",
       "description": "Create templates in Joplin and use them to create new notes and todos.",
       "language": "TypeScript",
-      "stargazers_count": 172,
-      "forks_count": 27,
-      "open_issues_count": 36,
+      "stargazers_count": 194,
+      "forks_count": 39,
+      "open_issues_count": 47,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -302,6 +267,135 @@
       ]
     },
     {
+      "id": 1175313077,
+      "node_id": "R_kgDORg3atQ",
+      "name": "plugin-chatgpt-import",
+      "full_name": "joplin/plugin-chatgpt-import",
+      "html_url": "https://github.com/joplin/plugin-chatgpt-import",
+      "description": "Import your ChatGPT conversation history into Joplin as searchable, organized notes.",
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "forks_count": 1,
+      "open_issues_count": 1,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 863188670,
+      "node_id": "R_kgDOM3M2vg",
+      "name": "plugin-yesyoukan",
+      "full_name": "joplin/plugin-yesyoukan",
+      "html_url": "https://github.com/joplin/plugin-yesyoukan",
+      "description": "YesYouKan - Kanban plugin for Joplin",
+      "language": "TypeScript",
+      "stargazers_count": 51,
+      "forks_count": 3,
+      "open_issues_count": 23,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": [
+        "joplin",
+        "joplin-plugin",
+        "kanban",
+        "kanban-board"
+      ]
+    },
+    {
+      "id": 439668794,
+      "node_id": "R_kgDOGjTQOg",
+      "name": "website",
+      "full_name": "joplin/website",
+      "html_url": "https://github.com/joplin/website",
+      "description": "Joplin official website",
+      "language": null,
+      "stargazers_count": 18,
+      "forks_count": 17,
+      "open_issues_count": 1,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 396983191,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzOTY5ODMxOTE=",
+      "name": "plugin-abc-sheet-music",
+      "full_name": "joplin/plugin-abc-sheet-music",
+      "html_url": "https://github.com/joplin/plugin-abc-sheet-music",
+      "description": "ABC Sheet Music Plugin for Joplin",
+      "language": "TypeScript",
+      "stargazers_count": 48,
+      "forks_count": 5,
+      "open_issues_count": 0,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "topics": []
+    },
+    {
+      "id": 503094395,
+      "node_id": "R_kgDOHfycew",
+      "name": "plugin-email",
+      "full_name": "joplin/plugin-email",
+      "html_url": "https://github.com/joplin/plugin-email",
+      "description": "Fetch emails and convert them into Joplin notes in multiple formats. Supports automatic monitoring of new or unread messages from a specific email address or mailbox, or manual conversion by uploading downloaded emails without needing to be logged in.",
+      "language": "TypeScript",
+      "stargazers_count": 38,
+      "forks_count": 6,
+      "open_issues_count": 17,
+      "license": null,
+      "topics": [
+        "email",
+        "email-plugin",
+        "joplin",
+        "joplin-plugin"
+      ]
+    },
+    {
+      "id": 499401540,
+      "node_id": "R_kgDOHcRDRA",
+      "name": "website-plugin-discovery",
+      "full_name": "joplin/website-plugin-discovery",
+      "html_url": "https://github.com/joplin/website-plugin-discovery",
+      "description": "The official plugin repository website",
+      "language": "TypeScript",
+      "stargazers_count": 8,
+      "forks_count": 7,
+      "open_issues_count": 3,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": [
+        "joplin",
+        "plugin"
+      ]
+    },
+    {
+      "id": 940308414,
+      "node_id": "R_kgDOOAv3vg",
+      "name": "voice-typing-models",
+      "full_name": "joplin/voice-typing-models",
+      "html_url": "https://github.com/joplin/voice-typing-models",
+      "description": null,
+      "language": "Jupyter Notebook",
+      "stargazers_count": 3,
+      "forks_count": 1,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
       "id": 371682853,
       "node_id": "MDEwOlJlcG9zaXRvcnkzNzE2ODI4NTM=",
       "name": "plugin-kanban",
@@ -309,7 +403,7 @@
       "html_url": "https://github.com/joplin/plugin-kanban",
       "description": "It allows notes in a notebook to be organized in a kanban board. ",
       "language": "TypeScript",
-      "stargazers_count": 132,
+      "stargazers_count": 131,
       "forks_count": 16,
       "open_issues_count": 30,
       "license": null,
@@ -327,50 +421,13 @@
       "html_url": "https://github.com/joplin/web-app",
       "description": "Joplin web app (beta)",
       "language": null,
-      "stargazers_count": 26,
-      "forks_count": 3,
+      "stargazers_count": 57,
+      "forks_count": 8,
       "open_issues_count": 3,
       "license": null,
       "topics": [
         "joplin",
         "pwa"
-      ]
-    },
-    {
-      "id": 439668794,
-      "node_id": "R_kgDOGjTQOg",
-      "name": "website",
-      "full_name": "joplin/website",
-      "html_url": "https://github.com/joplin/website",
-      "description": "Joplin official website",
-      "language": null,
-      "stargazers_count": 16,
-      "forks_count": 14,
-      "open_issues_count": 1,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 499401540,
-      "node_id": "R_kgDOHcRDRA",
-      "name": "website-plugin-discovery",
-      "full_name": "joplin/website-plugin-discovery",
-      "html_url": "https://github.com/joplin/website-plugin-discovery",
-      "description": "The official plugin repository website",
-      "language": "TypeScript",
-      "stargazers_count": 7,
-      "forks_count": 6,
-      "open_issues_count": 3,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": [
-        "joplin",
-        "plugin"
       ]
     },
     {
@@ -381,8 +438,8 @@
       "html_url": "https://github.com/joplin/plugin-ai-summarisation",
       "description": "🤖 Joplin AI - Summarisation: The project aims to create note summaries to help users synthesize main ideas and arguments to identify salient points. This means that users will have a clear idea of what the note is about in a short piece of text with less mental effort.",
       "language": "JavaScript",
-      "stargazers_count": 8,
-      "forks_count": 0,
+      "stargazers_count": 10,
+      "forks_count": 3,
       "open_issues_count": 0,
       "license": {
         "key": "gpl-3.0",
@@ -408,30 +465,10 @@
       "html_url": "https://github.com/joplin/plugin-conflict-resolution",
       "description": null,
       "language": "TypeScript",
-      "stargazers_count": 32,
-      "forks_count": 3,
-      "open_issues_count": 4,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 396983191,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzOTY5ODMxOTE=",
-      "name": "plugin-abc-sheet-music",
-      "full_name": "joplin/plugin-abc-sheet-music",
-      "html_url": "https://github.com/joplin/plugin-abc-sheet-music",
-      "description": "ABC Sheet Music Plugin for Joplin",
-      "language": "TypeScript",
-      "stargazers_count": 44,
+      "stargazers_count": 33,
       "forks_count": 4,
-      "open_issues_count": 5,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
+      "open_issues_count": 6,
+      "license": null,
       "topics": []
     },
     {
@@ -442,9 +479,9 @@
       "html_url": "https://github.com/joplin/plugin-victor",
       "description": "Victor helps you delete all your Joplin data and start over",
       "language": "TypeScript",
-      "stargazers_count": 7,
+      "stargazers_count": 9,
       "forks_count": 0,
-      "open_issues_count": 1,
+      "open_issues_count": 2,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -457,25 +494,6 @@
       ]
     },
     {
-      "id": 503094395,
-      "node_id": "R_kgDOHfycew",
-      "name": "plugin-email",
-      "full_name": "joplin/plugin-email",
-      "html_url": "https://github.com/joplin/plugin-email",
-      "description": " This plugin adds the ability to fetch email messages and converts them to Joplin notes in various formats, either by monitoring any new or unread messages from a specific email address or a specific mailbox, or by uploading downloaded email messages to the plugin without having to be logged in.",
-      "language": "TypeScript",
-      "stargazers_count": 35,
-      "forks_count": 5,
-      "open_issues_count": 16,
-      "license": null,
-      "topics": [
-        "email",
-        "email-plugin",
-        "joplin",
-        "joplin-plugin"
-      ]
-    },
-    {
       "id": 371677708,
       "node_id": "MDEwOlJlcG9zaXRvcnkzNzE2Nzc3MDg=",
       "name": "plugin-bibtex",
@@ -484,8 +502,8 @@
       "description": "Use locally stored BibTeX files to integrate citation into Joplin",
       "language": "TypeScript",
       "stargazers_count": 30,
-      "forks_count": 7,
-      "open_issues_count": 13,
+      "forks_count": 8,
+      "open_issues_count": 14,
       "license": null,
       "topics": [
         "bibtex",
@@ -544,7 +562,7 @@
       "node_id": "MDQ6VXNlcjgxMjk3ODgw",
       "avatar_url": "https://avatars.githubusercontent.com/u/81297880?v=4",
       "html_url": "https://github.com/joplinbot",
-      "contributions": 3029
+      "contributions": 4032
     },
     {
       "login": "laurent22",
@@ -552,7 +570,7 @@
       "node_id": "MDQ6VXNlcjEyODU1ODQ=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1285584?v=4",
       "html_url": "https://github.com/laurent22",
-      "contributions": 124
+      "contributions": 5
     },
     {
       "login": "personalizedrefrigerator",
@@ -560,7 +578,7 @@
       "node_id": "MDQ6VXNlcjQ2MzM0Mzg3",
       "avatar_url": "https://avatars.githubusercontent.com/u/46334387?v=4",
       "html_url": "https://github.com/personalizedrefrigerator",
-      "contributions": 19
+      "contributions": 8
     },
     {
       "login": "tessus",
@@ -568,7 +586,15 @@
       "node_id": "MDQ6VXNlcjIyMzQzOQ==",
       "avatar_url": "https://avatars.githubusercontent.com/u/223439?v=4",
       "html_url": "https://github.com/tessus",
-      "contributions": 16
+      "contributions": 3
+    },
+    {
+      "login": "ntczkjfg",
+      "id": 99524838,
+      "node_id": "U_kgDOBe6g5g",
+      "avatar_url": "https://avatars.githubusercontent.com/u/99524838?v=4",
+      "html_url": "https://github.com/ntczkjfg",
+      "contributions": 12
     },
     {
       "login": "JackGruber",
@@ -595,12 +621,164 @@
       "contributions": 1
     },
     {
-      "login": "bsavant",
-      "id": 209364,
-      "node_id": "MDQ6VXNlcjIwOTM2NA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/209364?v=4",
-      "html_url": "https://github.com/bsavant",
+      "login": "hyongew",
+      "id": 62000576,
+      "node_id": "MDQ6VXNlcjYyMDAwNTc2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/62000576?v=4",
+      "html_url": "https://github.com/hyongew",
+      "contributions": 1
+    },
+    {
+      "login": "PackElend",
+      "id": 3542031,
+      "node_id": "MDQ6VXNlcjM1NDIwMzE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3542031?v=4",
+      "html_url": "https://github.com/PackElend",
+      "contributions": 12
+    },
+    {
+      "login": "Daeraxa",
+      "id": 58074586,
+      "node_id": "MDQ6VXNlcjU4MDc0NTg2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/58074586?v=4",
+      "html_url": "https://github.com/Daeraxa",
+      "contributions": 6
+    },
+    {
+      "login": "roman-r-m",
+      "id": 995612,
+      "node_id": "MDQ6VXNlcjk5NTYxMg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/995612?v=4",
+      "html_url": "https://github.com/roman-r-m",
       "contributions": 2
+    },
+    {
+      "login": "mrjo118",
+      "id": 6963004,
+      "node_id": "MDQ6VXNlcjY5NjMwMDQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6963004?v=4",
+      "html_url": "https://github.com/mrjo118",
+      "contributions": 2
+    },
+    {
+      "login": "Aryan0312",
+      "id": 109823129,
+      "node_id": "U_kgDOBovEmQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/109823129?v=4",
+      "html_url": "https://github.com/Aryan0312",
+      "contributions": 1
+    },
+    {
+      "login": "dejafait",
+      "id": 10533583,
+      "node_id": "MDQ6VXNlcjEwNTMzNTgz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10533583?v=4",
+      "html_url": "https://github.com/dejafait",
+      "contributions": 1
+    },
+    {
+      "login": "tanmayBeginsJourney",
+      "id": 179711518,
+      "node_id": "U_kgDOCrYuHg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/179711518?v=4",
+      "html_url": "https://github.com/tanmayBeginsJourney",
+      "contributions": 1
+    },
+    {
+      "login": "nishantwrp",
+      "id": 36989112,
+      "node_id": "MDQ6VXNlcjM2OTg5MTEy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/36989112?v=4",
+      "html_url": "https://github.com/nishantwrp",
+      "contributions": 132
+    },
+    {
+      "login": "alondmnt",
+      "id": 17462125,
+      "node_id": "MDQ6VXNlcjE3NDYyMTI1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/17462125?v=4",
+      "html_url": "https://github.com/alondmnt",
+      "contributions": 43
+    },
+    {
+      "login": "CalebJohn",
+      "id": 2179547,
+      "node_id": "MDQ6VXNlcjIxNzk1NDc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2179547?v=4",
+      "html_url": "https://github.com/CalebJohn",
+      "contributions": 6
+    },
+    {
+      "login": "albusbot",
+      "id": 97315592,
+      "node_id": "U_kgDOBczrCA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/97315592?v=4",
+      "html_url": "https://github.com/albusbot",
+      "contributions": 3
+    },
+    {
+      "login": "ImperialSquid",
+      "id": 44560551,
+      "node_id": "MDQ6VXNlcjQ0NTYwNTUx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/44560551?v=4",
+      "html_url": "https://github.com/ImperialSquid",
+      "contributions": 3
+    },
+    {
+      "login": "sh1vam31",
+      "id": 181079673,
+      "node_id": "U_kgDOCssOeQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/181079673?v=4",
+      "html_url": "https://github.com/sh1vam31",
+      "contributions": 3
+    },
+    {
+      "login": "Aaravanand00",
+      "id": 215949470,
+      "node_id": "U_kgDODN8gng",
+      "avatar_url": "https://avatars.githubusercontent.com/u/215949470?v=4",
+      "html_url": "https://github.com/Aaravanand00",
+      "contributions": 2
+    },
+    {
+      "login": "amandamcg",
+      "id": 8716226,
+      "node_id": "MDQ6VXNlcjg3MTYyMjY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8716226?v=4",
+      "html_url": "https://github.com/amandamcg",
+      "contributions": 2
+    },
+    {
+      "login": "Jitmisra",
+      "id": 169401406,
+      "node_id": "U_kgDOChjcPg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/169401406?v=4",
+      "html_url": "https://github.com/Jitmisra",
+      "contributions": 1
+    },
+    {
+      "login": "BeatLink",
+      "id": 47278150,
+      "node_id": "MDQ6VXNlcjQ3Mjc4MTUw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/47278150?v=4",
+      "html_url": "https://github.com/BeatLink",
+      "contributions": 1
+    },
+    {
+      "login": "chmac",
+      "id": 690997,
+      "node_id": "MDQ6VXNlcjY5MDk5Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/690997?v=4",
+      "html_url": "https://github.com/chmac",
+      "contributions": 1
+    },
+    {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "html_url": "https://github.com/apps/github-actions",
+      "contributions": 1
     }
   ],
   "activeOrg": true

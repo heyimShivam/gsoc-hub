@@ -5,7 +5,8 @@
   "description": "Find cures. Saving children.",
   "url": "https://stjude.org",
   "category": [
-    "Programming languages"
+    "Programming languages",
+    "Science and medicine"
   ],
   "topics": [
     "programming languages",
@@ -15,19 +16,42 @@
   ],
   "technologies": [
     "rust",
-    "WDL"
+    "WDL",
+    "python",
+    "simd"
   ],
   "irc_channel": "https://join.slack.com/t/rust-omics/shared_invite/zt-30ntw2bpi-2hollhtHX6Zt8UvYeP_KcQ",
-  "contact_email": "mailto:clay.mcleod@stjude.org",
+  "contact_email": "mailto:stephanie.sandor@stjude.org",
   "mailing_list": null,
   "twitter_url": "https://x.com/claylmcleod",
   "blog_url": null,
   "facebook_url": null,
   "year": [
-    2025
+    2025,
+    2026
   ],
   "projects": {
-    "2025": []
+    "2025": [
+      {
+        "title": "Extending Sprocket's Language Server Protocol for Enhanced WDL Support",
+        "short_description": "I aim to enhance the Sprocket VSCode extension by integrating advanced language features for the Workflow Description Language (WDL) through the...",
+        "description": "I aim to enhance the Sprocket VSCode extension by integrating advanced language features for the Workflow Description Language (WDL) through the Language Server Protocol (LSP). This includes implementing go to definition, go to declaration, references, rename, auto-completion to improve the development experience for WDL authors. As a stretch goal, I will extend support to other editors like IntelliJ IDEA and Neovim",
+        "student_name": "dead8309",
+        "code_url": "https://gist.github.com/dead8309/f0f969f6be8dc33bcf70b8c0713f8949",
+        "proposal_id": "oNDzSYwc",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/uAgKM6HN"
+      },
+      {
+        "title": "Real-time monitoring dashboard and terminal user interface (TUI) for Crankshaft",
+        "short_description": "The project aims to build a real-time monitoring dashboard and terminal UI (TUI) for Crankshaft, a genomics workflow engine. Using gRPC for streaming...",
+        "description": "The project aims to build a real-time monitoring dashboard and terminal UI (TUI) for Crankshaft, a genomics workflow engine. Using gRPC for streaming and Ratatui for visualization, it will allow users to view live task statuses and logs directly in the terminal. The system will instrument task events (Queued, Started, Logs, Completed, Failed) without impacting performance and stream them efficiently. A stretch goal includes enabling job control (e.g., cancel tasks) through the TUI. The project will significantly improve observability and debugging in Crankshaft workflows.",
+        "student_name": "Rajesh Kumar Jha",
+        "code_url": "https://gist.github.com/rajiknows/46523b1da2f6a8e20e5969d6ed5c15dc",
+        "proposal_id": "wmoIcIeo",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/KhJBIIIf"
+      }
+    ],
+    "2026": []
   },
   "githubID": "stjude",
   "repositories": [
@@ -39,15 +63,295 @@
       "html_url": "https://github.com/stjude/proteinpaint",
       "description": "Data visualization and analysis framework focused on phenotype-molecular data integration at cohort level.",
       "language": "JavaScript",
-      "stargazers_count": 32,
-      "forks_count": 9,
-      "open_issues_count": 119,
+      "stargazers_count": 49,
+      "forks_count": 14,
+      "open_issues_count": 100,
       "license": {
         "key": "other",
         "name": "Other",
         "spdx_id": "NOASSERTION",
         "url": null,
         "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 999094206,
+      "node_id": "R_kgDOO4z3vg",
+      "name": "icore-image",
+      "full_name": "stjude/icore-image",
+      "html_url": "https://github.com/stjude/icore-image",
+      "description": null,
+      "language": "Python",
+      "stargazers_count": 5,
+      "forks_count": 1,
+      "open_issues_count": 12,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 486393153,
+      "node_id": "R_kgDOHP3FQQ",
+      "name": "learngenomics.dev",
+      "full_name": "stjude/learngenomics.dev",
+      "html_url": "https://github.com/stjude/learngenomics.dev",
+      "description": "A guided, intuitive introduction to genomics for software engineers. Curated by the community.",
+      "language": "JavaScript",
+      "stargazers_count": 393,
+      "forks_count": 39,
+      "open_issues_count": 11,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 353500579,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzNTM1MDA1Nzk=",
+      "name": "fuzzion2",
+      "full_name": "stjude/fuzzion2",
+      "html_url": "https://github.com/stjude/fuzzion2",
+      "description": "fuzzy fusion finder",
+      "language": "HTML",
+      "stargazers_count": 7,
+      "forks_count": 3,
+      "open_issues_count": 0,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 1023871258,
+      "node_id": "R_kgDOPQcJGg",
+      "name": "EasyFiji",
+      "full_name": "stjude/EasyFiji",
+      "html_url": "https://github.com/stjude/EasyFiji",
+      "description": "Source code for easyfiji project (maintain by Aaron Taylor and Chen LI)",
+      "language": "Java",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 1,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 191187923,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxOTExODc5MjM=",
+      "name": "CICERO",
+      "full_name": "stjude/CICERO",
+      "html_url": "https://github.com/stjude/CICERO",
+      "description": "CICERO: a versatile method for detecting complex and diverse driver fusions using cancer RNA sequencing data.",
+      "language": "Perl",
+      "stargazers_count": 43,
+      "forks_count": 22,
+      "open_issues_count": 7,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": [
+        "cicero",
+        "fusion-detection",
+        "rna-seq"
+      ]
+    },
+    {
+      "id": 163442011,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNjM0NDIwMTE=",
+      "name": "RNAIndel",
+      "full_name": "stjude/RNAIndel",
+      "html_url": "https://github.com/stjude/RNAIndel",
+      "description": "Somatic indel discovery tool for tumor RNA-Seq data.",
+      "language": "Python",
+      "stargazers_count": 24,
+      "forks_count": 8,
+      "open_issues_count": 0,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 228455107,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMjg0NTUxMDc=",
+      "name": "ROSE",
+      "full_name": "stjude/ROSE",
+      "html_url": "https://github.com/stjude/ROSE",
+      "description": "ROSE: RANK ORDERING OF SUPER-ENHANCERS",
+      "language": "Python",
+      "stargazers_count": 66,
+      "forks_count": 18,
+      "open_issues_count": 3,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": [
+        "softwarechip"
+      ]
+    },
+    {
+      "id": 237050975,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMzcwNTA5NzU=",
+      "name": "SICER2",
+      "full_name": "stjude/SICER2",
+      "html_url": "https://github.com/stjude/SICER2",
+      "description": "sicer2",
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 2,
+      "open_issues_count": 3,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 632045006,
+      "node_id": "R_kgDOJaw9zg",
+      "name": "fuzzion2_patgen",
+      "full_name": "stjude/fuzzion2_patgen",
+      "html_url": "https://github.com/stjude/fuzzion2_patgen",
+      "description": "tools for creating patterns for use with fuzzion2",
+      "language": "Perl",
+      "stargazers_count": 0,
+      "forks_count": 1,
+      "open_issues_count": 0,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 452414555,
+      "node_id": "R_kgDOGvdMWw",
+      "name": "Semisupervised_Learning",
+      "full_name": "stjude/Semisupervised_Learning",
+      "html_url": "https://github.com/stjude/Semisupervised_Learning",
+      "description": "Development of an approach using semisupervised learning and multinomial logistic regression to label methylation samples to boost ",
+      "language": "Jupyter Notebook",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 530738460,
+      "node_id": "R_kgDOH6JtHA",
+      "name": "HiLOW",
+      "full_name": "stjude/HiLOW",
+      "html_url": "https://github.com/stjude/HiLOW",
+      "description": "HiC Looping Organization Workflow",
+      "language": "WDL",
+      "stargazers_count": 1,
+      "forks_count": 1,
+      "open_issues_count": 2,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 752008450,
+      "node_id": "R_kgDOLNK9Ag",
+      "name": "LASER",
+      "full_name": "stjude/LASER",
+      "html_url": "https://github.com/stjude/LASER",
+      "description": null,
+      "language": "R",
+      "stargazers_count": 0,
+      "forks_count": 1,
+      "open_issues_count": 0,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "topics": []
+    },
+    {
+      "id": 704181249,
+      "node_id": "R_kgDOKfj0AQ",
+      "name": "Dowen_Fan",
+      "full_name": "stjude/Dowen_Fan",
+      "html_url": "https://github.com/stjude/Dowen_Fan",
+      "description": "Abraham lab ChIA-PET analysis pipeline",
+      "language": "Shell",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "topics": []
+    },
+    {
+      "id": 752003797,
+      "node_id": "R_kgDOLNKq1Q",
+      "name": "BOUQUET",
+      "full_name": "stjude/BOUQUET",
+      "html_url": "https://github.com/stjude/BOUQUET",
+      "description": null,
+      "language": "R",
+      "stargazers_count": 2,
+      "forks_count": 1,
+      "open_issues_count": 0,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
       },
       "topics": []
     },
@@ -64,30 +368,6 @@
       "open_issues_count": 0,
       "license": null,
       "topics": []
-    },
-    {
-      "id": 191187923,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxOTExODc5MjM=",
-      "name": "CICERO",
-      "full_name": "stjude/CICERO",
-      "html_url": "https://github.com/stjude/CICERO",
-      "description": "CICERO: a versatile method for detecting complex and diverse driver fusions using cancer RNA sequencing data.",
-      "language": "Perl",
-      "stargazers_count": 39,
-      "forks_count": 21,
-      "open_issues_count": 7,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": [
-        "cicero",
-        "fusion-detection",
-        "rna-seq"
-      ]
     },
     {
       "id": 140615341,
@@ -127,67 +407,9 @@
         "url": "https://api.github.com/licenses/gpl-3.0",
         "node_id": "MDc6TGljZW5zZTk="
       },
-      "topics": []
-    },
-    {
-      "id": 632045006,
-      "node_id": "R_kgDOJaw9zg",
-      "name": "fuzzion2_patgen",
-      "full_name": "stjude/fuzzion2_patgen",
-      "html_url": "https://github.com/stjude/fuzzion2_patgen",
-      "description": "tools for creating patterns for use with fuzzion2",
-      "language": "Perl",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 353500579,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzNTM1MDA1Nzk=",
-      "name": "fuzzion2",
-      "full_name": "stjude/fuzzion2",
-      "html_url": "https://github.com/stjude/fuzzion2",
-      "description": "fuzzy fusion finder",
-      "language": "HTML",
-      "stargazers_count": 6,
-      "forks_count": 2,
-      "open_issues_count": 0,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 163442011,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNjM0NDIwMTE=",
-      "name": "RNAIndel",
-      "full_name": "stjude/RNAIndel",
-      "html_url": "https://github.com/stjude/RNAIndel",
-      "description": "Somatic indel discovery tool for tumor RNA-Seq data.",
-      "language": "Python",
-      "stargazers_count": 22,
-      "forks_count": 9,
-      "open_issues_count": 0,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
+      "topics": [
+        "stjude-cbi"
+      ]
     },
     {
       "id": 212836990,
@@ -197,9 +419,9 @@
       "html_url": "https://github.com/stjude/seaseq",
       "description": "Abraham's lab - ChipSeq Pipeline",
       "language": "WDL",
-      "stargazers_count": 6,
+      "stargazers_count": 7,
       "forks_count": 5,
-      "open_issues_count": 0,
+      "open_issues_count": 3,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -218,7 +440,7 @@
       "description": "A cloud-based tool for mouse read cleansing in xenograft samples",
       "language": "Shell",
       "stargazers_count": 5,
-      "forks_count": 3,
+      "forks_count": 2,
       "open_issues_count": 1,
       "license": {
         "key": "apache-2.0",
@@ -250,26 +472,6 @@
       "topics": []
     },
     {
-      "id": 486393153,
-      "node_id": "R_kgDOHP3FQQ",
-      "name": "learngenomics.dev",
-      "full_name": "stjude/learngenomics.dev",
-      "html_url": "https://github.com/stjude/learngenomics.dev",
-      "description": "A guided, intuitive introduction to genomics for software engineers. Curated by the community.",
-      "language": "JavaScript",
-      "stargazers_count": 368,
-      "forks_count": 34,
-      "open_issues_count": 16,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
       "id": 344199639,
       "node_id": "MDEwOlJlcG9zaXRvcnkzNDQxOTk2Mzk=",
       "name": "RNApeg",
@@ -277,7 +479,7 @@
       "html_url": "https://github.com/stjude/RNApeg",
       "description": "RNA junction finder",
       "language": "Perl",
-      "stargazers_count": 3,
+      "stargazers_count": 4,
       "forks_count": 2,
       "open_issues_count": 2,
       "license": {
@@ -288,48 +490,6 @@
         "node_id": "MDc6TGljZW5zZTI="
       },
       "topics": []
-    },
-    {
-      "id": 752003797,
-      "node_id": "R_kgDOLNKq1Q",
-      "name": "BOUQUET",
-      "full_name": "stjude/BOUQUET",
-      "html_url": "https://github.com/stjude/BOUQUET",
-      "description": null,
-      "language": "R",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
-      },
-      "topics": []
-    },
-    {
-      "id": 228455107,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMjg0NTUxMDc=",
-      "name": "ROSE",
-      "full_name": "stjude/ROSE",
-      "html_url": "https://github.com/stjude/ROSE",
-      "description": "ROSE: RANK ORDERING OF SUPER-ENHANCERS",
-      "language": "Python",
-      "stargazers_count": 47,
-      "forks_count": 14,
-      "open_issues_count": 0,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": [
-        "softwarechip"
-      ]
     },
     {
       "id": 777959948,
@@ -393,7 +553,7 @@
       "html_url": "https://github.com/stjude/indelPost",
       "description": "Python library for simple and complex indels.",
       "language": "C",
-      "stargazers_count": 13,
+      "stargazers_count": 12,
       "forks_count": 3,
       "open_issues_count": 0,
       "license": {
@@ -446,26 +606,6 @@
       "topics": []
     },
     {
-      "id": 704181249,
-      "node_id": "R_kgDOKfj0AQ",
-      "name": "Dowen_Fan",
-      "full_name": "stjude/Dowen_Fan",
-      "html_url": "https://github.com/stjude/Dowen_Fan",
-      "description": "Abraham lab ChIA-PET analysis pipeline",
-      "language": "Shell",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
-      },
-      "topics": []
-    },
-    {
       "id": 681833874,
       "node_id": "R_kgDOKKP1kg",
       "name": "SVIndelGenotyper",
@@ -491,26 +631,6 @@
       ]
     },
     {
-      "id": 237050975,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMzcwNTA5NzU=",
-      "name": "SICER2",
-      "full_name": "stjude/SICER2",
-      "html_url": "https://github.com/stjude/SICER2",
-      "description": "sicer2",
-      "language": "Python",
-      "stargazers_count": 0,
-      "forks_count": 1,
-      "open_issues_count": 1,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
       "id": 377252061,
       "node_id": "MDEwOlJlcG9zaXRvcnkzNzcyNTIwNjE=",
       "name": "punctatools",
@@ -518,107 +638,9 @@
       "html_url": "https://github.com/stjude/punctatools",
       "description": "Detection, colocalization, and quantification of spots / puncta",
       "language": "Jupyter Notebook",
-      "stargazers_count": 12,
-      "forks_count": 8,
+      "stargazers_count": 16,
+      "forks_count": 9,
       "open_issues_count": 8,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 491274725,
-      "node_id": "R_kgDOHUhB5Q",
-      "name": "TALL-example",
-      "full_name": "stjude/TALL-example",
-      "html_url": "https://github.com/stjude/TALL-example",
-      "description": null,
-      "language": "R",
-      "stargazers_count": 2,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 452414555,
-      "node_id": "R_kgDOGvdMWw",
-      "name": "Semisupervised_Learning",
-      "full_name": "stjude/Semisupervised_Learning",
-      "html_url": "https://github.com/stjude/Semisupervised_Learning",
-      "description": "Development of an approach using semisupervised learning and multinomial logistic regression to label methylation samples to boost ",
-      "language": "Jupyter Notebook",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 198702901,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxOTg3MDI5MDE=",
-      "name": "PrimerTK",
-      "full_name": "stjude/PrimerTK",
-      "html_url": "https://github.com/stjude/PrimerTK",
-      "description": "A toolkit to design standard primers, multiplexed primers, and primers around SV's",
-      "language": "Python",
-      "stargazers_count": 12,
-      "forks_count": 4,
-      "open_issues_count": 6,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 151166645,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNTExNjY2NDU=",
-      "name": "teltale",
-      "full_name": "stjude/teltale",
-      "html_url": "https://github.com/stjude/teltale",
-      "description": "Compute telomeric read fractions in a BAM file.",
-      "language": "C++",
-      "stargazers_count": 3,
-      "forks_count": 1,
-      "open_issues_count": 0,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "bam",
-        "next-generation-sequencing",
-        "telomeres"
-      ]
-    },
-    {
-      "id": 229132401,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMjkxMzI0MDE=",
-      "name": "BAM2GFF",
-      "full_name": "stjude/BAM2GFF",
-      "html_url": "https://github.com/stjude/BAM2GFF",
-      "description": "BAMtoGFF, matrix density, plot visualizations",
-      "language": "Python",
-      "stargazers_count": 4,
-      "forks_count": 1,
-      "open_issues_count": 0,
       "license": {
         "key": "other",
         "name": "Other",
@@ -636,7 +658,7 @@
       "node_id": "MDQ6VXNlcjEyMjcxMzkx",
       "avatar_url": "https://avatars.githubusercontent.com/u/12271391?v=4",
       "html_url": "https://github.com/airenzp",
-      "contributions": 1988
+      "contributions": 2369
     },
     {
       "login": "siosonel",
@@ -644,7 +666,7 @@
       "node_id": "MDQ6VXNlcjQxMTAzMQ==",
       "avatar_url": "https://avatars.githubusercontent.com/u/411031?v=4",
       "html_url": "https://github.com/siosonel",
-      "contributions": 1483
+      "contributions": 2148
     },
     {
       "login": "creilly8",
@@ -652,7 +674,7 @@
       "node_id": "MDQ6VXNlcjIwMTM1NDMw",
       "avatar_url": "https://avatars.githubusercontent.com/u/20135430?v=4",
       "html_url": "https://github.com/creilly8",
-      "contributions": 1456
+      "contributions": 1797
     },
     {
       "login": "xzhou82",
@@ -660,39 +682,7 @@
       "node_id": "MDQ6VXNlcjE2MTkxMDk=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1619109?v=4",
       "html_url": "https://github.com/xzhou82",
-      "contributions": 1178
-    },
-    {
-      "login": "aacic",
-      "id": 32873451,
-      "node_id": "MDQ6VXNlcjMyODczNDUx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/32873451?v=4",
-      "html_url": "https://github.com/aacic",
-      "contributions": 378
-    },
-    {
-      "login": "robinpaul85",
-      "id": 42308274,
-      "node_id": "MDQ6VXNlcjQyMzA4Mjc0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/42308274?v=4",
-      "html_url": "https://github.com/robinpaul85",
-      "contributions": 373
-    },
-    {
-      "login": "karishma-gangwani",
-      "id": 77972514,
-      "node_id": "MDQ6VXNlcjc3OTcyNTE0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/77972514?v=4",
-      "html_url": "https://github.com/karishma-gangwani",
-      "contributions": 158
-    },
-    {
-      "login": "gavrielm",
-      "id": 8413053,
-      "node_id": "MDQ6VXNlcjg0MTMwNTM=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/8413053?v=4",
-      "html_url": "https://github.com/gavrielm",
-      "contributions": 106
+      "contributions": 1561
     },
     {
       "login": "compbiolover",
@@ -700,7 +690,55 @@
       "node_id": "MDQ6VXNlcjM5ODM4NDcw",
       "avatar_url": "https://avatars.githubusercontent.com/u/39838470?v=4",
       "html_url": "https://github.com/compbiolover",
-      "contributions": 98
+      "contributions": 699
+    },
+    {
+      "login": "robinpaul85",
+      "id": 42308274,
+      "node_id": "MDQ6VXNlcjQyMzA4Mjc0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/42308274?v=4",
+      "html_url": "https://github.com/robinpaul85",
+      "contributions": 638
+    },
+    {
+      "login": "gavrielm",
+      "id": 8413053,
+      "node_id": "MDQ6VXNlcjg0MTMwNTM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8413053?v=4",
+      "html_url": "https://github.com/gavrielm",
+      "contributions": 586
+    },
+    {
+      "login": "aacic",
+      "id": 32873451,
+      "node_id": "MDQ6VXNlcjMyODczNDUx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/32873451?v=4",
+      "html_url": "https://github.com/aacic",
+      "contributions": 470
+    },
+    {
+      "login": "vivekavuthu",
+      "id": 179725832,
+      "node_id": "U_kgDOCrZmCA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/179725832?v=4",
+      "html_url": "https://github.com/vivekavuthu",
+      "contributions": 128
+    },
+    {
+      "login": "ItsVictorLP",
+      "id": 181899441,
+      "node_id": "U_kgDOCteQsQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/181899441?v=4",
+      "html_url": "https://github.com/ItsVictorLP",
+      "contributions": 58
+    },
+    {
+      "login": "Copilot",
+      "id": 198982749,
+      "node_id": "BOT_kgDOC9w8XQ",
+      "avatar_url": "https://avatars.githubusercontent.com/in/1143301?v=4",
+      "html_url": "https://github.com/apps/copilot-swe-agent",
+      "contributions": 43
     },
     {
       "login": "congyu-lu",
@@ -708,7 +746,7 @@
       "node_id": "U_kgDOBqO_HQ",
       "avatar_url": "https://avatars.githubusercontent.com/u/111394589?v=4",
       "html_url": "https://github.com/congyu-lu",
-      "contributions": 34
+      "contributions": 38
     },
     {
       "login": "akanksha-r",
@@ -719,6 +757,38 @@
       "contributions": 26
     },
     {
+      "login": "josephpowi",
+      "id": 32489359,
+      "node_id": "MDQ6VXNlcjMyNDg5MzU5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/32489359?v=4",
+      "html_url": "https://github.com/josephpowi",
+      "contributions": 24
+    },
+    {
+      "login": "jikhashkya",
+      "id": 18628067,
+      "node_id": "MDQ6VXNlcjE4NjI4MDY3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/18628067?v=4",
+      "html_url": "https://github.com/jikhashkya",
+      "contributions": 14
+    },
+    {
+      "login": "karishma-gangwani",
+      "id": 77972514,
+      "node_id": "MDQ6VXNlcjc3OTcyNTE0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/77972514?v=4",
+      "html_url": "https://github.com/karishma-gangwani",
+      "contributions": 9
+    },
+    {
+      "login": "ppteamuser",
+      "id": 219738234,
+      "node_id": "U_kgDODRjweg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/219738234?v=4",
+      "html_url": "https://github.com/ppteamuser",
+      "contributions": 9
+    },
+    {
       "login": "AstridCanal",
       "id": 118193329,
       "node_id": "U_kgDOBwt8sQ",
@@ -727,20 +797,12 @@
       "contributions": 2
     },
     {
-      "login": "josephpowi",
-      "id": 32489359,
-      "node_id": "MDQ6VXNlcjMyNDg5MzU5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/32489359?v=4",
-      "html_url": "https://github.com/josephpowi",
-      "contributions": 2
-    },
-    {
       "login": "dependabot[bot]",
       "id": 49699333,
       "node_id": "MDM6Qm90NDk2OTkzMzM=",
       "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
       "html_url": "https://github.com/apps/dependabot",
-      "contributions": 2
+      "contributions": 6
     },
     {
       "login": "snyk-bot",
@@ -751,6 +813,14 @@
       "contributions": 2
     },
     {
+      "login": "emalinowski",
+      "id": 17907278,
+      "node_id": "MDQ6VXNlcjE3OTA3Mjc4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/17907278?v=4",
+      "html_url": "https://github.com/emalinowski",
+      "contributions": 1
+    },
+    {
       "login": "jay-knight",
       "id": 42975397,
       "node_id": "MDQ6VXNlcjQyOTc1Mzk3",
@@ -759,19 +829,187 @@
       "contributions": 1
     },
     {
-      "login": "a-frantz",
-      "id": 28660237,
-      "node_id": "MDQ6VXNlcjI4NjYwMjM3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/28660237?v=4",
-      "html_url": "https://github.com/a-frantz",
-      "contributions": 40
+      "login": "bimbashrestha",
+      "id": 14875426,
+      "node_id": "MDQ6VXNlcjE0ODc1NDI2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14875426?v=4",
+      "html_url": "https://github.com/bimbashrestha",
+      "contributions": 329
     },
     {
-      "login": "adthrasher",
-      "id": 1165729,
-      "node_id": "MDQ6VXNlcjExNjU3Mjk=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1165729?v=4",
-      "html_url": "https://github.com/adthrasher",
+      "login": "qsodia",
+      "id": 91074300,
+      "node_id": "MDQ6VXNlcjkxMDc0MzAw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/91074300?v=4",
+      "html_url": "https://github.com/qsodia",
+      "contributions": 113
+    },
+    {
+      "login": "sHermanGriffiths",
+      "id": 100145229,
+      "node_id": "U_kgDOBfgYTQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/100145229?v=4",
+      "html_url": "https://github.com/sHermanGriffiths",
+      "contributions": 12
+    },
+    {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "html_url": "https://github.com/apps/github-actions",
+      "contributions": 9
+    },
+    {
+      "login": "ReeceStevens",
+      "id": 5847947,
+      "node_id": "MDQ6VXNlcjU4NDc5NDc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5847947?v=4",
+      "html_url": "https://github.com/ReeceStevens",
+      "contributions": 4
+    },
+    {
+      "login": "claymcleod",
+      "id": 3411613,
+      "node_id": "MDQ6VXNlcjM0MTE2MTM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3411613?v=4",
+      "html_url": "https://github.com/claymcleod",
+      "contributions": 17
+    },
+    {
+      "login": "gavrie",
+      "id": 288652,
+      "node_id": "MDQ6VXNlcjI4ODY1Mg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/288652?v=4",
+      "html_url": "https://github.com/gavrie",
+      "contributions": 6
+    },
+    {
+      "login": "davbl",
+      "id": 11878478,
+      "node_id": "MDQ6VXNlcjExODc4NDc4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11878478?v=4",
+      "html_url": "https://github.com/davbl",
+      "contributions": 3
+    },
+    {
+      "login": "perezthedev",
+      "id": 49325984,
+      "node_id": "MDQ6VXNlcjQ5MzI1OTg0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/49325984?v=4",
+      "html_url": "https://github.com/perezthedev",
+      "contributions": 3
+    },
+    {
+      "login": "precisioninfinity",
+      "id": 35962449,
+      "node_id": "MDQ6VXNlcjM1OTYyNDQ5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/35962449?v=4",
+      "html_url": "https://github.com/precisioninfinity",
+      "contributions": 3
+    },
+    {
+      "login": "zafstojano",
+      "id": 20532523,
+      "node_id": "MDQ6VXNlcjIwNTMyNTIz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20532523?v=4",
+      "html_url": "https://github.com/zafstojano",
+      "contributions": 3
+    },
+    {
+      "login": "cphbrt",
+      "id": 8251796,
+      "node_id": "MDQ6VXNlcjgyNTE3OTY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8251796?v=4",
+      "html_url": "https://github.com/cphbrt",
+      "contributions": 2
+    },
+    {
+      "login": "joshuahedlund",
+      "id": 1281173,
+      "node_id": "MDQ6VXNlcjEyODExNzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1281173?v=4",
+      "html_url": "https://github.com/joshuahedlund",
+      "contributions": 2
+    },
+    {
+      "login": "i2shar",
+      "id": 608265,
+      "node_id": "MDQ6VXNlcjYwODI2NQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/608265?v=4",
+      "html_url": "https://github.com/i2shar",
+      "contributions": 2
+    },
+    {
+      "login": "a-hariti",
+      "id": 17055517,
+      "node_id": "MDQ6VXNlcjE3MDU1NTE3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/17055517?v=4",
+      "html_url": "https://github.com/a-hariti",
+      "contributions": 2
+    },
+    {
+      "login": "DD-P",
+      "id": 1289710,
+      "node_id": "MDQ6VXNlcjEyODk3MTA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1289710?v=4",
+      "html_url": "https://github.com/DD-P",
+      "contributions": 1
+    },
+    {
+      "login": "Fergal-C",
+      "id": 20088633,
+      "node_id": "MDQ6VXNlcjIwMDg4NjMz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20088633?v=4",
+      "html_url": "https://github.com/Fergal-C",
+      "contributions": 1
+    },
+    {
+      "login": "j-andrews7",
+      "id": 10225716,
+      "node_id": "MDQ6VXNlcjEwMjI1NzE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10225716?v=4",
+      "html_url": "https://github.com/j-andrews7",
+      "contributions": 1
+    },
+    {
+      "login": "genehack",
+      "id": 42126,
+      "node_id": "MDQ6VXNlcjQyMTI2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/42126?v=4",
+      "html_url": "https://github.com/genehack",
+      "contributions": 1
+    },
+    {
+      "login": "lauzadis",
+      "id": 30608308,
+      "node_id": "MDQ6VXNlcjMwNjA4MzA4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/30608308?v=4",
+      "html_url": "https://github.com/lauzadis",
+      "contributions": 1
+    },
+    {
+      "login": "Miserlou",
+      "id": 139987,
+      "node_id": "MDQ6VXNlcjEzOTk4Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/139987?v=4",
+      "html_url": "https://github.com/Miserlou",
+      "contributions": 1
+    },
+    {
+      "login": "ZiggerZZ",
+      "id": 13183693,
+      "node_id": "MDQ6VXNlcjEzMTgzNjkz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13183693?v=4",
+      "html_url": "https://github.com/ZiggerZZ",
+      "contributions": 1
+    },
+    {
+      "login": "mcrasso-marsie",
+      "id": 99699873,
+      "node_id": "U_kgDOBfFMoQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/99699873?v=4",
+      "html_url": "https://github.com/mcrasso-marsie",
       "contributions": 1
     }
   ],

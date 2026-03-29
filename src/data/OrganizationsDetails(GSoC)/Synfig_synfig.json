@@ -22,7 +22,7 @@
   ],
   "irc_channel": null,
   "contact_email": "mailto:contact@synfig.org",
-  "mailing_list": "https://forums.synfig.org/t/gsoc-2025-google-summer-of-code-2025/16119",
+  "mailing_list": "https://forums.synfig.org/t/google-summer-of-code-2026/16911",
   "twitter_url": "https://twitter.com/synfig",
   "blog_url": "https://www.synfig.org/news/",
   "facebook_url": "https://www.facebook.com/synfig.org",
@@ -33,7 +33,8 @@
     2022,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2019": [
@@ -131,7 +132,27 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/bVFeFhR7"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Brush tool",
+        "short_description": "This project will deliver a performant integrated Raster Brush Tool alongside a basic Brush Profile Editor. The core implementation uses a real-time...",
+        "description": "This project will deliver a performant integrated Raster Brush Tool alongside a basic Brush Profile Editor. The core implementation uses a real-time overlay preview for smooth interaction and a robust atomic command structure enabling multiple user-selectable undo modes. Key deliverables include the core draw/erase tool, the editor for viewing/modifying key brush parameters , support for standard brush presets and parameters , reliable undo functionality across implemented modes, and fully animatable raster output integrated into synfig.",
+        "student_name": "Abdelhadi Wael",
+        "code_url": "https://gist.github.com/Abdelhadi-Wael/acd6c9e2391585088856d95dae38eaf5",
+        "proposal_id": "EYGeVm2N",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/fxeP8E73"
+      },
+      {
+        "title": "macOS app bundle (175 hours)",
+        "short_description": "The current macOS app bundle creation process for Synfig relies on an outdated Bash script that is slow, error-prone with incorrect paths, and lacks...",
+        "description": "The current macOS app bundle creation process for Synfig relies on an outdated Bash script that is slow, error-prone with incorrect paths, and lacks code signing, hindering efficient distribution and user trust. This project aims to replace the script with a robust, automated solution to streamline bundle generation, ensure macOS security compliance, and enhance the native user experience. By leveraging Python for dependency collection, C++ for environment setup, and CMake/CPack for packaging, the project will deliver a signed, distributable SynfigStudio.app bundle. Key improvements include faster dependency gathering, proper code signing, embedded environment setup, Python/lxml integration, and macOS-native interface enhancements.\n\nApproach:\n\t•\tDevelop a Python script to efficiently collect and stage dependencies, optimizing with caching and parallelization.\n\t•\tImplement code signing in reverse dependency order using codesign, including Python and lxml binaries.\n\t•\tRemove the external launcher script by embedding environment setup in the C++ entry point.\n\t•\tPackage Python and lxml into the bundle, ensuring compatibility and signing.\n\t•\tIntegrate CPack into CMake to generate a polished .dmg installer.\n\t•\tEnhance the UI with macOS-native menu bar and window behaviours using GTK.\n\nDeliverables:\n\t•\tA CMake/CPack-based build system producing a signed SynfigStudio.app bundle.\n\t•\tA Python script for automated dependency collection and path rewriting.\n\t•\tCode signing support for all binaries, including Python and lxml.\n\t•\tEmbedded environment setup within SynfigStudio, eliminating the launcher script.\n\t•\tA bundled Python runtime with lxml, fully signed and functional.\n\t•\tA distributable .dmg installer generated via CPack.\n\t•\tmacOS-native UI improvements (e.g., menu bar, shortcuts, dialogs boxes).\n\t•\tComprehensive documentation covering installation, usage, and build instructions.",
+        "student_name": "Nitish Itankar",
+        "code_url": "https://github.com/synfig/synfig/pull/3608",
+        "proposal_id": "pZDZv4kb",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/EqL2LlYZ"
+      }
+    ],
+    "2026": []
   },
   "githubID": "synfig",
   "repositories": [
@@ -143,9 +164,9 @@
       "html_url": "https://github.com/synfig/synfig",
       "description": "This is the Official source code repository of Synfig Studio animation software",
       "language": "C++",
-      "stargazers_count": 1977,
-      "forks_count": 363,
-      "open_issues_count": 689,
+      "stargazers_count": 2191,
+      "forks_count": 408,
+      "open_issues_count": 722,
       "license": {
         "key": "gpl-3.0",
         "name": "GNU General Public License v3.0",
@@ -165,23 +186,6 @@
       ]
     },
     {
-      "id": 128540953,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMjg1NDA5NTM=",
-      "name": "synfig-docs-dev",
-      "full_name": "synfig/synfig-docs-dev",
-      "html_url": "https://github.com/synfig/synfig-docs-dev",
-      "description": "Developer's documentation of Synfig",
-      "language": null,
-      "stargazers_count": 7,
-      "forks_count": 27,
-      "open_issues_count": 16,
-      "license": null,
-      "topics": [
-        "hacktoberfest",
-        "synfig"
-      ]
-    },
-    {
       "id": 245849045,
       "node_id": "MDEwOlJlcG9zaXRvcnkyNDU4NDkwNDU=",
       "name": "synfig-docs",
@@ -190,8 +194,8 @@
       "description": "Synfig User Manual",
       "language": "Python",
       "stargazers_count": 12,
-      "forks_count": 20,
-      "open_issues_count": 4,
+      "forks_count": 25,
+      "open_issues_count": 6,
       "license": {
         "key": "other",
         "name": "Other",
@@ -200,6 +204,23 @@
         "node_id": "MDc6TGljZW5zZTA="
       },
       "topics": []
+    },
+    {
+      "id": 128540953,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMjg1NDA5NTM=",
+      "name": "synfig-docs-dev",
+      "full_name": "synfig/synfig-docs-dev",
+      "html_url": "https://github.com/synfig/synfig-docs-dev",
+      "description": "Developer's documentation of Synfig",
+      "language": null,
+      "stargazers_count": 8,
+      "forks_count": 31,
+      "open_issues_count": 17,
+      "license": null,
+      "topics": [
+        "hacktoberfest",
+        "synfig"
+      ]
     },
     {
       "id": 809771522,
@@ -259,7 +280,7 @@
       "language": "JavaScript",
       "stargazers_count": 1,
       "forks_count": 1,
-      "open_issues_count": 3,
+      "open_issues_count": 4,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -307,7 +328,7 @@
       "node_id": "MDQ6VXNlcjEzMjM5ODc=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1323987?v=4",
       "html_url": "https://github.com/rodolforg",
-      "contributions": 15
+      "contributions": 17
     },
     {
       "login": "blackwarthog",
@@ -414,12 +435,20 @@
       "contributions": 10
     },
     {
+      "login": "BobSynfig",
+      "id": 45494804,
+      "node_id": "MDQ6VXNlcjQ1NDk0ODA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/45494804?v=4",
+      "html_url": "https://github.com/BobSynfig",
+      "contributions": 12
+    },
+    {
       "login": "mbasaglia",
       "id": 2465791,
       "node_id": "MDQ6VXNlcjI0NjU3OTE=",
       "avatar_url": "https://avatars.githubusercontent.com/u/2465791?v=4",
       "html_url": "https://github.com/mbasaglia",
-      "contributions": 28
+      "contributions": 5
     },
     {
       "login": "Keyikedalube",
@@ -436,14 +465,6 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/101147828?v=4",
       "html_url": "https://github.com/theartful",
       "contributions": 27
-    },
-    {
-      "login": "BobSynfig",
-      "id": 45494804,
-      "node_id": "MDQ6VXNlcjQ1NDk0ODA0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/45494804?v=4",
-      "html_url": "https://github.com/BobSynfig",
-      "contributions": 5
     },
     {
       "login": "lemmabit",
@@ -491,7 +512,7 @@
       "node_id": "MDQ6VXNlcjQxNDAyNDc=",
       "avatar_url": "https://avatars.githubusercontent.com/u/4140247?v=4",
       "html_url": "https://github.com/luzpaz",
-      "contributions": 15
+      "contributions": 16
     },
     {
       "login": "DhairyaBahl",
@@ -502,6 +523,14 @@
       "contributions": 1
     },
     {
+      "login": "Svarov-RZM",
+      "id": 28569334,
+      "node_id": "MDQ6VXNlcjI4NTY5MzM0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/28569334?v=4",
+      "html_url": "https://github.com/Svarov-RZM",
+      "contributions": 3
+    },
+    {
       "login": "ChillyCider",
       "id": 1687358,
       "node_id": "MDQ6VXNlcjE2ODczNTg=",
@@ -510,20 +539,44 @@
       "contributions": 9
     },
     {
-      "login": "jottoprimo",
-      "id": 858538,
-      "node_id": "MDQ6VXNlcjg1ODUzOA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/858538?v=4",
-      "html_url": "https://github.com/jottoprimo",
+      "login": "Abdelhadi-Wael",
+      "id": 179227078,
+      "node_id": "U_kgDOCq7Jxg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/179227078?v=4",
+      "html_url": "https://github.com/Abdelhadi-Wael",
       "contributions": 7
     },
     {
-      "login": "Svarov-RZM",
-      "id": 28569334,
-      "node_id": "MDQ6VXNlcjI4NTY5MzM0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/28569334?v=4",
-      "html_url": "https://github.com/Svarov-RZM",
-      "contributions": 6
+      "login": "veermetri05",
+      "id": 37113369,
+      "node_id": "MDQ6VXNlcjM3MTEzMzY5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/37113369?v=4",
+      "html_url": "https://github.com/veermetri05",
+      "contributions": 21
+    },
+    {
+      "login": "harshagrwl",
+      "id": 43218240,
+      "node_id": "MDQ6VXNlcjQzMjE4MjQw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43218240?v=4",
+      "html_url": "https://github.com/harshagrwl",
+      "contributions": 2
+    },
+    {
+      "login": "Zloi-KoteikA",
+      "id": 107177690,
+      "node_id": "U_kgDOBmNm2g",
+      "avatar_url": "https://avatars.githubusercontent.com/u/107177690?v=4",
+      "html_url": "https://github.com/Zloi-KoteikA",
+      "contributions": 2
+    },
+    {
+      "login": "Stas-Kholodilin",
+      "id": 29379779,
+      "node_id": "MDQ6VXNlcjI5Mzc5Nzc5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/29379779?v=4",
+      "html_url": "https://github.com/Stas-Kholodilin",
+      "contributions": 1
     },
     {
       "login": "reSHARMA",

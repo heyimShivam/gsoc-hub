@@ -30,7 +30,8 @@
   "year": [
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2023": [
@@ -118,7 +119,72 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/ukbrVzY3"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Gradle Convention Plugin for Developing Jenkins Plugins",
+        "short_description": "This project aims to modernize Jenkins plugin development using Gradle by updating the existing Gradle JPI plugin and introducing a new convention...",
+        "description": "This project aims to modernize Jenkins plugin development using Gradle by updating the existing Gradle JPI plugin and introducing a new convention plugin. The primary goal is to achieve feature parity with Maven workflows, improve compliance with Jenkins hosting requirements, and enhance developer experience. Key deliverables include migrating the codebase from Groovy to Kotlin DSL, integrating Jenkins-specific tools like Plugin Compatibility Tester (PCT) and Bill of Materials (BOM), and simplifying build, test, and release processes for Jenkins plugins. This initiative will strengthen the Gradle ecosystem while improving the reliability and efficiency of Jenkins plugins.",
+        "student_name": "Aarav Mahajan",
+        "code_url": "https://community.gradle.org/events/gsoc/2025/jenkins-plugins-toolchain/",
+        "proposal_id": "EQxVYxe2",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/3ujOIGDx"
+      },
+      {
+        "title": "Build a Modern, Compiler-Integrated Kotlin Language Server",
+        "short_description": "This project aims to build a high-performance, build-system agnostic Kotlin Language Server using the Kotlin Analysis API. The goal is to replace the...",
+        "description": "This project aims to build a high-performance, build-system agnostic Kotlin Language Server using the Kotlin Analysis API. The goal is to replace the unmaintained and inefficient open-source LSP with a modern implementation that supports the full LSP 3.17 spec, works across editors like VSCode and Neovim, and delivers IDE-grade language features like diagnostics, completions, and navigation without depending on kotlinc. By the end of GSoC, this project will provide Kotlin developers with a powerful alternative for writing and maintaining code outside JetBrains tooling.",
+        "student_name": "Hemram",
+        "code_url": "https://github.com/h4-mm-3r/kotlin-lsp",
+        "proposal_id": "QF6Y9zyL",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/Y8cK79RJ"
+      },
+      {
+        "title": "Improving Configuration Cache in key Gradle plugins",
+        "short_description": "This project focuses on enhancing Gradle’s Configuration Cache compatibility across widely used Gradle plugins. Configuration Cache is a performance...",
+        "description": "This project focuses on enhancing Gradle’s Configuration Cache compatibility across widely used Gradle plugins. Configuration Cache is a performance feature that allows Gradle to reuse the results of the configuration phase between builds, significantly reducing build times. However, many plugins are not fully compatible with it due to issues such as accessing project APIs at execution time or relying on non-cacheable inputs. The project aims to identify gaps by analyzing popular plugins such as Nebula and Liquibase to detect incompatibilities with Configuration Cache, then fix these issues by refactoring plugin code to eliminate non-cacheable operations and ensure tasks only rely on properly declared inputs and outputs while avoiding illegal access during execution. In addition, configuration cache tests will be introduced to validate cache correctness and guarantee future compatibility, ultimately resulting in faster and more reliable builds for developers.",
+        "student_name": "Nouran Atef",
+        "code_url": "https://community.gradle.org/events/gsoc/2025/configuration-cache-and-lock-contention/",
+        "proposal_id": "tUUKJ4MO",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/chp2Sbei"
+      },
+      {
+        "title": "Support Android and iOS targets in Kotlin Multiplatform for Gemini using Vertex AI in Firebase",
+        "short_description": "This project aims to address the challenge of creating a seamless and efficient integration between Gemini and Vertex AI in Firebase for Android and...",
+        "description": "This project aims to address the challenge of creating a seamless and efficient integration between Gemini and Vertex AI in Firebase for Android and iOS platforms using Kotlin Multiplatform (KMP). The proposed solution is to develop an open-source KMP library that will support Gemini with Vertex AI in Firebase, focusing on best practices for creating KMP libraries and ensuring robust production implementation across both Android and iOS platforms.\n\nThe deliverables for this project will include:\n1.  Kotlin Multiplatform Library: This library will provide seamless integration between Gemini and Vertex AI in Firebase, supporting Android and iOS. \n\n2.  Sample Code and Documentation: Along with the library, sample code and thorough documentation will be provided to assist developers in utilizing the library effectively for their own projects.\n\nIn practice, developers can integrate this library into their Kotlin Multiplatform applications. Our library will offer a seamless process of integrating Vertex AI into Firebase apps for both iOS and Android.",
+        "student_name": "SeanChinJunKai",
+        "code_url": "https://github.com/SeanChinJunKai/firebase-ai-kmp",
+        "proposal_id": "0zCXorBE",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/Ow6J6ami"
+      },
+      {
+        "title": "Enhanced Kotlin Code Quality Reporting with Gradle Problem API: Integration with Detekt and Ktlint",
+        "short_description": "As developers, we always favor tools that enhance and streamline the programming process, including plugins that provide error reporting and insights...",
+        "description": "As developers, we always favor tools that enhance and streamline the programming process, including plugins that provide error reporting and insights to improve the code quality. Kotlin developers using Gradle rely on tools like Detekt and Ktlint to enforce code quality. While Detekt and Ktlint offer reporting in various formats like (HTML, SARIF), their current integration with IDEs can be fragmented, requiring developers to switch contexts and manually review findings, which disrupts the coding workflow and slows down their development process. This project aims to implement a unified and actionable code quality reporting system through the integration of the recently introduced Gradle new Problems API. This API provides structured and rich information about the problems happening during a build. The information provided can be used by different interfaces such as Gradle’s console output, build scans, or IDEs to communicate any issues. With this API integration and structured format of the generated report, developers can experience faster issue identification, streamline debugging, and have improved code maintainability. This project will provide value to the Kotlin development community by upgrading the quality of their error reporting.",
+        "student_name": "Vanessa Johnson",
+        "code_url": "https://community.gradle.org/events/gsoc/2025/kotlin-code-quality-with-problems-api/",
+        "proposal_id": "4Ml2E7RP",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/4UqgKDMe"
+      },
+      {
+        "title": "IntelliJ Platform Gradle Plugin – Gradle Reporting and Parallel Verifications",
+        "short_description": "The IntelliJ Platform Gradle Plugin, the official Gradle plugin for building, testing, verifying, configuring environments, and publishing plugins...",
+        "description": "The IntelliJ Platform Gradle Plugin, the official Gradle plugin for building, testing, verifying, configuring environments, and publishing plugins for IntelliJ IDEs, includes a VerifyPluginTask that verifies a plugin against one or multiple IDEs. Currently, reporting is managed by the Verifier CLI, which employs its custom reporting system to generate verification reports; however, the VerifyPluginTask could benefit from Gradle's Reporting API for more configurable reports. Additionally, integrating Gradle's Worker API for parallel execution of the verifyPlugin task could enhance the IDE plugin development experience. The goal of this project is to assess the benefits and ultimately implement the necessary changes to the verifyPlugin task. Lastly, explore further optimizations to enhance the plugin development workflow.",
+        "student_name": "Victoria Chuks Alajemba",
+        "code_url": "https://dev.to/victoria_chuks_7e772e1688/gsoc-2025-kotlin-foundation-final-report-3p4c",
+        "proposal_id": "9QxU9UOP",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/lJoAo8B7"
+      },
+      {
+        "title": "Maven Central publishing plugin for Gradle with new APIs",
+        "short_description": "The migration to Maven Central's new API instance has introduced significant changes, requiring specialized support in Gradle plugins for seamless...",
+        "description": "The migration to Maven Central's new API instance has introduced significant changes, requiring specialized support in Gradle plugins for seamless publishing. \r\n\r\nThis project aims to develop a new Gradle plugin compatible with the updated APIs, simplifying the process with Kotlin DSL extensions and automating tasks like GPG signing and artifact packaging.\r\n\r\nDeliverables include a fully functional plugin, comprehensive documentation, and robust test coverage.",
+        "student_name": "Yongjun Hong",
+        "code_url": "https://community.gradle.org/events/gsoc/2025/maven-central-publishing-with-new-api/",
+        "proposal_id": "cvEIbQPz",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/zCRWjfpd"
+      }
+    ],
+    "2026": []
   },
   "githubID": "KotlinFoundation",
   "repositories": [
@@ -130,7 +196,7 @@
       "html_url": "https://github.com/KotlinFoundation/kotlinfoundation.github.io",
       "description": null,
       "language": "TypeScript",
-      "stargazers_count": 6,
+      "stargazers_count": 7,
       "forks_count": 5,
       "open_issues_count": 0,
       "license": {
@@ -150,8 +216,8 @@
       "html_url": "https://github.com/KotlinFoundation/Programming-in-Kotlin-homework",
       "description": null,
       "language": "Kotlin",
-      "stargazers_count": 5,
-      "forks_count": 13,
+      "stargazers_count": 7,
+      "forks_count": 14,
       "open_issues_count": 0,
       "license": {
         "key": "mit",
@@ -170,7 +236,7 @@
       "node_id": "MDQ6VXNlcjI0MjUxNA==",
       "avatar_url": "https://avatars.githubusercontent.com/u/242514?v=4",
       "html_url": "https://github.com/zoobestik",
-      "contributions": 237
+      "contributions": 239
     },
     {
       "login": "nikpachoo",
@@ -178,7 +244,7 @@
       "node_id": "MDQ6VXNlcjMzMzgzMTE=",
       "avatar_url": "https://avatars.githubusercontent.com/u/3338311?v=4",
       "html_url": "https://github.com/nikpachoo",
-      "contributions": 87
+      "contributions": 115
     },
     {
       "login": "berezinant",
@@ -186,7 +252,7 @@
       "node_id": "MDQ6VXNlcjQ0Njk3MzI=",
       "avatar_url": "https://avatars.githubusercontent.com/u/4469732?v=4",
       "html_url": "https://github.com/berezinant",
-      "contributions": 40
+      "contributions": 58
     },
     {
       "login": "krutilov",
@@ -194,7 +260,7 @@
       "node_id": "MDQ6VXNlcjM2Mjc3NDA=",
       "avatar_url": "https://avatars.githubusercontent.com/u/3627740?v=4",
       "html_url": "https://github.com/krutilov",
-      "contributions": 36
+      "contributions": 46
     },
     {
       "login": "etolstoy",
@@ -202,7 +268,15 @@
       "node_id": "MDQ6VXNlcjM5NTUyNjI=",
       "avatar_url": "https://avatars.githubusercontent.com/u/3955262?v=4",
       "html_url": "https://github.com/etolstoy",
-      "contributions": 15
+      "contributions": 22
+    },
+    {
+      "login": "Belosnegova",
+      "id": 33317186,
+      "node_id": "MDQ6VXNlcjMzMzE3MTg2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/33317186?v=4",
+      "html_url": "https://github.com/Belosnegova",
+      "contributions": 1
     },
     {
       "login": "topka",
@@ -221,14 +295,6 @@
       "contributions": 6
     },
     {
-      "login": "Belosnegova",
-      "id": 33317186,
-      "node_id": "MDQ6VXNlcjMzMzE3MTg2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/33317186?v=4",
-      "html_url": "https://github.com/Belosnegova",
-      "contributions": 1
-    },
-    {
       "login": "qwwdfsad",
       "id": 2780116,
       "node_id": "MDQ6VXNlcjI3ODAxMTY=",
@@ -243,6 +309,14 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/5330224?v=4",
       "html_url": "https://github.com/koshachy",
       "contributions": 4
+    },
+    {
+      "login": "claude",
+      "id": 81847,
+      "node_id": "MDQ6VXNlcjgxODQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/81847?v=4",
+      "html_url": "https://github.com/claude",
+      "contributions": 2
     },
     {
       "login": "Daria-Voronina",

@@ -27,7 +27,8 @@
     2022,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2022": [
@@ -96,41 +97,59 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/kGc9KBEB"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Content Security Policy compatibility",
+        "short_description": "This proposal aims to improve Wagtail's Content Security Policy (CSP) compliance by organizing existing efforts, refactoring code, and...",
+        "description": "This proposal aims to improve Wagtail's Content Security Policy (CSP) compliance by organizing existing efforts, refactoring code, and creating/enhancing developer tools. It addresses scattered issues and a lack of clear guidance by consolidating discussions, completing pending code changes for style-src, script-src, and img-src compliance, and providing documentation and possibly automated testing. The project also includes collaboration with Django-CSP to improve its core functionality, which would result in a more secure and developer-friendly Wagtail release.",
+        "student_name": "Chiemezuo",
+        "code_url": "https://dev.to/chiemezuo/my-google-summer-of-code-gsoc-2025-in-view-23j1",
+        "proposal_id": "IToD6EgQ",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/BbmYrprl"
+      },
+      {
+        "title": "Enhancing the keyboard shortcut system within Wagtail",
+        "short_description": "This project proposes the implementation of new Wagtail-specific keyboard shortcuts to enhance accessibility, navigation speed, and overall user...",
+        "description": "This project proposes the implementation of new Wagtail-specific keyboard shortcuts to enhance accessibility, navigation speed, and overall user experience, in alignment with ATAG Guidelines. The aim is to introduce keyboard shortcuts for key UI components such as the sidebar, Minimap, global search, and opening/closing the shortcut modal.\nIn addition to adding these shortcuts, the project includes revising the user guide and keyboard shortcut modal to reflect both new and existing shortcuts accurately. These enhancements will make Wagtail more efficient and user-friendly, particularly for keyboard-driven users and those relying on assistive technologies.",
+        "student_name": "Dhruvi",
+        "code_url": "https://gist.github.com/dhruvipatel14/3afd8ce7e6f9ba033e0436f2d84278a1",
+        "proposal_id": "fKG3pjCe",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/W7M5PQD9"
+      },
+      {
+        "title": "Enhancing Image and Document Listing for Usage Count",
+        "short_description": "This project aims to enhance the Image and Document listings in Wagtail’s admin interface by introducing features such as a Grid-to-List view toggle...",
+        "description": "This project aims to enhance the Image and Document listings in Wagtail’s admin interface by introducing features such as a Grid-to-List view toggle for Image Listing and a Usage Count column for both Image and Document Listing, with sorting and filtering support. These improvements will make the listing experience more user-friendly. Users will be able to access usage counts and key information without leaving the listing view. Fewer clicks, page reloads, and server requests will make Wagtail more efficient and sustainable.",
+        "student_name": "Joel William",
+        "code_url": "https://wagtail.org/blog/media-listings-ux-improvements-via-gsoc-2025/",
+        "proposal_id": "bZdPLbT0",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/DTv1AKj4"
+      },
+      {
+        "title": "Grid Aware Websites",
+        "short_description": "This project focuses on making Wagtail.org more energy-efficient by adapting its content based on the environmental impact of the user's location....",
+        "description": "This project focuses on making Wagtail.org more energy-efficient by adapting its content based on the environmental impact of the user's location. When electricity is being generated from more carbon-intensive sources, the website will automatically adjust its behavior, such as serving lighter images or reducing animations to lower its energy usage. The goal is to create a more sustainable browsing experience while maintaining performance and accessibility. Along the way, insights will be gathered to help guide other developers in building low-carbon websites using Wagtail.",
+        "student_name": "Rohit.Sharma",
+        "code_url": "https://docs.google.com/document/d/1oOJY63RTEjjxm9fnoz8sHXRPiVbVM1ovMor3GjOT8e0/edit?usp=sharing",
+        "proposal_id": "jNElk3rC",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/XPkwvTxj"
+      }
+    ],
+    "2026": []
   },
   "githubID": "wagtail",
   "repositories": [
-    {
-      "id": 202330893,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMDIzMzA4OTM=",
-      "name": "wagtail-localize-git",
-      "full_name": "wagtail/wagtail-localize-git",
-      "html_url": "https://github.com/wagtail/wagtail-localize-git",
-      "description": "Translate Wagtail content using a git repository and PO files",
-      "language": "Python",
-      "stargazers_count": 6,
-      "forks_count": 3,
-      "open_issues_count": 3,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
     {
       "id": 81445419,
       "node_id": "MDEwOlJlcG9zaXRvcnk4MTQ0NTQxOQ==",
       "name": "bakerydemo",
       "full_name": "wagtail/bakerydemo",
       "html_url": "https://github.com/wagtail/bakerydemo",
-      "description": "Next generation Wagtail demo, born in Reykjavik",
+      "description": "Next generation Wagtail demo, born in Reykjavík",
       "language": "Python",
-      "stargazers_count": 1011,
-      "forks_count": 564,
-      "open_issues_count": 27,
+      "stargazers_count": 1077,
+      "forks_count": 675,
+      "open_issues_count": 67,
       "license": {
         "key": "bsd-3-clause",
         "name": "BSD 3-Clause \"New\" or \"Revised\" License",
@@ -151,9 +170,9 @@
       "html_url": "https://github.com/wagtail/wagtail",
       "description": "A Django content management system focused on flexibility and user experience",
       "language": "Python",
-      "stargazers_count": 19256,
-      "forks_count": 4090,
-      "open_issues_count": 976,
+      "stargazers_count": 20271,
+      "forks_count": 4507,
+      "open_issues_count": 1032,
       "license": {
         "key": "bsd-3-clause",
         "name": "BSD 3-Clause \"New\" or \"Revised\" License",
@@ -170,18 +189,20 @@
       ]
     },
     {
-      "id": 734766994,
-      "node_id": "R_kgDOK8unkg",
-      "name": "accessibility",
-      "full_name": "wagtail/accessibility",
-      "html_url": "https://github.com/wagtail/accessibility",
-      "description": "Documentation relating to accessibility efforts in Wagtail",
-      "language": "HTML",
-      "stargazers_count": 3,
-      "forks_count": 1,
-      "open_issues_count": 1,
+      "id": 179296474,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNzkyOTY0NzQ=",
+      "name": "wagtail.org",
+      "full_name": "wagtail/wagtail.org",
+      "html_url": "https://github.com/wagtail/wagtail.org",
+      "description": "Wagtail’s official marketing website",
+      "language": "Python",
+      "stargazers_count": 81,
+      "forks_count": 87,
+      "open_issues_count": 57,
       "license": null,
-      "topics": []
+      "topics": [
+        "wagtail"
+      ]
     },
     {
       "id": 600117140,
@@ -190,10 +211,10 @@
       "full_name": "wagtail/gsoc",
       "html_url": "https://github.com/wagtail/gsoc",
       "description": "Resources, activity, discussions for Wagtail’s participation to Google Summer of Code",
-      "language": "Python",
-      "stargazers_count": 52,
-      "forks_count": 77,
-      "open_issues_count": 0,
+      "language": null,
+      "stargazers_count": 96,
+      "forks_count": 159,
+      "open_issues_count": 22,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -204,41 +225,16 @@
       "topics": []
     },
     {
-      "id": 179706908,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNzk3MDY5MDg=",
-      "name": "wagtail-localize",
-      "full_name": "wagtail/wagtail-localize",
-      "html_url": "https://github.com/wagtail/wagtail-localize",
-      "description": "Translation plugin for Wagtail CMS",
+      "id": 296870281,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyOTY4NzAyODE=",
+      "name": "cookiecutter-wagtail-package",
+      "full_name": "wagtail/cookiecutter-wagtail-package",
+      "html_url": "https://github.com/wagtail/cookiecutter-wagtail-package",
+      "description": "A cookiecutter template for building Wagtail add-on packages",
       "language": "Python",
-      "stargazers_count": 233,
-      "forks_count": 91,
-      "open_issues_count": 130,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": [
-        "internationalisation",
-        "wagtail",
-        "wagtail-package",
-        "wagtail-plugin"
-      ]
-    },
-    {
-      "id": 402342844,
-      "node_id": "MDEwOlJlcG9zaXRvcnk0MDIzNDI4NDQ=",
-      "name": "wagtail-wordpress-import",
-      "full_name": "wagtail/wagtail-wordpress-import",
-      "html_url": "https://github.com/wagtail/wagtail-wordpress-import",
-      "description": "A package for Wagtail CMS to import WordPress blog content from an XML file into Wagtail",
-      "language": "Python",
-      "stargazers_count": 53,
-      "forks_count": 19,
-      "open_issues_count": 35,
+      "stargazers_count": 21,
+      "forks_count": 11,
+      "open_issues_count": 3,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -247,44 +243,7 @@
         "node_id": "MDc6TGljZW5zZTEz"
       },
       "topics": [
-        "import",
-        "wagtail",
-        "wordpress"
-      ]
-    },
-    {
-      "id": 940140186,
-      "node_id": "R_kgDOOAlmmg",
-      "name": "bakerydemo-nextjs",
-      "full_name": "wagtail/bakerydemo-nextjs",
-      "html_url": "https://github.com/wagtail/bakerydemo-nextjs",
-      "description": "This is a highly-experimental headless version of Wagtail's bakerydemo, built with Next.js and Wagtail API v2.",
-      "language": "TypeScript",
-      "stargazers_count": 3,
-      "forks_count": 1,
-      "open_issues_count": 0,
-      "license": {
-        "key": "bsd-3-clause",
-        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
-        "spdx_id": "BSD-3-Clause",
-        "url": "https://api.github.com/licenses/bsd-3-clause",
-        "node_id": "MDc6TGljZW5zZTU="
-      },
-      "topics": []
-    },
-    {
-      "id": 179296474,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNzkyOTY0NzQ=",
-      "name": "wagtail.org",
-      "full_name": "wagtail/wagtail.org",
-      "html_url": "https://github.com/wagtail/wagtail.org",
-      "description": "Wagtail’s official marketing website",
-      "language": "Python",
-      "stargazers_count": 78,
-      "forks_count": 79,
-      "open_issues_count": 58,
-      "license": null,
-      "topics": [
+        "django",
         "wagtail"
       ]
     },
@@ -296,9 +255,9 @@
       "html_url": "https://github.com/wagtail/guide",
       "description": "A website to teach Wagtail CMS to content editors, moderators and administrators.",
       "language": "Python",
-      "stargazers_count": 33,
-      "forks_count": 28,
-      "open_issues_count": 65,
+      "stargazers_count": 34,
+      "forks_count": 35,
+      "open_issues_count": 67,
       "license": {
         "key": "bsd-3-clause",
         "name": "BSD 3-Clause \"New\" or \"Revised\" License",
@@ -314,6 +273,50 @@
       ]
     },
     {
+      "id": 202330893,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMDIzMzA4OTM=",
+      "name": "wagtail-localize-git",
+      "full_name": "wagtail/wagtail-localize-git",
+      "html_url": "https://github.com/wagtail/wagtail-localize-git",
+      "description": "Translate Wagtail content using a git repository and PO files",
+      "language": "Python",
+      "stargazers_count": 8,
+      "forks_count": 3,
+      "open_issues_count": 3,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 402342844,
+      "node_id": "MDEwOlJlcG9zaXRvcnk0MDIzNDI4NDQ=",
+      "name": "wagtail-wordpress-import",
+      "full_name": "wagtail/wagtail-wordpress-import",
+      "html_url": "https://github.com/wagtail/wagtail-wordpress-import",
+      "description": "A package for Wagtail CMS to import WordPress blog content from an XML file into Wagtail",
+      "language": "Python",
+      "stargazers_count": 55,
+      "forks_count": 23,
+      "open_issues_count": 37,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": [
+        "import",
+        "wagtail",
+        "wordpress"
+      ]
+    },
+    {
       "id": 791250862,
       "node_id": "R_kgDOLymHrg",
       "name": "news-template",
@@ -321,9 +324,9 @@
       "html_url": "https://github.com/wagtail/news-template",
       "description": "A Wagtail template for a news site",
       "language": "Python",
-      "stargazers_count": 89,
-      "forks_count": 30,
-      "open_issues_count": 20,
+      "stargazers_count": 164,
+      "forks_count": 67,
+      "open_issues_count": 65,
       "license": {
         "key": "bsd-3-clause",
         "name": "BSD 3-Clause \"New\" or \"Revised\" License",
@@ -331,40 +334,6 @@
         "url": "https://api.github.com/licenses/bsd-3-clause",
         "node_id": "MDc6TGljZW5zZTU="
       },
-      "topics": []
-    },
-    {
-      "id": 26025182,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNjAyNTE4Mg==",
-      "name": "Willow",
-      "full_name": "wagtail/Willow",
-      "html_url": "https://github.com/wagtail/Willow",
-      "description": "A wrapper that combines the functionality of multiple Python image libraries into one API",
-      "language": "Python",
-      "stargazers_count": 276,
-      "forks_count": 53,
-      "open_issues_count": 24,
-      "license": {
-        "key": "bsd-3-clause",
-        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
-        "spdx_id": "BSD-3-Clause",
-        "url": "https://api.github.com/licenses/bsd-3-clause",
-        "node_id": "MDc6TGljZW5zZTU="
-      },
-      "topics": []
-    },
-    {
-      "id": 602118160,
-      "node_id": "R_kgDOI-OYEA",
-      "name": "slackchecker",
-      "full_name": "wagtail/slackchecker",
-      "html_url": "https://github.com/wagtail/slackchecker",
-      "description": "A script to notify us when the Slack invitation link on wagtail.org has expired",
-      "language": null,
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
       "topics": []
     },
     {
@@ -375,9 +344,9 @@
       "html_url": "https://github.com/wagtail/wagtail-newsletter",
       "description": "Send email newsletters based on Wagtail content",
       "language": "Python",
-      "stargazers_count": 30,
-      "forks_count": 5,
-      "open_issues_count": 11,
+      "stargazers_count": 40,
+      "forks_count": 9,
+      "open_issues_count": 10,
       "license": {
         "key": "bsd-3-clause",
         "name": "BSD 3-Clause \"New\" or \"Revised\" License",
@@ -388,16 +357,16 @@
       "topics": []
     },
     {
-      "id": 177668509,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNzc2Njg1MDk=",
-      "name": "wagtail-generic-chooser",
-      "full_name": "wagtail/wagtail-generic-chooser",
-      "html_url": "https://github.com/wagtail/wagtail-generic-chooser",
-      "description": "A toolkit for custom chooser popups in Wagtail",
-      "language": "Python",
-      "stargazers_count": 118,
-      "forks_count": 25,
-      "open_issues_count": 14,
+      "id": 940140186,
+      "node_id": "R_kgDOOAlmmg",
+      "name": "bakerydemo-nextjs",
+      "full_name": "wagtail/bakerydemo-nextjs",
+      "html_url": "https://github.com/wagtail/bakerydemo-nextjs",
+      "description": "Official headless bakery demo site, built with Next.js and Wagtail API v2",
+      "language": "TypeScript",
+      "stargazers_count": 7,
+      "forks_count": 8,
+      "open_issues_count": 4,
       "license": {
         "key": "bsd-3-clause",
         "name": "BSD 3-Clause \"New\" or \"Revised\" License",
@@ -415,9 +384,9 @@
       "html_url": "https://github.com/wagtail/wagtail-autocomplete",
       "description": "An Autocomplete edit handler for selecting Pages, Snippets, and more.",
       "language": "Python",
-      "stargazers_count": 124,
-      "forks_count": 57,
-      "open_issues_count": 51,
+      "stargazers_count": 130,
+      "forks_count": 56,
+      "open_issues_count": 52,
       "license": {
         "key": "bsd-3-clause",
         "name": "BSD 3-Clause \"New\" or \"Revised\" License",
@@ -428,16 +397,94 @@
       "topics": []
     },
     {
-      "id": 703466910,
-      "node_id": "R_kgDOKe4Nng",
-      "name": "wagtail-vector-index",
-      "full_name": "wagtail/wagtail-vector-index",
-      "html_url": "https://github.com/wagtail/wagtail-vector-index",
-      "description": "Store Wagtail pages & Django models as embeddings in vector databases",
+      "id": 953250245,
+      "node_id": "R_kgDOONFxxQ",
+      "name": "django-modelsearch",
+      "full_name": "wagtail/django-modelsearch",
+      "html_url": "https://github.com/wagtail/django-modelsearch",
+      "description": "Index Django Models with Elasticsearch or OpenSearch and query them with the ORM",
       "language": "Python",
-      "stargazers_count": 21,
-      "forks_count": 15,
-      "open_issues_count": 37,
+      "stargazers_count": 87,
+      "forks_count": 9,
+      "open_issues_count": 32,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 478490956,
+      "node_id": "R_kgDOHIUxTA",
+      "name": ".github",
+      "full_name": "wagtail/.github",
+      "html_url": "https://github.com/wagtail/.github",
+      "description": "Github metadata for the Wagtail organisation",
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 183345963,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxODMzNDU5NjM=",
+      "name": "stylelint-config-wagtail",
+      "full_name": "wagtail/stylelint-config-wagtail",
+      "html_url": "https://github.com/wagtail/stylelint-config-wagtail",
+      "description": "Shareable stylelint config for CSS and SCSS, following Wagtail’s code style.",
+      "language": "JavaScript",
+      "stargazers_count": 11,
+      "forks_count": 5,
+      "open_issues_count": 7,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": [
+        "stylelint",
+        "stylelint-config",
+        "wagtail"
+      ]
+    },
+    {
+      "id": 26025182,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyNjAyNTE4Mg==",
+      "name": "Willow",
+      "full_name": "wagtail/Willow",
+      "html_url": "https://github.com/wagtail/Willow",
+      "description": "A wrapper that combines the functionality of multiple Python image libraries into one API",
+      "language": "Python",
+      "stargazers_count": 278,
+      "forks_count": 50,
+      "open_issues_count": 22,
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "topics": []
+    },
+    {
+      "id": 609226664,
+      "node_id": "R_kgDOJFAPqA",
+      "name": "wagtail-ai",
+      "full_name": "wagtail/wagtail-ai",
+      "html_url": "https://github.com/wagtail/wagtail-ai",
+      "description": "Get help with your Wagtail content using AI superpowers. ",
+      "language": "Python",
+      "stargazers_count": 187,
+      "forks_count": 33,
+      "open_issues_count": 42,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -448,7 +495,7 @@
       "topics": [
         "ai",
         "django",
-        "embeddings",
+        "hacktoberfest",
         "wagtail"
       ]
     },
@@ -460,14 +507,147 @@
       "html_url": "https://github.com/wagtail/roadmap",
       "description": "Wagtail public roadmap",
       "language": null,
-      "stargazers_count": 10,
+      "stargazers_count": 12,
       "forks_count": 1,
-      "open_issues_count": 21,
+      "open_issues_count": 27,
       "license": null,
       "topics": [
         "roadmap",
         "wagtail"
       ]
+    },
+    {
+      "id": 40007822,
+      "node_id": "MDEwOlJlcG9zaXRvcnk0MDAwNzgyMg==",
+      "name": "rfcs",
+      "full_name": "wagtail/rfcs",
+      "html_url": "https://github.com/wagtail/rfcs",
+      "description": "Wagtail RFCs",
+      "language": null,
+      "stargazers_count": 48,
+      "forks_count": 33,
+      "open_issues_count": 22,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 179706908,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNzk3MDY5MDg=",
+      "name": "wagtail-localize",
+      "full_name": "wagtail/wagtail-localize",
+      "html_url": "https://github.com/wagtail/wagtail-localize",
+      "description": "Translation plugin for Wagtail CMS",
+      "language": "Python",
+      "stargazers_count": 250,
+      "forks_count": 114,
+      "open_issues_count": 160,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": [
+        "internationalisation",
+        "wagtail",
+        "wagtail-package",
+        "wagtail-plugin"
+      ]
+    },
+    {
+      "id": 61283680,
+      "node_id": "MDEwOlJlcG9zaXRvcnk2MTI4MzY4MA==",
+      "name": "eslint-config-wagtail",
+      "full_name": "wagtail/eslint-config-wagtail",
+      "html_url": "https://github.com/wagtail/eslint-config-wagtail",
+      "description": "Shareable ESLint config for Wagtail, based on airbnb/javascript.",
+      "language": "JavaScript",
+      "stargazers_count": 6,
+      "forks_count": 2,
+      "open_issues_count": 1,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": [
+        "eslint",
+        "eslint-config",
+        "javascript",
+        "wagtail"
+      ]
+    },
+    {
+      "id": 75966140,
+      "node_id": "MDEwOlJlcG9zaXRvcnk3NTk2NjE0MA==",
+      "name": "wagtail-factories",
+      "full_name": "wagtail/wagtail-factories",
+      "html_url": "https://github.com/wagtail/wagtail-factories",
+      "description": "Factory boy classes for wagtail",
+      "language": "Python",
+      "stargazers_count": 112,
+      "forks_count": 47,
+      "open_issues_count": 24,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": [
+        "factory-boy",
+        "wagtail"
+      ]
+    },
+    {
+      "id": 215344185,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMTUzNDQxODU=",
+      "name": "wagtail-transfer",
+      "full_name": "wagtail/wagtail-transfer",
+      "html_url": "https://github.com/wagtail/wagtail-transfer",
+      "description": "Content transfer for Wagtail",
+      "language": "Python",
+      "stargazers_count": 108,
+      "forks_count": 39,
+      "open_issues_count": 42,
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "topics": []
+    },
+    {
+      "id": 1050408636,
+      "node_id": "R_kgDOPpv2vA",
+      "name": "releases.wagtail.org",
+      "full_name": "wagtail/releases.wagtail.org",
+      "html_url": "https://github.com/wagtail/releases.wagtail.org",
+      "description": "Infrastructure to support nightly releases and upgrade checks",
+      "language": "HTML",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 1,
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "topics": []
     },
     {
       "id": 344409970,
@@ -477,9 +657,9 @@
       "html_url": "https://github.com/wagtail/sphinx-wagtail-theme",
       "description": "Wagtail's documentation theme for Sphinx",
       "language": "SCSS",
-      "stargazers_count": 32,
-      "forks_count": 29,
-      "open_issues_count": 21,
+      "stargazers_count": 33,
+      "forks_count": 30,
+      "open_issues_count": 22,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -494,40 +674,6 @@
       ]
     },
     {
-      "id": 235983140,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMzU5ODMxNDA=",
-      "name": "docker-wagtail-develop",
-      "full_name": "wagtail/docker-wagtail-develop",
-      "html_url": "https://github.com/wagtail/docker-wagtail-develop",
-      "description": "Docker environment for development of Wagtail",
-      "language": "Makefile",
-      "stargazers_count": 82,
-      "forks_count": 54,
-      "open_issues_count": 11,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 40007822,
-      "node_id": "MDEwOlJlcG9zaXRvcnk0MDAwNzgyMg==",
-      "name": "rfcs",
-      "full_name": "wagtail/rfcs",
-      "html_url": "https://github.com/wagtail/rfcs",
-      "description": "Wagtail RFCs",
-      "language": null,
-      "stargazers_count": 46,
-      "forks_count": 32,
-      "open_issues_count": 25,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
       "id": 16381139,
       "node_id": "MDEwOlJlcG9zaXRvcnkxNjM4MTEzOQ==",
       "name": "django-modelcluster",
@@ -535,9 +681,9 @@
       "html_url": "https://github.com/wagtail/django-modelcluster",
       "description": "Django extension to allow working with 'clusters' of models as a single unit, independently of the database",
       "language": "Python",
-      "stargazers_count": 504,
-      "forks_count": 67,
-      "open_issues_count": 27,
+      "stargazers_count": 514,
+      "forks_count": 71,
+      "open_issues_count": 30,
       "license": {
         "key": "bsd-3-clause",
         "name": "BSD 3-Clause \"New\" or \"Revised\" License",
@@ -548,129 +694,29 @@
       "topics": []
     },
     {
-      "id": 645742771,
-      "node_id": "R_kgDOJn1Asw",
-      "name": "nextjs-loves-wagtail",
-      "full_name": "wagtail/nextjs-loves-wagtail",
-      "html_url": "https://github.com/wagtail/nextjs-loves-wagtail",
-      "description": "Tutorial: Next.js ❤️ Wagtail",
+      "id": 1063966813,
+      "node_id": "R_kgDOP2rYXQ",
+      "name": "django-ai-core",
+      "full_name": "wagtail/django-ai-core",
+      "html_url": "https://github.com/wagtail/django-ai-core",
+      "description": "Django AI Core provides developer-focused AI features for implementing AI tooling in to Django sites.",
       "language": "Python",
-      "stargazers_count": 46,
-      "forks_count": 10,
-      "open_issues_count": 0,
+      "stargazers_count": 16,
+      "forks_count": 0,
+      "open_issues_count": 5,
       "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 436292296,
-      "node_id": "R_kgDOGgFKyA",
-      "name": "areweheadlessyet",
-      "full_name": "wagtail/areweheadlessyet",
-      "html_url": "https://github.com/wagtail/areweheadlessyet",
-      "description": "Are we headless yet?",
-      "language": "TypeScript",
-      "stargazers_count": 21,
-      "forks_count": 5,
-      "open_issues_count": 0,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": [
-        "graphql",
-        "headless-cms",
-        "nextjs",
-        "typescript",
-        "vercel",
-        "wagtail"
-      ]
-    },
-    {
-      "id": 75966140,
-      "node_id": "MDEwOlJlcG9zaXRvcnk3NTk2NjE0MA==",
-      "name": "wagtail-factories",
-      "full_name": "wagtail/wagtail-factories",
-      "html_url": "https://github.com/wagtail/wagtail-factories",
-      "description": "Factory boy classes for wagtail",
-      "language": "Python",
-      "stargazers_count": 105,
-      "forks_count": 47,
-      "open_issues_count": 23,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": [
-        "factory-boy",
-        "wagtail"
-      ]
-    },
-    {
-      "id": 609226664,
-      "node_id": "R_kgDOJFAPqA",
-      "name": "wagtail-ai",
-      "full_name": "wagtail/wagtail-ai",
-      "html_url": "https://github.com/wagtail/wagtail-ai",
-      "description": "Get help with your Wagtail content using AI superpowers. ",
-      "language": "Python",
-      "stargazers_count": 156,
-      "forks_count": 23,
-      "open_issues_count": 32,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
       },
       "topics": [
         "ai",
         "django",
-        "wagtail"
+        "rag",
+        "vector-embeddings"
       ]
-    },
-    {
-      "id": 36019891,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzNjAxOTg5MQ==",
-      "name": "vagrant-wagtail-develop",
-      "full_name": "wagtail/vagrant-wagtail-develop",
-      "html_url": "https://github.com/wagtail/vagrant-wagtail-develop",
-      "description": "A script to painlessly set up a Vagrant environment for development of Wagtail",
-      "language": "Shell",
-      "stargazers_count": 37,
-      "forks_count": 24,
-      "open_issues_count": 1,
-      "license": null,
-      "topics": [
-        "vagrant",
-        "wagtail"
-      ]
-    },
-    {
-      "id": 862558924,
-      "node_id": "R_kgDOM2mazA",
-      "name": "telepath-forms",
-      "full_name": "wagtail/telepath-forms",
-      "html_url": "https://github.com/wagtail/telepath-forms",
-      "description": "Javascript definitions to allow client-side manipulation of Django forms",
-      "language": "JavaScript",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
     },
     {
       "id": 633890771,
@@ -680,9 +726,9 @@
       "html_url": "https://github.com/wagtail/queryish",
       "description": "A library for constructing queries on arbitrary data sources following Django's QuerySet API",
       "language": "Python",
-      "stargazers_count": 113,
-      "forks_count": 2,
-      "open_issues_count": 2,
+      "stargazers_count": 127,
+      "forks_count": 4,
+      "open_issues_count": 0,
       "license": {
         "key": "bsd-3-clause",
         "name": "BSD 3-Clause \"New\" or \"Revised\" License",
@@ -693,67 +739,47 @@
       "topics": []
     },
     {
-      "id": 337727492,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzMzc3Mjc0OTI=",
-      "name": "telepath",
-      "full_name": "wagtail/telepath",
-      "html_url": "https://github.com/wagtail/telepath",
-      "description": "A library for exchanging data between Python and JavaScript",
+      "id": 1052681274,
+      "node_id": "R_kgDOPr6kOg",
+      "name": "wagtailsearch",
+      "full_name": "wagtail/wagtailsearch",
+      "html_url": "https://github.com/wagtail/wagtailsearch",
+      "description": "ARCHIVED - superseded by https://github.com/wagtail/django-modelsearch",
       "language": "Python",
-      "stargazers_count": 143,
-      "forks_count": 4,
-      "open_issues_count": 4,
+      "stargazers_count": 2,
+      "forks_count": 1,
+      "open_issues_count": 0,
       "license": {
         "key": "bsd-3-clause",
         "name": "BSD 3-Clause \"New\" or \"Revised\" License",
         "spdx_id": "BSD-3-Clause",
         "url": "https://api.github.com/licenses/bsd-3-clause",
         "node_id": "MDc6TGljZW5zZTU="
+      },
+      "topics": []
+    },
+    {
+      "id": 1042613269,
+      "node_id": "R_kgDOPiUEFQ",
+      "name": "grid-aware-research",
+      "full_name": "wagtail/grid-aware-research",
+      "html_url": "https://github.com/wagtail/grid-aware-research",
+      "description": "Findings, tools, data from our research on grid awareness concepts for websites",
+      "language": "HTML",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "open_issues_count": 9,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
       },
       "topics": []
     }
   ],
   "contributorsDetails": [
-    {
-      "login": "kaedroho",
-      "id": 1093808,
-      "node_id": "MDQ6VXNlcjEwOTM4MDg=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1093808?v=4",
-      "html_url": "https://github.com/kaedroho",
-      "contributions": 7
-    },
-    {
-      "login": "zerolab",
-      "id": 31622,
-      "node_id": "MDQ6VXNlcjMxNjIy",
-      "avatar_url": "https://avatars.githubusercontent.com/u/31622?v=4",
-      "html_url": "https://github.com/zerolab",
-      "contributions": 41
-    },
-    {
-      "login": "richbrennan",
-      "id": 3485411,
-      "node_id": "MDQ6VXNlcjM0ODU0MTE=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/3485411?v=4",
-      "html_url": "https://github.com/richbrennan",
-      "contributions": 2
-    },
-    {
-      "login": "jhonatan-lopes",
-      "id": 61277874,
-      "node_id": "MDQ6VXNlcjYxMjc3ODc0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/61277874?v=4",
-      "html_url": "https://github.com/jhonatan-lopes",
-      "contributions": 1
-    },
-    {
-      "login": "pre-commit-ci[bot]",
-      "id": 66853113,
-      "node_id": "MDM6Qm90NjY4NTMxMTM=",
-      "avatar_url": "https://avatars.githubusercontent.com/in/68672?v=4",
-      "html_url": "https://github.com/apps/pre-commit-ci",
-      "contributions": 1
-    },
     {
       "login": "hminnovation",
       "id": 11335309,
@@ -776,7 +802,7 @@
       "node_id": "MDQ6VXNlcjg1MDk3",
       "avatar_url": "https://avatars.githubusercontent.com/u/85097?v=4",
       "html_url": "https://github.com/gasman",
-      "contributions": 92
+      "contributions": 6422
     },
     {
       "login": "thibaudcolas",
@@ -784,7 +810,7 @@
       "node_id": "MDQ6VXNlcjg3NzU4NQ==",
       "avatar_url": "https://avatars.githubusercontent.com/u/877585?v=4",
       "html_url": "https://github.com/thibaudcolas",
-      "contributions": 60
+      "contributions": 54
     },
     {
       "login": "laymonage",
@@ -792,7 +818,7 @@
       "node_id": "MDQ6VXNlcjYzNzk0MjQ=",
       "avatar_url": "https://avatars.githubusercontent.com/u/6379424?v=4",
       "html_url": "https://github.com/laymonage",
-      "contributions": 54
+      "contributions": 79
     },
     {
       "login": "RealOrangeOne",
@@ -800,7 +826,7 @@
       "node_id": "MDQ6VXNlcjY1Mjc0ODk=",
       "avatar_url": "https://avatars.githubusercontent.com/u/6527489?v=4",
       "html_url": "https://github.com/RealOrangeOne",
-      "contributions": 41
+      "contributions": 17
     },
     {
       "login": "daaray",
@@ -824,7 +850,7 @@
       "node_id": "MDQ6VXNlcjEzODU2NTE1",
       "avatar_url": "https://avatars.githubusercontent.com/u/13856515?v=4",
       "html_url": "https://github.com/Stormheg",
-      "contributions": 21
+      "contributions": 81
     },
     {
       "login": "ArnarTumi",
@@ -840,14 +866,46 @@
       "node_id": "MDQ6VXNlcjE1NTQz",
       "avatar_url": "https://avatars.githubusercontent.com/u/15543?v=4",
       "html_url": "https://github.com/tomdyson",
+      "contributions": 5
+    },
+    {
+      "login": "lupyana",
+      "id": 9304600,
+      "node_id": "MDQ6VXNlcjkzMDQ2MDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9304600?v=4",
+      "html_url": "https://github.com/lupyana",
       "contributions": 7
     },
     {
-      "login": "allcaps",
-      "id": 1969342,
-      "node_id": "MDQ6VXNlcjE5NjkzNDI=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1969342?v=4",
-      "html_url": "https://github.com/allcaps",
+      "login": "kaedroho",
+      "id": 1093808,
+      "node_id": "MDQ6VXNlcjEwOTM4MDg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1093808?v=4",
+      "html_url": "https://github.com/kaedroho",
+      "contributions": 58
+    },
+    {
+      "login": "lb-",
+      "id": 1396140,
+      "node_id": "MDQ6VXNlcjEzOTYxNDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1396140?v=4",
+      "html_url": "https://github.com/lb-",
+      "contributions": 831
+    },
+    {
+      "login": "albinazs",
+      "id": 51043550,
+      "node_id": "MDQ6VXNlcjUxMDQzNTUw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51043550?v=4",
+      "html_url": "https://github.com/albinazs",
+      "contributions": 38
+    },
+    {
+      "login": "shurph",
+      "id": 2353345,
+      "node_id": "MDQ6VXNlcjIzNTMzNDU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2353345?v=4",
+      "html_url": "https://github.com/shurph",
       "contributions": 5
     },
     {
@@ -859,44 +917,12 @@
       "contributions": 5
     },
     {
-      "login": "shurph",
-      "id": 2353345,
-      "node_id": "MDQ6VXNlcjIzNTMzNDU=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/2353345?v=4",
-      "html_url": "https://github.com/shurph",
+      "login": "allcaps",
+      "id": 1969342,
+      "node_id": "MDQ6VXNlcjE5NjkzNDI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1969342?v=4",
+      "html_url": "https://github.com/allcaps",
       "contributions": 5
-    },
-    {
-      "login": "albinazs",
-      "id": 51043550,
-      "node_id": "MDQ6VXNlcjUxMDQzNTUw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/51043550?v=4",
-      "html_url": "https://github.com/albinazs",
-      "contributions": 5
-    },
-    {
-      "login": "lb-",
-      "id": 1396140,
-      "node_id": "MDQ6VXNlcjEzOTYxNDA=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1396140?v=4",
-      "html_url": "https://github.com/lb-",
-      "contributions": 5
-    },
-    {
-      "login": "KalobTaulien",
-      "id": 4743971,
-      "node_id": "MDQ6VXNlcjQ3NDM5NzE=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/4743971?v=4",
-      "html_url": "https://github.com/KalobTaulien",
-      "contributions": 3
-    },
-    {
-      "login": "m1kola",
-      "id": 509198,
-      "node_id": "MDQ6VXNlcjUwOTE5OA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/509198?v=4",
-      "html_url": "https://github.com/m1kola",
-      "contributions": 3
     },
     {
       "login": "ankit02327",
@@ -904,7 +930,31 @@
       "node_id": "U_kgDOCUIBdQ",
       "avatar_url": "https://avatars.githubusercontent.com/u/155320693?v=4",
       "html_url": "https://github.com/ankit02327",
+      "contributions": 4
+    },
+    {
+      "login": "ArneTR",
+      "id": 250671,
+      "node_id": "MDQ6VXNlcjI1MDY3MQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/250671?v=4",
+      "html_url": "https://github.com/ArneTR",
       "contributions": 3
+    },
+    {
+      "login": "KalobTaulien",
+      "id": 4743971,
+      "node_id": "MDQ6VXNlcjQ3NDM5NzE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4743971?v=4",
+      "html_url": "https://github.com/KalobTaulien",
+      "contributions": 13
+    },
+    {
+      "login": "m1kola",
+      "id": 509198,
+      "node_id": "MDQ6VXNlcjUwOTE5OA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/509198?v=4",
+      "html_url": "https://github.com/m1kola",
+      "contributions": 64
     },
     {
       "login": "nickmoreton",
@@ -920,7 +970,7 @@
       "node_id": "MDQ6VXNlcjQ1ODgxNDgw",
       "avatar_url": "https://avatars.githubusercontent.com/u/45881480?v=4",
       "html_url": "https://github.com/vossisboss",
-      "contributions": 2
+      "contributions": 86
     },
     {
       "login": "vihaanthora",
@@ -928,14 +978,6 @@
       "node_id": "MDQ6VXNlcjc3NzEzNTM3",
       "avatar_url": "https://avatars.githubusercontent.com/u/77713537?v=4",
       "html_url": "https://github.com/vihaanthora",
-      "contributions": 2
-    },
-    {
-      "login": "gzark1",
-      "id": 93925338,
-      "node_id": "U_kgDOBZkv2g",
-      "avatar_url": "https://avatars.githubusercontent.com/u/93925338?v=4",
-      "html_url": "https://github.com/gzark1",
       "contributions": 2
     },
     {
@@ -963,12 +1005,148 @@
       "contributions": 2
     },
     {
-      "login": "Chiemezuo",
-      "id": 29470516,
-      "node_id": "MDQ6VXNlcjI5NDcwNTE2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/29470516?v=4",
-      "html_url": "https://github.com/Chiemezuo",
+      "login": "Juwonthefirst",
+      "id": 191435891,
+      "node_id": "U_kgDOC2kUcw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/191435891?v=4",
+      "html_url": "https://github.com/Juwonthefirst",
       "contributions": 2
+    },
+    {
+      "login": "Morsey187",
+      "id": 35934884,
+      "node_id": "MDQ6VXNlcjM1OTM0ODg0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/35934884?v=4",
+      "html_url": "https://github.com/Morsey187",
+      "contributions": 2
+    },
+    {
+      "login": "emilytoppm",
+      "id": 55137073,
+      "node_id": "MDQ6VXNlcjU1MTM3MDcz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55137073?v=4",
+      "html_url": "https://github.com/emilytoppm",
+      "contributions": 12
+    },
+    {
+      "login": "zerolab",
+      "id": 31622,
+      "node_id": "MDQ6VXNlcjMxNjIy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/31622?v=4",
+      "html_url": "https://github.com/zerolab",
+      "contributions": 139
+    },
+    {
+      "login": "BertrandBordage",
+      "id": 1119169,
+      "node_id": "MDQ6VXNlcjExMTkxNjk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1119169?v=4",
+      "html_url": "https://github.com/BertrandBordage",
+      "contributions": 6
+    },
+    {
+      "login": "mx-moth",
+      "id": 132147,
+      "node_id": "MDQ6VXNlcjEzMjE0Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/132147?v=4",
+      "html_url": "https://github.com/mx-moth",
+      "contributions": 193
+    },
+    {
+      "login": "KIRA009",
+      "id": 40872556,
+      "node_id": "MDQ6VXNlcjQwODcyNTU2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40872556?v=4",
+      "html_url": "https://github.com/KIRA009",
+      "contributions": 105
+    },
+    {
+      "login": "davecranwell",
+      "id": 352835,
+      "node_id": "MDQ6VXNlcjM1MjgzNQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/352835?v=4",
+      "html_url": "https://github.com/davecranwell",
+      "contributions": 92
+    },
+    {
+      "login": "nimasmi",
+      "id": 1473980,
+      "node_id": "MDQ6VXNlcjE0NzM5ODA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1473980?v=4",
+      "html_url": "https://github.com/nimasmi",
+      "contributions": 86
+    },
+    {
+      "login": "spapas",
+      "id": 3911074,
+      "node_id": "MDQ6VXNlcjM5MTEwNzQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3911074?v=4",
+      "html_url": "https://github.com/spapas",
+      "contributions": 84
+    },
+    {
+      "login": "Tijani-Dia",
+      "id": 71412737,
+      "node_id": "MDQ6VXNlcjcxNDEyNzM3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/71412737?v=4",
+      "html_url": "https://github.com/Tijani-Dia",
+      "contributions": 63
+    },
+    {
+      "login": "nealtodd",
+      "id": 298652,
+      "node_id": "MDQ6VXNlcjI5ODY1Mg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/298652?v=4",
+      "html_url": "https://github.com/nealtodd",
+      "contributions": 83
+    },
+    {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "html_url": "https://github.com/apps/dependabot",
+      "contributions": 7
+    },
+    {
+      "login": "chosak",
+      "id": 654645,
+      "node_id": "MDQ6VXNlcjY1NDY0NQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/654645?v=4",
+      "html_url": "https://github.com/chosak",
+      "contributions": 64
+    },
+    {
+      "login": "PaarthAgarwal",
+      "id": 86092410,
+      "node_id": "MDQ6VXNlcjg2MDkyNDEw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/86092410?v=4",
+      "html_url": "https://github.com/PaarthAgarwal",
+      "contributions": 61
+    },
+    {
+      "login": "stevedya",
+      "id": 25041665,
+      "node_id": "MDQ6VXNlcjI1MDQxNjY1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25041665?v=4",
+      "html_url": "https://github.com/stevedya",
+      "contributions": 6
+    },
+    {
+      "login": "ababic",
+      "id": 7779588,
+      "node_id": "MDQ6VXNlcjc3Nzk1ODg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7779588?v=4",
+      "html_url": "https://github.com/ababic",
+      "contributions": 38
+    },
+    {
+      "login": "th3hamm0r",
+      "id": 468164,
+      "node_id": "MDQ6VXNlcjQ2ODE2NA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/468164?v=4",
+      "html_url": "https://github.com/th3hamm0r",
+      "contributions": 38
     },
     {
       "login": "cnk",
@@ -976,15 +1154,119 @@
       "node_id": "MDQ6VXNlcjU5NTI=",
       "avatar_url": "https://avatars.githubusercontent.com/u/5952?v=4",
       "html_url": "https://github.com/cnk",
-      "contributions": 2
+      "contributions": 4
     },
     {
-      "login": "fabienheureux",
-      "id": 1702255,
-      "node_id": "MDQ6VXNlcjE3MDIyNTU=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1702255?v=4",
-      "html_url": "https://github.com/fabienheureux",
-      "contributions": 2
+      "login": "DanielSwain",
+      "id": 7819909,
+      "node_id": "MDQ6VXNlcjc4MTk5MDk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7819909?v=4",
+      "html_url": "https://github.com/DanielSwain",
+      "contributions": 32
+    },
+    {
+      "login": "chris-lawton",
+      "id": 31627284,
+      "node_id": "MDQ6VXNlcjMxNjI3Mjg0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/31627284?v=4",
+      "html_url": "https://github.com/chris-lawton",
+      "contributions": 384
+    },
+    {
+      "login": "nicklee",
+      "id": 298766,
+      "node_id": "MDQ6VXNlcjI5ODc2Ng==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/298766?v=4",
+      "html_url": "https://github.com/nicklee",
+      "contributions": 259
+    },
+    {
+      "login": "engineervix",
+      "id": 7713776,
+      "node_id": "MDQ6VXNlcjc3MTM3NzY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7713776?v=4",
+      "html_url": "https://github.com/engineervix",
+      "contributions": 172
+    },
+    {
+      "login": "tm-kn",
+      "id": 14931760,
+      "node_id": "MDQ6VXNlcjE0OTMxNzYw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14931760?v=4",
+      "html_url": "https://github.com/tm-kn",
+      "contributions": 64
+    },
+    {
+      "login": "William-Blackie",
+      "id": 22497837,
+      "node_id": "MDQ6VXNlcjIyNDk3ODM3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/22497837?v=4",
+      "html_url": "https://github.com/William-Blackie",
+      "contributions": 18
+    },
+    {
+      "login": "Chiemezuo",
+      "id": 29470516,
+      "node_id": "MDQ6VXNlcjI5NDcwNTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/29470516?v=4",
+      "html_url": "https://github.com/Chiemezuo",
+      "contributions": 17
+    },
+    {
+      "login": "shyusu4",
+      "id": 106587342,
+      "node_id": "U_kgDOBlpkzg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/106587342?v=4",
+      "html_url": "https://github.com/shyusu4",
+      "contributions": 11
+    },
+    {
+      "login": "SharmaineLim",
+      "id": 5073278,
+      "node_id": "MDQ6VXNlcjUwNzMyNzg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5073278?v=4",
+      "html_url": "https://github.com/SharmaineLim",
+      "contributions": 7
+    },
+    {
+      "login": "balazs-endresz",
+      "id": 1246848,
+      "node_id": "MDQ6VXNlcjEyNDY4NDg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1246848?v=4",
+      "html_url": "https://github.com/balazs-endresz",
+      "contributions": 6
+    },
+    {
+      "login": "p-r-a-v-i-n",
+      "id": 91125540,
+      "node_id": "MDQ6VXNlcjkxMTI1NTQw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/91125540?v=4",
+      "html_url": "https://github.com/p-r-a-v-i-n",
+      "contributions": 5
+    },
+    {
+      "login": "siimonevans",
+      "id": 2553896,
+      "node_id": "MDQ6VXNlcjI1NTM4OTY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2553896?v=4",
+      "html_url": "https://github.com/siimonevans",
+      "contributions": 5
+    },
+    {
+      "login": "kbayliss",
+      "id": 3009233,
+      "node_id": "MDQ6VXNlcjMwMDkyMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3009233?v=4",
+      "html_url": "https://github.com/kbayliss",
+      "contributions": 5
+    },
+    {
+      "login": "BrianXu20",
+      "id": 73645085,
+      "node_id": "MDQ6VXNlcjczNjQ1MDg1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/73645085?v=4",
+      "html_url": "https://github.com/BrianXu20",
+      "contributions": 4
     }
   ],
   "activeOrg": true

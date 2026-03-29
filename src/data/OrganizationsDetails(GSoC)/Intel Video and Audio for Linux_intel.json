@@ -179,28 +179,24 @@
   "githubID": "intel",
   "repositories": [
     {
-      "id": 170410523,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNzA0MTA1MjM=",
-      "name": "ad-rss-lib",
-      "full_name": "intel/ad-rss-lib",
-      "html_url": "https://github.com/intel/ad-rss-lib",
-      "description": "Library implementing the Responsibility Sensitive Safety model (RSS) for Autonomous Vehicles",
-      "language": "C++",
-      "stargazers_count": 344,
-      "forks_count": 138,
-      "open_issues_count": 12,
+      "id": 753344009,
+      "node_id": "R_kgDOLOceCQ",
+      "name": "torch-xpu-ops",
+      "full_name": "intel/torch-xpu-ops",
+      "html_url": "https://github.com/intel/torch-xpu-ops",
+      "description": null,
+      "language": "Python",
+      "stargazers_count": 82,
+      "forks_count": 88,
+      "open_issues_count": 603,
       "license": {
-        "key": "lgpl-2.1",
-        "name": "GNU Lesser General Public License v2.1",
-        "spdx_id": "LGPL-2.1",
-        "url": "https://api.github.com/licenses/lgpl-2.1",
-        "node_id": "MDc6TGljZW5zZTEx"
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
       },
-      "topics": [
-        "autonomous-vehicles",
-        "rss",
-        "safety"
-      ]
+      "topics": []
     },
     {
       "id": 166008577,
@@ -210,9 +206,9 @@
       "html_url": "https://github.com/intel/llvm",
       "description": "Intel staging area for llvm.org contribution. Home for Intel LLVM-based projects.",
       "language": "LLVM",
-      "stargazers_count": 1332,
-      "forks_count": 769,
-      "open_issues_count": 841,
+      "stargazers_count": 1444,
+      "forks_count": 821,
+      "open_issues_count": 896,
       "license": {
         "key": "other",
         "name": "Other",
@@ -228,23 +224,94 @@
       ]
     },
     {
-      "id": 257433076,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNTc0MzMwNzY=",
-      "name": "vc-intrinsics",
-      "full_name": "intel/vc-intrinsics",
-      "html_url": "https://github.com/intel/vc-intrinsics",
+      "id": 694842100,
+      "node_id": "R_kgDOKWpy9A",
+      "name": "quantum-intrinsics",
+      "full_name": "intel/quantum-intrinsics",
+      "html_url": "https://github.com/intel/quantum-intrinsics",
       "description": null,
-      "language": "Python",
-      "stargazers_count": 56,
-      "forks_count": 48,
-      "open_issues_count": 7,
+      "language": "LLVM",
+      "stargazers_count": 6,
+      "forks_count": 2,
+      "open_issues_count": 11,
       "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
       },
+      "topics": []
+    },
+    {
+      "id": 738776129,
+      "node_id": "R_kgDOLAjUQQ",
+      "name": "auto-round",
+      "full_name": "intel/auto-round",
+      "html_url": "https://github.com/intel/auto-round",
+      "description": "SOTA rounding-based quantization for high-accuracy low-bit LLM inference, seamlessly optimized for CPU/XPU/CUDA, with multi-datatype support and full compatibility with vLLM, SGLang, and Transformers.",
+      "language": "Python",
+      "stargazers_count": 927,
+      "forks_count": 92,
+      "open_issues_count": 112,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "gguf",
+        "int4",
+        "llms",
+        "mxfp4",
+        "nvfp4",
+        "quantization",
+        "rounding",
+        "sglang",
+        "transformers",
+        "vllm",
+        "vlms"
+      ]
+    },
+    {
+      "id": 690799710,
+      "node_id": "R_kgDOKSzEXg",
+      "name": "tsffs",
+      "full_name": "intel/tsffs",
+      "html_url": "https://github.com/intel/tsffs",
+      "description": "A snapshotting, coverage-guided fuzzer for software (UEFI, Kernel, firmware, BIOS) built on SIMICS",
+      "language": "Rust",
+      "stargazers_count": 329,
+      "forks_count": 25,
+      "open_issues_count": 23,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "fuzzing",
+        "rust",
+        "security",
+        "simics"
+      ]
+    },
+    {
+      "id": 99283489,
+      "node_id": "MDEwOlJlcG9zaXRvcnk5OTI4MzQ4OQ==",
+      "name": "mpi-benchmarks",
+      "full_name": "intel/mpi-benchmarks",
+      "html_url": "https://github.com/intel/mpi-benchmarks",
+      "description": null,
+      "language": "C",
+      "stargazers_count": 183,
+      "forks_count": 66,
+      "open_issues_count": 9,
+      "license": null,
       "topics": []
     },
     {
@@ -255,15 +322,95 @@
       "html_url": "https://github.com/intel/intel-graphics-compiler",
       "description": null,
       "language": "C++",
-      "stargazers_count": 651,
-      "forks_count": 171,
-      "open_issues_count": 39,
+      "stargazers_count": 694,
+      "forks_count": 181,
+      "open_issues_count": 38,
       "license": {
         "key": "other",
         "name": "Other",
         "spdx_id": "NOASSERTION",
         "url": null,
         "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 842127141,
+      "node_id": "R_kgDOMjHXJQ",
+      "name": "vmsifter",
+      "full_name": "intel/vmsifter",
+      "html_url": "https://github.com/intel/vmsifter",
+      "description": "Framework for in-VM test execution and monitoring, inspired by Sandsifter",
+      "language": "Python",
+      "stargazers_count": 15,
+      "forks_count": 5,
+      "open_issues_count": 1,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 631517165,
+      "node_id": "R_kgDOJaQv7Q",
+      "name": "intel-xpu-backend-for-triton",
+      "full_name": "intel/intel-xpu-backend-for-triton",
+      "html_url": "https://github.com/intel/intel-xpu-backend-for-triton",
+      "description": "OpenAI Triton backend for Intel® GPUs",
+      "language": "MLIR",
+      "stargazers_count": 238,
+      "forks_count": 91,
+      "open_issues_count": 270,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 801791252,
+      "node_id": "R_kgDOL8pdFA",
+      "name": "trustauthority-client-for-python",
+      "full_name": "intel/trustauthority-client-for-python",
+      "html_url": "https://github.com/intel/trustauthority-client-for-python",
+      "description": null,
+      "language": "Python",
+      "stargazers_count": 13,
+      "forks_count": 6,
+      "open_issues_count": 3,
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "topics": []
+    },
+    {
+      "id": 183522394,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxODM1MjIzOTQ=",
+      "name": "onnxruntime",
+      "full_name": "intel/onnxruntime",
+      "html_url": "https://github.com/intel/onnxruntime",
+      "description": "ONNX Runtime: cross-platform, high performance scoring engine for ML models",
+      "language": "C++",
+      "stargazers_count": 79,
+      "forks_count": 58,
+      "open_issues_count": 52,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
       },
       "topics": []
     },
@@ -275,9 +422,9 @@
       "html_url": "https://github.com/intel/compute-runtime",
       "description": "Intel® Graphics Compute Runtime for oneAPI Level Zero and OpenCL™ Driver",
       "language": "C++",
-      "stargazers_count": 1235,
-      "forks_count": 251,
-      "open_issues_count": 116,
+      "stargazers_count": 1360,
+      "forks_count": 270,
+      "open_issues_count": 56,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -295,61 +442,16 @@
       ]
     },
     {
-      "id": 642983964,
-      "node_id": "R_kgDOJlMoHA",
-      "name": "ScalableVectorSearch",
-      "full_name": "intel/ScalableVectorSearch",
-      "html_url": "https://github.com/intel/ScalableVectorSearch",
+      "id": 111158121,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMTExNTgxMjE=",
+      "name": "cm-compiler",
+      "full_name": "intel/cm-compiler",
+      "html_url": "https://github.com/intel/cm-compiler",
       "description": null,
       "language": "C++",
-      "stargazers_count": 161,
-      "forks_count": 27,
-      "open_issues_count": 19,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 690799710,
-      "node_id": "R_kgDOKSzEXg",
-      "name": "tsffs",
-      "full_name": "intel/tsffs",
-      "html_url": "https://github.com/intel/tsffs",
-      "description": "A snapshotting, coverage-guided fuzzer for software (UEFI, Kernel, firmware, BIOS) built on SIMICS",
-      "language": "Rust",
-      "stargazers_count": 302,
-      "forks_count": 21,
-      "open_issues_count": 29,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "fuzzing",
-        "rust",
-        "security",
-        "simics"
-      ]
-    },
-    {
-      "id": 631517165,
-      "node_id": "R_kgDOJaQv7Q",
-      "name": "intel-xpu-backend-for-triton",
-      "full_name": "intel/intel-xpu-backend-for-triton",
-      "html_url": "https://github.com/intel/intel-xpu-backend-for-triton",
-      "description": "OpenAI Triton backend for Intel® GPUs",
-      "language": "MLIR",
-      "stargazers_count": 185,
-      "forks_count": 62,
-      "open_issues_count": 271,
+      "stargazers_count": 152,
+      "forks_count": 55,
+      "open_issues_count": 5,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -360,85 +462,36 @@
       "topics": []
     },
     {
-      "id": 411451874,
-      "node_id": "R_kgDOGIZB4g",
-      "name": "device-modeling-language",
-      "full_name": "intel/device-modeling-language",
-      "html_url": "https://github.com/intel/device-modeling-language",
-      "description": null,
-      "language": "Python",
-      "stargazers_count": 99,
-      "forks_count": 48,
-      "open_issues_count": 41,
+      "id": 685737029,
+      "node_id": "R_kgDOKN-ERQ",
+      "name": "cpp-baremetal-senders-and-receivers",
+      "full_name": "intel/cpp-baremetal-senders-and-receivers",
+      "html_url": "https://github.com/intel/cpp-baremetal-senders-and-receivers",
+      "description": "An implementation of C++ \"senders and receivers\" async framework suitable for embedded platforms.",
+      "language": "C++",
+      "stargazers_count": 290,
+      "forks_count": 17,
+      "open_issues_count": 3,
       "license": {
-        "key": "mpl-2.0",
-        "name": "Mozilla Public License 2.0",
-        "spdx_id": "MPL-2.0",
-        "url": "https://api.github.com/licenses/mpl-2.0",
-        "node_id": "MDc6TGljZW5zZTE0"
+        "key": "bsl-1.0",
+        "name": "Boost Software License 1.0",
+        "spdx_id": "BSL-1.0",
+        "url": "https://api.github.com/licenses/bsl-1.0",
+        "node_id": "MDc6TGljZW5zZTI4"
       },
       "topics": []
     },
     {
-      "id": 431727603,
-      "node_id": "R_kgDOGbuj8w",
-      "name": "confidential-computing-zoo",
-      "full_name": "intel/confidential-computing-zoo",
-      "html_url": "https://github.com/intel/confidential-computing-zoo",
-      "description": "Confidential Computing Zoo provides confidential computing solutions based on Intel SGX, TDX, HEXL, etc. technologies.",
-      "language": "C++",
-      "stargazers_count": 325,
-      "forks_count": 61,
-      "open_issues_count": 7,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "attestation",
-        "cloud",
-        "confidential-computing",
-        "containers",
-        "enclave",
-        "key-management",
-        "sgx",
-        "tdx"
-      ]
-    },
-    {
-      "id": 528989007,
-      "node_id": "R_kgDOH4e7Tw",
-      "name": "workload-services-framework",
-      "full_name": "intel/workload-services-framework",
-      "html_url": "https://github.com/intel/workload-services-framework",
-      "description": "Workload Services Framework (WSF) is a benchmarking framework on Intel(R) Xeon(R) Platforms",
-      "language": "Shell",
+      "id": 817624659,
+      "node_id": "R_kgDOMLv2Uw",
+      "name": "AI-PC-Samples",
+      "full_name": "intel/AI-PC-Samples",
+      "html_url": "https://github.com/intel/AI-PC-Samples",
+      "description": null,
+      "language": "Jupyter Notebook",
       "stargazers_count": 55,
-      "forks_count": 52,
-      "open_issues_count": 6,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 630170794,
-      "node_id": "R_kgDOJY-kqg",
-      "name": "cluster-management-toolkit",
-      "full_name": "intel/cluster-management-toolkit",
-      "html_url": "https://github.com/intel/cluster-management-toolkit",
-      "description": "Toolkit for managing and monitoring Kubernetes clusters; includes a Curses-based console UI as well as a few command-line tools.",
-      "language": "Python",
-      "stargazers_count": 10,
-      "forks_count": 3,
-      "open_issues_count": 15,
+      "forks_count": 25,
+      "open_issues_count": 16,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -446,22 +499,19 @@
         "url": "https://api.github.com/licenses/mit",
         "node_id": "MDc6TGljZW5zZTEz"
       },
-      "topics": [
-        "cluster",
-        "kubernetes"
-      ]
+      "topics": []
     },
     {
-      "id": 421784465,
-      "node_id": "R_kgDOGSPrkQ",
-      "name": "intel-inb-manageability",
-      "full_name": "intel/intel-inb-manageability",
-      "html_url": "https://github.com/intel/intel-inb-manageability",
-      "description": "The Intel® In-Band Manageability Framework enables an administrator to perform critical Device Management operations over-the-air remotely from the cloud. It also facilitates the publishing of telemetry and critical events and logs from an IoT device to the cloud enabling the administrator to take corrective actions if, and when necessary. The framework is designed to be modular and flexible ensuring scalability of the solution across preferred Cloud Service Providers (for example, Azure* IoT Central, ThingBoard.io, and so on).",
-      "language": "Python",
-      "stargazers_count": 31,
-      "forks_count": 22,
-      "open_issues_count": 8,
+      "id": 111158415,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMTExNTg0MTU=",
+      "name": "opencl-clang",
+      "full_name": "intel/opencl-clang",
+      "html_url": "https://github.com/intel/opencl-clang",
+      "description": null,
+      "language": "C++",
+      "stargazers_count": 139,
+      "forks_count": 88,
+      "open_issues_count": 27,
       "license": {
         "key": "other",
         "name": "Other",
@@ -477,11 +527,11 @@
       "name": "PerfSpect",
       "full_name": "intel/PerfSpect",
       "html_url": "https://github.com/intel/PerfSpect",
-      "description": "System performance analysis and characterization tool",
+      "description": "Open-source Linux performance suite for engineers—profiling and tuning workloads and system configurations.",
       "language": "Go",
-      "stargazers_count": 379,
-      "forks_count": 41,
-      "open_issues_count": 14,
+      "stargazers_count": 443,
+      "forks_count": 54,
+      "open_issues_count": 10,
       "license": {
         "key": "bsd-3-clause",
         "name": "BSD 3-Clause \"New\" or \"Revised\" License",
@@ -490,6 +540,7 @@
         "node_id": "MDc6TGljZW5zZTU="
       },
       "topics": [
+        "arm",
         "cpu",
         "intel",
         "linux",
@@ -505,212 +556,48 @@
         "telemetry",
         "tma",
         "tool",
+        "x86",
         "xeon"
       ]
     },
     {
-      "id": 656417398,
-      "node_id": "R_kgDOJyAidg",
-      "name": "ai-containers",
-      "full_name": "intel/ai-containers",
-      "html_url": "https://github.com/intel/ai-containers",
-      "description": "This repository contains Dockerfiles, scripts, yaml files, Helm charts, etc. used to scale out AI containers with versions of TensorFlow and PyTorch that have been optimized for Intel platforms. Scaling is done with python, Docker, kubernetes, kubeflow, cnvrg.io, Helm, and other container orchestration frameworks for use in the cloud and on-premise",
-      "language": "Python",
-      "stargazers_count": 45,
-      "forks_count": 20,
-      "open_issues_count": 3,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "docker",
-        "docker-compose",
-        "helm",
-        "intel",
-        "kubernetes",
-        "pytorch",
-        "scikit-learn",
-        "tensorflow"
-      ]
-    },
-    {
-      "id": 404830862,
-      "node_id": "MDEwOlJlcG9zaXRvcnk0MDQ4MzA4NjI=",
-      "name": "perfmon",
-      "full_name": "intel/perfmon",
-      "html_url": "https://github.com/intel/perfmon",
-      "description": null,
-      "language": "Python",
-      "stargazers_count": 297,
-      "forks_count": 45,
-      "open_issues_count": 2,
-      "license": {
-        "key": "bsd-3-clause",
-        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
-        "spdx_id": "BSD-3-Clause",
-        "url": "https://api.github.com/licenses/bsd-3-clause",
-        "node_id": "MDc6TGljZW5zZTU="
-      },
-      "topics": []
-    },
-    {
-      "id": 154412076,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNTQ0MTIwNzY=",
-      "name": "ai-reference-models",
-      "full_name": "intel/ai-reference-models",
-      "html_url": "https://github.com/intel/ai-reference-models",
-      "description": "Intel® AI Reference Models: contains Intel optimizations for running deep learning workloads on Intel® Xeon® Scalable processors and Intel® Data Center GPUs",
-      "language": "Python",
-      "stargazers_count": 715,
-      "forks_count": 226,
-      "open_issues_count": 51,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "ai",
-        "cpu",
-        "deep-learning",
-        "deep-neural-networks",
-        "inference",
-        "performance",
-        "tensorflow"
-      ]
-    },
-    {
-      "id": 530376678,
-      "node_id": "R_kgDOH5zn5g",
-      "name": "MigTD",
-      "full_name": "intel/MigTD",
-      "html_url": "https://github.com/intel/MigTD",
-      "description": null,
-      "language": "Rust",
-      "stargazers_count": 32,
-      "forks_count": 19,
-      "open_issues_count": 11,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 8636697,
-      "node_id": "MDEwOlJlcG9zaXRvcnk4NjM2Njk3",
-      "name": "thermal_daemon",
-      "full_name": "intel/thermal_daemon",
-      "html_url": "https://github.com/intel/thermal_daemon",
-      "description": "Thermal daemon for IA",
+      "id": 611946277,
+      "node_id": "R_kgDOJHmPJQ",
+      "name": "gits",
+      "full_name": "intel/gits",
+      "html_url": "https://github.com/intel/gits",
+      "description": "API capture-replay tool for Vulkan, DirectX 12, OpenCL, Intel oneAPI Level Zero, and OpenGL",
       "language": "C++",
-      "stargazers_count": 570,
-      "forks_count": 120,
+      "stargazers_count": 64,
+      "forks_count": 6,
       "open_issues_count": 5,
       "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
-      },
-      "topics": []
-    },
-    {
-      "id": 932441063,
-      "node_id": "R_kgDON5Pr5w",
-      "name": "intel-ai-assistant-builder",
-      "full_name": "intel/intel-ai-assistant-builder",
-      "html_url": "https://github.com/intel/intel-ai-assistant-builder",
-      "description": "Intel® AI Assistant Builder",
-      "language": "Python",
-      "stargazers_count": 11,
-      "forks_count": 8,
-      "open_issues_count": 0,
-      "license": {
         "key": "mit",
         "name": "MIT License",
         "spdx_id": "MIT",
         "url": "https://api.github.com/licenses/mit",
         "node_id": "MDc6TGljZW5zZTEz"
       },
-      "topics": []
-    },
-    {
-      "id": 242080770,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNDIwODA3NzA=",
-      "name": "intel-qs",
-      "full_name": "intel/intel-qs",
-      "html_url": "https://github.com/intel/intel-qs",
-      "description": "High-performance simulator of quantum circuits",
-      "language": "C++",
-      "stargazers_count": 237,
-      "forks_count": 73,
-      "open_issues_count": 16,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
       "topics": [
-        "cloud-computing",
-        "high-performance-computing",
-        "intel-quantum-simulator",
-        "quantum-circuits",
-        "quantum-computing"
+        "directx12",
+        "levelzero",
+        "oneapi",
+        "opencl",
+        "opengl",
+        "vulkan-api"
       ]
     },
     {
-      "id": 554411496,
-      "node_id": "R_kgDOIQul6A",
-      "name": "x86-simd-sort",
-      "full_name": "intel/x86-simd-sort",
-      "html_url": "https://github.com/intel/x86-simd-sort",
-      "description": "C++ template library for high performance SIMD based sorting algorithms",
-      "language": "C++",
-      "stargazers_count": 933,
-      "forks_count": 62,
-      "open_issues_count": 20,
-      "license": {
-        "key": "bsd-3-clause",
-        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
-        "spdx_id": "BSD-3-Clause",
-        "url": "https://api.github.com/licenses/bsd-3-clause",
-        "node_id": "MDc6TGljZW5zZTU="
-      },
-      "topics": [
-        "argsort",
-        "avx2",
-        "avx512",
-        "partialsort",
-        "quickselect",
-        "quicksort",
-        "sort",
-        "x86"
-      ]
-    },
-    {
-      "id": 30941532,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzMDk0MTUzMg==",
-      "name": "acat",
-      "full_name": "intel/acat",
-      "html_url": "https://github.com/intel/acat",
-      "description": "Assistive Context-Aware Toolkit (ACAT)",
-      "language": "C#",
-      "stargazers_count": 3206,
-      "forks_count": 618,
-      "open_issues_count": 14,
+      "id": 394449678,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzOTQ0NDk2Nzg=",
+      "name": "mlir-extensions",
+      "full_name": "intel/mlir-extensions",
+      "html_url": "https://github.com/intel/mlir-extensions",
+      "description": "Intel® Extension for MLIR. A staging ground for MLIR dialects and tools for Intel devices using the MLIR toolchain.",
+      "language": "MLIR",
+      "stargazers_count": 148,
+      "forks_count": 43,
+      "open_issues_count": 83,
       "license": {
         "key": "other",
         "name": "Other",
@@ -721,74 +608,36 @@
       "topics": []
     },
     {
-      "id": 476876553,
-      "node_id": "R_kgDOHGyPCQ",
-      "name": "compile-time-init-build",
-      "full_name": "intel/compile-time-init-build",
-      "html_url": "https://github.com/intel/compile-time-init-build",
-      "description": "C++ library for composing modular firmware at compile-time.",
-      "language": "C++",
-      "stargazers_count": 565,
-      "forks_count": 54,
-      "open_issues_count": 20,
+      "id": 146517121,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNDY1MTcxMjE=",
+      "name": "confidential-computing.tee.dcap",
+      "full_name": "intel/confidential-computing.tee.dcap",
+      "html_url": "https://github.com/intel/confidential-computing.tee.dcap",
+      "description": null,
+      "language": "C",
+      "stargazers_count": 321,
+      "forks_count": 194,
+      "open_issues_count": 91,
       "license": {
-        "key": "bsl-1.0",
-        "name": "Boost Software License 1.0",
-        "spdx_id": "BSL-1.0",
-        "url": "https://api.github.com/licenses/bsl-1.0",
-        "node_id": "MDc6TGljZW5zZTI4"
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
       },
-      "topics": [
-        "embedded",
-        "firmware"
-      ]
+      "topics": []
     },
     {
-      "id": 165313961,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNjUzMTM5NjE=",
-      "name": "cve-bin-tool",
-      "full_name": "intel/cve-bin-tool",
-      "html_url": "https://github.com/intel/cve-bin-tool",
-      "description": "The CVE Binary Tool helps you determine if your system includes known vulnerabilities. You can scan binaries for over 350 common, vulnerable components (openssl, libpng, libxml2, expat and others), or if you know the components used, you can get a list of known vulnerabilities associated with an SBOM or a list of components and versions.",
-      "language": "Python",
-      "stargazers_count": 1415,
-      "forks_count": 534,
-      "open_issues_count": 163,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": [
-        "cve",
-        "cvss",
-        "devsecops",
-        "hacktoberfest",
-        "python",
-        "sbom",
-        "sbom-tool",
-        "security",
-        "security-automation",
-        "security-tools",
-        "swrepo",
-        "system-tools",
-        "vulnerabilities",
-        "vulnerability"
-      ]
-    },
-    {
-      "id": 362942203,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzNjI5NDIyMDM=",
-      "name": "cassian",
-      "full_name": "intel/cassian",
-      "html_url": "https://github.com/intel/cassian",
-      "description": "Cassian is a multi-API conformance test suite for compute kernel languages.",
-      "language": "C++",
-      "stargazers_count": 2,
-      "forks_count": 5,
-      "open_issues_count": 1,
+      "id": 826984591,
+      "node_id": "R_kgDOMUrIjw",
+      "name": "AI-Playground",
+      "full_name": "intel/AI-Playground",
+      "html_url": "https://github.com/intel/AI-Playground",
+      "description": "AI PC starter app for doing AI image creation, image stylizing, and chatbot on a PC powered by an Intel® Arc™ GPU.",
+      "language": "TypeScript",
+      "stargazers_count": 796,
+      "forks_count": 88,
+      "open_issues_count": 151,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -799,36 +648,77 @@
       "topics": []
     },
     {
-      "id": 45217325,
-      "node_id": "MDEwOlJlcG9zaXRvcnk0NTIxNzMyNQ==",
-      "name": "yoko-tool",
-      "full_name": "intel/yoko-tool",
-      "html_url": "https://github.com/intel/yoko-tool",
-      "description": "yoko-tool",
-      "language": "Python",
-      "stargazers_count": 15,
-      "forks_count": 13,
-      "open_issues_count": 1,
+      "id": 763828175,
+      "node_id": "R_kgDOLYcXzw",
+      "name": "ai",
+      "full_name": "intel/ai",
+      "html_url": "https://github.com/intel/ai",
+      "description": "Explore our open source AI portfolio! Develop, train, and deploy your AI solutions with performance- and productivity-optimized tools from Intel.",
+      "language": null,
+      "stargazers_count": 74,
+      "forks_count": 15,
+      "open_issues_count": 0,
       "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
       },
       "topics": []
     },
     {
-      "id": 753344009,
-      "node_id": "R_kgDOLOceCQ",
-      "name": "torch-xpu-ops",
-      "full_name": "intel/torch-xpu-ops",
-      "html_url": "https://github.com/intel/torch-xpu-ops",
+      "id": 485535177,
+      "node_id": "R_kgDOHPCtyQ",
+      "name": ".github",
+      "full_name": "intel/.github",
+      "html_url": "https://github.com/intel/.github",
+      "description": null,
+      "language": null,
+      "stargazers_count": 3,
+      "forks_count": 7,
+      "open_issues_count": 2,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 1192952537,
+      "node_id": "R_kgDORxsC2Q",
+      "name": "ifpd-touchback-floatingmenu",
+      "full_name": "intel/ifpd-touchback-floatingmenu",
+      "html_url": "https://github.com/intel/ifpd-touchback-floatingmenu",
+      "description": "To enable reverse-touch/touch-back and floating-menu/annotation-tool feature in IA only IFPD",
+      "language": "C#",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": [
+        "annotation-tool",
+        "floating-menu",
+        "ifpd",
+        "ops",
+        "reverse-touch",
+        "touch-back"
+      ]
+    },
+    {
+      "id": 642983964,
+      "node_id": "R_kgDOJlMoHA",
+      "name": "ScalableVectorSearch",
+      "full_name": "intel/ScalableVectorSearch",
+      "html_url": "https://github.com/intel/ScalableVectorSearch",
       "description": null,
       "language": "C++",
-      "stargazers_count": 45,
+      "stargazers_count": 211,
       "forks_count": 39,
-      "open_issues_count": 169,
+      "open_issues_count": 36,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -836,18 +726,23 @@
         "url": "https://api.github.com/licenses/apache-2.0",
         "node_id": "MDc6TGljZW5zZTI="
       },
-      "topics": []
+      "topics": [
+        "rag",
+        "similarity-search",
+        "svs",
+        "vector-search"
+      ]
     },
     {
-      "id": 140034345,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNDAwMzQzNDU=",
-      "name": "cryptography-primitives",
-      "full_name": "intel/cryptography-primitives",
-      "html_url": "https://github.com/intel/cryptography-primitives",
-      "description": "Intel® Cryptography Primitives Library is a secure, fast and lightweight library of building blocks for cryptography, highly-optimized for various Intel® CPUs",
-      "language": "C",
-      "stargazers_count": 353,
-      "forks_count": 93,
+      "id": 281528773,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyODE1Mjg3NzM=",
+      "name": "neural-compressor",
+      "full_name": "intel/neural-compressor",
+      "html_url": "https://github.com/intel/neural-compressor",
+      "description": "SOTA low-bit LLM quantization (INT8/FP8/MXFP8/INT4/MXFP4/NVFP4) & sparsity; leading model compression techniques on PyTorch, TensorFlow, and ONNX Runtime",
+      "language": "Python",
+      "stargazers_count": 2608,
+      "forks_count": 301,
       "open_issues_count": 10,
       "license": {
         "key": "apache-2.0",
@@ -856,18 +751,56 @@
         "url": "https://api.github.com/licenses/apache-2.0",
         "node_id": "MDc6TGljZW5zZTI="
       },
+      "topics": [
+        "auto-tuning",
+        "awq",
+        "fp4",
+        "gptq",
+        "int4",
+        "int8",
+        "knowledge-distillation",
+        "large-language-models",
+        "low-precision",
+        "mxformat",
+        "post-training-quantization",
+        "pruning",
+        "quantization",
+        "quantization-aware-training",
+        "smoothquant",
+        "sparsegpt",
+        "sparsity"
+      ]
+    },
+    {
+      "id": 52399959,
+      "node_id": "MDEwOlJlcG9zaXRvcnk1MjM5OTk1OQ==",
+      "name": "confidential-computing.sgx",
+      "full_name": "intel/confidential-computing.sgx",
+      "html_url": "https://github.com/intel/confidential-computing.sgx",
+      "description": "Intel SGX for Linux*",
+      "language": "C++",
+      "stargazers_count": 1421,
+      "forks_count": 562,
+      "open_issues_count": 326,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
       "topics": []
     },
     {
-      "id": 942838063,
-      "node_id": "R_kgDOODKRLw",
-      "name": "crashlog",
-      "full_name": "intel/crashlog",
-      "html_url": "https://github.com/intel/crashlog",
-      "description": "Lightweight Crash Log Framework",
+      "id": 780825500,
+      "node_id": "R_kgDOLopznA",
+      "name": "tbtools",
+      "full_name": "intel/tbtools",
+      "html_url": "https://github.com/intel/tbtools",
+      "description": "Thunderbolt/USB4 debugging tools",
       "language": "Rust",
-      "stargazers_count": 8,
-      "forks_count": 4,
+      "stargazers_count": 84,
+      "forks_count": 7,
       "open_issues_count": 0,
       "license": {
         "key": "mit",
@@ -876,103 +809,293 @@
         "url": "https://api.github.com/licenses/mit",
         "node_id": "MDc6TGljZW5zZTEz"
       },
+      "topics": []
+    },
+    {
+      "id": 1032927989,
+      "node_id": "R_kgDOPZE69Q",
+      "name": "university-curriculum-enabling-tool",
+      "full_name": "intel/university-curriculum-enabling-tool",
+      "html_url": "https://github.com/intel/university-curriculum-enabling-tool",
+      "description": "An advanced tool leveraging LLM and RAG technology to empower faculty with curriculum building, teaching support, and personalized learning experiences.",
+      "language": "TypeScript",
+      "stargazers_count": 9,
+      "forks_count": 1,
+      "open_issues_count": 2,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 974455932,
+      "node_id": "R_kgDOOhUEfA",
+      "name": "iaprof",
+      "full_name": "intel/iaprof",
+      "html_url": "https://github.com/intel/iaprof",
+      "description": "AI/GPU flame graph",
+      "language": "C",
+      "stargazers_count": 253,
+      "forks_count": 9,
+      "open_issues_count": 1,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
       "topics": [
-        "crash",
-        "debug",
-        "efi",
-        "intel",
-        "rust"
+        "flamegraph",
+        "gpu",
+        "performance"
       ]
     }
   ],
   "contributorsDetails": [
     {
-      "login": "dependabot[bot]",
-      "id": 49699333,
-      "node_id": "MDM6Qm90NDk2OTkzMzM=",
-      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-      "html_url": "https://github.com/apps/dependabot",
-      "contributions": 106
+      "login": "toyxu",
+      "id": 86954368,
+      "node_id": "MDQ6VXNlcjg2OTU0MzY4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/86954368?v=4",
+      "html_url": "https://github.com/toyxu",
+      "contributions": 173
     },
     {
-      "login": "berndgassmann",
-      "id": 44812003,
-      "node_id": "MDQ6VXNlcjQ0ODEyMDAz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/44812003?v=4",
-      "html_url": "https://github.com/berndgassmann",
-      "contributions": 93
+      "login": "mengfei25",
+      "id": 85726442,
+      "node_id": "MDQ6VXNlcjg1NzI2NDQy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/85726442?v=4",
+      "html_url": "https://github.com/mengfei25",
+      "contributions": 124
     },
     {
-      "login": "fabianoboril",
-      "id": 26405660,
-      "node_id": "MDQ6VXNlcjI2NDA1NjYw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/26405660?v=4",
-      "html_url": "https://github.com/fabianoboril",
-      "contributions": 47
+      "login": "fengyuan14",
+      "id": 28250760,
+      "node_id": "MDQ6VXNlcjI4MjUwNzYw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/28250760?v=4",
+      "html_url": "https://github.com/fengyuan14",
+      "contributions": 96
     },
     {
-      "login": "step-security-bot",
-      "id": 89328645,
-      "node_id": "MDQ6VXNlcjg5MzI4NjQ1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/89328645?v=4",
-      "html_url": "https://github.com/step-security-bot",
-      "contributions": 4
+      "login": "chunhuanMeng",
+      "id": 105194461,
+      "node_id": "U_kgDOBkUj3Q",
+      "avatar_url": "https://avatars.githubusercontent.com/u/105194461?v=4",
+      "html_url": "https://github.com/chunhuanMeng",
+      "contributions": 77
     },
     {
-      "login": "fpasch",
-      "id": 46815108,
-      "node_id": "MDQ6VXNlcjQ2ODE1MTA4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/46815108?v=4",
-      "html_url": "https://github.com/fpasch",
-      "contributions": 4
+      "login": "daisyden",
+      "id": 27668899,
+      "node_id": "MDQ6VXNlcjI3NjY4ODk5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/27668899?v=4",
+      "html_url": "https://github.com/daisyden",
+      "contributions": 54
     },
     {
-      "login": "sm-azure",
-      "id": 8787915,
-      "node_id": "MDQ6VXNlcjg3ODc5MTU=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/8787915?v=4",
-      "html_url": "https://github.com/sm-azure",
-      "contributions": 2
+      "login": "guangyey",
+      "id": 106960996,
+      "node_id": "U_kgDOBmAYZA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/106960996?v=4",
+      "html_url": "https://github.com/guangyey",
+      "contributions": 48
     },
     {
-      "login": "MehrnazHazrati",
-      "id": 9805272,
-      "node_id": "MDQ6VXNlcjk4MDUyNzI=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/9805272?v=4",
-      "html_url": "https://github.com/MehrnazHazrati",
-      "contributions": 2
+      "login": "Chao1Han",
+      "id": 107970637,
+      "node_id": "U_kgDOBm-ATQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/107970637?v=4",
+      "html_url": "https://github.com/Chao1Han",
+      "contributions": 46
     },
     {
-      "login": "johannesquast",
-      "id": 13798102,
-      "node_id": "MDQ6VXNlcjEzNzk4MTAy",
-      "avatar_url": "https://avatars.githubusercontent.com/u/13798102?v=4",
-      "html_url": "https://github.com/johannesquast",
-      "contributions": 2
+      "login": "yucai-intel",
+      "id": 108388355,
+      "node_id": "U_kgDOBnXgAw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/108388355?v=4",
+      "html_url": "https://github.com/yucai-intel",
+      "contributions": 46
     },
     {
-      "login": "rfma23",
-      "id": 34248994,
-      "node_id": "MDQ6VXNlcjM0MjQ4OTk0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/34248994?v=4",
-      "html_url": "https://github.com/rfma23",
-      "contributions": 1
+      "login": "chuanqi129",
+      "id": 13608516,
+      "node_id": "MDQ6VXNlcjEzNjA4NTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13608516?v=4",
+      "html_url": "https://github.com/chuanqi129",
+      "contributions": 44
     },
     {
-      "login": "daedric",
-      "id": 298311,
-      "node_id": "MDQ6VXNlcjI5ODMxMQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/298311?v=4",
-      "html_url": "https://github.com/daedric",
-      "contributions": 1
+      "login": "CuiYifeng",
+      "id": 52697806,
+      "node_id": "MDQ6VXNlcjUyNjk3ODA2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/52697806?v=4",
+      "html_url": "https://github.com/CuiYifeng",
+      "contributions": 41
     },
     {
-      "login": "suhel-jaber",
-      "id": 14459688,
-      "node_id": "MDQ6VXNlcjE0NDU5Njg4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/14459688?v=4",
-      "html_url": "https://github.com/suhel-jaber",
-      "contributions": 1
+      "login": "PenghuiCheng",
+      "id": 42089598,
+      "node_id": "MDQ6VXNlcjQyMDg5NTk4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/42089598?v=4",
+      "html_url": "https://github.com/PenghuiCheng",
+      "contributions": 39
+    },
+    {
+      "login": "RUIJIEZHONG66166",
+      "id": 109201212,
+      "node_id": "U_kgDOBoJHPA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/109201212?v=4",
+      "html_url": "https://github.com/RUIJIEZHONG66166",
+      "contributions": 38
+    },
+    {
+      "login": "hjhee",
+      "id": 5249943,
+      "node_id": "MDQ6VXNlcjUyNDk5NDM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5249943?v=4",
+      "html_url": "https://github.com/hjhee",
+      "contributions": 32
+    },
+    {
+      "login": "dvrogozh",
+      "id": 7403219,
+      "node_id": "MDQ6VXNlcjc0MDMyMTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7403219?v=4",
+      "html_url": "https://github.com/dvrogozh",
+      "contributions": 24
+    },
+    {
+      "login": "LuFinch",
+      "id": 108724856,
+      "node_id": "U_kgDOBnsCeA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/108724856?v=4",
+      "html_url": "https://github.com/LuFinch",
+      "contributions": 22
+    },
+    {
+      "login": "Silv3S",
+      "id": 37510081,
+      "node_id": "MDQ6VXNlcjM3NTEwMDgx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/37510081?v=4",
+      "html_url": "https://github.com/Silv3S",
+      "contributions": 21
+    },
+    {
+      "login": "yuchengliu1",
+      "id": 87297677,
+      "node_id": "MDQ6VXNlcjg3Mjk3Njc3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/87297677?v=4",
+      "html_url": "https://github.com/yuchengliu1",
+      "contributions": 20
+    },
+    {
+      "login": "min-jean-cho",
+      "id": 93151422,
+      "node_id": "U_kgDOBY1gvg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/93151422?v=4",
+      "html_url": "https://github.com/min-jean-cho",
+      "contributions": 19
+    },
+    {
+      "login": "majing921201",
+      "id": 22196524,
+      "node_id": "MDQ6VXNlcjIyMTk2NTI0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/22196524?v=4",
+      "html_url": "https://github.com/majing921201",
+      "contributions": 18
+    },
+    {
+      "login": "Stonepia",
+      "id": 12094956,
+      "node_id": "MDQ6VXNlcjEyMDk0OTU2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12094956?v=4",
+      "html_url": "https://github.com/Stonepia",
+      "contributions": 18
+    },
+    {
+      "login": "zxd1997066",
+      "id": 40376367,
+      "node_id": "MDQ6VXNlcjQwMzc2MzY3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40376367?v=4",
+      "html_url": "https://github.com/zxd1997066",
+      "contributions": 17
+    },
+    {
+      "login": "huaiyuzh",
+      "id": 93115227,
+      "node_id": "U_kgDOBYzTWw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/93115227?v=4",
+      "html_url": "https://github.com/huaiyuzh",
+      "contributions": 13
+    },
+    {
+      "login": "Kanya-Mo",
+      "id": 167922169,
+      "node_id": "U_kgDOCgJJ-Q",
+      "avatar_url": "https://avatars.githubusercontent.com/u/167922169?v=4",
+      "html_url": "https://github.com/Kanya-Mo",
+      "contributions": 13
+    },
+    {
+      "login": "frost-intel",
+      "id": 121894376,
+      "node_id": "U_kgDOB0P16A",
+      "avatar_url": "https://avatars.githubusercontent.com/u/121894376?v=4",
+      "html_url": "https://github.com/frost-intel",
+      "contributions": 12
+    },
+    {
+      "login": "jianyizh",
+      "id": 79236274,
+      "node_id": "MDQ6VXNlcjc5MjM2Mjc0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/79236274?v=4",
+      "html_url": "https://github.com/jianyizh",
+      "contributions": 12
+    },
+    {
+      "login": "AlienLiang23",
+      "id": 51150101,
+      "node_id": "MDQ6VXNlcjUxMTUwMTAx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51150101?v=4",
+      "html_url": "https://github.com/AlienLiang23",
+      "contributions": 11
+    },
+    {
+      "login": "lchen2331",
+      "id": 249884237,
+      "node_id": "U_kgDODuTuTQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/249884237?v=4",
+      "html_url": "https://github.com/lchen2331",
+      "contributions": 11
+    },
+    {
+      "login": "pbielak",
+      "id": 9750367,
+      "node_id": "MDQ6VXNlcjk3NTAzNjc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9750367?v=4",
+      "html_url": "https://github.com/pbielak",
+      "contributions": 11
+    },
+    {
+      "login": "riverliuintel",
+      "id": 49020096,
+      "node_id": "MDQ6VXNlcjQ5MDIwMDk2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/49020096?v=4",
+      "html_url": "https://github.com/riverliuintel",
+      "contributions": 10
+    },
+    {
+      "login": "BBBela",
+      "id": 182777534,
+      "node_id": "U_kgDOCuT2vg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/182777534?v=4",
+      "html_url": "https://github.com/BBBela",
+      "contributions": 10
     },
     {
       "login": "lattner",
@@ -988,7 +1111,7 @@
       "node_id": "MDQ6VXNlcjIyNTY2NTcw",
       "avatar_url": "https://avatars.githubusercontent.com/u/22566570?v=4",
       "html_url": "https://github.com/topperc",
-      "contributions": 12948
+      "contributions": 10891
     },
     {
       "login": "RKSimon",
@@ -996,7 +1119,7 @@
       "node_id": "MDQ6VXNlcjIxNzU4MzQ=",
       "avatar_url": "https://avatars.githubusercontent.com/u/2175834?v=4",
       "html_url": "https://github.com/RKSimon",
-      "contributions": 12149
+      "contributions": 10137
     },
     {
       "login": "arsenm",
@@ -1004,7 +1127,7 @@
       "node_id": "MDQ6VXNlcjEzODMzOQ==",
       "avatar_url": "https://avatars.githubusercontent.com/u/138339?v=4",
       "html_url": "https://github.com/arsenm",
-      "contributions": 7456
+      "contributions": 6054
     },
     {
       "login": "espindola",
@@ -1020,7 +1143,7 @@
       "node_id": "MDQ6VXNlcjQxNjMyMg==",
       "avatar_url": "https://avatars.githubusercontent.com/u/416322?v=4",
       "html_url": "https://github.com/MaskRay",
-      "contributions": 6371
+      "contributions": 4443
     },
     {
       "login": "rotateright",
@@ -1028,7 +1151,7 @@
       "node_id": "MDQ6VXNlcjE4MDEwODM0",
       "avatar_url": "https://avatars.githubusercontent.com/u/18010834?v=4",
       "html_url": "https://github.com/rotateright",
-      "contributions": 6368
+      "contributions": 6300
     },
     {
       "login": "tkremenek",
@@ -1039,6 +1162,22 @@
       "contributions": 6108
     },
     {
+      "login": "nikic",
+      "id": 216080,
+      "node_id": "MDQ6VXNlcjIxNjA4MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/216080?v=4",
+      "html_url": "https://github.com/nikic",
+      "contributions": 3499
+    },
+    {
+      "login": "kazutakahirata",
+      "id": 57370056,
+      "node_id": "MDQ6VXNlcjU3MzcwMDU2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/57370056?v=4",
+      "html_url": "https://github.com/kazutakahirata",
+      "contributions": 5525
+    },
+    {
       "login": "ddunbar",
       "id": 106625,
       "node_id": "MDQ6VXNlcjEwNjYyNQ==",
@@ -1047,68 +1186,20 @@
       "contributions": 5441
     },
     {
-      "login": "DougGregor",
-      "id": 989428,
-      "node_id": "MDQ6VXNlcjk4OTQyOA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/989428?v=4",
-      "html_url": "https://github.com/DougGregor",
-      "contributions": 5364
-    },
-    {
       "login": "d0k",
       "id": 16542,
       "node_id": "MDQ6VXNlcjE2NTQy",
       "avatar_url": "https://avatars.githubusercontent.com/u/16542?v=4",
       "html_url": "https://github.com/d0k",
-      "contributions": 5338
+      "contributions": 5099
     },
     {
-      "login": "nikic",
-      "id": 216080,
-      "node_id": "MDQ6VXNlcjIxNjA4MA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/216080?v=4",
-      "html_url": "https://github.com/nikic",
-      "contributions": 5137
-    },
-    {
-      "login": "zygoloid",
-      "id": 232783,
-      "node_id": "MDQ6VXNlcjIzMjc4Mw==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/232783?v=4",
-      "html_url": "https://github.com/zygoloid",
-      "contributions": 4679
-    },
-    {
-      "login": "rui314",
-      "id": 47400,
-      "node_id": "MDQ6VXNlcjQ3NDAw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/47400?v=4",
-      "html_url": "https://github.com/rui314",
-      "contributions": 4604
-    },
-    {
-      "login": "kazutakahirata",
-      "id": 57370056,
-      "node_id": "MDQ6VXNlcjU3MzcwMDU2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/57370056?v=4",
-      "html_url": "https://github.com/kazutakahirata",
-      "contributions": 4246
-    },
-    {
-      "login": "nico",
-      "id": 3487,
-      "node_id": "MDQ6VXNlcjM0ODc=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/3487?v=4",
-      "html_url": "https://github.com/nico",
-      "contributions": 4134
-    },
-    {
-      "login": "chandlerc",
-      "id": 711534,
-      "node_id": "MDQ6VXNlcjcxMTUzNA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/711534?v=4",
-      "html_url": "https://github.com/chandlerc",
-      "contributions": 3963
+      "login": "DougGregor",
+      "id": 989428,
+      "node_id": "MDQ6VXNlcjk4OTQyOA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/989428?v=4",
+      "html_url": "https://github.com/DougGregor",
+      "contributions": 5363
     },
     {
       "login": "fhahn",
@@ -1116,7 +1207,39 @@
       "node_id": "MDQ6VXNlcjQ1MDQ4OQ==",
       "avatar_url": "https://avatars.githubusercontent.com/u/450489?v=4",
       "html_url": "https://github.com/fhahn",
-      "contributions": 3875
+      "contributions": 2656
+    },
+    {
+      "login": "zygoloid",
+      "id": 232783,
+      "node_id": "MDQ6VXNlcjIzMjc4Mw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/232783?v=4",
+      "html_url": "https://github.com/zygoloid",
+      "contributions": 4570
+    },
+    {
+      "login": "rui314",
+      "id": 47400,
+      "node_id": "MDQ6VXNlcjQ3NDAw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/47400?v=4",
+      "html_url": "https://github.com/rui314",
+      "contributions": 4590
+    },
+    {
+      "login": "nico",
+      "id": 3487,
+      "node_id": "MDQ6VXNlcjM0ODc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3487?v=4",
+      "html_url": "https://github.com/nico",
+      "contributions": 3651
+    },
+    {
+      "login": "chandlerc",
+      "id": 711534,
+      "node_id": "MDQ6VXNlcjcxMTUzNA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/711534?v=4",
+      "html_url": "https://github.com/chandlerc",
+      "contributions": 3939
     },
     {
       "login": "isanbard",
@@ -1124,7 +1247,7 @@
       "node_id": "MDQ6VXNlcjk4MjYwOA==",
       "avatar_url": "https://avatars.githubusercontent.com/u/982608?v=4",
       "html_url": "https://github.com/isanbard",
-      "contributions": 3704
+      "contributions": 3700
     },
     {
       "login": "echristo",
@@ -1132,23 +1255,7 @@
       "node_id": "MDQ6VXNlcjMyNzMwOA==",
       "avatar_url": "https://avatars.githubusercontent.com/u/327308?v=4",
       "html_url": "https://github.com/echristo",
-      "contributions": 3529
-    },
-    {
-      "login": "dwblaikie",
-      "id": 20646145,
-      "node_id": "MDQ6VXNlcjIwNjQ2MTQ1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/20646145?v=4",
-      "html_url": "https://github.com/dwblaikie",
-      "contributions": 3309
-    },
-    {
-      "login": "rnk",
-      "id": 50126,
-      "node_id": "MDQ6VXNlcjUwMTI2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/50126?v=4",
-      "html_url": "https://github.com/rnk",
-      "contributions": 3266
+      "contributions": 3512
     },
     {
       "login": "klausler",
@@ -1156,15 +1263,15 @@
       "node_id": "MDQ6VXNlcjM1ODE5MjI5",
       "avatar_url": "https://avatars.githubusercontent.com/u/35819229?v=4",
       "html_url": "https://github.com/klausler",
-      "contributions": 3200
+      "contributions": 2526
     },
     {
-      "login": "chapuni",
-      "id": 379295,
-      "node_id": "MDQ6VXNlcjM3OTI5NQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/379295?v=4",
-      "html_url": "https://github.com/chapuni",
-      "contributions": 3177
+      "login": "dwblaikie",
+      "id": 20646145,
+      "node_id": "MDQ6VXNlcjIwNjQ2MTQ1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20646145?v=4",
+      "html_url": "https://github.com/dwblaikie",
+      "contributions": 3240
     },
     {
       "login": "JDevlieghere",
@@ -1172,23 +1279,23 @@
       "node_id": "MDQ6VXNlcjcxMjg5Ng==",
       "avatar_url": "https://avatars.githubusercontent.com/u/712896?v=4",
       "html_url": "https://github.com/JDevlieghere",
-      "contributions": 3035
+      "contributions": 2484
     },
     {
-      "login": "vitalybuka",
-      "id": 1531415,
-      "node_id": "MDQ6VXNlcjE1MzE0MTU=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1531415?v=4",
-      "html_url": "https://github.com/vitalybuka",
-      "contributions": 2882
+      "login": "rnk",
+      "id": 50126,
+      "node_id": "MDQ6VXNlcjUwMTI2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/50126?v=4",
+      "html_url": "https://github.com/rnk",
+      "contributions": 3174
     },
     {
-      "login": "labath",
-      "id": 3129331,
-      "node_id": "MDQ6VXNlcjMxMjkzMzE=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/3129331?v=4",
-      "html_url": "https://github.com/labath",
-      "contributions": 2837
+      "login": "chapuni",
+      "id": 379295,
+      "node_id": "MDQ6VXNlcjM3OTI5NQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/379295?v=4",
+      "html_url": "https://github.com/chapuni",
+      "contributions": 3006
     },
     {
       "login": "lhames",
@@ -1196,7 +1303,15 @@
       "node_id": "MDQ6VXNlcjExNzY3Mw==",
       "avatar_url": "https://avatars.githubusercontent.com/u/117673?v=4",
       "html_url": "https://github.com/lhames",
-      "contributions": 2804
+      "contributions": 2425
+    },
+    {
+      "login": "vitalybuka",
+      "id": 1531415,
+      "node_id": "MDQ6VXNlcjE1MzE0MTU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1531415?v=4",
+      "html_url": "https://github.com/vitalybuka",
+      "contributions": 2979
     },
     {
       "login": "ldionne",
@@ -1204,7 +1319,7 @@
       "node_id": "MDQ6VXNlcjcwMDgzNA==",
       "avatar_url": "https://avatars.githubusercontent.com/u/700834?v=4",
       "html_url": "https://github.com/ldionne",
-      "contributions": 2801
+      "contributions": 2968
     },
     {
       "login": "preames",
@@ -1212,7 +1327,55 @@
       "node_id": "MDQ6VXNlcjEwMDcwNjE=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1007061?v=4",
       "html_url": "https://github.com/preames",
-      "contributions": 2774
+      "contributions": 2932
+    },
+    {
+      "login": "alexey-bataev",
+      "id": 5361294,
+      "node_id": "MDQ6VXNlcjUzNjEyOTQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5361294?v=4",
+      "html_url": "https://github.com/alexey-bataev",
+      "contributions": 2915
+    },
+    {
+      "login": "LebedevRI",
+      "id": 88600,
+      "node_id": "MDQ6VXNlcjg4NjAw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/88600?v=4",
+      "html_url": "https://github.com/LebedevRI",
+      "contributions": 2582
+    },
+    {
+      "login": "labath",
+      "id": 3129331,
+      "node_id": "MDQ6VXNlcjMxMjkzMzE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3129331?v=4",
+      "html_url": "https://github.com/labath",
+      "contributions": 2545
+    },
+    {
+      "login": "akyrtzi",
+      "id": 46970,
+      "node_id": "MDQ6VXNlcjQ2OTcw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46970?v=4",
+      "html_url": "https://github.com/akyrtzi",
+      "contributions": 2449
+    },
+    {
+      "login": "stoklund",
+      "id": 12660495,
+      "node_id": "MDQ6VXNlcjEyNjYwNDk1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12660495?v=4",
+      "html_url": "https://github.com/stoklund",
+      "contributions": 2448
+    },
+    {
+      "login": "eefriedman",
+      "id": 12769964,
+      "node_id": "MDQ6VXNlcjEyNzY5OTY0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12769964?v=4",
+      "html_url": "https://github.com/eefriedman",
+      "contributions": 2323
     }
   ],
   "activeOrg": true

@@ -31,7 +31,8 @@
     2022,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2022": [
@@ -102,10 +103,97 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/1DEONCV5"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Faust LSP",
+        "short_description": "This proposal aims to develop a feature-rich programming environment for writing Faust programs in VS Code by providing powerful Language Server...",
+        "description": "This proposal aims to develop a feature-rich programming environment for writing Faust programs in VS Code by providing powerful Language Server Protocol(LSP) features such as code completion, diagnostics checking, definition lookup, etc. and any other features commonly supported by other mature programming language projects.\nThe goal is to enhance and optimize the current Faust programming experience, making Faust development smoother for developers and allowing Faust programming to be more accessible for beginners to the Faust ecosystem.",
+        "student_name": "carn181",
+        "code_url": "https://gist.github.com/carn181/0e953b5463de9f528ff58183d55fcfdc",
+        "proposal_id": "PwfsNNQc",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/o08fWFr0"
+      },
+      {
+        "title": "faust2clap: Support for CLAP format",
+        "short_description": "This project proposes the development of faust2clap, a tool that integrates the Faust programming language with the CLAP (CLever Audio Plugin)...",
+        "description": "This project proposes the development of faust2clap, a tool that integrates the Faust programming language with the CLAP (CLever Audio Plugin) standard. Faust is a high-level functional language for real-time DSP, while CLAP is a modern open-source plugin format gaining traction as an alternative to VST and AudioUnit. Currently, Faust does not officially support CLAP as a target architecture.\n\nThe goal is to extend the existing faust2xx framework by implementing a CLAP architecture file and a new command-line utility, faust2clap. This will allow developers to compile Faust DSP code into fully functional CLAP plugins, supporting advanced features such as per-note modulation and sample-accurate automation.\n\nDeliverables include the tool itself, a reusable architecture backend, a suite of test plugins, and comprehensive documentation. The project has been developed in close collaboration with the Faust team and aims to be merged upstream as an official component of the Faust toolchain.\n\nBy bridging Faust and CLAP, this project supports open plugin standards, expands deployment options for DSP developers, and modernises the Faust ecosystem.",
+        "student_name": "Facundo F",
+        "code_url": "https://github.com/cucuwritescode/faust2clap",
+        "proposal_id": "cBln2bUB",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/5xh4Ttn4"
+      },
+      {
+        "title": "Integration in Audiokinetic Wwise",
+        "short_description": "This project aims to integrate the Faust programming language with Audiokinetic's Wwise - the industry standard audio middleware in game development....",
+        "description": "This project aims to integrate the Faust programming language with Audiokinetic's Wwise - the industry standard audio middleware in game development. Two key deliverables will be created: a faust2wwise tool for statically compiling Faust DSP code into Wwise modules, and a plugin that embeds the libfaust & LLVM JIT compiler for dynamic Faust DSP live-coding within Wwise. Drawing on experience in C++ audio programming, DSP techniques, and plugin development, a practical connection will be built that allows audio designers and programmers to use Faust's DSP capabilities directly within their Wwise workflows.",
+        "student_name": "pmelaudev",
+        "code_url": "https://github.com/grame-cncm/faust/pull/1167",
+        "proposal_id": "1QOfhUuj",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/Pim5UypA"
+      }
+    ],
+    "2026": []
   },
   "githubID": "grame-cncm",
   "repositories": [
+    {
+      "id": 112796225,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMTI3OTYyMjU=",
+      "name": "faustlibraries",
+      "full_name": "grame-cncm/faustlibraries",
+      "html_url": "https://github.com/grame-cncm/faustlibraries",
+      "description": "The Faust libraries",
+      "language": "OpenSCAD",
+      "stargazers_count": 231,
+      "forks_count": 68,
+      "open_issues_count": 11,
+      "license": null,
+      "topics": [
+        "dsp",
+        "faust",
+        "library"
+      ]
+    },
+    {
+      "id": 198991466,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxOTg5OTE0NjY=",
+      "name": "guidoeditorweb",
+      "full_name": "grame-cncm/guidoeditorweb",
+      "html_url": "https://github.com/grame-cncm/guidoeditorweb",
+      "description": "An online Guido editor",
+      "language": "TypeScript",
+      "stargazers_count": 14,
+      "forks_count": 2,
+      "open_issues_count": 3,
+      "license": {
+        "key": "mpl-2.0",
+        "name": "Mozilla Public License 2.0",
+        "spdx_id": "MPL-2.0",
+        "url": "https://api.github.com/licenses/mpl-2.0",
+        "node_id": "MDc6TGljZW5zZTE0"
+      },
+      "topics": []
+    },
+    {
+      "id": 885525414,
+      "node_id": "R_kgDONMgLpg",
+      "name": "faustide-od",
+      "full_name": "grame-cncm/faustide-od",
+      "html_url": "https://github.com/grame-cncm/faustide-od",
+      "description": "Faust IDE (Integrated Development Environment)",
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "forks_count": 1,
+      "open_issues_count": 0,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
     {
       "id": 72926839,
       "node_id": "MDEwOlJlcG9zaXRvcnk3MjkyNjgzOQ==",
@@ -114,9 +202,9 @@
       "html_url": "https://github.com/grame-cncm/faust",
       "description": "Functional programming language for signal processing and sound synthesis",
       "language": "C++",
-      "stargazers_count": 2731,
-      "forks_count": 349,
-      "open_issues_count": 212,
+      "stargazers_count": 2996,
+      "forks_count": 404,
+      "open_issues_count": 236,
       "license": {
         "key": "other",
         "name": "Other",
@@ -154,9 +242,9 @@
       "html_url": "https://github.com/grame-cncm/faustdoc",
       "description": "The Faust Online Documentation",
       "language": "TeX",
-      "stargazers_count": 10,
-      "forks_count": 13,
-      "open_issues_count": 2,
+      "stargazers_count": 12,
+      "forks_count": 14,
+      "open_issues_count": 3,
       "license": {
         "key": "cc0-1.0",
         "name": "Creative Commons Zero v1.0 Universal",
@@ -169,24 +257,6 @@
       ]
     },
     {
-      "id": 112796225,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMTI3OTYyMjU=",
-      "name": "faustlibraries",
-      "full_name": "grame-cncm/faustlibraries",
-      "html_url": "https://github.com/grame-cncm/faustlibraries",
-      "description": "The Faust libraries",
-      "language": "OpenSCAD",
-      "stargazers_count": 209,
-      "forks_count": 63,
-      "open_issues_count": 10,
-      "license": null,
-      "topics": [
-        "dsp",
-        "faust",
-        "library"
-      ]
-    },
-    {
       "id": 39944192,
       "node_id": "MDEwOlJlcG9zaXRvcnkzOTk0NDE5Mg==",
       "name": "faustwebsite",
@@ -194,7 +264,7 @@
       "html_url": "https://github.com/grame-cncm/faustwebsite",
       "description": "Faust website sources",
       "language": "JavaScript",
-      "stargazers_count": 7,
+      "stargazers_count": 8,
       "forks_count": 8,
       "open_issues_count": 2,
       "license": null,
@@ -203,22 +273,70 @@
       ]
     },
     {
-      "id": 379357684,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzNzkzNTc2ODQ=",
-      "name": "faust2wwise",
-      "full_name": "grame-cncm/faust2wwise",
-      "html_url": "https://github.com/grame-cncm/faust2wwise",
-      "description": null,
-      "language": "C++",
-      "stargazers_count": 9,
-      "forks_count": 2,
+      "id": 112408679,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMTI0MDg2Nzk=",
+      "name": "faustideas",
+      "full_name": "grame-cncm/faustideas",
+      "html_url": "https://github.com/grame-cncm/faustideas",
+      "description": "A central place for Faust GSoC proposals, todo list and new ideas",
+      "language": "Shell",
+      "stargazers_count": 43,
+      "forks_count": 9,
+      "open_issues_count": 3,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1133410248,
+      "node_id": "R_kgDOQ453yA",
+      "name": "faustbrowser-mcp",
+      "full_name": "grame-cncm/faustbrowser-mcp",
+      "html_url": "https://github.com/grame-cncm/faustbrowser-mcp",
+      "description": "Faust browser MCP",
+      "language": "JavaScript",
+      "stargazers_count": 12,
+      "forks_count": 1,
       "open_issues_count": 0,
       "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 1152755526,
+      "node_id": "R_kgDORLWnRg",
+      "name": "vscode-faust",
+      "full_name": "grame-cncm/vscode-faust",
+      "html_url": "https://github.com/grame-cncm/vscode-faust",
+      "description": "A basic VS Code extension for faust",
+      "language": "TypeScript",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1052789603,
+      "node_id": "R_kgDOPsBLYw",
+      "name": "faustlsp",
+      "full_name": "grame-cncm/faustlsp",
+      "html_url": "https://github.com/grame-cncm/faustlsp",
+      "description": "A LSP Server Implementation for Faust",
+      "language": "Go",
+      "stargazers_count": 8,
+      "forks_count": 1,
+      "open_issues_count": 0,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
       },
       "topics": []
     },
@@ -230,9 +348,9 @@
       "html_url": "https://github.com/grame-cncm/faustide",
       "description": "Faust IDE (Integrated Development Environment)",
       "language": "TypeScript",
-      "stargazers_count": 86,
-      "forks_count": 26,
-      "open_issues_count": 28,
+      "stargazers_count": 105,
+      "forks_count": 30,
+      "open_issues_count": 32,
       "license": {
         "key": "other",
         "name": "Other",
@@ -245,6 +363,26 @@
       ]
     },
     {
+      "id": 656082100,
+      "node_id": "R_kgDOJxsEtA",
+      "name": "faustwasm",
+      "full_name": "grame-cncm/faustwasm",
+      "html_url": "https://github.com/grame-cncm/faustwasm",
+      "description": "Faust for WebAudio written in TypeScript",
+      "language": "JavaScript",
+      "stargazers_count": 41,
+      "forks_count": 23,
+      "open_issues_count": 10,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
       "id": 240472166,
       "node_id": "MDEwOlJlcG9zaXRvcnkyNDA0NzIxNjY=",
       "name": "fausteditor",
@@ -253,8 +391,8 @@
       "description": "A simple Faust editor for the web",
       "language": "JavaScript",
       "stargazers_count": 8,
-      "forks_count": 5,
-      "open_issues_count": 2,
+      "forks_count": 6,
+      "open_issues_count": 0,
       "license": {
         "key": "gpl-3.0",
         "name": "GNU General Public License v3.0",
@@ -267,58 +405,6 @@
       ]
     },
     {
-      "id": 91459513,
-      "node_id": "MDEwOlJlcG9zaXRvcnk5MTQ1OTUxMw==",
-      "name": "inscore",
-      "full_name": "grame-cncm/inscore",
-      "html_url": "https://github.com/grame-cncm/inscore",
-      "description": "INScore - augmented interactive music scores",
-      "language": "C++",
-      "stargazers_count": 48,
-      "forks_count": 7,
-      "open_issues_count": 12,
-      "license": null,
-      "topics": [
-        "augmented-scores",
-        "interactive-scores",
-        "music-notation"
-      ]
-    },
-    {
-      "id": 112408679,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMTI0MDg2Nzk=",
-      "name": "faustideas",
-      "full_name": "grame-cncm/faustideas",
-      "html_url": "https://github.com/grame-cncm/faustideas",
-      "description": "A central place for Faust GSoC proposals, todo list and new ideas",
-      "language": "Shell",
-      "stargazers_count": 36,
-      "forks_count": 8,
-      "open_issues_count": 1,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 656082100,
-      "node_id": "R_kgDOJxsEtA",
-      "name": "faustwasm",
-      "full_name": "grame-cncm/faustwasm",
-      "html_url": "https://github.com/grame-cncm/faustwasm",
-      "description": "Faust for WebAudio written in TypeScript",
-      "language": "JavaScript",
-      "stargazers_count": 31,
-      "forks_count": 13,
-      "open_issues_count": 5,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
       "id": 685417725,
       "node_id": "R_kgDOKNqk_Q",
       "name": "faust-web-component",
@@ -326,8 +412,8 @@
       "html_url": "https://github.com/grame-cncm/faust-web-component",
       "description": "Interactive Faust snippets in web pages",
       "language": "TypeScript",
-      "stargazers_count": 19,
-      "forks_count": 7,
+      "stargazers_count": 23,
+      "forks_count": 8,
       "open_issues_count": 1,
       "license": {
         "key": "other",
@@ -336,6 +422,140 @@
         "url": null,
         "node_id": "MDc6TGljZW5zZTA="
       },
+      "topics": []
+    },
+    {
+      "id": 40013233,
+      "node_id": "MDEwOlJlcG9zaXRvcnk0MDAxMzIzMw==",
+      "name": "faustplayground",
+      "full_name": "grame-cncm/faustplayground",
+      "html_url": "https://github.com/grame-cncm/faustplayground",
+      "description": "Online platform to combine and run Faust DSP modules, test it here:",
+      "language": "TypeScript",
+      "stargazers_count": 31,
+      "forks_count": 11,
+      "open_issues_count": 1,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": [
+        "faust"
+      ]
+    },
+    {
+      "id": 84543053,
+      "node_id": "MDEwOlJlcG9zaXRvcnk4NDU0MzA1Mw==",
+      "name": "guidolib",
+      "full_name": "grame-cncm/guidolib",
+      "html_url": "https://github.com/grame-cncm/guidolib",
+      "description": "Guido project - music score layout engine - music description language",
+      "language": "C++",
+      "stargazers_count": 175,
+      "forks_count": 38,
+      "open_issues_count": 35,
+      "license": {
+        "key": "mpl-2.0",
+        "name": "Mozilla Public License 2.0",
+        "spdx_id": "MPL-2.0",
+        "url": "https://api.github.com/licenses/mpl-2.0",
+        "node_id": "MDc6TGljZW5zZTE0"
+      },
+      "topics": [
+        "guido-engine",
+        "music-notation",
+        "music-notation-format"
+      ]
+    },
+    {
+      "id": 1103779941,
+      "node_id": "R_kgDOQcpYZQ",
+      "name": "faustcompilerbenchtool",
+      "full_name": "grame-cncm/faustcompilerbenchtool",
+      "html_url": "https://github.com/grame-cncm/faustcompilerbenchtool",
+      "description": "A simple benchmark tool to measure the performance of the cpp code generate by the Faust compiler",
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 1107541932,
+      "node_id": "R_kgDOQgO_rA",
+      "name": "Anagramme",
+      "full_name": "grame-cncm/Anagramme",
+      "html_url": "https://github.com/grame-cncm/Anagramme",
+      "description": "Anagramme piece for Gramophones",
+      "language": "Faust",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1107576285,
+      "node_id": "R_kgDOQgRF3Q",
+      "name": "faust-scheduling-tools",
+      "full_name": "grame-cncm/faust-scheduling-tools",
+      "html_url": "https://github.com/grame-cncm/faust-scheduling-tools",
+      "description": "A benchmark and test suite for evaluating different scheduling strategies in the FAUST compiler",
+      "language": "Faust",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "topics": []
+    },
+    {
+      "id": 1052790121,
+      "node_id": "R_kgDOPsBNaQ",
+      "name": "faustfmt",
+      "full_name": "grame-cncm/faustfmt",
+      "html_url": "https://github.com/grame-cncm/faustfmt",
+      "description": "A formatter for the Faust programming language",
+      "language": "Rust",
+      "stargazers_count": 5,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 862381976,
+      "node_id": "R_kgDOM2bnmA",
+      "name": "Folia-in-Faust",
+      "full_name": "grame-cncm/Folia-in-Faust",
+      "html_url": "https://github.com/grame-cncm/Folia-in-Faust",
+      "description": null,
+      "language": "Faust",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
       "topics": []
     },
     {
@@ -353,16 +573,16 @@
       "topics": []
     },
     {
-      "id": 40013233,
-      "node_id": "MDEwOlJlcG9zaXRvcnk0MDAxMzIzMw==",
-      "name": "faustplayground",
-      "full_name": "grame-cncm/faustplayground",
-      "html_url": "https://github.com/grame-cncm/faustplayground",
-      "description": "Online platform to combine and run Faust DSP modules, test it here:",
-      "language": "TypeScript",
-      "stargazers_count": 26,
-      "forks_count": 11,
-      "open_issues_count": 1,
+      "id": 70402955,
+      "node_id": "MDEwOlJlcG9zaXRvcnk3MDQwMjk1NQ==",
+      "name": "faustservice",
+      "full_name": "grame-cncm/faustservice",
+      "html_url": "https://github.com/grame-cncm/faustservice",
+      "description": null,
+      "language": "C++",
+      "stargazers_count": 4,
+      "forks_count": 8,
+      "open_issues_count": 3,
       "license": {
         "key": "other",
         "name": "Other",
@@ -370,8 +590,84 @@
         "url": null,
         "node_id": "MDc6TGljZW5zZTA="
       },
+      "topics": []
+    },
+    {
+      "id": 201195212,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMDExOTUyMTI=",
+      "name": "guidodoc",
+      "full_name": "grame-cncm/guidodoc",
+      "html_url": "https://github.com/grame-cncm/guidodoc",
+      "description": "Documentation and examples for the Guido Music Notation format",
+      "language": "HTML",
+      "stargazers_count": 1,
+      "forks_count": 1,
+      "open_issues_count": 0,
+      "license": null,
       "topics": [
-        "faust"
+        "guido",
+        "music-notation-format"
+      ]
+    },
+    {
+      "id": 32144550,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzMjE0NDU1MA==",
+      "name": "libmusicxml",
+      "full_name": "grame-cncm/libmusicxml",
+      "html_url": "https://github.com/grame-cncm/libmusicxml",
+      "description": "A C/C++ library to support the MusicXML format.",
+      "language": "LilyPond",
+      "stargazers_count": 168,
+      "forks_count": 39,
+      "open_issues_count": 9,
+      "license": {
+        "key": "mpl-2.0",
+        "name": "Mozilla Public License 2.0",
+        "spdx_id": "MPL-2.0",
+        "url": "https://api.github.com/licenses/mpl-2.0",
+        "node_id": "MDc6TGljZW5zZTE0"
+      },
+      "topics": [
+        "music-notation",
+        "musicxml"
+      ]
+    },
+    {
+      "id": 379357684,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzNzkzNTc2ODQ=",
+      "name": "faust2wwise",
+      "full_name": "grame-cncm/faust2wwise",
+      "html_url": "https://github.com/grame-cncm/faust2wwise",
+      "description": null,
+      "language": "C++",
+      "stargazers_count": 11,
+      "forks_count": 2,
+      "open_issues_count": 2,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 91459513,
+      "node_id": "MDEwOlJlcG9zaXRvcnk5MTQ1OTUxMw==",
+      "name": "inscore",
+      "full_name": "grame-cncm/inscore",
+      "html_url": "https://github.com/grame-cncm/inscore",
+      "description": "INScore - augmented interactive music scores",
+      "language": "C++",
+      "stargazers_count": 52,
+      "forks_count": 7,
+      "open_issues_count": 12,
+      "license": null,
+      "topics": [
+        "augmented-scores",
+        "interactive-scores",
+        "music-notation"
       ]
     },
     {
@@ -405,26 +701,6 @@
       ]
     },
     {
-      "id": 70402955,
-      "node_id": "MDEwOlJlcG9zaXRvcnk3MDQwMjk1NQ==",
-      "name": "faustservice",
-      "full_name": "grame-cncm/faustservice",
-      "html_url": "https://github.com/grame-cncm/faustservice",
-      "description": null,
-      "language": "C++",
-      "stargazers_count": 4,
-      "forks_count": 8,
-      "open_issues_count": 3,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
       "id": 79782878,
       "node_id": "MDEwOlJlcG9zaXRvcnk3OTc4Mjg3OA==",
       "name": "faustlive",
@@ -432,8 +708,8 @@
       "html_url": "https://github.com/grame-cncm/faustlive",
       "description": "Advanced self-contained prototyping environment for the Faust programming language ",
       "language": "C++",
-      "stargazers_count": 83,
-      "forks_count": 18,
+      "stargazers_count": 95,
+      "forks_count": 19,
       "open_issues_count": 17,
       "license": {
         "key": "other",
@@ -445,234 +721,6 @@
       "topics": [
         "faust"
       ]
-    },
-    {
-      "id": 885525414,
-      "node_id": "R_kgDONMgLpg",
-      "name": "faustide-od",
-      "full_name": "grame-cncm/faustide-od",
-      "html_url": "https://github.com/grame-cncm/faustide-od",
-      "description": "Faust IDE (Integrated Development Environment)",
-      "language": "TypeScript",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 248794084,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNDg3OTQwODQ=",
-      "name": "smartfaust",
-      "full_name": "grame-cncm/smartfaust",
-      "html_url": "https://github.com/grame-cncm/smartfaust",
-      "description": "The 2014 SmartFaust concert applications",
-      "language": "C",
-      "stargazers_count": 1,
-      "forks_count": 1,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 937772206,
-      "node_id": "R_kgDON-VErg",
-      "name": "faust-ui",
-      "full_name": "grame-cncm/faust-ui",
-      "html_url": "https://github.com/grame-cncm/faust-ui",
-      "description": "Faust UI Compositor",
-      "language": null,
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 913910792,
-      "node_id": "R_kgDONnksCA",
-      "name": "faustpublisher",
-      "full_name": "grame-cncm/faustpublisher",
-      "html_url": "https://github.com/grame-cncm/faustpublisher",
-      "description": "faustpublisher is the cli tool to publish Faust libraries to the faustregistry",
-      "language": "TypeScript",
-      "stargazers_count": 0,
-      "forks_count": 1,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 32144550,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzMjE0NDU1MA==",
-      "name": "libmusicxml",
-      "full_name": "grame-cncm/libmusicxml",
-      "html_url": "https://github.com/grame-cncm/libmusicxml",
-      "description": "A C/C++ library to support the MusicXML format.",
-      "language": "LilyPond",
-      "stargazers_count": 161,
-      "forks_count": 37,
-      "open_issues_count": 9,
-      "license": {
-        "key": "mpl-2.0",
-        "name": "Mozilla Public License 2.0",
-        "spdx_id": "MPL-2.0",
-        "url": "https://api.github.com/licenses/mpl-2.0",
-        "node_id": "MDc6TGljZW5zZTE0"
-      },
-      "topics": [
-        "music-notation",
-        "musicxml"
-      ]
-    },
-    {
-      "id": 102513281,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMDI1MTMyODE=",
-      "name": "gcalc",
-      "full_name": "grame-cncm/gcalc",
-      "html_url": "https://github.com/grame-cncm/gcalc",
-      "description": "The very old graphic calculus project, resurrected ;-)",
-      "language": "C++",
-      "stargazers_count": 4,
-      "forks_count": 1,
-      "open_issues_count": 0,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": []
-    },
-    {
-      "id": 862381976,
-      "node_id": "R_kgDOM2bnmA",
-      "name": "Folia-in-Faust",
-      "full_name": "grame-cncm/Folia-in-Faust",
-      "html_url": "https://github.com/grame-cncm/Folia-in-Faust",
-      "description": null,
-      "language": null,
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 861407112,
-      "node_id": "R_kgDOM1gHiA",
-      "name": "Faust-DSP-Testbench",
-      "full_name": "grame-cncm/Faust-DSP-Testbench",
-      "html_url": "https://github.com/grame-cncm/Faust-DSP-Testbench",
-      "description": "A Faust DSP Testbench for users of the JUCE framework",
-      "language": "C++",
-      "stargazers_count": 2,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 84543053,
-      "node_id": "MDEwOlJlcG9zaXRvcnk4NDU0MzA1Mw==",
-      "name": "guidolib",
-      "full_name": "grame-cncm/guidolib",
-      "html_url": "https://github.com/grame-cncm/guidolib",
-      "description": "Guido project - music score layout engine - music description language",
-      "language": "C++",
-      "stargazers_count": 166,
-      "forks_count": 36,
-      "open_issues_count": 33,
-      "license": {
-        "key": "mpl-2.0",
-        "name": "Mozilla Public License 2.0",
-        "spdx_id": "MPL-2.0",
-        "url": "https://api.github.com/licenses/mpl-2.0",
-        "node_id": "MDc6TGljZW5zZTE0"
-      },
-      "topics": [
-        "guido-engine",
-        "music-notation",
-        "music-notation-format"
-      ]
-    },
-    {
-      "id": 201195212,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMDExOTUyMTI=",
-      "name": "guidodoc",
-      "full_name": "grame-cncm/guidodoc",
-      "html_url": "https://github.com/grame-cncm/guidodoc",
-      "description": "Documentation and examples for the Guido Music Notation format",
-      "language": "HTML",
-      "stargazers_count": 1,
-      "forks_count": 1,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": [
-        "guido",
-        "music-notation-format"
-      ]
-    },
-    {
-      "id": 843321867,
-      "node_id": "R_kgDOMkQSCw",
-      "name": "faustregistry",
-      "full_name": "grame-cncm/faustregistry",
-      "html_url": "https://github.com/grame-cncm/faustregistry",
-      "description": "The Faust Registry acts as a centralized repository where Faust libraries are stored, shared, and managed.",
-      "language": null,
-      "stargazers_count": 6,
-      "forks_count": 3,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 252923837,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNTI5MjM4Mzc=",
-      "name": "interval",
-      "full_name": "grame-cncm/interval",
-      "html_url": "https://github.com/grame-cncm/interval",
-      "description": "A simple interval library for the Faust compiler",
-      "language": "C++",
-      "stargazers_count": 1,
-      "forks_count": 2,
-      "open_issues_count": 0,
-      "license": {
-        "key": "bsd-3-clause",
-        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
-        "spdx_id": "BSD-3-Clause",
-        "url": "https://api.github.com/licenses/bsd-3-clause",
-        "node_id": "MDc6TGljZW5zZTU="
-      },
-      "topics": []
-    },
-    {
-      "id": 84602097,
-      "node_id": "MDEwOlJlcG9zaXRvcnk4NDYwMjA5Nw==",
-      "name": "guidoar",
-      "full_name": "grame-cncm/guidoar",
-      "html_url": "https://github.com/grame-cncm/guidoar",
-      "description": null,
-      "language": "C++",
-      "stargazers_count": 5,
-      "forks_count": 2,
-      "open_issues_count": 4,
-      "license": null,
-      "topics": []
     }
   ],
   "contributorsDetails": [
@@ -682,23 +730,7 @@
       "node_id": "MDQ6VXNlcjE0MzA0ODc=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1430487?v=4",
       "html_url": "https://github.com/sletz",
-      "contributions": 863
-    },
-    {
-      "login": "orlarey",
-      "id": 3431249,
-      "node_id": "MDQ6VXNlcjM0MzEyNDk=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/3431249?v=4",
-      "html_url": "https://github.com/orlarey",
-      "contributions": 73
-    },
-    {
-      "login": "dfober",
-      "id": 431043,
-      "node_id": "MDQ6VXNlcjQzMTA0Mw==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/431043?v=4",
-      "html_url": "https://github.com/dfober",
-      "contributions": 99
+      "contributions": 329
     },
     {
       "login": "rmichon",
@@ -706,7 +738,15 @@
       "node_id": "MDQ6VXNlcjMyMDE1NTI=",
       "avatar_url": "https://avatars.githubusercontent.com/u/3201552?v=4",
       "html_url": "https://github.com/rmichon",
-      "contributions": 24
+      "contributions": 10
+    },
+    {
+      "login": "dariosanfilippo",
+      "id": 30258280,
+      "node_id": "MDQ6VXNlcjMwMjU4Mjgw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/30258280?v=4",
+      "html_url": "https://github.com/dariosanfilippo",
+      "contributions": 75
     },
     {
       "login": "josmithiii",
@@ -714,55 +754,7 @@
       "node_id": "MDQ6VXNlcjIyMDA4NTM=",
       "avatar_url": "https://avatars.githubusercontent.com/u/2200853?v=4",
       "html_url": "https://github.com/josmithiii",
-      "contributions": 281
-    },
-    {
-      "login": "agraef",
-      "id": 2853977,
-      "node_id": "MDQ6VXNlcjI4NTM5Nzc=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/2853977?v=4",
-      "html_url": "https://github.com/agraef",
-      "contributions": 176
-    },
-    {
-      "login": "og0",
-      "id": 2058077,
-      "node_id": "MDQ6VXNlcjIwNTgwNzc=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/2058077?v=4",
-      "html_url": "https://github.com/og0",
-      "contributions": 157
-    },
-    {
-      "login": "timblechmann",
-      "id": 792880,
-      "node_id": "MDQ6VXNlcjc5Mjg4MA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/792880?v=4",
-      "html_url": "https://github.com/timblechmann",
-      "contributions": 152
-    },
-    {
-      "login": "umlaeute",
-      "id": 214034,
-      "node_id": "MDQ6VXNlcjIxNDAzNA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/214034?v=4",
-      "html_url": "https://github.com/umlaeute",
-      "contributions": 63
-    },
-    {
-      "login": "sdenoux",
-      "id": 9803179,
-      "node_id": "MDQ6VXNlcjk4MDMxNzk=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/9803179?v=4",
-      "html_url": "https://github.com/sdenoux",
-      "contributions": 53
-    },
-    {
-      "login": "hatchjaw",
-      "id": 4884512,
-      "node_id": "MDQ6VXNlcjQ4ODQ1MTI=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/4884512?v=4",
-      "html_url": "https://github.com/hatchjaw",
-      "contributions": 1
+      "contributions": 66
     },
     {
       "login": "DBraun",
@@ -770,151 +762,47 @@
       "node_id": "MDQ6VXNlcjIwOTYwNTU=",
       "avatar_url": "https://avatars.githubusercontent.com/u/2096055?v=4",
       "html_url": "https://github.com/DBraun",
-      "contributions": 38
+      "contributions": 46
     },
     {
-      "login": "rpayami",
-      "id": 2887800,
-      "node_id": "MDQ6VXNlcjI4ODc4MDA=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/2887800?v=4",
-      "html_url": "https://github.com/rpayami",
-      "contributions": 38
-    },
-    {
-      "login": "khiner",
-      "id": 685394,
-      "node_id": "MDQ6VXNlcjY4NTM5NA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/685394?v=4",
-      "html_url": "https://github.com/khiner",
-      "contributions": 35
-    },
-    {
-      "login": "bluenote10",
-      "id": 3620703,
-      "node_id": "MDQ6VXNlcjM2MjA3MDM=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/3620703?v=4",
-      "html_url": "https://github.com/bluenote10",
-      "contributions": 28
-    },
-    {
-      "login": "olilarkin",
-      "id": 655662,
-      "node_id": "MDQ6VXNlcjY1NTY2Mg==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/655662?v=4",
-      "html_url": "https://github.com/olilarkin",
-      "contributions": 21
-    },
-    {
-      "login": "crop2000",
-      "id": 176233921,
-      "node_id": "U_kgDOCoEdwQ",
-      "avatar_url": "https://avatars.githubusercontent.com/u/176233921?v=4",
-      "html_url": "https://github.com/crop2000",
-      "contributions": 18
-    },
-    {
-      "login": "giuliomoro",
-      "id": 4260604,
-      "node_id": "MDQ6VXNlcjQyNjA2MDQ=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/4260604?v=4",
-      "html_url": "https://github.com/giuliomoro",
-      "contributions": 17
-    },
-    {
-      "login": "kaoskorobase",
-      "id": 484494,
-      "node_id": "MDQ6VXNlcjQ4NDQ5NA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/484494?v=4",
-      "html_url": "https://github.com/kaoskorobase",
-      "contributions": 16
-    },
-    {
-      "login": "jcelerier",
-      "id": 2772730,
-      "node_id": "MDQ6VXNlcjI3NzI3MzA=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/2772730?v=4",
-      "html_url": "https://github.com/jcelerier",
-      "contributions": 15
-    },
-    {
-      "login": "mikeoliphant",
-      "id": 6710799,
-      "node_id": "MDQ6VXNlcjY3MTA3OTk=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/6710799?v=4",
-      "html_url": "https://github.com/mikeoliphant",
-      "contributions": 14
-    },
-    {
-      "login": "pinbe",
-      "id": 10756842,
-      "node_id": "MDQ6VXNlcjEwNzU2ODQy",
-      "avatar_url": "https://avatars.githubusercontent.com/u/10756842?v=4",
-      "html_url": "https://github.com/pinbe",
-      "contributions": 11
-    },
-    {
-      "login": "thopman",
-      "id": 1520517,
-      "node_id": "MDQ6VXNlcjE1MjA1MTc=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1520517?v=4",
-      "html_url": "https://github.com/thopman",
-      "contributions": 10
-    },
-    {
-      "login": "mgunyho",
-      "id": 20118130,
-      "node_id": "MDQ6VXNlcjIwMTE4MTMw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/20118130?v=4",
-      "html_url": "https://github.com/mgunyho",
-      "contributions": 10
-    },
-    {
-      "login": "jpcima",
-      "id": 17614485,
-      "node_id": "MDQ6VXNlcjE3NjE0NDg1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/17614485?v=4",
-      "html_url": "https://github.com/jpcima",
-      "contributions": 10
-    },
-    {
-      "login": "Gui-Yom",
-      "id": 25181283,
-      "node_id": "MDQ6VXNlcjI1MTgxMjgz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/25181283?v=4",
-      "html_url": "https://github.com/Gui-Yom",
+      "login": "dfober",
+      "id": 431043,
+      "node_id": "MDQ6VXNlcjQzMTA0Mw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/431043?v=4",
+      "html_url": "https://github.com/dfober",
       "contributions": 9
     },
     {
-      "login": "pierreguillot",
-      "id": 1409918,
-      "node_id": "MDQ6VXNlcjE0MDk5MTg=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1409918?v=4",
-      "html_url": "https://github.com/pierreguillot",
-      "contributions": 9
+      "login": "orlarey",
+      "id": 3431249,
+      "node_id": "MDQ6VXNlcjM0MzEyNDk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3431249?v=4",
+      "html_url": "https://github.com/orlarey",
+      "contributions": 84
     },
     {
-      "login": "bouksimo98",
-      "id": 85341247,
-      "node_id": "MDQ6VXNlcjg1MzQxMjQ3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/85341247?v=4",
-      "html_url": "https://github.com/bouksimo98",
-      "contributions": 8
+      "login": "magnetophon",
+      "id": 7645711,
+      "node_id": "MDQ6VXNlcjc2NDU3MTE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7645711?v=4",
+      "html_url": "https://github.com/magnetophon",
+      "contributions": 24
     },
     {
-      "login": "Fr0stbyteR",
-      "id": 1910803,
-      "node_id": "MDQ6VXNlcjE5MTA4MDM=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1910803?v=4",
-      "html_url": "https://github.com/Fr0stbyteR",
-      "contributions": 8
+      "login": "CesarChaussinand",
+      "id": 44905254,
+      "node_id": "MDQ6VXNlcjQ0OTA1MjU0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/44905254?v=4",
+      "html_url": "https://github.com/CesarChaussinand",
+      "contributions": 10
     },
     {
-      "login": "mryndzionek",
-      "id": 786191,
-      "node_id": "MDQ6VXNlcjc4NjE5MQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/786191?v=4",
-      "html_url": "https://github.com/mryndzionek",
-      "contributions": 8
+      "login": "oleg-nesterov",
+      "id": 1036825,
+      "node_id": "MDQ6VXNlcjEwMzY4MjU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1036825?v=4",
+      "html_url": "https://github.com/oleg-nesterov",
+      "contributions": 10
     },
     {
       "login": "Yoann-Le-Borgne",
@@ -922,24 +810,216 @@
       "node_id": "MDQ6VXNlcjgxMzkxNTQ3",
       "avatar_url": "https://avatars.githubusercontent.com/u/81391547?v=4",
       "html_url": "https://github.com/Yoann-Le-Borgne",
+      "contributions": 9
+    },
+    {
+      "login": "dfl",
+      "id": 282,
+      "node_id": "MDQ6VXNlcjI4Mg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/282?v=4",
+      "html_url": "https://github.com/dfl",
       "contributions": 6
     },
     {
-      "login": "johannphilippe",
-      "id": 36574555,
-      "node_id": "MDQ6VXNlcjM2NTc0NTU1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/36574555?v=4",
-      "html_url": "https://github.com/johannphilippe",
+      "login": "LucaSpanedda",
+      "id": 15816245,
+      "node_id": "MDQ6VXNlcjE1ODE2MjQ1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/15816245?v=4",
+      "html_url": "https://github.com/LucaSpanedda",
+      "contributions": 5
+    },
+    {
+      "login": "marchingband",
+      "id": 34205564,
+      "node_id": "MDQ6VXNlcjM0MjA1NTY0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/34205564?v=4",
+      "html_url": "https://github.com/marchingband",
+      "contributions": 4
+    },
+    {
+      "login": "droosenb",
+      "id": 57876115,
+      "node_id": "MDQ6VXNlcjU3ODc2MTE1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/57876115?v=4",
+      "html_url": "https://github.com/droosenb",
+      "contributions": 4
+    },
+    {
+      "login": "costasEconomou",
+      "id": 94231424,
+      "node_id": "U_kgDOBZ3bgA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/94231424?v=4",
+      "html_url": "https://github.com/costasEconomou",
+      "contributions": 3
+    },
+    {
+      "login": "umlaeute",
+      "id": 214034,
+      "node_id": "MDQ6VXNlcjIxNDAzNA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/214034?v=4",
+      "html_url": "https://github.com/umlaeute",
+      "contributions": 3
+    },
+    {
+      "login": "Mando-369",
+      "id": 141794691,
+      "node_id": "U_kgDOCHOdgw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/141794691?v=4",
+      "html_url": "https://github.com/Mando-369",
+      "contributions": 3
+    },
+    {
+      "login": "pierreguillot",
+      "id": 1409918,
+      "node_id": "MDQ6VXNlcjE0MDk5MTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1409918?v=4",
+      "html_url": "https://github.com/pierreguillot",
+      "contributions": 3
+    },
+    {
+      "login": "tomoyanonymous",
+      "id": 7259276,
+      "node_id": "MDQ6VXNlcjcyNTkyNzY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7259276?v=4",
+      "html_url": "https://github.com/tomoyanonymous",
       "contributions": 2
     },
     {
-      "login": "ssfrr",
-      "id": 734386,
-      "node_id": "MDQ6VXNlcjczNDM4Ng==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/734386?v=4",
-      "html_url": "https://github.com/ssfrr",
+      "login": "jpcima",
+      "id": 17614485,
+      "node_id": "MDQ6VXNlcjE3NjE0NDg1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/17614485?v=4",
+      "html_url": "https://github.com/jpcima",
+      "contributions": 2
+    },
+    {
+      "login": "Fr0stbyteR",
+      "id": 1910803,
+      "node_id": "MDQ6VXNlcjE5MTA4MDM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1910803?v=4",
+      "html_url": "https://github.com/Fr0stbyteR",
+      "contributions": 340
+    },
+    {
+      "login": "sacred-plot",
+      "id": 146073105,
+      "node_id": "U_kgDOCLTmEQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/146073105?v=4",
+      "html_url": "https://github.com/sacred-plot",
+      "contributions": 2
+    },
+    {
+      "login": "giuliomoro",
+      "id": 4260604,
+      "node_id": "MDQ6VXNlcjQyNjA2MDQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4260604?v=4",
+      "html_url": "https://github.com/giuliomoro",
+      "contributions": 2
+    },
+    {
+      "login": "dfaligertwood",
+      "id": 6775960,
+      "node_id": "MDQ6VXNlcjY3NzU5NjA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6775960?v=4",
+      "html_url": "https://github.com/dfaligertwood",
+      "contributions": 2
+    },
+    {
+      "login": "grammaton",
+      "id": 5629589,
+      "node_id": "MDQ6VXNlcjU2Mjk1ODk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5629589?v=4",
+      "html_url": "https://github.com/grammaton",
+      "contributions": 2
+    },
+    {
+      "login": "zerbian",
+      "id": 38952981,
+      "node_id": "MDQ6VXNlcjM4OTUyOTgx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/38952981?v=4",
+      "html_url": "https://github.com/zerbian",
+      "contributions": 1
+    },
+    {
+      "login": "ranch-verdin",
+      "id": 35497435,
+      "node_id": "MDQ6VXNlcjM1NDk3NDM1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/35497435?v=4",
+      "html_url": "https://github.com/ranch-verdin",
+      "contributions": 1
+    },
+    {
+      "login": "rgoggans",
+      "id": 5553510,
+      "node_id": "MDQ6VXNlcjU1NTM1MTA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5553510?v=4",
+      "html_url": "https://github.com/rgoggans",
+      "contributions": 1
+    },
+    {
+      "login": "jatinchowdhury18",
+      "id": 13724188,
+      "node_id": "MDQ6VXNlcjEzNzI0MTg4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13724188?v=4",
+      "html_url": "https://github.com/jatinchowdhury18",
+      "contributions": 1
+    },
+    {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "html_url": "https://github.com/apps/dependabot",
+      "contributions": 4
+    },
+    {
+      "login": "Bubobubobubobubo",
+      "id": 45191785,
+      "node_id": "MDQ6VXNlcjQ1MTkxNzg1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/45191785?v=4",
+      "html_url": "https://github.com/Bubobubobubobubo",
+      "contributions": 8
+    },
+    {
+      "login": "ijc8",
+      "id": 99575,
+      "node_id": "MDQ6VXNlcjk5NTc1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/99575?v=4",
+      "html_url": "https://github.com/ijc8",
+      "contributions": 7
+    },
+    {
+      "login": "quidmonkey",
+      "id": 779750,
+      "node_id": "MDQ6VXNlcjc3OTc1MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/779750?v=4",
+      "html_url": "https://github.com/quidmonkey",
+      "contributions": 1
+    },
+    {
+      "login": "git-lakshy",
+      "id": 172724242,
+      "node_id": "U_kgDOCkuQEg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/172724242?v=4",
+      "html_url": "https://github.com/git-lakshy",
+      "contributions": 1
+    },
+    {
+      "login": "nbvdkamp",
+      "id": 15140758,
+      "node_id": "MDQ6VXNlcjE1MTQwNzU4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/15140758?v=4",
+      "html_url": "https://github.com/nbvdkamp",
+      "contributions": 1
+    },
+    {
+      "login": "zautumnz",
+      "id": 12520493,
+      "node_id": "MDQ6VXNlcjEyNTIwNDkz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12520493?v=4",
+      "html_url": "https://github.com/zautumnz",
       "contributions": 1
     }
   ],
-  "activeOrg": true
+  "activeOrg": false
 }

@@ -26,7 +26,8 @@
   "facebook_url": null,
   "year": [
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2024": [
@@ -76,7 +77,45 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/g7zlNzjA"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Rewrite Test management pages components from JSP to React",
+        "short_description": "The OpenELIS organization currently relies on JSP (Jakarta Server Pages) for most of its pages but is gradually transitioning to a modern...",
+        "description": "The OpenELIS organization currently relies on JSP (Jakarta Server Pages) for most of its pages but is gradually transitioning to a modern JavaScript-based framework, React.js. Many pages still use Java-based controllers and endpoints to dynamically update and display data on the front end. As part of this project, I will rewrite all Test Management Pages and their components in React UI, integrating them with REST API endpoints to fetch and render data. Additionally, I will migrate all Test Management Configurations, Management, and other operational pages to React.",
+        "student_name": "Aditya Deshlahre",
+        "code_url": "https://gist.github.com/adityadeshlahre/6d0a63070f1758b84839f1e23e2e5485",
+        "proposal_id": "ixGed57h",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/goRhJRfh"
+      },
+      {
+        "title": "Improving E2E QA tests",
+        "short_description": "The current End-to-End (E2E) test coverage for the new React frontend stands at approximately 30%, leaving critical functionalities untested. This...",
+        "description": "The current End-to-End (E2E) test coverage for the new React frontend stands at approximately 30%, leaving critical functionalities untested. This project aims to enhance E2E test coverage to at least 80%, ensuring comprehensive validation of the entire application workflow. By identifying gaps, developing additional test cases, optimizing execution, and integrating tests into the CI/CD pipeline, this initiative will significantly improve system reliability, user experience, and overall software stability.",
+        "student_name": "Bahati308",
+        "code_url": "https://github.com/Bahati308/gsoc2025/blob/main/OpenELIS.md",
+        "proposal_id": "MdCOgMFo",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/cptaFNvP"
+      },
+      {
+        "title": "Intergrate OpenELIS with Odoo(OpenER)",
+        "short_description": "This project aims at adding an integration layer between OpenELIS Global2 and Odoo (OpenERP) in order to add support for Billing functionalities with...",
+        "description": "This project aims at adding an integration layer between OpenELIS Global2 and Odoo (OpenERP) in order to add support for Billing functionalities with  the OpenELIS Order workflow.\n\nThe goal of this project is to integrate OpenELIS Global2 with Odoo (OpenERP) to enable automated billing and financial management for laboratory services. This will ensure that when lab orders are placed in OpenELIS, invoices are automatically generated in Odoo, reducing manual data entry and improving efficiency.",
+        "student_name": "Vickabire",
+        "code_url": "https://github.com/vickabire/GSoC-2025---Vickabire?tab=readme-ov-file#integrate-openelis-with-odooco-my-gsoc-2025-journey-with-openelis-and-odoo",
+        "proposal_id": "2DEpMIzM",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/DzgbNr9r"
+      },
+      {
+        "title": "Add Support for OpenELIS to use OCL to populate the Data Dictionary",
+        "short_description": "This project integrates Open Concept Lab (OCL) test concepts into OpenELIS-Global by parsing OCL ZIP files from a Configurations/ocl directory at...",
+        "description": "This project integrates Open Concept Lab (OCL) test concepts into OpenELIS-Global by parsing OCL ZIP files from a Configurations/ocl directory at startup, mapping them to the TEST table, and using checksums to process only modified files. It enhances lab standardization and interoperability, reducing manual setup time (e.g., 2 hours to 10 minutes) for technicians and ensuring consistent updates across sites for admins.",
+        "student_name": "vsvishalsharma",
+        "code_url": "https://gist.github.com/vsvishalsharma/afda87a68e7716f02ec101f240d9fd44",
+        "proposal_id": "BJu847Dg",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/EhtmR65z"
+      }
+    ],
+    "2026": []
   },
   "githubID": "openelisglobal",
   "repositories": [
@@ -88,8 +127,8 @@
       "html_url": "https://github.com/openelisglobal/openelisglobal-core",
       "description": "Global OpenELIS (Enterprise Laboratory Information System) is an initiative to provide laboratory information systems for resource-constrained international clinical and reference laboratories.",
       "language": "Java",
-      "stargazers_count": 39,
-      "forks_count": 79,
+      "stargazers_count": 44,
+      "forks_count": 83,
       "open_issues_count": 1,
       "license": {
         "key": "mpl-2.0",

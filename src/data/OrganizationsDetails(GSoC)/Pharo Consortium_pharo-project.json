@@ -48,7 +48,8 @@
     2019,
     2021,
     2023,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2017": [
@@ -257,10 +258,120 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2023/projects/I4MHVOJ5"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Implementation of Standard Data Structures and Algorithms",
+        "short_description": "Pharo currently lacks robust, well-designed implementations of fundamental data structures, with existing collections being weakly supported and...",
+        "description": "Pharo currently lacks robust, well-designed implementations of fundamental data structures, with existing collections being weakly supported and inconsistently designed. This project addresses this gap by developing a comprehensive library of essential data structures including Buffers, Linked lists, Stacks, Queues, Heap and various types of Trees (like Binary Search Trees, AVL, Red-Black & Tries) . The implementation will deliver a flexible, extensible framework with consistent APIs, thorough documentation, and comprehensive Test coverage. The result will be a production-ready collection of data structures that follow object-oriented principles, enhance developer productivity, and integrate seamlessly with the Pharo environment, enabling more efficient and maintainable code for the entire Pharo community.",
+        "student_name": "Alok Pathak",
+        "code_url": "https://github.com/Alokzh/GSoC-Report",
+        "proposal_id": "Xk0yKus4",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/JNhTr4F3"
+      },
+      {
+        "title": "DrTest Reloaded: Enhanced User Experience and Plugin Power",
+        "short_description": "This project aims to enhance the DrTest tool in Pharo by improving its usability, functionality, and performance. DrTest is a critical resource for...",
+        "description": "This project aims to enhance the DrTest tool in Pharo by improving its usability, functionality, and performance. DrTest is a critical resource for developers to test and analyze code coverage, but there is room for improvement, particularly in the areas of user experience, compatibility, and fault location. Through this project, I will implement a range of improvements, including enhancements to the code coverage and test comment visualization, optimizations to the performance plugin, and the development of a new fault location plugin.\nBy the end of this project, the DrTest tool will be more user-friendly, compatible with the latest version of Pharo, and capable of providing more accurate and detailed test results, benefiting developers and contributing to the Pharo open-source community.",
+        "student_name": "Estefania Pakarati Cofré",
+        "code_url": "https://medium.com/@pakarati.1404/drtest-reloaded-enhanced-user-experience-and-plugin-power-gsoc-2025-final-report-a00109035bdc",
+        "proposal_id": "6cPVpu2B",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/rc674LMN"
+      },
+      {
+        "title": "Support for serious games in Cormas",
+        "short_description": "This project aims to expand support for serious games within the Cormas platform, enabling easier interaction between players and environment, and...",
+        "description": "This project aims to expand support for serious games within the Cormas platform, enabling easier interaction between players and environment, and autonomous agents. By extending Cormas with “playable”  components the project will contribute to the development of a generic solution for designing, playing, and analyzing serious games. The planned development includes three phases, covering initial implementation, testing, and system optimization, with the ultimate goal of creating a first working prototype with a user interface accessible via a smartphone.",
+        "student_name": "Jovan Kupusović",
+        "code_url": "https://github.com/jodz4k/cormas-gaming",
+        "proposal_id": "cNkqpIwq",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/YqbsMaJg"
+      },
+      {
+        "title": "Computer Vision for Game Piece Detection",
+        "short_description": "This project extends the open-source Cormas simulation platform by integrating a computer vision system that allows real-world interaction with...",
+        "description": "This project extends the open-source Cormas simulation platform by integrating a computer vision system that allows real-world interaction with agent-based models. The goal is to enable users to turn Cormas simulations into interactive, game-like experiences by detecting and tracking physical objects (such as game pieces) on a board and linking them to simulation agents.\n\nTo achieve this, I will develop a lightweight Python-based vision pipeline using YOLO for object detection and tracking, then build a JSON-based interface to communicate with Cormas in real time. On the Pharo/Cormas side, I will implement the necessary APIs and tools to interpret the visual data and control agent behavior accordingly.\n\nDeliverables include:\n- A reusable computer vision module with manual calibration tools.\n- A JSON-based interface for real-time communication between Python and Pharo.\n- Integration into Cormas as a plugin or extension.\n- Documentation and examples for creating interactive physical games with Cormas.\n- All work will be contributed to the open-source Cormas repository and designed to support future projects involving physical interaction with simulations.",
+        "student_name": "Kyla Kaplan",
+        "code_url": "https://github.com/kybeka/cormas-vision",
+        "proposal_id": "1xdm9Tv9",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/GFFWrYJN"
+      },
+      {
+        "title": "Optimizing the Pharo Compiler with Bytecode-Level Inlining",
+        "short_description": "This project aims to optimize the Pharo compiler by implementing bytecode level optimization within its DRUID-based optmizing compiler. By applying...",
+        "description": "This project aims to optimize the Pharo compiler by implementing bytecode level optimization within its DRUID-based optmizing compiler. By applying inlining, which involves replacing method calls with the actual code of the methods, the number of method calls in the virtual machine will be reduced, thus enhancing execution speed. The project will extend DRUID by supporting complex cases like block closures, improving the type system, and conducting thorough performance benchmarking.\nDeliverables will include the implementation of bytecode-level inlining, the enhancement of the type inference system, testing and validating the new compiler, and performance analysis.",
+        "student_name": "Lucio_08",
+        "code_url": "https://github.com/luc-raz/GSOC_2025_Report",
+        "proposal_id": "RbEGybYp",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/ZAqo1UGN"
+      },
+      {
+        "title": "PAM : A text-to-speech (TTS) tool for Pharo",
+        "short_description": "PAM (Pharo Automated Mouth) is Pharo's first ever text-to-speech (TTS) system. It will convert English text into phonemes, add basic prosody, and...",
+        "description": "PAM (Pharo Automated Mouth) is Pharo's first ever text-to-speech (TTS) system. It will convert English text into phonemes, add basic prosody, and generate speech using a DSP built with Phausto. \nThe project is divided into two main parts: A Reciter that processes text into phonemes and stress markers, and A DSP that generates real-time audio output with multiple voice presets (Male, Female, Child). A simple UI will be developed with pitch, speed, and stress customization. \nDeliverables include a working TTS engine, voice presets, a customizable UI, and documentation to improve accessibility and support future extensions.\nThe project aims to increase Pharo's accessibility to the community !",
+        "student_name": "Neerja Doshi",
+        "code_url": "https://neerja-1984.github.io/rewind-gsoc25/",
+        "proposal_id": "XSBgERTO",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/7yEBbF4z"
+      },
+      {
+        "title": "A Seamless Interface Between LLMs and Pharo",
+        "short_description": "This project aims to build ChatPharo, an intelligent, AI-powered assistant that integrates Large Language Models (LLMs) directly into the Pharo...",
+        "description": "This project aims to build ChatPharo, an intelligent, AI-powered assistant that integrates Large Language Models (LLMs) directly into the Pharo development environment. Despite Pharo’s strengths as a live programming platform, it currently lacks a native and user-friendly interface for interacting with LLMs to assist with code explanation, generation, documentation, and debugging.\n\nTo address this, the project proposes a seamless, modular, and extensible system that connects Pharo with both online (OpenAI, DeepSeek) and offline (TinyLLaMA, Mistral-7B via Ollama) models. A multi-tab chat interface will allow users to manage multiple contextual conversations, while intelligent AI commands (e.g., /explain, /generate tests, /refactor) will directly support day-to-day coding workflows. Memory optimization techniques—including smart caching, chat pruning, and lazy model loading—will ensure smooth performance even in long sessions.\n\nA key innovation includes experimenting with pseudo-parallelism in Pharo’s single-threaded architecture by spawning secondary images to offload heavy LLM processing. This enables parallel task handling without compromising the responsiveness of the main Pharo image.\n\nBy midterm, users will have access to a working chat UI, multi-LLM switching, and foundational coding actions. By the final evaluation, ChatPharo will evolve into a context-aware assistant capable of inline suggestions, AI-driven debugging, and scalable architecture for future extensions.\n\nThrough full documentation, tutorials, and community engagement, this project will not only enhance developer productivity but also showcase Pharo as a capable, modern AI-enhanced development platform.",
+        "student_name": "SrajalDwivedi17",
+        "code_url": "https://github.com/Srajald/ChatPharo",
+        "proposal_id": "MSHLTFFx",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/3vcywQr1"
+      }
+    ],
+    "2026": []
   },
   "githubID": "pharo-project",
   "repositories": [
+    {
+      "id": 68196945,
+      "node_id": "MDEwOlJlcG9zaXRvcnk2ODE5Njk0NQ==",
+      "name": "pharo-beacon",
+      "full_name": "pharo-project/pharo-beacon",
+      "html_url": "https://github.com/pharo-project/pharo-beacon",
+      "description": "Beacon is a small event and logging framework for pharo",
+      "language": "Smalltalk",
+      "stargazers_count": 15,
+      "forks_count": 8,
+      "open_issues_count": 3,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": [
+        "pharo"
+      ]
+    },
+    {
+      "id": 13061142,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMzA2MTE0Mg==",
+      "name": "pharo-gsoc",
+      "full_name": "pharo-project/pharo-gsoc",
+      "html_url": "https://github.com/pharo-project/pharo-gsoc",
+      "description": "Pharo GSOC website https://gsoc.pharo.org/",
+      "language": "JavaScript",
+      "stargazers_count": 18,
+      "forks_count": 37,
+      "open_issues_count": 0,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": [
+        "gsoc",
+        "pharo"
+      ]
+    },
     {
       "id": 64123480,
       "node_id": "MDEwOlJlcG9zaXRvcnk2NDEyMzQ4MA==",
@@ -269,9 +380,9 @@
       "html_url": "https://github.com/pharo-project/pharo",
       "description": "Pharo is a dynamic reflective pure object-oriented language supporting live programming inspired by Smalltalk.",
       "language": "Smalltalk",
-      "stargazers_count": 1281,
-      "forks_count": 380,
-      "open_issues_count": 1431,
+      "stargazers_count": 1437,
+      "forks_count": 416,
+      "open_issues_count": 1483,
       "license": {
         "key": "other",
         "name": "Other",
@@ -298,9 +409,9 @@
       "html_url": "https://github.com/pharo-project/pharo-launcher",
       "description": "Lets you manage your pharo images and download new ones",
       "language": "Smalltalk",
-      "stargazers_count": 112,
-      "forks_count": 49,
-      "open_issues_count": 201,
+      "stargazers_count": 116,
+      "forks_count": 53,
+      "open_issues_count": 225,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -309,99 +420,6 @@
         "node_id": "MDc6TGljZW5zZTEz"
       },
       "topics": [
-        "pharo"
-      ]
-    },
-    {
-      "id": 68196945,
-      "node_id": "MDEwOlJlcG9zaXRvcnk2ODE5Njk0NQ==",
-      "name": "pharo-beacon",
-      "full_name": "pharo-project/pharo-beacon",
-      "html_url": "https://github.com/pharo-project/pharo-beacon",
-      "description": "Beacon is a small event and logging framework for pharo",
-      "language": "Smalltalk",
-      "stargazers_count": 12,
-      "forks_count": 7,
-      "open_issues_count": 4,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": [
-        "pharo"
-      ]
-    },
-    {
-      "id": 15801138,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNTgwMTEzOA==",
-      "name": "pharo-zeroconf",
-      "full_name": "pharo-project/pharo-zeroconf",
-      "html_url": "https://github.com/pharo-project/pharo-zeroconf",
-      "description": "ZeroConf script generator for http://get.pharo.org",
-      "language": "Shell",
-      "stargazers_count": 16,
-      "forks_count": 16,
-      "open_issues_count": 16,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 500865203,
-      "node_id": "R_kgDOHdqYsw",
-      "name": "pharo-website",
-      "full_name": "pharo-project/pharo-website",
-      "html_url": "https://github.com/pharo-project/pharo-website",
-      "description": null,
-      "language": "JavaScript",
-      "stargazers_count": 7,
-      "forks_count": 16,
-      "open_issues_count": 2,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 43292698,
-      "node_id": "MDEwOlJlcG9zaXRvcnk0MzI5MjY5OA==",
-      "name": "pharo-icon-packs",
-      "full_name": "pharo-project/pharo-icon-packs",
-      "html_url": "https://github.com/pharo-project/pharo-icon-packs",
-      "description": "A repository to keep icon packs for Pharo",
-      "language": "Smalltalk",
-      "stargazers_count": 2,
-      "forks_count": 15,
-      "open_issues_count": 2,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 13061142,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMzA2MTE0Mg==",
-      "name": "pharo-gsoc",
-      "full_name": "pharo-project/pharo-gsoc",
-      "html_url": "https://github.com/pharo-project/pharo-gsoc",
-      "description": "Pharo GSOC website https://gsoc.pharo.org/",
-      "language": "JavaScript",
-      "stargazers_count": 15,
-      "forks_count": 33,
-      "open_issues_count": 0,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": [
-        "gsoc",
         "pharo"
       ]
     },
@@ -413,9 +431,9 @@
       "html_url": "https://github.com/pharo-project/pharo-vm",
       "description": "This is the VM used by Pharo",
       "language": "Smalltalk",
-      "stargazers_count": 119,
-      "forks_count": 78,
-      "open_issues_count": 222,
+      "stargazers_count": 128,
+      "forks_count": 83,
+      "open_issues_count": 237,
       "license": {
         "key": "other",
         "name": "Other",
@@ -428,6 +446,278 @@
       ]
     },
     {
+      "id": 1087015166,
+      "node_id": "R_kgDOQMqI_g",
+      "name": "PharoWeb20",
+      "full_name": "pharo-project/PharoWeb20",
+      "html_url": "https://github.com/pharo-project/PharoWeb20",
+      "description": "To test foliage20 deployment",
+      "language": "CSS",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 500865203,
+      "node_id": "R_kgDOHdqYsw",
+      "name": "pharo-website",
+      "full_name": "pharo-project/pharo-website",
+      "html_url": "https://github.com/pharo-project/pharo-website",
+      "description": null,
+      "language": "JavaScript",
+      "stargazers_count": 8,
+      "forks_count": 14,
+      "open_issues_count": 2,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 751905647,
+      "node_id": "R_kgDOLNErbw",
+      "name": "isloop",
+      "full_name": "pharo-project/isloop",
+      "html_url": "https://github.com/pharo-project/isloop",
+      "description": "isLoop: International School on Live Object-Oriented Programming",
+      "language": "HTML",
+      "stargazers_count": 3,
+      "forks_count": 1,
+      "open_issues_count": 0,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": [
+        "live-programming",
+        "object-oriented-programming",
+        "pharo",
+        "programming",
+        "summer-school",
+        "winter-school"
+      ]
+    },
+    {
+      "id": 63601721,
+      "node_id": "MDEwOlJlcG9zaXRvcnk2MzYwMTcyMQ==",
+      "name": "PharoBootstrap",
+      "full_name": "pharo-project/PharoBootstrap",
+      "html_url": "https://github.com/pharo-project/PharoBootstrap",
+      "description": null,
+      "language": "Smalltalk",
+      "stargazers_count": 13,
+      "forks_count": 9,
+      "open_issues_count": 0,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": [
+        "pharo"
+      ]
+    },
+    {
+      "id": 870122816,
+      "node_id": "R_kgDOM90FQA",
+      "name": "pharo-setup-gha",
+      "full_name": "pharo-project/pharo-setup-gha",
+      "html_url": "https://github.com/pharo-project/pharo-setup-gha",
+      "description": "Github Action to setup Pharo",
+      "language": null,
+      "stargazers_count": 2,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 18551314,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxODU1MTMxNA==",
+      "name": "pharo-changelogs",
+      "full_name": "pharo-project/pharo-changelogs",
+      "html_url": "https://github.com/pharo-project/pharo-changelogs",
+      "description": "To describe each version",
+      "language": null,
+      "stargazers_count": 26,
+      "forks_count": 13,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 11979155,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMTk3OTE1NQ==",
+      "name": "pharo5-vm",
+      "full_name": "pharo-project/pharo5-vm",
+      "html_url": "https://github.com/pharo-project/pharo5-vm",
+      "description": "Discontinued The PharoVM repository",
+      "language": "C",
+      "stargazers_count": 115,
+      "forks_count": 51,
+      "open_issues_count": 2,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": [
+        "pharo-vm",
+        "smalltalk"
+      ]
+    },
+    {
+      "id": 199650321,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxOTk2NTAzMjE=",
+      "name": "pharo-llvmDisassembler",
+      "full_name": "pharo-project/pharo-llvmDisassembler",
+      "html_url": "https://github.com/pharo-project/pharo-llvmDisassembler",
+      "description": "Pharo bindings to the LLVM disassembler",
+      "language": "Smalltalk",
+      "stargazers_count": 9,
+      "forks_count": 7,
+      "open_issues_count": 0,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 10907018,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMDkwNzAxOA==",
+      "name": "pharo-flyers",
+      "full_name": "pharo-project/pharo-flyers",
+      "html_url": "https://github.com/pharo-project/pharo-flyers",
+      "description": "A flyer/leaflet for Pharo",
+      "language": "TeX",
+      "stargazers_count": 5,
+      "forks_count": 2,
+      "open_issues_count": 1,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1015373233,
+      "node_id": "R_kgDOPIVdsQ",
+      "name": "Topic-Rules",
+      "full_name": "pharo-project/Topic-Rules",
+      "html_url": "https://github.com/pharo-project/Topic-Rules",
+      "description": "Topic-Rules",
+      "language": null,
+      "stargazers_count": 2,
+      "forks_count": 1,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1010531880,
+      "node_id": "R_kgDOPDt-KA",
+      "name": "reEngine",
+      "full_name": "pharo-project/reEngine",
+      "html_url": "https://github.com/pharo-project/reEngine",
+      "description": "This project is to coordinate with people that want to help on the refactoring pharo engine",
+      "language": null,
+      "stargazers_count": 2,
+      "forks_count": 2,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1015371882,
+      "node_id": "R_kgDOPIVYag",
+      "name": "Topics-TestAnalyzer",
+      "full_name": "pharo-project/Topics-TestAnalyzer",
+      "html_url": "https://github.com/pharo-project/Topics-TestAnalyzer",
+      "description": "This repository contains topics around test improvements.",
+      "language": null,
+      "stargazers_count": 3,
+      "forks_count": 2,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1038476063,
+      "node_id": "R_kgDOPeXjHw",
+      "name": "BetterFormatter",
+      "full_name": "pharo-project/BetterFormatter",
+      "html_url": "https://github.com/pharo-project/BetterFormatter",
+      "description": "This project is collect resources around a better formatter for Pharo",
+      "language": null,
+      "stargazers_count": 2,
+      "forks_count": 1,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 299644135,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyOTk2NDQxMzU=",
+      "name": "PharoTalks",
+      "full_name": "pharo-project/PharoTalks",
+      "html_url": "https://github.com/pharo-project/PharoTalks",
+      "description": null,
+      "language": "HTML",
+      "stargazers_count": 2,
+      "forks_count": 4,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 15801138,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNTgwMTEzOA==",
+      "name": "pharo-zeroconf",
+      "full_name": "pharo-project/pharo-zeroconf",
+      "html_url": "https://github.com/pharo-project/pharo-zeroconf",
+      "description": "ZeroConf script generator for http://get.pharo.org",
+      "language": "Shell",
+      "stargazers_count": 18,
+      "forks_count": 17,
+      "open_issues_count": 17,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 43292698,
+      "node_id": "MDEwOlJlcG9zaXRvcnk0MzI5MjY5OA==",
+      "name": "pharo-icon-packs",
+      "full_name": "pharo-project/pharo-icon-packs",
+      "html_url": "https://github.com/pharo-project/pharo-icon-packs",
+      "description": "A repository to keep icon packs for Pharo",
+      "language": "Smalltalk",
+      "stargazers_count": 4,
+      "forks_count": 16,
+      "open_issues_count": 2,
+      "license": null,
+      "topics": []
+    },
+    {
       "id": 296312249,
       "node_id": "MDEwOlJlcG9zaXRvcnkyOTYzMTIyNDk=",
       "name": "unicorn",
@@ -436,7 +726,7 @@
       "description": "Unicorn CPU emulator framework (ARM, AArch64, M68K, Mips, Sparc, X86)",
       "language": "C",
       "stargazers_count": 0,
-      "forks_count": 2,
+      "forks_count": 1,
       "open_issues_count": 1,
       "license": {
         "key": "gpl-2.0",
@@ -468,20 +758,6 @@
       "topics": []
     },
     {
-      "id": 299644135,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyOTk2NDQxMzU=",
-      "name": "PharoTalks",
-      "full_name": "pharo-project/PharoTalks",
-      "html_url": "https://github.com/pharo-project/PharoTalks",
-      "description": null,
-      "language": "HTML",
-      "stargazers_count": 0,
-      "forks_count": 3,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
       "id": 199663750,
       "node_id": "MDEwOlJlcG9zaXRvcnkxOTk2NjM3NTA=",
       "name": "pharo-unicorn",
@@ -489,8 +765,8 @@
       "html_url": "https://github.com/pharo-project/pharo-unicorn",
       "description": "Pharo bindings to the Unicorn machine code simulation library",
       "language": "Smalltalk",
-      "stargazers_count": 13,
-      "forks_count": 4,
+      "stargazers_count": 15,
+      "forks_count": 5,
       "open_issues_count": 1,
       "license": {
         "key": "lgpl-3.0",
@@ -509,50 +785,9 @@
       "html_url": "https://github.com/pharo-project/pheps",
       "description": "Pharo Enhancement Proposals",
       "language": null,
-      "stargazers_count": 7,
-      "forks_count": 6,
+      "stargazers_count": 9,
+      "forks_count": 7,
       "open_issues_count": 5,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 751905647,
-      "node_id": "R_kgDOLNErbw",
-      "name": "isloop",
-      "full_name": "pharo-project/isloop",
-      "html_url": "https://github.com/pharo-project/isloop",
-      "description": "isLoop: International School on Live Object-Oriented Programming",
-      "language": "HTML",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": [
-        "live-programming",
-        "object-oriented-programming",
-        "pharo",
-        "programming",
-        "summer-school",
-        "winter-school"
-      ]
-    },
-    {
-      "id": 18551314,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxODU1MTMxNA==",
-      "name": "pharo-changelogs",
-      "full_name": "pharo-project/pharo-changelogs",
-      "html_url": "https://github.com/pharo-project/pharo-changelogs",
-      "description": "To describe each version",
-      "language": null,
-      "stargazers_count": 25,
-      "forks_count": 12,
-      "open_issues_count": 0,
       "license": null,
       "topics": []
     },
@@ -564,51 +799,9 @@
       "html_url": "https://github.com/pharo-project/hermes",
       "description": null,
       "language": "Smalltalk",
-      "stargazers_count": 3,
-      "forks_count": 5,
+      "stargazers_count": 5,
+      "forks_count": 6,
       "open_issues_count": 3,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": [
-        "pharo"
-      ]
-    },
-    {
-      "id": 199650321,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxOTk2NTAzMjE=",
-      "name": "pharo-llvmDisassembler",
-      "full_name": "pharo-project/pharo-llvmDisassembler",
-      "html_url": "https://github.com/pharo-project/pharo-llvmDisassembler",
-      "description": "Pharo bindings to the LLVM disassembler",
-      "language": "Smalltalk",
-      "stargazers_count": 7,
-      "forks_count": 5,
-      "open_issues_count": 1,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 63601721,
-      "node_id": "MDEwOlJlcG9zaXRvcnk2MzYwMTcyMQ==",
-      "name": "PharoBootstrap",
-      "full_name": "pharo-project/PharoBootstrap",
-      "html_url": "https://github.com/pharo-project/PharoBootstrap",
-      "description": null,
-      "language": "Shell",
-      "stargazers_count": 10,
-      "forks_count": 8,
-      "open_issues_count": 2,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -628,8 +821,8 @@
       "html_url": "https://github.com/pharo-project/pharo-weekly",
       "description": "To get some news about pharo",
       "language": "Shell",
-      "stargazers_count": 1,
-      "forks_count": 0,
+      "stargazers_count": 3,
+      "forks_count": 1,
       "open_issues_count": 2,
       "license": {
         "key": "mit",
@@ -648,8 +841,8 @@
       "html_url": "https://github.com/pharo-project/pharo-archlinux",
       "description": "Builds packages for pharo-launcher and pharo-vm on Arch Linux",
       "language": "Shell",
-      "stargazers_count": 2,
-      "forks_count": 0,
+      "stargazers_count": 4,
+      "forks_count": 1,
       "open_issues_count": 0,
       "license": null,
       "topics": []
@@ -662,8 +855,8 @@
       "html_url": "https://github.com/pharo-project/PermSpaceSupport",
       "description": null,
       "language": "Smalltalk",
-      "stargazers_count": 2,
-      "forks_count": 0,
+      "stargazers_count": 4,
+      "forks_count": 1,
       "open_issues_count": 0,
       "license": {
         "key": "mit",
@@ -682,149 +875,9 @@
       "html_url": "https://github.com/pharo-project/newsletter",
       "description": "The next Pharo Newsletter",
       "language": null,
-      "stargazers_count": 2,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 249771234,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNDk3NzEyMzQ=",
-      "name": "pharo-vm-tunning",
-      "full_name": "pharo-project/pharo-vm-tunning",
-      "html_url": "https://github.com/pharo-project/pharo-vm-tunning",
-      "description": null,
-      "language": "Smalltalk",
-      "stargazers_count": 3,
-      "forks_count": 1,
-      "open_issues_count": 3,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 237398642,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMzczOTg2NDI=",
-      "name": "PharoMap",
-      "full_name": "pharo-project/PharoMap",
-      "html_url": "https://github.com/pharo-project/PharoMap",
-      "description": "To have a map of the Pharo related projects",
-      "language": null,
-      "stargazers_count": 20,
-      "forks_count": 2,
-      "open_issues_count": 1,
-      "license": null,
-      "topics": [
-        "pharo"
-      ]
-    },
-    {
-      "id": 104068159,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMDQwNjgxNTk=",
-      "name": "homebrew-pharo",
-      "full_name": "pharo-project/homebrew-pharo",
-      "html_url": "https://github.com/pharo-project/homebrew-pharo",
-      "description": "Homebrew formulae and casks for Pharo",
-      "language": "Ruby",
-      "stargazers_count": 6,
-      "forks_count": 3,
-      "open_issues_count": 1,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": [
-        "homebrew-tap",
-        "pharo",
-        "pharo-smalltalk"
-      ]
-    },
-    {
-      "id": 243281275,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNDMyODEyNzU=",
-      "name": "aleph",
-      "full_name": "pharo-project/aleph",
-      "html_url": "https://github.com/pharo-project/aleph",
-      "description": "an index system for the pharo system",
-      "language": "Smalltalk",
-      "stargazers_count": 5,
-      "forks_count": 4,
-      "open_issues_count": 2,
-      "license": null,
-      "topics": [
-        "pharo"
-      ]
-    },
-    {
-      "id": 19278711,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxOTI3ODcxMQ==",
-      "name": "pharo-build-scripts",
-      "full_name": "pharo-project/pharo-build-scripts",
-      "html_url": "https://github.com/pharo-project/pharo-build-scripts",
-      "description": "Scripts for building pharo distributions",
-      "language": "StringTemplate",
-      "stargazers_count": 3,
-      "forks_count": 3,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 437827693,
-      "node_id": "R_kgDOGhi4bQ",
-      "name": "pharodays",
-      "full_name": "pharo-project/pharodays",
-      "html_url": "https://github.com/pharo-project/pharodays",
-      "description": "Website of PharoDays conference",
-      "language": "HTML",
-      "stargazers_count": 0,
+      "stargazers_count": 4,
       "forks_count": 1,
       "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 248255608,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNDgyNTU2MDg=",
-      "name": "largeImages",
-      "full_name": "pharo-project/largeImages",
-      "html_url": "https://github.com/pharo-project/largeImages",
-      "description": null,
-      "language": "Smalltalk",
-      "stargazers_count": 2,
-      "forks_count": 2,
-      "open_issues_count": 1,
-      "license": null,
-      "topics": [
-        "pharo"
-      ]
-    },
-    {
-      "id": 202344761,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMDIzNDQ3NjE=",
-      "name": "threadedFFI-Plugin",
-      "full_name": "pharo-project/threadedFFI-Plugin",
-      "html_url": "https://github.com/pharo-project/threadedFFI-Plugin",
-      "description": "A Threaded FFI plugin for Pharo. It extends the Cog VM with non blocking queue based FFI.",
-      "language": "Smalltalk",
-      "stargazers_count": 7,
-      "forks_count": 6,
-      "open_issues_count": 9,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -832,18 +885,192 @@
         "url": "https://api.github.com/licenses/mit",
         "node_id": "MDc6TGljZW5zZTEz"
       },
-      "topics": [
-        "pharo"
-      ]
+      "topics": []
     }
   ],
   "contributorsDetails": [
+    {
+      "login": "girba",
+      "id": 249595,
+      "node_id": "MDQ6VXNlcjI0OTU5NQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/249595?v=4",
+      "html_url": "https://github.com/girba",
+      "contributions": 90
+    },
+    {
+      "login": "noha",
+      "id": 136711,
+      "node_id": "MDQ6VXNlcjEzNjcxMQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/136711?v=4",
+      "html_url": "https://github.com/noha",
+      "contributions": 47
+    },
+    {
+      "login": "estebanlm",
+      "id": 513630,
+      "node_id": "MDQ6VXNlcjUxMzYzMA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/513630?v=4",
+      "html_url": "https://github.com/estebanlm",
+      "contributions": 1435
+    },
+    {
+      "login": "philippeback",
+      "id": 2128441,
+      "node_id": "MDQ6VXNlcjIxMjg0NDE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2128441?v=4",
+      "html_url": "https://github.com/philippeback",
+      "contributions": 12
+    },
+    {
+      "login": "akgrant",
+      "id": 533393,
+      "node_id": "MDQ6VXNlcjUzMzM5Mw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/533393?v=4",
+      "html_url": "https://github.com/akgrant",
+      "contributions": 156
+    },
+    {
+      "login": "Ducasse",
+      "id": 432549,
+      "node_id": "MDQ6VXNlcjQzMjU0OQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/432549?v=4",
+      "html_url": "https://github.com/Ducasse",
+      "contributions": 4691
+    },
+    {
+      "login": "peteruhnak",
+      "id": 1276328,
+      "node_id": "MDQ6VXNlcjEyNzYzMjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1276328?v=4",
+      "html_url": "https://github.com/peteruhnak",
+      "contributions": 6
+    },
+    {
+      "login": "pavel-krivanek",
+      "id": 572494,
+      "node_id": "MDQ6VXNlcjU3MjQ5NA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/572494?v=4",
+      "html_url": "https://github.com/pavel-krivanek",
+      "contributions": 935
+    },
+    {
+      "login": "JurajKubelka",
+      "id": 465505,
+      "node_id": "MDQ6VXNlcjQ2NTUwNQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/465505?v=4",
+      "html_url": "https://github.com/JurajKubelka",
+      "contributions": 3
+    },
     {
       "login": "MarcusDenker",
       "id": 413057,
       "node_id": "MDQ6VXNlcjQxMzA1Nw==",
       "avatar_url": "https://avatars.githubusercontent.com/u/413057?v=4",
       "html_url": "https://github.com/MarcusDenker",
+      "contributions": 7756
+    },
+    {
+      "login": "stonesong",
+      "id": 5594031,
+      "node_id": "MDQ6VXNlcjU1OTQwMzE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5594031?v=4",
+      "html_url": "https://github.com/stonesong",
+      "contributions": 1
+    },
+    {
+      "login": "hellerve",
+      "id": 7725188,
+      "node_id": "MDQ6VXNlcjc3MjUxODg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7725188?v=4",
+      "html_url": "https://github.com/hellerve",
+      "contributions": 1
+    },
+    {
+      "login": "jordanmontt",
+      "id": 33934979,
+      "node_id": "MDQ6VXNlcjMzOTM0OTc5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/33934979?v=4",
+      "html_url": "https://github.com/jordanmontt",
+      "contributions": 120
+    },
+    {
+      "login": "olekscode",
+      "id": 8271691,
+      "node_id": "MDQ6VXNlcjgyNzE2OTE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8271691?v=4",
+      "html_url": "https://github.com/olekscode",
+      "contributions": 100
+    },
+    {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "html_url": "https://github.com/apps/dependabot",
+      "contributions": 35
+    },
+    {
+      "login": "PalumboN",
+      "id": 4098184,
+      "node_id": "MDQ6VXNlcjQwOTgxODQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4098184?v=4",
+      "html_url": "https://github.com/PalumboN",
+      "contributions": 87
+    },
+    {
+      "login": "gocko",
+      "id": 11711029,
+      "node_id": "MDQ6VXNlcjExNzExMDI5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11711029?v=4",
+      "html_url": "https://github.com/gocko",
+      "contributions": 10
+    },
+    {
+      "login": "lucretiomsp",
+      "id": 77632814,
+      "node_id": "MDQ6VXNlcjc3NjMyODE0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/77632814?v=4",
+      "html_url": "https://github.com/lucretiomsp",
+      "contributions": 6
+    },
+    {
+      "login": "balsa-sarenac",
+      "id": 34557616,
+      "node_id": "MDQ6VXNlcjM0NTU3NjE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/34557616?v=4",
+      "html_url": "https://github.com/balsa-sarenac",
+      "contributions": 783
+    },
+    {
+      "login": "omarabedelkader",
+      "id": 113094232,
+      "node_id": "U_kgDOBr2uWA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/113094232?v=4",
+      "html_url": "https://github.com/omarabedelkader",
+      "contributions": 3
+    },
+    {
+      "login": "guillep",
+      "id": 708322,
+      "node_id": "MDQ6VXNlcjcwODMyMg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/708322?v=4",
+      "html_url": "https://github.com/guillep",
+      "contributions": 2224
+    },
+    {
+      "login": "jpsandoval",
+      "id": 948869,
+      "node_id": "MDQ6VXNlcjk0ODg2OQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/948869?v=4",
+      "html_url": "https://github.com/jpsandoval",
+      "contributions": 2
+    },
+    {
+      "login": "alesshosry",
+      "id": 26387399,
+      "node_id": "MDQ6VXNlcjI2Mzg3Mzk5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/26387399?v=4",
+      "html_url": "https://github.com/alesshosry",
       "contributions": 1
     },
     {
@@ -852,15 +1079,47 @@
       "node_id": "MDQ6VXNlcjk1MTk5NzE=",
       "avatar_url": "https://avatars.githubusercontent.com/u/9519971?v=4",
       "html_url": "https://github.com/jecisc",
-      "contributions": 49
+      "contributions": 5222
     },
     {
-      "login": "Ducasse",
-      "id": 432549,
-      "node_id": "MDQ6VXNlcjQzMjU0OQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/432549?v=4",
-      "html_url": "https://github.com/Ducasse",
-      "contributions": 7
+      "login": "matijakljajic",
+      "id": 64456143,
+      "node_id": "MDQ6VXNlcjY0NDU2MTQz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/64456143?v=4",
+      "html_url": "https://github.com/matijakljajic",
+      "contributions": 1
+    },
+    {
+      "login": "NicolasAnquetil",
+      "id": 14889146,
+      "node_id": "MDQ6VXNlcjE0ODg5MTQ2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14889146?v=4",
+      "html_url": "https://github.com/NicolasAnquetil",
+      "contributions": 1
+    },
+    {
+      "login": "StevenCostiou",
+      "id": 26929529,
+      "node_id": "MDQ6VXNlcjI2OTI5NTI5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/26929529?v=4",
+      "html_url": "https://github.com/StevenCostiou",
+      "contributions": 351
+    },
+    {
+      "login": "macta",
+      "id": 5553623,
+      "node_id": "MDQ6VXNlcjU1NTM2MjM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5553623?v=4",
+      "html_url": "https://github.com/macta",
+      "contributions": 1
+    },
+    {
+      "login": "kunstewi",
+      "id": 170243715,
+      "node_id": "U_kgDOCiW2gw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/170243715?v=4",
+      "html_url": "https://github.com/kunstewi",
+      "contributions": 1
     },
     {
       "login": "astares",
@@ -868,15 +1127,7 @@
       "node_id": "MDQ6VXNlcjU5ODAwMzM=",
       "avatar_url": "https://avatars.githubusercontent.com/u/5980033?v=4",
       "html_url": "https://github.com/astares",
-      "contributions": 25
-    },
-    {
-      "login": "guillep",
-      "id": 708322,
-      "node_id": "MDQ6VXNlcjcwODMyMg==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/708322?v=4",
-      "html_url": "https://github.com/guillep",
-      "contributions": 89
+      "contributions": 1948
     },
     {
       "login": "tesonep",
@@ -884,15 +1135,7 @@
       "node_id": "MDQ6VXNlcjM1NTQ1NQ==",
       "avatar_url": "https://avatars.githubusercontent.com/u/355455?v=4",
       "html_url": "https://github.com/tesonep",
-      "contributions": 1410
-    },
-    {
-      "login": "estebanlm",
-      "id": 513630,
-      "node_id": "MDQ6VXNlcjUxMzYzMA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/513630?v=4",
-      "html_url": "https://github.com/estebanlm",
-      "contributions": 29
+      "contributions": 1493
     },
     {
       "login": "privat",
@@ -903,28 +1146,12 @@
       "contributions": 1040
     },
     {
-      "login": "pavel-krivanek",
-      "id": 572494,
-      "node_id": "MDQ6VXNlcjU3MjQ5NA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/572494?v=4",
-      "html_url": "https://github.com/pavel-krivanek",
-      "contributions": 50
-    },
-    {
-      "login": "balsa-sarenac",
-      "id": 34557616,
-      "node_id": "MDQ6VXNlcjM0NTU3NjE2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/34557616?v=4",
-      "html_url": "https://github.com/balsa-sarenac",
-      "contributions": 759
-    },
-    {
-      "login": "StevenCostiou",
-      "id": 26929529,
-      "node_id": "MDQ6VXNlcjI2OTI5NTI5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/26929529?v=4",
-      "html_url": "https://github.com/StevenCostiou",
-      "contributions": 351
+      "login": "demarey",
+      "id": 2494203,
+      "node_id": "MDQ6VXNlcjI0OTQyMDM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2494203?v=4",
+      "html_url": "https://github.com/demarey",
+      "contributions": 437
     },
     {
       "login": "Lin777",
@@ -940,7 +1167,7 @@
       "node_id": "MDQ6VXNlcjE2MTEyNDg=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1611248?v=4",
       "html_url": "https://github.com/Rinzwind",
-      "contributions": 307
+      "contributions": 310
     },
     {
       "login": "dionisiydk",
@@ -951,12 +1178,12 @@
       "contributions": 284
     },
     {
-      "login": "demarey",
-      "id": 2494203,
-      "node_id": "MDQ6VXNlcjI0OTQyMDM=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/2494203?v=4",
-      "html_url": "https://github.com/demarey",
-      "contributions": 1319
+      "login": "AlexisCnockaert",
+      "id": 156106880,
+      "node_id": "U_kgDOCU4AgA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/156106880?v=4",
+      "html_url": "https://github.com/AlexisCnockaert",
+      "contributions": 279
     },
     {
       "login": "carolahp",
@@ -964,7 +1191,7 @@
       "node_id": "MDQ6VXNlcjQ4MjIzMDM=",
       "avatar_url": "https://avatars.githubusercontent.com/u/4822303?v=4",
       "html_url": "https://github.com/carolahp",
-      "contributions": 231
+      "contributions": 275
     },
     {
       "login": "VincentBlondeau",
@@ -972,7 +1199,7 @@
       "node_id": "MDQ6VXNlcjQ3MDYzMjk=",
       "avatar_url": "https://avatars.githubusercontent.com/u/4706329?v=4",
       "html_url": "https://github.com/VincentBlondeau",
-      "contributions": 51
+      "contributions": 181
     },
     {
       "login": "hogoww",
@@ -980,15 +1207,15 @@
       "node_id": "MDQ6VXNlcjIxMjc4NTU0",
       "avatar_url": "https://avatars.githubusercontent.com/u/21278554?v=4",
       "html_url": "https://github.com/hogoww",
-      "contributions": 3
+      "contributions": 158
     },
     {
-      "login": "akgrant",
-      "id": 533393,
-      "node_id": "MDQ6VXNlcjUzMzM5Mw==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/533393?v=4",
-      "html_url": "https://github.com/akgrant",
-      "contributions": 156
+      "login": "JavierLarre",
+      "id": 130414384,
+      "node_id": "U_kgDOB8X3MA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/130414384?v=4",
+      "html_url": "https://github.com/JavierLarre",
+      "contributions": 104
     },
     {
       "login": "juliendelplanque",
@@ -999,12 +1226,12 @@
       "contributions": 102
     },
     {
-      "login": "jordanmontt",
-      "id": 33934979,
-      "node_id": "MDQ6VXNlcjMzOTM0OTc5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/33934979?v=4",
-      "html_url": "https://github.com/jordanmontt",
-      "contributions": 101
+      "login": "tinchodias",
+      "id": 3044265,
+      "node_id": "MDQ6VXNlcjMwNDQyNjU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3044265?v=4",
+      "html_url": "https://github.com/tinchodias",
+      "contributions": 96
     },
     {
       "login": "hernanmd",
@@ -1012,15 +1239,15 @@
       "node_id": "MDQ6VXNlcjQ4MjU5NTk=",
       "avatar_url": "https://avatars.githubusercontent.com/u/4825959?v=4",
       "html_url": "https://github.com/hernanmd",
-      "contributions": 3
+      "contributions": 90
     },
     {
-      "login": "tinchodias",
-      "id": 3044265,
-      "node_id": "MDQ6VXNlcjMwNDQyNjU=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/3044265?v=4",
-      "html_url": "https://github.com/tinchodias",
-      "contributions": 83
+      "login": "theseion",
+      "id": 250711,
+      "node_id": "MDQ6VXNlcjI1MDcxMQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/250711?v=4",
+      "html_url": "https://github.com/theseion",
+      "contributions": 81
     },
     {
       "login": "kasperosterbye",
@@ -1039,196 +1266,12 @@
       "contributions": 80
     },
     {
-      "login": "theseion",
-      "id": 250711,
-      "node_id": "MDQ6VXNlcjI1MDcxMQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/250711?v=4",
-      "html_url": "https://github.com/theseion",
+      "login": "AngelHely",
+      "id": 157134776,
+      "node_id": "U_kgDOCV2vuA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/157134776?v=4",
+      "html_url": "https://github.com/AngelHely",
       "contributions": 79
-    },
-    {
-      "login": "Alisu",
-      "id": 17796500,
-      "node_id": "MDQ6VXNlcjE3Nzk2NTAw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/17796500?v=4",
-      "html_url": "https://github.com/Alisu",
-      "contributions": 76
-    },
-    {
-      "login": "aboubacardiawara",
-      "id": 68972499,
-      "node_id": "MDQ6VXNlcjY4OTcyNDk5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/68972499?v=4",
-      "html_url": "https://github.com/aboubacardiawara",
-      "contributions": 64
-    },
-    {
-      "login": "akevalion",
-      "id": 10532890,
-      "node_id": "MDQ6VXNlcjEwNTMyODkw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/10532890?v=4",
-      "html_url": "https://github.com/akevalion",
-      "contributions": 63
-    },
-    {
-      "login": "PalumboN",
-      "id": 4098184,
-      "node_id": "MDQ6VXNlcjQwOTgxODQ=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/4098184?v=4",
-      "html_url": "https://github.com/PalumboN",
-      "contributions": 61
-    },
-    {
-      "login": "DamienCassou",
-      "id": 217543,
-      "node_id": "MDQ6VXNlcjIxNzU0Mw==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/217543?v=4",
-      "html_url": "https://github.com/DamienCassou",
-      "contributions": 273
-    },
-    {
-      "login": "Bajger",
-      "id": 45875448,
-      "node_id": "MDQ6VXNlcjQ1ODc1NDQ4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/45875448?v=4",
-      "html_url": "https://github.com/Bajger",
-      "contributions": 144
-    },
-    {
-      "login": "ErwanDouaille",
-      "id": 5569175,
-      "node_id": "MDQ6VXNlcjU1NjkxNzU=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/5569175?v=4",
-      "html_url": "https://github.com/ErwanDouaille",
-      "contributions": 25
-    },
-    {
-      "login": "oliveiraallex",
-      "id": 39618015,
-      "node_id": "MDQ6VXNlcjM5NjE4MDE1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/39618015?v=4",
-      "html_url": "https://github.com/oliveiraallex",
-      "contributions": 23
-    },
-    {
-      "login": "sbragagnolo",
-      "id": 723543,
-      "node_id": "MDQ6VXNlcjcyMzU0Mw==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/723543?v=4",
-      "html_url": "https://github.com/sbragagnolo",
-      "contributions": 20
-    },
-    {
-      "login": "seandenigris",
-      "id": 184176,
-      "node_id": "MDQ6VXNlcjE4NDE3Ng==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/184176?v=4",
-      "html_url": "https://github.com/seandenigris",
-      "contributions": 10
-    },
-    {
-      "login": "axlgithub",
-      "id": 65893894,
-      "node_id": "MDQ6VXNlcjY1ODkzODk0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/65893894?v=4",
-      "html_url": "https://github.com/axlgithub",
-      "contributions": 9
-    },
-    {
-      "login": "ClotildeToullec",
-      "id": 39184695,
-      "node_id": "MDQ6VXNlcjM5MTg0Njk1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/39184695?v=4",
-      "html_url": "https://github.com/ClotildeToullec",
-      "contributions": 9
-    },
-    {
-      "login": "gcorriga",
-      "id": 7032660,
-      "node_id": "MDQ6VXNlcjcwMzI2NjA=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/7032660?v=4",
-      "html_url": "https://github.com/gcorriga",
-      "contributions": 6
-    },
-    {
-      "login": "cdlm",
-      "id": 136339,
-      "node_id": "MDQ6VXNlcjEzNjMzOQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/136339?v=4",
-      "html_url": "https://github.com/cdlm",
-      "contributions": 6
-    },
-    {
-      "login": "StephanEggermont",
-      "id": 1009735,
-      "node_id": "MDQ6VXNlcjEwMDk3MzU=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1009735?v=4",
-      "html_url": "https://github.com/StephanEggermont",
-      "contributions": 5
-    },
-    {
-      "login": "kilon",
-      "id": 754480,
-      "node_id": "MDQ6VXNlcjc1NDQ4MA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/754480?v=4",
-      "html_url": "https://github.com/kilon",
-      "contributions": 5
-    },
-    {
-      "login": "nicolaihess",
-      "id": 620977,
-      "node_id": "MDQ6VXNlcjYyMDk3Nw==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/620977?v=4",
-      "html_url": "https://github.com/nicolaihess",
-      "contributions": 4
-    },
-    {
-      "login": "peteruhnak",
-      "id": 1276328,
-      "node_id": "MDQ6VXNlcjEyNzYzMjg=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1276328?v=4",
-      "html_url": "https://github.com/peteruhnak",
-      "contributions": 3
-    },
-    {
-      "login": "mabdi",
-      "id": 3696683,
-      "node_id": "MDQ6VXNlcjM2OTY2ODM=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/3696683?v=4",
-      "html_url": "https://github.com/mabdi",
-      "contributions": 1
-    },
-    {
-      "login": "bdixat",
-      "id": 79028393,
-      "node_id": "MDQ6VXNlcjc5MDI4Mzkz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/79028393?v=4",
-      "html_url": "https://github.com/bdixat",
-      "contributions": 1
-    },
-    {
-      "login": "dalsat",
-      "id": 5897143,
-      "node_id": "MDQ6VXNlcjU4OTcxNDM=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/5897143?v=4",
-      "html_url": "https://github.com/dalsat",
-      "contributions": 1
-    },
-    {
-      "login": "Balletie",
-      "id": 3884925,
-      "node_id": "MDQ6VXNlcjM4ODQ5MjU=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/3884925?v=4",
-      "html_url": "https://github.com/Balletie",
-      "contributions": 1
-    },
-    {
-      "login": "RainerWinkler",
-      "id": 16272077,
-      "node_id": "MDQ6VXNlcjE2MjcyMDc3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/16272077?v=4",
-      "html_url": "https://github.com/RainerWinkler",
-      "contributions": 1
     }
   ],
   "activeOrg": true

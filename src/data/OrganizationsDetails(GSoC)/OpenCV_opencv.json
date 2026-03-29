@@ -772,10 +772,106 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/aJ9fBfct"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "QR/Barcode/ArUco detector",
+        "short_description": "Description: QR, Barcode and ArUco are all popular code in computer vision applications. OpenCV now support all of them, and can detect and decode...",
+        "description": "Description: QR, Barcode and ArUco are all popular code in computer vision applications. OpenCV now support all of them, and can detect and decode them. But OpenCV still expect a better detector and decoder for them. If possible, one efficient deep detector for all kinds of codes can simplify the usage. If one efficent deep detector cannot be achieved, several deep models are also acceptable.\nExpected Outcomes:\nTrain a deep detector for QR, Barcode and ArUco. Or train three different deep detectors for different codes specifically.\nThe trained model should be easy to implement with the current algorithms in OpenCV on QR/Barcode/ArUco.\nA nice demo to show how to use the algorithm.\nDetailed report to demontrate if the trained detector(s) are better than the current solution in OpenCV.",
+        "student_name": "Jinyue CHEN",
+        "code_url": "https://drive.google.com/file/d/1UPnBXrbW09uNjmkxOrwiA3Mmas7fkcSw/view?usp=sharing",
+        "proposal_id": "wtSCVM6Q",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/atviNhgk"
+      },
+      {
+        "title": "Better LLMs Support in OpenCV: Tokenizer Integration into DNN Module",
+        "short_description": "I propose to integrate native text tokenization support into OpenCV’s DNN module so that Large Language Models (LLMs) can be run end-to-end directly...",
+        "description": "I propose to integrate native text tokenization support into OpenCV’s DNN module so that Large Language Models (LLMs) can be run end-to-end directly in OpenCV. Currently, to feed text into models like GPT-2 or GPT-3, users must rely on external libraries (e.g. tiktoken) for tokenization. My project will create a built-in tokenizer utility—implemented in C++ with Python bindings—that can convert raw text into token IDs and decode model outputs back into text.  \n\nThe core deliverable is a new cv::dnn::Tokenizer class supporting Byte Pair Encoding (BPE), along with the ability to load typical vocabulary/merges files and handle special tokens. Once implemented, this will allow a seamless pipeline for text-based or multimodal models within OpenCV: raw text -> tokens -> DNN inference -> tokens -> decoded text. I will also write comprehensive documentation and test this functionality against known tokenizer outputs (e.g., Hugging Face), ensuring correctness and good performance.  \n\nBy adding native tokenization, OpenCV’s DNN module becomes more versatile for cutting-edge AI tasks involving both vision and language. This reduces external dependencies, makes it easier to deploy LLMs in pure C++ or Python environments, and helps unify image and text processing in a single library—further strengthening OpenCV as a comprehensive open-source toolkit.",
+        "student_name": "Jorge Velez",
+        "code_url": "https://gist.github.com/JorgeV92/c056783926c66b3e57f4d7fe0d4ec967",
+        "proposal_id": "kV2nCLaA",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/79SW6eNK"
+      },
+      {
+        "title": "Integrate Fractal ArUco into OpenCV",
+        "short_description": "Problem: Traditional ArUco markers in OpenCV struggle with occlusion and long-range detection. Fractal ArUco markers (developed by Prof. Rafael Muñoz...",
+        "description": "Problem:\nTraditional ArUco markers in OpenCV struggle with occlusion and long-range detection. Fractal ArUco markers (developed by Prof. Rafael Muñoz Salinas and team) address these limitations through nested designs but are not yet integrated into OpenCV.\nSolution:\n1. Replace the current picoflann dependency with OpenCV’s native FLANN module (kdtree_single_index).\n2. Benchmark both implementations for accuracy, speed, and memory efficiency.\n3. Integrate the optimal solution into OpenCV, ensuring backward compatibility and performance.\nDeliverables:\n1. Fractal ArUco integration in OpenCV\n2. Documentation (API references, tutorials, performance guidelines)\n3. Merged OpenCV pull request with tests and examples",
+        "student_name": "Liiigion",
+        "code_url": "https://docs.google.com/document/d/1N99-N0eL1y1pgPrPWexHORSSXKEXpHRn0_LWFTCfE_E/edit?usp=sharing",
+        "proposal_id": "f2fG2EUK",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/cC4UplVH"
+      },
+      {
+        "title": "Computational photography algorithms for better image quality",
+        "short_description": "GitHub issue: Opencv #27206, Opencv_contrib #3921 Fork with WIP: https://github.com/MykhailoTrushch/opencv_contrib As part of GSOC 2025 idea 11,...",
+        "description": "GitHub issue: Opencv #27206, Opencv_contrib #3921\nFork with WIP: https://github.com/MykhailoTrushch/opencv_contrib\n\nAs part of GSOC 2025 idea 11, implement algorithms for enhancement of technical quality of images.\n\nBased on the conversation in opencv-gsoc-202X mailing list, the main prioritized algorithms are:\n\n    Smarter white balance algorithms\n    Color corrections\n    vignetting correction, chromatic aberration correction\n    Exposure, contrast, temperature correction and enhancement in color images\n\nIn my proposal, I outline some possible algorithms that would in the beginning be implemented for opencv_contrib and could be migrated to opencv, mostly in the photo module. In particular, in order of approximate importance:\n\n    Auto white balance: implement FFCC\n    Chromatic aberration correction: implement algorithm of Chang et al.\n    Denoising: implement a CNN-based method as a module like dnn_superres\n    Exposure correction: implement (Adaptive, Weighted) Gamma Correction\n    Superresolution: check if any additional newer models for superresolution could be added\n\nIf I am accepted as a contributor in GSOC, I expect to pursue 2-3 of these topics in-depth to fit in the timeframe of the medium-sized project (~175 hours). Also, the choice of algorithms is preliminary and might change after additional research and feedback.",
+        "student_name": "Mykhailo Trushch",
+        "code_url": "https://docs.google.com/document/d/1x8oFjdOydrinUG8jdwDT-yfK38Cbo728y0hVwUedZTg/edit?usp=sharing",
+        "proposal_id": "DU4s4QWN",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/DtBkV98K"
+      },
+      {
+        "title": "Visual Language Models for OpenCV",
+        "short_description": "This project aims to extend OpenCV’s DNN module with efficient runtime support for Large Language Models (LLMs), focusing on enabling Visual Language...",
+        "description": "This project aims to extend OpenCV’s DNN module with efficient runtime support for Large Language Models (LLMs), focusing on enabling Visual Language Models.",
+        "student_name": "Oleksandr Nikolskyy",
+        "code_url": "https://gist.github.com/nklskyoy/9965f3c4cfd4a8d3930c0ab743de27b7",
+        "proposal_id": "Rnfw6Zb7",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/Xt3sU0cr"
+      },
+      {
+        "title": "Implementation of a SLAM Framework in OpenCV with (ALIKED features & LightGlue matcher)",
+        "short_description": "This project presents a methodological approach to designing, implementing, and documenting a SLAM framework from scratch in Python. The primary...",
+        "description": "This project presents a methodological approach to designing, implementing, and documenting a SLAM framework from scratch in Python. The primary objective is to build a fully functional, OpenCV-based SLAM system with clear documentation to facilitate reproducibility, future extensions, and adoption by the broader computer vision community. Traditional SLAM systems that rely on hand-crafted features (e.g., ORB, SIFT) often exhibit reduced robustness under challenging conditions such as viewpoint shifts, illumination changes, or motion blur. To address these limitations, we integrate modern learned features—ALIKED keypoints and descriptors (Zhao et al., 2022) combined with the LightGlue matcher (Lindenberger et al., 2023)—into a streamlined SLAM pipeline. This integration improves tracking stability and relocalization performance, especially in environments with significant photometric and geometric variations.",
+        "student_name": "Shaurya Kishore Panwar",
+        "code_url": "https://gist.github.com/KlrShaK/1c150d7097ef7b7e0021e2ce1627b13b",
+        "proposal_id": "BoEueGOa",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/IFR73yH5"
+      },
+      {
+        "title": "Multi-camera calibration test",
+        "short_description": "I propose to enhance OpenCV’s multi-camera calibration pipeline by curating and organizing high-quality calibration datasets that include varied...",
+        "description": "I propose to enhance OpenCV’s multi-camera calibration pipeline by curating and organizing high-quality calibration datasets that include varied fiducial markers (chessboards, ArUco, ChArUco, etc.). I will develop automated testing scripts and visualization tools in both C++ and Python, ensuring calibration accuracy and robustness. This project will also deliver clear, user-friendly documentation and a demo video, making calibration more accessible to developers.",
+        "student_name": "shyama7004",
+        "code_url": "https://github.com/shyama7004/opencv-multicam-gsoc/blob/5.x/README.md",
+        "proposal_id": "fNpDqKXQ",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/EPZ8lQ0v"
+      },
+      {
+        "title": "Enhancing OpenCV's imgcodecs Module Code Refactoring and Feature Improvements",
+        "short_description": "The goal of this project is to improve OpenCV’s imgcodecs module by reducing code duplication, enhancing performance, and improving format support....",
+        "description": "The goal of this project is to improve OpenCV’s imgcodecs module by reducing code duplication, enhancing performance, and improving format support.\nDeliverables:\nModular and maintainable imgcodecs module.\nFaster, more efficient image I/O.\nImproved support for modern image formats and metadata.\nRobust and complete JPEG XL implementation with animation.",
+        "student_name": "Suleyman Turkmen",
+        "code_url": "https://gist.github.com/sturkmen72/ba3b038ee72efbbbad7a9ad8c503e5f6",
+        "proposal_id": "FzxJs56t",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/hq9jbCAK"
+      },
+      {
+        "title": "Adding libcamera support for VideoCapture",
+        "short_description": "The Raspberry Pi OS Bullseye released with a new open camera stack libcamera, while VideoCapture did not integrate with the new camera backend in...",
+        "description": "The Raspberry Pi OS Bullseye released with a new open camera stack libcamera, while VideoCapture did not integrate with the new camera backend in time. Given libcamera blocked the access from OpenCV to legacy camera backend V4L2, VideoCapture have to implement support for libcamera backend. A proper approach is to wrap libcamera's APIs in VideoCapture.",
+        "student_name": "Xuanrui Zhu",
+        "code_url": "https://gist.github.com/QueenofUSSR/49c550d0237dcdbb9cf25d885a1c2176",
+        "proposal_id": "5Pra2qDu",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/0rdlg60L"
+      }
+    ]
   },
   "githubID": "opencv",
   "repositories": [
+    {
+      "id": 5108029,
+      "node_id": "MDEwOlJlcG9zaXRvcnk1MTA4MDI5",
+      "name": "opencv_extra",
+      "full_name": "opencv/opencv_extra",
+      "html_url": "https://github.com/opencv/opencv_extra",
+      "description": "OpenCV extra data",
+      "language": null,
+      "stargazers_count": 967,
+      "forks_count": 1588,
+      "open_issues_count": 36,
+      "license": null,
+      "topics": []
+    },
     {
       "id": 5108051,
       "node_id": "MDEwOlJlcG9zaXRvcnk1MTA4MDUx",
@@ -784,9 +880,9 @@
       "html_url": "https://github.com/opencv/opencv",
       "description": "Open Source Computer Vision Library",
       "language": "C++",
-      "stargazers_count": 82228,
-      "forks_count": 56162,
-      "open_issues_count": 2719,
+      "stargazers_count": 86836,
+      "forks_count": 56547,
+      "open_issues_count": 2739,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -803,17 +899,65 @@
       ]
     },
     {
-      "id": 5108029,
-      "node_id": "MDEwOlJlcG9zaXRvcnk1MTA4MDI5",
-      "name": "opencv_extra",
-      "full_name": "opencv/opencv_extra",
-      "html_url": "https://github.com/opencv/opencv_extra",
-      "description": "OpenCV extra data",
-      "language": null,
-      "stargazers_count": 946,
-      "forks_count": 1574,
-      "open_issues_count": 24,
-      "license": null,
+      "id": 12756992,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMjc1Njk5Mg==",
+      "name": "opencv_contrib",
+      "full_name": "opencv/opencv_contrib",
+      "html_url": "https://github.com/opencv/opencv_contrib",
+      "description": "Repository for OpenCV's extra modules",
+      "language": "C++",
+      "stargazers_count": 10038,
+      "forks_count": 5926,
+      "open_issues_count": 672,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "opencv"
+      ]
+    },
+    {
+      "id": 493293777,
+      "node_id": "R_kgDOHWcQ0Q",
+      "name": "ci-gha-workflow",
+      "full_name": "opencv/ci-gha-workflow",
+      "html_url": "https://github.com/opencv/ci-gha-workflow",
+      "description": "GitHub Actions workflows for OpenCV project",
+      "language": "Python",
+      "stargazers_count": 22,
+      "forks_count": 29,
+      "open_issues_count": 28,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 1022055978,
+      "node_id": "R_kgDOPOtWKg",
+      "name": "cvbenchmark",
+      "full_name": "opencv/cvbenchmark",
+      "html_url": "https://github.com/opencv/cvbenchmark",
+      "description": "An unbiased CPU benchmark by OpenCV that provides an evaluation of different CPUs under real-world computer vision and AI workloads.",
+      "language": "Python",
+      "stargazers_count": 8,
+      "forks_count": 1,
+      "open_issues_count": 0,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
       "topics": []
     },
     {
@@ -824,9 +968,9 @@
       "html_url": "https://github.com/opencv/opencv-python",
       "description": "Automated CI toolchain to produce precompiled opencv-python, opencv-python-headless, opencv-contrib-python and opencv-contrib-python-headless packages.",
       "language": "Python",
-      "stargazers_count": 4831,
-      "forks_count": 896,
-      "open_issues_count": 151,
+      "stargazers_count": 5222,
+      "forks_count": 1004,
+      "open_issues_count": 199,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -847,46 +991,32 @@
       ]
     },
     {
-      "id": 493293777,
-      "node_id": "R_kgDOHWcQ0Q",
-      "name": "ci-gha-workflow",
-      "full_name": "opencv/ci-gha-workflow",
-      "html_url": "https://github.com/opencv/ci-gha-workflow",
-      "description": "GitHub Actions workflows for OpenCV project",
+      "id": 498757829,
+      "node_id": "R_kgDOHbpwxQ",
+      "name": "opencv_benchmarks",
+      "full_name": "opencv/opencv_benchmarks",
+      "html_url": "https://github.com/opencv/opencv_benchmarks",
+      "description": null,
       "language": "Python",
-      "stargazers_count": 21,
-      "forks_count": 21,
-      "open_issues_count": 16,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
+      "stargazers_count": 8,
+      "forks_count": 12,
+      "open_issues_count": 3,
+      "license": null,
       "topics": []
     },
     {
-      "id": 12756992,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMjc1Njk5Mg==",
-      "name": "opencv_contrib",
-      "full_name": "opencv/opencv_contrib",
-      "html_url": "https://github.com/opencv/opencv_contrib",
-      "description": "Repository for OpenCV's extra modules",
-      "language": "C++",
-      "stargazers_count": 9690,
-      "forks_count": 5820,
-      "open_issues_count": 625,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "opencv"
-      ]
+      "id": 38375924,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzODM3NTkyNA==",
+      "name": "opencv_3rdparty",
+      "full_name": "opencv/opencv_3rdparty",
+      "html_url": "https://github.com/opencv/opencv_3rdparty",
+      "description": "OpenCV - 3rdparty",
+      "language": null,
+      "stargazers_count": 586,
+      "forks_count": 642,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
     },
     {
       "id": 390637491,
@@ -896,9 +1026,9 @@
       "html_url": "https://github.com/opencv/opencv_zoo",
       "description": "Model Zoo For OpenCV DNN and Benchmarks.",
       "language": "Python",
-      "stargazers_count": 764,
-      "forks_count": 234,
-      "open_issues_count": 17,
+      "stargazers_count": 916,
+      "forks_count": 280,
+      "open_issues_count": 24,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -921,9 +1051,9 @@
       "html_url": "https://github.com/opencv/bpc",
       "description": "Codebase for Perception Challenge For Bin-Picking",
       "language": "Python",
-      "stargazers_count": 87,
-      "forks_count": 48,
-      "open_issues_count": 5,
+      "stargazers_count": 93,
+      "forks_count": 49,
+      "open_issues_count": 4,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -934,34 +1064,6 @@
       "topics": []
     },
     {
-      "id": 38375924,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzODM3NTkyNA==",
-      "name": "opencv_3rdparty",
-      "full_name": "opencv/opencv_3rdparty",
-      "html_url": "https://github.com/opencv/opencv_3rdparty",
-      "description": "OpenCV - 3rdparty",
-      "language": null,
-      "stargazers_count": 566,
-      "forks_count": 636,
-      "open_issues_count": 1,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 498757829,
-      "node_id": "R_kgDOHbpwxQ",
-      "name": "opencv_benchmarks",
-      "full_name": "opencv/opencv_benchmarks",
-      "html_url": "https://github.com/opencv/opencv_benchmarks",
-      "description": null,
-      "language": null,
-      "stargazers_count": 8,
-      "forks_count": 9,
-      "open_issues_count": 2,
-      "license": null,
-      "topics": []
-    },
-    {
       "id": 234445543,
       "node_id": "MDEwOlJlcG9zaXRvcnkyMzQ0NDU1NDM=",
       "name": "open_vision_capsules",
@@ -969,8 +1071,8 @@
       "html_url": "https://github.com/opencv/open_vision_capsules",
       "description": "A set of libraries for encapsulating smart vision algorithms",
       "language": "Python",
-      "stargazers_count": 134,
-      "forks_count": 48,
+      "stargazers_count": 133,
+      "forks_count": 50,
       "open_issues_count": 7,
       "license": {
         "key": "other",
@@ -989,8 +1091,8 @@
       "html_url": "https://github.com/opencv/ade",
       "description": null,
       "language": "C++",
-      "stargazers_count": 62,
-      "forks_count": 51,
+      "stargazers_count": 64,
+      "forks_count": 52,
       "open_issues_count": 3,
       "license": {
         "key": "apache-2.0",
@@ -1010,7 +1112,7 @@
       "description": null,
       "language": "HTML",
       "stargazers_count": 2,
-      "forks_count": 0,
+      "forks_count": 2,
       "open_issues_count": 0,
       "license": null,
       "topics": []
@@ -1024,7 +1126,7 @@
       "description": "\"OpenCV for iOS\" book samples",
       "language": "Objective-C",
       "stargazers_count": 674,
-      "forks_count": 258,
+      "forks_count": 255,
       "open_issues_count": 9,
       "license": {
         "key": "other",
@@ -1046,8 +1148,8 @@
       "html_url": "https://github.com/opencv/jetson-screencasts-sources",
       "description": null,
       "language": "C++",
-      "stargazers_count": 40,
-      "forks_count": 49,
+      "stargazers_count": 39,
+      "forks_count": 48,
       "open_issues_count": 1,
       "license": null,
       "topics": []
@@ -1060,8 +1162,8 @@
       "html_url": "https://github.com/opencv/opencv_attic",
       "description": "For historical needs only. All exported SVN history with metadata. ",
       "language": "C++",
-      "stargazers_count": 49,
-      "forks_count": 62,
+      "stargazers_count": 51,
+      "forks_count": 63,
       "open_issues_count": 0,
       "license": null,
       "topics": []
@@ -1074,39 +1176,7 @@
       "node_id": "MDQ6VXNlcjQ5ODEyMTk=",
       "avatar_url": "https://avatars.githubusercontent.com/u/4981219?v=4",
       "html_url": "https://github.com/alalek",
-      "contributions": 502
-    },
-    {
-      "login": "vpisarev",
-      "id": 2110786,
-      "node_id": "MDQ6VXNlcjIxMTA3ODY=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/2110786?v=4",
-      "html_url": "https://github.com/vpisarev",
-      "contributions": 145
-    },
-    {
-      "login": "asmorkalov",
-      "id": 2536374,
-      "node_id": "MDQ6VXNlcjI1MzYzNzQ=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/2536374?v=4",
-      "html_url": "https://github.com/asmorkalov",
-      "contributions": 103
-    },
-    {
-      "login": "mshabunin",
-      "id": 3304494,
-      "node_id": "MDQ6VXNlcjMzMDQ0OTQ=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/3304494?v=4",
-      "html_url": "https://github.com/mshabunin",
-      "contributions": 31
-    },
-    {
-      "login": "ilya-lavrenov",
-      "id": 2566854,
-      "node_id": "MDQ6VXNlcjI1NjY4NTQ=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/2566854?v=4",
-      "html_url": "https://github.com/ilya-lavrenov",
-      "contributions": 67
+      "contributions": 1211
     },
     {
       "login": "dkurt",
@@ -1114,127 +1184,31 @@
       "node_id": "MDQ6VXNlcjI1ODAxNTY4",
       "avatar_url": "https://avatars.githubusercontent.com/u/25801568?v=4",
       "html_url": "https://github.com/dkurt",
-      "contributions": 148
+      "contributions": 20
     },
     {
-      "login": "terfendail",
-      "id": 13571155,
-      "node_id": "MDQ6VXNlcjEzNTcxMTU1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/13571155?v=4",
-      "html_url": "https://github.com/terfendail",
-      "contributions": 5
+      "login": "vpisarev",
+      "id": 2110786,
+      "node_id": "MDQ6VXNlcjIxMTA3ODY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2110786?v=4",
+      "html_url": "https://github.com/vpisarev",
+      "contributions": 350
     },
     {
-      "login": "tomoaki0705",
-      "id": 3737315,
-      "node_id": "MDQ6VXNlcjM3MzczMTU=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/3737315?v=4",
-      "html_url": "https://github.com/tomoaki0705",
-      "contributions": 5
+      "login": "asmorkalov",
+      "id": 2536374,
+      "node_id": "MDQ6VXNlcjI1MzYzNzQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2536374?v=4",
+      "html_url": "https://github.com/asmorkalov",
+      "contributions": 243
     },
     {
-      "login": "bitwangyaoyao",
-      "id": 3132639,
-      "node_id": "MDQ6VXNlcjMxMzI2Mzk=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/3132639?v=4",
-      "html_url": "https://github.com/bitwangyaoyao",
-      "contributions": 174
-    },
-    {
-      "login": "ozantonkal",
-      "id": 2374004,
-      "node_id": "MDQ6VXNlcjIzNzQwMDQ=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/2374004?v=4",
-      "html_url": "https://github.com/ozantonkal",
-      "contributions": 170
-    },
-    {
-      "login": "sturkmen72",
-      "id": 12151541,
-      "node_id": "MDQ6VXNlcjEyMTUxNTQx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/12151541?v=4",
-      "html_url": "https://github.com/sturkmen72",
-      "contributions": 4
-    },
-    {
-      "login": "akarsakov",
-      "id": 5549721,
-      "node_id": "MDQ6VXNlcjU1NDk3MjE=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/5549721?v=4",
-      "html_url": "https://github.com/akarsakov",
-      "contributions": 9
-    },
-    {
-      "login": "edgarriba",
-      "id": 5157099,
-      "node_id": "MDQ6VXNlcjUxNTcwOTk=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/5157099?v=4",
-      "html_url": "https://github.com/edgarriba",
-      "contributions": 141
-    },
-    {
-      "login": "TolyaTalamanov",
-      "id": 22346834,
-      "node_id": "MDQ6VXNlcjIyMzQ2ODM0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/22346834?v=4",
-      "html_url": "https://github.com/TolyaTalamanov",
-      "contributions": 134
-    },
-    {
-      "login": "savuor",
-      "id": 10323511,
-      "node_id": "MDQ6VXNlcjEwMzIzNTEx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/10323511?v=4",
-      "html_url": "https://github.com/savuor",
-      "contributions": 15
-    },
-    {
-      "login": "berak",
-      "id": 854416,
-      "node_id": "MDQ6VXNlcjg1NDQxNg==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/854416?v=4",
-      "html_url": "https://github.com/berak",
-      "contributions": 130
-    },
-    {
-      "login": "vrabaud",
-      "id": 700766,
-      "node_id": "MDQ6VXNlcjcwMDc2Ng==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/700766?v=4",
-      "html_url": "https://github.com/vrabaud",
-      "contributions": 128
-    },
-    {
-      "login": "paroj",
-      "id": 4941802,
-      "node_id": "MDQ6VXNlcjQ5NDE4MDI=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/4941802?v=4",
-      "html_url": "https://github.com/paroj",
-      "contributions": 123
-    },
-    {
-      "login": "sovrasov",
-      "id": 5373517,
-      "node_id": "MDQ6VXNlcjUzNzM1MTc=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/5373517?v=4",
-      "html_url": "https://github.com/sovrasov",
-      "contributions": 9
-    },
-    {
-      "login": "fengyuentau",
-      "id": 17219438,
-      "node_id": "MDQ6VXNlcjE3MjE5NDM4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/17219438?v=4",
-      "html_url": "https://github.com/fengyuentau",
-      "contributions": 32
-    },
-    {
-      "login": "LaurentBerger",
-      "id": 3591626,
-      "node_id": "MDQ6VXNlcjM1OTE2MjY=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/3591626?v=4",
-      "html_url": "https://github.com/LaurentBerger",
-      "contributions": 4
+      "login": "ilya-lavrenov",
+      "id": 2566854,
+      "node_id": "MDQ6VXNlcjI1NjY4NTQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2566854?v=4",
+      "html_url": "https://github.com/ilya-lavrenov",
+      "contributions": 935
     },
     {
       "login": "l-bat",
@@ -1242,15 +1216,23 @@
       "node_id": "MDQ6VXNlcjIyMzQ2ODYw",
       "avatar_url": "https://avatars.githubusercontent.com/u/22346860?v=4",
       "html_url": "https://github.com/l-bat",
-      "contributions": 45
+      "contributions": 108
     },
     {
-      "login": "catree",
-      "id": 8229425,
-      "node_id": "MDQ6VXNlcjgyMjk0MjU=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/8229425?v=4",
-      "html_url": "https://github.com/catree",
-      "contributions": 6
+      "login": "fengyuentau",
+      "id": 17219438,
+      "node_id": "MDQ6VXNlcjE3MjE5NDM4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/17219438?v=4",
+      "html_url": "https://github.com/fengyuentau",
+      "contributions": 125
+    },
+    {
+      "login": "mshabunin",
+      "id": 3304494,
+      "node_id": "MDQ6VXNlcjMzMDQ0OTQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3304494?v=4",
+      "html_url": "https://github.com/mshabunin",
+      "contributions": 159
     },
     {
       "login": "zihaomu",
@@ -1258,15 +1240,7 @@
       "node_id": "MDQ6VXNlcjE2NDg3MzUy",
       "avatar_url": "https://avatars.githubusercontent.com/u/16487352?v=4",
       "html_url": "https://github.com/zihaomu",
-      "contributions": 26
-    },
-    {
-      "login": "Kumataro",
-      "id": 20098404,
-      "node_id": "MDQ6VXNlcjIwMDk4NDA0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/20098404?v=4",
-      "html_url": "https://github.com/Kumataro",
-      "contributions": 5
+      "contributions": 73
     },
     {
       "login": "rogday",
@@ -1274,39 +1248,7 @@
       "node_id": "MDQ6VXNlcjI0OTc2ODYy",
       "avatar_url": "https://avatars.githubusercontent.com/u/24976862?v=4",
       "html_url": "https://github.com/rogday",
-      "contributions": 23
-    },
-    {
-      "login": "pli2-intel",
-      "id": 83273735,
-      "node_id": "MDQ6VXNlcjgzMjczNzM1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/83273735?v=4",
-      "html_url": "https://github.com/pli2-intel",
-      "contributions": 64
-    },
-    {
-      "login": "VadimLevin",
-      "id": 6630567,
-      "node_id": "MDQ6VXNlcjY2MzA1Njc=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/6630567?v=4",
-      "html_url": "https://github.com/VadimLevin",
-      "contributions": 60
-    },
-    {
-      "login": "obilaniu",
-      "id": 3268344,
-      "node_id": "MDQ6VXNlcjMyNjgzNDQ=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/3268344?v=4",
-      "html_url": "https://github.com/obilaniu",
-      "contributions": 57
-    },
-    {
-      "login": "komakai",
-      "id": 5875290,
-      "node_id": "MDQ6VXNlcjU4NzUyOTA=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/5875290?v=4",
-      "html_url": "https://github.com/komakai",
-      "contributions": 57
+      "contributions": 66
     },
     {
       "login": "cbalint13",
@@ -1314,7 +1256,15 @@
       "node_id": "MDQ6VXNlcjM5NzQzNjA=",
       "avatar_url": "https://avatars.githubusercontent.com/u/3974360?v=4",
       "html_url": "https://github.com/cbalint13",
-      "contributions": 16
+      "contributions": 51
+    },
+    {
+      "login": "savuor",
+      "id": 10323511,
+      "node_id": "MDQ6VXNlcjEwMzIzNTEx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10323511?v=4",
+      "html_url": "https://github.com/savuor",
+      "contributions": 131
     },
     {
       "login": "abak",
@@ -1330,7 +1280,23 @@
       "node_id": "MDQ6VXNlcjExNzg0Njg1",
       "avatar_url": "https://avatars.githubusercontent.com/u/11784685?v=4",
       "html_url": "https://github.com/arrybn",
-      "contributions": 10
+      "contributions": 19
+    },
+    {
+      "login": "akarsakov",
+      "id": 5549721,
+      "node_id": "MDQ6VXNlcjU1NDk3MjE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5549721?v=4",
+      "html_url": "https://github.com/akarsakov",
+      "contributions": 149
+    },
+    {
+      "login": "sovrasov",
+      "id": 5373517,
+      "node_id": "MDQ6VXNlcjUzNzM1MTc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5373517?v=4",
+      "html_url": "https://github.com/sovrasov",
+      "contributions": 109
     },
     {
       "login": "ashishkrshrivastava",
@@ -1373,12 +1339,52 @@
       "contributions": 7
     },
     {
+      "login": "catree",
+      "id": 8229425,
+      "node_id": "MDQ6VXNlcjgyMjk0MjU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8229425?v=4",
+      "html_url": "https://github.com/catree",
+      "contributions": 95
+    },
+    {
       "login": "sl-sergei",
       "id": 62052793,
       "node_id": "MDQ6VXNlcjYyMDUyNzkz",
       "avatar_url": "https://avatars.githubusercontent.com/u/62052793?v=4",
       "html_url": "https://github.com/sl-sergei",
       "contributions": 6
+    },
+    {
+      "login": "Kumataro",
+      "id": 20098404,
+      "node_id": "MDQ6VXNlcjIwMDk4NDA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20098404?v=4",
+      "html_url": "https://github.com/Kumataro",
+      "contributions": 112
+    },
+    {
+      "login": "sturkmen72",
+      "id": 12151541,
+      "node_id": "MDQ6VXNlcjEyMTUxNTQx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12151541?v=4",
+      "html_url": "https://github.com/sturkmen72",
+      "contributions": 48
+    },
+    {
+      "login": "tomoaki0705",
+      "id": 3737315,
+      "node_id": "MDQ6VXNlcjM3MzczMTU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3737315?v=4",
+      "html_url": "https://github.com/tomoaki0705",
+      "contributions": 39
+    },
+    {
+      "login": "terfendail",
+      "id": 13571155,
+      "node_id": "MDQ6VXNlcjEzNTcxMTU1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13571155?v=4",
+      "html_url": "https://github.com/terfendail",
+      "contributions": 198
     },
     {
       "login": "dvd42",
@@ -1395,6 +1401,230 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/22337800?v=4",
       "html_url": "https://github.com/AleksandrPanov",
       "contributions": 4
+    },
+    {
+      "login": "LaurentBerger",
+      "id": 3591626,
+      "node_id": "MDQ6VXNlcjM1OTE2MjY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3591626?v=4",
+      "html_url": "https://github.com/LaurentBerger",
+      "contributions": 29
+    },
+    {
+      "login": "bitwangyaoyao",
+      "id": 3132639,
+      "node_id": "MDQ6VXNlcjMxMzI2Mzk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3132639?v=4",
+      "html_url": "https://github.com/bitwangyaoyao",
+      "contributions": 174
+    },
+    {
+      "login": "ozantonkal",
+      "id": 2374004,
+      "node_id": "MDQ6VXNlcjIzNzQwMDQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2374004?v=4",
+      "html_url": "https://github.com/ozantonkal",
+      "contributions": 170
+    },
+    {
+      "login": "vrabaud",
+      "id": 700766,
+      "node_id": "MDQ6VXNlcjcwMDc2Ng==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/700766?v=4",
+      "html_url": "https://github.com/vrabaud",
+      "contributions": 23
+    },
+    {
+      "login": "edgarriba",
+      "id": 5157099,
+      "node_id": "MDQ6VXNlcjUxNTcwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5157099?v=4",
+      "html_url": "https://github.com/edgarriba",
+      "contributions": 141
+    },
+    {
+      "login": "TolyaTalamanov",
+      "id": 22346834,
+      "node_id": "MDQ6VXNlcjIyMzQ2ODM0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/22346834?v=4",
+      "html_url": "https://github.com/TolyaTalamanov",
+      "contributions": 134
+    },
+    {
+      "login": "berak",
+      "id": 854416,
+      "node_id": "MDQ6VXNlcjg1NDQxNg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/854416?v=4",
+      "html_url": "https://github.com/berak",
+      "contributions": 65
+    },
+    {
+      "login": "paroj",
+      "id": 4941802,
+      "node_id": "MDQ6VXNlcjQ5NDE4MDI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4941802?v=4",
+      "html_url": "https://github.com/paroj",
+      "contributions": 108
+    },
+    {
+      "login": "MaximSmolskiy",
+      "id": 25690822,
+      "node_id": "MDQ6VXNlcjI1NjkwODIy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25690822?v=4",
+      "html_url": "https://github.com/MaximSmolskiy",
+      "contributions": 65
+    },
+    {
+      "login": "pli2-intel",
+      "id": 83273735,
+      "node_id": "MDQ6VXNlcjgzMjczNzM1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/83273735?v=4",
+      "html_url": "https://github.com/pli2-intel",
+      "contributions": 64
+    },
+    {
+      "login": "VadimLevin",
+      "id": 6630567,
+      "node_id": "MDQ6VXNlcjY2MzA1Njc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6630567?v=4",
+      "html_url": "https://github.com/VadimLevin",
+      "contributions": 60
+    },
+    {
+      "login": "obilaniu",
+      "id": 3268344,
+      "node_id": "MDQ6VXNlcjMyNjgzNDQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3268344?v=4",
+      "html_url": "https://github.com/obilaniu",
+      "contributions": 57
+    },
+    {
+      "login": "Auron-X",
+      "id": 11343434,
+      "node_id": "MDQ6VXNlcjExMzQzNDM0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11343434?v=4",
+      "html_url": "https://github.com/Auron-X",
+      "contributions": 186
+    },
+    {
+      "login": "cudawarped",
+      "id": 12133430,
+      "node_id": "MDQ6VXNlcjEyMTMzNDMw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12133430?v=4",
+      "html_url": "https://github.com/cudawarped",
+      "contributions": 75
+    },
+    {
+      "login": "vlad-shakhuro",
+      "id": 754975,
+      "node_id": "MDQ6VXNlcjc1NDk3NQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/754975?v=4",
+      "html_url": "https://github.com/vlad-shakhuro",
+      "contributions": 64
+    },
+    {
+      "login": "lluisgomez",
+      "id": 3308194,
+      "node_id": "MDQ6VXNlcjMzMDgxOTQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3308194?v=4",
+      "html_url": "https://github.com/lluisgomez",
+      "contributions": 59
+    },
+    {
+      "login": "kurnianggoro",
+      "id": 4920587,
+      "node_id": "MDQ6VXNlcjQ5MjA1ODc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4920587?v=4",
+      "html_url": "https://github.com/kurnianggoro",
+      "contributions": 51
+    },
+    {
+      "login": "nailbiter",
+      "id": 4191776,
+      "node_id": "MDQ6VXNlcjQxOTE3NzY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4191776?v=4",
+      "html_url": "https://github.com/nailbiter",
+      "contributions": 50
+    },
+    {
+      "login": "Bellaktris",
+      "id": 2235903,
+      "node_id": "MDQ6VXNlcjIyMzU5MDM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2235903?v=4",
+      "html_url": "https://github.com/Bellaktris",
+      "contributions": 41
+    },
+    {
+      "login": "cv3d",
+      "id": 42140441,
+      "node_id": "MDQ6VXNlcjQyMTQwNDQx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/42140441?v=4",
+      "html_url": "https://github.com/cv3d",
+      "contributions": 39
+    },
+    {
+      "login": "albenoit",
+      "id": 2619976,
+      "node_id": "MDQ6VXNlcjI2MTk5NzY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2619976?v=4",
+      "html_url": "https://github.com/albenoit",
+      "contributions": 33
+    },
+    {
+      "login": "VladX",
+      "id": 74066,
+      "node_id": "MDQ6VXNlcjc0MDY2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/74066?v=4",
+      "html_url": "https://github.com/VladX",
+      "contributions": 31
+    },
+    {
+      "login": "wangyida",
+      "id": 6743242,
+      "node_id": "MDQ6VXNlcjY3NDMyNDI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6743242?v=4",
+      "html_url": "https://github.com/wangyida",
+      "contributions": 29
+    },
+    {
+      "login": "sghoshcvc",
+      "id": 9803206,
+      "node_id": "MDQ6VXNlcjk4MDMyMDY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9803206?v=4",
+      "html_url": "https://github.com/sghoshcvc",
+      "contributions": 27
+    },
+    {
+      "login": "garybradski",
+      "id": 810997,
+      "node_id": "MDQ6VXNlcjgxMDk5Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/810997?v=4",
+      "html_url": "https://github.com/garybradski",
+      "contributions": 23
+    },
+    {
+      "login": "jiuerbujie",
+      "id": 2533960,
+      "node_id": "MDQ6VXNlcjI1MzM5NjA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2533960?v=4",
+      "html_url": "https://github.com/jiuerbujie",
+      "contributions": 23
+    },
+    {
+      "login": "mirceamp",
+      "id": 3743553,
+      "node_id": "MDQ6VXNlcjM3NDM1NTM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3743553?v=4",
+      "html_url": "https://github.com/mirceamp",
+      "contributions": 20
+    },
+    {
+      "login": "nmoutinho",
+      "id": 9116444,
+      "node_id": "MDQ6VXNlcjkxMTY0NDQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9116444?v=4",
+      "html_url": "https://github.com/nmoutinho",
+      "contributions": 19
     }
   ],
   "activeOrg": true

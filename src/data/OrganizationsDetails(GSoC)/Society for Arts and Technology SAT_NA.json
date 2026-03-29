@@ -112,7 +112,44 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2023/projects/UlGCj7qL"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Object Detection on Point Cloud Streams",
+        "short_description": "This project comprises two parts: prototyping a real-time Python pipeline for object detection on point cloud data, and integrating it into LivePose....",
+        "description": "This project comprises two parts: prototyping a real-time Python pipeline for object detection on point cloud data, and integrating it into LivePose.  \r\n\r\nThe goal is to build a functional pipeline that reads streaming point cloud data from various sources (e.g., Orbbec Femto Megas, Intel RealSense, stereo cameras), runs deep learning inference using models like PointNet++, applies filters for smoothing and tracking, and streams the results via OSC. During prototyping, the system will be evaluated across multiple models, input types, and hardware configurations to assess real-time performance and reliability. Once validated, the pipeline will be integrated into LivePose, leveraging its modular infrastructure for input handling, filtering, and output.  \r\n\r\nBy the end of the project, LivePose will support end-to-end processing of streaming 3D point cloud data in at least one working configuration, with clear documentation and performance benchmarks to guide future development and extension.",
+        "student_name": "Eddie Liu",
+        "code_url": "https://gitlab.com/sat-mtl/collaborations/google-summer-of-code/-/blob/main/website/posts/2025-contributions/2025-08-30-qiliu0523-object-detection-on-point-cloud-streams.md?ref_type=heads",
+        "proposal_id": "kBjp18hw",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/miLarupg"
+      },
+      {
+        "title": "Exploring Advanced Rendering Pipelines for Fulldome Content with Ray-tracing in ossia score",
+        "short_description": "This project aims to enhance fulldome content rendering in ossia score by integrating advanced ray-tracing render pipelines. Traditional fulldome...",
+        "description": "This project aims to enhance fulldome content rendering in ossia score by integrating advanced ray-tracing render pipelines. \nTraditional fulldome rendering requires multiple render passes, which leads to high computational overhead. By leveraging ray-tracing techniques on modern graphics APIs (e.g. DirectX, Vulkan), this project will enable single-pass fulldome rendering, significantly improving efficiency and render quality. \n  \n\nThe project will explore and conduct comparative analysis on various rendering pipelines and graphics APIs, including HDR, meshlet-based, volumetric, and SDF-based techniques, with a focus on their suitability and performance for fulldome rendering within ossia score. \nFinal Deliverables: \n[1] Integration of the ray-tracing fulldome rendering pipeline into ossia score for better performance and quality. \n[2] Systematic comparison and analysis of different ray-tracing fulldome rendering pipelines. \n[3] Open-source release of the codebase and benchmarking results of Deliverable [2]. \n[4] Documentation of rendering pipeline design, challenges faced, and solutions implemented. \n  \n\nMentors: Jean-Michaël Celerier and Manuel Bolduc",
+        "student_name": "Lejie LIU",
+        "code_url": "https://gitlab.com/sat-mtl/collaborations/google-summer-of-code/-/blob/main/website/posts/2025-contributions/2025-08-29-lejieliu-fulldome-rendering-pipeline.md",
+        "proposal_id": "0Ygnd4lW",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/YLjs5vlA"
+      },
+      {
+        "title": "Porting Puara-gestures to Avendish and creating ossia score objects",
+        "short_description": "This project addresses the limited accessibility of the powerful Puara-gestures library for creating high-level gestural descriptors within modern...",
+        "description": "This project addresses the limited accessibility of the powerful Puara-gestures library for creating high-level gestural descriptors within modern audiovisual workflows. The goal is to bridge this gap by porting Puara-gestures to the Avendish framework, enabling its integration with the visual programming environment ossia score.\r\n\r\n This will be achieved by wrapping each Puara-gestures class in Avendish to create standardized objects that can be compiled into native ossia score processes. \r\nThese objects will allow artists and designers to seamlessly incorporate sophisticated gestural analysis into interactive multimedia environments using ossia score's visual interface and timeline-based orchestration. Key deliverables include Avendish wrappers for various Puara-gestures descriptors (motion, orientation, etc.), corresponding native ossia score objects with user-friendly controls, composite objects for complex gesture recognition, comprehensive documentation and examples, and performance optimizations.\r\n Optionally, the project will explore the creation of VST/LV2 plugins for wider compatibility with Digital Audio Workstations. This integration will democratize access to advanced gestural control, benefiting artists, performers, instrument designers, and the academic research community.",
+        "student_name": "yashtiwari9182",
+        "code_url": "https://sat-mtl.gitlab.io/collaborations/google-summer-of-code/posts/2025-contributions/work-product-2025-yashtiwari9182-puara-analysis-processors/",
+        "proposal_id": "TMfBCGBn",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/skzm18oM"
+      },
+      {
+        "title": "A Responsive And Lightweight CLI For Managing Media Libraries",
+        "short_description": "Managing large libraries of media files efficiently is challenging, especially when dealing with diverse formats, extracting metadata, and performing...",
+        "description": "Managing large libraries of media files efficiently is challenging, especially when dealing with diverse formats, extracting metadata, and performing fast searches. This project aims to develop a lightweight CLI-based Library\nContent Manager that automatically scans directories, extracts metadata using FFmpeg/TagLib, and organises media\nfiles in an SQLite database for efficient querying.\n\nTo ensure speed, this tool will monitor directories in real-time (using inotify/ReadDirectoryChangesW), and to encourage personalisation, custom user-defined tagging, and fast search/filtering via structured queries will be implemented. Users can interact through a Command Line Interface or an IPC-based API, enabling integration with\nexternal tools. A dedicated plug-in will be developed to allow a seamless and intuitive integration with ossia score.\n\nPerformance is crucial and thus multithreading, batch processing, and optimised indexing strategies will be implemented to ensure responsiveness even when handling large libraries.\n\nExisting solutions are either GUI-heavy or lack structured querying but this tool offers the best of both worlds.\nTherefore, this tool will provide a robust and extensible solution for organisation of media files, making it a great\nhelp for artists, developers and creative professionals.",
+        "student_name": "zepredos",
+        "code_url": "https://sat-mtl.gitlab.io/collaborations/google-summer-of-code/posts/2025-contributions/work-product-zepredos-medialode-for-managing-media-libraries/",
+        "proposal_id": "VeyR3KSV",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/LDlr5P8f"
+      }
+    ]
   },
   "githubID": "NA",
   "activeOrg": false,

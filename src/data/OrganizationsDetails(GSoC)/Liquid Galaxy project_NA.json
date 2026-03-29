@@ -2,7 +2,7 @@
   "name": "Liquid Galaxy project",
   "image_url": "https://summerofcode.withgoogle.com/media/org/liquid-galaxy-project/idbd8hebl6j7ajxn-360.png",
   "image_background_color": "#ffffff",
-  "description": "We code immersive and interactive aps with G Earth",
+  "description": "We code immersive and interactive apps with GEarth",
   "url": "https://www.liquidgalaxy.eu",
   "category": [
     "Media",
@@ -62,7 +62,8 @@
     2022,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2016": [
@@ -624,7 +625,99 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/6q7HffsP"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "GeoVisionAI: AI-Powered Geospatial Storytelling on Liquid Galaxy",
+        "short_description": "GeoVisionAI aims to enhance the Liquid Galaxy platform by integrating AI to analyze and visualize geographic data in real-time. This project will...",
+        "description": "GeoVisionAI aims to enhance the Liquid Galaxy platform by integrating AI to analyze and visualize geographic data in real-time. This project will enable users to interact with the system through two main methods: text-based queries, where users can ask questions like “Show me deforestation trends in the Amazon” and receive relevant insights, and voice commands, allowing users to simply say, “Find recent earthquake in Japan,” with the system generating a response. The goal is to make geospatial data more accessible and understandable for all users, whether they are researchers, students, or policymakers. AI will provide contextual narratives, not only displaying data but also explaining its significance—like summarizing key temperature shifts when asked about climate change. Using the Web Speech API, users will be able to ask about locations and visualize geographic data on the Liquid Galaxy screens. To further enhance the experience, AI-generated audio soundscapes will simulate real-world scenarios, such as background wind and fire sounds for wildfire data. This project will provide a practical, interactive, and immersive way to gain insights from geospatial data and will be submitted to Google Labs for future development and evaluation.",
+        "student_name": "_Anishka_",
+        "code_url": "https://www.liquidgalaxy.eu/2025/08/work-product-submission-google-summer.html#geovision-ai",
+        "proposal_id": "dtR5XnTo",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/HQ7rA7b9"
+      },
+      {
+        "title": "RoboStream: Real-Time Telemetry & Vision Platform.",
+        "short_description": "RoboStream is a comprehensive solution designed to address the challenge of monitoring and visualizing complex robotic telemetry in real time. As...",
+        "description": "RoboStream is a comprehensive solution designed to address the challenge of monitoring and visualizing complex robotic telemetry in real time. As robots become increasingly integral to various industries, the need for an intuitive, immersive interface to track sensor data and live video streams grows ever more critical. Our project integrates advanced simulation tools and real robots with a responsive, cross-platform mobile application built in Flutter. This combination lets us capture, process, and transmit detailed telemetry directly into the immersive Liquid Galaxy multi-screen environment.",
+        "student_name": "alexbernaldo",
+        "code_url": "https://www.liquidgalaxy.eu/2025/08/work-product-submission-google-summer.html#lg-robostream",
+        "proposal_id": "oMrFQX4P",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/R7s4YYln"
+      },
+      {
+        "title": "Robotics Simulation For Liquid Galaxy",
+        "short_description": "The Robotics Simulation for Liquid Galaxy 2025 Project is an innovative addition to the ever growing Liquid Galaxy Ecosystem. This project aims to...",
+        "description": "The Robotics Simulation for Liquid Galaxy 2025 Project is an innovative addition to the ever growing Liquid Galaxy Ecosystem. This project aims to combine  multi-display synchronous visualization with advanced robotics simulation which is aimed to be controllable through a smartphone. This project bridges the powerful networking and visualization capabilities of Liquid Galaxy with cutting-edge robotic technologies such as ROS (Robot Operating System) and Gazebo, a popular simulation tool for testing and developing robotic systems in virtual environments.",
+        "student_name": "Debanjan Naskar",
+        "code_url": "https://www.liquidgalaxy.eu/2025/08/work-product-submission-google-summer.html?m=1#robotics-simulation",
+        "proposal_id": "12yxPOuh",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/GsIU6Hvc"
+      },
+      {
+        "title": "Kennedy Approach porting to Liquid Galaxy",
+        "short_description": "This project modernizes the classic Kennedy Approach air traffic control game by rebuilding it as a custom, multi-screen interactive experience on...",
+        "description": "This project modernizes the classic Kennedy Approach air traffic control game by rebuilding it as a custom, multi-screen interactive experience on the Liquid Galaxy platform. Rather than emulating the original Commodore 64 version, the game is being ported from scratch, allowing for enhanced features and seamless integration across multiple synchronized displays.\n\nThe system is designed around a master-slave architecture, where the master node handles game logic and display rendering. The visual output is split and distributed to multiple slave nodes on the network, creating a panoramic and immersive gameplay view across multiple screens using the Liquid Galaxy setup.\n\nPlayers interact with the game using a mobile controller app built in Flutter, which communicates with the master system over a local network. A Node.js backend on the master node manages incoming control commands via WebSockets/Socket.IO, ensuring smooth, real-time interactivity.\n\nOptional UI dashboards built in React or Next.js can be used for monitoring system status, visualizing live data, or enabling multiplayer interaction.",
+        "student_name": "DEV T GADANI",
+        "code_url": "https://www.liquidgalaxy.eu/2025/08/work-product-submission-google-summer.html#lg-airport-controller",
+        "proposal_id": "UMm28lLk",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/aTEtH65S"
+      },
+      {
+        "title": "Google Research - Open Buildings Data Visualization",
+        "short_description": "The Open Buildings Visualization project aims to create a geospatial visualization platform that synergistically integrates Google Earth Engine (GEE)...",
+        "description": "The Open Buildings Visualization project aims to create a geospatial visualization platform that synergistically integrates Google Earth Engine (GEE) and Liquid Galaxy (LG) through a Flutter-based mobile application. The project will provide an interactive, high-performance interface for navigating and analyzing building footprint data at scale. Users will be able to select specific regions through a dynamic, grid-based map, which will trigger real-time data retrieval from GEE. The geospatial data will be processed and transmitted to LG through SSH, where it will be visualized through KML overlays, offering an immersive, multi-screen 3D experience.",
+        "student_name": "JaivardhanShukla",
+        "code_url": "https://www.liquidgalaxy.eu/2025/08/work-product-submission-google-summer.html#open-buildings",
+        "proposal_id": "5JRh3yOk",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/rCU0P9NY"
+      },
+      {
+        "title": "Voice-Driven Robot Goal Assignment System with Liquid Galaxy",
+        "short_description": "This project proposes developing a robot control system through the Liquid Galaxy system. Integrating immersive visualization with speech recognition...",
+        "description": "This project proposes developing a robot control system through the Liquid Galaxy system. Integrating immersive visualization with speech recognition and robotics allows users to control and monitor the robot’s behavior in real-time.\n\nThe system enables human-robot interaction through English voice commands, which are transcribed, interpreted, and converted into instructions that a robot can execute. \n\nThe architecture involves different AI techniques, employing Speech-to-Text, Large Language Models, and Decision-Making algorithms to define the set of actions that the robot will execute.",
+        "student_name": "JavierMancho",
+        "code_url": "https://www.liquidgalaxy.eu/2025/08/work-product-submission-google-summer.html#voice-driven-robot",
+        "proposal_id": "cAtfhuBO",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/gdisJu5n"
+      },
+      {
+        "title": "Liquid Galaxy Master Web and Flutter Application",
+        "short_description": "The GSoC program provides students from around the world with the opportunity to work on their own projects with the help of experienced mentors....",
+        "description": "The GSoC program provides students from around the world with the opportunity to work on their own projects with the help of experienced mentors. However, new students who may not be familiar with how the Liquid Galaxy works may have difficulties understanding how to structure their code, how their project should look like for the average user, how many screens their application should have, etc.\nThe aim of this project is to bridge this gap by creating a comprehensive master document whose intention is to be used as a structured guide for future GSoC students. This will provide them with a solid idea of where to start, how the code structure should look like, coding mistakes to avoid and how to do it, useful tips, etc. This document will be elaborated by reviewing the code of multiple past GSoC projects and finding the common aspects between them to create a structure that future students can follow. The goal is that this project will act as both a coding guide and a proposal reference, making sure that future students can achieve their own expectations.\nThis project will not require deep technical expertise in a particular programming language, but it will be necessary a basic understanding of how coding languages and GitHub work. The main challenge lies in being able to synthesize information from different sources (and different codes) to be able to structure it into a coherent, comprehensive and useful guide.",
+        "student_name": "Lucia Fernandez",
+        "code_url": "https://www.liquidgalaxy.eu/2025/08/work-product-submission-google-summer.html#lg-master-app",
+        "proposal_id": "D1i4p8Ip",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/tyU5Ps7c"
+      },
+      {
+        "title": "Marc Bañeres Farrán-DATA Spaces FrontEnd For Liquid Galaxy-GSoC2025",
+        "short_description": "DATA Spaces FrontEnd For Liquid Galaxy is a project designed to enhance data visualization using Liquid Galaxy, an immersive multi-screen system....",
+        "description": "DATA Spaces FrontEnd For Liquid Galaxy is a project designed to enhance data visualization using Liquid Galaxy, an immersive multi-screen system. This project will provide an interactive and scalable solution for displaying real-time or synthetic data retrieved from Fiware. The main goal is to create a Flutter App that allows users to select, filter, and visualize urban and environmental data on Liquid Galaxy.",
+        "student_name": "Marc Bañeres Farrán",
+        "code_url": "https://www.liquidgalaxy.eu/2025/08/work-product-submission-google-summer.html#data-spaces",
+        "proposal_id": "c9xfqB7G",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/LJbiQZL7"
+      },
+      {
+        "title": "Martian Climate Dashboard",
+        "short_description": "The project aims to provide real-time and historical climate data visualization from Mars on Liquid Galaxy through an engaging and interactive...",
+        "description": "The project aims to provide real-time and historical climate data visualization from Mars \n on Liquid Galaxy through an engaging and interactive experience. A Flutter-based mobile app will retrieve and process atmospheric data from the Mars Climate Database (MCD), presenting it with compelling visualizations on Liquid Galaxy.",
+        "student_name": "Mohit_Sharma",
+        "code_url": "https://www.liquidgalaxy.eu/2025/08/work-product-submission-google-summer.html#martian-climate",
+        "proposal_id": "gfbLdGxK",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/t0R7jKR6"
+      },
+      {
+        "title": "Eco Explorer for Liquid Galaxy",
+        "short_description": "This project provides a master interface that showcases a dashboard of expansive forests around the globe and allows users to explore them. Its...",
+        "description": "This project provides a master interface that showcases a dashboard of expansive forests around the globe and allows users to explore them. Its primary aim is to create an interactive and immersive geospatial visualization system that allows users to explore in-depth major forested land masses affected by recent environmental changes.\nThe application exploits the Liquid Galaxy rig to achieve its visualization while gliding through a smooth user experience.",
+        "student_name": "Shuvam Swapnil Dash",
+        "code_url": "https://www.liquidgalaxy.eu/2025/08/work-product-submission-google-summer.html#eco-explorer",
+        "proposal_id": "6yKRizrU",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/5LWWagWD"
+      }
+    ],
+    "2026": []
   },
   "githubID": "NA",
   "activeOrg": false,

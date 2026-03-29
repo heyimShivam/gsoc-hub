@@ -10,14 +10,17 @@
   "topics": [
     "devops",
     "devtools",
-    "open-science"
+    "open-science",
+    "web",
+    "ai"
   ],
   "technologies": [
     "python",
     "javascript",
     "c++",
     "docker",
-    "AST"
+    "AST",
+    "llvm"
   ],
   "irc_channel": "https://opensciencelabs.org/discord",
   "contact_email": null,
@@ -26,10 +29,49 @@
   "blog_url": "https://opensciencelabs.org/blog/",
   "facebook_url": null,
   "year": [
-    2025
+    2025,
+    2026
   ],
   "projects": {
-    "2025": []
+    "2025": [
+      {
+        "title": "Language Server Protocol for Makim’s YAML Configuration",
+        "short_description": "This project will enhance Makim by implementing Language Server Protocol (LSP) support for its YAML configuration files. This will introduce features...",
+        "description": "This project will enhance Makim by implementing Language Server Protocol (LSP) support for its YAML configuration files. This will introduce features like autocompletion, syntax validation, hover documentation, and custom commands directly within code editors. The project will deliver a Language Server and a VS Code extension, significantly improving the developer experience and making Makim more user-friendly.",
+        "student_name": "Ansh Arora",
+        "code_url": "https://github.com/ansh808s/GSoC-2025/blob/main/final-report.md",
+        "proposal_id": "Rrvqqsj6",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/OPlaxDeq"
+      },
+      {
+        "title": "Alpha One And Only Classroom",
+        "short_description": "What good is a revolutionary learning platform if teachers still have to juggle Zoom, docs, and third-party whiteboards just to conduct a class?...",
+        "description": "What good is a revolutionary learning platform if teachers still have to juggle Zoom, docs, and third-party whiteboards just to conduct a class? After working on Alpha One Labs for long, I’ve realised that with all the current components like courses, videos, blogs, quizzes…. The one component that is missing is indeed the most important one - A Virtual Classroom.  (and what if this virtual classroom becomes a 2D user controlled experience?)\n\nI am going to implement a 2D user controlled classroom experience. A game like interface where the user can go around the classroom, take seats with their friends, interact with multiple areas of the class, like the whiteboard, assignments table, breakout rooms, working on assignments alone or as teams, and a lot more.\n\nAlong with this im building an AI assistant available throughout the website.\nThis AI assistant will be your guide for any feature at Alpha One. The need of this has increased with the number of features at Alpha One.\nAny query regarding the working of the website will be resolved instantly.\n\nat the end of the project we will have:\nA 2D user-controlled classroom experience with integration of multiple existing features at Alpha One and new features, which will also act as independent features for the platform.\nAn AI assistant available on all pages of Alpha One, resolving any query regarding the website instantly.",
+        "student_name": "ishaan-arora",
+        "code_url": "https://ishaanaroragoogle-summer-of-code.vercel.app",
+        "proposal_id": "tpf7TGGv",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/eeyUM55Z"
+      },
+      {
+        "title": "Enhanced AI OCR Extraction Pipeline for Scientific Literature",
+        "short_description": "This project creates a comprehensive pipeline for extracting text and complex tables from scientific literature PDFs. By combining PyMuPDF,...",
+        "description": "This project creates a comprehensive pipeline for extracting text and complex tables from scientific literature PDFs. By combining PyMuPDF, specialized table detection models, and Vision-Language Models (VLMs), the system will significantly improve accuracy over traditional OCR methods while maintaining cost efficiency. The pipeline allows users to upload multiple research papers, select their preferred extraction method, and receive structured markdown outputs with preserved document hierarchy. A side-by-side interface will enable human verification and correction of extraction results. The solution will be optimized for lightweight deployment on platforms like Hugging Face Spaces, making it accessible to researchers worldwide while focusing primarily on complex table formats common in life science research.",
+        "student_name": "Priyankesh",
+        "code_url": "https://www.extralit.ai/posts/enhanced-ai-ocr-extraction-pipeline",
+        "proposal_id": "vdOkB8tx",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/npTUA7Qr"
+      },
+      {
+        "title": "Add Docker Swarm Support to Sugar",
+        "short_description": "This project will enable Sugar users to manage Docker Swarm clusters directly through Sugar’s command-line interface (CLI). These enhancements will...",
+        "description": "This project will enable Sugar users to manage Docker Swarm clusters directly through\nSugar’s command-line interface (CLI). These enhancements will streamline container orchestration workflows and make Sugar a more versatile tool for developers transitioning from development to production environments. New commands will enable users to perform tasks such as initializing, joining, creating, scaling, updating, and inspecting Swarm services with simplified Docker Swarm Node and Secrets Management.",
+        "student_name": "Sai Sanjay Kottakota",
+        "code_url": "https://sanjay7178.github.io/blog/posts/gsoc-25-final-report/",
+        "proposal_id": "rppMc0tR",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/eK7R0d7E"
+      }
+    ],
+    "2026": []
   },
   "githubID": "OpenScienceLabs",
   "repositories": [
@@ -41,9 +83,29 @@
       "html_url": "https://github.com/OpenScienceLabs/opensciencelabs.github.io",
       "description": "Open Science Labs we page files",
       "language": "Jupyter Notebook",
-      "stargazers_count": 6,
-      "forks_count": 25,
-      "open_issues_count": 10,
+      "stargazers_count": 17,
+      "forks_count": 54,
+      "open_issues_count": 19,
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "topics": []
+    },
+    {
+      "id": 765464521,
+      "node_id": "R_kgDOLaAPyQ",
+      "name": "gsoc",
+      "full_name": "OpenScienceLabs/gsoc",
+      "html_url": "https://github.com/OpenScienceLabs/gsoc",
+      "description": null,
+      "language": null,
+      "stargazers_count": 2,
+      "forks_count": 2,
+      "open_issues_count": 0,
       "license": {
         "key": "bsd-3-clause",
         "name": "BSD 3-Clause \"New\" or \"Revised\" License",
@@ -62,22 +124,22 @@
       "description": "A centralized platform with a searchable database and news feed could greatly improve the discoverability of the open source ecosystem. ",
       "language": "CSS",
       "stargazers_count": 3,
-      "forks_count": 2,
-      "open_issues_count": 0,
+      "forks_count": 4,
+      "open_issues_count": 3,
       "license": null,
       "topics": []
     },
     {
       "id": 420562821,
       "node_id": "R_kgDOGRFHhQ",
-      "name": "osl-arts",
-      "full_name": "OpenScienceLabs/osl-arts",
-      "html_url": "https://github.com/OpenScienceLabs/osl-arts",
+      "name": "osl-brand",
+      "full_name": "OpenScienceLabs/osl-brand",
+      "html_url": "https://github.com/OpenScienceLabs/osl-brand",
       "description": null,
       "language": null,
       "stargazers_count": 1,
       "forks_count": 0,
-      "open_issues_count": 0,
+      "open_issues_count": 1,
       "license": {
         "key": "bsd-3-clause",
         "name": "BSD 3-Clause \"New\" or \"Revised\" License",
@@ -139,33 +201,13 @@
       "language": null,
       "stargazers_count": 2,
       "forks_count": 2,
-      "open_issues_count": 0,
+      "open_issues_count": 1,
       "license": {
         "key": "mit",
         "name": "MIT License",
         "spdx_id": "MIT",
         "url": "https://api.github.com/licenses/mit",
         "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 765464521,
-      "node_id": "R_kgDOLaAPyQ",
-      "name": "gsoc",
-      "full_name": "OpenScienceLabs/gsoc",
-      "html_url": "https://github.com/OpenScienceLabs/gsoc",
-      "description": null,
-      "language": null,
-      "stargazers_count": 0,
-      "forks_count": 2,
-      "open_issues_count": 1,
-      "license": {
-        "key": "bsd-3-clause",
-        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
-        "spdx_id": "BSD-3-Clause",
-        "url": "https://api.github.com/licenses/bsd-3-clause",
-        "node_id": "MDc6TGljZW5zZTU="
       },
       "topics": []
     },
@@ -178,7 +220,7 @@
       "description": null,
       "language": null,
       "stargazers_count": 2,
-      "forks_count": 0,
+      "forks_count": 1,
       "open_issues_count": 0,
       "license": {
         "key": "bsd-3-clause",
@@ -233,7 +275,7 @@
       "language": null,
       "stargazers_count": 0,
       "forks_count": 0,
-      "open_issues_count": 0,
+      "open_issues_count": 1,
       "license": {
         "key": "bsd-3-clause",
         "name": "BSD 3-Clause \"New\" or \"Revised\" License",
@@ -251,7 +293,7 @@
       "html_url": "https://github.com/OpenScienceLabs/opensciencelabs.github.io-archive",
       "description": null,
       "language": "Jupyter Notebook",
-      "stargazers_count": 5,
+      "stargazers_count": 4,
       "forks_count": 11,
       "open_issues_count": 22,
       "license": null,
@@ -359,7 +401,7 @@
       "node_id": "MDQ6VXNlcjUyMDk3NTc=",
       "avatar_url": "https://avatars.githubusercontent.com/u/5209757?v=4",
       "html_url": "https://github.com/xmnlab",
-      "contributions": 101
+      "contributions": 5
     },
     {
       "login": "EverVino",
@@ -370,20 +412,20 @@
       "contributions": 65
     },
     {
-      "login": "investor-uyah",
-      "id": 97167651,
-      "node_id": "U_kgDOBcqpIw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/97167651?v=4",
-      "html_url": "https://github.com/investor-uyah",
-      "contributions": 12
-    },
-    {
       "login": "Anavelyz",
       "id": 42752529,
       "node_id": "MDQ6VXNlcjQyNzUyNTI5",
       "avatar_url": "https://avatars.githubusercontent.com/u/42752529?v=4",
       "html_url": "https://github.com/Anavelyz",
       "contributions": 4
+    },
+    {
+      "login": "investor-uyah",
+      "id": 97167651,
+      "node_id": "U_kgDOBcqpIw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/97167651?v=4",
+      "html_url": "https://github.com/investor-uyah",
+      "contributions": 12
     },
     {
       "login": "DanielaIgRo",
@@ -410,6 +452,22 @@
       "contributions": 5
     },
     {
+      "login": "sanjay7178",
+      "id": 97831658,
+      "node_id": "U_kgDOBdTK6g",
+      "avatar_url": "https://avatars.githubusercontent.com/u/97831658?v=4",
+      "html_url": "https://github.com/sanjay7178",
+      "contributions": 4
+    },
+    {
+      "login": "whitewolf2000ani",
+      "id": 116947102,
+      "node_id": "U_kgDOBvh4ng",
+      "avatar_url": "https://avatars.githubusercontent.com/u/116947102?v=4",
+      "html_url": "https://github.com/whitewolf2000ani",
+      "contributions": 3
+    },
+    {
       "login": "apkrelling",
       "id": 74330736,
       "node_id": "MDQ6VXNlcjc0MzMwNzM2",
@@ -418,11 +476,43 @@
       "contributions": 3
     },
     {
+      "login": "ansh808s",
+      "id": 140071186,
+      "node_id": "U_kgDOCFlREg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/140071186?v=4",
+      "html_url": "https://github.com/ansh808s",
+      "contributions": 2
+    },
+    {
+      "login": "yuvimittal",
+      "id": 128018763,
+      "node_id": "U_kgDOB6FpSw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/128018763?v=4",
+      "html_url": "https://github.com/yuvimittal",
+      "contributions": 2
+    },
+    {
       "login": "Satarupa22-SD",
       "id": 84276219,
       "node_id": "MDQ6VXNlcjg0Mjc2MjE5",
       "avatar_url": "https://avatars.githubusercontent.com/u/84276219?v=4",
       "html_url": "https://github.com/Satarupa22-SD",
+      "contributions": 2
+    },
+    {
+      "login": "Aaqilyousuf",
+      "id": 118057216,
+      "node_id": "U_kgDOBwlpAA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/118057216?v=4",
+      "html_url": "https://github.com/Aaqilyousuf",
+      "contributions": 2
+    },
+    {
+      "login": "A1L13N",
+      "id": 193832434,
+      "node_id": "U_kgDOC42l8g",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193832434?v=4",
+      "html_url": "https://github.com/A1L13N",
       "contributions": 2
     },
     {
@@ -450,6 +540,14 @@
       "contributions": 1
     },
     {
+      "login": "etk18",
+      "id": 194078503,
+      "node_id": "U_kgDOC5FnJw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/194078503?v=4",
+      "html_url": "https://github.com/etk18",
+      "contributions": 1
+    },
+    {
       "login": "faithhunja",
       "id": 19746871,
       "node_id": "MDQ6VXNlcjE5NzQ2ODcx",
@@ -463,6 +561,14 @@
       "node_id": "U_kgDOBZ6T0w",
       "avatar_url": "https://avatars.githubusercontent.com/u/94278611?v=4",
       "html_url": "https://github.com/jgyasu",
+      "contributions": 1
+    },
+    {
+      "login": "JonnyTran",
+      "id": 4750391,
+      "node_id": "MDQ6VXNlcjQ3NTAzOTE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4750391?v=4",
+      "html_url": "https://github.com/JonnyTran",
       "contributions": 1
     },
     {
@@ -487,6 +593,14 @@
       "node_id": "MDQ6VXNlcjc0MDU1MTAy",
       "avatar_url": "https://avatars.githubusercontent.com/u/74055102?v=4",
       "html_url": "https://github.com/Saransh-cpp",
+      "contributions": 1
+    },
+    {
+      "login": "Shivampal157",
+      "id": 183861316,
+      "node_id": "U_kgDOCvWARA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/183861316?v=4",
+      "html_url": "https://github.com/Shivampal157",
       "contributions": 1
     },
     {

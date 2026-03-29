@@ -65,10 +65,16 @@
       "html_url": "https://github.com/stratosphereips/StratosphereLinuxIPS",
       "description": "Slips, a free software behavioral Python intrusion prevention system (IDS/IPS) that uses machine learning to detect malicious behaviors in the network traffic. Stratosphere Laboratory, AIC, FEL, CVUT in Prague.",
       "language": "Python",
-      "stargazers_count": 775,
-      "forks_count": 187,
-      "open_issues_count": 397,
-      "license": null,
+      "stargazers_count": 863,
+      "forks_count": 195,
+      "open_issues_count": 411,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
       "topics": [
         "ai",
         "docker",
@@ -88,12 +94,32 @@
       ]
     },
     {
-      "id": 985833346,
-      "node_id": "R_kgDOOsKfgg",
-      "name": "ml-explorer",
-      "full_name": "stratosphereips/ml-explorer",
-      "html_url": "https://github.com/stratosphereips/ml-explorer",
-      "description": "A Streamlit app to explore classification and anomaly-detection pipelines on synthetic datasets! 🧪",
+      "id": 1078214861,
+      "node_id": "R_kgDOQERAzQ",
+      "name": "Stratosphere-ML-Trained-Models",
+      "full_name": "stratosphereips/Stratosphere-ML-Trained-Models",
+      "html_url": "https://github.com/stratosphereips/Stratosphere-ML-Trained-Models",
+      "description": "Repo of ML model files, preprocessing model binaries. The models here can be used with Slips ML modules",
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "topics": []
+    },
+    {
+      "id": 1113835368,
+      "node_id": "R_kgDOQmPHaA",
+      "name": "Slips-ML-Training-Pipeline",
+      "full_name": "stratosphereips/Slips-ML-Training-Pipeline",
+      "html_url": "https://github.com/stratosphereips/Slips-ML-Training-Pipeline",
+      "description": "Repository for a machine-learning pipeline, which trains and evaluates machine learning models on zeek logs, is easily extendable and compatible with slips",
       "language": "Python",
       "stargazers_count": 0,
       "forks_count": 0,
@@ -115,9 +141,9 @@
       "html_url": "https://github.com/stratosphereips/NetSecGameAgents",
       "description": null,
       "language": "Python",
-      "stargazers_count": 6,
-      "forks_count": 6,
-      "open_issues_count": 6,
+      "stargazers_count": 8,
+      "forks_count": 9,
+      "open_issues_count": 9,
       "license": {
         "key": "gpl-2.0",
         "name": "GNU General Public License v2.0",
@@ -128,6 +154,130 @@
       "topics": []
     },
     {
+      "id": 937073069,
+      "node_id": "R_kgDON9qZrQ",
+      "name": "agent-behavior-analysis-toolkit",
+      "full_name": "stratosphereips/agent-behavior-analysis-toolkit",
+      "html_url": "https://github.com/stratosphereips/agent-behavior-analysis-toolkit",
+      "description": "Agent Trajectory Analysis Toolkit",
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 21,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 791860691,
+      "node_id": "R_kgDOLzLV0w",
+      "name": "stratocyberlab",
+      "full_name": "stratosphereips/stratocyberlab",
+      "html_url": "https://github.com/stratosphereips/stratocyberlab",
+      "description": "A Cyber Range to learn hacking (both attacking & defending) techniques locally in your computer",
+      "language": "Python",
+      "stargazers_count": 131,
+      "forks_count": 45,
+      "open_issues_count": 6,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "topics": [
+        "attack",
+        "cvut",
+        "cyber-range",
+        "cyber-security",
+        "cyberrange",
+        "cybersecurity",
+        "defense",
+        "education",
+        "hacking",
+        "infosec",
+        "introduction-to-security",
+        "master-class",
+        "playground"
+      ]
+    },
+    {
+      "id": 59090367,
+      "node_id": "MDEwOlJlcG9zaXRvcnk1OTA5MDM2Nw==",
+      "name": "SlipsWeb",
+      "full_name": "stratosphereips/SlipsWeb",
+      "html_url": "https://github.com/stratosphereips/SlipsWeb",
+      "description": "A web interface for Stratosphere",
+      "language": "Python",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "open_issues_count": 3,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 660123360,
+      "node_id": "R_kgDOJ1iu4A",
+      "name": "talks",
+      "full_name": "stratosphereips/talks",
+      "html_url": "https://github.com/stratosphereips/talks",
+      "description": "A repository of slides and artifacts of some of our talks",
+      "language": null,
+      "stargazers_count": 7,
+      "forks_count": 1,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": [
+        "cybersecurity",
+        "free-software",
+        "machine-learning",
+        "talks-and-papers"
+      ]
+    },
+    {
+      "id": 1185586501,
+      "node_id": "R_kgDORqqdRQ",
+      "name": "audit-ssh-server",
+      "full_name": "stratosphereips/audit-ssh-server",
+      "html_url": "https://github.com/stratosphereips/audit-ssh-server",
+      "description": "A program to audit the security of remote ssh servers",
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 1,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "topics": []
+    },
+    {
+      "id": 1078206891,
+      "node_id": "R_kgDOQEQhqw",
+      "name": "aracne",
+      "full_name": "stratosphereips/aracne",
+      "html_url": "https://github.com/stratosphereips/aracne",
+      "description": "A 100% autonomous AI agent that attacks, defends, admins and acts on SSH connections",
+      "language": "Python",
+      "stargazers_count": 11,
+      "forks_count": 4,
+      "open_issues_count": 4,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "topics": [
+        "agents",
+        "security"
+      ]
+    },
+    {
       "id": 506661683,
       "node_id": "R_kgDOHjMLMw",
       "name": "NetSecGame",
@@ -135,9 +285,9 @@
       "html_url": "https://github.com/stratosphereips/NetSecGame",
       "description": "An environment simulation  for networks security tasks for development and testing AI based agents. Part of AI Dojo project",
       "language": "Jupyter Notebook",
-      "stargazers_count": 45,
-      "forks_count": 9,
-      "open_issues_count": 30,
+      "stargazers_count": 60,
+      "forks_count": 12,
+      "open_issues_count": 36,
       "license": {
         "key": "gpl-2.0",
         "name": "GNU General Public License v2.0",
@@ -151,12 +301,72 @@
       ]
     },
     {
+      "id": 916818068,
+      "node_id": "R_kgDONqWIlA",
+      "name": "dns4eu-kafka-to-clickhouse-pipeline",
+      "full_name": "stratosphereips/dns4eu-kafka-to-clickhouse-pipeline",
+      "html_url": "https://github.com/stratosphereips/dns4eu-kafka-to-clickhouse-pipeline",
+      "description": null,
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "topics": []
+    },
+    {
       "id": 950663383,
       "node_id": "R_kgDOOKn41w",
       "name": "Slips-tools",
       "full_name": "stratosphereips/Slips-tools",
       "html_url": "https://github.com/stratosphereips/Slips-tools",
       "description": "Tools and scripts related to Slips used for our testing and evaluation.",
+      "language": "HTML",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 1,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "topics": []
+    },
+    {
+      "id": 1169446684,
+      "node_id": "R_kgDORbRXHA",
+      "name": "strato-mcp-google-calendar",
+      "full_name": "stratosphereips/strato-mcp-google-calendar",
+      "html_url": "https://github.com/stratosphereips/strato-mcp-google-calendar",
+      "description": "A Python MCP server that exposes Google Calendar as tools for Coding Agents",
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 6,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "topics": []
+    },
+    {
+      "id": 1169972802,
+      "node_id": "R_kgDORbxeQg",
+      "name": "strato-mcp-gdocs-suite",
+      "full_name": "stratosphereips/strato-mcp-gdocs-suite",
+      "html_url": "https://github.com/stratosphereips/strato-mcp-gdocs-suite",
+      "description": "A Python MCP server that exposes Google Docs, Google Sheets, and Google Slides as tools for Coding Agents",
       "language": "Python",
       "stargazers_count": 0,
       "forks_count": 0,
@@ -168,69 +378,6 @@
         "url": "https://api.github.com/licenses/gpl-2.0",
         "node_id": "MDc6TGljZW5zZTg="
       },
-      "topics": []
-    },
-    {
-      "id": 548541864,
-      "node_id": "R_kgDOILIVqA",
-      "name": "security-datasets-for-testing",
-      "full_name": "stratosphereips/security-datasets-for-testing",
-      "html_url": "https://github.com/stratosphereips/security-datasets-for-testing",
-      "description": "A set of security datasets for testing of tools and algorithms",
-      "language": null,
-      "stargazers_count": 7,
-      "forks_count": 1,
-      "open_issues_count": 0,
-      "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
-      },
-      "topics": [
-        "cybersecurity",
-        "dataset",
-        "infosec",
-        "infosectools",
-        "netflow",
-        "network-security",
-        "security",
-        "testing"
-      ]
-    },
-    {
-      "id": 971010214,
-      "node_id": "R_kgDOOeBwpg",
-      "name": "book_whisperer",
-      "full_name": "stratosphereips/book_whisperer",
-      "html_url": "https://github.com/stratosphereips/book_whisperer",
-      "description": "A book whisperer for you to recommend what to read from a Calibre DB",
-      "language": "Python",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
-      },
-      "topics": []
-    },
-    {
-      "id": 962199358,
-      "node_id": "R_kgDOOVn_Pg",
-      "name": "dns4eu-bayes-inference",
-      "full_name": "stratosphereips/dns4eu-bayes-inference",
-      "html_url": "https://github.com/stratosphereips/dns4eu-bayes-inference",
-      "description": "An analysis of the domains in the DNS queries implementing bayes estimation of probabilities to reduce FP",
-      "language": "Python",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
       "topics": []
     },
     {
@@ -254,35 +401,15 @@
       "topics": []
     },
     {
-      "id": 929435424,
-      "node_id": "R_kgDON2YPIA",
-      "name": "terminal-plotter",
-      "full_name": "stratosphereips/terminal-plotter",
-      "html_url": "https://github.com/stratosphereips/terminal-plotter",
-      "description": "Terminal Plotter is script that reads numeric data from a file (by default `data.txt`) and displays it as a live-updating plot in the terminal using [plotext](https://pypi.org/project/plotext/). The plot shows a moving time window (TW) of the data, and you can interactively adjust the window's size and position using keyboard controls.",
+      "id": 1065960115,
+      "node_id": "R_kgDOP4lCsw",
+      "name": "RedMorph",
+      "full_name": "stratosphereips/RedMorph",
+      "html_url": "https://github.com/stratosphereips/RedMorph",
+      "description": "Characterizing the Challenges of Attacker Adaptation in Realistic Networks",
       "language": "Python",
       "stargazers_count": 1,
-      "forks_count": 2,
-      "open_issues_count": 0,
-      "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
-      },
-      "topics": []
-    },
-    {
-      "id": 805060398,
-      "node_id": "R_kgDOL_w_Lg",
-      "name": "VelLMes-AI-Deception-Framework",
-      "full_name": "stratosphereips/VelLMes-AI-Deception-Framework",
-      "html_url": "https://github.com/stratosphereips/VelLMes-AI-Deception-Framework",
-      "description": "Interactive, dynamic, and realistic LLM honeypots",
-      "language": "Python",
-      "stargazers_count": 48,
-      "forks_count": 8,
+      "forks_count": 0,
       "open_issues_count": 1,
       "license": {
         "key": "gpl-2.0",
@@ -291,13 +418,7 @@
         "url": "https://api.github.com/licenses/gpl-2.0",
         "node_id": "MDc6TGljZW5zZTg="
       },
-      "topics": [
-        "deception",
-        "honeypots",
-        "large-language-models",
-        "llm",
-        "security"
-      ]
+      "topics": []
     },
     {
       "id": 836238699,
@@ -320,287 +441,16 @@
       "topics": []
     },
     {
-      "id": 493572651,
-      "node_id": "R_kgDOHWtSKw",
-      "name": "iris",
-      "full_name": "stratosphereips/iris",
-      "html_url": "https://github.com/stratosphereips/iris",
-      "description": "Iris - P2P System for Confidential Sharing of Threat Intelligence and Collaborative Defense for SLIPS",
-      "language": "Go",
-      "stargazers_count": 1,
-      "forks_count": 4,
-      "open_issues_count": 0,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 791860691,
-      "node_id": "R_kgDOLzLV0w",
-      "name": "stratocyberlab",
-      "full_name": "stratosphereips/stratocyberlab",
-      "html_url": "https://github.com/stratosphereips/stratocyberlab",
-      "description": "Stratosphere Cyber Range to learn cybersecurity attacking and defending techniques locally in your computer",
+      "id": 98189946,
+      "node_id": "MDEwOlJlcG9zaXRvcnk5ODE4OTk0Ng==",
+      "name": "Ludus-Volumeter",
+      "full_name": "stratosphereips/Ludus-Volumeter",
+      "html_url": "https://github.com/stratosphereips/Ludus-Volumeter",
+      "description": "uCollect plugin for measuring pkts/bytes in each port",
       "language": "Python",
-      "stargazers_count": 69,
-      "forks_count": 24,
-      "open_issues_count": 7,
-      "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
-      },
-      "topics": [
-        "attack",
-        "cvut",
-        "cyber-range",
-        "cyber-security",
-        "cyberrange",
-        "cybersecurity",
-        "defense",
-        "education",
-        "infosec",
-        "introduction-to-security",
-        "master-class",
-        "playground"
-      ]
-    },
-    {
-      "id": 669415701,
-      "node_id": "R_kgDOJ-Z5FQ",
-      "name": "shelLM",
-      "full_name": "stratosphereips/shelLM",
-      "html_url": "https://github.com/stratosphereips/shelLM",
-      "description": "Code for shelLM tool",
-      "language": "Python",
-      "stargazers_count": 51,
-      "forks_count": 7,
-      "open_issues_count": 2,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 916818068,
-      "node_id": "R_kgDONqWIlA",
-      "name": "dns4eu-kafka-to-clickhouse-pipeline",
-      "full_name": "stratosphereips/dns4eu-kafka-to-clickhouse-pipeline",
-      "html_url": "https://github.com/stratosphereips/dns4eu-kafka-to-clickhouse-pipeline",
-      "description": null,
-      "language": "Python",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
-      },
-      "topics": []
-    },
-    {
-      "id": 509147494,
-      "node_id": "R_kgDOHlj5Zg",
-      "name": "feel_project",
-      "full_name": "stratosphereips/feel_project",
-      "html_url": "https://github.com/stratosphereips/feel_project",
-      "description": "Code repository for FEEL project",
-      "language": "Jupyter Notebook",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
-      },
-      "topics": []
-    },
-    {
-      "id": 493593267,
-      "node_id": "R_kgDOHWuisw",
-      "name": "fides",
-      "full_name": "stratosphereips/fides",
-      "html_url": "https://github.com/stratosphereips/fides",
-      "description": "Fides: A Trust Model for Collaborative Defense in Highly Adversarial Networks",
-      "language": "Python",
-      "stargazers_count": 1,
+      "stargazers_count": 2,
       "forks_count": 1,
       "open_issues_count": 0,
-      "license": {
-        "key": "agpl-3.0",
-        "name": "GNU Affero General Public License v3.0",
-        "spdx_id": "AGPL-3.0",
-        "url": "https://api.github.com/licenses/agpl-3.0",
-        "node_id": "MDc6TGljZW5zZTE="
-      },
-      "topics": []
-    },
-    {
-      "id": 662212329,
-      "node_id": "R_kgDOJ3iO6Q",
-      "name": "IDPS-Comparison-Tool",
-      "full_name": "stratosphereips/IDPS-Comparison-Tool",
-      "html_url": "https://github.com/stratosphereips/IDPS-Comparison-Tool",
-      "description": null,
-      "language": "Python",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "open_issues_count": 1,
-      "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
-      },
-      "topics": []
-    },
-    {
-      "id": 761203135,
-      "node_id": "R_kgDOLV8Jvw",
-      "name": "IDPS-Comparison-Tool-Scripts",
-      "full_name": "stratosphereips/IDPS-Comparison-Tool-Scripts",
-      "html_url": "https://github.com/stratosphereips/IDPS-Comparison-Tool-Scripts",
-      "description": "Contains the scripts needed to extract the information used by our IDPS comparison tool",
-      "language": "Python",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
-      },
-      "topics": []
-    },
-    {
-      "id": 909773058,
-      "node_id": "R_kgDONjoJAg",
-      "name": "llm-log-analyzer",
-      "full_name": "stratosphereips/llm-log-analyzer",
-      "html_url": "https://github.com/stratosphereips/llm-log-analyzer",
-      "description": "A small python file that uses a local LLM, such as ollama, to analyze text files given a prompt. Designed for log files",
-      "language": "Python",
-      "stargazers_count": 6,
-      "forks_count": 1,
-      "open_issues_count": 0,
-      "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
-      },
-      "topics": []
-    },
-    {
-      "id": 832741003,
-      "node_id": "R_kgDOMaKeiw",
-      "name": "dataset-hornet-tools",
-      "full_name": "stratosphereips/dataset-hornet-tools",
-      "html_url": "https://github.com/stratosphereips/dataset-hornet-tools",
-      "description": "Repository to host the tools used to process and analyze the data for the Stratosphere CTU Hornet datasets.",
-      "language": "Python",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
-      },
-      "topics": []
-    },
-    {
-      "id": 667144164,
-      "node_id": "R_kgDOJ8PP5A",
-      "name": "collectress",
-      "full_name": "stratosphereips/collectress",
-      "html_url": "https://github.com/stratosphereips/collectress",
-      "description": "Collectress (/kəˈlɛktɹɪs/) is a Python tool designed for downloading web data feeds periodically and consistently. ",
-      "language": "Python",
-      "stargazers_count": 5,
-      "forks_count": 0,
-      "open_issues_count": 1,
-      "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
-      },
-      "topics": [
-        "feeds",
-        "feeds-downloader",
-        "threat-intelligence",
-        "web-downloader"
-      ]
-    },
-    {
-      "id": 660123360,
-      "node_id": "R_kgDOJ1iu4A",
-      "name": "talks",
-      "full_name": "stratosphereips/talks",
-      "html_url": "https://github.com/stratosphereips/talks",
-      "description": "A repository of slides and artifacts of some of our talks",
-      "language": null,
-      "stargazers_count": 7,
-      "forks_count": 1,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": [
-        "cybersecurity",
-        "free-software",
-        "machine-learning",
-        "talks-and-papers"
-      ]
-    },
-    {
-      "id": 583747077,
-      "node_id": "R_kgDOIstGBQ",
-      "name": ".github",
-      "full_name": "stratosphereips/.github",
-      "html_url": "https://github.com/stratosphereips/.github",
-      "description": null,
-      "language": null,
-      "stargazers_count": 1,
-      "forks_count": 1,
-      "open_issues_count": 1,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 234121390,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMzQxMjEzOTA=",
-      "name": "AIP",
-      "full_name": "stratosphereips/AIP",
-      "html_url": "https://github.com/stratosphereips/AIP",
-      "description": "The Attacker IP Prioritizer(AIP) dynamically generates resource-friendly IPv4 blocklists from Zeek network flows. ",
-      "language": "Python",
-      "stargazers_count": 30,
-      "forks_count": 9,
-      "open_issues_count": 17,
       "license": {
         "key": "gpl-3.0",
         "name": "GNU General Public License v3.0",
@@ -608,27 +458,141 @@
         "url": "https://api.github.com/licenses/gpl-3.0",
         "node_id": "MDc6TGljZW5zZTk="
       },
+      "topics": []
+    },
+    {
+      "id": 935926324,
+      "node_id": "R_kgDON8kaNA",
+      "name": "MIPSEval",
+      "full_name": "stratosphereips/MIPSEval",
+      "html_url": "https://github.com/stratosphereips/MIPSEval",
+      "description": "Multi-turn Injection Planning System for LLM Evaluation",
+      "language": "Python",
+      "stargazers_count": 18,
+      "forks_count": 4,
+      "open_issues_count": 1,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "topics": []
+    },
+    {
+      "id": 1113017338,
+      "node_id": "R_kgDOQldL-g",
+      "name": "Thesis-template",
+      "full_name": "stratosphereips/Thesis-template",
+      "html_url": "https://github.com/stratosphereips/Thesis-template",
+      "description": "Thesis template",
+      "language": null,
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 237970912,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMzc5NzA5MTI=",
+      "name": "p2p4slips",
+      "full_name": "stratosphereips/p2p4slips",
+      "html_url": "https://github.com/stratosphereips/p2p4slips",
+      "description": "Experiments in p2p networking using libp2p in golang",
+      "language": "Go",
+      "stargazers_count": 1,
+      "forks_count": 3,
+      "open_issues_count": 0,
+      "license": {
+        "key": "unlicense",
+        "name": "The Unlicense",
+        "spdx_id": "Unlicense",
+        "url": "https://api.github.com/licenses/unlicense",
+        "node_id": "MDc6TGljZW5zZTE1"
+      },
+      "topics": []
+    },
+    {
+      "id": 997001352,
+      "node_id": "R_kgDOO20IiA",
+      "name": "zeek-summarizer",
+      "full_name": "stratosphereips/zeek-summarizer",
+      "html_url": "https://github.com/stratosphereips/zeek-summarizer",
+      "description": "Zeek Summarizer is a command-line tool to analyze and summarize Zeek log files",
+      "language": "Python",
+      "stargazers_count": 2,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "topics": []
+    },
+    {
+      "id": 548541864,
+      "node_id": "R_kgDOILIVqA",
+      "name": "security-datasets-for-testing",
+      "full_name": "stratosphereips/security-datasets-for-testing",
+      "html_url": "https://github.com/stratosphereips/security-datasets-for-testing",
+      "description": "A set of security datasets for testing of tools and algorithms",
+      "language": null,
+      "stargazers_count": 7,
+      "forks_count": 3,
+      "open_issues_count": 1,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
       "topics": [
-        "blocklist",
-        "blocklists",
-        "honeypots",
-        "netflows",
-        "network-attacks",
-        "network-flows",
-        "network-traffic-analysis",
-        "threat-intelligence"
+        "cybersecurity",
+        "dataset",
+        "infosec",
+        "infosectools",
+        "netflow",
+        "network-security",
+        "security",
+        "testing"
       ]
     },
     {
-      "id": 864989665,
-      "node_id": "R_kgDOM46x4Q",
-      "name": "demo-hacktivism-llm-translation",
-      "full_name": "stratosphereips/demo-hacktivism-llm-translation",
-      "html_url": "https://github.com/stratosphereips/demo-hacktivism-llm-translation",
-      "description": "Demo for the paper \"Towards Better Understanding of Cybercrime: The Role of Fine-Tuned LLMs in Translation\"",
-      "language": "JavaScript",
+      "id": 1059326647,
+      "node_id": "R_kgDOPyQKtw",
+      "name": "bsy-clippy",
+      "full_name": "stratosphereips/bsy-clippy",
+      "html_url": "https://github.com/stratosphereips/bsy-clippy",
+      "description": "A tool to talk to an ollama API from command line very simply, including from stdin",
+      "language": "Python",
       "stargazers_count": 0,
-      "forks_count": 0,
+      "forks_count": 1,
+      "open_issues_count": 1,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "topics": []
+    },
+    {
+      "id": 929435424,
+      "node_id": "R_kgDON2YPIA",
+      "name": "terminal-plotter",
+      "full_name": "stratosphereips/terminal-plotter",
+      "html_url": "https://github.com/stratosphereips/terminal-plotter",
+      "description": "Terminal Plotter is script that reads numeric data from a file (by default `data.txt`) and displays it as a live-updating plot in the terminal using [plotext](https://pypi.org/project/plotext/). The plot shows a moving time window (TW) of the data, and you can interactively adjust the window's size and position using keyboard controls.",
+      "language": "Python",
+      "stargazers_count": 1,
+      "forks_count": 2,
       "open_issues_count": 0,
       "license": {
         "key": "gpl-2.0",
@@ -667,9 +631,9 @@
       "html_url": "https://github.com/stratosphereips/zeek_anomaly_detector",
       "description": "A completely automated anomaly detector Zeek network flows files (conn.log).",
       "language": "Python",
-      "stargazers_count": 79,
-      "forks_count": 33,
-      "open_issues_count": 7,
+      "stargazers_count": 82,
+      "forks_count": 34,
+      "open_issues_count": 6,
       "license": {
         "key": "gpl-2.0",
         "name": "GNU General Public License v2.0",
@@ -689,12 +653,32 @@
       ]
     },
     {
-      "id": 819485202,
-      "node_id": "R_kgDOMNhaEg",
-      "name": "flow-visualizer",
-      "full_name": "stratosphereips/flow-visualizer",
-      "html_url": "https://github.com/stratosphereips/flow-visualizer",
-      "description": "A tool to visualize netflows in a local webpage as a timeline",
+      "id": 985833346,
+      "node_id": "R_kgDOOsKfgg",
+      "name": "ml-explorer",
+      "full_name": "stratosphereips/ml-explorer",
+      "html_url": "https://github.com/stratosphereips/ml-explorer",
+      "description": "A Streamlit app to explore classification and anomaly-detection pipelines on synthetic datasets! 🧪",
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 1,
+      "open_issues_count": 0,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "topics": []
+    },
+    {
+      "id": 971010214,
+      "node_id": "R_kgDOOeBwpg",
+      "name": "book_whisperer",
+      "full_name": "stratosphereips/book_whisperer",
+      "html_url": "https://github.com/stratosphereips/book_whisperer",
+      "description": "A book whisperer for you to recommend what to read from a Calibre DB",
       "language": "Python",
       "stargazers_count": 1,
       "forks_count": 0,
@@ -716,7 +700,7 @@
       "node_id": "MDQ6VXNlcjQxMjQyODk2",
       "avatar_url": "https://avatars.githubusercontent.com/u/41242896?v=4",
       "html_url": "https://github.com/AlyaGomaa",
-      "contributions": 9202
+      "contributions": 10176
     },
     {
       "login": "eldraco",
@@ -724,7 +708,7 @@
       "node_id": "MDQ6VXNlcjI0NTg4Njc=",
       "avatar_url": "https://avatars.githubusercontent.com/u/2458867?v=4",
       "html_url": "https://github.com/eldraco",
-      "contributions": 17
+      "contributions": 2
     },
     {
       "login": "kamilababayeva",
@@ -751,6 +735,14 @@
       "contributions": 266
     },
     {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "html_url": "https://github.com/apps/dependabot",
+      "contributions": 123
+    },
+    {
       "login": "frenky-strasak",
       "id": 3219633,
       "node_id": "MDQ6VXNlcjMyMTk2MzM=",
@@ -767,20 +759,20 @@
       "contributions": 90
     },
     {
-      "login": "dependabot[bot]",
-      "id": 49699333,
-      "node_id": "MDM6Qm90NDk2OTkzMzM=",
-      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-      "html_url": "https://github.com/apps/dependabot",
-      "contributions": 74
-    },
-    {
       "login": "ondrej-lukas",
       "id": 22837816,
       "node_id": "MDQ6VXNlcjIyODM3ODE2",
       "avatar_url": "https://avatars.githubusercontent.com/u/22837816?v=4",
       "html_url": "https://github.com/ondrej-lukas",
       "contributions": 63
+    },
+    {
+      "login": "harpomaxx",
+      "id": 12446313,
+      "node_id": "MDQ6VXNlcjEyNDQ2MzEz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12446313?v=4",
+      "html_url": "https://github.com/harpomaxx",
+      "contributions": 40
     },
     {
       "login": "LukasForst",
@@ -796,7 +788,7 @@
       "node_id": "MDQ6VXNlcjI0NTg4Nzk=",
       "avatar_url": "https://avatars.githubusercontent.com/u/2458879?v=4",
       "html_url": "https://github.com/verovaleros",
-      "contributions": 25
+      "contributions": 28
     },
     {
       "login": "patel-lay",
@@ -839,12 +831,12 @@
       "contributions": 9
     },
     {
-      "login": "harpomaxx",
-      "id": 12446313,
-      "node_id": "MDQ6VXNlcjEyNDQ2MzEz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/12446313?v=4",
-      "html_url": "https://github.com/harpomaxx",
-      "contributions": 7
+      "login": "Onyx2406",
+      "id": 32770175,
+      "node_id": "MDQ6VXNlcjMyNzcwMTc1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/32770175?v=4",
+      "html_url": "https://github.com/Onyx2406",
+      "contributions": 5
     },
     {
       "login": "A-atmos",
@@ -860,14 +852,6 @@
       "node_id": "MDQ6VXNlcjQ3MzE2ODk5",
       "avatar_url": "https://avatars.githubusercontent.com/u/47316899?v=4",
       "html_url": "https://github.com/roshnaeem",
-      "contributions": 4
-    },
-    {
-      "login": "Onyx2406",
-      "id": 32770175,
-      "node_id": "MDQ6VXNlcjMyNzcwMTc1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/32770175?v=4",
-      "html_url": "https://github.com/Onyx2406",
       "contributions": 4
     },
     {
@@ -895,43 +879,43 @@
       "contributions": 2
     },
     {
-      "login": "wULLSnpAXbWZGYDYyhWTKKspEQoaYxXyhoisqHf",
-      "id": 61180606,
-      "node_id": "MDQ6VXNlcjYxMTgwNjA2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/61180606?v=4",
-      "html_url": "https://github.com/wULLSnpAXbWZGYDYyhWTKKspEQoaYxXyhoisqHf",
+      "login": "DiviyamPathak",
+      "id": 71498362,
+      "node_id": "MDQ6VXNlcjcxNDk4MzYy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/71498362?v=4",
+      "html_url": "https://github.com/DiviyamPathak",
       "contributions": 1
     },
     {
-      "login": "aniket2405",
-      "id": 64733221,
-      "node_id": "MDQ6VXNlcjY0NzMzMjIx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/64733221?v=4",
-      "html_url": "https://github.com/aniket2405",
+      "login": "edenberger",
+      "id": 25631816,
+      "node_id": "MDQ6VXNlcjI1NjMxODE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25631816?v=4",
+      "html_url": "https://github.com/edenberger",
       "contributions": 1
     },
     {
-      "login": "shobhitjuglan",
-      "id": 95950129,
-      "node_id": "U_kgDOBbgVMQ",
-      "avatar_url": "https://avatars.githubusercontent.com/u/95950129?v=4",
-      "html_url": "https://github.com/shobhitjuglan",
+      "login": "ErdemOzgen",
+      "id": 14043035,
+      "node_id": "MDQ6VXNlcjE0MDQzMDM1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14043035?v=4",
+      "html_url": "https://github.com/ErdemOzgen",
       "contributions": 1
     },
     {
-      "login": "system-reboot",
-      "id": 98401163,
-      "node_id": "U_kgDOBd17iw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/98401163?v=4",
-      "html_url": "https://github.com/system-reboot",
+      "login": "ganesh-dagadi",
+      "id": 73548263,
+      "node_id": "MDQ6VXNlcjczNTQ4MjYz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/73548263?v=4",
+      "html_url": "https://github.com/ganesh-dagadi",
       "contributions": 1
     },
     {
-      "login": "Nitesh639",
-      "id": 66905080,
-      "node_id": "MDQ6VXNlcjY2OTA1MDgw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/66905080?v=4",
-      "html_url": "https://github.com/Nitesh639",
+      "login": "money8203",
+      "id": 89864818,
+      "node_id": "MDQ6VXNlcjg5ODY0ODE4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/89864818?v=4",
+      "html_url": "https://github.com/money8203",
       "contributions": 1
     },
     {
@@ -943,12 +927,28 @@
       "contributions": 1
     },
     {
-      "login": "money8203",
-      "id": 89864818,
-      "node_id": "MDQ6VXNlcjg5ODY0ODE4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/89864818?v=4",
-      "html_url": "https://github.com/money8203",
+      "login": "Nitesh639",
+      "id": 66905080,
+      "node_id": "MDQ6VXNlcjY2OTA1MDgw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/66905080?v=4",
+      "html_url": "https://github.com/Nitesh639",
       "contributions": 1
+    },
+    {
+      "login": "jsvobo",
+      "id": 174719267,
+      "node_id": "U_kgDOCmoBIw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/174719267?v=4",
+      "html_url": "https://github.com/jsvobo",
+      "contributions": 76
+    },
+    {
+      "login": "stratohousekeeper[bot]",
+      "id": 267611647,
+      "node_id": "BOT_kgDOD_Nt_w",
+      "avatar_url": "https://avatars.githubusercontent.com/in/3072826?v=4",
+      "html_url": "https://github.com/apps/stratohousekeeper",
+      "contributions": 8
     }
   ],
   "activeOrg": true

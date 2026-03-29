@@ -27,10 +27,177 @@
     2025
   ],
   "projects": {
-    "2025": []
+    "2025": [
+      {
+        "title": "Brax Training Viewer for Real-Time Policy Visualization",
+        "short_description": "The project provides an interface for Brax PPO training: a web-based viewer for accessing a headless training machine via a browser. It allows easy...",
+        "description": "The project provides an interface for Brax PPO training: a web-based viewer for accessing a headless training machine via a browser. It allows easy implementation without changing existing RL workflows, making it an excellent choice for researchers and practitioners needing to visualize, debug, and analyze RL policies in Brax with minimal configuration.",
+        "student_name": "Bruce Hu",
+        "code_url": "https://github.com/pal-robotics/brax_training_viewer",
+        "proposal_id": "zatqr8cV",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/Xm0toJHl"
+      },
+      {
+        "title": "Enrico Moro | Payload visualization metrics PAL Robotics",
+        "short_description": "Payload visualization metrics is a project to enhance decision-making during the prototyping process. Together with my team, we have to create a main...",
+        "description": "Payload visualization metrics is a project to enhance decision-making during the prototyping process. Together with my team, we have to create a main module to calculate the maximum payload for a given configuration and estimate the torque to improve awareness during motor selection. Furthermore, for optimal visualization of the payload and torques, we have to build an Rviz plugin to display all the useful information. In a nutshell, we are going to create the module that generates the robot model from the robot description topic, then develop the processing unit, and finally publish the results to ROS topics and Rviz.",
+        "student_name": "Enrico Moro",
+        "code_url": "https://github.com/pal-robotics/dynamic_payload_analysis",
+        "proposal_id": "bcalVuos",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/mPxgXKpc"
+      }
+    ]
   },
   "githubID": "pal-robotics",
   "repositories": [
+    {
+      "id": 1062680361,
+      "node_id": "R_kgDOP1c3KQ",
+      "name": "pal_mjlab",
+      "full_name": "pal-robotics/pal_mjlab",
+      "html_url": "https://github.com/pal-robotics/pal_mjlab",
+      "description": "PAL Robotics' robots in mjlab",
+      "language": "Python",
+      "stargazers_count": 67,
+      "forks_count": 3,
+      "open_issues_count": 7,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 958096688,
+      "node_id": "R_kgDOORtlMA",
+      "name": "pal_sea_arm",
+      "full_name": "pal-robotics/pal_sea_arm",
+      "html_url": "https://github.com/pal-robotics/pal_sea_arm",
+      "description": null,
+      "language": "Python",
+      "stargazers_count": 1,
+      "forks_count": 3,
+      "open_issues_count": 0,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 1046807297,
+      "node_id": "R_kgDOPmUDAQ",
+      "name": "tsid_ros2",
+      "full_name": "pal-robotics/tsid_ros2",
+      "html_url": "https://github.com/pal-robotics/tsid_ros2",
+      "description": "  This repository is a collection of ROS2 algorithms and applications developed using and extending Task Space Inverse Dynamics (TSID).",
+      "language": "C++",
+      "stargazers_count": 2,
+      "forks_count": 0,
+      "open_issues_count": 1,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 521171340,
+      "node_id": "R_kgDOHxBxjA",
+      "name": "omni_base_robot",
+      "full_name": "pal-robotics/omni_base_robot",
+      "html_url": "https://github.com/pal-robotics/omni_base_robot",
+      "description": null,
+      "language": "Python",
+      "stargazers_count": 10,
+      "forks_count": 13,
+      "open_issues_count": 0,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "laser-sensor",
+        "mobile-base",
+        "move-base",
+        "navigation",
+        "omnibase",
+        "omnidirectional",
+        "ros-nav"
+      ]
+    },
+    {
+      "id": 951367227,
+      "node_id": "R_kgDOOLS2Ow",
+      "name": "tiago_pro_robot",
+      "full_name": "pal-robotics/tiago_pro_robot",
+      "html_url": "https://github.com/pal-robotics/tiago_pro_robot",
+      "description": null,
+      "language": "Python",
+      "stargazers_count": 6,
+      "forks_count": 4,
+      "open_issues_count": 0,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 958096983,
+      "node_id": "R_kgDOORtmVw",
+      "name": "pal_sea_arm_simulation",
+      "full_name": "pal-robotics/pal_sea_arm_simulation",
+      "html_url": "https://github.com/pal-robotics/pal_sea_arm_simulation",
+      "description": null,
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 238963689,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMzg5NjM2ODk=",
+      "name": "ari_simulation",
+      "full_name": "pal-robotics/ari_simulation",
+      "html_url": "https://github.com/pal-robotics/ari_simulation",
+      "description": null,
+      "language": "CMake",
+      "stargazers_count": 1,
+      "forks_count": 3,
+      "open_issues_count": 1,
+      "license": null,
+      "topics": [
+        "expressive-robot",
+        "gazebo",
+        "human-robot-interaction",
+        "interaction",
+        "move-base",
+        "navigation",
+        "robot-assistant",
+        "ros",
+        "ros4hri",
+        "simulation",
+        "slam"
+      ]
+    },
     {
       "id": 238963747,
       "node_id": "MDEwOlJlcG9zaXRvcnkyMzg5NjM3NDc=",
@@ -40,8 +207,8 @@
       "description": null,
       "language": "EmberScript",
       "stargazers_count": 3,
-      "forks_count": 3,
-      "open_issues_count": 3,
+      "forks_count": 2,
+      "open_issues_count": 2,
       "license": null,
       "topics": [
         "ai",
@@ -58,14 +225,156 @@
       ]
     },
     {
-      "id": 94180790,
-      "node_id": "MDEwOlJlcG9zaXRvcnk5NDE4MDc5MA==",
-      "name": "pmb2_navigation",
-      "full_name": "pal-robotics/pmb2_navigation",
-      "html_url": "https://github.com/pal-robotics/pmb2_navigation",
-      "description": "pmb2 navigation",
+      "id": 238963623,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMzg5NjM2MjM=",
+      "name": "ari_moveit_config",
+      "full_name": "pal-robotics/ari_moveit_config",
+      "html_url": "https://github.com/pal-robotics/ari_moveit_config",
+      "description": null,
+      "language": "CMake",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 521171422,
+      "node_id": "R_kgDOHxBx3g",
+      "name": "omni_base_simulation",
+      "full_name": "pal-robotics/omni_base_simulation",
+      "html_url": "https://github.com/pal-robotics/omni_base_simulation",
+      "description": null,
       "language": "Python",
-      "stargazers_count": 5,
+      "stargazers_count": 8,
+      "forks_count": 2,
+      "open_issues_count": 1,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 980036198,
+      "node_id": "R_kgDOOmoqZg",
+      "name": "pal_pro_gripper",
+      "full_name": "pal-robotics/pal_pro_gripper",
+      "html_url": "https://github.com/pal-robotics/pal_pro_gripper",
+      "description": null,
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 3,
+      "open_issues_count": 0,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 958095969,
+      "node_id": "R_kgDOORtiYQ",
+      "name": "tiago_pro_simulation",
+      "full_name": "pal-robotics/tiago_pro_simulation",
+      "html_url": "https://github.com/pal-robotics/tiago_pro_simulation",
+      "description": null,
+      "language": "Python",
+      "stargazers_count": 1,
+      "forks_count": 3,
+      "open_issues_count": 1,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 958095562,
+      "node_id": "R_kgDOORtgyg",
+      "name": "tiago_pro_moveit_config",
+      "full_name": "pal-robotics/tiago_pro_moveit_config",
+      "html_url": "https://github.com/pal-robotics/tiago_pro_moveit_config",
+      "description": "TIAGo Pro's automatically generated package with all the configuration and launch files for using the tiago_pro with the MoveIt! Motion Planning Framework",
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 4,
+      "open_issues_count": 0,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 996713067,
+      "node_id": "R_kgDOO2iiaw",
+      "name": "dynamic_payload_analysis",
+      "full_name": "pal-robotics/dynamic_payload_analysis",
+      "html_url": "https://github.com/pal-robotics/dynamic_payload_analysis",
+      "description": null,
+      "language": "Python",
+      "stargazers_count": 3,
+      "forks_count": 0,
+      "open_issues_count": 1,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 602154099,
+      "node_id": "R_kgDOI-Qkcw",
+      "name": "play_motion2",
+      "full_name": "pal-robotics/play_motion2",
+      "html_url": "https://github.com/pal-robotics/play_motion2",
+      "description": "A tool to play and handle pre-recorded motions in ROS 2",
+      "language": "C++",
+      "stargazers_count": 31,
+      "forks_count": 12,
+      "open_issues_count": 4,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "manipulators",
+        "motion-executor",
+        "motion-planning",
+        "prerecorded-motion-execution",
+        "ros2",
+        "trajectory",
+        "waypoint-following"
+      ]
+    },
+    {
+      "id": 710213943,
+      "node_id": "R_kgDOKlUBNw",
+      "name": "pal_urdf_utils",
+      "full_name": "pal-robotics/pal_urdf_utils",
+      "html_url": "https://github.com/pal-robotics/pal_urdf_utils",
+      "description": null,
+      "language": "CMake",
+      "stargazers_count": 1,
       "forks_count": 5,
       "open_issues_count": 0,
       "license": {
@@ -75,25 +384,19 @@
         "url": "https://api.github.com/licenses/apache-2.0",
         "node_id": "MDc6TGljZW5zZTI="
       },
-      "topics": [
-        "laser",
-        "mapping",
-        "mobile-base",
-        "navigation",
-        "slam"
-      ]
+      "topics": []
     },
     {
-      "id": 521172011,
-      "node_id": "R_kgDOHxB0Kw",
-      "name": "omni_base_navigation",
-      "full_name": "pal-robotics/omni_base_navigation",
-      "html_url": "https://github.com/pal-robotics/omni_base_navigation",
+      "id": 116811915,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMTY4MTE5MTU=",
+      "name": "pal_gazebo_worlds",
+      "full_name": "pal-robotics/pal_gazebo_worlds",
+      "html_url": "https://github.com/pal-robotics/pal_gazebo_worlds",
       "description": null,
       "language": "Python",
-      "stargazers_count": 0,
-      "forks_count": 1,
-      "open_issues_count": 0,
+      "stargazers_count": 20,
+      "forks_count": 13,
+      "open_issues_count": 1,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -101,42 +404,33 @@
         "url": "https://api.github.com/licenses/apache-2.0",
         "node_id": "MDc6TGljZW5zZTI="
       },
-      "topics": [
-        "mapping",
-        "move-base",
-        "navigation",
-        "omnibase",
-        "ros",
-        "ros-navigation",
-        "ros-noetic",
-        "slam"
-      ]
+      "topics": []
     },
     {
-      "id": 116810820,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMTY4MTA4MjA=",
-      "name": "pal_transmissions",
-      "full_name": "pal-robotics/pal_transmissions",
-      "html_url": "https://github.com/pal-robotics/pal_transmissions",
+      "id": 1159171310,
+      "node_id": "R_kgDORReM7g",
+      "name": "triago_robot",
+      "full_name": "pal-robotics/triago_robot",
+      "html_url": "https://github.com/pal-robotics/triago_robot",
       "description": null,
-      "language": "C++",
+      "language": "Python",
       "stargazers_count": 0,
-      "forks_count": 0,
+      "forks_count": 1,
       "open_issues_count": 0,
       "license": null,
       "topics": []
     },
     {
-      "id": 38765512,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzODc2NTUxMg==",
-      "name": "pmb2_robot",
-      "full_name": "pal-robotics/pmb2_robot",
-      "html_url": "https://github.com/pal-robotics/pmb2_robot",
-      "description": "A PAL Mobile Base for your advanced navigation needs",
-      "language": "Python",
-      "stargazers_count": 16,
-      "forks_count": 22,
-      "open_issues_count": 5,
+      "id": 1074503599,
+      "node_id": "R_kgDOQAufrw",
+      "name": "mujoco_vendor",
+      "full_name": "pal-robotics/mujoco_vendor",
+      "html_url": "https://github.com/pal-robotics/mujoco_vendor",
+      "description": "ROS 2 vendor package for MuJoCo simulator",
+      "language": "CMake",
+      "stargazers_count": 12,
+      "forks_count": 3,
+      "open_issues_count": 0,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -144,40 +438,42 @@
         "url": "https://api.github.com/licenses/apache-2.0",
         "node_id": "MDc6TGljZW5zZTI="
       },
+      "topics": []
+    },
+    {
+      "id": 893118711,
+      "node_id": "R_kgDONTvo9w",
+      "name": "kangaroo_robot",
+      "full_name": "pal-robotics/kangaroo_robot",
+      "html_url": "https://github.com/pal-robotics/kangaroo_robot",
+      "description": "The perfect robot to learn about walking locomotion.",
+      "language": "Python",
+      "stargazers_count": 5,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
       "topics": [
-        "advanced-navigation",
-        "fleet",
-        "fleet-management",
-        "global-planner",
-        "humble",
-        "local-planner",
-        "mobile",
-        "mobile-base",
-        "navigation",
-        "obstacle-avoidance",
-        "obstacle-avoidance-robot",
-        "obstacle-detection",
-        "path-planning",
-        "robot",
-        "robot-base",
-        "ros",
-        "ros-navigation",
-        "ros2",
-        "ros2-humble",
-        "teleoperation"
+        "agile",
+        "bipedal-robots",
+        "humanoid-robot",
+        "jumping",
+        "locomotion",
+        "urdf",
+        "walking",
+        "walking-robot"
       ]
     },
     {
-      "id": 39949656,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzOTk0OTY1Ng==",
-      "name": "tiago_robot",
-      "full_name": "pal-robotics/tiago_robot",
-      "html_url": "https://github.com/pal-robotics/tiago_robot",
+      "id": 339087363,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzMzkwODczNjM=",
+      "name": "launch_pal",
+      "full_name": "pal-robotics/launch_pal",
+      "html_url": "https://github.com/pal-robotics/launch_pal",
       "description": null,
       "language": "Python",
-      "stargazers_count": 55,
-      "forks_count": 46,
-      "open_issues_count": 11,
+      "stargazers_count": 3,
+      "forks_count": 7,
+      "open_issues_count": 3,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -185,36 +481,51 @@
         "url": "https://api.github.com/licenses/apache-2.0",
         "node_id": "MDc6TGljZW5zZTI="
       },
-      "topics": [
-        "compliant-control",
-        "end-effector",
-        "human-robot-interaction",
-        "humble",
-        "mobile-manipulator",
-        "mobile-navigation",
-        "noetic",
-        "robotics",
-        "robots",
-        "ros",
-        "ros-melodic",
-        "ros2",
-        "ros2-humble",
-        "teleoperation",
-        "whole-body-control"
-      ]
+      "topics": []
     },
     {
-      "id": 247022991,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNDcwMjI5OTE=",
-      "name": "tiago_wbc",
-      "full_name": "pal-robotics/tiago_wbc",
-      "html_url": "https://github.com/pal-robotics/tiago_wbc",
+      "id": 162564610,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNjI1NjQ2MTA=",
+      "name": "urdf_test",
+      "full_name": "pal-robotics/urdf_test",
+      "html_url": "https://github.com/pal-robotics/urdf_test",
       "description": null,
       "language": "Python",
       "stargazers_count": 2,
-      "forks_count": 1,
+      "forks_count": 0,
       "open_issues_count": 0,
-      "license": null,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "rostest",
+        "tests",
+        "urdf",
+        "urdf-testing"
+      ]
+    },
+    {
+      "id": 958096819,
+      "node_id": "R_kgDOORtlsw",
+      "name": "pal_sea_arm_moveit_config",
+      "full_name": "pal-robotics/pal_sea_arm_moveit_config",
+      "html_url": "https://github.com/pal-robotics/pal_sea_arm_moveit_config",
+      "description": null,
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 3,
+      "open_issues_count": 0,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
       "topics": []
     },
     {
@@ -225,8 +536,8 @@
       "html_url": "https://github.com/pal-robotics/tiago_dual_robot",
       "description": null,
       "language": "EmberScript",
-      "stargazers_count": 8,
-      "forks_count": 2,
+      "stargazers_count": 9,
+      "forks_count": 4,
       "open_issues_count": 1,
       "license": {
         "key": "apache-2.0",
@@ -255,30 +566,52 @@
       ]
     },
     {
-      "id": 584412834,
-      "node_id": "R_kgDOItVuog",
-      "name": "pmb3_robot",
-      "full_name": "pal-robotics/pmb3_robot",
-      "html_url": "https://github.com/pal-robotics/pmb3_robot",
+      "id": 39949656,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzOTk0OTY1Ng==",
+      "name": "tiago_robot",
+      "full_name": "pal-robotics/tiago_robot",
+      "html_url": "https://github.com/pal-robotics/tiago_robot",
       "description": null,
+      "language": "Python",
+      "stargazers_count": 66,
+      "forks_count": 48,
+      "open_issues_count": 11,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "compliant-control",
+        "end-effector",
+        "human-robot-interaction",
+        "humble",
+        "mobile-manipulator",
+        "mobile-navigation",
+        "noetic",
+        "robotics",
+        "robots",
+        "ros",
+        "ros-melodic",
+        "ros2",
+        "ros2-humble",
+        "teleoperation",
+        "whole-body-control"
+      ]
+    },
+    {
+      "id": 1171124510,
+      "node_id": "R_kgDORc3xHg",
+      "name": "kangaroo_moveit_config",
+      "full_name": "pal-robotics/kangaroo_moveit_config",
+      "html_url": "https://github.com/pal-robotics/kangaroo_moveit_config",
+      "description": "Kangaroo robot MoveIt configuration",
       "language": "CMake",
       "stargazers_count": 0,
       "forks_count": 0,
       "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 602154099,
-      "node_id": "R_kgDOI-Qkcw",
-      "name": "play_motion2",
-      "full_name": "pal-robotics/play_motion2",
-      "html_url": "https://github.com/pal-robotics/play_motion2",
-      "description": "A tool to play and handle pre-recorded motions in ROS2",
-      "language": "C++",
-      "stargazers_count": 21,
-      "forks_count": 7,
-      "open_issues_count": 4,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -286,37 +619,15 @@
         "url": "https://api.github.com/licenses/apache-2.0",
         "node_id": "MDc6TGljZW5zZTI="
       },
-      "topics": [
-        "manipulators",
-        "motion-executor",
-        "motion-planning",
-        "prerecorded-motion-execution",
-        "ros2",
-        "trajectory",
-        "waypoint-following"
-      ]
-    },
-    {
-      "id": 980036198,
-      "node_id": "R_kgDOOmoqZg",
-      "name": "pal_pro_gripper",
-      "full_name": "pal-robotics/pal_pro_gripper",
-      "html_url": "https://github.com/pal-robotics/pal_pro_gripper",
-      "description": null,
-      "language": "Python",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
       "topics": []
     },
     {
-      "id": 980036917,
-      "node_id": "R_kgDOOmotNQ",
-      "name": "tiago_pro_navigation",
-      "full_name": "pal-robotics/tiago_pro_navigation",
-      "html_url": "https://github.com/pal-robotics/tiago_pro_navigation",
-      "description": null,
+      "id": 1171123883,
+      "node_id": "R_kgDORc3uqw",
+      "name": "kangaroo_simulation",
+      "full_name": "pal-robotics/kangaroo_simulation",
+      "html_url": "https://github.com/pal-robotics/kangaroo_simulation",
+      "description": "Simulation environment for Kangaroo Biped Humanoid Robot",
       "language": "Python",
       "stargazers_count": 0,
       "forks_count": 0,
@@ -331,109 +642,16 @@
       "topics": []
     },
     {
-      "id": 951367227,
-      "node_id": "R_kgDOOLS2Ow",
-      "name": "tiago_pro_robot",
-      "full_name": "pal-robotics/tiago_pro_robot",
-      "html_url": "https://github.com/pal-robotics/tiago_pro_robot",
-      "description": null,
-      "language": "Python",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 39949695,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzOTk0OTY5NQ==",
-      "name": "tiago_simulation",
-      "full_name": "pal-robotics/tiago_simulation",
-      "html_url": "https://github.com/pal-robotics/tiago_simulation",
-      "description": null,
-      "language": "Python",
-      "stargazers_count": 62,
-      "forks_count": 42,
-      "open_issues_count": 10,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "advanced-navigation",
-        "humble",
-        "manipulator",
-        "mobile",
-        "mobile-base",
-        "mobile-manipulator",
-        "navigation",
-        "noetic",
-        "ros",
-        "ros2",
-        "ros2-humble",
-        "simulation"
-      ]
-    },
-    {
-      "id": 38765554,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzODc2NTU1NA==",
-      "name": "pmb2_simulation",
-      "full_name": "pal-robotics/pmb2_simulation",
-      "html_url": "https://github.com/pal-robotics/pmb2_simulation",
-      "description": null,
-      "language": "Python",
-      "stargazers_count": 6,
-      "forks_count": 3,
-      "open_issues_count": 3,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "advanced-navigation",
-        "differential-drive-robot",
-        "fleet",
-        "gazebo",
-        "humble",
-        "mobile-base",
-        "move-base",
-        "navigation",
-        "noetic",
-        "ros",
-        "ros2"
-      ]
-    },
-    {
-      "id": 958095969,
-      "node_id": "R_kgDOORtiYQ",
-      "name": "tiago_pro_simulation",
-      "full_name": "pal-robotics/tiago_pro_simulation",
-      "html_url": "https://github.com/pal-robotics/tiago_pro_simulation",
-      "description": null,
-      "language": "Python",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 521171422,
-      "node_id": "R_kgDOHxBx3g",
-      "name": "omni_base_simulation",
-      "full_name": "pal-robotics/omni_base_simulation",
-      "html_url": "https://github.com/pal-robotics/omni_base_simulation",
+      "id": 68816440,
+      "node_id": "MDEwOlJlcG9zaXRvcnk2ODgxNjQ0MA==",
+      "name": "pal_gripper",
+      "full_name": "pal-robotics/pal_gripper",
+      "html_url": "https://github.com/pal-robotics/pal_gripper",
       "description": null,
       "language": "Python",
       "stargazers_count": 5,
-      "forks_count": 1,
-      "open_issues_count": 1,
+      "forks_count": 13,
+      "open_issues_count": 2,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -444,261 +662,64 @@
       "topics": []
     },
     {
-      "id": 206822453,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMDY4MjI0NTM=",
-      "name": "tiago_dual_simulation",
-      "full_name": "pal-robotics/tiago_dual_simulation",
-      "html_url": "https://github.com/pal-robotics/tiago_dual_simulation",
-      "description": null,
-      "language": "EmberScript",
-      "stargazers_count": 0,
-      "forks_count": 1,
-      "open_issues_count": 1,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 896011647,
-      "node_id": "R_kgDONWgNfw",
-      "name": "rpk",
-      "full_name": "pal-robotics/rpk",
-      "html_url": "https://github.com/pal-robotics/rpk",
+      "id": 116812103,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMTY4MTIxMDM=",
+      "name": "talos_robot",
+      "full_name": "pal-robotics/talos_robot",
+      "html_url": "https://github.com/pal-robotics/talos_robot",
       "description": null,
       "language": "Python",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": []
-    },
-    {
-      "id": 801604570,
-      "node_id": "R_kgDOL8eD2g",
-      "name": "chatbot_msgs",
-      "full_name": "pal-robotics/chatbot_msgs",
-      "html_url": "https://github.com/pal-robotics/chatbot_msgs",
-      "description": null,
-      "language": "CMake",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
+      "stargazers_count": 25,
+      "forks_count": 18,
+      "open_issues_count": 6,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
         "spdx_id": "Apache-2.0",
         "url": "https://api.github.com/licenses/apache-2.0",
         "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 238963719,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMzg5NjM3MTk=",
-      "name": "ari_navigation",
-      "full_name": "pal-robotics/ari_navigation",
-      "html_url": "https://github.com/pal-robotics/ari_navigation",
-      "description": null,
-      "language": "CMake",
-      "stargazers_count": 0,
-      "forks_count": 1,
-      "open_issues_count": 2,
-      "license": null,
-      "topics": [
-        "slam"
-      ]
-    },
-    {
-      "id": 958096688,
-      "node_id": "R_kgDOORtlMA",
-      "name": "pal_sea_arm",
-      "full_name": "pal-robotics/pal_sea_arm",
-      "html_url": "https://github.com/pal-robotics/pal_sea_arm",
-      "description": null,
-      "language": "EmberScript",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 9173000,
-      "node_id": "MDEwOlJlcG9zaXRvcnk5MTczMDAw",
-      "name": "pal_gazebo_plugins",
-      "full_name": "pal-robotics/pal_gazebo_plugins",
-      "html_url": "https://github.com/pal-robotics/pal_gazebo_plugins",
-      "description": "Common Gazebo v1.9+ plugins used by the PAL Robotics robots",
-      "language": "C++",
-      "stargazers_count": 2,
-      "forks_count": 21,
-      "open_issues_count": 2,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 135269806,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMzUyNjk4MDY=",
-      "name": "ddynamic_reconfigure",
-      "full_name": "pal-robotics/ddynamic_reconfigure",
-      "html_url": "https://github.com/pal-robotics/ddynamic_reconfigure",
-      "description": null,
-      "language": "C++",
-      "stargazers_count": 94,
-      "forks_count": 80,
-      "open_issues_count": 7,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 958096819,
-      "node_id": "R_kgDOORtlsw",
-      "name": "pal_sea_arm_moveit_config",
-      "full_name": "pal-robotics/pal_sea_arm_moveit_config",
-      "html_url": "https://github.com/pal-robotics/pal_sea_arm_moveit_config",
-      "description": null,
-      "language": "Python",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 958095562,
-      "node_id": "R_kgDOORtgyg",
-      "name": "tiago_pro_moveit_config",
-      "full_name": "pal-robotics/tiago_pro_moveit_config",
-      "html_url": "https://github.com/pal-robotics/tiago_pro_moveit_config",
-      "description": "TIAGo Pro's automatically generated package with all the configuration and launch files for using the tiago_pro with the MoveIt! Motion Planning Framework",
-      "language": "CMake",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 206822399,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMDY4MjIzOTk=",
-      "name": "tiago_dual_moveit_config",
-      "full_name": "pal-robotics/tiago_dual_moveit_config",
-      "html_url": "https://github.com/pal-robotics/tiago_dual_moveit_config",
-      "description": null,
-      "language": "Shell",
-      "stargazers_count": 3,
-      "forks_count": 1,
-      "open_issues_count": 2,
-      "license": null,
-      "topics": [
-        "robotics"
-      ]
-    },
-    {
-      "id": 15997266,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNTk5NzI2Ng==",
-      "name": "pal_msgs",
-      "full_name": "pal-robotics/pal_msgs",
-      "html_url": "https://github.com/pal-robotics/pal_msgs",
-      "description": "Commonly used messages, services and action in PAL",
-      "language": "CMake",
-      "stargazers_count": 3,
-      "forks_count": 8,
-      "open_issues_count": 1,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 16576966,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNjU3Njk2Ng==",
-      "name": "aruco_ros",
-      "full_name": "pal-robotics/aruco_ros",
-      "html_url": "https://github.com/pal-robotics/aruco_ros",
-      "description": "Software package and ROS wrappers of the Aruco Augmented Reality marker detector library",
-      "language": "C++",
-      "stargazers_count": 510,
-      "forks_count": 322,
-      "open_issues_count": 33,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
       },
       "topics": [
-        "aruco",
-        "aruco-detector",
-        "aruco-library",
-        "aruco-marker-detection",
-        "aruco-ros",
-        "fiducial-marker",
-        "fiducial-marker-detector",
-        "robot",
+        "biped",
+        "bipedal-robots",
+        "force-torque-sensor",
+        "grasping",
+        "humanoid-control",
+        "humanoid-robot",
+        "humanoid-walking",
+        "imu-sensor",
+        "mpc-control",
         "robotics",
-        "ros"
+        "ros",
+        "torque-control",
+        "torque-sensors",
+        "walking-robot",
+        "whole-body-control"
       ]
     },
     {
-      "id": 521171340,
-      "node_id": "R_kgDOHxBxjA",
-      "name": "omni_base_robot",
-      "full_name": "pal-robotics/omni_base_robot",
-      "html_url": "https://github.com/pal-robotics/omni_base_robot",
+      "id": 1159174133,
+      "node_id": "R_kgDORReX9Q",
+      "name": "triago_simulation",
+      "full_name": "pal-robotics/triago_simulation",
+      "html_url": "https://github.com/pal-robotics/triago_simulation",
       "description": null,
       "language": "Python",
-      "stargazers_count": 8,
-      "forks_count": 10,
+      "stargazers_count": 0,
+      "forks_count": 0,
       "open_issues_count": 0,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "laser-sensor",
-        "mobile-base",
-        "move-base",
-        "navigation",
-        "omnibase",
-        "omnidirectional",
-        "ros-nav"
-      ]
+      "license": null,
+      "topics": []
     }
   ],
   "contributorsDetails": [
     {
-      "login": "doterkuile",
-      "id": 55233645,
-      "node_id": "MDQ6VXNlcjU1MjMzNjQ1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/55233645?v=4",
-      "html_url": "https://github.com/doterkuile",
-      "contributions": 32
+      "login": "louislelay",
+      "id": 62947045,
+      "node_id": "MDQ6VXNlcjYyOTQ3MDQ1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/62947045?v=4",
+      "html_url": "https://github.com/louislelay",
+      "contributions": 322
     },
     {
       "login": "saikishor",
@@ -706,71 +727,63 @@
       "node_id": "MDQ6VXNlcjEwMDgyNDI4",
       "avatar_url": "https://avatars.githubusercontent.com/u/10082428?v=4",
       "html_url": "https://github.com/saikishor",
-      "contributions": 9
+      "contributions": 7
     },
     {
-      "login": "alessandrodifava-pal",
-      "id": 26413133,
-      "node_id": "MDQ6VXNlcjI2NDEzMTMz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/26413133?v=4",
-      "html_url": "https://github.com/alessandrodifava-pal",
-      "contributions": 19
+      "login": "fabio-amadio",
+      "id": 9478481,
+      "node_id": "MDQ6VXNlcjk0Nzg0ODE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9478481?v=4",
+      "html_url": "https://github.com/fabio-amadio",
+      "contributions": 25
     },
     {
-      "login": "lucamarchionni",
-      "id": 1038209,
-      "node_id": "MDQ6VXNlcjEwMzgyMDk=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1038209?v=4",
-      "html_url": "https://github.com/lucamarchionni",
-      "contributions": 12
+      "login": "sofieblankers-wq",
+      "id": 229933814,
+      "node_id": "U_kgDODbSC9g",
+      "avatar_url": "https://avatars.githubusercontent.com/u/229933814?v=4",
+      "html_url": "https://github.com/sofieblankers-wq",
+      "contributions": 21
     },
     {
-      "login": "saracooper18",
-      "id": 60614377,
-      "node_id": "MDQ6VXNlcjYwNjE0Mzc3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/60614377?v=4",
-      "html_url": "https://github.com/saracooper18",
-      "contributions": 10
-    },
-    {
-      "login": "jordan-palacios",
-      "id": 26386634,
-      "node_id": "MDQ6VXNlcjI2Mzg2NjM0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/26386634?v=4",
-      "html_url": "https://github.com/jordan-palacios",
-      "contributions": 18
-    },
-    {
-      "login": "ainairisarri",
-      "id": 58323417,
-      "node_id": "MDQ6VXNlcjU4MzIzNDE3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/58323417?v=4",
-      "html_url": "https://github.com/ainairisarri",
-      "contributions": 2
-    },
-    {
-      "login": "adriaroig",
-      "id": 45817677,
-      "node_id": "MDQ6VXNlcjQ1ODE3Njc3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/45817677?v=4",
-      "html_url": "https://github.com/adriaroig",
+      "login": "JLCucumber",
+      "id": 72130595,
+      "node_id": "MDQ6VXNlcjcyMTMwNTk1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/72130595?v=4",
+      "html_url": "https://github.com/JLCucumber",
       "contributions": 1
     },
     {
-      "login": "YueErro",
-      "id": 16896370,
-      "node_id": "MDQ6VXNlcjE2ODk2Mzcw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/16896370?v=4",
-      "html_url": "https://github.com/YueErro",
+      "login": "ManuelActisCassa",
+      "id": 110395798,
+      "node_id": "U_kgDOBpSBlg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/110395798?v=4",
+      "html_url": "https://github.com/ManuelActisCassa",
       "contributions": 1
     },
     {
-      "login": "artivis",
-      "id": 6572747,
-      "node_id": "MDQ6VXNlcjY1NzI3NDc=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/6572747?v=4",
-      "html_url": "https://github.com/artivis",
-      "contributions": 58
+      "login": "doterkuile",
+      "id": 55233645,
+      "node_id": "MDQ6VXNlcjU1MjMzNjQ1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55233645?v=4",
+      "html_url": "https://github.com/doterkuile",
+      "contributions": 6
+    },
+    {
+      "login": "thomaspeyrucain",
+      "id": 87322480,
+      "node_id": "MDQ6VXNlcjg3MzIyNDgw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/87322480?v=4",
+      "html_url": "https://github.com/thomaspeyrucain",
+      "contributions": 87
+    },
+    {
+      "login": "ileniaperrella",
+      "id": 108012295,
+      "node_id": "U_kgDOBnAjBw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/108012295?v=4",
+      "html_url": "https://github.com/ileniaperrella",
+      "contributions": 72
     },
     {
       "login": "Noel215",
@@ -778,56 +791,80 @@
       "node_id": "MDQ6VXNlcjQ4MTgzNjEx",
       "avatar_url": "https://avatars.githubusercontent.com/u/48183611?v=4",
       "html_url": "https://github.com/Noel215",
-      "contributions": 37
+      "contributions": 1
     },
     {
-      "login": "RainCT",
-      "id": 83328,
-      "node_id": "MDQ6VXNlcjgzMzI4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/83328?v=4",
-      "html_url": "https://github.com/RainCT",
+      "login": "OscarMrZ",
+      "id": 73278373,
+      "node_id": "MDQ6VXNlcjczMjc4Mzcz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/73278373?v=4",
+      "html_url": "https://github.com/OscarMrZ",
+      "contributions": 38
+    },
+    {
+      "login": "ainairisarri",
+      "id": 58323417,
+      "node_id": "MDQ6VXNlcjU4MzIzNDE3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/58323417?v=4",
+      "html_url": "https://github.com/ainairisarri",
+      "contributions": 27
+    },
+    {
+      "login": "Ortisa",
+      "id": 130169396,
+      "node_id": "U_kgDOB8I6NA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/130169396?v=4",
+      "html_url": "https://github.com/Ortisa",
+      "contributions": 26
+    },
+    {
+      "login": "jordan-palacios",
+      "id": 26386634,
+      "node_id": "MDQ6VXNlcjI2Mzg2NjM0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/26386634?v=4",
+      "html_url": "https://github.com/jordan-palacios",
       "contributions": 12
     },
     {
-      "login": "jordi-pages",
-      "id": 1894677,
-      "node_id": "MDQ6VXNlcjE4OTQ2Nzc=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1894677?v=4",
-      "html_url": "https://github.com/jordi-pages",
-      "contributions": 2
+      "login": "adriaroig",
+      "id": 45817677,
+      "node_id": "MDQ6VXNlcjQ1ODE3Njc3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/45817677?v=4",
+      "html_url": "https://github.com/adriaroig",
+      "contributions": 8
     },
     {
-      "login": "jmguerreroh",
-      "id": 55832002,
-      "node_id": "MDQ6VXNlcjU1ODMyMDAy",
-      "avatar_url": "https://avatars.githubusercontent.com/u/55832002?v=4",
-      "html_url": "https://github.com/jmguerreroh",
-      "contributions": 2
+      "login": "Viviana-Morl",
+      "id": 62703929,
+      "node_id": "MDQ6VXNlcjYyNzAzOTI5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/62703929?v=4",
+      "html_url": "https://github.com/Viviana-Morl",
+      "contributions": 179
     },
     {
-      "login": "awesomebytes",
-      "id": 1721716,
-      "node_id": "MDQ6VXNlcjE3MjE3MTY=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1721716?v=4",
-      "html_url": "https://github.com/awesomebytes",
-      "contributions": 2
+      "login": "lucamarchionni",
+      "id": 1038209,
+      "node_id": "MDQ6VXNlcjEwMzgyMDk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1038209?v=4",
+      "html_url": "https://github.com/lucamarchionni",
+      "contributions": 5
     },
     {
-      "login": "bmagyar",
-      "id": 3524577,
-      "node_id": "MDQ6VXNlcjM1MjQ1Nzc=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/3524577?v=4",
-      "html_url": "https://github.com/bmagyar",
+      "login": "silviamasiello00",
+      "id": 221109092,
+      "node_id": "U_kgDODS3bZA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/221109092?v=4",
+      "html_url": "https://github.com/silviamasiello00",
       "contributions": 1
     },
     {
-      "login": "efernandez",
-      "id": 382167,
-      "node_id": "MDQ6VXNlcjM4MjE2Nw==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/382167?v=4",
-      "html_url": "https://github.com/efernandez",
+      "login": "mathias-luedtke",
+      "id": 727227,
+      "node_id": "MDQ6VXNlcjcyNzIyNw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/727227?v=4",
+      "html_url": "https://github.com/mathias-luedtke",
       "contributions": 1
     }
   ],
-  "activeOrg": false
+  "activeOrg": true
 }

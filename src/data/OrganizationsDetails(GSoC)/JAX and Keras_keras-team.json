@@ -19,8 +19,8 @@
     "ai"
   ],
   "irc_channel": null,
-  "contact_email": "mailto:jax-keras-gsoc-2025@google.com",
-  "mailing_list": null,
+  "contact_email": null,
+  "mailing_list": "jax-keras-gsoc-2025@google.com",
   "twitter_url": null,
   "blog_url": "https://deepmind.google/discover/blog/using-jax-to-accelerate-our-research/",
   "facebook_url": null,
@@ -28,10 +28,67 @@
     2025
   ],
   "projects": {
-    "2025": []
+    "2025": [
+      {
+        "title": "Benchmarking and Improving Large Language Model Serving Performance",
+        "short_description": "Large Language Model (LLM) serving frameworks like vLLM must deliver high throughput and low latency to justify the substantial cost of GPU and TPU...",
+        "description": "Large Language Model (LLM) serving frameworks like vLLM must deliver high throughput and low latency to justify the substantial cost of GPU and TPU deployments. This project targets systematic benchmarking, profiling, and optimization of vLLM, one of the most widely adopted open-source LLM serving systems. The goal is to push its performance limits under realistic workloads and contribute meaningful improvements back to the community.",
+        "student_name": "Bob Chen",
+        "code_url": "https://github.com/Bob-Chen222/vllm-gsoc/tree/opt_model_backup",
+        "proposal_id": "kOadfIEt",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/hn9YIJn3"
+      },
+      {
+        "title": "Integrating VBLoRA into Keras",
+        "short_description": "VB-LoRA (Vector Bank Low-Rank Adaptation) is a parameter-efficient fine-tuning technique that extends LoRA (Low-Rank Adaptation) by introducing a...",
+        "description": "VB-LoRA (Vector Bank Low-Rank Adaptation) is a parameter-efficient fine-tuning technique that extends LoRA (Low-Rank Adaptation) by introducing a shared vector bank and a differentiable top-k selection mechanism. This allows dense layers to adapt to new tasks by training a small set of parameters while keeping the original weights frozen. The goal of this project is to implement VB-LoRA in Keras, integrating it into layers—Dense, EinsumDense, BaseConv, Embedding, and Attention —and extending it to the backbones of model architectures in Keras Hub. The implementation will involve initializing VB-LoRA parameters, creating a vector bank and logits, computing low-rank matrices, and ensuring seamless integration with comprehensive testing and documentation.",
+        "student_name": "Dhiraj BM",
+        "code_url": "https://docs.google.com/document/d/1lSHaGIklScyBom974Uner6lNIJvKeXMZFCr_1YXhBgA/edit?usp=sharing",
+        "proposal_id": "TX7HLzOK",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/vcABnzOo"
+      },
+      {
+        "title": "Implement open LLM models with JAX and Flax",
+        "short_description": "As interest in large language models continues to grow, many open-source implementations exist across various frameworks—but accessible, modular, and...",
+        "description": "As interest in large language models continues to grow, many open-source implementations exist across various frameworks—but accessible, modular, and well-documented implementations in Flax, built on JAX, remain limited. This lack of resources makes it more difficult for developers and researchers to understand, experiment with, and extend LLMs in the JAX ecosystem.\nThis project addresses that gap by implementing one or more open LLM architectures in Flax. The goal is to provide reference models that are easy to read, modify, and build upon. The project will also include a comprehensive test suite to ensure reliability, and an interactive educational notebook that explains the architecture, shows how to load pretrained weights, and demonstrates how to run inference.",
+        "student_name": "Megan Andrews",
+        "code_url": "https://github.com/Megan-Andrews/GSoC-2025",
+        "proposal_id": "lAqe8CeL",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/GKcZodMM"
+      },
+      {
+        "title": "\"Pomni\" - JAX Code Assistant",
+        "short_description": "Current Frontier LLMs are really bad at assisting with writing JAX code due to the sparse resources spread across multiple different forums and...",
+        "description": "Current Frontier LLMs are really bad at assisting with writing JAX code due to the sparse resources spread across multiple different forums and platforms which are often inacessible/unscrapeable (such as discord) by conventional search engine indexers or web scrapers. Thus they usually do not make it into the final pretraining datasets, hurting frontier models' performance on those frameworks.\n\nI want to fine-tune OSS models on JAX code, where the data is manually scraped/collected by hand from diverse sources like YT talks, GitHub discussions, Books & Papers and even XLA HLO dumps to enhance the models' understanding of the compiler internals and improve debugging capabilities as well as better guide the developers when dealing with the internals.\n\nAnother key focus would be incorporating commonly-used popular libraries like Equinox, Optax and Scalax as well because current SOTA LLMs are not familiar with these (relatively) niche but handy libraries and thus prove to be less helpful and prone to hallucinating components of the ecosystem that don't exist.\n\nThis pretrained model will be available externally through an API or a CLI interface like Aider/Claude Code styled wherein it'd be accessible to everyone regardless of their development environment or IDE/Editor.\n\nI would also experiment with new ideas such as integrating type-annotations, Array and PyTree shape annotations and packaging other auxiliary information embedded in the AST to provide further context to the model apart from the raw code itself.",
+        "student_name": "neel04",
+        "code_url": "https://dripfeedofideas.notion.site/GSoC-Project-Blog-Pomni-25f94c5514f980ca9cddd465f51de985",
+        "proposal_id": "75vXYPfZ",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/HdO43aXo"
+      }
+    ]
   },
   "githubID": "keras-team",
   "repositories": [
+    {
+      "id": 1130613113,
+      "node_id": "R_kgDOQ2PJeQ",
+      "name": "kinetic",
+      "full_name": "keras-team/kinetic",
+      "html_url": "https://github.com/keras-team/kinetic",
+      "description": "Run ML workloads seamlessly on cloud TPUs and GPUs using a simple decorator. No infrastructure management required.",
+      "language": "Python",
+      "stargazers_count": 7,
+      "forks_count": 4,
+      "open_issues_count": 21,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
     {
       "id": 33015583,
       "node_id": "MDEwOlJlcG9zaXRvcnkzMzAxNTU4Mw==",
@@ -40,9 +97,9 @@
       "html_url": "https://github.com/keras-team/keras",
       "description": "Deep Learning for humans",
       "language": "Python",
-      "stargazers_count": 63003,
-      "forks_count": 19584,
-      "open_issues_count": 313,
+      "stargazers_count": 63916,
+      "forks_count": 19744,
+      "open_issues_count": 320,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -62,46 +119,6 @@
       ]
     },
     {
-      "id": 874385779,
-      "node_id": "R_kgDONB4Rcw",
-      "name": "keras-rs",
-      "full_name": "keras-team/keras-rs",
-      "html_url": "https://github.com/keras-team/keras-rs",
-      "description": "Multi-backend recommender systems with Keras 3",
-      "language": "Python",
-      "stargazers_count": 120,
-      "forks_count": 9,
-      "open_issues_count": 4,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 261861733,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNjE4NjE3MzM=",
-      "name": "keras-io",
-      "full_name": "keras-team/keras-io",
-      "html_url": "https://github.com/keras-team/keras-io",
-      "description": "Keras documentation, hosted live at keras.io",
-      "language": "Jupyter Notebook",
-      "stargazers_count": 2867,
-      "forks_count": 2094,
-      "open_issues_count": 124,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
       "id": 267715375,
       "node_id": "MDEwOlJlcG9zaXRvcnkyNjc3MTUzNzU=",
       "name": "keras-hub",
@@ -109,9 +126,9 @@
       "html_url": "https://github.com/keras-team/keras-hub",
       "description": "Pretrained model hub for Keras 3.",
       "language": "Python",
-      "stargazers_count": 896,
-      "forks_count": 280,
-      "open_issues_count": 219,
+      "stargazers_count": 972,
+      "forks_count": 329,
+      "open_issues_count": 244,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -120,6 +137,7 @@
         "node_id": "MDc6TGljZW5zZTI="
       },
       "topics": [
+        "cv",
         "deep-learning",
         "jax",
         "keras",
@@ -140,9 +158,49 @@
       "html_url": "https://github.com/keras-team/tf-keras",
       "description": "The TensorFlow-specific implementation of the Keras API, which was the default Keras from 2019 to 2023.",
       "language": "Python",
-      "stargazers_count": 79,
-      "forks_count": 39,
-      "open_issues_count": 169,
+      "stargazers_count": 84,
+      "forks_count": 46,
+      "open_issues_count": 99,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 261861733,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyNjE4NjE3MzM=",
+      "name": "keras-io",
+      "full_name": "keras-team/keras-io",
+      "html_url": "https://github.com/keras-team/keras-io",
+      "description": "Keras documentation, hosted live at keras.io",
+      "language": "Jupyter Notebook",
+      "stargazers_count": 2983,
+      "forks_count": 2117,
+      "open_issues_count": 105,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 625663264,
+      "node_id": "R_kgDOJUrdIA",
+      "name": "keras-core",
+      "full_name": "keras-team/keras-core",
+      "html_url": "https://github.com/keras-team/keras-core",
+      "description": "A multi-backend implementation of the Keras API, with support for TensorFlow, JAX, and PyTorch.",
+      "language": "Python",
+      "stargazers_count": 1263,
+      "forks_count": 117,
+      "open_issues_count": 0,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -160,9 +218,9 @@
       "html_url": "https://github.com/keras-team/keras-cv",
       "description": "Industry-strength Computer Vision workflows with Keras",
       "language": "Python",
-      "stargazers_count": 1036,
-      "forks_count": 334,
-      "open_issues_count": 114,
+      "stargazers_count": 1059,
+      "forks_count": 327,
+      "open_issues_count": 70,
       "license": {
         "key": "other",
         "name": "Other",
@@ -173,16 +231,16 @@
       "topics": []
     },
     {
-      "id": 625663264,
-      "node_id": "R_kgDOJUrdIA",
-      "name": "keras-core",
-      "full_name": "keras-team/keras-core",
-      "html_url": "https://github.com/keras-team/keras-core",
-      "description": "A multi-backend implementation of the Keras API, with support for TensorFlow, JAX, and PyTorch.",
+      "id": 874385779,
+      "node_id": "R_kgDONB4Rcw",
+      "name": "keras-rs",
+      "full_name": "keras-team/keras-rs",
+      "html_url": "https://github.com/keras-team/keras-rs",
+      "description": "Multi-backend recommender systems with Keras 3",
       "language": "Python",
-      "stargazers_count": 1268,
-      "forks_count": 118,
-      "open_issues_count": 2,
+      "stargazers_count": 164,
+      "forks_count": 18,
+      "open_issues_count": 12,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -193,6 +251,33 @@
       "topics": []
     },
     {
+      "id": 190658443,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxOTA2NTg0NDM=",
+      "name": "keras-tuner",
+      "full_name": "keras-team/keras-tuner",
+      "html_url": "https://github.com/keras-team/keras-tuner",
+      "description": "A Hyperparameter Tuning Library for Keras",
+      "language": "Python",
+      "stargazers_count": 2921,
+      "forks_count": 403,
+      "open_issues_count": 236,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "automl",
+        "deep-learning",
+        "hyperparameter-optimization",
+        "keras",
+        "machine-learning",
+        "tensorflow"
+      ]
+    },
+    {
       "id": 111340129,
       "node_id": "MDEwOlJlcG9zaXRvcnkxMTEzNDAxMjk=",
       "name": "autokeras",
@@ -200,9 +285,9 @@
       "html_url": "https://github.com/keras-team/autokeras",
       "description": "AutoML library for deep learning",
       "language": "Python",
-      "stargazers_count": 9234,
-      "forks_count": 1414,
-      "open_issues_count": 152,
+      "stargazers_count": 9312,
+      "forks_count": 1405,
+      "open_issues_count": 158,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -223,33 +308,6 @@
       ]
     },
     {
-      "id": 190658443,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxOTA2NTg0NDM=",
-      "name": "keras-tuner",
-      "full_name": "keras-team/keras-tuner",
-      "html_url": "https://github.com/keras-team/keras-tuner",
-      "description": "A Hyperparameter Tuning Library for Keras",
-      "language": "Python",
-      "stargazers_count": 2882,
-      "forks_count": 398,
-      "open_issues_count": 231,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "automl",
-        "deep-learning",
-        "hyperparameter-optimization",
-        "keras",
-        "machine-learning",
-        "tensorflow"
-      ]
-    },
-    {
       "id": 184630190,
       "node_id": "MDEwOlJlcG9zaXRvcnkxODQ2MzAxOTA=",
       "name": "governance",
@@ -257,8 +315,8 @@
       "html_url": "https://github.com/keras-team/governance",
       "description": "Governance of the Keras API.",
       "language": null,
-      "stargazers_count": 145,
-      "forks_count": 43,
+      "stargazers_count": 143,
+      "forks_count": 42,
       "open_issues_count": 6,
       "license": null,
       "topics": []
@@ -299,8 +357,8 @@
       "html_url": "https://github.com/keras-team/keras-contrib",
       "description": "Keras community contributions",
       "language": "Python",
-      "stargazers_count": 1579,
-      "forks_count": 651,
+      "stargazers_count": 1584,
+      "forks_count": 643,
       "open_issues_count": 191,
       "license": {
         "key": "mit",
@@ -328,7 +386,7 @@
       "description": "Documentation autogeneration utilities.",
       "language": "Python",
       "stargazers_count": 30,
-      "forks_count": 22,
+      "forks_count": 21,
       "open_issues_count": 7,
       "license": {
         "key": "apache-2.0",
@@ -347,8 +405,8 @@
       "html_url": "https://github.com/keras-team/keras-docs-zh",
       "description": "Chinese (zh-cn) translation of the Keras documentation.",
       "language": null,
-      "stargazers_count": 793,
-      "forks_count": 259,
+      "stargazers_count": 792,
+      "forks_count": 256,
       "open_issues_count": 15,
       "license": null,
       "topics": []
@@ -361,8 +419,8 @@
       "html_url": "https://github.com/keras-team/keras-preprocessing",
       "description": "Utilities for working with image data, text data, and sequence data.",
       "language": "Python",
-      "stargazers_count": 1026,
-      "forks_count": 439,
+      "stargazers_count": 1025,
+      "forks_count": 436,
       "open_issues_count": 93,
       "license": {
         "key": "other",
@@ -381,8 +439,8 @@
       "html_url": "https://github.com/keras-team/keras-applications",
       "description": "Reference implementations of popular deep learning models.",
       "language": "Python",
-      "stargazers_count": 2003,
-      "forks_count": 902,
+      "stargazers_count": 1999,
+      "forks_count": 890,
       "open_issues_count": 61,
       "license": {
         "key": "other",
@@ -421,7 +479,7 @@
       "html_url": "https://github.com/keras-team/keras-docs-ko",
       "description": "Korean translation of the Keras documentation.",
       "language": null,
-      "stargazers_count": 127,
+      "stargazers_count": 126,
       "forks_count": 75,
       "open_issues_count": 40,
       "license": null,
@@ -435,8 +493,8 @@
       "html_url": "https://github.com/keras-team/keras-docs-ja",
       "description": "Japanese translation of the Keras documentation.",
       "language": null,
-      "stargazers_count": 68,
-      "forks_count": 67,
+      "stargazers_count": 67,
+      "forks_count": 66,
       "open_issues_count": 2,
       "license": null,
       "topics": []
@@ -444,12 +502,36 @@
   ],
   "contributorsDetails": [
     {
+      "login": "JyotinderSingh",
+      "id": 33001894,
+      "node_id": "MDQ6VXNlcjMzMDAxODk0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/33001894?v=4",
+      "html_url": "https://github.com/JyotinderSingh",
+      "contributions": 11
+    },
+    {
+      "login": "divyashreepathihalli",
+      "id": 78194266,
+      "node_id": "MDQ6VXNlcjc4MTk0MjY2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/78194266?v=4",
+      "html_url": "https://github.com/divyashreepathihalli",
+      "contributions": 84
+    },
+    {
+      "login": "jeffcarp",
+      "id": 916028,
+      "node_id": "MDQ6VXNlcjkxNjAyOA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/916028?v=4",
+      "html_url": "https://github.com/jeffcarp",
+      "contributions": 13
+    },
+    {
       "login": "fchollet",
       "id": 710255,
       "node_id": "MDQ6VXNlcjcxMDI1NQ==",
       "avatar_url": "https://avatars.githubusercontent.com/u/710255?v=4",
       "html_url": "https://github.com/fchollet",
-      "contributions": 3
+      "contributions": 12
     },
     {
       "login": "tensorflower-gardener",
@@ -457,7 +539,7 @@
       "node_id": "MDQ6VXNlcjE3MTUxODky",
       "avatar_url": "https://avatars.githubusercontent.com/u/17151892?v=4",
       "html_url": "https://github.com/tensorflower-gardener",
-      "contributions": 572
+      "contributions": 13
     },
     {
       "login": "qlzh727",
@@ -473,7 +555,15 @@
       "node_id": "MDQ6VXNlcjEwOTEwMjY=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1091026?v=4",
       "html_url": "https://github.com/hertschuh",
-      "contributions": 37
+      "contributions": 8
+    },
+    {
+      "login": "james77777778",
+      "id": 20734616,
+      "node_id": "MDQ6VXNlcjIwNzM0NjE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20734616?v=4",
+      "html_url": "https://github.com/james77777778",
+      "contributions": 45
     },
     {
       "login": "haifeng-jin",
@@ -497,15 +587,7 @@
       "node_id": "MDQ6VXNlcjEzODk5Mzc=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1389937?v=4",
       "html_url": "https://github.com/mattdangerw",
-      "contributions": 204
-    },
-    {
-      "login": "james77777778",
-      "id": 20734616,
-      "node_id": "MDQ6VXNlcjIwNzM0NjE2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/20734616?v=4",
-      "html_url": "https://github.com/james77777778",
-      "contributions": 203
+      "contributions": 536
     },
     {
       "login": "chenmoneygithub",
@@ -513,7 +595,7 @@
       "node_id": "MDQ6VXNlcjIyOTI1MDMx",
       "avatar_url": "https://avatars.githubusercontent.com/u/22925031?v=4",
       "html_url": "https://github.com/chenmoneygithub",
-      "contributions": 189
+      "contributions": 74
     },
     {
       "login": "taehoonlee",
@@ -537,7 +619,7 @@
       "node_id": "MDQ6VXNlcjE0Mzc1NzM=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1437573?v=4",
       "html_url": "https://github.com/sampathweb",
-      "contributions": 115
+      "contributions": 27
     },
     {
       "login": "nkovela1",
@@ -545,7 +627,15 @@
       "node_id": "MDQ6VXNlcjYwOTg1OTE0",
       "avatar_url": "https://avatars.githubusercontent.com/u/60985914?v=4",
       "html_url": "https://github.com/nkovela1",
-      "contributions": 114
+      "contributions": 12
+    },
+    {
+      "login": "shashaka",
+      "id": 37043543,
+      "node_id": "MDQ6VXNlcjM3MDQzNTQz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/37043543?v=4",
+      "html_url": "https://github.com/shashaka",
+      "contributions": 113
     },
     {
       "login": "SamuelMarks",
@@ -553,7 +643,7 @@
       "node_id": "MDQ6VXNlcjgwNzU4MA==",
       "avatar_url": "https://avatars.githubusercontent.com/u/807580?v=4",
       "html_url": "https://github.com/SamuelMarks",
-      "contributions": 110
+      "contributions": 111
     },
     {
       "login": "ozabluda",
@@ -569,7 +659,7 @@
       "node_id": "MDQ6VXNlcjQ2NjIyNTU4",
       "avatar_url": "https://avatars.githubusercontent.com/u/46622558?v=4",
       "html_url": "https://github.com/Frightera",
-      "contributions": 80
+      "contributions": 81
     },
     {
       "login": "rchao",
@@ -578,22 +668,6 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/6505863?v=4",
       "html_url": "https://github.com/rchao",
       "contributions": 75
-    },
-    {
-      "login": "shashaka",
-      "id": 37043543,
-      "node_id": "MDQ6VXNlcjM3MDQzNTQz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/37043543?v=4",
-      "html_url": "https://github.com/shashaka",
-      "contributions": 72
-    },
-    {
-      "login": "maxpumperla",
-      "id": 3462566,
-      "node_id": "MDQ6VXNlcjM0NjI1NjY=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/3462566?v=4",
-      "html_url": "https://github.com/maxpumperla",
-      "contributions": 66
     },
     {
       "login": "EderSantana",
@@ -612,14 +686,6 @@
       "contributions": 62
     },
     {
-      "login": "divyashreepathihalli",
-      "id": 78194266,
-      "node_id": "MDQ6VXNlcjc4MTk0MjY2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/78194266?v=4",
-      "html_url": "https://github.com/divyashreepathihalli",
-      "contributions": 60
-    },
-    {
       "login": "Faisal-Alsrheed",
       "id": 47912291,
       "node_id": "MDQ6VXNlcjQ3OTEyMjkx",
@@ -636,12 +702,20 @@
       "contributions": 53
     },
     {
+      "login": "goyaladitya05",
+      "id": 107386933,
+      "node_id": "U_kgDOBmaYNQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/107386933?v=4",
+      "html_url": "https://github.com/goyaladitya05",
+      "contributions": 52
+    },
+    {
       "login": "sachinprasadhs",
       "id": 73069040,
       "node_id": "MDQ6VXNlcjczMDY5MDQw",
       "avatar_url": "https://avatars.githubusercontent.com/u/73069040?v=4",
       "html_url": "https://github.com/sachinprasadhs",
-      "contributions": 50
+      "contributions": 62
     },
     {
       "login": "grasskin",
@@ -650,6 +724,14 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/43894452?v=4",
       "html_url": "https://github.com/grasskin",
       "contributions": 46
+    },
+    {
+      "login": "maxpumperla",
+      "id": 3462566,
+      "node_id": "MDQ6VXNlcjM0NjI1NjY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3462566?v=4",
+      "html_url": "https://github.com/maxpumperla",
+      "contributions": 44
     },
     {
       "login": "soumik12345",
@@ -676,36 +758,92 @@
       "contributions": 37
     },
     {
-      "login": "hazemessamm",
-      "id": 11133593,
-      "node_id": "MDQ6VXNlcjExMTMzNTkz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/11133593?v=4",
-      "html_url": "https://github.com/hazemessamm",
-      "contributions": 36
-    },
-    {
       "login": "abheesht17",
       "id": 31360468,
       "node_id": "MDQ6VXNlcjMxMzYwNDY4",
       "avatar_url": "https://avatars.githubusercontent.com/u/31360468?v=4",
       "html_url": "https://github.com/abheesht17",
-      "contributions": 35
+      "contributions": 118
     },
     {
-      "login": "rtg0795",
-      "id": 36429068,
-      "node_id": "MDQ6VXNlcjM2NDI5MDY4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/36429068?v=4",
-      "html_url": "https://github.com/rtg0795",
-      "contributions": 3
+      "login": "laxmareddyp",
+      "id": 113547567,
+      "node_id": "U_kgDOBsSZLw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/113547567?v=4",
+      "html_url": "https://github.com/laxmareddyp",
+      "contributions": 46
     },
     {
-      "login": "cantonios",
-      "id": 2538739,
-      "node_id": "MDQ6VXNlcjI1Mzg3Mzk=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/2538739?v=4",
-      "html_url": "https://github.com/cantonios",
-      "contributions": 2
+      "login": "kanpuriyanawab",
+      "id": 51750587,
+      "node_id": "MDQ6VXNlcjUxNzUwNTg3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51750587?v=4",
+      "html_url": "https://github.com/kanpuriyanawab",
+      "contributions": 39
+    },
+    {
+      "login": "jbischof",
+      "id": 1141045,
+      "node_id": "MDQ6VXNlcjExNDEwNDU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1141045?v=4",
+      "html_url": "https://github.com/jbischof",
+      "contributions": 30
+    },
+    {
+      "login": "SamanehSaadat",
+      "id": 1986164,
+      "node_id": "MDQ6VXNlcjE5ODYxNjQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1986164?v=4",
+      "html_url": "https://github.com/SamanehSaadat",
+      "contributions": 25
+    },
+    {
+      "login": "sineeli",
+      "id": 113718461,
+      "node_id": "U_kgDOBsc0vQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/113718461?v=4",
+      "html_url": "https://github.com/sineeli",
+      "contributions": 21
+    },
+    {
+      "login": "abuelnasr0",
+      "id": 64566340,
+      "node_id": "MDQ6VXNlcjY0NTY2MzQw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/64566340?v=4",
+      "html_url": "https://github.com/abuelnasr0",
+      "contributions": 18
+    },
+    {
+      "login": "tirthasheshpatel",
+      "id": 43181252,
+      "node_id": "MDQ6VXNlcjQzMTgxMjUy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43181252?v=4",
+      "html_url": "https://github.com/tirthasheshpatel",
+      "contributions": 17
+    },
+    {
+      "login": "pctablet505",
+      "id": 55033230,
+      "node_id": "MDQ6VXNlcjU1MDMzMjMw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55033230?v=4",
+      "html_url": "https://github.com/pctablet505",
+      "contributions": 16
+    },
+    {
+      "login": "aflah02",
+      "id": 72096386,
+      "node_id": "MDQ6VXNlcjcyMDk2Mzg2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/72096386?v=4",
+      "html_url": "https://github.com/aflah02",
+      "contributions": 16
+    },
+    {
+      "login": "jessechancy",
+      "id": 44277300,
+      "node_id": "MDQ6VXNlcjQ0Mjc3MzAw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/44277300?v=4",
+      "html_url": "https://github.com/jessechancy",
+      "contributions": 13
     },
     {
       "login": "dependabot[bot]",
@@ -713,7 +851,63 @@
       "node_id": "MDM6Qm90NDk2OTkzMzM=",
       "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
       "html_url": "https://github.com/apps/dependabot",
-      "contributions": 1
+      "contributions": 11
+    },
+    {
+      "login": "pkgoogle",
+      "id": 132095473,
+      "node_id": "U_kgDOB9-d8Q",
+      "avatar_url": "https://avatars.githubusercontent.com/u/132095473?v=4",
+      "html_url": "https://github.com/pkgoogle",
+      "contributions": 10
+    },
+    {
+      "login": "ADITYADAS1999",
+      "id": 58718316,
+      "node_id": "MDQ6VXNlcjU4NzE4MzE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/58718316?v=4",
+      "html_url": "https://github.com/ADITYADAS1999",
+      "contributions": 9
+    },
+    {
+      "login": "harshaljanjani",
+      "id": 75426551,
+      "node_id": "MDQ6VXNlcjc1NDI2NTUx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/75426551?v=4",
+      "html_url": "https://github.com/harshaljanjani",
+      "contributions": 9
+    },
+    {
+      "login": "TheAthleticCoder",
+      "id": 55716761,
+      "node_id": "MDQ6VXNlcjU1NzE2NzYx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55716761?v=4",
+      "html_url": "https://github.com/TheAthleticCoder",
+      "contributions": 9
+    },
+    {
+      "login": "pass-lin",
+      "id": 62837036,
+      "node_id": "MDQ6VXNlcjYyODM3MDM2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/62837036?v=4",
+      "html_url": "https://github.com/pass-lin",
+      "contributions": 8
+    },
+    {
+      "login": "susnato",
+      "id": 56069179,
+      "node_id": "MDQ6VXNlcjU2MDY5MTc5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/56069179?v=4",
+      "html_url": "https://github.com/susnato",
+      "contributions": 8
+    },
+    {
+      "login": "martin-gorner",
+      "id": 959847,
+      "node_id": "MDQ6VXNlcjk1OTg0Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/959847?v=4",
+      "html_url": "https://github.com/martin-gorner",
+      "contributions": 8
     }
   ],
   "activeOrg": true

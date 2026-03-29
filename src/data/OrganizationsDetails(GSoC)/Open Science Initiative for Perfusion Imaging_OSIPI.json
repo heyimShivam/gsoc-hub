@@ -18,7 +18,7 @@
     "python",
     "github"
   ],
-  "irc_channel": "https://osipi.slack.com",
+  "irc_channel": "https://join.slack.com/t/osipi/shared_invite/zt-3ozv2ba4i-KwIExrRmqd1riAC0icZrKw",
   "contact_email": "mailto:ismrmosipi@gmail.com",
   "mailing_list": null,
   "twitter_url": "https://twitter.com/OSIPI_ISMRM",
@@ -26,7 +26,8 @@
   "facebook_url": null,
   "year": [
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2024": [
@@ -67,29 +68,81 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/xz92GQuc"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "ASL Parameters Generator from DICOM/ BIDS Images",
+        "short_description": "This project aims to develop a modular, open-source Python package and a web app built on it to automatically extract acquisition parameters from ASL...",
+        "description": "This project aims to develop a modular, open-source Python package and a web app built on it to automatically extract acquisition parameters from ASL MRI datasets in DICOM and BIDS formats and generate standardized methods sections for scientific publications. Manual reporting of MRI parameters is often time-consuming and error-prone, hindering reproducibility. This tool addresses the issue by extracting metadata, including hidden and private DICOM tags, while interactively prompting users for any missing parameters to ensure completeness. It will feature an improved DICOM/BIDS handler, an interactive graphical user interface (GUI) for parameter input and validation, and comprehensive documentation. It will also undergo beta testing with OSIPI TF4.1 members. Designed for easy integration with future extensions such as DSC/DCE MRI support, the tool will enhance transparency, save researchers valuable time, and contribute to strengthening OSIPI’s ecosystem for perfusion imaging.",
+        "student_name": "Ibrahim Abdelazim",
+        "code_url": "https://medium.com/@ibrahim.abdelazim/google-summer-of-code-25-with-open-science-initiative-for-perfusion-imaging-osipi-2f95fab822ce",
+        "proposal_id": "znYqDwGN",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/W5gaALuO"
+      },
+      {
+        "title": "OSIPI package – Blood-brain barrier module",
+        "short_description": "This project addresses the inverse problem of estimating physiological parameters that characterize the permeability of the blood-brain barrier (BBB)...",
+        "description": "This project addresses the inverse problem of estimating physiological parameters that characterize the permeability of the blood-brain barrier (BBB) from MRI data. These parameters cannot be measured directly and must be inferred from signal progression over time in techniques such as Dynamic Contrast-Enhanced MRI (DCE-MRI) and Arterial Spin Labeling (ASL). The estimation is complicated by measurement noise, model ambiguity, and the sensitivity of parameter estimates to small variations in the data.\nTo improve robustness and accuracy, this project will implement a Bayesian framework that incorporates prior physiological knowledge and observed MRI signals to estimate the posterior distribution of the parameters. For the pharmacokinetic modeling the Tofts model for DCE-MRI and perfusion modeling for ASL will be used. Markov Chain (MCMC) sampling and gradient-based optimization methods may improve the robustness of the reconstruction.\n\n\nDeliverables include: --- An extensible implementation of the BBB modeling pipeline using OSIPI tools --- Support for both DCE-MRI and ASL data --- Parameter estimation via Bayesian inference and optimization --- Comprehensive documentation and integration into the OSIPI project.",
+        "student_name": "Melissa Lange",
+        "code_url": "https://github.com/limonenmelissa/gsoc_bbb/blob/main/src/bbb_exchange/README.md",
+        "proposal_id": "QGEVWNgz",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/yQOF7L0M"
+      },
+      {
+        "title": "Unify HTML Pages For OSIPI Output",
+        "short_description": "The OSIPI initiative has developed various open-source tools for quantitative MRI, particularly in perfusion imaging. However, the documentation for...",
+        "description": "The OSIPI initiative has developed various open-source tools for quantitative MRI, particularly in perfusion imaging. However, the documentation for these tools is currently fragmented across multiple projects, each with different structures, styles, and rendering approaches. This inconsistency creates barriers to usability, maintainability, and accessibility.\nThis project aims to unify OSIPI’s documentation under a single, standardized HTML framework. By utilizing modern documentation tools such as MkDocs or other static site generators, we will create a consistent, searchable, and user-friendly interface. The unified framework will streamline maintenance, improve accessibility, and enhance the overall user experience.\nDeliverables include:\n   A standardized template for OSIPI documentation.\n   Migration of existing project documentation into the new framework.\n   Integrated navigation and search functionality across all documentation.\n   Automated deployment pipeline using GitHub Pages or similar tools.\n   Clear documentation and contribution guidelines for future scalability.",
+        "student_name": "Rohan Kumar Mahato",
+        "code_url": "https://medium.com/@rohankumarmahato345/a-look-inside-my-google-summer-of-code-2025-with-osipi-3744d897ad3e",
+        "proposal_id": "lxe3aKJY",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/2IvjaN2w"
+      },
+      {
+        "title": "Flexible ASL: A Low-Code, Modular Python Library for Reproducible Arterial Spin Labeling Research",
+        "short_description": "Arterial Spin Labeling (ASL) is a non-invasive MRI technique that measures cerebral blood flow and supports studies on Alzheimer’s disease, stroke,...",
+        "description": "Arterial Spin Labeling (ASL) is a non-invasive MRI technique that measures cerebral blood flow and supports studies on Alzheimer’s disease, stroke, and other neurological conditions. Yet existing software remains rigid, difficult to customize, and often restricted to brain-only research.\n\nFlexible ASL (PyASL) introduces a redesigned, developer- and user-friendly architecture that makes advanced ASL analysis accessible to a wider scientific community. Key innovations include:\n(1) Minimum programming knowledge required — run complete pipelines with more intuitive alternatives, such as YAML config, python notebook, command line interface, etc; \n(2) Mix & match preprocessing steps — combine algorithms from different pipelines without rewriting the code; \n(3) Easy plug-ins — add new preprocessing modules with minimal setup; \n(4) Support for integrating machine-learning models, custom statistics, and quality-control tools; \n(5) Extensibility beyond the brain to other organs, promoting cross-disciplinary imaging research.\n\nThis system can cut integration time for new models or analysis steps by 60–80%, reduce development overhead, and foster reproducibility and cross-functional collaboration among clinical and technical teams. By bridging clinical imaging and modern AI, Flexible ASL lowers barriers for both novices and experts, helping to accelerate innovation in non-invasive perfusion imaging.",
+        "student_name": "Tongxin (Elo) Li",
+        "code_url": "https://github.com/elooff/PyASL",
+        "proposal_id": "WWTp4QUq",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/J0rmZ4sz"
+      },
+      {
+        "title": "Dockerized Data Processing Pipeline for Medical Imaging",
+        "short_description": "This project aims to build a modular, containerized pipeline for medical image processing (e.g., IVIM analysis) with DICOM and NIfTI support. It will...",
+        "description": "This project aims to build a modular, containerized pipeline for medical image processing (e.g., IVIM analysis) with DICOM and NIfTI support. It will allow users, especially researchers and clinicians, to define and execute their own workflows via a web interface. Users will be able to configure multi-step image processing workflows, such as image ingestion, preprocessing, fitting, and report generation, that are executed based on dependencies between tasks. These workflows will be modeled as Directed Acyclic Graphs (DAGs), where each task runs only after its required inputs are available.\nTo orchestrate these workflows efficiently, the system will use a combination of Docker containers, Kaapana for healthcare-specific orchestration and frontend visualization, and Kubernetes and Argo or Airflow for advanced DAG-based control and scaling.",
+        "student_name": "Usman Akinyemi",
+        "code_url": "https://github.com/Unique-Usman/gsoc_report?tab=readme-ov-file",
+        "proposal_id": "TeFkSiCt",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/wBCitF8F"
+      }
+    ],
+    "2026": []
   },
   "githubID": "OSIPI",
   "repositories": [
     {
-      "id": 313694166,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzMTM2OTQxNjY=",
-      "name": "TF2.2_OSIPI-ASL-toolbox",
-      "full_name": "OSIPI/TF2.2_OSIPI-ASL-toolbox",
-      "html_url": "https://github.com/OSIPI/TF2.2_OSIPI-ASL-toolbox",
-      "description": "TF2.2 ASL code contributions  for Arterial Spin Labeling data processing, collected within the Open-Source Initiative for Perfusion Imaging (OSIPI)",
-      "language": "MATLAB",
-      "stargazers_count": 6,
-      "forks_count": 6,
-      "open_issues_count": 0,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
+      "id": 678895173,
+      "node_id": "R_kgDOKHceRQ",
+      "name": "osipy",
+      "full_name": "OSIPI/osipy",
+      "html_url": "https://github.com/OSIPI/osipy",
+      "description": "Python package for perfusion MRI analysis",
+      "language": "Python",
+      "stargazers_count": 13,
+      "forks_count": 32,
+      "open_issues_count": 17,
+      "license": null,
+      "topics": [
+        "asl",
+        "dce",
+        "dicom-images",
+        "dsc",
+        "image-processing",
+        "ivim",
+        "medical-imaging",
+        "mri",
+        "perfusion",
+        "visualization"
+      ]
     },
     {
       "id": 621791511,
@@ -98,10 +151,10 @@
       "full_name": "OSIPI/TF2.4_IVIM-MRI_CodeCollection",
       "html_url": "https://github.com/OSIPI/TF2.4_IVIM-MRI_CodeCollection",
       "description": "OSIPI TF2.4: IVIM MRI code collection",
-      "language": "Python",
-      "stargazers_count": 14,
-      "forks_count": 36,
-      "open_issues_count": 19,
+      "language": "MATLAB",
+      "stargazers_count": 24,
+      "forks_count": 46,
+      "open_issues_count": 27,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -109,47 +162,6 @@
         "url": "https://api.github.com/licenses/apache-2.0",
         "node_id": "MDc6TGljZW5zZTI="
       },
-      "topics": []
-    },
-    {
-      "id": 678895173,
-      "node_id": "R_kgDOKHceRQ",
-      "name": "osipi",
-      "full_name": "OSIPI/osipi",
-      "html_url": "https://github.com/OSIPI/osipi",
-      "description": "Python package for perfusion MRI analysis",
-      "language": "Python",
-      "stargazers_count": 7,
-      "forks_count": 21,
-      "open_issues_count": 12,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "dicom-images",
-        "image-processing",
-        "medical-imaging",
-        "mri",
-        "perfusion",
-        "visualization"
-      ]
-    },
-    {
-      "id": 877932932,
-      "node_id": "R_kgDONFQxhA",
-      "name": "asl-parameter-reporter",
-      "full_name": "OSIPI/asl-parameter-reporter",
-      "html_url": "https://github.com/OSIPI/asl-parameter-reporter",
-      "description": "Nice description here.",
-      "language": "Python",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
       "topics": []
     },
     {
@@ -160,9 +172,9 @@
       "html_url": "https://github.com/OSIPI/DCE-DSC-MRI_CodeCollection",
       "description": "TF2.3 DCE-/DSC-MRI processing code, collected, tested and made available to all.",
       "language": "Python",
-      "stargazers_count": 39,
-      "forks_count": 22,
-      "open_issues_count": 14,
+      "stargazers_count": 40,
+      "forks_count": 26,
+      "open_issues_count": 22,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -170,6 +182,118 @@
         "url": "https://api.github.com/licenses/apache-2.0",
         "node_id": "MDc6TGljZW5zZTI="
       },
+      "topics": []
+    },
+    {
+      "id": 1171824603,
+      "node_id": "R_kgDORdif2w",
+      "name": "BBB-ASL",
+      "full_name": "OSIPI/BBB-ASL",
+      "html_url": "https://github.com/OSIPI/BBB-ASL",
+      "description": "Quantification module for ASL",
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 4,
+      "open_issues_count": 3,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 877932932,
+      "node_id": "R_kgDONFQxhA",
+      "name": "Method-section-generator",
+      "full_name": "OSIPI/Method-section-generator",
+      "html_url": "https://github.com/OSIPI/Method-section-generator",
+      "description": "A comprehensive solution for extracting and generating Arterial Spin Labeling (ASL) parameters for scientific method sections.",
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 8,
+      "open_issues_count": 50,
+      "license": null,
+      "topics": [
+        "fastapi",
+        "mri-perfusion",
+        "nextjs",
+        "scientific-publications"
+      ]
+    },
+    {
+      "id": 498446550,
+      "node_id": "R_kgDOHbWw1g",
+      "name": "OSIPI_CAPLEX",
+      "full_name": "OSIPI/OSIPI_CAPLEX",
+      "html_url": "https://github.com/OSIPI/OSIPI_CAPLEX",
+      "description": "TF4.2",
+      "language": null,
+      "stargazers_count": 3,
+      "forks_count": 15,
+      "open_issues_count": 40,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 313694166,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzMTM2OTQxNjY=",
+      "name": "TF2.2_OSIPI-ASL-toolbox",
+      "full_name": "OSIPI/TF2.2_OSIPI-ASL-toolbox",
+      "html_url": "https://github.com/OSIPI/TF2.2_OSIPI-ASL-toolbox",
+      "description": "TF2.2 ASL code contributions  for Arterial Spin Labeling data processing, collected within the Open-Source Initiative for Perfusion Imaging (OSIPI)",
+      "language": "MATLAB",
+      "stargazers_count": 8,
+      "forks_count": 12,
+      "open_issues_count": 4,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 171955359,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNzE5NTUzNTk=",
+      "name": "osipi.github.io",
+      "full_name": "OSIPI/osipi.github.io",
+      "html_url": "https://github.com/OSIPI/osipi.github.io",
+      "description": "main OSIPI website",
+      "language": null,
+      "stargazers_count": 8,
+      "forks_count": 32,
+      "open_issues_count": 5,
+      "license": null,
+      "topics": [
+        "mri",
+        "perfusion"
+      ]
+    },
+    {
+      "id": 1044327624,
+      "node_id": "R_kgDOPj8syA",
+      "name": "mkdocs-template",
+      "full_name": "OSIPI/mkdocs-template",
+      "html_url": "https://github.com/OSIPI/mkdocs-template",
+      "description": "This repo hosts a template for mkdocs that users can use to quick start a documented project.",
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1016108444,
+      "node_id": "R_kgDOPJCVnA",
+      "name": "pyasl-doc",
+      "full_name": "OSIPI/pyasl-doc",
+      "html_url": "https://github.com/OSIPI/pyasl-doc",
+      "description": null,
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
       "topics": []
     },
     {
@@ -207,43 +331,6 @@
       "topics": []
     },
     {
-      "id": 171955359,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNzE5NTUzNTk=",
-      "name": "osipi.github.io",
-      "full_name": "OSIPI/osipi.github.io",
-      "html_url": "https://github.com/OSIPI/osipi.github.io",
-      "description": "main OSIPI website",
-      "language": "JavaScript",
-      "stargazers_count": 7,
-      "forks_count": 31,
-      "open_issues_count": 4,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": [
-        "mri",
-        "perfusion"
-      ]
-    },
-    {
-      "id": 498446550,
-      "node_id": "R_kgDOHbWw1g",
-      "name": "OSIPI_CAPLEX",
-      "full_name": "OSIPI/OSIPI_CAPLEX",
-      "html_url": "https://github.com/OSIPI/OSIPI_CAPLEX",
-      "description": "TF4.2",
-      "language": null,
-      "stargazers_count": 3,
-      "forks_count": 13,
-      "open_issues_count": 24,
-      "license": null,
-      "topics": []
-    },
-    {
       "id": 487896057,
       "node_id": "R_kgDOHRSz-Q",
       "name": "TF6.2_DCE-DSC-MRI_Challenges",
@@ -251,9 +338,9 @@
       "html_url": "https://github.com/OSIPI/TF6.2_DCE-DSC-MRI_Challenges",
       "description": "TF6.2",
       "language": "Python",
-      "stargazers_count": 1,
-      "forks_count": 3,
-      "open_issues_count": 0,
+      "stargazers_count": 4,
+      "forks_count": 11,
+      "open_issues_count": 9,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -334,52 +421,124 @@
   ],
   "contributorsDetails": [
     {
-      "login": "LiminZhouZoe",
-      "id": 53527746,
-      "node_id": "MDQ6VXNlcjUzNTI3NzQ2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/53527746?v=4",
-      "html_url": "https://github.com/LiminZhouZoe",
-      "contributions": 15
+      "login": "MohamedNasser8",
+      "id": 66921605,
+      "node_id": "MDQ6VXNlcjY2OTIxNjA1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/66921605?v=4",
+      "html_url": "https://github.com/MohamedNasser8",
+      "contributions": 104
     },
     {
-      "login": "Trico01",
-      "id": 60318208,
-      "node_id": "MDQ6VXNlcjYwMzE4MjA4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/60318208?v=4",
-      "html_url": "https://github.com/Trico01",
-      "contributions": 7
+      "login": "ltorres6",
+      "id": 37592711,
+      "node_id": "MDQ6VXNlcjM3NTkyNzEx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/37592711?v=4",
+      "html_url": "https://github.com/ltorres6",
+      "contributions": 68
     },
     {
-      "login": "HenkMutsaerts",
-      "id": 27774254,
-      "node_id": "MDQ6VXNlcjI3Nzc0MjU0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/27774254?v=4",
-      "html_url": "https://github.com/HenkMutsaerts",
-      "contributions": 3
+      "login": "mjt320",
+      "id": 36667519,
+      "node_id": "MDQ6VXNlcjM2NjY3NTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/36667519?v=4",
+      "html_url": "https://github.com/mjt320",
+      "contributions": 199
     },
     {
-      "login": "magumoal",
-      "id": 64470702,
-      "node_id": "MDQ6VXNlcjY0NDcwNzAy",
-      "avatar_url": "https://avatars.githubusercontent.com/u/64470702?v=4",
-      "html_url": "https://github.com/magumoal",
+      "login": "stadmill",
+      "id": 35917545,
+      "node_id": "MDQ6VXNlcjM1OTE3NTQ1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/35917545?v=4",
+      "html_url": "https://github.com/stadmill",
+      "contributions": 20
+    },
+    {
+      "login": "plaresmedima",
+      "id": 6051075,
+      "node_id": "MDQ6VXNlcjYwNTEwNzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6051075?v=4",
+      "html_url": "https://github.com/plaresmedima",
+      "contributions": 9
+    },
+    {
+      "login": "amirayasser1",
+      "id": 138434263,
+      "node_id": "U_kgDOCEBW1w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/138434263?v=4",
+      "html_url": "https://github.com/amirayasser1",
+      "contributions": 8
+    },
+    {
+      "login": "LucyKershaw",
+      "id": 6030562,
+      "node_id": "MDQ6VXNlcjYwMzA1NjI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6030562?v=4",
+      "html_url": "https://github.com/LucyKershaw",
+      "contributions": 19
+    },
+    {
+      "login": "AdarshRawat1",
+      "id": 100958893,
+      "node_id": "U_kgDOBgSCrQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/100958893?v=4",
+      "html_url": "https://github.com/AdarshRawat1",
       "contributions": 2
     },
     {
-      "login": "slevyrosetti",
-      "id": 7769691,
-      "node_id": "MDQ6VXNlcjc3Njk2OTE=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/7769691?v=4",
-      "html_url": "https://github.com/slevyrosetti",
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "html_url": "https://github.com/apps/github-actions",
+      "contributions": 4
+    },
+    {
+      "login": "RohanKrMahato",
+      "id": 133570457,
+      "node_id": "U_kgDOB_YfmQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/133570457?v=4",
+      "html_url": "https://github.com/RohanKrMahato",
+      "contributions": 3
+    },
+    {
+      "login": "Syeda-Mal",
+      "id": 143062597,
+      "node_id": "U_kgDOCIb2RQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/143062597?v=4",
+      "html_url": "https://github.com/Syeda-Mal",
+      "contributions": 3
+    },
+    {
+      "login": "Spkap",
+      "id": 140597815,
+      "node_id": "U_kgDOCGFaNw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/140597815?v=4",
+      "html_url": "https://github.com/Spkap",
+      "contributions": 3
+    },
+    {
+      "login": "Devguru-codes",
+      "id": 199502133,
+      "node_id": "U_kgDOC-QpNQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/199502133?v=4",
+      "html_url": "https://github.com/Devguru-codes",
       "contributions": 1
     },
     {
-      "login": "etpeterson",
-      "id": 1086934,
-      "node_id": "MDQ6VXNlcjEwODY5MzQ=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1086934?v=4",
-      "html_url": "https://github.com/etpeterson",
-      "contributions": 120
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "html_url": "https://github.com/apps/dependabot",
+      "contributions": 2
+    },
+    {
+      "login": "kamathanirudh",
+      "id": 139653092,
+      "node_id": "U_kgDOCFLv5A",
+      "avatar_url": "https://avatars.githubusercontent.com/u/139653092?v=4",
+      "html_url": "https://github.com/kamathanirudh",
+      "contributions": 1
     },
     {
       "login": "oliverchampion",
@@ -387,7 +546,23 @@
       "node_id": "MDQ6VXNlcjc4NDYyNjk=",
       "avatar_url": "https://avatars.githubusercontent.com/u/7846269?v=4",
       "html_url": "https://github.com/oliverchampion",
-      "contributions": 66
+      "contributions": 42
+    },
+    {
+      "login": "etpeterson",
+      "id": 1086934,
+      "node_id": "MDQ6VXNlcjEwODY5MzQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1086934?v=4",
+      "html_url": "https://github.com/etpeterson",
+      "contributions": 126
+    },
+    {
+      "login": "Unique-Usman",
+      "id": 86585626,
+      "node_id": "MDQ6VXNlcjg2NTg1NjI2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/86585626?v=4",
+      "html_url": "https://github.com/Unique-Usman",
+      "contributions": 54
     },
     {
       "login": "AhmedBasem20",
@@ -398,12 +573,12 @@
       "contributions": 52
     },
     {
-      "login": "Unique-Usman",
-      "id": 86585626,
-      "node_id": "MDQ6VXNlcjg2NTg1NjI2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/86585626?v=4",
-      "html_url": "https://github.com/Unique-Usman",
-      "contributions": 40
+      "login": "IvanARashid",
+      "id": 19232156,
+      "node_id": "MDQ6VXNlcjE5MjMyMTU2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19232156?v=4",
+      "html_url": "https://github.com/IvanARashid",
+      "contributions": 46
     },
     {
       "login": "oscarjalnefjord",
@@ -411,7 +586,7 @@
       "node_id": "MDQ6VXNlcjI2OTAxNzYx",
       "avatar_url": "https://avatars.githubusercontent.com/u/26901761?v=4",
       "html_url": "https://github.com/oscarjalnefjord",
-      "contributions": 22
+      "contributions": 32
     },
     {
       "login": "DKuppens",
@@ -435,7 +610,23 @@
       "node_id": "MDQ6VXNlcjkxMTQzMzg4",
       "avatar_url": "https://avatars.githubusercontent.com/u/91143388?v=4",
       "html_url": "https://github.com/paulienvoorter",
-      "contributions": 11
+      "contributions": 12
+    },
+    {
+      "login": "locastre",
+      "id": 34068528,
+      "node_id": "MDQ6VXNlcjM0MDY4NTI4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/34068528?v=4",
+      "html_url": "https://github.com/locastre",
+      "contributions": 10
+    },
+    {
+      "login": "Bneijndorff",
+      "id": 92149796,
+      "node_id": "U_kgDOBX4YJA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/92149796?v=4",
+      "html_url": "https://github.com/Bneijndorff",
+      "contributions": 9
     },
     {
       "login": "KoenBaas",
@@ -451,7 +642,7 @@
       "node_id": "MDQ6VXNlcjEyOTA2NTE=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1290651?v=4",
       "html_url": "https://github.com/petravanhoudt",
-      "contributions": 6
+      "contributions": 197
     },
     {
       "login": "Mag-D-Anas",
@@ -470,19 +661,75 @@
       "contributions": 3
     },
     {
-      "login": "AdarshRawat1",
-      "id": 100958893,
-      "node_id": "U_kgDOBgSCrQ",
-      "avatar_url": "https://avatars.githubusercontent.com/u/100958893?v=4",
-      "html_url": "https://github.com/AdarshRawat1",
-      "contributions": 2
-    },
-    {
       "login": "ericpete",
       "id": 50175733,
       "node_id": "MDQ6VXNlcjUwMTc1NzMz",
       "avatar_url": "https://avatars.githubusercontent.com/u/50175733?v=4",
       "html_url": "https://github.com/ericpete",
+      "contributions": 1
+    },
+    {
+      "login": "notZaki",
+      "id": 9019681,
+      "node_id": "MDQ6VXNlcjkwMTk2ODE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9019681?v=4",
+      "html_url": "https://github.com/notZaki",
+      "contributions": 91
+    },
+    {
+      "login": "sudarshanragu",
+      "id": 10438896,
+      "node_id": "MDQ6VXNlcjEwNDM4ODk2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10438896?v=4",
+      "html_url": "https://github.com/sudarshanragu",
+      "contributions": 44
+    },
+    {
+      "login": "Jkallehauge",
+      "id": 9609198,
+      "node_id": "MDQ6VXNlcjk2MDkxOTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9609198?v=4",
+      "html_url": "https://github.com/Jkallehauge",
+      "contributions": 15
+    },
+    {
+      "login": "KorobovaN",
+      "id": 48240111,
+      "node_id": "MDQ6VXNlcjQ4MjQwMTEx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/48240111?v=4",
+      "html_url": "https://github.com/KorobovaN",
+      "contributions": 2
+    },
+    {
+      "login": "AlmaBlomback",
+      "id": 63227038,
+      "node_id": "MDQ6VXNlcjYzMjI3MDM4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/63227038?v=4",
+      "html_url": "https://github.com/AlmaBlomback",
+      "contributions": 1
+    },
+    {
+      "login": "michaelberks",
+      "id": 9746843,
+      "node_id": "MDQ6VXNlcjk3NDY4NDM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9746843?v=4",
+      "html_url": "https://github.com/michaelberks",
+      "contributions": 1
+    },
+    {
+      "login": "olegjo",
+      "id": 11225136,
+      "node_id": "MDQ6VXNlcjExMjI1MTM2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11225136?v=4",
+      "html_url": "https://github.com/olegjo",
+      "contributions": 1
+    },
+    {
+      "login": "sunyu0410",
+      "id": 11023559,
+      "node_id": "MDQ6VXNlcjExMDIzNTU5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11023559?v=4",
+      "html_url": "https://github.com/sunyu0410",
       "contributions": 1
     }
   ],

@@ -57,7 +57,8 @@
     2022,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2016": [
@@ -726,34 +727,129 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/YSs2Xv9W"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "LibVLC Wayland API",
+        "short_description": "The aim of this project is to provide an API in libVLC so users can embed the media player in their programs. Although there’s already a support for...",
+        "description": "The aim of this project is to provide an API in libVLC so users can embed the media player in their programs. Although there’s already a support for x11 and Windows API, wayland doesn’t work in the same way. In this project, I implemented a native wayland back-end enabling integration of VLC’s rendering capabilities into wayland-based applications. I wrote a simple demo that explains how this backend can be used and tested it on different wayland compositors.",
+        "student_name": "Abdulrahman Saber",
+        "code_url": "https://gist.github.com/abdsaber000/51f0f7ea18603ba9f6924e5571b55afb",
+        "proposal_id": "OIr9u2XC",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/uPnZ5zNu"
+      },
+      {
+        "title": "Improve libNDI project and integrate it in VLC",
+        "short_description": "Network Device Interface (NDI) is a software specification that enables high-definition video transmission over a computer network with low latency...",
+        "description": "Network Device Interface (NDI) is a software specification that enables\nhigh-definition video transmission over a computer network with low\nlatency and high quality. This project aims to enhance an open-source implementation of the NDI protocol, libNDI, by adding support for sending NDI streams, expanding protocol support for NDI-HX2 and a UDP-based NDI variant, improving performance, stability, and security. Then integrate libNDI into VLC.",
+        "student_name": "Ahmed Hamed Gaber",
+        "code_url": "https://ahmedhamed3699.github.io/posts/gsoc/vlc/final-report-2025",
+        "proposal_id": "R3FJEZKr",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/WNceufE8"
+      },
+      {
+        "title": "Improve the VideoLAN crash reporter in Go and Vue.js",
+        "short_description": "This project aims to modernize the VideoLAN crash reporting system (CrashDragon) to improve how VLC crashes are collected, analyzed, and managed. The...",
+        "description": "This project aims to modernize the VideoLAN crash reporting system (CrashDragon) to improve how VLC crashes are collected, analyzed, and managed. The current system, while functional, uses outdated technologies and lacks modern interactivity.\nI'll tackle this in two phases: First, enhancing the Go backend API with improved error handling, better crash grouping algorithms, and optimized database queries. Second, completely rewriting the frontend using Vue.js to replace server-rendered templates with a modern single-page application.",
+        "student_name": "Akhilesh Kumar Yadav",
+        "code_url": "https://medium.com/@akacademic05/my-google-summer-of-code-2025-with-vlc-media-player-91d1f708c5fb",
+        "proposal_id": "yaTetEsa",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/0TUzOpCm"
+      },
+      {
+        "title": "Qt Interface Redesign for VLC",
+        "short_description": "VLC is a powerful and feature-rich media player, but its current UI can feel outdated and less intuitive—especially for newer users. This project...",
+        "description": "VLC is a powerful and feature-rich media player, but its current UI can feel outdated and less intuitive—especially for newer users. This project aims to make a redesign of the user interface of VLC Media Player using Qt and Qt QML by enhancing both the visual consistency and performance of the application.  From my own use of the software and from reading community feature requests, I will implement thoughtful Quality of Life features, some of which are also inspired from my own presentation software project with Qt.",
+        "student_name": "Arpit Benjamin (GlaucousGlaucus)",
+        "code_url": "https://code.videolan.org/GlaucousGlaucus/gsoc-2025-project-report-videolan",
+        "proposal_id": "JY13hAIg",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/WKhoaEIr"
+      },
+      {
+        "title": "VLC iOS UI update - implementing Parental Control in VLC for iOS",
+        "short_description": "This proposal aims to update the User Interface and add new features to catch up with the Android version of VLC, enhancing and making the user...",
+        "description": "This proposal aims to update the User Interface and add new features to catch up with the Android version of VLC, enhancing and making the user experience safer and easier.\nThe main feature of this project will be adding to VLC iOS app the Parental Control feature already available on the VLC Android app. This will enable iOS users to restrict access to the app settings and to sensitive actions, such as deleting media files or modifying playlists, unless the user successfully authenticates via a PIN code or biometrics.\nThis is particularly useful in environments where children or unauthorized users might otherwise access media libraries unsupervised.\nThis feature will ensure that VLC for iOS offers the same level of protection and control alongside consistent design guidelines and accessibility currently available in VLC for Android.\nAs part of this effort, some components of the settings interface and media actions will also be reviewed and updated to align with modern iOS UI patterns. Implementing these improvements will strengthen the app’s usability in shared environments and contribute to a safer, more polished experience for all users.",
+        "student_name": "Arthur Norat",
+        "code_url": "https://arthurnorat.github.io/portfolio/gsoc2025.html",
+        "proposal_id": "Xa52PFVg",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/LQHsm73T"
+      },
+      {
+        "title": "Advanced Audio Filters for VLC",
+        "short_description": "As part of Google Summer of Code 2025 with VideoLAN, this project focused on integrating advanced audio features into VLC to significantly improve...",
+        "description": "As part of Google Summer of Code 2025 with VideoLAN, this project focused on integrating advanced audio features into VLC to significantly improve the user listening experience. To address inconsistent volume levels in media, I implemented a Dynamic Audio Normalizer by integrating FFmpeg's dynaudnorm filter, which intelligently balances quiet and loud sounds in real-time. To make VLC's powerful reverb effect more accessible, I also developed a user-friendly preset system for the Audio Spatializer. This feature replaces five complex sliders with a simple dropdown menu of common acoustic environments like \"Auditorium\" and \"Great Hall,\" making a powerful tool easy for all users while retaining manual control for experts.",
+        "student_name": "Benny Perumalla",
+        "code_url": "https://bennyperumalla.github.io/GSOC-2025-Report/",
+        "proposal_id": "YKe2Ip1F",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/c03UUkMf"
+      },
+      {
+        "title": "VLC macOS Modern Interface Redesign",
+        "short_description": "Problem: VLC’s macOS interface has fallen behind modern design standards, creating a disjointed experience compared to its intuitive iOS/tvOS...",
+        "description": "Problem:\nVLC’s macOS interface has fallen behind modern design standards, creating a disjointed experience compared to its intuitive iOS/tvOS counterparts. The current AppKit-based UI lacks macOS Sequoia's visual polish, struggles with libvlc’s newer playback features (e.g., frame-accurate seeking), and suffers from inefficient media library management. This outdated design hinders usability and fails to make use of macOS’s native capabilities.\n\nSolution:\nRedesign VLC’s macOS interface using AppKit to implement a pre-approved, user-tested design that integrates into macOS visual aesthetics and libvlc’s advanced APIs. The overhaul will:\n1. Replace legacy Carbon-era UI components with modern NSCollectionView and NSSplitViewController layouts.\n2. Integrate libvlc’s latest playback controls (frame stepping, HDR metadata) into native transport UIs.\n3. Rebuild the media library using Core Data for performance and NSDiffableDataSource for real-time updates.\n4. Prioritize system consistency with SF Symbols, vibrant materials, and macOS accessibility standards.\n\nDeliverables:\n1. Modern UI Components:\n- Unified toolbar with adaptive controls (NSToolbarItemGroup)\n- Redesigned media library with thumbnail grid (NSCollectionView) and smart filters (NSPredicateEditor)\n2. Enhanced Playback:\n- Frame-accurate seekbar with NSSlider tick marks synced to libvlc’s next_frame() API\n- HDR tone mapping toggle using CAMetalLayer integration\n3. Optimized Media Management:\n- Rules-based playlists backed by Core Data\n- Spotlight-like search using NSFetchRequest\n4. Developer Documentation:\n- Migration guide for plugin developers\n- NSAccessibility implementation notes\n\nBy collaborating closely with VLC’s core team and iterating on the existing codebase, this project will deliver a performant, native macOS experience that bridges the gap between VLC’s powerful engine and modern user expectations.",
+        "student_name": "Bob Moriasi",
+        "code_url": "https://www.bobbrysonn.dev/posts/gsoc",
+        "proposal_id": "GhnGWNC4",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/YEcSHEh5"
+      },
+      {
+        "title": "VLC for Apple Watch: Standalone Player & iPhone Companion",
+        "short_description": "This project aims to bring VLC's media capabilities to Apple Watch by developing both a companion app and standalone functionality. The app will...",
+        "description": "This project aims to bring VLC's media capabilities to Apple Watch by developing both a companion app and standalone functionality. The app will enable users to consume audio media directly on their watch by syncing files from their iPhone or streaming content independently. By leveraging the recently added VLCKit support for watchOS and implementing a modern SwiftUI interface, the project will extend VLC's reach to a new platform while maintaining the same commitment to accessibility and quality that VLC is known for.",
+        "student_name": "Fahri Novaldi",
+        "code_url": "https://gremlinflat.com/blog/gsoc-2025",
+        "proposal_id": "7xRb2Vz3",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/QExwlue9"
+      },
+      {
+        "title": "Cloud Integration for VLC via libcloudstorage",
+        "short_description": "The goal of this project is to make cloud storage services (like Dropbox and Google Drive) easily accessible from the VLC media player. The primary...",
+        "description": "The goal of this project is to make cloud storage services (like Dropbox and Google Drive) easily accessible from the VLC media player. The primary deliverables will be:\n\n1. Reviving and Updating libcloudstorage: update the existing libcloudstorage library (which provides standardized cloud storage access) to ensure compatibility with current cloud provider APIs and best practices.\n2. VLC Integration: Port libcloudstorage to the VLC desktop application so users can browse, play, and edit cloud-stored media files just as they would with local files.\n3. Testing and Sample Use Cases: develop automated test suites and sample scenarios to verify integration and demonstrate functionality.\n\nThis project will make VLC more accessible in cloud workflows and give users better access to media hosted across multiple platforms",
+        "student_name": "Maksym Yemelianenko",
+        "code_url": "https://gist.github.com/1mpossible-code/91030d44f294b14c0c21cc5adfc3959f",
+        "proposal_id": "awXiNlba",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/yt3vtfkk"
+      },
+      {
+        "title": "Technical Project Proposal: DVD-Audio  Deciphering Module in VLC",
+        "short_description": "This project aims to add DVD-Audio support to VLC by implementing a module that decrypts and plays back CPPM-protected audio streams. Using...",
+        "description": "This project aims to add DVD-Audio support to VLC by implementing a module that decrypts and plays back CPPM-protected audio streams. Using libdvdcpxm and related tools, the module will extract, decrypt, and decode high-fidelity DVD-Audio, ensuring seamless integration with VLC's existing playback architecture. The final deliverables include a working VLC module, full documentation, and optimizations for performance and compatibility.",
+        "student_name": "Saifelden ismail",
+        "code_url": "https://xhcfs.github.io/GSoC-2025-Videolan-DVD-Audio/index.html",
+        "proposal_id": "i7SyxGvW",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/db95jRqT"
+      },
+      {
+        "title": "dav1d RISC-V Vector Optimization",
+        "short_description": "This project aims to optimize the open-source AV1 decoder, dav1d, for the RISC-V Vector (RVV) ISA by implementing Vector-Length Agnostic (VLA)...",
+        "description": "This project aims to optimize the open-source AV1 decoder, dav1d, for the RISC-V Vector (RVV) ISA by implementing Vector-Length Agnostic (VLA) intrinsics. The focus is on improving AV1 decoding performance across various resolutions and bit depths through dynamic vector-length handling, with benchmarking on real hardware like the Kendryte K230 (VLEN = 128 bits), the SpacemiT K1 (VLEN = 256 bit) and comparisons against ARM NEON using built-in dav1d tooling such as checkasm for detailed analysis.",
+        "student_name": "Sungjoon Moon",
+        "code_url": "https://seoulsaram.org/articles/GSoC25/final-report/",
+        "proposal_id": "Q5oxAbKF",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/HRhfk6b3"
+      },
+      {
+        "title": "VLC iOS UI Update",
+        "short_description": "This project aims to enhance the user experience of the VLC application on iOS by improving playback controls and resolving persistent subtitle...",
+        "description": "This project aims to enhance the user experience of the VLC application on iOS by improving playback controls and resolving persistent subtitle issues. It will implement intuitive dynamic-length seeking based on swipe distance, allow users to set a custom default playback speed, and fix critical subtitle bugs affecting size consistency, character rendering (e.g., Chinese), and display/selection accuracy. Furthermore, the project will introduce a dual subtitle display feature, particularly useful for language learners. The deliverables will be these functional improvements integrated into the VLC iOS app, including the dynamic seek, custom speed setting, resolved subtitle problems, and the new dual subtitle capability, accompanied by necessary testing and documentation.",
+        "student_name": "Yue(Zelda) Zhang",
+        "code_url": "https://roelno.github.io/projects/gsoc2025/",
+        "proposal_id": "uPWyl0Uz",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/rl8VGD9d"
+      },
+      {
+        "title": "Radio-Browser integration",
+        "short_description": "This project aims to integrate Radio-Browser.info into VLC Media Player, allowing users to browse and play internet radio stations directly within...",
+        "description": "This project aims to integrate Radio-Browser.info into VLC Media Player, allowing users to browse and play internet radio stations directly within VLC. The implementation will use the free Radio-Browser API, eliminating the need to manually search and paste stream URLs.",
+        "student_name": "Zyad M. Ayad",
+        "code_url": "https://gist.github.com/Zyad-Ayad/2a14b3bf082c989d78194394d222ba0b",
+        "proposal_id": "NTfQpzuX",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/HLdME7jR"
+      }
+    ],
+    "2026": []
   },
   "githubID": "videolan",
   "repositories": [
-    {
-      "id": 120193302,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMjAxOTMzMDI=",
-      "name": "vlc-ios",
-      "full_name": "videolan/vlc-ios",
-      "html_url": "https://github.com/videolan/vlc-ios",
-      "description": "VLC for iOS/iPadOS and tvOS official mirror",
-      "language": "Objective-C",
-      "stargazers_count": 1125,
-      "forks_count": 301,
-      "open_issues_count": 2,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": [
-        "objective-c",
-        "swift",
-        "vlc"
-      ]
-    },
     {
       "id": 3299208,
       "node_id": "MDEwOlJlcG9zaXRvcnkzMjk5MjA4",
@@ -762,9 +858,9 @@
       "html_url": "https://github.com/videolan/vlc",
       "description": "VLC media player - All pull requests are ignored, please use MRs on https://code.videolan.org/videolan/vlc",
       "language": "C",
-      "stargazers_count": 15542,
-      "forks_count": 5256,
-      "open_issues_count": 2,
+      "stargazers_count": 17945,
+      "forks_count": 5813,
+      "open_issues_count": 3,
       "license": {
         "key": "gpl-2.0",
         "name": "GNU General Public License v2.0",
@@ -783,6 +879,30 @@
       ]
     },
     {
+      "id": 120193302,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMjAxOTMzMDI=",
+      "name": "vlc-ios",
+      "full_name": "videolan/vlc-ios",
+      "html_url": "https://github.com/videolan/vlc-ios",
+      "description": "VLC for iOS/iPadOS and tvOS official mirror",
+      "language": "Swift",
+      "stargazers_count": 1231,
+      "forks_count": 327,
+      "open_issues_count": 4,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": [
+        "objective-c",
+        "swift",
+        "vlc"
+      ]
+    },
+    {
       "id": 123426934,
       "node_id": "MDEwOlJlcG9zaXRvcnkxMjM0MjY5MzQ=",
       "name": "vlc-android",
@@ -790,8 +910,8 @@
       "html_url": "https://github.com/videolan/vlc-android",
       "description": "  VLC for Android, Android TV and ChromeOS",
       "language": "Kotlin",
-      "stargazers_count": 3081,
-      "forks_count": 670,
+      "stargazers_count": 3640,
+      "forks_count": 760,
       "open_issues_count": 5,
       "license": {
         "key": "gpl-2.0",
@@ -810,6 +930,37 @@
       ]
     },
     {
+      "id": 154475642,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNTQ0NzU2NDI=",
+      "name": "dav1d",
+      "full_name": "videolan/dav1d",
+      "html_url": "https://github.com/videolan/dav1d",
+      "description": "A read-only mirror of dav1d source code repository. The origin is at https://code.videolan.org/videolan/dav1d/",
+      "language": "Assembly",
+      "stargazers_count": 672,
+      "forks_count": 90,
+      "open_issues_count": 0,
+      "license": {
+        "key": "bsd-2-clause",
+        "name": "BSD 2-Clause \"Simplified\" License",
+        "spdx_id": "BSD-2-Clause",
+        "url": "https://api.github.com/licenses/bsd-2-clause",
+        "node_id": "MDc6TGljZW5zZTQ="
+      },
+      "topics": [
+        "android",
+        "aom",
+        "av1",
+        "dav1d",
+        "decoder",
+        "java",
+        "multimedia",
+        "player",
+        "video",
+        "videolan"
+      ]
+    },
+    {
       "id": 234382398,
       "node_id": "MDEwOlJlcG9zaXRvcnkyMzQzODIzOTg=",
       "name": "vlc-unity",
@@ -817,8 +968,8 @@
       "html_url": "https://github.com/videolan/vlc-unity",
       "description": "LibVLC plugin for Unity to integrate multimedia playback inside your Unity apps and games",
       "language": "C",
-      "stargazers_count": 172,
-      "forks_count": 45,
+      "stargazers_count": 207,
+      "forks_count": 56,
       "open_issues_count": 0,
       "license": {
         "key": "other",
@@ -847,8 +998,8 @@
       "html_url": "https://github.com/videolan/vlckit",
       "description": "libvlc bindings for OS X, iOS and tvOS in Objective-C, official mirror",
       "language": "Objective-C",
-      "stargazers_count": 567,
-      "forks_count": 148,
+      "stargazers_count": 650,
+      "forks_count": 173,
       "open_issues_count": 1,
       "license": {
         "key": "lgpl-2.1",
@@ -873,9 +1024,9 @@
       "html_url": "https://github.com/videolan/libvlcsharp",
       "description": "Cross-platform .NET/Mono bindings for LibVLC",
       "language": "C#",
-      "stargazers_count": 1620,
-      "forks_count": 269,
-      "open_issues_count": 5,
+      "stargazers_count": 1751,
+      "forks_count": 291,
+      "open_issues_count": 6,
       "license": {
         "key": "lgpl-2.1",
         "name": "GNU Lesser General Public License v2.1",
@@ -895,29 +1046,29 @@
       ]
     },
     {
-      "id": 154475642,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNTQ0NzU2NDI=",
-      "name": "dav1d",
-      "full_name": "videolan/dav1d",
-      "html_url": "https://github.com/videolan/dav1d",
-      "description": "A read-only mirror of dav1d source code repository. The origin is at https://code.videolan.org/videolan/dav1d/",
-      "language": "Assembly",
-      "stargazers_count": 591,
-      "forks_count": 70,
-      "open_issues_count": 0,
+      "id": 88265349,
+      "node_id": "MDEwOlJlcG9zaXRvcnk4ODI2NTM0OQ==",
+      "name": "libspatialaudio",
+      "full_name": "videolan/libspatialaudio",
+      "html_url": "https://github.com/videolan/libspatialaudio",
+      "description": "Spatial Audio rendering library, with Ambisonic encoding/decoding, binauralization in C++",
+      "language": "C",
+      "stargazers_count": 276,
+      "forks_count": 51,
+      "open_issues_count": 7,
       "license": {
-        "key": "bsd-2-clause",
-        "name": "BSD 2-Clause \"Simplified\" License",
-        "spdx_id": "BSD-2-Clause",
-        "url": "https://api.github.com/licenses/bsd-2-clause",
-        "node_id": "MDc6TGljZW5zZTQ="
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
       },
       "topics": [
-        "aom",
-        "av1",
-        "dav1d",
-        "decoder",
-        "videolan"
+        "3d-audio",
+        "ambisonics",
+        "audio",
+        "sofa",
+        "vr"
       ]
     },
     {
@@ -928,55 +1079,15 @@
       "html_url": "https://github.com/videolan/bitstream",
       "description": "Please send patches as pull requests.",
       "language": "C",
-      "stargazers_count": 73,
-      "forks_count": 36,
-      "open_issues_count": 3,
+      "stargazers_count": 78,
+      "forks_count": 40,
+      "open_issues_count": 0,
       "license": {
         "key": "mit",
         "name": "MIT License",
         "spdx_id": "MIT",
         "url": "https://api.github.com/licenses/mit",
         "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 156510965,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNTY1MTA5NjU=",
-      "name": "meson",
-      "full_name": "videolan/meson",
-      "html_url": "https://github.com/videolan/meson",
-      "description": "The Meson Build System",
-      "language": "Python",
-      "stargazers_count": 5,
-      "forks_count": 5,
-      "open_issues_count": 1,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 114354448,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMTQzNTQ0NDg=",
-      "name": "dvblast",
-      "full_name": "videolan/dvblast",
-      "html_url": "https://github.com/videolan/dvblast",
-      "description": "Please send patches as pull requests.",
-      "language": "C",
-      "stargazers_count": 68,
-      "forks_count": 27,
-      "open_issues_count": 0,
-      "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
       },
       "topics": []
     },
@@ -988,9 +1099,9 @@
       "html_url": "https://github.com/videolan/multicat",
       "description": "Please send patches as pull requests.",
       "language": "C",
-      "stargazers_count": 73,
-      "forks_count": 29,
-      "open_issues_count": 0,
+      "stargazers_count": 81,
+      "forks_count": 34,
+      "open_issues_count": 3,
       "license": {
         "key": "gpl-2.0",
         "name": "GNU General Public License v2.0",
@@ -1001,15 +1112,15 @@
       "topics": []
     },
     {
-      "id": 114289222,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMTQyODkyMjI=",
-      "name": "vlc-3.0",
-      "full_name": "videolan/vlc-3.0",
-      "html_url": "https://github.com/videolan/vlc-3.0",
-      "description": "VLC media player - 3.0 branch - All pull requests are ignored, please follow https://wiki.videolan.org/Sending_Patches_VLC/",
+      "id": 114354448,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMTQzNTQ0NDg=",
+      "name": "dvblast",
+      "full_name": "videolan/dvblast",
+      "html_url": "https://github.com/videolan/dvblast",
+      "description": "Please send patches as pull requests.",
       "language": "C",
-      "stargazers_count": 108,
-      "forks_count": 64,
+      "stargazers_count": 73,
+      "forks_count": 33,
       "open_issues_count": 0,
       "license": {
         "key": "gpl-2.0",
@@ -1028,8 +1139,8 @@
       "html_url": "https://github.com/videolan/libvlcpp",
       "description": "C++ bindings for libVLC",
       "language": "C++",
-      "stargazers_count": 136,
-      "forks_count": 37,
+      "stargazers_count": 153,
+      "forks_count": 40,
       "open_issues_count": 0,
       "license": {
         "key": "lgpl-2.1",
@@ -1047,6 +1158,46 @@
       ]
     },
     {
+      "id": 156510965,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNTY1MTA5NjU=",
+      "name": "meson",
+      "full_name": "videolan/meson",
+      "html_url": "https://github.com/videolan/meson",
+      "description": "The Meson Build System",
+      "language": "Python",
+      "stargazers_count": 7,
+      "forks_count": 5,
+      "open_issues_count": 1,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 114289222,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMTQyODkyMjI=",
+      "name": "vlc-3.0",
+      "full_name": "videolan/vlc-3.0",
+      "html_url": "https://github.com/videolan/vlc-3.0",
+      "description": "VLC media player - 3.0 branch - All pull requests are ignored, please follow https://wiki.videolan.org/Sending_Patches_VLC/",
+      "language": "C",
+      "stargazers_count": 118,
+      "forks_count": 68,
+      "open_issues_count": 0,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "topics": []
+    },
+    {
       "id": 12734995,
       "node_id": "MDEwOlJlcG9zaXRvcnkxMjczNDk5NQ==",
       "name": "x265",
@@ -1054,9 +1205,9 @@
       "html_url": "https://github.com/videolan/x265",
       "description": "https://bitbucket.org/multicoreware/x265/ git mirror",
       "language": "Assembly",
-      "stargazers_count": 773,
-      "forks_count": 298,
-      "open_issues_count": 6,
+      "stargazers_count": 797,
+      "forks_count": 315,
+      "open_issues_count": 7,
       "license": {
         "key": "gpl-2.0",
         "name": "GNU General Public License v2.0",
@@ -1075,7 +1226,7 @@
       "description": "Opensource Chocolate",
       "language": null,
       "stargazers_count": 7,
-      "forks_count": 6,
+      "forks_count": 5,
       "open_issues_count": 0,
       "license": {
         "key": "lgpl-2.1",
@@ -1095,7 +1246,7 @@
       "description": "VLC media player - 2.2 branch - All pull requests are ignored, please follow https://wiki.videolan.org/Sending_Patches_VLC/",
       "language": "C",
       "stargazers_count": 8,
-      "forks_count": 9,
+      "forks_count": 7,
       "open_issues_count": 0,
       "license": {
         "key": "gpl-2.0",
@@ -1114,8 +1265,8 @@
       "html_url": "https://github.com/videolan/vlc-winrt",
       "description": "VLC for Windows RT, official mirror",
       "language": "C#",
-      "stargazers_count": 64,
-      "forks_count": 30,
+      "stargazers_count": 65,
+      "forks_count": 32,
       "open_issues_count": 0,
       "license": {
         "key": "other",
@@ -1129,12 +1280,244 @@
   ],
   "contributorsDetails": [
     {
+      "login": "robUx4",
+      "id": 657717,
+      "node_id": "MDQ6VXNlcjY1NzcxNw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/657717?v=4",
+      "html_url": "https://github.com/robUx4",
+      "contributions": 121
+    },
+    {
+      "login": "jbkempf",
+      "id": 9219282,
+      "node_id": "MDQ6VXNlcjkyMTkyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9219282?v=4",
+      "html_url": "https://github.com/jbkempf",
+      "contributions": 890
+    },
+    {
+      "login": "fcartegnie",
+      "id": 281376,
+      "node_id": "MDQ6VXNlcjI4MTM3Ng==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/281376?v=4",
+      "html_url": "https://github.com/fcartegnie",
+      "contributions": 6745
+    },
+    {
+      "login": "tguillem",
+      "id": 63602,
+      "node_id": "MDQ6VXNlcjYzNjAy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/63602?v=4",
+      "html_url": "https://github.com/tguillem",
+      "contributions": 864
+    },
+    {
       "login": "fkuehne",
       "id": 116994,
       "node_id": "MDQ6VXNlcjExNjk5NA==",
       "avatar_url": "https://avatars.githubusercontent.com/u/116994?v=4",
       "html_url": "https://github.com/fkuehne",
-      "contributions": 3850
+      "contributions": 3451
+    },
+    {
+      "login": "claucambra",
+      "id": 70155116,
+      "node_id": "MDQ6VXNlcjcwMTU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/70155116?v=4",
+      "html_url": "https://github.com/claucambra",
+      "contributions": 3358
+    },
+    {
+      "login": "funman",
+      "id": 88797,
+      "node_id": "MDQ6VXNlcjg4Nzk3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/88797?v=4",
+      "html_url": "https://github.com/funman",
+      "contributions": 225
+    },
+    {
+      "login": "pdherbemont",
+      "id": 99820,
+      "node_id": "MDQ6VXNlcjk5ODIw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/99820?v=4",
+      "html_url": "https://github.com/pdherbemont",
+      "contributions": 2432
+    },
+    {
+      "login": "fuzun",
+      "id": 5276126,
+      "node_id": "MDQ6VXNlcjUyNzYxMjY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5276126?v=4",
+      "html_url": "https://github.com/fuzun",
+      "contributions": 2316
+    },
+    {
+      "login": "alexandre-janniaux",
+      "id": 413037,
+      "node_id": "MDQ6VXNlcjQxMzAzNw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/413037?v=4",
+      "html_url": "https://github.com/alexandre-janniaux",
+      "contributions": 2170
+    },
+    {
+      "login": "chouquette",
+      "id": 54693,
+      "node_id": "MDQ6VXNlcjU0Njkz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/54693?v=4",
+      "html_url": "https://github.com/chouquette",
+      "contributions": 163
+    },
+    {
+      "login": "ivoire",
+      "id": 2114999,
+      "node_id": "MDQ6VXNlcjIxMTQ5OTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2114999?v=4",
+      "html_url": "https://github.com/ivoire",
+      "contributions": 34
+    },
+    {
+      "login": "hartman",
+      "id": 108913,
+      "node_id": "MDQ6VXNlcjEwODkxMw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/108913?v=4",
+      "html_url": "https://github.com/hartman",
+      "contributions": 1649
+    },
+    {
+      "login": "jpsaman",
+      "id": 47027,
+      "node_id": "MDQ6VXNlcjQ3MDI3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/47027?v=4",
+      "html_url": "https://github.com/jpsaman",
+      "contributions": 1627
+    },
+    {
+      "login": "antoinecellerier",
+      "id": 1226303,
+      "node_id": "MDQ6VXNlcjEyMjYzMDM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1226303?v=4",
+      "html_url": "https://github.com/antoinecellerier",
+      "contributions": 1623
+    },
+    {
+      "login": "chubinou",
+      "id": 1309731,
+      "node_id": "MDQ6VXNlcjEzMDk3MzE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1309731?v=4",
+      "html_url": "https://github.com/chubinou",
+      "contributions": 1588
+    },
+    {
+      "login": "jagannatharjun",
+      "id": 34717789,
+      "node_id": "MDQ6VXNlcjM0NzE3Nzg5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/34717789?v=4",
+      "html_url": "https://github.com/jagannatharjun",
+      "contributions": 1265
+    },
+    {
+      "login": "ePirat",
+      "id": 323210,
+      "node_id": "MDQ6VXNlcjMyMzIxMA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/323210?v=4",
+      "html_url": "https://github.com/ePirat",
+      "contributions": 1146
+    },
+    {
+      "login": "ilkka-ollakka",
+      "id": 14361597,
+      "node_id": "MDQ6VXNlcjE0MzYxNTk3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14361597?v=4",
+      "html_url": "https://github.com/ilkka-ollakka",
+      "contributions": 959
+    },
+    {
+      "login": "linkfanel",
+      "id": 6356093,
+      "node_id": "MDQ6VXNlcjYzNTYwOTM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6356093?v=4",
+      "html_url": "https://github.com/linkfanel",
+      "contributions": 827
+    },
+    {
+      "login": "tmatth",
+      "id": 66862,
+      "node_id": "MDQ6VXNlcjY2ODYy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/66862?v=4",
+      "html_url": "https://github.com/tmatth",
+      "contributions": 643
+    },
+    {
+      "login": "FilipRoseen-refp",
+      "id": 5598866,
+      "node_id": "MDQ6VXNlcjU1OTg4NjY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5598866?v=4",
+      "html_url": "https://github.com/FilipRoseen-refp",
+      "contributions": 601
+    },
+    {
+      "login": "rom1v",
+      "id": 543275,
+      "node_id": "MDQ6VXNlcjU0MzI3NQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/543275?v=4",
+      "html_url": "https://github.com/rom1v",
+      "contributions": 590
+    },
+    {
+      "login": "3unjee",
+      "id": 17432415,
+      "node_id": "MDQ6VXNlcjE3NDMyNDE1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/17432415?v=4",
+      "html_url": "https://github.com/3unjee",
+      "contributions": 567
+    },
+    {
+      "login": "jnqnfe",
+      "id": 33935229,
+      "node_id": "MDQ6VXNlcjMzOTM1MjI5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/33935229?v=4",
+      "html_url": "https://github.com/jnqnfe",
+      "contributions": 551
+    },
+    {
+      "login": "thresheek",
+      "id": 5108015,
+      "node_id": "MDQ6VXNlcjUxMDgwMTU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5108015?v=4",
+      "html_url": "https://github.com/thresheek",
+      "contributions": 395
+    },
+    {
+      "login": "mstorsjo",
+      "id": 69727,
+      "node_id": "MDQ6VXNlcjY5NzI3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/69727?v=4",
+      "html_url": "https://github.com/mstorsjo",
+      "contributions": 54
+    },
+    {
+      "login": "AlaricSenat",
+      "id": 4720081,
+      "node_id": "MDQ6VXNlcjQ3MjAwODE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4720081?v=4",
+      "html_url": "https://github.com/AlaricSenat",
+      "contributions": 377
+    },
+    {
+      "login": "ipkiss42",
+      "id": 2920475,
+      "node_id": "MDQ6VXNlcjI5MjA0NzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2920475?v=4",
+      "html_url": "https://github.com/ipkiss42",
+      "contributions": 333
+    },
+    {
+      "login": "oaubert",
+      "id": 301906,
+      "node_id": "MDQ6VXNlcjMwMTkwNg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/301906?v=4",
+      "html_url": "https://github.com/oaubert",
+      "contributions": 267
     },
     {
       "login": "Mikanbu",
@@ -1198,7 +1581,7 @@
       "node_id": "MDQ6VXNlcjE1MTY5MTQ=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1516914?v=4",
       "html_url": "https://github.com/craigreyenga",
-      "contributions": 44
+      "contributions": 46
     },
     {
       "login": "mkchoi212",
@@ -1214,15 +1597,23 @@
       "node_id": "MDQ6VXNlcjg2MTU3Mzg=",
       "avatar_url": "https://avatars.githubusercontent.com/u/8615738?v=4",
       "html_url": "https://github.com/mtrz",
-      "contributions": 42
+      "contributions": 163
     },
     {
-      "login": "jbkempf",
-      "id": 9219282,
-      "node_id": "MDQ6VXNlcjkyMTkyODI=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/9219282?v=4",
-      "html_url": "https://github.com/jbkempf",
-      "contributions": 7093
+      "login": "EshanSingh-ES",
+      "id": 25293838,
+      "node_id": "MDQ6VXNlcjI1MjkzODM4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25293838?v=4",
+      "html_url": "https://github.com/EshanSingh-ES",
+      "contributions": 37
+    },
+    {
+      "login": "dnicolson",
+      "id": 2276355,
+      "node_id": "MDQ6VXNlcjIyNzYzNTU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2276355?v=4",
+      "html_url": "https://github.com/dnicolson",
+      "contributions": 35
     },
     {
       "login": "Regnander",
@@ -1230,7 +1621,7 @@
       "node_id": "MDQ6VXNlcjE3MTEzMDUz",
       "avatar_url": "https://avatars.githubusercontent.com/u/17113053?v=4",
       "html_url": "https://github.com/Regnander",
-      "contributions": 34
+      "contributions": 81
     },
     {
       "login": "yarons",
@@ -1238,7 +1629,7 @@
       "node_id": "MDQ6VXNlcjQwNjgyNg==",
       "avatar_url": "https://avatars.githubusercontent.com/u/406826?v=4",
       "html_url": "https://github.com/yarons",
-      "contributions": 31
+      "contributions": 56
     },
     {
       "login": "Marian-SK",
@@ -1254,7 +1645,7 @@
       "node_id": "MDQ6VXNlcjE2MzY5MjY=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1636926?v=4",
       "html_url": "https://github.com/andriykopanytsia",
-      "contributions": 29
+      "contributions": 97
     },
     {
       "login": "dcordero",
@@ -1270,7 +1661,7 @@
       "node_id": "MDQ6VXNlcjQ0NzkzMzU=",
       "avatar_url": "https://avatars.githubusercontent.com/u/4479335?v=4",
       "html_url": "https://github.com/kayazeren",
-      "contributions": 28
+      "contributions": 85
     },
     {
       "login": "ibrahimcetin",
@@ -1281,20 +1672,12 @@
       "contributions": 28
     },
     {
-      "login": "dnicolson",
-      "id": 2276355,
-      "node_id": "MDQ6VXNlcjIyNzYzNTU=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/2276355?v=4",
-      "html_url": "https://github.com/dnicolson",
-      "contributions": 27
-    },
-    {
       "login": "fu-nakayama",
       "id": 21349991,
       "node_id": "MDQ6VXNlcjIxMzQ5OTkx",
       "avatar_url": "https://avatars.githubusercontent.com/u/21349991?v=4",
       "html_url": "https://github.com/fu-nakayama",
-      "contributions": 25
+      "contributions": 86
     },
     {
       "login": "aviwad",
@@ -1310,7 +1693,7 @@
       "node_id": "MDQ6VXNlcjk4Mjg2NjE=",
       "avatar_url": "https://avatars.githubusercontent.com/u/9828661?v=4",
       "html_url": "https://github.com/RockyTDR",
-      "contributions": 23
+      "contributions": 34
     },
     {
       "login": "3on",
@@ -1342,7 +1725,15 @@
       "node_id": "MDQ6VXNlcjcyMDM3Ng==",
       "avatar_url": "https://avatars.githubusercontent.com/u/720376?v=4",
       "html_url": "https://github.com/picodotdev",
-      "contributions": 19
+      "contributions": 58
+    },
+    {
+      "login": "roelno",
+      "id": 107196439,
+      "node_id": "U_kgDOBmOwFw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/107196439?v=4",
+      "html_url": "https://github.com/roelno",
+      "contributions": 18
     },
     {
       "login": "smartvr2022",
@@ -1353,244 +1744,124 @@
       "contributions": 17
     },
     {
+      "login": "GeoffreyMetais",
+      "id": 5031161,
+      "node_id": "MDQ6VXNlcjUwMzExNjE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5031161?v=4",
+      "html_url": "https://github.com/GeoffreyMetais",
+      "contributions": 5579
+    },
+    {
+      "login": "edwardcwang",
+      "id": 10752510,
+      "node_id": "MDQ6VXNlcjEwNzUyNTEw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10752510?v=4",
+      "html_url": "https://github.com/edwardcwang",
+      "contributions": 668
+    },
+    {
+      "login": "xabroc",
+      "id": 17705883,
+      "node_id": "MDQ6VXNlcjE3NzA1ODgz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/17705883?v=4",
+      "html_url": "https://github.com/xabroc",
+      "contributions": 625
+    },
+    {
+      "login": "XilasZ",
+      "id": 31279247,
+      "node_id": "MDQ6VXNlcjMxMjc5MjQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/31279247?v=4",
+      "html_url": "https://github.com/XilasZ",
+      "contributions": 518
+    },
+    {
+      "login": "magwyz",
+      "id": 3224285,
+      "node_id": "MDQ6VXNlcjMyMjQyODU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3224285?v=4",
+      "html_url": "https://github.com/magwyz",
+      "contributions": 437
+    },
+    {
+      "login": "Skantes",
+      "id": 11092088,
+      "node_id": "MDQ6VXNlcjExMDkyMDg4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11092088?v=4",
+      "html_url": "https://github.com/Skantes",
+      "contributions": 355
+    },
+    {
+      "login": "etix",
+      "id": 38853,
+      "node_id": "MDQ6VXNlcjM4ODUz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/38853?v=4",
+      "html_url": "https://github.com/etix",
+      "contributions": 260
+    },
+    {
+      "login": "rhstone",
+      "id": 1160205,
+      "node_id": "MDQ6VXNlcjExNjAyMDU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1160205?v=4",
+      "html_url": "https://github.com/rhstone",
+      "contributions": 217
+    },
+    {
+      "login": "kazemihabib",
+      "id": 10830552,
+      "node_id": "MDQ6VXNlcjEwODMwNTUy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10830552?v=4",
+      "html_url": "https://github.com/kazemihabib",
+      "contributions": 67
+    },
+    {
+      "login": "li-dian-dian",
+      "id": 205688472,
+      "node_id": "U_kgDODEKOmA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/205688472?v=4",
+      "html_url": "https://github.com/li-dian-dian",
+      "contributions": 66
+    },
+    {
+      "login": "michaelmerg",
+      "id": 1182793,
+      "node_id": "MDQ6VXNlcjExODI3OTM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1182793?v=4",
+      "html_url": "https://github.com/michaelmerg",
+      "contributions": 61
+    },
+    {
       "login": "Siggi0904",
       "id": 4992106,
       "node_id": "MDQ6VXNlcjQ5OTIxMDY=",
       "avatar_url": "https://avatars.githubusercontent.com/u/4992106?v=4",
       "html_url": "https://github.com/Siggi0904",
-      "contributions": 15
+      "contributions": 60
     },
     {
-      "login": "EshanSingh-ES",
-      "id": 25293838,
-      "node_id": "MDQ6VXNlcjI1MjkzODM4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/25293838?v=4",
-      "html_url": "https://github.com/EshanSingh-ES",
-      "contributions": 15
+      "login": "alexanderlaw",
+      "id": 8829233,
+      "node_id": "MDQ6VXNlcjg4MjkyMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8829233?v=4",
+      "html_url": "https://github.com/alexanderlaw",
+      "contributions": 46
     },
     {
-      "login": "robUx4",
-      "id": 657717,
-      "node_id": "MDQ6VXNlcjY1NzcxNw==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/657717?v=4",
-      "html_url": "https://github.com/robUx4",
-      "contributions": 8797
+      "login": "flx42",
+      "id": 3645581,
+      "node_id": "MDQ6VXNlcjM2NDU1ODE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3645581?v=4",
+      "html_url": "https://github.com/flx42",
+      "contributions": 32
     },
     {
-      "login": "fcartegnie",
-      "id": 281376,
-      "node_id": "MDQ6VXNlcjI4MTM3Ng==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/281376?v=4",
-      "html_url": "https://github.com/fcartegnie",
-      "contributions": 6577
-    },
-    {
-      "login": "tguillem",
-      "id": 63602,
-      "node_id": "MDQ6VXNlcjYzNjAy",
-      "avatar_url": "https://avatars.githubusercontent.com/u/63602?v=4",
-      "html_url": "https://github.com/tguillem",
-      "contributions": 5023
-    },
-    {
-      "login": "funman",
-      "id": 88797,
-      "node_id": "MDQ6VXNlcjg4Nzk3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/88797?v=4",
-      "html_url": "https://github.com/funman",
-      "contributions": 3045
-    },
-    {
-      "login": "claucambra",
-      "id": 70155116,
-      "node_id": "MDQ6VXNlcjcwMTU1MTE2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/70155116?v=4",
-      "html_url": "https://github.com/claucambra",
-      "contributions": 2984
-    },
-    {
-      "login": "pdherbemont",
-      "id": 99820,
-      "node_id": "MDQ6VXNlcjk5ODIw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/99820?v=4",
-      "html_url": "https://github.com/pdherbemont",
-      "contributions": 2432
-    },
-    {
-      "login": "alexandre-janniaux",
-      "id": 413037,
-      "node_id": "MDQ6VXNlcjQxMzAzNw==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/413037?v=4",
-      "html_url": "https://github.com/alexandre-janniaux",
-      "contributions": 2072
-    },
-    {
-      "login": "chouquette",
-      "id": 54693,
-      "node_id": "MDQ6VXNlcjU0Njkz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/54693?v=4",
-      "html_url": "https://github.com/chouquette",
-      "contributions": 1955
-    },
-    {
-      "login": "ivoire",
-      "id": 2114999,
-      "node_id": "MDQ6VXNlcjIxMTQ5OTk=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/2114999?v=4",
-      "html_url": "https://github.com/ivoire",
-      "contributions": 1912
-    },
-    {
-      "login": "fuzun",
-      "id": 5276126,
-      "node_id": "MDQ6VXNlcjUyNzYxMjY=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/5276126?v=4",
-      "html_url": "https://github.com/fuzun",
-      "contributions": 1879
-    },
-    {
-      "login": "hartman",
-      "id": 108913,
-      "node_id": "MDQ6VXNlcjEwODkxMw==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/108913?v=4",
-      "html_url": "https://github.com/hartman",
-      "contributions": 1649
-    },
-    {
-      "login": "jpsaman",
-      "id": 47027,
-      "node_id": "MDQ6VXNlcjQ3MDI3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/47027?v=4",
-      "html_url": "https://github.com/jpsaman",
-      "contributions": 1627
-    },
-    {
-      "login": "antoinecellerier",
-      "id": 1226303,
-      "node_id": "MDQ6VXNlcjEyMjYzMDM=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1226303?v=4",
-      "html_url": "https://github.com/antoinecellerier",
-      "contributions": 1623
-    },
-    {
-      "login": "chubinou",
-      "id": 1309731,
-      "node_id": "MDQ6VXNlcjEzMDk3MzE=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1309731?v=4",
-      "html_url": "https://github.com/chubinou",
-      "contributions": 1540
-    },
-    {
-      "login": "jagannatharjun",
-      "id": 34717789,
-      "node_id": "MDQ6VXNlcjM0NzE3Nzg5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/34717789?v=4",
-      "html_url": "https://github.com/jagannatharjun",
-      "contributions": 1265
-    },
-    {
-      "login": "ePirat",
-      "id": 323210,
-      "node_id": "MDQ6VXNlcjMyMzIxMA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/323210?v=4",
-      "html_url": "https://github.com/ePirat",
-      "contributions": 1092
-    },
-    {
-      "login": "ilkka-ollakka",
-      "id": 14361597,
-      "node_id": "MDQ6VXNlcjE0MzYxNTk3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/14361597?v=4",
-      "html_url": "https://github.com/ilkka-ollakka",
-      "contributions": 959
-    },
-    {
-      "login": "linkfanel",
-      "id": 6356093,
-      "node_id": "MDQ6VXNlcjYzNTYwOTM=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/6356093?v=4",
-      "html_url": "https://github.com/linkfanel",
-      "contributions": 827
-    },
-    {
-      "login": "filiproseen-refp",
-      "id": 5598866,
-      "node_id": "MDQ6VXNlcjU1OTg4NjY=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/5598866?v=4",
-      "html_url": "https://github.com/filiproseen-refp",
-      "contributions": 601
-    },
-    {
-      "login": "rom1v",
-      "id": 543275,
-      "node_id": "MDQ6VXNlcjU0MzI3NQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/543275?v=4",
-      "html_url": "https://github.com/rom1v",
-      "contributions": 589
-    },
-    {
-      "login": "3unjee",
-      "id": 17432415,
-      "node_id": "MDQ6VXNlcjE3NDMyNDE1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/17432415?v=4",
-      "html_url": "https://github.com/3unjee",
-      "contributions": 567
-    },
-    {
-      "login": "jnqnfe",
-      "id": 33935229,
-      "node_id": "MDQ6VXNlcjMzOTM1MjI5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/33935229?v=4",
-      "html_url": "https://github.com/jnqnfe",
-      "contributions": 551
-    },
-    {
-      "login": "tmatth",
-      "id": 66862,
-      "node_id": "MDQ6VXNlcjY2ODYy",
-      "avatar_url": "https://avatars.githubusercontent.com/u/66862?v=4",
-      "html_url": "https://github.com/tmatth",
-      "contributions": 548
-    },
-    {
-      "login": "thresheek",
-      "id": 5108015,
-      "node_id": "MDQ6VXNlcjUxMDgwMTU=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/5108015?v=4",
-      "html_url": "https://github.com/thresheek",
-      "contributions": 395
-    },
-    {
-      "login": "mstorsjo",
-      "id": 69727,
-      "node_id": "MDQ6VXNlcjY5NzI3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/69727?v=4",
-      "html_url": "https://github.com/mstorsjo",
-      "contributions": 377
-    },
-    {
-      "login": "AlaricSenat",
-      "id": 4720081,
-      "node_id": "MDQ6VXNlcjQ3MjAwODE=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/4720081?v=4",
-      "html_url": "https://github.com/AlaricSenat",
-      "contributions": 371
-    },
-    {
-      "login": "ipkiss42",
-      "id": 2920475,
-      "node_id": "MDQ6VXNlcjI5MjA0NzU=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/2920475?v=4",
-      "html_url": "https://github.com/ipkiss42",
-      "contributions": 333
-    },
-    {
-      "login": "oaubert",
-      "id": 301906,
-      "node_id": "MDQ6VXNlcjMwMTkwNg==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/301906?v=4",
-      "html_url": "https://github.com/oaubert",
-      "contributions": 267
+      "login": "scarabeusiv",
+      "id": 1055830,
+      "node_id": "MDQ6VXNlcjEwNTU4MzA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1055830?v=4",
+      "html_url": "https://github.com/scarabeusiv",
+      "contributions": 32
     }
   ],
   "activeOrg": true

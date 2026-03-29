@@ -30,7 +30,8 @@
   "facebook_url": "https://www.facebook.com/openhealthcarenetwork",
   "year": [
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2024": [
@@ -71,33 +72,63 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/eVJvuSb0"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "HR Management module",
+        "short_description": "The goal of this project is to develop an HR management module for the CARE system, streamlining employee management and automating leave and holiday...",
+        "description": "The goal of this project is to develop an HR management module for the CARE system, streamlining employee management and automating leave and holiday tracking. The platform enables HR to efficiently manage employee records, process leave requests, securely handle document uploads, manage holidays, and allows employees to apply for leave and access their profiles and leave history.",
+        "student_name": "Gurukiran",
+        "code_url": "https://github.com/gurukiran7/Google-Summer-of-Code-25",
+        "proposal_id": "HdQCgjob",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/b3hFfKM4"
+      },
+      {
+        "title": "Terminology Server from Google Sheet",
+        "short_description": "The proposed project aims to build a lightweight, scalable, and extensible alternative to the Snowstorm Terminology Server by leveraging Django and...",
+        "description": "The proposed project aims to build a lightweight, scalable, and extensible alternative to the Snowstorm Terminology Server by leveraging Django and etcd—a fast, atomic, and consistent key-value store—as the backend database. Unlike Snowstorm, which is resource-intensive, limited to SNOMED CT, and does not support concept authoring, the new server will support full FHIR operations like $lookup, $validate-code, and $expand, along with custom endpoints for authoring, updating, and deleting concepts. Data will be loaded into optimized in-memory data structures (DAG and description dictionaries) on server startup, enabling fast traversal, search, and filtering. Multi-language support, real-time syncing from etcd, and an intuitive micro-frontend UI will allow users to manage codes seamlessly. The project also includes full integration into the existing Care ecosystem via a dedicated backend plugin and a React-based admin dashboard, ensuring drop-in replacement with no changes required in existing workflows. This solution will empower open-source healthcare platforms in resource-constrained regions to build, customize, and manage terminology services without relying on costly proprietary systems.",
+        "student_name": "Raj_Kumar_",
+        "code_url": "https://github.com/ohcnetwork/care-terminology-server-poc/pull/1",
+        "proposal_id": "OmBioP5x",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/9L9YN6qy"
+      },
+      {
+        "title": "ABDM – Patient Centric Flows (PHR Flows)",
+        "short_description": "This project implements comprehensive patient-facing digital health capabilities in the CARE platform by integrating Ayushman Bharat Digital Mission...",
+        "description": "This project implements comprehensive patient-facing digital health capabilities in the CARE platform by integrating Ayushman Bharat Digital Mission (ABDM) Personal Health Record (PHR) flows. While CARE currently supports provider-side health information exchange through the existing ABDM module, it lacks patient-centered features that would allow individuals to access and control their health data.\nMy solution builds a complete set of APIs and interactive user interfaces to bridge this gap by implementing seven key components:\nABHA Enrollment - Digital identity creation with multiple verification methods\nProfile Login - Secure multi-channel authentication and session management\nUser Profile Management - Personal health information control and preferences\nDiscovery and Linking - Finding and connecting fragmented health records\nSubscriptions & Notifications - Automated health updates and alerts\nConsent Management - Granular control over data sharing permissions\nHealth Record Display - Unified view of medical history across providers\nThe implementation seamlessly integrates with the existing ABDM module while adding complementary PHR capabilities, enabling CARE to function effectively in dual roles—as both a provider-focused clinical system and a patient-centered health record platform.\nDeliverables include a fully functional implementation of all ABDM PHR APIs, an intuitive and responsive patient portal interface, comprehensive transaction tracking for compliance, and thorough documentation. All components will adhere to healthcare security and privacy standards while providing a cohesive user experience. The completed project will transform healthcare delivery by eliminating information gaps between providers and empowering patients as active participants in their care journey.",
+        "student_name": "Siva Pidugu",
+        "code_url": "https://github.com/siva222003/GSOC25-OHC-Final-Report",
+        "proposal_id": "5Iv0Gsdq",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/uIPCPdX9"
+      },
+      {
+        "title": "Offline Data Entry Support",
+        "short_description": "The project has the aim of providing offline data entry capability into the CARE form-based data collection system. Currently, users experience...",
+        "description": "The project has the aim of providing offline data entry capability into the CARE form-based data collection system. Currently, users experience interruptions when network connectivity is lost, preventing data entry while in the field with the application opened in a disconnected state. This project will maintain coordination with CARE forms during offline status, allowing users to continue using the app normally.The approach will implement an offline-first architecture that includes application caching, local storage, and sync capabilities. I plan to implement caching while using Workbox and Service Workers to cache the appropriate application assets and form definitions so that the user interface can load and continue to operate without a network connection. I plan to use IndexedDB, managed through Dexie.js, to store the form responses as local data storage on the user’s device. After connectivity is re-established, an automatic background sync process will use React Query and PQueue to ensure reliable and conflict-free data sync with the established database on the central server. Conflict resolution strategies will be included to maintain integrity, safe and complete data from being 'lost' when multiple users could be updating the same data at the same time.",
+        "student_name": "vikaspal8923",
+        "code_url": "https://gist.github.com/Vikaspal8923/9072b2f9375242755b3ed23c8b205515",
+        "proposal_id": "NFSxsJvs",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/xVR92zlY"
+      }
+    ],
+    "2026": []
   },
   "githubID": "ohcnetwork",
   "repositories": [
     {
-      "id": 247995671,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNDc5OTU2NzE=",
-      "name": "care",
-      "full_name": "ohcnetwork/care",
-      "html_url": "https://github.com/ohcnetwork/care",
-      "description": "Care is a Digital Public Good enabling TeleICU & Decentralised Administration of Healthcare Capacity across States.",
-      "language": "Python",
-      "stargazers_count": 300,
-      "forks_count": 426,
-      "open_issues_count": 22,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
+      "id": 1190316405,
+      "node_id": "R_kgDORvLJdQ",
+      "name": "leaderboard-data",
+      "full_name": "ohcnetwork/leaderboard-data",
+      "html_url": "https://github.com/ohcnetwork/leaderboard-data",
+      "description": "Flat data and configuration repository for Open Healthcare Network's leaderboard deployment",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
       "topics": [
-        "digital-public-goods",
-        "hacktoberfest",
-        "healthcare",
-        "hmis"
+        "flat-data",
+        "leaderboard"
       ]
     },
     {
@@ -108,9 +139,9 @@
       "html_url": "https://github.com/ohcnetwork/care_fe",
       "description": "Care is a Digital Public Good enabling TeleICU & Decentralised Administration of Healthcare Capacity across States.",
       "language": "TypeScript",
-      "stargazers_count": 522,
-      "forks_count": 786,
-      "open_issues_count": 159,
+      "stargazers_count": 615,
+      "forks_count": 1089,
+      "open_issues_count": 304,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -126,36 +157,16 @@
       ]
     },
     {
-      "id": 721547030,
-      "node_id": "R_kgDOKwHvFg",
-      "name": "leaderboard-data",
-      "full_name": "ohcnetwork/leaderboard-data",
-      "html_url": "https://github.com/ohcnetwork/leaderboard-data",
-      "description": "Data repository for the leaderboard",
-      "language": "CSS",
-      "stargazers_count": 3,
-      "forks_count": 55,
-      "open_issues_count": 0,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 950611135,
-      "node_id": "R_kgDOOKksvw",
-      "name": "care_teleicu_devices",
-      "full_name": "ohcnetwork/care_teleicu_devices",
-      "html_url": "https://github.com/ohcnetwork/care_teleicu_devices",
-      "description": "TeleICU Devices Plug for Care (Gateway, Camera and Vitals Observation Devices)",
+      "id": 247995671,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyNDc5OTU2NzE=",
+      "name": "care",
+      "full_name": "ohcnetwork/care",
+      "html_url": "https://github.com/ohcnetwork/care",
+      "description": "Care is a Digital Public Good enabling Decentralized Administration of Healthcare.",
       "language": "Python",
-      "stargazers_count": 0,
-      "forks_count": 2,
-      "open_issues_count": 2,
+      "stargazers_count": 367,
+      "forks_count": 590,
+      "open_issues_count": 88,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -163,41 +174,12 @@
         "url": "https://api.github.com/licenses/mit",
         "node_id": "MDc6TGljZW5zZTEz"
       },
-      "topics": []
-    },
-    {
-      "id": 952904585,
-      "node_id": "R_kgDOOMwriQ",
-      "name": "teleicu_gateway",
-      "full_name": "ohcnetwork/teleicu_gateway",
-      "html_url": "https://github.com/ohcnetwork/teleicu_gateway",
-      "description": "Gateway to help tunnel CCTV Streams. ONVIF APIs, and automated log updates for TeleICU. ",
-      "language": "Python",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 3,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 884569533,
-      "node_id": "R_kgDONLl1vQ",
-      "name": "care_abdm_fe",
-      "full_name": "ohcnetwork/care_abdm_fe",
-      "html_url": "https://github.com/ohcnetwork/care_abdm_fe",
-      "description": null,
-      "language": "TypeScript",
-      "stargazers_count": 2,
-      "forks_count": 12,
-      "open_issues_count": 6,
-      "license": null,
-      "topics": []
+      "topics": [
+        "digital-public-goods",
+        "hacktoberfest",
+        "healthcare",
+        "hmis"
+      ]
     },
     {
       "id": 932698687,
@@ -208,8 +190,8 @@
       "description": null,
       "language": null,
       "stargazers_count": 0,
-      "forks_count": 1,
-      "open_issues_count": 0,
+      "forks_count": 2,
+      "open_issues_count": 1,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -220,16 +202,16 @@
       "topics": []
     },
     {
-      "id": 903451839,
-      "node_id": "R_kgDONdmUvw",
-      "name": "care_api_backup",
-      "full_name": "ohcnetwork/care_api_backup",
-      "html_url": "https://github.com/ohcnetwork/care_api_backup",
-      "description": null,
-      "language": null,
+      "id": 1127771317,
+      "node_id": "R_kgDOQzhstQ",
+      "name": "leaderboard-github-plugin",
+      "full_name": "ohcnetwork/leaderboard-github-plugin",
+      "html_url": "https://github.com/ohcnetwork/leaderboard-github-plugin",
+      "description": "Leaderboard scraper to track activities of a github organization. ",
+      "language": "TypeScript",
       "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
+      "forks_count": 1,
+      "open_issues_count": 5,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -237,7 +219,10 @@
         "url": "https://api.github.com/licenses/mit",
         "node_id": "MDc6TGljZW5zZTEz"
       },
-      "topics": []
+      "topics": [
+        "github-api",
+        "leaderboard-plugin"
+      ]
     },
     {
       "id": 495026880,
@@ -245,11 +230,11 @@
       "name": "leaderboard",
       "full_name": "ohcnetwork/leaderboard",
       "html_url": "https://github.com/ohcnetwork/leaderboard",
-      "description": "Leaderboard collects data from GitHub and Slack to show off the work of our open source contributors",
+      "description": "Leaderboard collects data from various data scrapers and show off the work of our open source contributors!",
       "language": "TypeScript",
-      "stargazers_count": 28,
-      "forks_count": 99,
-      "open_issues_count": 15,
+      "stargazers_count": 34,
+      "forks_count": 110,
+      "open_issues_count": 21,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -258,144 +243,38 @@
         "node_id": "MDc6TGljZW5zZTEz"
       },
       "topics": [
-        "hacktoberfest",
+        "flat-data",
+        "github-api",
+        "leaderboard",
         "nextjs",
         "tailwindcss"
       ]
     },
     {
-      "id": 947870085,
-      "node_id": "R_kgDOOH9ZhQ",
-      "name": "care_scribe",
-      "full_name": "ohcnetwork/care_scribe",
-      "html_url": "https://github.com/ohcnetwork/care_scribe",
-      "description": "AI autofill plug for care",
-      "language": "Python",
-      "stargazers_count": 2,
-      "forks_count": 0,
-      "open_issues_count": 1,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 756802939,
-      "node_id": "R_kgDOLRvlew",
-      "name": "docs",
-      "full_name": "ohcnetwork/docs",
-      "html_url": "https://github.com/ohcnetwork/docs",
-      "description": null,
-      "language": "JavaScript",
-      "stargazers_count": 3,
-      "forks_count": 24,
-      "open_issues_count": 25,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 970751403,
-      "node_id": "R_kgDOOdx9qw",
-      "name": "care_scribe_fe",
-      "full_name": "ohcnetwork/care_scribe_fe",
-      "html_url": "https://github.com/ohcnetwork/care_scribe_fe",
+      "id": 1116591292,
+      "node_id": "R_kgDOQo3UvA",
+      "name": "careui",
+      "full_name": "ohcnetwork/careui",
+      "html_url": "https://github.com/ohcnetwork/careui",
       "description": null,
       "language": "TypeScript",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 3,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 950609759,
-      "node_id": "R_kgDOOKknXw",
-      "name": "care_teleicu_devices_fe",
-      "full_name": "ohcnetwork/care_teleicu_devices_fe",
-      "html_url": "https://github.com/ohcnetwork/care_teleicu_devices_fe",
-      "description": "TeleICU Devices MFE Plug for Care (Front-end)",
-      "language": "TypeScript",
-      "stargazers_count": 0,
-      "forks_count": 10,
-      "open_issues_count": 15,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 696373808,
-      "node_id": "R_kgDOKYHSMA",
-      "name": "hi-profiles",
-      "full_name": "ohcnetwork/hi-profiles",
-      "html_url": "https://github.com/ohcnetwork/hi-profiles",
-      "description": "React components for the ABDM Health Information Profiles",
-      "language": "TypeScript",
-      "stargazers_count": 0,
+      "stargazers_count": 1,
       "forks_count": 1,
-      "open_issues_count": 4,
-      "license": null,
-      "topics": [
-        "abdm",
-        "abdm-m3",
-        "fhir",
-        "fhir-profiles",
-        "hacktoberfest"
-      ]
-    },
-    {
-      "id": 955078839,
-      "node_id": "R_kgDOOO1Ytw",
-      "name": "care_doctor_connect_fe",
-      "full_name": "ohcnetwork/care_doctor_connect_fe",
-      "html_url": "https://github.com/ohcnetwork/care_doctor_connect_fe",
-      "description": null,
-      "language": "TypeScript",
-      "stargazers_count": 0,
-      "forks_count": 5,
-      "open_issues_count": 5,
+      "open_issues_count": 1,
       "license": null,
       "topics": []
     },
     {
-      "id": 970793378,
-      "node_id": "R_kgDOOd0hog",
-      "name": "care_hcx_fe",
-      "full_name": "ohcnetwork/care_hcx_fe",
-      "html_url": "https://github.com/ohcnetwork/care_hcx_fe",
-      "description": null,
+      "id": 1157720419,
+      "node_id": "R_kgDORQFpYw",
+      "name": "metabase",
+      "full_name": "ohcnetwork/metabase",
+      "html_url": "https://github.com/ohcnetwork/metabase",
+      "description": "The easy-to-use open source Business Intelligence and Embedded Analytics tool that lets everyone work with data :bar_chart:",
       "language": null,
       "stargazers_count": 0,
       "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 947448076,
-      "node_id": "R_kgDOOHjpDA",
-      "name": "python-magic-bin",
-      "full_name": "ohcnetwork/python-magic-bin",
-      "html_url": "https://github.com/ohcnetwork/python-magic-bin",
-      "description": null,
-      "language": "Python",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 1,
+      "open_issues_count": 16,
       "license": {
         "key": "other",
         "name": "Other",
@@ -406,13 +285,58 @@
       "topics": []
     },
     {
-      "id": 958147176,
-      "node_id": "R_kgDOORwqaA",
-      "name": "care_spec",
-      "full_name": "ohcnetwork/care_spec",
-      "html_url": "https://github.com/ohcnetwork/care_spec",
+      "id": 1173225955,
+      "node_id": "R_kgDORe4B4w",
+      "name": "care_imports_fe",
+      "full_name": "ohcnetwork/care_imports_fe",
+      "html_url": "https://github.com/ohcnetwork/care_imports_fe",
       "description": null,
-      "language": "Batchfile",
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "forks_count": 1,
+      "open_issues_count": 7,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1173117516,
+      "node_id": "R_kgDORexaTA",
+      "name": "care_hello_fe",
+      "full_name": "ohcnetwork/care_hello_fe",
+      "html_url": "https://github.com/ohcnetwork/care_hello_fe",
+      "description": null,
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 6,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1170745849,
+      "node_id": "R_kgDORcgp-Q",
+      "name": "care_serial_scanner_fe",
+      "full_name": "ohcnetwork/care_serial_scanner_fe",
+      "html_url": "https://github.com/ohcnetwork/care_serial_scanner_fe",
+      "description": "Cross-platform barcode scanner integration for CARE with Web Serial and WebSocket bridge support.",
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 2,
+      "license": null,
+      "topics": [
+        "care",
+        "care-plug"
+      ]
+    },
+    {
+      "id": 1191793390,
+      "node_id": "R_kgDORwlS7g",
+      "name": "care_system_diagnostics",
+      "full_name": "ohcnetwork/care_system_diagnostics",
+      "html_url": "https://github.com/ohcnetwork/care_system_diagnostics",
+      "description": "Diagnostic tool for CARE to validate resources, plugins, connectivity, generate printable analysis reports and more.",
+      "language": "TypeScript",
       "stargazers_count": 0,
       "forks_count": 0,
       "open_issues_count": 0,
@@ -420,30 +344,50 @@
       "topics": []
     },
     {
-      "id": 955924237,
-      "node_id": "R_kgDOOPo_DQ",
-      "name": "build",
-      "full_name": "ohcnetwork/build",
-      "html_url": "https://github.com/ohcnetwork/build",
-      "description": "A simple, opinionated decision system to help decide whether to build a software feature or not.",
-      "language": "HTML",
+      "id": 1132311824,
+      "node_id": "R_kgDOQ321EA",
+      "name": "care_cash_management_fe",
+      "full_name": "ohcnetwork/care_cash_management_fe",
+      "html_url": "https://github.com/ohcnetwork/care_cash_management_fe",
+      "description": null,
+      "language": "TypeScript",
       "stargazers_count": 0,
       "forks_count": 0,
-      "open_issues_count": 0,
+      "open_issues_count": 5,
       "license": null,
       "topics": []
     },
     {
-      "id": 432833908,
-      "node_id": "R_kgDOGcyFdA",
-      "name": ".github",
-      "full_name": "ohcnetwork/.github",
-      "html_url": "https://github.com/ohcnetwork/.github",
-      "description": "Reimagining Pandemic Management",
-      "language": null,
+      "id": 1081084824,
+      "node_id": "R_kgDOQHALmA",
+      "name": "care_analytics_fe",
+      "full_name": "ohcnetwork/care_analytics_fe",
+      "html_url": "https://github.com/ohcnetwork/care_analytics_fe",
+      "description": "care plugins for analytics dashboard",
+      "language": "TypeScript",
       "stargazers_count": 0,
-      "forks_count": 4,
-      "open_issues_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 7,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 1054858613,
+      "node_id": "R_kgDOPt_ddQ",
+      "name": "care_pretty_print_fe",
+      "full_name": "ohcnetwork/care_pretty_print_fe",
+      "html_url": "https://github.com/ohcnetwork/care_pretty_print_fe",
+      "description": "A Care plugin to support a number of printers",
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "forks_count": 1,
+      "open_issues_count": 6,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -461,25 +405,25 @@
       "html_url": "https://github.com/ohcnetwork/landing",
       "description": "The landing page for Open Healthcare Network",
       "language": "TypeScript",
-      "stargazers_count": 4,
-      "forks_count": 23,
-      "open_issues_count": 5,
+      "stargazers_count": 10,
+      "forks_count": 46,
+      "open_issues_count": 27,
       "license": null,
       "topics": [
         "hacktoberfest"
       ]
     },
     {
-      "id": 950584497,
-      "node_id": "R_kgDOOKjEsQ",
-      "name": "mock-teleicu-devices",
-      "full_name": "ohcnetwork/mock-teleicu-devices",
-      "html_url": "https://github.com/ohcnetwork/mock-teleicu-devices",
-      "description": "Mock TeleICU Devices",
+      "id": 947870085,
+      "node_id": "R_kgDOOH9ZhQ",
+      "name": "care_scribe",
+      "full_name": "ohcnetwork/care_scribe",
+      "html_url": "https://github.com/ohcnetwork/care_scribe",
+      "description": "AI autofill plug for care",
       "language": "Python",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 1,
+      "stargazers_count": 3,
+      "forks_count": 3,
+      "open_issues_count": 7,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -487,7 +431,9 @@
         "url": "https://api.github.com/licenses/mit",
         "node_id": "MDc6TGljZW5zZTEz"
       },
-      "topics": []
+      "topics": [
+        "care-be-plug"
+      ]
     },
     {
       "id": 951159694,
@@ -497,23 +443,107 @@
       "html_url": "https://github.com/ohcnetwork/roadmap",
       "description": null,
       "language": null,
-      "stargazers_count": 2,
+      "stargazers_count": 3,
       "forks_count": 0,
-      "open_issues_count": 79,
+      "open_issues_count": 107,
       "license": null,
       "topics": []
     },
     {
-      "id": 947864653,
-      "node_id": "R_kgDOOH9ETQ",
-      "name": "care_abdm",
-      "full_name": "ohcnetwork/care_abdm",
-      "html_url": "https://github.com/ohcnetwork/care_abdm",
-      "description": "ABDM plug for care",
-      "language": null,
-      "stargazers_count": 1,
-      "forks_count": 1,
+      "id": 1190331394,
+      "node_id": "R_kgDORvMEAg",
+      "name": "care_tools",
+      "full_name": "ohcnetwork/care_tools",
+      "html_url": "https://github.com/ohcnetwork/care_tools",
+      "description": null,
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
       "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1066154634,
+      "node_id": "R_kgDOP4w6ig",
+      "name": "odoo_connector",
+      "full_name": "ohcnetwork/odoo_connector",
+      "html_url": "https://github.com/ohcnetwork/odoo_connector",
+      "description": "Hospital Management",
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 2,
+      "open_issues_count": 6,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1119453476,
+      "node_id": "R_kgDOQrmBJA",
+      "name": "odoo",
+      "full_name": "ohcnetwork/odoo",
+      "html_url": "https://github.com/ohcnetwork/odoo",
+      "description": "Odoo. Open Source Apps To Grow Your Business.",
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 7,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 1019630427,
+      "node_id": "R_kgDOPMZTWw",
+      "name": "care_odoo_be",
+      "full_name": "ohcnetwork/care_odoo_be",
+      "html_url": "https://github.com/ohcnetwork/care_odoo_be",
+      "description": "Plug for connecting Care with Odoo for accounting",
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 2,
+      "open_issues_count": 2,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": [
+        "care-be-plug"
+      ]
+    },
+    {
+      "id": 1178558953,
+      "node_id": "R_kgDORj9h6Q",
+      "name": "care_report_templates",
+      "full_name": "ohcnetwork/care_report_templates",
+      "html_url": "https://github.com/ohcnetwork/care_report_templates",
+      "description": null,
+      "language": "Jinja",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1168577640,
+      "node_id": "R_kgDORacUaA",
+      "name": "care_scanner_bridge",
+      "full_name": "ohcnetwork/care_scanner_bridge",
+      "html_url": "https://github.com/ohcnetwork/care_scanner_bridge",
+      "description": "WebSocket bridge for connecting serial barcode scanners to browsers lacking Web Serial API support.",
+      "language": "Go",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 1,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -532,42 +562,22 @@
       "description": "A simple server to fetch abdm auth token for development without exposing client secret",
       "language": "JavaScript",
       "stargazers_count": 0,
-      "forks_count": 1,
-      "open_issues_count": 0,
+      "forks_count": 2,
+      "open_issues_count": 1,
       "license": null,
       "topics": []
     },
     {
-      "id": 947869879,
-      "node_id": "R_kgDOOH9Ytw",
-      "name": "care_hcx",
-      "full_name": "ohcnetwork/care_hcx",
-      "html_url": "https://github.com/ohcnetwork/care_hcx",
-      "description": null,
-      "language": null,
-      "stargazers_count": 1,
-      "forks_count": 1,
-      "open_issues_count": 0,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 943042101,
-      "node_id": "R_kgDOODWuNQ",
-      "name": "care_nhcx",
-      "full_name": "ohcnetwork/care_nhcx",
-      "html_url": "https://github.com/ohcnetwork/care_nhcx",
-      "description": null,
-      "language": "Python",
+      "id": 1101315020,
+      "node_id": "R_kgDOQaS7zA",
+      "name": "deployments_registry",
+      "full_name": "ohcnetwork/deployments_registry",
+      "html_url": "https://github.com/ohcnetwork/deployments_registry",
+      "description": "All Care Deployments",
+      "language": "TypeScript",
       "stargazers_count": 0,
       "forks_count": 1,
-      "open_issues_count": 1,
+      "open_issues_count": 4,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -578,208 +588,93 @@
       "topics": []
     },
     {
-      "id": 635153130,
-      "node_id": "R_kgDOJduq6g",
-      "name": "branding",
-      "full_name": "ohcnetwork/branding",
-      "html_url": "https://github.com/ohcnetwork/branding",
-      "description": null,
-      "language": null,
-      "stargazers_count": 2,
-      "forks_count": 1,
+      "id": 247349010,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyNDczNDkwMTA=",
+      "name": "india-maps",
+      "full_name": "ohcnetwork/india-maps",
+      "html_url": "https://github.com/ohcnetwork/india-maps",
+      "description": "Realtime map-based updates on COVID-19 cases in India using Ministry of Health and Family Welfare API",
+      "language": "JavaScript",
+      "stargazers_count": 22,
+      "forks_count": 21,
+      "open_issues_count": 12,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": [
+        "covid-19",
+        "hacktoberfest"
+      ]
+    },
+    {
+      "id": 1126199649,
+      "node_id": "R_kgDOQyBxYQ",
+      "name": "care_token_display",
+      "full_name": "ohcnetwork/care_token_display",
+      "html_url": "https://github.com/ohcnetwork/care_token_display",
+      "description": "Care plugin for rendering token display pages with automatic refresh.",
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 0,
       "open_issues_count": 0,
-      "license": null,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
       "topics": []
     },
     {
-      "id": 933985891,
-      "node_id": "R_kgDON6t-Yw",
-      "name": "erd",
-      "full_name": "ohcnetwork/erd",
-      "html_url": "https://github.com/ohcnetwork/erd",
+      "id": 970751403,
+      "node_id": "R_kgDOOdx9qw",
+      "name": "care_scribe_fe",
+      "full_name": "ohcnetwork/care_scribe_fe",
+      "html_url": "https://github.com/ohcnetwork/care_scribe_fe",
       "description": null,
       "language": "TypeScript",
       "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 4,
+      "forks_count": 4,
+      "open_issues_count": 36,
       "license": null,
-      "topics": []
+      "topics": [
+        "care-fe-plug"
+      ]
     },
     {
-      "id": 554071903,
-      "node_id": "R_kgDOIQZ3Xw",
-      "name": "infra_template",
-      "full_name": "ohcnetwork/infra_template",
-      "html_url": "https://github.com/ohcnetwork/infra_template",
+      "id": 756802939,
+      "node_id": "R_kgDOLRvlew",
+      "name": "docs",
+      "full_name": "ohcnetwork/docs",
+      "html_url": "https://github.com/ohcnetwork/docs",
       "description": null,
-      "language": "Shell",
-      "stargazers_count": 0,
-      "forks_count": 3,
-      "open_issues_count": 2,
-      "license": null,
+      "language": "JavaScript",
+      "stargazers_count": 5,
+      "forks_count": 26,
+      "open_issues_count": 19,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
       "topics": []
     }
   ],
   "contributorsDetails": [
-    {
-      "login": "vigneshhari",
-      "id": 14056798,
-      "node_id": "MDQ6VXNlcjE0MDU2Nzk4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/14056798?v=4",
-      "html_url": "https://github.com/vigneshhari",
-      "contributions": 1778
-    },
-    {
-      "login": "sainak",
-      "id": 46787056,
-      "node_id": "MDQ6VXNlcjQ2Nzg3MDU2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/46787056?v=4",
-      "html_url": "https://github.com/sainak",
-      "contributions": 78
-    },
     {
       "login": "rithviknishad",
       "id": 25143503,
       "node_id": "MDQ6VXNlcjI1MTQzNTAz",
       "avatar_url": "https://avatars.githubusercontent.com/u/25143503?v=4",
       "html_url": "https://github.com/rithviknishad",
-      "contributions": 921
-    },
-    {
-      "login": "khavinshankar",
-      "id": 29787772,
-      "node_id": "MDQ6VXNlcjI5Nzg3Nzcy",
-      "avatar_url": "https://avatars.githubusercontent.com/u/29787772?v=4",
-      "html_url": "https://github.com/khavinshankar",
-      "contributions": 575
-    },
-    {
-      "login": "anroopak",
-      "id": 3034728,
-      "node_id": "MDQ6VXNlcjMwMzQ3Mjg=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/3034728?v=4",
-      "html_url": "https://github.com/anroopak",
-      "contributions": 234
-    },
-    {
-      "login": "afzalIbnSH",
-      "id": 45993339,
-      "node_id": "MDQ6VXNlcjQ1OTkzMzM5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/45993339?v=4",
-      "html_url": "https://github.com/afzalIbnSH",
-      "contributions": 109
-    },
-    {
-      "login": "Ashesh3",
-      "id": 3626859,
-      "node_id": "MDQ6VXNlcjM2MjY4NTk=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/3626859?v=4",
-      "html_url": "https://github.com/Ashesh3",
-      "contributions": 415
-    },
-    {
-      "login": "praffq",
-      "id": 115104695,
-      "node_id": "U_kgDOBtxbtw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/115104695?v=4",
-      "html_url": "https://github.com/praffq",
-      "contributions": 106
-    },
-    {
-      "login": "gigincg",
-      "id": 13028584,
-      "node_id": "MDQ6VXNlcjEzMDI4NTg0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/13028584?v=4",
-      "html_url": "https://github.com/gigincg",
-      "contributions": 391
-    },
-    {
-      "login": "mathew-alex",
-      "id": 22002072,
-      "node_id": "MDQ6VXNlcjIyMDAyMDcy",
-      "avatar_url": "https://avatars.githubusercontent.com/u/22002072?v=4",
-      "html_url": "https://github.com/mathew-alex",
-      "contributions": 207
-    },
-    {
-      "login": "rejuls",
-      "id": 31251393,
-      "node_id": "MDQ6VXNlcjMxMjUxMzkz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/31251393?v=4",
-      "html_url": "https://github.com/rejuls",
-      "contributions": 51
-    },
-    {
-      "login": "shivankacker",
-      "id": 23238460,
-      "node_id": "MDQ6VXNlcjIzMjM4NDYw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/23238460?v=4",
-      "html_url": "https://github.com/shivankacker",
-      "contributions": 161
-    },
-    {
-      "login": "abhiabhi94",
-      "id": 13880786,
-      "node_id": "MDQ6VXNlcjEzODgwNzg2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/13880786?v=4",
-      "html_url": "https://github.com/abhiabhi94",
-      "contributions": 48
-    },
-    {
-      "login": "dependabot[bot]",
-      "id": 49699333,
-      "node_id": "MDM6Qm90NDk2OTkzMzM=",
-      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-      "html_url": "https://github.com/apps/dependabot",
-      "contributions": 106
-    },
-    {
-      "login": "dauntlessnomad",
-      "id": 11440246,
-      "node_id": "MDQ6VXNlcjExNDQwMjQ2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/11440246?v=4",
-      "html_url": "https://github.com/dauntlessnomad",
-      "contributions": 586
-    },
-    {
-      "login": "biswaz",
-      "id": 12367632,
-      "node_id": "MDQ6VXNlcjEyMzY3NjMy",
-      "avatar_url": "https://avatars.githubusercontent.com/u/12367632?v=4",
-      "html_url": "https://github.com/biswaz",
-      "contributions": 39
-    },
-    {
-      "login": "farisshajahan",
-      "id": 26276648,
-      "node_id": "MDQ6VXNlcjI2Mjc2NjQ4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/26276648?v=4",
-      "html_url": "https://github.com/farisshajahan",
-      "contributions": 27
-    },
-    {
-      "login": "aeswibon",
-      "id": 77210185,
-      "node_id": "MDQ6VXNlcjc3MjEwMTg1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/77210185?v=4",
-      "html_url": "https://github.com/aeswibon",
-      "contributions": 116
-    },
-    {
-      "login": "iamsdas",
-      "id": 26461855,
-      "node_id": "MDQ6VXNlcjI2NDYxODU1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/26461855?v=4",
-      "html_url": "https://github.com/iamsdas",
-      "contributions": 23
-    },
-    {
-      "login": "Jacobjeevan",
-      "id": 40040905,
-      "node_id": "MDQ6VXNlcjQwMDQwOTA1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/40040905?v=4",
-      "html_url": "https://github.com/Jacobjeevan",
-      "contributions": 124
+      "contributions": 269
     },
     {
       "login": "bodhish",
@@ -787,79 +682,55 @@
       "node_id": "MDQ6VXNlcjE0OTc5MTkw",
       "avatar_url": "https://avatars.githubusercontent.com/u/14979190?v=4",
       "html_url": "https://github.com/bodhish",
-      "contributions": 816
+      "contributions": 32
     },
     {
-      "login": "shaileshaanand",
-      "id": 26682202,
-      "node_id": "MDQ6VXNlcjI2NjgyMjAy",
-      "avatar_url": "https://avatars.githubusercontent.com/u/26682202?v=4",
-      "html_url": "https://github.com/shaileshaanand",
-      "contributions": 47
+      "login": "khavinshankar",
+      "id": 29787772,
+      "node_id": "MDQ6VXNlcjI5Nzg3Nzcy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/29787772?v=4",
+      "html_url": "https://github.com/khavinshankar",
+      "contributions": 241
     },
     {
-      "login": "Pranshu1902",
-      "id": 70687348,
-      "node_id": "MDQ6VXNlcjcwNjg3MzQ4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/70687348?v=4",
-      "html_url": "https://github.com/Pranshu1902",
-      "contributions": 173
+      "login": "dauntlessnomad",
+      "id": 11440246,
+      "node_id": "MDQ6VXNlcjExNDQwMjQ2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11440246?v=4",
+      "html_url": "https://github.com/dauntlessnomad",
+      "contributions": 43
     },
     {
-      "login": "aswinmohanme",
-      "id": 20600674,
-      "node_id": "MDQ6VXNlcjIwNjAwNjc0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/20600674?v=4",
-      "html_url": "https://github.com/aswinmohanme",
-      "contributions": 13
+      "login": "gigincg",
+      "id": 13028584,
+      "node_id": "MDQ6VXNlcjEzMDI4NTg0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13028584?v=4",
+      "html_url": "https://github.com/gigincg",
+      "contributions": 88
     },
     {
-      "login": "Marmik2003",
-      "id": 44599895,
-      "node_id": "MDQ6VXNlcjQ0NTk5ODk1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/44599895?v=4",
-      "html_url": "https://github.com/Marmik2003",
-      "contributions": 13
+      "login": "amjithtitus09",
+      "id": 37619282,
+      "node_id": "MDQ6VXNlcjM3NjE5Mjgy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/37619282?v=4",
+      "html_url": "https://github.com/amjithtitus09",
+      "contributions": 464
     },
     {
-      "login": "divyagar",
-      "id": 42246254,
-      "node_id": "MDQ6VXNlcjQyMjQ2MjU0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/42246254?v=4",
-      "html_url": "https://github.com/divyagar",
-      "contributions": 101
+      "login": "abhimanyurajeesh",
+      "id": 63541653,
+      "node_id": "MDQ6VXNlcjYzNTQxNjUz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/63541653?v=4",
+      "html_url": "https://github.com/abhimanyurajeesh",
+      "contributions": 431
     },
     {
-      "login": "areebahmeddd",
-      "id": 135235925,
-      "node_id": "U_kgDOCA-JVQ",
-      "avatar_url": "https://avatars.githubusercontent.com/u/135235925?v=4",
-      "html_url": "https://github.com/areebahmeddd",
-      "contributions": 11
-    },
-    {
-      "login": "abinmn",
-      "id": 29946484,
-      "node_id": "MDQ6VXNlcjI5OTQ2NDg0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/29946484?v=4",
-      "html_url": "https://github.com/abinmn",
-      "contributions": 10
-    },
-    {
-      "login": "Apurva-Nagar",
-      "id": 8392802,
-      "node_id": "MDQ6VXNlcjgzOTI4MDI=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/8392802?v=4",
-      "html_url": "https://github.com/Apurva-Nagar",
-      "contributions": 79
-    },
-    {
-      "login": "tellmeY18",
-      "id": 84713473,
-      "node_id": "MDQ6VXNlcjg0NzEzNDcz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/84713473?v=4",
-      "html_url": "https://github.com/tellmeY18",
-      "contributions": 9
+      "login": "Ashesh3",
+      "id": 3626859,
+      "node_id": "MDQ6VXNlcjM2MjY4NTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3626859?v=4",
+      "html_url": "https://github.com/Ashesh3",
+      "contributions": 107
     },
     {
       "login": "SandeepThomas",
@@ -870,12 +741,68 @@
       "contributions": 380
     },
     {
+      "login": "Jacobjeevan",
+      "id": 40040905,
+      "node_id": "MDQ6VXNlcjQwMDQwOTA1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40040905?v=4",
+      "html_url": "https://github.com/Jacobjeevan",
+      "contributions": 34
+    },
+    {
       "login": "nihal467",
       "id": 57055998,
       "node_id": "MDQ6VXNlcjU3MDU1OTk4",
       "avatar_url": "https://avatars.githubusercontent.com/u/57055998?v=4",
       "html_url": "https://github.com/nihal467",
-      "contributions": 230
+      "contributions": 270
+    },
+    {
+      "login": "yash-learner",
+      "id": 53794102,
+      "node_id": "MDQ6VXNlcjUzNzk0MTAy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/53794102?v=4",
+      "html_url": "https://github.com/yash-learner",
+      "contributions": 256
+    },
+    {
+      "login": "mathew-alex",
+      "id": 22002072,
+      "node_id": "MDQ6VXNlcjIyMDAyMDcy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/22002072?v=4",
+      "html_url": "https://github.com/mathew-alex",
+      "contributions": 80
+    },
+    {
+      "login": "renovate[bot]",
+      "id": 29139614,
+      "node_id": "MDM6Qm90MjkxMzk2MTQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/2740?v=4",
+      "html_url": "https://github.com/apps/renovate",
+      "contributions": 186
+    },
+    {
+      "login": "Pranshu1902",
+      "id": 70687348,
+      "node_id": "MDQ6VXNlcjcwNjg3MzQ4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/70687348?v=4",
+      "html_url": "https://github.com/Pranshu1902",
+      "contributions": 17
+    },
+    {
+      "login": "shivankacker",
+      "id": 23238460,
+      "node_id": "MDQ6VXNlcjIzMjM4NDYw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/23238460?v=4",
+      "html_url": "https://github.com/shivankacker",
+      "contributions": 52
+    },
+    {
+      "login": "NikhilA8606",
+      "id": 115739037,
+      "node_id": "U_kgDOBuYJnQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/115739037?v=4",
+      "html_url": "https://github.com/NikhilA8606",
+      "contributions": 17
     },
     {
       "login": "patelaryan7751",
@@ -886,6 +813,14 @@
       "contributions": 144
     },
     {
+      "login": "AdityaJ2305",
+      "id": 148325158,
+      "node_id": "U_kgDOCNdDJg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/148325158?v=4",
+      "html_url": "https://github.com/AdityaJ2305",
+      "contributions": 134
+    },
+    {
       "login": "developedBySJ",
       "id": 76519654,
       "node_id": "MDQ6VXNlcjc2NTE5NjU0",
@@ -894,20 +829,20 @@
       "contributions": 125
     },
     {
-      "login": "renovate[bot]",
-      "id": 29139614,
-      "node_id": "MDM6Qm90MjkxMzk2MTQ=",
-      "avatar_url": "https://avatars.githubusercontent.com/in/2740?v=4",
-      "html_url": "https://github.com/apps/renovate",
-      "contributions": 123
+      "login": "aeswibon",
+      "id": 77210185,
+      "node_id": "MDQ6VXNlcjc3MjEwMTg1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/77210185?v=4",
+      "html_url": "https://github.com/aeswibon",
+      "contributions": 27
     },
     {
-      "login": "amjithtitus09",
-      "id": 37619282,
-      "node_id": "MDQ6VXNlcjM3NjE5Mjgy",
-      "avatar_url": "https://avatars.githubusercontent.com/u/37619282?v=4",
-      "html_url": "https://github.com/amjithtitus09",
-      "contributions": 111
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "html_url": "https://github.com/apps/dependabot",
+      "contributions": 80
     },
     {
       "login": "arpancodes",
@@ -916,6 +851,14 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/42417893?v=4",
       "html_url": "https://github.com/arpancodes",
       "contributions": 103
+    },
+    {
+      "login": "divyagar",
+      "id": 42246254,
+      "node_id": "MDQ6VXNlcjQyMjQ2MjU0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/42246254?v=4",
+      "html_url": "https://github.com/divyagar",
+      "contributions": 12
     },
     {
       "login": "Sandra3657",
@@ -950,28 +893,140 @@
       "contributions": 87
     },
     {
-      "login": "AdityaJ2305",
-      "id": 148325158,
-      "node_id": "U_kgDOCNdDJg",
-      "avatar_url": "https://avatars.githubusercontent.com/u/148325158?v=4",
-      "html_url": "https://github.com/AdityaJ2305",
+      "login": "sainak",
+      "id": 46787056,
+      "node_id": "MDQ6VXNlcjQ2Nzg3MDU2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46787056?v=4",
+      "html_url": "https://github.com/sainak",
+      "contributions": 400
+    },
+    {
+      "login": "Apurva-Nagar",
+      "id": 8392802,
+      "node_id": "MDQ6VXNlcjgzOTI4MDI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8392802?v=4",
+      "html_url": "https://github.com/Apurva-Nagar",
       "contributions": 79
     },
     {
-      "login": "abhimanyurajeesh",
-      "id": 63541653,
-      "node_id": "MDQ6VXNlcjYzNTQxNjUz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/63541653?v=4",
-      "html_url": "https://github.com/abhimanyurajeesh",
-      "contributions": 49
+      "login": "vigneshhari",
+      "id": 14056798,
+      "node_id": "MDQ6VXNlcjE0MDU2Nzk4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14056798?v=4",
+      "html_url": "https://github.com/vigneshhari",
+      "contributions": 2480
     },
     {
-      "login": "Puvikaran",
-      "id": 20906828,
-      "node_id": "MDQ6VXNlcjIwOTA2ODI4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/20906828?v=4",
-      "html_url": "https://github.com/Puvikaran",
-      "contributions": 47
+      "login": "anroopak",
+      "id": 3034728,
+      "node_id": "MDQ6VXNlcjMwMzQ3Mjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3034728?v=4",
+      "html_url": "https://github.com/anroopak",
+      "contributions": 234
+    },
+    {
+      "login": "praffq",
+      "id": 115104695,
+      "node_id": "U_kgDOBtxbtw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/115104695?v=4",
+      "html_url": "https://github.com/praffq",
+      "contributions": 164
+    },
+    {
+      "login": "afzalIbnSH",
+      "id": 45993339,
+      "node_id": "MDQ6VXNlcjQ1OTkzMzM5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/45993339?v=4",
+      "html_url": "https://github.com/afzalIbnSH",
+      "contributions": 109
+    },
+    {
+      "login": "nandkishorr",
+      "id": 96693626,
+      "node_id": "U_kgDOBcNteg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/96693626?v=4",
+      "html_url": "https://github.com/nandkishorr",
+      "contributions": 95
+    },
+    {
+      "login": "rejuls",
+      "id": 31251393,
+      "node_id": "MDQ6VXNlcjMxMjUxMzkz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/31251393?v=4",
+      "html_url": "https://github.com/rejuls",
+      "contributions": 51
+    },
+    {
+      "login": "abhiabhi94",
+      "id": 13880786,
+      "node_id": "MDQ6VXNlcjEzODgwNzg2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13880786?v=4",
+      "html_url": "https://github.com/abhiabhi94",
+      "contributions": 48
+    },
+    {
+      "login": "biswaz",
+      "id": 12367632,
+      "node_id": "MDQ6VXNlcjEyMzY3NjMy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12367632?v=4",
+      "html_url": "https://github.com/biswaz",
+      "contributions": 39
+    },
+    {
+      "login": "farisshajahan",
+      "id": 26276648,
+      "node_id": "MDQ6VXNlcjI2Mjc2NjQ4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/26276648?v=4",
+      "html_url": "https://github.com/farisshajahan",
+      "contributions": 27
+    },
+    {
+      "login": "iamsdas",
+      "id": 26461855,
+      "node_id": "MDQ6VXNlcjI2NDYxODU1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/26461855?v=4",
+      "html_url": "https://github.com/iamsdas",
+      "contributions": 23
+    },
+    {
+      "login": "shaileshaanand",
+      "id": 26682202,
+      "node_id": "MDQ6VXNlcjI2NjgyMjAy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/26682202?v=4",
+      "html_url": "https://github.com/shaileshaanand",
+      "contributions": 17
+    },
+    {
+      "login": "aswinmohanme",
+      "id": 20600674,
+      "node_id": "MDQ6VXNlcjIwNjAwNjc0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20600674?v=4",
+      "html_url": "https://github.com/aswinmohanme",
+      "contributions": 13
+    },
+    {
+      "login": "Marmik2003",
+      "id": 44599895,
+      "node_id": "MDQ6VXNlcjQ0NTk5ODk1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/44599895?v=4",
+      "html_url": "https://github.com/Marmik2003",
+      "contributions": 13
+    },
+    {
+      "login": "areebahmeddd",
+      "id": 135235925,
+      "node_id": "U_kgDOCA-JVQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/135235925?v=4",
+      "html_url": "https://github.com/areebahmeddd",
+      "contributions": 12
+    },
+    {
+      "login": "tellmeY18",
+      "id": 84713473,
+      "node_id": "MDQ6VXNlcjg0NzEzNDcz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/84713473?v=4",
+      "html_url": "https://github.com/tellmeY18",
+      "contributions": 11
     }
   ],
   "activeOrg": true

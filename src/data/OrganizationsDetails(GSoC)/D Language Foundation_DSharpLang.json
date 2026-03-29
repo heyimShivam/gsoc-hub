@@ -39,7 +39,8 @@
   "year": [
     2016,
     2019,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2016": [
@@ -118,7 +119,27 @@
         "project_url": "https://summerofcode.withgoogle.com/archive/2019/projects/4735613390028800/"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Translate DRuntime Hooks to Templates",
+        "short_description": "This project proposes to modernize DRuntime by converting legacy runtime hooks (functions that implement high-level language constructs like array...",
+        "description": "This project proposes to modernize DRuntime by converting legacy runtime hooks (functions that implement high-level language constructs like array operations and associative arrays) into compile-time templates. These hooks currently rely on dynamic type resolution via TypeInfo, introducing overhead that limits optimization opportunities. By leveraging D’s template metaprogramming, this work will enable compile-time specialization of these operations, improving runtime performance, potentially reducing binary sizes, and simplifying DRuntime maintenance. To achieve all this, my proposed solution comprises of three systematic steps for each hook: \n1. Template implementation: Rewriting the hook as a template function in DRuntime, replacing the runtime TypeInfo queries with compile-time type parameters.\n2. Compiler Integration: Modifying the DMD frontend to generate calls to the new templated hooks during the lowering phase.\n3. Validation and Benchmarking: Verifying correctness through unit tests and quantifying performance improvements using benchmarks.",
+        "student_name": "Albert Guiman",
+        "code_url": "https://dlang.github.io/GSoC/gsoc-2025/accepted-projects/template-hooks.html",
+        "proposal_id": "urpzQAtG",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/O7gYiZ5b"
+      },
+      {
+        "title": "Json Library for D",
+        "short_description": "D’s current JSON libraries (e.g., Phobos’s std.json) rely heavily on dynamic typing, which sacrifices type safety and performance—critical drawbacks...",
+        "description": "D’s current JSON libraries (e.g., Phobos’s std.json) rely heavily on dynamic typing, which sacrifices type safety and performance—critical drawbacks for systems programming. For example, parsing JSON data into a generic JSONValue container forces developers to manually validate field types and existence at runtime, introducing overhead and error-prone code.\n\nThis project addresses these limitations and enables type-safe JSON processing with constant memory by building higher-level functionalities on top of jsoniopipe, which exemplifies the language’s strengths in compile-time function evaluation(CTFE) and introspection.",
+        "student_name": "Fei",
+        "code_url": "https://github.com/gulugulubing/jsoniopipe/wiki/JSON-Library-for-D,-GSoC-2025",
+        "proposal_id": "JsmhrXLh",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/KJKaBv0n"
+      }
+    ],
+    "2026": []
   },
   "githubID": "DSharpLang",
   "repositories": [

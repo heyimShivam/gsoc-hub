@@ -31,7 +31,7 @@
   ],
   "irc_channel": "https://mariadb.zulipchat.com/",
   "contact_email": "mailto:maria-discuss@lists.launchpad.net",
-  "mailing_list": "https://mariadb.com/kb/en/mailing-lists/",
+  "mailing_list": "https://lists.mariadb.org/postorius/lists/developers.lists.mariadb.org/",
   "twitter_url": "https://twitter.com/mariadb_org",
   "blog_url": "https://mariadb.org/blog/",
   "facebook_url": null,
@@ -45,7 +45,8 @@
     2022,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2016": [
@@ -349,7 +350,63 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/9sHeJ43w"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Reduce computations in JOINs by using Bloom-filter-based pre-joins",
+        "short_description": "Implement an efficient Bloom Filter to reduce JOIN's computations. Idea is to apply Bloom filter on columns to filter the data as much as possible,...",
+        "description": "Implement an efficient Bloom Filter to reduce JOIN's computations. Idea is to apply Bloom filter on columns to filter the data as much as possible, and then feed the data to JOIN. This will significantly reduce the amount of memory taken by JOIN operation and increase its performance.",
+        "student_name": "Akhmad Oripov",
+        "code_url": "https://gist.github.com/AestheticAkhmad/c4afb11f86847b3bac2fb6e786807e35",
+        "proposal_id": "JT1BeYZa",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/DSvUKctm"
+      },
+      {
+        "title": "Plugin for automatic embedding generation and introduction of expensive functions concept",
+        "short_description": "Currently, there is no plugin in MariDB that can generate vector embeddings. If the user wishes to store vector embeddings for a document, they have...",
+        "description": "Currently, there is no plugin in MariDB that can generate vector embeddings. If the user wishes to store vector embeddings for a document, they have to use a separate solution and then manually insert them into the database. This is inefficient and complicates related pipelines.\n\nThe goal of this project is twofold:\n1. Create a function plugin that implements a function to query OpenAI’s API to generate vector embeddings for a given input.\n2. Implement a concept of “expensive” functions in the MariaDB server. When expensive functions are used in stored generated columns, they should not be recomputed whenever possible (for example during ALTER TABLE commands). Instead, the old values should be copied to the new table, just like with regular columns\n\nFor this project to be successfully completed, the goal would be to create a PR to MariaDB’s server repository that:\n1. Implements a function plugin for generating vector embeddings via API calls to OpenAI\n2. Introduces and implements the concept of “expensive” functions, to avoid recomputing them whenever possible \n3. Ensures the quality of the newly developed features is up to standards, via appropriate testing and documentation",
+        "student_name": "Apostolis Stamatis",
+        "code_url": "https://github.com/MariaDB/server/pull/4096",
+        "proposal_id": "6gamHA8H",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/8n0c6PsY"
+      },
+      {
+        "title": "Implementation of Native INTERVAL Data Type",
+        "short_description": "This project aims to transform MariaDB's INTERVAL keyword into a first-class data type, enabling its use in table columns, stored routines, and...",
+        "description": "This project aims to transform MariaDB's INTERVAL keyword into a first-class data type, enabling its use in table columns, stored routines, and hybrid functions.",
+        "student_name": "Hazem Alrawi",
+        "code_url": "https://github.com/MariaDB/server/pull/4108",
+        "proposal_id": "Jdx0IC6E",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/2Q6aPhXV"
+      },
+      {
+        "title": "FRM parser Utility for MariaDB",
+        "short_description": "FRM files are what MariaDB uses to store metadata about tables. These files can be used to generate DDL statements (CREATE TABLE ...). We are lacking...",
+        "description": "FRM files are what MariaDB uses to store metadata about tables. These files can be used to generate DDL statements (CREATE TABLE ...). We are lacking a utility to parse these files which could in turn make DBAs lives easier. The task of this project is to have this utility implemented, making use of MariaDB's FRM parsing logic. You may have to carry out some refactoring to extract the parsing code into a reusable library, once for MariaDB Server, once for the FRM parsing tool.",
+        "student_name": "hp77",
+        "code_url": "https://hp77-creator.github.io/blogs/gsoc25",
+        "proposal_id": "hZI2Q6I4",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/vAVydntH"
+      },
+      {
+        "title": "Enhance mysqltest Language with Expressions and Variable Substitutions",
+        "short_description": "The mysqltest tool is a core component of MariaDB’s testing infrastructure. Currently, it has two limitations that restrict the flexibility and...",
+        "description": "The mysqltest tool is a core component of MariaDB’s testing infrastructure. Currently, it has two limitations that restrict the flexibility and expressiveness of test scripts:\n1. Limited Variable Substitution: The tool only supports basic variable access patterns.\n2. Lack of Expression Support: It lacks support for arithmetic, comparison, and boolean\noperations.\nThis project addresses both limitations by implementing SQL-like function support and expression evaluation to the mysqltest language. It also enables users to write more concise, maintainable, and powerful test scripts while ensuring backward compatibility with existing tests.",
+        "student_name": "Khaled Riyad",
+        "code_url": "https://khaledr57.github.io/blog/gsoc-2025-mysqltest-expression-parser",
+        "proposal_id": "ijQusMdh",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/lkS4SUrA"
+      },
+      {
+        "title": "Replication to Enable Filtering on Master",
+        "short_description": "Currently there are two ways of replication filters in MariaDB. One method filters data on the primary node by not writing unwanted events to the...",
+        "description": "Currently there are two ways of replication filters in MariaDB. \n\nOne method filters data on the primary node by not writing unwanted events to the binary log, However, this approach risks losing important data and can cause issues with point-in-time recovery. \nThe alternative is to send all data from the primary node to the replicas and let them filter out what they don't need although this method not only increases network traffic and resource usage but also creates a risk of inconsistent data if replicas are misconfigured.\n\nThis proposal suggests adding a filter on the primary node that checks which data should be sent to the replicas, while still logging all events in the binary log. The filter will help control what gets replicated without affecting the ability to recover data. \n\nThis would lead to less network bandwidth being used, less work needed on the replicas, and more consistent replicas by applying the same filtering rules in one place (primary filter instead of replica filter).",
+        "student_name": "Mohanad Khaled",
+        "code_url": "https://github.com/MohanadKh03/mariadb-gsoc25",
+        "proposal_id": "Ryn8CiJk",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/uzgYlzc5"
+      }
+    ],
+    "2026": []
   },
   "githubID": "MariaDB",
   "repositories": [
@@ -361,9 +418,9 @@
       "html_url": "https://github.com/MariaDB/server",
       "description": "MariaDB server is a community developed fork of MySQL server. Started by core members of the original MySQL team, MariaDB actively works with outside developers to deliver the most featureful, stable, and sanely licensed open SQL server in the industry.",
       "language": "C++",
-      "stargazers_count": 6048,
-      "forks_count": 1803,
-      "open_issues_count": 228,
+      "stargazers_count": 7373,
+      "forks_count": 2025,
+      "open_issues_count": 335,
       "license": {
         "key": "gpl-2.0",
         "name": "GNU General Public License v2.0",
@@ -390,74 +447,6 @@
       ]
     },
     {
-      "id": 436520237,
-      "node_id": "R_kgDOGgTFLQ",
-      "name": "buildbot",
-      "full_name": "MariaDB/buildbot",
-      "html_url": "https://github.com/MariaDB/buildbot",
-      "description": "buildbot.mariadb.org",
-      "language": "Python",
-      "stargazers_count": 6,
-      "forks_count": 25,
-      "open_issues_count": 35,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 655431085,
-      "node_id": "R_kgDOJxEVrQ",
-      "name": "mariadb-documentation",
-      "full_name": "MariaDB/mariadb-documentation",
-      "html_url": "https://github.com/MariaDB/mariadb-documentation",
-      "description": null,
-      "language": "HTML",
-      "stargazers_count": 4,
-      "forks_count": 6,
-      "open_issues_count": 2,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 895033850,
-      "node_id": "R_kgDONVkh-g",
-      "name": "demos",
-      "full_name": "MariaDB/demos",
-      "html_url": "https://github.com/MariaDB/demos",
-      "description": "A collection of MariaDB demos.",
-      "language": "Python",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "bsd-3-clause",
-        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
-        "spdx_id": "BSD-3-Clause",
-        "url": "https://api.github.com/licenses/bsd-3-clause",
-        "node_id": "MDc6TGljZW5zZTU="
-      },
-      "topics": []
-    },
-    {
-      "id": 980719847,
-      "node_id": "R_kgDOOnSY5w",
-      "name": "mcp",
-      "full_name": "MariaDB/mcp",
-      "html_url": "https://github.com/MariaDB/mcp",
-      "description": "MariaDB MCP (Model Context Protocol) server implementation",
-      "language": "Python",
-      "stargazers_count": 0,
-      "forks_count": 1,
-      "open_issues_count": 0,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
       "id": 145043178,
       "node_id": "MDEwOlJlcG9zaXRvcnkxNDUwNDMxNzg=",
       "name": "randgen",
@@ -465,8 +454,8 @@
       "html_url": "https://github.com/MariaDB/randgen",
       "description": "Random Query Generator (with MariaDB patches)",
       "language": "Yacc",
-      "stargazers_count": 42,
-      "forks_count": 25,
+      "stargazers_count": 43,
+      "forks_count": 24,
       "open_issues_count": 0,
       "license": {
         "key": "gpl-2.0",
@@ -478,6 +467,140 @@
       "topics": []
     },
     {
+      "id": 436520237,
+      "node_id": "R_kgDOGgTFLQ",
+      "name": "buildbot",
+      "full_name": "MariaDB/buildbot",
+      "html_url": "https://github.com/MariaDB/buildbot",
+      "description": "buildbot.mariadb.org",
+      "language": "Python",
+      "stargazers_count": 7,
+      "forks_count": 27,
+      "open_issues_count": 29,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 26983101,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyNjk4MzEwMQ==",
+      "name": "mariadb-docker",
+      "full_name": "MariaDB/mariadb-docker",
+      "html_url": "https://github.com/MariaDB/mariadb-docker",
+      "description": "Docker Official Image packaging for MariaDB",
+      "language": "Shell",
+      "stargazers_count": 893,
+      "forks_count": 451,
+      "open_issues_count": 31,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "topics": []
+    },
+    {
+      "id": 980719847,
+      "node_id": "R_kgDOOnSY5w",
+      "name": "mcp",
+      "full_name": "MariaDB/mcp",
+      "html_url": "https://github.com/MariaDB/mcp",
+      "description": "MariaDB MCP (Model Context Protocol) server implementation",
+      "language": "Python",
+      "stargazers_count": 154,
+      "forks_count": 63,
+      "open_issues_count": 19,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 39595126,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzOTU5NTEyNg==",
+      "name": "galera",
+      "full_name": "MariaDB/galera",
+      "html_url": "https://github.com/MariaDB/galera",
+      "description": "Synchronous multi-master replication library",
+      "language": "C++",
+      "stargazers_count": 54,
+      "forks_count": 25,
+      "open_issues_count": 4,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "topics": []
+    },
+    {
+      "id": 1142391039,
+      "node_id": "R_kgDORBeA_w",
+      "name": "TAF",
+      "full_name": "MariaDB/TAF",
+      "html_url": "https://github.com/MariaDB/TAF",
+      "description": "Test Automation Framework (TAF)",
+      "language": "Perl",
+      "stargazers_count": 3,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": [
+        "database",
+        "database-perfomance",
+        "performance-testing",
+        "test-automation",
+        "test-frameworks"
+      ]
+    },
+    {
+      "id": 88213008,
+      "node_id": "MDEwOlJlcG9zaXRvcnk4ODIxMzAwOA==",
+      "name": "mariadb.org-tools",
+      "full_name": "MariaDB/mariadb.org-tools",
+      "html_url": "https://github.com/MariaDB/mariadb.org-tools",
+      "description": "This project collects together various small scripts or projects that are used for MariaDB development, but for one reason or another do not make sense to keep inside the main MariaDB source tree.",
+      "language": "Jupyter Notebook",
+      "stargazers_count": 54,
+      "forks_count": 52,
+      "open_issues_count": 8,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 897849999,
+      "node_id": "R_kgDONYQajw",
+      "name": "cross-reference",
+      "full_name": "MariaDB/cross-reference",
+      "html_url": "https://github.com/MariaDB/cross-reference",
+      "description": "Cross reference checking tool",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "forks_count": 2,
+      "open_issues_count": 0,
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "topics": []
+    },
+    {
       "id": 956409350,
       "node_id": "R_kgDOOQGmBg",
       "name": "mariadb-for-universities",
@@ -485,9 +608,9 @@
       "html_url": "https://github.com/MariaDB/mariadb-for-universities",
       "description": "MariaDB lecture material for DBA and Developer courses by MariaDB Foundation and the community. Based on professional training material released for non-commercial use by MariaDB Corporation.",
       "language": null,
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "open_issues_count": 0,
+      "stargazers_count": 6,
+      "forks_count": 3,
+      "open_issues_count": 1,
       "license": {
         "key": "other",
         "name": "Other",
@@ -504,96 +627,76 @@
       ]
     },
     {
-      "id": 26983101,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNjk4MzEwMQ==",
-      "name": "mariadb-docker",
-      "full_name": "MariaDB/mariadb-docker",
-      "html_url": "https://github.com/MariaDB/mariadb-docker",
-      "description": "Docker Official Image packaging for MariaDB",
-      "language": "Shell",
-      "stargazers_count": 822,
-      "forks_count": 445,
-      "open_issues_count": 27,
-      "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
-      },
-      "topics": []
-    },
-    {
-      "id": 530586335,
-      "node_id": "R_kgDOH6Aa3w",
-      "name": "metrics",
-      "full_name": "MariaDB/metrics",
-      "html_url": "https://github.com/MariaDB/metrics",
-      "description": "Scripts to generate metrics around MariaDB",
+      "id": 1032508000,
+      "node_id": "R_kgDOPYrSYA",
+      "name": "mtr-log-collector",
+      "full_name": "MariaDB/mtr-log-collector",
+      "html_url": "https://github.com/MariaDB/mtr-log-collector",
+      "description": "Drop-in replacement service for the deprecated Buildbot MTRLogObserver",
       "language": "Python",
-      "stargazers_count": 6,
-      "forks_count": 5,
+      "stargazers_count": 0,
+      "forks_count": 1,
       "open_issues_count": 0,
       "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
       },
       "topics": []
     },
     {
-      "id": 88213008,
-      "node_id": "MDEwOlJlcG9zaXRvcnk4ODIxMzAwOA==",
-      "name": "mariadb.org-tools",
-      "full_name": "MariaDB/mariadb.org-tools",
-      "html_url": "https://github.com/MariaDB/mariadb.org-tools",
-      "description": "This project collects together various small scripts or projects that are used for MariaDB development, but for one reason or another do not make sense to keep inside the main MariaDB source tree.",
-      "language": "Jupyter Notebook",
-      "stargazers_count": 53,
-      "forks_count": 52,
-      "open_issues_count": 10,
+      "id": 1041903501,
+      "node_id": "R_kgDOPhovjQ",
+      "name": "openflights",
+      "full_name": "MariaDB/openflights",
+      "html_url": "https://github.com/MariaDB/openflights",
+      "description": "Website for storing flight information, rendering paths on a zoomable world map and calculating statistics, with plenty of free airline, airport and route data.",
+      "language": "PHP",
+      "stargazers_count": 7,
+      "forks_count": 3,
+      "open_issues_count": 1,
+      "license": {
+        "key": "agpl-3.0",
+        "name": "GNU Affero General Public License v3.0",
+        "spdx_id": "AGPL-3.0",
+        "url": "https://api.github.com/licenses/agpl-3.0",
+        "node_id": "MDc6TGljZW5zZTE="
+      },
+      "topics": []
+    },
+    {
+      "id": 655431085,
+      "node_id": "R_kgDOJxEVrQ",
+      "name": "mariadb-documentation",
+      "full_name": "MariaDB/mariadb-documentation",
+      "html_url": "https://github.com/MariaDB/mariadb-documentation",
+      "description": null,
+      "language": "HTML",
+      "stargazers_count": 6,
+      "forks_count": 6,
+      "open_issues_count": 2,
       "license": null,
       "topics": []
     },
     {
-      "id": 39595126,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzOTU5NTEyNg==",
-      "name": "galera",
-      "full_name": "MariaDB/galera",
-      "html_url": "https://github.com/MariaDB/galera",
-      "description": "Synchronous multi-master replication library",
-      "language": "C++",
-      "stargazers_count": 53,
-      "forks_count": 20,
-      "open_issues_count": 7,
-      "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
-      },
-      "topics": []
-    },
-    {
-      "id": 784175596,
-      "node_id": "R_kgDOLr2R7A",
-      "name": "maria-catalogs",
-      "full_name": "MariaDB/maria-catalogs",
-      "html_url": "https://github.com/MariaDB/maria-catalogs",
-      "description": "This is a development repository used for catalogs. Note that this is constantly rebased until close to completation",
-      "language": "C++",
+      "id": 1071352812,
+      "node_id": "R_kgDOP9uL7A",
+      "name": "failman",
+      "full_name": "MariaDB/failman",
+      "html_url": "https://github.com/MariaDB/failman",
+      "description": "Buildbot failed builds reporter",
+      "language": "Python",
       "stargazers_count": 0,
       "forks_count": 0,
-      "open_issues_count": 1,
+      "open_issues_count": 0,
       "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
       },
       "topics": []
     },
@@ -621,30 +724,36 @@
       ]
     },
     {
-      "id": 916544950,
-      "node_id": "R_kgDONqFdtg",
-      "name": ".github",
-      "full_name": "MariaDB/.github",
-      "html_url": "https://github.com/MariaDB/.github",
-      "description": "Public organization profile",
-      "language": null,
+      "id": 784175596,
+      "node_id": "R_kgDOLr2R7A",
+      "name": "maria-catalogs",
+      "full_name": "MariaDB/maria-catalogs",
+      "html_url": "https://github.com/MariaDB/maria-catalogs",
+      "description": "This is a development repository used for catalogs. Note that this is constantly rebased until close to completation",
+      "language": "C++",
       "stargazers_count": 0,
       "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
+      "open_issues_count": 1,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
       "topics": []
     },
     {
-      "id": 897849999,
-      "node_id": "R_kgDONYQajw",
-      "name": "cross-reference",
-      "full_name": "MariaDB/cross-reference",
-      "html_url": "https://github.com/MariaDB/cross-reference",
-      "description": "Cross reference checking tool",
-      "language": "JavaScript",
+      "id": 895033850,
+      "node_id": "R_kgDONVkh-g",
+      "name": "demos",
+      "full_name": "MariaDB/demos",
+      "html_url": "https://github.com/MariaDB/demos",
+      "description": "A collection of MariaDB demos.",
+      "language": "Python",
       "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
+      "forks_count": 2,
+      "open_issues_count": 2,
       "license": {
         "key": "bsd-3-clause",
         "name": "BSD 3-Clause \"New\" or \"Revised\" License",
@@ -655,6 +764,40 @@
       "topics": []
     },
     {
+      "id": 530586335,
+      "node_id": "R_kgDOH6Aa3w",
+      "name": "metrics",
+      "full_name": "MariaDB/metrics",
+      "html_url": "https://github.com/MariaDB/metrics",
+      "description": "Scripts to generate metrics around MariaDB",
+      "language": "Python",
+      "stargazers_count": 6,
+      "forks_count": 5,
+      "open_issues_count": 0,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "topics": []
+    },
+    {
+      "id": 916544950,
+      "node_id": "R_kgDONqFdtg",
+      "name": ".github",
+      "full_name": "MariaDB/.github",
+      "html_url": "https://github.com/MariaDB/.github",
+      "description": "Public organization profile",
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 1,
+      "open_issues_count": 1,
+      "license": null,
+      "topics": []
+    },
+    {
       "id": 279630394,
       "node_id": "MDEwOlJlcG9zaXRvcnkyNzk2MzAzOTQ=",
       "name": "mariadb_kernel",
@@ -662,9 +805,9 @@
       "html_url": "https://github.com/MariaDB/mariadb_kernel",
       "description": "A MariaDB Jupyter kernel",
       "language": "Jupyter Notebook",
-      "stargazers_count": 32,
-      "forks_count": 22,
-      "open_issues_count": 16,
+      "stargazers_count": 34,
+      "forks_count": 25,
+      "open_issues_count": 18,
       "license": {
         "key": "bsd-3-clause",
         "name": "BSD 3-Clause \"New\" or \"Revised\" License",
@@ -703,7 +846,7 @@
       "description": "Helper repository for packages that we merge at release points without preserving the history",
       "language": "C",
       "stargazers_count": 11,
-      "forks_count": 3,
+      "forks_count": 2,
       "open_issues_count": 0,
       "license": null,
       "topics": []
@@ -716,7 +859,7 @@
       "html_url": "https://github.com/MariaDB/catalogs-wordpress",
       "description": "WordPress site administration scripts for catalogs. Part of CloudFest Hackathon 2024",
       "language": "PHP",
-      "stargazers_count": 2,
+      "stargazers_count": 3,
       "forks_count": 0,
       "open_issues_count": 4,
       "license": {
@@ -796,7 +939,7 @@
       "html_url": "https://github.com/MariaDB/SCARY",
       "description": "SQL Comparator Analysis, Reassure Yourself (SCARY)",
       "language": "Python",
-      "stargazers_count": 7,
+      "stargazers_count": 8,
       "forks_count": 2,
       "open_issues_count": 0,
       "license": {
@@ -817,7 +960,7 @@
       "description": "MariaDB health checks plugin for WordPress",
       "language": "PHP",
       "stargazers_count": 39,
-      "forks_count": 9,
+      "forks_count": 8,
       "open_issues_count": 5,
       "license": {
         "key": "gpl-2.0",
@@ -836,8 +979,8 @@
       "html_url": "https://github.com/MariaDB/HammerDB",
       "description": "HammerDB Database Load Testing and Benchmarking Tool",
       "language": "Tcl",
-      "stargazers_count": 0,
-      "forks_count": 2,
+      "stargazers_count": 1,
+      "forks_count": 1,
       "open_issues_count": 0,
       "license": {
         "key": "gpl-3.0",
@@ -857,29 +1000,9 @@
       "description": "MariaDB Connector/C Documentation",
       "language": "JavaScript",
       "stargazers_count": 13,
-      "forks_count": 14,
+      "forks_count": 13,
       "open_issues_count": 2,
       "license": null,
-      "topics": []
-    },
-    {
-      "id": 21709014,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMTcwOTAxNA==",
-      "name": "webscalesql-5.6",
-      "full_name": "MariaDB/webscalesql-5.6",
-      "html_url": "https://github.com/MariaDB/webscalesql-5.6",
-      "description": "Web Scale SQL, Version 5.6, based upon the MySQL-5.6 community releases.",
-      "language": "C++",
-      "stargazers_count": 18,
-      "forks_count": 13,
-      "open_issues_count": 17,
-      "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
-      },
       "topics": []
     }
   ],
@@ -893,14 +1016,6 @@
       "contributions": 2
     },
     {
-      "login": "prohaska",
-      "id": 3812234,
-      "node_id": "MDQ6VXNlcjM4MTIyMzQ=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/3812234?v=4",
-      "html_url": "https://github.com/prohaska",
-      "contributions": 4725
-    },
-    {
       "login": "vuvova",
       "id": 2737648,
       "node_id": "MDQ6VXNlcjI3Mzc2NDg=",
@@ -909,12 +1024,20 @@
       "contributions": 15
     },
     {
+      "login": "prohaska",
+      "id": 3812234,
+      "node_id": "MDQ6VXNlcjM4MTIyMzQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3812234?v=4",
+      "html_url": "https://github.com/prohaska",
+      "contributions": 4725
+    },
+    {
       "login": "vaintroub",
       "id": 1708204,
       "node_id": "MDQ6VXNlcjE3MDgyMDQ=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1708204?v=4",
       "html_url": "https://github.com/vaintroub",
-      "contributions": 2530
+      "contributions": 2596
     },
     {
       "login": "spetrunia",
@@ -922,7 +1045,7 @@
       "node_id": "MDQ6VXNlcjI3MzQ1NTA=",
       "avatar_url": "https://avatars.githubusercontent.com/u/2734550?v=4",
       "html_url": "https://github.com/spetrunia",
-      "contributions": 2499
+      "contributions": 2522
     },
     {
       "login": "gkodinov",
@@ -946,7 +1069,15 @@
       "node_id": "MDQ6VXNlcjY4MjM4NTM=",
       "avatar_url": "https://avatars.githubusercontent.com/u/6823853?v=4",
       "html_url": "https://github.com/montywi",
-      "contributions": 1717
+      "contributions": 1800
+    },
+    {
+      "login": "janlindstrom",
+      "id": 6338705,
+      "node_id": "MDQ6VXNlcjYzMzg3MDU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6338705?v=4",
+      "html_url": "https://github.com/janlindstrom",
+      "contributions": 3
     },
     {
       "login": "igorbabaev",
@@ -962,7 +1093,15 @@
       "node_id": "MDQ6VXNlcjEyNjc2MDI=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1267602?v=4",
       "html_url": "https://github.com/sanja-byelkin",
-      "contributions": 1222
+      "contributions": 1285
+    },
+    {
+      "login": "knielsen",
+      "id": 79553,
+      "node_id": "MDQ6VXNlcjc5NTUz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/79553?v=4",
+      "html_url": "https://github.com/knielsen",
+      "contributions": 1161
     },
     {
       "login": "vasild",
@@ -971,14 +1110,6 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/266751?v=4",
       "html_url": "https://github.com/vasild",
       "contributions": 1158
-    },
-    {
-      "login": "knielsen",
-      "id": 79553,
-      "node_id": "MDQ6VXNlcjc5NTUz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/79553?v=4",
-      "html_url": "https://github.com/knielsen",
-      "contributions": 1135
     },
     {
       "login": "Buggynours",
@@ -994,7 +1125,7 @@
       "node_id": "MDQ6VXNlcjc3Nzc0Njk=",
       "avatar_url": "https://avatars.githubusercontent.com/u/7777469?v=4",
       "html_url": "https://github.com/abarkov",
-      "contributions": 1044
+      "contributions": 1067
     },
     {
       "login": "blaudden",
@@ -1010,7 +1141,7 @@
       "node_id": "MDQ6VXNlcjQ2MjI4Nw==",
       "avatar_url": "https://avatars.githubusercontent.com/u/462287?v=4",
       "html_url": "https://github.com/grooverdan",
-      "contributions": 695
+      "contributions": 790
     },
     {
       "login": "bjornmu",
@@ -1026,7 +1157,7 @@
       "node_id": "MDQ6VXNlcjc3MDA0NzI=",
       "avatar_url": "https://avatars.githubusercontent.com/u/7700472?v=4",
       "html_url": "https://github.com/svoj",
-      "contributions": 765
+      "contributions": 821
     },
     {
       "login": "cvicentiu",
@@ -1042,7 +1173,7 @@
       "node_id": "MDQ6VXNlcjMzMDcwMzc=",
       "avatar_url": "https://avatars.githubusercontent.com/u/3307037?v=4",
       "html_url": "https://github.com/midenok",
-      "contributions": 634
+      "contributions": 676
     },
     {
       "login": "Thirunarayanan",
@@ -1050,7 +1181,7 @@
       "node_id": "MDQ6VXNlcjQyMjMzNjA=",
       "avatar_url": "https://avatars.githubusercontent.com/u/4223360?v=4",
       "html_url": "https://github.com/Thirunarayanan",
-      "contributions": 502
+      "contributions": 553
     },
     {
       "login": "kevgs",
@@ -1090,7 +1221,7 @@
       "node_id": "MDQ6VXNlcjEwNDQ4MTM4",
       "avatar_url": "https://avatars.githubusercontent.com/u/10448138?v=4",
       "html_url": "https://github.com/sysprg",
-      "contributions": 328
+      "contributions": 345
     },
     {
       "login": "dbart",
@@ -1101,28 +1232,92 @@
       "contributions": 3
     },
     {
+      "login": "mariadb-YuchenPei",
+      "id": 119280372,
+      "node_id": "U_kgDOBxwS9A",
+      "avatar_url": "https://avatars.githubusercontent.com/u/119280372?v=4",
+      "html_url": "https://github.com/mariadb-YuchenPei",
+      "contributions": 1
+    },
+    {
       "login": "jhauglid",
       "id": 17183820,
       "node_id": "MDQ6VXNlcjE3MTgzODIw",
       "avatar_url": "https://avatars.githubusercontent.com/u/17183820?v=4",
       "html_url": "https://github.com/jhauglid",
-      "contributions": 316
+      "contributions": 4
     },
     {
-      "login": "leifwalsh",
-      "id": 46406,
-      "node_id": "MDQ6VXNlcjQ2NDA2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/46406?v=4",
-      "html_url": "https://github.com/leifwalsh",
-      "contributions": 308
+      "login": "saikumar-v",
+      "id": 2101599,
+      "node_id": "MDQ6VXNlcjIxMDE1OTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2101599?v=4",
+      "html_url": "https://github.com/saikumar-v",
+      "contributions": 110
     },
     {
-      "login": "ottok",
-      "id": 668724,
-      "node_id": "MDQ6VXNlcjY2ODcyNA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/668724?v=4",
-      "html_url": "https://github.com/ottok",
-      "contributions": 6
+      "login": "berntm",
+      "id": 1321286,
+      "node_id": "MDQ6VXNlcjEzMjEyODY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1321286?v=4",
+      "html_url": "https://github.com/berntm",
+      "contributions": 102
+    },
+    {
+      "login": "pcrews",
+      "id": 1657071,
+      "node_id": "MDQ6VXNlcjE2NTcwNzE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1657071?v=4",
+      "html_url": "https://github.com/pcrews",
+      "contributions": 81
+    },
+    {
+      "login": "rameshvs02",
+      "id": 5346557,
+      "node_id": "MDQ6VXNlcjUzNDY1NTc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5346557?v=4",
+      "html_url": "https://github.com/rameshvs02",
+      "contributions": 43
+    },
+    {
+      "login": "mariadb-SusilBehera",
+      "id": 59557163,
+      "node_id": "MDQ6VXNlcjU5NTU3MTYz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/59557163?v=4",
+      "html_url": "https://github.com/mariadb-SusilBehera",
+      "contributions": 7
+    },
+    {
+      "login": "agopi",
+      "id": 13623415,
+      "node_id": "MDQ6VXNlcjEzNjIzNDE1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13623415?v=4",
+      "html_url": "https://github.com/agopi",
+      "contributions": 1
+    },
+    {
+      "login": "darnaut",
+      "id": 1567089,
+      "node_id": "MDQ6VXNlcjE1NjcwODk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1567089?v=4",
+      "html_url": "https://github.com/darnaut",
+      "contributions": 1
+    },
+    {
+      "login": "johnemb",
+      "id": 1279883,
+      "node_id": "MDQ6VXNlcjEyNzk4ODM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1279883?v=4",
+      "html_url": "https://github.com/johnemb",
+      "contributions": 1
+    },
+    {
+      "login": "Thearas",
+      "id": 44015907,
+      "node_id": "MDQ6VXNlcjQ0MDE1OTA3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/44015907?v=4",
+      "html_url": "https://github.com/Thearas",
+      "contributions": 1
     },
     {
       "login": "vladbogo",
@@ -1133,20 +1328,20 @@
       "contributions": 631
     },
     {
-      "login": "fauust",
-      "id": 2197555,
-      "node_id": "MDQ6VXNlcjIxOTc1NTU=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/2197555?v=4",
-      "html_url": "https://github.com/fauust",
-      "contributions": 386
-    },
-    {
       "login": "RazvanLiviuVarzaru",
       "id": 45736827,
       "node_id": "MDQ6VXNlcjQ1NzM2ODI3",
       "avatar_url": "https://avatars.githubusercontent.com/u/45736827?v=4",
       "html_url": "https://github.com/RazvanLiviuVarzaru",
-      "contributions": 234
+      "contributions": 430
+    },
+    {
+      "login": "fauust",
+      "id": 2197555,
+      "node_id": "MDQ6VXNlcjIxOTc1NTU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2197555?v=4",
+      "html_url": "https://github.com/fauust",
+      "contributions": 394
     },
     {
       "login": "shinnok",
@@ -1189,6 +1384,14 @@
       "contributions": 7
     },
     {
+      "login": "ottok",
+      "id": 668724,
+      "node_id": "MDQ6VXNlcjY2ODcyNA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/668724?v=4",
+      "html_url": "https://github.com/ottok",
+      "contributions": 6
+    },
+    {
       "login": "vl-radu",
       "id": 19932741,
       "node_id": "MDQ6VXNlcjE5OTMyNzQx",
@@ -1221,6 +1424,14 @@
       "contributions": 2
     },
     {
+      "login": "istiak101",
+      "id": 218794112,
+      "node_id": "U_kgDODQqIgA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/218794112?v=4",
+      "html_url": "https://github.com/istiak101",
+      "contributions": 2
+    },
+    {
       "login": "ericherman",
       "id": 1174254,
       "node_id": "MDQ6VXNlcjExNzQyNTQ=",
@@ -1234,14 +1445,6 @@
       "node_id": "U_kgDOBmL5LA",
       "avatar_url": "https://avatars.githubusercontent.com/u/107149612?v=4",
       "html_url": "https://github.com/tansrh",
-      "contributions": 1
-    },
-    {
-      "login": "mariadb-YuchenPei",
-      "id": 119280372,
-      "node_id": "U_kgDOBxwS9A",
-      "avatar_url": "https://avatars.githubusercontent.com/u/119280372?v=4",
-      "html_url": "https://github.com/mariadb-YuchenPei",
       "contributions": 1
     }
   ],

@@ -244,7 +244,44 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/S22SNeiv"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "On-Canvas Spell Checking",
+        "short_description": "Inkscape currently lacks an intuitive, user-friendly way to perform spell checking within text elements on the canvas. This project aims to integrate...",
+        "description": "Inkscape currently lacks an intuitive, user-friendly way to perform spell checking within text elements on the canvas. This project aims to integrate real-time, on-canvas spell checking into Inkscape, enabling users to easily identify and correct spelling errors directly in their artwork. The solution will use the existing spell checking infrastructure and implement interactive UI components, such as wavy underlines and context menus for correction suggestions. Key deliverables include the rendering of spelling error indicators on canvas, user interaction features for correcting errors, performance optimizations, and comprehensive testing. This enhancement will significantly improve the usability and professionalism of text-based design workflows in Inkscape.",
+        "student_name": "Aarav Oswal",
+        "code_url": "https://gitlab.com/inkscape/inkscape/-/merge_requests/7297",
+        "proposal_id": "0s3d9Bk4",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/xREAi1JS"
+      },
+      {
+        "title": "Improved Support for Adobe Illustrator File Format",
+        "short_description": "Inkscape’s support for Adobe Illustrator (.ai) files is limited, especially for files that include raster images, masks, filters, and other advanced...",
+        "description": "Inkscape’s support for Adobe Illustrator (.ai) files is limited, especially for files that include raster images, masks, filters, and other advanced features. This project aims to improve Inkscape’s .ai import by handling more of the format’s structure and content. Key focus areas include support for clips and masks, stroke styles, symbols, filters, text on path, and live shapes with multiple radii. Some optional goals are reading metadata and object properties. The solution involves parsing PDF-compatible data and extending Inkscape’s import logic to produce accurate SVGs. Progress will be measured using a set of .ai test files that render correctly in Inkscape.",
+        "student_name": "Anunay",
+        "code_url": "https://gsoc.anublog.pages.dev/posts/gsoc/",
+        "proposal_id": "YrS6WfsO",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/WtDx0f9Q"
+      },
+      {
+        "title": "Recolor Art Work",
+        "short_description": "Recolor Artwork in Inkscape : Inkscape currently lacks an easy and intuitive way to modify colors within a selected artwork. This project aims to...",
+        "description": "Recolor Artwork in Inkscape :\nInkscape currently lacks an easy and intuitive way to modify colors within a selected artwork. This project aims to introduce a \"Recolor Artwork\" tool that allows users to quickly adjust colors in their selection, making color experimentation and fine-tuning more efficient.\nThe feature will extract all colors (fills, strokes, and gradient stops) from the selected objects and present them in a list. Users will be able to edit colors by either clicking on a color in the list or using a color wheel, which will help visualize relationships between colors. The tool will feature live preview, allowing real-time updates on the canvas, and upon deselection, the new colors will be applied permanently. If performance concerns arise, an apply/load button or a pop-up dialog similar to the LPE editor will be considered.\nDeliverables:\nA dialog or pop-up UI that lists all colors from the selection.\nColor editing options, including direct tweaking and a color wheel.\nLive preview of color changes on the canvas.\nPerformance optimizations, including a possible load/apply mechanism if needed.\nThis feature will improve the workflow of designers using Inkscape, making color adjustments more accessible and efficient.",
+        "student_name": "Fatma Omara",
+        "code_url": "https://gitlab.com/inkscape/inkscape/-/merge_requests/7234",
+        "proposal_id": "1Yvmedvv",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/YzCjdsDT"
+      },
+      {
+        "title": "Interval Arithmetic Enhanced Geometric Processing for lib2geom",
+        "short_description": "This project aims to enhance the accuracy and reliability of geometric intersection routines in Inkscape’s lib2geom library by refactoring them with...",
+        "description": "This project aims to enhance the accuracy and reliability of geometric intersection routines in Inkscape’s lib2geom library by refactoring them with interval arithmetic. Traditional floating-point methods often introduce numerical errors, which can result in incorrect or unstable path operations. Interval arithmetic enables us to compute guaranteed bounds for intersections, handle edge cases more robustly, and ensure greater numerical stability. These improved routines will also serve as a foundation for constructing a guaranteed planar graph, supporting advanced features such as boolean operations and path offsetting.",
+        "student_name": "Muhammad Rafay Irfan",
+        "code_url": "https://gitlab.com/rafay119muhammad/inkscape-gsoc-proposal/-/blob/main/Final-work-product.md",
+        "proposal_id": "WIj7LJup",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/YMPjD3oZ"
+      }
+    ]
   },
   "githubID": "inkscape",
   "repositories": [
@@ -257,7 +294,7 @@
       "description": "A Xapian backend for Haystack",
       "language": "Python",
       "stargazers_count": 1,
-      "forks_count": 2,
+      "forks_count": 1,
       "open_issues_count": 0,
       "license": {
         "key": "gpl-2.0",
@@ -276,9 +313,9 @@
       "html_url": "https://github.com/inkscape/inkscape",
       "description": "Project Website: https://inkscape.org - Code Repository: https://gitlab.com/inkscape/inkscape - Draw freely. 🖌",
       "language": null,
-      "stargazers_count": 2553,
-      "forks_count": 201,
-      "open_issues_count": 0,
+      "stargazers_count": 3300,
+      "forks_count": 244,
+      "open_issues_count": 1,
       "license": null,
       "topics": []
     },
@@ -290,8 +327,8 @@
       "html_url": "https://github.com/inkscape/lib2geom",
       "description": "Mirror of lib2geom - easy to use 2D geometry library in C++",
       "language": null,
-      "stargazers_count": 64,
-      "forks_count": 17,
+      "stargazers_count": 68,
+      "forks_count": 16,
       "open_issues_count": 8,
       "license": null,
       "topics": []
@@ -480,6 +517,14 @@
       "node_id": "MDQ6VXNlcjE0MjU0",
       "avatar_url": "https://avatars.githubusercontent.com/u/14254?v=4",
       "html_url": "https://github.com/shakaran",
+      "contributions": 1
+    },
+    {
+      "login": "tweenk",
+      "id": 4998700,
+      "node_id": "MDQ6VXNlcjQ5OTg3MDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4998700?v=4",
+      "html_url": "https://github.com/tweenk",
       "contributions": 1
     }
   ],

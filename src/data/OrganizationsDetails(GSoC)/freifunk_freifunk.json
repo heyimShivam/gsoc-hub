@@ -657,27 +657,87 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/u79z1qYm"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Simplifying LibreMesh with OpenWrt-Native Solutions",
+        "short_description": "LibreMesh has grown over the past decade with valuable community contributions, but some of its features now duplicate tools available in OpenWrt....",
+        "description": "LibreMesh has grown over the past decade with valuable community contributions, but some of its features now duplicate tools available in OpenWrt. \n\nThis project proposes replacing key LibreMesh modules with OpenWrt-native equivalents (e.g., replacing deferrable-reboot with watchcat, and dnsmasq with odhcpd for DHCP), reducing code redundancy and improving upstream compatibility. It also aims to simplify the system by removing VLANs from routing protocols and creating a lightweight layer-2-only firmware variant for low-resource devices.\nThe result will be a leaner, more maintainable LibreMesh aligned with OpenWrt standards.\n\nDeliverables include: migrating to upstream tools, simplifying configurations, testing in both virtual and physical environments, and engaging the community for feedback and adoption.",
+        "student_name": "Agustin Trachta",
+        "code_url": "https://blog.freifunk.net/2025/08/25/final-report-simplify-libremesh-and-get-it-closer-to-openwrt/",
+        "proposal_id": "ghuJIhmH",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/NivhKPOA"
+      },
+      {
+        "title": "qaul RPC user authentication layer",
+        "short_description": "The qaul RPC user authentication layer project aims to implement a secure and scalable authentication system for the qaul network, enabling multiple...",
+        "description": "The qaul RPC user authentication layer project aims to implement a secure and scalable authentication system for the qaul network, enabling multiple users per node and ensuring secure communication between libqaul and the user interface (CLI and future Flutter GUI). The primary objective is to develop an authentication and session management system based on public key cryptography, token-based sessions, and encryption through the Noise protocol.\n\nTo achieve this, the project will focus on several key components: designing a robust authentication system, implementing token-based session management, integrating encryption for secure communication, and building a command-line interface (qauld-ctl) to manage user identities, sessions, and secure communication. Additionally, the project will establish a protobuf communication structure to facilitate these features between the user interface and libqaul.",
+        "student_name": "mohitk108",
+        "code_url": "https://github.com/qaul/qaul.net/pulls/claddyy",
+        "proposal_id": "s6SAISRc",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/3s6IePJd"
+      },
+      {
+        "title": "Deep Q Network-based Rate Adaptation for IEEE 802.11ac Networks",
+        "short_description": "This project aims to enhance Wi-Fi rate adaptation by integrating Deep Q-Networks (DQN) with the ORCA and RateMan frameworks. Traditional rate...",
+        "description": "This project aims to enhance Wi-Fi rate adaptation by integrating Deep Q-Networks (DQN) with the ORCA and RateMan frameworks. Traditional rate adaptation algorithms like Minstrel-HT struggle in dynamic wireless environments, especially in fast-changing conditions. By using machine learning, specifically DQN, the project will dynamically optimize Wi-Fi transmission rates based on real-time metrics such as SNR, RSSI, retry counts, and throughput. The system will be tested and compared against existing algorithms to assess improvements in throughput, latency, and packet loss. Deliverables include a fully integrated DQN-based rate adaptation model, detailed simulation results, and code contributions to the open-source community.",
+        "student_name": "Raul Shahi",
+        "code_url": "https://blog.freifunk.net/2025/08/27/gsoc-2025-final-insights-on-deep-q-network-based-rate-adaptation-for-ieee-802-11ac-networks/",
+        "proposal_id": "WPFdncu4",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/S9jb6evA"
+      },
+      {
+        "title": "Social Media Archive Explorer",
+        "short_description": "This project aims to build a static, user-friendly site that serves as an archive explorer for Freifunk’s historical social media twitter posts....",
+        "description": "This project aims to build a static, user-friendly site that serves as an archive explorer for Freifunk’s historical social media twitter posts. These posts were archived in a SQLite3 database. Processing the database data will happen through an extraction tool that will be documented and set up for others in future projects. The website allows users to search for historical posts in a user-friendly fashion. An engaging configurable theme will be implemented in the site deliverable. Through this project, the archive will function as a positive reflection of the past and a welcoming introduction for new people discovering the history of the Freifunk community.",
+        "student_name": "Sandra Taskovic",
+        "code_url": "https://blog.freifunk.net/2025/08/04/sandra-taskovic-final-freifunk-social-media-archive-gsoc-2025/",
+        "proposal_id": "3dgRKSCA",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/EJ7jWFK9"
+      },
+      {
+        "title": "Adding Wi-Fi Support to QEMU Simulations in LibreMesh",
+        "short_description": "LibreMesh relies on continuous testing to ensure its robustness across various network conditions and hardware setups. Currently, testing new...",
+        "description": "LibreMesh relies on continuous testing to ensure its robustness across various network conditions and hardware setups. Currently, testing new firmware images lacks a standardized method to include Wi-Fi simulations within a virtualized environment. This project aims to add Wi-Fi support to existing QEMU simulations for LibreMesh, allowing near-realistic network testing using virtual Wi-Fi interfaces. By leveraging the mac80211_hwsim module and integrating existing OpenWrt-friendly virtual Wi-Fi tools, we can enhance testing automation and reproducibility.\n\nBenefits to the Community\n\n- Improved Testing Framework: This project will enable LibreMesh developers to run “almost real” tests in a virtualized environment, improving debugging and validation before deploying changes to physical hardware.\n- Enhanced Automation: By integrating virtual Wi-Fi support into QEMU, developers can automate complex test scenarios without requiring physical routers.\n- A set of scripted tests that can be run on real hardware: Currently, real tests on physical hardware are performed manually at each release. With this new set of test scripts for QEMU and Wi-Fi, many tests will be automated and easily adapted to real hardware.\n- Collaboration with OpenWrt: Given that OpenWrt is also working on virtual Wi-Fi support, this project can align efforts with the broader open-source networking community, benefiting multiple projects.\n- Lower Barrier to Entry: New contributors will find it easier to test their changes without needing specialized hardware.",
+        "student_name": "Victor Spehar",
+        "code_url": "https://blog.freifunk.net/2025/09/01/gsoc-2025-bringing-wi-fi-support-to-qemu-simulations-for-libremesh/",
+        "proposal_id": "tNfPAaPy",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/yBmMMWDN"
+      }
+    ]
   },
   "githubID": "freifunk",
   "repositories": [
     {
-      "id": 21828291,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMTgyODI5MQ==",
-      "name": "calcifer",
-      "full_name": "freifunk/calcifer",
-      "html_url": "https://github.com/freifunk/calcifer",
-      "description": "An event management tool",
-      "language": "PHP",
+      "id": 509071700,
+      "node_id": "R_kgDOHlfRVA",
+      "name": "videoodyssee-api",
+      "full_name": "freifunk/videoodyssee-api",
+      "html_url": "https://github.com/freifunk/videoodyssee-api",
+      "description": "API for the Videoodyssee frontend",
+      "language": "JavaScript",
       "stargazers_count": 0,
       "forks_count": 0,
-      "open_issues_count": 2,
+      "open_issues_count": 11,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 984814330,
+      "node_id": "R_kgDOOrMS-g",
+      "name": "social-media-archive",
+      "full_name": "freifunk/social-media-archive",
+      "html_url": "https://github.com/freifunk/social-media-archive",
+      "description": null,
+      "language": "TypeScript",
+      "stargazers_count": 4,
+      "forks_count": 4,
+      "open_issues_count": 3,
       "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
       },
       "topics": []
     },
@@ -696,84 +756,36 @@
       "topics": []
     },
     {
-      "id": 22919258,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMjkxOTI1OA==",
-      "name": "LinkSink",
-      "full_name": "freifunk/LinkSink",
-      "html_url": "https://github.com/freifunk/LinkSink",
-      "description": null,
-      "language": "PHP",
-      "stargazers_count": 8,
-      "forks_count": 2,
-      "open_issues_count": 11,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 389395680,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzODkzOTU2ODA=",
-      "name": "generator.api.freifunk.net",
-      "full_name": "freifunk/generator.api.freifunk.net",
-      "html_url": "https://github.com/freifunk/generator.api.freifunk.net",
-      "description": "A web form to create freifunk api files",
-      "language": "TypeScript",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 4,
-      "license": null,
-      "topics": []
-    },
-    {
       "id": 13741741,
       "node_id": "MDEwOlJlcG9zaXRvcnkxMzc0MTc0MQ==",
       "name": "common.api.freifunk.net",
       "full_name": "freifunk/common.api.freifunk.net",
       "html_url": "https://github.com/freifunk/common.api.freifunk.net",
       "description": null,
-      "language": "JavaScript",
+      "language": "PHP",
       "stargazers_count": 3,
-      "forks_count": 12,
-      "open_issues_count": 7,
+      "forks_count": 11,
+      "open_issues_count": 9,
       "license": null,
       "topics": []
     },
     {
-      "id": 984814330,
-      "node_id": "R_kgDOOrMS-g",
-      "name": "social-media-archive",
-      "full_name": "freifunk/social-media-archive",
-      "html_url": "https://github.com/freifunk/social-media-archive",
-      "description": null,
-      "language": null,
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "open_issues_count": 0,
+      "id": 13741751,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMzc0MTc1MQ==",
+      "name": "directory.api.freifunk.net",
+      "full_name": "freifunk/directory.api.freifunk.net",
+      "html_url": "https://github.com/freifunk/directory.api.freifunk.net",
+      "description": "directory of all freifunk communities",
+      "language": "Python",
+      "stargazers_count": 39,
+      "forks_count": 228,
+      "open_issues_count": 10,
       "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": []
-    },
-    {
-      "id": 111523421,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMTE1MjM0MjE=",
-      "name": "projects",
-      "full_name": "freifunk/projects",
-      "html_url": "https://github.com/freifunk/projects",
-      "description": "A website that showcases interesting projects, using Angular JS.",
-      "language": "JavaScript",
-      "stargazers_count": 13,
-      "forks_count": 17,
-      "open_issues_count": 3,
-      "license": {
-        "key": "agpl-3.0",
-        "name": "GNU Affero General Public License v3.0",
-        "spdx_id": "AGPL-3.0",
-        "url": "https://api.github.com/licenses/agpl-3.0",
-        "node_id": "MDc6TGljZW5zZTE="
+        "key": "cc0-1.0",
+        "name": "Creative Commons Zero v1.0 Universal",
+        "spdx_id": "CC0-1.0",
+        "url": "https://api.github.com/licenses/cc0-1.0",
+        "node_id": "MDc6TGljZW5zZTY="
       },
       "topics": []
     },
@@ -787,13 +799,41 @@
       "language": "PHP",
       "stargazers_count": 3,
       "forks_count": 6,
-      "open_issues_count": 2,
+      "open_issues_count": 5,
       "license": null,
       "topics": [
         "feed",
         "php",
         "rss"
       ]
+    },
+    {
+      "id": 389395680,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzODkzOTU2ODA=",
+      "name": "generator.api.freifunk.net",
+      "full_name": "freifunk/generator.api.freifunk.net",
+      "html_url": "https://github.com/freifunk/generator.api.freifunk.net",
+      "description": "A web form to create freifunk api files",
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 11,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 509549921,
+      "node_id": "R_kgDOHl8dYQ",
+      "name": "videoodyssee-frontend",
+      "full_name": "freifunk/videoodyssee-frontend",
+      "html_url": "https://github.com/freifunk/videoodyssee-frontend",
+      "description": "0xVijayReddy/videoodyssee-frontend",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "forks_count": 1,
+      "open_issues_count": 6,
+      "license": null,
+      "topics": []
     },
     {
       "id": 254957274,
@@ -803,9 +843,9 @@
       "html_url": "https://github.com/freifunk/meshviewer",
       "description": "Visualization for Freifunk open mesh network nodes",
       "language": "TypeScript",
-      "stargazers_count": 9,
-      "forks_count": 19,
-      "open_issues_count": 30,
+      "stargazers_count": 19,
+      "forks_count": 26,
+      "open_issues_count": 15,
       "license": {
         "key": "agpl-3.0",
         "name": "GNU Affero General Public License v3.0",
@@ -824,7 +864,7 @@
       "description": "Liste der Freifunk-Communities",
       "language": "JavaScript",
       "stargazers_count": 2,
-      "forks_count": 1,
+      "forks_count": 2,
       "open_issues_count": 4,
       "license": {
         "key": "gpl-3.0",
@@ -836,23 +876,130 @@
       "topics": []
     },
     {
-      "id": 13741751,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMzc0MTc1MQ==",
-      "name": "directory.api.freifunk.net",
-      "full_name": "freifunk/directory.api.freifunk.net",
-      "html_url": "https://github.com/freifunk/directory.api.freifunk.net",
-      "description": "directory of all freifunk communities",
-      "language": "Python",
-      "stargazers_count": 37,
-      "forks_count": 227,
-      "open_issues_count": 9,
+      "id": 21828291,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMTgyODI5MQ==",
+      "name": "calcifer",
+      "full_name": "freifunk/calcifer",
+      "html_url": "https://github.com/freifunk/calcifer",
+      "description": "An event management tool",
+      "language": "PHP",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 4,
       "license": {
-        "key": "cc0-1.0",
-        "name": "Creative Commons Zero v1.0 Universal",
-        "spdx_id": "CC0-1.0",
-        "url": "https://api.github.com/licenses/cc0-1.0",
-        "node_id": "MDc6TGljZW5zZTY="
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
       },
+      "topics": []
+    },
+    {
+      "id": 22919258,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMjkxOTI1OA==",
+      "name": "LinkSink",
+      "full_name": "freifunk/LinkSink",
+      "html_url": "https://github.com/freifunk/LinkSink",
+      "description": null,
+      "language": "PHP",
+      "stargazers_count": 8,
+      "forks_count": 2,
+      "open_issues_count": 15,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 111523421,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMTE1MjM0MjE=",
+      "name": "projects",
+      "full_name": "freifunk/projects",
+      "html_url": "https://github.com/freifunk/projects",
+      "description": "A website that showcases interesting projects, using Angular JS.",
+      "language": "JavaScript",
+      "stargazers_count": 12,
+      "forks_count": 16,
+      "open_issues_count": 2,
+      "license": {
+        "key": "agpl-3.0",
+        "name": "GNU Affero General Public License v3.0",
+        "spdx_id": "AGPL-3.0",
+        "url": "https://api.github.com/licenses/agpl-3.0",
+        "node_id": "MDc6TGljZW5zZTE="
+      },
+      "topics": []
+    },
+    {
+      "id": 692487055,
+      "node_id": "R_kgDOKUaDjw",
+      "name": "device-pictures",
+      "full_name": "freifunk/device-pictures",
+      "html_url": "https://github.com/freifunk/device-pictures",
+      "description": "Includes vector graphics of routers supported by openwrt (and gluon)",
+      "language": "Shell",
+      "stargazers_count": 5,
+      "forks_count": 9,
+      "open_issues_count": 8,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": [
+        "design",
+        "freifunk",
+        "hacktoberfest",
+        "inkscape"
+      ]
+    },
+    {
+      "id": 503431889,
+      "node_id": "R_kgDOHgHC0Q",
+      "name": "videopipeline",
+      "full_name": "freifunk/videopipeline",
+      "html_url": "https://github.com/freifunk/videopipeline",
+      "description": "a service to upload and process videos towards media.freifunk.net",
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 1,
+      "open_issues_count": 1,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "topics": []
+    },
+    {
+      "id": 10123256,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMDEyMzI1Ng==",
+      "name": "api.freifunk.net",
+      "full_name": "freifunk/api.freifunk.net",
+      "html_url": "https://github.com/freifunk/api.freifunk.net",
+      "description": "Freifunk Community API",
+      "language": "Makefile",
+      "stargazers_count": 50,
+      "forks_count": 24,
+      "open_issues_count": 33,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1001959804,
+      "node_id": "R_kgDOO7ixfA",
+      "name": "ffwikihelpers",
+      "full_name": "freifunk/ffwikihelpers",
+      "html_url": "https://github.com/freifunk/ffwikihelpers",
+      "description": "Small mediawiki extension for custom Freifunk Data",
+      "language": "PHP",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
       "topics": []
     },
     {
@@ -863,8 +1010,8 @@
       "html_url": "https://github.com/freifunk/icvpn-meta",
       "description": "InterCity-VPN - Metadata registry (BGP, DNS, Subnet Allocations in 10.0.0.0/8)",
       "language": null,
-      "stargazers_count": 33,
-      "forks_count": 176,
+      "stargazers_count": 34,
+      "forks_count": 174,
       "open_issues_count": 10,
       "license": null,
       "topics": []
@@ -877,30 +1024,10 @@
       "html_url": "https://github.com/freifunk/icvpn",
       "description": "InterCity-VPN (tinc host keys and scripts)",
       "language": "Python",
-      "stargazers_count": 34,
+      "stargazers_count": 39,
       "forks_count": 85,
       "open_issues_count": 4,
       "license": null,
-      "topics": []
-    },
-    {
-      "id": 692487055,
-      "node_id": "R_kgDOKUaDjw",
-      "name": "device-pictures",
-      "full_name": "freifunk/device-pictures",
-      "html_url": "https://github.com/freifunk/device-pictures",
-      "description": "Includes vector graphics of routers supported by openwrt (and gluon)",
-      "language": "Shell",
-      "stargazers_count": 4,
-      "forks_count": 4,
-      "open_issues_count": 7,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
       "topics": []
     },
     {
@@ -911,9 +1038,9 @@
       "html_url": "https://github.com/freifunk/vis.api.freifunk.net",
       "description": "Visualisation of Freifunk API data",
       "language": "JavaScript",
-      "stargazers_count": 3,
-      "forks_count": 2,
-      "open_issues_count": 20,
+      "stargazers_count": 4,
+      "forks_count": 3,
+      "open_issues_count": 21,
       "license": {
         "key": "gpl-3.0",
         "name": "GNU General Public License v3.0",
@@ -927,54 +1054,6 @@
         "gsoc-2024",
         "mongodb"
       ]
-    },
-    {
-      "id": 503431889,
-      "node_id": "R_kgDOHgHC0Q",
-      "name": "videopipeline",
-      "full_name": "freifunk/videopipeline",
-      "html_url": "https://github.com/freifunk/videopipeline",
-      "description": "a service to upload and process videos towards media.freifunk.net",
-      "language": "Python",
-      "stargazers_count": 1,
-      "forks_count": 1,
-      "open_issues_count": 1,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": []
-    },
-    {
-      "id": 509071700,
-      "node_id": "R_kgDOHlfRVA",
-      "name": "videoodyssee-api",
-      "full_name": "freifunk/videoodyssee-api",
-      "html_url": "https://github.com/freifunk/videoodyssee-api",
-      "description": "API for the Videoodyssee frontend",
-      "language": "JavaScript",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 1,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 10123256,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMDEyMzI1Ng==",
-      "name": "api.freifunk.net",
-      "full_name": "freifunk/api.freifunk.net",
-      "html_url": "https://github.com/freifunk/api.freifunk.net",
-      "description": "Freifunk Community API",
-      "language": "Makefile",
-      "stargazers_count": 49,
-      "forks_count": 24,
-      "open_issues_count": 33,
-      "license": null,
-      "topics": []
     },
     {
       "id": 111523646,
@@ -1006,7 +1085,7 @@
       "language": "Ruby",
       "stargazers_count": 1,
       "forks_count": 1,
-      "open_issues_count": 6,
+      "open_issues_count": 5,
       "license": {
         "key": "gpl-3.0",
         "name": "GNU General Public License v3.0",
@@ -1026,7 +1105,7 @@
       "language": "Python",
       "stargazers_count": 1,
       "forks_count": 0,
-      "open_issues_count": 1,
+      "open_issues_count": 0,
       "license": {
         "key": "gpl-3.0",
         "name": "GNU General Public License v3.0",
@@ -1034,20 +1113,6 @@
         "url": "https://api.github.com/licenses/gpl-3.0",
         "node_id": "MDc6TGljZW5zZTk="
       },
-      "topics": []
-    },
-    {
-      "id": 509549921,
-      "node_id": "R_kgDOHl8dYQ",
-      "name": "videoodyssee-frontend",
-      "full_name": "freifunk/videoodyssee-frontend",
-      "html_url": "https://github.com/freifunk/videoodyssee-frontend",
-      "description": "0xVijayReddy/videoodyssee-frontend",
-      "language": "JavaScript",
-      "stargazers_count": 0,
-      "forks_count": 1,
-      "open_issues_count": 2,
-      "license": null,
       "topics": []
     },
     {
@@ -1060,7 +1125,7 @@
       "language": "CSS",
       "stargazers_count": 2,
       "forks_count": 4,
-      "open_issues_count": 3,
+      "open_issues_count": 2,
       "license": null,
       "topics": []
     },
@@ -1073,7 +1138,7 @@
       "description": "Freifunk specific global OpenWrt Packages",
       "language": "Shell",
       "stargazers_count": 28,
-      "forks_count": 33,
+      "forks_count": 31,
       "open_issues_count": 14,
       "license": {
         "key": "apache-2.0",
@@ -1092,7 +1157,7 @@
       "html_url": "https://github.com/freifunk/icvpn-scripts",
       "description": "Scripts for working with icvpn-meta",
       "language": "Python",
-      "stargazers_count": 7,
+      "stargazers_count": 6,
       "forks_count": 21,
       "open_issues_count": 4,
       "license": {
@@ -1132,8 +1197,8 @@
       "html_url": "https://github.com/freifunk/openwifimap-api",
       "description": "OpenWiFiMap database and its api",
       "language": "Python",
-      "stargazers_count": 43,
-      "forks_count": 12,
+      "stargazers_count": 45,
+      "forks_count": 16,
       "open_issues_count": 5,
       "license": null,
       "topics": []
@@ -1147,8 +1212,8 @@
       "description": "HTML5 map with OpenWiFiMap data",
       "language": "HTML",
       "stargazers_count": 27,
-      "forks_count": 9,
-      "open_issues_count": 8,
+      "forks_count": 10,
+      "open_issues_count": 9,
       "license": null,
       "topics": []
     },
@@ -1161,27 +1226,21 @@
       "description": "Memorandum of Understanding",
       "language": null,
       "stargazers_count": 13,
-      "forks_count": 10,
+      "forks_count": 9,
       "open_issues_count": 8,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 17846214,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNzg0NjIxNA==",
-      "name": "icvpn-topo",
-      "full_name": "freifunk/icvpn-topo",
-      "html_url": "https://github.com/freifunk/icvpn-topo",
-      "description": "Topology Graphs about Freifunk Intercity VPN",
-      "language": "Shell",
-      "stargazers_count": 4,
-      "forks_count": 1,
-      "open_issues_count": 2,
       "license": null,
       "topics": []
     }
   ],
   "contributorsDetails": [
+    {
+      "login": "0xvj",
+      "id": 44572780,
+      "node_id": "MDQ6VXNlcjQ0NTcyNzgw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/44572780?v=4",
+      "html_url": "https://github.com/0xvj",
+      "contributions": 26
+    },
     {
       "login": "andibraeu",
       "id": 1162168,
@@ -1189,14 +1248,6 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/1162168?v=4",
       "html_url": "https://github.com/andibraeu",
       "contributions": 166
-    },
-    {
-      "login": "enko",
-      "id": 19407,
-      "node_id": "MDQ6VXNlcjE5NDA3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/19407?v=4",
-      "html_url": "https://github.com/enko",
-      "contributions": 48
     },
     {
       "login": "renovate[bot]",
@@ -1207,20 +1258,20 @@
       "contributions": 3
     },
     {
-      "login": "adlerweb",
-      "id": 1146482,
-      "node_id": "MDQ6VXNlcjExNDY0ODI=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1146482?v=4",
-      "html_url": "https://github.com/adlerweb",
+      "login": "jokrsec",
+      "id": 62732290,
+      "node_id": "MDQ6VXNlcjYyNzMyMjkw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/62732290?v=4",
+      "html_url": "https://github.com/jokrsec",
       "contributions": 1
     },
     {
-      "login": "gitter-badger",
-      "id": 8518239,
-      "node_id": "MDQ6VXNlcjg1MTgyMzk=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/8518239?v=4",
-      "html_url": "https://github.com/gitter-badger",
-      "contributions": 1
+      "login": "ServingCoder",
+      "id": 112975646,
+      "node_id": "U_kgDOBrvfHg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/112975646?v=4",
+      "html_url": "https://github.com/ServingCoder",
+      "contributions": 78
     },
     {
       "login": "mojoaxel",

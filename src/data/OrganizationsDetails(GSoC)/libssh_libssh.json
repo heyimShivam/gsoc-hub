@@ -29,7 +29,8 @@
     2022,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2022": [
@@ -82,7 +83,18 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/yojunwbr"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Support for FIDO/U2F keys on the client side",
+        "short_description": "This project aims to implement client-side support for FIDO/U2F authentication in libssh using the libfido2 library. It will introduce functionality...",
+        "description": "This project aims to implement client-side support for FIDO/U2F authentication in libssh using the libfido2 library. It will introduce functionality to detect and interact with FIDO authenticators, perform user presence or verification (e.g., touch or PIN), and use these devices for SSH authentication. The final deliverables will include a working implementation, unit and integration tests against an openSSH server, and examples for using the added code.",
+        "student_name": "Praneeth Sarode",
+        "code_url": "https://darkphoenix42.github.io/posts/gsoc-2025/",
+        "proposal_id": "NTpximuy",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/ziHCZkB4"
+      }
+    ],
+    "2026": []
   },
   "githubID": "libssh",
   "repositories": [
@@ -94,8 +106,8 @@
       "html_url": "https://github.com/libssh/libssh-mirror",
       "description": "This is a mirror! Please clone https://git.libssh.org/projects/libssh.git/",
       "language": "C",
-      "stargazers_count": 35,
-      "forks_count": 23,
+      "stargazers_count": 38,
+      "forks_count": 25,
       "open_issues_count": 0,
       "license": {
         "key": "other",

@@ -35,7 +35,8 @@
     2022,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2018": [
@@ -107,7 +108,36 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/tEAcN96u"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Public Courses on github",
+        "short_description": "The proposal outlines a project to migrate the management of omegaUp's public courses to GitHub, enabling open-source contributions and improving...",
+        "description": "The proposal outlines a project to migrate the management of omegaUp's public courses to GitHub, enabling open-source contributions and improving collaboration, version control, and deployment consistency. Currently, omegaUp's public courses are managed manually, which can be time-consuming and lacks community involvement. By using GitHub, contributors can submit pull requests (PRs) to update course content, which will be automatically validated and deployed using GitHub Actions and omegaUp's API.\n\nKey components of the project include:\n1. Course Migration: All public courses will be uploaded to a GitHub repository, structured by course and content type (lectures, problems, etc.).\n2. CI/CD Workflow: A GitHub Actions pipeline will validate and deploy updates when a PR is merged. This pipeline will automatically check for any changes in problems and deploy only the modified content.\n3. API Integration: The system will use omegaUp’s API to upload content after successful review and approval of changes.\n4. Community Collaboration: Contributors can suggest improvements via PRs, with a review process ensuring quality control before deployment.\n5. Automated Testing: The CI/CD pipeline will run validation scripts to check metadata, problem structure, and other course details before deployment.\n6. Security: A review and approval mechanism will prevent unauthorized or malicious content from being deployed.\n\nThe project aims to enhance omegaUp’s educational content by leveraging GitHub’s collaboration model, ensuring faster updates, better quality control, and reduced manual workload for omegaUp staff.\n\nA proof of concept has been set up in a sample GitHub repository, where contributors can simulate the entire workflow by submitting PRs and seeing automatic deployments on omegaUp.\n\nThis approach is expected to streamline course management, making it scalable and more responsive to community-driven improvements.",
+        "student_name": "Anas Iqbal",
+        "code_url": "https://github.com/omegaup/public-courses/issues/1",
+        "proposal_id": "4Ru4BNCe",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/ASaOFqQw"
+      },
+      {
+        "title": "AI Teaching Assistant",
+        "short_description": "The aim is to create an “AI Teaching Assistant” bot that answers the relevant queries and helps teachers and students with code reviews and answer...",
+        "description": "The aim is to create an “AI Teaching Assistant” bot that answers the relevant queries and helps teachers and students with code reviews and answer clarifications, both proactively and upon request.\nWe plan to do the following during the summer:\n- Improve the Python script for the teaching assistant.\n- Add buttons in the UI and endpoints in the backend to allow users to use it.\n- Set up a RabbitMQ instance, which will bridge between the script and the backend.\n- And many more.\nWe also need to focus on optimizing the Python script, as it currently takes a long time to complete. (possibly by changing API calls and by using multithreading).\nWe also might need to create a new endpoint for the teaching assistant.",
+        "student_name": "Nandini Jaiswal",
+        "code_url": "https://github.com/omegaup/omegaup/issues/8251",
+        "proposal_id": "XFCBpJ8L",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/oFJP5nqY"
+      },
+      {
+        "title": "Generate Problem Editorials Using AI",
+        "short_description": "This project aims to increase editorial coverage to 70-80% by automating creation with AI. Admins can generate editorials in bulk from the problem...",
+        "description": "This project aims to increase editorial coverage to 70-80% by automating creation with AI. Admins can generate editorials in bulk from the problem list, while authors can trigger generation during problem creation. The system validates editorials by testing solutions and automatically fixes issues found during validation.",
+        "student_name": "Samman Sarkar",
+        "code_url": "https://sammansarkar.github.io/gsoc_blog/",
+        "proposal_id": "bC8m7GGS",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/nK1Amv48"
+      }
+    ],
+    "2026": []
   },
   "githubID": "omegaup",
   "repositories": [
@@ -120,7 +150,7 @@
       "description": "Deployment manifests for omegaUp",
       "language": "HCL",
       "stargazers_count": 1,
-      "forks_count": 4,
+      "forks_count": 8,
       "open_issues_count": 2,
       "license": {
         "key": "bsd-3-clause",
@@ -140,8 +170,8 @@
       "description": "Python libraries to interact with omegaUp",
       "language": "Python",
       "stargazers_count": 3,
-      "forks_count": 1,
-      "open_issues_count": 423,
+      "forks_count": 2,
+      "open_issues_count": 922,
       "license": {
         "key": "bsd-3-clause",
         "name": "BSD 3-Clause \"New\" or \"Revised\" License",
@@ -159,9 +189,9 @@
       "html_url": "https://github.com/omegaup/omegaup",
       "description": "omegaUp automatic programming contest evaluator & arena",
       "language": "PHP",
-      "stargazers_count": 259,
-      "forks_count": 381,
-      "open_issues_count": 670,
+      "stargazers_count": 344,
+      "forks_count": 525,
+      "open_issues_count": 981,
       "license": {
         "key": "other",
         "name": "Other",
@@ -174,36 +204,6 @@
       ]
     },
     {
-      "id": 447740011,
-      "node_id": "R_kgDOGq_4aw",
-      "name": "ofmi-archive",
-      "full_name": "omegaup/ofmi-archive",
-      "html_url": "https://github.com/omegaup/ofmi-archive",
-      "description": "Making problems used in OFMI/EGOI public and available in omegaUp",
-      "language": "Roff",
-      "stargazers_count": 4,
-      "forks_count": 2,
-      "open_issues_count": 10,
-      "license": null,
-      "topics": [
-        "hacktoberfest"
-      ]
-    },
-    {
-      "id": 451201200,
-      "node_id": "R_kgDOGuTIsA",
-      "name": "blog",
-      "full_name": "omegaup/blog",
-      "html_url": "https://github.com/omegaup/blog",
-      "description": null,
-      "language": "HTML",
-      "stargazers_count": 0,
-      "forks_count": 7,
-      "open_issues_count": 9,
-      "license": null,
-      "topics": []
-    },
-    {
       "id": 589077340,
       "node_id": "R_kgDOIxybXA",
       "name": "website-OFMI",
@@ -211,8 +211,8 @@
       "html_url": "https://github.com/omegaup/website-OFMI",
       "description": null,
       "language": "TypeScript",
-      "stargazers_count": 10,
-      "forks_count": 5,
+      "stargazers_count": 9,
+      "forks_count": 6,
       "open_issues_count": 23,
       "license": {
         "key": "mit",
@@ -224,23 +224,17 @@
       "topics": []
     },
     {
-      "id": 45959080,
-      "node_id": "MDEwOlJlcG9zaXRvcnk0NTk1OTA4MA==",
-      "name": "quark",
-      "full_name": "omegaup/quark",
-      "html_url": "https://github.com/omegaup/quark",
-      "description": "The omegaUp backend",
-      "language": "Go",
-      "stargazers_count": 1,
-      "forks_count": 7,
-      "open_issues_count": 7,
-      "license": {
-        "key": "bsd-3-clause",
-        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
-        "spdx_id": "BSD-3-Clause",
-        "url": "https://api.github.com/licenses/bsd-3-clause",
-        "node_id": "MDc6TGljZW5zZTU="
-      },
+      "id": 1162887087,
+      "node_id": "R_kgDORVA_rw",
+      "name": "documentation",
+      "full_name": "omegaup/documentation",
+      "html_url": "https://github.com/omegaup/documentation",
+      "description": "Omegaup docs",
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
       "topics": []
     },
     {
@@ -252,7 +246,7 @@
       "description": "Deploy a problem to omegaUp",
       "language": "Python",
       "stargazers_count": 2,
-      "forks_count": 5,
+      "forks_count": 6,
       "open_issues_count": 14,
       "license": {
         "key": "mit",
@@ -266,6 +260,116 @@
       ]
     },
     {
+      "id": 451201200,
+      "node_id": "R_kgDOGuTIsA",
+      "name": "blog",
+      "full_name": "omegaup/blog",
+      "html_url": "https://github.com/omegaup/blog",
+      "description": null,
+      "language": "HTML",
+      "stargazers_count": 1,
+      "forks_count": 10,
+      "open_issues_count": 8,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 17342105,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNzM0MjEwNQ==",
+      "name": "pagedown",
+      "full_name": "omegaup/pagedown",
+      "html_url": "https://github.com/omegaup/pagedown",
+      "description": "A javascript port of Markdown, as used on Stack Overflow and the rest of Stack Exchange network.",
+      "language": "JavaScript",
+      "stargazers_count": 2,
+      "forks_count": 4,
+      "open_issues_count": 0,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 996329854,
+      "node_id": "R_kgDOO2LJfg",
+      "name": "public-courses",
+      "full_name": "omegaup/public-courses",
+      "html_url": "https://github.com/omegaup/public-courses",
+      "description": null,
+      "language": "Python",
+      "stargazers_count": 1,
+      "forks_count": 4,
+      "open_issues_count": 4,
+      "license": {
+        "key": "cc0-1.0",
+        "name": "Creative Commons Zero v1.0 Universal",
+        "spdx_id": "CC0-1.0",
+        "url": "https://api.github.com/licenses/cc0-1.0",
+        "node_id": "MDc6TGljZW5zZTY="
+      },
+      "topics": []
+    },
+    {
+      "id": 152443431,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNTI0NDM0MzE=",
+      "name": "libkarel",
+      "full_name": "omegaup/libkarel",
+      "html_url": "https://github.com/omegaup/libkarel",
+      "description": "Karel utils for python",
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 2,
+      "open_issues_count": 1,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 447740011,
+      "node_id": "R_kgDOGq_4aw",
+      "name": "ofmi-archive",
+      "full_name": "omegaup/ofmi-archive",
+      "html_url": "https://github.com/omegaup/ofmi-archive",
+      "description": "Making problems used in OFMI/EGOI public and available in omegaUp",
+      "language": "Roff",
+      "stargazers_count": 4,
+      "forks_count": 1,
+      "open_issues_count": 10,
+      "license": null,
+      "topics": [
+        "hacktoberfest"
+      ]
+    },
+    {
+      "id": 45959080,
+      "node_id": "MDEwOlJlcG9zaXRvcnk0NTk1OTA4MA==",
+      "name": "quark",
+      "full_name": "omegaup/quark",
+      "html_url": "https://github.com/omegaup/quark",
+      "description": "The omegaUp backend",
+      "language": "Go",
+      "stargazers_count": 1,
+      "forks_count": 8,
+      "open_issues_count": 20,
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "topics": []
+    },
+    {
       "id": 9586797,
       "node_id": "MDEwOlJlcG9zaXRvcnk5NTg2Nzk3",
       "name": "karel.js",
@@ -274,8 +378,8 @@
       "description": "Compilador y evaluador de Karel en javascript",
       "language": "HTML",
       "stargazers_count": 16,
-      "forks_count": 21,
-      "open_issues_count": 34,
+      "forks_count": 22,
+      "open_issues_count": 35,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -293,7 +397,7 @@
       "html_url": "https://github.com/omegaup/OFMI-website",
       "description": "Página oficial de la Olimpiada Femenil Mexicana de Informática",
       "language": "SCSS",
-      "stargazers_count": 3,
+      "stargazers_count": 2,
       "forks_count": 3,
       "open_issues_count": 3,
       "license": null,
@@ -368,8 +472,8 @@
       "description": "The omegaUp git server for problems",
       "language": "Go",
       "stargazers_count": 0,
-      "forks_count": 1,
-      "open_issues_count": 3,
+      "forks_count": 2,
+      "open_issues_count": 4,
       "license": {
         "key": "bsd-3-clause",
         "name": "BSD 3-Clause \"New\" or \"Revised\" License",
@@ -387,9 +491,9 @@
       "html_url": "https://github.com/omegaup/omegajail",
       "description": "The omegaUp sandbox",
       "language": "Rust",
-      "stargazers_count": 11,
-      "forks_count": 8,
-      "open_issues_count": 3,
+      "stargazers_count": 14,
+      "forks_count": 11,
+      "open_issues_count": 8,
       "license": {
         "key": "bsd-3-clause",
         "name": "BSD 3-Clause \"New\" or \"Revised\" License",
@@ -408,8 +512,8 @@
       "description": "Herramientas para hacer validaciones automáticas de código",
       "language": "Python",
       "stargazers_count": 0,
-      "forks_count": 7,
-      "open_issues_count": 3,
+      "forks_count": 8,
+      "open_issues_count": 5,
       "license": {
         "key": "bsd-3-clause",
         "name": "BSD 3-Clause \"New\" or \"Revised\" License",
@@ -428,7 +532,7 @@
       "description": "Website for omegaup.org",
       "language": "CSS",
       "stargazers_count": 0,
-      "forks_count": 7,
+      "forks_count": 6,
       "open_issues_count": 12,
       "license": {
         "key": "mit",
@@ -488,7 +592,7 @@
       "description": "a tiny, custom launcher that handles namespacing, control groups, chroot'ing, and more",
       "language": "C",
       "stargazers_count": 55,
-      "forks_count": 11,
+      "forks_count": 12,
       "open_issues_count": 4,
       "license": null,
       "topics": []
@@ -574,26 +678,6 @@
       "topics": []
     },
     {
-      "id": 17342105,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNzM0MjEwNQ==",
-      "name": "pagedown",
-      "full_name": "omegaup/pagedown",
-      "html_url": "https://github.com/omegaup/pagedown",
-      "description": "A javascript port of Markdown, as used on Stack Overflow and the rest of Stack Exchange network.",
-      "language": "JavaScript",
-      "stargazers_count": 2,
-      "forks_count": 2,
-      "open_issues_count": 1,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
       "id": 297128016,
       "node_id": "MDEwOlJlcG9zaXRvcnkyOTcxMjgwMTY=",
       "name": "karel-compiler",
@@ -608,26 +692,6 @@
       "topics": []
     },
     {
-      "id": 152443431,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNTI0NDM0MzE=",
-      "name": "libkarel",
-      "full_name": "omegaup/libkarel",
-      "html_url": "https://github.com/omegaup/libkarel",
-      "description": "Karel utils for python",
-      "language": "Python",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
       "id": 30637058,
       "node_id": "MDEwOlJlcG9zaXRvcnkzMDYzNzA1OA==",
       "name": "deploy",
@@ -638,40 +702,6 @@
       "stargazers_count": 2,
       "forks_count": 8,
       "open_issues_count": 2,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 72290654,
-      "node_id": "MDEwOlJlcG9zaXRvcnk3MjI5MDY1NA==",
-      "name": "question2answer",
-      "full_name": "omegaup/question2answer",
-      "html_url": "https://github.com/omegaup/question2answer",
-      "description": "Question2Answer is a free and open source platform for Q&A sites, running on PHP/MySQL.",
-      "language": "PHP",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 213079677,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMTMwNzk2Nzc=",
-      "name": "Curso-omegaUp-v1",
-      "full_name": "omegaup/Curso-omegaUp-v1",
-      "html_url": "https://github.com/omegaup/Curso-omegaUp-v1",
-      "description": "Contenido original del Curso omegaUp",
-      "language": "TeX",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
       "license": null,
       "topics": []
     }
@@ -691,7 +721,7 @@
       "node_id": "MDQ6VXNlcjE2ODAyOA==",
       "avatar_url": "https://avatars.githubusercontent.com/u/168028?v=4",
       "html_url": "https://github.com/lhchavez",
-      "contributions": 26
+      "contributions": 2874
     },
     {
       "login": "pabo99",
@@ -699,31 +729,7 @@
       "node_id": "MDQ6VXNlcjMyMzAzNTI=",
       "avatar_url": "https://avatars.githubusercontent.com/u/3230352?v=4",
       "html_url": "https://github.com/pabo99",
-      "contributions": 5
-    },
-    {
-      "login": "carlosabcs",
-      "id": 20785082,
-      "node_id": "MDQ6VXNlcjIwNzg1MDgy",
-      "avatar_url": "https://avatars.githubusercontent.com/u/20785082?v=4",
-      "html_url": "https://github.com/carlosabcs",
-      "contributions": 1
-    },
-    {
-      "login": "S4ND1X",
-      "id": 42609763,
-      "node_id": "MDQ6VXNlcjQyNjA5NzYz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/42609763?v=4",
-      "html_url": "https://github.com/S4ND1X",
-      "contributions": 1
-    },
-    {
-      "login": "samdsmx",
-      "id": 5838427,
-      "node_id": "MDQ6VXNlcjU4Mzg0Mjc=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/5838427?v=4",
-      "html_url": "https://github.com/samdsmx",
-      "contributions": 1
+      "contributions": 1135
     },
     {
       "login": "heduenas",
@@ -731,7 +737,239 @@
       "node_id": "MDQ6VXNlcjU5NzgxNQ==",
       "avatar_url": "https://avatars.githubusercontent.com/u/597815?v=4",
       "html_url": "https://github.com/heduenas",
-      "contributions": 2
+      "contributions": 55
+    },
+    {
+      "login": "samdsmx",
+      "id": 5838427,
+      "node_id": "MDQ6VXNlcjU4Mzg0Mjc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5838427?v=4",
+      "html_url": "https://github.com/samdsmx",
+      "contributions": 25
+    },
+    {
+      "login": "SammanSarkar",
+      "id": 91555648,
+      "node_id": "U_kgDOBXUHQA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/91555648?v=4",
+      "html_url": "https://github.com/SammanSarkar",
+      "contributions": 39
+    },
+    {
+      "login": "carlosabcs",
+      "id": 20785082,
+      "node_id": "MDQ6VXNlcjIwNzg1MDgy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20785082?v=4",
+      "html_url": "https://github.com/carlosabcs",
+      "contributions": 523
+    },
+    {
+      "login": "jorgesandia",
+      "id": 42609763,
+      "node_id": "MDQ6VXNlcjQyNjA5NzYz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/42609763?v=4",
+      "html_url": "https://github.com/jorgesandia",
+      "contributions": 1
+    },
+    {
+      "login": "tvanessa",
+      "id": 13296248,
+      "node_id": "MDQ6VXNlcjEzMjk2MjQ4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13296248?v=4",
+      "html_url": "https://github.com/tvanessa",
+      "contributions": 32
+    },
+    {
+      "login": "waygeance",
+      "id": 178658229,
+      "node_id": "U_kgDOCqYbtQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/178658229?v=4",
+      "html_url": "https://github.com/waygeance",
+      "contributions": 1
+    },
+    {
+      "login": "joemmanuel",
+      "id": 207097,
+      "node_id": "MDQ6VXNlcjIwNzA5Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/207097?v=4",
+      "html_url": "https://github.com/joemmanuel",
+      "contributions": 1091
+    },
+    {
+      "login": "alanboy",
+      "id": 527987,
+      "node_id": "MDQ6VXNlcjUyNzk4Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/527987?v=4",
+      "html_url": "https://github.com/alanboy",
+      "contributions": 395
+    },
+    {
+      "login": "pabloaguilar",
+      "id": 189223,
+      "node_id": "MDQ6VXNlcjE4OTIyMw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/189223?v=4",
+      "html_url": "https://github.com/pabloaguilar",
+      "contributions": 252
+    },
+    {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "html_url": "https://github.com/apps/dependabot",
+      "contributions": 89
+    },
+    {
+      "login": "limitedmage",
+      "id": 206864,
+      "node_id": "MDQ6VXNlcjIwNjg2NA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/206864?v=4",
+      "html_url": "https://github.com/limitedmage",
+      "contributions": 63
+    },
+    {
+      "login": "RuizYugen",
+      "id": 33679884,
+      "node_id": "MDQ6VXNlcjMzNjc5ODg0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/33679884?v=4",
+      "html_url": "https://github.com/RuizYugen",
+      "contributions": 54
+    },
+    {
+      "login": "HNOONa-0",
+      "id": 59091536,
+      "node_id": "MDQ6VXNlcjU5MDkxNTM2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/59091536?v=4",
+      "html_url": "https://github.com/HNOONa-0",
+      "contributions": 47
+    },
+    {
+      "login": "Ankitsinghsisodya",
+      "id": 118156935,
+      "node_id": "U_kgDOBwruhw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/118156935?v=4",
+      "html_url": "https://github.com/Ankitsinghsisodya",
+      "contributions": 44
+    },
+    {
+      "login": "IngridRB",
+      "id": 110271913,
+      "node_id": "U_kgDOBpKdqQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/110271913?v=4",
+      "html_url": "https://github.com/IngridRB",
+      "contributions": 44
+    },
+    {
+      "login": "luis-8",
+      "id": 48114972,
+      "node_id": "MDQ6VXNlcjQ4MTE0OTcy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/48114972?v=4",
+      "html_url": "https://github.com/luis-8",
+      "contributions": 44
+    },
+    {
+      "login": "Aritra8438",
+      "id": 64671908,
+      "node_id": "MDQ6VXNlcjY0NjcxOTA4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/64671908?v=4",
+      "html_url": "https://github.com/Aritra8438",
+      "contributions": 44
+    },
+    {
+      "login": "BlueBlockGrape",
+      "id": 43051192,
+      "node_id": "MDQ6VXNlcjQzMDUxMTky",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43051192?v=4",
+      "html_url": "https://github.com/BlueBlockGrape",
+      "contributions": 41
+    },
+    {
+      "login": "Yashagarwal9798",
+      "id": 144056431,
+      "node_id": "U_kgDOCJYgbw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/144056431?v=4",
+      "html_url": "https://github.com/Yashagarwal9798",
+      "contributions": 41
+    },
+    {
+      "login": "Karyme-Nava",
+      "id": 78821834,
+      "node_id": "MDQ6VXNlcjc4ODIxODM0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/78821834?v=4",
+      "html_url": "https://github.com/Karyme-Nava",
+      "contributions": 39
+    },
+    {
+      "login": "anscharivs",
+      "id": 37001730,
+      "node_id": "MDQ6VXNlcjM3MDAxNzMw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/37001730?v=4",
+      "html_url": "https://github.com/anscharivs",
+      "contributions": 36
+    },
+    {
+      "login": "rendon",
+      "id": 1733301,
+      "node_id": "MDQ6VXNlcjE3MzMzMDE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1733301?v=4",
+      "html_url": "https://github.com/rendon",
+      "contributions": 34
+    },
+    {
+      "login": "galovdev",
+      "id": 107520089,
+      "node_id": "U_kgDOBmigWQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/107520089?v=4",
+      "html_url": "https://github.com/galovdev",
+      "contributions": 33
+    },
+    {
+      "login": "SpaceWhite",
+      "id": 15065085,
+      "node_id": "MDQ6VXNlcjE1MDY1MDg1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/15065085?v=4",
+      "html_url": "https://github.com/SpaceWhite",
+      "contributions": 29
+    },
+    {
+      "login": "mjayalam",
+      "id": 12377916,
+      "node_id": "MDQ6VXNlcjEyMzc3OTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12377916?v=4",
+      "html_url": "https://github.com/mjayalam",
+      "contributions": 29
+    },
+    {
+      "login": "anmode",
+      "id": 88332977,
+      "node_id": "MDQ6VXNlcjg4MzMyOTc3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/88332977?v=4",
+      "html_url": "https://github.com/anmode",
+      "contributions": 28
+    },
+    {
+      "login": "ElPedrangas03",
+      "id": 48796502,
+      "node_id": "MDQ6VXNlcjQ4Nzk2NTAy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/48796502?v=4",
+      "html_url": "https://github.com/ElPedrangas03",
+      "contributions": 25
+    },
+    {
+      "login": "magno309",
+      "id": 48113838,
+      "node_id": "MDQ6VXNlcjQ4MTEzODM4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/48113838?v=4",
+      "html_url": "https://github.com/magno309",
+      "contributions": 23
+    },
+    {
+      "login": "Mau-MD",
+      "id": 74751751,
+      "node_id": "MDQ6VXNlcjc0NzUxNzUx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/74751751?v=4",
+      "html_url": "https://github.com/Mau-MD",
+      "contributions": 23
     }
   ],
   "activeOrg": true

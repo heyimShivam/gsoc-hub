@@ -39,7 +39,8 @@
     2021,
     2022,
     2023,
-    2024
+    2024,
+    2026
   ],
   "projects": {
     "2021": [
@@ -212,10 +213,45 @@
         "proposal_id": "D3VYpZmV",
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/4voBf8uO"
       }
-    ]
+    ],
+    "2026": []
   },
   "githubID": "metacall",
   "repositories": [
+    {
+      "id": 1125457734,
+      "node_id": "R_kgDOQxUfRg",
+      "name": "gsoc-2026",
+      "full_name": "metacall/gsoc-2026",
+      "html_url": "https://github.com/metacall/gsoc-2026",
+      "description": "List of project ideas for contributors applying to the Google Summer of Code program in 2026 (GSoC 2026).",
+      "language": null,
+      "stargazers_count": 30,
+      "forks_count": 19,
+      "open_issues_count": 2,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 751077544,
+      "node_id": "R_kgDOLMSIqA",
+      "name": "core-benchmarks",
+      "full_name": "metacall/core-benchmarks",
+      "html_url": "https://github.com/metacall/core-benchmarks",
+      "description": "Repository for publishing MetaCall Core Benchmarks.",
+      "language": "JavaScript",
+      "stargazers_count": 2,
+      "forks_count": 1,
+      "open_issues_count": 0,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
     {
       "id": 163221062,
       "node_id": "MDEwOlJlcG9zaXRvcnkxNjMyMjEwNjI=",
@@ -224,9 +260,9 @@
       "html_url": "https://github.com/metacall/core",
       "description": "MetaCall: The ultimate polyglot programming experience.",
       "language": "C",
-      "stargazers_count": 1651,
-      "forks_count": 183,
-      "open_issues_count": 57,
+      "stargazers_count": 1791,
+      "forks_count": 244,
+      "open_issues_count": 97,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -256,134 +292,28 @@
       ]
     },
     {
-      "id": 751077544,
-      "node_id": "R_kgDOLMSIqA",
-      "name": "core-benchmarks",
-      "full_name": "metacall/core-benchmarks",
-      "html_url": "https://github.com/metacall/core-benchmarks",
-      "description": "Repository for publishing MetaCall Core Benchmarks.",
-      "language": "JavaScript",
-      "stargazers_count": 2,
-      "forks_count": 1,
-      "open_issues_count": 0,
+      "id": 792211438,
+      "node_id": "R_kgDOLzgv7g",
+      "name": "metassr",
+      "full_name": "metacall/metassr",
+      "html_url": "https://github.com/metacall/metassr",
+      "description": "High-performance server side rendering framework built with Metacall and Rust",
+      "language": "Rust",
+      "stargazers_count": 21,
+      "forks_count": 20,
+      "open_issues_count": 44,
       "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 924962904,
-      "node_id": "R_kgDONyHQWA",
-      "name": "plthook",
-      "full_name": "metacall/plthook",
-      "html_url": "https://github.com/metacall/plthook",
-      "description": "Hook function calls by replacing PLT (Procedure Linkage Table) entries.",
-      "language": "C",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 1,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 782588064,
-      "node_id": "R_kgDOLqVYoA",
-      "name": "libnode",
-      "full_name": "metacall/libnode",
-      "html_url": "https://github.com/metacall/libnode",
-      "description": "NodeJS shared library cross-platform builds for shipping MetaCall.",
-      "language": "JavaScript",
-      "stargazers_count": 11,
-      "forks_count": 2,
-      "open_issues_count": 5,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 943520677,
-      "node_id": "R_kgDOODz7pQ",
-      "name": "plthook-poc",
-      "full_name": "metacall/plthook-poc",
-      "html_url": "https://github.com/metacall/plthook-poc",
-      "description": "Proof of Concept for implementing PLT/IAT hooking for MetaCall.",
-      "language": "C",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 954162523,
-      "node_id": "R_kgDOON9dWw",
-      "name": "intellisense",
-      "full_name": "metacall/intellisense",
-      "html_url": "https://github.com/metacall/intellisense",
-      "description": "Repository implementing intellisense support for multiple languages for polyglot programming with MetaCall.",
-      "language": "TypeScript",
-      "stargazers_count": 3,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 345625179,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzNDU2MjUxNzk=",
-      "name": "scala-port",
-      "full_name": "metacall/scala-port",
-      "html_url": "https://github.com/metacall/scala-port",
-      "description": "Scala wrapper for MetaCall, a library for providing inter-language foreign function interface calls. ",
-      "language": "Scala",
-      "stargazers_count": 7,
-      "forks_count": 1,
-      "open_issues_count": 0,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 197689634,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxOTc2ODk2MzQ=",
-      "name": "distributable-linux",
-      "full_name": "metacall/distributable-linux",
-      "html_url": "https://github.com/metacall/distributable-linux",
-      "description": "Linux redistributable for shipping MetaCall Core.",
-      "language": "Scheme",
-      "stargazers_count": 12,
-      "forks_count": 12,
-      "open_issues_count": 7,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
       },
       "topics": [
-        "package",
-        "redistributable"
+        "metacall",
+        "polyglot-programming",
+        "rust",
+        "ssr"
       ]
     },
     {
@@ -407,22 +337,22 @@
       "topics": []
     },
     {
-      "id": 513416512,
-      "node_id": "R_kgDOHpodQA",
-      "name": "homebrew",
-      "full_name": "metacall/homebrew",
-      "html_url": "https://github.com/metacall/homebrew",
-      "description": "Repository holding the Homebrew recipes for MetaCall Core.",
+      "id": 835850696,
+      "node_id": "R_kgDOMdIRyA",
+      "name": "brew-pkg",
+      "full_name": "metacall/brew-pkg",
+      "html_url": "https://github.com/metacall/brew-pkg",
+      "description": "Build OS X installer packages directly from Homebrew formulae",
       "language": "Ruby",
-      "stargazers_count": 1,
-      "forks_count": 5,
-      "open_issues_count": 4,
+      "stargazers_count": 0,
+      "forks_count": 3,
+      "open_issues_count": 1,
       "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
       },
       "topics": []
     },
@@ -434,9 +364,9 @@
       "html_url": "https://github.com/metacall/deploy",
       "description": "Tool for deploying into MetaCall FaaS platform.",
       "language": "TypeScript",
-      "stargazers_count": 25,
-      "forks_count": 41,
-      "open_issues_count": 12,
+      "stargazers_count": 28,
+      "forks_count": 63,
+      "open_issues_count": 42,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -450,6 +380,86 @@
       ]
     },
     {
+      "id": 782588064,
+      "node_id": "R_kgDOLqVYoA",
+      "name": "libnode",
+      "full_name": "metacall/libnode",
+      "html_url": "https://github.com/metacall/libnode",
+      "description": "NodeJS shared library cross-platform builds for shipping MetaCall.",
+      "language": "JavaScript",
+      "stargazers_count": 22,
+      "forks_count": 2,
+      "open_issues_count": 5,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 403947656,
+      "node_id": "MDEwOlJlcG9zaXRvcnk0MDM5NDc2NTY=",
+      "name": "distributable-windows",
+      "full_name": "metacall/distributable-windows",
+      "html_url": "https://github.com/metacall/distributable-windows",
+      "description": "Windows redistributable for shipping MetaCall Core. ",
+      "language": "Batchfile",
+      "stargazers_count": 3,
+      "forks_count": 14,
+      "open_issues_count": 5,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 419640809,
+      "node_id": "R_kgDOGQM16Q",
+      "name": "vscode-extension",
+      "full_name": "metacall/vscode-extension",
+      "html_url": "https://github.com/metacall/vscode-extension",
+      "description": "A Visual Code Extension for polyglot development and debugging using MetaCall",
+      "language": "TypeScript",
+      "stargazers_count": 2,
+      "forks_count": 8,
+      "open_issues_count": 0,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 435458338,
+      "node_id": "R_kgDOGfSRIg",
+      "name": "protocol",
+      "full_name": "metacall/protocol",
+      "html_url": "https://github.com/metacall/protocol",
+      "description": "Repository holding the shared modules and protocol between the Deploy tool and FaaS.",
+      "language": "TypeScript",
+      "stargazers_count": 8,
+      "forks_count": 25,
+      "open_issues_count": 4,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
       "id": 375735515,
       "node_id": "MDEwOlJlcG9zaXRvcnkzNzU3MzU1MTU=",
       "name": "faas",
@@ -457,9 +467,9 @@
       "html_url": "https://github.com/metacall/faas",
       "description": "Reimplementation of MetaCall FaaS platform written in TypeScript.",
       "language": "TypeScript",
-      "stargazers_count": 17,
-      "forks_count": 28,
-      "open_issues_count": 16,
+      "stargazers_count": 18,
+      "forks_count": 57,
+      "open_issues_count": 55,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -474,6 +484,34 @@
       ]
     },
     {
+      "id": 924962904,
+      "node_id": "R_kgDONyHQWA",
+      "name": "plthook",
+      "full_name": "metacall/plthook",
+      "html_url": "https://github.com/metacall/plthook",
+      "description": "Hook function calls by replacing PLT (Procedure Linkage Table) entries.",
+      "language": "C",
+      "stargazers_count": 11,
+      "forks_count": 4,
+      "open_issues_count": 4,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1163028153,
+      "node_id": "R_kgDORVJmuQ",
+      "name": "metassr-benchmarks",
+      "full_name": "metacall/metassr-benchmarks",
+      "html_url": "https://github.com/metacall/metassr-benchmarks",
+      "description": "Repository for publishing MetaCall Server Side Rendering Benchmarks.",
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 1,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
       "id": 192626388,
       "node_id": "MDEwOlJlcG9zaXRvcnkxOTI2MjYzODg=",
       "name": "doc",
@@ -482,8 +520,96 @@
       "description": "Complete documentation about MetaCall infrastructure.",
       "language": "JavaScript",
       "stargazers_count": 1,
-      "forks_count": 4,
-      "open_issues_count": 4,
+      "forks_count": 5,
+      "open_issues_count": 3,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 189689284,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxODk2ODkyODQ=",
+      "name": "install",
+      "full_name": "metacall/install",
+      "html_url": "https://github.com/metacall/install",
+      "description": "Cross-platform set of script to install MetaCall infrastructure.",
+      "language": "Shell",
+      "stargazers_count": 17,
+      "forks_count": 19,
+      "open_issues_count": 1,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "cross-platform",
+        "installer",
+        "installer-script",
+        "script"
+      ]
+    },
+    {
+      "id": 197689634,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxOTc2ODk2MzQ=",
+      "name": "distributable-linux",
+      "full_name": "metacall/distributable-linux",
+      "html_url": "https://github.com/metacall/distributable-linux",
+      "description": "Linux redistributable for shipping MetaCall Core.",
+      "language": "Scheme",
+      "stargazers_count": 12,
+      "forks_count": 12,
+      "open_issues_count": 9,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "package",
+        "redistributable"
+      ]
+    },
+    {
+      "id": 209222193,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMDkyMjIxOTM=",
+      "name": "guix",
+      "full_name": "metacall/guix",
+      "html_url": "https://github.com/metacall/guix",
+      "description": "Docker image and binary releases for using Guix in a CI/CD environment.",
+      "language": "JavaScript",
+      "stargazers_count": 61,
+      "forks_count": 8,
+      "open_issues_count": 6,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 611731012,
+      "node_id": "R_kgDOJHZGRA",
+      "name": "testing-center",
+      "full_name": "metacall/testing-center",
+      "html_url": "https://github.com/metacall/testing-center",
+      "description": "Repository for testing all the examples available in MetaCall, either for the CLI or Deploy.",
+      "language": "Python",
+      "stargazers_count": 1,
+      "forks_count": 7,
+      "open_issues_count": 7,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -514,43 +640,24 @@
       "topics": []
     },
     {
-      "id": 936507537,
-      "node_id": "R_kgDON9H4kQ",
-      "name": "weather-dashboard-example",
-      "full_name": "metacall/weather-dashboard-example",
-      "html_url": "https://github.com/metacall/weather-dashboard-example",
-      "description": "Example of MetaCall using Vue as Frontend, NodeJS Express as Backend and  Python for doing Analytics.",
-      "language": "CSS",
-      "stargazers_count": 2,
-      "forks_count": 1,
+      "id": 943520677,
+      "node_id": "R_kgDOODz7pQ",
+      "name": "plthook-poc",
+      "full_name": "metacall/plthook-poc",
+      "html_url": "https://github.com/metacall/plthook-poc",
+      "description": "Proof of Concept for implementing PLT/IAT hooking for MetaCall.",
+      "language": "C",
+      "stargazers_count": 0,
+      "forks_count": 0,
       "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 792211438,
-      "node_id": "R_kgDOLzgv7g",
-      "name": "metassr",
-      "full_name": "metacall/metassr",
-      "html_url": "https://github.com/metacall/metassr",
-      "description": "High-performance server side rendering framework built with Metacall and Rust",
-      "language": "Rust",
-      "stargazers_count": 10,
-      "forks_count": 5,
-      "open_issues_count": 19,
       "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
       },
-      "topics": [
-        "metacall",
-        "polyglot-programming",
-        "rust",
-        "ssr"
-      ]
+      "topics": []
     },
     {
       "id": 129554213,
@@ -560,9 +667,9 @@
       "html_url": "https://github.com/metacall/examples",
       "description": "MetaCall Examples - A collection of use cases and examples to be deployed in MetaCall.",
       "language": "Python",
-      "stargazers_count": 20,
+      "stargazers_count": 22,
       "forks_count": 16,
-      "open_issues_count": 0,
+      "open_issues_count": 4,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -579,104 +686,16 @@
       ]
     },
     {
-      "id": 936518771,
-      "node_id": "R_kgDON9Ikcw",
-      "name": "polyglot-tree-traversal-example",
-      "full_name": "metacall/polyglot-tree-traversal-example",
-      "html_url": "https://github.com/metacall/polyglot-tree-traversal-example",
-      "description": "Example demonstrating how to build a tree abstract data type with multiple languages (Python, NodeJS and C).",
-      "language": "JavaScript",
-      "stargazers_count": 1,
-      "forks_count": 2,
-      "open_issues_count": 3,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 256171847,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNTYxNzE4NDc=",
-      "name": "embedding-python-example",
-      "full_name": "metacall/embedding-python-example",
-      "html_url": "https://github.com/metacall/embedding-python-example",
-      "description": "An example of embedding Python into C/C++ using MetaCall.",
-      "language": "C",
+      "id": 513416512,
+      "node_id": "R_kgDOHpodQA",
+      "name": "homebrew",
+      "full_name": "metacall/homebrew",
+      "html_url": "https://github.com/metacall/homebrew",
+      "description": "Repository holding the Homebrew recipes for MetaCall Core.",
+      "language": "Ruby",
       "stargazers_count": 0,
-      "forks_count": 1,
-      "open_issues_count": 0,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "c",
-        "cmake",
-        "cpp",
-        "embedding",
-        "python"
-      ]
-    },
-    {
-      "id": 354787065,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzNTQ3ODcwNjU=",
-      "name": "currency-convert-example",
-      "full_name": "metacall/currency-convert-example",
-      "html_url": "https://github.com/metacall/currency-convert-example",
-      "description": "Using Exchnage Rates API in Python with a NodeJS Script to Convert Currency using MetaCall.",
-      "language": "Python",
-      "stargazers_count": 3,
-      "forks_count": 2,
-      "open_issues_count": 0,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 383633161,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzODM2MzMxNjE=",
-      "name": "polyglot-repl",
-      "full_name": "metacall/polyglot-repl",
-      "html_url": "https://github.com/metacall/polyglot-repl",
-      "description": "Implements a polyglot REPL which supports multiple languages and shared meta-object protocol scope between REPLs.",
-      "language": "JavaScript",
-      "stargazers_count": 15,
-      "forks_count": 3,
-      "open_issues_count": 3,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "metacall",
-        "multilanguage",
-        "nodejs",
-        "polyglot",
-        "python",
-        "repl",
-        "ruby"
-      ]
-    },
-    {
-      "id": 209222193,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMDkyMjIxOTM=",
-      "name": "guix",
-      "full_name": "metacall/guix",
-      "html_url": "https://github.com/metacall/guix",
-      "description": "Docker image for using Guix in a CI/CD environment.",
-      "language": "Dockerfile",
-      "stargazers_count": 43,
       "forks_count": 5,
-      "open_issues_count": 2,
+      "open_issues_count": 5,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -687,137 +706,130 @@
       "topics": []
     },
     {
-      "id": 189689284,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxODk2ODkyODQ=",
-      "name": "install",
-      "full_name": "metacall/install",
-      "html_url": "https://github.com/metacall/install",
-      "description": "Cross-platform set of script to install MetaCall infrastructure.",
-      "language": "Shell",
-      "stargazers_count": 15,
-      "forks_count": 18,
-      "open_issues_count": 1,
+      "id": 936507537,
+      "node_id": "R_kgDON9H4kQ",
+      "name": "weather-dashboard-example",
+      "full_name": "metacall/weather-dashboard-example",
+      "html_url": "https://github.com/metacall/weather-dashboard-example",
+      "description": "Example of MetaCall using Vue as Frontend, NodeJS Express as Backend and  Python for doing Analytics.",
+      "language": "CSS",
+      "stargazers_count": 3,
+      "forks_count": 1,
+      "open_issues_count": 2,
       "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
       },
-      "topics": [
-        "cross-platform",
-        "installer",
-        "installer-script",
-        "script"
-      ]
+      "topics": []
     },
     {
-      "id": 929024004,
-      "node_id": "R_kgDON1_IBA",
-      "name": "polyglot-blog-example",
-      "full_name": "metacall/polyglot-blog-example",
-      "html_url": "https://github.com/metacall/polyglot-blog-example",
-      "description": "Example showing how to implement a full blog with AI capabilities written in Python and NodeJS.",
+      "id": 954162523,
+      "node_id": "R_kgDOON9dWw",
+      "name": "intellisense",
+      "full_name": "metacall/intellisense",
+      "html_url": "https://github.com/metacall/intellisense",
+      "description": "Repository implementing intellisense support for multiple languages for polyglot programming with MetaCall.",
       "language": "TypeScript",
-      "stargazers_count": 3,
+      "stargazers_count": 4,
       "forks_count": 0,
       "open_issues_count": 0,
       "license": null,
       "topics": []
     },
     {
-      "id": 928444881,
-      "node_id": "R_kgDON1bx0Q",
-      "name": "numpy-matplotlib-websocket-nodejs-example",
-      "full_name": "metacall/numpy-matplotlib-websocket-nodejs-example",
-      "html_url": "https://github.com/metacall/numpy-matplotlib-websocket-nodejs-example",
-      "description": "Example showing interoperability with NodeJS for websockets and Python for ML libraries.",
-      "language": "JavaScript",
+      "id": 1012736642,
+      "node_id": "R_kgDOPF0igg",
+      "name": "nodejs-cpp-example",
+      "full_name": "metacall/nodejs-cpp-example",
+      "html_url": "https://github.com/metacall/nodejs-cpp-example",
+      "description": "An example of using C and C++ libraries from NodeJS by using MetaCall.",
+      "language": "Dockerfile",
       "stargazers_count": 0,
       "forks_count": 0,
       "open_issues_count": 0,
-      "license": null,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
       "topics": []
     },
     {
-      "id": 928441269,
-      "node_id": "R_kgDON1bjtQ",
-      "name": "go-python-ml-example",
-      "full_name": "metacall/go-python-ml-example",
-      "html_url": "https://github.com/metacall/go-python-ml-example",
-      "description": "Example demonstrating interoperability of Go and Python languages for doing Machine Learning.",
-      "language": "Python",
-      "stargazers_count": 2,
+      "id": 993030153,
+      "node_id": "R_kgDOOzBwCQ",
+      "name": "ruby-loco",
+      "full_name": "metacall/ruby-loco",
+      "html_url": "https://github.com/metacall/ruby-loco",
+      "description": "Fully tested Ruby Windows Mingw, ucrt & mswin builds, built and saved on GitHub",
+      "language": "PowerShell",
+      "stargazers_count": 0,
       "forks_count": 0,
       "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 403947656,
-      "node_id": "MDEwOlJlcG9zaXRvcnk0MDM5NDc2NTY=",
-      "name": "distributable-windows",
-      "full_name": "metacall/distributable-windows",
-      "html_url": "https://github.com/metacall/distributable-windows",
-      "description": "Windows redistributable for shipping MetaCall Core. ",
-      "language": "Batchfile",
-      "stargazers_count": 3,
-      "forks_count": 13,
-      "open_issues_count": 3,
       "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
       },
       "topics": []
     },
     {
-      "id": 920100155,
-      "node_id": "R_kgDONtedOw",
-      "name": "gsoc-2025",
-      "full_name": "metacall/gsoc-2025",
-      "html_url": "https://github.com/metacall/gsoc-2025",
-      "description": "List of project ideas for contributors applying to the Google Summer of Code program in 2025 (GSoC 2025). ",
-      "language": null,
-      "stargazers_count": 9,
-      "forks_count": 2,
-      "open_issues_count": 2,
-      "license": null,
-      "topics": [
-        "gsoc",
-        "gsoc-2025"
-      ]
-    },
-    {
-      "id": 745027117,
-      "node_id": "R_kgDOLGg2LQ",
-      "name": "gsoc-2024",
-      "full_name": "metacall/gsoc-2024",
-      "html_url": "https://github.com/metacall/gsoc-2024",
-      "description": "List of project ideas for contributors applying to the Google Summer of Code program in 2024 (GSoC 2024). ",
-      "language": null,
-      "stargazers_count": 23,
-      "forks_count": 10,
+      "id": 993031196,
+      "node_id": "R_kgDOOzB0HA",
+      "name": "ruby-mswin",
+      "full_name": "metacall/ruby-mswin",
+      "html_url": "https://github.com/metacall/ruby-mswin",
+      "description": "Used to build specific Ruby versions for Windows with MSVC.",
+      "language": "Ruby",
+      "stargazers_count": 0,
+      "forks_count": 0,
       "open_issues_count": 0,
-      "license": null,
-      "topics": [
-        "gsoc",
-        "gsoc-2024"
-      ]
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
     },
     {
-      "id": 428646385,
-      "node_id": "R_kgDOGYyf8Q",
-      "name": "nodejs-c-io_uring-example",
-      "full_name": "metacall/nodejs-c-io_uring-example",
-      "html_url": "https://github.com/metacall/nodejs-c-io_uring-example",
-      "description": "Using io_uring Linux Kernel interface from NodeJS by JITing C code with MetaCall.",
-      "language": "C",
-      "stargazers_count": 1,
-      "forks_count": 1,
-      "open_issues_count": 1,
+      "id": 1000527399,
+      "node_id": "R_kgDOO6LWJw",
+      "name": "backward-cpp",
+      "full_name": "metacall/backward-cpp",
+      "html_url": "https://github.com/metacall/backward-cpp",
+      "description": "A beautiful stack trace pretty printer for C++",
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 345625179,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzNDU2MjUxNzk=",
+      "name": "scala-port",
+      "full_name": "metacall/scala-port",
+      "html_url": "https://github.com/metacall/scala-port",
+      "description": "Scala wrapper for MetaCall, a library for providing inter-language foreign function interface calls. ",
+      "language": "Scala",
+      "stargazers_count": 7,
+      "forks_count": 2,
+      "open_issues_count": 0,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -825,14 +837,7 @@
         "url": "https://api.github.com/licenses/apache-2.0",
         "node_id": "MDc6TGljZW5zZTI="
       },
-      "topics": [
-        "c",
-        "interoperability",
-        "io-uring",
-        "jit",
-        "liburing",
-        "nodejs"
-      ]
+      "topics": []
     }
   ],
   "contributorsDetails": [
@@ -842,7 +847,71 @@
       "node_id": "MDQ6VXNlcjc4NTQwOTk=",
       "avatar_url": "https://avatars.githubusercontent.com/u/7854099?v=4",
       "html_url": "https://github.com/viferga",
-      "contributions": 2
+      "contributions": 3458
+    },
+    {
+      "login": "Sukuna0007Abhi",
+      "id": 183715837,
+      "node_id": "U_kgDOCvNH_Q",
+      "avatar_url": "https://avatars.githubusercontent.com/u/183715837?v=4",
+      "html_url": "https://github.com/Sukuna0007Abhi",
+      "contributions": 1
+    },
+    {
+      "login": "giarve",
+      "id": 45542433,
+      "node_id": "MDQ6VXNlcjQ1NTQyNDMz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/45542433?v=4",
+      "html_url": "https://github.com/giarve",
+      "contributions": 67
+    },
+    {
+      "login": "G00dS0ul",
+      "id": 224271615,
+      "node_id": "U_kgDODV4c_w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/224271615?v=4",
+      "html_url": "https://github.com/G00dS0ul",
+      "contributions": 1
+    },
+    {
+      "login": "josead",
+      "id": 5884889,
+      "node_id": "MDQ6VXNlcjU4ODQ4ODk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5884889?v=4",
+      "html_url": "https://github.com/josead",
+      "contributions": 37
+    },
+    {
+      "login": "madhavkapila",
+      "id": 142913289,
+      "node_id": "U_kgDOCISvCQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/142913289?v=4",
+      "html_url": "https://github.com/madhavkapila",
+      "contributions": 1
+    },
+    {
+      "login": "codxbrexx",
+      "id": 168920439,
+      "node_id": "U_kgDOChGFdw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/168920439?v=4",
+      "html_url": "https://github.com/codxbrexx",
+      "contributions": 1
+    },
+    {
+      "login": "prathamtomar99",
+      "id": 162817709,
+      "node_id": "U_kgDOCbRmrQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/162817709?v=4",
+      "html_url": "https://github.com/prathamtomar99",
+      "contributions": 1
+    },
+    {
+      "login": "VanshikaSabharwal",
+      "id": 143436704,
+      "node_id": "U_kgDOCIyroA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/143436704?v=4",
+      "html_url": "https://github.com/VanshikaSabharwal",
+      "contributions": 1
     },
     {
       "login": "loopzer",
@@ -861,20 +930,12 @@
       "contributions": 77
     },
     {
-      "login": "giarve",
-      "id": 45542433,
-      "node_id": "MDQ6VXNlcjQ1NTQyNDMz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/45542433?v=4",
-      "html_url": "https://github.com/giarve",
-      "contributions": 67
-    },
-    {
       "login": "dependabot[bot]",
       "id": 49699333,
       "node_id": "MDM6Qm90NDk2OTkzMzM=",
       "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
       "html_url": "https://github.com/apps/dependabot",
-      "contributions": 46
+      "contributions": 48
     },
     {
       "login": "devraymondsh",
@@ -882,15 +943,7 @@
       "node_id": "MDQ6VXNlcjc3NDM3ODc4",
       "avatar_url": "https://avatars.githubusercontent.com/u/77437878?v=4",
       "html_url": "https://github.com/devraymondsh",
-      "contributions": 43
-    },
-    {
-      "login": "jfblomgren",
-      "id": 5967070,
-      "node_id": "MDQ6VXNlcjU5NjcwNzA=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/5967070?v=4",
-      "html_url": "https://github.com/jfblomgren",
-      "contributions": 36
+      "contributions": 44
     },
     {
       "login": "MediosZ",
@@ -898,6 +951,14 @@
       "node_id": "MDQ6VXNlcjI0ODE5MTQz",
       "avatar_url": "https://avatars.githubusercontent.com/u/24819143?v=4",
       "html_url": "https://github.com/MediosZ",
+      "contributions": 36
+    },
+    {
+      "login": "jfblomgren",
+      "id": 5967070,
+      "node_id": "MDQ6VXNlcjU5NjcwNzA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5967070?v=4",
+      "html_url": "https://github.com/jfblomgren",
       "contributions": 36
     },
     {
@@ -973,19 +1034,19 @@
       "contributions": 11
     },
     {
-      "login": "lights0123",
-      "id": 3756309,
-      "node_id": "MDQ6VXNlcjM3NTYzMDk=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/3756309?v=4",
-      "html_url": "https://github.com/lights0123",
-      "contributions": 8
-    },
-    {
       "login": "trgwii",
       "id": 11262022,
       "node_id": "MDQ6VXNlcjExMjYyMDIy",
       "avatar_url": "https://avatars.githubusercontent.com/u/11262022?v=4",
       "html_url": "https://github.com/trgwii",
+      "contributions": 10
+    },
+    {
+      "login": "lights0123",
+      "id": 3756309,
+      "node_id": "MDQ6VXNlcjM3NTYzMDk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3756309?v=4",
+      "html_url": "https://github.com/lights0123",
       "contributions": 8
     },
     {
@@ -1005,6 +1066,14 @@
       "contributions": 7
     },
     {
+      "login": "AkechiShiro",
+      "id": 14914796,
+      "node_id": "MDQ6VXNlcjE0OTE0Nzk2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14914796?v=4",
+      "html_url": "https://github.com/AkechiShiro",
+      "contributions": 6
+    },
+    {
       "login": "pkspyder007",
       "id": 19896788,
       "node_id": "MDQ6VXNlcjE5ODk2Nzg4",
@@ -1013,11 +1082,11 @@
       "contributions": 6
     },
     {
-      "login": "AkechiShiro",
-      "id": 14914796,
-      "node_id": "MDQ6VXNlcjE0OTE0Nzk2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/14914796?v=4",
-      "html_url": "https://github.com/AkechiShiro",
+      "login": "fahdfady",
+      "id": 55513802,
+      "node_id": "MDQ6VXNlcjU1NTEzODAy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55513802?v=4",
+      "html_url": "https://github.com/fahdfady",
       "contributions": 6
     },
     {
@@ -1045,36 +1114,20 @@
       "contributions": 5
     },
     {
-      "login": "iyear",
-      "id": 61452000,
-      "node_id": "MDQ6VXNlcjYxNDUyMDAw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/61452000?v=4",
-      "html_url": "https://github.com/iyear",
+      "login": "MrSpideyNihal",
+      "id": 91406248,
+      "node_id": "MDQ6VXNlcjkxNDA2MjQ4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/91406248?v=4",
+      "html_url": "https://github.com/MrSpideyNihal",
       "contributions": 4
     },
     {
-      "login": "hulxv",
-      "id": 73320969,
-      "node_id": "MDQ6VXNlcjczMzIwOTY5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/73320969?v=4",
-      "html_url": "https://github.com/hulxv",
+      "login": "RaicyAugusto",
+      "id": 68765799,
+      "node_id": "MDQ6VXNlcjY4NzY1Nzk5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/68765799?v=4",
+      "html_url": "https://github.com/RaicyAugusto",
       "contributions": 4
-    },
-    {
-      "login": "swarnimarun",
-      "id": 19930870,
-      "node_id": "MDQ6VXNlcjE5OTMwODcw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/19930870?v=4",
-      "html_url": "https://github.com/swarnimarun",
-      "contributions": 3
-    },
-    {
-      "login": "Bcoderx6",
-      "id": 87377992,
-      "node_id": "MDQ6VXNlcjg3Mzc3OTky",
-      "avatar_url": "https://avatars.githubusercontent.com/u/87377992?v=4",
-      "html_url": "https://github.com/Bcoderx6",
-      "contributions": 3
     }
   ],
   "activeOrg": true

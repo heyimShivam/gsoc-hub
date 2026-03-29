@@ -43,7 +43,8 @@
     2022,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2017": [
@@ -501,7 +502,54 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/VFReLkmo"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Parallel tetrahedral remeshing using TBB",
+        "short_description": "The goal of this project is to parallelize the CGAL Tetrahedral Remeshing package using the Intel Threading Building Blocks (TBB) library. This will...",
+        "description": "The goal of this project is to parallelize the CGAL Tetrahedral Remeshing package using the Intel Threading Building Blocks (TBB) library. This will significantly reduce the computational time required for remeshing large meshes, enabling faster and more efficient simulations. CGAL already provides some parallel implementations for some of its packages. While the primary focus is to parallelize the Remeshing package, a key objective is to lay the foundation for a generic parallelization framework for CGAL. Analogously to C++ STL's execution policies we would like to develop a framework that could, as future work, be extended to the rest of the library and allow to seamlessly change execution policies. The core of this proposal is a generic framework for the parallel execution of atomic operations using TBB in the remeshing package.",
+        "student_name": "Iason Manolas",
+        "code_url": "https://github.com/CGAL/cgal/issues/9065",
+        "proposal_id": "51JEseWZ",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/1pQ8f10i"
+      },
+      {
+        "title": "Dynamic Skeletonization via Variational Medial Axis Sampling – CGAL Integration",
+        "short_description": "The project aims to integrate into the CGAL library an algorithm for medial axis approximation that I developed and published at SIGGRAPH Asia 2024....",
+        "description": "The project aims to integrate into the CGAL library an algorithm for medial axis approximation that I developed and published at SIGGRAPH Asia 2024. The algorithm computes an approximate medial axis of a 3D shape—represented either as a triangular mesh or a point cloud—using a variational sampling method that dynamically balances accuracy and robustness. It is designed to handle both clean and noisy input geometry, and supports dynamic updates, allowing users to interactively refine the result as needed.",
+        "student_name": "Qijia HUANG",
+        "code_url": "https://github.com/CGAL/cgal/issues/9082",
+        "proposal_id": "MLoFKE1w",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/nQN4fzNv"
+      },
+      {
+        "title": "Enhancing Visualization of Arrangements on Surfaces",
+        "short_description": "The 2D Arrangements package in CGAL provides an efficient and extensible framework for representing and manipulating arrangements induced by...",
+        "description": "The 2D Arrangements package in CGAL provides an efficient and extensible framework for representing and manipulating arrangements induced by geometric objects. The existing visualization utilities are useful but exhibit several limitations: inefficient rendering procedures of faces with holes, lack of support for unbounded curves and faces, and inability to correctly render faces on curved surfaces.\n\nThis project implements a general renderer for arrangements that integrates with the Aos2 framework and addresses those limitations. The new renderer provides on-demand approximation of x-monotone curves; uses a customized face triangulator to efficiently produce meshes; and leverages tiling and caching to make interactive navigation responsive.",
+        "student_name": "Shepard Liu",
+        "code_url": "https://shepard-liu.github.io/blog/jekyll/update/2025/08/28/gsoc2025-cgal.html",
+        "proposal_id": "8cgAwhDz",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/1hCfEr46"
+      },
+      {
+        "title": "Hexahedral Mesh Generation",
+        "short_description": "This proposal aims to develop an advanced hexahedral grid refinement framework (Owen et al. 2017), supporting single-threaded and multi-threaded...",
+        "description": "This proposal aims to develop an advanced hexahedral grid refinement framework (Owen et al. 2017), supporting single-threaded and multi-threaded environments. In the previous project, the generation of an initial hexahedral grid and grid refinement using the prepared templates were implemented. In this project, we will integrate novel features such as mesh smoothing specialized to the mesh after it and improved thread assignment mechanisms for robust multi-threaded processing. The deliverables include a complete implementation, extensive documentation via Doxygen, and unit tests using ctest.",
+        "student_name": "Soichiro",
+        "code_url": "https://gist.github.com/hofwe/4ea594c657da455a311a62506edb8f31",
+        "proposal_id": "Tzb0swoD",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/b3o1ogYP"
+      },
+      {
+        "title": "Enhanced Dual Contouring",
+        "short_description": "The goal of this project is to enhance the existing Dual Contouring (DC) method in CGAL by implementing manifold contouring methods. While the...",
+        "description": "The goal of this project is to enhance the existing Dual Contouring (DC) method in CGAL by implementing manifold contouring methods. While the classical DC is a powerful isosurfacing method, it may produce non-nonmanifold surfaces, leading to topological inconsistencies and computational challenges. Manifold dual contouring methods overcome this issue by introducing manifold constraints to ensure the generation of 2-manifold surfaces.\n\nThe project will begin with a detailed study of existing literature, including Manifold Dual Contouring by Schaefer, Ju and Warren, and other related methods. Based on the research, we will determine an algorithm that combines the most robust aspects of these methods. The next phase is to review current DC implementations in CGAL  to identify gaps that require modifications, particularly in routines such as the Quadratic Error Function (QEF) minimization, octree traversal, and polygonalization. Lastly, additional features will be added, including manifold criterions like the Euler characteristic test, and the support for multiple vertices per cell.\n\nThe final deliverables will be a robust implementation of the enhanced DC method integrated into CGAL under the Isosurfacing subroutine. The implementation will adhere to CGAL’s existing coding conventions to ensure flexibility, consistency, and maintainability within the library. The documentation will include a test file under Isosurfacing 3/test/Isosurfacing 3, visualization of test cases under Isosurfacing/fig, and a theoretical background under Isosurfacing 3/doc/Isosurfacing 3/Isosurfacing 3.txt.",
+        "student_name": "Taoli Shen",
+        "code_url": "https://github.com/CGAL/cgal/issues/9047",
+        "proposal_id": "4Sd2swFy",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/OssVTW5a"
+      }
+    ],
+    "2026": []
   },
   "githubID": "CGAL",
   "repositories": [
@@ -513,8 +561,8 @@
       "html_url": "https://github.com/CGAL/cgal-dev",
       "description": "CGAL repository for the testsuite",
       "language": "C++",
-      "stargazers_count": 5,
-      "forks_count": 5,
+      "stargazers_count": 8,
+      "forks_count": 7,
       "open_issues_count": 4,
       "license": {
         "key": "other",
@@ -522,6 +570,26 @@
         "spdx_id": "NOASSERTION",
         "url": null,
         "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 219119305,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMTkxMTkzMDU=",
+      "name": "cgal-web",
+      "full_name": "CGAL/cgal-web",
+      "html_url": "https://github.com/CGAL/cgal-web",
+      "description": "The cgal.org website ",
+      "language": "HTML",
+      "stargazers_count": 7,
+      "forks_count": 14,
+      "open_issues_count": 2,
+      "license": {
+        "key": "agpl-3.0",
+        "name": "GNU Affero General Public License v3.0",
+        "spdx_id": "AGPL-3.0",
+        "url": "https://api.github.com/licenses/agpl-3.0",
+        "node_id": "MDc6TGljZW5zZTE="
       },
       "topics": []
     },
@@ -540,34 +608,6 @@
       "topics": []
     },
     {
-      "id": 827834089,
-      "node_id": "R_kgDOMVe-6Q",
-      "name": "cgal-mediawiki",
-      "full_name": "CGAL/cgal-mediawiki",
-      "html_url": "https://github.com/CGAL/cgal-mediawiki",
-      "description": "Mediawiki installation for cgal.geometryfactory.com",
-      "language": "PHP",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 31535549,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzMTUzNTU0OQ==",
-      "name": "cgal-public-dev",
-      "full_name": "CGAL/cgal-public-dev",
-      "html_url": "https://github.com/CGAL/cgal-public-dev",
-      "description": "CGAL public development",
-      "language": null,
-      "stargazers_count": 21,
-      "forks_count": 30,
-      "open_issues_count": 1,
-      "license": null,
-      "topics": []
-    },
-    {
       "id": 24677392,
       "node_id": "MDEwOlJlcG9zaXRvcnkyNDY3NzM5Mg==",
       "name": "cgal",
@@ -575,9 +615,9 @@
       "html_url": "https://github.com/CGAL/cgal",
       "description": "The public CGAL repository, see the README below",
       "language": "C++",
-      "stargazers_count": 5362,
-      "forks_count": 1464,
-      "open_issues_count": 629,
+      "stargazers_count": 5812,
+      "forks_count": 1560,
+      "open_issues_count": 689,
       "license": {
         "key": "other",
         "name": "Other",
@@ -606,23 +646,65 @@
       ]
     },
     {
-      "id": 219119305,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMTkxMTkzMDU=",
-      "name": "cgal-web",
-      "full_name": "CGAL/cgal-web",
-      "html_url": "https://github.com/CGAL/cgal-web",
-      "description": "The cgal.org website ",
-      "language": "HTML",
+      "id": 468802303,
+      "node_id": "R_kgDOG_Fa_w",
+      "name": "cgal-python-wheel",
+      "full_name": "CGAL/cgal-python-wheel",
+      "html_url": "https://github.com/CGAL/cgal-python-wheel",
+      "description": "Docker manylinux2014 container for cgal python bindings wheel creation",
+      "language": "Dockerfile",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "open_issues_count": 2,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 827834089,
+      "node_id": "R_kgDOMVe-6Q",
+      "name": "cgal-mediawiki",
+      "full_name": "CGAL/cgal-mediawiki",
+      "html_url": "https://github.com/CGAL/cgal-mediawiki",
+      "description": "Mediawiki installation for cgal.geometryfactory.com",
+      "language": "PHP",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 14617535,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNDYxNzUzNQ==",
+      "name": "releases",
+      "full_name": "CGAL/releases",
+      "html_url": "https://github.com/CGAL/releases",
+      "description": null,
+      "language": "C++",
       "stargazers_count": 6,
-      "forks_count": 15,
+      "forks_count": 8,
       "open_issues_count": 0,
       "license": {
-        "key": "agpl-3.0",
-        "name": "GNU Affero General Public License v3.0",
-        "spdx_id": "AGPL-3.0",
-        "url": "https://api.github.com/licenses/agpl-3.0",
-        "node_id": "MDc6TGljZW5zZTE="
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
       },
+      "topics": []
+    },
+    {
+      "id": 31535549,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzMTUzNTU0OQ==",
+      "name": "cgal-public-dev",
+      "full_name": "CGAL/cgal-public-dev",
+      "html_url": "https://github.com/CGAL/cgal-public-dev",
+      "description": "CGAL public development",
+      "language": null,
+      "stargazers_count": 24,
+      "forks_count": 31,
+      "open_issues_count": 0,
+      "license": null,
       "topics": []
     },
     {
@@ -633,15 +715,35 @@
       "html_url": "https://github.com/CGAL/cgal-testsuite-dockerfiles",
       "description": "Container images for the automated Linux CGAL test suite",
       "language": "Python",
-      "stargazers_count": 9,
+      "stargazers_count": 10,
       "forks_count": 9,
-      "open_issues_count": 4,
+      "open_issues_count": 2,
       "license": {
         "key": "gpl-3.0",
         "name": "GNU General Public License v3.0",
         "spdx_id": "GPL-3.0",
         "url": "https://api.github.com/licenses/gpl-3.0",
         "node_id": "MDc6TGljZW5zZTk="
+      },
+      "topics": []
+    },
+    {
+      "id": 31687002,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzMTY4NzAwMg==",
+      "name": "doxygen",
+      "full_name": "CGAL/doxygen",
+      "html_url": "https://github.com/CGAL/doxygen",
+      "description": "Version of Doxygen used to build the CGAL documention",
+      "language": "C++",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
       },
       "topics": []
     },
@@ -653,15 +755,35 @@
       "html_url": "https://github.com/CGAL/cgal-swig-bindings",
       "description": "CGAL bindings using SWIG",
       "language": "C++",
-      "stargazers_count": 377,
-      "forks_count": 94,
-      "open_issues_count": 82,
+      "stargazers_count": 389,
+      "forks_count": 101,
+      "open_issues_count": 88,
       "license": {
         "key": "other",
         "name": "Other",
         "spdx_id": "NOASSERTION",
         "url": null,
         "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 172712195,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNzI3MTIxOTU=",
+      "name": "cgal-paraview-plugins",
+      "full_name": "CGAL/cgal-paraview-plugins",
+      "html_url": "https://github.com/CGAL/cgal-paraview-plugins",
+      "description": "CGAL Paraview plugins",
+      "language": "C++",
+      "stargazers_count": 33,
+      "forks_count": 10,
+      "open_issues_count": 2,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
       },
       "topics": []
     },
@@ -694,40 +816,6 @@
       "topics": []
     },
     {
-      "id": 468802303,
-      "node_id": "R_kgDOG_Fa_w",
-      "name": "cgal-python-wheel",
-      "full_name": "CGAL/cgal-python-wheel",
-      "html_url": "https://github.com/CGAL/cgal-python-wheel",
-      "description": "Docker manylinux2014 container for cgal python bindings wheel creation",
-      "language": "Dockerfile",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 31687002,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzMTY4NzAwMg==",
-      "name": "doxygen",
-      "full_name": "CGAL/doxygen",
-      "html_url": "https://github.com/CGAL/doxygen",
-      "description": "Version of Doxygen used to build the CGAL documention",
-      "language": "C++",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
-      },
-      "topics": []
-    },
-    {
       "id": 739345148,
       "node_id": "R_kgDOLBGC_A",
       "name": "cgal-testsuite-magritte",
@@ -735,7 +823,7 @@
       "html_url": "https://github.com/CGAL/cgal-testsuite-magritte",
       "description": null,
       "language": "Shell",
-      "stargazers_count": 0,
+      "stargazers_count": 1,
       "forks_count": 0,
       "open_issues_count": 0,
       "license": null,
@@ -749,7 +837,7 @@
       "html_url": "https://github.com/CGAL/cgal-testsuite-cezanne",
       "description": null,
       "language": "Shell",
-      "stargazers_count": 0,
+      "stargazers_count": 1,
       "forks_count": 0,
       "open_issues_count": 0,
       "license": null,
@@ -763,30 +851,10 @@
       "html_url": "https://github.com/CGAL/cgal-testsuite-taylor",
       "description": null,
       "language": "Shell",
-      "stargazers_count": 0,
+      "stargazers_count": 1,
       "forks_count": 0,
       "open_issues_count": 0,
       "license": null,
-      "topics": []
-    },
-    {
-      "id": 14617535,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNDYxNzUzNQ==",
-      "name": "releases",
-      "full_name": "CGAL/releases",
-      "html_url": "https://github.com/CGAL/releases",
-      "description": null,
-      "language": "C++",
-      "stargazers_count": 7,
-      "forks_count": 8,
-      "open_issues_count": 0,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
       "topics": []
     },
     {
@@ -797,7 +865,7 @@
       "html_url": "https://github.com/CGAL/cgal-mediawiki-docker",
       "description": null,
       "language": "PHP",
-      "stargazers_count": 1,
+      "stargazers_count": 2,
       "forks_count": 0,
       "open_issues_count": 0,
       "license": null,
@@ -825,30 +893,10 @@
       "html_url": "https://github.com/CGAL/cgal-testsuite-monet",
       "description": "Backup of configuration for testsuite of monet ",
       "language": "Shell",
-      "stargazers_count": 0,
+      "stargazers_count": 1,
       "forks_count": 0,
       "open_issues_count": 0,
       "license": null,
-      "topics": []
-    },
-    {
-      "id": 172712195,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNzI3MTIxOTU=",
-      "name": "cgal-paraview-plugins",
-      "full_name": "CGAL/cgal-paraview-plugins",
-      "html_url": "https://github.com/CGAL/cgal-paraview-plugins",
-      "description": "CGAL Paraview plugins",
-      "language": "C++",
-      "stargazers_count": 30,
-      "forks_count": 10,
-      "open_issues_count": 2,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
       "topics": []
     },
     {
@@ -859,7 +907,7 @@
       "html_url": "https://github.com/CGAL/cgal-documentation-dockerfile",
       "description": " Docker file for the generation of the CGAL documentation using Doxygen",
       "language": "Shell",
-      "stargazers_count": 0,
+      "stargazers_count": 1,
       "forks_count": 2,
       "open_issues_count": 0,
       "license": null,
@@ -981,7 +1029,7 @@
       "node_id": "MDQ6VXNlcjU3NDY2NzU=",
       "avatar_url": "https://avatars.githubusercontent.com/u/5746675?v=4",
       "html_url": "https://github.com/lrineau",
-      "contributions": 3
+      "contributions": 257
     },
     {
       "login": "afabri",
@@ -989,7 +1037,7 @@
       "node_id": "MDQ6VXNlcjMyNjM1Mzk=",
       "avatar_url": "https://avatars.githubusercontent.com/u/3263539?v=4",
       "html_url": "https://github.com/afabri",
-      "contributions": 12045
+      "contributions": 187
     },
     {
       "login": "sloriot",
@@ -997,7 +1045,7 @@
       "node_id": "MDQ6VXNlcjEyMjQ2MzI=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1224632?v=4",
       "html_url": "https://github.com/sloriot",
-      "contributions": 11112
+      "contributions": 92
     },
     {
       "login": "MaelRL",
@@ -1005,7 +1053,7 @@
       "node_id": "MDQ6VXNlcjUwNzQxNzA=",
       "avatar_url": "https://avatars.githubusercontent.com/u/5074170?v=4",
       "html_url": "https://github.com/MaelRL",
-      "contributions": 6249
+      "contributions": 195
     },
     {
       "login": "maxGimeno",
@@ -1013,7 +1061,7 @@
       "node_id": "MDQ6VXNlcjExMzEwODA1",
       "avatar_url": "https://avatars.githubusercontent.com/u/11310805?v=4",
       "html_url": "https://github.com/maxGimeno",
-      "contributions": 4787
+      "contributions": 6
     },
     {
       "login": "janetournois",
@@ -1021,7 +1069,7 @@
       "node_id": "MDQ6VXNlcjExMzExMzA1",
       "avatar_url": "https://avatars.githubusercontent.com/u/11311305?v=4",
       "html_url": "https://github.com/janetournois",
-      "contributions": 4065
+      "contributions": 32
     },
     {
       "login": "sgiraudot",
@@ -1029,7 +1077,7 @@
       "node_id": "MDQ6VXNlcjEyODkwNjM5",
       "avatar_url": "https://avatars.githubusercontent.com/u/12890639?v=4",
       "html_url": "https://github.com/sgiraudot",
-      "contributions": 2853
+      "contributions": 23
     },
     {
       "login": "gdamiand",
@@ -1037,7 +1085,7 @@
       "node_id": "MDQ6VXNlcjk0NDUyNg==",
       "avatar_url": "https://avatars.githubusercontent.com/u/944526?v=4",
       "html_url": "https://github.com/gdamiand",
-      "contributions": 2257
+      "contributions": 28
     },
     {
       "login": "cjamin",
@@ -1045,15 +1093,7 @@
       "node_id": "MDQ6VXNlcjg4MzA4MDI=",
       "avatar_url": "https://avatars.githubusercontent.com/u/8830802?v=4",
       "html_url": "https://github.com/cjamin",
-      "contributions": 1847
-    },
-    {
-      "login": "ericberberich",
-      "id": 243241,
-      "node_id": "MDQ6VXNlcjI0MzI0MQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/243241?v=4",
-      "html_url": "https://github.com/ericberberich",
-      "contributions": 1523
+      "contributions": 11
     },
     {
       "login": "efifogel",
@@ -1061,7 +1101,15 @@
       "node_id": "MDQ6VXNlcjY5NTI2MzI=",
       "avatar_url": "https://avatars.githubusercontent.com/u/6952632?v=4",
       "html_url": "https://github.com/efifogel",
-      "contributions": 1467
+      "contributions": 10
+    },
+    {
+      "login": "ericberberich",
+      "id": 243241,
+      "node_id": "MDQ6VXNlcjI0MzI0MQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/243241?v=4",
+      "html_url": "https://github.com/ericberberich",
+      "contributions": 2
     },
     {
       "login": "MoniqueTeillaud",
@@ -1069,7 +1117,7 @@
       "node_id": "MDQ6VXNlcjkzNDg5NDE=",
       "avatar_url": "https://avatars.githubusercontent.com/u/9348941?v=4",
       "html_url": "https://github.com/MoniqueTeillaud",
-      "contributions": 1336
+      "contributions": 96
     },
     {
       "login": "HoffmannMichael",
@@ -1077,7 +1125,7 @@
       "node_id": "MDQ6VXNlcjExMzExNTE0",
       "avatar_url": "https://avatars.githubusercontent.com/u/11311514?v=4",
       "html_url": "https://github.com/HoffmannMichael",
-      "contributions": 1227
+      "contributions": 1
     },
     {
       "login": "mglisse",
@@ -1085,7 +1133,7 @@
       "node_id": "MDQ6VXNlcjEwMDk3ODYz",
       "avatar_url": "https://avatars.githubusercontent.com/u/10097863?v=4",
       "html_url": "https://github.com/mglisse",
-      "contributions": 1106
+      "contributions": 1109
     },
     {
       "login": "danston",
@@ -1093,7 +1141,7 @@
       "node_id": "MDQ6VXNlcjgxMjM1ODY=",
       "avatar_url": "https://avatars.githubusercontent.com/u/8123586?v=4",
       "html_url": "https://github.com/danston",
-      "contributions": 1014
+      "contributions": 1017
     },
     {
       "login": "soesau",
@@ -1101,7 +1149,7 @@
       "node_id": "MDQ6VXNlcjExMTYxMjU5",
       "avatar_url": "https://avatars.githubusercontent.com/u/11161259?v=4",
       "html_url": "https://github.com/soesau",
-      "contributions": 770
+      "contributions": 3
     },
     {
       "login": "drussel",
@@ -1117,7 +1165,7 @@
       "node_id": "MDQ6VXNlcjQzMDIxMTYy",
       "avatar_url": "https://avatars.githubusercontent.com/u/43021162?v=4",
       "html_url": "https://github.com/JacksonCampolattaro",
-      "contributions": 756
+      "contributions": 11
     },
     {
       "login": "ilkeryaz",
@@ -1152,12 +1200,28 @@
       "contributions": 402
     },
     {
+      "login": "LeoValque",
+      "id": 131978677,
+      "node_id": "U_kgDOB93VtQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/131978677?v=4",
+      "html_url": "https://github.com/LeoValque",
+      "contributions": 395
+    },
+    {
       "login": "aympelle",
       "id": 10996188,
       "node_id": "MDQ6VXNlcjEwOTk2MTg4",
       "avatar_url": "https://avatars.githubusercontent.com/u/10996188?v=4",
       "html_url": "https://github.com/aympelle",
       "contributions": 346
+    },
+    {
+      "login": "albert-github",
+      "id": 5223533,
+      "node_id": "MDQ6VXNlcjUyMjM1MzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5223533?v=4",
+      "html_url": "https://github.com/albert-github",
+      "contributions": 311
     },
     {
       "login": "gaertn",
@@ -1176,20 +1240,12 @@
       "contributions": 275
     },
     {
-      "login": "albert-github",
-      "id": 5223533,
-      "node_id": "MDQ6VXNlcjUyMjM1MzM=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/5223533?v=4",
-      "html_url": "https://github.com/albert-github",
-      "contributions": 255
-    },
-    {
       "login": "bo0ts",
       "id": 76102,
       "node_id": "MDQ6VXNlcjc2MTAy",
       "avatar_url": "https://avatars.githubusercontent.com/u/76102?v=4",
       "html_url": "https://github.com/bo0ts",
-      "contributions": 225
+      "contributions": 11
     },
     {
       "login": "odevil",
@@ -1208,12 +1264,68 @@
       "contributions": 204
     },
     {
-      "login": "glimmercn",
-      "id": 1971138,
-      "node_id": "MDQ6VXNlcjE5NzExMzg=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1971138?v=4",
-      "html_url": "https://github.com/glimmercn",
-      "contributions": 201
+      "login": "SaillantNicolas",
+      "id": 97436229,
+      "node_id": "U_kgDOBc7CRQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/97436229?v=4",
+      "html_url": "https://github.com/SaillantNicolas",
+      "contributions": 36
+    },
+    {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "html_url": "https://github.com/apps/dependabot",
+      "contributions": 30
+    },
+    {
+      "login": "pougetma",
+      "id": 11312304,
+      "node_id": "MDQ6VXNlcjExMzEyMzA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11312304?v=4",
+      "html_url": "https://github.com/pougetma",
+      "contributions": 4
+    },
+    {
+      "login": "joachim-reichel",
+      "id": 11339744,
+      "node_id": "MDQ6VXNlcjExMzM5NzQ0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11339744?v=4",
+      "html_url": "https://github.com/joachim-reichel",
+      "contributions": 3
+    },
+    {
+      "login": "eberberich",
+      "id": 156214061,
+      "node_id": "U_kgDOCU-jLQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/156214061?v=4",
+      "html_url": "https://github.com/eberberich",
+      "contributions": 2
+    },
+    {
+      "login": "lbartoletti",
+      "id": 7521540,
+      "node_id": "MDQ6VXNlcjc1MjE1NDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7521540?v=4",
+      "html_url": "https://github.com/lbartoletti",
+      "contributions": 2
+    },
+    {
+      "login": "benlaurie",
+      "id": 40044,
+      "node_id": "MDQ6VXNlcjQwMDQ0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40044?v=4",
+      "html_url": "https://github.com/benlaurie",
+      "contributions": 1
+    },
+    {
+      "login": "palliez",
+      "id": 11337860,
+      "node_id": "MDQ6VXNlcjExMzM3ODYw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11337860?v=4",
+      "html_url": "https://github.com/palliez",
+      "contributions": 1
     }
   ],
   "activeOrg": true

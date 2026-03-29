@@ -57,7 +57,8 @@
     2022,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2016": [
@@ -530,16 +531,177 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/dz0PI5I1"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "PeakRDL Exporter Plugin for CSR Visualization on Makerchip",
+        "short_description": "The project aims to add an exporter plugin for PeakRDL that enables a high level visualization for control & status register (CSR) design using...",
+        "description": "The project aims to add an exporter plugin for PeakRDL that enables a high level visualization for control & status register (CSR) design using Makerchip’s IDE and the visual debug (VIZ) framework. Makerchip provides an IDE for TL-Verilog design and simulation, where special JavaScript code can be written (VIZ Model) alongside the design to add a higher level of signal visualization that helps in simulation debugging.",
+        "student_name": "Ali Mohsen",
+        "code_url": "https://www.notion.so/PeakRDL-Visualization-Plugin-Dashboard-1f1c4559ebc580f28569c37f54d25bdd",
+        "proposal_id": "3FeY0Lho",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/HzAZmK1x"
+      },
+      {
+        "title": "Device-Under-Test Python Typing Stub Generator for cocotb tests",
+        "short_description": "This project aims to create a tool that automatically generates Python typing stubs for the Device Under Test (DUT) in cocotb-based hardware...",
+        "description": "This project aims to create a tool that automatically generates Python typing stubs for the Device Under Test (DUT) in cocotb-based hardware verification testbenches. By leveraging cocotb’s existing introspection capabilities, the tool will produce .pyi stub files describing the DUT’s interface – its hierarchy of modules and signals – in a statically typed fashion. These stubs will enable IDE features like auto-completion via VS Code’s Pylance and allow static type checkers such as mypy to catch errors in testbench code, significantly improving the hardware verification development experience​. The generated stubs will mirror the HDL design’s structure (with considerations for hierarchical vs. flat representations) and provide a structured abstraction of the DUT interface that can even be used for mocking or unit-testing components of the testbench. Initially, the stub generator will rely on runtime cocotb introspection only, but it will be designed with extensibility in mind, so that future enhancements (e.g., integrating a SystemVerilog language server like slang for richer type info) can be incorporated​. Over a 175-hour Google Summer of Code timeline, the project will deliver a working stub-generation utility, along with documentation, tests, and integration into the cocotb ecosystem, providing a concrete benefit to the open-source hardware verification community.",
+        "student_name": "chaitanyasharma",
+        "code_url": "https://github.com/cocotb/copra",
+        "proposal_id": "rbakqbAv",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/9RiVc4jy"
+      },
+      {
+        "title": "OpenRISC Linux Feature Development",
+        "short_description": "​​Jump Label Implementation​​ aims to eliminate branch overhead in kernel code by dynamically patching JMP/NOP instructions at runtime using GCC's...",
+        "description": "​​Jump Label Implementation​​ aims to eliminate branch overhead in kernel code by dynamically patching JMP/NOP instructions at runtime using GCC's asm goto feature. This involves defining static branch templates (ARCH_STATIC_BRANCH_ASM for NOP cases and ARCH_STATIC_BRANCH_JUMP_ASM for JMP cases) and implementing core functions (arch_static_branch and arch_static_branch_jump) along with a runtime patching mechanism (arch_jump_label_transform). The key deliverable is near-zero-cost branch decisions, significantly improving performance for frequently checked kernel conditions like tracepoints and debugging checks.\n\n​​Ftrace Implementation​​ provides efficient function tracing (function) and call-graph profiling (function_graph) with minimal overhead. The -pg compiler flag inserts mcount() calls that dynamically redirect to either a no-op stub (when disabled) or a full tracer (when enabled). The implementation includes dynamic redirection in mcount(), the core function tracer (ftrace_trace_function), and the extended function_graph tracer with entry/exit hooks (ftrace_graph_caller and return_to_handler). This enables deep call-stack analysis while maintaining low runtime cost when tracing is inactive, supporting dynamic kernel debugging with minimal performance impact.",
+        "student_name": "Chen Miao",
+        "code_url": "https://github.com/ChenMiaoi/GSoC-2025-Final-Report",
+        "proposal_id": "aJ9KZpnG",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/qYsJ8YEg"
+      },
+      {
+        "title": "Architectural Improvements to OpenPiton+Ariane for RISC-V Profile Compliance",
+        "short_description": "This project aims to enhance the OpenPiton+Ariane architecture to progress toward RISC-V RVA23 profile compliance. The primary focus will be...",
+        "description": "This project aims to enhance the OpenPiton+Ariane architecture to progress toward RISC-V RVA23 profile compliance. The primary focus will be implementing the Svnapot extension, which allows for Naturally Aligned Power-Of-Two regions in memory to improve TLB efficiency. I will modify the CVA6 Memory Management Unit (MMU), specifically the Page Table Walker (PTW) and Translation Lookaside Buffer (TLB), to support this extension. As stretch goals, I plan to implement additional supervisor extensions required for RVA23 compliance, such as Svpbmt (Page-Based Memory Types) and Svadu (Hardware Updating of A/D Bits). The project will include comprehensive testing and documentation, ensuring all implementations conform to RISC-V specifications while integrating seamlessly with the existing architecture.",
+        "student_name": "Jayishnu Uttane",
+        "code_url": "https://jayishnu.vercel.app/blog/gsoc-journey",
+        "proposal_id": "K0LuZBP2",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/JPg97sG6"
+      },
+      {
+        "title": "Metro-MPI++",
+        "short_description": "Modern RTL simulation is computationally expensive and often limited by single-node processing capabilities. This proposal aims to improve...",
+        "description": "Modern RTL simulation is computationally expensive and often limited by single-node processing capabilities. This proposal aims to improve Metro-MPI++, a tool for distributed RTL simulation using Verilator and MPI, to better handle large-scale designs like OpenPiton. The project focuses on automating tile and interconnect detection in OpenPiton, optimizing MPI-based simulation interfaces, integrating hybrid parallelism with OpenMP, and laying the groundwork for FPGA backend support. The deliverables include a scalable partitioning framework, enhancements to the simulation runtime, example simulations demonstrating speedup, and contributions to Verilator’s partitioning features. These improvements will make RTL simulation more scalable, accessible, and efficient for open-source hardware projects.",
+        "student_name": "Kislay Arya",
+        "code_url": "https://kislay536.github.io/projects/Metro-MPI++/",
+        "proposal_id": "xrwHEIg6",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/PkUd6Us3"
+      }
+    ],
+    "2026": []
   },
   "githubID": "fossi-foundation",
   "repositories": [
     {
-      "id": 979715947,
-      "node_id": "R_kgDOOmVHaw",
-      "name": "sky130_ef_ip__adc3v_12bit",
-      "full_name": "fossi-foundation/sky130_ef_ip__adc3v_12bit",
-      "html_url": "https://github.com/fossi-foundation/sky130_ef_ip__adc3v_12bit",
+      "id": 1144889262,
+      "node_id": "R_kgDORD2frg",
+      "name": "ode4ec.eu",
+      "full_name": "fossi-foundation/ode4ec.eu",
+      "html_url": "https://github.com/fossi-foundation/ode4ec.eu",
+      "description": null,
+      "language": "CSS",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 587900262,
+      "node_id": "R_kgDOIwqlZg",
+      "name": "fossi-foundation-web",
+      "full_name": "fossi-foundation/fossi-foundation-web",
+      "html_url": "https://github.com/fossi-foundation/fossi-foundation-web",
+      "description": null,
+      "language": "Vue",
+      "stargazers_count": 30,
+      "forks_count": 36,
+      "open_issues_count": 15,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 957851556,
+      "node_id": "R_kgDOORenpA",
+      "name": "nix-eda",
+      "full_name": "fossi-foundation/nix-eda",
+      "html_url": "https://github.com/fossi-foundation/nix-eda",
+      "description": "Nix flake for more up-to-date versions of EDA tools",
+      "language": "Nix",
+      "stargazers_count": 20,
+      "forks_count": 1,
+      "open_issues_count": 1,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": [
+        "eda",
+        "electronic-design-automation",
+        "flake",
+        "nix",
+        "nix-flake"
+      ]
+    },
+    {
+      "id": 966850989,
+      "node_id": "R_kgDOOaD5rQ",
+      "name": "ciel-releases",
+      "full_name": "fossi-foundation/ciel-releases",
+      "html_url": "https://github.com/fossi-foundation/ciel-releases",
+      "description": "Repo holding releases for Ciel",
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 2,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 979715548,
+      "node_id": "R_kgDOOmVF3A",
+      "name": "globalfoundries-pdk-libs-gf180mcu_fd_pr",
+      "full_name": "fossi-foundation/globalfoundries-pdk-libs-gf180mcu_fd_pr",
+      "html_url": "https://github.com/fossi-foundation/globalfoundries-pdk-libs-gf180mcu_fd_pr",
+      "description": null,
+      "language": "Jupyter Notebook",
+      "stargazers_count": 2,
+      "forks_count": 6,
+      "open_issues_count": 7,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 979715556,
+      "node_id": "R_kgDOOmVF5A",
+      "name": "globalfoundries-pdk-libs-gf180mcu_fd_pv",
+      "full_name": "fossi-foundation/globalfoundries-pdk-libs-gf180mcu_fd_pv",
+      "html_url": "https://github.com/fossi-foundation/globalfoundries-pdk-libs-gf180mcu_fd_pv",
+      "description": null,
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 3,
+      "open_issues_count": 4,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 975290308,
+      "node_id": "R_kgDOOiG_xA",
+      "name": "skywater-pdk-libs-sky130_fd_sc_ms",
+      "full_name": "fossi-foundation/skywater-pdk-libs-sky130_fd_sc_ms",
+      "html_url": "https://github.com/fossi-foundation/skywater-pdk-libs-sky130_fd_sc_ms",
       "description": null,
       "language": "Verilog",
       "stargazers_count": 0,
@@ -555,13 +717,13 @@
       "topics": []
     },
     {
-      "id": 979715993,
-      "node_id": "R_kgDOOmVHmQ",
-      "name": "sky130_ef_ip__ccomp3v",
-      "full_name": "fossi-foundation/sky130_ef_ip__ccomp3v",
-      "html_url": "https://github.com/fossi-foundation/sky130_ef_ip__ccomp3v",
+      "id": 975290268,
+      "node_id": "R_kgDOOiG_nA",
+      "name": "skywater-pdk-libs-sky130_fd_sc_hd",
+      "full_name": "fossi-foundation/skywater-pdk-libs-sky130_fd_sc_hd",
+      "html_url": "https://github.com/fossi-foundation/skywater-pdk-libs-sky130_fd_sc_hd",
       "description": null,
-      "language": "Tcl",
+      "language": "Verilog",
       "stargazers_count": 0,
       "forks_count": 0,
       "open_issues_count": 0,
@@ -575,27 +737,13 @@
       "topics": []
     },
     {
-      "id": 979715973,
-      "node_id": "R_kgDOOmVHhQ",
-      "name": "sky130_ef_ip__cdac3v_12bit",
-      "full_name": "fossi-foundation/sky130_ef_ip__cdac3v_12bit",
-      "html_url": "https://github.com/fossi-foundation/sky130_ef_ip__cdac3v_12bit",
+      "id": 975290297,
+      "node_id": "R_kgDOOiG_uQ",
+      "name": "skywater-pdk-libs-sky130_fd_sc_hs",
+      "full_name": "fossi-foundation/skywater-pdk-libs-sky130_fd_sc_hs",
+      "html_url": "https://github.com/fossi-foundation/skywater-pdk-libs-sky130_fd_sc_hs",
       "description": null,
-      "language": "Tcl",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 979715960,
-      "node_id": "R_kgDOOmVHeA",
-      "name": "sky130_ef_ip__rdac3v_8bit",
-      "full_name": "fossi-foundation/sky130_ef_ip__rdac3v_8bit",
-      "html_url": "https://github.com/fossi-foundation/sky130_ef_ip__rdac3v_8bit",
-      "description": null,
-      "language": "MATLAB",
+      "language": "Verilog",
       "stargazers_count": 0,
       "forks_count": 0,
       "open_issues_count": 0,
@@ -609,13 +757,13 @@
       "topics": []
     },
     {
-      "id": 979716020,
-      "node_id": "R_kgDOOmVHtA",
-      "name": "sky130_ef_ip__samplehold",
-      "full_name": "fossi-foundation/sky130_ef_ip__samplehold",
-      "html_url": "https://github.com/fossi-foundation/sky130_ef_ip__samplehold",
+      "id": 975290316,
+      "node_id": "R_kgDOOiG_zA",
+      "name": "skywater-pdk-libs-sky130_fd_sc_ls",
+      "full_name": "fossi-foundation/skywater-pdk-libs-sky130_fd_sc_ls",
+      "html_url": "https://github.com/fossi-foundation/skywater-pdk-libs-sky130_fd_sc_ls",
       "description": null,
-      "language": "Tcl",
+      "language": "Verilog",
       "stargazers_count": 0,
       "forks_count": 0,
       "open_issues_count": 0,
@@ -629,16 +777,16 @@
       "topics": []
     },
     {
-      "id": 979715548,
-      "node_id": "R_kgDOOmVF3A",
-      "name": "globalfoundries-pdk-libs-gf180mcu_fd_pr",
-      "full_name": "fossi-foundation/globalfoundries-pdk-libs-gf180mcu_fd_pr",
-      "html_url": "https://github.com/fossi-foundation/globalfoundries-pdk-libs-gf180mcu_fd_pr",
-      "description": null,
-      "language": "Jupyter Notebook",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 1,
+      "id": 953893226,
+      "node_id": "R_kgDOONtBag",
+      "name": "cace",
+      "full_name": "fossi-foundation/cace",
+      "html_url": "https://github.com/fossi-foundation/cace",
+      "description": "Circuit Automatic Characterization Engine",
+      "language": "Python",
+      "stargazers_count": 10,
+      "forks_count": 3,
+      "open_issues_count": 19,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -649,97 +797,63 @@
       "topics": []
     },
     {
-      "id": 979716004,
-      "node_id": "R_kgDOOmVHpA",
-      "name": "sky130_ef_ip__simple_por",
-      "full_name": "fossi-foundation/sky130_ef_ip__simple_por",
-      "html_url": "https://github.com/fossi-foundation/sky130_ef_ip__simple_por",
+      "id": 979715605,
+      "node_id": "R_kgDOOmVGFQ",
+      "name": "openrcx-calibration",
+      "full_name": "fossi-foundation/openrcx-calibration",
+      "html_url": "https://github.com/fossi-foundation/openrcx-calibration",
       "description": null,
-      "language": "Shell",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 957561657,
-      "node_id": "R_kgDOORM7OQ",
-      "name": "open-source-chips-europe",
-      "full_name": "fossi-foundation/open-source-chips-europe",
-      "html_url": "https://github.com/fossi-foundation/open-source-chips-europe",
-      "description": null,
-      "language": "Ruby",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 957851556,
-      "node_id": "R_kgDOORenpA",
-      "name": "nix-eda",
-      "full_name": "fossi-foundation/nix-eda",
-      "html_url": "https://github.com/fossi-foundation/nix-eda",
-      "description": "Nix flake for more up-to-date versions of EDA tools",
-      "language": "Nix",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 4,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "eda",
-        "electronic-design-automation",
-        "flake",
-        "nix",
-        "nix-flake"
-      ]
-    },
-    {
-      "id": 587900262,
-      "node_id": "R_kgDOIwqlZg",
-      "name": "fossi-foundation-web",
-      "full_name": "fossi-foundation/fossi-foundation-web",
-      "html_url": "https://github.com/fossi-foundation/fossi-foundation-web",
-      "description": null,
-      "language": "Vue",
-      "stargazers_count": 16,
-      "forks_count": 29,
-      "open_issues_count": 9,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 966850989,
-      "node_id": "R_kgDOOaD5rQ",
-      "name": "ciel-releases",
-      "full_name": "fossi-foundation/ciel-releases",
-      "html_url": "https://github.com/fossi-foundation/ciel-releases",
-      "description": "Repo holding releases for Ciel",
       "language": "Python",
       "stargazers_count": 0,
-      "forks_count": 0,
+      "forks_count": 1,
       "open_issues_count": 0,
-      "license": null,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 975289098,
+      "node_id": "R_kgDOOiG7Cg",
+      "name": "skywater-pdk-libs-sky130_fd_pr",
+      "full_name": "fossi-foundation/skywater-pdk-libs-sky130_fd_pr",
+      "html_url": "https://github.com/fossi-foundation/skywater-pdk-libs-sky130_fd_pr",
+      "description": null,
+      "language": "Python",
+      "stargazers_count": 1,
+      "forks_count": 2,
+      "open_issues_count": 0,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 979715582,
+      "node_id": "R_kgDOOmVF_g",
+      "name": "sky130_klayout_pdk",
+      "full_name": "fossi-foundation/sky130_klayout_pdk",
+      "html_url": "https://github.com/fossi-foundation/sky130_klayout_pdk",
+      "description": null,
+      "language": "Python",
+      "stargazers_count": 1,
+      "forks_count": 2,
+      "open_issues_count": 0,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
       "topics": []
     },
     {
@@ -750,8 +864,8 @@
       "html_url": "https://github.com/fossi-foundation/ciel",
       "description": "Open-source PDK version manager",
       "language": "Python",
-      "stargazers_count": 12,
-      "forks_count": 0,
+      "stargazers_count": 42,
+      "forks_count": 6,
       "open_issues_count": 6,
       "license": {
         "key": "apache-2.0",
@@ -763,11 +877,11 @@
       "topics": []
     },
     {
-      "id": 979715674,
-      "node_id": "R_kgDOOmVGWg",
-      "name": "openframe_user_project",
-      "full_name": "fossi-foundation/openframe_user_project",
-      "html_url": "https://github.com/fossi-foundation/openframe_user_project",
+      "id": 979715566,
+      "node_id": "R_kgDOOmVF7g",
+      "name": "globalfoundries-pdk-libs-gf180mcu_fd_sc_mcu7t5v0",
+      "full_name": "fossi-foundation/globalfoundries-pdk-libs-gf180mcu_fd_sc_mcu7t5v0",
+      "html_url": "https://github.com/fossi-foundation/globalfoundries-pdk-libs-gf180mcu_fd_sc_mcu7t5v0",
       "description": null,
       "language": "Verilog",
       "stargazers_count": 0,
@@ -783,13 +897,13 @@
       "topics": []
     },
     {
-      "id": 979715782,
-      "node_id": "R_kgDOOmVGxg",
-      "name": "panamax",
-      "full_name": "fossi-foundation/panamax",
-      "html_url": "https://github.com/fossi-foundation/panamax",
+      "id": 979715594,
+      "node_id": "R_kgDOOmVGCg",
+      "name": "mpw_precheck",
+      "full_name": "fossi-foundation/mpw_precheck",
+      "html_url": "https://github.com/fossi-foundation/mpw_precheck",
       "description": null,
-      "language": "Verilog",
+      "language": "Python",
       "stargazers_count": 0,
       "forks_count": 0,
       "open_issues_count": 0,
@@ -803,15 +917,15 @@
       "topics": []
     },
     {
-      "id": 979715688,
-      "node_id": "R_kgDOOmVGaA",
-      "name": "openframe_timer_example",
-      "full_name": "fossi-foundation/openframe_timer_example",
-      "html_url": "https://github.com/fossi-foundation/openframe_timer_example",
+      "id": 979715541,
+      "node_id": "R_kgDOOmVF1Q",
+      "name": "globalfoundries-pdk-libs-gf180mcu_fd_io",
+      "full_name": "fossi-foundation/globalfoundries-pdk-libs-gf180mcu_fd_io",
+      "html_url": "https://github.com/fossi-foundation/globalfoundries-pdk-libs-gf180mcu_fd_io",
       "description": null,
       "language": "Verilog",
       "stargazers_count": 0,
-      "forks_count": 0,
+      "forks_count": 2,
       "open_issues_count": 0,
       "license": {
         "key": "apache-2.0",
@@ -823,15 +937,15 @@
       "topics": []
     },
     {
-      "id": 979715701,
-      "node_id": "R_kgDOOmVGdQ",
-      "name": "caravel-lite",
-      "full_name": "fossi-foundation/caravel-lite",
-      "html_url": "https://github.com/fossi-foundation/caravel-lite",
+      "id": 979715575,
+      "node_id": "R_kgDOOmVF9w",
+      "name": "globalfoundries-pdk-libs-gf180mcu_fd_sc_mcu9t5v0",
+      "full_name": "fossi-foundation/globalfoundries-pdk-libs-gf180mcu_fd_sc_mcu9t5v0",
+      "html_url": "https://github.com/fossi-foundation/globalfoundries-pdk-libs-gf180mcu_fd_sc_mcu9t5v0",
       "description": null,
       "language": "Verilog",
       "stargazers_count": 0,
-      "forks_count": 0,
+      "forks_count": 2,
       "open_issues_count": 0,
       "license": {
         "key": "apache-2.0",
@@ -843,43 +957,45 @@
       "topics": []
     },
     {
-      "id": 979715726,
-      "node_id": "R_kgDOOmVGjg",
-      "name": "caravel-gf180mcu",
-      "full_name": "fossi-foundation/caravel-gf180mcu",
-      "html_url": "https://github.com/fossi-foundation/caravel-gf180mcu",
-      "description": null,
-      "language": "Verilog",
-      "stargazers_count": 0,
+      "id": 1042978394,
+      "node_id": "R_kgDOPiqWWg",
+      "name": "verilator-action",
+      "full_name": "fossi-foundation/verilator-action",
+      "html_url": "https://github.com/fossi-foundation/verilator-action",
+      "description": "GitHub Action running Verilator",
+      "language": "JavaScript",
+      "stargazers_count": 2,
       "forks_count": 0,
       "open_issues_count": 0,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
+      "license": null,
       "topics": []
     },
     {
-      "id": 979715634,
-      "node_id": "R_kgDOOmVGMg",
-      "name": "caravel_mgmt_soc_litex",
-      "full_name": "fossi-foundation/caravel_mgmt_soc_litex",
-      "html_url": "https://github.com/fossi-foundation/caravel_mgmt_soc_litex",
+      "id": 1044713536,
+      "node_id": "R_kgDOPkUQQA",
+      "name": "librelane-action",
+      "full_name": "fossi-foundation/librelane-action",
+      "html_url": "https://github.com/fossi-foundation/librelane-action",
       "description": null,
-      "language": "Verilog",
-      "stargazers_count": 0,
+      "language": "JavaScript",
+      "stargazers_count": 4,
       "forks_count": 0,
       "open_issues_count": 0,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1044712075,
+      "node_id": "R_kgDOPkUKiw",
+      "name": "action-lib",
+      "full_name": "fossi-foundation/action-lib",
+      "html_url": "https://github.com/fossi-foundation/action-lib",
+      "description": null,
+      "language": "JavaScript",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
       "topics": []
     },
     {
@@ -890,27 +1006,7 @@
       "html_url": "https://github.com/fossi-foundation/caravel",
       "description": null,
       "language": "Verilog",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 979715711,
-      "node_id": "R_kgDOOmVGfw",
-      "name": "caravel_openframe-lite",
-      "full_name": "fossi-foundation/caravel_openframe-lite",
-      "html_url": "https://github.com/fossi-foundation/caravel_openframe-lite",
-      "description": null,
-      "language": "Verilog",
-      "stargazers_count": 0,
+      "stargazers_count": 1,
       "forks_count": 0,
       "open_issues_count": 0,
       "license": {
@@ -931,17 +1027,17 @@
       "description": null,
       "language": "Verilog",
       "stargazers_count": 0,
-      "forks_count": 0,
+      "forks_count": 1,
       "open_issues_count": 0,
       "license": null,
       "topics": []
     },
     {
-      "id": 979715651,
-      "node_id": "R_kgDOOmVGQw",
-      "name": "caravel_user_project_analog",
-      "full_name": "fossi-foundation/caravel_user_project_analog",
-      "html_url": "https://github.com/fossi-foundation/caravel_user_project_analog",
+      "id": 975290254,
+      "node_id": "R_kgDOOiG_jg",
+      "name": "skywater-pdk-libs-sky130_fd_io",
+      "full_name": "fossi-foundation/skywater-pdk-libs-sky130_fd_io",
+      "html_url": "https://github.com/fossi-foundation/skywater-pdk-libs-sky130_fd_io",
       "description": null,
       "language": "Verilog",
       "stargazers_count": 0,
@@ -957,11 +1053,11 @@
       "topics": []
     },
     {
-      "id": 979715642,
-      "node_id": "R_kgDOOmVGOg",
-      "name": "caravel_user_project",
-      "full_name": "fossi-foundation/caravel_user_project",
-      "html_url": "https://github.com/fossi-foundation/caravel_user_project",
+      "id": 975290330,
+      "node_id": "R_kgDOOiG_2g",
+      "name": "skywater-pdk-libs-sky130_fd_sc_hvl",
+      "full_name": "fossi-foundation/skywater-pdk-libs-sky130_fd_sc_hvl",
+      "html_url": "https://github.com/fossi-foundation/skywater-pdk-libs-sky130_fd_sc_hvl",
       "description": null,
       "language": "Verilog",
       "stargazers_count": 0,
@@ -977,25 +1073,11 @@
       "topics": []
     },
     {
-      "id": 979715625,
-      "node_id": "R_kgDOOmVGKQ",
-      "name": "caravel_board",
-      "full_name": "fossi-foundation/caravel_board",
-      "html_url": "https://github.com/fossi-foundation/caravel_board",
-      "description": null,
-      "language": "C",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 979715742,
-      "node_id": "R_kgDOOmVGng",
-      "name": "caravel_user_project-gf180mcu",
-      "full_name": "fossi-foundation/caravel_user_project-gf180mcu",
-      "html_url": "https://github.com/fossi-foundation/caravel_user_project-gf180mcu",
+      "id": 975290279,
+      "node_id": "R_kgDOOiG_pw",
+      "name": "skywater-pdk-libs-sky130_fd_sc_hdll",
+      "full_name": "fossi-foundation/skywater-pdk-libs-sky130_fd_sc_hdll",
+      "html_url": "https://github.com/fossi-foundation/skywater-pdk-libs-sky130_fd_sc_hdll",
       "description": null,
       "language": "Verilog",
       "stargazers_count": 0,
@@ -1011,34 +1093,14 @@
       "topics": []
     },
     {
-      "id": 979715736,
-      "node_id": "R_kgDOOmVGmA",
-      "name": "caravel_mgmt_soc-gf180mcu",
-      "full_name": "fossi-foundation/caravel_mgmt_soc-gf180mcu",
-      "html_url": "https://github.com/fossi-foundation/caravel_mgmt_soc-gf180mcu",
+      "id": 975290343,
+      "node_id": "R_kgDOOiG_5w",
+      "name": "sky130_sram_macros",
+      "full_name": "fossi-foundation/sky130_sram_macros",
+      "html_url": "https://github.com/fossi-foundation/sky130_sram_macros",
       "description": null,
-      "language": "Verilog",
+      "language": "SourcePawn",
       "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 979715752,
-      "node_id": "R_kgDOOmVGqA",
-      "name": "frigate",
-      "full_name": "fossi-foundation/frigate",
-      "html_url": "https://github.com/fossi-foundation/frigate",
-      "description": null,
-      "language": "Verilog",
-      "stargazers_count": 1,
       "forks_count": 0,
       "open_issues_count": 0,
       "license": {
@@ -1058,8 +1120,8 @@
       "html_url": "https://github.com/fossi-foundation/frigate_analog",
       "description": null,
       "language": "Verilog",
-      "stargazers_count": 0,
-      "forks_count": 0,
+      "stargazers_count": 3,
+      "forks_count": 1,
       "open_issues_count": 0,
       "license": {
         "key": "apache-2.0",
@@ -1071,48 +1133,98 @@
       "topics": []
     },
     {
-      "id": 979715777,
-      "node_id": "R_kgDOOmVGwQ",
-      "name": "frigate_user_project",
-      "full_name": "fossi-foundation/frigate_user_project",
-      "html_url": "https://github.com/fossi-foundation/frigate_user_project",
+      "id": 979715947,
+      "node_id": "R_kgDOOmVHaw",
+      "name": "sky130_ef_ip__adc3v_12bit",
+      "full_name": "fossi-foundation/sky130_ef_ip__adc3v_12bit",
+      "html_url": "https://github.com/fossi-foundation/sky130_ef_ip__adc3v_12bit",
       "description": null,
       "language": "Verilog",
       "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 979716189,
-      "node_id": "R_kgDOOmVIXQ",
-      "name": "EF_USB_CDC",
-      "full_name": "fossi-foundation/EF_USB_CDC",
-      "html_url": "https://github.com/fossi-foundation/EF_USB_CDC",
-      "description": null,
-      "language": "Verilog",
-      "stargazers_count": 1,
-      "forks_count": 0,
+      "forks_count": 1,
       "open_issues_count": 0,
       "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
       },
       "topics": []
     }
   ],
   "contributorsDetails": [
     {
-      "login": "RTimothyEdwards",
-      "id": 12645599,
-      "node_id": "MDQ6VXNlcjEyNjQ1NTk5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/12645599?v=4",
-      "html_url": "https://github.com/RTimothyEdwards",
-      "contributions": 16
+      "login": "wallento",
+      "id": 299017,
+      "node_id": "MDQ6VXNlcjI5OTAxNw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/299017?v=4",
+      "html_url": "https://github.com/wallento",
+      "contributions": 52
+    },
+    {
+      "login": "imphil",
+      "id": 1467123,
+      "node_id": "MDQ6VXNlcjE0NjcxMjM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1467123?v=4",
+      "html_url": "https://github.com/imphil",
+      "contributions": 192
+    },
+    {
+      "login": "olofk",
+      "id": 2194902,
+      "node_id": "MDQ6VXNlcjIxOTQ5MDI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2194902?v=4",
+      "html_url": "https://github.com/olofk",
+      "contributions": 47
+    },
+    {
+      "login": "juliusbaxter",
+      "id": 1271666,
+      "node_id": "MDQ6VXNlcjEyNzE2NjY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1271666?v=4",
+      "html_url": "https://github.com/juliusbaxter",
+      "contributions": 34
+    },
+    {
+      "login": "ghalfacree",
+      "id": 1130041,
+      "node_id": "MDQ6VXNlcjExMzAwNDE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1130041?v=4",
+      "html_url": "https://github.com/ghalfacree",
+      "contributions": 33
+    },
+    {
+      "login": "Jbalkind",
+      "id": 1590433,
+      "node_id": "MDQ6VXNlcjE1OTA0MzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1590433?v=4",
+      "html_url": "https://github.com/Jbalkind",
+      "contributions": 11
+    },
+    {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "html_url": "https://github.com/apps/dependabot",
+      "contributions": 4
+    },
+    {
+      "login": "donn",
+      "id": 12652988,
+      "node_id": "MDQ6VXNlcjEyNjUyOTg4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12652988?v=4",
+      "html_url": "https://github.com/donn",
+      "contributions": 48
+    },
+    {
+      "login": "stevehoover",
+      "id": 11302288,
+      "node_id": "MDQ6VXNlcjExMzAyMjg4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11302288?v=4",
+      "html_url": "https://github.com/stevehoover",
+      "contributions": 3
     },
     {
       "login": "mole99",
@@ -1120,30 +1232,94 @@
       "node_id": "MDQ6VXNlcjM4NzczOTU=",
       "avatar_url": "https://avatars.githubusercontent.com/u/3877395?v=4",
       "html_url": "https://github.com/mole99",
+      "contributions": 28
+    },
+    {
+      "login": "fabianschuiki",
+      "id": 342324,
+      "node_id": "MDQ6VXNlcjM0MjMyNA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/342324?v=4",
+      "html_url": "https://github.com/fabianschuiki",
       "contributions": 2
     },
     {
-      "login": "areda0",
-      "id": 177234145,
-      "node_id": "U_kgDOCpBg4Q",
-      "avatar_url": "https://avatars.githubusercontent.com/u/177234145?v=4",
-      "html_url": "https://github.com/areda0",
+      "login": "dpetrisko",
+      "id": 2322266,
+      "node_id": "MDQ6VXNlcjIzMjIyNjY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2322266?v=4",
+      "html_url": "https://github.com/dpetrisko",
       "contributions": 2
     },
     {
-      "login": "d-m-bailey",
-      "id": 8349634,
-      "node_id": "MDQ6VXNlcjgzNDk2MzQ=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/8349634?v=4",
-      "html_url": "https://github.com/d-m-bailey",
+      "login": "cmarqu",
+      "id": 360986,
+      "node_id": "MDQ6VXNlcjM2MDk4Ng==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/360986?v=4",
+      "html_url": "https://github.com/cmarqu",
       "contributions": 1
     },
     {
-      "login": "azwefabless",
-      "id": 110925639,
-      "node_id": "U_kgDOBpyXRw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/110925639?v=4",
-      "html_url": "https://github.com/azwefabless",
+      "login": "TheZoq2",
+      "id": 5312813,
+      "node_id": "MDQ6VXNlcjUzMTI4MTM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5312813?v=4",
+      "html_url": "https://github.com/TheZoq2",
+      "contributions": 1
+    },
+    {
+      "login": "guillemlp",
+      "id": 8067072,
+      "node_id": "MDQ6VXNlcjgwNjcwNzI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8067072?v=4",
+      "html_url": "https://github.com/guillemlp",
+      "contributions": 1
+    },
+    {
+      "login": "ktbarrett",
+      "id": 22162772,
+      "node_id": "MDQ6VXNlcjIyMTYyNzcy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/22162772?v=4",
+      "html_url": "https://github.com/ktbarrett",
+      "contributions": 1
+    },
+    {
+      "login": "mattvenn",
+      "id": 634220,
+      "node_id": "MDQ6VXNlcjYzNDIyMA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/634220?v=4",
+      "html_url": "https://github.com/mattvenn",
+      "contributions": 1
+    },
+    {
+      "login": "oscargus",
+      "id": 8114497,
+      "node_id": "MDQ6VXNlcjgxMTQ0OTc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8114497?v=4",
+      "html_url": "https://github.com/oscargus",
+      "contributions": 1
+    },
+    {
+      "login": "stffrdhrn",
+      "id": 2404255,
+      "node_id": "MDQ6VXNlcjI0MDQyNTU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2404255?v=4",
+      "html_url": "https://github.com/stffrdhrn",
+      "contributions": 1
+    },
+    {
+      "login": "vikashsprem",
+      "id": 106796672,
+      "node_id": "U_kgDOBl2WgA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/106796672?v=4",
+      "html_url": "https://github.com/vikashsprem",
+      "contributions": 1
+    },
+    {
+      "login": "HU90m",
+      "id": 45573837,
+      "node_id": "MDQ6VXNlcjQ1NTczODM3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/45573837?v=4",
+      "html_url": "https://github.com/HU90m",
       "contributions": 1
     }
   ],

@@ -59,21 +59,40 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/NIVc2xLU"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Completing the DaemonSet deployment model for  Prometheus Operator",
+        "short_description": "The project aims to bring the Prometheus Agent's DaemonSet mode in Prometheus Operator to full production readiness. This involves addressing missing...",
+        "description": "The project aims to bring the Prometheus Agent's DaemonSet mode in Prometheus Operator to full production readiness. This involves addressing missing functionalities, improving configuration validation, enhancing reliability, and providing comprehensive documentation. The ultimate goal is to offer a scalable, efficient, and fully supported way to run Prometheus Agent across Kubernetes nodes.\n\nThis is achieved by integrating remaining features like using CEL for CRD validation to provide immediate feedback along with adding runtime checks as a fallback for older Kubernetes versions.\nFurthermore, Investigating and potentially implementing EndpointSlice for scalability and extending integration tests to multi-node Kind clusters.\nFinally, adding detailed documentation and example manifests.",
+        "student_name": "Dhruv puri",
+        "code_url": "https://github.com/slashexx/gsoc-2025",
+        "proposal_id": "yQrYSijm",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/hZAZORpk"
+      },
+      {
+        "title": "Status for configuration objects",
+        "short_description": "The project aims to implement status subresource in Service Monitor, Pod Monitor, Probes, AlertmanagerConfig, PrometheusRule and ScrapeConfig Custom...",
+        "description": "The project aims to implement status subresource in Service Monitor, Pod\nMonitor, Probes, AlertmanagerConfig, PrometheusRule and ScrapeConfig\nCustom Resource. Currently, these CRs lack the status subresource, implementing\nit will increase the observability, as it enables users and controllers to observe the\ncurrent state of the resource, for users having access to the status enhances the\nuser experience by providing transparency and visibility into the state of resources.",
+        "student_name": "Yash Kumar Patel",
+        "code_url": "https://docs.google.com/document/d/e/2PACX-1vSPBJefeqDJufTeal0LKyiQmp1Ziux-nG051nxpj_cDbk4OiCqZe6iPkGO05r7wVqpiAXcvSgF0T27s/pub",
+        "proposal_id": "dLqLzYBN",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/aUhE7h7S"
+      }
+    ]
   },
   "githubID": "prometheus-operator",
   "repositories": [
     {
-      "id": 781685165,
-      "node_id": "R_kgDOLpeRrQ",
-      "name": "poctl",
-      "full_name": "prometheus-operator/poctl",
-      "html_url": "https://github.com/prometheus-operator/poctl",
-      "description": "[EXPERIMENTAL] Manage, troubleshoot and validate Prometheus-Operator resources via Command Line Interface!",
+      "id": 68964263,
+      "node_id": "MDEwOlJlcG9zaXRvcnk2ODk2NDI2Mw==",
+      "name": "prometheus-operator",
+      "full_name": "prometheus-operator/prometheus-operator",
+      "html_url": "https://github.com/prometheus-operator/prometheus-operator",
+      "description": "Prometheus Operator creates/configures/manages Prometheus clusters atop Kubernetes",
       "language": "Go",
-      "stargazers_count": 20,
-      "forks_count": 3,
-      "open_issues_count": 5,
+      "stargazers_count": 9867,
+      "forks_count": 3846,
+      "open_issues_count": 290,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -81,7 +100,12 @@
         "url": "https://api.github.com/licenses/apache-2.0",
         "node_id": "MDc6TGljZW5zZTI="
       },
-      "topics": []
+      "topics": [
+        "hacktoberfest",
+        "kubernetes",
+        "monitoring",
+        "prometheus"
+      ]
     },
     {
       "id": 71823870,
@@ -91,9 +115,9 @@
       "html_url": "https://github.com/prometheus-operator/kube-prometheus",
       "description": "Use Prometheus to monitor Kubernetes and applications running on Kubernetes",
       "language": "Jsonnet",
-      "stargazers_count": 7148,
-      "forks_count": 2004,
-      "open_issues_count": 203,
+      "stargazers_count": 7623,
+      "forks_count": 2060,
+      "open_issues_count": 197,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -113,41 +137,16 @@
       ]
     },
     {
-      "id": 68964263,
-      "node_id": "MDEwOlJlcG9zaXRvcnk2ODk2NDI2Mw==",
-      "name": "prometheus-operator",
-      "full_name": "prometheus-operator/prometheus-operator",
-      "html_url": "https://github.com/prometheus-operator/prometheus-operator",
-      "description": "Prometheus Operator creates/configures/manages Prometheus clusters atop Kubernetes",
+      "id": 781685165,
+      "node_id": "R_kgDOLpeRrQ",
+      "name": "poctl",
+      "full_name": "prometheus-operator/poctl",
+      "html_url": "https://github.com/prometheus-operator/poctl",
+      "description": "[EXPERIMENTAL] Manage, troubleshoot and validate Prometheus-Operator resources via Command Line Interface!",
       "language": "Go",
-      "stargazers_count": 9438,
-      "forks_count": 3772,
-      "open_issues_count": 227,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "hacktoberfest",
-        "kubernetes",
-        "monitoring",
-        "prometheus"
-      ]
-    },
-    {
-      "id": 345736493,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzNDU3MzY0OTM=",
-      "name": "website",
-      "full_name": "prometheus-operator/website",
-      "html_url": "https://github.com/prometheus-operator/website",
-      "description": "The Prometheus Operator & kube-prometheus website",
-      "language": "HTML",
-      "stargazers_count": 15,
-      "forks_count": 27,
-      "open_issues_count": 21,
+      "stargazers_count": 26,
+      "forks_count": 6,
+      "open_issues_count": 9,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -165,9 +164,29 @@
       "html_url": "https://github.com/prometheus-operator/community",
       "description": "Repository used for managing Prometheus-Operator's community related tasks.",
       "language": null,
-      "stargazers_count": 8,
-      "forks_count": 3,
-      "open_issues_count": 1,
+      "stargazers_count": 10,
+      "forks_count": 6,
+      "open_issues_count": 0,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 345736493,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzNDU3MzY0OTM=",
+      "name": "website",
+      "full_name": "prometheus-operator/website",
+      "html_url": "https://github.com/prometheus-operator/website",
+      "description": "The Prometheus Operator & kube-prometheus website",
+      "language": "HTML",
+      "stargazers_count": 15,
+      "forks_count": 29,
+      "open_issues_count": 22,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -185,9 +204,9 @@
       "html_url": "https://github.com/prometheus-operator/runbooks",
       "description": null,
       "language": "HTML",
-      "stargazers_count": 103,
-      "forks_count": 182,
-      "open_issues_count": 40,
+      "stargazers_count": 115,
+      "forks_count": 208,
+      "open_issues_count": 51,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -200,44 +219,12 @@
   ],
   "contributorsDetails": [
     {
-      "login": "nicolastakashi",
-      "id": 8205546,
-      "node_id": "MDQ6VXNlcjgyMDU1NDY=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/8205546?v=4",
-      "html_url": "https://github.com/nicolastakashi",
-      "contributions": 91
-    },
-    {
-      "login": "heliapb",
-      "id": 66432275,
-      "node_id": "MDQ6VXNlcjY2NDMyMjc1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/66432275?v=4",
-      "html_url": "https://github.com/heliapb",
-      "contributions": 30
-    },
-    {
-      "login": "ArthurSens",
-      "id": 24193764,
-      "node_id": "MDQ6VXNlcjI0MTkzNzY0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/24193764?v=4",
-      "html_url": "https://github.com/ArthurSens",
-      "contributions": 103
-    },
-    {
-      "login": "dependabot[bot]",
-      "id": 49699333,
-      "node_id": "MDM6Qm90NDk2OTkzMzM=",
-      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-      "html_url": "https://github.com/apps/dependabot",
-      "contributions": 126
-    },
-    {
-      "login": "github-actions[bot]",
-      "id": 41898282,
-      "node_id": "MDM6Qm90NDE4OTgyODI=",
-      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
-      "html_url": "https://github.com/apps/github-actions",
-      "contributions": 7
+      "login": "simonpasquier",
+      "id": 2587585,
+      "node_id": "MDQ6VXNlcjI1ODc1ODU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2587585?v=4",
+      "html_url": "https://github.com/simonpasquier",
+      "contributions": 5
     },
     {
       "login": "brancz",
@@ -248,6 +235,22 @@
       "contributions": 589
     },
     {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "html_url": "https://github.com/apps/dependabot",
+      "contributions": 56
+    },
+    {
+      "login": "slashpai",
+      "id": 5638849,
+      "node_id": "MDQ6VXNlcjU2Mzg4NDk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5638849?v=4",
+      "html_url": "https://github.com/slashpai",
+      "contributions": 2
+    },
+    {
       "login": "paulfantom",
       "id": 3531758,
       "node_id": "MDQ6VXNlcjM1MzE3NTg=",
@@ -256,52 +259,12 @@
       "contributions": 542
     },
     {
-      "login": "prom-op-bot",
-      "id": 85787986,
-      "node_id": "MDQ6VXNlcjg1Nzg3OTg2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/85787986?v=4",
-      "html_url": "https://github.com/prom-op-bot",
-      "contributions": 152
-    },
-    {
-      "login": "metalmatze",
-      "id": 872251,
-      "node_id": "MDQ6VXNlcjg3MjI1MQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/872251?v=4",
-      "html_url": "https://github.com/metalmatze",
-      "contributions": 151
-    },
-    {
-      "login": "lilic",
-      "id": 6232346,
-      "node_id": "MDQ6VXNlcjYyMzIzNDY=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/6232346?v=4",
-      "html_url": "https://github.com/lilic",
-      "contributions": 131
-    },
-    {
-      "login": "dgrisonnet",
-      "id": 22327577,
-      "node_id": "MDQ6VXNlcjIyMzI3NTc3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/22327577?v=4",
-      "html_url": "https://github.com/dgrisonnet",
-      "contributions": 108
-    },
-    {
-      "login": "philipgough",
-      "id": 5781491,
-      "node_id": "MDQ6VXNlcjU3ODE0OTE=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/5781491?v=4",
-      "html_url": "https://github.com/philipgough",
-      "contributions": 100
-    },
-    {
-      "login": "simonpasquier",
-      "id": 2587585,
-      "node_id": "MDQ6VXNlcjI1ODc1ODU=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/2587585?v=4",
-      "html_url": "https://github.com/simonpasquier",
-      "contributions": 63
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "html_url": "https://github.com/apps/github-actions",
+      "contributions": 51
     },
     {
       "login": "fabxc",
@@ -312,6 +275,14 @@
       "contributions": 58
     },
     {
+      "login": "metalmatze",
+      "id": 872251,
+      "node_id": "MDQ6VXNlcjg3MjI1MQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/872251?v=4",
+      "html_url": "https://github.com/metalmatze",
+      "contributions": 153
+    },
+    {
       "login": "mxinden",
       "id": 7047859,
       "node_id": "MDQ6VXNlcjcwNDc4NTk=",
@@ -320,20 +291,20 @@
       "contributions": 57
     },
     {
-      "login": "s-urbaniak",
-      "id": 375856,
-      "node_id": "MDQ6VXNlcjM3NTg1Ng==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/375856?v=4",
-      "html_url": "https://github.com/s-urbaniak",
-      "contributions": 48
+      "login": "dongjiang1989",
+      "id": 5010507,
+      "node_id": "MDQ6VXNlcjUwMTA1MDc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5010507?v=4",
+      "html_url": "https://github.com/dongjiang1989",
+      "contributions": 172
     },
     {
-      "login": "kakkoyun",
-      "id": 536449,
-      "node_id": "MDQ6VXNlcjUzNjQ0OQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/536449?v=4",
-      "html_url": "https://github.com/kakkoyun",
-      "contributions": 47
+      "login": "philipgough",
+      "id": 5781491,
+      "node_id": "MDQ6VXNlcjU3ODE0OTE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5781491?v=4",
+      "html_url": "https://github.com/philipgough",
+      "contributions": 106
     },
     {
       "login": "pgier",
@@ -344,12 +315,164 @@
       "contributions": 32
     },
     {
+      "login": "ArthurSens",
+      "id": 24193764,
+      "node_id": "MDQ6VXNlcjI0MTkzNzY0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/24193764?v=4",
+      "html_url": "https://github.com/ArthurSens",
+      "contributions": 10
+    },
+    {
+      "login": "lilic",
+      "id": 6232346,
+      "node_id": "MDQ6VXNlcjYyMzIzNDY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6232346?v=4",
+      "html_url": "https://github.com/lilic",
+      "contributions": 131
+    },
+    {
+      "login": "s-urbaniak",
+      "id": 375856,
+      "node_id": "MDQ6VXNlcjM3NTg1Ng==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/375856?v=4",
+      "html_url": "https://github.com/s-urbaniak",
+      "contributions": 48
+    },
+    {
+      "login": "nicolastakashi",
+      "id": 8205546,
+      "node_id": "MDQ6VXNlcjgyMDU1NDY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8205546?v=4",
+      "html_url": "https://github.com/nicolastakashi",
+      "contributions": 92
+    },
+    {
       "login": "squat",
       "id": 20484159,
       "node_id": "MDQ6VXNlcjIwNDg0MTU5",
       "avatar_url": "https://avatars.githubusercontent.com/u/20484159?v=4",
       "html_url": "https://github.com/squat",
       "contributions": 27
+    },
+    {
+      "login": "fpetkovski",
+      "id": 1286231,
+      "node_id": "MDQ6VXNlcjEyODYyMzE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1286231?v=4",
+      "html_url": "https://github.com/fpetkovski",
+      "contributions": 87
+    },
+    {
+      "login": "gianrubio",
+      "id": 5694860,
+      "node_id": "MDQ6VXNlcjU2OTQ4NjA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5694860?v=4",
+      "html_url": "https://github.com/gianrubio",
+      "contributions": 75
+    },
+    {
+      "login": "nutmos",
+      "id": 4888739,
+      "node_id": "MDQ6VXNlcjQ4ODg3Mzk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4888739?v=4",
+      "html_url": "https://github.com/nutmos",
+      "contributions": 73
+    },
+    {
+      "login": "heliapb",
+      "id": 66432275,
+      "node_id": "MDQ6VXNlcjY2NDMyMjc1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/66432275?v=4",
+      "html_url": "https://github.com/heliapb",
+      "contributions": 32
+    },
+    {
+      "login": "yp969803",
+      "id": 121890726,
+      "node_id": "U_kgDOB0Pnpg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/121890726?v=4",
+      "html_url": "https://github.com/yp969803",
+      "contributions": 57
+    },
+    {
+      "login": "dgrisonnet",
+      "id": 22327577,
+      "node_id": "MDQ6VXNlcjIyMzI3NTc3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/22327577?v=4",
+      "html_url": "https://github.com/dgrisonnet",
+      "contributions": 108
+    },
+    {
+      "login": "ant31",
+      "id": 1044332,
+      "node_id": "MDQ6VXNlcjEwNDQzMzI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1044332?v=4",
+      "html_url": "https://github.com/ant31",
+      "contributions": 43
+    },
+    {
+      "login": "mviswanathsai",
+      "id": 110663831,
+      "node_id": "U_kgDOBpiYlw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/110663831?v=4",
+      "html_url": "https://github.com/mviswanathsai",
+      "contributions": 43
+    },
+    {
+      "login": "mikechengwei",
+      "id": 13257127,
+      "node_id": "MDQ6VXNlcjEzMjU3MTI3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13257127?v=4",
+      "html_url": "https://github.com/mikechengwei",
+      "contributions": 42
+    },
+    {
+      "login": "AshwinSriram11",
+      "id": 116557116,
+      "node_id": "U_kgDOBvKFPA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/116557116?v=4",
+      "html_url": "https://github.com/AshwinSriram11",
+      "contributions": 37
+    },
+    {
+      "login": "vsliouniaev",
+      "id": 1751776,
+      "node_id": "MDQ6VXNlcjE3NTE3NzY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1751776?v=4",
+      "html_url": "https://github.com/vsliouniaev",
+      "contributions": 31
+    },
+    {
+      "login": "QuentinBisson",
+      "id": 2787548,
+      "node_id": "MDQ6VXNlcjI3ODc1NDg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2787548?v=4",
+      "html_url": "https://github.com/QuentinBisson",
+      "contributions": 26
+    },
+    {
+      "login": "wleese",
+      "id": 2562645,
+      "node_id": "MDQ6VXNlcjI1NjI2NDU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2562645?v=4",
+      "html_url": "https://github.com/wleese",
+      "contributions": 26
+    },
+    {
+      "login": "prom-op-bot",
+      "id": 85787986,
+      "node_id": "MDQ6VXNlcjg1Nzg3OTg2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/85787986?v=4",
+      "html_url": "https://github.com/prom-op-bot",
+      "contributions": 179
+    },
+    {
+      "login": "kakkoyun",
+      "id": 536449,
+      "node_id": "MDQ6VXNlcjUzNjQ0OQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/536449?v=4",
+      "html_url": "https://github.com/kakkoyun",
+      "contributions": 47
     },
     {
       "login": "jolson490",
@@ -382,14 +505,6 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/17797737?v=4",
       "html_url": "https://github.com/Blizter",
       "contributions": 12
-    },
-    {
-      "login": "slashpai",
-      "id": 5638849,
-      "node_id": "MDQ6VXNlcjU2Mzg4NDk=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/5638849?v=4",
-      "html_url": "https://github.com/slashpai",
-      "contributions": 11
     },
     {
       "login": "rutsky",
@@ -432,6 +547,14 @@
       "contributions": 9
     },
     {
+      "login": "adinhodovic",
+      "id": 12065867,
+      "node_id": "MDQ6VXNlcjEyMDY1ODY3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12065867?v=4",
+      "html_url": "https://github.com/adinhodovic",
+      "contributions": 9
+    },
+    {
       "login": "tpalfalvi",
       "id": 22366887,
       "node_id": "MDQ6VXNlcjIyMzY2ODg3",
@@ -453,14 +576,6 @@
       "node_id": "MDQ6VXNlcjg2NDU3OA==",
       "avatar_url": "https://avatars.githubusercontent.com/u/864578?v=4",
       "html_url": "https://github.com/johanneswuerbach",
-      "contributions": 9
-    },
-    {
-      "login": "gianrubio",
-      "id": 5694860,
-      "node_id": "MDQ6VXNlcjU2OTQ4NjA=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/5694860?v=4",
-      "html_url": "https://github.com/gianrubio",
       "contributions": 9
     }
   ],

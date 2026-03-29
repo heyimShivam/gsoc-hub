@@ -38,7 +38,8 @@
     2020,
     2022,
     2023,
-    2024
+    2024,
+    2026
   ],
   "projects": {
     "2018": [
@@ -211,7 +212,8 @@
         "proposal_id": "Lm2JfdOQ",
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/NZIEKNQo"
       }
-    ]
+    ],
+    "2026": []
   },
   "githubID": "Submitty",
   "repositories": [
@@ -223,9 +225,9 @@
       "html_url": "https://github.com/Submitty/Submitty",
       "description": "Homework Submission, Automated Grading, and TA grading system.",
       "language": "PHP",
-      "stargazers_count": 695,
-      "forks_count": 898,
-      "open_issues_count": 656,
+      "stargazers_count": 760,
+      "forks_count": 1047,
+      "open_issues_count": 735,
       "license": {
         "key": "bsd-3-clause",
         "name": "BSD 3-Clause \"New\" or \"Revised\" License",
@@ -250,9 +252,9 @@
       "html_url": "https://github.com/Submitty/submitty.github.io",
       "description": "Main Webpage for Submitty",
       "language": "JavaScript",
-      "stargazers_count": 20,
-      "forks_count": 57,
-      "open_issues_count": 9,
+      "stargazers_count": 22,
+      "forks_count": 60,
+      "open_issues_count": 11,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -264,6 +266,83 @@
         "documentation",
         "hacktoberfest",
         "submitty"
+      ]
+    },
+    {
+      "id": 1162846269,
+      "node_id": "R_kgDORU-gPQ",
+      "name": "VSCode-extension",
+      "full_name": "Submitty/VSCode-extension",
+      "html_url": "https://github.com/Submitty/VSCode-extension",
+      "description": null,
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 2,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 196910863,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxOTY5MTA4NjM=",
+      "name": "api.submitty.org",
+      "full_name": "Submitty/api.submitty.org",
+      "html_url": "https://github.com/Submitty/api.submitty.org",
+      "description": "Home for the documentation for the Submitty API",
+      "language": "JavaScript",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "open_issues_count": 2,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 349458422,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzNDk0NTg0MjI=",
+      "name": "action-pr-title",
+      "full_name": "Submitty/action-pr-title",
+      "html_url": "https://github.com/Submitty/action-pr-title",
+      "description": "GitHub action to validate PR titles meet our guidelines",
+      "language": "TypeScript",
+      "stargazers_count": 1,
+      "forks_count": 3,
+      "open_issues_count": 0,
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "topics": []
+    },
+    {
+      "id": 142080598,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNDIwODA1OTg=",
+      "name": "pdf-annotate.js",
+      "full_name": "Submitty/pdf-annotate.js",
+      "html_url": "https://github.com/Submitty/pdf-annotate.js",
+      "description": "Annotation layer for pdf.js",
+      "language": "JavaScript",
+      "stargazers_count": 294,
+      "forks_count": 55,
+      "open_issues_count": 16,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": [
+        "pdf",
+        "pdf-annotation"
       ]
     },
     {
@@ -287,6 +366,34 @@
       "topics": []
     },
     {
+      "id": 144429825,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNDQ0Mjk4MjU=",
+      "name": "DockerImages",
+      "full_name": "Submitty/DockerImages",
+      "html_url": "https://github.com/Submitty/DockerImages",
+      "description": "Repository for holding Submitty autograding docker images and pieces to build them",
+      "language": "Dockerfile",
+      "stargazers_count": 3,
+      "forks_count": 4,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 83581127,
+      "node_id": "MDEwOlJlcG9zaXRvcnk4MzU4MTEyNw==",
+      "name": "Tutorial",
+      "full_name": "Submitty/Tutorial",
+      "html_url": "https://github.com/Submitty/Tutorial",
+      "description": "Tutorial Presentation Materials and Example Assignments",
+      "language": null,
+      "stargazers_count": 5,
+      "forks_count": 6,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
       "id": 136758904,
       "node_id": "MDEwOlJlcG9zaXRvcnkxMzY3NTg5MDQ=",
       "name": "RainbowGrades",
@@ -295,7 +402,7 @@
       "description": null,
       "language": "C++",
       "stargazers_count": 6,
-      "forks_count": 9,
+      "forks_count": 8,
       "open_issues_count": 3,
       "license": {
         "key": "bsd-3-clause",
@@ -327,41 +434,24 @@
       "topics": []
     },
     {
-      "id": 144429825,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNDQ0Mjk4MjU=",
-      "name": "DockerImages",
-      "full_name": "Submitty/DockerImages",
-      "html_url": "https://github.com/Submitty/DockerImages",
-      "description": "Repository for holding Submitty autograding docker images and pieces to build them",
-      "language": "Dockerfile",
-      "stargazers_count": 3,
-      "forks_count": 5,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 142080598,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNDIwODA1OTg=",
-      "name": "pdf-annotate.js",
-      "full_name": "Submitty/pdf-annotate.js",
-      "html_url": "https://github.com/Submitty/pdf-annotate.js",
-      "description": "Annotation layer for pdf.js",
-      "language": "JavaScript",
-      "stargazers_count": 282,
-      "forks_count": 55,
-      "open_issues_count": 16,
+      "id": 135964314,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMzU5NjQzMTQ=",
+      "name": "Lichen",
+      "full_name": "Submitty/Lichen",
+      "html_url": "https://github.com/Submitty/Lichen",
+      "description": "Lichen Plagiarism Detection",
+      "language": "Python",
+      "stargazers_count": 5,
+      "forks_count": 6,
+      "open_issues_count": 2,
       "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
       },
-      "topics": [
-        "pdf",
-        "pdf-annotation"
-      ]
+      "topics": []
     },
     {
       "id": 817494303,
@@ -381,20 +471,6 @@
         "url": "https://api.github.com/licenses/bsd-3-clause",
         "node_id": "MDc6TGljZW5zZTU="
       },
-      "topics": []
-    },
-    {
-      "id": 83581127,
-      "node_id": "MDEwOlJlcG9zaXRvcnk4MzU4MTEyNw==",
-      "name": "Tutorial",
-      "full_name": "Submitty/Tutorial",
-      "html_url": "https://github.com/Submitty/Tutorial",
-      "description": "Tutorial Presentation Materials and Example Assignments",
-      "language": null,
-      "stargazers_count": 5,
-      "forks_count": 6,
-      "open_issues_count": 3,
-      "license": null,
       "topics": []
     },
     {
@@ -506,34 +582,14 @@
       "description": "Submitty PHP CodeSniffer Standard",
       "language": "PHP",
       "stargazers_count": 2,
-      "forks_count": 0,
-      "open_issues_count": 2,
+      "forks_count": 1,
+      "open_issues_count": 3,
       "license": {
         "key": "mit",
         "name": "MIT License",
         "spdx_id": "MIT",
         "url": "https://api.github.com/licenses/mit",
         "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 196910863,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxOTY5MTA4NjM=",
-      "name": "api.submitty.org",
-      "full_name": "Submitty/api.submitty.org",
-      "html_url": "https://github.com/Submitty/api.submitty.org",
-      "description": "Home for the documentation for the Submitty API",
-      "language": "JavaScript",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "open_issues_count": 1,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
       },
       "topics": []
     },
@@ -547,46 +603,6 @@
       "language": "Python",
       "stargazers_count": 1,
       "forks_count": 7,
-      "open_issues_count": 2,
-      "license": {
-        "key": "bsd-3-clause",
-        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
-        "spdx_id": "BSD-3-Clause",
-        "url": "https://api.github.com/licenses/bsd-3-clause",
-        "node_id": "MDc6TGljZW5zZTU="
-      },
-      "topics": []
-    },
-    {
-      "id": 349458422,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzNDk0NTg0MjI=",
-      "name": "action-pr-title",
-      "full_name": "Submitty/action-pr-title",
-      "html_url": "https://github.com/Submitty/action-pr-title",
-      "description": "GitHub action to validate PR titles meet our guidelines",
-      "language": "TypeScript",
-      "stargazers_count": 1,
-      "forks_count": 4,
-      "open_issues_count": 0,
-      "license": {
-        "key": "bsd-3-clause",
-        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
-        "spdx_id": "BSD-3-Clause",
-        "url": "https://api.github.com/licenses/bsd-3-clause",
-        "node_id": "MDc6TGljZW5zZTU="
-      },
-      "topics": []
-    },
-    {
-      "id": 135964314,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMzU5NjQzMTQ=",
-      "name": "Lichen",
-      "full_name": "Submitty/Lichen",
-      "html_url": "https://github.com/Submitty/Lichen",
-      "description": "Lichen Plagiarism Detection",
-      "language": "Python",
-      "stargazers_count": 5,
-      "forks_count": 6,
       "open_issues_count": 2,
       "license": {
         "key": "bsd-3-clause",
@@ -625,7 +641,7 @@
       "html_url": "https://github.com/Submitty/AnalysisToolsTS",
       "description": "Tool to analyze concrete syntax trees generated by tree-sitter",
       "language": "C++",
-      "stargazers_count": 1,
+      "stargazers_count": 2,
       "forks_count": 1,
       "open_issues_count": 0,
       "license": {
@@ -778,20 +794,6 @@
         "node_id": "MDc6TGljZW5zZTU="
       },
       "topics": []
-    },
-    {
-      "id": 256868231,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNTY4NjgyMzE=",
-      "name": "slack_bot_cleaner",
-      "full_name": "Submitty/slack_bot_cleaner",
-      "html_url": "https://github.com/Submitty/slack_bot_cleaner",
-      "description": "Utility repo to delete old bot messages in slack channels",
-      "language": "Python",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
     }
   ],
   "contributorsDetails": [
@@ -801,7 +803,7 @@
       "node_id": "MDM6Qm90NDk2OTkzMzM=",
       "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
       "html_url": "https://github.com/apps/dependabot",
-      "contributions": 29
+      "contributions": 36
     },
     {
       "login": "MasterOdin",
@@ -817,7 +819,7 @@
       "node_id": "MDQ6VXNlcjU4NzE0MTc=",
       "avatar_url": "https://avatars.githubusercontent.com/u/5871417?v=4",
       "html_url": "https://github.com/bmcutler",
-      "contributions": 552
+      "contributions": 564
     },
     {
       "login": "kmcnellis",
@@ -849,7 +851,7 @@
       "node_id": "MDQ6VXNlcjU1MDkyNzQy",
       "avatar_url": "https://avatars.githubusercontent.com/u/55092742?v=4",
       "html_url": "https://github.com/cjreed121",
-      "contributions": 17
+      "contributions": 18
     },
     {
       "login": "shailpatels",
@@ -900,6 +902,14 @@
       "contributions": 109
     },
     {
+      "login": "williamschen23",
+      "id": 82904790,
+      "node_id": "MDQ6VXNlcjgyOTA0Nzkw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/82904790?v=4",
+      "html_url": "https://github.com/williamschen23",
+      "contributions": 106
+    },
+    {
       "login": "JFrei86",
       "id": 2375218,
       "node_id": "MDQ6VXNlcjIzNzUyMTg=",
@@ -922,6 +932,14 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/18558130?v=4",
       "html_url": "https://github.com/elihschiff",
       "contributions": 9
+    },
+    {
+      "login": "IDzyre",
+      "id": 46759635,
+      "node_id": "MDQ6VXNlcjQ2NzU5NjM1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46759635?v=4",
+      "html_url": "https://github.com/IDzyre",
+      "contributions": 13
     },
     {
       "login": "andrewaikens87",
@@ -956,12 +974,12 @@
       "contributions": 8
     },
     {
-      "login": "IDzyre",
-      "id": 46759635,
-      "node_id": "MDQ6VXNlcjQ2NzU5NjM1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/46759635?v=4",
-      "html_url": "https://github.com/IDzyre",
-      "contributions": 11
+      "login": "lavalleeale",
+      "id": 73203142,
+      "node_id": "MDQ6VXNlcjczMjAzMTQy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/73203142?v=4",
+      "html_url": "https://github.com/lavalleeale",
+      "contributions": 79
     },
     {
       "login": "Kevin-MM",
@@ -996,6 +1014,14 @@
       "contributions": 61
     },
     {
+      "login": "JManion32",
+      "id": 180049694,
+      "node_id": "U_kgDOCrtXHg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/180049694?v=4",
+      "html_url": "https://github.com/JManion32",
+      "contributions": 58
+    },
+    {
       "login": "zjxiaohan",
       "id": 20266703,
       "node_id": "MDQ6VXNlcjIwMjY2NzAz",
@@ -1010,30 +1036,6 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/48342617?v=4",
       "html_url": "https://github.com/mukul-kmr-jha",
       "contributions": 56
-    },
-    {
-      "login": "loadedskiffer",
-      "id": 66340271,
-      "node_id": "MDQ6VXNlcjY2MzQwMjcx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/66340271?v=4",
-      "html_url": "https://github.com/loadedskiffer",
-      "contributions": 55
-    },
-    {
-      "login": "ropern123",
-      "id": 25157467,
-      "node_id": "MDQ6VXNlcjI1MTU3NDY3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/25157467?v=4",
-      "html_url": "https://github.com/ropern123",
-      "contributions": 48
-    },
-    {
-      "login": "chameco",
-      "id": 1580822,
-      "node_id": "MDQ6VXNlcjE1ODA4MjI=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1580822?v=4",
-      "html_url": "https://github.com/chameco",
-      "contributions": 17
     },
     {
       "login": "elizabethdinella",
@@ -1068,6 +1070,14 @@
       "contributions": 21
     },
     {
+      "login": "chameco",
+      "id": 1580822,
+      "node_id": "MDQ6VXNlcjE1ODA4MjI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1580822?v=4",
+      "html_url": "https://github.com/chameco",
+      "contributions": 17
+    },
+    {
       "login": "tcyrus",
       "id": 4201229,
       "node_id": "MDQ6VXNlcjQyMDEyMjk=",
@@ -1097,7 +1107,7 @@
       "node_id": "MDQ6VXNlcjg5MjgxMDM2",
       "avatar_url": "https://avatars.githubusercontent.com/u/89281036?v=4",
       "html_url": "https://github.com/skara9",
-      "contributions": 9
+      "contributions": 10
     },
     {
       "login": "tushargr",
@@ -1108,19 +1118,19 @@
       "contributions": 9
     },
     {
-      "login": "scopeInfinity",
-      "id": 9819066,
-      "node_id": "MDQ6VXNlcjk4MTkwNjY=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/9819066?v=4",
-      "html_url": "https://github.com/scopeInfinity",
-      "contributions": 7
-    },
-    {
       "login": "micpap25",
       "id": 34077605,
       "node_id": "MDQ6VXNlcjM0MDc3NjA1",
       "avatar_url": "https://avatars.githubusercontent.com/u/34077605?v=4",
       "html_url": "https://github.com/micpap25",
+      "contributions": 8
+    },
+    {
+      "login": "scopeInfinity",
+      "id": 9819066,
+      "node_id": "MDQ6VXNlcjk4MTkwNjY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9819066?v=4",
+      "html_url": "https://github.com/scopeInfinity",
       "contributions": 7
     },
     {
@@ -1138,6 +1148,30 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/4614145?v=4",
       "html_url": "https://github.com/thatCode-Psy",
       "contributions": 7
+    },
+    {
+      "login": "rileyallyn",
+      "id": 129999894,
+      "node_id": "U_kgDOB7-kFg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/129999894?v=4",
+      "html_url": "https://github.com/rileyallyn",
+      "contributions": 16
+    },
+    {
+      "login": "sophiakist",
+      "id": 103224611,
+      "node_id": "U_kgDOBicVIw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/103224611?v=4",
+      "html_url": "https://github.com/sophiakist",
+      "contributions": 15
+    },
+    {
+      "login": "QPixel",
+      "id": 29050038,
+      "node_id": "MDQ6VXNlcjI5MDUwMDM4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/29050038?v=4",
+      "html_url": "https://github.com/QPixel",
+      "contributions": 2
     }
   ],
   "activeOrg": true

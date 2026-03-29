@@ -62,10 +62,149 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/LMc5wi9n"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "swhkd: Provide Libinput as an Alternative Input Backend",
+        "short_description": "This project aims to replace the current backend of swhkd, which uses evdev, to replace it with libinput. Libinput provides better support for common...",
+        "description": "This project aims to replace the current backend of swhkd, which uses evdev, to replace it with libinput.\nLibinput provides better support for common devices that interact with a desktop interface, this can with getting better input handling support and fix issues like debouncing, mouse acceleration, etc which cannot be handled directly by evdev.\nThe final deliverable would be a version of swhkd with an alternative libinput backend, whichs supports all the features of swhkd.",
+        "student_name": "Aadil",
+        "code_url": "https://aadilshabier.github.io/blog/gsoc-2025/gsoc-1",
+        "proposal_id": "UkEZWJWt",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/CGVE5TAy"
+      },
+      {
+        "title": "Improve RDP support for xdg-desktop-portal-luminous",
+        "short_description": "Xdg-desktop-portal-luminous is a high-performance capture portal for Wayland compositors that supports frame capture and GPU-copy based frame...",
+        "description": "Xdg-desktop-portal-luminous is a high-performance capture portal for Wayland compositors that supports frame capture and GPU-copy based frame streaming. The goal of this project is to improve support for Remote Desktop Protocol by ensuring more reliable input simulation and screencasting to enable remote desktop applications to work seamlessly on Wayland compositors using our custom portal backends.\n\nThis will improve adoption and UX; users will no longer need to depend on other portals for this particular use case, and all use cases can be consolidated into a single portal.",
+        "student_name": "nicolo-mn",
+        "code_url": "https://nicolo-mn.github.io/posts/gsoc-2025/",
+        "proposal_id": "7M9WRVF9",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/CKArO252"
+      },
+      {
+        "title": "Introduce ext_image_capture_source_v1 protocol support in Wayshot and improve security features",
+        "short_description": "This project aims to enhance Wayshot by implementing the newly standardized ext_image_capture_source_v1 Wayland protocol, which provides a...",
+        "description": "This project aims to enhance Wayshot by implementing the newly standardized ext_image_capture_source_v1 Wayland protocol, which provides a standardized method for display and window capture, replacing the current dependency on the non-standard wlr-screencopy protocol. I will develop a new backend that fully utilizes this official protocol while maintaining the existing wlr backend for backwards compatibility, enabling native top-level window capture capabilities and improving user experience. The implementation will include a security notification system utilizing D-Bus to alert users which applications were captured by Wayshot clients, enhancing transparency and user privacy. Additionally, I will integrate the standardized protocol with xdg-desktop-portal-luminous to enable WebRTC streaming capabilities, \nThe deliverables of this project are: a complete solution that includes the new backend, backwards compatibility, security notifications, WebRTC streaming support, and comprehensive documentation.",
+        "student_name": "Rishik Y",
+        "code_url": "https://rishik-y.github.io/GSoC",
+        "proposal_id": "u7xYRJTv",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/Rh2pW6uW"
+      },
+      {
+        "title": "Functional GUI tool for configuring hotkeys visually",
+        "short_description": "The project is to build a fully functional GUI tool for Waycrate using iced-rs for configuring hotkeys visually, rather than editing the...",
+        "description": "The project is to build a fully functional GUI tool for Waycrate using iced-rs for configuring hotkeys visually, rather than editing the configuration files, which can be cumbersome for first-time users. The tool's purpose will be to simplify setting up and managing hotkeys in SWHKD.\nThe Graphical User Interface (GUI) will allow users to view the applications in a list format, and on selecting an application, the hotkeys for that application will be displayed in a table-like format with editable rows and buttons. Users will be able to modify pre-existing hotkeys, delete them, and build hotkeys from scratch.",
+        "student_name": "Shreya Santra",
+        "code_url": "https://medium.com/@shreyasantra200/gsoc-2025-final-report-03b8bcd53433",
+        "proposal_id": "zbcFHMHC",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/RO6lw1Lc"
+      }
+    ]
   },
   "githubID": "waycrate",
   "repositories": [
+    {
+      "id": 701574906,
+      "node_id": "R_kgDOKdEu-g",
+      "name": "waysip",
+      "full_name": "waycrate/waysip",
+      "html_url": "https://github.com/waycrate/waysip",
+      "description": "Wayland native area selector for compositors implementing zwlr_layer_shell. ",
+      "language": "Rust",
+      "stargazers_count": 28,
+      "forks_count": 9,
+      "open_issues_count": 5,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": [
+        "sway"
+      ]
+    },
+    {
+      "id": 458755202,
+      "node_id": "R_kgDOG1gMgg",
+      "name": "wayshot",
+      "full_name": "waycrate/wayshot",
+      "html_url": "https://github.com/waycrate/wayshot",
+      "description": "screenshot tool for wayland compositors.",
+      "language": "Rust",
+      "stargazers_count": 159,
+      "forks_count": 46,
+      "open_issues_count": 22,
+      "license": {
+        "key": "bsd-2-clause",
+        "name": "BSD 2-Clause \"Simplified\" License",
+        "spdx_id": "BSD-2-Clause",
+        "url": "https://api.github.com/licenses/bsd-2-clause",
+        "node_id": "MDc6TGljZW5zZTQ="
+      },
+      "topics": []
+    },
+    {
+      "id": 854086394,
+      "node_id": "R_kgDOMuhS-g",
+      "name": "ColdLock",
+      "full_name": "waycrate/ColdLock",
+      "html_url": "https://github.com/waycrate/ColdLock",
+      "description": "Wayland session lock built using iced_sessionlock",
+      "language": "Rust",
+      "stargazers_count": 8,
+      "forks_count": 1,
+      "open_issues_count": 2,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 674954352,
+      "node_id": "R_kgDOKDr8cA",
+      "name": "xdg-desktop-portal-luminous",
+      "full_name": "waycrate/xdg-desktop-portal-luminous",
+      "html_url": "https://github.com/waycrate/xdg-desktop-portal-luminous",
+      "description": "A xdg-desktop-portal for wlroots based compositors implementing zwlr_screencopy and ext-image-copy. Written by @decodetalkers",
+      "language": "Rust",
+      "stargazers_count": 96,
+      "forks_count": 12,
+      "open_issues_count": 8,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "topics": []
+    },
+    {
+      "id": 677783070,
+      "node_id": "R_kgDOKGYmHg",
+      "name": "lala-bar",
+      "full_name": "waycrate/lala-bar",
+      "html_url": "https://github.com/waycrate/lala-bar",
+      "description": null,
+      "language": "Rust",
+      "stargazers_count": 27,
+      "forks_count": 6,
+      "open_issues_count": 1,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
     {
       "id": 731973928,
       "node_id": "R_kgDOK6EJKA",
@@ -74,9 +213,9 @@
       "html_url": "https://github.com/waycrate/exwlshelleventloop",
       "description": "winit like binding for layershell and sessionlock",
       "language": "Rust",
-      "stargazers_count": 70,
-      "forks_count": 23,
-      "open_issues_count": 18,
+      "stargazers_count": 124,
+      "forks_count": 41,
+      "open_issues_count": 14,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -92,109 +231,18 @@
       ]
     },
     {
-      "id": 674954352,
-      "node_id": "R_kgDOKDr8cA",
-      "name": "xdg-desktop-portal-luminous",
-      "full_name": "waycrate/xdg-desktop-portal-luminous",
-      "html_url": "https://github.com/waycrate/xdg-desktop-portal-luminous",
-      "description": "A xdg-desktop-portal for wlroots based compositors implementing zwlr_screencopy. Written by @decodetalkers",
-      "language": "Rust",
-      "stargazers_count": 49,
-      "forks_count": 7,
-      "open_issues_count": 6,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": []
-    },
-    {
-      "id": 458755202,
-      "node_id": "R_kgDOG1gMgg",
-      "name": "wayshot",
-      "full_name": "waycrate/wayshot",
-      "html_url": "https://github.com/waycrate/wayshot",
-      "description": "screenshot tool for wlroots based compositors implementing zwlr_screencopy_v1",
-      "language": "Rust",
-      "stargazers_count": 130,
-      "forks_count": 30,
-      "open_issues_count": 32,
-      "license": {
-        "key": "bsd-2-clause",
-        "name": "BSD 2-Clause \"Simplified\" License",
-        "spdx_id": "BSD-2-Clause",
-        "url": "https://api.github.com/licenses/bsd-2-clause",
-        "node_id": "MDc6TGljZW5zZTQ="
-      },
-      "topics": []
-    },
-    {
-      "id": 677783070,
-      "node_id": "R_kgDOKGYmHg",
-      "name": "lala-bar",
-      "full_name": "waycrate/lala-bar",
-      "html_url": "https://github.com/waycrate/lala-bar",
+      "id": 765042547,
+      "node_id": "R_kgDOLZmfcw",
+      "name": "sweet",
+      "full_name": "waycrate/sweet",
+      "html_url": "https://github.com/waycrate/sweet",
       "description": null,
       "language": "Rust",
-      "stargazers_count": 24,
-      "forks_count": 2,
-      "open_issues_count": 4,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 701574906,
-      "node_id": "R_kgDOKdEu-g",
-      "name": "waysip",
-      "full_name": "waycrate/waysip",
-      "html_url": "https://github.com/waycrate/waysip",
-      "description": "Wayland native area selector for compositors implementing zwlr_layer_shell. ",
-      "language": "Rust",
-      "stargazers_count": 16,
-      "forks_count": 2,
-      "open_issues_count": 4,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": [
-        "sway"
-      ]
-    },
-    {
-      "id": 704103234,
-      "node_id": "R_kgDOKffDQg",
-      "name": "waycratelock",
-      "full_name": "waycrate/waycratelock",
-      "html_url": "https://github.com/waycrate/waycratelock",
-      "description": null,
-      "language": "C++",
-      "stargazers_count": 5,
+      "stargazers_count": 0,
       "forks_count": 3,
-      "open_issues_count": 0,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": [
-        "sessionlock",
-        "sway"
-      ]
+      "open_issues_count": 1,
+      "license": null,
+      "topics": []
     },
     {
       "id": 708609133,
@@ -204,9 +252,9 @@
       "html_url": "https://github.com/waycrate/greetd-waycratedm",
       "description": "qml greetd fontend",
       "language": "C++",
-      "stargazers_count": 6,
+      "stargazers_count": 7,
       "forks_count": 0,
-      "open_issues_count": 0,
+      "open_issues_count": 2,
       "license": {
         "key": "gpl-3.0",
         "name": "GNU General Public License v3.0",
@@ -224,9 +272,9 @@
       "html_url": "https://github.com/waycrate/qt-session-lock",
       "description": null,
       "language": "C++",
-      "stargazers_count": 7,
+      "stargazers_count": 9,
       "forks_count": 1,
-      "open_issues_count": 0,
+      "open_issues_count": 1,
       "license": {
         "key": "gpl-3.0",
         "name": "GNU General Public License v3.0",
@@ -240,6 +288,49 @@
       ]
     },
     {
+      "id": 704103234,
+      "node_id": "R_kgDOKffDQg",
+      "name": "waycratelock",
+      "full_name": "waycrate/waycratelock",
+      "html_url": "https://github.com/waycrate/waycratelock",
+      "description": null,
+      "language": "C++",
+      "stargazers_count": 5,
+      "forks_count": 3,
+      "open_issues_count": 2,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "topics": [
+        "sessionlock",
+        "sway"
+      ]
+    },
+    {
+      "id": 1134344688,
+      "node_id": "R_kgDOQ5y58A",
+      "name": "egl_wayland_utils",
+      "full_name": "waycrate/egl_wayland_utils",
+      "html_url": "https://github.com/waycrate/egl_wayland_utils",
+      "description": "Rust bindings for the Khronos EGL API",
+      "language": "Rust",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
       "id": 436518785,
       "node_id": "R_kgDOGgS_gQ",
       "name": "swhkd",
@@ -247,9 +338,9 @@
       "html_url": "https://github.com/waycrate/swhkd",
       "description": "Sxhkd clone for Wayland (works on TTY and X11 too)",
       "language": "Rust",
-      "stargazers_count": 759,
-      "forks_count": 59,
-      "open_issues_count": 89,
+      "stargazers_count": 829,
+      "forks_count": 71,
+      "open_issues_count": 101,
       "license": {
         "key": "bsd-2-clause",
         "name": "BSD 2-Clause \"Simplified\" License",
@@ -281,7 +372,7 @@
       "html_url": "https://github.com/waycrate/wayout",
       "description": "Simple tool to set output modes for wlroots compositors implementing zwlr_output_power_management_v1.",
       "language": "Rust",
-      "stargazers_count": 12,
+      "stargazers_count": 14,
       "forks_count": 1,
       "open_issues_count": 0,
       "license": {
@@ -290,40 +381,6 @@
         "spdx_id": "BSD-2-Clause",
         "url": "https://api.github.com/licenses/bsd-2-clause",
         "node_id": "MDc6TGljZW5zZTQ="
-      },
-      "topics": []
-    },
-    {
-      "id": 765042547,
-      "node_id": "R_kgDOLZmfcw",
-      "name": "sweet",
-      "full_name": "waycrate/sweet",
-      "html_url": "https://github.com/waycrate/sweet",
-      "description": null,
-      "language": "Rust",
-      "stargazers_count": 0,
-      "forks_count": 1,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 854086394,
-      "node_id": "R_kgDOMuhS-g",
-      "name": "ColdLock",
-      "full_name": "waycrate/ColdLock",
-      "html_url": "https://github.com/waycrate/ColdLock",
-      "description": "Wayland session lock built using iced_sessionlock",
-      "language": "Rust",
-      "stargazers_count": 5,
-      "forks_count": 0,
-      "open_issues_count": 1,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
       },
       "topics": []
     },
@@ -355,7 +412,7 @@
       "html_url": "https://github.com/waycrate/twenty",
       "description": "20-20-20 rule enforcer for compositors implementing ext-session-lock",
       "language": "Rust",
-      "stargazers_count": 12,
+      "stargazers_count": 14,
       "forks_count": 0,
       "open_issues_count": 0,
       "license": null,
@@ -429,7 +486,7 @@
       "html_url": "https://github.com/waycrate/NextWM",
       "description": "Manual tiling wayland compositor. ( Work In Progress )",
       "language": "Zig",
-      "stargazers_count": 125,
+      "stargazers_count": 126,
       "forks_count": 0,
       "open_issues_count": 1,
       "license": {
@@ -492,8 +549,8 @@
       "html_url": "https://github.com/waycrate/waylevel",
       "description": "A tool to print Wayland toplevels status and info.",
       "language": "Rust",
-      "stargazers_count": 10,
-      "forks_count": 0,
+      "stargazers_count": 9,
+      "forks_count": 1,
       "open_issues_count": 1,
       "license": {
         "key": "bsd-2-clause",
@@ -526,7 +583,7 @@
       "node_id": "MDQ6VXNlcjYwMjkwMjg3",
       "avatar_url": "https://avatars.githubusercontent.com/u/60290287?v=4",
       "html_url": "https://github.com/Decodetalkers",
-      "contributions": 117
+      "contributions": 11
     },
     {
       "login": "dependabot[bot]",
@@ -534,95 +591,15 @@
       "node_id": "MDM6Qm90NDk2OTkzMzM=",
       "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
       "html_url": "https://github.com/apps/dependabot",
-      "contributions": 50
+      "contributions": 45
     },
     {
-      "login": "fortime",
-      "id": 532864,
-      "node_id": "MDQ6VXNlcjUzMjg2NA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/532864?v=4",
-      "html_url": "https://github.com/fortime",
-      "contributions": 11
-    },
-    {
-      "login": "sundaram123krishnan",
-      "id": 104441812,
-      "node_id": "U_kgDOBjmn1A",
-      "avatar_url": "https://avatars.githubusercontent.com/u/104441812?v=4",
-      "html_url": "https://github.com/sundaram123krishnan",
-      "contributions": 11
-    },
-    {
-      "login": "tukanoidd",
-      "id": 45230259,
-      "node_id": "MDQ6VXNlcjQ1MjMwMjU5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/45230259?v=4",
-      "html_url": "https://github.com/tukanoidd",
-      "contributions": 3
-    },
-    {
-      "login": "TadoTheMiner",
-      "id": 100917739,
-      "node_id": "U_kgDOBgPh6w",
-      "avatar_url": "https://avatars.githubusercontent.com/u/100917739?v=4",
-      "html_url": "https://github.com/TadoTheMiner",
-      "contributions": 2
-    },
-    {
-      "login": "OneRandom1509",
-      "id": 70461479,
-      "node_id": "MDQ6VXNlcjcwNDYxNDc5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/70461479?v=4",
-      "html_url": "https://github.com/OneRandom1509",
-      "contributions": 1
-    },
-    {
-      "login": "Exidex",
-      "id": 16986685,
-      "node_id": "MDQ6VXNlcjE2OTg2Njg1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/16986685?v=4",
-      "html_url": "https://github.com/Exidex",
-      "contributions": 1
-    },
-    {
-      "login": "Stunkymonkey",
-      "id": 1315818,
-      "node_id": "MDQ6VXNlcjEzMTU4MTg=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1315818?v=4",
-      "html_url": "https://github.com/Stunkymonkey",
-      "contributions": 1
-    },
-    {
-      "login": "ksdrar",
-      "id": 22417151,
-      "node_id": "MDQ6VXNlcjIyNDE3MTUx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/22417151?v=4",
-      "html_url": "https://github.com/ksdrar",
-      "contributions": 1
-    },
-    {
-      "login": "nairaner",
-      "id": 7582653,
-      "node_id": "MDQ6VXNlcjc1ODI2NTM=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/7582653?v=4",
-      "html_url": "https://github.com/nairaner",
-      "contributions": 1
-    },
-    {
-      "login": "WhySoBad",
-      "id": 49595640,
-      "node_id": "MDQ6VXNlcjQ5NTk1NjQw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/49595640?v=4",
-      "html_url": "https://github.com/WhySoBad",
-      "contributions": 1
-    },
-    {
-      "login": "manthanabc",
-      "id": 48511543,
-      "node_id": "MDQ6VXNlcjQ4NTExNTQz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/48511543?v=4",
-      "html_url": "https://github.com/manthanabc",
-      "contributions": 1
+      "login": "id3v1669",
+      "id": 57532211,
+      "node_id": "MDQ6VXNlcjU3NTMyMjEx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/57532211?v=4",
+      "html_url": "https://github.com/id3v1669",
+      "contributions": 22
     },
     {
       "login": "Shinyzenith",
@@ -630,23 +607,79 @@
       "node_id": "MDQ6VXNlcjYwODA4ODAy",
       "avatar_url": "https://avatars.githubusercontent.com/u/60808802?v=4",
       "html_url": "https://github.com/Shinyzenith",
-      "contributions": 9
+      "contributions": 145
     },
     {
-      "login": "axelkar",
-      "id": 120189068,
-      "node_id": "U_kgDOBynwjA",
-      "avatar_url": "https://avatars.githubusercontent.com/u/120189068?v=4",
-      "html_url": "https://github.com/axelkar",
+      "login": "saksham242007",
+      "id": 181756765,
+      "node_id": "U_kgDOCtVjXQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/181756765?v=4",
+      "html_url": "https://github.com/saksham242007",
       "contributions": 2
     },
     {
-      "login": "DanisDGK",
-      "id": 38492793,
-      "node_id": "MDQ6VXNlcjM4NDkyNzkz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/38492793?v=4",
-      "html_url": "https://github.com/DanisDGK",
+      "login": "cyrinux",
+      "id": 519083,
+      "node_id": "MDQ6VXNlcjUxOTA4Mw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/519083?v=4",
+      "html_url": "https://github.com/cyrinux",
       "contributions": 1
+    },
+    {
+      "login": "Gigas002",
+      "id": 24297712,
+      "node_id": "MDQ6VXNlcjI0Mjk3NzEy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/24297712?v=4",
+      "html_url": "https://github.com/Gigas002",
+      "contributions": 84
+    },
+    {
+      "login": "uncomfyhalomacro",
+      "id": 66054069,
+      "node_id": "MDQ6VXNlcjY2MDU0MDY5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/66054069?v=4",
+      "html_url": "https://github.com/uncomfyhalomacro",
+      "contributions": 8
+    },
+    {
+      "login": "mstoeckl",
+      "id": 7674289,
+      "node_id": "MDQ6VXNlcjc2NzQyODk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7674289?v=4",
+      "html_url": "https://github.com/mstoeckl",
+      "contributions": 4
+    },
+    {
+      "login": "Suryansh-Dey",
+      "id": 140788315,
+      "node_id": "U_kgDOCGRCWw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/140788315?v=4",
+      "html_url": "https://github.com/Suryansh-Dey",
+      "contributions": 3
+    },
+    {
+      "login": "OneRandom1509",
+      "id": 70461479,
+      "node_id": "MDQ6VXNlcjcwNDYxNDc5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/70461479?v=4",
+      "html_url": "https://github.com/OneRandom1509",
+      "contributions": 3
+    },
+    {
+      "login": "AndreasBackx",
+      "id": 1593486,
+      "node_id": "MDQ6VXNlcjE1OTM0ODY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1593486?v=4",
+      "html_url": "https://github.com/AndreasBackx",
+      "contributions": 3
+    },
+    {
+      "login": "xonx4l",
+      "id": 119700621,
+      "node_id": "U_kgDOByJ8jQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/119700621?v=4",
+      "html_url": "https://github.com/xonx4l",
+      "contributions": 2
     },
     {
       "login": "Rishik-Y",
@@ -654,24 +687,104 @@
       "node_id": "MDQ6VXNlcjczNzg3NDAy",
       "avatar_url": "https://avatars.githubusercontent.com/u/73787402?v=4",
       "html_url": "https://github.com/Rishik-Y",
+      "contributions": 2
+    },
+    {
+      "login": "Nuhiat-Arefin",
+      "id": 99596518,
+      "node_id": "U_kgDOBe-45g",
+      "avatar_url": "https://avatars.githubusercontent.com/u/99596518?v=4",
+      "html_url": "https://github.com/Nuhiat-Arefin",
+      "contributions": 2
+    },
+    {
+      "login": "dhruvDev23",
+      "id": 236900947,
+      "node_id": "U_kgDODh7SUw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/236900947?v=4",
+      "html_url": "https://github.com/dhruvDev23",
+      "contributions": 2
+    },
+    {
+      "login": "Anshi321",
+      "id": 185619799,
+      "node_id": "U_kgDOCxBVVw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/185619799?v=4",
+      "html_url": "https://github.com/Anshi321",
+      "contributions": 2
+    },
+    {
+      "login": "angelofallars",
+      "id": 39676098,
+      "node_id": "MDQ6VXNlcjM5Njc2MDk4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/39676098?v=4",
+      "html_url": "https://github.com/angelofallars",
       "contributions": 1
     },
     {
-      "login": "Shiphan",
-      "id": 140245703,
-      "node_id": "U_kgDOCFv6xw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/140245703?v=4",
-      "html_url": "https://github.com/Shiphan",
+      "login": "axelkar",
+      "id": 120189068,
+      "node_id": "U_kgDOBynwjA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/120189068?v=4",
+      "html_url": "https://github.com/axelkar",
       "contributions": 1
     },
     {
-      "login": "nukelet",
-      "id": 63013118,
-      "node_id": "MDQ6VXNlcjYzMDEzMTE4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/63013118?v=4",
-      "html_url": "https://github.com/nukelet",
+      "login": "c-h-johnson",
+      "id": 138403247,
+      "node_id": "U_kgDOCD_drw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/138403247?v=4",
+      "html_url": "https://github.com/c-h-johnson",
       "contributions": 1
+    },
+    {
+      "login": "nicolo-mn",
+      "id": 116550607,
+      "node_id": "U_kgDOBvJrzw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/116550607?v=4",
+      "html_url": "https://github.com/nicolo-mn",
+      "contributions": 1
+    },
+    {
+      "login": "Pestdoktor",
+      "id": 6042489,
+      "node_id": "MDQ6VXNlcjYwNDI0ODk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6042489?v=4",
+      "html_url": "https://github.com/Pestdoktor",
+      "contributions": 1
+    },
+    {
+      "login": "0xsamalt",
+      "id": 195658107,
+      "node_id": "U_kgDOC6mBew",
+      "avatar_url": "https://avatars.githubusercontent.com/u/195658107?v=4",
+      "html_url": "https://github.com/0xsamalt",
+      "contributions": 1
+    },
+    {
+      "login": "vivienm",
+      "id": 2743798,
+      "node_id": "MDQ6VXNlcjI3NDM3OTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2743798?v=4",
+      "html_url": "https://github.com/vivienm",
+      "contributions": 1
+    },
+    {
+      "login": "gigablaster",
+      "id": 97519877,
+      "node_id": "U_kgDOBdAJBQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/97519877?v=4",
+      "html_url": "https://github.com/gigablaster",
+      "contributions": 1
+    },
+    {
+      "login": "sundaram123krishnan",
+      "id": 104441812,
+      "node_id": "U_kgDOBjmn1A",
+      "avatar_url": "https://avatars.githubusercontent.com/u/104441812?v=4",
+      "html_url": "https://github.com/sundaram123krishnan",
+      "contributions": 52
     }
   ],
-  "activeOrg": true
+  "activeOrg": false
 }

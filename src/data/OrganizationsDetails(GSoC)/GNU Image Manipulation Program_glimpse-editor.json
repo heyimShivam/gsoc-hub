@@ -1,6 +1,6 @@
 {
   "name": "GNU Image Manipulation Program",
-  "image_url": "https://summerofcode.withgoogle.com/media/org/gnu-image-manipulation-program/n73ytwpnna15tra2-360.png",
+  "image_url": "https://summerofcode.withgoogle.com/media/org/gnu-image-manipulation-program/ocldunfrxwufuvdf.png",
   "image_background_color": "#ffffff",
   "description": "GIMP is a cross-platform image editor",
   "url": "https://www.gimp.org/",
@@ -27,7 +27,8 @@
     2022,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2022": [
@@ -98,7 +99,36 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/NmrndTt8"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Design and Improvement of GIMP's Text Tool",
+        "short_description": "This project aims to improve the Text Tool in GIMP, enhancing the user experience by providing a more powerful and intuitive interface for editing...",
+        "description": "This project aims to improve the Text Tool in GIMP, enhancing the user experience by providing a more powerful and intuitive interface for editing rich text. The current system lacks flexibility and ease of use, especially for users who require advanced text formatting options. The updated tool will feature improved style management, better layout controls, and a more responsive editing interface.\n\nAdditionally, users will be able to apply and preview formatting changes more easily, speeding up their workflow. The project will be developed in stages: design, implementation, testing, and documentation.\n\nThe final deliverables will include an improved Text Tool interface, enhanced formatting and interaction capabilities making it easier for users to create and edit text elements in GIMP.",
+        "student_name": "Gabriele Barbero",
+        "code_url": "https://gitlab.gnome.org/Teams/GIMP/Design/gimp-ux/-/issues/386",
+        "proposal_id": "QtwLDkrm",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/bHqrCiaR"
+      },
+      {
+        "title": "Enhance the plug-in/filter development experience",
+        "short_description": "The new 3.0 release of GIMP introduced many API changes that require all third-party plugins to be updated. Notably, a new filter API for using GEGL...",
+        "description": "The new 3.0 release of GIMP introduced many API changes that require all third-party plugins to be updated. Notably, a new filter API for using GEGL filters replaced an old compatibility API. This provides a new level of flexibility and convenience at the expense of discoverability. Plug-in and filter creators need an accessible and convenient way of discovering what GEGL filters they can make use of. Overall, the plug-in/filter development experience could be improved. Especially the discoverability of available APIs and where to find them.\r\n\r\nIn this project I want to implement a new browser for discovering which GEGL filters are available and how they can be used from a plug-in/filter. Then, I want to explore how to merge existing procedure and plug-in browsers with the newly implemented one. Lastly, I want to explore how to further enhance the development experience. Some options are (a) making additional API documentation available in the GIMP UI, (b) doing research with plug-in/filter developers to learn about their problems and experiences.",
+        "student_name": "Ondřej Míchal",
+        "code_url": "https://martymichal.cz/posts/2025/gsoc-2025-final-report/",
+        "proposal_id": "w5EXEZJQ",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/VQ0jE58o"
+      },
+      {
+        "title": "Extension website",
+        "short_description": "This proposal outlines a comprehensive plan to develop a new website for GIMP's extension platform. The project will focus on creating a primarily...",
+        "description": "This proposal outlines a comprehensive plan to develop a new website for GIMP's extension platform. The project will focus on creating a primarily static website with minimal yet essential dynamic components, ensuring security and ease of maintenance.",
+        "student_name": "Shivam Shekhar Soy",
+        "code_url": "https://gitlab.gnome.org/samisthefbi/contributions",
+        "proposal_id": "5H82Ouyy",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/4I53AOAO"
+      }
+    ],
+    "2026": []
   },
   "githubID": "glimpse-editor",
   "repositories": [],

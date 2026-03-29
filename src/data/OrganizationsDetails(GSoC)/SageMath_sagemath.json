@@ -43,7 +43,8 @@
     2022,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2016": [
@@ -460,7 +461,63 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/j1yAryTd"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Poincaré normal form of Riemann matrices",
+        "short_description": "The project aims to compute the Poincaré normal form of Riemann matrices in SageMath. This computation enables the decomposition of theta functions...",
+        "description": "The project aims to compute the Poincaré normal form of Riemann matrices in SageMath.  This computation enables the decomposition of theta functions into a product of lower-dimensional theta functions, which can be evaluated much faster.  The project will implement the methods described by Martens to equip SageMath with tools for detecting and performing these reductions.  \n\nThe solution involves finding the reduction matrix M (if it exists), computing the Poincaré normal form of M, and applying a transformation to the period matrix. We aim to deliver a SageMath module for computing M and its normal form, a function for transforming the period matrix, a fully tested implementation for Poincaré reduction, and comprehensive documentation.",
+        "student_name": "Caleb Aryee",
+        "code_url": "https://github.com/sagemath/sage/pull/40608",
+        "proposal_id": "v5Lz80Pp",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/jnvwvAbh"
+      },
+      {
+        "title": "On the Implementation of the O(|E|⋅√|V|) Micali-Vazirani Algorithm",
+        "short_description": "Matchings and perfect matchings have received considerable attention in graph theory as well as in other related domains (such as, but not limited...",
+        "description": "Matchings and perfect matchings have received considerable attention in graph theory as well as in other related domains (such as, but not limited to, algorithms and optimization). There still remain many open problems — such as Barnette’s conjecture, Berge-Fulkerson conjecture, and so on — due to which it continues to remain an active area of research. At the heart of all this research lies the bottleneck of finding a maximum cardinality matching in undirected graphs. The objective of this project is to implement the Micali-Vazirani algorithm in SageMath — which achieves the best known theoretical runtime of O(|E|⋅√|V|) for computing such a matching — and to make all of this available freely to students, educators as well as researchers all across the world.",
+        "student_name": "Janmenjaya Panda",
+        "code_url": "https://janmenjayap.github.io/GSoC-2025/",
+        "proposal_id": "3ABTqQvc",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/0BAiIfUe"
+      },
+      {
+        "title": "The Boson-Fermion Correspondence and Vertex Operators",
+        "short_description": "The boson-fermion correspondence is an isomorphism of two representations of the Heisenberg algebra. It can be stated as a way to construct a special...",
+        "description": "The boson-fermion correspondence is an isomorphism of two representations of the Heisenberg algebra. It can be stated as a way to construct a special family of symmetric functions called Schur functions, using certain objects called vertex operators. The goal of this project is to implement vertex operators in SageMath, and to thereby verify the boson-fermion correspondence by computer. A detailed description of the problem, including mathematical background, a list of deliverables, and more, can be found in the attached pdf.",
+        "student_name": "Joe McDonough",
+        "code_url": "https://github.com/sagemath/sage/issues/40241",
+        "proposal_id": "SgO8QlA4",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/qZ75cron"
+      },
+      {
+        "title": "Functionalities for Krylov methods over exact fields",
+        "short_description": "This project aims to add Krylov subspace methods for matrices over exact fields: representation of the kernel, co-kernel of a matrix of univariate...",
+        "description": "This project aims to add Krylov subspace methods for matrices over exact fields: representation of the kernel, co-kernel of a matrix of univariate polynomials over an exact field as a module, and associated invariants, as well as computation of the characteristic polynomial if the matrix is square via recent methods.\n\nThe performance relies heavily on a few core linear algebra operations, so care must be taken to use the most efficient implementations and to exploit any additional characteristics of the specific use cases. Consideration may also be given to more general optimisation of methods for matrices over univariate polynomials.\n\nKey goals for the project are to have the above functionalities implemented efficiently, with accompanying documentation and tests to meet the project standards.",
+        "student_name": "Nicholas Bell",
+        "code_url": "https://gist.github.com/Biffo89/af96850071fd0212ac64b6ba7b03698e",
+        "proposal_id": "ddRVJd8c",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/BUMbi6Vs"
+      },
+      {
+        "title": "Paths and cycles enumeration methods in graphs",
+        "short_description": "This project focuses on enumeartion of k shotest simple paths. This problem has practical applications in various networks, such as road and...",
+        "description": "This project focuses on enumeartion of k shotest simple paths.\nThis problem has practical applications in various networks, such as road\nand transporation networks. Thus, solving this problem practically as\nfast as possible is essential. There are several algorithms to achieve the\ncurrent best order of time complexity in research field, but in practice one\nof them is faster than others depending on an input graph or the amount\nof memory used. The goal of this project is to implement a unified function\nof these algorithms. It will help Sage users to choose a suitable algorithm\nin each scenario. This project also aims to extend the cycle enumeartion\nmethod in directed graphs currently implemented in Sage to undirected or\nweighted graphs.",
+        "student_name": "Yuta",
+        "code_url": "https://gist.github.com/kappybar/9b7e8fae5cb76298512ae280ef64b45a",
+        "proposal_id": "I6iCzD6j",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/cTcLUQcj"
+      },
+      {
+        "title": "Self Paired Hopf Algebra on Double Posets",
+        "short_description": "This project implements the combinatorial Hopf algebra of double posets. A double poset is a set with two partial orders, and their isomorphism...",
+        "description": "This project implements the combinatorial Hopf algebra of double posets. A double poset is a set with two partial orders, and their isomorphism classes form the basis of a graded Hopf algebra \\(\\mathbb{Z}\\mathbf{D}\\), equipped with a bilinear pairing via \\emph{pictures}.\n\nThe implementation includes a \\texttt{DoublePoset} class, picture counting, and the bialgebra structure using Sage’s \\texttt{Bialgebra} framework. It also defines a homomorphism to quasisymmetric functions via \\(\\pi\\)-partitions, supports internal products, and develops the sub-bialgebra of special double posets mapping to permutations.",
+        "student_name": "Yuxuan Sun",
+        "code_url": "https://github.com/Yuxuan-Sun/GSoC-tmp",
+        "proposal_id": "BAC9ElkI",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/fSP7xErF"
+      }
+    ],
+    "2026": []
   },
   "githubID": "sagemath",
   "repositories": [
@@ -472,30 +529,10 @@
       "html_url": "https://github.com/sagemath/sagemath.github.io",
       "description": "Hosting https://www.sagemath.org files; send Issues/PRs to repositories https://github.com/sagemath/website, https://github.com/sagemath/publications, not this one here!",
       "language": "HTML",
-      "stargazers_count": 34,
+      "stargazers_count": 36,
       "forks_count": 15,
       "open_issues_count": 0,
       "license": null,
-      "topics": []
-    },
-    {
-      "id": 1331548,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMzMxNTQ4",
-      "name": "sagecell",
-      "full_name": "sagemath/sagecell",
-      "html_url": "https://github.com/sagemath/sagecell",
-      "description": "The Sage Cell Server---providing a way to embed Sage computations into any web page.",
-      "language": "Python",
-      "stargazers_count": 207,
-      "forks_count": 70,
-      "open_issues_count": 23,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
       "topics": []
     },
     {
@@ -506,9 +543,9 @@
       "html_url": "https://github.com/sagemath/sage-binder-env",
       "description": "A Binder repo for SageMath computing environment",
       "language": "Jupyter Notebook",
-      "stargazers_count": 27,
-      "forks_count": 37,
-      "open_issues_count": 0,
+      "stargazers_count": 38,
+      "forks_count": 56,
+      "open_issues_count": 1,
       "license": {
         "key": "gpl-3.0",
         "name": "GNU General Public License v3.0",
@@ -525,16 +562,16 @@
       ]
     },
     {
-      "id": 597660615,
-      "node_id": "MDEwOlJlcG9zaXRvcnk1OTc2NjA2MTU=",
-      "name": "sage",
-      "full_name": "sagemath/sage",
-      "html_url": "https://github.com/sagemath/sage",
-      "description": "Main repository of SageMath",
+      "id": 1331548,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMzMxNTQ4",
+      "name": "sagecell",
+      "full_name": "sagemath/sagecell",
+      "html_url": "https://github.com/sagemath/sagecell",
+      "description": "The Sage Cell Server---providing a way to embed Sage computations into any web page.",
       "language": "Python",
-      "stargazers_count": 1776,
-      "forks_count": 613,
-      "open_issues_count": 5563,
+      "stargazers_count": 221,
+      "forks_count": 77,
+      "open_issues_count": 20,
       "license": {
         "key": "other",
         "name": "Other",
@@ -545,22 +582,42 @@
       "topics": []
     },
     {
-      "id": 78844084,
-      "node_id": "MDEwOlJlcG9zaXRvcnk3ODg0NDA4NA==",
-      "name": "cypari2",
-      "full_name": "sagemath/cypari2",
-      "html_url": "https://github.com/sagemath/cypari2",
-      "description": "Python interface to the number theory library PARI/GP. Source repository for https://pypi.org/project/cypari2/",
+      "id": 528019184,
+      "node_id": "R_kgDOH3ju8A",
+      "name": "pplpy",
+      "full_name": "sagemath/pplpy",
+      "html_url": "https://github.com/sagemath/pplpy",
+      "description": "Python wrapper to the PPL library. Source repository for https://pypi.org/project/pplpy/",
       "language": "Cython",
-      "stargazers_count": 30,
-      "forks_count": 29,
-      "open_issues_count": 26,
+      "stargazers_count": 8,
+      "forks_count": 5,
+      "open_issues_count": 7,
       "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "topics": []
+    },
+    {
+      "id": 597660615,
+      "node_id": "MDEwOlJlcG9zaXRvcnk1OTc2NjA2MTU=",
+      "name": "sage",
+      "full_name": "sagemath/sage",
+      "html_url": "https://github.com/sagemath/sage",
+      "description": "Main repository of SageMath",
+      "language": "Python",
+      "stargazers_count": 2303,
+      "forks_count": 833,
+      "open_issues_count": 5682,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
       },
       "topics": []
     },
@@ -573,8 +630,8 @@
       "description": "Support for using Giac within SageMath",
       "language": "Cython",
       "stargazers_count": 1,
-      "forks_count": 0,
-      "open_issues_count": 0,
+      "forks_count": 1,
+      "open_issues_count": 1,
       "license": {
         "key": "gpl-3.0",
         "name": "GNU General Public License v3.0",
@@ -585,17 +642,43 @@
       "topics": []
     },
     {
-      "id": 9248594,
-      "node_id": "MDEwOlJlcG9zaXRvcnk5MjQ4NTk0",
-      "name": "website",
-      "full_name": "sagemath/website",
-      "html_url": "https://github.com/sagemath/website",
-      "description": "Source for https://www.sagemath.org/; submit Issues/PRs here to update the website",
-      "language": "HTML",
-      "stargazers_count": 40,
-      "forks_count": 180,
-      "open_issues_count": 49,
-      "license": null,
+      "id": 78844084,
+      "node_id": "MDEwOlJlcG9zaXRvcnk3ODg0NDA4NA==",
+      "name": "cypari2",
+      "full_name": "sagemath/cypari2",
+      "html_url": "https://github.com/sagemath/cypari2",
+      "description": "Python interface to the number theory library PARI/GP. Source repository for https://pypi.org/project/cypari2/",
+      "language": "Cython",
+      "stargazers_count": 31,
+      "forks_count": 33,
+      "open_issues_count": 42,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "topics": []
+    },
+    {
+      "id": 371352527,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzNzEzNTI1Mjc=",
+      "name": "memory_allocator",
+      "full_name": "sagemath/memory_allocator",
+      "html_url": "https://github.com/sagemath/memory_allocator",
+      "description": "Cython extension class to allocate memory. Source repository for https://pypi.org/project/memory-allocator/",
+      "language": "Cython",
+      "stargazers_count": 11,
+      "forks_count": 7,
+      "open_issues_count": 1,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
       "topics": []
     },
     {
@@ -607,8 +690,22 @@
       "description": "Only hosting https://doc.sagemath.org/ files. Updates to the documentation must be made with PRs to https://github.com/sagemath/sage, not here.",
       "language": "HTML",
       "stargazers_count": 12,
-      "forks_count": 9,
+      "forks_count": 8,
       "open_issues_count": 2,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 9248594,
+      "node_id": "MDEwOlJlcG9zaXRvcnk5MjQ4NTk0",
+      "name": "website",
+      "full_name": "sagemath/website",
+      "html_url": "https://github.com/sagemath/website",
+      "description": "Source for https://www.sagemath.org/; submit Issues/PRs here to update the website",
+      "language": "HTML",
+      "stargazers_count": 40,
+      "forks_count": 181,
+      "open_issues_count": 47,
       "license": null,
       "topics": []
     },
@@ -620,9 +717,9 @@
       "html_url": "https://github.com/sagemath/cysignals",
       "description": "cysignals: interrupt and signal handling for Cython. Source repository for https://pypi.org/project/cysignals/",
       "language": "Cython",
-      "stargazers_count": 43,
-      "forks_count": 27,
-      "open_issues_count": 27,
+      "stargazers_count": 44,
+      "forks_count": 29,
+      "open_issues_count": 28,
       "license": {
         "key": "lgpl-3.0",
         "name": "GNU Lesser General Public License v3.0",
@@ -633,22 +730,22 @@
       "topics": []
     },
     {
-      "id": 880351894,
-      "node_id": "R_kgDONHkalg",
-      "name": "sage-windows",
-      "full_name": "sagemath/sage-windows",
-      "html_url": "https://github.com/sagemath/sage-windows",
-      "description": "SageMath installers for users on Windows",
-      "language": "PowerShell",
+      "id": 229815133,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMjk4MTUxMzM=",
+      "name": "sage-numerical-backends-coin",
+      "full_name": "sagemath/sage-numerical-backends-coin",
+      "html_url": "https://github.com/sagemath/sage-numerical-backends-coin",
+      "description": "COIN-OR mixed integer linear programming backend for SageMath. Source repository for https://pypi.org/project/sage-numerical-backends-coin/, can be installed on top of distributions providing SageMath. See also https://github.com/sagemath/sage-numerical-backends-gurobi and https://github.com/sagemath/sage-numerical-backends-cplex",
+      "language": "Cython",
       "stargazers_count": 3,
-      "forks_count": 0,
-      "open_issues_count": 2,
+      "forks_count": 4,
+      "open_issues_count": 5,
       "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
       },
       "topics": []
     },
@@ -662,7 +759,41 @@
       "language": "TeX",
       "stargazers_count": 25,
       "forks_count": 34,
-      "open_issues_count": 7,
+      "open_issues_count": 5,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 880351894,
+      "node_id": "R_kgDONHkalg",
+      "name": "sage-windows",
+      "full_name": "sagemath/sage-windows",
+      "html_url": "https://github.com/sagemath/sage-windows",
+      "description": "SageMath installers for users on Windows",
+      "language": "PowerShell",
+      "stargazers_count": 7,
+      "forks_count": 0,
+      "open_issues_count": 2,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "topics": []
+    },
+    {
+      "id": 291238123,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyOTEyMzgxMjM=",
+      "name": ".github",
+      "full_name": "sagemath/.github",
+      "html_url": "https://github.com/sagemath/.github",
+      "description": "useful to contain FUNDING.yml",
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 2,
+      "open_issues_count": 0,
       "license": null,
       "topics": []
     },
@@ -712,20 +843,6 @@
       "topics": []
     },
     {
-      "id": 291238123,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyOTEyMzgxMjM=",
-      "name": ".github",
-      "full_name": "sagemath/.github",
-      "html_url": "https://github.com/sagemath/.github",
-      "description": "useful to contain FUNDING.yml",
-      "language": null,
-      "stargazers_count": 0,
-      "forks_count": 1,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
       "id": 229981324,
       "node_id": "MDEwOlJlcG9zaXRvcnkyMjk5ODEzMjQ=",
       "name": "sage-numerical-backends-gurobi",
@@ -735,26 +852,6 @@
       "language": "Cython",
       "stargazers_count": 6,
       "forks_count": 6,
-      "open_issues_count": 5,
-      "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
-      },
-      "topics": []
-    },
-    {
-      "id": 229815133,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMjk4MTUxMzM=",
-      "name": "sage-numerical-backends-coin",
-      "full_name": "sagemath/sage-numerical-backends-coin",
-      "html_url": "https://github.com/sagemath/sage-numerical-backends-coin",
-      "description": "COIN-OR mixed integer linear programming backend for SageMath. Source repository for https://pypi.org/project/sage-numerical-backends-coin/, can be installed on top of distributions providing SageMath. See also https://github.com/sagemath/sage-numerical-backends-gurobi and https://github.com/sagemath/sage-numerical-backends-cplex",
-      "language": "Cython",
-      "stargazers_count": 3,
-      "forks_count": 4,
       "open_issues_count": 5,
       "license": {
         "key": "gpl-2.0",
@@ -831,49 +928,9 @@
       "html_url": "https://github.com/sagemath/sage-shell-mode",
       "description": "Emacs front end for SageMath",
       "language": "Emacs Lisp",
-      "stargazers_count": 102,
-      "forks_count": 16,
+      "stargazers_count": 105,
+      "forks_count": 18,
       "open_issues_count": 40,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": []
-    },
-    {
-      "id": 528019184,
-      "node_id": "R_kgDOH3ju8A",
-      "name": "pplpy",
-      "full_name": "sagemath/pplpy",
-      "html_url": "https://github.com/sagemath/pplpy",
-      "description": "Python wrapper to the PPL library. Source repository for https://pypi.org/project/pplpy/",
-      "language": "Cython",
-      "stargazers_count": 8,
-      "forks_count": 2,
-      "open_issues_count": 9,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": []
-    },
-    {
-      "id": 371352527,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzNzEzNTI1Mjc=",
-      "name": "memory_allocator",
-      "full_name": "sagemath/memory_allocator",
-      "html_url": "https://github.com/sagemath/memory_allocator",
-      "description": "Cython extension class to allocate memory. Source repository for https://pypi.org/project/memory-allocator/",
-      "language": "Cython",
-      "stargazers_count": 9,
-      "forks_count": 5,
-      "open_issues_count": 0,
       "license": {
         "key": "gpl-3.0",
         "name": "GNU General Public License v3.0",
@@ -891,7 +948,7 @@
       "html_url": "https://github.com/sagemath/more-sagemath-tutorials",
       "description": "More SageMath Tutorials: A place to share and evolve tutorials for Sage, with the aim to contribute them to Sage",
       "language": "Jupyter Notebook",
-      "stargazers_count": 32,
+      "stargazers_count": 31,
       "forks_count": 9,
       "open_issues_count": 4,
       "license": null,
@@ -968,9 +1025,9 @@
       "html_url": "https://github.com/sagemath/sagetex",
       "description": "Embed code, results of computations, and plots from the Sage mathematics software suite (https://www.sagemath.org) into LaTeX documents. Source repository for https://pypi.org/project/sagetex/ and https://ctan.org/pkg/sagetex",
       "language": "TeX",
-      "stargazers_count": 65,
-      "forks_count": 23,
-      "open_issues_count": 23,
+      "stargazers_count": 70,
+      "forks_count": 24,
+      "open_issues_count": 24,
       "license": {
         "key": "other",
         "name": "Other",
@@ -988,9 +1045,9 @@
       "html_url": "https://github.com/sagemath/trac-to-github",
       "description": "Script to migrate Trac tickets to GitHub issues and the Trac wiki to markdown. Input: https://trac.sagemath.org/ ➠ Intermediate: https://github.com/sagemath/trac_to_gh ➠ Output: https://github.com/sagemath/sage/issues",
       "language": "Python",
-      "stargazers_count": 7,
+      "stargazers_count": 8,
       "forks_count": 4,
-      "open_issues_count": 17,
+      "open_issues_count": 18,
       "license": null,
       "topics": []
     },
@@ -1036,7 +1093,7 @@
       "node_id": "MDQ6VXNlcjIwNzQwNQ==",
       "avatar_url": "https://avatars.githubusercontent.com/u/207405?v=4",
       "html_url": "https://github.com/haraldschilly",
-      "contributions": 2420
+      "contributions": 2426
     },
     {
       "login": "embray",
@@ -1055,12 +1112,20 @@
       "contributions": 1
     },
     {
+      "login": "kwankyu",
+      "id": 1456101,
+      "node_id": "MDQ6VXNlcjE0NTYxMDE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1456101?v=4",
+      "html_url": "https://github.com/kwankyu",
+      "contributions": 6
+    },
+    {
       "login": "novoselt",
       "id": 1993227,
       "node_id": "MDQ6VXNlcjE5OTMyMjc=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1993227?v=4",
       "html_url": "https://github.com/novoselt",
-      "contributions": 724
+      "contributions": 756
     },
     {
       "login": "ihanson",
@@ -1095,6 +1160,14 @@
       "contributions": 38
     },
     {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "html_url": "https://github.com/apps/dependabot",
+      "contributions": 34
+    },
+    {
       "login": "stevenJohnson",
       "id": 1613369,
       "node_id": "MDQ6VXNlcjE2MTMzNjk=",
@@ -1111,14 +1184,6 @@
       "contributions": 22
     },
     {
-      "login": "dependabot[bot]",
-      "id": 49699333,
-      "node_id": "MDM6Qm90NDk2OTkzMzM=",
-      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-      "html_url": "https://github.com/apps/dependabot",
-      "contributions": 21
-    },
-    {
       "login": "paulmasson",
       "id": 3289562,
       "node_id": "MDQ6VXNlcjMyODk1NjI=",
@@ -1133,14 +1198,6 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/1276278?v=4",
       "html_url": "https://github.com/williamstein",
       "contributions": 7
-    },
-    {
-      "login": "kwankyu",
-      "id": 1456101,
-      "node_id": "MDQ6VXNlcjE0NTYxMDE=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1456101?v=4",
-      "html_url": "https://github.com/kwankyu",
-      "contributions": 6
     },
     {
       "login": "brandoncurtis",

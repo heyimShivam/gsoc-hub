@@ -32,7 +32,8 @@
   "year": [
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2023": [
@@ -93,7 +94,36 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/Kfz2GBWj"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "3D PDF Export in FreeCAD",
+        "short_description": "The 3D PDF Export for FreeCAD project aims to develop a native capability for exporting interactive 3D models directly to PDF format, enhancing...",
+        "description": "The 3D PDF Export for FreeCAD project aims to develop a native capability for exporting interactive 3D models directly to PDF format, enhancing FreeCAD's documentation and collaboration capabilities. Currently, FreeCAD users must rely on complex multi-step workflows involving external tools like MeshLab, LaTeX, or even commercial CAD software to create 3D PDFs, often resulting in loss of model fidelity, colors, and structure.\n\nThis project proposes implementing a seamless 3D PDF export feature integrated directly into FreeCAD's TechDraw workbench. Users will be able to create standard technical drawings with traditional orthographic views and dimensions, plus an interactive 3D view that appears as a regular isometric view in print but becomes fully interactive when viewed digitally.\n\n\nKey components of the implementation include:\n1.\tDocument Structure Access: Utilizing FreeCAD's Python API to traverse the document object hierarchy or need to rely on Qt for accessing certain structural information. \n2.\t3D Format Conversion: Implementing exporters for both U3D format and PRC format to support NURBS surfaces for higher fidelity representation.\n3.\tPDF Generation: Creating a PDF container that properly embeds the 3D content with interactive viewing capabilities.\n4.\tTechDraw Integration: Extending the TechDraw workbench to include a new \"3D View\" type alongside traditional orthographic views.\n\nThe completed feature will significantly enhance FreeCAD's usability for professional documentation, enabling users to share interactive 3D models with clients and collaborators who don't have CAD software, addressing a long-requested feature within the FreeCAD community.",
+        "student_name": "chiragsingh1711",
+        "code_url": "https://github.com/chiragsingh1711/gsoc-2025-3D-PDF-Export-FreeCAD",
+        "proposal_id": "8zS4ZHDD",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/istlFWLD"
+      },
+      {
+        "title": "Interactive controls in the 3D View",
+        "short_description": "This project aims to add interactive controls like Gizmos along with On- View-Parameters (OVPs) directly to the 3D model view of FreeCAD,...",
+        "description": "This project aims to add interactive controls like Gizmos along with On-\nView-Parameters (OVPs) directly to the 3D model view of FreeCAD, predominantly for the Part Design workbench. This will allow users to perform the operations more easily with increased visual feedback. Through this project they will be able to directly set different parameters needed for a particular operation in the 3D view without needing\nto use the task dialog continuously. The controls will be configurable and\nwon’t interfere with the existing experience.",
+        "student_name": "Sayantan Deb (captain0xff)",
+        "code_url": "https://captain0xff.github.io/gsoc/gsoc-report.html",
+        "proposal_id": "P4NKWm45",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/CCXJAFdQ"
+      },
+      {
+        "title": "Multiple files parallel editing",
+        "short_description": "As of march 2025 FreeCAD cannot have more than one active document. If a task is going on in a file, another file cannot be edited until that...",
+        "description": "As of march 2025 FreeCAD cannot have more than one active document. If a task is going on in a file, another file cannot be edited until that operation is resolved. The project's aim is to instantiate an editor per tab (document) and therefore allow parallel editing of multiple files. This would not only make the software more powerful for advanced users, but also friendlier for beginners.",
+        "student_name": "theo-vt",
+        "code_url": "https://github.com/FreeCAD/FreeCAD/pull/21978",
+        "proposal_id": "B7VtmqmF",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/xukQtkzX"
+      }
+    ],
+    "2026": []
   },
   "githubID": "FreeCAD",
   "repositories": [
@@ -105,15 +135,15 @@
       "html_url": "https://github.com/FreeCAD/FreeCAD",
       "description": "Official source code of FreeCAD, a free and opensource multiplatform 3D parametric modeler.",
       "language": "C++",
-      "stargazers_count": 24693,
-      "forks_count": 4555,
-      "open_issues_count": 3075,
+      "stargazers_count": 29887,
+      "forks_count": 5348,
+      "open_issues_count": 3757,
       "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
+        "key": "lgpl-2.1",
+        "name": "GNU Lesser General Public License v2.1",
+        "spdx_id": "LGPL-2.1",
+        "url": "https://api.github.com/licenses/lgpl-2.1",
+        "node_id": "MDc6TGljZW5zZTEx"
       },
       "topics": [
         "3d",
@@ -133,92 +163,16 @@
       ]
     },
     {
-      "id": 138337583,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMzgzMzc1ODM=",
-      "name": "freecad-feedstock",
-      "full_name": "FreeCAD/freecad-feedstock",
-      "html_url": "https://github.com/FreeCAD/freecad-feedstock",
-      "description": "A conda-smithy repository for freecad.",
-      "language": "Shell",
-      "stargazers_count": 6,
-      "forks_count": 12,
-      "open_issues_count": 2,
-      "license": {
-        "key": "bsd-3-clause",
-        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
-        "spdx_id": "BSD-3-Clause",
-        "url": "https://api.github.com/licenses/bsd-3-clause",
-        "node_id": "MDc6TGljZW5zZTU="
-      },
-      "topics": []
-    },
-    {
-      "id": 18778796,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxODc3ODc5Ng==",
-      "name": "homebrew-freecad",
-      "full_name": "FreeCAD/homebrew-freecad",
-      "html_url": "https://github.com/FreeCAD/homebrew-freecad",
-      "description": "Homebrew recipes for FreeCAD",
-      "language": "Ruby",
-      "stargazers_count": 58,
-      "forks_count": 35,
-      "open_issues_count": 25,
-      "license": null,
-      "topics": [
-        "formula",
-        "freecad",
-        "homebrew",
-        "homebrew-freecad",
-        "homebrew-recipes",
-        "macos",
-        "macosx"
-      ]
-    },
-    {
-      "id": 863804824,
-      "node_id": "R_kgDOM3ydmA",
-      "name": "org.freecad.FreeCAD",
-      "full_name": "FreeCAD/org.freecad.FreeCAD",
-      "html_url": "https://github.com/FreeCAD/org.freecad.FreeCAD",
-      "description": null,
-      "language": "Shell",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 42783370,
-      "node_id": "MDEwOlJlcG9zaXRvcnk0Mjc4MzM3MA==",
-      "name": "FreeCAD-addons",
-      "full_name": "FreeCAD/FreeCAD-addons",
-      "html_url": "https://github.com/FreeCAD/FreeCAD-addons",
-      "description": "A convenient gathering of useful and well-developed FreeCAD plugins made by the community.",
+      "id": 1141392742,
+      "node_id": "R_kgDORAhFZg",
+      "name": "Addons",
+      "full_name": "FreeCAD/Addons",
+      "html_url": "https://github.com/FreeCAD/Addons",
+      "description": "Addon index for FreeCAD >= 1.0.0",
       "language": null,
-      "stargazers_count": 891,
-      "forks_count": 282,
-      "open_issues_count": 22,
-      "license": null,
-      "topics": [
-        "addons",
-        "addons-installer",
-        "freecad",
-        "freecad-addons",
-        "workbench"
-      ]
-    },
-    {
-      "id": 961632838,
-      "node_id": "R_kgDOOVFaRg",
-      "name": "AddonManager",
-      "full_name": "FreeCAD/AddonManager",
-      "html_url": "https://github.com/FreeCAD/AddonManager",
-      "description": "A FreeCAD Module for installing third-party addons (workbenches, macros, themes, etc.)",
-      "language": "Python",
-      "stargazers_count": 1,
-      "forks_count": 4,
-      "open_issues_count": 56,
+      "stargazers_count": 2,
+      "forks_count": 1,
+      "open_issues_count": 2,
       "license": {
         "key": "lgpl-2.1",
         "name": "GNU Lesser General Public License v2.1",
@@ -226,7 +180,96 @@
         "url": "https://api.github.com/licenses/lgpl-2.1",
         "node_id": "MDc6TGljZW5zZTEx"
       },
-      "topics": []
+      "topics": [
+        "addon",
+        "bundle",
+        "data",
+        "freecad",
+        "index",
+        "macro",
+        "preferences",
+        "workbench"
+      ]
+    },
+    {
+      "id": 1185427065,
+      "node_id": "R_kgDORqgueQ",
+      "name": "Addon-Reports",
+      "full_name": "FreeCAD/Addon-Reports",
+      "html_url": "https://github.com/FreeCAD/Addon-Reports",
+      "description": "Technical quality report for addons.",
+      "language": "Python",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "open_issues_count": 1,
+      "license": {
+        "key": "lgpl-2.1",
+        "name": "GNU Lesser General Public License v2.1",
+        "spdx_id": "LGPL-2.1",
+        "url": "https://api.github.com/licenses/lgpl-2.1",
+        "node_id": "MDc6TGljZW5zZTEx"
+      },
+      "topics": [
+        "addon",
+        "quality",
+        "report",
+        "technical"
+      ]
+    },
+    {
+      "id": 1123061110,
+      "node_id": "R_kgDOQvCNdg",
+      "name": "Addon-Template",
+      "full_name": "FreeCAD/Addon-Template",
+      "html_url": "https://github.com/FreeCAD/Addon-Template",
+      "description": "Minimal FreeCAD Addon Template",
+      "language": "Python",
+      "stargazers_count": 2,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "cc-by-sa-4.0",
+        "name": "Creative Commons Attribution Share Alike 4.0 International",
+        "spdx_id": "CC-BY-SA-4.0",
+        "url": "https://api.github.com/licenses/cc-by-sa-4.0",
+        "node_id": "MDc6TGljZW5zZTI2"
+      },
+      "topics": [
+        "addon",
+        "freecad",
+        "manifest",
+        "minimal",
+        "python",
+        "template",
+        "uv"
+      ]
+    },
+    {
+      "id": 1181084488,
+      "node_id": "R_kgDORmXrSA",
+      "name": "Machines",
+      "full_name": "FreeCAD/Machines",
+      "html_url": "https://github.com/FreeCAD/Machines",
+      "description": "Collection of CAM machines.",
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 2,
+      "open_issues_count": 0,
+      "license": {
+        "key": "cc-by-sa-4.0",
+        "name": "Creative Commons Attribution Share Alike 4.0 International",
+        "spdx_id": "CC-BY-SA-4.0",
+        "url": "https://api.github.com/licenses/cc-by-sa-4.0",
+        "node_id": "MDc6TGljZW5zZTI2"
+      },
+      "topics": [
+        "addon",
+        "cam",
+        "collection",
+        "definition",
+        "freecad",
+        "machine"
+      ]
     },
     {
       "id": 850739433,
@@ -237,104 +280,8 @@
       "description": "Minutes and agendas for regular meetings of the FreeCAD developer community",
       "language": null,
       "stargazers_count": 8,
-      "forks_count": 7,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 41509435,
-      "node_id": "MDEwOlJlcG9zaXRvcnk0MTUwOTQzNQ==",
-      "name": "FreeCAD-Homepage",
-      "full_name": "FreeCAD/FreeCAD-Homepage",
-      "html_url": "https://github.com/FreeCAD/FreeCAD-Homepage",
-      "description": "Official FreeCAD Homepage (www.freecad.org)",
-      "language": "CSS",
-      "stargazers_count": 37,
-      "forks_count": 52,
-      "open_issues_count": 42,
-      "license": {
-        "key": "lgpl-2.1",
-        "name": "GNU Lesser General Public License v2.1",
-        "spdx_id": "LGPL-2.1",
-        "url": "https://api.github.com/licenses/lgpl-2.1",
-        "node_id": "MDc6TGljZW5zZTEx"
-      },
-      "topics": []
-    },
-    {
-      "id": 93114989,
-      "node_id": "MDEwOlJlcG9zaXRvcnk5MzExNDk4OQ==",
-      "name": "FreeCAD-Bundle",
-      "full_name": "FreeCAD/FreeCAD-Bundle",
-      "html_url": "https://github.com/FreeCAD/FreeCAD-Bundle",
-      "description": "Stand-alone repo to Build and Deploy installable FreeCAD images. Do not open general FreeCAD issues here.",
-      "language": "Python",
-      "stargazers_count": 373,
-      "forks_count": 73,
-      "open_issues_count": 47,
-      "license": {
-        "key": "lgpl-2.1",
-        "name": "GNU Lesser General Public License v2.1",
-        "spdx_id": "LGPL-2.1",
-        "url": "https://api.github.com/licenses/lgpl-2.1",
-        "node_id": "MDc6TGljZW5zZTEx"
-      },
-      "topics": []
-    },
-    {
-      "id": 447573786,
-      "node_id": "R_kgDOGq1vGg",
-      "name": "FPA",
-      "full_name": "FreeCAD/FPA",
-      "html_url": "https://github.com/FreeCAD/FPA",
-      "description": "The FreeCAD Project Association",
-      "language": "HTML",
-      "stargazers_count": 34,
-      "forks_count": 27,
-      "open_issues_count": 38,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 492024843,
-      "node_id": "R_kgDOHVO0Cw",
-      "name": "FreeCAD-snap",
-      "full_name": "FreeCAD/FreeCAD-snap",
-      "html_url": "https://github.com/FreeCAD/FreeCAD-snap",
-      "description": "The official Snap package of the FreeCAD project",
-      "language": "Python",
-      "stargazers_count": 11,
-      "forks_count": 11,
-      "open_issues_count": 20,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 919057847,
-      "node_id": "R_kgDONse1tw",
-      "name": "Ondsel-Server",
-      "full_name": "FreeCAD/Ondsel-Server",
-      "html_url": "https://github.com/FreeCAD/Ondsel-Server",
-      "description": "web platform which mainly contains frontend and backend for Ondsel Service",
-      "language": "JavaScript",
-      "stargazers_count": 5,
-      "forks_count": 2,
+      "forks_count": 13,
       "open_issues_count": 1,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 437890817,
-      "node_id": "R_kgDOGhmvAQ",
-      "name": "issues-backup",
-      "full_name": "FreeCAD/issues-backup",
-      "html_url": "https://github.com/FreeCAD/issues-backup",
-      "description": "backup of issues and pull requests",
-      "language": "Python",
-      "stargazers_count": 4,
-      "forks_count": 1,
-      "open_issues_count": 0,
       "license": null,
       "topics": []
     },
@@ -346,9 +293,9 @@
       "html_url": "https://github.com/FreeCAD/DevelopersHandbook",
       "description": "A handbook about FreeCAD development",
       "language": "HTML",
-      "stargazers_count": 50,
-      "forks_count": 35,
-      "open_issues_count": 30,
+      "stargazers_count": 67,
+      "forks_count": 46,
+      "open_issues_count": 40,
       "license": null,
       "topics": [
         "cpp",
@@ -360,17 +307,272 @@
       ]
     },
     {
-      "id": 919057624,
-      "node_id": "R_kgDONse02A",
-      "name": "FC-Worker",
-      "full_name": "FreeCAD/FC-Worker",
-      "html_url": "https://github.com/FreeCAD/FC-Worker",
-      "description": "Containerized Headless FreeCAD Runner",
+      "id": 961632838,
+      "node_id": "R_kgDOOVFaRg",
+      "name": "AddonManager",
+      "full_name": "FreeCAD/AddonManager",
+      "html_url": "https://github.com/FreeCAD/AddonManager",
+      "description": "A FreeCAD Module for installing third-party addons (workbenches, macros, themes, etc.)",
       "language": "Python",
+      "stargazers_count": 9,
+      "forks_count": 20,
+      "open_issues_count": 41,
+      "license": {
+        "key": "lgpl-2.1",
+        "name": "GNU Lesser General Public License v2.1",
+        "spdx_id": "LGPL-2.1",
+        "url": "https://api.github.com/licenses/lgpl-2.1",
+        "node_id": "MDc6TGljZW5zZTEx"
+      },
+      "topics": []
+    },
+    {
+      "id": 41509435,
+      "node_id": "MDEwOlJlcG9zaXRvcnk0MTUwOTQzNQ==",
+      "name": "FreeCAD-Homepage",
+      "full_name": "FreeCAD/FreeCAD-Homepage",
+      "html_url": "https://github.com/FreeCAD/FreeCAD-Homepage",
+      "description": "Official FreeCAD Homepage (www.freecad.org)",
+      "language": "CSS",
+      "stargazers_count": 72,
+      "forks_count": 64,
+      "open_issues_count": 42,
+      "license": {
+        "key": "lgpl-2.1",
+        "name": "GNU Lesser General Public License v2.1",
+        "spdx_id": "LGPL-2.1",
+        "url": "https://api.github.com/licenses/lgpl-2.1",
+        "node_id": "MDc6TGljZW5zZTEx"
+      },
+      "topics": []
+    },
+    {
+      "id": 1146829839,
+      "node_id": "R_kgDORFs8Dw",
+      "name": "Website",
+      "full_name": "FreeCAD/Website",
+      "html_url": "https://github.com/FreeCAD/Website",
+      "description": "WIP new unified FreeCAD website",
+      "language": null,
+      "stargazers_count": 2,
+      "forks_count": 3,
+      "open_issues_count": 2,
+      "license": {
+        "key": "lgpl-2.1",
+        "name": "GNU Lesser General Public License v2.1",
+        "spdx_id": "LGPL-2.1",
+        "url": "https://api.github.com/licenses/lgpl-2.1",
+        "node_id": "MDc6TGljZW5zZTEx"
+      },
+      "topics": [
+        "freecad",
+        "hugo",
+        "website"
+      ]
+    },
+    {
+      "id": 447573786,
+      "node_id": "R_kgDOGq1vGg",
+      "name": "FPA",
+      "full_name": "FreeCAD/FPA",
+      "html_url": "https://github.com/FreeCAD/FPA",
+      "description": "The FreeCAD Project Association",
+      "language": "Python",
+      "stargazers_count": 37,
+      "forks_count": 33,
+      "open_issues_count": 50,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 492024843,
+      "node_id": "R_kgDOHVO0Cw",
+      "name": "FreeCAD-snap",
+      "full_name": "FreeCAD/FreeCAD-snap",
+      "html_url": "https://github.com/FreeCAD/FreeCAD-snap",
+      "description": "The official Snap package of the FreeCAD project",
+      "language": "Python",
+      "stargazers_count": 14,
+      "forks_count": 13,
+      "open_issues_count": 21,
+      "license": {
+        "key": "lgpl-2.1",
+        "name": "GNU Lesser General Public License v2.1",
+        "spdx_id": "LGPL-2.1",
+        "url": "https://api.github.com/licenses/lgpl-2.1",
+        "node_id": "MDc6TGljZW5zZTEx"
+      },
+      "topics": []
+    },
+    {
+      "id": 437890817,
+      "node_id": "R_kgDOGhmvAQ",
+      "name": "issues-backup",
+      "full_name": "FreeCAD/issues-backup",
+      "html_url": "https://github.com/FreeCAD/issues-backup",
+      "description": "backup of issues and pull requests",
+      "language": "Python",
+      "stargazers_count": 4,
+      "forks_count": 2,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1048229932,
+      "node_id": "R_kgDOPnq4LA",
+      "name": "pivy",
+      "full_name": "FreeCAD/pivy",
+      "html_url": "https://github.com/FreeCAD/pivy",
+      "description": "python bindings to coin3d (vendored by FreeCAD)",
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "isc",
+        "name": "ISC License",
+        "spdx_id": "ISC",
+        "url": "https://api.github.com/licenses/isc",
+        "node_id": "MDc6TGljZW5zZTEw"
+      },
+      "topics": []
+    },
+    {
+      "id": 1047624469,
+      "node_id": "R_kgDOPnF7FQ",
+      "name": "coin",
+      "full_name": "FreeCAD/coin",
+      "html_url": "https://github.com/FreeCAD/coin",
+      "description": "Coin3D core library (FreeCAD-vendored fork)",
+      "language": "C++",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "topics": []
+    },
+    {
+      "id": 481384791,
+      "node_id": "R_kgDOHLFZVw",
+      "name": "FreeCAD-LibPack",
+      "full_name": "FreeCAD/FreeCAD-LibPack",
+      "html_url": "https://github.com/FreeCAD/FreeCAD-LibPack",
+      "description": "Library collection to compile FreeCAD on Windows",
+      "language": "Python",
+      "stargazers_count": 52,
+      "forks_count": 31,
+      "open_issues_count": 17,
+      "license": {
+        "key": "lgpl-2.1",
+        "name": "GNU Lesser General Public License v2.1",
+        "spdx_id": "LGPL-2.1",
+        "url": "https://api.github.com/licenses/lgpl-2.1",
+        "node_id": "MDc6TGljZW5zZTEx"
+      },
+      "topics": []
+    },
+    {
+      "id": 18778796,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxODc3ODc5Ng==",
+      "name": "homebrew-freecad",
+      "full_name": "FreeCAD/homebrew-freecad",
+      "html_url": "https://github.com/FreeCAD/homebrew-freecad",
+      "description": "Homebrew recipes for FreeCAD",
+      "language": "Ruby",
+      "stargazers_count": 61,
+      "forks_count": 37,
+      "open_issues_count": 20,
+      "license": {
+        "key": "lgpl-2.1",
+        "name": "GNU Lesser General Public License v2.1",
+        "spdx_id": "LGPL-2.1",
+        "url": "https://api.github.com/licenses/lgpl-2.1",
+        "node_id": "MDc6TGljZW5zZTEx"
+      },
+      "topics": [
+        "formula",
+        "freecad",
+        "homebrew",
+        "homebrew-freecad",
+        "homebrew-recipes",
+        "macos",
+        "macosx"
+      ]
+    },
+    {
+      "id": 1138539195,
+      "node_id": "R_kgDOQ9y6uw",
+      "name": "Addon-Academy",
+      "full_name": "FreeCAD/Addon-Academy",
+      "html_url": "https://github.com/FreeCAD/Addon-Academy",
+      "description": "[ WIP ] Addon Development materials.",
+      "language": "CSS",
       "stargazers_count": 2,
       "forks_count": 1,
       "open_issues_count": 0,
-      "license": null,
+      "license": {
+        "key": "lgpl-2.1",
+        "name": "GNU Lesser General Public License v2.1",
+        "spdx_id": "LGPL-2.1",
+        "url": "https://api.github.com/licenses/lgpl-2.1",
+        "node_id": "MDc6TGljZW5zZTEx"
+      },
+      "topics": [
+        "academy",
+        "addon",
+        "demo",
+        "documentation",
+        "example",
+        "freecad",
+        "guide",
+        "page"
+      ]
+    },
+    {
+      "id": 221221748,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMjEyMjE3NDg=",
+      "name": "FreeCAD-Enhancement-Proposals",
+      "full_name": "FreeCAD/FreeCAD-Enhancement-Proposals",
+      "html_url": "https://github.com/FreeCAD/FreeCAD-Enhancement-Proposals",
+      "description": "FreeCAD-Enhancement-Proposals (FEP's)",
+      "language": null,
+      "stargazers_count": 11,
+      "forks_count": 14,
+      "open_issues_count": 9,
+      "license": {
+        "key": "cc0-1.0",
+        "name": "Creative Commons Zero v1.0 Universal",
+        "spdx_id": "CC0-1.0",
+        "url": "https://api.github.com/licenses/cc0-1.0",
+        "node_id": "MDc6TGljZW5zZTY="
+      },
+      "topics": []
+    },
+    {
+      "id": 114567545,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMTQ1Njc1NDU=",
+      "name": "FreeCAD-render",
+      "full_name": "FreeCAD/FreeCAD-render",
+      "html_url": "https://github.com/FreeCAD/FreeCAD-render",
+      "description": "The Render workbench",
+      "language": "Python",
+      "stargazers_count": 216,
+      "forks_count": 41,
+      "open_issues_count": 19,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
       "topics": []
     },
     {
@@ -381,7 +583,164 @@
       "html_url": "https://github.com/FreeCAD/FreeCAD-Telemetry",
       "description": "Telemetry addon for FreeCAD",
       "language": "Python",
-      "stargazers_count": 6,
+      "stargazers_count": 11,
+      "forks_count": 4,
+      "open_issues_count": 8,
+      "license": {
+        "key": "lgpl-2.1",
+        "name": "GNU Lesser General Public License v2.1",
+        "spdx_id": "LGPL-2.1",
+        "url": "https://api.github.com/licenses/lgpl-2.1",
+        "node_id": "MDc6TGljZW5zZTEx"
+      },
+      "topics": []
+    },
+    {
+      "id": 1170093628,
+      "node_id": "R_kgDORb42PA",
+      "name": "Supplemental-Materials",
+      "full_name": "FreeCAD/Supplemental-Materials",
+      "html_url": "https://github.com/FreeCAD/Supplemental-Materials",
+      "description": "A materials database that supplements the core materials provided by the FreeCAD application.",
+      "language": "Python",
+      "stargazers_count": 1,
+      "forks_count": 2,
+      "open_issues_count": 0,
+      "license": {
+        "key": "cc-by-sa-4.0",
+        "name": "Creative Commons Attribution Share Alike 4.0 International",
+        "spdx_id": "CC-BY-SA-4.0",
+        "url": "https://api.github.com/licenses/cc-by-sa-4.0",
+        "node_id": "MDc6TGljZW5zZTI2"
+      },
+      "topics": []
+    },
+    {
+      "id": 1175412220,
+      "node_id": "R_kgDORg9d_A",
+      "name": "IDF",
+      "full_name": "FreeCAD/IDF",
+      "html_url": "https://github.com/FreeCAD/IDF",
+      "description": "Addon for importing IDF files.",
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "cc-by-sa-4.0",
+        "name": "Creative Commons Attribution Share Alike 4.0 International",
+        "spdx_id": "CC-BY-SA-4.0",
+        "url": "https://api.github.com/licenses/cc-by-sa-4.0",
+        "node_id": "MDc6TGljZW5zZTI2"
+      },
+      "topics": [
+        "addon",
+        "emn",
+        "emp",
+        "freecad",
+        "idf",
+        "import"
+      ]
+    },
+    {
+      "id": 34632624,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzNDYzMjYyNA==",
+      "name": "FreeCAD-macros",
+      "full_name": "FreeCAD/FreeCAD-macros",
+      "html_url": "https://github.com/FreeCAD/FreeCAD-macros",
+      "description": "A repository for FreeCAD macros ",
+      "language": "Python",
+      "stargazers_count": 234,
+      "forks_count": 164,
+      "open_issues_count": 23,
+      "license": null,
+      "topics": [
+        "freecad",
+        "freecad-macro"
+      ]
+    },
+    {
+      "id": 1165193454,
+      "node_id": "R_kgDORXNw7g",
+      "name": "Unsupported-Releases",
+      "full_name": "FreeCAD/Unsupported-Releases",
+      "html_url": "https://github.com/FreeCAD/Unsupported-Releases",
+      "description": "Unsupported builds for platforms no longer available from the main respository",
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 977672543,
+      "node_id": "R_kgDOOkYZXw",
+      "name": "OndselSolver",
+      "full_name": "FreeCAD/OndselSolver",
+      "html_url": "https://github.com/FreeCAD/OndselSolver",
+      "description": "Assembly Constraints and Multibody Dynamics code",
+      "language": "C++",
+      "stargazers_count": 3,
+      "forks_count": 10,
+      "open_issues_count": 7,
+      "license": {
+        "key": "lgpl-2.1",
+        "name": "GNU Lesser General Public License v2.1",
+        "spdx_id": "LGPL-2.1",
+        "url": "https://api.github.com/licenses/lgpl-2.1",
+        "node_id": "MDc6TGljZW5zZTEx"
+      },
+      "topics": []
+    },
+    {
+      "id": 42783370,
+      "node_id": "MDEwOlJlcG9zaXRvcnk0Mjc4MzM3MA==",
+      "name": "FreeCAD-addons",
+      "full_name": "FreeCAD/FreeCAD-addons",
+      "html_url": "https://github.com/FreeCAD/FreeCAD-addons",
+      "description": "Legacy index for FreeCAD < 1.0.0",
+      "language": null,
+      "stargazers_count": 1078,
+      "forks_count": 332,
+      "open_issues_count": 56,
+      "license": null,
+      "topics": [
+        "addons",
+        "freecad",
+        "freecad-addons",
+        "workbench"
+      ]
+    },
+    {
+      "id": 919057624,
+      "node_id": "R_kgDONse02A",
+      "name": "FC-Worker",
+      "full_name": "FreeCAD/FC-Worker",
+      "html_url": "https://github.com/FreeCAD/FC-Worker",
+      "description": "Containerized Headless FreeCAD Runner",
+      "language": "Python",
+      "stargazers_count": 5,
+      "forks_count": 4,
+      "open_issues_count": 0,
+      "license": {
+        "key": "lgpl-2.1",
+        "name": "GNU Lesser General Public License v2.1",
+        "spdx_id": "LGPL-2.1",
+        "url": "https://api.github.com/licenses/lgpl-2.1",
+        "node_id": "MDc6TGljZW5zZTEx"
+      },
+      "topics": []
+    },
+    {
+      "id": 819621959,
+      "node_id": "R_kgDOMNpwRw",
+      "name": "FreeCAD-themes",
+      "full_name": "FreeCAD/FreeCAD-themes",
+      "html_url": "https://github.com/FreeCAD/FreeCAD-themes",
+      "description": "Theme repository for first-party FreeCAD themes",
+      "language": null,
+      "stargazers_count": 8,
       "forks_count": 3,
       "open_issues_count": 3,
       "license": {
@@ -394,211 +753,6 @@
       "topics": []
     },
     {
-      "id": 481384791,
-      "node_id": "R_kgDOHLFZVw",
-      "name": "FreeCAD-LibPack",
-      "full_name": "FreeCAD/FreeCAD-LibPack",
-      "html_url": "https://github.com/FreeCAD/FreeCAD-LibPack",
-      "description": "Library collection to compile FreeCAD on Windows",
-      "language": "Python",
-      "stargazers_count": 42,
-      "forks_count": 20,
-      "open_issues_count": 7,
-      "license": {
-        "key": "lgpl-2.1",
-        "name": "GNU Lesser General Public License v2.1",
-        "spdx_id": "LGPL-2.1",
-        "url": "https://api.github.com/licenses/lgpl-2.1",
-        "node_id": "MDc6TGljZW5zZTEx"
-      },
-      "topics": []
-    },
-    {
-      "id": 114567545,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMTQ1Njc1NDU=",
-      "name": "FreeCAD-render",
-      "full_name": "FreeCAD/FreeCAD-render",
-      "html_url": "https://github.com/FreeCAD/FreeCAD-render",
-      "description": "The Render workbench",
-      "language": "Python",
-      "stargazers_count": 187,
-      "forks_count": 37,
-      "open_issues_count": 6,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 933274622,
-      "node_id": "R_kgDON6Cj_g",
-      "name": "Addon-Manifest-Schema",
-      "full_name": "FreeCAD/Addon-Manifest-Schema",
-      "html_url": "https://github.com/FreeCAD/Addon-Manifest-Schema",
-      "description": "XML Schema for Addon Manifests.",
-      "language": "Python",
-      "stargazers_count": 2,
-      "forks_count": 0,
-      "open_issues_count": 1,
-      "license": {
-        "key": "unlicense",
-        "name": "The Unlicense",
-        "spdx_id": "Unlicense",
-        "url": "https://api.github.com/licenses/unlicense",
-        "node_id": "MDc6TGljZW5zZTE1"
-      },
-      "topics": [
-        "addon",
-        "freecad",
-        "manifest",
-        "package",
-        "schema",
-        "xml",
-        "xsd"
-      ]
-    },
-    {
-      "id": 819621959,
-      "node_id": "R_kgDOMNpwRw",
-      "name": "FreeCAD-themes",
-      "full_name": "FreeCAD/FreeCAD-themes",
-      "html_url": "https://github.com/FreeCAD/FreeCAD-themes",
-      "description": "Theme repository for first-party FreeCAD themes",
-      "language": null,
-      "stargazers_count": 5,
-      "forks_count": 4,
-      "open_issues_count": 4,
-      "license": {
-        "key": "lgpl-2.1",
-        "name": "GNU Lesser General Public License v2.1",
-        "spdx_id": "LGPL-2.1",
-        "url": "https://api.github.com/licenses/lgpl-2.1",
-        "node_id": "MDc6TGljZW5zZTEx"
-      },
-      "topics": []
-    },
-    {
-      "id": 34354927,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzNDM1NDkyNw==",
-      "name": "FreeCAD-symbols",
-      "full_name": "FreeCAD/FreeCAD-symbols",
-      "html_url": "https://github.com/FreeCAD/FreeCAD-symbols",
-      "description": "A repository of SVG symbols to be used in FreeCAD's Drawing pages",
-      "language": "Python",
-      "stargazers_count": 34,
-      "forks_count": 17,
-      "open_issues_count": 5,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 492458949,
-      "node_id": "R_kgDOHVpTxQ",
-      "name": "freecad-deps-snap",
-      "full_name": "FreeCAD/freecad-deps-snap",
-      "html_url": "https://github.com/FreeCAD/freecad-deps-snap",
-      "description": "FreeCAD dependencies for the Official Snap package ",
-      "language": null,
-      "stargazers_count": 3,
-      "forks_count": 4,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 156759538,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNTY3NTk1Mzg=",
-      "name": "freecad.ship",
-      "full_name": "FreeCAD/freecad.ship",
-      "html_url": "https://github.com/FreeCAD/freecad.ship",
-      "description": "A FreeCAD workbench aiding in naval vessel design",
-      "language": "Python",
-      "stargazers_count": 36,
-      "forks_count": 24,
-      "open_issues_count": 6,
-      "license": {
-        "key": "lgpl-2.1",
-        "name": "GNU Lesser General Public License v2.1",
-        "spdx_id": "LGPL-2.1",
-        "url": "https://api.github.com/licenses/lgpl-2.1",
-        "node_id": "MDc6TGljZW5zZTEx"
-      },
-      "topics": [
-        "addon",
-        "freecad",
-        "workbench"
-      ]
-    },
-    {
-      "id": 140181056,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNDAxODEwNTY=",
-      "name": "FreeCAD-Doc",
-      "full_name": "FreeCAD/FreeCAD-Doc",
-      "html_url": "https://github.com/FreeCAD/FreeCAD-Doc",
-      "description": "Synced FreeCAD online documentation",
-      "language": "HTML",
-      "stargazers_count": 6,
-      "forks_count": 9,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 227951173,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMjc5NTExNzM=",
-      "name": "FreeCAD-WebServices",
-      "full_name": "FreeCAD/FreeCAD-WebServices",
-      "html_url": "https://github.com/FreeCAD/FreeCAD-WebServices",
-      "description": "Administrative tools for the FreeCAD project's web services",
-      "language": "Jinja",
-      "stargazers_count": 3,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "lgpl-2.1",
-        "name": "GNU Lesser General Public License v2.1",
-        "spdx_id": "LGPL-2.1",
-        "url": "https://api.github.com/licenses/lgpl-2.1",
-        "node_id": "MDc6TGljZW5zZTEx"
-      },
-      "topics": []
-    },
-    {
-      "id": 34632624,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzNDYzMjYyNA==",
-      "name": "FreeCAD-macros",
-      "full_name": "FreeCAD/FreeCAD-macros",
-      "html_url": "https://github.com/FreeCAD/FreeCAD-macros",
-      "description": "A repository for FreeCAD macros ",
-      "language": "Python",
-      "stargazers_count": 189,
-      "forks_count": 146,
-      "open_issues_count": 20,
-      "license": null,
-      "topics": [
-        "freecad",
-        "freecad-macro"
-      ]
-    },
-    {
-      "id": 54742532,
-      "node_id": "MDEwOlJlcG9zaXRvcnk1NDc0MjUzMg==",
-      "name": "FreeCAD-ports-cache",
-      "full_name": "FreeCAD/FreeCAD-ports-cache",
-      "html_url": "https://github.com/FreeCAD/FreeCAD-ports-cache",
-      "description": "FreeCAD ports cache to reduce Travis-CI build times for Mac OS X",
-      "language": "Shell",
-      "stargazers_count": 9,
-      "forks_count": 17,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
       "id": 11098042,
       "node_id": "MDEwOlJlcG9zaXRvcnkxMTA5ODA0Mg==",
       "name": "FreeCAD-library",
@@ -606,50 +760,10 @@
       "html_url": "https://github.com/FreeCAD/FreeCAD-library",
       "description": "A library of Parts for FreeCAD. WARNING - This library is huge. It might take a long time to download and make the addons manager unresponsive for many minutes.",
       "language": "HTML",
-      "stargazers_count": 1481,
-      "forks_count": 1123,
-      "open_issues_count": 22,
+      "stargazers_count": 1735,
+      "forks_count": 1194,
+      "open_issues_count": 24,
       "license": null,
-      "topics": []
-    },
-    {
-      "id": 977672543,
-      "node_id": "R_kgDOOkYZXw",
-      "name": "OndselSolver",
-      "full_name": "FreeCAD/OndselSolver",
-      "html_url": "https://github.com/FreeCAD/OndselSolver",
-      "description": "Assembly Constraints and Multibody Dynamics code",
-      "language": null,
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 2,
-      "license": {
-        "key": "lgpl-2.1",
-        "name": "GNU Lesser General Public License v2.1",
-        "spdx_id": "LGPL-2.1",
-        "url": "https://api.github.com/licenses/lgpl-2.1",
-        "node_id": "MDc6TGljZW5zZTEx"
-      },
-      "topics": []
-    },
-    {
-      "id": 402729060,
-      "node_id": "MDEwOlJlcG9zaXRvcnk0MDI3MjkwNjA=",
-      "name": "FreeCAD-documentation",
-      "full_name": "FreeCAD/FreeCAD-documentation",
-      "html_url": "https://github.com/FreeCAD/FreeCAD-documentation",
-      "description": "An automatic markdown-based conversion of the FreeCAD wiki. Please no pull requests for the time being, edit the wiki instead, thanks!",
-      "language": "Python",
-      "stargazers_count": 60,
-      "forks_count": 29,
-      "open_issues_count": 2,
-      "license": {
-        "key": "cc0-1.0",
-        "name": "Creative Commons Zero v1.0 Universal",
-        "spdx_id": "CC0-1.0",
-        "url": "https://api.github.com/licenses/cc0-1.0",
-        "node_id": "MDc6TGljZW5zZTY="
-      },
       "topics": []
     }
   ],
@@ -660,7 +774,7 @@
       "node_id": "MDQ6VXNlcjcxMDE3NDE=",
       "avatar_url": "https://avatars.githubusercontent.com/u/7101741?v=4",
       "html_url": "https://github.com/wwmayer",
-      "contributions": 8845
+      "contributions": 8998
     },
     {
       "login": "yorikvanhavre",
@@ -668,7 +782,7 @@
       "node_id": "MDQ6VXNlcjExMzY4NTY=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1136856?v=4",
       "html_url": "https://github.com/yorikvanhavre",
-      "contributions": 3800
+      "contributions": 3808
     },
     {
       "login": "berndhahnebach",
@@ -684,7 +798,7 @@
       "node_id": "MDQ6VXNlcjIxNjkyMA==",
       "avatar_url": "https://avatars.githubusercontent.com/u/216920?v=4",
       "html_url": "https://github.com/chennes",
-      "contributions": 2014
+      "contributions": 4
     },
     {
       "login": "WandererFan",
@@ -692,7 +806,15 @@
       "node_id": "MDQ6VXNlcjM1ODcxNjE=",
       "avatar_url": "https://avatars.githubusercontent.com/u/3587161?v=4",
       "html_url": "https://github.com/WandererFan",
-      "contributions": 1677
+      "contributions": 1766
+    },
+    {
+      "login": "sliptonic",
+      "id": 538057,
+      "node_id": "MDQ6VXNlcjUzODA1Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/538057?v=4",
+      "html_url": "https://github.com/sliptonic",
+      "contributions": 1543
     },
     {
       "login": "donovaly",
@@ -711,12 +833,12 @@
       "contributions": 1272
     },
     {
-      "login": "sliptonic",
-      "id": 538057,
-      "node_id": "MDQ6VXNlcjUzODA1Nw==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/538057?v=4",
-      "html_url": "https://github.com/sliptonic",
-      "contributions": 1272
+      "login": "Roy-043",
+      "id": 70520633,
+      "node_id": "MDQ6VXNlcjcwNTIwNjMz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/70520633?v=4",
+      "html_url": "https://github.com/Roy-043",
+      "contributions": 1230
     },
     {
       "login": "mlampert",
@@ -727,12 +849,12 @@
       "contributions": 1196
     },
     {
-      "login": "Roy-043",
-      "id": 70520633,
-      "node_id": "MDQ6VXNlcjcwNTIwNjMz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/70520633?v=4",
-      "html_url": "https://github.com/Roy-043",
-      "contributions": 1007
+      "login": "PaddleStroke",
+      "id": 19984177,
+      "node_id": "MDQ6VXNlcjE5OTg0MTc3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19984177?v=4",
+      "html_url": "https://github.com/PaddleStroke",
+      "contributions": 1015
     },
     {
       "login": "luzpaz",
@@ -740,7 +862,7 @@
       "node_id": "MDQ6VXNlcjQxNDAyNDc=",
       "avatar_url": "https://avatars.githubusercontent.com/u/4140247?v=4",
       "html_url": "https://github.com/luzpaz",
-      "contributions": 829
+      "contributions": 865
     },
     {
       "login": "realthunder",
@@ -748,15 +870,7 @@
       "node_id": "MDQ6VXNlcjEyMDc4ODg=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1207888?v=4",
       "html_url": "https://github.com/realthunder",
-      "contributions": 764
-    },
-    {
-      "login": "PaddleStroke",
-      "id": 19984177,
-      "node_id": "MDQ6VXNlcjE5OTg0MTc3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/19984177?v=4",
-      "html_url": "https://github.com/PaddleStroke",
-      "contributions": 738
+      "contributions": 767
     },
     {
       "login": "vocx-fc",
@@ -767,12 +881,20 @@
       "contributions": 620
     },
     {
+      "login": "marioalexis84",
+      "id": 53127171,
+      "node_id": "MDQ6VXNlcjUzMTI3MTcx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/53127171?v=4",
+      "html_url": "https://github.com/marioalexis84",
+      "contributions": 524
+    },
+    {
       "login": "ickby",
       "id": 348477,
       "node_id": "MDQ6VXNlcjM0ODQ3Nw==",
       "avatar_url": "https://avatars.githubusercontent.com/u/348477?v=4",
       "html_url": "https://github.com/ickby",
-      "contributions": 473
+      "contributions": 505
     },
     {
       "login": "jriegel",
@@ -783,20 +905,20 @@
       "contributions": 459
     },
     {
-      "login": "marioalexis84",
-      "id": 53127171,
-      "node_id": "MDQ6VXNlcjUzMTI3MTcx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/53127171?v=4",
-      "html_url": "https://github.com/marioalexis84",
-      "contributions": 411
-    },
-    {
       "login": "PrzemoF",
       "id": 2077043,
       "node_id": "MDQ6VXNlcjIwNzcwNDM=",
       "avatar_url": "https://avatars.githubusercontent.com/u/2077043?v=4",
       "html_url": "https://github.com/PrzemoF",
       "contributions": 408
+    },
+    {
+      "login": "kadet1090",
+      "id": 747404,
+      "node_id": "MDQ6VXNlcjc0NzQwNA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/747404?v=4",
+      "html_url": "https://github.com/kadet1090",
+      "contributions": 376
     },
     {
       "login": "sanguinariojoe",
@@ -807,6 +929,14 @@
       "contributions": 349
     },
     {
+      "login": "AjinkyaDahale",
+      "id": 4316933,
+      "node_id": "MDQ6VXNlcjQzMTY5MzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4316933?v=4",
+      "html_url": "https://github.com/AjinkyaDahale",
+      "contributions": 347
+    },
+    {
       "login": "Russ4262",
       "id": 47639332,
       "node_id": "MDQ6VXNlcjQ3NjM5MzMy",
@@ -815,20 +945,12 @@
       "contributions": 343
     },
     {
-      "login": "AjinkyaDahale",
-      "id": 4316933,
-      "node_id": "MDQ6VXNlcjQzMTY5MzM=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/4316933?v=4",
-      "html_url": "https://github.com/AjinkyaDahale",
-      "contributions": 317
-    },
-    {
       "login": "0penBrain",
       "id": 48731257,
       "node_id": "MDQ6VXNlcjQ4NzMxMjU3",
       "avatar_url": "https://avatars.githubusercontent.com/u/48731257?v=4",
       "html_url": "https://github.com/0penBrain",
-      "contributions": 314
+      "contributions": 312
     },
     {
       "login": "DeepSOIC",
@@ -839,12 +961,36 @@
       "contributions": 293
     },
     {
+      "login": "hyarion",
+      "id": 349748,
+      "node_id": "MDQ6VXNlcjM0OTc0OA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/349748?v=4",
+      "html_url": "https://github.com/hyarion",
+      "contributions": 279
+    },
+    {
       "login": "bgbsww",
       "id": 120601209,
       "node_id": "U_kgDOBzA6eQ",
       "avatar_url": "https://avatars.githubusercontent.com/u/120601209?v=4",
       "html_url": "https://github.com/bgbsww",
       "contributions": 266
+    },
+    {
+      "login": "mosfet80",
+      "id": 10235105,
+      "node_id": "MDQ6VXNlcjEwMjM1MTA1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10235105?v=4",
+      "html_url": "https://github.com/mosfet80",
+      "contributions": 262
+    },
+    {
+      "login": "maxwxyz",
+      "id": 6246609,
+      "node_id": "MDQ6VXNlcjYyNDY2MDk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6246609?v=4",
+      "html_url": "https://github.com/maxwxyz",
+      "contributions": 261
     },
     {
       "login": "jrheinlaender",
@@ -855,100 +1001,28 @@
       "contributions": 257
     },
     {
-      "login": "mosfet80",
-      "id": 10235105,
-      "node_id": "MDQ6VXNlcjEwMjM1MTA1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/10235105?v=4",
-      "html_url": "https://github.com/mosfet80",
-      "contributions": 239
+      "login": "Syres916",
+      "id": 46537884,
+      "node_id": "MDQ6VXNlcjQ2NTM3ODg0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46537884?v=4",
+      "html_url": "https://github.com/Syres916",
+      "contributions": 244
     },
     {
-      "login": "carlopav",
-      "id": 47068848,
-      "node_id": "MDQ6VXNlcjQ3MDY4ODQ4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/47068848?v=4",
-      "html_url": "https://github.com/carlopav",
-      "contributions": 235
-    },
-    {
-      "login": "benj5378",
-      "id": 12400097,
-      "node_id": "MDQ6VXNlcjEyNDAwMDk3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/12400097?v=4",
-      "html_url": "https://github.com/benj5378",
-      "contributions": 204
-    },
-    {
-      "login": "hyarion",
-      "id": 349748,
-      "node_id": "MDQ6VXNlcjM0OTc0OA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/349748?v=4",
-      "html_url": "https://github.com/hyarion",
-      "contributions": 202
-    },
-    {
-      "login": "5263",
-      "id": 1005958,
-      "node_id": "MDQ6VXNlcjEwMDU5NTg=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1005958?v=4",
-      "html_url": "https://github.com/5263",
-      "contributions": 192
-    },
-    {
-      "login": "looooo",
-      "id": 5084704,
-      "node_id": "MDQ6VXNlcjUwODQ3MDQ=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/5084704?v=4",
-      "html_url": "https://github.com/looooo",
-      "contributions": 630
-    },
-    {
-      "login": "github-actions[bot]",
-      "id": 41898282,
-      "node_id": "MDM6Qm90NDE4OTgyODI=",
-      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
-      "html_url": "https://github.com/apps/github-actions",
-      "contributions": 205
-    },
-    {
-      "login": "adrianinsaval",
-      "id": 36372335,
-      "node_id": "MDQ6VXNlcjM2MzcyMzM1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/36372335?v=4",
-      "html_url": "https://github.com/adrianinsaval",
-      "contributions": 72
-    },
-    {
-      "login": "sgrogan",
-      "id": 9502306,
-      "node_id": "MDQ6VXNlcjk1MDIzMDY=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/9502306?v=4",
-      "html_url": "https://github.com/sgrogan",
-      "contributions": 43
-    },
-    {
-      "login": "oursland",
-      "id": 622450,
-      "node_id": "MDQ6VXNlcjYyMjQ1MA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/622450?v=4",
-      "html_url": "https://github.com/oursland",
-      "contributions": 10
-    },
-    {
-      "login": "bollwyvl",
-      "id": 45380,
-      "node_id": "MDQ6VXNlcjQ1Mzgw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/45380?v=4",
-      "html_url": "https://github.com/bollwyvl",
-      "contributions": 2
-    },
-    {
-      "login": "oliveroxtoby",
-      "id": 24413617,
-      "node_id": "MDQ6VXNlcjI0NDEzNjE3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/24413617?v=4",
-      "html_url": "https://github.com/oliveroxtoby",
+      "login": "PhoneDroid",
+      "id": 73050054,
+      "node_id": "MDQ6VXNlcjczMDUwMDU0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/73050054?v=4",
+      "html_url": "https://github.com/PhoneDroid",
       "contributions": 1
+    },
+    {
+      "login": "mnesarco",
+      "id": 1087317,
+      "node_id": "MDQ6VXNlcjEwODczMTc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1087317?v=4",
+      "html_url": "https://github.com/mnesarco",
+      "contributions": 5
     }
   ],
   "activeOrg": true

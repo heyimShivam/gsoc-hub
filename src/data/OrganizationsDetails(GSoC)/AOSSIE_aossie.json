@@ -19,7 +19,10 @@
     "social science",
     "web",
     "mobile",
-    "backend"
+    "backend",
+    "artificial intelligence",
+    "communication",
+    "blockchain"
   ],
   "technologies": [
     "scala",
@@ -38,9 +41,10 @@
     "kotlin",
     "machine learning",
     "Blockchain",
-    "flutter"
+    "flutter",
+    "Solidity"
   ],
-  "irc_channel": "https://discord.gg/C8wHmwtczs",
+  "irc_channel": "https://discord.gg/fuuWX4AbJt",
   "contact_email": null,
   "mailing_list": "http://aossie.org/#contact",
   "twitter_url": "https://twitter.com/aossie_org",
@@ -55,7 +59,8 @@
     2022,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2017": [
@@ -866,7 +871,180 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/AthhdF8W"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Tree Planting Protocol (TREEE)",
+        "short_description": "This project tackles the lack of transparency in tree-planting initiatives by developing a decentralized mobile application that leverages blockchain...",
+        "description": "This project tackles the lack of transparency in tree-planting initiatives by developing a decentralized mobile application that leverages blockchain technology for verifiable and tamper-proof tracking. Each planted tree is minted as an NFT (ERC-721), storing critical metadata like geolocation, species, and planter details on-chain. To ensure authenticity, the system incorporates a community-driven verification mechanism where users can validate trees by submitting photo proofs stored on IPFS, earning tokenized rewards (ERC-20) for their participation. A key innovation is the use of geohash-based indexing, which optimizes location queries by dynamically adjusting precision based on map zoom levels, significantly reducing gas costs and improving performance. The app features an interactive map built with Flutter, displaying nearby trees with species-specific icons and enabling users to explore detailed records.\n\nTo address the issue of tree mortality, the project introduces legacy tokens—ERC-20 rewards distributed to planters who report deceased trees or submit maintenance updates like care photos and videos. Tree NFTs are transferable, with ancestry tracked to maintain historical records. For collective efforts, smart contract-based organizational tools allow groups to manage plantations, add members, and track contributions on-chain. Additionally, each tree is linked to a dynamic QR code stored on IPFS, enabling physical trees to be scanned for instant access to their digital records. By combining blockchain transparency, geospatial efficiency, and community incentives, this project establishes a scalable and trustless framework for global reforestation efforts.",
+        "student_name": "Aaryan Jain",
+        "code_url": "https://gist.github.com/IronJam11/ad4c0298f77c30300baf03fcddb5e441",
+        "proposal_id": "JelAZMSQ",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/7LicPpJH"
+      },
+      {
+        "title": "BenefactionPlatform-Ergo: Expanding Fundraising Capabilities on Ergo",
+        "short_description": "The Bene Fundraising Platform on the Ergo blockchain uses a unique token system (APT/PFT) to support fundraising projects. This project will improve...",
+        "description": "The Bene Fundraising Platform on the Ergo blockchain uses a unique token system (APT/PFT) to support fundraising projects. This project will improve the Ergo version by adding support for multiple tokens, including stablecoins, and bringing it in line with the EVM version.\nMain goals include: adding stablecoin and multi-token support, integrating multiple wallets, building a referral system with protection against misuse, creating a project analytics dashboard, and improving the user interface and accessibility. These updates will make Bene easier to use, more powerful, and more welcoming to new users, helping grow the Ergo fundraising community.",
+        "student_name": "AdityaGupta256",
+        "code_url": "https://github.com/AdityaGupta20871/GSOC_REPORT/blob/main/README.md",
+        "proposal_id": "07ZXoaT4",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/tf3WhF61"
+      },
+      {
+        "title": "FateCoin EVM",
+        "short_description": "FateCoin Protocol introduces an innovative decentralized finance platform enabling perpetual speculation on real-world events through a dual-token...",
+        "description": "FateCoin Protocol introduces an innovative decentralized finance platform enabling perpetual speculation on real-world events through a dual-token system (bullCoin and bearCoin). Unlike traditional prediction markets with expiration dates, our protocol maintains continuous liquidity via automated reserve redistribution and dynamic fee mechanisms. This proposal outlines the development of smart contracts for token economics, a responsive frontend with analytics, and cross-chain deployment - creating a self-sustaining ecosystem for price-linked asset trading.",
+        "student_name": "Blizet",
+        "code_url": "https://github.com/blizet/GSoC-2025/blob/main/README.md",
+        "proposal_id": "cxvxsUlC",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/zN0pP1CO"
+      },
+      {
+        "title": "Ell-ena: AI-Powered Task Management System",
+        "short_description": "Ell-ena is a smart, AI-powered productivity assistant that helps individuals and teams manage tasks effortlessly through natural language. Just say...",
+        "description": "Ell-ena is a smart, AI-powered productivity assistant that helps individuals and teams manage tasks effortlessly through natural language. Just say things like “Create a dark mode ticket” or “Add math assignment for tomorrow,” and Ell-ena takes care of the rest.\n\nEll-ena uses function-calling APIs to understand your commands and a Graph-based RAG system to intelligently link tasks, projects, and deadlines. Its AI-powered bot can join meetings, transcribe conversations in real time, and extract actionable insights for the team.\n\nWith Supabase handling data storage and real-time syncing, along with multiple views like calendar and Kanban boards, Ell-ena keeps tasks organized and collaboration smooth across all your teammates.",
+        "student_name": "Garv Agarwal",
+        "code_url": "https://gist.github.com/SharkyBytes/47719252ecfc2ab5dfbef6a7ae39335e",
+        "proposal_id": "c0C0VauG",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/KFeDIJph"
+      },
+      {
+        "title": "Enhancing Agora Blockchain: Privacy, Cross-Chain Voting, and Seamless User Onboarding",
+        "short_description": "This project aims to significantly enhance the Agora Blockchain platform under AOSSIE by introducing essential improvements across three core areas:...",
+        "description": "This project aims to significantly enhance the Agora Blockchain platform under AOSSIE by introducing essential improvements across three core areas: privacy-focused smart contracts, cross-chain voting capabilities, and user-friendly onboarding. The proposed solution includes implementing private elections using zero-knowledge proofs, integrating Chainlink CCIP for cross-chain voting, and leveraging account abstraction to simplify the user experience. Deliverables include upgraded smart contracts, cross-chain support and a secure login system—all designed to make Agora a robust and accessible decentralized voting platform.",
+        "student_name": "Hamad Hussain",
+        "code_url": "https://gist.github.com/therealhamad/7eeefb732df30cf2f35fcfbc1c5b5dd0",
+        "proposal_id": "fgJerqRh",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/bJfCablS"
+      },
+      {
+        "title": "VouchMe & TNT: Enhancing VouchMe Features and Revamping TNT (Trust Network Tokens)",
+        "short_description": "My proposal aims to enhance VouchMe, a blockchain-based testimonial platform, and revamp the UI of TNT (Trust Network Tokens), an ERC721 token system...",
+        "description": "My proposal aims to enhance VouchMe, a blockchain-based testimonial platform, and revamp the UI of TNT (Trust Network Tokens), an ERC721 token system for verifiable trust relationships, to create a robust decentralized trust ecosystem. For VouchMe, I will improve user experience and security by integrating user profiles with Decentralized Identity (DID), enabling direct testimonial sharing via Waku, adding one-click social media sharing, and implementing a burn function to allow users to remove testimonials. Additionally, I will integrate comprehensive smart contract tests to ensure security and reliability. For TNT, I will redesign the landing page and create user-friendly interfaces for creating, managing, and viewing TNTs, ensuring a clear and seamless experience. The deliverables include a fully functional VouchMe with these enhanced features: profiles, DID, Waku-based sharing, and shareable testimonial cards, along with a polished TNT UI for improved usability and accessibility.",
+        "student_name": "Kanishk Sogani",
+        "code_url": "https://gist.github.com/KanishkSogani/fbe57b546a57397c6be5f5a42651fcc8",
+        "proposal_id": "tQw8bQeH",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/CGvkRXq7"
+      },
+      {
+        "title": "Chainvoice: Enhancing Decentralized Invoicing with Privacy, Automation, and Multi-Token Support",
+        "short_description": "Chainvoice is a decentralized invoicing platform that simplifies the crypto billing process by automating invoice creation, tracking, and payments...",
+        "description": "Chainvoice is a decentralized invoicing platform that simplifies the crypto billing process by automating invoice creation, tracking, and payments on-chain. This project aims to enhance the system by introducing features such as multi-token payment support, batch invoice creation, privacy enhancements, and overdue invoice detection with reminder automation. These improvements will streamline the invoicing process for individuals and businesses, making Web3 financial workflows more user-friendly, secure, and efficient.",
+        "student_name": "Karan Kumar Kumawat",
+        "code_url": "https://gist.github.com/kumawatkaran523/f0a26e6cf1dae0cc7ba4d6ae5e10398a",
+        "proposal_id": "fDxXzJo7",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/Ql9ssqex"
+      },
+      {
+        "title": "Monumento",
+        "short_description": "My vision is to build Monumento, anopen-source, interactive platform for exploring and connecting around historical monuments. Users can contribute...",
+        "description": "My vision is to build Monumento, anopen-source, interactive platform for exploring and connecting around\nhistorical monuments. Users can contribute content, plan events, and engagethrough social features like feeds, profiles, and communities.  \nI will enhance the user experience with personalized itineraries, dynamic\nmonument highlights ,more social features and full device responsiveness.\nTo expand Monumento’s reach, I will also develop a promotional landing pagethat highlights its unique features and value proposition, attracting a wider\naudience of travelers, history enthusiasts, and cultural explorers.",
+        "student_name": "Kareem Abdeen",
+        "code_url": "https://github.com/kareemabdeen/GSoC-25-final-term-evaluation",
+        "proposal_id": "XCsMvjhA",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/j1bMJnDJ"
+      },
+      {
+        "title": "Devr.AI – Sustaining and scaling OSS via AI powered DevRel",
+        "short_description": "Devr.AI is an AI-powered Developer Relations (DevRel) assistant designed to seamlessly integrate with open-source communities across platforms like...",
+        "description": "Devr.AI is an AI-powered Developer Relations (DevRel) assistant designed to\nseamlessly integrate with open-source communities across platforms like Discord,\nSlack, GitHub, and Discourse. It acts as a virtual DevRel advocate, helping maintainers\nengage with contributors, onboard new developers, and provide real-time project\nupdates. By leveraging LLMs, knowledge retrieval, and workflow automation all aligned using an event driven system, enhances community engagement, simplifies\ncontributor onboarding, and ensures open-source projects remain active and\nwell-supported.",
+        "student_name": "Kartik Bhatt",
+        "code_url": "https://gist.github.com/smokeyScraper/ab019b4082e68c580fa7ad9ebb13a99b",
+        "proposal_id": "B1ZXMoKP",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/jHoseH8f"
+      },
+      {
+        "title": "Resonate Version 3",
+        "short_description": "This project aims to enhance both user and contributor experiences for the Resonate App by implementing critical quality-of-life features, improving...",
+        "description": "This project aims to enhance both user and contributor experiences for the Resonate App by implementing critical quality-of-life features, improving accessibility, and preparing it for public release.\nTo achieve this, the following deliverables are planned:\n1. Make the app fully responsive by replacing fixed dimensions with LayoutBuilder and Flex widgets for a consistent UI across devices.\n2. Stabilize the codebase and prioritize deployment of Resonate v1.0.0 to the Play Store and App Store.\n3. Implement automated testing in Flutter targeting 90%+ code coverage to prevent regressions and ease PR reviews.\n4. Set up CI/CD pipelines to automate deployment on updates to the main branch.\n5. Complete the partially implemented Text Chat feature and add in-app notifications.\n6. Add Internationalization (i18n) to support multiple languages.\n7. Improve the Pair Chat experience by allowing users to select who to chat with from a list.\n8. Expand the Search functionality to include Creators and Users, and introduce a \"Follow Creator\" feature.\n9. Add a Friends System to enable one-on-one calls.\n10. Introduce TTS and STT features in audio rooms for accessibility to non-verbal users.\n11. Add Host Controls using the LiveKit API to allow moderation in rooms.\n12. Enable creators to start Live Chapters, which will be recorded and uploaded automatically.\n13. Replace current Appwrite search queries with Meilisearch to support scalable and advanced search capabilities.\n14. Conclude the project with final testing, merging of features, and deployment of Resonate v2.0.0.\nThis project will ensure Resonate becomes production-ready while staying contributor-friendly and inclusive for all users.",
+        "student_name": "M4dhav",
+        "code_url": "https://github.com/M4dhav/Resonate/blob/bf02b22d4bf86d587b64431b9f163bb733320171/docs/gsoc/GSoC25_Madhav_Gupta_End-Term.md",
+        "proposal_id": "RM908q0i",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/txbphR3y"
+      },
+      {
+        "title": "NeuroTrack",
+        "short_description": "Neurotrack is an intelligent platform designed to assist in the early detection and management of autism. The platform includes dedicated apps for...",
+        "description": "Neurotrack is an intelligent platform designed to assist in the early detection and management of autism. The platform includes dedicated apps for both patients and therapists. This proposal focuses on completing pending core features, integrating AI agents to automate therapist and patient activities, adding web support, implementing offline-first capabilities for better accessibility, and introducing neurodevelopmental games to enhance engagement and cognitive growth. Deliverables include fully functional AI workflows, responsive web versions, robust offline handling, and interactive game modules tailored for neurodevelopmental therapy.",
+        "student_name": "Mohd Jasir Noor Khan",
+        "code_url": "https://gist.github.com/khanjasir90/e1012c6a15abb6aa3d77b0bbbc1a9016",
+        "proposal_id": "a4GKVcB5",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/VDJf3ukr"
+      },
+      {
+        "title": "Bountiful-Ergo Bounty & StablePay: Decentralized bounty platform and enhanced crypto payments",
+        "short_description": "This project aims to contribute to two impactful open-source initiatives under AOSSIE: Bountiful-Ergo Bounty, a decentralized bounty platform on the...",
+        "description": "This project aims to contribute to two impactful open-source initiatives under AOSSIE: Bountiful-Ergo Bounty, a decentralized bounty platform on the Ergo blockchain, and StablePay, a cryptocurrency payment solution for merchants.\r\n\r\nFor Bountiful-Ergo Bounty, I will design and build a trust-based bounty system from the ground up. The platform will utilize smart contract-based escrow, a hybrid evaluation model (creator-led and judge-based), and a reputation-driven judge selection mechanism to ensure secure, fair, and transparent bounty resolution.\r\n\r\nFor StablePay, I will enhance its functionality to improve usability, security, and merchant control. Key improvements include selective crypto payment options, real-time dashboards, dynamic fee estimation, wallet integrations (MetaMask, WalletConnect, Coinbase Wallet), and UI/UX optimizations.\r\n\r\nDeliverables include:\r\n1. A fully functional decentralized bounty platform with smart contract escrow and reputation systems.\r\n2. Upgraded StablePay SDK with extended wallet support, merchant controls, optimized transaction handling, and improved developer tools.",
+        "student_name": "Nidhi_Singh",
+        "code_url": "https://github.com/Nidhicodes/GSoC-2025/blob/main/GSoC-25-Report.md",
+        "proposal_id": "g2pEtyFY",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/YhmZu7PL"
+      },
+      {
+        "title": "Perspective",
+        "short_description": "Perspective addresses the problem of biased and one-sided narratives in online articles by providing readers with a fact-based, well-structured...",
+        "description": "Perspective addresses the problem of biased and one-sided narratives in online articles by providing readers with a fact-based, well-structured alternative perspective. The solution involves a pipeline that scrapes article content, processes and cleans the text, extracts key points, and generates a logical counter-perspective using LangGraph and LangChain. The system will include a frontend for user interaction, an AI-driven backend for perspective generation, and a vector database for storing results.\n\nDeliverables:\n\n- A fully functional web application where users can input article URLs.\n\n- AI-powered alternative perspective generation based on extracted key points.\n\n- Fact-checking mechanisms using reliable sources.\n\n- Vector database storage for efficient retrieval and chat-based exploration.",
+        "student_name": "Parag Ghatage",
+        "code_url": "https://github.com/AOSSIE-Org/Perspective/blob/main/GSoC-2025/ParagGhatage-Perspective.md",
+        "proposal_id": "pphrkEVg",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/NEioeuUn"
+      },
+      {
+        "title": "PictoPy: An all-round project revamp to make it end-user-ready",
+        "short_description": "This proposal aims to an all-round enhancement to PictoPy by improving its backend scalability, frontend usability, and deployment accessibility. Key...",
+        "description": "This proposal aims to an all-round enhancement to PictoPy by improving its backend scalability, frontend usability, and deployment accessibility. Key backend upgrades include implementing user-named face clusters, optimizing face clustering with dimensionality reduction, upgrading to YOLOv11 for better detection, adding GPU accelerated inferencing, and redesigning inefficient database schemas. On the frontend, a fresh modern UI using Radix UI will be introduced, along with a unified folder selection, an advanced search bar supporting face and object queries, object bounding box display, and user notifications. To ensure broader accessibility, the project will package and publish PictoPy on the Ubuntu Snap Store, Microsoft Store, and macOS Store, enabling seamless installation and updates. This will involve creation of CI/CD pipelines on the Github repository. Additionally, comprehensive documentation—including contributing guides, API references, and setup videos—will encourage new developers to contribute. These improvements will make PictoPy more user-friendly, scalable, and ready for widespread adoption.",
+        "student_name": "Rahul B Harpal",
+        "code_url": "https://gist.github.com/rahulharpal1603/d4a80718288568f8547ea67f8f3c91dc",
+        "proposal_id": "w3LIG2nd",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/HroTeXRx"
+      },
+      {
+        "title": "DebateAI: Speak, Debate, Improve: AI That Trains You to Communicate Like a Pro",
+        "short_description": "DebateAI is an innovative platform designed to enhance critical thinking and communication skills through structured, AI-assisted debates. By...",
+        "description": "DebateAI is an innovative platform designed to enhance critical thinking and communication skills through structured, AI-assisted debates. By simulating formal debate environments where users can engage with either AI or human opponents, the platform fosters meaningful discourse and self-expression. It leverages real-time communication technologies and intelligent response generation to create an engaging, educational, and socially impactful experience. The project aims to make debate practice more accessible, interactive, and scalable for learners, educators, and enthusiasts worldwide.",
+        "student_name": "Rishit Tiwari",
+        "code_url": "https://gist.github.com/rixitgithub/a75ebc36be0d6e3fbb9e109596d026f5",
+        "proposal_id": "bmxPJfRM",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/5LLCU8Sd"
+      },
+      {
+        "title": "Auction-Driven DEX: Implementing Batch Auctions for Token Swaps & Hammer Auction House Enhancement",
+        "short_description": "This project is divided into two phases. Phase 1 enhances our decentralized auction platform (Hammer Auction House) to eliminate intermediaries and...",
+        "description": "This project is divided into two phases. Phase 1 enhances our decentralized auction platform (Hammer Auction House) to eliminate intermediaries and improve user trust by incorporating multiple auction types, an internal wallet, token swap integration, and an AI Auction Assistant. In Phase 2, we build a DEX that uses batch auctions to optimize price discovery for token swaps, reducing slippage and gas costs. Users’ swap orders are grouped by type, and the optimal clearing price is computed client-side via an efficient algorithm, then finalized on-chain for settlement.",
+        "student_name": "Saksham Chauhan",
+        "code_url": "https://gist.github.com/kaneki003/d94de4cb36b91173f90aa98bc0d9482d",
+        "proposal_id": "JLBqJg0a",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/6rCxjaZw"
+      },
+      {
+        "title": "Orb Oracle and Raindrop",
+        "short_description": "This proposal focuses on developing the Raindrop Protocol, a staking and dividend distribution mechanism designed to ensure transparent and fair...",
+        "description": "This proposal focuses on developing the Raindrop Protocol, a staking and dividend distribution mechanism designed to ensure transparent and fair revenue sharing among contributors by leveraging secure token vaults. Additionally, it involves enhancing the existing Plaza frontend by improving user experience, optimizing smart contract interactions, and integrating multi-wallet connectivity, resulting in a seamless and intuitive interface for community-driven blockchain projects.",
+        "student_name": "Sarthak Dengre",
+        "code_url": "https://github.com/DengreSarthak/GSOC_2025_Report",
+        "proposal_id": "RfvoG4TP",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/lFnYxtXf"
+      },
+      {
+        "title": "BabyNest - An AI powered pregnancy care assistant",
+        "short_description": "I propose to make an intelligent assistant that acts as a personal pregnancy planner and guide, ensuring that expecting parents stay informed,...",
+        "description": "I propose to make an intelligent assistant that acts as a personal pregnancy planner and guide, ensuring that expecting parents stay informed, organized, and stress-free. It is every expecting mother’s private, smart and offline-first companion. I plan to implement the following goals \r\n1. Scraping and storing country-specific healthcare guidelines for pregnancy\r\n2. Create a RAG agent for handling appointments and task\r\n3. Build notification and reminder system for appointment management\r\n4. Store the required data in SQLite\r\n5. UI Revamp for the app creating a responsive, personalized and interactive front end\r\n6. Add Voice Assistant Functionality to give users a hand-free experience\r\n7. Improving the accuracy and response time of the chat bot \r\n8. End to end testing of the entire app\r\n9. Back end Integration and then deployment\r\nDeliverable - An AI powered companion that is capable of automated tracking of trimester-specific medical appointments, sending country-specific healthcare requirement notifications, have offline access to pregnancy care guidelines, giving personalized recommendations and reminders.",
+        "student_name": "VivekGupta008",
+        "code_url": "https://gist.github.com/Vivekgupta008/5ecaacd87bbfb2125f6dff3e482a673f",
+        "proposal_id": "jMHz7RV4",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/crJ0hrBy"
+      },
+      {
+        "title": "EduAid: Gen with Adaptive Difficulty, Multilingual Support, and Scalable Deployment",
+        "short_description": "This project focuses on optimizing and deploying EduAid, an AI-powered tool that generates interactive quizzes from educational content. Key...",
+        "description": "This project focuses on optimizing and deploying EduAid, an AI-powered tool that generates interactive quizzes from educational content. Key deliverables include:\n\n- Adaptive Difficulty Control: NLP-driven question generation targeting overlooked concepts using TF-IDF scoring and synonym replacement.\n\n- Multilingual Integration: Leveraging the T5 model to enable question translation into German, French, and Romanian.\n\n- Scalable Infrastructure: Deployment via Electron.js, Celery-Redis task queues for scaling by the factor of 10x.\n\n- Performance Enhancements: Model quantization (25% size reduction), ONNX runtime acceleration (65% latency improvement), and service workers for background processing.\n\n- Unified UI/UX: Revamped frontend with reusable components and IndexedDB migration for efficient data handling.",
+        "student_name": "Yatika Kain",
+        "code_url": "https://github.com/yatikakain/GSoC-2025/blob/main/README.md",
+        "proposal_id": "vkZfFiVZ",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/XRHowYK4"
+      }
+    ],
+    "2026": []
   },
   "githubID": "aossie",
   "repositories": [
@@ -878,9 +1056,9 @@
       "html_url": "https://github.com/aossie/aossie.github.io",
       "description": null,
       "language": "CSS",
-      "stargazers_count": 1,
-      "forks_count": 2,
-      "open_issues_count": 0,
+      "stargazers_count": 2,
+      "forks_count": 4,
+      "open_issues_count": 3,
       "license": null,
       "topics": []
     }

@@ -28,10 +28,31 @@
   "blog_url": null,
   "facebook_url": null,
   "year": [
-    2025
+    2025,
+    2026
   ],
   "projects": {
-    "2025": []
+    "2025": [
+      {
+        "title": "Efficient SmolVLM",
+        "short_description": "The aim of this project is to bring State of the Art methods for lightweight Visual Language models into Kornia in Rust. Recently, Hugging Face...",
+        "description": "The aim of this project is to bring State of the Art methods for lightweight Visual Language models into Kornia in Rust. Recently, Hugging Face released a family of small visual language models (SmolVLM) which can be a game changer for the industry to build applications in embedded devices using such AI models.",
+        "student_name": "andrew-shc",
+        "code_url": "https://github.com/kornia/kornia-rs/wiki/Gsoc2025:-Smolvlm",
+        "proposal_id": "SQWhzHTe",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/pXPaNRob"
+      },
+      {
+        "title": "AprilTag, FAST, and ORB Detectors",
+        "short_description": "AprilTags, FAST, and ORB are fundamental feature detectors in computer vision and robotics. AprilTags provide robust fiducial markers widely used for...",
+        "description": "AprilTags, FAST, and ORB are fundamental feature detectors in computer vision and robotics. AprilTags provide robust fiducial markers widely used for calibration, pose estimation, and robot navigation. FAST enables efficient corner detection, which serves as the basis of lightweight real-time applications. ORB combines FAST keypoints with binary descriptors for robust feature extraction and matching in in unstructured environments, making it suitable for tasks such as SLAM and visual localization. This project implements these detectors in Rust, emphasizing efficiency, modularity, and ease of use. All modules are integrated into the kornia-rs ecosystem, expanding its toolkit for robotics, augmented reality, and camera calibration.",
+        "student_name": "AS1100K",
+        "code_url": "https://adityais.dev/blog/gsoc-2025-report/",
+        "proposal_id": "L5U7kcEK",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/GZcYwnPE"
+      }
+    ],
+    "2026": []
   },
   "githubID": "kornia",
   "repositories": [
@@ -43,9 +64,9 @@
       "html_url": "https://github.com/kornia/kornia",
       "description": "🐍 Geometric Computer Vision Library for Spatial AI",
       "language": "Python",
-      "stargazers_count": 10475,
-      "forks_count": 1019,
-      "open_issues_count": 299,
+      "stargazers_count": 11144,
+      "forks_count": 1177,
+      "open_issues_count": 82,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -57,6 +78,7 @@
         "artificial-intelligence",
         "computer-vision",
         "deep-learning",
+        "hacktoberfest",
         "image-processing",
         "machine-learning",
         "neural-network",
@@ -67,14 +89,197 @@
       ]
     },
     {
-      "id": 986170360,
-      "node_id": "R_kgDOOsfD-A",
-      "name": "kornia-infernum",
-      "full_name": "kornia/kornia-infernum",
-      "html_url": "https://github.com/kornia/kornia-infernum",
+      "id": 466513703,
+      "node_id": "R_kgDOG85vJw",
+      "name": "kornia-rs",
+      "full_name": "kornia/kornia-rs",
+      "html_url": "https://github.com/kornia/kornia-rs",
+      "description": "🦀 Low-level 3D Computer Vision library in Rust",
+      "language": "Rust",
+      "stargazers_count": 623,
+      "forks_count": 181,
+      "open_issues_count": 93,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "computer-vision",
+        "deep-learning",
+        "image-processing",
+        "machine-learning",
+        "pyo3",
+        "python",
+        "robotics",
+        "rust"
+      ]
+    },
+    {
+      "id": 419026144,
+      "node_id": "R_kgDOGPnU4A",
+      "name": "data_test",
+      "full_name": "kornia/data_test",
+      "html_url": "https://github.com/kornia/data_test",
       "description": null,
       "language": null,
       "stargazers_count": 0,
+      "forks_count": 1,
+      "open_issues_count": 1,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 919731142,
+      "node_id": "R_kgDONtH7xg",
+      "name": "kornia-slam",
+      "full_name": "kornia/kornia-slam",
+      "html_url": "https://github.com/kornia/kornia-slam",
+      "description": "Spatial runtime for real-time pose estimation, mapping, and agent interaction.",
+      "language": null,
+      "stargazers_count": 25,
+      "forks_count": 13,
+      "open_issues_count": 9,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 308052225,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzMDgwNTIyMjU=",
+      "name": "tutorials",
+      "full_name": "kornia/tutorials",
+      "html_url": "https://github.com/kornia/tutorials",
+      "description": "Repository containing the Kornia related tutorials",
+      "language": "Jupyter Notebook",
+      "stargazers_count": 51,
+      "forks_count": 37,
+      "open_issues_count": 13,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 1146051046,
+      "node_id": "R_kgDORE9Z5g",
+      "name": "bubbaloop-nodes-official",
+      "full_name": "kornia/bubbaloop-nodes-official",
+      "html_url": "https://github.com/kornia/bubbaloop-nodes-official",
+      "description": "Official collection of standalone bubbaloop nodes for distributed Physical AI orchestration",
+      "language": "Rust",
+      "stargazers_count": 2,
+      "forks_count": 1,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1120194035,
+      "node_id": "R_kgDOQsTN8w",
+      "name": "bubbaloop",
+      "full_name": "kornia/bubbaloop",
+      "html_url": "https://github.com/kornia/bubbaloop",
+      "description": "🦐 Hardware AI agent. Talk to your hardware like Bubba talks about shrimp.",
+      "language": "Rust",
+      "stargazers_count": 14,
+      "forks_count": 19,
+      "open_issues_count": 6,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "robotics",
+        "rust",
+        "vlm"
+      ]
+    },
+    {
+      "id": 333549718,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzMzM1NDk3MTg=",
+      "name": "data",
+      "full_name": "kornia/data",
+      "html_url": "https://github.com/kornia/data",
+      "description": null,
+      "language": null,
+      "stargazers_count": 1,
+      "forks_count": 5,
+      "open_issues_count": 1,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1058960732,
+      "node_id": "R_kgDOPx51XA",
+      "name": "VLMEvalKit",
+      "full_name": "kornia/VLMEvalKit",
+      "html_url": "https://github.com/kornia/VLMEvalKit",
+      "description": "For validating Kornia's VLM implementation",
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 203653915,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMDM2NTM5MTU=",
+      "name": "kornia.github.io",
+      "full_name": "kornia/kornia.github.io",
+      "html_url": "https://github.com/kornia/kornia.github.io",
+      "description": null,
+      "language": "HTML",
+      "stargazers_count": 2,
+      "forks_count": 7,
+      "open_issues_count": 1,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1018898051,
+      "node_id": "R_kgDOPLsmgw",
+      "name": "apriltag-imgs",
+      "full_name": "kornia/apriltag-imgs",
+      "html_url": "https://github.com/kornia/apriltag-imgs",
+      "description": "Pre-generated AprilTag images",
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 1,
+      "open_issues_count": 0,
+      "license": {
+        "key": "bsd-2-clause",
+        "name": "BSD 2-Clause \"Simplified\" License",
+        "spdx_id": "BSD-2-Clause",
+        "url": "https://api.github.com/licenses/bsd-2-clause",
+        "node_id": "MDc6TGljZW5zZTQ="
+      },
+      "topics": []
+    },
+    {
+      "id": 1011876121,
+      "node_id": "R_kgDOPFABGQ",
+      "name": "dora-nodes-hub",
+      "full_name": "kornia/dora-nodes-hub",
+      "html_url": "https://github.com/kornia/dora-nodes-hub",
+      "description": "🤖 Repository of Kornia maintained dora-rs nodes",
+      "language": "Rust",
+      "stargazers_count": 2,
       "forks_count": 0,
       "open_issues_count": 0,
       "license": {
@@ -89,14 +294,14 @@
     {
       "id": 910125331,
       "node_id": "R_kgDONj9pEw",
-      "name": "bubbaloop",
-      "full_name": "kornia/bubbaloop",
-      "html_url": "https://github.com/kornia/bubbaloop",
+      "name": "bubbaloop_old",
+      "full_name": "kornia/bubbaloop_old",
+      "html_url": "https://github.com/kornia/bubbaloop_old",
       "description": "🦄 Serving Platform for Spatial AI and Robotics.",
       "language": "Rust",
-      "stargazers_count": 14,
-      "forks_count": 4,
-      "open_issues_count": 2,
+      "stargazers_count": 23,
+      "forks_count": 3,
+      "open_issues_count": 3,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -113,18 +318,28 @@
       ]
     },
     {
-      "id": 333549718,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzMzM1NDk3MTg=",
-      "name": "data",
-      "full_name": "kornia/data",
-      "html_url": "https://github.com/kornia/data",
-      "description": null,
-      "language": null,
-      "stargazers_count": 1,
-      "forks_count": 4,
-      "open_issues_count": 1,
-      "license": null,
-      "topics": []
+      "id": 986170360,
+      "node_id": "R_kgDOOsfD-A",
+      "name": "kornia-infernum",
+      "full_name": "kornia/kornia-infernum",
+      "html_url": "https://github.com/kornia/kornia-infernum",
+      "description": "👺 Rust Inference engine for Visual Language Models",
+      "language": "Rust",
+      "stargazers_count": 2,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "deep-learning",
+        "rust",
+        "visual-language-models"
+      ]
     },
     {
       "id": 961380845,
@@ -134,8 +349,8 @@
       "html_url": "https://github.com/kornia/kornia-paligemma",
       "description": "Rust implementation of Google Paligemma with Candle",
       "language": "Rust",
-      "stargazers_count": 4,
-      "forks_count": 0,
+      "stargazers_count": 6,
+      "forks_count": 1,
       "open_issues_count": 0,
       "license": {
         "key": "apache-2.0",
@@ -144,27 +359,11 @@
         "url": "https://api.github.com/licenses/apache-2.0",
         "node_id": "MDc6TGljZW5zZTI="
       },
-      "topics": []
-    },
-    {
-      "id": 466513703,
-      "node_id": "R_kgDOG85vJw",
-      "name": "kornia-rs",
-      "full_name": "kornia/kornia-rs",
-      "html_url": "https://github.com/kornia/kornia-rs",
-      "description": "🦀 Low-level 3D Computer Vision library in Rust",
-      "language": "Rust",
-      "stargazers_count": 331,
-      "forks_count": 64,
-      "open_issues_count": 65,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
+      "topics": [
+        "paligemma",
+        "rust",
+        "visual-language-models"
+      ]
     },
     {
       "id": 957495041,
@@ -174,36 +373,8 @@
       "html_url": "https://github.com/kornia/kornia-yolo",
       "description": "Kornia Rust Yolo implementation",
       "language": "Rust",
-      "stargazers_count": 5,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 919731142,
-      "node_id": "R_kgDONtH7xg",
-      "name": "kornia-slam",
-      "full_name": "kornia/kornia-slam",
-      "html_url": "https://github.com/kornia/kornia-slam",
-      "description": "SLAM systems for the differentiable age.🐍 🦀 ",
-      "language": null,
-      "stargazers_count": 1,
+      "stargazers_count": 7,
       "forks_count": 2,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 203653915,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMDM2NTM5MTU=",
-      "name": "kornia.github.io",
-      "full_name": "kornia/kornia.github.io",
-      "html_url": "https://github.com/kornia/kornia.github.io",
-      "description": null,
-      "language": "CSS",
-      "stargazers_count": 1,
-      "forks_count": 5,
       "open_issues_count": 0,
       "license": null,
       "topics": []
@@ -217,28 +388,8 @@
       "description": "Reusable workflow for kornia repositories",
       "language": null,
       "stargazers_count": 1,
-      "forks_count": 0,
-      "open_issues_count": 1,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 308052225,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzMDgwNTIyMjU=",
-      "name": "tutorials",
-      "full_name": "kornia/tutorials",
-      "html_url": "https://github.com/kornia/tutorials",
-      "description": "Repository containing the Kornia related tutorials",
-      "language": "Jupyter Notebook",
-      "stargazers_count": 47,
-      "forks_count": 33,
-      "open_issues_count": 11,
+      "forks_count": 1,
+      "open_issues_count": 2,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -267,35 +418,6 @@
         "node_id": "MDc6TGljZW5zZTI="
       },
       "topics": []
-    },
-    {
-      "id": 718033870,
-      "node_id": "R_kgDOKsxTzg",
-      "name": "pixie",
-      "full_name": "kornia/pixie",
-      "html_url": "https://github.com/kornia/pixie",
-      "description": "Pixie: Computer Vision AI Engineer assistant",
-      "language": null,
-      "stargazers_count": 12,
-      "forks_count": 2,
-      "open_issues_count": 1,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "artificial-intelligence",
-        "chatgpt",
-        "computer-vision",
-        "deep-learning",
-        "geometry",
-        "gpt-4-vision",
-        "machine-learning",
-        "robotics"
-      ]
     },
     {
       "id": 692380688,
@@ -338,20 +460,6 @@
       "topics": []
     },
     {
-      "id": 419026144,
-      "node_id": "R_kgDOGPnU4A",
-      "name": "data_test",
-      "full_name": "kornia/data_test",
-      "html_url": "https://github.com/kornia/data_test",
-      "description": null,
-      "language": null,
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
       "id": 596330029,
       "node_id": "R_kgDOI4tGLQ",
       "name": "limbus",
@@ -359,8 +467,8 @@
       "html_url": "https://github.com/kornia/limbus",
       "description": "Open Source async AI pipelines",
       "language": "Python",
-      "stargazers_count": 26,
-      "forks_count": 6,
+      "stargazers_count": 27,
+      "forks_count": 7,
       "open_issues_count": 2,
       "license": {
         "key": "apache-2.0",
@@ -419,7 +527,7 @@
       "html_url": "https://github.com/kornia/kornia-examples",
       "description": null,
       "language": "Jupyter Notebook",
-      "stargazers_count": 89,
+      "stargazers_count": 90,
       "forks_count": 16,
       "open_issues_count": 3,
       "license": null,
@@ -433,7 +541,7 @@
       "html_url": "https://github.com/kornia/dlpack-rs",
       "description": "Rust binding for DLPack",
       "language": "Rust",
-      "stargazers_count": 4,
+      "stargazers_count": 5,
       "forks_count": 0,
       "open_issues_count": 0,
       "license": null,
@@ -477,7 +585,7 @@
       "node_id": "MDQ6VXNlcjUxNTcwOTk=",
       "avatar_url": "https://avatars.githubusercontent.com/u/5157099?v=4",
       "html_url": "https://github.com/edgarriba",
-      "contributions": 1
+      "contributions": 2
     },
     {
       "login": "ducha-aiki",
@@ -485,7 +593,7 @@
       "node_id": "MDQ6VXNlcjQ4MDM1NjU=",
       "avatar_url": "https://avatars.githubusercontent.com/u/4803565?v=4",
       "html_url": "https://github.com/ducha-aiki",
-      "contributions": 220
+      "contributions": 5
     },
     {
       "login": "johnnv1",
@@ -493,7 +601,7 @@
       "node_id": "MDQ6VXNlcjIwNDQ0MzQ1",
       "avatar_url": "https://avatars.githubusercontent.com/u/20444345?v=4",
       "html_url": "https://github.com/johnnv1",
-      "contributions": 199
+      "contributions": 9
     },
     {
       "login": "shijianjian",
@@ -501,7 +609,7 @@
       "node_id": "MDQ6VXNlcjE1OTU1NDg2",
       "avatar_url": "https://avatars.githubusercontent.com/u/15955486?v=4",
       "html_url": "https://github.com/shijianjian",
-      "contributions": 151
+      "contributions": 2
     },
     {
       "login": "pre-commit-ci[bot]",
@@ -509,7 +617,7 @@
       "node_id": "MDM6Qm90NjY4NTMxMTM=",
       "avatar_url": "https://avatars.githubusercontent.com/in/68672?v=4",
       "html_url": "https://github.com/apps/pre-commit-ci",
-      "contributions": 123
+      "contributions": 138
     },
     {
       "login": "dvd42",
@@ -525,7 +633,15 @@
       "node_id": "MDM6Qm90NDk2OTkzMzM=",
       "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
       "html_url": "https://github.com/apps/dependabot",
-      "contributions": 65
+      "contributions": 81
+    },
+    {
+      "login": "sidd-27",
+      "id": 85678601,
+      "node_id": "MDQ6VXNlcjg1Njc4NjAx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/85678601?v=4",
+      "html_url": "https://github.com/sidd-27",
+      "contributions": 24
     },
     {
       "login": "cjpurackal",
@@ -533,14 +649,14 @@
       "node_id": "MDQ6VXNlcjEyMDM2NDU0",
       "avatar_url": "https://avatars.githubusercontent.com/u/12036454?v=4",
       "html_url": "https://github.com/cjpurackal",
-      "contributions": 35
+      "contributions": 17
     },
     {
-      "login": "Pulkit-Khandelwal",
-      "id": 8237421,
-      "node_id": "MDQ6VXNlcjgyMzc0MjE=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/8237421?v=4",
-      "html_url": "https://github.com/Pulkit-Khandelwal",
+      "login": "HassanAlsamahi",
+      "id": 42076287,
+      "node_id": "MDQ6VXNlcjQyMDc2Mjg3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/42076287?v=4",
+      "html_url": "https://github.com/HassanAlsamahi",
       "contributions": 29
     },
     {
@@ -552,11 +668,11 @@
       "contributions": 29
     },
     {
-      "login": "HassanAlsamahi",
-      "id": 42076287,
-      "node_id": "MDQ6VXNlcjQyMDc2Mjg3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/42076287?v=4",
-      "html_url": "https://github.com/HassanAlsamahi",
+      "login": "Pulkit-Khandelwal",
+      "id": 8237421,
+      "node_id": "MDQ6VXNlcjgyMzc0MjE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8237421?v=4",
+      "html_url": "https://github.com/Pulkit-Khandelwal",
       "contributions": 29
     },
     {
@@ -566,6 +682,14 @@
       "avatar_url": "https://avatars.githubusercontent.com/in/57168?v=4",
       "html_url": "https://github.com/apps/deepsource-autofix",
       "contributions": 25
+    },
+    {
+      "login": "Meggison",
+      "id": 89783286,
+      "node_id": "MDQ6VXNlcjg5NzgzMjg2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/89783286?v=4",
+      "html_url": "https://github.com/Meggison",
+      "contributions": 23
     },
     {
       "login": "lferraz",
@@ -582,6 +706,14 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/32295036?v=4",
       "html_url": "https://github.com/ashnair1",
       "contributions": 18
+    },
+    {
+      "login": "Borda",
+      "id": 6035284,
+      "node_id": "MDQ6VXNlcjYwMzUyODQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6035284?v=4",
+      "html_url": "https://github.com/Borda",
+      "contributions": 17
     },
     {
       "login": "nitaifingerhut",
@@ -605,7 +737,7 @@
       "node_id": "MDQ6VXNlcjI2OTQ2ODY0",
       "avatar_url": "https://avatars.githubusercontent.com/u/26946864?v=4",
       "html_url": "https://github.com/gau-nernst",
-      "contributions": 14
+      "contributions": 4
     },
     {
       "login": "kshitij12345",
@@ -621,7 +753,7 @@
       "node_id": "MDQ6VXNlcjExMDc3MDM=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1107703?v=4",
       "html_url": "https://github.com/carlosb1",
-      "contributions": 11
+      "contributions": 5
     },
     {
       "login": "thatbrguy",
@@ -640,12 +772,20 @@
       "contributions": 10
     },
     {
-      "login": "Borda",
-      "id": 6035284,
-      "node_id": "MDQ6VXNlcjYwMzUyODQ=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/6035284?v=4",
-      "html_url": "https://github.com/Borda",
+      "login": "arc-wonders",
+      "id": 178549953,
+      "node_id": "U_kgDOCqR0wQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/178549953?v=4",
+      "html_url": "https://github.com/arc-wonders",
       "contributions": 10
+    },
+    {
+      "login": "Big-Marvel",
+      "id": 145830550,
+      "node_id": "U_kgDOCLEylg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/145830550?v=4",
+      "html_url": "https://github.com/Big-Marvel",
+      "contributions": 9
     },
     {
       "login": "jiangwei221",
@@ -680,37 +820,189 @@
       "contributions": 8
     },
     {
-      "login": "ceroytres",
-      "id": 6267744,
-      "node_id": "MDQ6VXNlcjYyNjc3NDQ=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/6267744?v=4",
-      "html_url": "https://github.com/ceroytres",
+      "login": "AS1100K",
+      "id": 117935160,
+      "node_id": "U_kgDOBweMOA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/117935160?v=4",
+      "html_url": "https://github.com/AS1100K",
+      "contributions": 34
+    },
+    {
+      "login": "andrew-shc",
+      "id": 39780709,
+      "node_id": "MDQ6VXNlcjM5NzgwNzA5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/39780709?v=4",
+      "html_url": "https://github.com/andrew-shc",
+      "contributions": 15
+    },
+    {
+      "login": "AnilKumarSingh9856",
+      "id": 127577540,
+      "node_id": "U_kgDOB5qtxA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127577540?v=4",
+      "html_url": "https://github.com/AnilKumarSingh9856",
       "contributions": 8
     },
     {
-      "login": "jatentaki",
-      "id": 22394841,
-      "node_id": "MDQ6VXNlcjIyMzk0ODQx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/22394841?v=4",
-      "html_url": "https://github.com/jatentaki",
+      "login": "ngoldbaum",
+      "id": 3126246,
+      "node_id": "MDQ6VXNlcjMxMjYyNDY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3126246?v=4",
+      "html_url": "https://github.com/ngoldbaum",
       "contributions": 8
     },
     {
-      "login": "Wizaron",
-      "id": 10080524,
-      "node_id": "MDQ6VXNlcjEwMDgwNTI0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/10080524?v=4",
-      "html_url": "https://github.com/Wizaron",
-      "contributions": 8
+      "login": "dhruvkjain",
+      "id": 138356622,
+      "node_id": "U_kgDOCD8njg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/138356622?v=4",
+      "html_url": "https://github.com/dhruvkjain",
+      "contributions": 6
     },
     {
-      "login": "pmeier",
-      "id": 6849766,
-      "node_id": "MDQ6VXNlcjY4NDk3NjY=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/6849766?v=4",
-      "html_url": "https://github.com/pmeier",
-      "contributions": 8
+      "login": "shreed27",
+      "id": 136893148,
+      "node_id": "U_kgDOCCjS3A",
+      "avatar_url": "https://avatars.githubusercontent.com/u/136893148?v=4",
+      "html_url": "https://github.com/shreed27",
+      "contributions": 6
+    },
+    {
+      "login": "Copilot",
+      "id": 198982749,
+      "node_id": "BOT_kgDOC9w8XQ",
+      "avatar_url": "https://avatars.githubusercontent.com/in/1143301?v=4",
+      "html_url": "https://github.com/apps/copilot-swe-agent",
+      "contributions": 6
+    },
+    {
+      "login": "liamkinne",
+      "id": 10735142,
+      "node_id": "MDQ6VXNlcjEwNzM1MTQy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10735142?v=4",
+      "html_url": "https://github.com/liamkinne",
+      "contributions": 5
+    },
+    {
+      "login": "Avi-47",
+      "id": 166274452,
+      "node_id": "U_kgDOCekllA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/166274452?v=4",
+      "html_url": "https://github.com/Avi-47",
+      "contributions": 4
+    },
+    {
+      "login": "AdityaShome",
+      "id": 185322746,
+      "node_id": "U_kgDOCwvM-g",
+      "avatar_url": "https://avatars.githubusercontent.com/u/185322746?v=4",
+      "html_url": "https://github.com/AdityaShome",
+      "contributions": 3
+    },
+    {
+      "login": "emilmgeorge",
+      "id": 406677,
+      "node_id": "MDQ6VXNlcjQwNjY3Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/406677?v=4",
+      "html_url": "https://github.com/emilmgeorge",
+      "contributions": 3
+    },
+    {
+      "login": "Incharajayaram",
+      "id": 148113274,
+      "node_id": "U_kgDOCNQHeg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/148113274?v=4",
+      "html_url": "https://github.com/Incharajayaram",
+      "contributions": 3
+    },
+    {
+      "login": "jandremarais",
+      "id": 17101504,
+      "node_id": "MDQ6VXNlcjE3MTAxNTA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/17101504?v=4",
+      "html_url": "https://github.com/jandremarais",
+      "contributions": 3
+    },
+    {
+      "login": "jeffin07",
+      "id": 12173186,
+      "node_id": "MDQ6VXNlcjEyMTczMTg2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12173186?v=4",
+      "html_url": "https://github.com/jeffin07",
+      "contributions": 3
+    },
+    {
+      "login": "namanguptagit",
+      "id": 86222875,
+      "node_id": "MDQ6VXNlcjg2MjIyODc1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/86222875?v=4",
+      "html_url": "https://github.com/namanguptagit",
+      "contributions": 3
+    },
+    {
+      "login": "Nyx128",
+      "id": 72234099,
+      "node_id": "MDQ6VXNlcjcyMjM0MDk5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/72234099?v=4",
+      "html_url": "https://github.com/Nyx128",
+      "contributions": 3
+    },
+    {
+      "login": "zeel991",
+      "id": 58181784,
+      "node_id": "MDQ6VXNlcjU4MTgxNzg0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/58181784?v=4",
+      "html_url": "https://github.com/zeel991",
+      "contributions": 3
+    },
+    {
+      "login": "VyasGuru",
+      "id": 71374747,
+      "node_id": "MDQ6VXNlcjcxMzc0NzQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/71374747?v=4",
+      "html_url": "https://github.com/VyasGuru",
+      "contributions": 2
+    },
+    {
+      "login": "m0sys",
+      "id": 21181457,
+      "node_id": "MDQ6VXNlcjIxMTgxNDU3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21181457?v=4",
+      "html_url": "https://github.com/m0sys",
+      "contributions": 2
+    },
+    {
+      "login": "Force1ess",
+      "id": 72636351,
+      "node_id": "MDQ6VXNlcjcyNjM2MzUx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/72636351?v=4",
+      "html_url": "https://github.com/Force1ess",
+      "contributions": 2
+    },
+    {
+      "login": "AdarshGuptaa",
+      "id": 87478915,
+      "node_id": "MDQ6VXNlcjg3NDc4OTE1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/87478915?v=4",
+      "html_url": "https://github.com/AdarshGuptaa",
+      "contributions": 2
+    },
+    {
+      "login": "aayushhzz",
+      "id": 66545158,
+      "node_id": "MDQ6VXNlcjY2NTQ1MTU4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/66545158?v=4",
+      "html_url": "https://github.com/aayushhzz",
+      "contributions": 2
+    },
+    {
+      "login": "hardik-xi11",
+      "id": 183656738,
+      "node_id": "U_kgDOCvJhIg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/183656738?v=4",
+      "html_url": "https://github.com/hardik-xi11",
+      "contributions": 1
     }
   ],
-  "activeOrg": false
+  "activeOrg": true
 }

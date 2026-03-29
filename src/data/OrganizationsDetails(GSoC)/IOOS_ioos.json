@@ -40,7 +40,8 @@
     2021,
     2022,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2021": [
@@ -159,21 +160,115 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/eqZttvrN"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "MQTT Protocol Support for ERDDAP",
+        "short_description": "MQTT is a lightweight messaging protocol which is used by IoT based devices as a way to transfer data at very high speeds. Adding its support to...",
+        "description": "MQTT is a lightweight messaging protocol which is used by IoT based devices as a way\nto transfer data at very high speeds. Adding its support to ERDDAP™  would enable it access near real time data and build datasets with it. This project will add support for ERDDAP™ to act as both, an MQTT client to connect with existing brokers and as an MQTT broker to collect real time data from sensors.",
+        "student_name": "ayushsingh01042003",
+        "code_url": "https://medium.com/@ayushsingh01042003/contents-of-the-blog-6692f6376b9c",
+        "proposal_id": "JX1KXaer",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/5tZcgSox"
+      },
+      {
+        "title": "Build web UI versions for IOOS tools (ioos-qc and compliance checker)",
+        "short_description": "This project aims to develop a user-friendly, browser-based interface for oceanographic data quality control tools. The goal is to create an...",
+        "description": "This project aims to develop a user-friendly, browser-based interface for oceanographic data quality control tools. The goal is to create an interactive interface for oceanographers to validate and analyze their datasets. \nThe project will also include data visualizations to display the results of quality checks and compliance tests. Additionally, the users should be able to download the processed datasets.\n\nDeliverables:\n•\tA browser-based interface for uploading datasets and selecting quality checks.\n•\tIntegration of ioos-qc and compliance-checker with the browser.\n•\tVisualizations of quality control results.\n•\tFunctionality for users to download processed data.\n•\tDocumentation and a final report detailing the development process and outcomes.\n\nThe project will provide a convenient, accessible platform for oceanographers to validate and analyze their data, improving the efficiency and accuracy of their quality control workflows.",
+        "student_name": "Chiara Monforte",
+        "code_url": "https://gist.github.com/MOchiara/cd4fd3b2be2cf94d818f0fee0b1fb4cc",
+        "proposal_id": "pG6b3aHD",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/YR0AVIjH"
+      },
+      {
+        "title": "Extending Crocolake’s available datasets",
+        "short_description": "CrocoLakeTools is a Python package designed to convert oceanographic datasets from various formats (like netCDF and CSV) into CrocoLake’s unified...",
+        "description": "CrocoLakeTools is a Python package designed to convert oceanographic datasets from various formats (like netCDF and CSV) into CrocoLake’s unified Parquet-based data lake. This allows researchers to work with clean, consistent data without dealing with technical format issues. In this project, I’ll be extending CrocoLakeTools by developing new converters for the Saildrones and Oleander datasets, two widely used but structurally complex sources. The focus will be on building efficient conversion pipelines using tools like xarray and dask, while also improving testing, documentation, and overall usability. These additions will expand the tool’s dataset coverage and help researchers access and process more ocean data.",
+        "student_name": "David Nady",
+        "code_url": "https://gist.github.com/david11133/b44477c67a7dcbedc289cf636f6c6bfb",
+        "proposal_id": "lMOVUPo4",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/mdb8VnRw"
+      },
+      {
+        "title": "Update ERDDAP™ page rendering to use a template framework",
+        "short_description": "Proposal Summary This project aims to modernize ERDDAP™ page rendering by migrating it to a templating framework. The current rendering process...",
+        "description": "Proposal Summary\nThis project aims to modernize ERDDAP™ page rendering by migrating it to a templating framework. The current rendering process relies on manually constructed HTML, which makes it difficult to maintain and customize. By implementing a template-based system, we will improve code maintainability, enhance flexibility for customization, and support modern web development practices.\n\nDeliverables\nIdentify a suitable templating framework (e.g., FreeMarker, Thymeleaf, or another appropriate choice).\n\nRefactor ERDDAP™’s HTML generation logic to use the selected template engine.\n\nEnsure the new system maintains full feature parity with existing pages.\n\nImprove documentation on how to modify and extend ERDDAP™ templates.\n\nImplement tests to verify rendering consistency.\n\nThis upgrade will make ERDDAP™ more maintainable and adaptable for future development.",
+        "student_name": "Harish Peddina",
+        "code_url": "https://medium.com/@peddinaharish2003/google-summer-of-code-2025-with-ioos-erddap-html-templating-with-jte-50cd9597ebdf",
+        "proposal_id": "IDW0XeVa",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/WFMQYGxF"
+      },
+      {
+        "title": "Improving Usability and Features of the Phytoclass R Package and GUI for Phytoplankton Estimation",
+        "short_description": "This GSoC project focuses on enhancing the usability and functionality of the phytoclass R package and its Shiny-based GUI, which are used to...",
+        "description": "This GSoC project focuses on enhancing the usability and functionality of the phytoclass R package and its Shiny-based GUI, which are used to estimate phytoplankton abundance from HPLC pigment data. Key objectives include improving error handling, refining the user interface, adding support for regional variations in phytoplankton classification, and improving overall documentation and user guidance. These improvements aim to make phytoclass more accessible and accurate for marine researchers across diverse regions. With a solid foundation in R and Shiny, and a strong interest in applying tech to environmental challenges, I’m excited to contribute meaningful improvements to this impactful open-source project.",
+        "student_name": "Khan Mohd Aasim Maqsood",
+        "code_url": "https://gsoc25-ioos-phytoclass.hashnode.dev/gsoc-2025-ioos-phytoclass",
+        "proposal_id": "YLzLSWXE",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/KQGtg0Ge"
+      },
+      {
+        "title": "pyOBIS for stakeholders",
+        "short_description": "This project addresses the issue of translating complex marine biodiversity data into actionable knowledge for ecosystem management in Florida. It...",
+        "description": "This project addresses the issue of translating complex marine biodiversity data into actionable knowledge for ecosystem management in Florida. It makes use of existing biodiversity datasets (OBIS, GBIF) and ecosystem variables (e.g., temperature) to develop a collection of reproducible Jupyter Notebooks powered by Python packages like pyOBIS, GeoPandas, and machine learning packages. These notebooks are dedicated to showcasing the top environmental inquiries in areas like the Florida Keys, Rookery Bay, Tampa Bay, and the Gulf of Mexico covering trends in Rice's Whale, birds, and seagrasses.\n\nThe solution combines species occurrence records and ecosystem information to generate visualizations, spatial models, and biodiversity metrics. Interactive maps, temporal trend plots, and model-based habitat predictions are products. Constructed with reproducibility and open science principles in mind, the tools will assist resource managers, researchers, and decision-makers in conservation planning.\n\nDeliverables include:\n\n 5 modular Jupyter Notebooks (e.g., habitat models, trend predictions),\n Reusable data pipeline functions (data ingestion, cleaning, analysis),\n Public Docker-supported GitHub repository,\nEasy-to-read documentation and automated testing framework.\n\nThe project facilitates environmental decision-making through data science and encourages collaboration through open, reproducible tools.",
+        "student_name": "Mehraz Hossain Rumman",
+        "code_url": "https://gist.github.com/MehrazRumman/bc59c0b9672e1f976a7bd790e4f662b0",
+        "proposal_id": "SpkMuLNk",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/Af6KBBl2"
+      },
+      {
+        "title": "Migrating SurveyJoin to a Relational Database for Scalability and Improved Performance",
+        "short_description": "The Northeast Pacific Ocean hosts a diverse array of marine species, yet the absence of a standardized, international database for transboundary...",
+        "description": "The Northeast Pacific Ocean hosts a diverse array of marine species, yet the absence of a standardized, international database for transboundary marine survey data impedes effective research and resource management. Building upon the existing efforts of the surveyjoin project, this project aims to migrate haul-level survey data from a data frame to a PostgreSQL-based relational database. This transition will facilitate the integration of life-history data, expand species coverage beyond the current 55 species, and enhance data accessibility. The project encompasses designing the database schema, developing data migration pipelines, optimizing query performance, and ensuring seamless integration with existing R workflows.",
+        "student_name": "nityam",
+        "code_url": "https://gist.github.com/w-nityammm/db81fcc587da7acc11cca6bd98e01a38",
+        "proposal_id": "3dH8gL85",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/ewtYg3ZW"
+      },
+      {
+        "title": "OCSMesh Parallelization",
+        "short_description": "OCSMesh is a Python package designed for generating unstructured meshes tailored to ocean modeling. However, its current workflow, particularly the...",
+        "description": "OCSMesh is a Python package designed for generating unstructured meshes tailored to ocean modeling. However, its current workflow, particularly the Digital Elevation Model (DEM) processing and JIGSAW mesh generation steps, remains highly time-consuming and not well-optimized for High Performance Computing (HPC) environments.\nTo address this bottleneck, I propose introducing parallelism into the most computationally intensive stages of the workflow: DEM processing and JIGSAW-based meshing. My approach involves leveraging parallel computing libraries such as Dask and mpi4py to scale these operations across multiple cores and nodes.\nFor the preprocessing stage, several components are already optimized for single-node performance and can be extended to work efficiently in an HPC setting. Regarding JIGSAW meshing, I plan to implement a domain decomposition strategy, partitioning the domain into smaller subdomains that can be meshed independently in parallel. These subdomain meshes will then be seamlessly merged to form the final unified mesh.\nThis parallelized workflow is expected to dramatically reduce mesh generation time, enabling more scalable and efficient processing for large-scale ocean modeling tasks. I aim to integrate mpi4py support into the key functions across the codebase, while using Dask specifically for raster windowing and DEM data handling.",
+        "student_name": "Yashveer_Singh",
+        "code_url": "https://gist.github.com/yashveeeeer/b0b10a3cfa7de03a6e72af30ac92c587",
+        "proposal_id": "v60udfoz",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/9mj1dDWr"
+      }
+    ],
+    "2026": []
   },
   "githubID": "ioos",
   "repositories": [
     {
+      "id": 439054209,
+      "node_id": "R_kgDOGitvgQ",
+      "name": "ioos_metrics",
+      "full_name": "ioos/ioos_metrics",
+      "html_url": "https://github.com/ioos/ioos_metrics",
+      "description": "Working on creating metrics for the IOOS by the numbers",
+      "language": "Jupyter Notebook",
+      "stargazers_count": 2,
+      "forks_count": 6,
+      "open_issues_count": 33,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
       "id": 724774333,
       "node_id": "R_kgDOKzMtvQ",
-      "name": "sanctuarywatch",
-      "full_name": "ioos/sanctuarywatch",
-      "html_url": "https://github.com/ioos/sanctuarywatch",
-      "description": "WordPress documentation and plug-ins for the National Marine Santuaries web-enabled Condition Reporting (WebCR) website sanctuarywatch.ioos.us.",
+      "name": "sanctuarywatch_graphicdata",
+      "full_name": "ioos/sanctuarywatch_graphicdata",
+      "html_url": "https://github.com/ioos/sanctuarywatch_graphicdata",
+      "description": "Graphic Data: a WordPress theme and plugin used by National Marine Sanctuaries for condition reporting on the website sanctuarywatch.ioos.us.",
       "language": "JavaScript",
-      "stargazers_count": 5,
-      "forks_count": 2,
-      "open_issues_count": 37,
+      "stargazers_count": 12,
+      "forks_count": 5,
+      "open_issues_count": 55,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -191,64 +286,10 @@
       "html_url": "https://github.com/ioos/glider-dac",
       "description": "The IOOS Glider DAC site/scripts/tools",
       "language": "Python",
-      "stargazers_count": 11,
-      "forks_count": 13,
-      "open_issues_count": 39,
+      "stargazers_count": 14,
+      "forks_count": 19,
+      "open_issues_count": 46,
       "license": null,
-      "topics": []
-    },
-    {
-      "id": 140028379,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNDAwMjgzNzk=",
-      "name": "atn-docs",
-      "full_name": "ioos/atn-docs",
-      "html_url": "https://github.com/ioos/atn-docs",
-      "description": ":fish: Documentation for the IOOS Animal Telemetry Network Data Assembly Center",
-      "language": "Makefile",
-      "stargazers_count": 0,
-      "forks_count": 2,
-      "open_issues_count": 1,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 13279768,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMzI3OTc2OA==",
-      "name": "compliance-checker",
-      "full_name": "ioos/compliance-checker",
-      "html_url": "https://github.com/ioos/compliance-checker",
-      "description": "Python tool to check your datasets against compliance standards",
-      "language": "Python",
-      "stargazers_count": 118,
-      "forks_count": 66,
-      "open_issues_count": 50,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 439054209,
-      "node_id": "R_kgDOGitvgQ",
-      "name": "ioos_metrics",
-      "full_name": "ioos/ioos_metrics",
-      "html_url": "https://github.com/ioos/ioos_metrics",
-      "description": "Working on creating metrics for the IOOS by the numbers",
-      "language": "Jupyter Notebook",
-      "stargazers_count": 2,
-      "forks_count": 4,
-      "open_issues_count": 29,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
       "topics": []
     },
     {
@@ -260,8 +301,8 @@
       "description": "IOOS' Coastal Modeling Cloud Sandbox provides a framework for developing, modifying and running models in the cloud. It provides repeatable configurations, model code and required libraries, input data and analysis of model outputs. The Sandbox supports not only the development of services and models, but also Cloud HPC to run and validate models.",
       "language": "Jupyter Notebook",
       "stargazers_count": 16,
-      "forks_count": 20,
-      "open_issues_count": 22,
+      "forks_count": 22,
+      "open_issues_count": 23,
       "license": {
         "key": "bsd-3-clause",
         "name": "BSD 3-Clause \"New\" or \"Revised\" License",
@@ -272,16 +313,72 @@
       "topics": []
     },
     {
-      "id": 213921937,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMTM5MjE5Mzc=",
-      "name": "bio_data_guide",
-      "full_name": "ioos/bio_data_guide",
-      "html_url": "https://github.com/ioos/bio_data_guide",
-      "description": "Standardizing Marine Biological Data Working Group - An open community to facilitate the mobilization of biological data to OBIS.",
+      "id": 212851995,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMTI4NTE5OTU=",
+      "name": "ioos-python-package-skeleton",
+      "full_name": "ioos/ioos-python-package-skeleton",
+      "html_url": "https://github.com/ioos/ioos-python-package-skeleton",
+      "description": "Boilerplate repository for  IOOS packages",
       "language": "Jupyter Notebook",
-      "stargazers_count": 50,
-      "forks_count": 23,
-      "open_issues_count": 96,
+      "stargazers_count": 11,
+      "forks_count": 9,
+      "open_issues_count": 2,
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "topics": []
+    },
+    {
+      "id": 183434098,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxODM0MzQwOTg=",
+      "name": "erddap-gold-standard",
+      "full_name": "ioos/erddap-gold-standard",
+      "html_url": "https://github.com/ioos/erddap-gold-standard",
+      "description": "Contains the 'gold standard' ERDDAP configuration, with datasets compliant with IOOS Metadata Profile 1.2",
+      "language": "CSS",
+      "stargazers_count": 10,
+      "forks_count": 18,
+      "open_issues_count": 14,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 104919828,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMDQ5MTk4Mjg=",
+      "name": "erddapy",
+      "full_name": "ioos/erddapy",
+      "html_url": "https://github.com/ioos/erddapy",
+      "description": "Python interface for ERDDAP",
+      "language": "Python",
+      "stargazers_count": 90,
+      "forks_count": 36,
+      "open_issues_count": 9,
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "topics": [
+        "hacktoberfest"
+      ]
+    },
+    {
+      "id": 51394538,
+      "node_id": "MDEwOlJlcG9zaXRvcnk1MTM5NDUzOA==",
+      "name": "ioos-us",
+      "full_name": "ioos/ioos-us",
+      "html_url": "https://github.com/ioos/ioos-us",
+      "description": "The homepage for the IOOS.us website",
+      "language": "CSS",
+      "stargazers_count": 1,
+      "forks_count": 16,
+      "open_issues_count": 24,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -289,15 +386,115 @@
         "url": "https://api.github.com/licenses/mit",
         "node_id": "MDc6TGljZW5zZTEz"
       },
-      "topics": [
-        "darwin-core",
-        "data",
-        "data-management",
-        "marine-biology",
-        "marine-data",
-        "obis",
-        "tutorials"
-      ]
+      "topics": []
+    },
+    {
+      "id": 1055534225,
+      "node_id": "R_kgDOPuoskQ",
+      "name": "compliance-checker-wasm-web",
+      "full_name": "ioos/compliance-checker-wasm-web",
+      "html_url": "https://github.com/ioos/compliance-checker-wasm-web",
+      "description": "Web Assembly based front-end for the IOOS Compliance Checker.",
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 3,
+      "open_issues_count": 6,
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "topics": []
+    },
+    {
+      "id": 1161988547,
+      "node_id": "R_kgDORUKJww",
+      "name": "hfrnet-rtv",
+      "full_name": "ioos/hfrnet-rtv",
+      "html_url": "https://github.com/ioos/hfrnet-rtv",
+      "description": "NOAA IOOS's code from NESDIS's NCCF used to calculate ocean and Great Lakes gridded surface current velocity real-time vector (RTV) data products from measurements of radial velocity made by the coastal high-frequency radar (HFR) stations in the U.S. IOOS HFR National Network.",
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 110748454,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMTA3NDg0NTQ=",
+      "name": "ioos_qc",
+      "full_name": "ioos/ioos_qc",
+      "html_url": "https://github.com/ioos/ioos_qc",
+      "description": ":ballot_box_with_check: :ocean: IOOS QARTOD and other Quality Control tests implemented in Python",
+      "language": "Python",
+      "stargazers_count": 63,
+      "forks_count": 43,
+      "open_issues_count": 26,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 13279768,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMzI3OTc2OA==",
+      "name": "compliance-checker",
+      "full_name": "ioos/compliance-checker",
+      "html_url": "https://github.com/ioos/compliance-checker",
+      "description": "Python tool to check your datasets against compliance standards",
+      "language": "Python",
+      "stargazers_count": 130,
+      "forks_count": 76,
+      "open_issues_count": 42,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 782681827,
+      "node_id": "R_kgDOLqbG4w",
+      "name": "marine_life_data_network",
+      "full_name": "ioos/marine_life_data_network",
+      "html_url": "https://github.com/ioos/marine_life_data_network",
+      "description": "Planning efforts relevant to IOOS Marine Life and IOOS DMAC.",
+      "language": null,
+      "stargazers_count": 7,
+      "forks_count": 5,
+      "open_issues_count": 42,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 101329106,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMDEzMjkxMDY=",
+      "name": "passive-acoustics",
+      "full_name": "ioos/passive-acoustics",
+      "html_url": "https://github.com/ioos/passive-acoustics",
+      "description": null,
+      "language": "Ruby",
+      "stargazers_count": 0,
+      "forks_count": 3,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
     },
     {
       "id": 419464308,
@@ -306,10 +503,10 @@
       "full_name": "ioos/bio_mobilization_workshop",
       "html_url": "https://github.com/ioos/bio_mobilization_workshop",
       "description": "Marine data mobilization workshop for Biology and Ecosystem Essential Ocean Variables (Bio-Eco EOV) as a Contribution to the UN Decade on Ocean Science for Sustainable Development",
-      "language": "HTML",
+      "language": null,
       "stargazers_count": 6,
-      "forks_count": 10,
-      "open_issues_count": 22,
+      "forks_count": 12,
+      "open_issues_count": 23,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -329,13 +526,163 @@
       "language": "Python",
       "stargazers_count": 0,
       "forks_count": 1,
-      "open_issues_count": 10,
+      "open_issues_count": 12,
       "license": {
         "key": "other",
         "name": "Other",
         "spdx_id": "NOASSERTION",
         "url": null,
         "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 286793876,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyODY3OTM4NzY=",
+      "name": "gliderpy",
+      "full_name": "ioos/gliderpy",
+      "html_url": "https://github.com/ioos/gliderpy",
+      "description": "gliderpy is a thin wrapper around erddapy with custom methods and plotting functionality to browse, fetch, and plot glider data.",
+      "language": "Python",
+      "stargazers_count": 11,
+      "forks_count": 18,
+      "open_issues_count": 3,
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "topics": [
+        "hacktoberfest"
+      ]
+    },
+    {
+      "id": 43606952,
+      "node_id": "MDEwOlJlcG9zaXRvcnk0MzYwNjk1Mg==",
+      "name": "ciso",
+      "full_name": "ioos/ciso",
+      "html_url": "https://github.com/ioos/ciso",
+      "description": "Cython iso surface calculator",
+      "language": "Jupyter Notebook",
+      "stargazers_count": 2,
+      "forks_count": 3,
+      "open_issues_count": 0,
+      "license": {
+        "key": "bsd-2-clause",
+        "name": "BSD 2-Clause \"Simplified\" License",
+        "spdx_id": "BSD-2-Clause",
+        "url": "https://api.github.com/licenses/bsd-2-clause",
+        "node_id": "MDc6TGljZW5zZTQ="
+      },
+      "topics": []
+    },
+    {
+      "id": 333845858,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzMzM4NDU4NTg=",
+      "name": "gsoc",
+      "full_name": "ioos/gsoc",
+      "html_url": "https://github.com/ioos/gsoc",
+      "description": "Information about IOOS activities for Google Summer of Code",
+      "language": null,
+      "stargazers_count": 38,
+      "forks_count": 13,
+      "open_issues_count": 18,
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "topics": []
+    },
+    {
+      "id": 322694489,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzMjI2OTQ0ODk=",
+      "name": "ioos-asset-inventory",
+      "full_name": "ioos/ioos-asset-inventory",
+      "html_url": "https://github.com/ioos/ioos-asset-inventory",
+      "description": "Building the IOOS asset inventory with python",
+      "language": "Jupyter Notebook",
+      "stargazers_count": 0,
+      "forks_count": 1,
+      "open_issues_count": 6,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 110613684,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMTA2MTM2ODQ=",
+      "name": "ncei-archiving-cookbook",
+      "full_name": "ioos/ncei-archiving-cookbook",
+      "html_url": "https://github.com/ioos/ncei-archiving-cookbook",
+      "description": null,
+      "language": "Ruby",
+      "stargazers_count": 4,
+      "forks_count": 3,
+      "open_issues_count": 6,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 45073308,
+      "node_id": "MDEwOlJlcG9zaXRvcnk0NTA3MzMwOA==",
+      "name": "cc-plugin-ncei",
+      "full_name": "ioos/cc-plugin-ncei",
+      "html_url": "https://github.com/ioos/cc-plugin-ncei",
+      "description": "Compliance Checker Plugin for NCEI Templates",
+      "language": "Python",
+      "stargazers_count": 1,
+      "forks_count": 6,
+      "open_issues_count": 4,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 36460876,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzNjQ2MDg3Ng==",
+      "name": "cc-plugin-glider",
+      "full_name": "ioos/cc-plugin-glider",
+      "html_url": "https://github.com/ioos/cc-plugin-glider",
+      "description": "GliderDAC Compliance Checker plugin",
+      "language": "Python",
+      "stargazers_count": 2,
+      "forks_count": 12,
+      "open_issues_count": 4,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 62069404,
+      "node_id": "MDEwOlJlcG9zaXRvcnk2MjA2OTQwNA==",
+      "name": "catalog-docker-base",
+      "full_name": "ioos/catalog-docker-base",
+      "html_url": "https://github.com/ioos/catalog-docker-base",
+      "description": "Docker Image for the base CKAN build for all CKAN related images",
+      "language": "Shell",
+      "stargazers_count": 3,
+      "forks_count": 11,
+      "open_issues_count": 2,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
       },
       "topics": []
     },
@@ -347,9 +694,9 @@
       "html_url": "https://github.com/ioos/ioos_code_lab",
       "description": "Notebook demonstrations and examples",
       "language": "Jupyter Notebook",
-      "stargazers_count": 12,
-      "forks_count": 13,
-      "open_issues_count": 25,
+      "stargazers_count": 14,
+      "forks_count": 14,
+      "open_issues_count": 30,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -362,50 +709,16 @@
       ]
     },
     {
-      "id": 782681827,
-      "node_id": "R_kgDOLqbG4w",
-      "name": "marine_life_data_network",
-      "full_name": "ioos/marine_life_data_network",
-      "html_url": "https://github.com/ioos/marine_life_data_network",
-      "description": "Planning efforts relevant to IOOS Marine Life and IOOS DMAC.",
-      "language": null,
-      "stargazers_count": 2,
-      "forks_count": 4,
-      "open_issues_count": 54,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 355671457,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzNTU2NzE0NTc=",
-      "name": "ioos-atn-data",
-      "full_name": "ioos/ioos-atn-data",
-      "html_url": "https://github.com/ioos/ioos-atn-data",
-      "description": "Code, documentation and issue tracking for ATN NCEI archiving",
-      "language": "Jupyter Notebook",
-      "stargazers_count": 1,
-      "forks_count": 1,
-      "open_issues_count": 13,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 104919828,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMDQ5MTk4Mjg=",
-      "name": "erddapy",
-      "full_name": "ioos/erddapy",
-      "html_url": "https://github.com/ioos/erddapy",
-      "description": "Python interface for ERDDAP",
+      "id": 761856524,
+      "node_id": "R_kgDOLWkCDA",
+      "name": "xarray-subset-grid",
+      "full_name": "ioos/xarray-subset-grid",
+      "html_url": "https://github.com/ioos/xarray-subset-grid",
+      "description": "Subset Xarray datasets in space",
       "language": "Python",
-      "stargazers_count": 81,
-      "forks_count": 30,
-      "open_issues_count": 9,
+      "stargazers_count": 9,
+      "forks_count": 10,
+      "open_issues_count": 27,
       "license": {
         "key": "bsd-3-clause",
         "name": "BSD 3-Clause \"New\" or \"Revised\" License",
@@ -414,29 +727,10 @@
         "node_id": "MDc6TGljZW5zZTU="
       },
       "topics": [
-        "hacktoberfest"
-      ]
-    },
-    {
-      "id": 286793876,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyODY3OTM4NzY=",
-      "name": "gliderpy",
-      "full_name": "ioos/gliderpy",
-      "html_url": "https://github.com/ioos/gliderpy",
-      "description": "gliderpy is a thin wrapper around erddapy with custom methods and plotting functionality to browse, fetch, and plot glider data.",
-      "language": "Python",
-      "stargazers_count": 10,
-      "forks_count": 16,
-      "open_issues_count": 1,
-      "license": {
-        "key": "bsd-3-clause",
-        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
-        "spdx_id": "BSD-3-Clause",
-        "url": "https://api.github.com/licenses/bsd-3-clause",
-        "node_id": "MDc6TGljZW5zZTU="
-      },
-      "topics": [
-        "hacktoberfest"
+        "geospatial",
+        "numpy",
+        "python",
+        "xarray"
       ]
     },
     {
@@ -460,242 +754,30 @@
       "topics": []
     },
     {
-      "id": 110748454,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMTA3NDg0NTQ=",
-      "name": "ioos_qc",
-      "full_name": "ioos/ioos_qc",
-      "html_url": "https://github.com/ioos/ioos_qc",
-      "description": ":ballot_box_with_check: :ocean: IOOS QARTOD and other Quality Control tests implemented in Python",
-      "language": "Python",
-      "stargazers_count": 50,
-      "forks_count": 33,
-      "open_issues_count": 23,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 183434098,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxODM0MzQwOTg=",
-      "name": "erddap-gold-standard",
-      "full_name": "ioos/erddap-gold-standard",
-      "html_url": "https://github.com/ioos/erddap-gold-standard",
-      "description": "Contains the 'gold standard' ERDDAP configuration, with datasets compliant with IOOS Metadata Profile 1.2",
-      "language": "CSS",
-      "stargazers_count": 9,
-      "forks_count": 19,
-      "open_issues_count": 15,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 110613684,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMTA2MTM2ODQ=",
-      "name": "ncei-archiving-cookbook",
-      "full_name": "ioos/ncei-archiving-cookbook",
-      "html_url": "https://github.com/ioos/ncei-archiving-cookbook",
-      "description": null,
-      "language": "Ruby",
-      "stargazers_count": 3,
-      "forks_count": 2,
-      "open_issues_count": 3,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 101927989,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMDE5Mjc5ODk=",
-      "name": "conventions-for-observing-asset-identifiers",
-      "full_name": "ioos/conventions-for-observing-asset-identifiers",
-      "html_url": "https://github.com/ioos/conventions-for-observing-asset-identifiers",
-      "description": null,
-      "language": "Ruby",
-      "stargazers_count": 0,
-      "forks_count": 1,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 117015513,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMTcwMTU1MTM=",
-      "name": "mbon-docs",
-      "full_name": "ioos/mbon-docs",
-      "html_url": "https://github.com/ioos/mbon-docs",
-      "description": "MBON portal documentation",
-      "language": "Ruby",
-      "stargazers_count": 0,
-      "forks_count": 5,
-      "open_issues_count": 18,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 104787637,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMDQ3ODc2Mzc=",
-      "name": "ioos-documentation-jekyll-skeleton",
-      "full_name": "ioos/ioos-documentation-jekyll-skeleton",
-      "html_url": "https://github.com/ioos/ioos-documentation-jekyll-skeleton",
-      "description": "Template/skeleton repository to use to create new https://ioos.github.io documentation sites.",
-      "language": "Ruby",
-      "stargazers_count": 0,
-      "forks_count": 6,
-      "open_issues_count": 4,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 111150457,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMTExNTA0NTc=",
-      "name": "BioData-Training-Workshop",
-      "full_name": "ioos/BioData-Training-Workshop",
-      "html_url": "https://github.com/ioos/BioData-Training-Workshop",
-      "description": "IOOS Biological Data Training Workshop 2018 Materials",
-      "language": "HTML",
-      "stargazers_count": 9,
-      "forks_count": 8,
-      "open_issues_count": 5,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 101929087,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMDE5MjkwODc=",
-      "name": "ioos-metadata",
-      "full_name": "ioos/ioos-metadata",
-      "html_url": "https://github.com/ioos/ioos-metadata",
-      "description": "Documentation site for the IOOS Metadata Profile",
-      "language": "Ruby",
-      "stargazers_count": 1,
-      "forks_count": 9,
-      "open_issues_count": 9,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 102767841,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMDI3Njc4NDE=",
-      "name": "ioos.github.io",
-      "full_name": "ioos/ioos.github.io",
-      "html_url": "https://github.com/ioos/ioos.github.io",
-      "description": "IOOS Documentation Portal is a collection of IOOS Data Management and Communication (DMAC) guidelines, specifications, and software tools that allow IOOS data provider organizations to publish their data in an interoperable fashion adhering to DMAC principles. This page describes the various components and where to find more information on each.",
-      "language": "Ruby",
-      "stargazers_count": 2,
-      "forks_count": 5,
-      "open_issues_count": 4,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 101329106,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMDEzMjkxMDY=",
-      "name": "passive-acoustics",
-      "full_name": "ioos/passive-acoustics",
-      "html_url": "https://github.com/ioos/passive-acoustics",
-      "description": null,
-      "language": "Ruby",
-      "stargazers_count": 0,
-      "forks_count": 3,
-      "open_issues_count": 2,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 43606952,
-      "node_id": "MDEwOlJlcG9zaXRvcnk0MzYwNjk1Mg==",
-      "name": "ciso",
-      "full_name": "ioos/ciso",
-      "html_url": "https://github.com/ioos/ciso",
-      "description": "Cython iso surface calculator",
+      "id": 355671457,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzNTU2NzE0NTc=",
+      "name": "ioos-atn-data",
+      "full_name": "ioos/ioos-atn-data",
+      "html_url": "https://github.com/ioos/ioos-atn-data",
+      "description": "Code, documentation and issue tracking for ATN NCEI archiving",
       "language": "Jupyter Notebook",
       "stargazers_count": 2,
-      "forks_count": 3,
-      "open_issues_count": 0,
-      "license": {
-        "key": "bsd-2-clause",
-        "name": "BSD 2-Clause \"Simplified\" License",
-        "spdx_id": "BSD-2-Clause",
-        "url": "https://api.github.com/licenses/bsd-2-clause",
-        "node_id": "MDc6TGljZW5zZTQ="
-      },
-      "topics": []
-    },
-    {
-      "id": 968799245,
-      "node_id": "R_kgDOOb60DQ",
-      "name": "cloud-sandbox-bootstrap",
-      "full_name": "ioos/cloud-sandbox-bootstrap",
-      "html_url": "https://github.com/ioos/cloud-sandbox-bootstrap",
-      "description": "Manage deployment of the Cloud Sandbox infrastructure on cloud provider (AWS presently).",
-      "language": null,
-      "stargazers_count": 0,
-      "forks_count": 1,
-      "open_issues_count": 1,
+      "forks_count": 2,
+      "open_issues_count": 14,
       "license": null,
       "topics": []
     },
     {
-      "id": 968794795,
-      "node_id": "R_kgDOOb6iqw",
-      "name": "cloudflow",
-      "full_name": "ioos/cloudflow",
-      "html_url": "https://github.com/ioos/cloudflow",
-      "description": "The cloudflow package manages workflows and HPC execution for IOOS Cloud-Sandbox modeling runs",
-      "language": null,
+      "id": 31073900,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzMTA3MzkwMA==",
+      "name": "glider-dac-status",
+      "full_name": "ioos/glider-dac-status",
+      "html_url": "https://github.com/ioos/glider-dac-status",
+      "description": "Status Application for Glider DAC",
+      "language": "Python",
       "stargazers_count": 0,
-      "forks_count": 1,
-      "open_issues_count": 1,
-      "license": {
-        "key": "bsd-3-clause",
-        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
-        "spdx_id": "BSD-3-Clause",
-        "url": "https://api.github.com/licenses/bsd-3-clause",
-        "node_id": "MDc6TGljZW5zZTU="
-      },
-      "topics": []
-    },
-    {
-      "id": 333845858,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzMzM4NDU4NTg=",
-      "name": "gsoc",
-      "full_name": "ioos/gsoc",
-      "html_url": "https://github.com/ioos/gsoc",
-      "description": "Information about IOOS activities for Google Summer of Code",
-      "language": null,
-      "stargazers_count": 31,
-      "forks_count": 11,
-      "open_issues_count": 21,
-      "license": {
-        "key": "bsd-3-clause",
-        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
-        "spdx_id": "BSD-3-Clause",
-        "url": "https://api.github.com/licenses/bsd-3-clause",
-        "node_id": "MDc6TGljZW5zZTU="
-      },
-      "topics": []
-    },
-    {
-      "id": 62069404,
-      "node_id": "MDEwOlJlcG9zaXRvcnk2MjA2OTQwNA==",
-      "name": "catalog-docker-base",
-      "full_name": "ioos/catalog-docker-base",
-      "html_url": "https://github.com/ioos/catalog-docker-base",
-      "description": "Docker Image for the base CKAN build for all CKAN related images",
-      "language": "Shell",
-      "stargazers_count": 3,
-      "forks_count": 11,
-      "open_issues_count": 0,
+      "forks_count": 6,
+      "open_issues_count": 12,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -704,16 +786,100 @@
         "node_id": "MDc6TGljZW5zZTEz"
       },
       "topics": []
+    },
+    {
+      "id": 1033240625,
+      "node_id": "R_kgDOPZYAMQ",
+      "name": "IRA-water-levels",
+      "full_name": "ioos/IRA-water-levels",
+      "html_url": "https://github.com/ioos/IRA-water-levels",
+      "description": "This is a repository for activities related to the IOOS IRA funded water level effort including code sharing, tool development, data management, data flow, and guidance documentation.",
+      "language": null,
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "topics": []
     }
   ],
   "contributorsDetails": [
+    {
+      "login": "MathewBiddle",
+      "id": 8480023,
+      "node_id": "MDQ6VXNlcjg0ODAwMjM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8480023?v=4",
+      "html_url": "https://github.com/MathewBiddle",
+      "contributions": 3
+    },
+    {
+      "login": "ocefpaf",
+      "id": 950575,
+      "node_id": "MDQ6VXNlcjk1MDU3NQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/950575?v=4",
+      "html_url": "https://github.com/ocefpaf",
+      "contributions": 49
+    },
+    {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "html_url": "https://github.com/apps/dependabot",
+      "contributions": 22
+    },
+    {
+      "login": "laurabrenskelle",
+      "id": 160157051,
+      "node_id": "U_kgDOCYvNew",
+      "avatar_url": "https://avatars.githubusercontent.com/u/160157051?v=4",
+      "html_url": "https://github.com/laurabrenskelle",
+      "contributions": 1
+    },
+    {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "html_url": "https://github.com/apps/github-actions",
+      "contributions": 77
+    },
+    {
+      "login": "7yl4r",
+      "id": 1051390,
+      "node_id": "MDQ6VXNlcjEwNTEzOTA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1051390?v=4",
+      "html_url": "https://github.com/7yl4r",
+      "contributions": 3
+    },
+    {
+      "login": "ksauby",
+      "id": 5446610,
+      "node_id": "MDQ6VXNlcjU0NDY2MTA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5446610?v=4",
+      "html_url": "https://github.com/ksauby",
+      "contributions": 1
+    },
     {
       "login": "superjai",
       "id": 1744300,
       "node_id": "MDQ6VXNlcjE3NDQzMDA=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1744300?v=4",
       "html_url": "https://github.com/superjai",
-      "contributions": 336
+      "contributions": 680
+    },
+    {
+      "login": "robbiecarroll",
+      "id": 47251604,
+      "node_id": "MDQ6VXNlcjQ3MjUxNjA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/47251604?v=4",
+      "html_url": "https://github.com/robbiecarroll",
+      "contributions": 344
     },
     {
       "login": "skanda-vasishta",
@@ -724,14 +890,6 @@
       "contributions": 166
     },
     {
-      "login": "robbiecarroll",
-      "id": 47251604,
-      "node_id": "MDQ6VXNlcjQ3MjUxNjA0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/47251604?v=4",
-      "html_url": "https://github.com/robbiecarroll",
-      "contributions": 95
-    },
-    {
       "login": "Johnsonchan105",
       "id": 44689240,
       "node_id": "MDQ6VXNlcjQ0Njg5MjQw",
@@ -740,12 +898,12 @@
       "contributions": 43
     },
     {
-      "login": "MathewBiddle",
-      "id": 8480023,
-      "node_id": "MDQ6VXNlcjg0ODAwMjM=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/8480023?v=4",
-      "html_url": "https://github.com/MathewBiddle",
-      "contributions": 3
+      "login": "robertcarroll-NOAA",
+      "id": 194966615,
+      "node_id": "U_kgDOC570Vw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/194966615?v=4",
+      "html_url": "https://github.com/robertcarroll-NOAA",
+      "contributions": 1
     },
     {
       "login": "benjwadams",
@@ -753,7 +911,7 @@
       "node_id": "MDQ6VXNlcjQxMTg4ODY=",
       "avatar_url": "https://avatars.githubusercontent.com/u/4118886?v=4",
       "html_url": "https://github.com/benjwadams",
-      "contributions": 384
+      "contributions": 411
     },
     {
       "login": "lukecampbell",
@@ -772,28 +930,12 @@
       "contributions": 52
     },
     {
-      "login": "ocefpaf",
-      "id": 950575,
-      "node_id": "MDQ6VXNlcjk1MDU3NQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/950575?v=4",
-      "html_url": "https://github.com/ocefpaf",
-      "contributions": 38
-    },
-    {
       "login": "leilabbb",
       "id": 11836767,
       "node_id": "MDQ6VXNlcjExODM2NzY3",
       "avatar_url": "https://avatars.githubusercontent.com/u/11836767?v=4",
       "html_url": "https://github.com/leilabbb",
-      "contributions": 31
-    },
-    {
-      "login": "dependabot[bot]",
-      "id": 49699333,
-      "node_id": "MDM6Qm90NDk2OTkzMzM=",
-      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-      "html_url": "https://github.com/apps/dependabot",
-      "contributions": 16
+      "contributions": 32
     },
     {
       "login": "pre-commit-ci[bot]",
@@ -801,7 +943,15 @@
       "node_id": "MDM6Qm90NjY4NTMxMTM=",
       "avatar_url": "https://avatars.githubusercontent.com/in/68672?v=4",
       "html_url": "https://github.com/apps/pre-commit-ci",
-      "contributions": 13
+      "contributions": 15
+    },
+    {
+      "login": "sarinamann-noaa",
+      "id": 172536714,
+      "node_id": "U_kgDOCkizig",
+      "avatar_url": "https://avatars.githubusercontent.com/u/172536714?v=4",
+      "html_url": "https://github.com/sarinamann-noaa",
+      "contributions": 10
     },
     {
       "login": "kerfoot",
@@ -852,11 +1002,11 @@
       "contributions": 1
     },
     {
-      "login": "laurabrenskelle",
-      "id": 160157051,
-      "node_id": "U_kgDOCYvNew",
-      "avatar_url": "https://avatars.githubusercontent.com/u/160157051?v=4",
-      "html_url": "https://github.com/laurabrenskelle",
+      "login": "pavaniankam92",
+      "id": 132396159,
+      "node_id": "U_kgDOB-Q0fw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/132396159?v=4",
+      "html_url": "https://github.com/pavaniankam92",
       "contributions": 1
     }
   ],

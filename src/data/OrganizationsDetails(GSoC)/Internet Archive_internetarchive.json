@@ -47,7 +47,8 @@
     2021,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2017": [
@@ -248,10 +249,168 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/m7g5tGZY"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "What Are We Not Archiving? A Strategic Resource Allocation Proposal for the Wayback Machine",
+        "short_description": "Despite capturing millions of web pages daily, The Wayback Machine may fail to archive many important resources before they disappear. This proposal...",
+        "description": "Despite capturing millions of web pages daily, The Wayback Machine may fail to archive many important resources before they disappear. This proposal outlines a comprehensive technical pipeline to optimize web archiving resources through intelligent URL ingestion, quality assessment, and prioritization. I propose a machine learning-driven pipeline that integrates diverse signal sources to identify at-risk,\nhigh-value web content while filtering low-quality material. The implementation includes a unified data collection framework, real-time quality scoring system, dynamic priority queue, and continuous evaluation mechanisms. This project, therefore, aims to significantly improve the Internet Archive’s ability to preserve historically significant web content before it potentially vanishes.",
+        "student_name": "Akshith Garapati",
+        "code_url": "https://github.com/internetarchive/wbm_seed_stream/blob/main/README.md",
+        "proposal_id": "nHvQJuVP",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/MFyduPDw"
+      },
+      {
+        "title": "Detecting Social Media Content in TV News: Logo and Post Screenshot Detection Models",
+        "short_description": "Since the rise of social media two decades ago, researchers have been eager to characterize its impact on society, particularly in the area of...",
+        "description": "Since the rise of social media two decades ago, researchers have been eager to characterize its impact on society, particularly in the area of information diffusion. Yet, one major gap remains: its reach via television remains unmeasured. As a result, studying the mediated influence of social media has been an ongoing challenge for Social, Behavioral, & Economic (SBE) researchers. \r\n\r\nInternet Archive’s TV News Archive provides access to over 2.6 million U.S. news broadcasts dating back to 2009. We will use these TV news broadcasts to train object detection and image classification models. “SM LogoTrack” will focus on detecting social media platform logos, while “SM PostTrack” will detect social media post screenshots. \r\n\r\nBy developing robust visual detection models - \"SM LogoTrack\" and \"SM PostTrack\" our project will offer researchers and journalists new tools to systematically trace the flow of information from social media to television news. More importantly, this work directly contributes to the mission of the TV News Archive by enhancing the discoverability and analytical value of its vast video collections.",
+        "student_name": "Himarsha",
+        "code_url": "https://github.com/internetarchive/tvnews_socialmedia_mentions/",
+        "proposal_id": "kb7R8CCT",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/j0CKIRCi"
+      },
+      {
+        "title": "Lenny: Open Source Lending System for Libraries",
+        "short_description": "Libraries worldwide face challenges in adopting digital lending due to restrictive licenses and costly, vendor-locked systems that limit...",
+        "description": "Libraries worldwide face challenges in adopting digital lending due to restrictive licenses and costly, vendor-locked systems that limit independence.\n\nLenny is an open-source, self-hosted lending system inspired by the Internet Archive and Koha. Its mission is to give libraries ownership of their digital collections while offering a flexible and cost-effective alternative to proprietary platforms.\n\nAt its core, Lenny based on python features a FastAPI backend that handles borrowing, returning, and waitlists, with support for Readable, Borrowable, and Print-Disabled books. Security and compliance are provided through LCP DRM and Geo-IP restrictions, while PostgreSQL triggers automate loan expirations. An OPDS feed enables integration with Open Library, Thorium, and other reading systems.\n\nDeployment is simple with Docker (Alpine + Nginx), and a React dashboard allows librarians to set lending rules like loan durations and waitlists.\n\nTo improve accessibility, the companion Lenny-app (TurboRepo monorepo) includes:\n\t1.\tA sandbox demo preloaded with 500+ e-books to showcase the system in action powered by Lenny.\n\t2.\tA documentation site that supports integration, open-source contributions, and extensions.\n\nBuilt with TypeScript, React, Next.js, Node.js, and Express.js, Lenny-app is production-ready yet flexible for experimentation. Together, Lenny + Lenny-app deliver both the backend infrastructure and the user interface needed to power community-driven digital lending.\n\nBy combining secure architecture, a ready-to-use demo, and developer-focused documentation, Lenny provides libraries with a scalable and future-proof solution to manage digital lending independently and expand access for their patrons.",
+        "student_name": "Roni Bhakta",
+        "code_url": "https://blog.openlibrary.org/2025/08/29/bringing-sidewalk-libraries-online/",
+        "proposal_id": "jzurv9kh",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/WcVnJVdw"
+      },
+      {
+        "title": "GSoC 2025 - Real time In Browser Translation and Text-To-Speech",
+        "short_description": "I would like to work with the Open Library team to create a plugin within the Internet Archive’s book reader app that would enable users to locally...",
+        "description": "I would like to work with the Open Library team to create a plugin within the Internet Archive’s book reader app that would enable users to locally translate books and integrate the translated text to allow text-to-speech functionality for different languages. Using JavaScript and the Bergamot Translation model, this feature will parse the transparent text layer within the IA's book reader, feed the input into the translation model, and output the translated text onto the app. \r\n\r\nUsing a simplified calculation of books available for lending within the Open Library catalog, this project would expand the 3 million works available in English to at least 18 million titles across the 6 different languages supported by the Bergamot project, directly contributing to the Open Library's 2025 goal of offering more with less.\r\n\r\nThe primary deliverables for this project can be broken down into two major parts: implementing a translation plugin that allows users to select the source + target translation languages and intercepting the existing text-to-speech plugin to read the translated output from the Bergamot translation model. A future high-level deliverable for this project would allow volunteers to contribute their own translations for texts, which could allow higher quality translations to be provided to fellow patrons.",
+        "student_name": "Sandy Chu",
+        "code_url": "https://blog.openlibrary.org/2025/08/31/sandy-chu-my-internship-at-the-internet-archive/",
+        "proposal_id": "yyIpdtwP",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/HZv00PgI"
+      },
+      {
+        "title": "Zeno v2 Enhancement Proposal: Headless Mode, CSS Parser, and More",
+        "short_description": "Enhance Zeno by implementing headless browsing via Rod for improved archiving of dynamic websites, developing a precise CSS parser for accurate URL...",
+        "description": "Enhance Zeno by implementing headless browsing via Rod for improved archiving of dynamic websites, developing a precise CSS parser for accurate URL extraction from both inline and separate CSS files, addressing potential disk exhaustion when downloading large files, creating a dummy test site for better local testing, enabling HQ to control Zeno clients remotely via WebSocket, and addressing existing GitHub issues to improve overall stability and functionality.\n\nDeliverables:\n- A Zeno version with implemented headless browsing, configurable for URL/domain matching patterns\n- A CSS extractor capable of extracting URLs from inline and separate CSS files.\n- A Zeno version implementing the --max-content-length and --min-space-urgent parameters.\n- A dummy test site backend with various test endpoints.\n- A Zeno version that can be controlled by HQ via WebSocket.",
+        "student_name": "yzqzss",
+        "code_url": "https://blog.save-web.org/blog/2025/09/01/gsoc-2025-final-report-en/",
+        "proposal_id": "L68s9cOL",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/afDanpOP"
+      }
+    ],
+    "2026": []
   },
   "githubID": "internetarchive",
   "repositories": [
+    {
+      "id": 117132991,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMTcxMzI5OTE=",
+      "name": "internet-archive-voice-apps",
+      "full_name": "internetarchive/internet-archive-voice-apps",
+      "html_url": "https://github.com/internetarchive/internet-archive-voice-apps",
+      "description": "Voice Apps (Actions on Google, Alexa Skill) of Internet Archive. Just say: \"Ok Google, Ask Internet Archive to Play Jazz\" or \"Alexa, Ask Internet Internet Archive to play Instrumental Music\"",
+      "language": "JavaScript",
+      "stargazers_count": 50,
+      "forks_count": 42,
+      "open_issues_count": 110,
+      "license": null,
+      "topics": [
+        "actions-on-google",
+        "alexa-skill",
+        "dialog-flow",
+        "internet-archive",
+        "voice-assistant"
+      ]
+    },
+    {
+      "id": 423597450,
+      "node_id": "R_kgDOGT-Vig",
+      "name": "cdx-summary",
+      "full_name": "internetarchive/cdx-summary",
+      "html_url": "https://github.com/internetarchive/cdx-summary",
+      "description": "Summarize web archive capture index (CDX) files.",
+      "language": "Python",
+      "stargazers_count": 88,
+      "forks_count": 27,
+      "open_issues_count": 1,
+      "license": {
+        "key": "agpl-3.0",
+        "name": "GNU Affero General Public License v3.0",
+        "spdx_id": "AGPL-3.0",
+        "url": "https://api.github.com/licenses/agpl-3.0",
+        "node_id": "MDc6TGljZW5zZTE="
+      },
+      "topics": [
+        "archive",
+        "cdx",
+        "collection",
+        "nodejs",
+        "python",
+        "report",
+        "statistics",
+        "summary",
+        "warc",
+        "web-archive",
+        "webcomponents"
+      ]
+    },
+    {
+      "id": 942171072,
+      "node_id": "R_kgDOOChjwA",
+      "name": "iaux-reviews",
+      "full_name": "internetarchive/iaux-reviews",
+      "html_url": "https://github.com/internetarchive/iaux-reviews",
+      "description": "Web component for displaying and editing Internet Archive reviews",
+      "language": "TypeScript",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "open_issues_count": 13,
+      "license": {
+        "key": "agpl-3.0",
+        "name": "GNU Affero General Public License v3.0",
+        "spdx_id": "AGPL-3.0",
+        "url": "https://api.github.com/licenses/agpl-3.0",
+        "node_id": "MDc6TGljZW5zZTE="
+      },
+      "topics": []
+    },
+    {
+      "id": 443884457,
+      "node_id": "R_kgDOGnUjqQ",
+      "name": "dyno",
+      "full_name": "internetarchive/dyno",
+      "html_url": "https://github.com/internetarchive/dyno",
+      "description": null,
+      "language": "JavaScript",
+      "stargazers_count": 5,
+      "forks_count": 2,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 72221,
+      "node_id": "MDEwOlJlcG9zaXRvcnk3MjIyMQ==",
+      "name": "bookreader",
+      "full_name": "internetarchive/bookreader",
+      "html_url": "https://github.com/internetarchive/bookreader",
+      "description": "The Internet Archive BookReader",
+      "language": "JavaScript",
+      "stargazers_count": 1125,
+      "forks_count": 484,
+      "open_issues_count": 275,
+      "license": {
+        "key": "agpl-3.0",
+        "name": "GNU Affero General Public License v3.0",
+        "spdx_id": "AGPL-3.0",
+        "url": "https://api.github.com/licenses/agpl-3.0",
+        "node_id": "MDc6TGljZW5zZTE="
+      },
+      "topics": [
+        "bookreader",
+        "ebooks",
+        "hacktoberfest",
+        "internetarchive"
+      ]
+    },
     {
       "id": 69609,
       "node_id": "MDEwOlJlcG9zaXRvcnk2OTYwOQ==",
@@ -260,9 +419,9 @@
       "html_url": "https://github.com/internetarchive/openlibrary",
       "description": "One webpage for every book ever published!",
       "language": "Python",
-      "stargazers_count": 5633,
-      "forks_count": 1546,
-      "open_issues_count": 928,
+      "stargazers_count": 6298,
+      "forks_count": 1840,
+      "open_issues_count": 941,
       "license": {
         "key": "agpl-3.0",
         "name": "GNU Affero General Public License v3.0",
@@ -279,138 +438,16 @@
       ]
     },
     {
-      "id": 127068594,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMjcwNjg1OTQ=",
-      "name": "openlibrary-bots",
-      "full_name": "internetarchive/openlibrary-bots",
-      "html_url": "https://github.com/internetarchive/openlibrary-bots",
-      "description": "A repository of cleanup bots implementing the openlibrary-client",
-      "language": "Python",
-      "stargazers_count": 69,
-      "forks_count": 53,
-      "open_issues_count": 36,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 289024987,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyODkwMjQ5ODc=",
-      "name": "Zeno",
-      "full_name": "internetarchive/Zeno",
-      "html_url": "https://github.com/internetarchive/Zeno",
-      "description": "State-of-the-art web crawler 🔱",
-      "language": "Go",
-      "stargazers_count": 161,
-      "forks_count": 34,
-      "open_issues_count": 30,
-      "license": {
-        "key": "agpl-3.0",
-        "name": "GNU Affero General Public License v3.0",
-        "spdx_id": "AGPL-3.0",
-        "url": "https://api.github.com/licenses/agpl-3.0",
-        "node_id": "MDc6TGljZW5zZTE="
-      },
-      "topics": [
-        "archiving",
-        "web-crawler",
-        "zeno"
-      ]
-    },
-    {
-      "id": 39043260,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzOTA0MzI2MA==",
-      "name": "brozzler",
-      "full_name": "internetarchive/brozzler",
-      "html_url": "https://github.com/internetarchive/brozzler",
-      "description": "brozzler - distributed browser-based web crawler",
-      "language": "Python",
-      "stargazers_count": 709,
-      "forks_count": 101,
-      "open_issues_count": 52,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 942171072,
-      "node_id": "R_kgDOOChjwA",
-      "name": "iaux-reviews",
-      "full_name": "internetarchive/iaux-reviews",
-      "html_url": "https://github.com/internetarchive/iaux-reviews",
-      "description": "Web component for displaying and editing Internet Archive reviews",
-      "language": "TypeScript",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "open_issues_count": 4,
-      "license": {
-        "key": "agpl-3.0",
-        "name": "GNU Affero General Public License v3.0",
-        "spdx_id": "AGPL-3.0",
-        "url": "https://api.github.com/licenses/agpl-3.0",
-        "node_id": "MDc6TGljZW5zZTE="
-      },
-      "topics": []
-    },
-    {
-      "id": 609220547,
-      "node_id": "R_kgDOJE_3ww",
-      "name": "iare",
-      "full_name": "internetarchive/iare",
-      "html_url": "https://github.com/internetarchive/iare",
-      "description": "An interactive IARI JSON viewer",
-      "language": "JavaScript",
-      "stargazers_count": 6,
-      "forks_count": 5,
-      "open_issues_count": 35,
-      "license": {
-        "key": "agpl-3.0",
-        "name": "GNU Affero General Public License v3.0",
-        "spdx_id": "AGPL-3.0",
-        "url": "https://api.github.com/licenses/agpl-3.0",
-        "node_id": "MDc6TGljZW5zZTE="
-      },
-      "topics": []
-    },
-    {
-      "id": 910155445,
-      "node_id": "R_kgDONj_etQ",
-      "name": "nomad",
-      "full_name": "internetarchive/nomad",
-      "html_url": "https://github.com/internetarchive/nomad",
-      "description": "CI/CD code to manage and deploy to Nomad clusters. CI/CD uses a GitHub Actions reusable workflow; deploy phase sends just built containers to a nomad cluster.  Contains helpful aliases for devs, including \"hot sync\" of code into deploys",
-      "language": "Shell",
-      "stargazers_count": 3,
-      "forks_count": 2,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": [
-        "cicd",
-        "github-actions",
-        "nomad"
-      ]
-    },
-    {
-      "id": 639761157,
-      "node_id": "R_kgDOJiH7BQ",
-      "name": "iaux-account-settings",
-      "full_name": "internetarchive/iaux-account-settings",
-      "html_url": "https://github.com/internetarchive/iaux-account-settings",
+      "id": 872534337,
+      "node_id": "R_kgDONAHRQQ",
+      "name": "iaux-monthly-giving-circle",
+      "full_name": "internetarchive/iaux-monthly-giving-circle",
+      "html_url": "https://github.com/internetarchive/iaux-monthly-giving-circle",
       "description": null,
       "language": "TypeScript",
       "stargazers_count": 1,
       "forks_count": 0,
-      "open_issues_count": 0,
+      "open_issues_count": 17,
       "license": {
         "key": "agpl-3.0",
         "name": "GNU Affero General Public License v3.0",
@@ -421,243 +458,16 @@
       "topics": []
     },
     {
-      "id": 611415273,
-      "node_id": "R_kgDOJHF06Q",
-      "name": "newsum",
-      "full_name": "internetarchive/newsum",
-      "html_url": "https://github.com/internetarchive/newsum",
-      "description": "Daily TV News Summary using GPT",
-      "language": "Python",
-      "stargazers_count": 24,
-      "forks_count": 4,
-      "open_issues_count": 2,
-      "license": {
-        "key": "agpl-3.0",
-        "name": "GNU Affero General Public License v3.0",
-        "spdx_id": "AGPL-3.0",
-        "url": "https://api.github.com/licenses/agpl-3.0",
-        "node_id": "MDc6TGljZW5zZTE="
-      },
-      "topics": [
-        "gdelt",
-        "gpt",
-        "internet-archive",
-        "news-summarization",
-        "openapi",
-        "python",
-        "summarization",
-        "tv",
-        "tv-news"
-      ]
-    },
-    {
-      "id": 168621246,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNjg2MjEyNDY=",
-      "name": "iaux",
-      "full_name": "internetarchive/iaux",
-      "html_url": "https://github.com/internetarchive/iaux",
-      "description": "Monorepo for Archive.org UX development and prototyping.",
-      "language": "TypeScript",
-      "stargazers_count": 71,
-      "forks_count": 87,
-      "open_issues_count": 236,
-      "license": {
-        "key": "agpl-3.0",
-        "name": "GNU Affero General Public License v3.0",
-        "spdx_id": "AGPL-3.0",
-        "url": "https://api.github.com/licenses/agpl-3.0",
-        "node_id": "MDc6TGljZW5zZTE="
-      },
-      "topics": []
-    },
-    {
-      "id": 581595581,
-      "node_id": "R_kgDOIqpxvQ",
-      "name": "ia-icons",
-      "full_name": "internetarchive/ia-icons",
-      "html_url": "https://github.com/internetarchive/ia-icons",
-      "description": "SVG icons and ia-icon components",
-      "language": "JavaScript",
-      "stargazers_count": 2,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "agpl-3.0",
-        "name": "GNU Affero General Public License v3.0",
-        "spdx_id": "AGPL-3.0",
-        "url": "https://api.github.com/licenses/agpl-3.0",
-        "node_id": "MDc6TGljZW5zZTE="
-      },
-      "topics": [
-        "icons",
-        "lit-element",
-        "svg",
-        "web-components"
-      ]
-    },
-    {
-      "id": 443884457,
-      "node_id": "R_kgDOGnUjqQ",
-      "name": "dyno",
-      "full_name": "internetarchive/dyno",
-      "html_url": "https://github.com/internetarchive/dyno",
-      "description": null,
-      "language": "JavaScript",
-      "stargazers_count": 5,
-      "forks_count": 1,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 410666,
-      "node_id": "MDEwOlJlcG9zaXRvcnk0MTA2NjY=",
-      "name": "infogami",
-      "full_name": "internetarchive/infogami",
-      "html_url": "https://github.com/internetarchive/infogami",
-      "description": null,
-      "language": "Python",
-      "stargazers_count": 45,
-      "forks_count": 25,
-      "open_issues_count": 13,
-      "license": {
-        "key": "agpl-3.0",
-        "name": "GNU Affero General Public License v3.0",
-        "spdx_id": "AGPL-3.0",
-        "url": "https://api.github.com/licenses/agpl-3.0",
-        "node_id": "MDc6TGljZW5zZTE="
-      },
-      "topics": []
-    },
-    {
-      "id": 2623406,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNjIzNDA2",
-      "name": "heritrix3",
-      "full_name": "internetarchive/heritrix3",
-      "html_url": "https://github.com/internetarchive/heritrix3",
-      "description": "Heritrix is the Internet Archive's open-source, extensible, web-scale, archival-quality web crawler project.  ",
-      "language": "Java",
-      "stargazers_count": 2968,
-      "forks_count": 759,
-      "open_issues_count": 37,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": [
-        "heritrix",
-        "java",
-        "warc",
-        "webcrawling"
-      ]
-    },
-    {
-      "id": 677537239,
-      "node_id": "R_kgDOKGJl1w",
-      "name": "iiif",
-      "full_name": "internetarchive/iiif",
-      "html_url": "https://github.com/internetarchive/iiif",
-      "description": "The official Internet Archive IIIF service",
-      "language": "JavaScript",
-      "stargazers_count": 23,
-      "forks_count": 5,
-      "open_issues_count": 18,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": [
-        "hacktoberfest"
-      ]
-    },
-    {
-      "id": 883024500,
-      "node_id": "R_kgDONKHidA",
-      "name": "www",
-      "full_name": "internetarchive/www",
-      "html_url": "https://github.com/internetarchive/www",
-      "description": "archive.org website prototype - using only javascript static files",
-      "language": "JavaScript",
-      "stargazers_count": 4,
-      "forks_count": 0,
-      "open_issues_count": 1,
-      "license": {
-        "key": "agpl-3.0",
-        "name": "GNU Affero General Public License v3.0",
-        "spdx_id": "AGPL-3.0",
-        "url": "https://api.github.com/licenses/agpl-3.0",
-        "node_id": "MDc6TGljZW5zZTE="
-      },
-      "topics": [
-        "deno",
-        "javascript",
-        "lit",
-        "web-components"
-      ]
-    },
-    {
-      "id": 132943095,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMzI5NDMwOTU=",
-      "name": "internetarchivebot",
-      "full_name": "internetarchive/internetarchivebot",
-      "html_url": "https://github.com/internetarchive/internetarchivebot",
-      "description": null,
-      "language": "PHP",
-      "stargazers_count": 139,
-      "forks_count": 34,
-      "open_issues_count": 2,
-      "license": {
-        "key": "agpl-3.0",
-        "name": "GNU Affero General Public License v3.0",
-        "spdx_id": "AGPL-3.0",
-        "url": "https://api.github.com/licenses/agpl-3.0",
-        "node_id": "MDc6TGljZW5zZTE="
-      },
-      "topics": [
-        "bot",
-        "composer",
-        "php",
-        "tor",
-        "webserver"
-      ]
-    },
-    {
-      "id": 434693875,
-      "node_id": "R_kgDOGejm8w",
-      "name": "iari",
-      "full_name": "internetarchive/iari",
-      "html_url": "https://github.com/internetarchive/iari",
-      "description": "Import workflows for the Wikipedia Citations Database",
-      "language": "Python",
-      "stargazers_count": 12,
-      "forks_count": 9,
-      "open_issues_count": 56,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": []
-    },
-    {
-      "id": 436420385,
-      "node_id": "R_kgDOGgM_IQ",
-      "name": "iaux-collection-browser",
-      "full_name": "internetarchive/iaux-collection-browser",
-      "html_url": "https://github.com/internetarchive/iaux-collection-browser",
+      "id": 914545246,
+      "node_id": "R_kgDONoLaXg",
+      "name": "iaux-item-metadata",
+      "full_name": "internetarchive/iaux-item-metadata",
+      "html_url": "https://github.com/internetarchive/iaux-item-metadata",
       "description": null,
       "language": "TypeScript",
-      "stargazers_count": 7,
-      "forks_count": 1,
-      "open_issues_count": 14,
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "open_issues_count": 12,
       "license": {
         "key": "agpl-3.0",
         "name": "GNU Affero General Public License v3.0",
@@ -666,64 +476,6 @@
         "node_id": "MDc6TGljZW5zZTE="
       },
       "topics": []
-    },
-    {
-      "id": 344944135,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzNDQ5NDQxMzU=",
-      "name": "iaux-typescript-wc-template",
-      "full_name": "internetarchive/iaux-typescript-wc-template",
-      "html_url": "https://github.com/internetarchive/iaux-typescript-wc-template",
-      "description": "IAUX Typescript WebComponent Template",
-      "language": "JavaScript",
-      "stargazers_count": 9,
-      "forks_count": 3,
-      "open_issues_count": 7,
-      "license": {
-        "key": "agpl-3.0",
-        "name": "GNU Affero General Public License v3.0",
-        "spdx_id": "AGPL-3.0",
-        "url": "https://api.github.com/licenses/agpl-3.0",
-        "node_id": "MDc6TGljZW5zZTE="
-      },
-      "topics": []
-    },
-    {
-      "id": 13874432,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMzg3NDQzMg==",
-      "name": "warcprox",
-      "full_name": "internetarchive/warcprox",
-      "html_url": "https://github.com/internetarchive/warcprox",
-      "description": "WARC writing MITM HTTP/S proxy",
-      "language": "Python",
-      "stargazers_count": 403,
-      "forks_count": 58,
-      "open_issues_count": 27,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 236007009,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMzYwMDcwMDk=",
-      "name": "gowarc",
-      "full_name": "internetarchive/gowarc",
-      "html_url": "https://github.com/internetarchive/gowarc",
-      "description": "Read and write WARC files in Go",
-      "language": "Go",
-      "stargazers_count": 27,
-      "forks_count": 5,
-      "open_issues_count": 4,
-      "license": {
-        "key": "cc0-1.0",
-        "name": "Creative Commons Zero v1.0 Universal",
-        "spdx_id": "CC0-1.0",
-        "url": "https://api.github.com/licenses/cc0-1.0",
-        "node_id": "MDc6TGljZW5zZTY="
-      },
-      "topics": [
-        "archiving",
-        "go",
-        "warc"
-      ]
     },
     {
       "id": 273597270,
@@ -746,56 +498,174 @@
       "topics": []
     },
     {
-      "id": 329852558,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzMjk4NTI1NTg=",
-      "name": "ArchiveSpark",
-      "full_name": "internetarchive/ArchiveSpark",
-      "html_url": "https://github.com/internetarchive/ArchiveSpark",
-      "description": "An Apache Spark framework for easy data processing, extraction as well as derivation for web archives and archival collections, developed at Internet Archive.",
-      "language": "Scala",
-      "stargazers_count": 9,
-      "forks_count": 1,
+      "id": 39043260,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzOTA0MzI2MA==",
+      "name": "brozzler",
+      "full_name": "internetarchive/brozzler",
+      "html_url": "https://github.com/internetarchive/brozzler",
+      "description": "brozzler - distributed browser-based web crawler",
+      "language": "Python",
+      "stargazers_count": 793,
+      "forks_count": 115,
+      "open_issues_count": 57,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 1161261814,
+      "node_id": "R_kgDORTdy9g",
+      "name": "scholar",
+      "full_name": "internetarchive/scholar",
+      "html_url": "https://github.com/internetarchive/scholar",
+      "description": "IA Scholar",
+      "language": "HTML",
+      "stargazers_count": 3,
+      "forks_count": 0,
       "open_issues_count": 0,
       "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
+        "key": "agpl-3.0",
+        "name": "GNU Affero General Public License v3.0",
+        "spdx_id": "AGPL-3.0",
+        "url": "https://api.github.com/licenses/agpl-3.0",
+        "node_id": "MDc6TGljZW5zZTE="
       },
       "topics": []
     },
     {
-      "id": 486628264,
-      "node_id": "R_kgDOHQFbqA",
-      "name": "Sparkling",
-      "full_name": "internetarchive/Sparkling",
-      "html_url": "https://github.com/internetarchive/Sparkling",
-      "description": "Internet Archive's Sparkling Data Processing Library",
-      "language": "Scala",
-      "stargazers_count": 13,
-      "forks_count": 2,
-      "open_issues_count": 1,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 72221,
-      "node_id": "MDEwOlJlcG9zaXRvcnk3MjIyMQ==",
-      "name": "bookreader",
-      "full_name": "internetarchive/bookreader",
-      "html_url": "https://github.com/internetarchive/bookreader",
-      "description": "The Internet Archive BookReader",
+      "id": 79169085,
+      "node_id": "MDEwOlJlcG9zaXRvcnk3OTE2OTA4NQ==",
+      "name": "wayback-machine-webextension",
+      "full_name": "internetarchive/wayback-machine-webextension",
+      "html_url": "https://github.com/internetarchive/wayback-machine-webextension",
+      "description": "A web browser extension for Chrome, Firefox, Edge, and Safari 14.",
       "language": "JavaScript",
-      "stargazers_count": 1046,
-      "forks_count": 438,
-      "open_issues_count": 227,
+      "stargazers_count": 784,
+      "forks_count": 228,
+      "open_issues_count": 67,
+      "license": {
+        "key": "agpl-3.0",
+        "name": "GNU Affero General Public License v3.0",
+        "spdx_id": "AGPL-3.0",
+        "url": "https://api.github.com/licenses/agpl-3.0",
+        "node_id": "MDc6TGljZW5zZTE="
+      },
+      "topics": []
+    },
+    {
+      "id": 168621246,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNjg2MjEyNDY=",
+      "name": "iaux",
+      "full_name": "internetarchive/iaux",
+      "html_url": "https://github.com/internetarchive/iaux",
+      "description": "Monorepo for Archive.org UX development and prototyping.",
+      "language": "TypeScript",
+      "stargazers_count": 75,
+      "forks_count": 89,
+      "open_issues_count": 236,
+      "license": {
+        "key": "agpl-3.0",
+        "name": "GNU Affero General Public License v3.0",
+        "spdx_id": "AGPL-3.0",
+        "url": "https://api.github.com/licenses/agpl-3.0",
+        "node_id": "MDc6TGljZW5zZTE="
+      },
+      "topics": []
+    },
+    {
+      "id": 410666,
+      "node_id": "MDEwOlJlcG9zaXRvcnk0MTA2NjY=",
+      "name": "infogami",
+      "full_name": "internetarchive/infogami",
+      "html_url": "https://github.com/internetarchive/infogami",
+      "description": null,
+      "language": "Python",
+      "stargazers_count": 49,
+      "forks_count": 28,
+      "open_issues_count": 17,
+      "license": {
+        "key": "agpl-3.0",
+        "name": "GNU Affero General Public License v3.0",
+        "spdx_id": "AGPL-3.0",
+        "url": "https://api.github.com/licenses/agpl-3.0",
+        "node_id": "MDc6TGljZW5zZTE="
+      },
+      "topics": []
+    },
+    {
+      "id": 849002132,
+      "node_id": "R_kgDOMpq-lA",
+      "name": "keystone",
+      "full_name": "internetarchive/keystone",
+      "html_url": "https://github.com/internetarchive/keystone",
+      "description": "ARCH Web Client",
+      "language": "Python",
+      "stargazers_count": 7,
+      "forks_count": 1,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 486646532,
+      "node_id": "R_kgDOHQGjBA",
+      "name": "arch",
+      "full_name": "internetarchive/arch",
+      "html_url": "https://github.com/internetarchive/arch",
+      "description": "Web application for distributed compute analysis of Archive-It web archive collections.",
+      "language": "Scala",
+      "stargazers_count": 20,
+      "forks_count": 3,
+      "open_issues_count": 0,
+      "license": {
+        "key": "agpl-3.0",
+        "name": "GNU Affero General Public License v3.0",
+        "spdx_id": "AGPL-3.0",
+        "url": "https://api.github.com/licenses/agpl-3.0",
+        "node_id": "MDc6TGljZW5zZTE="
+      },
+      "topics": []
+    },
+    {
+      "id": 236007009,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMzYwMDcwMDk=",
+      "name": "gowarc",
+      "full_name": "internetarchive/gowarc",
+      "html_url": "https://github.com/internetarchive/gowarc",
+      "description": "Read and write WARC files in Go",
+      "language": "Go",
+      "stargazers_count": 50,
+      "forks_count": 12,
+      "open_issues_count": 21,
+      "license": {
+        "key": "cc0-1.0",
+        "name": "Creative Commons Zero v1.0 Universal",
+        "spdx_id": "CC0-1.0",
+        "url": "https://api.github.com/licenses/cc0-1.0",
+        "node_id": "MDc6TGljZW5zZTY="
+      },
+      "topics": [
+        "archiving",
+        "go",
+        "warc"
+      ]
+    },
+    {
+      "id": 289024987,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyODkwMjQ5ODc=",
+      "name": "Zeno",
+      "full_name": "internetarchive/Zeno",
+      "html_url": "https://github.com/internetarchive/Zeno",
+      "description": "State-of-the-art web crawler 🔱",
+      "language": "Go",
+      "stargazers_count": 392,
+      "forks_count": 55,
+      "open_issues_count": 50,
       "license": {
         "key": "agpl-3.0",
         "name": "GNU Affero General Public License v3.0",
@@ -804,23 +674,22 @@
         "node_id": "MDc6TGljZW5zZTE="
       },
       "topics": [
-        "bookreader",
-        "ebooks",
-        "hacktoberfest",
-        "internetarchive"
+        "archiving",
+        "web-crawler",
+        "zeno"
       ]
     },
     {
-      "id": 905922734,
-      "node_id": "R_kgDONf9Irg",
-      "name": "iaux-notification-toast",
-      "full_name": "internetarchive/iaux-notification-toast",
-      "html_url": "https://github.com/internetarchive/iaux-notification-toast",
-      "description": "displays notifications and automatically clears them",
+      "id": 493748935,
+      "node_id": "R_kgDOHW4Cxw",
+      "name": "iaux-dropdown",
+      "full_name": "internetarchive/iaux-dropdown",
+      "html_url": "https://github.com/internetarchive/iaux-dropdown",
+      "description": "`<ia-dropdown>` web component that displays dropdown items given any button",
       "language": "TypeScript",
       "stargazers_count": 1,
       "forks_count": 0,
-      "open_issues_count": 13,
+      "open_issues_count": 3,
       "license": {
         "key": "agpl-3.0",
         "name": "GNU Affero General Public License v3.0",
@@ -831,16 +700,16 @@
       "topics": []
     },
     {
-      "id": 395714259,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzOTU3MTQyNTk=",
-      "name": "archive-hocr-tools",
-      "full_name": "internetarchive/archive-hocr-tools",
-      "html_url": "https://github.com/internetarchive/archive-hocr-tools",
-      "description": "Efficient hOCR tooling",
+      "id": 127068594,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMjcwNjg1OTQ=",
+      "name": "openlibrary-bots",
+      "full_name": "internetarchive/openlibrary-bots",
+      "html_url": "https://github.com/internetarchive/openlibrary-bots",
+      "description": "A repository of cleanup bots implementing the openlibrary-client",
       "language": "Python",
-      "stargazers_count": 44,
-      "forks_count": 9,
-      "open_issues_count": 2,
+      "stargazers_count": 77,
+      "forks_count": 61,
+      "open_issues_count": 38,
       "license": {
         "key": "other",
         "name": "Other",
@@ -851,16 +720,16 @@
       "topics": []
     },
     {
-      "id": 914545246,
-      "node_id": "R_kgDONoLaXg",
-      "name": "iaux-item-metadata",
-      "full_name": "internetarchive/iaux-item-metadata",
-      "html_url": "https://github.com/internetarchive/iaux-item-metadata",
+      "id": 427444979,
+      "node_id": "R_kgDOGXpK8w",
+      "name": "iaux-infinite-scroller",
+      "full_name": "internetarchive/iaux-infinite-scroller",
+      "html_url": "https://github.com/internetarchive/iaux-infinite-scroller",
       "description": null,
       "language": "TypeScript",
       "stargazers_count": 1,
       "forks_count": 0,
-      "open_issues_count": 5,
+      "open_issues_count": 4,
       "license": {
         "key": "agpl-3.0",
         "name": "GNU Affero General Public License v3.0",
@@ -871,16 +740,16 @@
       "topics": []
     },
     {
-      "id": 34293124,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzNDI5MzEyNA==",
-      "name": "openlibrary-client",
-      "full_name": "internetarchive/openlibrary-client",
-      "html_url": "https://github.com/internetarchive/openlibrary-client",
-      "description": "Python Client Library for the Archive.org OpenLibrary API",
-      "language": "Python",
-      "stargazers_count": 419,
-      "forks_count": 97,
-      "open_issues_count": 35,
+      "id": 344944135,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzNDQ5NDQxMzU=",
+      "name": "iaux-typescript-wc-template",
+      "full_name": "internetarchive/iaux-typescript-wc-template",
+      "html_url": "https://github.com/internetarchive/iaux-typescript-wc-template",
+      "description": "IAUX Typescript WebComponent Template",
+      "language": "TypeScript",
+      "stargazers_count": 9,
+      "forks_count": 3,
+      "open_issues_count": 10,
       "license": {
         "key": "agpl-3.0",
         "name": "GNU Affero General Public License v3.0",
@@ -888,113 +757,181 @@
         "url": "https://api.github.com/licenses/agpl-3.0",
         "node_id": "MDc6TGljZW5zZTE="
       },
+      "topics": []
+    },
+    {
+      "id": 609220547,
+      "node_id": "R_kgDOJE_3ww",
+      "name": "iare",
+      "full_name": "internetarchive/iare",
+      "html_url": "https://github.com/internetarchive/iare",
+      "description": "An interactive IARI JSON viewer",
+      "language": "JavaScript",
+      "stargazers_count": 5,
+      "forks_count": 5,
+      "open_issues_count": 32,
+      "license": {
+        "key": "agpl-3.0",
+        "name": "GNU Affero General Public License v3.0",
+        "spdx_id": "AGPL-3.0",
+        "url": "https://api.github.com/licenses/agpl-3.0",
+        "node_id": "MDc6TGljZW5zZTE="
+      },
+      "topics": []
+    },
+    {
+      "id": 146027375,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNDYwMjczNzU=",
+      "name": "wayback-diff",
+      "full_name": "internetarchive/wayback-diff",
+      "html_url": "https://github.com/internetarchive/wayback-diff",
+      "description": "React components to render differences between captures at the Wayback Machine",
+      "language": "JavaScript",
+      "stargazers_count": 41,
+      "forks_count": 18,
+      "open_issues_count": 3,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "topics": []
+    },
+    {
+      "id": 105310849,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMDUzMTA4NDk=",
+      "name": "wayback-radial-tree",
+      "full_name": "internetarchive/wayback-radial-tree",
+      "html_url": "https://github.com/internetarchive/wayback-radial-tree",
+      "description": null,
+      "language": "JavaScript",
+      "stargazers_count": 9,
+      "forks_count": 8,
+      "open_issues_count": 3,
+      "license": {
+        "key": "agpl-3.0",
+        "name": "GNU Affero General Public License v3.0",
+        "spdx_id": "AGPL-3.0",
+        "url": "https://api.github.com/licenses/agpl-3.0",
+        "node_id": "MDc6TGljZW5zZTE="
+      },
+      "topics": []
+    },
+    {
+      "id": 677537239,
+      "node_id": "R_kgDOKGJl1w",
+      "name": "iiif",
+      "full_name": "internetarchive/iiif",
+      "html_url": "https://github.com/internetarchive/iiif",
+      "description": "The official Internet Archive IIIF service",
+      "language": "JavaScript",
+      "stargazers_count": 27,
+      "forks_count": 7,
+      "open_issues_count": 22,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "topics": [
+        "hacktoberfest"
+      ]
+    },
+    {
+      "id": 1082727867,
+      "node_id": "R_kgDOQIkduw",
+      "name": "elements",
+      "full_name": "internetarchive/elements",
+      "html_url": "https://github.com/internetarchive/elements",
+      "description": "A web component library from the Internet Archive",
+      "language": "TypeScript",
+      "stargazers_count": 8,
+      "forks_count": 0,
+      "open_issues_count": 14,
+      "license": {
+        "key": "agpl-3.0",
+        "name": "GNU Affero General Public License v3.0",
+        "spdx_id": "AGPL-3.0",
+        "url": "https://api.github.com/licenses/agpl-3.0",
+        "node_id": "MDc6TGljZW5zZTE="
+      },
+      "topics": []
+    },
+    {
+      "id": 132943095,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMzI5NDMwOTU=",
+      "name": "internetarchivebot",
+      "full_name": "internetarchive/internetarchivebot",
+      "html_url": "https://github.com/internetarchive/internetarchivebot",
+      "description": null,
+      "language": "PHP",
+      "stargazers_count": 153,
+      "forks_count": 40,
+      "open_issues_count": 4,
+      "license": {
+        "key": "agpl-3.0",
+        "name": "GNU Affero General Public License v3.0",
+        "spdx_id": "AGPL-3.0",
+        "url": "https://api.github.com/licenses/agpl-3.0",
+        "node_id": "MDc6TGljZW5zZTE="
+      },
+      "topics": [
+        "bot",
+        "composer",
+        "php",
+        "tor",
+        "webserver"
+      ]
+    },
+    {
+      "id": 13577563,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMzU3NzU2Mw==",
+      "name": "crawling-for-nomore404",
+      "full_name": "internetarchive/crawling-for-nomore404",
+      "html_url": "https://github.com/internetarchive/crawling-for-nomore404",
+      "description": null,
+      "language": "Python",
+      "stargazers_count": 31,
+      "forks_count": 14,
+      "open_issues_count": 2,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 559470718,
+      "node_id": "R_kgDOIVjYfg",
+      "name": "openlibrary-api",
+      "full_name": "internetarchive/openlibrary-api",
+      "html_url": "https://github.com/internetarchive/openlibrary-api",
+      "description": "API documentation for https://github.com/internetarchive/openlibrary",
+      "language": "HTML",
+      "stargazers_count": 7,
+      "forks_count": 4,
+      "open_issues_count": 5,
+      "license": null,
       "topics": []
     }
   ],
   "contributorsDetails": [
     {
-      "login": "mekarpeles",
-      "id": 978325,
-      "node_id": "MDQ6VXNlcjk3ODMyNQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/978325?v=4",
-      "html_url": "https://github.com/mekarpeles",
-      "contributions": 68
+      "login": "hyzhak",
+      "id": 184706,
+      "node_id": "MDQ6VXNlcjE4NDcwNg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/184706?v=4",
+      "html_url": "https://github.com/hyzhak",
+      "contributions": 1401
     },
     {
-      "login": "cdrini",
-      "id": 6251786,
-      "node_id": "MDQ6VXNlcjYyNTE3ODY=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/6251786?v=4",
-      "html_url": "https://github.com/cdrini",
-      "contributions": 3
-    },
-    {
-      "login": "anandology",
-      "id": 7569,
-      "node_id": "MDQ6VXNlcjc1Njk=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/7569?v=4",
-      "html_url": "https://github.com/anandology",
-      "contributions": 1826
-    },
-    {
-      "login": "EdwardBetts",
-      "id": 3818,
-      "node_id": "MDQ6VXNlcjM4MTg=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/3818?v=4",
-      "html_url": "https://github.com/EdwardBetts",
-      "contributions": 1526
-    },
-    {
-      "login": "jimchamp",
-      "id": 28732543,
-      "node_id": "MDQ6VXNlcjI4NzMyNTQz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/28732543?v=4",
-      "html_url": "https://github.com/jimchamp",
-      "contributions": 2
-    },
-    {
-      "login": "hornc",
-      "id": 905545,
-      "node_id": "MDQ6VXNlcjkwNTU0NQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/905545?v=4",
-      "html_url": "https://github.com/hornc",
-      "contributions": 45
-    },
-    {
-      "login": "cclauss",
-      "id": 3709715,
-      "node_id": "MDQ6VXNlcjM3MDk3MTU=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/3709715?v=4",
-      "html_url": "https://github.com/cclauss",
-      "contributions": 33
-    },
-    {
-      "login": "nibrahim",
-      "id": 69051,
-      "node_id": "MDQ6VXNlcjY5MDUx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/69051?v=4",
-      "html_url": "https://github.com/nibrahim",
-      "contributions": 578
-    },
-    {
-      "login": "jdlrobson",
-      "id": 148752,
-      "node_id": "MDQ6VXNlcjE0ODc1Mg==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/148752?v=4",
-      "html_url": "https://github.com/jdlrobson",
-      "contributions": 356
-    },
-    {
-      "login": "pre-commit-ci[bot]",
-      "id": 66853113,
-      "node_id": "MDM6Qm90NjY4NTMxMTM=",
-      "avatar_url": "https://avatars.githubusercontent.com/in/68672?v=4",
-      "html_url": "https://github.com/apps/pre-commit-ci",
-      "contributions": 42
-    },
-    {
-      "login": "RayBB",
-      "id": 921217,
-      "node_id": "MDQ6VXNlcjkyMTIxNw==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/921217?v=4",
-      "html_url": "https://github.com/RayBB",
-      "contributions": 296
-    },
-    {
-      "login": "scottbarnes",
-      "id": 26524678,
-      "node_id": "MDQ6VXNlcjI2NTI0Njc4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/26524678?v=4",
-      "html_url": "https://github.com/scottbarnes",
-      "contributions": 3
-    },
-    {
-      "login": "mangtronix",
-      "id": 35246,
-      "node_id": "MDQ6VXNlcjM1MjQ2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/35246?v=4",
-      "html_url": "https://github.com/mangtronix",
-      "contributions": 224
+      "login": "vbanos",
+      "id": 5803877,
+      "node_id": "MDQ6VXNlcjU4MDM4Nzc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5803877?v=4",
+      "html_url": "https://github.com/vbanos",
+      "contributions": 64
     },
     {
       "login": "dependabot[bot]",
@@ -1002,55 +939,71 @@
       "node_id": "MDM6Qm90NDk2OTkzMzM=",
       "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
       "html_url": "https://github.com/apps/dependabot",
-      "contributions": 139
+      "contributions": 50
     },
     {
-      "login": "supercontracts",
-      "id": 31198893,
-      "node_id": "MDQ6VXNlcjMxMTk4ODkz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/31198893?v=4",
-      "html_url": "https://github.com/supercontracts",
+      "login": "adaveinthelife",
+      "id": 33740680,
+      "node_id": "MDQ6VXNlcjMzNzQwNjgw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/33740680?v=4",
+      "html_url": "https://github.com/adaveinthelife",
+      "contributions": 25
+    },
+    {
+      "login": "juliascript",
+      "id": 7422171,
+      "node_id": "MDQ6VXNlcjc0MjIxNzE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7422171?v=4",
+      "html_url": "https://github.com/juliascript",
+      "contributions": 15
+    },
+    {
+      "login": "anishsarangi",
+      "id": 15776213,
+      "node_id": "MDQ6VXNlcjE1Nzc2MjEz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/15776213?v=4",
+      "html_url": "https://github.com/anishsarangi",
+      "contributions": 8
+    },
+    {
+      "login": "bimlendra",
+      "id": 32674331,
+      "node_id": "MDQ6VXNlcjMyNjc0MzMx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/32674331?v=4",
+      "html_url": "https://github.com/bimlendra",
+      "contributions": 4
+    },
+    {
+      "login": "yagyanshbhatia",
+      "id": 26413062,
+      "node_id": "MDQ6VXNlcjI2NDEzMDYy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/26413062?v=4",
+      "html_url": "https://github.com/yagyanshbhatia",
+      "contributions": 4
+    },
+    {
+      "login": "sayak119",
+      "id": 28414920,
+      "node_id": "MDQ6VXNlcjI4NDE0OTIw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/28414920?v=4",
+      "html_url": "https://github.com/sayak119",
+      "contributions": 2
+    },
+    {
+      "login": "machawk1",
+      "id": 2514780,
+      "node_id": "MDQ6VXNlcjI1MTQ3ODA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2514780?v=4",
+      "html_url": "https://github.com/machawk1",
       "contributions": 1
     },
     {
-      "login": "renovate[bot]",
-      "id": 29139614,
-      "node_id": "MDM6Qm90MjkxMzk2MTQ=",
-      "avatar_url": "https://avatars.githubusercontent.com/in/2740?v=4",
-      "html_url": "https://github.com/apps/renovate",
-      "contributions": 149
-    },
-    {
-      "login": "SaravgiYash",
-      "id": 64412143,
-      "node_id": "MDQ6VXNlcjY0NDEyMTQz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/64412143?v=4",
-      "html_url": "https://github.com/SaravgiYash",
-      "contributions": 146
-    },
-    {
-      "login": "bfalling",
-      "id": 1231433,
-      "node_id": "MDQ6VXNlcjEyMzE0MzM=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1231433?v=4",
-      "html_url": "https://github.com/bfalling",
-      "contributions": 141
-    },
-    {
-      "login": "tfmorris",
-      "id": 82178,
-      "node_id": "MDQ6VXNlcjgyMTc4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/82178?v=4",
-      "html_url": "https://github.com/tfmorris",
-      "contributions": 128
-    },
-    {
-      "login": "gdamdam",
-      "id": 9468257,
-      "node_id": "MDQ6VXNlcjk0NjgyNTc=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/9468257?v=4",
-      "html_url": "https://github.com/gdamdam",
-      "contributions": 117
+      "login": "ibnesayeed",
+      "id": 65147,
+      "node_id": "MDQ6VXNlcjY1MTQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/65147?v=4",
+      "html_url": "https://github.com/ibnesayeed",
+      "contributions": 125
     },
     {
       "login": "rebecca-shoptaw",
@@ -1058,136 +1011,16 @@
       "node_id": "U_kgDOCGCjTA",
       "avatar_url": "https://avatars.githubusercontent.com/u/140550988?v=4",
       "html_url": "https://github.com/rebecca-shoptaw",
-      "contributions": 102
+      "contributions": 35
     },
     {
-      "login": "rajbot",
-      "id": 27703,
-      "node_id": "MDQ6VXNlcjI3NzAz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/27703?v=4",
-      "html_url": "https://github.com/rajbot",
-      "contributions": 85
-    },
-    {
-      "login": "dependabot-preview[bot]",
-      "id": 27856297,
-      "node_id": "MDM6Qm90Mjc4NTYyOTc=",
-      "avatar_url": "https://avatars.githubusercontent.com/in/2141?v=4",
-      "html_url": "https://github.com/apps/dependabot-preview",
-      "contributions": 60
-    },
-    {
-      "login": "lephemere",
-      "id": 73437497,
-      "node_id": "MDQ6VXNlcjczNDM3NDk3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/73437497?v=4",
-      "html_url": "https://github.com/lephemere",
-      "contributions": 54
-    },
-    {
-      "login": "benbdeitch",
-      "id": 131627264,
-      "node_id": "U_kgDOB9h5AA",
-      "avatar_url": "https://avatars.githubusercontent.com/u/131627264?v=4",
-      "html_url": "https://github.com/benbdeitch",
-      "contributions": 47
-    },
-    {
-      "login": "jimman2003",
-      "id": 58356745,
-      "node_id": "MDQ6VXNlcjU4MzU2NzQ1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/58356745?v=4",
-      "html_url": "https://github.com/jimman2003",
-      "contributions": 1
-    },
-    {
-      "login": "sbwhitt",
-      "id": 29631356,
-      "node_id": "MDQ6VXNlcjI5NjMxMzU2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/29631356?v=4",
-      "html_url": "https://github.com/sbwhitt",
-      "contributions": 38
-    },
-    {
-      "login": "merwhite11",
-      "id": 79802377,
-      "node_id": "MDQ6VXNlcjc5ODAyMzc3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/79802377?v=4",
-      "html_url": "https://github.com/merwhite11",
-      "contributions": 34
-    },
-    {
-      "login": "BharatKalluri",
-      "id": 8049414,
-      "node_id": "MDQ6VXNlcjgwNDk0MTQ=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/8049414?v=4",
-      "html_url": "https://github.com/BharatKalluri",
-      "contributions": 2
-    },
-    {
-      "login": "schu96",
-      "id": 19755171,
-      "node_id": "MDQ6VXNlcjE5NzU1MTcx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/19755171?v=4",
-      "html_url": "https://github.com/schu96",
-      "contributions": 31
-    },
-    {
-      "login": "sbshah97",
-      "id": 16410361,
-      "node_id": "MDQ6VXNlcjE2NDEwMzYx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/16410361?v=4",
-      "html_url": "https://github.com/sbshah97",
-      "contributions": 47
-    },
-    {
-      "login": "xayhewalo",
-      "id": 7256157,
-      "node_id": "MDQ6VXNlcjcyNTYxNTc=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/7256157?v=4",
-      "html_url": "https://github.com/xayhewalo",
-      "contributions": 28
-    },
-    {
-      "login": "adamreis",
-      "id": 2453460,
-      "node_id": "MDQ6VXNlcjI0NTM0NjA=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/2453460?v=4",
-      "html_url": "https://github.com/adamreis",
-      "contributions": 4
-    },
-    {
-      "login": "sayhar",
-      "id": 38640558,
-      "node_id": "MDQ6VXNlcjM4NjQwNTU4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/38640558?v=4",
-      "html_url": "https://github.com/sayhar",
-      "contributions": 2
-    },
-    {
-      "login": "davidscotson",
-      "id": 7288187,
-      "node_id": "MDQ6VXNlcjcyODgxODc=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/7288187?v=4",
-      "html_url": "https://github.com/davidscotson",
-      "contributions": 1
-    },
-    {
-      "login": "sanchit-ahuja",
-      "id": 30617988,
-      "node_id": "MDQ6VXNlcjMwNjE3OTg4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/30617988?v=4",
-      "html_url": "https://github.com/sanchit-ahuja",
-      "contributions": 1
-    },
-    {
-      "login": "bsvka",
-      "id": 109389712,
-      "node_id": "U_kgDOBoUnkA",
-      "avatar_url": "https://avatars.githubusercontent.com/u/109389712?v=4",
-      "html_url": "https://github.com/bsvka",
-      "contributions": 1
+      "login": "renovate[bot]",
+      "id": 29139614,
+      "node_id": "MDM6Qm90MjkxMzk2MTQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/2740?v=4",
+      "html_url": "https://github.com/apps/renovate",
+      "contributions": 9
     }
   ],
-  "activeOrg": true
+  "activeOrg": false
 }

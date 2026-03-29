@@ -45,7 +45,8 @@
     2020,
     2021,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2016": [
@@ -370,7 +371,36 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/jgtBpFe8"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Ghost in the Macro: Dual-Parser Bicameral Macro System for Teal",
+        "short_description": "This project aims to create a robust, high-performance parser combined with an easy-to-use macro system for the Teal programming language. Leveraging...",
+        "description": "This project aims to create a robust, high-performance parser combined with an easy-to-use macro system for the Teal programming language. Leveraging a bicameral macro model, the project clearly distinguishes the parsing and macro expansion phases whilst still keeping the syntax streamlined. This enables flexible, powerful compile-time code transformations while maintaining clarity and efficiency in compiler design and performance.",
+        "student_name": "Amrit Bhogal",
+        "code_url": "https://github.com/teal-language/tl/pull/1028",
+        "proposal_id": "1z351TdL",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/kiO8b1Ql"
+      },
+      {
+        "title": "GSoC’25 Proposal: Lunatik HID Framework Implementation",
+        "short_description": "This proposal introduces myself and outlines the work I will be doing during the Google Summer of Code 2025. My proposal aims to implement a HID...",
+        "description": "This proposal introduces myself and outlines the work I will be\r\ndoing during the Google Summer of Code 2025.\r\nMy proposal aims to implement a HID driver framework for\r\nLunatik, a module that provides a way to binding HID devices using\r\nLua script.",
+        "student_name": "Jieming Zhou",
+        "code_url": "https://github.com/qrsikno2/GSoC2025/blob/3d72d6d37e6e9843f9139042b21ca4c9b046228e/README.md",
+        "proposal_id": "TPLL9619",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/afaakeLj"
+      },
+      {
+        "title": "Documentation generator tool for Teal language",
+        "short_description": "The goal of this project is to create a documentation generator for the Teal programming language. The generator will extract information from types...",
+        "description": "The goal of this project is to create a documentation generator for the Teal programming language. The generator will extract information from types and comments to produce documentation in both Markdown and HTML formats. The tool itself will be written in Teal and will utilize its compiler as the primary source of information. By the end of this project, we will extend the Teal compiler to retrieve all the necessary information for documentation generation. Additionally, we will deliver a CLI tool capable of parsing Teal code files and generating documentation in various formats.",
+        "student_name": "Miłosz Koczorowski",
+        "code_url": "https://github.com/teal-language/tealdoc",
+        "proposal_id": "VCJgBwjx",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/MCJkfE3P"
+      }
+    ],
+    "2026": []
   },
   "githubID": "labluapucrio",
   "repositories": [
@@ -382,8 +412,8 @@
       "html_url": "https://github.com/labluapucrio/gsoc",
       "description": null,
       "language": null,
-      "stargazers_count": 7,
-      "forks_count": 3,
+      "stargazers_count": 21,
+      "forks_count": 7,
       "open_issues_count": 0,
       "license": null,
       "topics": []
@@ -396,7 +426,7 @@
       "html_url": "https://github.com/labluapucrio/site",
       "description": "LabLua website",
       "language": "HTML",
-      "stargazers_count": 3,
+      "stargazers_count": 6,
       "forks_count": 3,
       "open_issues_count": 0,
       "license": {
@@ -416,7 +446,7 @@
       "node_id": "MDQ6VXNlcjU1OTk2MzM=",
       "avatar_url": "https://avatars.githubusercontent.com/u/5599633?v=4",
       "html_url": "https://github.com/lneto",
-      "contributions": 15
+      "contributions": 20
     },
     {
       "login": "Tieske",
@@ -424,7 +454,31 @@
       "node_id": "MDQ6VXNlcjEwNzcwNDM=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1077043?v=4",
       "html_url": "https://github.com/Tieske",
-      "contributions": 6
+      "contributions": 11
+    },
+    {
+      "login": "hugomg",
+      "id": 1452192,
+      "node_id": "MDQ6VXNlcjE0NTIxOTI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1452192?v=4",
+      "html_url": "https://github.com/hugomg",
+      "contributions": 37
+    },
+    {
+      "login": "tomasguisasola",
+      "id": 131309,
+      "node_id": "MDQ6VXNlcjEzMTMwOQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/131309?v=4",
+      "html_url": "https://github.com/tomasguisasola",
+      "contributions": 2
+    },
+    {
+      "login": "alnsn",
+      "id": 628959,
+      "node_id": "MDQ6VXNlcjYyODk1OQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/628959?v=4",
+      "html_url": "https://github.com/alnsn",
+      "contributions": 1
     },
     {
       "login": "hishamhm",
@@ -435,19 +489,27 @@
       "contributions": 47
     },
     {
+      "login": "luizromario-srios",
+      "id": 264062067,
+      "node_id": "U_kgDOD71Ecw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/264062067?v=4",
+      "html_url": "https://github.com/luizromario-srios",
+      "contributions": 1
+    },
+    {
+      "login": "mbalmer",
+      "id": 426015,
+      "node_id": "MDQ6VXNlcjQyNjAxNQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/426015?v=4",
+      "html_url": "https://github.com/mbalmer",
+      "contributions": 1
+    },
+    {
       "login": "sheharyaar",
       "id": 34273345,
       "node_id": "MDQ6VXNlcjM0MjczMzQ1",
       "avatar_url": "https://avatars.githubusercontent.com/u/34273345?v=4",
       "html_url": "https://github.com/sheharyaar",
-      "contributions": 1
-    },
-    {
-      "login": "tomasguisasola",
-      "id": 131309,
-      "node_id": "MDQ6VXNlcjEzMTMwOQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/131309?v=4",
-      "html_url": "https://github.com/tomasguisasola",
       "contributions": 1
     },
     {
@@ -457,14 +519,6 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/6577332?v=4",
       "html_url": "https://github.com/analuciadm",
       "contributions": 92
-    },
-    {
-      "login": "hugomg",
-      "id": 1452192,
-      "node_id": "MDQ6VXNlcjE0NTIxOTI=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1452192?v=4",
-      "html_url": "https://github.com/hugomg",
-      "contributions": 37
     },
     {
       "login": "andremm",

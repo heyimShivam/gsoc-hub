@@ -26,7 +26,8 @@
     "canvas",
     "machine learning",
     "internationalization",
-    "vue"
+    "vue",
+    "ruby"
   ],
   "irc_channel": "https://circuitverse.org/slack",
   "contact_email": "mailto:support@circuitverse.org",
@@ -41,7 +42,8 @@
     2022,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2019": [
@@ -273,10 +275,140 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/ocOsOfB4"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Project 1 Circuit Visibility Boosting & Platform Performance Enhancement",
+        "short_description": "During GSoC 2025, I worked on Project 1 – Circuit Visibility Boosting & Platform Performance Enhancement for CircuitVerse. My contributions included...",
+        "description": "During GSoC 2025, I worked on Project 1 – Circuit Visibility Boosting & Platform Performance Enhancement for CircuitVerse. My contributions included completing and productionizing the Weekly Contests system with a public Leaderboard, building the new Explore Page for circuit discovery, and delivering key performance improvements through N+1 query fixes. I also initiated the Group-Specific Visibility feature, this project strengthened CircuitVerse’s usability, discoverability, and scalability.",
+        "student_name": "Aditya Umesh Singh",
+        "code_url": "https://blog.circuitverse.org/posts/gsoc-2025-project-1-final-report-project-1",
+        "proposal_id": "ybMebbui",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/jLQVUDdz"
+      },
+      {
+        "title": "Development of Desktop Application and Completion of Vue Simulator",
+        "short_description": "The project aims to complete the development of the Tauri Desktop Application. This project will finally mark the completion of the Vue-simulator and...",
+        "description": "The project aims to complete the development of the Tauri Desktop Application. This project will finally mark the completion of the Vue-simulator and replace the legacy simulator with the Vue-simulator. This project has been divided into 7 parts -\n1. Fixing the current bugs in the simulator and Desktop App - Fix the bugs, refactor the user Authentication for the Desktop Application, fix the broken Verilog module and Test bench enhancements.\n2. Type script integration and Vue frontend updates - Ts integration, replacing Options API with Composition API, replacing JQuery with Vue's reactivity and increasing the use of Vue lifecycle hooks.\n3. Testing for Web and Desktop simulator - Fix the current test failures, Mock APIs for desktop application testing, writing additional tests for Tauri app for the Verilog, Testbench fixes and the additional features added to Tauri App.\n4. Integration of Vue simulator with the primary codebase - Replace the legacy simulator with the vue-simulator for development and production.\n5. Versioning of App and Release for the Desktop Application and Update Mechanism for Tauri App - Deploying a seamless release pipeline for versioned releases with the artifacts mentioned, optimizing those built artifacts, and implementing  a reliable update mechanism to deliver the future improvements seamlessly.\n6. Implementing Verion switch (backend).\n7. Documentation for the Vue-simulator and the Desktop Application.",
+        "student_name": "Harsh Ashok Rao",
+        "code_url": "https://blog.circuitverse.org/posts/harsh_rao_2025_final_report/",
+        "proposal_id": "ilK11UqE",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/RLcXZOiF"
+      },
+      {
+        "title": "Migrate to View Components & Improve Search Experience",
+        "short_description": "This proposal aims to significantly enhance CircuitVerse's user experience and technical foundation by migrating core UI elements to reusable View...",
+        "description": "This proposal aims to significantly enhance CircuitVerse's user experience and technical foundation by migrating core UI elements to reusable View Components, optimizing search performance and UI/UX using Hotwire/Stimulus, improving overall site navigation with Turbo Drive, fixing UI bugs, streamlining user flows, and implementing RTL language support.",
+        "student_name": "Harsh Bhadu",
+        "code_url": "https://blog.circuitverse.org/posts/harsh_bhadu_gsoc2025_final_report/",
+        "proposal_id": "BVPjFMOY",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/8dgkuzjy"
+      },
+      {
+        "title": "Open Hardware Component Library",
+        "short_description": "This project aims to improve CircuitVerse by adding new components that are useful for learning about real hardware, such as shift registers (SISO,...",
+        "description": "This project aims to improve CircuitVerse by adding new components that are useful for learning about real hardware, such as shift registers (SISO, SIMO, MISO, MIMO), comparators, and a buzzer (speaker), Priority MUX, etc. It will also introduce support for connecting CircuitVerse with real devices using the Browser’s Web Serial API, allowing users to interact with physical hardware directly through the simulator. These features will help people better understand how digital circuits work—both in theory and in practice. The goal is to make CircuitVerse more powerful and helpful for learning digital circuits and embedded systems.",
+        "student_name": "Nihal Rajpal",
+        "code_url": "https://blog.circuitverse.org/posts/nihal_gsoc25_final_report/",
+        "proposal_id": "axzByKdo",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/cIgWR2eT"
+      },
+      {
+        "title": "Enhanced Verilog Support & Stability",
+        "short_description": "The Verilog feature in CircuitVerse has been a great experimental addition till now. It has allowed users to write, experiment, and test their...",
+        "description": "The Verilog feature in CircuitVerse has been a great experimental addition till now. It has allowed users to write, experiment, and test their Verilog code along with graphical circuit design using CV simulator. But currently, the Verilog feature is full of bugs, unstable, and unreliable which leads to its failure and causes loss of trust in CircuitVerse among its userbase. The project aims to fix the bugs, make the Verilog feature stable, refine the Verilog interface, make it more intuitive, enable users to generate, view, edit, test circuits comprehensively, and fix the testbench generation feature for Verilog code. Other goals include adding detailed documentation for Verilog and added improvements to assist users. Additional enhancements like adding play/pause functionality to simulator, and implementing full-screen view for the Boolean Logic Table is also covered in this project.",
+        "student_name": "Vivek Kumar Ray",
+        "code_url": "https://blog.circuitverse.org/posts/vivek_kumar_gsoc2025_finalreport/",
+        "proposal_id": "mYtiN4sT",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/9cZjeC5m"
+      },
+      {
+        "title": "Proposal_CiruitVerse_FlutterUpgrade",
+        "short_description": "The CircuitVerse mobile app faces performance bottlenecks (UI jank, slow rendering), inconsistent UX (broken project cards, poor navigation), and...",
+        "description": "The CircuitVerse mobile app faces performance bottlenecks (UI jank, slow rendering), inconsistent UX (broken project cards, poor navigation), and missing features (blog integration, interactive book errors). These issues degrade user experience, especially on low-end devices.\n\nSolution:\n\n1. Performance Optimization:\n\n>Upgrade Flutter, profile with DevTools, and optimize widgets (RepaintBoundary, const constructors).\n\n>Reduce rebuilds and repaints for smoother animations.\n\n2. UX Overhaul:\n\n>Revamp project cards with default images, share functionality, and Material 3 alignment.\n\n>Fix sidebar navigation and add micro interactions (ripple effects, staggered animations).\n\n3. Feature Integration:\n\n>Fix the interactive book’s rendering errors with error boundaries.\n\n>Integrate blog/Editor’s Pick sections for seamless web-app parity.",
+        "student_name": "Yashvant",
+        "code_url": "https://blog.circuitverse.org/posts/yashvant-gsoc-2025-final-report/",
+        "proposal_id": "n5ZggUXS",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/rcsyFcHL"
+      }
+    ],
+    "2026": []
   },
   "githubID": "CircuitVerse",
   "repositories": [
+    {
+      "id": 501259822,
+      "node_id": "R_kgDOHeCeLg",
+      "name": "cv-frontend-vue",
+      "full_name": "CircuitVerse/cv-frontend-vue",
+      "html_url": "https://github.com/CircuitVerse/cv-frontend-vue",
+      "description": "Re write of simulator UI in vuejs. ",
+      "language": "JavaScript",
+      "stargazers_count": 56,
+      "forks_count": 252,
+      "open_issues_count": 402,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": [
+        "hacktoberfest",
+        "javascript",
+        "vuejs"
+      ]
+    },
+    {
+      "id": 1122164895,
+      "node_id": "R_kgDOQuLgnw",
+      "name": "community-dashboard",
+      "full_name": "CircuitVerse/community-dashboard",
+      "html_url": "https://github.com/CircuitVerse/community-dashboard",
+      "description": "CircuitVerse Community Dashboard",
+      "language": "TypeScript",
+      "stargazers_count": 11,
+      "forks_count": 46,
+      "open_issues_count": 25,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": [
+        "circuitverse",
+        "community",
+        "leaderboard",
+        "nextjs",
+        "typescript"
+      ]
+    },
+    {
+      "id": 370022780,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzNzAwMjI3ODA=",
+      "name": "upptime",
+      "full_name": "CircuitVerse/upptime",
+      "html_url": "https://github.com/CircuitVerse/upptime",
+      "description": "📈 Uptime monitor and status page for Upptime, powered by @upptime",
+      "language": "JSON",
+      "stargazers_count": 3,
+      "forks_count": 4,
+      "open_issues_count": 7,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": [
+        "status-page",
+        "upptime",
+        "uptime-monitor"
+      ]
+    },
     {
       "id": 261524966,
       "node_id": "MDEwOlJlcG9zaXRvcnkyNjE1MjQ5NjY=",
@@ -285,9 +417,9 @@
       "html_url": "https://github.com/CircuitVerse/mobile-app",
       "description": "Mobile App for CircuitVerse",
       "language": "Dart",
-      "stargazers_count": 80,
-      "forks_count": 115,
-      "open_issues_count": 40,
+      "stargazers_count": 91,
+      "forks_count": 140,
+      "open_issues_count": 127,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -308,9 +440,9 @@
       "html_url": "https://github.com/CircuitVerse/CircuitVerse",
       "description": "CircuitVerse Primary Code Base",
       "language": "JavaScript",
-      "stargazers_count": 960,
-      "forks_count": 1590,
-      "open_issues_count": 926,
+      "stargazers_count": 1188,
+      "forks_count": 2013,
+      "open_issues_count": 1388,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -327,52 +459,18 @@
       ]
     },
     {
-      "id": 370022780,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzNzAwMjI3ODA=",
-      "name": "upptime",
-      "full_name": "CircuitVerse/upptime",
-      "html_url": "https://github.com/CircuitVerse/upptime",
-      "description": "📈 Uptime monitor and status page for Upptime, powered by @upptime",
-      "language": "Markdown",
-      "stargazers_count": 2,
-      "forks_count": 2,
-      "open_issues_count": 10,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": [
-        "status-page",
-        "upptime",
-        "uptime-monitor"
-      ]
-    },
-    {
-      "id": 501259822,
-      "node_id": "R_kgDOHeCeLg",
-      "name": "cv-frontend-vue",
-      "full_name": "CircuitVerse/cv-frontend-vue",
-      "html_url": "https://github.com/CircuitVerse/cv-frontend-vue",
-      "description": "Re write of simulator UI in vuejs. ",
+      "id": 140288959,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNDAyODg5NTk=",
+      "name": "CircuitVerseDocs",
+      "full_name": "CircuitVerse/CircuitVerseDocs",
+      "html_url": "https://github.com/CircuitVerse/CircuitVerseDocs",
+      "description": "CircuitVerse Online Documentation",
       "language": "JavaScript",
-      "stargazers_count": 37,
-      "forks_count": 152,
-      "open_issues_count": 229,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": [
-        "hacktoberfest",
-        "javascript",
-        "vuejs"
-      ]
+      "stargazers_count": 98,
+      "forks_count": 311,
+      "open_issues_count": 158,
+      "license": null,
+      "topics": []
     },
     {
       "id": 188953831,
@@ -382,41 +480,13 @@
       "html_url": "https://github.com/CircuitVerse/Interactive-Book",
       "description": "Interactive Online Book on Digital Logic Design",
       "language": "JavaScript",
-      "stargazers_count": 147,
-      "forks_count": 207,
-      "open_issues_count": 109,
+      "stargazers_count": 163,
+      "forks_count": 243,
+      "open_issues_count": 135,
       "license": null,
       "topics": [
         "hacktoberfest"
       ]
-    },
-    {
-      "id": 140288959,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNDAyODg5NTk=",
-      "name": "CircuitVerseDocs",
-      "full_name": "CircuitVerse/CircuitVerseDocs",
-      "html_url": "https://github.com/CircuitVerse/CircuitVerseDocs",
-      "description": "CircuitVerse Online Documentation",
-      "language": null,
-      "stargazers_count": 89,
-      "forks_count": 281,
-      "open_issues_count": 135,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 944573159,
-      "node_id": "R_kgDOOE0K5w",
-      "name": "gsoc-2025",
-      "full_name": "CircuitVerse/gsoc-2025",
-      "html_url": "https://github.com/CircuitVerse/gsoc-2025",
-      "description": null,
-      "language": null,
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
     },
     {
       "id": 274583743,
@@ -426,35 +496,15 @@
       "html_url": "https://github.com/CircuitVerse/Blog",
       "description": "Blog for updates from circuitverse",
       "language": "SCSS",
-      "stargazers_count": 5,
-      "forks_count": 55,
-      "open_issues_count": 20,
+      "stargazers_count": 9,
+      "forks_count": 70,
+      "open_issues_count": 24,
       "license": null,
       "topics": [
         "blog",
         "digital-logic-simulator",
         "electronics"
       ]
-    },
-    {
-      "id": 570804263,
-      "node_id": "R_kgDOIgXIJw",
-      "name": "disposable_email",
-      "full_name": "CircuitVerse/disposable_email",
-      "html_url": "https://github.com/CircuitVerse/disposable_email",
-      "description": null,
-      "language": "Ruby",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "open_issues_count": 1,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
     },
     {
       "id": 576988029,
@@ -485,7 +535,7 @@
       "description": "Export netlists from Yosys to DigitalJS",
       "language": "JavaScript",
       "stargazers_count": 1,
-      "forks_count": 1,
+      "forks_count": 4,
       "open_issues_count": 4,
       "license": {
         "key": "bsd-2-clause",
@@ -497,6 +547,62 @@
       "topics": []
     },
     {
+      "id": 300658152,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzMDA2NTgxNTI=",
+      "name": "CircuitVerse-Presentation-Embed",
+      "full_name": "CircuitVerse/CircuitVerse-Presentation-Embed",
+      "html_url": "https://github.com/CircuitVerse/CircuitVerse-Presentation-Embed",
+      "description": null,
+      "language": "JavaScript",
+      "stargazers_count": 11,
+      "forks_count": 5,
+      "open_issues_count": 9,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": [
+        "hacktoberfest"
+      ]
+    },
+    {
+      "id": 944573159,
+      "node_id": "R_kgDOOE0K5w",
+      "name": "gsoc-2025",
+      "full_name": "CircuitVerse/gsoc-2025",
+      "html_url": "https://github.com/CircuitVerse/gsoc-2025",
+      "description": null,
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 570804263,
+      "node_id": "R_kgDOIgXIJw",
+      "name": "disposable_email",
+      "full_name": "CircuitVerse/disposable_email",
+      "html_url": "https://github.com/CircuitVerse/disposable_email",
+      "description": null,
+      "language": "Ruby",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "open_issues_count": 1,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
       "id": 310195262,
       "node_id": "MDEwOlJlcG9zaXRvcnkzMTAxOTUyNjI=",
       "name": "CircuitVerse-Downpage",
@@ -504,7 +610,7 @@
       "html_url": "https://github.com/CircuitVerse/CircuitVerse-Downpage",
       "description": "Downtime page ",
       "language": "HTML",
-      "stargazers_count": 1,
+      "stargazers_count": 2,
       "forks_count": 12,
       "open_issues_count": 7,
       "license": null,
@@ -547,7 +653,7 @@
       "description": "A collection of useful packages maintained by the Flutter team",
       "language": "Dart",
       "stargazers_count": 1,
-      "forks_count": 2,
+      "forks_count": 3,
       "open_issues_count": 6,
       "license": {
         "key": "bsd-3-clause",
@@ -557,28 +663,6 @@
         "node_id": "MDc6TGljZW5zZTU="
       },
       "topics": []
-    },
-    {
-      "id": 300658152,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzMDA2NTgxNTI=",
-      "name": "CircuitVerse-Presentation-Embed",
-      "full_name": "CircuitVerse/CircuitVerse-Presentation-Embed",
-      "html_url": "https://github.com/CircuitVerse/CircuitVerse-Presentation-Embed",
-      "description": null,
-      "language": "JavaScript",
-      "stargazers_count": 9,
-      "forks_count": 6,
-      "open_issues_count": 10,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": [
-        "hacktoberfest"
-      ]
     },
     {
       "id": 250983078,
@@ -608,7 +692,7 @@
       "html_url": "https://github.com/CircuitVerse/cv-electron",
       "description": "Electron app for CircuitVerse",
       "language": "JavaScript",
-      "stargazers_count": 2,
+      "stargazers_count": 3,
       "forks_count": 8,
       "open_issues_count": 12,
       "license": null,
@@ -622,8 +706,8 @@
       "html_url": "https://github.com/CircuitVerse/recommender",
       "description": "Recommender system for circuits in CircuitVerse",
       "language": "Python",
-      "stargazers_count": 6,
-      "forks_count": 4,
+      "stargazers_count": 9,
+      "forks_count": 5,
       "open_issues_count": 0,
       "license": {
         "key": "mit",
@@ -637,36 +721,20 @@
   ],
   "contributorsDetails": [
     {
-      "login": "manjotsidhu",
-      "id": 22657113,
-      "node_id": "MDQ6VXNlcjIyNjU3MTEz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/22657113?v=4",
-      "html_url": "https://github.com/manjotsidhu",
-      "contributions": 80
+      "login": "devartstar",
+      "id": 61665451,
+      "node_id": "MDQ6VXNlcjYxNjY1NDUx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/61665451?v=4",
+      "html_url": "https://github.com/devartstar",
+      "contributions": 95
     },
     {
-      "login": "Nitish145",
-      "id": 45434030,
-      "node_id": "MDQ6VXNlcjQ1NDM0MDMw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/45434030?v=4",
-      "html_url": "https://github.com/Nitish145",
-      "contributions": 28
-    },
-    {
-      "login": "aman-singh7",
-      "id": 77198905,
-      "node_id": "MDQ6VXNlcjc3MTk4OTA1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/77198905?v=4",
-      "html_url": "https://github.com/aman-singh7",
-      "contributions": 33
-    },
-    {
-      "login": "dependabot[bot]",
-      "id": 49699333,
-      "node_id": "MDM6Qm90NDk2OTkzMzM=",
-      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-      "html_url": "https://github.com/apps/dependabot",
-      "contributions": 337
+      "login": "niladrix719",
+      "id": 91966855,
+      "node_id": "U_kgDOBXtNhw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/91966855?v=4",
+      "html_url": "https://github.com/niladrix719",
+      "contributions": 36
     },
     {
       "login": "tachyons",
@@ -674,94 +742,182 @@
       "node_id": "MDQ6VXNlcjMxMTI5NzY=",
       "avatar_url": "https://avatars.githubusercontent.com/u/3112976?v=4",
       "html_url": "https://github.com/tachyons",
-      "contributions": 349
+      "contributions": 25
     },
     {
-      "login": "hardik17771",
-      "id": 85028179,
-      "node_id": "MDQ6VXNlcjg1MDI4MTc5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/85028179?v=4",
-      "html_url": "https://github.com/hardik17771",
-      "contributions": 17
+      "login": "ThatDeparted2061",
+      "id": 166894150,
+      "node_id": "U_kgDOCfKaRg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/166894150?v=4",
+      "html_url": "https://github.com/ThatDeparted2061",
+      "contributions": 23
     },
     {
-      "login": "JatsuAkaYashvant",
-      "id": 146776812,
-      "node_id": "U_kgDOCL-i7A",
-      "avatar_url": "https://avatars.githubusercontent.com/u/146776812?v=4",
-      "html_url": "https://github.com/JatsuAkaYashvant",
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "html_url": "https://github.com/apps/dependabot",
       "contributions": 13
     },
     {
-      "login": "Neha62-lit",
-      "id": 70088044,
-      "node_id": "MDQ6VXNlcjcwMDg4MDQ0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/70088044?v=4",
-      "html_url": "https://github.com/Neha62-lit",
-      "contributions": 10
+      "login": "Arnabdaz",
+      "id": 96580571,
+      "node_id": "U_kgDOBcGz2w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/96580571?v=4",
+      "html_url": "https://github.com/Arnabdaz",
+      "contributions": 18
     },
     {
-      "login": "preyanshu",
-      "id": 118627824,
-      "node_id": "U_kgDOBxId8A",
-      "avatar_url": "https://avatars.githubusercontent.com/u/118627824?v=4",
-      "html_url": "https://github.com/preyanshu",
+      "login": "gr455",
+      "id": 53974118,
+      "node_id": "MDQ6VXNlcjUzOTc0MTE4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/53974118?v=4",
+      "html_url": "https://github.com/gr455",
+      "contributions": 18
+    },
+    {
+      "login": "pulkit-30",
+      "id": 76155456,
+      "node_id": "MDQ6VXNlcjc2MTU1NDU2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76155456?v=4",
+      "html_url": "https://github.com/pulkit-30",
+      "contributions": 12
+    },
+    {
+      "login": "JoshVarga",
+      "id": 400540,
+      "node_id": "MDQ6VXNlcjQwMDU0MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/400540?v=4",
+      "html_url": "https://github.com/JoshVarga",
       "contributions": 8
     },
     {
-      "login": "github-actions[bot]",
-      "id": 41898282,
-      "node_id": "MDM6Qm90NDE4OTgyODI=",
-      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
-      "html_url": "https://github.com/apps/github-actions",
+      "login": "092vk",
+      "id": 123629919,
+      "node_id": "U_kgDOB15xXw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/123629919?v=4",
+      "html_url": "https://github.com/092vk",
+      "contributions": 8
+    },
+    {
+      "login": "s1dhu98",
+      "id": 239673730,
+      "node_id": "U_kgDODkkhgg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/239673730?v=4",
+      "html_url": "https://github.com/s1dhu98",
       "contributions": 6
     },
     {
-      "login": "realaashil",
-      "id": 34879849,
-      "node_id": "MDQ6VXNlcjM0ODc5ODQ5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/34879849?v=4",
-      "html_url": "https://github.com/realaashil",
-      "contributions": 6
-    },
-    {
-      "login": "ItsAdityaKSingh",
-      "id": 69353350,
-      "node_id": "MDQ6VXNlcjY5MzUzMzUw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/69353350?v=4",
-      "html_url": "https://github.com/ItsAdityaKSingh",
+      "login": "disha1202",
+      "id": 58461801,
+      "node_id": "MDQ6VXNlcjU4NDYxODAx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/58461801?v=4",
+      "html_url": "https://github.com/disha1202",
       "contributions": 5
     },
     {
-      "login": "fizakhan90",
-      "id": 126062593,
-      "node_id": "U_kgDOB4OQAQ",
-      "avatar_url": "https://avatars.githubusercontent.com/u/126062593?v=4",
-      "html_url": "https://github.com/fizakhan90",
+      "login": "Prerna-0202",
+      "id": 89515816,
+      "node_id": "MDQ6VXNlcjg5NTE1ODE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/89515816?v=4",
+      "html_url": "https://github.com/Prerna-0202",
+      "contributions": 5
+    },
+    {
+      "login": "Darshan808",
+      "id": 127468609,
+      "node_id": "U_kgDOB5kEQQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127468609?v=4",
+      "html_url": "https://github.com/Darshan808",
       "contributions": 4
     },
     {
-      "login": "semantic-release-bot",
-      "id": 32174276,
-      "node_id": "MDQ6VXNlcjMyMTc0Mjc2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/32174276?v=4",
-      "html_url": "https://github.com/semantic-release-bot",
+      "login": "Me-Priyank",
+      "id": 143987856,
+      "node_id": "U_kgDOCJUUkA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/143987856?v=4",
+      "html_url": "https://github.com/Me-Priyank",
+      "contributions": 30
+    },
+    {
+      "login": "aryanndwi123",
+      "id": 100300789,
+      "node_id": "U_kgDOBfp39Q",
+      "avatar_url": "https://avatars.githubusercontent.com/u/100300789?v=4",
+      "html_url": "https://github.com/aryanndwi123",
+      "contributions": 4
+    },
+    {
+      "login": "Audatic07",
+      "id": 167913271,
+      "node_id": "U_kgDOCgInNw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/167913271?v=4",
+      "html_url": "https://github.com/Audatic07",
+      "contributions": 4
+    },
+    {
+      "login": "kr-2003",
+      "id": 96587705,
+      "node_id": "U_kgDOBcHPuQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/96587705?v=4",
+      "html_url": "https://github.com/kr-2003",
       "contributions": 3
     },
     {
-      "login": "imgbot[bot]",
-      "id": 31301654,
-      "node_id": "MDM6Qm90MzEzMDE2NTQ=",
-      "avatar_url": "https://avatars.githubusercontent.com/in/4706?v=4",
-      "html_url": "https://github.com/apps/imgbot",
+      "login": "aindree-2005",
+      "id": 68018372,
+      "node_id": "MDQ6VXNlcjY4MDE4Mzcy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/68018372?v=4",
+      "html_url": "https://github.com/aindree-2005",
       "contributions": 3
     },
     {
-      "login": "pratikbaid3",
-      "id": 52864956,
-      "node_id": "MDQ6VXNlcjUyODY0OTU2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/52864956?v=4",
-      "html_url": "https://github.com/pratikbaid3",
+      "login": "DhairyaMajmudar",
+      "id": 124715224,
+      "node_id": "U_kgDOB28A2A",
+      "avatar_url": "https://avatars.githubusercontent.com/u/124715224?v=4",
+      "html_url": "https://github.com/DhairyaMajmudar",
+      "contributions": 3
+    },
+    {
+      "login": "itsHamdySalem",
+      "id": 89861718,
+      "node_id": "MDQ6VXNlcjg5ODYxNzE4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/89861718?v=4",
+      "html_url": "https://github.com/itsHamdySalem",
+      "contributions": 3
+    },
+    {
+      "login": "Git-HimanshuRathi",
+      "id": 194053810,
+      "node_id": "U_kgDOC5EGsg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/194053810?v=4",
+      "html_url": "https://github.com/Git-HimanshuRathi",
+      "contributions": 19
+    },
+    {
+      "login": "naman79820",
+      "id": 159947791,
+      "node_id": "U_kgDOCYicDw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/159947791?v=4",
+      "html_url": "https://github.com/naman79820",
+      "contributions": 96
+    },
+    {
+      "login": "Palaksharma23",
+      "id": 87171452,
+      "node_id": "MDQ6VXNlcjg3MTcxNDUy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/87171452?v=4",
+      "html_url": "https://github.com/Palaksharma23",
+      "contributions": 3
+    },
+    {
+      "login": "Radhikaa-chauhan",
+      "id": 148184013,
+      "node_id": "U_kgDOCNUbzQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/148184013?v=4",
+      "html_url": "https://github.com/Radhikaa-chauhan",
       "contributions": 3
     },
     {
@@ -770,287 +926,7 @@
       "node_id": "MDQ6VXNlcjU1ODQ4MzIy",
       "avatar_url": "https://avatars.githubusercontent.com/u/55848322?v=4",
       "html_url": "https://github.com/pavanjoshi914",
-      "contributions": 31
-    },
-    {
-      "login": "jaggu21",
-      "id": 56889104,
-      "node_id": "MDQ6VXNlcjU2ODg5MTA0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/56889104?v=4",
-      "html_url": "https://github.com/jaggu21",
       "contributions": 3
-    },
-    {
-      "login": "noman2002",
-      "id": 54404474,
-      "node_id": "MDQ6VXNlcjU0NDA0NDc0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/54404474?v=4",
-      "html_url": "https://github.com/noman2002",
-      "contributions": 3
-    },
-    {
-      "login": "Aadeesh11",
-      "id": 66922161,
-      "node_id": "MDQ6VXNlcjY2OTIyMTYx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/66922161?v=4",
-      "html_url": "https://github.com/Aadeesh11",
-      "contributions": 3
-    },
-    {
-      "login": "jassi-singh",
-      "id": 54185836,
-      "node_id": "MDQ6VXNlcjU0MTg1ODM2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/54185836?v=4",
-      "html_url": "https://github.com/jassi-singh",
-      "contributions": 2
-    },
-    {
-      "login": "danger-ahead",
-      "id": 55531939,
-      "node_id": "MDQ6VXNlcjU1NTMxOTM5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/55531939?v=4",
-      "html_url": "https://github.com/danger-ahead",
-      "contributions": 2
-    },
-    {
-      "login": "suyash-patil",
-      "id": 66873825,
-      "node_id": "MDQ6VXNlcjY2ODczODI1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/66873825?v=4",
-      "html_url": "https://github.com/suyash-patil",
-      "contributions": 2
-    },
-    {
-      "login": "tanmoysrt",
-      "id": 57363826,
-      "node_id": "MDQ6VXNlcjU3MzYzODI2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/57363826?v=4",
-      "html_url": "https://github.com/tanmoysrt",
-      "contributions": 68
-    },
-    {
-      "login": "Omegaviv",
-      "id": 86337946,
-      "node_id": "MDQ6VXNlcjg2MzM3OTQ2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/86337946?v=4",
-      "html_url": "https://github.com/Omegaviv",
-      "contributions": 2
-    },
-    {
-      "login": "PseudoCode01",
-      "id": 55887676,
-      "node_id": "MDQ6VXNlcjU1ODg3Njc2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/55887676?v=4",
-      "html_url": "https://github.com/PseudoCode01",
-      "contributions": 1
-    },
-    {
-      "login": "guptapriyanshu7",
-      "id": 60141300,
-      "node_id": "MDQ6VXNlcjYwMTQxMzAw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/60141300?v=4",
-      "html_url": "https://github.com/guptapriyanshu7",
-      "contributions": 1
-    },
-    {
-      "login": "cyber-venom003",
-      "id": 58390399,
-      "node_id": "MDQ6VXNlcjU4MzkwMzk5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/58390399?v=4",
-      "html_url": "https://github.com/cyber-venom003",
-      "contributions": 1
-    },
-    {
-      "login": "PaRaDoX50",
-      "id": 55514928,
-      "node_id": "MDQ6VXNlcjU1NTE0OTI4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/55514928?v=4",
-      "html_url": "https://github.com/PaRaDoX50",
-      "contributions": 1
-    },
-    {
-      "login": "Imsurajr",
-      "id": 92632170,
-      "node_id": "U_kgDOBYV0ag",
-      "avatar_url": "https://avatars.githubusercontent.com/u/92632170?v=4",
-      "html_url": "https://github.com/Imsurajr",
-      "contributions": 1
-    },
-    {
-      "login": "satu0king",
-      "id": 2092958,
-      "node_id": "MDQ6VXNlcjIwOTI5NTg=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/2092958?v=4",
-      "html_url": "https://github.com/satu0king",
-      "contributions": 250
-    },
-    {
-      "login": "dependabot-preview[bot]",
-      "id": 27856297,
-      "node_id": "MDM6Qm90Mjc4NTYyOTc=",
-      "avatar_url": "https://avatars.githubusercontent.com/in/2141?v=4",
-      "html_url": "https://github.com/apps/dependabot-preview",
-      "contributions": 115
-    },
-    {
-      "login": "ankitkataria",
-      "id": 22021150,
-      "node_id": "MDQ6VXNlcjIyMDIxMTUw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/22021150?v=4",
-      "html_url": "https://github.com/ankitkataria",
-      "contributions": 114
-    },
-    {
-      "login": "gr455",
-      "id": 53974118,
-      "node_id": "MDQ6VXNlcjUzOTc0MTE4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/53974118?v=4",
-      "html_url": "https://github.com/gr455",
-      "contributions": 49
-    },
-    {
-      "login": "aayushgupta05",
-      "id": 47032027,
-      "node_id": "MDQ6VXNlcjQ3MDMyMDI3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/47032027?v=4",
-      "html_url": "https://github.com/aayushgupta05",
-      "contributions": 42
-    },
-    {
-      "login": "vedant-jain03",
-      "id": 76901313,
-      "node_id": "MDQ6VXNlcjc2OTAxMzEz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/76901313?v=4",
-      "html_url": "https://github.com/vedant-jain03",
-      "contributions": 35
-    },
-    {
-      "login": "ShreyaPrasad1209",
-      "id": 43600306,
-      "node_id": "MDQ6VXNlcjQzNjAwMzA2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/43600306?v=4",
-      "html_url": "https://github.com/ShreyaPrasad1209",
-      "contributions": 32
-    },
-    {
-      "login": "pulkit-30",
-      "id": 76155456,
-      "node_id": "MDQ6VXNlcjc2MTU1NDU2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/76155456?v=4",
-      "html_url": "https://github.com/pulkit-30",
-      "contributions": 30
-    },
-    {
-      "login": "Ananthavijay",
-      "id": 35162705,
-      "node_id": "MDQ6VXNlcjM1MTYyNzA1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/35162705?v=4",
-      "html_url": "https://github.com/Ananthavijay",
-      "contributions": 29
-    },
-    {
-      "login": "VaibhavUpreti",
-      "id": 85568177,
-      "node_id": "MDQ6VXNlcjg1NTY4MTc3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/85568177?v=4",
-      "html_url": "https://github.com/VaibhavUpreti",
-      "contributions": 28
-    },
-    {
-      "login": "Kartikay304",
-      "id": 40604582,
-      "node_id": "MDQ6VXNlcjQwNjA0NTgy",
-      "avatar_url": "https://avatars.githubusercontent.com/u/40604582?v=4",
-      "html_url": "https://github.com/Kartikay304",
-      "contributions": 26
-    },
-    {
-      "login": "Shivansh2407",
-      "id": 42182955,
-      "node_id": "MDQ6VXNlcjQyMTgyOTU1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/42182955?v=4",
-      "html_url": "https://github.com/Shivansh2407",
-      "contributions": 25
-    },
-    {
-      "login": "Prerna-0202",
-      "id": 89515816,
-      "node_id": "MDQ6VXNlcjg5NTE1ODE2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/89515816?v=4",
-      "html_url": "https://github.com/Prerna-0202",
-      "contributions": 20
-    },
-    {
-      "login": "armudgal",
-      "id": 19341613,
-      "node_id": "MDQ6VXNlcjE5MzQxNjEz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/19341613?v=4",
-      "html_url": "https://github.com/armudgal",
-      "contributions": 19
-    },
-    {
-      "login": "senbo1",
-      "id": 102225113,
-      "node_id": "U_kgDOBhfU2Q",
-      "avatar_url": "https://avatars.githubusercontent.com/u/102225113?v=4",
-      "html_url": "https://github.com/senbo1",
-      "contributions": 19
-    },
-    {
-      "login": "shauryag2002",
-      "id": 77102885,
-      "node_id": "MDQ6VXNlcjc3MTAyODg1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/77102885?v=4",
-      "html_url": "https://github.com/shauryag2002",
-      "contributions": 18
-    },
-    {
-      "login": "ryuk156",
-      "id": 49101492,
-      "node_id": "MDQ6VXNlcjQ5MTAxNDky",
-      "avatar_url": "https://avatars.githubusercontent.com/u/49101492?v=4",
-      "html_url": "https://github.com/ryuk156",
-      "contributions": 18
-    },
-    {
-      "login": "Arnabdaz",
-      "id": 96580571,
-      "node_id": "U_kgDOBcGz2w",
-      "avatar_url": "https://avatars.githubusercontent.com/u/96580571?v=4",
-      "html_url": "https://github.com/Arnabdaz",
-      "contributions": 16
-    },
-    {
-      "login": "mahmodHammad",
-      "id": 41790090,
-      "node_id": "MDQ6VXNlcjQxNzkwMDkw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/41790090?v=4",
-      "html_url": "https://github.com/mahmodHammad",
-      "contributions": 16
-    },
-    {
-      "login": "salmoneatenbybear",
-      "id": 177742943,
-      "node_id": "U_kgDOCpgkXw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/177742943?v=4",
-      "html_url": "https://github.com/salmoneatenbybear",
-      "contributions": 15
-    },
-    {
-      "login": "niladrix719",
-      "id": 91966855,
-      "node_id": "U_kgDOBXtNhw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/91966855?v=4",
-      "html_url": "https://github.com/niladrix719",
-      "contributions": 14
-    },
-    {
-      "login": "junron",
-      "id": 26194273,
-      "node_id": "MDQ6VXNlcjI2MTk0Mjcz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/26194273?v=4",
-      "html_url": "https://github.com/junron",
-      "contributions": 14
     },
     {
       "login": "abstrekt",
@@ -1058,23 +934,255 @@
       "node_id": "MDQ6VXNlcjQyNDc4MjE3",
       "avatar_url": "https://avatars.githubusercontent.com/u/42478217?v=4",
       "html_url": "https://github.com/abstrekt",
+      "contributions": 2
+    },
+    {
+      "login": "senutpal",
+      "id": 168703537,
+      "node_id": "U_kgDOCg42MQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/168703537?v=4",
+      "html_url": "https://github.com/senutpal",
+      "contributions": 2
+    },
+    {
+      "login": "palashb01",
+      "id": 66828942,
+      "node_id": "MDQ6VXNlcjY2ODI4OTQy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/66828942?v=4",
+      "html_url": "https://github.com/palashb01",
+      "contributions": 2
+    },
+    {
+      "login": "gitsofaryan",
+      "id": 117700812,
+      "node_id": "U_kgDOBwP4zA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/117700812?v=4",
+      "html_url": "https://github.com/gitsofaryan",
+      "contributions": 2
+    },
+    {
+      "login": "rithviknishad",
+      "id": 25143503,
+      "node_id": "MDQ6VXNlcjI1MTQzNTAz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25143503?v=4",
+      "html_url": "https://github.com/rithviknishad",
+      "contributions": 279
+    },
+    {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "html_url": "https://github.com/apps/github-actions",
+      "contributions": 61
+    },
+    {
+      "login": "bodhish",
+      "id": 14979190,
+      "node_id": "MDQ6VXNlcjE0OTc5MTkw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14979190?v=4",
+      "html_url": "https://github.com/bodhish",
+      "contributions": 57
+    },
+    {
+      "login": "sainak",
+      "id": 46787056,
+      "node_id": "MDQ6VXNlcjQ2Nzg3MDU2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46787056?v=4",
+      "html_url": "https://github.com/sainak",
+      "contributions": 30
+    },
+    {
+      "login": "NikhilA8606",
+      "id": 115739037,
+      "node_id": "U_kgDOBuYJnQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/115739037?v=4",
+      "html_url": "https://github.com/NikhilA8606",
+      "contributions": 24
+    },
+    {
+      "login": "GokulramGHV",
+      "id": 40627011,
+      "node_id": "MDQ6VXNlcjQwNjI3MDEx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40627011?v=4",
+      "html_url": "https://github.com/GokulramGHV",
+      "contributions": 23
+    },
+    {
+      "login": "shivankacker",
+      "id": 23238460,
+      "node_id": "MDQ6VXNlcjIzMjM4NDYw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/23238460?v=4",
+      "html_url": "https://github.com/shivankacker",
+      "contributions": 22
+    },
+    {
+      "login": "ShinichiShi",
+      "id": 141218988,
+      "node_id": "U_kgDOCGrUrA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/141218988?v=4",
+      "html_url": "https://github.com/ShinichiShi",
+      "contributions": 19
+    },
+    {
+      "login": "khavinshankar",
+      "id": 29787772,
+      "node_id": "MDQ6VXNlcjI5Nzg3Nzcy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/29787772?v=4",
+      "html_url": "https://github.com/khavinshankar",
+      "contributions": 19
+    },
+    {
+      "login": "dgparmar14",
+      "id": 99136186,
+      "node_id": "U_kgDOBeiyug",
+      "avatar_url": "https://avatars.githubusercontent.com/u/99136186?v=4",
+      "html_url": "https://github.com/dgparmar14",
+      "contributions": 17
+    },
+    {
+      "login": "Atharva7126",
+      "id": 177391853,
+      "node_id": "U_kgDOCpLI7Q",
+      "avatar_url": "https://avatars.githubusercontent.com/u/177391853?v=4",
+      "html_url": "https://github.com/Atharva7126",
+      "contributions": 15
+    },
+    {
+      "login": "gigincg",
+      "id": 13028584,
+      "node_id": "MDQ6VXNlcjEzMDI4NTg0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13028584?v=4",
+      "html_url": "https://github.com/gigincg",
+      "contributions": 15
+    },
+    {
+      "login": "vinutv",
+      "id": 16238306,
+      "node_id": "MDQ6VXNlcjE2MjM4MzA2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16238306?v=4",
+      "html_url": "https://github.com/vinutv",
+      "contributions": 15
+    },
+    {
+      "login": "haaasini01",
+      "id": 180000253,
+      "node_id": "U_kgDOCrqV_Q",
+      "avatar_url": "https://avatars.githubusercontent.com/u/180000253?v=4",
+      "html_url": "https://github.com/haaasini01",
       "contributions": 14
     },
     {
-      "login": "shubhankarsharma00",
-      "id": 32474302,
-      "node_id": "MDQ6VXNlcjMyNDc0MzAy",
-      "avatar_url": "https://avatars.githubusercontent.com/u/32474302?v=4",
-      "html_url": "https://github.com/shubhankarsharma00",
-      "contributions": 13
+      "login": "UdaySagar-Git",
+      "id": 111575806,
+      "node_id": "U_kgDOBqaC_g",
+      "avatar_url": "https://avatars.githubusercontent.com/u/111575806?v=4",
+      "html_url": "https://github.com/UdaySagar-Git",
+      "contributions": 12
     },
     {
-      "login": "MrBartusek",
-      "id": 23432278,
-      "node_id": "MDQ6VXNlcjIzNDMyMjc4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/23432278?v=4",
-      "html_url": "https://github.com/MrBartusek",
-      "contributions": 11
+      "login": "akshitvigg",
+      "id": 156829501,
+      "node_id": "U_kgDOCVkHPQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/156829501?v=4",
+      "html_url": "https://github.com/akshitvigg",
+      "contributions": 10
+    },
+    {
+      "login": "rash-27",
+      "id": 146672184,
+      "node_id": "U_kgDOCL4KOA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/146672184?v=4",
+      "html_url": "https://github.com/rash-27",
+      "contributions": 10
+    },
+    {
+      "login": "himanshujays29",
+      "id": 158487820,
+      "node_id": "U_kgDOCXJVDA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/158487820?v=4",
+      "html_url": "https://github.com/himanshujays29",
+      "contributions": 10
+    },
+    {
+      "login": "Pranshu1902",
+      "id": 70687348,
+      "node_id": "MDQ6VXNlcjcwNjg3MzQ4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/70687348?v=4",
+      "html_url": "https://github.com/Pranshu1902",
+      "contributions": 10
+    },
+    {
+      "login": "rabilrbl",
+      "id": 63334479,
+      "node_id": "MDQ6VXNlcjYzMzM0NDc5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/63334479?v=4",
+      "html_url": "https://github.com/rabilrbl",
+      "contributions": 8
+    },
+    {
+      "login": "manmeetsantre",
+      "id": 190877081,
+      "node_id": "U_kgDOC2CNmQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/190877081?v=4",
+      "html_url": "https://github.com/manmeetsantre",
+      "contributions": 8
+    },
+    {
+      "login": "Ritesh-Aggarwal",
+      "id": 57039447,
+      "node_id": "MDQ6VXNlcjU3MDM5NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/57039447?v=4",
+      "html_url": "https://github.com/Ritesh-Aggarwal",
+      "contributions": 8
+    },
+    {
+      "login": "Ayush1169",
+      "id": 188789872,
+      "node_id": "U_kgDOC0C0cA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/188789872?v=4",
+      "html_url": "https://github.com/Ayush1169",
+      "contributions": 8
+    },
+    {
+      "login": "SouparnaChatterjee",
+      "id": 115988950,
+      "node_id": "U_kgDOBunZ1g",
+      "avatar_url": "https://avatars.githubusercontent.com/u/115988950?v=4",
+      "html_url": "https://github.com/SouparnaChatterjee",
+      "contributions": 6
+    },
+    {
+      "login": "mathew-alex",
+      "id": 22002072,
+      "node_id": "MDQ6VXNlcjIyMDAyMDcy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/22002072?v=4",
+      "html_url": "https://github.com/mathew-alex",
+      "contributions": 6
+    },
+    {
+      "login": "Re-Dei",
+      "id": 97937213,
+      "node_id": "U_kgDOBdZnPQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/97937213?v=4",
+      "html_url": "https://github.com/Re-Dei",
+      "contributions": 6
+    },
+    {
+      "login": "upptime-bot",
+      "id": 73812536,
+      "node_id": "MDQ6VXNlcjczODEyNTM2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/73812536?v=4",
+      "html_url": "https://github.com/upptime-bot",
+      "contributions": 11619
+    },
+    {
+      "login": "satu0king",
+      "id": 2092958,
+      "node_id": "MDQ6VXNlcjIwOTI5NTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2092958?v=4",
+      "html_url": "https://github.com/satu0king",
+      "contributions": 8
     }
   ],
   "activeOrg": true

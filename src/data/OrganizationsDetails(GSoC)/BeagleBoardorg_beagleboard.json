@@ -416,49 +416,94 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/IBlfhKXK"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "A Conversational AI Assistant for BeagleBoard using RAG and Fine-tuning",
+        "short_description": "BeagleMind is an AI-powered documentation copilot for BeagleBoard that uses Retrieval-Augmented Generation (RAG) and tool calling to assist...",
+        "description": "BeagleMind is an AI-powered documentation copilot for BeagleBoard that uses Retrieval-Augmented Generation (RAG) and tool calling to assist contributors and developers. The assistant retrieves precise, context-aware answers from a vector database built from official BeagleBoard documentation, ensuring accurate and citation-backed support. With integrated tool-use capabilities, it can help users explore documentation, generate code, and automate development tasks. The MVP will be released as a Python package on the Python Package Index (PyPI), providing a lightweight command-line interface for seamless access. By streamlining access to technical knowledge and tools, BeagleMind will reduce friction in the development process and empower the BeagleBoard community.",
+        "student_name": "Fayez Zouari",
+        "code_url": "https://gist.github.com/fayezzouari/276a003b5fd4f7ac54c2f4a806a830a4",
+        "proposal_id": "XY5hDFJD",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/pbanUSAu"
+      },
+      {
+        "title": "Upstream Greybus Module for Zephyr",
+        "short_description": "The Greybus module for Zephyr currently exists as an out-of-tree component, making maintenance, testing, and contributions difficult. This project...",
+        "description": "The Greybus module for Zephyr currently exists as an out-of-tree component, making maintenance, testing, and contributions difficult. This project aims to upstream Greybus as an official Zephyr module, improving maintainability, accessibility, and seamless integration within the Zephyr RTOS ecosystem.\n\nBy upstreaming Greybus, BeagleConnect and other Greybus-enabled platforms will gain native support in Zephyr, removing the need for custom patches or kernel modifications. Originally developed by Google as part of Project Ara, Greybus is a lightweight, high-speed protocol designed for efficient, low-power communication across diverse hardware interfaces. While initially intended for modular smartphones, Greybus has since expanded into IoT and industrial applications, particularly in wireless sensor networks.\n\nThis project will focus on cleaning up and refactoring the existing Greybus module, revamping its testing infrastructure, and ensuring compatibility with Zephyr’s CI/CD workflows. The successful completion of this work will enable seamless hardware-software interaction, making Greybus more accessible for embedded systems development within Zephyr.",
+        "student_name": "Sahil Jaiswal",
+        "code_url": "https://forum.beagleboard.org/t/weekly-progress-report-upstream-greybus-module-for-zephyr/42126/16",
+        "proposal_id": "3Z5uZeoB",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/we7PbNHN"
+      },
+      {
+        "title": "Update beagle-tester for mainline testing",
+        "short_description": "The objective is to enhance the Beagle-Tester framework for BeagleBoard devices by adding mikroBUS support and updating it for mainline kernel...",
+        "description": "The objective is to enhance the Beagle-Tester framework for BeagleBoard devices by adding mikroBUS support and updating it for mainline kernel testing. This project aims to develop an automated regression test suite for Linux kernel on BeagleBoard hardware, enabling continuous validation within the OpenBeagle CI server.\n\nThe approach includes developing comprehensive test cases for interfaces such as PWM, ADC, UART, I2C, SPI, and GPIO, integrating automated power cycling capabilities for test farms, building a web interface for real-time monitoring of test results, and optimizing the framework for seamless Buildroot deployment.\n\nKey deliverables include an enhanced Beagle-Tester with mikroBUS support, an automated regression testing framework for kernel updates, a GitLab CI pipeline for weekly testing, a modular test farm design with power cycling capabilities, a web-based monitoring interface, and comprehensive documentation with tutorials.",
+        "student_name": "Vidhu",
+        "code_url": "https://gist.github.com/VidhuSarwal/8e8d9dd93fea9075428cc6320c3b0a4f",
+        "proposal_id": "nXCc2QIU",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/c9jqkFDp"
+      },
+      {
+        "title": "Upstream wpanusb bcfserial",
+        "short_description": "The project aims to enhance and upstream the existing wpanusb and bcfserial drivers in Linux to meet upstream quality standards. Currently, several...",
+        "description": "The project aims to enhance and upstream the existing wpanusb and bcfserial drivers in Linux to meet upstream quality standards. Currently, several key driver operations are missing, such as listen before talk and setting frame retries. Preliminary sketches exist but are non-functional pending corresponding changes in the Zephyr firmware side. The project will also add the ability to read the device's permanent extended address, support generic radio configuration (including band, channels, and power levels), and provide comprehensive querying of radio properties. In addition, improvements are required to accommodate upcoming features like management frames and active/passive scanning. This effort is aimed at enabling seamless interoperation between the radio and Zigbee protocols while ensuring support for both 2.4GHz and SubGHz operations, ensuring that the solution meets upstream quality standards and is maintainable over the long term.",
+        "student_name": "Whiz-Manas",
+        "code_url": "https://docs.google.com/document/d/1CqKSAovVPlORG0KHkzU8yByz0GpW3lFRdOGNGKsQ5LU/edit?usp=sharing",
+        "proposal_id": "8zwO65oa",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/xZofecH8"
+      }
+    ]
   },
   "githubID": "beagleboard",
   "repositories": [
-    {
-      "id": 983560146,
-      "node_id": "R_kgDOOp_v0g",
-      "name": "distros",
-      "full_name": "beagleboard/distros",
-      "html_url": "https://github.com/beagleboard/distros",
-      "description": null,
-      "language": "Shell",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 65041675,
-      "node_id": "MDEwOlJlcG9zaXRvcnk2NTA0MTY3NQ==",
-      "name": "capes",
-      "full_name": "beagleboard/capes",
-      "html_url": "https://github.com/beagleboard/capes",
-      "description": "Official BeagleBoard.org capes",
-      "language": "Perl",
-      "stargazers_count": 47,
-      "forks_count": 24,
-      "open_issues_count": 8,
-      "license": null,
-      "topics": []
-    },
     {
       "id": 952566072,
       "node_id": "R_kgDOOMcBOA",
       "name": "bb-imager-rs",
       "full_name": "beagleboard/bb-imager-rs",
       "html_url": "https://github.com/beagleboard/bb-imager-rs",
-      "description": "BeagleBoard.org rust based utility for flashing SDCard and configuring software image options like username, password, netwroking etc.",
+      "description": "BeagleBoard.org rust based utility for flashing SDCard, MCUs and configuring software image options like username, password, networking etc.",
       "language": "Rust",
-      "stargazers_count": 5,
-      "forks_count": 3,
-      "open_issues_count": 5,
+      "stargazers_count": 17,
+      "forks_count": 20,
+      "open_issues_count": 18,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": [
+        "hacktoberfest"
+      ]
+    },
+    {
+      "id": 17985744,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNzk4NTc0NA==",
+      "name": "beagleboard-org",
+      "full_name": "beagleboard/beagleboard-org",
+      "html_url": "https://github.com/beagleboard/beagleboard-org",
+      "description": "Source code for website",
+      "language": "HTML",
+      "stargazers_count": 22,
+      "forks_count": 18,
+      "open_issues_count": 4,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1077748425,
+      "node_id": "R_kgDOQD0iyQ",
+      "name": "BeagleBadge",
+      "full_name": "beagleboard/BeagleBadge",
+      "html_url": "https://github.com/beagleboard/BeagleBadge",
+      "description": "BeagleBoard.org BeagleBadge based on TI AM62L",
+      "language": null,
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "open_issues_count": 1,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -469,22 +514,22 @@
       "topics": []
     },
     {
-      "id": 14960443,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNDk2MDQ0Mw==",
-      "name": "image-builder",
-      "full_name": "beagleboard/image-builder",
-      "html_url": "https://github.com/beagleboard/image-builder",
-      "description": "Image builder",
-      "language": "Shell",
-      "stargazers_count": 165,
-      "forks_count": 105,
+      "id": 847833600,
+      "node_id": "R_kgDOMojqAA",
+      "name": "mirror-ti-linux-kernel",
+      "full_name": "beagleboard/mirror-ti-linux-kernel",
+      "html_url": "https://github.com/beagleboard/mirror-ti-linux-kernel",
+      "description": "Mirror of: https://git.ti.com/gitweb?p=ti-linux-kernel/ti-linux-kernel.git;a=summary",
+      "language": "C",
+      "stargazers_count": 4,
+      "forks_count": 1,
       "open_issues_count": 0,
       "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
       },
       "topics": []
     },
@@ -509,6 +554,94 @@
       "topics": []
     },
     {
+      "id": 1068386314,
+      "node_id": "R_kgDOP65ICg",
+      "name": "greybus-zephyr",
+      "full_name": "beagleboard/greybus-zephyr",
+      "html_url": "https://github.com/beagleboard/greybus-zephyr",
+      "description": null,
+      "language": "C",
+      "stargazers_count": 5,
+      "forks_count": 10,
+      "open_issues_count": 13,
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "topics": []
+    },
+    {
+      "id": 623529325,
+      "node_id": "R_kgDOJSpNbQ",
+      "name": "u-boot",
+      "full_name": "beagleboard/u-boot",
+      "html_url": "https://github.com/beagleboard/u-boot",
+      "description": null,
+      "language": "C",
+      "stargazers_count": 20,
+      "forks_count": 27,
+      "open_issues_count": 0,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 65041675,
+      "node_id": "MDEwOlJlcG9zaXRvcnk2NTA0MTY3NQ==",
+      "name": "capes",
+      "full_name": "beagleboard/capes",
+      "html_url": "https://github.com/beagleboard/capes",
+      "description": "Official BeagleBoard.org capes",
+      "language": "Perl",
+      "stargazers_count": 49,
+      "forks_count": 25,
+      "open_issues_count": 8,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 982369143,
+      "node_id": "R_kgDOOo3Ddw",
+      "name": "repos-armhf",
+      "full_name": "beagleboard/repos-armhf",
+      "html_url": "https://github.com/beagleboard/repos-armhf",
+      "description": null,
+      "language": "C",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 623535280,
+      "node_id": "R_kgDOJSpksA",
+      "name": "repos-arm64",
+      "full_name": "beagleboard/repos-arm64",
+      "html_url": "https://github.com/beagleboard/repos-arm64",
+      "description": null,
+      "language": "C",
+      "stargazers_count": 6,
+      "forks_count": 3,
+      "open_issues_count": 1,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
       "id": 184431124,
       "node_id": "MDEwOlJlcG9zaXRvcnkxODQ0MzExMjQ=",
       "name": "BeagleBoard-DeviceTrees",
@@ -516,9 +649,9 @@
       "html_url": "https://github.com/beagleboard/BeagleBoard-DeviceTrees",
       "description": null,
       "language": "C",
-      "stargazers_count": 67,
-      "forks_count": 56,
-      "open_issues_count": 9,
+      "stargazers_count": 81,
+      "forks_count": 78,
+      "open_issues_count": 16,
       "license": {
         "key": "other",
         "name": "Other",
@@ -531,42 +664,58 @@
       ]
     },
     {
-      "id": 58549020,
-      "node_id": "MDEwOlJlcG9zaXRvcnk1ODU0OTAyMA==",
-      "name": "beagle-tester",
-      "full_name": "beagleboard/beagle-tester",
-      "html_url": "https://github.com/beagleboard/beagle-tester",
-      "description": "Simplify and standardize testing of BeagleBoard.org designs",
-      "language": "C",
-      "stargazers_count": 17,
-      "forks_count": 9,
-      "open_issues_count": 7,
-      "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
-      },
-      "topics": [
-        "beagleboard-xm",
-        "beaglebone-black",
-        "beaglebone-black-wireless",
-        "beaglebone-blue",
-        "pocketbeagle"
-      ]
+      "id": 14960443,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNDk2MDQ0Mw==",
+      "name": "image-builder",
+      "full_name": "beagleboard/image-builder",
+      "html_url": "https://github.com/beagleboard/image-builder",
+      "description": "Image builder",
+      "language": "Shell",
+      "stargazers_count": 176,
+      "forks_count": 111,
+      "open_issues_count": 1,
+      "license": null,
+      "topics": []
     },
     {
-      "id": 623535280,
-      "node_id": "R_kgDOJSpksA",
-      "name": "repos-arm64",
-      "full_name": "beagleboard/repos-arm64",
-      "html_url": "https://github.com/beagleboard/repos-arm64",
+      "id": 983041706,
+      "node_id": "R_kgDOOpgGqg",
+      "name": "BeagleV-Fire-ubuntu",
+      "full_name": "beagleboard/BeagleV-Fire-ubuntu",
+      "html_url": "https://github.com/beagleboard/BeagleV-Fire-ubuntu",
       "description": null,
       "language": "Shell",
-      "stargazers_count": 4,
+      "stargazers_count": 1,
       "forks_count": 1,
-      "open_issues_count": 1,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 983560146,
+      "node_id": "R_kgDOOp_v0g",
+      "name": "distros",
+      "full_name": "beagleboard/distros",
+      "html_url": "https://github.com/beagleboard/distros",
+      "description": null,
+      "language": "Shell",
+      "stargazers_count": 2,
+      "forks_count": 1,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 362236461,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzNjIyMzY0NjE=",
+      "name": "repos-riscv64",
+      "full_name": "beagleboard/repos-riscv64",
+      "html_url": "https://github.com/beagleboard/repos-riscv64",
+      "description": null,
+      "language": "Shell",
+      "stargazers_count": 2,
+      "forks_count": 1,
+      "open_issues_count": 0,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -577,15 +726,15 @@
       "topics": []
     },
     {
-      "id": 984250985,
-      "node_id": "R_kgDOOqp6aQ",
-      "name": "bbbio-set-sysconf",
-      "full_name": "beagleboard/bbbio-set-sysconf",
-      "html_url": "https://github.com/beagleboard/bbbio-set-sysconf",
+      "id": 959768260,
+      "node_id": "R_kgDOOTTmxA",
+      "name": "microblocks-zephyr",
+      "full_name": "beagleboard/microblocks-zephyr",
+      "html_url": "https://github.com/beagleboard/microblocks-zephyr",
       "description": null,
-      "language": "Perl",
+      "language": "HTML",
       "stargazers_count": 0,
-      "forks_count": 0,
+      "forks_count": 1,
       "open_issues_count": 0,
       "license": {
         "key": "other",
@@ -602,11 +751,11 @@
       "name": "vsx-examples",
       "full_name": "beagleboard/vsx-examples",
       "html_url": "https://github.com/beagleboard/vsx-examples",
-      "description": "Moved to: https://git.beagleboard.org/beagleboard/vsx-examples",
+      "description": "The repository houses examples for various Beagles.",
       "language": "Python",
-      "stargazers_count": 4,
+      "stargazers_count": 8,
       "forks_count": 9,
-      "open_issues_count": 3,
+      "open_issues_count": 7,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -614,144 +763,98 @@
         "url": "https://api.github.com/licenses/mit",
         "node_id": "MDc6TGljZW5zZTEz"
       },
-      "topics": []
+      "topics": [
+        "education"
+      ]
     },
     {
-      "id": 623529325,
-      "node_id": "R_kgDOJSpNbQ",
-      "name": "u-boot",
-      "full_name": "beagleboard/u-boot",
-      "html_url": "https://github.com/beagleboard/u-boot",
-      "description": null,
-      "language": "C",
-      "stargazers_count": 14,
-      "forks_count": 10,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 610351541,
-      "node_id": "R_kgDOJGE5tQ",
-      "name": "zephyr",
-      "full_name": "beagleboard/zephyr",
-      "html_url": "https://github.com/beagleboard/zephyr",
-      "description": "Beagle fork of Zephyr",
-      "language": "C",
-      "stargazers_count": 4,
-      "forks_count": 1,
-      "open_issues_count": 1,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 665693578,
-      "node_id": "R_kgDOJ62tig",
-      "name": "xuantie-ubuntu",
-      "full_name": "beagleboard/xuantie-ubuntu",
-      "html_url": "https://github.com/beagleboard/xuantie-ubuntu",
-      "description": "Mirror of: https://git.beagleboard.org/beaglev-ahead/xuantie-ubuntu",
-      "language": "Shell",
-      "stargazers_count": 5,
-      "forks_count": 2,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 983041706,
-      "node_id": "R_kgDOOpgGqg",
-      "name": "BeagleV-Fire-ubuntu",
-      "full_name": "beagleboard/BeagleV-Fire-ubuntu",
-      "html_url": "https://github.com/beagleboard/BeagleV-Fire-ubuntu",
-      "description": null,
-      "language": "Shell",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 983049932,
-      "node_id": "R_kgDOOpgmzA",
-      "name": "beaglev-fire-u-boot",
-      "full_name": "beagleboard/beaglev-fire-u-boot",
-      "html_url": "https://github.com/beagleboard/beaglev-fire-u-boot",
-      "description": null,
-      "language": "C",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 982369143,
-      "node_id": "R_kgDOOo3Ddw",
-      "name": "repos-armhf",
-      "full_name": "beagleboard/repos-armhf",
-      "html_url": "https://github.com/beagleboard/repos-armhf",
-      "description": null,
-      "language": "C",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 362236461,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzNjIyMzY0NjE=",
-      "name": "repos-riscv64",
-      "full_name": "beagleboard/repos-riscv64",
-      "html_url": "https://github.com/beagleboard/repos-riscv64",
-      "description": null,
-      "language": "Shell",
-      "stargazers_count": 2,
-      "forks_count": 2,
-      "open_issues_count": 0,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 982371726,
-      "node_id": "R_kgDOOo3Njg",
-      "name": "boot-firmware",
-      "full_name": "beagleboard/boot-firmware",
-      "html_url": "https://github.com/beagleboard/boot-firmware",
-      "description": null,
-      "language": "Shell",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 980537511,
-      "node_id": "R_kgDOOnHQpw",
-      "name": "micropython",
-      "full_name": "beagleboard/micropython",
-      "html_url": "https://github.com/beagleboard/micropython",
-      "description": "MicroPython - a lean and efficient Python implementation for microcontrollers and constrained systems",
+      "id": 1162815055,
+      "node_id": "R_kgDORU8mTw",
+      "name": "antora-template-board",
+      "full_name": "beagleboard/antora-template-board",
+      "html_url": "https://github.com/beagleboard/antora-template-board",
+      "description": "This is an antora starting template for board documentation",
       "language": null,
       "stargazers_count": 0,
       "forks_count": 0,
       "open_issues_count": 0,
       "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 992142621,
+      "node_id": "R_kgDOOyLlHQ",
+      "name": "u-boot-beagleplay",
+      "full_name": "beagleboard/u-boot-beagleplay",
+      "html_url": "https://github.com/beagleboard/u-boot-beagleplay",
+      "description": null,
+      "language": "Shell",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 992142879,
+      "node_id": "R_kgDOOyLmHw",
+      "name": "u-boot-beagleboneai64",
+      "full_name": "beagleboard/u-boot-beagleboneai64",
+      "html_url": "https://github.com/beagleboard/u-boot-beagleboneai64",
+      "description": null,
+      "language": "Shell",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 972828200,
+      "node_id": "R_kgDOOfwuKA",
+      "name": "u-boot-pocketbeagle2",
+      "full_name": "beagleboard/u-boot-pocketbeagle2",
+      "html_url": "https://github.com/beagleboard/u-boot-pocketbeagle2",
+      "description": null,
+      "language": "Shell",
+      "stargazers_count": 0,
+      "forks_count": 1,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 992143230,
+      "node_id": "R_kgDOOyLnfg",
+      "name": "u-boot-beagley-ai",
+      "full_name": "beagleboard/u-boot-beagley-ai",
+      "html_url": "https://github.com/beagleboard/u-boot-beagley-ai",
+      "description": null,
+      "language": "Shell",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 35621591,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzNTYyMTU5MQ==",
+      "name": "bb.org-overlays",
+      "full_name": "beagleboard/bb.org-overlays",
+      "html_url": "https://github.com/beagleboard/bb.org-overlays",
+      "description": "Replaced by: https://github.com/beagleboard/BeagleBoard-DeviceTrees",
+      "language": "Shell",
+      "stargazers_count": 211,
+      "forks_count": 178,
+      "open_issues_count": 69,
+      "license": {
         "key": "other",
         "name": "Other",
         "spdx_id": "NOASSERTION",
@@ -761,22 +864,22 @@
       "topics": []
     },
     {
-      "id": 818401489,
-      "node_id": "R_kgDOMMfQ0Q",
-      "name": "bb-imager",
-      "full_name": "beagleboard/bb-imager",
-      "html_url": "https://github.com/beagleboard/bb-imager",
-      "description": "BeagleBoard Imaging Utility, a user-friendly tool for creating bootable media for Beagle devices. Clone of https://openbeagle.org/beagleboard/bb-imager",
-      "language": "C",
-      "stargazers_count": 0,
-      "forks_count": 0,
+      "id": 1131045965,
+      "node_id": "R_kgDOQ2pkTQ",
+      "name": "antora-ui-beagle",
+      "full_name": "beagleboard/antora-ui-beagle",
+      "html_url": "https://github.com/beagleboard/antora-ui-beagle",
+      "description": null,
+      "language": "CSS",
+      "stargazers_count": 1,
+      "forks_count": 2,
       "open_issues_count": 0,
       "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
+        "key": "mpl-2.0",
+        "name": "Mozilla Public License 2.0",
+        "spdx_id": "MPL-2.0",
+        "url": "https://api.github.com/licenses/mpl-2.0",
+        "node_id": "MDc6TGljZW5zZTE0"
       },
       "topics": []
     },
@@ -788,9 +891,9 @@
       "html_url": "https://github.com/beagleboard/linux",
       "description": "The official Read Only BeagleBoard and BeagleBone kernel repository https://git.beagleboard.org/beagleboard/linux",
       "language": "C",
-      "stargazers_count": 735,
-      "forks_count": 570,
-      "open_issues_count": 45,
+      "stargazers_count": 790,
+      "forks_count": 580,
+      "open_issues_count": 43,
       "license": {
         "key": "other",
         "name": "Other",
@@ -803,60 +906,6 @@
       ]
     },
     {
-      "id": 847833600,
-      "node_id": "R_kgDOMojqAA",
-      "name": "mirror-ti-linux-kernel",
-      "full_name": "beagleboard/mirror-ti-linux-kernel",
-      "html_url": "https://github.com/beagleboard/mirror-ti-linux-kernel",
-      "description": "Mirror of: https://git.ti.com/gitweb?p=ti-linux-kernel/ti-linux-kernel.git;a=summary",
-      "language": "C",
-      "stargazers_count": 3,
-      "forks_count": 1,
-      "open_issues_count": 0,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 964677967,
-      "node_id": "R_kgDOOX_RTw",
-      "name": "beagley-ai",
-      "full_name": "beagleboard/beagley-ai",
-      "html_url": "https://github.com/beagleboard/beagley-ai",
-      "description": "BeagleBoard.org BeagleY-AI",
-      "language": null,
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "cc-by-4.0",
-        "name": "Creative Commons Attribution 4.0 International",
-        "spdx_id": "CC-BY-4.0",
-        "url": "https://api.github.com/licenses/cc-by-4.0",
-        "node_id": "MDc6TGljZW5zZTI1"
-      },
-      "topics": []
-    },
-    {
-      "id": 972828200,
-      "node_id": "R_kgDOOfwuKA",
-      "name": "u-boot-pocketbeagle2",
-      "full_name": "beagleboard/u-boot-pocketbeagle2",
-      "html_url": "https://github.com/beagleboard/u-boot-pocketbeagle2",
-      "description": null,
-      "language": "Shell",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
       "id": 972817369,
       "node_id": "R_kgDOOfwD2Q",
       "name": "bb-zephyr-images",
@@ -864,75 +913,7 @@
       "html_url": "https://github.com/beagleboard/bb-zephyr-images",
       "description": null,
       "language": "Makefile",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 17985744,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNzk4NTc0NA==",
-      "name": "beagleboard-org",
-      "full_name": "beagleboard/beagleboard-org",
-      "html_url": "https://github.com/beagleboard/beagleboard-org",
-      "description": "Source code for website",
-      "language": "HTML",
-      "stargazers_count": 22,
-      "forks_count": 21,
-      "open_issues_count": 3,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 9397338,
-      "node_id": "MDEwOlJlcG9zaXRvcnk5Mzk3MzM4",
-      "name": "bone101",
-      "full_name": "beagleboard/bone101",
-      "html_url": "https://github.com/beagleboard/bone101",
-      "description": "Web-hosted documentation on BeagleBone enhanced with BoneScript and live-running tutorials",
-      "language": "JavaScript",
-      "stargazers_count": 44,
-      "forks_count": 43,
-      "open_issues_count": 1,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 17448776,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNzQ0ODc3Ng==",
-      "name": "beaglebone-black",
-      "full_name": "beagleboard/beaglebone-black",
-      "html_url": "https://github.com/beagleboard/beaglebone-black",
-      "description": "Design and Document files for the BeagleBone Black from BeagleBoard.org",
-      "language": null,
-      "stargazers_count": 434,
-      "forks_count": 201,
-      "open_issues_count": 7,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 960490803,
-      "node_id": "R_kgDOOT_tMw",
-      "name": "pinouts",
-      "full_name": "beagleboard/pinouts",
-      "html_url": "https://github.com/beagleboard/pinouts",
-      "description": "Pinout site for BeagleBoard.org single board computers.",
-      "language": "TypeScript",
-      "stargazers_count": 0,
+      "stargazers_count": 2,
       "forks_count": 1,
       "open_issues_count": 1,
       "license": {
@@ -942,42 +923,183 @@
         "url": "https://api.github.com/licenses/mit",
         "node_id": "MDc6TGljZW5zZTEz"
       },
-      "topics": [
-        "beagleboard",
-        "nextjs",
-        "pinout-diagram",
-        "sbc"
-      ]
+      "topics": []
     },
     {
-      "id": 842150746,
-      "node_id": "R_kgDOMjIzWg",
-      "name": "mirror-linux",
-      "full_name": "beagleboard/mirror-linux",
-      "html_url": "https://github.com/beagleboard/mirror-linux",
+      "id": 1131776089,
+      "node_id": "R_kgDOQ3WIWQ",
+      "name": "antora-docs",
+      "full_name": "beagleboard/antora-docs",
+      "html_url": "https://github.com/beagleboard/antora-docs",
+      "description": null,
+      "language": null,
+      "stargazers_count": 1,
+      "forks_count": 1,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1133497654,
+      "node_id": "R_kgDOQ4_NNg",
+      "name": "PocketBeagle-2-Docs",
+      "full_name": "beagleboard/PocketBeagle-2-Docs",
+      "html_url": "https://github.com/beagleboard/PocketBeagle-2-Docs",
+      "description": null,
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 1,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 673439907,
+      "node_id": "R_kgDOKCPgow",
+      "name": "docs.beagleboard.io",
+      "full_name": "beagleboard/docs.beagleboard.io",
+      "html_url": "https://github.com/beagleboard/docs.beagleboard.io",
+      "description": "Mirror of https://git.beagleboard.org/docs/docs.beagleboard.io",
+      "language": "Shell",
+      "stargazers_count": 3,
+      "forks_count": 4,
+      "open_issues_count": 2,
+      "license": {
+        "key": "cc-by-sa-4.0",
+        "name": "Creative Commons Attribution Share Alike 4.0 International",
+        "spdx_id": "CC-BY-SA-4.0",
+        "url": "https://api.github.com/licenses/cc-by-sa-4.0",
+        "node_id": "MDc6TGljZW5zZTI2"
+      },
+      "topics": []
+    },
+    {
+      "id": 1109731859,
+      "node_id": "R_kgDOQiUqEw",
+      "name": "mspm0-adc-eeprom",
+      "full_name": "beagleboard/mspm0-adc-eeprom",
+      "html_url": "https://github.com/beagleboard/mspm0-adc-eeprom",
       "description": null,
       "language": "C",
       "stargazers_count": 0,
       "forks_count": 0,
       "open_issues_count": 0,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
+      "license": null,
       "topics": []
     }
   ],
   "contributorsDetails": [
     {
-      "login": "RobertCNelson",
-      "id": 91469,
-      "node_id": "MDQ6VXNlcjkxNDY5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/91469?v=4",
-      "html_url": "https://github.com/RobertCNelson",
-      "contributions": 49
+      "login": "Ayush1325",
+      "id": 22546812,
+      "node_id": "MDQ6VXNlcjIyNTQ2ODEy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/22546812?v=4",
+      "html_url": "https://github.com/Ayush1325",
+      "contributions": 2
+    },
+    {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "html_url": "https://github.com/apps/dependabot",
+      "contributions": 99
+    },
+    {
+      "login": "ir1keren",
+      "id": 1435149,
+      "node_id": "MDQ6VXNlcjE0MzUxNDk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1435149?v=4",
+      "html_url": "https://github.com/ir1keren",
+      "contributions": 13
+    },
+    {
+      "login": "johnpgr",
+      "id": 62309738,
+      "node_id": "MDQ6VXNlcjYyMzA5NzM4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/62309738?v=4",
+      "html_url": "https://github.com/johnpgr",
+      "contributions": 12
+    },
+    {
+      "login": "parrotmac",
+      "id": 1728260,
+      "node_id": "MDQ6VXNlcjE3MjgyNjA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1728260?v=4",
+      "html_url": "https://github.com/parrotmac",
+      "contributions": 7
+    },
+    {
+      "login": "Sahil7741",
+      "id": 112881021,
+      "node_id": "U_kgDOBrptfQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/112881021?v=4",
+      "html_url": "https://github.com/Sahil7741",
+      "contributions": 7
+    },
+    {
+      "login": "SuperChamp234",
+      "id": 40035606,
+      "node_id": "MDQ6VXNlcjQwMDM1NjA2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40035606?v=4",
+      "html_url": "https://github.com/SuperChamp234",
+      "contributions": 4
+    },
+    {
+      "login": "matteocarnelos",
+      "id": 27573242,
+      "node_id": "MDQ6VXNlcjI3NTczMjQy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/27573242?v=4",
+      "html_url": "https://github.com/matteocarnelos",
+      "contributions": 2
+    },
+    {
+      "login": "sengmonkham",
+      "id": 157476526,
+      "node_id": "U_kgDOCWLmrg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/157476526?v=4",
+      "html_url": "https://github.com/sengmonkham",
+      "contributions": 2
+    },
+    {
+      "login": "amrit712",
+      "id": 209090396,
+      "node_id": "U_kgDODHZ3XA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/209090396?v=4",
+      "html_url": "https://github.com/amrit712",
+      "contributions": 1
+    },
+    {
+      "login": "Grippy98",
+      "id": 7153954,
+      "node_id": "MDQ6VXNlcjcxNTM5NTQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7153954?v=4",
+      "html_url": "https://github.com/Grippy98",
+      "contributions": 1
+    },
+    {
+      "login": "babldev",
+      "id": 220799,
+      "node_id": "MDQ6VXNlcjIyMDc5OQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/220799?v=4",
+      "html_url": "https://github.com/babldev",
+      "contributions": 1
+    },
+    {
+      "login": "Caped-Crussader",
+      "id": 134716024,
+      "node_id": "U_kgDOCAeaeA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/134716024?v=4",
+      "html_url": "https://github.com/Caped-Crussader",
+      "contributions": 1
+    },
+    {
+      "login": "giuliomoro",
+      "id": 4260604,
+      "node_id": "MDQ6VXNlcjQyNjA2MDQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4260604?v=4",
+      "html_url": "https://github.com/giuliomoro",
+      "contributions": 1
     },
     {
       "login": "jadonk",
@@ -985,23 +1107,47 @@
       "node_id": "MDQ6VXNlcjkwMTg=",
       "avatar_url": "https://avatars.githubusercontent.com/u/9018?v=4",
       "html_url": "https://github.com/jadonk",
-      "contributions": 54
+      "contributions": 516
     },
     {
-      "login": "StrawsonDesign",
-      "id": 6244256,
-      "node_id": "MDQ6VXNlcjYyNDQyNTY=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/6244256?v=4",
-      "html_url": "https://github.com/StrawsonDesign",
-      "contributions": 15
+      "login": "koenkooi",
+      "id": 259525,
+      "node_id": "MDQ6VXNlcjI1OTUyNQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/259525?v=4",
+      "html_url": "https://github.com/koenkooi",
+      "contributions": 8
     },
     {
-      "login": "lorforlinux",
-      "id": 20015794,
-      "node_id": "MDQ6VXNlcjIwMDE1Nzk0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/20015794?v=4",
-      "html_url": "https://github.com/lorforlinux",
-      "contributions": 10
+      "login": "kkeller",
+      "id": 1458371,
+      "node_id": "MDQ6VXNlcjE0NTgzNzE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1458371?v=4",
+      "html_url": "https://github.com/kkeller",
+      "contributions": 3
+    },
+    {
+      "login": "fhunleth",
+      "id": 64669,
+      "node_id": "MDQ6VXNlcjY0NjY5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/64669?v=4",
+      "html_url": "https://github.com/fhunleth",
+      "contributions": 2
+    },
+    {
+      "login": "rmball",
+      "id": 3092102,
+      "node_id": "MDQ6VXNlcjMwOTIxMDI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3092102?v=4",
+      "html_url": "https://github.com/rmball",
+      "contributions": 2
+    },
+    {
+      "login": "RobertCNelson",
+      "id": 91469,
+      "node_id": "MDQ6VXNlcjkxNDY5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/91469?v=4",
+      "html_url": "https://github.com/RobertCNelson",
+      "contributions": 1
     }
   ],
   "activeOrg": true

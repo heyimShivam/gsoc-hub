@@ -52,7 +52,8 @@
     2022,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2017": [
@@ -912,94 +913,122 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/mlXZWw0L"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Real-Time Policy Evaluation in Meshery UI using OPA WebAssembly",
+        "short_description": "Abstract: This proposal outlines a plan to enhance Meshery's relationship evaluation capabilities by implementing client-side policy evaluation using...",
+        "description": "Abstract: This proposal outlines a plan to enhance Meshery's relationship evaluation capabilities by implementing client-side policy evaluation using WebAssembly. By integrating OPA's WebAssembly compilation capabilities into Meshery's UI, I aim to enable real-time evaluation of complex Rego policies, providing users with immediate feedback on configuration changes and policy compliance. This enhancement will significantly improve the user experience when designing their designs and will make the policy evaluation distributed hence reducing load on a meshery server Problem Statement Meshery currently doesn't support evaluating policies in real-time on the client side. The existing approach ( relying on the rest api interface exposed by meshery-server) introduce s latency when policy evaluation occurs server-side, limiting the responsiveness of the UI when users make configuration changes. Additionally, as policies become more complex and numerous, the ability to quickly validate configurations against these policies becomes increasingly important for a smooth user experience. Proposed Solution: Use opas capibilty to compile rego policies directly into wasm plans and then integrate the evaluation process in ui using OPA's JavaScript SDK, which provides a simpler way to load and evaluate Rego policies compiled to WebAssembly. This approach is more lightweight and performant . Deliverables : - Real time evaluation of policies in ui - Keeping the support for both targets of evaluation backend or realtime on frontend - Making the evaluation responsive and performant by implementing webworkers , caching",
+        "student_name": "Aabid Ali",
+        "code_url": "https://github.com/meshery/meshery/issues/15678",
+        "proposal_id": "lsBrNb6O",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/2aGkn4JN"
+      },
+      {
+        "title": "Automating Benchmarking of KubeStellar Data-Plane for AI Workloads",
+        "short_description": "Problem: KubeStellar (KS) lacks an automated system to measure and visualize data-plane performance (e.g., sync latencies) under AI workloads, making...",
+        "description": "Problem: \nKubeStellar (KS) lacks an automated system to measure and visualize data-plane performance (e.g., sync latencies) under AI workloads, making optimization and debugging challenging.\n\nSolution:\n1. Instrument KS with OpenTelemetry/Prometheus to emit sync latency/error metrics.\n2. Build a pipeline (TimescaleDB + Fluentd) to collect, store, and aggregate metrics.\n3. Embed Grafana dashboards into KS UI for real-time monitoring.\n4. Benchmark AI workloads (e.g., distributed TensorFlow) to validate scalability.\n\nDeliverables:\n1. Go-based metric instrumentation in KS core.\n2. Automated aggregation service (P95, error rates).\n3. Prebuilt Grafana dashboards (latency, throughput).\n4. Documentation + video demo.\n\nImpact: Enables data-driven optimization of KS for large-scale AI workloads.",
+        "student_name": "Asmit Kumar Rai",
+        "code_url": "https://github.com/kubestellar/kubestellar/tree/main/test/performance/latency-controller",
+        "proposal_id": "ne9hctjG",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/6P4Ds9En"
+      },
+      {
+        "title": "Allow Kubewarden Policies to be Written using JavaScript",
+        "short_description": "Kubewarden is a universal policy engine for Kubernetes enabling policy-as-code. It allows users to define and enforce policies for their Kubernetes...",
+        "description": "Kubewarden is a universal policy engine for Kubernetes enabling policy-as-code. It allows users to define and enforce policies for their Kubernetes clusters using any programming language that generates WebAssembly binaries. Recently, Bytecode Alliance introduced Javy, a JavaScript to WebAssembly compiler. This makes it possible to write Kubewarden policies in JavaScript. This project aims to create an idiomatic JavaScript SDK that allows users to write Kubewarden policies in JavaScript.\nThis requires several features including Policy Authoring API. Host Capabilities APIs, Host Capabilities Bridge, Compilation Pipeline, Testing and Validation, Documentation and Tutorials",
+        "student_name": "Esosa Ohangbon",
+        "code_url": "https://gist.github.com/esosaoh/37c1948731b76faccdec09bf80bacf1e",
+        "proposal_id": "tRkLWfUo",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/SFABJqNk"
+      },
+      {
+        "title": "Virtual filesystem security for WasmEdge plug-ins with exporting WASI APIs - Proposal",
+        "short_description": "This project aims to enhance the security of WasmEdge plug-ins by exporting key WASI APIs, thereby ensuring a robust and secure virtual filesystem...",
+        "description": "This project aims to enhance the security of WasmEdge plug-ins by exporting key WASI APIs, thereby ensuring a robust and secure virtual filesystem sandbox for file operations. With the rapid growth of AI applications, WasmEdge plug-ins have become indispensable for tasks such as natural language processing, image synthesis, and speech recognition. However, direct file system access in current implementations exposes critical security risks. To address this, our proposal focuses on designing and implementing a dedicated filesystem sandbox API that restricts file read/write operations to pre-authorized directories. The initial phase will concentrate on the WASI-NN plug-in and other simpler file I/O functions, with potential future enhancements to more complex applications like Stable Diffusion’s image-loading functionality.\nOur comprehensive plan includes an in-depth study of the WasmEdge sandbox architecture, API design and integration, modification of internal plugin call patterns, and the development of rigorous test cases to validate sandbox effectiveness. Detailed documentation and developer guidelines will be prepared to facilitate secure plugin development. With a project timeline from June 2 to September 1, this initiative will leverage my background in virtualization, parallel computing and my past contributions to WasmEdge. The expected outcome is a significant improvement in the security and isolation of file operations in WasmEdge plug-ins, paving the way for safer and more reliable deployment of AI-driven applications.",
+        "student_name": "grorge",
+        "code_url": "https://github.com/WasmEdge/WasmEdge/pull/4197",
+        "proposal_id": "817rVbuv",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/N7m7gDib"
+      },
+      {
+        "title": "Knative: Functions AI Agent Callbacks",
+        "short_description": "This project aims to integrate AI agents with Knative Functions by developing a MCP server that allows to dynamically create and deploy functions...",
+        "description": "This project aims to integrate AI agents with Knative Functions by developing a MCP server that allows to dynamically create and deploy functions using natural language prompts via MCP-compatible clients.",
+        "student_name": "Kapil Sareen",
+        "code_url": "https://gist.github.com/KapilSareen/17b1bce4584c2e798374a27870838a06",
+        "proposal_id": "JdkGYb6z",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/llt9vHfu"
+      },
+      {
+        "title": "Simplified SPM deployment with ElasticSearch/OpenSearch for Jaeger",
+        "short_description": "Jaeger’s Service Performance Management (SPM) currently requires a complex setup with a separate processor and Prometheus storage to compute RED...",
+        "description": "Jaeger’s Service Performance Management (SPM) currently requires a complex setup with a separate processor and Prometheus storage to compute RED metrics. This project simplifies SPM by using Elasticsearch/OpenSearch trace storage to directly derive metrics, eliminating extra components. I will implement an ElasticsearchMetricsReader, update configurations, ensure OpenSearch compatibility, and add tests and documentation. Deliverables include a new development environment, simplified configuration, integration tests, OpenSearch support, updated documentation, and load testing for scalability.",
+        "student_name": "Minh Nguyen Dang",
+        "code_url": "https://github.com/jaegertracing/jaeger/issues/6641",
+        "proposal_id": "7ctlcY5h",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/ZTLyi8dO"
+      },
+      {
+        "title": "Generic High-Performance Caching Library for etcd",
+        "short_description": "etcd is a distributed key-value store that serves as the backbone for Kubernetes and other cloud-native systems, storing critical configuration and...",
+        "description": "etcd is a distributed key-value store that serves as the backbone for Kubernetes and other cloud-native systems, storing critical configuration and state data. However, at scale, multiple applications constantly querying etcd for current state and watching for changes can overload the server and create expensive catch-up scenarios for slow subscribers. This project developed an experimental caching solution that brings Kubernetes' proven watch cache pattern to any infrastructure project without depending on the Kubernetes codebase. Core Components: (1) Watch Demultiplexer: Consolidates multiple client watch subscriptions into a single upstream etcd connection, then broadcasts events to all subscribers, reducing server load; (2) Event History Buffer: Maintains an append-only ring buffer of recent watch events, enabling lagging watchers to catch up from local history rather than reopening expensive upstream watches; (3)\nB-Tree State Mirror: After an initial snapshot, builds and maintains an in-memory B-Tree of current key/value state, applying watch events incrementally for fast range queries and lookups; (4) Point-in-Time Snapshots: Preserves historical B-Tree snapshots in a ring buffer, allowing exact stale reads at specific revisions without hitting etcd; (5) Resilient Control Loop: Handles initialization, upstream errors, compaction events, and automatic cache rebuilding with proper client notification.",
+        "student_name": "Peter Chang",
+        "code_url": "https://gist.github.com/apullo777/86ec3113abd98cce22efc3eda8aabc83",
+        "proposal_id": "uvQr1JFf",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/9A3Z5dv1"
+      },
+      {
+        "title": "Privacy-preserving and efficient AI model training across multi-clusters",
+        "short_description": "This project aims to enable AI training in a multi-cluster environment while ensuring data privacy through federated learning. In a multi-cluster...",
+        "description": "This project aims to enable AI training in a multi-cluster environment while ensuring data privacy through federated learning. In a multi-cluster environment, where different clusters need to access data, federated learning is introduced to safeguard sensitive information.\nOur goal is to provide a unified interface that allows existing federated learning frameworks, such as OpenFL, NVIDIA FLARE, and Flower, to operate seamlessly in a multi-cluster environment without modifying their existing workflows. These frameworks will continue handling local model training within their respective clusters while aggregating updates into a global model on the hub cluster.\nTo achieve this, we leverage Open Cluster Management (OCM) APIs, including Placement and ManifestWork, to standardize federated learning workflows. By integrating frameworks through a unified interface, we harness OCM’s capabilities to deliver scalable and privacy-preserving AI training solutions in multi-cluster environments.",
+        "student_name": "Shichao",
+        "code_url": "https://gist.github.com/mrrr3d/aa8f4beab777959bcd1635635d708aa4",
+        "proposal_id": "XwdBY62e",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/mUzLWY6T"
+      },
+      {
+        "title": "Enhancements for RAG Chatbot for Vitess",
+        "short_description": "The current Vitess RAG chatbot which uses documentation, Slack discussions, and GitHub issues data, has low accuracy. This project aims to improve...",
+        "description": "The current Vitess RAG chatbot which uses documentation, Slack discussions, and GitHub issues data, has low accuracy. This project aims to improve the accuracy and security of the system by; Enhancing retrieval with techniques like query expansion, re-ranking, metadata filtering, inclusion of image data, and summarizing chunks using LLMs before embedding using tools like Langchain; Automating the embedding of updated documentation into the vector database using Kestra pipelines; Better benchmarking with tools like Giskard and RAGAS; Using user feedback to improve relevance; Content filtering using LLMs safety settings; Implementing caching for faster responses and lower costs, along with rate limiting for infrastructure stability",
+        "student_name": "sreehariX",
+        "code_url": "https://gist.github.com/sreehariX/a626bc92e670692e30bba8726958d71c",
+        "proposal_id": "ojQI5YLr",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/FdTZdTRr"
+      },
+      {
+        "title": "Lima: Support for Virtual Machine Plugin Subsystem",
+        "short_description": "Lima(LInux MAchines) is a tool that helps to run Linux Virtual Machines on macOS and other hosts, with a focus on running containers on them with...",
+        "description": "Lima(LInux MAchines) is a tool that helps to run Linux Virtual Machines on macOS and other hosts, with a focus on running containers on them with auto file sharing and port forwarding. Lima's internal virtual machine backend drivers are tightly connected with the main binary, making maintenance difficult and cluttering the main binary. This makes it difficult to incorporate different virtual machine backends. \n\nThis project seeks to construct and develop a plugin subsystem or framework that offers support for multiple virtual machine backends that can be integrated into the main Lima application via gRPC or built into the main binary.",
+        "student_name": "unsuman_",
+        "code_url": "https://gist.github.com/unsuman/ff31a323ecef2289bf065882726ed7f0",
+        "proposal_id": "NmzkIsqi",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/0L1g1OFW"
+      },
+      {
+        "title": "Kubebuilder: Automating Operator Maintenance - Driving Better Results with Less Overhead",
+        "short_description": "This project aims to create a GitHub Action similar to Dependabot for Kubebuilder, automating the process of regenerating scaffolds and preserving...",
+        "description": "This project aims to create a GitHub Action similar to Dependabot for Kubebuilder, automating the process of regenerating scaffolds and preserving custom code when new versions of Kubebuilder are released. This solution ensures that projects stay updated with best practices, bug fixes, and features, ultimately improving maintainability and adoption by reducing the complexity of manual updates.",
+        "student_name": "Vitor Floriano",
+        "code_url": "https://gist.github.com/vitorfloriano/a03b217715a596d20568c38bb97f339f",
+        "proposal_id": "UUryDq23",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/j6huoI3v"
+      }
+    ],
+    "2026": []
   },
   "githubID": "cncf",
   "repositories": [
     {
-      "id": 72878982,
-      "node_id": "MDEwOlJlcG9zaXRvcnk3Mjg3ODk4Mg==",
-      "name": "landscape",
-      "full_name": "cncf/landscape",
-      "html_url": "https://github.com/cncf/landscape",
-      "description": "🌄 The Cloud Native Interactive Landscape filters and sorts hundreds of projects and products, and shows details including GitHub stars, funding, first and last commits, contributor counts and headquarters location.",
-      "language": null,
-      "stargazers_count": 9572,
-      "forks_count": 2032,
-      "open_issues_count": 30,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "cloud-native",
-        "cncf",
-        "crunchbase",
-        "landscape",
-        "logo",
-        "serverless",
-        "svg",
-        "wasm"
-      ]
-    },
-    {
-      "id": 676487137,
-      "node_id": "R_kgDOKFJf4Q",
-      "name": "landscape2-sites",
-      "full_name": "cncf/landscape2-sites",
-      "html_url": "https://github.com/cncf/landscape2-sites",
-      "description": "Landscape2 sites settings and deployment workflows",
-      "language": null,
-      "stargazers_count": 32,
-      "forks_count": 19,
-      "open_issues_count": 1,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 915978802,
-      "node_id": "R_kgDONpi6Mg",
-      "name": "gitjobs",
-      "full_name": "cncf/gitjobs",
-      "html_url": "https://github.com/cncf/gitjobs",
-      "description": "GitJobs is a simple open source, developer first job board focused on open source job opportunities.",
+      "id": 838189735,
+      "node_id": "R_kgDOMfXCpw",
+      "name": "open-community-groups",
+      "full_name": "cncf/open-community-groups",
+      "html_url": "https://github.com/cncf/open-community-groups",
+      "description": "Open source events platform for communities and organizations",
       "language": "Rust",
-      "stargazers_count": 65,
-      "forks_count": 4,
-      "open_issues_count": 11,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "cncf",
-        "job-board",
-        "open-source"
-      ]
-    },
-    {
-      "id": 243834124,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNDM4MzQxMjQ=",
-      "name": "tag-contributor-strategy",
-      "full_name": "cncf/tag-contributor-strategy",
-      "html_url": "https://github.com/cncf/tag-contributor-strategy",
-      "description": "CNCF Technical Advisory Group on Contributor Strategy -- maintainer relations, building up contributors, governance, graduation, and more.",
-      "language": "HTML",
-      "stargazers_count": 198,
-      "forks_count": 136,
-      "open_issues_count": 89,
+      "stargazers_count": 18,
+      "forks_count": 8,
+      "open_issues_count": 14,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -1010,114 +1039,15 @@
       "topics": []
     },
     {
-      "id": 566251968,
-      "node_id": "R_kgDOIcBRwA",
-      "name": "clotributor",
-      "full_name": "cncf/clotributor",
-      "html_url": "https://github.com/cncf/clotributor",
-      "description": "Discover great opportunities to become a Cloud Native contributor",
-      "language": "TypeScript",
-      "stargazers_count": 95,
-      "forks_count": 10,
-      "open_issues_count": 9,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 421806901,
-      "node_id": "R_kgDOGSRDNQ",
-      "name": "cncf-fuzzing",
-      "full_name": "cncf/cncf-fuzzing",
-      "html_url": "https://github.com/cncf/cncf-fuzzing",
-      "description": "✨🔐 CNCF Fuzzers",
+      "id": 1160193299,
+      "node_id": "R_kgDORSclEw",
+      "name": "sbom",
+      "full_name": "cncf/sbom",
+      "html_url": "https://github.com/cncf/sbom",
+      "description": "House of SBOMs (and tooling)",
       "language": "Go",
-      "stargazers_count": 124,
-      "forks_count": 48,
-      "open_issues_count": 7,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 86499813,
-      "node_id": "MDEwOlJlcG9zaXRvcnk4NjQ5OTgxMw==",
-      "name": "curriculum",
-      "full_name": "cncf/curriculum",
-      "html_url": "https://github.com/cncf/curriculum",
-      "description": "📚Open Source Curriculum for CNCF Certification Courses",
-      "language": null,
-      "stargazers_count": 5989,
-      "forks_count": 1997,
-      "open_issues_count": 28,
-      "license": null,
-      "topics": [
-        "cncf"
-      ]
-    },
-    {
-      "id": 105037325,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMDUwMzczMjU=",
-      "name": "awards",
-      "full_name": "cncf/awards",
-      "html_url": "https://github.com/cncf/awards",
-      "description": "🏆 CNCF Community Awards",
-      "language": null,
-      "stargazers_count": 24,
-      "forks_count": 11,
-      "open_issues_count": 0,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "awards",
-        "cncf"
-      ]
-    },
-    {
-      "id": 653067729,
-      "node_id": "R_kgDOJu0F0Q",
-      "name": "landscape2",
-      "full_name": "cncf/landscape2",
-      "html_url": "https://github.com/cncf/landscape2",
-      "description": "Landscape2 is a tool that generates interactive landscapes websites",
-      "language": "TypeScript",
-      "stargazers_count": 180,
-      "forks_count": 59,
-      "open_issues_count": 8,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 176269027,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNzYyNjkwMjc=",
-      "name": "devstatscode",
-      "full_name": "cncf/devstatscode",
-      "html_url": "https://github.com/cncf/devstatscode",
-      "description": "📈DevStats code",
-      "language": "Go",
-      "stargazers_count": 45,
-      "forks_count": 20,
+      "stargazers_count": 7,
+      "forks_count": 2,
       "open_issues_count": 0,
       "license": {
         "key": "apache-2.0",
@@ -1129,16 +1059,16 @@
       "topics": []
     },
     {
-      "id": 621207364,
-      "node_id": "R_kgDOJQbfRA",
-      "name": "devstats",
-      "full_name": "cncf/devstats",
-      "html_url": "https://github.com/cncf/devstats",
-      "description": "📈CNCF-created tool for analyzing and graphing developer contributions",
-      "language": "Shell",
-      "stargazers_count": 93,
-      "forks_count": 35,
-      "open_issues_count": 8,
+      "id": 628104773,
+      "node_id": "R_kgDOJXAeRQ",
+      "name": "automation",
+      "full_name": "cncf/automation",
+      "html_url": "https://github.com/cncf/automation",
+      "description": "Tools to manage CNCF maintenance tasks",
+      "language": "Go",
+      "stargazers_count": 18,
+      "forks_count": 22,
+      "open_issues_count": 22,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -1146,20 +1076,6 @@
         "url": "https://api.github.com/licenses/apache-2.0",
         "node_id": "MDc6TGljZW5zZTI="
       },
-      "topics": []
-    },
-    {
-      "id": 621207900,
-      "node_id": "R_kgDOJQbhXA",
-      "name": "gitdm",
-      "full_name": "cncf/gitdm",
-      "html_url": "https://github.com/cncf/gitdm",
-      "description": "📜Fork for tracking CNCF projects",
-      "language": "Ruby",
-      "stargazers_count": 56,
-      "forks_count": 556,
-      "open_issues_count": 4,
-      "license": null,
       "topics": []
     },
     {
@@ -1170,9 +1086,9 @@
       "html_url": "https://github.com/cncf/landscape-graph",
       "description": "CNCF Landscape Graph, data model, and applications.",
       "language": "Jupyter Notebook",
-      "stargazers_count": 47,
-      "forks_count": 12,
-      "open_issues_count": 63,
+      "stargazers_count": 53,
+      "forks_count": 17,
+      "open_issues_count": 73,
       "license": {
         "key": "other",
         "name": "Other",
@@ -1199,49 +1115,6 @@
       ]
     },
     {
-      "id": 628104773,
-      "node_id": "R_kgDOJXAeRQ",
-      "name": "automation",
-      "full_name": "cncf/automation",
-      "html_url": "https://github.com/cncf/automation",
-      "description": "Tools to manage CNCF maintenance tasks",
-      "language": "Python",
-      "stargazers_count": 7,
-      "forks_count": 8,
-      "open_issues_count": 11,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 329970318,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzMjk5NzAzMTg=",
-      "name": "glossary",
-      "full_name": "cncf/glossary",
-      "html_url": "https://github.com/cncf/glossary",
-      "description": "The CNCF Cloud Native Glossary Project aims to define cloud native concepts in clear and simple language, making them accessible to anyone —  whether they have a technical background or not (https://glossary.cncf.io).",
-      "language": "HTML",
-      "stargazers_count": 678,
-      "forks_count": 566,
-      "open_issues_count": 221,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "cloud-native",
-        "cncf"
-      ]
-    },
-    {
       "id": 397312358,
       "node_id": "MDEwOlJlcG9zaXRvcnkzOTczMTIzNTg=",
       "name": "people",
@@ -1249,9 +1122,9 @@
       "html_url": "https://github.com/cncf/people",
       "description": "Stores the data that will populate the various people listings on cncf.io",
       "language": "Makefile",
-      "stargazers_count": 109,
-      "forks_count": 380,
-      "open_issues_count": 12,
+      "stargazers_count": 160,
+      "forks_count": 582,
+      "open_issues_count": 7,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -1262,83 +1135,6 @@
       "topics": []
     },
     {
-      "id": 562743206,
-      "node_id": "R_kgDOIYrHpg",
-      "name": "shopify-theme",
-      "full_name": "cncf/shopify-theme",
-      "html_url": "https://github.com/cncf/shopify-theme",
-      "description": "👕 Custom Shopify Theme for the CNCF Merchandise Store",
-      "language": "Liquid",
-      "stargazers_count": 3,
-      "forks_count": 8,
-      "open_issues_count": 1,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 545169368,
-      "node_id": "R_kgDOIH6f2A",
-      "name": "sandbox",
-      "full_name": "cncf/sandbox",
-      "html_url": "https://github.com/cncf/sandbox",
-      "description": "Applications for Sandbox go here! ⏳📦🧪",
-      "language": null,
-      "stargazers_count": 153,
-      "forks_count": 26,
-      "open_issues_count": 63,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 65915265,
-      "node_id": "MDEwOlJlcG9zaXRvcnk2NTkxNTI2NQ==",
-      "name": "foundation",
-      "full_name": "cncf/foundation",
-      "html_url": "https://github.com/cncf/foundation",
-      "description": "☁️♮🏛 This repo contains several documents related to the operation of the CNCF. File non-technical issues related to CNCF here.",
-      "language": "Rich Text Format",
-      "stargazers_count": 600,
-      "forks_count": 643,
-      "open_issues_count": 28,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": [
-        "cncf",
-        "governance"
-      ]
-    },
-    {
-      "id": 708874118,
-      "node_id": "R_kgDOKkCPhg",
-      "name": "homebrew-landscape2",
-      "full_name": "cncf/homebrew-landscape2",
-      "html_url": "https://github.com/cncf/homebrew-landscape2",
-      "description": "Landscape2 Homebrew formulae",
-      "language": "Ruby",
-      "stargazers_count": 2,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
       "id": 81339842,
       "node_id": "MDEwOlJlcG9zaXRvcnk4MTMzOTg0Mg==",
       "name": "mentoring",
@@ -1346,9 +1142,9 @@
       "html_url": "https://github.com/cncf/mentoring",
       "description": "👩🏿‍🎓👨🏽‍🎓👩🏻‍🎓CNCF Mentoring + CommunityBridge + Summer of Code",
       "language": null,
-      "stargazers_count": 2548,
-      "forks_count": 658,
-      "open_issues_count": 18,
+      "stargazers_count": 2864,
+      "forks_count": 757,
+      "open_issues_count": 104,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -1364,22 +1160,51 @@
       ]
     },
     {
-      "id": 631939937,
-      "node_id": "R_kgDOJaqjYQ",
-      "name": "devstats-landscape-sync",
-      "full_name": "cncf/devstats-landscape-sync",
-      "html_url": "https://github.com/cncf/devstats-landscape-sync",
-      "description": "📈🌄 Check if cncf/landscape projects data is in sync with cncf/devstats and report if it isn't via email",
-      "language": "Go",
-      "stargazers_count": 4,
-      "forks_count": 1,
-      "open_issues_count": 0,
+      "id": 72878982,
+      "node_id": "MDEwOlJlcG9zaXRvcnk3Mjg3ODk4Mg==",
+      "name": "landscape",
+      "full_name": "cncf/landscape",
+      "html_url": "https://github.com/cncf/landscape",
+      "description": "🌄 The Cloud Native Interactive Landscape filters and sorts hundreds of projects and products, and shows details including GitHub stars, funding, first and last commits, contributor counts and headquarters location.",
+      "language": null,
+      "stargazers_count": 9854,
+      "forks_count": 2144,
+      "open_issues_count": 42,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
         "spdx_id": "Apache-2.0",
         "url": "https://api.github.com/licenses/apache-2.0",
         "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "cloud-native",
+        "cncf",
+        "crunchbase",
+        "landscape",
+        "logo",
+        "serverless",
+        "svg",
+        "wasm"
+      ]
+    },
+    {
+      "id": 562743206,
+      "node_id": "R_kgDOIYrHpg",
+      "name": "shopify-theme",
+      "full_name": "cncf/shopify-theme",
+      "html_url": "https://github.com/cncf/shopify-theme",
+      "description": "👕 Custom Shopify Theme for the CNCF Merchandise Store",
+      "language": "Liquid",
+      "stargazers_count": 4,
+      "forks_count": 11,
+      "open_issues_count": 1,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
       },
       "topics": []
     },
@@ -1391,9 +1216,9 @@
       "html_url": "https://github.com/cncf/k8s-conformance",
       "description": "🧪CNCF K8s Conformance Working Group",
       "language": "Shell",
-      "stargazers_count": 890,
-      "forks_count": 945,
-      "open_issues_count": 10,
+      "stargazers_count": 921,
+      "forks_count": 1015,
+      "open_issues_count": 11,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -1408,6 +1233,307 @@
       ]
     },
     {
+      "id": 980231461,
+      "node_id": "R_kgDOOm0lJQ",
+      "name": "k8s-ai-conformance",
+      "full_name": "cncf/k8s-ai-conformance",
+      "html_url": "https://github.com/cncf/k8s-ai-conformance",
+      "description": "Kubernetes AI Conformance",
+      "language": "Go",
+      "stargazers_count": 222,
+      "forks_count": 67,
+      "open_issues_count": 7,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "ai",
+        "certification",
+        "conformance",
+        "kubernetes"
+      ]
+    },
+    {
+      "id": 448045451,
+      "node_id": "R_kgDOGrShiw",
+      "name": "clomonitor",
+      "full_name": "cncf/clomonitor",
+      "html_url": "https://github.com/cncf/clomonitor",
+      "description": "CLOMonitor is a tool that periodically checks open source projects repositories to verify they meet certain project health best practices",
+      "language": "TypeScript",
+      "stargazers_count": 144,
+      "forks_count": 102,
+      "open_issues_count": 27,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 1016951270,
+      "node_id": "R_kgDOPJ1x5g",
+      "name": "contribute-site",
+      "full_name": "cncf/contribute-site",
+      "html_url": "https://github.com/cncf/contribute-site",
+      "description": "CNCF Contributor Website - Legends Born, Heroes Sought",
+      "language": "JavaScript",
+      "stargazers_count": 15,
+      "forks_count": 50,
+      "open_issues_count": 72,
+      "license": null,
+      "topics": [
+        "cncf",
+        "documentation",
+        "docusaurus"
+      ]
+    },
+    {
+      "id": 65915265,
+      "node_id": "MDEwOlJlcG9zaXRvcnk2NTkxNTI2NQ==",
+      "name": "foundation",
+      "full_name": "cncf/foundation",
+      "html_url": "https://github.com/cncf/foundation",
+      "description": "☁️♮🏛 This repo contains several documents related to the operation of the CNCF. File non-technical issues related to CNCF here.",
+      "language": "Rich Text Format",
+      "stargazers_count": 666,
+      "forks_count": 791,
+      "open_issues_count": 45,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": [
+        "cncf",
+        "governance"
+      ]
+    },
+    {
+      "id": 1049075382,
+      "node_id": "R_kgDOPoeetg",
+      "name": "cncf-calendar",
+      "full_name": "cncf/cncf-calendar",
+      "html_url": "https://github.com/cncf/cncf-calendar",
+      "description": "CNCF Calendar",
+      "language": "HTML",
+      "stargazers_count": 2,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 329970318,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzMjk5NzAzMTg=",
+      "name": "glossary",
+      "full_name": "cncf/glossary",
+      "html_url": "https://github.com/cncf/glossary",
+      "description": "The CNCF Cloud Native Glossary Project aims to define cloud native concepts in clear and simple language, making them accessible to anyone —  whether they have a technical background or not (https://glossary.cncf.io).",
+      "language": "HTML",
+      "stargazers_count": 711,
+      "forks_count": 586,
+      "open_issues_count": 210,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "cloud-native",
+        "cncf"
+      ]
+    },
+    {
+      "id": 47575435,
+      "node_id": "MDEwOlJlcG9zaXRvcnk0NzU3NTQzNQ==",
+      "name": "artwork",
+      "full_name": "cncf/artwork",
+      "html_url": "https://github.com/cncf/artwork",
+      "description": "🎨 CNCF-related logos and artwork",
+      "language": null,
+      "stargazers_count": 651,
+      "forks_count": 376,
+      "open_issues_count": 10,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": [
+        "artwork",
+        "cncf",
+        "logos"
+      ]
+    },
+    {
+      "id": 621207364,
+      "node_id": "R_kgDOJQbfRA",
+      "name": "devstats",
+      "full_name": "cncf/devstats",
+      "html_url": "https://github.com/cncf/devstats",
+      "description": "📈CNCF-created tool for analyzing and graphing developer contributions",
+      "language": "Shell",
+      "stargazers_count": 120,
+      "forks_count": 55,
+      "open_issues_count": 21,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 621207900,
+      "node_id": "R_kgDOJQbhXA",
+      "name": "gitdm",
+      "full_name": "cncf/gitdm",
+      "html_url": "https://github.com/cncf/gitdm",
+      "description": "📜Fork for tracking CNCF projects",
+      "language": "Ruby",
+      "stargazers_count": 76,
+      "forks_count": 800,
+      "open_issues_count": 19,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 89488183,
+      "node_id": "MDEwOlJlcG9zaXRvcnk4OTQ4ODE4Mw==",
+      "name": "velocity",
+      "full_name": "cncf/velocity",
+      "html_url": "https://github.com/cncf/velocity",
+      "description": "🚅Track development velocity",
+      "language": "Shell",
+      "stargazers_count": 227,
+      "forks_count": 43,
+      "open_issues_count": 2,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "cncf"
+      ]
+    },
+    {
+      "id": 189569213,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxODk1NjkyMTM=",
+      "name": "devstats-helm",
+      "full_name": "cncf/devstats-helm",
+      "html_url": "https://github.com/cncf/devstats-helm",
+      "description": "📈DevStats deployment on Kubernetes using Equinix servers and Helm, CoreDNS, containerd, MetalLB, OpenEBS, nginx-ingress, nginx, cert-manager, nfs-server-provisioner.",
+      "language": "Shell",
+      "stargazers_count": 16,
+      "forks_count": 12,
+      "open_issues_count": 0,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 176945731,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNzY5NDU3MzE=",
+      "name": "devstats-docker-images",
+      "full_name": "cncf/devstats-docker-images",
+      "html_url": "https://github.com/cncf/devstats-docker-images",
+      "description": "📈DevStats docker images: minimal (hourly cron job sync), full (provisioning/bootstraping), Grafana (UI endpoint)",
+      "language": "Shell",
+      "stargazers_count": 14,
+      "forks_count": 13,
+      "open_issues_count": 0,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 631939937,
+      "node_id": "R_kgDOJaqjYQ",
+      "name": "devstats-landscape-sync",
+      "full_name": "cncf/devstats-landscape-sync",
+      "html_url": "https://github.com/cncf/devstats-landscape-sync",
+      "description": "📈🌄 Check if cncf/landscape projects data is in sync with cncf/devstats and report if it isn't via email",
+      "language": "Go",
+      "stargazers_count": 5,
+      "forks_count": 1,
+      "open_issues_count": 0,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 839887358,
+      "node_id": "R_kgDOMg-p_g",
+      "name": "architecture",
+      "full_name": "cncf/architecture",
+      "html_url": "https://github.com/cncf/architecture",
+      "description": null,
+      "language": "HTML",
+      "stargazers_count": 36,
+      "forks_count": 16,
+      "open_issues_count": 3,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 47574295,
+      "node_id": "MDEwOlJlcG9zaXRvcnk0NzU3NDI5NQ==",
+      "name": "toc",
+      "full_name": "cncf/toc",
+      "html_url": "https://github.com/cncf/toc",
+      "description": "⚖️ The CNCF Technical Oversight Committee (TOC) is the technical governing body of the CNCF Foundation.",
+      "language": "Go",
+      "stargazers_count": 1834,
+      "forks_count": 698,
+      "open_issues_count": 150,
+      "license": null,
+      "topics": [
+        "cloud",
+        "cloudnative",
+        "cncf"
+      ]
+    },
+    {
       "id": 219124817,
       "node_id": "MDEwOlJlcG9zaXRvcnkyMTkxMjQ4MTc=",
       "name": "cncf.io",
@@ -1415,9 +1541,9 @@
       "html_url": "https://github.com/cncf/cncf.io",
       "description": "☁️♮🏛🚧 The CNCF.io WordPress website",
       "language": "PHP",
-      "stargazers_count": 93,
-      "forks_count": 41,
-      "open_issues_count": 34,
+      "stargazers_count": 103,
+      "forks_count": 47,
+      "open_issues_count": 35,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -1430,6 +1556,29 @@
       ]
     },
     {
+      "id": 297440587,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyOTc0NDA1ODc=",
+      "name": "techdocs",
+      "full_name": "cncf/techdocs",
+      "html_url": "https://github.com/cncf/techdocs",
+      "description": "CNCF TechDocs Team",
+      "language": "TypeScript",
+      "stargazers_count": 51,
+      "forks_count": 28,
+      "open_issues_count": 33,
+      "license": {
+        "key": "cc-by-4.0",
+        "name": "Creative Commons Attribution 4.0 International",
+        "spdx_id": "CC-BY-4.0",
+        "url": "https://api.github.com/licenses/cc-by-4.0",
+        "node_id": "MDc6TGljZW5zZTI1"
+      },
+      "topics": [
+        "cncf",
+        "documentation"
+      ]
+    },
+    {
       "id": 189503489,
       "node_id": "MDEwOlJlcG9zaXRvcnkxODk1MDM0ODk=",
       "name": "kubernetes-community-days",
@@ -1437,9 +1586,9 @@
       "html_url": "https://github.com/cncf/kubernetes-community-days",
       "description": "📅 Kubernetes Community Days website",
       "language": null,
-      "stargazers_count": 252,
-      "forks_count": 106,
-      "open_issues_count": 40,
+      "stargazers_count": 264,
+      "forks_count": 121,
+      "open_issues_count": 43,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -1454,211 +1603,73 @@
       ]
     },
     {
-      "id": 47574295,
-      "node_id": "MDEwOlJlcG9zaXRvcnk0NzU3NDI5NQ==",
-      "name": "toc",
-      "full_name": "cncf/toc",
-      "html_url": "https://github.com/cncf/toc",
-      "description": "⚖️ The CNCF Technical Oversight Committee (TOC) is the technical governing body of the CNCF Foundation.",
+      "id": 653067729,
+      "node_id": "R_kgDOJu0F0Q",
+      "name": "landscape2",
+      "full_name": "cncf/landscape2",
+      "html_url": "https://github.com/cncf/landscape2",
+      "description": "Landscape2 is a tool that generates interactive landscapes websites",
+      "language": "TypeScript",
+      "stargazers_count": 316,
+      "forks_count": 106,
+      "open_issues_count": 8,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 999317811,
+      "node_id": "R_kgDOO5BhMw",
+      "name": "maintainer-d",
+      "full_name": "cncf/maintainer-d",
+      "html_url": "https://github.com/cncf/maintainer-d",
+      "description": "CNCF Internal (Staff Only) interim prototype managing CNCF Project Maintainers access to services centralises project data for the CNCF",
       "language": "Go",
-      "stargazers_count": 1723,
-      "forks_count": 643,
-      "open_issues_count": 141,
+      "stargazers_count": 9,
+      "forks_count": 8,
+      "open_issues_count": 33,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": [
+        "foundation-reporting",
+        "maintainer-ops"
+      ]
+    },
+    {
+      "id": 86499813,
+      "node_id": "MDEwOlJlcG9zaXRvcnk4NjQ5OTgxMw==",
+      "name": "curriculum",
+      "full_name": "cncf/curriculum",
+      "html_url": "https://github.com/cncf/curriculum",
+      "description": "📚Open Source Curriculum for CNCF Certification Courses",
+      "language": null,
+      "stargazers_count": 6483,
+      "forks_count": 2092,
+      "open_issues_count": 27,
       "license": null,
       "topics": [
-        "cloud",
-        "cloudnative",
         "cncf"
       ]
-    },
-    {
-      "id": 605719149,
-      "node_id": "R_kgDOJBqKbQ",
-      "name": "public-sector-user-group",
-      "full_name": "cncf/public-sector-user-group",
-      "html_url": "https://github.com/cncf/public-sector-user-group",
-      "description": "The CNCF Public Sector User Group aims to serve as a hub for discussing and advancing cloud computing within the public sector, utilizing cloud native technologies.",
-      "language": null,
-      "stargazers_count": 26,
-      "forks_count": 4,
-      "open_issues_count": 5,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "enduser",
-        "public-sector"
-      ]
-    },
-    {
-      "id": 615486277,
-      "node_id": "R_kgDOJK-TRQ",
-      "name": "clowarden",
-      "full_name": "cncf/clowarden",
-      "html_url": "https://github.com/cncf/clowarden",
-      "description": "CLOWarden is a tool that manages access to resources across multiple services",
-      "language": "Rust",
-      "stargazers_count": 51,
-      "forks_count": 12,
-      "open_issues_count": 14,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 176917719,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNzY5MTc3MTk=",
-      "name": "devstats-helm-lf",
-      "full_name": "cncf/devstats-helm-lf",
-      "html_url": "https://github.com/cncf/devstats-helm-lf",
-      "description": "📈DevStats Deployment on Kubernetes using Helm. This is a deployment for LF and CNCF projects",
-      "language": "Shell",
-      "stargazers_count": 5,
-      "forks_count": 5,
-      "open_issues_count": 0,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 448045451,
-      "node_id": "R_kgDOGrShiw",
-      "name": "clomonitor",
-      "full_name": "cncf/clomonitor",
-      "html_url": "https://github.com/cncf/clomonitor",
-      "description": "CLOMonitor is a tool that periodically checks open source projects repositories to verify they meet certain project health best practices",
-      "language": "TypeScript",
-      "stargazers_count": 128,
-      "forks_count": 86,
-      "open_issues_count": 25,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
     }
   ],
   "contributorsDetails": [
     {
-      "login": "CNCF-Bot",
-      "id": 36765976,
-      "node_id": "MDQ6VXNlcjM2NzY1OTc2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/36765976?v=4",
-      "html_url": "https://github.com/CNCF-Bot",
-      "contributions": 1583
-    },
-    {
-      "login": "taylorwaggoner",
-      "id": 34756611,
-      "node_id": "MDQ6VXNlcjM0NzU2NjEx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/34756611?v=4",
-      "html_url": "https://github.com/taylorwaggoner",
-      "contributions": 918
-    },
-    {
-      "login": "dankohn",
-      "id": 3083270,
-      "node_id": "MDQ6VXNlcjMwODMyNzA=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/3083270?v=4",
-      "html_url": "https://github.com/dankohn",
-      "contributions": 803
-    },
-    {
-      "login": "Swil78",
-      "id": 98050010,
-      "node_id": "U_kgDOBdgf2g",
-      "avatar_url": "https://avatars.githubusercontent.com/u/98050010?v=4",
-      "html_url": "https://github.com/Swil78",
-      "contributions": 311
-    },
-    {
-      "login": "AndreyKozlov1984",
-      "id": 230982,
-      "node_id": "MDQ6VXNlcjIzMDk4Mg==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/230982?v=4",
-      "html_url": "https://github.com/AndreyKozlov1984",
-      "contributions": 265
-    },
-    {
-      "login": "caniszczyk",
-      "id": 63777,
-      "node_id": "MDQ6VXNlcjYzNzc3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/63777?v=4",
-      "html_url": "https://github.com/caniszczyk",
-      "contributions": 57
-    },
-    {
-      "login": "cjyabraham",
-      "id": 463160,
-      "node_id": "MDQ6VXNlcjQ2MzE2MA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/463160?v=4",
-      "html_url": "https://github.com/cjyabraham",
-      "contributions": 3
-    },
-    {
-      "login": "castrojo",
-      "id": 1264109,
-      "node_id": "MDQ6VXNlcjEyNjQxMDk=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1264109?v=4",
-      "html_url": "https://github.com/castrojo",
-      "contributions": 1
-    },
-    {
-      "login": "ErinThacker",
-      "id": 79875662,
-      "node_id": "MDQ6VXNlcjc5ODc1NjYy",
-      "avatar_url": "https://avatars.githubusercontent.com/u/79875662?v=4",
-      "html_url": "https://github.com/ErinThacker",
-      "contributions": 38
-    },
-    {
-      "login": "alexkontsevoy",
-      "id": 4476098,
-      "node_id": "MDQ6VXNlcjQ0NzYwOTg=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/4476098?v=4",
-      "html_url": "https://github.com/alexkontsevoy",
-      "contributions": 38
-    },
-    {
-      "login": "alexcontini",
-      "id": 27962005,
-      "node_id": "MDQ6VXNlcjI3OTYyMDA1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/27962005?v=4",
-      "html_url": "https://github.com/alexcontini",
-      "contributions": 35
-    },
-    {
-      "login": "jordinl",
-      "id": 16135423,
-      "node_id": "MDQ6VXNlcjE2MTM1NDIz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/16135423?v=4",
-      "html_url": "https://github.com/jordinl",
-      "contributions": 30
-    },
-    {
-      "login": "idvoretskyi",
-      "id": 118459,
-      "node_id": "MDQ6VXNlcjExODQ1OQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/118459?v=4",
-      "html_url": "https://github.com/idvoretskyi",
-      "contributions": 24
+      "login": "tegioz",
+      "id": 1213902,
+      "node_id": "MDQ6VXNlcjEyMTM5MDI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1213902?v=4",
+      "html_url": "https://github.com/tegioz",
+      "contributions": 367
     },
     {
       "login": "cynthia-sg",
@@ -1666,39 +1677,31 @@
       "node_id": "MDQ6VXNlcjE0NDA5ODE=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1440981?v=4",
       "html_url": "https://github.com/cynthia-sg",
-      "contributions": 56
+      "contributions": 305
     },
     {
-      "login": "alabulei1",
-      "id": 45785633,
-      "node_id": "MDQ6VXNlcjQ1Nzg1NjMz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/45785633?v=4",
-      "html_url": "https://github.com/alabulei1",
-      "contributions": 18
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "html_url": "https://github.com/apps/dependabot",
+      "contributions": 14
     },
     {
-      "login": "Cmierly",
-      "id": 58894753,
-      "node_id": "MDQ6VXNlcjU4ODk0NzUz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/58894753?v=4",
-      "html_url": "https://github.com/Cmierly",
-      "contributions": 17
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "html_url": "https://github.com/apps/github-actions",
+      "contributions": 27
     },
     {
-      "login": "mrbobbytables",
-      "id": 6500863,
-      "node_id": "MDQ6VXNlcjY1MDA4NjM=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/6500863?v=4",
-      "html_url": "https://github.com/mrbobbytables",
-      "contributions": 13
-    },
-    {
-      "login": "lukaszgryglicki",
-      "id": 2469783,
-      "node_id": "MDQ6VXNlcjI0Njk3ODM=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/2469783?v=4",
-      "html_url": "https://github.com/lukaszgryglicki",
-      "contributions": 10
+      "login": "mfahlandt",
+      "id": 5739844,
+      "node_id": "MDQ6VXNlcjU3Mzk4NDQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5739844?v=4",
+      "html_url": "https://github.com/mfahlandt",
+      "contributions": 21
     },
     {
       "login": "jeefy",
@@ -1706,79 +1709,23 @@
       "node_id": "MDQ6VXNlcjEzOTQ1NTI=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1394552?v=4",
       "html_url": "https://github.com/jeefy",
-      "contributions": 10
+      "contributions": 168
     },
     {
-      "login": "AdamKorcz",
-      "id": 44787359,
-      "node_id": "MDQ6VXNlcjQ0Nzg3MzU5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/44787359?v=4",
-      "html_url": "https://github.com/AdamKorcz",
-      "contributions": 8
+      "login": "koksay",
+      "id": 4434544,
+      "node_id": "MDQ6VXNlcjQ0MzQ1NDQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4434544?v=4",
+      "html_url": "https://github.com/koksay",
+      "contributions": 412
     },
     {
-      "login": "RichiH",
-      "id": 754723,
-      "node_id": "MDQ6VXNlcjc1NDcyMw==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/754723?v=4",
-      "html_url": "https://github.com/RichiH",
-      "contributions": 8
-    },
-    {
-      "login": "thetwopct",
-      "id": 10615884,
-      "node_id": "MDQ6VXNlcjEwNjE1ODg0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/10615884?v=4",
-      "html_url": "https://github.com/thetwopct",
-      "contributions": 8
-    },
-    {
-      "login": "onlydole",
-      "id": 117500,
-      "node_id": "MDQ6VXNlcjExNzUwMA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/117500?v=4",
-      "html_url": "https://github.com/onlydole",
-      "contributions": 1
-    },
-    {
-      "login": "pacoxu",
-      "id": 2010320,
-      "node_id": "MDQ6VXNlcjIwMTAzMjA=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/2010320?v=4",
-      "html_url": "https://github.com/pacoxu",
-      "contributions": 7
-    },
-    {
-      "login": "xmulligan",
-      "id": 29048870,
-      "node_id": "MDQ6VXNlcjI5MDQ4ODcw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/29048870?v=4",
-      "html_url": "https://github.com/xmulligan",
-      "contributions": 6
-    },
-    {
-      "login": "gbartolini",
-      "id": 182151,
-      "node_id": "MDQ6VXNlcjE4MjE1MQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/182151?v=4",
-      "html_url": "https://github.com/gbartolini",
-      "contributions": 6
-    },
-    {
-      "login": "jonasrosland",
-      "id": 1690215,
-      "node_id": "MDQ6VXNlcjE2OTAyMTU=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1690215?v=4",
-      "html_url": "https://github.com/jonasrosland",
-      "contributions": 6
-    },
-    {
-      "login": "yllek",
-      "id": 7098058,
-      "node_id": "MDQ6VXNlcjcwOTgwNTg=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/7098058?v=4",
-      "html_url": "https://github.com/yllek",
-      "contributions": 6
+      "login": "RobertKielty",
+      "id": 208059,
+      "node_id": "MDQ6VXNlcjIwODA1OQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/208059?v=4",
+      "html_url": "https://github.com/RobertKielty",
+      "contributions": 89
     },
     {
       "login": "riaankleinhans",
@@ -1786,94 +1733,102 @@
       "node_id": "MDQ6VXNlcjYxMTI1NzUy",
       "avatar_url": "https://avatars.githubusercontent.com/u/61125752?v=4",
       "html_url": "https://github.com/riaankleinhans",
+      "contributions": 81
+    },
+    {
+      "login": "nate-double-u",
+      "id": 4453979,
+      "node_id": "MDQ6VXNlcjQ0NTM5Nzk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4453979?v=4",
+      "html_url": "https://github.com/nate-double-u",
+      "contributions": 28
+    },
+    {
+      "login": "Copilot",
+      "id": 198982749,
+      "node_id": "BOT_kgDOC9w8XQ",
+      "avatar_url": "https://avatars.githubusercontent.com/in/1143301?v=4",
+      "html_url": "https://github.com/apps/copilot-swe-agent",
+      "contributions": 23
+    },
+    {
+      "login": "mrbobbytables",
+      "id": 6500863,
+      "node_id": "MDQ6VXNlcjY1MDA4NjM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6500863?v=4",
+      "html_url": "https://github.com/mrbobbytables",
+      "contributions": 18
+    },
+    {
+      "login": "huats",
+      "id": 3296287,
+      "node_id": "MDQ6VXNlcjMyOTYyODc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3296287?v=4",
+      "html_url": "https://github.com/huats",
+      "contributions": 17
+    },
+    {
+      "login": "cblecker",
+      "id": 1431969,
+      "node_id": "MDQ6VXNlcjE0MzE5Njk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1431969?v=4",
+      "html_url": "https://github.com/cblecker",
+      "contributions": 8
+    },
+    {
+      "login": "idvoretskyi",
+      "id": 118459,
+      "node_id": "MDQ6VXNlcjExODQ1OQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/118459?v=4",
+      "html_url": "https://github.com/idvoretskyi",
       "contributions": 6
     },
     {
-      "login": "brooksmtownsend",
-      "id": 12040685,
-      "node_id": "MDQ6VXNlcjEyMDQwNjg1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/12040685?v=4",
-      "html_url": "https://github.com/brooksmtownsend",
-      "contributions": 6
-    },
-    {
-      "login": "tegioz",
-      "id": 1213902,
-      "node_id": "MDQ6VXNlcjEyMTM5MDI=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1213902?v=4",
-      "html_url": "https://github.com/tegioz",
-      "contributions": 83
-    },
-    {
-      "login": "jmertic",
-      "id": 296737,
-      "node_id": "MDQ6VXNlcjI5NjczNw==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/296737?v=4",
-      "html_url": "https://github.com/jmertic",
-      "contributions": 9
-    },
-    {
-      "login": "serg-cs",
-      "id": 47361309,
-      "node_id": "MDQ6VXNlcjQ3MzYxMzA5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/47361309?v=4",
-      "html_url": "https://github.com/serg-cs",
-      "contributions": 6
-    },
-    {
-      "login": "ryjones",
-      "id": 466142,
-      "node_id": "MDQ6VXNlcjQ2NjE0Mg==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/466142?v=4",
-      "html_url": "https://github.com/ryjones",
+      "login": "Ryder-07",
+      "id": 65117190,
+      "node_id": "MDQ6VXNlcjY1MTE3MTkw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/65117190?v=4",
+      "html_url": "https://github.com/Ryder-07",
       "contributions": 2
     },
     {
-      "login": "austinlparker",
-      "id": 4140740,
-      "node_id": "MDQ6VXNlcjQxNDA3NDA=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/4140740?v=4",
-      "html_url": "https://github.com/austinlparker",
+      "login": "shbhmexe",
+      "id": 178397077,
+      "node_id": "U_kgDOCqIflQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/178397077?v=4",
+      "html_url": "https://github.com/shbhmexe",
+      "contributions": 2
+    },
+    {
+      "login": "tormath1",
+      "id": 28657343,
+      "node_id": "MDQ6VXNlcjI4NjU3MzQz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/28657343?v=4",
+      "html_url": "https://github.com/tormath1",
       "contributions": 1
     },
     {
-      "login": "jorydotcom",
-      "id": 1355039,
-      "node_id": "MDQ6VXNlcjEzNTUwMzk=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1355039?v=4",
-      "html_url": "https://github.com/jorydotcom",
+      "login": "stianst",
+      "id": 2271511,
+      "node_id": "MDQ6VXNlcjIyNzE1MTE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2271511?v=4",
+      "html_url": "https://github.com/stianst",
       "contributions": 1
     },
     {
-      "login": "narausch",
-      "id": 34916950,
-      "node_id": "MDQ6VXNlcjM0OTE2OTUw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/34916950?v=4",
-      "html_url": "https://github.com/narausch",
+      "login": "kusari-inspector[bot]",
+      "id": 208073839,
+      "node_id": "BOT_kgDODGb0bw",
+      "avatar_url": "https://avatars.githubusercontent.com/in/1220830?v=4",
+      "html_url": "https://github.com/apps/kusari-inspector",
       "contributions": 1
     },
     {
-      "login": "ronaldpetty",
-      "id": 1390435,
-      "node_id": "MDQ6VXNlcjEzOTA0MzU=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1390435?v=4",
-      "html_url": "https://github.com/ronaldpetty",
-      "contributions": 1
-    },
-    {
-      "login": "roxannejoncas",
-      "id": 18251881,
-      "node_id": "MDQ6VXNlcjE4MjUxODgx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/18251881?v=4",
-      "html_url": "https://github.com/roxannejoncas",
-      "contributions": 1
-    },
-    {
-      "login": "Haleshot",
-      "id": 57552973,
-      "node_id": "MDQ6VXNlcjU3NTUyOTcz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/57552973?v=4",
-      "html_url": "https://github.com/Haleshot",
+      "login": "rokitds",
+      "id": 56236502,
+      "node_id": "MDQ6VXNlcjU2MjM2NTAy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/56236502?v=4",
+      "html_url": "https://github.com/rokitds",
       "contributions": 1
     }
   ],

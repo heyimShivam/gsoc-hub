@@ -1,0 +1,778 @@
+{
+  "name": "Gemini CLI",
+  "image_url": "https://summerofcode.withgoogle.com/media/org/gemini-cli/mhi8cx7tyjt91i6n-360.png",
+  "image_background_color": "#ffffff",
+  "description": "Gemini CLI brings the power of Gemini directly into your terminal",
+  "url": "https://geminicli.com",
+  "category": [
+    "Development tools"
+  ],
+  "topics": [
+    "developer tools",
+    "GenAI"
+  ],
+  "technologies": [
+    "typescript",
+    "GenAI",
+    "MCP",
+    "Software Agent",
+    "A2A"
+  ],
+  "irc_channel": null,
+  "contact_email": "mailto:gemini-cli-soc-2026@google.com",
+  "mailing_list": null,
+  "twitter_url": "https://x.com/geminicli",
+  "blog_url": null,
+  "facebook_url": null,
+  "year": [
+    2026
+  ],
+  "projects": {
+    "2026": []
+  },
+  "githubID": "gemini-cli-extensions",
+  "repositories": [
+    {
+      "id": 1098501160,
+      "node_id": "R_kgDOQXnMKA",
+      "name": "vertex",
+      "full_name": "gemini-cli-extensions/vertex",
+      "html_url": "https://github.com/gemini-cli-extensions/vertex",
+      "description": "A Gemini CLI extension provides tools to manage prompts in Vertex AI",
+      "language": "Python",
+      "stargazers_count": 12,
+      "forks_count": 2,
+      "open_issues_count": 10,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 1051260922,
+      "node_id": "R_kgDOPqj3-g",
+      "name": "cicd",
+      "full_name": "gemini-cli-extensions/cicd",
+      "html_url": "https://github.com/gemini-cli-extensions/cicd",
+      "description": null,
+      "language": "Go",
+      "stargazers_count": 25,
+      "forks_count": 6,
+      "open_issues_count": 9,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 1080572786,
+      "node_id": "R_kgDOQGg7cg",
+      "name": "jules",
+      "full_name": "gemini-cli-extensions/jules",
+      "html_url": "https://github.com/gemini-cli-extensions/jules",
+      "description": "A Gemini CLI extension that allows you to use the Gemini CLI to orchestrate the Jules asynchronous agent to perform coding tasks like bug fixing, refactoring, and dependency updates.",
+      "language": "JavaScript",
+      "stargazers_count": 360,
+      "forks_count": 42,
+      "open_issues_count": 10,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "gemini",
+        "gemini-cli",
+        "gemini-cli-extensions",
+        "google",
+        "jules"
+      ]
+    },
+    {
+      "id": 1049887781,
+      "node_id": "R_kgDOPpQEJQ",
+      "name": "security",
+      "full_name": "gemini-cli-extensions/security",
+      "html_url": "https://github.com/gemini-cli-extensions/security",
+      "description": "Google's Security extension for the Gemini CLI that finds vulnerabilities in your code changes and pull requests.",
+      "language": "TypeScript",
+      "stargazers_count": 673,
+      "forks_count": 44,
+      "open_issues_count": 57,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "gemini",
+        "gemini-cli",
+        "gemini-cli-extensions",
+        "google",
+        "security"
+      ]
+    },
+    {
+      "id": 1060400667,
+      "node_id": "R_kgDOPzRuGw",
+      "name": "nanobanana",
+      "full_name": "gemini-cli-extensions/nanobanana",
+      "html_url": "https://github.com/gemini-cli-extensions/nanobanana",
+      "description": null,
+      "language": "TypeScript",
+      "stargazers_count": 958,
+      "forks_count": 102,
+      "open_issues_count": 43,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 1046505236,
+      "node_id": "R_kgDOPmBnFA",
+      "name": "workspace",
+      "full_name": "gemini-cli-extensions/workspace",
+      "html_url": "https://github.com/gemini-cli-extensions/workspace",
+      "description": "Access Google Workspace when using Gemini CLI",
+      "language": "TypeScript",
+      "stargazers_count": 479,
+      "forks_count": 72,
+      "open_issues_count": 25,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 1055658811,
+      "node_id": "R_kgDOPuwTOw",
+      "name": "looker",
+      "full_name": "gemini-cli-extensions/looker",
+      "html_url": "https://github.com/gemini-cli-extensions/looker",
+      "description": null,
+      "language": null,
+      "stargazers_count": 37,
+      "forks_count": 4,
+      "open_issues_count": 1,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 1080774871,
+      "node_id": "R_kgDOQGtQ1w",
+      "name": "looker-conversational-analytics",
+      "full_name": "gemini-cli-extensions/looker-conversational-analytics",
+      "html_url": "https://github.com/gemini-cli-extensions/looker-conversational-analytics",
+      "description": null,
+      "language": null,
+      "stargazers_count": 9,
+      "forks_count": 1,
+      "open_issues_count": 1,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 1055655102,
+      "node_id": "R_kgDOPuwEvg",
+      "name": "cloud-sql-postgresql",
+      "full_name": "gemini-cli-extensions/cloud-sql-postgresql",
+      "html_url": "https://github.com/gemini-cli-extensions/cloud-sql-postgresql",
+      "description": null,
+      "language": "JavaScript",
+      "stargazers_count": 31,
+      "forks_count": 4,
+      "open_issues_count": 2,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 1055657653,
+      "node_id": "R_kgDOPuwOtQ",
+      "name": "dataplex",
+      "full_name": "gemini-cli-extensions/dataplex",
+      "html_url": "https://github.com/gemini-cli-extensions/dataplex",
+      "description": null,
+      "language": null,
+      "stargazers_count": 9,
+      "forks_count": 3,
+      "open_issues_count": 2,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 1170799411,
+      "node_id": "R_kgDORcj7Mw",
+      "name": "alloydb-omni",
+      "full_name": "gemini-cli-extensions/alloydb-omni",
+      "html_url": "https://github.com/gemini-cli-extensions/alloydb-omni",
+      "description": null,
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 1117942206,
+      "node_id": "R_kgDOQqJxvg",
+      "name": "conductor",
+      "full_name": "gemini-cli-extensions/conductor",
+      "html_url": "https://github.com/gemini-cli-extensions/conductor",
+      "description": "Conductor is a Gemini CLI extension that allows you to specify, plan, and implement software features.",
+      "language": null,
+      "stargazers_count": 3322,
+      "forks_count": 252,
+      "open_issues_count": 69,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "context-driven-development",
+        "gemini",
+        "gemini-cli",
+        "gemini-cli-extension",
+        "google"
+      ]
+    },
+    {
+      "id": 1055660071,
+      "node_id": "R_kgDOPuwYJw",
+      "name": "mcp-toolbox",
+      "full_name": "gemini-cli-extensions/mcp-toolbox",
+      "html_url": "https://github.com/gemini-cli-extensions/mcp-toolbox",
+      "description": null,
+      "language": null,
+      "stargazers_count": 90,
+      "forks_count": 9,
+      "open_issues_count": 6,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 1055656164,
+      "node_id": "R_kgDOPuwI5A",
+      "name": "cloud-sql-mysql",
+      "full_name": "gemini-cli-extensions/cloud-sql-mysql",
+      "html_url": "https://github.com/gemini-cli-extensions/cloud-sql-mysql",
+      "description": null,
+      "language": null,
+      "stargazers_count": 9,
+      "forks_count": 1,
+      "open_issues_count": 3,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 1053544737,
+      "node_id": "R_kgDOPsvRIQ",
+      "name": "code-review",
+      "full_name": "gemini-cli-extensions/code-review",
+      "html_url": "https://github.com/gemini-cli-extensions/code-review",
+      "description": "Google's Code Review extension for the Gemini CLI that reviews your code changes",
+      "language": null,
+      "stargazers_count": 447,
+      "forks_count": 31,
+      "open_issues_count": 9,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "gemini",
+        "gemini-cli",
+        "gemini-cli-extensions"
+      ]
+    },
+    {
+      "id": 1129080849,
+      "node_id": "R_kgDOQ0xoEQ",
+      "name": "oracledb",
+      "full_name": "gemini-cli-extensions/oracledb",
+      "html_url": "https://github.com/gemini-cli-extensions/oracledb",
+      "description": "gemini cli extension for oracle db",
+      "language": null,
+      "stargazers_count": 5,
+      "forks_count": 3,
+      "open_issues_count": 3,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "cli",
+        "gemini",
+        "gemini-cli",
+        "gemini-cli-extension"
+      ]
+    },
+    {
+      "id": 1055653136,
+      "node_id": "R_kgDOPuv9EA",
+      "name": "alloydb",
+      "full_name": "gemini-cli-extensions/alloydb",
+      "html_url": "https://github.com/gemini-cli-extensions/alloydb",
+      "description": null,
+      "language": null,
+      "stargazers_count": 18,
+      "forks_count": 5,
+      "open_issues_count": 6,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 1055658281,
+      "node_id": "R_kgDOPuwRKQ",
+      "name": "firestore-native",
+      "full_name": "gemini-cli-extensions/firestore-native",
+      "html_url": "https://github.com/gemini-cli-extensions/firestore-native",
+      "description": null,
+      "language": null,
+      "stargazers_count": 23,
+      "forks_count": 5,
+      "open_issues_count": 3,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 1055659525,
+      "node_id": "R_kgDOPuwWBQ",
+      "name": "spanner",
+      "full_name": "gemini-cli-extensions/spanner",
+      "html_url": "https://github.com/gemini-cli-extensions/spanner",
+      "description": null,
+      "language": null,
+      "stargazers_count": 15,
+      "forks_count": 2,
+      "open_issues_count": 4,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 1170853821,
+      "node_id": "R_kgDORcnPvQ",
+      "name": "developer-knowledge",
+      "full_name": "gemini-cli-extensions/developer-knowledge",
+      "html_url": "https://github.com/gemini-cli-extensions/developer-knowledge",
+      "description": null,
+      "language": null,
+      "stargazers_count": 4,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 1055654101,
+      "node_id": "R_kgDOPuwA1Q",
+      "name": "bigquery-data-analytics",
+      "full_name": "gemini-cli-extensions/bigquery-data-analytics",
+      "html_url": "https://github.com/gemini-cli-extensions/bigquery-data-analytics",
+      "description": null,
+      "language": null,
+      "stargazers_count": 39,
+      "forks_count": 2,
+      "open_issues_count": 6,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 1055656778,
+      "node_id": "R_kgDOPuwLSg",
+      "name": "cloud-sql-sqlserver",
+      "full_name": "gemini-cli-extensions/cloud-sql-sqlserver",
+      "html_url": "https://github.com/gemini-cli-extensions/cloud-sql-sqlserver",
+      "description": null,
+      "language": null,
+      "stargazers_count": 6,
+      "forks_count": 3,
+      "open_issues_count": 5,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 1055660831,
+      "node_id": "R_kgDOPuwbHw",
+      "name": "postgres",
+      "full_name": "gemini-cli-extensions/postgres",
+      "html_url": "https://github.com/gemini-cli-extensions/postgres",
+      "description": null,
+      "language": null,
+      "stargazers_count": 86,
+      "forks_count": 9,
+      "open_issues_count": 6,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 1055661509,
+      "node_id": "R_kgDOPuwdxQ",
+      "name": "mysql",
+      "full_name": "gemini-cli-extensions/mysql",
+      "html_url": "https://github.com/gemini-cli-extensions/mysql",
+      "description": null,
+      "language": null,
+      "stargazers_count": 38,
+      "forks_count": 2,
+      "open_issues_count": 5,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 1055665711,
+      "node_id": "R_kgDOPuwuLw",
+      "name": "cloud-sql-mysql-observability",
+      "full_name": "gemini-cli-extensions/cloud-sql-mysql-observability",
+      "html_url": "https://github.com/gemini-cli-extensions/cloud-sql-mysql-observability",
+      "description": null,
+      "language": null,
+      "stargazers_count": 5,
+      "forks_count": 1,
+      "open_issues_count": 4,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 1055664875,
+      "node_id": "R_kgDOPuwq6w",
+      "name": "cloud-sql-postgresql-observability",
+      "full_name": "gemini-cli-extensions/cloud-sql-postgresql-observability",
+      "html_url": "https://github.com/gemini-cli-extensions/cloud-sql-postgresql-observability",
+      "description": null,
+      "language": null,
+      "stargazers_count": 6,
+      "forks_count": 1,
+      "open_issues_count": 5,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 1055661993,
+      "node_id": "R_kgDOPuwfqQ",
+      "name": "sql-server",
+      "full_name": "gemini-cli-extensions/sql-server",
+      "html_url": "https://github.com/gemini-cli-extensions/sql-server",
+      "description": null,
+      "language": null,
+      "stargazers_count": 21,
+      "forks_count": 1,
+      "open_issues_count": 5,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 1055666131,
+      "node_id": "R_kgDOPuwv0w",
+      "name": "cloud-sql-sqlserver-observability",
+      "full_name": "gemini-cli-extensions/cloud-sql-sqlserver-observability",
+      "html_url": "https://github.com/gemini-cli-extensions/cloud-sql-sqlserver-observability",
+      "description": null,
+      "language": null,
+      "stargazers_count": 4,
+      "forks_count": 1,
+      "open_issues_count": 4,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 1055666579,
+      "node_id": "R_kgDOPuwxkw",
+      "name": "alloydb-observability",
+      "full_name": "gemini-cli-extensions/alloydb-observability",
+      "html_url": "https://github.com/gemini-cli-extensions/alloydb-observability",
+      "description": null,
+      "language": null,
+      "stargazers_count": 6,
+      "forks_count": 1,
+      "open_issues_count": 4,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 1059025767,
+      "node_id": "R_kgDOPx9zZw",
+      "name": "bigquery-conversational-analytics",
+      "full_name": "gemini-cli-extensions/bigquery-conversational-analytics",
+      "html_url": "https://github.com/gemini-cli-extensions/bigquery-conversational-analytics",
+      "description": null,
+      "language": null,
+      "stargazers_count": 24,
+      "forks_count": 2,
+      "open_issues_count": 5,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    }
+  ],
+  "contributorsDetails": [
+    {
+      "login": "alexzhanghc",
+      "id": 244595343,
+      "node_id": "U_kgDODpQ6jw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244595343?v=4",
+      "html_url": "https://github.com/alexzhanghc",
+      "contributions": 29
+    },
+    {
+      "login": "ssusie",
+      "id": 8882373,
+      "node_id": "MDQ6VXNlcjg4ODIzNzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8882373?v=4",
+      "html_url": "https://github.com/ssusie",
+      "contributions": 5
+    },
+    {
+      "login": "skewlight",
+      "id": 2282838,
+      "node_id": "MDQ6VXNlcjIyODI4Mzg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2282838?v=4",
+      "html_url": "https://github.com/skewlight",
+      "contributions": 2
+    },
+    {
+      "login": "yeshwanth1993",
+      "id": 22187976,
+      "node_id": "MDQ6VXNlcjIyMTg3OTc2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/22187976?v=4",
+      "html_url": "https://github.com/yeshwanth1993",
+      "contributions": 33
+    },
+    {
+      "login": "haroonc",
+      "id": 8517605,
+      "node_id": "MDQ6VXNlcjg1MTc2MDU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8517605?v=4",
+      "html_url": "https://github.com/haroonc",
+      "contributions": 25
+    },
+    {
+      "login": "urvi-p",
+      "id": 66527609,
+      "node_id": "MDQ6VXNlcjY2NTI3NjA5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/66527609?v=4",
+      "html_url": "https://github.com/urvi-p",
+      "contributions": 17
+    },
+    {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "html_url": "https://github.com/apps/dependabot",
+      "contributions": 1
+    },
+    {
+      "login": "mattsanta",
+      "id": 16891638,
+      "node_id": "MDQ6VXNlcjE2ODkxNjM4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16891638?v=4",
+      "html_url": "https://github.com/mattsanta",
+      "contributions": 5
+    },
+    {
+      "login": "alex-doudou",
+      "id": 28908053,
+      "node_id": "MDQ6VXNlcjI4OTA4MDUz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/28908053?v=4",
+      "html_url": "https://github.com/alex-doudou",
+      "contributions": 4
+    },
+    {
+      "login": "aliciatang07",
+      "id": 22138016,
+      "node_id": "MDQ6VXNlcjIyMTM4MDE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/22138016?v=4",
+      "html_url": "https://github.com/aliciatang07",
+      "contributions": 2
+    },
+    {
+      "login": "CoasterJX",
+      "id": 71548859,
+      "node_id": "MDQ6VXNlcjcxNTQ4ODU5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/71548859?v=4",
+      "html_url": "https://github.com/CoasterJX",
+      "contributions": 1
+    },
+    {
+      "login": "sherzat3",
+      "id": 5992955,
+      "node_id": "MDQ6VXNlcjU5OTI5NTU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5992955?v=4",
+      "html_url": "https://github.com/sherzat3",
+      "contributions": 11
+    },
+    {
+      "login": "ananci",
+      "id": 8269584,
+      "node_id": "MDQ6VXNlcjgyNjk1ODQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8269584?v=4",
+      "html_url": "https://github.com/ananci",
+      "contributions": 1
+    },
+    {
+      "login": "Smetalo",
+      "id": 92152119,
+      "node_id": "U_kgDOBX4hNw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/92152119?v=4",
+      "html_url": "https://github.com/Smetalo",
+      "contributions": 1
+    }
+  ],
+  "activeOrg": false
+}

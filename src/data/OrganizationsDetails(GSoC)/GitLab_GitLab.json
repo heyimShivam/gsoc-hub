@@ -135,7 +135,53 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2023/projects/Bm648ysU"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Enhancing GitLab's Web IDE with Advanced Source Control Operations",
+        "short_description": "This project aims to implement essential Git operations in GitLab's Web IDE, eliminating inefficient repository cloning for common version control...",
+        "description": "This project aims to implement essential Git operations in GitLab's Web IDE, eliminating inefficient repository cloning for common version control tasks. The project will add commit amend, force push, stash, and rebase functionality. \nImplementation will proceed methodically, beginning with features requiring no backend changes before addressing REST API modifications. These enhancements will significantly improve developer productivity by enabling complete Git workflows within the browser, bringing Web IDE capabilities closer to VS-Code source control.",
+        "student_name": "Ahmed Kashkoush",
+        "code_url": "https://gitlab.com/ahmad-kashkoush/gsoc-2025-final-report",
+        "proposal_id": "OPctwS0x",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/mNwPEdaV"
+      },
+      {
+        "title": "Show message if devfile is invalid before creating a workspace",
+        "short_description": "Currently, devfile validation only occurs after the user submits the form to create a workspace. This means users only discover invalid devfiles...",
+        "description": "Currently, devfile validation only occurs after the user submits the form to create a workspace. This means users only discover invalid devfiles after waiting for form submission.\nImplement just-in-time (JIT) validation for devfiles in the workspace creation form:\nWhen a user selects a devfile from the dropdown, validate it immediately in the background, Display a visual indicator (icon/label) next to the selected devfile showing its validity status, Provide clear, actionable error messages for invalid devfiles before form submission",
+        "student_name": "Omar Nasser",
+        "code_url": "https://gitlab.com/onasser/gitlab-gsoc25/-/blob/main/README.md",
+        "proposal_id": "yQhQS4YE",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/Y9R088Nb"
+      },
+      {
+        "title": "Expand Vulnerability GraphQL Offering",
+        "short_description": "GitLab's security features help developers find vulnerabilities in their code, but the current API doesn't expose all the important information that...",
+        "description": "GitLab's security features help developers find vulnerabilities in their code, but the current API doesn't expose all the important information that security teams need. For example, users can't easily access details about when vulnerabilities were first discovered, who authored the related commits, or which pipelines detected the issues. This makes it difficult for teams to automate their security workflows and track vulnerability trends over time.",
+        "student_name": "Patrick He",
+        "code_url": "https://open.substack.com/pub/patrickhe/p/expanding-gitlabs-graphql-vulnerabilities?r=33ue5s&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+        "proposal_id": "MB61DzkW",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/NESmAewc"
+      },
+      {
+        "title": "[Deployment Management]  Add Notification for expiring Deploy Tokens: E-mail and Webhook",
+        "short_description": "This project is a notification system that alerts its users before their deploy tokens expire. Deploy tokens are used to provide secure access to...",
+        "description": "This project is a notification system that alerts its users before their deploy tokens expire. Deploy tokens are used to provide secure access to repositories and container registries, independent of a user account. Due to this reason, they are used in CI/CD pipelines, automation scripts, and third-party integrations. Some of these tokens are configured to have an expiry date at the time of creation. \n\nCurrently, GitLab lacks an automated way to notify users about tokens that are about to expire. This can lead to last-minute troubleshooting and potential downtimes. To address this, we can integrate a notification system that notifies the project owners, group owners and admins at different intervals [14, 7, 1] days through email notifications and webhooks. This will ensure timely renewals of the token and avoid unexpected failures.",
+        "student_name": "Pratibha Gupta",
+        "code_url": "https://gitlab.com/guptapratibha26/gsoc-final-report",
+        "proposal_id": "Tyex1vEc",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/POJu1RD5"
+      },
+      {
+        "title": "Create a RuboCop Rule to Ensure Safe Policy Scope Usage in GitLab",
+        "short_description": "This project aims to improve GitLab’s policy system by developing a custom RuboCop rule that detects and prevents incorrect usage of scope...",
+        "description": "This project aims to improve GitLab’s policy system by developing a custom RuboCop rule that detects and prevents incorrect usage of scope declarations (such as `scope: :subject`) in conditions where both `user` and `subject` are accessed. \nImproper scope usage can lead to overly broad caching and security bugs. By automating detection, this rule helps ensure more robust and reliable authorization logic within GitLab's codebase.",
+        "student_name": "Sahil Sarawagi",
+        "code_url": "https://gitlab.com/gitlab-org/gitlab/-/merge_requests/194681",
+        "proposal_id": "L9c1YfNi",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/Q2S2d0FK"
+      }
+    ]
   },
   "githubID": "GitLab",
   "repositories": [
@@ -147,8 +193,8 @@
       "html_url": "https://github.com/GitLab/grape-path-helpers",
       "description": "URL helper functions for Grape APIs",
       "language": "Ruby",
-      "stargazers_count": 10,
-      "forks_count": 8,
+      "stargazers_count": 13,
+      "forks_count": 5,
       "open_issues_count": 0,
       "license": {
         "key": "mit",
@@ -167,8 +213,8 @@
       "html_url": "https://github.com/GitLab/kubernetes-gitlab",
       "description": "Manifests to deploy GitLab on Kubernetes ",
       "language": null,
-      "stargazers_count": 23,
-      "forks_count": 15,
+      "stargazers_count": 26,
+      "forks_count": 16,
       "open_issues_count": 1,
       "license": {
         "key": "mit",

@@ -29,7 +29,8 @@
   "facebook_url": null,
   "year": [
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2024": [
@@ -70,22 +71,100 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/dStHfDX7"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Enhancing the SMART on FHIR Frontend for Patient-Controlled Data Sharing",
+        "short_description": "I will improve a SMART on FHIR patient-facing app to make it more accessible, user-friendly, and efficient. This includes simplifying menus and...",
+        "description": "I will improve a SMART on FHIR patient-facing app to make it more accessible, user-friendly, and efficient. This includes simplifying menus and buttons, ensuring strong screen-reader support, and optimizing loading times. My plan involves: Research & Analysis Review the current user interface and identify usability issues. Conduct user interviews to pinpoint major pain points (e.g., confusing navigation, slow pages). Redesign & Development Rebuild the interface using React.js with clear, accessible design. Enhance features like keyboard navigation, text sizing, and screen-reader compatibility. User Testing & Feedback Invite patients to test the updated interface. Collect feedback and fix any bugs before final deployment. Documentation & Handoff Provide a developer guide and post the code on GitHub. Ensure future teams can easily maintain and update the app. Key Deliverables A revamped, accessible React.js interface. Improved user workflows and faster load times. A documented codebase on GitHub. A clear style guide and developer documentation.",
+        "student_name": "aryantony",
+        "code_url": "https://aryantony.github.io/Data-For-Common-Good-Project-Details-GSoC/",
+        "proposal_id": "rXa7dzq8",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/ERinz6Vo"
+      },
+      {
+        "title": "Developing a FHIR Resource Tabular Viewer for Efficient Data Exploration.",
+        "short_description": "Healthcare data is critical for decision-making, but the FHIR (Fast Healthcare Interoperability Resources) format, while powerful, can be challenging...",
+        "description": "Healthcare data is critical for decision-making, but the FHIR (Fast Healthcare Interoperability Resources) format, while powerful, can be challenging to navigate for many users. Our project addresses this accessibility gap by creating an intuitive tabular viewer that transforms complex nested FHIR resources into easy-to-understand tables.\nWe're developing a Python-based solution that will automatically extract and organize FHIR data into user-friendly tables, making it immediately more accessible to researchers, clinicians, and community organizations. By simplifying how people interact with health data, we remove technical barriers that often prevent valuable insights from reaching those who need them most.\nOur deliverables include:\n\nA Python library that converts FHIR resources to tabular format\nAn interactive web interface for exploring and filtering the data\nDocumentation and examples to support adoption by various user groups\nIntegration with existing FHIR servers for seamless data access\n\nThis tool will democratize access to health information by making complex data structures approachable for everyone from data scientists to community health workers. When healthcare data becomes truly accessible, it empowers better decisions and ultimately improves health outcomes in our communities.",
+        "student_name": "Manjula",
+        "code_url": "https://gist.github.com/Manjula-819/42846f0fb34e555e242c73799072d8de",
+        "proposal_id": "fWB4wFdy",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/a82WR3tt"
+      },
+      {
+        "title": "Enhancing the Cohort Discovery Chatbot",
+        "short_description": "The process of identifying patients meeting certain criteria is crucial to advance research and contributes to new knowledge in medicine and health....",
+        "description": "The process of identifying patients meeting certain criteria is crucial to advance research and contributes to new knowledge in medicine and health. So, data on specific populations are necessary to perform such research. However, faced with vast and complex healthcare data, traditional data analysis and processing methods prove to be inadequate.For example, cohort discovery is a popular existing tool that can allow researchers to safely explore the data in the Research Data Warehouse (RDW) prior to making a data request. But in real-world scenarios, the cohort discovery tool is not easy to use because users need to get familiarized with the workflow of the tool and it may even acquire them to write complex query languages, such as SQL.\r\n\r\nWe also observe this inconvenience with the existing cohort discovery tool in\r\nD4CG, an open-source organization of the Pediatric Cancer Data Commons. As it works on building communities, platforms and becoming the critical data source for researchers and organizations, it has become evident that implementing an efficient cohort discovery tool would significantly enhance Research and Development (R&D) efficiency.\r\n\r\nWith the rapid growth power of Large Language Models (LLM), this project\r\nproposes an innovative solution to enhance the cohort discovery tool by developing a query agent based on LLM to achieve more flexible and efficient data analysis and processing. To prototype this query agent, this project focuses on refining natural language understanding (NLU), improving query accuracy, supporting more complex filters, and integrating feedback mechanisms to learn from user interactions. For example, Given a user question like “Can you help me find patients aged between 20 and 40 who have a history of toothache in the Clinic Table?”, the query agent takes the question along with the corresponding database schema as input. It then generates a query output that satisfies the user’s request.",
+        "student_name": "Regina Huang",
+        "code_url": "https://github.com/chicagopcdc/GSoC-Cohort-Discovery-Chatbot",
+        "proposal_id": "iha3tg3E",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/tZzV2cMH"
+      },
+      {
+        "title": "Dockerized R/Shiny Application for Biomedical Data Analysis Using PFB-Formatted AVRO Files",
+        "short_description": "This project delivers a Dockerized RStudio/Shiny application for analyzing biomedical datasets stored as Apache Avro files conforming to the Portable...",
+        "description": "This project delivers a Dockerized RStudio/Shiny application for analyzing biomedical datasets stored as Apache Avro files conforming to the Portable Format for Biomedical Data (PFB) standard. Leveraging Apache Spark via the sparklyr interface, the system efficiently ingests and processes large, deeply nested Avro inputs (40,000+ records) and flattens hierarchical entity structures into analysis-ready tabular data. Users can explore entity and observation nodes, generate descriptive summaries and percentage distributions, and run survival analyses Kaplan–Meier overall survival (OS) and event-free survival (EFS) both on subject IDs uploaded by the user and on the full dataset. A configurable Table-1 workflow supports covariate selection; explicit variable typing (categorical or continuous); inclusion/exclusion of variables and, for categorical variables, specific levels; and p-value computation when grouping is applied. Grouping is enabled by uploading subject-ID lists (CSV, Excel, or plain text), which automatically creates a matched group and a complementary remainder group; if no list is provided, analyses default to the entire cohort. The application supports iterative regrouping, clearing of results, and re-analysis with new inputs. Outputs include Excel summaries and PNG visualizations for direct download. Containerization ensures reproducibility, consistency, and portability across environments, while Spark integration provides distributed, scalable processing. The solution can also be deployed on AWS (e.g., EC2 or ECS) to provide secure, scalable remote access for research teams.",
+        "student_name": "Tushar Jamdade",
+        "code_url": "https://tusharjamdade.github.io/gsoc",
+        "proposal_id": "llVwVqaK",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/GR11k6du"
+      }
+    ],
+    "2026": []
   },
   "githubID": "UVADS",
   "repositories": [
     {
-      "id": 880453195,
-      "node_id": "R_kgDONHqmSw",
-      "name": "DS-3021",
-      "full_name": "UVADS/DS-3021",
-      "html_url": "https://github.com/UVADS/DS-3021",
-      "description": null,
-      "language": "Jupyter Notebook",
+      "id": 1125469047,
+      "node_id": "R_kgDOQxVLdw",
+      "name": "DS6310",
+      "full_name": "UVADS/DS6310",
+      "html_url": "https://github.com/UVADS/DS6310",
+      "description": "Course website for DS6310 - Theory II: Inference & Prediction",
+      "language": null,
       "stargazers_count": 0,
-      "forks_count": 43,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 720770225,
+      "node_id": "R_kgDOKvYUsQ",
+      "name": "ds6015",
+      "full_name": "UVADS/ds6015",
+      "html_url": "https://github.com/UVADS/ds6015",
+      "description": null,
+      "language": null,
+      "stargazers_count": 8,
+      "forks_count": 6,
       "open_issues_count": 0,
       "license": null,
+      "topics": []
+    },
+    {
+      "id": 1086531691,
+      "node_id": "R_kgDOQMMoaw",
+      "name": "DS-4320",
+      "full_name": "UVADS/DS-4320",
+      "html_url": "https://github.com/UVADS/DS-4320",
+      "description": "This is the UVADS github repo for the course DS 4320: Data by Design",
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
       "topics": []
     },
     {
@@ -97,28 +176,58 @@
       "description": "Deployment repository for Kubernetes container services managed by UVA School of Data Science.",
       "language": null,
       "stargazers_count": 0,
-      "forks_count": 64,
+      "forks_count": 63,
       "open_issues_count": 0,
       "license": null,
       "topics": []
     },
     {
-      "id": 979498082,
-      "node_id": "R_kgDOOmH0Yg",
-      "name": "basics-template",
-      "full_name": "UVADS/basics-template",
-      "html_url": "https://github.com/UVADS/basics-template",
+      "id": 880453195,
+      "node_id": "R_kgDONHqmSw",
+      "name": "DS-3021",
+      "full_name": "UVADS/DS-3021",
+      "html_url": "https://github.com/UVADS/DS-3021",
       "description": null,
-      "language": "SCSS",
+      "language": "Jupyter Notebook",
       "stargazers_count": 0,
-      "forks_count": 0,
+      "forks_count": 46,
       "open_issues_count": 0,
       "license": null,
-      "topics": [
-        "data-science",
-        "sds",
-        "uva"
-      ]
+      "topics": []
+    },
+    {
+      "id": 462346938,
+      "node_id": "R_kgDOG47aug",
+      "name": "ds5110",
+      "full_name": "UVADS/ds5110",
+      "html_url": "https://github.com/UVADS/ds5110",
+      "description": "DS 5110 BDS",
+      "language": "Jupyter Notebook",
+      "stargazers_count": 3,
+      "forks_count": 51,
+      "open_issues_count": 0,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "topics": []
+    },
+    {
+      "id": 336314156,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzMzYzMTQxNTY=",
+      "name": "orientation-technical",
+      "full_name": "UVADS/orientation-technical",
+      "html_url": "https://github.com/UVADS/orientation-technical",
+      "description": "This repo contains the materials for the UVADS residential technical orientation.",
+      "language": "Jupyter Notebook",
+      "stargazers_count": 39,
+      "forks_count": 89,
+      "open_issues_count": 23,
+      "license": null,
+      "topics": []
     },
     {
       "id": 754214811,
@@ -129,7 +238,7 @@
       "description": "Set up, configure, and work with source control tools.",
       "language": "SCSS",
       "stargazers_count": 1,
-      "forks_count": 1,
+      "forks_count": 2,
       "open_issues_count": 0,
       "license": null,
       "topics": [
@@ -139,16 +248,44 @@
       ]
     },
     {
-      "id": 917462528,
-      "node_id": "R_kgDONq9eAA",
-      "name": "cursor-club",
-      "full_name": "UVADS/cursor-club",
-      "html_url": "https://github.com/UVADS/cursor-club",
-      "description": "This is the official github repo for the UVA Data Science Cursor Club",
+      "id": 508446815,
+      "node_id": "R_kgDOHk5IXw",
+      "name": "DS1001",
+      "full_name": "UVADS/DS1001",
+      "html_url": "https://github.com/UVADS/DS1001",
+      "description": "Repo for Foundations of Data Science",
       "language": "Python",
+      "stargazers_count": 7,
+      "forks_count": 39,
+      "open_issues_count": 1,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1148912524,
+      "node_id": "R_kgDORHsDjA",
+      "name": "research-insights",
+      "full_name": "UVADS/research-insights",
+      "html_url": "https://github.com/UVADS/research-insights",
+      "description": null,
+      "language": "HTML",
       "stargazers_count": 0,
-      "forks_count": 7,
-      "open_issues_count": 7,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 525493643,
+      "node_id": "R_kgDOH1Jliw",
+      "name": "DS-4002",
+      "full_name": "UVADS/DS-4002",
+      "html_url": "https://github.com/UVADS/DS-4002",
+      "description": "This repository contains materials relevant to DS 4002, \"Data Science Project Course\"",
+      "language": "Jupyter Notebook",
+      "stargazers_count": 4,
+      "forks_count": 272,
+      "open_issues_count": 58,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -173,6 +310,174 @@
       "topics": []
     },
     {
+      "id": 1029805072,
+      "node_id": "R_kgDOPWGUEA",
+      "name": "DS-4021",
+      "full_name": "UVADS/DS-4021",
+      "html_url": "https://github.com/UVADS/DS-4021",
+      "description": "Analytics II: Machine Learning",
+      "language": "Jupyter Notebook",
+      "stargazers_count": 3,
+      "forks_count": 2,
+      "open_issues_count": 8,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1110177481,
+      "node_id": "R_kgDOQiv2yQ",
+      "name": "workflow-basics",
+      "full_name": "UVADS/workflow-basics",
+      "html_url": "https://github.com/UVADS/workflow-basics",
+      "description": null,
+      "language": "SCSS",
+      "stargazers_count": 0,
+      "forks_count": 1,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1023651056,
+      "node_id": "R_kgDOPQOs8A",
+      "name": "uvads.github.io",
+      "full_name": "UVADS/uvads.github.io",
+      "html_url": "https://github.com/UVADS/uvads.github.io",
+      "description": "Base UVADS site repo.",
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": [
+        "analytics",
+        "data-science",
+        "design",
+        "systems",
+        "value"
+      ]
+    },
+    {
+      "id": 534295512,
+      "node_id": "R_kgDOH9iz2A",
+      "name": "DS-2026",
+      "full_name": "UVADS/DS-2026",
+      "html_url": "https://github.com/UVADS/DS-2026",
+      "description": "This repository contains the course materials for DS 2026 (Computational Probability).",
+      "language": "HTML",
+      "stargazers_count": 16,
+      "forks_count": 24,
+      "open_issues_count": 0,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 1044298116,
+      "node_id": "R_kgDOPj65hA",
+      "name": "DS6300",
+      "full_name": "UVADS/DS6300",
+      "html_url": "https://github.com/UVADS/DS6300",
+      "description": "Course website for DS6300 Theory I: Probability and Stochastic Processes.",
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 678042143,
+      "node_id": "R_kgDOKGoaHw",
+      "name": "distributed_computing",
+      "full_name": "UVADS/distributed_computing",
+      "html_url": "https://github.com/UVADS/distributed_computing",
+      "description": "Computation III",
+      "language": "Jupyter Notebook",
+      "stargazers_count": 2,
+      "forks_count": 27,
+      "open_issues_count": 0,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "topics": []
+    },
+    {
+      "id": 966281703,
+      "node_id": "R_kgDOOZhJ5w",
+      "name": "reinforcement_learning_online_msds",
+      "full_name": "UVADS/reinforcement_learning_online_msds",
+      "html_url": "https://github.com/UVADS/reinforcement_learning_online_msds",
+      "description": "RL for Online MSDS",
+      "language": "Jupyter Notebook",
+      "stargazers_count": 2,
+      "forks_count": 10,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1096182837,
+      "node_id": "R_kgDOQVZsNQ",
+      "name": "jlab-hpc-containers",
+      "full_name": "UVADS/jlab-hpc-containers",
+      "html_url": "https://github.com/UVADS/jlab-hpc-containers",
+      "description": null,
+      "language": "Jupyter Notebook",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1080093772,
+      "node_id": "R_kgDOQGDsTA",
+      "name": "S4RC",
+      "full_name": "UVADS/S4RC",
+      "html_url": "https://github.com/UVADS/S4RC",
+      "description": "Research Interest Group: Sustainable & Secure Scientific Software & Reproducible Computing",
+      "language": "HTML",
+      "stargazers_count": 0,
+      "forks_count": 1,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": [
+        "containers",
+        "reproducible-science",
+        "software"
+      ]
+    },
+    {
+      "id": 1095802954,
+      "node_id": "R_kgDOQVCgSg",
+      "name": "learn-kafka",
+      "full_name": "UVADS/learn-kafka",
+      "html_url": "https://github.com/UVADS/learn-kafka",
+      "description": "Learn how to work with Apache Kafka and distributed logs",
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
       "id": 676124771,
       "node_id": "R_kgDOKEzYYw",
       "name": "reinforcement_learning",
@@ -187,85 +492,35 @@
       "topics": []
     },
     {
-      "id": 508446815,
-      "node_id": "R_kgDOHk5IXw",
-      "name": "DS1001",
-      "full_name": "UVADS/DS1001",
-      "html_url": "https://github.com/UVADS/DS1001",
-      "description": "Repo for Foundations of Data Science",
+      "id": 1033443835,
+      "node_id": "R_kgDOPZkZ-w",
+      "name": "DS1001-LABS-Projects",
+      "full_name": "UVADS/DS1001-LABS-Projects",
+      "html_url": "https://github.com/UVADS/DS1001-LABS-Projects",
+      "description": "Contains the starting code for DS1001 Project Labs (LABS3, LABS6, LABS9, LABS12).",
       "language": "Jupyter Notebook",
-      "stargazers_count": 4,
-      "forks_count": 4,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 973267765,
-      "node_id": "R_kgDOOgLjNQ",
-      "name": "uvasds-dags",
-      "full_name": "UVADS/uvasds-dags",
-      "html_url": "https://github.com/UVADS/uvasds-dags",
-      "description": "Apache Airflow DAG management repository.",
-      "language": null,
       "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
+      "forks_count": 350,
+      "open_issues_count": 2,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
       "topics": []
     },
     {
-      "id": 966281703,
-      "node_id": "R_kgDOOZhJ5w",
-      "name": "reinforcement_learning_online_msds",
-      "full_name": "UVADS/reinforcement_learning_online_msds",
-      "html_url": "https://github.com/UVADS/reinforcement_learning_online_msds",
-      "description": "RL for Online MSDS",
-      "language": null,
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 959313570,
-      "node_id": "R_kgDOOS32og",
-      "name": "building-api",
-      "full_name": "UVADS/building-api",
-      "html_url": "https://github.com/UVADS/building-api",
-      "description": "Unified API for building systems and infrastructure.",
+      "id": 836494841,
+      "node_id": "R_kgDOMdvl-Q",
+      "name": "DS2022",
+      "full_name": "UVADS/DS2022",
+      "html_url": "https://github.com/UVADS/DS2022",
+      "description": "Course material for DS2022 Systems I: Introduction to Computing",
       "language": "Python",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 971004623,
-      "node_id": "R_kgDOOeBazw",
-      "name": "dissertation-template",
-      "full_name": "UVADS/dissertation-template",
-      "html_url": "https://github.com/UVADS/dissertation-template",
-      "description": null,
-      "language": "TeX",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 676185111,
-      "node_id": "R_kgDOKE3EFw",
-      "name": "ds6011",
-      "full_name": "UVADS/ds6011",
-      "html_url": "https://github.com/UVADS/ds6011",
-      "description": "Capstone Preparation",
-      "language": "Jupyter Notebook",
-      "stargazers_count": 1,
-      "forks_count": 14,
+      "stargazers_count": 2,
+      "forks_count": 86,
       "open_issues_count": 0,
       "license": null,
       "topics": []
@@ -285,28 +540,14 @@
       "topics": []
     },
     {
-      "id": 336314156,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzMzYzMTQxNTY=",
-      "name": "orientation-technical",
-      "full_name": "UVADS/orientation-technical",
-      "html_url": "https://github.com/UVADS/orientation-technical",
-      "description": "This repo contains the materials for the UVADS residential technical orientation.",
-      "language": "Jupyter Notebook",
-      "stargazers_count": 26,
-      "forks_count": 84,
-      "open_issues_count": 23,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 654227989,
-      "node_id": "R_kgDOJv66FQ",
-      "name": ".github",
-      "full_name": "UVADS/.github",
-      "html_url": "https://github.com/UVADS/.github",
-      "description": "Welcome to the github page for the School of Data Science at the University of Virginia (UVADS)",
+      "id": 592795864,
+      "node_id": "R_kgDOI1VY2A",
+      "name": "DS-6700",
+      "full_name": "UVADS/DS-6700",
+      "html_url": "https://github.com/UVADS/DS-6700",
+      "description": "Info and syllabus for the DS 6700 course",
       "language": null,
-      "stargazers_count": 0,
+      "stargazers_count": 9,
       "forks_count": 0,
       "open_issues_count": 0,
       "license": {
@@ -319,34 +560,48 @@
       "topics": []
     },
     {
-      "id": 927159930,
-      "node_id": "R_kgDON0NWeg",
-      "name": "learn-rust",
-      "full_name": "UVADS/learn-rust",
-      "html_url": "https://github.com/UVADS/learn-rust",
-      "description": "Learn about the Rust programming language.",
-      "language": "Rust",
+      "id": 973267765,
+      "node_id": "R_kgDOOgLjNQ",
+      "name": "uvasds-airflow",
+      "full_name": "UVADS/uvasds-airflow",
+      "html_url": "https://github.com/UVADS/uvasds-airflow",
+      "description": "Apache Airflow DAG management repository.",
+      "language": null,
       "stargazers_count": 0,
-      "forks_count": 8,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 979498082,
+      "node_id": "R_kgDOOmH0Yg",
+      "name": "basics-template",
+      "full_name": "UVADS/basics-template",
+      "html_url": "https://github.com/UVADS/basics-template",
+      "description": null,
+      "language": "SCSS",
+      "stargazers_count": 0,
+      "forks_count": 0,
       "open_issues_count": 0,
       "license": null,
       "topics": [
         "data-science",
-        "programming-language",
-        "rust"
+        "sds",
+        "uva"
       ]
     },
     {
-      "id": 525493643,
-      "node_id": "R_kgDOH1Jliw",
-      "name": "DS-4002",
-      "full_name": "UVADS/DS-4002",
-      "html_url": "https://github.com/UVADS/DS-4002",
-      "description": "This repository contains materials relevant to DS 4002, \"Data Science Project Course\"",
-      "language": "Jupyter Notebook",
-      "stargazers_count": 3,
-      "forks_count": 164,
-      "open_issues_count": 5,
+      "id": 917462528,
+      "node_id": "R_kgDONq9eAA",
+      "name": "cursor-club",
+      "full_name": "UVADS/cursor-club",
+      "html_url": "https://github.com/UVADS/cursor-club",
+      "description": "This is the official github repo for the UVA Data Science Cursor Club",
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 7,
+      "open_issues_count": 8,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -354,207 +609,25 @@
         "url": "https://api.github.com/licenses/mit",
         "node_id": "MDc6TGljZW5zZTEz"
       },
-      "topics": []
-    },
-    {
-      "id": 534295512,
-      "node_id": "R_kgDOH9iz2A",
-      "name": "DS-2026",
-      "full_name": "UVADS/DS-2026",
-      "html_url": "https://github.com/UVADS/DS-2026",
-      "description": "This repository contains the course materials for DS 2026 (Computational Probability).",
-      "language": null,
-      "stargazers_count": 8,
-      "forks_count": 16,
-      "open_issues_count": 0,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 843806681,
-      "node_id": "R_kgDOMkt32Q",
-      "name": "DS1002-book",
-      "full_name": "UVADS/DS1002-book",
-      "html_url": "https://github.com/UVADS/DS1002-book",
-      "description": "Jupyter book for DS1002",
-      "language": "Jupyter Notebook",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 678042143,
-      "node_id": "R_kgDOKGoaHw",
-      "name": "distributed_computing",
-      "full_name": "UVADS/distributed_computing",
-      "html_url": "https://github.com/UVADS/distributed_computing",
-      "description": "Computation III",
-      "language": "Jupyter Notebook",
-      "stargazers_count": 1,
-      "forks_count": 18,
-      "open_issues_count": 0,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": []
-    },
-    {
-      "id": 350807696,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzNTA4MDc2OTY=",
-      "name": "DS-3001",
-      "full_name": "UVADS/DS-3001",
-      "html_url": "https://github.com/UVADS/DS-3001",
-      "description": "DS 3001: Foundations of Machine Learning",
-      "language": "Jupyter Notebook",
-      "stargazers_count": 18,
-      "forks_count": 90,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": [
-        "data-science",
-        "education",
-        "machine-learning"
-      ]
-    },
-    {
-      "id": 877934253,
-      "node_id": "R_kgDONFQ2rQ",
-      "name": "r-devcontainer",
-      "full_name": "UVADS/r-devcontainer",
-      "html_url": "https://github.com/UVADS/r-devcontainer",
-      "description": "Basic setup for R and Quarto",
-      "language": "R",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 876142373,
-      "node_id": "R_kgDONDjfJQ",
-      "name": "learning-environments",
-      "full_name": "UVADS/learning-environments",
-      "html_url": "https://github.com/UVADS/learning-environments",
-      "description": "Strategies for consistent student learning environments.",
-      "language": "Python",
-      "stargazers_count": 0,
-      "forks_count": 2,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 876837947,
-      "node_id": "R_kgDONEN8Ow",
-      "name": "Story-of-Us-API",
-      "full_name": "UVADS/Story-of-Us-API",
-      "html_url": "https://github.com/UVADS/Story-of-Us-API",
-      "description": null,
-      "language": "PHP",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 871256706,
-      "node_id": "R_kgDOM-5Sgg",
-      "name": "Story-of-Us",
-      "full_name": "UVADS/Story-of-Us",
-      "html_url": "https://github.com/UVADS/Story-of-Us",
-      "description": "Story of Us",
-      "language": "Vue",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 836494841,
-      "node_id": "R_kgDOMdvl-Q",
-      "name": "DS2022",
-      "full_name": "UVADS/DS2022",
-      "html_url": "https://github.com/UVADS/DS2022",
-      "description": "Course material for DS2022 Systems I: Introduction to Computing",
-      "language": "Python",
-      "stargazers_count": 2,
-      "forks_count": 79,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 845528598,
-      "node_id": "R_kgDOMmW-Fg",
-      "name": "sds-vscode",
-      "full_name": "UVADS/sds-vscode",
-      "html_url": "https://github.com/UVADS/sds-vscode",
-      "description": "A VSCode extension pack for the UVA School of Data Science",
-      "language": null,
-      "stargazers_count": 2,
-      "forks_count": 1,
-      "open_issues_count": 0,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 720770225,
-      "node_id": "R_kgDOKvYUsQ",
-      "name": "ds6015",
-      "full_name": "UVADS/ds6015",
-      "html_url": "https://github.com/UVADS/ds6015",
-      "description": null,
-      "language": null,
-      "stargazers_count": 5,
-      "forks_count": 3,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 693277398,
-      "node_id": "R_kgDOKVKS1g",
-      "name": "error-handling",
-      "full_name": "UVADS/error-handling",
-      "html_url": "https://github.com/UVADS/error-handling",
-      "description": "Templates and snippets for informative error handling",
-      "language": "Python",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
       "topics": []
     }
   ],
   "contributorsDetails": [
     {
-      "login": "NovaVolunteer",
-      "id": 19676476,
-      "node_id": "MDQ6VXNlcjE5Njc2NDc2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/19676476?v=4",
-      "html_url": "https://github.com/NovaVolunteer",
-      "contributions": 383
+      "login": "j-g-b",
+      "id": 10237030,
+      "node_id": "MDQ6VXNlcjEwMjM3MDMw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10237030?v=4",
+      "html_url": "https://github.com/j-g-b",
+      "contributions": 57
+    },
+    {
+      "login": "DrAPT",
+      "id": 21319191,
+      "node_id": "MDQ6VXNlcjIxMzE5MTkx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21319191?v=4",
+      "html_url": "https://github.com/DrAPT",
+      "contributions": 91
     },
     {
       "login": "alonzi",
@@ -562,407 +635,7 @@
       "node_id": "MDQ6VXNlcjc3MjczMDk=",
       "avatar_url": "https://avatars.githubusercontent.com/u/7727309?v=4",
       "html_url": "https://github.com/alonzi",
-      "contributions": 72
-    },
-    {
-      "login": "bpugs",
-      "id": 106114970,
-      "node_id": "U_kgDOBlMvmg",
-      "avatar_url": "https://avatars.githubusercontent.com/u/106114970?v=4",
-      "html_url": "https://github.com/bpugs",
-      "contributions": 10
-    },
-    {
-      "login": "zoe0pham",
-      "id": 56148157,
-      "node_id": "MDQ6VXNlcjU2MTQ4MTU3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/56148157?v=4",
-      "html_url": "https://github.com/zoe0pham",
-      "contributions": 9
-    },
-    {
-      "login": "amelia-norman",
-      "id": 87081641,
-      "node_id": "MDQ6VXNlcjg3MDgxNjQx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/87081641?v=4",
-      "html_url": "https://github.com/amelia-norman",
-      "contributions": 7
-    },
-    {
-      "login": "ahimes9",
-      "id": 90347648,
-      "node_id": "MDQ6VXNlcjkwMzQ3NjQ4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/90347648?v=4",
-      "html_url": "https://github.com/ahimes9",
-      "contributions": 4
-    },
-    {
-      "login": "courtshae101",
-      "id": 71356321,
-      "node_id": "MDQ6VXNlcjcxMzU2MzIx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/71356321?v=4",
-      "html_url": "https://github.com/courtshae101",
-      "contributions": 4
-    },
-    {
-      "login": "ali-rivera",
-      "id": 107503014,
-      "node_id": "U_kgDOBmhdpg",
-      "avatar_url": "https://avatars.githubusercontent.com/u/107503014?v=4",
-      "html_url": "https://github.com/ali-rivera",
-      "contributions": 3
-    },
-    {
-      "login": "haydenratliff",
-      "id": 37320454,
-      "node_id": "MDQ6VXNlcjM3MzIwNDU0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/37320454?v=4",
-      "html_url": "https://github.com/haydenratliff",
-      "contributions": 2
-    },
-    {
-      "login": "kbw3bb",
-      "id": 89478407,
-      "node_id": "MDQ6VXNlcjg5NDc4NDA3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/89478407?v=4",
-      "html_url": "https://github.com/kbw3bb",
-      "contributions": 2
-    },
-    {
-      "login": "trnorrgard",
-      "id": 89267910,
-      "node_id": "MDQ6VXNlcjg5MjY3OTEw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/89267910?v=4",
-      "html_url": "https://github.com/trnorrgard",
-      "contributions": 1
-    },
-    {
-      "login": "tatevmane",
-      "id": 90347726,
-      "node_id": "MDQ6VXNlcjkwMzQ3NzI2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/90347726?v=4",
-      "html_url": "https://github.com/tatevmane",
-      "contributions": 1
-    },
-    {
-      "login": "sarahgould",
-      "id": 70811282,
-      "node_id": "MDQ6VXNlcjcwODExMjgy",
-      "avatar_url": "https://avatars.githubusercontent.com/u/70811282?v=4",
-      "html_url": "https://github.com/sarahgould",
-      "contributions": 1
-    },
-    {
-      "login": "nathanpatton8",
-      "id": 90347678,
-      "node_id": "MDQ6VXNlcjkwMzQ3Njc4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/90347678?v=4",
-      "html_url": "https://github.com/nathanpatton8",
-      "contributions": 1
-    },
-    {
-      "login": "kcd6znz",
-      "id": 70283713,
-      "node_id": "MDQ6VXNlcjcwMjgzNzEz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/70283713?v=4",
-      "html_url": "https://github.com/kcd6znz",
-      "contributions": 1
-    },
-    {
-      "login": "declan-young2",
-      "id": 90347788,
-      "node_id": "MDQ6VXNlcjkwMzQ3Nzg4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/90347788?v=4",
-      "html_url": "https://github.com/declan-young2",
-      "contributions": 1
-    },
-    {
-      "login": "catherineschuster",
-      "id": 85313242,
-      "node_id": "MDQ6VXNlcjg1MzEzMjQy",
-      "avatar_url": "https://avatars.githubusercontent.com/u/85313242?v=4",
-      "html_url": "https://github.com/catherineschuster",
-      "contributions": 1
-    },
-    {
-      "login": "augustlamb",
-      "id": 71049626,
-      "node_id": "MDQ6VXNlcjcxMDQ5NjI2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/71049626?v=4",
-      "html_url": "https://github.com/augustlamb",
-      "contributions": 1
-    },
-    {
-      "login": "ahavaldar",
-      "id": 89418526,
-      "node_id": "MDQ6VXNlcjg5NDE4NTI2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/89418526?v=4",
-      "html_url": "https://github.com/ahavaldar",
-      "contributions": 1
-    },
-    {
-      "login": "RYCoop",
-      "id": 77549175,
-      "node_id": "MDQ6VXNlcjc3NTQ5MTc1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/77549175?v=4",
-      "html_url": "https://github.com/RYCoop",
-      "contributions": 1
-    },
-    {
-      "login": "PeterShin23",
-      "id": 61630562,
-      "node_id": "MDQ6VXNlcjYxNjMwNTYy",
-      "avatar_url": "https://avatars.githubusercontent.com/u/61630562?v=4",
-      "html_url": "https://github.com/PeterShin23",
-      "contributions": 1
-    },
-    {
-      "login": "akippenhan749",
-      "id": 78550896,
-      "node_id": "MDQ6VXNlcjc4NTUwODk2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/78550896?v=4",
-      "html_url": "https://github.com/akippenhan749",
-      "contributions": 1
-    },
-    {
-      "login": "nmagee",
-      "id": 699798,
-      "node_id": "MDQ6VXNlcjY5OTc5OA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/699798?v=4",
-      "html_url": "https://github.com/nmagee",
-      "contributions": 191
-    },
-    {
-      "login": "github-actions[bot]",
-      "id": 41898282,
-      "node_id": "MDM6Qm90NDE4OTgyODI=",
-      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
-      "html_url": "https://github.com/apps/github-actions",
-      "contributions": 10
-    },
-    {
-      "login": "anordwall01",
-      "id": 156929476,
-      "node_id": "U_kgDOCVqNxA",
-      "avatar_url": "https://avatars.githubusercontent.com/u/156929476?v=4",
-      "html_url": "https://github.com/anordwall01",
-      "contributions": 2
-    },
-    {
-      "login": "Justinyang597",
-      "id": 179868266,
-      "node_id": "U_kgDOCriSag",
-      "avatar_url": "https://avatars.githubusercontent.com/u/179868266?v=4",
-      "html_url": "https://github.com/Justinyang597",
-      "contributions": 2
-    },
-    {
-      "login": "slwilliams055",
-      "id": 194843200,
-      "node_id": "U_kgDOC50SQA",
-      "avatar_url": "https://avatars.githubusercontent.com/u/194843200?v=4",
-      "html_url": "https://github.com/slwilliams055",
-      "contributions": 2
-    },
-    {
-      "login": "AdrianWeakley",
-      "id": 195186386,
-      "node_id": "U_kgDOC6JO0g",
-      "avatar_url": "https://avatars.githubusercontent.com/u/195186386?v=4",
-      "html_url": "https://github.com/AdrianWeakley",
-      "contributions": 1
-    },
-    {
-      "login": "anatalucci",
-      "id": 195197260,
-      "node_id": "U_kgDOC6J5TA",
-      "avatar_url": "https://avatars.githubusercontent.com/u/195197260?v=4",
-      "html_url": "https://github.com/anatalucci",
-      "contributions": 1
-    },
-    {
-      "login": "AnthonyJia",
-      "id": 169567465,
-      "node_id": "U_kgDOChtk6Q",
-      "avatar_url": "https://avatars.githubusercontent.com/u/169567465?v=4",
-      "html_url": "https://github.com/AnthonyJia",
-      "contributions": 1
-    },
-    {
-      "login": "anutishah",
-      "id": 119440608,
-      "node_id": "U_kgDOBx6E4A",
-      "avatar_url": "https://avatars.githubusercontent.com/u/119440608?v=4",
-      "html_url": "https://github.com/anutishah",
-      "contributions": 1
-    },
-    {
-      "login": "bowenslingluff",
-      "id": 129239097,
-      "node_id": "U_kgDOB7QIOQ",
-      "avatar_url": "https://avatars.githubusercontent.com/u/129239097?v=4",
-      "html_url": "https://github.com/bowenslingluff",
-      "contributions": 1
-    },
-    {
-      "login": "Cykim0320",
-      "id": 194848288,
-      "node_id": "U_kgDOC50mIA",
-      "avatar_url": "https://avatars.githubusercontent.com/u/194848288?v=4",
-      "html_url": "https://github.com/Cykim0320",
-      "contributions": 1
-    },
-    {
-      "login": "ElliotRoosevelt",
-      "id": 143535896,
-      "node_id": "U_kgDOCI4vGA",
-      "avatar_url": "https://avatars.githubusercontent.com/u/143535896?v=4",
-      "html_url": "https://github.com/ElliotRoosevelt",
-      "contributions": 1
-    },
-    {
-      "login": "ghn9zh",
-      "id": 194831367,
-      "node_id": "U_kgDOC5zkBw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/194831367?v=4",
-      "html_url": "https://github.com/ghn9zh",
-      "contributions": 1
-    },
-    {
-      "login": "Harryshield14",
-      "id": 194960674,
-      "node_id": "U_kgDOC57dIg",
-      "avatar_url": "https://avatars.githubusercontent.com/u/194960674?v=4",
-      "html_url": "https://github.com/Harryshield14",
-      "contributions": 1
-    },
-    {
-      "login": "huyenvhuynh",
-      "id": 157080309,
-      "node_id": "U_kgDOCVza9Q",
-      "avatar_url": "https://avatars.githubusercontent.com/u/157080309?v=4",
-      "html_url": "https://github.com/huyenvhuynh",
-      "contributions": 1
-    },
-    {
-      "login": "gzy5jd",
-      "id": 123406914,
-      "node_id": "U_kgDOB1sKQg",
-      "avatar_url": "https://avatars.githubusercontent.com/u/123406914?v=4",
-      "html_url": "https://github.com/gzy5jd",
-      "contributions": 1
-    },
-    {
-      "login": "kiraechung",
-      "id": 145923276,
-      "node_id": "U_kgDOCLKczA",
-      "avatar_url": "https://avatars.githubusercontent.com/u/145923276?v=4",
-      "html_url": "https://github.com/kiraechung",
-      "contributions": 1
-    },
-    {
-      "login": "kyle-hagerstrom",
-      "id": 194978763,
-      "node_id": "U_kgDOC58jyw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/194978763?v=4",
-      "html_url": "https://github.com/kyle-hagerstrom",
-      "contributions": 1
-    },
-    {
-      "login": "lauracarbaugh",
-      "id": 195131083,
-      "node_id": "U_kgDOC6F2yw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/195131083?v=4",
-      "html_url": "https://github.com/lauracarbaugh",
-      "contributions": 1
-    },
-    {
-      "login": "MaggieWelch",
-      "id": 160075320,
-      "node_id": "U_kgDOCYqOOA",
-      "avatar_url": "https://avatars.githubusercontent.com/u/160075320?v=4",
-      "html_url": "https://github.com/MaggieWelch",
-      "contributions": 1
-    },
-    {
-      "login": "mina-ty",
-      "id": 127054284,
-      "node_id": "U_kgDOB5KxzA",
-      "avatar_url": "https://avatars.githubusercontent.com/u/127054284?v=4",
-      "html_url": "https://github.com/mina-ty",
-      "contributions": 1
-    },
-    {
-      "login": "m-liv",
-      "id": 90740256,
-      "node_id": "MDQ6VXNlcjkwNzQwMjU2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/90740256?v=4",
-      "html_url": "https://github.com/m-liv",
-      "contributions": 1
-    },
-    {
-      "login": "PhillipOBonsu",
-      "id": 195196837,
-      "node_id": "U_kgDOC6J3pQ",
-      "avatar_url": "https://avatars.githubusercontent.com/u/195196837?v=4",
-      "html_url": "https://github.com/PhillipOBonsu",
-      "contributions": 1
-    },
-    {
-      "login": "quinnconnor",
-      "id": 143115740,
-      "node_id": "U_kgDOCIfF3A",
-      "avatar_url": "https://avatars.githubusercontent.com/u/143115740?v=4",
-      "html_url": "https://github.com/quinnconnor",
-      "contributions": 1
-    },
-    {
-      "login": "ShriyaDale",
-      "id": 144620275,
-      "node_id": "U_kgDOCJ668w",
-      "avatar_url": "https://avatars.githubusercontent.com/u/144620275?v=4",
-      "html_url": "https://github.com/ShriyaDale",
-      "contributions": 1
-    },
-    {
-      "login": "Troy-S-Meink",
-      "id": 179634911,
-      "node_id": "U_kgDOCrUC3w",
-      "avatar_url": "https://avatars.githubusercontent.com/u/179634911?v=4",
-      "html_url": "https://github.com/Troy-S-Meink",
-      "contributions": 1
-    },
-    {
-      "login": "bootsareme",
-      "id": 73851560,
-      "node_id": "MDQ6VXNlcjczODUxNTYw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/73851560?v=4",
-      "html_url": "https://github.com/bootsareme",
-      "contributions": 1
-    },
-    {
-      "login": "Wadie-abboud",
-      "id": 144156300,
-      "node_id": "U_kgDOCJemjA",
-      "avatar_url": "https://avatars.githubusercontent.com/u/144156300?v=4",
-      "html_url": "https://github.com/Wadie-abboud",
-      "contributions": 1
-    },
-    {
-      "login": "allyoshea",
-      "id": 195127766,
-      "node_id": "U_kgDOC6Fp1g",
-      "avatar_url": "https://avatars.githubusercontent.com/u/195127766?v=4",
-      "html_url": "https://github.com/allyoshea",
-      "contributions": 1
-    },
-    {
-      "login": "Az0202",
-      "id": 143016727,
-      "node_id": "U_kgDOCIZDFw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/143016727?v=4",
-      "html_url": "https://github.com/Az0202",
-      "contributions": 1
+      "contributions": 64
     }
   ],
   "activeOrg": false

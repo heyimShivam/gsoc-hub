@@ -295,50 +295,6 @@
   "githubID": "apertium",
   "repositories": [
     {
-      "id": 124319728,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMjQzMTk3Mjg=",
-      "name": "apertium-cat",
-      "full_name": "apertium/apertium-cat",
-      "html_url": "https://github.com/apertium/apertium-cat",
-      "description": "Apertium linguistic data for Catalan",
-      "language": "XML",
-      "stargazers_count": 11,
-      "forks_count": 7,
-      "open_issues_count": 6,
-      "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
-      },
-      "topics": [
-        "apertium-languages"
-      ]
-    },
-    {
-      "id": 124320598,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMjQzMjA1OTg=",
-      "name": "apertium-spa",
-      "full_name": "apertium/apertium-spa",
-      "html_url": "https://github.com/apertium/apertium-spa",
-      "description": "Apertium linguistic data for Spanish",
-      "language": "XML",
-      "stargazers_count": 6,
-      "forks_count": 12,
-      "open_issues_count": 1,
-      "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
-      },
-      "topics": [
-        "apertium-languages"
-      ]
-    },
-    {
       "id": 124329831,
       "node_id": "MDEwOlJlcG9zaXRvcnkxMjQzMjk4MzE=",
       "name": "apertium-nno-nob",
@@ -346,7 +302,7 @@
       "html_url": "https://github.com/apertium/apertium-nno-nob",
       "description": "Apertium translation pair for Norwegian Nynorsk and Norwegian Bokmål",
       "language": "XML",
-      "stargazers_count": 23,
+      "stargazers_count": 26,
       "forks_count": 10,
       "open_issues_count": 2,
       "license": {
@@ -413,6 +369,115 @@
       ]
     },
     {
+      "id": 124320598,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMjQzMjA1OTg=",
+      "name": "apertium-spa",
+      "full_name": "apertium/apertium-spa",
+      "html_url": "https://github.com/apertium/apertium-spa",
+      "description": "Apertium linguistic data for Spanish",
+      "language": "XML",
+      "stargazers_count": 7,
+      "forks_count": 13,
+      "open_issues_count": 1,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "topics": [
+        "apertium-languages"
+      ]
+    },
+    {
+      "id": 28576409,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyODU3NjQwOQ==",
+      "name": "apertium-html-tools",
+      "full_name": "apertium/apertium-html-tools",
+      "html_url": "https://github.com/apertium/apertium-html-tools",
+      "description": "Web application providing a fully localised interface for text/website/document translation, analysis and generation powered by Apertium.",
+      "language": "TypeScript",
+      "stargazers_count": 42,
+      "forks_count": 93,
+      "open_issues_count": 76,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "topics": [
+        "apertium-tools",
+        "machine-translation",
+        "natural-language",
+        "single-page-app",
+        "web-app"
+      ]
+    },
+    {
+      "id": 1146068265,
+      "node_id": "R_kgDORE-dKQ",
+      "name": "apertium-lif",
+      "full_name": "apertium/apertium-lif",
+      "html_url": "https://github.com/apertium/apertium-lif",
+      "description": "A Limbu/Yakthung morphological transducer",
+      "language": "Shell",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "topics": [
+        "apertium-languages"
+      ]
+    },
+    {
+      "id": 61786496,
+      "node_id": "MDEwOlJlcG9zaXRvcnk2MTc4NjQ5Ng==",
+      "name": "packaging",
+      "full_name": "apertium/packaging",
+      "html_url": "https://github.com/apertium/packaging",
+      "description": "Debian, Fedora, Windows, macOS packaging scripts for Apertium, HFST, CG-3, and related techs.",
+      "language": "Roff",
+      "stargazers_count": 13,
+      "forks_count": 3,
+      "open_issues_count": 16,
+      "license": null,
+      "topics": [
+        "apertium",
+        "apertium-tools",
+        "dpkg",
+        "packaging"
+      ]
+    },
+    {
+      "id": 345578096,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzNDU1NzgwOTY=",
+      "name": "apertium-hyw",
+      "full_name": "apertium/apertium-hyw",
+      "html_url": "https://github.com/apertium/apertium-hyw",
+      "description": null,
+      "language": "Shell",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "topics": []
+    },
+    {
       "id": 124319134,
       "node_id": "MDEwOlJlcG9zaXRvcnkxMjQzMTkxMzQ=",
       "name": "apertium-eng",
@@ -421,7 +486,7 @@
       "description": "Apertium linguistic data for English",
       "language": "XML",
       "stargazers_count": 10,
-      "forks_count": 53,
+      "forks_count": 55,
       "open_issues_count": 4,
       "license": {
         "key": "gpl-3.0",
@@ -435,16 +500,16 @@
       ]
     },
     {
-      "id": 124329833,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMjQzMjk4MzM=",
-      "name": "apertium-spa-cat",
-      "full_name": "apertium/apertium-spa-cat",
-      "html_url": "https://github.com/apertium/apertium-spa-cat",
-      "description": "Apertium translation pair for Spanish and Catalan",
+      "id": 124319728,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMjQzMTk3Mjg=",
+      "name": "apertium-cat",
+      "full_name": "apertium/apertium-cat",
+      "html_url": "https://github.com/apertium/apertium-cat",
+      "description": "Apertium linguistic data for Catalan",
       "language": "XML",
-      "stargazers_count": 8,
-      "forks_count": 5,
-      "open_issues_count": 43,
+      "stargazers_count": 11,
+      "forks_count": 8,
+      "open_issues_count": 6,
       "license": {
         "key": "gpl-2.0",
         "name": "GNU General Public License v2.0",
@@ -453,20 +518,20 @@
         "node_id": "MDc6TGljZW5zZTg="
       },
       "topics": [
-        "apertium-trunk"
+        "apertium-languages"
       ]
     },
     {
-      "id": 124323684,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMjQzMjM2ODQ=",
-      "name": "apertium-eng-cat",
-      "full_name": "apertium/apertium-eng-cat",
-      "html_url": "https://github.com/apertium/apertium-eng-cat",
-      "description": "Apertium translation pair for English and Catalan",
+      "id": 124318965,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMjQzMTg5NjU=",
+      "name": "apertium-fra",
+      "full_name": "apertium/apertium-fra",
+      "html_url": "https://github.com/apertium/apertium-fra",
+      "description": "Apertium linguistic data for French",
       "language": "XML",
-      "stargazers_count": 0,
-      "forks_count": 2,
-      "open_issues_count": 0,
+      "stargazers_count": 3,
+      "forks_count": 6,
+      "open_issues_count": 1,
       "license": {
         "key": "gpl-3.0",
         "name": "GNU General Public License v3.0",
@@ -475,29 +540,7 @@
         "node_id": "MDc6TGljZW5zZTk="
       },
       "topics": [
-        "apertium-trunk"
-      ]
-    },
-    {
-      "id": 124325113,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMjQzMjUxMTM=",
-      "name": "apertium-ron-cat",
-      "full_name": "apertium/apertium-ron-cat",
-      "html_url": "https://github.com/apertium/apertium-ron-cat",
-      "description": "Apertium translation pair for Catalan and Romanian",
-      "language": "XML",
-      "stargazers_count": 0,
-      "forks_count": 1,
-      "open_issues_count": 0,
-      "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
-      },
-      "topics": [
-        "apertium-trunk"
+        "apertium-languages"
       ]
     },
     {
@@ -510,7 +553,7 @@
       "language": "Shell",
       "stargazers_count": 0,
       "forks_count": 0,
-      "open_issues_count": 17,
+      "open_issues_count": 30,
       "license": {
         "key": "agpl-3.0",
         "name": "GNU Affero General Public License v3.0",
@@ -521,15 +564,235 @@
       "topics": []
     },
     {
-      "id": 124321278,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMjQzMjEyNzg=",
-      "name": "apertium-uzb",
-      "full_name": "apertium/apertium-uzb",
-      "html_url": "https://github.com/apertium/apertium-uzb",
-      "description": "Apertium linguistic data for Uzbek",
+      "id": 343272361,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzNDMyNzIzNjE=",
+      "name": "apertium-lint",
+      "full_name": "apertium/apertium-lint",
+      "html_url": "https://github.com/apertium/apertium-lint",
+      "description": "Linter for Apertium source files",
       "language": "Python",
-      "stargazers_count": 6,
-      "forks_count": 11,
+      "stargazers_count": 3,
+      "forks_count": 3,
+      "open_issues_count": 5,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "topics": []
+    },
+    {
+      "id": 124326612,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMjQzMjY2MTI=",
+      "name": "apertium-sme-sma",
+      "full_name": "apertium/apertium-sme-sma",
+      "html_url": "https://github.com/apertium/apertium-sme-sma",
+      "description": "Apertium translation pair for Northern Sami and Southern Sami",
+      "language": "XML",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "topics": [
+        "apertium-nursery"
+      ]
+    },
+    {
+      "id": 124326171,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMjQzMjYxNzE=",
+      "name": "apertium-sme-smj",
+      "full_name": "apertium/apertium-sme-smj",
+      "html_url": "https://github.com/apertium/apertium-sme-smj",
+      "description": "Apertium translation pair for Northern Sami and Lule Saami",
+      "language": "XML",
+      "stargazers_count": 2,
+      "forks_count": 0,
+      "open_issues_count": 1,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "topics": [
+        "apertium-nursery"
+      ]
+    },
+    {
+      "id": 124326516,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMjQzMjY1MTY=",
+      "name": "apertium-sme-smn",
+      "full_name": "apertium/apertium-sme-smn",
+      "html_url": "https://github.com/apertium/apertium-sme-smn",
+      "description": "Apertium translation pair for Northern Sami and Inari Saami",
+      "language": "Wolfram Language",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "open_issues_count": 1,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "topics": [
+        "apertium-nursery"
+      ]
+    },
+    {
+      "id": 124329833,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMjQzMjk4MzM=",
+      "name": "apertium-spa-cat",
+      "full_name": "apertium/apertium-spa-cat",
+      "html_url": "https://github.com/apertium/apertium-spa-cat",
+      "description": "Apertium translation pair for Spanish and Catalan",
+      "language": "XML",
+      "stargazers_count": 9,
+      "forks_count": 6,
+      "open_issues_count": 44,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "topics": [
+        "apertium-trunk"
+      ]
+    },
+    {
+      "id": 780933835,
+      "node_id": "R_kgDOLowayw",
+      "name": "apertium-lut-slh",
+      "full_name": "apertium/apertium-lut-slh",
+      "html_url": "https://github.com/apertium/apertium-lut-slh",
+      "description": null,
+      "language": "XML",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 1,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "topics": []
+    },
+    {
+      "id": 48734227,
+      "node_id": "MDEwOlJlcG9zaXRvcnk0ODczNDIyNw==",
+      "name": "apertium-apy",
+      "full_name": "apertium/apertium-apy",
+      "html_url": "https://github.com/apertium/apertium-apy",
+      "description": "📦 Apertium HTTP Server in Python",
+      "language": "Python",
+      "stargazers_count": 40,
+      "forks_count": 47,
+      "open_issues_count": 61,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "topics": [
+        "apertium",
+        "apertium-tools",
+        "machine-translation",
+        "mt",
+        "server"
+      ]
+    },
+    {
+      "id": 28545469,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyODU0NTQ2OQ==",
+      "name": "apertium-init",
+      "full_name": "apertium/apertium-init",
+      "html_url": "https://github.com/apertium/apertium-init",
+      "description": "Scripts to bootstrap Apertium language modules and pairs",
+      "language": "Python",
+      "stargazers_count": 9,
+      "forks_count": 15,
+      "open_issues_count": 15,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "topics": [
+        "apertium-tools"
+      ]
+    },
+    {
+      "id": 124319301,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMjQzMTkzMDE=",
+      "name": "apertium-kir",
+      "full_name": "apertium/apertium-kir",
+      "html_url": "https://github.com/apertium/apertium-kir",
+      "description": "Apertium linguistic data for Kyrgyz",
+      "language": "TeX",
+      "stargazers_count": 17,
+      "forks_count": 6,
+      "open_issues_count": 6,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "topics": [
+        "apertium-languages"
+      ]
+    },
+    {
+      "id": 124329572,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMjQzMjk1NzI=",
+      "name": "apertium-oci-cat",
+      "full_name": "apertium/apertium-oci-cat",
+      "html_url": "https://github.com/apertium/apertium-oci-cat",
+      "description": "Apertium translation pair for Occitan and Catalan",
+      "language": "XML",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "topics": [
+        "apertium-trunk"
+      ]
+    },
+    {
+      "id": 124320885,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMjQzMjA4ODU=",
+      "name": "apertium-tyv",
+      "full_name": "apertium/apertium-tyv",
+      "html_url": "https://github.com/apertium/apertium-tyv",
+      "description": "Apertium linguistic data for Tuvinian",
+      "language": "Python",
+      "stargazers_count": 1,
+      "forks_count": 3,
       "open_issues_count": 5,
       "license": {
         "key": "gpl-3.0",
@@ -543,36 +806,60 @@
       ]
     },
     {
-      "id": 227764900,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMjc3NjQ5MDA=",
-      "name": "apertium-paradigmatrix",
-      "full_name": "apertium/apertium-paradigmatrix",
-      "html_url": "https://github.com/apertium/apertium-paradigmatrix",
-      "description": null,
-      "language": "JavaScript",
-      "stargazers_count": 0,
-      "forks_count": 5,
-      "open_issues_count": 5,
+      "id": 124332071,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMjQzMzIwNzE=",
+      "name": "apertium",
+      "full_name": "apertium/apertium",
+      "html_url": "https://github.com/apertium/apertium",
+      "description": "Core tools (driver script, transfer, tagger, formatters) for the FOSS RBMT system Apertium",
+      "language": "C++",
+      "stargazers_count": 108,
+      "forks_count": 33,
+      "open_issues_count": 58,
       "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
       },
-      "topics": []
+      "topics": [
+        "apertium-core"
+      ]
     },
     {
-      "id": 188633887,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxODg2MzM4ODc=",
-      "name": "apertium-recursive",
-      "full_name": "apertium/apertium-recursive",
-      "html_url": "https://github.com/apertium/apertium-recursive",
-      "description": " Recursive structural transfer module for Apertium",
+      "id": 124332211,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMjQzMzIyMTE=",
+      "name": "lttoolbox",
+      "full_name": "apertium/lttoolbox",
+      "html_url": "https://github.com/apertium/lttoolbox",
+      "description": "Finite state compiler, processor and helper tools used by apertium",
       "language": "C++",
-      "stargazers_count": 6,
-      "forks_count": 4,
-      "open_issues_count": 40,
+      "stargazers_count": 20,
+      "forks_count": 25,
+      "open_issues_count": 43,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "topics": [
+        "apertium-core"
+      ]
+    },
+    {
+      "id": 204579733,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMDQ1Nzk3MzM=",
+      "name": "lexd",
+      "full_name": "apertium/lexd",
+      "html_url": "https://github.com/apertium/lexd",
+      "description": "A lexicon compiler for non-suffixational morphologies",
+      "language": "C++",
+      "stargazers_count": 13,
+      "forks_count": 3,
+      "open_issues_count": 6,
       "license": {
         "key": "gpl-3.0",
         "name": "GNU General Public License v3.0",
@@ -583,70 +870,6 @@
       "topics": [
         "apertium-core",
         "apertium-tools"
-      ]
-    },
-    {
-      "id": 363825424,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzNjM4MjU0MjQ=",
-      "name": "apertium-zab",
-      "full_name": "apertium/apertium-zab",
-      "html_url": "https://github.com/apertium/apertium-zab",
-      "description": "Language module for Dizhsa / Western Tlacolula Valley Zapotec",
-      "language": "Makefile",
-      "stargazers_count": 2,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "agpl-3.0",
-        "name": "GNU Affero General Public License v3.0",
-        "spdx_id": "AGPL-3.0",
-        "url": "https://api.github.com/licenses/agpl-3.0",
-        "node_id": "MDc6TGljZW5zZTE="
-      },
-      "topics": [
-        "apertium-languages"
-      ]
-    },
-    {
-      "id": 335355820,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzMzUzNTU4MjA=",
-      "name": "tree-sitter-apertium",
-      "full_name": "apertium/tree-sitter-apertium",
-      "html_url": "https://github.com/apertium/tree-sitter-apertium",
-      "description": "tree-sitter parsers for various Apertium file formats",
-      "language": "JavaScript",
-      "stargazers_count": 3,
-      "forks_count": 1,
-      "open_issues_count": 2,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": []
-    },
-    {
-      "id": 191097576,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxOTEwOTc1NzY=",
-      "name": "apertium-eng-kir",
-      "full_name": "apertium/apertium-eng-kir",
-      "html_url": "https://github.com/apertium/apertium-eng-kir",
-      "description": "Apertium translation pair for English and Kyrgyz",
-      "language": "XML",
-      "stargazers_count": 0,
-      "forks_count": 1,
-      "open_issues_count": 4,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": [
-        "apertium-incubator"
       ]
     },
     {
@@ -670,264 +893,38 @@
       "topics": []
     },
     {
-      "id": 124326612,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMjQzMjY2MTI=",
-      "name": "apertium-sme-sma",
-      "full_name": "apertium/apertium-sme-sma",
-      "html_url": "https://github.com/apertium/apertium-sme-sma",
-      "description": "Apertium translation pair for Northern Sami and Southern Sami",
-      "language": "XML",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "open_issues_count": 1,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": [
-        "apertium-nursery"
-      ]
-    },
-    {
-      "id": 124331791,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMjQzMzE3OTE=",
-      "name": "apertium-sme-nob",
-      "full_name": "apertium/apertium-sme-nob",
-      "html_url": "https://github.com/apertium/apertium-sme-nob",
-      "description": "Apertium translation pair for Northern Sámi and Norwegian Bokmål",
-      "language": "XML",
-      "stargazers_count": 4,
-      "forks_count": 0,
-      "open_issues_count": 2,
-      "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
-      },
-      "topics": [
-        "apertium-trunk"
-      ]
-    },
-    {
-      "id": 126893933,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMjY4OTM5MzM=",
-      "name": "apertium-android",
-      "full_name": "apertium/apertium-android",
-      "html_url": "https://github.com/apertium/apertium-android",
-      "description": "Example code on how to integrate Apertium offline translation into an Android app",
-      "language": "Java",
-      "stargazers_count": 8,
-      "forks_count": 6,
-      "open_issues_count": 2,
-      "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
-      },
-      "topics": [
-        "android",
-        "apertium",
-        "java",
-        "machine-translation"
-      ]
-    },
-    {
-      "id": 124319301,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMjQzMTkzMDE=",
-      "name": "apertium-kir",
-      "full_name": "apertium/apertium-kir",
-      "html_url": "https://github.com/apertium/apertium-kir",
-      "description": "Apertium linguistic data for Kyrgyz",
-      "language": "TeX",
-      "stargazers_count": 15,
-      "forks_count": 4,
-      "open_issues_count": 6,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": [
-        "apertium-languages"
-      ]
-    },
-    {
-      "id": 124332071,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMjQzMzIwNzE=",
-      "name": "apertium",
-      "full_name": "apertium/apertium",
-      "html_url": "https://github.com/apertium/apertium",
-      "description": "Core tools (driver script, transfer, tagger, formatters) for the FOSS RBMT system Apertium",
-      "language": "C++",
-      "stargazers_count": 99,
-      "forks_count": 29,
-      "open_issues_count": 54,
-      "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
-      },
-      "topics": [
-        "apertium-core"
-      ]
-    },
-    {
-      "id": 61786496,
-      "node_id": "MDEwOlJlcG9zaXRvcnk2MTc4NjQ5Ng==",
-      "name": "packaging",
-      "full_name": "apertium/packaging",
-      "html_url": "https://github.com/apertium/packaging",
-      "description": "Debian, Fedora, Windows, macOS packaging scripts for Apertium, HFST, CG-3, and related techs.",
-      "language": "Roff",
-      "stargazers_count": 13,
-      "forks_count": 3,
-      "open_issues_count": 16,
-      "license": null,
-      "topics": [
-        "apertium",
-        "apertium-tools",
-        "dpkg",
-        "packaging"
-      ]
-    },
-    {
-      "id": 124332211,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMjQzMzIyMTE=",
-      "name": "lttoolbox",
-      "full_name": "apertium/lttoolbox",
-      "html_url": "https://github.com/apertium/lttoolbox",
-      "description": "Finite state compiler, processor and helper tools used by apertium",
-      "language": "C++",
-      "stargazers_count": 18,
-      "forks_count": 23,
-      "open_issues_count": 42,
-      "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
-      },
-      "topics": [
-        "apertium-core"
-      ]
-    },
-    {
-      "id": 124332305,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMjQzMzIzMDU=",
-      "name": "apertium-separable",
-      "full_name": "apertium/apertium-separable",
-      "html_url": "https://github.com/apertium/apertium-separable",
-      "description": "Module for reordering separable/discontiguous multiwords.",
+      "id": 126416723,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMjY0MTY3MjM=",
+      "name": "apertium-quality",
+      "full_name": "apertium/apertium-quality",
+      "html_url": "https://github.com/apertium/apertium-quality",
+      "description": null,
       "language": "Python",
-      "stargazers_count": 4,
-      "forks_count": 5,
-      "open_issues_count": 6,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": [
-        "apertium-core"
-      ]
-    },
-    {
-      "id": 381741358,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzODE3NDEzNTg=",
-      "name": "apertium-regtest",
-      "full_name": "apertium/apertium-regtest",
-      "html_url": "https://github.com/apertium/apertium-regtest",
-      "description": "Regression testing system for Apertium language data and translators",
-      "language": "Python",
-      "stargazers_count": 1,
-      "forks_count": 1,
-      "open_issues_count": 24,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": [
-        "apertium",
-        "approval-testing",
-        "characterization-tests",
-        "golden-master",
-        "mt",
-        "testing"
-      ]
-    },
-    {
-      "id": 124332288,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMjQzMzIyODg=",
-      "name": "apertium-lex-tools",
-      "full_name": "apertium/apertium-lex-tools",
-      "html_url": "https://github.com/apertium/apertium-lex-tools",
-      "description": "Module for compiling lexical selection rules and processing them in the pipeline.",
-      "language": "JavaScript",
-      "stargazers_count": 5,
-      "forks_count": 12,
-      "open_issues_count": 6,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": [
-        "apertium-core"
-      ]
-    },
-    {
-      "id": 204579733,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMDQ1Nzk3MzM=",
-      "name": "lexd",
-      "full_name": "apertium/lexd",
-      "html_url": "https://github.com/apertium/lexd",
-      "description": "A lexicon compiler for non-suffixational morphologies",
-      "language": "C++",
-      "stargazers_count": 12,
+      "stargazers_count": 0,
       "forks_count": 4,
-      "open_issues_count": 4,
+      "open_issues_count": 3,
       "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
+        "key": "cc0-1.0",
+        "name": "Creative Commons Zero v1.0 Universal",
+        "spdx_id": "CC0-1.0",
+        "url": "https://api.github.com/licenses/cc0-1.0",
+        "node_id": "MDc6TGljZW5zZTY="
       },
       "topics": [
-        "apertium-core",
         "apertium-tools"
       ]
     },
     {
-      "id": 124319651,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMjQzMTk2NTE=",
-      "name": "apertium-ron",
-      "full_name": "apertium/apertium-ron",
-      "html_url": "https://github.com/apertium/apertium-ron",
-      "description": "Apertium linguistic data for Romanian",
-      "language": "XML",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
+      "id": 28061210,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyODA2MTIxMA==",
+      "name": "streamparser",
+      "full_name": "apertium/streamparser",
+      "html_url": "https://github.com/apertium/streamparser",
+      "description": "Python library to parse Apertium stream format",
+      "language": "Python",
+      "stargazers_count": 13,
+      "forks_count": 7,
+      "open_issues_count": 8,
       "license": {
         "key": "gpl-3.0",
         "name": "GNU General Public License v3.0",
@@ -936,19 +933,21 @@
         "node_id": "MDc6TGljZW5zZTk="
       },
       "topics": [
-        "apertium-languages"
+        "apertium",
+        "apertium-stream-format",
+        "apertium-tools"
       ]
     },
     {
-      "id": 124324801,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMjQzMjQ4MDE=",
-      "name": "apertium-tat-eng",
-      "full_name": "apertium/apertium-tat-eng",
-      "html_url": "https://github.com/apertium/apertium-tat-eng",
-      "description": "Apertium translation pair for Tatar and English",
-      "language": "XML",
-      "stargazers_count": 0,
-      "forks_count": 0,
+      "id": 587859879,
+      "node_id": "R_kgDOIwoHpw",
+      "name": "apertium-skr",
+      "full_name": "apertium/apertium-skr",
+      "html_url": "https://github.com/apertium/apertium-skr",
+      "description": "Apertium linguistic data for Saraiki",
+      "language": "Makefile",
+      "stargazers_count": 1,
+      "forks_count": 2,
       "open_issues_count": 1,
       "license": {
         "key": "gpl-3.0",
@@ -958,66 +957,67 @@
         "node_id": "MDc6TGljZW5zZTk="
       },
       "topics": [
-        "apertium-incubator"
+        "apertium-languages",
+        "apertium-nursery"
       ]
     }
   ],
   "contributorsDetails": [
     {
-      "login": "hectoralos",
-      "id": 36635223,
-      "node_id": "MDQ6VXNlcjM2NjM1MjIz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/36635223?v=4",
-      "html_url": "https://github.com/hectoralos",
-      "contributions": 31
+      "login": "unhammer",
+      "id": 56868,
+      "node_id": "MDQ6VXNlcjU2ODY4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/56868?v=4",
+      "html_url": "https://github.com/unhammer",
+      "contributions": 2220
     },
     {
-      "login": "jaumeortola",
-      "id": 4289501,
-      "node_id": "MDQ6VXNlcjQyODk1MDE=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/4289501?v=4",
-      "html_url": "https://github.com/jaumeortola",
-      "contributions": 1311
+      "login": "hal45",
+      "id": 76122410,
+      "node_id": "MDQ6VXNlcjc2MTIyNDEw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76122410?v=4",
+      "html_url": "https://github.com/hal45",
+      "contributions": 1532
     },
     {
-      "login": "marcriera",
-      "id": 12414284,
-      "node_id": "MDQ6VXNlcjEyNDE0Mjg0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/12414284?v=4",
-      "html_url": "https://github.com/marcriera",
-      "contributions": 86
+      "login": "victoria-tro",
+      "id": 76149850,
+      "node_id": "MDQ6VXNlcjc2MTQ5ODUw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76149850?v=4",
+      "html_url": "https://github.com/victoria-tro",
+      "contributions": 530
     },
     {
-      "login": "xavivars",
-      "id": 134083,
-      "node_id": "MDQ6VXNlcjEzNDA4Mw==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/134083?v=4",
-      "html_url": "https://github.com/xavivars",
-      "contributions": 74
+      "login": "mariaevj",
+      "id": 71259223,
+      "node_id": "MDQ6VXNlcjcxMjU5MjIz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/71259223?v=4",
+      "html_url": "https://github.com/mariaevj",
+      "contributions": 198
     },
     {
-      "login": "donissegui",
-      "id": 37330184,
-      "node_id": "MDQ6VXNlcjM3MzMwMTg0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/37330184?v=4",
-      "html_url": "https://github.com/donissegui",
-      "contributions": 56
+      "login": "anjazp",
+      "id": 55981773,
+      "node_id": "MDQ6VXNlcjU1OTgxNzcz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55981773?v=4",
+      "html_url": "https://github.com/anjazp",
+      "contributions": 189
     },
     {
-      "login": "AnnaEvaPeig",
-      "id": 157807826,
-      "node_id": "U_kgDOCWf00g",
-      "avatar_url": "https://avatars.githubusercontent.com/u/157807826?v=4",
-      "html_url": "https://github.com/AnnaEvaPeig",
-      "contributions": 27
+      "login": "Trondtr",
+      "id": 11891083,
+      "node_id": "MDQ6VXNlcjExODkxMDgz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11891083?v=4",
+      "html_url": "https://github.com/Trondtr",
+      "contributions": 3
     },
     {
-      "login": "gramirez-prompsit",
-      "id": 32385845,
-      "node_id": "MDQ6VXNlcjMyMzg1ODQ1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/32385845?v=4",
-      "html_url": "https://github.com/gramirez-prompsit",
-      "contributions": 35
+      "login": "marihauge",
+      "id": 100118408,
+      "node_id": "U_kgDOBfeviA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/100118408?v=4",
+      "html_url": "https://github.com/marihauge",
+      "contributions": 84
     },
     {
       "login": "ftyers",
@@ -1025,15 +1025,15 @@
       "node_id": "MDQ6VXNlcjQ0OTU0NQ==",
       "avatar_url": "https://avatars.githubusercontent.com/u/449545?v=4",
       "html_url": "https://github.com/ftyers",
-      "contributions": 77
+      "contributions": 6
     },
     {
-      "login": "Juanpabl",
-      "id": 1644721,
-      "node_id": "MDQ6VXNlcjE2NDQ3MjE=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1644721?v=4",
-      "html_url": "https://github.com/Juanpabl",
-      "contributions": 22
+      "login": "HenningBergstad",
+      "id": 69603500,
+      "node_id": "MDQ6VXNlcjY5NjAzNTAw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/69603500?v=4",
+      "html_url": "https://github.com/HenningBergstad",
+      "contributions": 11
     },
     {
       "login": "TinoDidriksen",
@@ -1041,39 +1041,15 @@
       "node_id": "MDQ6VXNlcjU0MTEwMTM=",
       "avatar_url": "https://avatars.githubusercontent.com/u/5411013?v=4",
       "html_url": "https://github.com/TinoDidriksen",
-      "contributions": 11
+      "contributions": 4
     },
     {
-      "login": "albertonl",
-      "id": 43930380,
-      "node_id": "MDQ6VXNlcjQzOTMwMzgw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/43930380?v=4",
-      "html_url": "https://github.com/albertonl",
-      "contributions": 15
-    },
-    {
-      "login": "frankier",
-      "id": 299380,
-      "node_id": "MDQ6VXNlcjI5OTM4MA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/299380?v=4",
-      "html_url": "https://github.com/frankier",
-      "contributions": 5
-    },
-    {
-      "login": "jordimas",
-      "id": 309265,
-      "node_id": "MDQ6VXNlcjMwOTI2NQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/309265?v=4",
-      "html_url": "https://github.com/jordimas",
-      "contributions": 3
-    },
-    {
-      "login": "unhammer",
-      "id": 56868,
-      "node_id": "MDQ6VXNlcjU2ODY4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/56868?v=4",
-      "html_url": "https://github.com/unhammer",
-      "contributions": 8
+      "login": "oterhals",
+      "id": 32621119,
+      "node_id": "MDQ6VXNlcjMyNjIxMTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/32621119?v=4",
+      "html_url": "https://github.com/oterhals",
+      "contributions": 1
     },
     {
       "login": "mr-martian",
@@ -1084,27 +1060,35 @@
       "contributions": 1
     },
     {
-      "login": "mlforcada",
-      "id": 227679,
-      "node_id": "MDQ6VXNlcjIyNzY3OQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/227679?v=4",
-      "html_url": "https://github.com/mlforcada",
-      "contributions": 6
-    },
-    {
-      "login": "Robescolano",
-      "id": 191686660,
-      "node_id": "U_kgDOC2zoBA",
-      "avatar_url": "https://avatars.githubusercontent.com/u/191686660?v=4",
-      "html_url": "https://github.com/Robescolano",
+      "login": "fjohansen",
+      "id": 27724736,
+      "node_id": "MDQ6VXNlcjI3NzI0NzM2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/27724736?v=4",
+      "html_url": "https://github.com/fjohansen",
       "contributions": 1
     },
     {
-      "login": "tradumatica",
-      "id": 28389620,
-      "node_id": "MDQ6VXNlcjI4Mzg5NjIw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/28389620?v=4",
-      "html_url": "https://github.com/tradumatica",
+      "login": "nordfalk",
+      "id": 1143272,
+      "node_id": "MDQ6VXNlcjExNDMyNzI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1143272?v=4",
+      "html_url": "https://github.com/nordfalk",
+      "contributions": 1
+    },
+    {
+      "login": "jimregan",
+      "id": 227350,
+      "node_id": "MDQ6VXNlcjIyNzM1MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/227350?v=4",
+      "html_url": "https://github.com/jimregan",
+      "contributions": 1
+    },
+    {
+      "login": "snomos",
+      "id": 1255285,
+      "node_id": "MDQ6VXNlcjEyNTUyODU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1255285?v=4",
+      "html_url": "https://github.com/snomos",
       "contributions": 1
     },
     {
@@ -1116,75 +1100,19 @@
       "contributions": 1
     },
     {
-      "login": "e-gomez",
-      "id": 13519115,
-      "node_id": "MDQ6VXNlcjEzNTE5MTE1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/13519115?v=4",
-      "html_url": "https://github.com/e-gomez",
-      "contributions": 1
+      "login": "leneantonsen",
+      "id": 37183911,
+      "node_id": "MDQ6VXNlcjM3MTgzOTEx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/37183911?v=4",
+      "html_url": "https://github.com/leneantonsen",
+      "contributions": 65
     },
     {
-      "login": "padth4i",
-      "id": 42903659,
-      "node_id": "MDQ6VXNlcjQyOTAzNjU5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/42903659?v=4",
-      "html_url": "https://github.com/padth4i",
-      "contributions": 1
-    },
-    {
-      "login": "sandy9999",
-      "id": 17477947,
-      "node_id": "MDQ6VXNlcjE3NDc3OTQ3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/17477947?v=4",
-      "html_url": "https://github.com/sandy9999",
-      "contributions": 1
-    },
-    {
-      "login": "izakus",
-      "id": 37026048,
-      "node_id": "MDQ6VXNlcjM3MDI2MDQ4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/37026048?v=4",
-      "html_url": "https://github.com/izakus",
-      "contributions": 7
-    },
-    {
-      "login": "at-uliana",
-      "id": 85709800,
-      "node_id": "MDQ6VXNlcjg1NzA5ODAw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/85709800?v=4",
-      "html_url": "https://github.com/at-uliana",
-      "contributions": 5
-    },
-    {
-      "login": "jonorthwash",
-      "id": 963849,
-      "node_id": "MDQ6VXNlcjk2Mzg0OQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/963849?v=4",
-      "html_url": "https://github.com/jonorthwash",
-      "contributions": 3
-    },
-    {
-      "login": "joshuajy03",
-      "id": 52546898,
-      "node_id": "MDQ6VXNlcjUyNTQ2ODk4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/52546898?v=4",
-      "html_url": "https://github.com/joshuajy03",
-      "contributions": 2
-    },
-    {
-      "login": "roybaer",
-      "id": 7901580,
-      "node_id": "MDQ6VXNlcjc5MDE1ODA=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/7901580?v=4",
-      "html_url": "https://github.com/roybaer",
-      "contributions": 1
-    },
-    {
-      "login": "sofiacsegura",
-      "id": 98660412,
-      "node_id": "U_kgDOBeFwPA",
-      "avatar_url": "https://avatars.githubusercontent.com/u/98660412?v=4",
-      "html_url": "https://github.com/sofiacsegura",
+      "login": "kartikm",
+      "id": 164317,
+      "node_id": "MDQ6VXNlcjE2NDMxNw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/164317?v=4",
+      "html_url": "https://github.com/kartikm",
       "contributions": 1
     },
     {
@@ -1193,7 +1121,7 @@
       "node_id": "MDQ6VXNlcjE0OTgyODI=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1498282?v=4",
       "html_url": "https://github.com/flammie",
-      "contributions": 1
+      "contributions": 3
     }
   ],
   "activeOrg": true

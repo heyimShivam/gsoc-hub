@@ -45,7 +45,8 @@
     2022,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2018": [],
@@ -244,7 +245,45 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/zQNf7ztP"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Improve the display of documentation during code completion in SourceKit-LSP",
+        "short_description": "Currently, SourceKit-LSP only shows the first line of the documentation for code completion items. Furthermore, it doesn’t support the Language...",
+        "description": "Currently, SourceKit-LSP only shows the first line of the documentation for code completion items. Furthermore, it doesn’t support the Language Server Protocol’s (LSP) signature help request which provides information about the function or subscript being completed like alternative signatures, documentation, parameter list, and parameter-specific documentation.\n\nThe goal of this project is to enhance how SourceKit-LSP displays documentation for code completion items by:\n1. Providing the full documentation for code completion items rather than the first line only.\n2. Implementing LSP’s signature help request to provide richer guidance for completing function/subscript signatures.\n\nThe implementation will require changes in SourceKit-LSP and sourcekitd in the Swift compiler codebase. This will enhance the developer experience for Swift developers using SourceKit-LSP on editors like Visual Studio Code and Neovim aligning with Swift’s vision of cross-platform support.",
+        "student_name": "Ahmed Elrefaey",
+        "code_url": "https://forums.swift.org/t/gsoc-2025-improve-the-display-of-documentation-during-code-completion-in-sourcekit-lsp/81976",
+        "proposal_id": "kB2joC94",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/CgWk0OF5"
+      },
+      {
+        "title": "JNI mode for swift-java’s source jextract tool",
+        "short_description": "The swift-java interoperability library provides the jextract-swift tool, which extracts Java sources that are used to call Swift code from Java....",
+        "description": "The swift-java interoperability library provides the jextract-swift tool, which extracts Java sources that are used to call Swift code from Java. However, the tool uses the Foreign Function and Memory API (FFM), which requires JDK 22+, making it unavailable on platforms such as Android. The goal of this proposal is to extend the jextract-swift tool, such that it is able to generate Java sources using JNI instead of FFM and thereby allowing more platforms to utilize Swift/Java interoperability.\n\nThe solution will modify the code generation to support multiple modes through a protocol. Thereby, allowing us to generate JNI Java wrappers that that utilize the JNI functionality already defined in the library. We will modify the current Arena implementations to support memory management for JNI as well, through calls to the Swift runtime. The library will also generate Swift thunks that implement the native methods defined in Java and handle JNI/Swift conversion and object initialization. \n\nThe project will achieve feature parity with the current FFM mode and explore more complex language features, if time permits.",
+        "student_name": "Mads Odgaard",
+        "code_url": "https://forums.swift.org/t/gsoc-2025-new-jni-mode-added-to-swift-java-jextract-tool/81858",
+        "proposal_id": "ykQ4dntF",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/oIpmPLvm"
+      },
+      {
+        "title": "Swiftly Integration in VS Code",
+        "short_description": "This project aims to integrate Swiftly with the Swift Extension for VSCode. It should allow users to install Swiftly and Swift toolchains in the...",
+        "description": "This project aims to integrate Swiftly with the Swift Extension for VSCode. It should allow users to install Swiftly and Swift toolchains in the VSCode editor toolchains directly within the VSCode editor.\n\nCurrently, we have the “Swift Extension of VS Code,” which provides code completion and LSP integration, error annotations with applicable suggestions, automatic generation of launch configurations for debugging, automatic task creation, Swift PM integration, and test explorer view. \n\nSince different projects may require different versions of Swift toolchains, we want to integrate with Swiftly to provide a seamless toolchain selection experience in VSCode.",
+        "student_name": "Priyambada Roul",
+        "code_url": "https://forums.swift.org/t/gsoc-2025-bringing-swiftly-support-to-vs-code/81886",
+        "proposal_id": "dr7ZM4V0",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/OnmTLTo3"
+      },
+      {
+        "title": "Improved Console Output for Swift Testing",
+        "short_description": "This project enhances the console output experience for the Swift Testing framework by designing and implementing a new, two-phase console reporter....",
+        "description": "This project enhances the console output experience for the Swift Testing framework by designing and implementing a new, two-phase console reporter. This architecture provides both real-time feedback during test execution (the \"Live Phase\") and concludes with a comprehensive, structured report (the \"Summary Phase\").\n\nThe primary focus during this GSoC project was the implementation of the Summary Phase, which includes:\n- A rich Hierarchical Summary that visualizes the relationship between test suites and individual tests.\n- A dedicated Detailed Failure Report providing clear, actionable information for debugging.\n- Intelligent cross-platform support, with an ASCII fallback for terminals with limited Unicode compatibility.\n\nArchitecturally, the reporter was refactored to consume a serialization-based event stream (ABI.EncodedEvent). This was a significant technical pivot that decouples the reporter from the test runner, preparing it for future integration into an out-of-process \"harness\". The final deliverable is a robust, experimental implementation available behind a feature flag, with a clear roadmap for completing the Live Phase post-GSoC.",
+        "student_name": "Tien Quoc Bui",
+        "code_url": "https://gist.github.com/tienquocbui/7e7a769e367778f575e95b4fe44a3b89",
+        "proposal_id": "vT3Af5wb",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/cdZEDJcL"
+      }
+    ],
+    "2026": []
   },
   "githubID": "swift",
   "repositories": [
@@ -271,8 +310,8 @@
       "description": "Swift XMPP client and Swiften XMPP library",
       "language": "C++",
       "stargazers_count": 270,
-      "forks_count": 65,
-      "open_issues_count": 43,
+      "forks_count": 64,
+      "open_issues_count": 46,
       "license": {
         "key": "other",
         "name": "Other",
@@ -373,7 +412,7 @@
       "node_id": "MDQ6VXNlcjExOTE0",
       "avatar_url": "https://avatars.githubusercontent.com/u/11914?v=4",
       "html_url": "https://github.com/Kev",
-      "contributions": 973
+      "contributions": 51
     },
     {
       "login": "remko",
@@ -421,7 +460,7 @@
       "node_id": "MDQ6VXNlcjY4NTA0ODQ=",
       "avatar_url": "https://avatars.githubusercontent.com/u/6850484?v=4",
       "html_url": "https://github.com/tarun018",
-      "contributions": 15
+      "contributions": 52
     },
     {
       "login": "PeteBurgessIsode",
@@ -445,7 +484,7 @@
       "node_id": "MDQ6VXNlcjE0NzQxNzcw",
       "avatar_url": "https://avatars.githubusercontent.com/u/14741770?v=4",
       "html_url": "https://github.com/mvisode",
-      "contributions": 10
+      "contributions": 7
     },
     {
       "login": "jankaluza",
@@ -525,7 +564,7 @@
       "node_id": "U_kgDOCIdp3w",
       "avatar_url": "https://avatars.githubusercontent.com/u/143092191?v=4",
       "html_url": "https://github.com/NickIsode",
-      "contributions": 2
+      "contributions": 46
     },
     {
       "login": "barun511",
@@ -590,6 +629,22 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/790514?v=4",
       "html_url": "https://github.com/yblein",
       "contributions": 1
+    },
+    {
+      "login": "awy",
+      "id": 1553623,
+      "node_id": "MDQ6VXNlcjE1NTM2MjM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1553623?v=4",
+      "html_url": "https://github.com/awy",
+      "contributions": 34
+    },
+    {
+      "login": "peter-12321",
+      "id": 139547463,
+      "node_id": "U_kgDOCFFTRw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/139547463?v=4",
+      "html_url": "https://github.com/peter-12321",
+      "contributions": 2
     }
   ],
   "activeOrg": false

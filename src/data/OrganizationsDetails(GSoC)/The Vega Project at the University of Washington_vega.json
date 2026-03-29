@@ -77,6 +77,50 @@
   "githubID": "vega",
   "repositories": [
     {
+      "id": 93451048,
+      "node_id": "MDEwOlJlcG9zaXRvcnk5MzQ1MTA0OA==",
+      "name": "editor",
+      "full_name": "vega/editor",
+      "html_url": "https://github.com/vega/editor",
+      "description": "Editor/IDE for Vega and Vega-Lite",
+      "language": "TypeScript",
+      "stargazers_count": 203,
+      "forks_count": 107,
+      "open_issues_count": 22,
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "topics": [
+        "vega",
+        "vega-lite",
+        "visualization"
+      ]
+    },
+    {
+      "id": 545741741,
+      "node_id": "R_kgDOIIdbrQ",
+      "name": "vl-convert",
+      "full_name": "vega/vl-convert",
+      "html_url": "https://github.com/vega/vl-convert",
+      "description": "Utilities for converting Vega-Lite specs from the command line and Python",
+      "language": "Rust",
+      "stargazers_count": 146,
+      "forks_count": 24,
+      "open_issues_count": 18,
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "topics": []
+    },
+    {
       "id": 93129134,
       "node_id": "MDEwOlJlcG9zaXRvcnk5MzEyOTEzNA==",
       "name": "ts-json-schema-generator",
@@ -84,9 +128,9 @@
       "html_url": "https://github.com/vega/ts-json-schema-generator",
       "description": "Generate JSON schema from your Typescript sources",
       "language": "TypeScript",
-      "stargazers_count": 1570,
-      "forks_count": 209,
-      "open_issues_count": 114,
+      "stargazers_count": 1691,
+      "forks_count": 233,
+      "open_issues_count": 131,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -102,32 +146,16 @@
       ]
     },
     {
-      "id": 43921298,
-      "node_id": "MDEwOlJlcG9zaXRvcnk0MzkyMTI5OA==",
-      "name": "vega-datasets",
-      "full_name": "vega/vega-datasets",
-      "html_url": "https://github.com/vega/vega-datasets",
-      "description": "Common repository for example datasets used by Vega-related projects",
+      "id": 42757577,
+      "node_id": "MDEwOlJlcG9zaXRvcnk0Mjc1NzU3Nw==",
+      "name": "altair",
+      "full_name": "vega/altair",
+      "html_url": "https://github.com/vega/altair",
+      "description": "Declarative visualization library for Python",
       "language": "Python",
-      "stargazers_count": 276,
-      "forks_count": 212,
-      "open_issues_count": 3,
-      "license": null,
-      "topics": [
-        "datasets"
-      ]
-    },
-    {
-      "id": 26931359,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNjkzMTM1OQ==",
-      "name": "vega-lite",
-      "full_name": "vega/vega-lite",
-      "html_url": "https://github.com/vega/vega-lite",
-      "description": "A concise grammar of interactive graphics, built on Vega.",
-      "language": "TypeScript",
-      "stargazers_count": 4871,
-      "forks_count": 640,
-      "open_issues_count": 773,
+      "stargazers_count": 10319,
+      "forks_count": 842,
+      "open_issues_count": 148,
       "license": {
         "key": "bsd-3-clause",
         "name": "BSD 3-Clause \"New\" or \"Revised\" License",
@@ -135,16 +163,7 @@
         "url": "https://api.github.com/licenses/bsd-3-clause",
         "node_id": "MDc6TGljZW5zZTU="
       },
-      "topics": [
-        "charts",
-        "declarative-language",
-        "plot",
-        "vega",
-        "vega-lite",
-        "visual-analysis",
-        "visualization",
-        "visualization-grammar"
-      ]
+      "topics": []
     },
     {
       "id": 40951273,
@@ -154,273 +173,10 @@
       "html_url": "https://github.com/vega/vega-embed",
       "description": "Publish Vega visualizations as embedded web components with interactive parameters.",
       "language": "TypeScript",
-      "stargazers_count": 445,
-      "forks_count": 88,
-      "open_issues_count": 11,
-      "license": {
-        "key": "bsd-3-clause",
-        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
-        "spdx_id": "BSD-3-Clause",
-        "url": "https://api.github.com/licenses/bsd-3-clause",
-        "node_id": "MDc6TGljZW5zZTU="
-      },
-      "topics": [
-        "vega",
-        "vega-lite",
-        "visualization"
-      ]
-    },
-    {
-      "id": 69919660,
-      "node_id": "MDEwOlJlcG9zaXRvcnk2OTkxOTY2MA==",
-      "name": "vega-themes",
-      "full_name": "vega/vega-themes",
-      "html_url": "https://github.com/vega/vega-themes",
-      "description": "Themes for stylized Vega and Vega-Lite visualizations.",
-      "language": "TypeScript",
-      "stargazers_count": 142,
-      "forks_count": 31,
-      "open_issues_count": 6,
-      "license": {
-        "key": "bsd-3-clause",
-        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
-        "spdx_id": "BSD-3-Clause",
-        "url": "https://api.github.com/licenses/bsd-3-clause",
-        "node_id": "MDc6TGljZW5zZTU="
-      },
-      "topics": []
-    },
-    {
-      "id": 52128009,
-      "node_id": "MDEwOlJlcG9zaXRvcnk1MjEyODAwOQ==",
-      "name": "vega-tooltip",
-      "full_name": "vega/vega-tooltip",
-      "html_url": "https://github.com/vega/vega-tooltip",
-      "description": "Tooltip Plugin for Vega-Lite",
-      "language": "TypeScript",
-      "stargazers_count": 81,
-      "forks_count": 47,
-      "open_issues_count": 14,
-      "license": {
-        "key": "bsd-3-clause",
-        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
-        "spdx_id": "BSD-3-Clause",
-        "url": "https://api.github.com/licenses/bsd-3-clause",
-        "node_id": "MDc6TGljZW5zZTU="
-      },
-      "topics": [
-        "tooltip-handler",
-        "tooltip-plugin",
-        "vega",
-        "vega-lite"
-      ]
-    },
-    {
-      "id": 42757577,
-      "node_id": "MDEwOlJlcG9zaXRvcnk0Mjc1NzU3Nw==",
-      "name": "altair",
-      "full_name": "vega/altair",
-      "html_url": "https://github.com/vega/altair",
-      "description": "Declarative visualization library for Python",
-      "language": "Python",
-      "stargazers_count": 9774,
-      "forks_count": 805,
-      "open_issues_count": 164,
-      "license": {
-        "key": "bsd-3-clause",
-        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
-        "spdx_id": "BSD-3-Clause",
-        "url": "https://api.github.com/licenses/bsd-3-clause",
-        "node_id": "MDc6TGljZW5zZTU="
-      },
-      "topics": []
-    },
-    {
-      "id": 7994556,
-      "node_id": "MDEwOlJlcG9zaXRvcnk3OTk0NTU2",
-      "name": "vega",
-      "full_name": "vega/vega",
-      "html_url": "https://github.com/vega/vega",
-      "description": "A visualization grammar.",
-      "language": "JavaScript",
-      "stargazers_count": 11494,
-      "forks_count": 1529,
-      "open_issues_count": 471,
-      "license": {
-        "key": "bsd-3-clause",
-        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
-        "spdx_id": "BSD-3-Clause",
-        "url": "https://api.github.com/licenses/bsd-3-clause",
-        "node_id": "MDc6TGljZW5zZTU="
-      },
-      "topics": [
-        "canvas",
-        "d3",
-        "svg",
-        "vega",
-        "visualization",
-        "visualization-grammar"
-      ]
-    },
-    {
-      "id": 58768960,
-      "node_id": "MDEwOlJlcG9zaXRvcnk1ODc2ODk2MA==",
-      "name": "compassql",
-      "full_name": "vega/compassql",
-      "html_url": "https://github.com/vega/compassql",
-      "description": "CompassQL Query Language for visualization recommendation.",
-      "language": "TypeScript",
-      "stargazers_count": 273,
-      "forks_count": 42,
-      "open_issues_count": 88,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 360586132,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzNjA1ODYxMzI=",
-      "name": "svelte-vega",
-      "full_name": "vega/svelte-vega",
-      "html_url": "https://github.com/vega/svelte-vega",
-      "description": "Svelte component for Vega and Vega-Lite",
-      "language": "Svelte",
-      "stargazers_count": 73,
-      "forks_count": 8,
-      "open_issues_count": 1,
-      "license": {
-        "key": "bsd-3-clause",
-        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
-        "spdx_id": "BSD-3-Clause",
-        "url": "https://api.github.com/licenses/bsd-3-clause",
-        "node_id": "MDc6TGljZW5zZTU="
-      },
-      "topics": []
-    },
-    {
-      "id": 93451048,
-      "node_id": "MDEwOlJlcG9zaXRvcnk5MzQ1MTA0OA==",
-      "name": "editor",
-      "full_name": "vega/editor",
-      "html_url": "https://github.com/vega/editor",
-      "description": "Editor/IDE for Vega and Vega-Lite",
-      "language": "TypeScript",
-      "stargazers_count": 180,
-      "forks_count": 99,
-      "open_issues_count": 31,
-      "license": {
-        "key": "bsd-3-clause",
-        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
-        "spdx_id": "BSD-3-Clause",
-        "url": "https://api.github.com/licenses/bsd-3-clause",
-        "node_id": "MDc6TGljZW5zZTU="
-      },
-      "topics": [
-        "hacktoberfest",
-        "vega",
-        "vega-lite",
-        "visualization"
-      ]
-    },
-    {
-      "id": 169790937,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNjk3OTA5Mzc=",
-      "name": "vega-loader-arrow",
-      "full_name": "vega/vega-loader-arrow",
-      "html_url": "https://github.com/vega/vega-loader-arrow",
-      "description": "Data loader for the Apache Arrow format.",
-      "language": "JavaScript",
-      "stargazers_count": 60,
-      "forks_count": 8,
-      "open_issues_count": 1,
-      "license": {
-        "key": "bsd-3-clause",
-        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
-        "spdx_id": "BSD-3-Clause",
-        "url": "https://api.github.com/licenses/bsd-3-clause",
-        "node_id": "MDc6TGljZW5zZTU="
-      },
-      "topics": []
-    },
-    {
-      "id": 170966220,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNzA5NjYyMjA=",
-      "name": "scalable-vega",
-      "full_name": "vega/scalable-vega",
-      "html_url": "https://github.com/vega/scalable-vega",
-      "description": "A demo of scaling Vega to millions of records",
-      "language": "TypeScript",
-      "stargazers_count": 53,
-      "forks_count": 11,
-      "open_issues_count": 0,
-      "license": {
-        "key": "bsd-3-clause",
-        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
-        "spdx_id": "BSD-3-Clause",
-        "url": "https://api.github.com/licenses/bsd-3-clause",
-        "node_id": "MDc6TGljZW5zZTU="
-      },
-      "topics": []
-    },
-    {
-      "id": 70010848,
-      "node_id": "MDEwOlJlcG9zaXRvcnk3MDAxMDg0OA==",
-      "name": "falcon",
-      "full_name": "vega/falcon",
-      "html_url": "https://github.com/vega/falcon",
-      "description": "Brushing and linking for big data",
-      "language": "Jupyter Notebook",
-      "stargazers_count": 958,
-      "forks_count": 51,
+      "stargazers_count": 486,
+      "forks_count": 100,
       "open_issues_count": 12,
       "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": [
-        "scalable-visualization"
-      ]
-    },
-    {
-      "id": 40161124,
-      "node_id": "MDEwOlJlcG9zaXRvcnk0MDE2MTEyNA==",
-      "name": "ipyvega",
-      "full_name": "vega/ipyvega",
-      "html_url": "https://github.com/vega/ipyvega",
-      "description": "IPython/Jupyter notebook module for Vega and Vega-Lite",
-      "language": "Jupyter Notebook",
-      "stargazers_count": 380,
-      "forks_count": 65,
-      "open_issues_count": 21,
-      "license": {
-        "key": "bsd-3-clause",
-        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
-        "spdx_id": "BSD-3-Clause",
-        "url": "https://api.github.com/licenses/bsd-3-clause",
-        "node_id": "MDc6TGljZW5zZTU="
-      },
-      "topics": []
-    },
-    {
-      "id": 79009306,
-      "node_id": "MDEwOlJlcG9zaXRvcnk3OTAwOTMwNg==",
-      "name": "schema",
-      "full_name": "vega/schema",
-      "html_url": "https://github.com/vega/schema",
-      "description": "JSON schema for Vega and Vega-Lite",
-      "language": null,
-      "stargazers_count": 35,
-      "forks_count": 20,
-      "open_issues_count": 2,
-      "license": {
         "key": "bsd-3-clause",
         "name": "BSD 3-Clause \"New\" or \"Revised\" License",
         "spdx_id": "BSD-3-Clause",
@@ -428,10 +184,9 @@
         "node_id": "MDc6TGljZW5zZTU="
       },
       "topics": [
-        "json-schema",
-        "schema",
         "vega",
-        "vega-lite"
+        "vega-lite",
+        "visualization"
       ]
     },
     {
@@ -442,8 +197,8 @@
       "html_url": "https://github.com/vega/vega.github.io",
       "description": "The Vega landing page.",
       "language": "HTML",
-      "stargazers_count": 74,
-      "forks_count": 15,
+      "stargazers_count": 79,
+      "forks_count": 16,
       "open_issues_count": 2,
       "license": {
         "key": "bsd-3-clause",
@@ -463,9 +218,246 @@
       "description": "Community health files for the @vega organization",
       "language": null,
       "stargazers_count": 4,
-      "forks_count": 2,
-      "open_issues_count": 0,
+      "forks_count": 3,
+      "open_issues_count": 1,
       "license": null,
+      "topics": []
+    },
+    {
+      "id": 56274630,
+      "node_id": "MDEwOlJlcG9zaXRvcnk1NjI3NDYzMA==",
+      "name": "react-vega",
+      "full_name": "vega/react-vega",
+      "html_url": "https://github.com/vega/react-vega",
+      "description": "Convert Vega spec into React class conveniently",
+      "language": "TypeScript",
+      "stargazers_count": 419,
+      "forks_count": 74,
+      "open_issues_count": 3,
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "topics": []
+    },
+    {
+      "id": 43921298,
+      "node_id": "MDEwOlJlcG9zaXRvcnk0MzkyMTI5OA==",
+      "name": "vega-datasets",
+      "full_name": "vega/vega-datasets",
+      "html_url": "https://github.com/vega/vega-datasets",
+      "description": "Common repository for example datasets used by Vega-related projects",
+      "language": "Python",
+      "stargazers_count": 304,
+      "forks_count": 222,
+      "open_issues_count": 6,
+      "license": null,
+      "topics": [
+        "datasets"
+      ]
+    },
+    {
+      "id": 52128009,
+      "node_id": "MDEwOlJlcG9zaXRvcnk1MjEyODAwOQ==",
+      "name": "vega-tooltip",
+      "full_name": "vega/vega-tooltip",
+      "html_url": "https://github.com/vega/vega-tooltip",
+      "description": "Tooltip Plugin for Vega-Lite",
+      "language": "TypeScript",
+      "stargazers_count": 87,
+      "forks_count": 50,
+      "open_issues_count": 17,
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "topics": [
+        "tooltip-handler",
+        "tooltip-plugin",
+        "vega",
+        "vega-lite"
+      ]
+    },
+    {
+      "id": 69919660,
+      "node_id": "MDEwOlJlcG9zaXRvcnk2OTkxOTY2MA==",
+      "name": "vega-themes",
+      "full_name": "vega/vega-themes",
+      "html_url": "https://github.com/vega/vega-themes",
+      "description": "Themes for stylized Vega and Vega-Lite visualizations.",
+      "language": "TypeScript",
+      "stargazers_count": 157,
+      "forks_count": 33,
+      "open_issues_count": 9,
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "topics": []
+    },
+    {
+      "id": 7994556,
+      "node_id": "MDEwOlJlcG9zaXRvcnk3OTk0NTU2",
+      "name": "vega",
+      "full_name": "vega/vega",
+      "html_url": "https://github.com/vega/vega",
+      "description": "A visualization grammar.",
+      "language": "JavaScript",
+      "stargazers_count": 11827,
+      "forks_count": 1560,
+      "open_issues_count": 492,
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "topics": [
+        "canvas",
+        "d3",
+        "svg",
+        "vega",
+        "visualization",
+        "visualization-grammar"
+      ]
+    },
+    {
+      "id": 26931359,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyNjkzMTM1OQ==",
+      "name": "vega-lite",
+      "full_name": "vega/vega-lite",
+      "html_url": "https://github.com/vega/vega-lite",
+      "description": "A concise grammar of interactive graphics, built on Vega.",
+      "language": "TypeScript",
+      "stargazers_count": 5253,
+      "forks_count": 689,
+      "open_issues_count": 785,
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "topics": [
+        "charts",
+        "declarative-language",
+        "plot",
+        "vega",
+        "vega-lite",
+        "visual-analysis",
+        "visualization",
+        "visualization-grammar"
+      ]
+    },
+    {
+      "id": 177215911,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNzcyMTU5MTE=",
+      "name": "vega-lite-api",
+      "full_name": "vega/vega-lite-api",
+      "html_url": "https://github.com/vega/vega-lite-api",
+      "description": "A JavaScript API for Vega-Lite.",
+      "language": "JavaScript",
+      "stargazers_count": 219,
+      "forks_count": 20,
+      "open_issues_count": 18,
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "topics": []
+    },
+    {
+      "id": 187048725,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxODcwNDg3MjU=",
+      "name": "editor-backend",
+      "full_name": "vega/editor-backend",
+      "html_url": "https://github.com/vega/editor-backend",
+      "description": "Backend for the Vega Editor",
+      "language": "TypeScript",
+      "stargazers_count": 18,
+      "forks_count": 17,
+      "open_issues_count": 1,
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "topics": []
+    },
+    {
+      "id": 58768960,
+      "node_id": "MDEwOlJlcG9zaXRvcnk1ODc2ODk2MA==",
+      "name": "compassql",
+      "full_name": "vega/compassql",
+      "html_url": "https://github.com/vega/compassql",
+      "description": "CompassQL Query Language for visualization recommendation.",
+      "language": "TypeScript",
+      "stargazers_count": 275,
+      "forks_count": 45,
+      "open_issues_count": 91,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 169790937,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNjk3OTA5Mzc=",
+      "name": "vega-loader-arrow",
+      "full_name": "vega/vega-loader-arrow",
+      "html_url": "https://github.com/vega/vega-loader-arrow",
+      "description": "Data loader for the Apache Arrow format.",
+      "language": "JavaScript",
+      "stargazers_count": 63,
+      "forks_count": 10,
+      "open_issues_count": 1,
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "topics": []
+    },
+    {
+      "id": 170966220,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNzA5NjYyMjA=",
+      "name": "scalable-vega",
+      "full_name": "vega/scalable-vega",
+      "html_url": "https://github.com/vega/scalable-vega",
+      "description": "A demo of scaling Vega to millions of records",
+      "language": "TypeScript",
+      "stargazers_count": 53,
+      "forks_count": 12,
+      "open_issues_count": 1,
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
       "topics": []
     },
     {
@@ -476,9 +468,9 @@
       "html_url": "https://github.com/vega/vegafusion",
       "description": "Serverside scaling for Vega and Altair visualizations",
       "language": "Rust",
-      "stargazers_count": 356,
-      "forks_count": 21,
-      "open_issues_count": 54,
+      "stargazers_count": 410,
+      "forks_count": 31,
+      "open_issues_count": 62,
       "license": {
         "key": "bsd-3-clause",
         "name": "BSD 3-Clause \"New\" or \"Revised\" License",
@@ -502,9 +494,9 @@
       "html_url": "https://github.com/vega/altair_tiles",
       "description": null,
       "language": "Python",
-      "stargazers_count": 16,
-      "forks_count": 2,
-      "open_issues_count": 3,
+      "stargazers_count": 18,
+      "forks_count": 4,
+      "open_issues_count": 5,
       "license": {
         "key": "bsd-3-clause",
         "name": "BSD 3-Clause \"New\" or \"Revised\" License",
@@ -515,16 +507,143 @@
       "topics": []
     },
     {
-      "id": 545741741,
-      "node_id": "R_kgDOIIdbrQ",
-      "name": "vl-convert",
-      "full_name": "vega/vl-convert",
-      "html_url": "https://github.com/vega/vl-convert",
-      "description": "Utilities for converting Vega-Lite specs from the command line and Python",
-      "language": "Rust",
-      "stargazers_count": 133,
-      "forks_count": 20,
-      "open_issues_count": 33,
+      "id": 360586132,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzNjA1ODYxMzI=",
+      "name": "svelte-vega",
+      "full_name": "vega/svelte-vega",
+      "html_url": "https://github.com/vega/svelte-vega",
+      "description": "Svelte component for Vega and Vega-Lite",
+      "language": "Svelte",
+      "stargazers_count": 76,
+      "forks_count": 10,
+      "open_issues_count": 1,
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "topics": []
+    },
+    {
+      "id": 79009306,
+      "node_id": "MDEwOlJlcG9zaXRvcnk3OTAwOTMwNg==",
+      "name": "schema",
+      "full_name": "vega/schema",
+      "html_url": "https://github.com/vega/schema",
+      "description": "JSON schema for Vega and Vega-Lite",
+      "language": null,
+      "stargazers_count": 40,
+      "forks_count": 22,
+      "open_issues_count": 2,
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "topics": [
+        "json-schema",
+        "schema",
+        "vega",
+        "vega-lite"
+      ]
+    },
+    {
+      "id": 1006552636,
+      "node_id": "R_kgDOO_7GPA",
+      "name": "vega-loader-parquet",
+      "full_name": "vega/vega-loader-parquet",
+      "html_url": "https://github.com/vega/vega-loader-parquet",
+      "description": null,
+      "language": "JavaScript",
+      "stargazers_count": 2,
+      "forks_count": 2,
+      "open_issues_count": 7,
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "topics": []
+    },
+    {
+      "id": 70010848,
+      "node_id": "MDEwOlJlcG9zaXRvcnk3MDAxMDg0OA==",
+      "name": "falcon",
+      "full_name": "vega/falcon",
+      "html_url": "https://github.com/vega/falcon",
+      "description": "Brushing and linking for big data",
+      "language": "Jupyter Notebook",
+      "stargazers_count": 974,
+      "forks_count": 55,
+      "open_issues_count": 12,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": [
+        "scalable-visualization"
+      ]
+    },
+    {
+      "id": 813619228,
+      "node_id": "R_kgDOMH7YHA",
+      "name": "SciPy2024-Altair-Tutorial",
+      "full_name": "vega/SciPy2024-Altair-Tutorial",
+      "html_url": "https://github.com/vega/SciPy2024-Altair-Tutorial",
+      "description": "Materials for Vega-Altair tutorial at SciPy 2024",
+      "language": "Jupyter Notebook",
+      "stargazers_count": 11,
+      "forks_count": 7,
+      "open_issues_count": 0,
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "topics": []
+    },
+    {
+      "id": 314630603,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzMTQ2MzA2MDM=",
+      "name": "vue-vega",
+      "full_name": "vega/vue-vega",
+      "html_url": "https://github.com/vega/vue-vega",
+      "description": "Vue component for Vega and Vega-Lite",
+      "language": "TypeScript",
+      "stargazers_count": 8,
+      "forks_count": 4,
+      "open_issues_count": 1,
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "topics": []
+    },
+    {
+      "id": 40161124,
+      "node_id": "MDEwOlJlcG9zaXRvcnk0MDE2MTEyNA==",
+      "name": "ipyvega",
+      "full_name": "vega/ipyvega",
+      "html_url": "https://github.com/vega/ipyvega",
+      "description": "IPython/Jupyter notebook module for Vega and Vega-Lite",
+      "language": "Jupyter Notebook",
+      "stargazers_count": 388,
+      "forks_count": 67,
+      "open_issues_count": 21,
       "license": {
         "key": "bsd-3-clause",
         "name": "BSD 3-Clause \"New\" or \"Revised\" License",
@@ -542,8 +661,8 @@
       "html_url": "https://github.com/vega/altair_ally",
       "description": "Altair Ally is a companion package to Altair, which provides a few shortcuts to create common plots for exploratory data analysis.",
       "language": "Python",
-      "stargazers_count": 25,
-      "forks_count": 0,
+      "stargazers_count": 28,
+      "forks_count": 2,
       "open_issues_count": 9,
       "license": {
         "key": "bsd-3-clause",
@@ -562,26 +681,6 @@
       ]
     },
     {
-      "id": 56274630,
-      "node_id": "MDEwOlJlcG9zaXRvcnk1NjI3NDYzMA==",
-      "name": "react-vega",
-      "full_name": "vega/react-vega",
-      "html_url": "https://github.com/vega/react-vega",
-      "description": "Convert Vega spec into React class conveniently",
-      "language": "TypeScript",
-      "stargazers_count": 392,
-      "forks_count": 69,
-      "open_issues_count": 53,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
       "id": 553253392,
       "node_id": "R_kgDOIPn6EA",
       "name": "vl-convert-service",
@@ -590,7 +689,7 @@
       "description": "Vercel service wrapping vl-convert for use by the Vega editor",
       "language": "Python",
       "stargazers_count": 5,
-      "forks_count": 2,
+      "forks_count": 5,
       "open_issues_count": 0,
       "license": {
         "key": "bsd-3-clause",
@@ -610,7 +709,7 @@
       "description": null,
       "language": "Python",
       "stargazers_count": 2,
-      "forks_count": 3,
+      "forks_count": 4,
       "open_issues_count": 2,
       "license": {
         "key": "bsd-3-clause",
@@ -620,116 +719,24 @@
         "node_id": "MDc6TGljZW5zZTU="
       },
       "topics": []
-    },
-    {
-      "id": 704649791,
-      "node_id": "R_kgDOKgAaPw",
-      "name": "dash-vega-components",
-      "full_name": "vega/dash-vega-components",
-      "html_url": "https://github.com/vega/dash-vega-components",
-      "description": "Dash component for Vega-Altair charts",
-      "language": "Python",
-      "stargazers_count": 45,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "bsd-3-clause",
-        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
-        "spdx_id": "BSD-3-Clause",
-        "url": "https://api.github.com/licenses/bsd-3-clause",
-        "node_id": "MDc6TGljZW5zZTU="
-      },
-      "topics": [
-        "altair",
-        "plotly-dash",
-        "vega"
-      ]
-    },
-    {
-      "id": 813619228,
-      "node_id": "R_kgDOMH7YHA",
-      "name": "SciPy2024-Altair-Tutorial",
-      "full_name": "vega/SciPy2024-Altair-Tutorial",
-      "html_url": "https://github.com/vega/SciPy2024-Altair-Tutorial",
-      "description": "Materials for Vega-Altair tutorial at SciPy 2024",
-      "language": "Jupyter Notebook",
-      "stargazers_count": 5,
-      "forks_count": 1,
-      "open_issues_count": 0,
-      "license": {
-        "key": "bsd-3-clause",
-        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
-        "spdx_id": "BSD-3-Clause",
-        "url": "https://api.github.com/licenses/bsd-3-clause",
-        "node_id": "MDc6TGljZW5zZTU="
-      },
-      "topics": []
-    },
-    {
-      "id": 187048725,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxODcwNDg3MjU=",
-      "name": "editor-backend",
-      "full_name": "vega/editor-backend",
-      "html_url": "https://github.com/vega/editor-backend",
-      "description": "Backend for the Vega Editor",
-      "language": "TypeScript",
-      "stargazers_count": 18,
-      "forks_count": 15,
-      "open_issues_count": 10,
-      "license": {
-        "key": "bsd-3-clause",
-        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
-        "spdx_id": "BSD-3-Clause",
-        "url": "https://api.github.com/licenses/bsd-3-clause",
-        "node_id": "MDc6TGljZW5zZTU="
-      },
-      "topics": []
-    },
-    {
-      "id": 310342363,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzMTAzNDIzNjM=",
-      "name": "roadmap",
-      "full_name": "vega/roadmap",
-      "html_url": "https://github.com/vega/roadmap",
-      "description": "The Vega, Vega-Lite and Vega-Altair Roadmap",
-      "language": null,
-      "stargazers_count": 10,
-      "forks_count": 2,
-      "open_issues_count": 6,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 373917180,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzNzM5MTcxODA=",
-      "name": "vega-webgpu",
-      "full_name": "vega/vega-webgpu",
-      "html_url": "https://github.com/vega/vega-webgpu",
-      "description": "WebGPU Renderer Extension for Vega",
-      "language": "TypeScript",
-      "stargazers_count": 6,
-      "forks_count": 2,
-      "open_issues_count": 12,
-      "license": null,
-      "topics": []
     }
   ],
   "contributorsDetails": [
-    {
-      "login": "dependabot[bot]",
-      "id": 49699333,
-      "node_id": "MDM6Qm90NDk2OTkzMzM=",
-      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-      "html_url": "https://github.com/apps/dependabot",
-      "contributions": 310
-    },
     {
       "login": "domoritz",
       "id": 589034,
       "node_id": "MDQ6VXNlcjU4OTAzNA==",
       "avatar_url": "https://avatars.githubusercontent.com/u/589034?v=4",
       "html_url": "https://github.com/domoritz",
-      "contributions": 193
+      "contributions": 563
+    },
+    {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "html_url": "https://github.com/apps/dependabot",
+      "contributions": 1206
     },
     {
       "login": "dependabot-preview[bot]",
@@ -737,7 +744,263 @@
       "node_id": "MDM6Qm90Mjc4NTYyOTc=",
       "avatar_url": "https://avatars.githubusercontent.com/in/2141?v=4",
       "html_url": "https://github.com/apps/dependabot-preview",
-      "contributions": 188
+      "contributions": 349
+    },
+    {
+      "login": "mathisonian",
+      "id": 1074773,
+      "node_id": "MDQ6VXNlcjEwNzQ3NzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1074773?v=4",
+      "html_url": "https://github.com/mathisonian",
+      "contributions": 78
+    },
+    {
+      "login": "ydlamba",
+      "id": 21237466,
+      "node_id": "MDQ6VXNlcjIxMjM3NDY2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21237466?v=4",
+      "html_url": "https://github.com/ydlamba",
+      "contributions": 67
+    },
+    {
+      "login": "siddhant1",
+      "id": 30566406,
+      "node_id": "MDQ6VXNlcjMwNTY2NDA2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/30566406?v=4",
+      "html_url": "https://github.com/siddhant1",
+      "contributions": 54
+    },
+    {
+      "login": "arvind",
+      "id": 42262,
+      "node_id": "MDQ6VXNlcjQyMjYy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/42262?v=4",
+      "html_url": "https://github.com/arvind",
+      "contributions": 52
+    },
+    {
+      "login": "algomaster99",
+      "id": 35191225,
+      "node_id": "MDQ6VXNlcjM1MTkxMjI1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/35191225?v=4",
+      "html_url": "https://github.com/algomaster99",
+      "contributions": 45
+    },
+    {
+      "login": "kanitw",
+      "id": 111269,
+      "node_id": "MDQ6VXNlcjExMTI2OQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/111269?v=4",
+      "html_url": "https://github.com/kanitw",
+      "contributions": 39
+    },
+    {
+      "login": "jheer",
+      "id": 202799,
+      "node_id": "MDQ6VXNlcjIwMjc5OQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202799?v=4",
+      "html_url": "https://github.com/jheer",
+      "contributions": 38
+    },
+    {
+      "login": "starry97",
+      "id": 19985016,
+      "node_id": "MDQ6VXNlcjE5OTg1MDE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19985016?v=4",
+      "html_url": "https://github.com/starry97",
+      "contributions": 38
+    },
+    {
+      "login": "yuvvantalreja",
+      "id": 31566676,
+      "node_id": "MDQ6VXNlcjMxNTY2Njc2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/31566676?v=4",
+      "html_url": "https://github.com/yuvvantalreja",
+      "contributions": 13
+    },
+    {
+      "login": "ganeshpatro321",
+      "id": 30416891,
+      "node_id": "MDQ6VXNlcjMwNDE2ODkx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/30416891?v=4",
+      "html_url": "https://github.com/ganeshpatro321",
+      "contributions": 13
+    },
+    {
+      "login": "tianyiii",
+      "id": 9588444,
+      "node_id": "MDQ6VXNlcjk1ODg0NDQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9588444?v=4",
+      "html_url": "https://github.com/tianyiii",
+      "contributions": 12
+    },
+    {
+      "login": "jhoffswell",
+      "id": 3392218,
+      "node_id": "MDQ6VXNlcjMzOTIyMTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3392218?v=4",
+      "html_url": "https://github.com/jhoffswell",
+      "contributions": 12
+    },
+    {
+      "login": "hydrosquall",
+      "id": 9020979,
+      "node_id": "MDQ6VXNlcjkwMjA5Nzk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9020979?v=4",
+      "html_url": "https://github.com/hydrosquall",
+      "contributions": 9
+    },
+    {
+      "login": "greenkeeper[bot]",
+      "id": 23040076,
+      "node_id": "MDM6Qm90MjMwNDAwNzY=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/505?v=4",
+      "html_url": "https://github.com/apps/greenkeeper",
+      "contributions": 8
+    },
+    {
+      "login": "ashu8912",
+      "id": 30126128,
+      "node_id": "MDQ6VXNlcjMwMTI2MTI4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/30126128?v=4",
+      "html_url": "https://github.com/ashu8912",
+      "contributions": 6
+    },
+    {
+      "login": "donghaoren",
+      "id": 1595237,
+      "node_id": "MDQ6VXNlcjE1OTUyMzc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1595237?v=4",
+      "html_url": "https://github.com/donghaoren",
+      "contributions": 5
+    },
+    {
+      "login": "lsh",
+      "id": 1734032,
+      "node_id": "MDQ6VXNlcjE3MzQwMzI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1734032?v=4",
+      "html_url": "https://github.com/lsh",
+      "contributions": 4
+    },
+    {
+      "login": "RussellSprouts",
+      "id": 364542,
+      "node_id": "MDQ6VXNlcjM2NDU0Mg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/364542?v=4",
+      "html_url": "https://github.com/RussellSprouts",
+      "contributions": 4
+    },
+    {
+      "login": "shakti97",
+      "id": 30585570,
+      "node_id": "MDQ6VXNlcjMwNTg1NTcw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/30585570?v=4",
+      "html_url": "https://github.com/shakti97",
+      "contributions": 4
+    },
+    {
+      "login": "saurabh0402",
+      "id": 12875685,
+      "node_id": "MDQ6VXNlcjEyODc1Njg1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12875685?v=4",
+      "html_url": "https://github.com/saurabh0402",
+      "contributions": 4
+    },
+    {
+      "login": "hungngo97",
+      "id": 21206899,
+      "node_id": "MDQ6VXNlcjIxMjA2ODk5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21206899?v=4",
+      "html_url": "https://github.com/hungngo97",
+      "contributions": 3
+    },
+    {
+      "login": "rav7kantsingh",
+      "id": 40258150,
+      "node_id": "MDQ6VXNlcjQwMjU4MTUw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40258150?v=4",
+      "html_url": "https://github.com/rav7kantsingh",
+      "contributions": 3
+    },
+    {
+      "login": "PunitLodha",
+      "id": 48253287,
+      "node_id": "MDQ6VXNlcjQ4MjUzMjg3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/48253287?v=4",
+      "html_url": "https://github.com/PunitLodha",
+      "contributions": 3
+    },
+    {
+      "login": "andrewshawcare",
+      "id": 54861,
+      "node_id": "MDQ6VXNlcjU0ODYx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/54861?v=4",
+      "html_url": "https://github.com/andrewshawcare",
+      "contributions": 3
+    },
+    {
+      "login": "apollonian",
+      "id": 2150306,
+      "node_id": "MDQ6VXNlcjIxNTAzMDY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2150306?v=4",
+      "html_url": "https://github.com/apollonian",
+      "contributions": 2
+    },
+    {
+      "login": "ArexJambusarwala",
+      "id": 35253743,
+      "node_id": "MDQ6VXNlcjM1MjUzNzQz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/35253743?v=4",
+      "html_url": "https://github.com/ArexJambusarwala",
+      "contributions": 2
+    },
+    {
+      "login": "basbroek",
+      "id": 29799167,
+      "node_id": "MDQ6VXNlcjI5Nzk5MTY3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/29799167?v=4",
+      "html_url": "https://github.com/basbroek",
+      "contributions": 2
+    },
+    {
+      "login": "jonmmease",
+      "id": 15064365,
+      "node_id": "MDQ6VXNlcjE1MDY0MzY1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/15064365?v=4",
+      "html_url": "https://github.com/jonmmease",
+      "contributions": 263
+    },
+    {
+      "login": "aish-oai",
+      "id": 238086838,
+      "node_id": "U_kgDODjDqtg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/238086838?v=4",
+      "html_url": "https://github.com/aish-oai",
+      "contributions": 1
+    },
+    {
+      "login": "dangotbanned",
+      "id": 125183946,
+      "node_id": "U_kgDOB3Ynyg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/125183946?v=4",
+      "html_url": "https://github.com/dangotbanned",
+      "contributions": 1
+    },
+    {
+      "login": "mgilbir",
+      "id": 167588,
+      "node_id": "MDQ6VXNlcjE2NzU4OA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/167588?v=4",
+      "html_url": "https://github.com/mgilbir",
+      "contributions": 1
+    },
+    {
+      "login": "RobinL",
+      "id": 2608005,
+      "node_id": "MDQ6VXNlcjI2MDgwMDU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2608005?v=4",
+      "html_url": "https://github.com/RobinL",
+      "contributions": 1
     },
     {
       "login": "mrix",
@@ -769,15 +1032,7 @@
       "node_id": "MDQ6VXNlcjQ3NTM3NzA0",
       "avatar_url": "https://avatars.githubusercontent.com/u/47537704?v=4",
       "html_url": "https://github.com/arthurfiorette",
-      "contributions": 15
-    },
-    {
-      "login": "hydrosquall",
-      "id": 9020979,
-      "node_id": "MDQ6VXNlcjkwMjA5Nzk=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/9020979?v=4",
-      "html_url": "https://github.com/hydrosquall",
-      "contributions": 1
+      "contributions": 17
     },
     {
       "login": "AndrewLeedham",
@@ -788,19 +1043,19 @@
       "contributions": 8
     },
     {
-      "login": "greenkeeper[bot]",
-      "id": 23040076,
-      "node_id": "MDM6Qm90MjMwNDAwNzY=",
-      "avatar_url": "https://avatars.githubusercontent.com/in/505?v=4",
-      "html_url": "https://github.com/apps/greenkeeper",
-      "contributions": 2
-    },
-    {
       "login": "jirutka",
       "id": 949228,
       "node_id": "MDQ6VXNlcjk0OTIyOA==",
       "avatar_url": "https://avatars.githubusercontent.com/u/949228?v=4",
       "html_url": "https://github.com/jirutka",
+      "contributions": 7
+    },
+    {
+      "login": "alexchexes",
+      "id": 49966773,
+      "node_id": "MDQ6VXNlcjQ5OTY2Nzcz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/49966773?v=4",
+      "html_url": "https://github.com/alexchexes",
       "contributions": 7
     },
     {
@@ -828,14 +1083,6 @@
       "contributions": 6
     },
     {
-      "login": "daanboer",
-      "id": 39552979,
-      "node_id": "MDQ6VXNlcjM5NTUyOTc5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/39552979?v=4",
-      "html_url": "https://github.com/daanboer",
-      "contributions": 5
-    },
-    {
       "login": "bywo",
       "id": 1434481,
       "node_id": "MDQ6VXNlcjE0MzQ0ODE=",
@@ -844,11 +1091,27 @@
       "contributions": 5
     },
     {
-      "login": "flugg",
-      "id": 1271812,
-      "node_id": "MDQ6VXNlcjEyNzE4MTI=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1271812?v=4",
-      "html_url": "https://github.com/flugg",
+      "login": "daanboer",
+      "id": 39552979,
+      "node_id": "MDQ6VXNlcjM5NTUyOTc5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/39552979?v=4",
+      "html_url": "https://github.com/daanboer",
+      "contributions": 5
+    },
+    {
+      "login": "sramam",
+      "id": 518574,
+      "node_id": "MDQ6VXNlcjUxODU3NA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/518574?v=4",
+      "html_url": "https://github.com/sramam",
+      "contributions": 4
+    },
+    {
+      "login": "srsudar",
+      "id": 6362625,
+      "node_id": "MDQ6VXNlcjYzNjI2MjU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6362625?v=4",
+      "html_url": "https://github.com/srsudar",
       "contributions": 4
     },
     {
@@ -860,12 +1123,20 @@
       "contributions": 4
     },
     {
-      "login": "sramam",
-      "id": 518574,
-      "node_id": "MDQ6VXNlcjUxODU3NA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/518574?v=4",
-      "html_url": "https://github.com/sramam",
+      "login": "flugg",
+      "id": 1271812,
+      "node_id": "MDQ6VXNlcjEyNzE4MTI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1271812?v=4",
+      "html_url": "https://github.com/flugg",
       "contributions": 4
+    },
+    {
+      "login": "orgads",
+      "id": 1246544,
+      "node_id": "MDQ6VXNlcjEyNDY1NDQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1246544?v=4",
+      "html_url": "https://github.com/orgads",
+      "contributions": 3
     },
     {
       "login": "filipomar",
@@ -916,237 +1187,21 @@
       "contributions": 3
     },
     {
+      "login": "aciwecloud",
+      "id": 167908047,
+      "node_id": "U_kgDOCgISzw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/167908047?v=4",
+      "html_url": "https://github.com/aciwecloud",
+      "contributions": 3
+    },
+    {
       "login": "Twixes",
       "id": 4550621,
       "node_id": "MDQ6VXNlcjQ1NTA2MjE=",
       "avatar_url": "https://avatars.githubusercontent.com/u/4550621?v=4",
       "html_url": "https://github.com/Twixes",
       "contributions": 2
-    },
-    {
-      "login": "paulmelnikow",
-      "id": 1487036,
-      "node_id": "MDQ6VXNlcjE0ODcwMzY=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1487036?v=4",
-      "html_url": "https://github.com/paulmelnikow",
-      "contributions": 2
-    },
-    {
-      "login": "alexchexes",
-      "id": 49966773,
-      "node_id": "MDQ6VXNlcjQ5OTY2Nzcz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/49966773?v=4",
-      "html_url": "https://github.com/alexchexes",
-      "contributions": 2
-    },
-    {
-      "login": "robertdempsey",
-      "id": 21377232,
-      "node_id": "MDQ6VXNlcjIxMzc3MjMy",
-      "avatar_url": "https://avatars.githubusercontent.com/u/21377232?v=4",
-      "html_url": "https://github.com/robertdempsey",
-      "contributions": 2
-    },
-    {
-      "login": "alexts0",
-      "id": 40061451,
-      "node_id": "MDQ6VXNlcjQwMDYxNDUx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/40061451?v=4",
-      "html_url": "https://github.com/alexts0",
-      "contributions": 2
-    },
-    {
-      "login": "jheer",
-      "id": 202799,
-      "node_id": "MDQ6VXNlcjIwMjc5OQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/202799?v=4",
-      "html_url": "https://github.com/jheer",
-      "contributions": 29
-    },
-    {
-      "login": "dsmedia",
-      "id": 63077097,
-      "node_id": "MDQ6VXNlcjYzMDc3MDk3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/63077097?v=4",
-      "html_url": "https://github.com/dsmedia",
-      "contributions": 25
-    },
-    {
-      "login": "dangotbanned",
-      "id": 125183946,
-      "node_id": "U_kgDOB3Ynyg",
-      "avatar_url": "https://avatars.githubusercontent.com/u/125183946?v=4",
-      "html_url": "https://github.com/dangotbanned",
-      "contributions": 13
-    },
-    {
-      "login": "palewire",
-      "id": 9993,
-      "node_id": "MDQ6VXNlcjk5OTM=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/9993?v=4",
-      "html_url": "https://github.com/palewire",
-      "contributions": 12
-    },
-    {
-      "login": "eitanlees",
-      "id": 2041969,
-      "node_id": "MDQ6VXNlcjIwNDE5Njk=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/2041969?v=4",
-      "html_url": "https://github.com/eitanlees",
-      "contributions": 7
-    },
-    {
-      "login": "kanitw",
-      "id": 111269,
-      "node_id": "MDQ6VXNlcjExMTI2OQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/111269?v=4",
-      "html_url": "https://github.com/kanitw",
-      "contributions": 7
-    },
-    {
-      "login": "willium",
-      "id": 356976,
-      "node_id": "MDQ6VXNlcjM1Njk3Ng==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/356976?v=4",
-      "html_url": "https://github.com/willium",
-      "contributions": 7
-    },
-    {
-      "login": "arvind",
-      "id": 42262,
-      "node_id": "MDQ6VXNlcjQyMjYy",
-      "avatar_url": "https://avatars.githubusercontent.com/u/42262?v=4",
-      "html_url": "https://github.com/arvind",
-      "contributions": 6
-    },
-    {
-      "login": "RileyChang",
-      "id": 4986478,
-      "node_id": "MDQ6VXNlcjQ5ODY0Nzg=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/4986478?v=4",
-      "html_url": "https://github.com/RileyChang",
-      "contributions": 5
-    },
-    {
-      "login": "ydlamba",
-      "id": 21237466,
-      "node_id": "MDQ6VXNlcjIxMjM3NDY2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/21237466?v=4",
-      "html_url": "https://github.com/ydlamba",
-      "contributions": 4
-    },
-    {
-      "login": "p42-ai[bot]",
-      "id": 72252241,
-      "node_id": "MDM6Qm90NzIyNTIyNDE=",
-      "avatar_url": "https://avatars.githubusercontent.com/in/83247?v=4",
-      "html_url": "https://github.com/apps/p42-ai",
-      "contributions": 3
-    },
-    {
-      "login": "chanwutk",
-      "id": 30903997,
-      "node_id": "MDQ6VXNlcjMwOTAzOTk3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/30903997?v=4",
-      "html_url": "https://github.com/chanwutk",
-      "contributions": 2
-    },
-    {
-      "login": "jwoLondon",
-      "id": 1846999,
-      "node_id": "MDQ6VXNlcjE4NDY5OTk=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1846999?v=4",
-      "html_url": "https://github.com/jwoLondon",
-      "contributions": 2
-    },
-    {
-      "login": "mcnuttandrew",
-      "id": 6854312,
-      "node_id": "MDQ6VXNlcjY4NTQzMTI=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/6854312?v=4",
-      "html_url": "https://github.com/mcnuttandrew",
-      "contributions": 1
-    },
-    {
-      "login": "avatorl",
-      "id": 59934292,
-      "node_id": "MDQ6VXNlcjU5OTM0Mjky",
-      "avatar_url": "https://avatars.githubusercontent.com/u/59934292?v=4",
-      "html_url": "https://github.com/avatorl",
-      "contributions": 1
-    },
-    {
-      "login": "davidanthoff",
-      "id": 1036561,
-      "node_id": "MDQ6VXNlcjEwMzY1NjE=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1036561?v=4",
-      "html_url": "https://github.com/davidanthoff",
-      "contributions": 1
-    },
-    {
-      "login": "ionathan",
-      "id": 339701,
-      "node_id": "MDQ6VXNlcjMzOTcwMQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/339701?v=4",
-      "html_url": "https://github.com/ionathan",
-      "contributions": 1
-    },
-    {
-      "login": "jakevdp",
-      "id": 781659,
-      "node_id": "MDQ6VXNlcjc4MTY1OQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/781659?v=4",
-      "html_url": "https://github.com/jakevdp",
-      "contributions": 1
-    },
-    {
-      "login": "PBI-David",
-      "id": 86846675,
-      "node_id": "MDQ6VXNlcjg2ODQ2Njc1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/86846675?v=4",
-      "html_url": "https://github.com/PBI-David",
-      "contributions": 1
-    },
-    {
-      "login": "lawlesst",
-      "id": 440128,
-      "node_id": "MDQ6VXNlcjQ0MDEyOA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/440128?v=4",
-      "html_url": "https://github.com/lawlesst",
-      "contributions": 1
-    },
-    {
-      "login": "visnup",
-      "id": 10444,
-      "node_id": "MDQ6VXNlcjEwNDQ0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/10444?v=4",
-      "html_url": "https://github.com/visnup",
-      "contributions": 1
-    },
-    {
-      "login": "yhoonkim",
-      "id": 6269456,
-      "node_id": "MDQ6VXNlcjYyNjk0NTY=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/6269456?v=4",
-      "html_url": "https://github.com/yhoonkim",
-      "contributions": 1
-    },
-    {
-      "login": "light-and-salt",
-      "id": 822034,
-      "node_id": "MDQ6VXNlcjgyMjAzNA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/822034?v=4",
-      "html_url": "https://github.com/light-and-salt",
-      "contributions": 1
-    },
-    {
-      "login": "mcorrell",
-      "id": 8633790,
-      "node_id": "MDQ6VXNlcjg2MzM3OTA=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/8633790?v=4",
-      "html_url": "https://github.com/mcorrell",
-      "contributions": 1
     }
   ],
-  "activeOrg": true
+  "activeOrg": false
 }

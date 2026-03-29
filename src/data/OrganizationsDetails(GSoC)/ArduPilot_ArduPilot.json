@@ -54,7 +54,8 @@
     2022,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2017": [
@@ -345,7 +346,54 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/Hwv83Kmv"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "AI Chat Integration with all WebTools",
+        "short_description": "This project aims to enhance the functionality and user experience of web tools, starting with the Hardware Report Tool and UAV Log Viewer, by...",
+        "description": "This project aims to enhance the functionality and user experience of web tools, starting with the Hardware Report Tool and UAV Log Viewer, by integrating an AI-powered assistant. The assistant will provide context-aware responses using Retrieval-Augmented Generation (RAG) and execute actions within the tools through function calling.\n\nDeliverables include:\n1. AI-powered chat interface integrated into the Hardware Report Tool and UAV Log Viewer.\n2. RAG implementation for accurate, context-aware responses.\n3. Function calling capabilities, enabling AI to execute tool-specific actions.\n4. Automated assistant setup for easy integration with future web tools.",
+        "student_name": "Anas Chebili",
+        "code_url": "https://medium.com/@anaschebili/gsoc-2025-with-ardupilot-67ef24a17e94",
+        "proposal_id": "4S0eGR8d",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/TzF2K1ji"
+      },
+      {
+        "title": "Proposal for Gazebo Plug-in Model of a Motor - ArduPilot",
+        "short_description": "The project aims to make an electro-mechanical model of a motor which would simulate a motor in gazebo. The purpose is to enhance the motor testing...",
+        "description": "The project aims to make an electro-mechanical model of a motor which would simulate a motor in gazebo. The purpose is to enhance the motor testing behaviour before real world deployment. It also converts the RC command to motor joint control command more correctly and accuratly.",
+        "student_name": "Bhajneet Singh Bedi",
+        "code_url": "https://discuss.ardupilot.org/t/gsoc-2025-wrapping-up-gazebo-plug-in-model-of-a-motor/138509",
+        "proposal_id": "kSTEEIOs",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/hx75eBVL"
+      },
+      {
+        "title": "SITL AI Reinforcement Learning Concept Script",
+        "short_description": "This project aims to extend the ArduPilot Software-In-The-Loop (SITL) environment to support episodic reinforcement learning (RL). Rather than simply...",
+        "description": "This project aims to extend the ArduPilot Software-In-The-Loop (SITL) environment to support episodic reinforcement learning (RL). Rather than simply applying RL algorithms such as Q-learning, SARSA, or actor–critic, the primary goal is to develop and integrate an episodic framework that enables:\n• Monitoring and controlling simulation time;\n• Programmatically resetting the UAV state (position, velocity, attitude, etc.);\n• Capturing and replaying states for analysis.\nThis framework, implemented primarily in Lua (with potential Python support for data processing and visualization), will establish a robust cycle where each episode is initiated, executed for a predetermined duration, and then restarted. By focusing on a reliable reset mechanism to return the UAV to a consistent starting state, the project creates a solid foundation for the eventual application of RL algorithms within the constraints of the SITL environment.",
+        "student_name": "Bruno Andreoni Sarmento",
+        "code_url": "https://discuss.ardupilot.org/t/gsoc-2025-wrapping-up-sitl-ai-reinforcement-learning-concept-script/",
+        "proposal_id": "zUVTv0n7",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/w7EYZSIz"
+      },
+      {
+        "title": "AI Chat WebTool for use with MP and/or QGC",
+        "short_description": "This project makes drone control easier by using a web-based AI assistant. Pilots can type or speak commands like “Arm the drone” or “Fly 10 meters...",
+        "description": "This project makes drone control easier by using a web-based AI assistant. Pilots can type or speak commands like “Arm the drone” or “Fly 10 meters north,” and the tool converts them into MAVLink messages for ArduPilot vehicles. It reimplements MAVProxy’s AI chat module as a modern WebTool, integrating the OpenAI API with JavaScript and WebSocket for Mission Planner connection. Development focused on core actions such as arming, takeoff, directional flight, and switching modes.",
+        "student_name": "Elton Satiyev",
+        "code_url": "https://medium.com/@qizilbash/gsoc2025-ardupilot-ai-chat-webtool-91a864ac6be8",
+        "proposal_id": "6PH9j0yO",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/8miuPjoi"
+      },
+      {
+        "title": "Non-GPS Position Estimation Using 3D Camera and Pre-Generated Map",
+        "short_description": "This proposal aims to address the challenge of robust and accurate GPS-denied navigation for UAVs equipped with lightweight 3D cameras. The core...",
+        "description": "This proposal aims to address the challenge of robust and accurate GPS-denied navigation for UAVs equipped with lightweight 3D cameras. The core problem is that while camera-based visual odometry can struggle in certain environments and LiDAR systems are often too heavy and expensive for all UAVs, there is not a reliable way for lightweight UAVs to leverage the high-accuracy 3D maps generated by more capable mapping systems.\n\nThe proposed solution is to develop a framework that allows UAVs with 3D cameras to utilize pre-generated, centimeter-level 3D maps for navigation. This will involve a C++ based ROS2 package designed to run on a companion computer. \n\nThis package will:\n\n1. Process the pre-generated maps.\n\n2. Implement point‑cloud matching algorithms (such as ICP and NDT) to align live camera scans with the existing map and compute a 6‑DOF pose.\n\n3. Fuse the estimated pose with IMU data using an Extended Kalman Filter (EKF) to provide smooth, high‑rate odometry and improve Z‑axis estimation.\n\n4. Incorporate a state machine to manage odometry data, perform sanity checks (e.g. data‑rate drops, connection loss, time desync, corrupted messages), and transmit the validated pose to the UAV’s firmware via MAVLink over serial.\n\nThe key deliverables of this project include:\n\n1. A fully functional prototype in simulation capable of generating maps and producing 6‑DOF estimates with the 3D camera.\n\n2. Algorithm design, implementation, and sensor fusion.\n\n3. System integration, validation, and documentation.\n\n4. A complete hardware setup.",
+        "student_name": "Shubham-shahh",
+        "code_url": "https://github.com/shubham-shahh/lidar_map_localizer/tree/v_0_3_Aug_2025",
+        "proposal_id": "cgZ8jATK",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/N3dE0FL7"
+      }
+    ],
+    "2026": []
   },
   "githubID": "ArduPilot",
   "repositories": [
@@ -357,9 +405,9 @@
       "html_url": "https://github.com/ArduPilot/MethodicConfigurator",
       "description": "A clear ArduPilot configuration sequence",
       "language": "Python",
-      "stargazers_count": 79,
-      "forks_count": 27,
-      "open_issues_count": 22,
+      "stargazers_count": 122,
+      "forks_count": 56,
+      "open_issues_count": 24,
       "license": {
         "key": "gpl-3.0",
         "name": "GNU General Public License v3.0",
@@ -377,26 +425,6 @@
       ]
     },
     {
-      "id": 28945232,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyODk0NTIzMg==",
-      "name": "ardupilot_wiki",
-      "full_name": "ArduPilot/ardupilot_wiki",
-      "html_url": "https://github.com/ArduPilot/ardupilot_wiki",
-      "description": "Repository for ArduPilot wiki issues and wiki-specific website infrastructure.",
-      "language": "Python",
-      "stargazers_count": 540,
-      "forks_count": 1310,
-      "open_issues_count": 288,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
       "id": 7512484,
       "node_id": "MDEwOlJlcG9zaXRvcnk3NTEyNDg0",
       "name": "ardupilot",
@@ -404,9 +432,9 @@
       "html_url": "https://github.com/ArduPilot/ardupilot",
       "description": "ArduPlane, ArduCopter, ArduRover, ArduSub source",
       "language": "C++",
-      "stargazers_count": 12037,
-      "forks_count": 18641,
-      "open_issues_count": 2628,
+      "stargazers_count": 14751,
+      "forks_count": 20524,
+      "open_issues_count": 2889,
       "license": {
         "key": "gpl-3.0",
         "name": "GNU General Public License v3.0",
@@ -438,86 +466,6 @@
       ]
     },
     {
-      "id": 143096686,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNDMwOTY2ODY=",
-      "name": "UAVLogViewer",
-      "full_name": "ArduPilot/UAVLogViewer",
-      "html_url": "https://github.com/ArduPilot/UAVLogViewer",
-      "description": "An online viewer for UAV log files",
-      "language": "JavaScript",
-      "stargazers_count": 164,
-      "forks_count": 114,
-      "open_issues_count": 130,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": []
-    },
-    {
-      "id": 327240760,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzMjcyNDA3NjA=",
-      "name": "ardupilot_vscode_devenv",
-      "full_name": "ArduPilot/ardupilot_vscode_devenv",
-      "html_url": "https://github.com/ArduPilot/ardupilot_vscode_devenv",
-      "description": "VS Code extension for Ardupilot development setup",
-      "language": "TypeScript",
-      "stargazers_count": 8,
-      "forks_count": 8,
-      "open_issues_count": 10,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 613661701,
-      "node_id": "R_kgDOJJO8BQ",
-      "name": "Micro-XRCE-DDS-Gen",
-      "full_name": "ArduPilot/Micro-XRCE-DDS-Gen",
-      "html_url": "https://github.com/ArduPilot/Micro-XRCE-DDS-Gen",
-      "description": "Micro XRCE-DDS IDL code generator tool",
-      "language": "Java",
-      "stargazers_count": 1,
-      "forks_count": 8,
-      "open_issues_count": 1,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 378080085,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzNzgwODAwODU=",
-      "name": "CustomBuild",
-      "full_name": "ArduPilot/CustomBuild",
-      "html_url": "https://github.com/ArduPilot/CustomBuild",
-      "description": "Custom build server source",
-      "language": "Python",
-      "stargazers_count": 20,
-      "forks_count": 55,
-      "open_issues_count": 26,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": []
-    },
-    {
       "id": 414496095,
       "node_id": "R_kgDOGLS1Xw",
       "name": "ChibiOS.svn",
@@ -525,15 +473,35 @@
       "html_url": "https://github.com/ArduPilot/ChibiOS.svn",
       "description": "Mirror of ChibiOS svn repository",
       "language": "C",
-      "stargazers_count": 9,
-      "forks_count": 8,
-      "open_issues_count": 1,
+      "stargazers_count": 10,
+      "forks_count": 10,
+      "open_issues_count": 3,
       "license": {
         "key": "gpl-3.0",
         "name": "GNU General Public License v3.0",
         "spdx_id": "GPL-3.0",
         "url": "https://api.github.com/licenses/gpl-3.0",
         "node_id": "MDc6TGljZW5zZTk="
+      },
+      "topics": []
+    },
+    {
+      "id": 28945232,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyODk0NTIzMg==",
+      "name": "ardupilot_wiki",
+      "full_name": "ArduPilot/ardupilot_wiki",
+      "html_url": "https://github.com/ArduPilot/ardupilot_wiki",
+      "description": "Repository for ArduPilot wiki issues and wiki-specific website infrastructure.",
+      "language": "Python",
+      "stargazers_count": 611,
+      "forks_count": 1398,
+      "open_issues_count": 260,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
       },
       "topics": []
     },
@@ -545,9 +513,9 @@
       "html_url": "https://github.com/ArduPilot/MissionPlanner",
       "description": "Mission Planner Ground Control Station for ArduPilot (c# .net)",
       "language": "C#",
-      "stargazers_count": 1945,
-      "forks_count": 2533,
-      "open_issues_count": 1270,
+      "stargazers_count": 2201,
+      "forks_count": 2750,
+      "open_issues_count": 1328,
       "license": {
         "key": "gpl-3.0",
         "name": "GNU General Public License v3.0",
@@ -582,15 +550,69 @@
       "html_url": "https://github.com/ArduPilot/mavlink",
       "description": "MAVLink micro air vehicle marshalling / communication library",
       "language": "CMake",
-      "stargazers_count": 67,
-      "forks_count": 303,
-      "open_issues_count": 39,
+      "stargazers_count": 69,
+      "forks_count": 326,
+      "open_issues_count": 51,
       "license": {
         "key": "other",
         "name": "Other",
         "spdx_id": "NOASSERTION",
         "url": null,
         "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 559023093,
+      "node_id": "R_kgDOIVID9Q",
+      "name": "ParameterRepository",
+      "full_name": "ArduPilot/ParameterRepository",
+      "html_url": "https://github.com/ArduPilot/ParameterRepository",
+      "description": "All generated parameters in a single place",
+      "language": "HTML",
+      "stargazers_count": 13,
+      "forks_count": 18,
+      "open_issues_count": 3,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 67301306,
+      "node_id": "MDEwOlJlcG9zaXRvcnk2NzMwMTMwNg==",
+      "name": "pymavlink",
+      "full_name": "ArduPilot/pymavlink",
+      "html_url": "https://github.com/ArduPilot/pymavlink",
+      "description": "python MAVLink interface and utilities",
+      "language": "Python",
+      "stargazers_count": 680,
+      "forks_count": 709,
+      "open_issues_count": 235,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 378080085,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzNzgwODAwODU=",
+      "name": "CustomBuild",
+      "full_name": "ArduPilot/CustomBuild",
+      "html_url": "https://github.com/ArduPilot/CustomBuild",
+      "description": "Custom build server source",
+      "language": "Python",
+      "stargazers_count": 26,
+      "forks_count": 71,
+      "open_issues_count": 31,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
       },
       "topics": []
     },
@@ -602,9 +624,9 @@
       "html_url": "https://github.com/ArduPilot/ardupilot_gz",
       "description": "Tools for ArduPilot ROS2 integration and testing on ROS 2 humble",
       "language": "Python",
-      "stargazers_count": 49,
-      "forks_count": 38,
-      "open_issues_count": 19,
+      "stargazers_count": 66,
+      "forks_count": 63,
+      "open_issues_count": 18,
       "license": {
         "key": "gpl-3.0",
         "name": "GNU General Public License v3.0",
@@ -621,6 +643,142 @@
       ]
     },
     {
+      "id": 110748052,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMTA3NDgwNTI=",
+      "name": "SITL_Models",
+      "full_name": "ArduPilot/SITL_Models",
+      "html_url": "https://github.com/ArduPilot/SITL_Models",
+      "description": "Models of aircraft for SITL",
+      "language": "HTML",
+      "stargazers_count": 121,
+      "forks_count": 155,
+      "open_issues_count": 15,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 4198043,
+      "node_id": "MDEwOlJlcG9zaXRvcnk0MTk4MDQz",
+      "name": "MAVProxy",
+      "full_name": "ArduPilot/MAVProxy",
+      "html_url": "https://github.com/ArduPilot/MAVProxy",
+      "description": "MAVLink proxy and command line ground station",
+      "language": "Python",
+      "stargazers_count": 561,
+      "forks_count": 763,
+      "open_issues_count": 259,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "topics": []
+    },
+    {
+      "id": 643698871,
+      "node_id": "R_kgDOJl4Qtw",
+      "name": "WebTools",
+      "full_name": "ArduPilot/WebTools",
+      "html_url": "https://github.com/ArduPilot/WebTools",
+      "description": null,
+      "language": "JavaScript",
+      "stargazers_count": 54,
+      "forks_count": 78,
+      "open_issues_count": 30,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "topics": []
+    },
+    {
+      "id": 366523001,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzNjY1MjMwMDE=",
+      "name": "node-mavlink-mappings",
+      "full_name": "ArduPilot/node-mavlink-mappings",
+      "html_url": "https://github.com/ArduPilot/node-mavlink-mappings",
+      "description": null,
+      "language": "TypeScript",
+      "stargazers_count": 8,
+      "forks_count": 12,
+      "open_issues_count": 0,
+      "license": {
+        "key": "lgpl-3.0",
+        "name": "GNU Lesser General Public License v3.0",
+        "spdx_id": "LGPL-3.0",
+        "url": "https://api.github.com/licenses/lgpl-3.0",
+        "node_id": "MDc6TGljZW5zZTEy"
+      },
+      "topics": []
+    },
+    {
+      "id": 143096686,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNDMwOTY2ODY=",
+      "name": "UAVLogViewer",
+      "full_name": "ArduPilot/UAVLogViewer",
+      "html_url": "https://github.com/ArduPilot/UAVLogViewer",
+      "description": "An online viewer for UAV log files",
+      "language": "JavaScript",
+      "stargazers_count": 217,
+      "forks_count": 269,
+      "open_issues_count": 140,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "topics": []
+    },
+    {
+      "id": 266294618,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyNjYyOTQ2MTg=",
+      "name": "terraingen",
+      "full_name": "ArduPilot/terraingen",
+      "html_url": "https://github.com/ArduPilot/terraingen",
+      "description": "Ardupilot Terrain Generator website",
+      "language": "Python",
+      "stargazers_count": 12,
+      "forks_count": 18,
+      "open_issues_count": 2,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "topics": [
+        "ardupilot"
+      ]
+    },
+    {
+      "id": 383437090,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzODM0MzcwOTA=",
+      "name": "plotjuggler-apbin-plugins",
+      "full_name": "ArduPilot/plotjuggler-apbin-plugins",
+      "html_url": "https://github.com/ArduPilot/plotjuggler-apbin-plugins",
+      "description": "ArduPilot Dataflash plugin for Plotjuggler",
+      "language": "C++",
+      "stargazers_count": 27,
+      "forks_count": 16,
+      "open_issues_count": 7,
+      "license": {
+        "key": "lgpl-3.0",
+        "name": "GNU Lesser General Public License v3.0",
+        "spdx_id": "LGPL-3.0",
+        "url": "https://api.github.com/licenses/lgpl-3.0",
+        "node_id": "MDc6TGljZW5zZTEy"
+      },
+      "topics": []
+    },
+    {
       "id": 413090827,
       "node_id": "R_kgDOGJ9ECw",
       "name": "ardupilot_gazebo",
@@ -628,9 +786,9 @@
       "html_url": "https://github.com/ArduPilot/ardupilot_gazebo",
       "description": "Plugins and models for vehicle simulation in Gazebo Sim with ArduPilot SITL controllers",
       "language": "C++",
-      "stargazers_count": 125,
-      "forks_count": 139,
-      "open_issues_count": 16,
+      "stargazers_count": 193,
+      "forks_count": 194,
+      "open_issues_count": 22,
       "license": {
         "key": "lgpl-3.0",
         "name": "GNU Lesser General Public License v3.0",
@@ -646,64 +804,36 @@
       ]
     },
     {
-      "id": 4198043,
-      "node_id": "MDEwOlJlcG9zaXRvcnk0MTk4MDQz",
-      "name": "MAVProxy",
-      "full_name": "ArduPilot/MAVProxy",
-      "html_url": "https://github.com/ArduPilot/MAVProxy",
-      "description": "MAVLink proxy and command line ground station",
-      "language": "Python",
-      "stargazers_count": 502,
-      "forks_count": 709,
-      "open_issues_count": 239,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": []
-    },
-    {
-      "id": 559023093,
-      "node_id": "R_kgDOIVID9Q",
-      "name": "ParameterRepository",
-      "full_name": "ArduPilot/ParameterRepository",
-      "html_url": "https://github.com/ArduPilot/ParameterRepository",
-      "description": "All generated parameters in a single place",
-      "language": "HTML",
-      "stargazers_count": 9,
-      "forks_count": 11,
-      "open_issues_count": 2,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 110748052,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMTA3NDgwNTI=",
-      "name": "SITL_Models",
-      "full_name": "ArduPilot/SITL_Models",
-      "html_url": "https://github.com/ArduPilot/SITL_Models",
-      "description": "Models of aircraft for SITL",
-      "language": "HTML",
-      "stargazers_count": 95,
-      "forks_count": 131,
-      "open_issues_count": 10,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 885634809,
-      "node_id": "R_kgDONMm2-Q",
-      "name": "MAVCesium",
-      "full_name": "ArduPilot/MAVCesium",
-      "html_url": "https://github.com/ArduPilot/MAVCesium",
-      "description": "An experimental web based 3D map display for MAVProxy based on Cesium",
+      "id": 453275353,
+      "node_id": "R_kgDOGwRu2Q",
+      "name": "AP_Cloud",
+      "full_name": "ArduPilot/AP_Cloud",
+      "html_url": "https://github.com/ArduPilot/AP_Cloud",
+      "description": "Fleet management solution for ArduPilot Drones. If you aren't already using this, you might prefer https://github.com/ArduPilot/WebTools  over this.",
       "language": "JavaScript",
-      "stargazers_count": 2,
-      "forks_count": 0,
-      "open_issues_count": 8,
+      "stargazers_count": 14,
+      "forks_count": 7,
+      "open_issues_count": 1,
+      "license": {
+        "key": "agpl-3.0",
+        "name": "GNU Affero General Public License v3.0",
+        "spdx_id": "AGPL-3.0",
+        "url": "https://api.github.com/licenses/agpl-3.0",
+        "node_id": "MDc6TGljZW5zZTE="
+      },
+      "topics": []
+    },
+    {
+      "id": 112667244,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMTI2NjcyNDQ=",
+      "name": "ChibiOS",
+      "full_name": "ArduPilot/ChibiOS",
+      "html_url": "https://github.com/ArduPilot/ChibiOS",
+      "description": "Fork of ChibiOS for ArduPilot",
+      "language": "C",
+      "stargazers_count": 81,
+      "forks_count": 137,
+      "open_issues_count": 9,
       "license": {
         "key": "gpl-3.0",
         "name": "GNU General Public License v3.0",
@@ -714,36 +844,16 @@
       "topics": []
     },
     {
-      "id": 67301306,
-      "node_id": "MDEwOlJlcG9zaXRvcnk2NzMwMTMwNg==",
-      "name": "pymavlink",
-      "full_name": "ArduPilot/pymavlink",
-      "html_url": "https://github.com/ArduPilot/pymavlink",
-      "description": "python MAVLink interface and utilities",
-      "language": "Python",
-      "stargazers_count": 569,
-      "forks_count": 632,
-      "open_issues_count": 216,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 292306643,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyOTIzMDY2NDM=",
-      "name": "ardupilot_dev_docker",
-      "full_name": "ArduPilot/ardupilot_dev_docker",
-      "html_url": "https://github.com/ArduPilot/ardupilot_dev_docker",
-      "description": null,
-      "language": "Shell",
-      "stargazers_count": 15,
-      "forks_count": 18,
-      "open_issues_count": 2,
+      "id": 613661701,
+      "node_id": "R_kgDOJJO8BQ",
+      "name": "Micro-XRCE-DDS-Gen",
+      "full_name": "ArduPilot/Micro-XRCE-DDS-Gen",
+      "html_url": "https://github.com/ArduPilot/Micro-XRCE-DDS-Gen",
+      "description": "Micro XRCE-DDS IDL code generator tool",
+      "language": "Java",
+      "stargazers_count": 2,
+      "forks_count": 12,
+      "open_issues_count": 1,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -754,16 +864,36 @@
       "topics": []
     },
     {
-      "id": 643698871,
-      "node_id": "R_kgDOJl4Qtw",
-      "name": "WebTools",
-      "full_name": "ArduPilot/WebTools",
-      "html_url": "https://github.com/ArduPilot/WebTools",
-      "description": null,
-      "language": "JavaScript",
-      "stargazers_count": 36,
-      "forks_count": 44,
-      "open_issues_count": 22,
+      "id": 327240760,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzMjcyNDA3NjA=",
+      "name": "ardupilot_vscode_devenv",
+      "full_name": "ArduPilot/ardupilot_vscode_devenv",
+      "html_url": "https://github.com/ArduPilot/ardupilot_vscode_devenv",
+      "description": "VS Code extension for Ardupilot development setup",
+      "language": "TypeScript",
+      "stargazers_count": 13,
+      "forks_count": 13,
+      "open_issues_count": 17,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 595351965,
+      "node_id": "R_kgDOI3xZnQ",
+      "name": "UDPProxy",
+      "full_name": "ArduPilot/UDPProxy",
+      "html_url": "https://github.com/ArduPilot/UDPProxy",
+      "description": "UDP Proxy For MAVLink2",
+      "language": "C++",
+      "stargazers_count": 10,
+      "forks_count": 8,
+      "open_issues_count": 3,
       "license": {
         "key": "gpl-3.0",
         "name": "GNU General Public License v3.0",
@@ -774,15 +904,29 @@
       "topics": []
     },
     {
-      "id": 140394068,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNDAzOTQwNjg=",
-      "name": "Schematics",
-      "full_name": "ArduPilot/Schematics",
-      "html_url": "https://github.com/ArduPilot/Schematics",
+      "id": 997861850,
+      "node_id": "R_kgDOO3op2g",
+      "name": "AP_Conf_Wiki",
+      "full_name": "ArduPilot/AP_Conf_Wiki",
+      "html_url": "https://github.com/ArduPilot/AP_Conf_Wiki",
+      "description": "Website Guide for Attendees of ArduPilot Conference 2025",
+      "language": "Vue",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 926574041,
+      "node_id": "R_kgDONzpl2Q",
+      "name": "dronecan-webtools",
+      "full_name": "ArduPilot/dronecan-webtools",
+      "html_url": "https://github.com/ArduPilot/dronecan-webtools",
       "description": null,
-      "language": "C",
-      "stargazers_count": 189,
-      "forks_count": 120,
+      "language": "JavaScript",
+      "stargazers_count": 8,
+      "forks_count": 2,
       "open_issues_count": 0,
       "license": null,
       "topics": []
@@ -795,9 +939,9 @@
       "html_url": "https://github.com/ArduPilot/node-mavlink",
       "description": "This project is providing native TypeScript bindings and tools for sending and receiving MavLink messages over a verity of medium ",
       "language": "TypeScript",
-      "stargazers_count": 86,
+      "stargazers_count": 96,
       "forks_count": 31,
-      "open_issues_count": 2,
+      "open_issues_count": 0,
       "license": {
         "key": "lgpl-3.0",
         "name": "GNU Lesser General Public License v3.0",
@@ -808,105 +952,78 @@
       "topics": []
     },
     {
-      "id": 41458461,
-      "node_id": "MDEwOlJlcG9zaXRvcnk0MTQ1ODQ2MQ==",
-      "name": "sphinx_rtd_theme",
-      "full_name": "ArduPilot/sphinx_rtd_theme",
-      "html_url": "https://github.com/ArduPilot/sphinx_rtd_theme",
-      "description": "Sphinx theme for readthedocs.org",
-      "language": "Sass",
-      "stargazers_count": 2,
-      "forks_count": 20,
-      "open_issues_count": 1,
+      "id": 292306643,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyOTIzMDY2NDM=",
+      "name": "ardupilot_dev_docker",
+      "full_name": "ArduPilot/ardupilot_dev_docker",
+      "html_url": "https://github.com/ArduPilot/ardupilot_dev_docker",
+      "description": null,
+      "language": "Shell",
+      "stargazers_count": 17,
+      "forks_count": 23,
+      "open_issues_count": 2,
       "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
       },
       "topics": []
     },
     {
-      "id": 533986316,
-      "node_id": "R_kgDOH9P8DA",
-      "name": "ardupilot_ros",
-      "full_name": "ArduPilot/ardupilot_ros",
-      "html_url": "https://github.com/ArduPilot/ardupilot_ros",
-      "description": "ArduPilot ROS integration",
-      "language": "Python",
-      "stargazers_count": 23,
-      "forks_count": 11,
-      "open_issues_count": 8,
+      "id": 9307757,
+      "node_id": "MDEwOlJlcG9zaXRvcnk5MzA3NzU3",
+      "name": "apm_planner",
+      "full_name": "ArduPilot/apm_planner",
+      "html_url": "https://github.com/ArduPilot/apm_planner",
+      "description": "APM Planner Ground Control Station (Qt)",
+      "language": "C++",
+      "stargazers_count": 546,
+      "forks_count": 478,
+      "open_issues_count": 225,
       "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
       },
       "topics": [
+        "apm-planner",
+        "arducopter",
         "ardupilot",
+        "arduplane",
+        "ardurover",
+        "autonomous-vehicles",
+        "autopilot",
+        "copter",
+        "gcs",
+        "ground-control-station",
+        "open-source",
+        "pixhawk",
+        "plane",
+        "robot-operating-system",
         "ros"
       ]
     },
     {
-      "id": 595351965,
-      "node_id": "R_kgDOI3xZnQ",
-      "name": "UDPProxy",
-      "full_name": "ArduPilot/UDPProxy",
-      "html_url": "https://github.com/ArduPilot/UDPProxy",
-      "description": "UDP Proxy For MAVLink2",
-      "language": "C++",
-      "stargazers_count": 7,
-      "forks_count": 2,
-      "open_issues_count": 0,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": []
-    },
-    {
-      "id": 112667244,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMTI2NjcyNDQ=",
-      "name": "ChibiOS",
-      "full_name": "ArduPilot/ChibiOS",
-      "html_url": "https://github.com/ArduPilot/ChibiOS",
-      "description": "Fork of ChibiOS for ArduPilot",
+      "id": 647026917,
+      "node_id": "R_kgDOJpDY5Q",
+      "name": "lwip",
+      "full_name": "ArduPilot/lwip",
+      "html_url": "https://github.com/ArduPilot/lwip",
+      "description": "fork of https://git.savannah.gnu.org/git/lwip.git",
       "language": "C",
-      "stargazers_count": 76,
-      "forks_count": 125,
-      "open_issues_count": 8,
+      "stargazers_count": 3,
+      "forks_count": 10,
+      "open_issues_count": 1,
       "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": []
-    },
-    {
-      "id": 896412701,
-      "node_id": "R_kgDONW4sHQ",
-      "name": "littlefs",
-      "full_name": "ArduPilot/littlefs",
-      "html_url": "https://github.com/ArduPilot/littlefs",
-      "description": "A little fail-safe filesystem designed for microcontrollers",
-      "language": null,
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "bsd-3-clause",
-        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
-        "spdx_id": "BSD-3-Clause",
-        "url": "https://api.github.com/licenses/bsd-3-clause",
-        "node_id": "MDc6TGljZW5zZTU="
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
       },
       "topics": []
     },
@@ -918,75 +1035,15 @@
       "html_url": "https://github.com/ArduPilot/ArduRemoteID",
       "description": "RemoteID support using OpenDroneID",
       "language": "C++",
-      "stargazers_count": 125,
-      "forks_count": 58,
-      "open_issues_count": 35,
+      "stargazers_count": 196,
+      "forks_count": 80,
+      "open_issues_count": 37,
       "license": {
         "key": "gpl-2.0",
         "name": "GNU General Public License v2.0",
         "spdx_id": "GPL-2.0",
         "url": "https://api.github.com/licenses/gpl-2.0",
         "node_id": "MDc6TGljZW5zZTg="
-      },
-      "topics": []
-    },
-    {
-      "id": 47159977,
-      "node_id": "MDEwOlJlcG9zaXRvcnk0NzE1OTk3Nw==",
-      "name": "waf",
-      "full_name": "ArduPilot/waf",
-      "html_url": "https://github.com/ArduPilot/waf",
-      "description": "The Waf build system",
-      "language": "Python",
-      "stargazers_count": 12,
-      "forks_count": 97,
-      "open_issues_count": 2,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 383437090,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzODM0MzcwOTA=",
-      "name": "plotjuggler-apbin-plugins",
-      "full_name": "ArduPilot/plotjuggler-apbin-plugins",
-      "html_url": "https://github.com/ArduPilot/plotjuggler-apbin-plugins",
-      "description": "ArduPilot Dataflash plugin for Plotjuggler",
-      "language": "C++",
-      "stargazers_count": 21,
-      "forks_count": 13,
-      "open_issues_count": 5,
-      "license": {
-        "key": "lgpl-3.0",
-        "name": "GNU Lesser General Public License v3.0",
-        "spdx_id": "LGPL-3.0",
-        "url": "https://api.github.com/licenses/lgpl-3.0",
-        "node_id": "MDc6TGljZW5zZTEy"
-      },
-      "topics": []
-    },
-    {
-      "id": 534471371,
-      "node_id": "R_kgDOH9tiyw",
-      "name": "sphinxcontrib-youtube",
-      "full_name": "ArduPilot/sphinxcontrib-youtube",
-      "html_url": "https://github.com/ArduPilot/sphinxcontrib-youtube",
-      "description": "A Sphinx extension to embed videos from YouTube",
-      "language": "Python",
-      "stargazers_count": 2,
-      "forks_count": 2,
-      "open_issues_count": 0,
-      "license": {
-        "key": "bsd-3-clause",
-        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
-        "spdx_id": "BSD-3-Clause",
-        "url": "https://api.github.com/licenses/bsd-3-clause",
-        "node_id": "MDc6TGljZW5zZTU="
       },
       "topics": []
     }
@@ -998,7 +1055,7 @@
       "node_id": "MDQ6VXNlcjI0NDUzNTYz",
       "avatar_url": "https://avatars.githubusercontent.com/u/24453563?v=4",
       "html_url": "https://github.com/amilcarlucas",
-      "contributions": 1315
+      "contributions": 451
     },
     {
       "login": "dependabot[bot]",
@@ -1006,7 +1063,7 @@
       "node_id": "MDM6Qm90NDk2OTkzMzM=",
       "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
       "html_url": "https://github.com/apps/dependabot",
-      "contributions": 94
+      "contributions": 410
     },
     {
       "login": "github-actions[bot]",
@@ -1014,7 +1071,39 @@
       "node_id": "MDM6Qm90NDE4OTgyODI=",
       "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
       "html_url": "https://github.com/apps/github-actions",
-      "contributions": 79
+      "contributions": 136
+    },
+    {
+      "login": "pre-commit-ci[bot]",
+      "id": 66853113,
+      "node_id": "MDM6Qm90NjY4NTMxMTM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/68672?v=4",
+      "html_url": "https://github.com/apps/pre-commit-ci",
+      "contributions": 28
+    },
+    {
+      "login": "yashhzd",
+      "id": 162511050,
+      "node_id": "U_kgDOCa-4yg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/162511050?v=4",
+      "html_url": "https://github.com/yashhzd",
+      "contributions": 15
+    },
+    {
+      "login": "OmkarSarkar204",
+      "id": 195577296,
+      "node_id": "U_kgDOC6hF0A",
+      "avatar_url": "https://avatars.githubusercontent.com/u/195577296?v=4",
+      "html_url": "https://github.com/OmkarSarkar204",
+      "contributions": 15
+    },
+    {
+      "login": "cclauss",
+      "id": 3709715,
+      "node_id": "MDQ6VXNlcjM3MDk3MTU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3709715?v=4",
+      "html_url": "https://github.com/cclauss",
+      "contributions": 10
     },
     {
       "login": "step-security-bot",
@@ -1022,7 +1111,47 @@
       "node_id": "MDQ6VXNlcjg5MzI4NjQ1",
       "avatar_url": "https://avatars.githubusercontent.com/u/89328645?v=4",
       "html_url": "https://github.com/step-security-bot",
-      "contributions": 6
+      "contributions": 9
+    },
+    {
+      "login": "Copilot",
+      "id": 198982749,
+      "node_id": "BOT_kgDOC9w8XQ",
+      "avatar_url": "https://avatars.githubusercontent.com/in/1143301?v=4",
+      "html_url": "https://github.com/apps/copilot-swe-agent",
+      "contributions": 3
+    },
+    {
+      "login": "neo-0007",
+      "id": 98836237,
+      "node_id": "U_kgDOBeQfDQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/98836237?v=4",
+      "html_url": "https://github.com/neo-0007",
+      "contributions": 3
+    },
+    {
+      "login": "grekiki2",
+      "id": 134219662,
+      "node_id": "U_kgDOCAAHjg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/134219662?v=4",
+      "html_url": "https://github.com/grekiki2",
+      "contributions": 3
+    },
+    {
+      "login": "aero-oli",
+      "id": 73533343,
+      "node_id": "MDQ6VXNlcjczNTMzMzQz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/73533343?v=4",
+      "html_url": "https://github.com/aero-oli",
+      "contributions": 2
+    },
+    {
+      "login": "PritamP20",
+      "id": 102867939,
+      "node_id": "U_kgDOBiGj4w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/102867939?v=4",
+      "html_url": "https://github.com/PritamP20",
+      "contributions": 2
     },
     {
       "login": "BloodSakura3774",
@@ -1041,6 +1170,22 @@
       "contributions": 2
     },
     {
+      "login": "flyasky",
+      "id": 213282,
+      "node_id": "MDQ6VXNlcjIxMzI4Mg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/213282?v=4",
+      "html_url": "https://github.com/flyasky",
+      "contributions": 1
+    },
+    {
+      "login": "EvansCesilThomas",
+      "id": 148005352,
+      "node_id": "U_kgDOCNJh6A",
+      "avatar_url": "https://avatars.githubusercontent.com/u/148005352?v=4",
+      "html_url": "https://github.com/EvansCesilThomas",
+      "contributions": 1
+    },
+    {
       "login": "igoutta",
       "id": 10776042,
       "node_id": "MDQ6VXNlcjEwNzc2MDQy",
@@ -1054,14 +1199,6 @@
       "node_id": "MDQ6VXNlcjY1OTE2ODQ2",
       "avatar_url": "https://avatars.githubusercontent.com/u/65916846?v=4",
       "html_url": "https://github.com/actions-user",
-      "contributions": 1
-    },
-    {
-      "login": "grekiki2",
-      "id": 134219662,
-      "node_id": "U_kgDOCAAHjg",
-      "avatar_url": "https://avatars.githubusercontent.com/u/134219662?v=4",
-      "html_url": "https://github.com/grekiki2",
       "contributions": 1
     },
     {
@@ -1086,7 +1223,7 @@
       "node_id": "MDQ6VXNlcjk5MDc5MDY=",
       "avatar_url": "https://avatars.githubusercontent.com/u/9907906?v=4",
       "html_url": "https://github.com/bnsgeyer",
-      "contributions": 52
+      "contributions": 309
     },
     {
       "login": "dkemxr",
@@ -1105,20 +1242,36 @@
       "contributions": 1
     },
     {
-      "login": "Hwurzburg",
-      "id": 6076534,
-      "node_id": "MDQ6VXNlcjYwNzY1MzQ=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/6076534?v=4",
-      "html_url": "https://github.com/Hwurzburg",
-      "contributions": 3181
+      "login": "tripcoded",
+      "id": 206809037,
+      "node_id": "U_kgDODFOnzQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/206809037?v=4",
+      "html_url": "https://github.com/tripcoded",
+      "contributions": 1
     },
     {
-      "login": "rmackay9",
-      "id": 1498098,
-      "node_id": "MDQ6VXNlcjE0OTgwOTg=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1498098?v=4",
-      "html_url": "https://github.com/rmackay9",
-      "contributions": 1882
+      "login": "Trishanshv",
+      "id": 154974708,
+      "node_id": "U_kgDOCTy59A",
+      "avatar_url": "https://avatars.githubusercontent.com/u/154974708?v=4",
+      "html_url": "https://github.com/Trishanshv",
+      "contributions": 1
+    },
+    {
+      "login": "yadneshx17",
+      "id": 106799295,
+      "node_id": "U_kgDOBl2gvw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/106799295?v=4",
+      "html_url": "https://github.com/yadneshx17",
+      "contributions": 1
+    },
+    {
+      "login": "zhouzhiwen2000",
+      "id": 8504573,
+      "node_id": "MDQ6VXNlcjg1MDQ1NzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8504573?v=4",
+      "html_url": "https://github.com/zhouzhiwen2000",
+      "contributions": 1
     },
     {
       "login": "peterbarker",
@@ -1126,15 +1279,7 @@
       "node_id": "MDQ6VXNlcjcwNzc4NTc=",
       "avatar_url": "https://avatars.githubusercontent.com/u/7077857?v=4",
       "html_url": "https://github.com/peterbarker",
-      "contributions": 279
-    },
-    {
-      "login": "hamishwillee",
-      "id": 5368500,
-      "node_id": "MDQ6VXNlcjUzNjg1MDA=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/5368500?v=4",
-      "html_url": "https://github.com/hamishwillee",
-      "contributions": 202
+      "contributions": 13280
     },
     {
       "login": "tridge",
@@ -1142,175 +1287,15 @@
       "node_id": "MDQ6VXNlcjgzMTg2Nw==",
       "avatar_url": "https://avatars.githubusercontent.com/u/831867?v=4",
       "html_url": "https://github.com/tridge",
-      "contributions": 199
+      "contributions": 12505
     },
     {
-      "login": "khancyr",
-      "id": 705341,
-      "node_id": "MDQ6VXNlcjcwNTM0MQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/705341?v=4",
-      "html_url": "https://github.com/khancyr",
-      "contributions": 165
-    },
-    {
-      "login": "auturgy",
-      "id": 5461951,
-      "node_id": "MDQ6VXNlcjU0NjE5NTE=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/5461951?v=4",
-      "html_url": "https://github.com/auturgy",
-      "contributions": 136
-    },
-    {
-      "login": "nkruzan",
-      "id": 1158316,
-      "node_id": "MDQ6VXNlcjExNTgzMTY=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1158316?v=4",
-      "html_url": "https://github.com/nkruzan",
-      "contributions": 110
-    },
-    {
-      "login": "brunoolivieri",
-      "id": 3767998,
-      "node_id": "MDQ6VXNlcjM3Njc5OTg=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/3767998?v=4",
-      "html_url": "https://github.com/brunoolivieri",
-      "contributions": 96
-    },
-    {
-      "login": "TunaLobster",
-      "id": 5710309,
-      "node_id": "MDQ6VXNlcjU3MTAzMDk=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/5710309?v=4",
-      "html_url": "https://github.com/TunaLobster",
-      "contributions": 84
-    },
-    {
-      "login": "stephendade",
-      "id": 1731976,
-      "node_id": "MDQ6VXNlcjE3MzE5NzY=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1731976?v=4",
-      "html_url": "https://github.com/stephendade",
-      "contributions": 83
-    },
-    {
-      "login": "rishabsingh3003",
-      "id": 36970042,
-      "node_id": "MDQ6VXNlcjM2OTcwMDQy",
-      "avatar_url": "https://avatars.githubusercontent.com/u/36970042?v=4",
-      "html_url": "https://github.com/rishabsingh3003",
-      "contributions": 77
-    },
-    {
-      "login": "billbonney",
-      "id": 959994,
-      "node_id": "MDQ6VXNlcjk1OTk5NA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/959994?v=4",
-      "html_url": "https://github.com/billbonney",
-      "contributions": 65
-    },
-    {
-      "login": "jpkh",
-      "id": 798248,
-      "node_id": "MDQ6VXNlcjc5ODI0OA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/798248?v=4",
-      "html_url": "https://github.com/jpkh",
-      "contributions": 59
-    },
-    {
-      "login": "vierfuffzig",
-      "id": 9342253,
-      "node_id": "MDQ6VXNlcjkzNDIyNTM=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/9342253?v=4",
-      "html_url": "https://github.com/vierfuffzig",
-      "contributions": 56
-    },
-    {
-      "login": "Ryanf55",
-      "id": 25047695,
-      "node_id": "MDQ6VXNlcjI1MDQ3Njk1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/25047695?v=4",
-      "html_url": "https://github.com/Ryanf55",
-      "contributions": 52
-    },
-    {
-      "login": "kd0aij",
-      "id": 2300221,
-      "node_id": "MDQ6VXNlcjIzMDAyMjE=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/2300221?v=4",
-      "html_url": "https://github.com/kd0aij",
-      "contributions": 52
-    },
-    {
-      "login": "magicrub",
-      "id": 4782875,
-      "node_id": "MDQ6VXNlcjQ3ODI4NzU=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/4782875?v=4",
-      "html_url": "https://github.com/magicrub",
-      "contributions": 49
-    },
-    {
-      "login": "MadRC",
-      "id": 54420764,
-      "node_id": "MDQ6VXNlcjU0NDIwNzY0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/54420764?v=4",
-      "html_url": "https://github.com/MadRC",
-      "contributions": 43
-    },
-    {
-      "login": "OXINARF",
-      "id": 1778527,
-      "node_id": "MDQ6VXNlcjE3Nzg1Mjc=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1778527?v=4",
-      "html_url": "https://github.com/OXINARF",
-      "contributions": 43
-    },
-    {
-      "login": "muramura",
-      "id": 646194,
-      "node_id": "MDQ6VXNlcjY0NjE5NA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/646194?v=4",
-      "html_url": "https://github.com/muramura",
-      "contributions": 43
-    },
-    {
-      "login": "cuhome",
-      "id": 31507501,
-      "node_id": "MDQ6VXNlcjMxNTA3NTAx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/31507501?v=4",
-      "html_url": "https://github.com/cuhome",
-      "contributions": 38
-    },
-    {
-      "login": "timtuxworth",
-      "id": 5266784,
-      "node_id": "MDQ6VXNlcjUyNjY3ODQ=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/5266784?v=4",
-      "html_url": "https://github.com/timtuxworth",
-      "contributions": 35
-    },
-    {
-      "login": "lordneeko",
-      "id": 11577533,
-      "node_id": "MDQ6VXNlcjExNTc3NTMz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/11577533?v=4",
-      "html_url": "https://github.com/lordneeko",
-      "contributions": 34
-    },
-    {
-      "login": "lvale",
-      "id": 3130363,
-      "node_id": "MDQ6VXNlcjMxMzAzNjM=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/3130363?v=4",
-      "html_url": "https://github.com/lvale",
-      "contributions": 34
-    },
-    {
-      "login": "rajat2004",
-      "id": 37938604,
-      "node_id": "MDQ6VXNlcjM3OTM4NjA0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/37938604?v=4",
-      "html_url": "https://github.com/rajat2004",
-      "contributions": 32
+      "login": "rmackay9",
+      "id": 1498098,
+      "node_id": "MDQ6VXNlcjE0OTgwOTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1498098?v=4",
+      "html_url": "https://github.com/rmackay9",
+      "contributions": 8256
     },
     {
       "login": "IamPete1",
@@ -1318,23 +1303,199 @@
       "node_id": "MDQ6VXNlcjMzMTc2MTA4",
       "avatar_url": "https://avatars.githubusercontent.com/u/33176108?v=4",
       "html_url": "https://github.com/IamPete1",
-      "contributions": 32
+      "contributions": 2178
     },
     {
-      "login": "Naterater",
-      "id": 35429159,
-      "node_id": "MDQ6VXNlcjM1NDI5MTU5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/35429159?v=4",
-      "html_url": "https://github.com/Naterater",
-      "contributions": 31
+      "login": "andyp1per",
+      "id": 2893260,
+      "node_id": "MDQ6VXNlcjI4OTMyNjA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2893260?v=4",
+      "html_url": "https://github.com/andyp1per",
+      "contributions": 1771
     },
     {
-      "login": "arikrupnik",
-      "id": 1756197,
-      "node_id": "MDQ6VXNlcjE3NTYxOTc=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1756197?v=4",
-      "html_url": "https://github.com/arikrupnik",
-      "contributions": 31
+      "login": "lthall",
+      "id": 100896,
+      "node_id": "MDQ6VXNlcjEwMDg5Ng==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/100896?v=4",
+      "html_url": "https://github.com/lthall",
+      "contributions": 1405
+    },
+    {
+      "login": "bugobliterator",
+      "id": 5697288,
+      "node_id": "MDQ6VXNlcjU2OTcyODg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5697288?v=4",
+      "html_url": "https://github.com/bugobliterator",
+      "contributions": 1314
+    },
+    {
+      "login": "WickedShell",
+      "id": 567688,
+      "node_id": "MDQ6VXNlcjU2NzY4OA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/567688?v=4",
+      "html_url": "https://github.com/WickedShell",
+      "contributions": 1283
+    },
+    {
+      "login": "magicrub",
+      "id": 4782875,
+      "node_id": "MDQ6VXNlcjQ3ODI4NzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4782875?v=4",
+      "html_url": "https://github.com/magicrub",
+      "contributions": 1276
+    },
+    {
+      "login": "priseborough",
+      "id": 3596952,
+      "node_id": "MDQ6VXNlcjM1OTY5NTI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3596952?v=4",
+      "html_url": "https://github.com/priseborough",
+      "contributions": 1194
+    },
+    {
+      "login": "khancyr",
+      "id": 705341,
+      "node_id": "MDQ6VXNlcjcwNTM0MQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/705341?v=4",
+      "html_url": "https://github.com/khancyr",
+      "contributions": 1056
+    },
+    {
+      "login": "jason4short",
+      "id": 3344856,
+      "node_id": "MDQ6VXNlcjMzNDQ4NTY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3344856?v=4",
+      "html_url": "https://github.com/jason4short",
+      "contributions": 931
+    },
+    {
+      "login": "Hwurzburg",
+      "id": 6076534,
+      "node_id": "MDQ6VXNlcjYwNzY1MzQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6076534?v=4",
+      "html_url": "https://github.com/Hwurzburg",
+      "contributions": 701
+    },
+    {
+      "login": "muramura",
+      "id": 646194,
+      "node_id": "MDQ6VXNlcjY0NjE5NA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/646194?v=4",
+      "html_url": "https://github.com/muramura",
+      "contributions": 631
+    },
+    {
+      "login": "jschall",
+      "id": 1015761,
+      "node_id": "MDQ6VXNlcjEwMTU3NjE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1015761?v=4",
+      "html_url": "https://github.com/jschall",
+      "contributions": 555
+    },
+    {
+      "login": "tpwrules",
+      "id": 208010,
+      "node_id": "MDQ6VXNlcjIwODAxMA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/208010?v=4",
+      "html_url": "https://github.com/tpwrules",
+      "contributions": 518
+    },
+    {
+      "login": "guludo",
+      "id": 6026123,
+      "node_id": "MDQ6VXNlcjYwMjYxMjM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6026123?v=4",
+      "html_url": "https://github.com/guludo",
+      "contributions": 510
+    },
+    {
+      "login": "meee1",
+      "id": 511568,
+      "node_id": "MDQ6VXNlcjUxMTU2OA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/511568?v=4",
+      "html_url": "https://github.com/meee1",
+      "contributions": 477
+    },
+    {
+      "login": "jaxxzer",
+      "id": 8315108,
+      "node_id": "MDQ6VXNlcjgzMTUxMDg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8315108?v=4",
+      "html_url": "https://github.com/jaxxzer",
+      "contributions": 469
+    },
+    {
+      "login": "pchickey",
+      "id": 118618,
+      "node_id": "MDQ6VXNlcjExODYxOA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/118618?v=4",
+      "html_url": "https://github.com/pchickey",
+      "contributions": 404
+    },
+    {
+      "login": "R-Lefebvre",
+      "id": 3228111,
+      "node_id": "MDQ6VXNlcjMyMjgxMTE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3228111?v=4",
+      "html_url": "https://github.com/R-Lefebvre",
+      "contributions": 328
+    },
+    {
+      "login": "rishabsingh3003",
+      "id": 36970042,
+      "node_id": "MDQ6VXNlcjM2OTcwMDQy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/36970042?v=4",
+      "html_url": "https://github.com/rishabsingh3003",
+      "contributions": 289
+    },
+    {
+      "login": "Ryanf55",
+      "id": 25047695,
+      "node_id": "MDQ6VXNlcjI1MDQ3Njk1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25047695?v=4",
+      "html_url": "https://github.com/Ryanf55",
+      "contributions": 286
+    },
+    {
+      "login": "hendjoshsr71",
+      "id": 69225461,
+      "node_id": "MDQ6VXNlcjY5MjI1NDYx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/69225461?v=4",
+      "html_url": "https://github.com/hendjoshsr71",
+      "contributions": 257
+    },
+    {
+      "login": "patrickelectric",
+      "id": 1215497,
+      "node_id": "MDQ6VXNlcjEyMTU0OTc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1215497?v=4",
+      "html_url": "https://github.com/patrickelectric",
+      "contributions": 248
+    },
+    {
+      "login": "OXINARF",
+      "id": 1778527,
+      "node_id": "MDQ6VXNlcjE3Nzg1Mjc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1778527?v=4",
+      "html_url": "https://github.com/OXINARF",
+      "contributions": 238
+    },
+    {
+      "login": "Williangalvani",
+      "id": 4013804,
+      "node_id": "MDQ6VXNlcjQwMTM4MDQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4013804?v=4",
+      "html_url": "https://github.com/Williangalvani",
+      "contributions": 198
+    },
+    {
+      "login": "mirkix",
+      "id": 10398007,
+      "node_id": "MDQ6VXNlcjEwMzk4MDA3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10398007?v=4",
+      "html_url": "https://github.com/mirkix",
+      "contributions": 189
     }
   ],
   "activeOrg": true

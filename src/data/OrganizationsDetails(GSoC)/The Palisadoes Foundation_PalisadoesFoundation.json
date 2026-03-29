@@ -304,21 +304,85 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/xjPeiv1d"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Enhanced SwitchMap-NG Scalability",
+        "short_description": "SwitchMap-NG currently faces scalability challenges in distributed networks, including data loss due to unreliable connections and slow polling when...",
+        "description": "SwitchMap-NG currently faces scalability challenges in distributed networks, including data loss due to unreliable connections and slow polling when monitoring thousands of devices.\n\nMy proposed solution introduces a layered architecture: regional hubs will collect device data from edge pollers, buffer it locally during outages, and forward it to a central server.\n\nTo improve performance, I’ll implement asynchronous polling, decouple frequent performance updates (e.g., every 5 minutes) from less frequent status checks (e.g., hourly), and introduce historical data tracking along with new device metrics like CPU, memory, and power usage.\n\nThe final deliverables will include a fully containerized deployment alongside local buffering, complete testing, automated documentation.\n\nThis will significantly improve the reliability, speed, and scalability of SwitchMap-NG, making it better suited for large-scale network monitoring and management.",
+        "student_name": "abbi4code",
+        "code_url": "https://github.com/PalisadoesFoundation/switchmap-ng/discussions/323",
+        "proposal_id": "37u7weYr",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/DxsDARQQ"
+      },
+      {
+        "title": "Enhanced SwitchMap-NG Web Features",
+        "short_description": "The project aims to replace the outdated Flask-based SwitchMap-NG interface with a modern, high-performance frontend built using Next.js and React....",
+        "description": "The project aims to replace the outdated Flask-based SwitchMap-NG interface with a modern, high-performance frontend built using Next.js and React. It focuses on creating an interactive and responsive platform for network monitoring, featuring dynamic topology visualizations, detailed device analytics, and historical performance tracking powered by vis-network and Recharts. Performance optimizations such as caching, lazy loading, and memoization ensure scalability and efficiency for large datasets. The new architecture includes complete configuration management, automated documentation, and rigorous testing to achieve high test coverage. Overall, the project delivers a sleek, maintainable, and insight-rich UI that significantly enhances usability, performance, and network visibility.",
+        "student_name": "Abhi Murali",
+        "code_url": "https://github.com/PalisadoesFoundation/switchmap-ng/discussions/324",
+        "proposal_id": "Y3MuolbP",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/lXkF8ycI"
+      },
+      {
+        "title": "Implementing Efficient Recurring Events and Solidifying Core Features",
+        "short_description": "This proposal addresses the implementation of a scalable recurring events system for Talawa, focusing on efficient data management and association...",
+        "description": "This proposal addresses the implementation of a scalable recurring events system for Talawa, focusing on efficient data management and association handling. Current event management in Talawa lacks support for recurring events in postgres branch, a critical feature for organization planning. The previous implementation faced scalability issues, particularly with memory consumption, transaction timeouts, and database bloat and no implementation to handle association like (action items, agenda items, attendance, etc).\nThe proposed solution introduces a \"Temporal Sliding Window with Inherited Associations\" approach that:\nSeparates recurrence patterns from event instances\nUses a materialization window to pre-generate near-term events\nImplements an association inheritance model to minimize data duplication\nEmploys background processing to maintain system performance",
+        "student_name": "Divyanshu Gautam",
+        "code_url": "https://gist.github.com/gautam-divyanshu/91ff226c8157c990f8226cbc524525bf",
+        "proposal_id": "iqx9jEZQ",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/knuq1bth"
+      },
+      {
+        "title": "Microkernel Architecture for Drop-in Plugins",
+        "short_description": "This project introduces a microkernel-based drop-in plugin system that enables seamless integration of new features like payments, analytics, and AI...",
+        "description": "This project introduces a microkernel-based drop-in plugin system that enables seamless integration of new features like payments, analytics, and AI tools without modifying the core API, Admin, or App codebases. A dedicated plugin manager will handle plugin discovery, activation, and updates, while predefined extension points will allow plugins to inject functionality where needed. The system will include a secure, CDN-backed plugin store with cryptographic validation, support for containerized AI/ML plugins, and ready-to-use plugins such as a payment gateway and an AI summarizer powered by Hugging Face models. This architecture will improve scalability, foster community contributions, and make Talawa more adaptable to future needs.",
+        "student_name": "Jai Pannu",
+        "code_url": "https://github.com/JXP25/GSoC-Archive",
+        "proposal_id": "Zb6o0FRQ",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/r0JYdqkQ"
+      },
+      {
+        "title": "Enhanced-notification",
+        "short_description": "Refactor the messaging and notification features of the Talawa Admin code base to reduce technical debt, enhance security, and introduce new features...",
+        "description": "Refactor the messaging and notification features of the Talawa Admin code base to reduce technical debt, enhance security, and introduce new features related to notifications. Focus on improving the features and related UI/UX while ensuring the code meets modern best practices.",
+        "student_name": "Manish Biswal",
+        "code_url": "https://gist.github.com/iamanishx/bb0b8d87115b3f5a95238314a76f298a",
+        "proposal_id": "HhO57Ooo",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/UngUZLGi"
+      },
+      {
+        "title": "Improved Usability & Hardening - Talawa Mobile",
+        "short_description": "The Talawa Mobile App Refactor and Enhancement project addresses technical debt, usability issues, and security concerns to deliver an optimized user...",
+        "description": "The Talawa Mobile App Refactor and Enhancement project addresses technical debt, usability issues, and security concerns to deliver an optimized user experience. Key improvements include a robust security framework, real-time notifications, enhanced event management features, semiotic UX upgrades like animations and visual cues, and code optimization for modularity and efficiency. These updates aim to create a seamless, secure, and user-friendly app.",
+        "student_name": "Mohit Maulekhi",
+        "code_url": "https://gist.github.com/MohitMaulekhi/92111e3b075c9e72fe95643624d2daf2",
+        "proposal_id": "omdjhSjy",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/cSr38uDj"
+      },
+      {
+        "title": "Talawa Enhanced Testing",
+        "short_description": "To enhance the testing infrastructure across the Talawa ecosystem by introducing a robust, automated, and scalable testing strategy. This project...",
+        "description": "To enhance the testing infrastructure across the Talawa ecosystem by introducing a robust, automated, and scalable testing strategy. This project will implement End-to-End (E2E) testing for the Talawa Admin and Mobile applications, integrate AI-powered tools for automated unit test generation, and establish custom checks to enforce best coding practices. It will also optimize memory usage to improve performance and reduce application bloat. The deliverables include a complete E2E test suite, AI-integrated unit test automation, improved CI/CD workflows with preventive checks, and a more efficient, maintainable codebase.",
+        "student_name": "Syed Ali Ul Hasan",
+        "code_url": "https://gist.github.com/syedali237/7c1a244e7d5ed9ce0702d1bbb6a3eff9",
+        "proposal_id": "SB4kaaWm",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/dBNdnkCt"
+      }
+    ]
   },
   "githubID": "PalisadoesFoundation",
   "repositories": [
     {
-      "id": 983636399,
-      "node_id": "R_kgDOOqEZrw",
-      "name": "talawa-plugin",
-      "full_name": "PalisadoesFoundation/talawa-plugin",
-      "html_url": "https://github.com/PalisadoesFoundation/talawa-plugin",
-      "description": null,
-      "language": null,
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "open_issues_count": 2,
+      "id": 350087687,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzNTAwODc2ODc=",
+      "name": "talawa-admin",
+      "full_name": "PalisadoesFoundation/talawa-admin",
+      "html_url": "https://github.com/PalisadoesFoundation/talawa-admin",
+      "description": "Admin portal for the Talawa Mobile App. Click on the link below to see our documentation",
+      "language": "TypeScript",
+      "stargazers_count": 257,
+      "forks_count": 1159,
+      "open_issues_count": 218,
       "license": {
         "key": "gpl-3.0",
         "name": "GNU General Public License v3.0",
@@ -326,7 +390,36 @@
         "url": "https://api.github.com/licenses/gpl-3.0",
         "node_id": "MDc6TGljZW5zZTk="
       },
-      "topics": []
+      "topics": [
+        "graphql",
+        "react",
+        "typescript"
+      ]
+    },
+    {
+      "id": 228531332,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMjg1MzEzMzI=",
+      "name": "talawa-api",
+      "full_name": "PalisadoesFoundation/talawa-api",
+      "html_url": "https://github.com/PalisadoesFoundation/talawa-api",
+      "description": "API Backend for the Talawa Mobile App. Click on the link below to see our documentation",
+      "language": "TypeScript",
+      "stargazers_count": 319,
+      "forks_count": 1256,
+      "open_issues_count": 132,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "topics": [
+        "graphql",
+        "hacktoberfest",
+        "nodejs",
+        "open-source"
+      ]
     },
     {
       "id": 171515096,
@@ -336,9 +429,9 @@
       "html_url": "https://github.com/PalisadoesFoundation/talawa",
       "description": "Community Organization Management Software. Click on the link below to see our documentation.",
       "language": "Dart",
-      "stargazers_count": 418,
-      "forks_count": 519,
-      "open_issues_count": 18,
+      "stargazers_count": 482,
+      "forks_count": 572,
+      "open_issues_count": 58,
       "license": {
         "key": "gpl-3.0",
         "name": "GNU General Public License v3.0",
@@ -355,101 +448,16 @@
       ]
     },
     {
-      "id": 350087687,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzNTAwODc2ODc=",
-      "name": "talawa-admin",
-      "full_name": "PalisadoesFoundation/talawa-admin",
-      "html_url": "https://github.com/PalisadoesFoundation/talawa-admin",
-      "description": "Admin portal for the Talawa Mobile App. Click on the link below to see our documentation",
+      "id": 983636399,
+      "node_id": "R_kgDOOqEZrw",
+      "name": "talawa-plugin",
+      "full_name": "PalisadoesFoundation/talawa-plugin",
+      "html_url": "https://github.com/PalisadoesFoundation/talawa-plugin",
+      "description": null,
       "language": "TypeScript",
-      "stargazers_count": 195,
-      "forks_count": 895,
-      "open_issues_count": 115,
-      "license": null,
-      "topics": [
-        "graphql",
-        "react",
-        "typescript"
-      ]
-    },
-    {
-      "id": 228531332,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMjg1MzEzMzI=",
-      "name": "talawa-api",
-      "full_name": "PalisadoesFoundation/talawa-api",
-      "html_url": "https://github.com/PalisadoesFoundation/talawa-api",
-      "description": "API Backend for the Talawa Mobile App. Click on the link below to see our documentation",
-      "language": "TypeScript",
-      "stargazers_count": 268,
-      "forks_count": 1047,
-      "open_issues_count": 82,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": [
-        "graphql",
-        "hacktoberfest",
-        "nodejs",
-        "open-source"
-      ]
-    },
-    {
-      "id": 76144330,
-      "node_id": "MDEwOlJlcG9zaXRvcnk3NjE0NDMzMA==",
-      "name": "switchmap-ng",
-      "full_name": "PalisadoesFoundation/switchmap-ng",
-      "html_url": "https://github.com/PalisadoesFoundation/switchmap-ng",
-      "description": "A Python 3 inventory system that tabulates the status of network ports.",
-      "language": "HTML",
-      "stargazers_count": 71,
-      "forks_count": 50,
-      "open_issues_count": 8,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": []
-    },
-    {
-      "id": 346573761,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzNDY1NzM3NjE=",
-      "name": "talawa-docs",
-      "full_name": "PalisadoesFoundation/talawa-docs",
-      "html_url": "https://github.com/PalisadoesFoundation/talawa-docs",
-      "description": "Documentation for Talawa and Talawa-API",
-      "language": "CSS",
-      "stargazers_count": 50,
-      "forks_count": 176,
-      "open_issues_count": 0,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": [
-        "docusaurus2"
-      ]
-    },
-    {
-      "id": 896909211,
-      "node_id": "R_kgDONXW_mw",
-      "name": "developer-docs",
-      "full_name": "PalisadoesFoundation/developer-docs",
-      "html_url": "https://github.com/PalisadoesFoundation/developer-docs",
-      "description": "General documentation site for Palisadoes Foundation GitHub contributors",
-      "language": "TypeScript",
-      "stargazers_count": 3,
-      "forks_count": 10,
-      "open_issues_count": 0,
+      "stargazers_count": 5,
+      "forks_count": 26,
+      "open_issues_count": 7,
       "license": {
         "key": "gpl-3.0",
         "name": "GNU General Public License v3.0",
@@ -468,7 +476,27 @@
       "description": null,
       "language": null,
       "stargazers_count": 1,
-      "forks_count": 0,
+      "forks_count": 8,
+      "open_issues_count": 4,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "topics": []
+    },
+    {
+      "id": 76144330,
+      "node_id": "MDEwOlJlcG9zaXRvcnk3NjE0NDMzMA==",
+      "name": "switchmap-ng",
+      "full_name": "PalisadoesFoundation/switchmap-ng",
+      "html_url": "https://github.com/PalisadoesFoundation/switchmap-ng",
+      "description": "A Python 3 inventory system that tabulates the status of network ports.",
+      "language": "HTML",
+      "stargazers_count": 70,
+      "forks_count": 53,
       "open_issues_count": 0,
       "license": {
         "key": "gpl-3.0",
@@ -477,6 +505,62 @@
         "url": "https://api.github.com/licenses/gpl-3.0",
         "node_id": "MDc6TGljZW5zZTk="
       },
+      "topics": []
+    },
+    {
+      "id": 896909211,
+      "node_id": "R_kgDONXW_mw",
+      "name": "developer-docs",
+      "full_name": "PalisadoesFoundation/developer-docs",
+      "html_url": "https://github.com/PalisadoesFoundation/developer-docs",
+      "description": "General documentation site for Palisadoes Foundation GitHub contributors",
+      "language": "CSS",
+      "stargazers_count": 8,
+      "forks_count": 28,
+      "open_issues_count": 0,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "topics": []
+    },
+    {
+      "id": 346573761,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzNDY1NzM3NjE=",
+      "name": "talawa-docs",
+      "full_name": "PalisadoesFoundation/talawa-docs",
+      "html_url": "https://github.com/PalisadoesFoundation/talawa-docs",
+      "description": "Documentation for Talawa and Talawa-API",
+      "language": "CSS",
+      "stargazers_count": 60,
+      "forks_count": 188,
+      "open_issues_count": 2,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "topics": [
+        "docusaurus2"
+      ]
+    },
+    {
+      "id": 952780702,
+      "node_id": "R_kgDOOMpHng",
+      "name": "leaderboard",
+      "full_name": "PalisadoesFoundation/leaderboard",
+      "html_url": "https://github.com/PalisadoesFoundation/leaderboard",
+      "description": null,
+      "language": "Dart",
+      "stargazers_count": 0,
+      "forks_count": 2,
+      "open_issues_count": 0,
+      "license": null,
       "topics": []
     },
     {
@@ -548,7 +632,7 @@
       "description": null,
       "language": null,
       "stargazers_count": 0,
-      "forks_count": 3,
+      "forks_count": 2,
       "open_issues_count": 0,
       "license": {
         "key": "gpl-3.0",
@@ -577,20 +661,6 @@
         "url": "https://api.github.com/licenses/gpl-3.0",
         "node_id": "MDc6TGljZW5zZTk="
       },
-      "topics": []
-    },
-    {
-      "id": 952780702,
-      "node_id": "R_kgDOOMpHng",
-      "name": "leaderboard",
-      "full_name": "PalisadoesFoundation/leaderboard",
-      "html_url": "https://github.com/PalisadoesFoundation/leaderboard",
-      "description": null,
-      "language": "Dart",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
       "topics": []
     },
     {
@@ -642,7 +712,7 @@
       "description": "Mobile App for viewing Pattoo data",
       "language": "Dart",
       "stargazers_count": 3,
-      "forks_count": 10,
+      "forks_count": 9,
       "open_issues_count": 26,
       "license": {
         "key": "gpl-3.0",
@@ -676,7 +746,7 @@
       "description": "Jamaican Recipes on GitHub",
       "language": null,
       "stargazers_count": 3,
-      "forks_count": 10,
+      "forks_count": 9,
       "open_issues_count": 1,
       "license": {
         "key": "gpl-3.0",
@@ -884,12 +954,92 @@
   ],
   "contributorsDetails": [
     {
-      "login": "JaiPannu-IITI",
-      "id": 142983705,
-      "node_id": "U_kgDOCIXCGQ",
-      "avatar_url": "https://avatars.githubusercontent.com/u/142983705?v=4",
-      "html_url": "https://github.com/JaiPannu-IITI",
+      "login": "palisadoes",
+      "id": 16875803,
+      "node_id": "MDQ6VXNlcjE2ODc1ODAz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16875803?v=4",
+      "html_url": "https://github.com/palisadoes",
+      "contributions": 125
+    },
+    {
+      "login": "DangaRanga",
+      "id": 55003601,
+      "node_id": "MDQ6VXNlcjU1MDAzNjAx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55003601?v=4",
+      "html_url": "https://github.com/DangaRanga",
+      "contributions": 8
+    },
+    {
+      "login": "XshubhamX",
+      "id": 63532716,
+      "node_id": "MDQ6VXNlcjYzNTMyNzE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/63532716?v=4",
+      "html_url": "https://github.com/XshubhamX",
+      "contributions": 10
+    },
+    {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "html_url": "https://github.com/apps/dependabot",
+      "contributions": 62
+    },
+    {
+      "login": "noman2002",
+      "id": 54404474,
+      "node_id": "MDQ6VXNlcjU0NDA0NDc0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/54404474?v=4",
+      "html_url": "https://github.com/noman2002",
+      "contributions": 4
+    },
+    {
+      "login": "heyjordn",
+      "id": 4820517,
+      "node_id": "MDQ6VXNlcjQ4MjA1MTc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4820517?v=4",
+      "html_url": "https://github.com/heyjordn",
+      "contributions": 24
+    },
+    {
+      "login": "adi790uu",
+      "id": 132701661,
+      "node_id": "U_kgDOB-jd3Q",
+      "avatar_url": "https://avatars.githubusercontent.com/u/132701661?v=4",
+      "html_url": "https://github.com/adi790uu",
       "contributions": 1
+    },
+    {
+      "login": "akshatgarg12",
+      "id": 60404253,
+      "node_id": "MDQ6VXNlcjYwNDA0MjUz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/60404253?v=4",
+      "html_url": "https://github.com/akshatgarg12",
+      "contributions": 6
+    },
+    {
+      "login": "palisadian",
+      "id": 194144210,
+      "node_id": "U_kgDOC5Jn0g",
+      "avatar_url": "https://avatars.githubusercontent.com/u/194144210?v=4",
+      "html_url": "https://github.com/palisadian",
+      "contributions": 1
+    },
+    {
+      "login": "pranshugupta54",
+      "id": 76090263,
+      "node_id": "MDQ6VXNlcjc2MDkwMjYz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76090263?v=4",
+      "html_url": "https://github.com/pranshugupta54",
+      "contributions": 1
+    },
+    {
+      "login": "Laurell876",
+      "id": 54823163,
+      "node_id": "MDQ6VXNlcjU0ODIzMTYz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/54823163?v=4",
+      "html_url": "https://github.com/Laurell876",
+      "contributions": 352
     },
     {
       "login": "sumitra19jha",
@@ -900,12 +1050,100 @@
       "contributions": 222
     },
     {
-      "login": "Raunakk02",
-      "id": 56073198,
-      "node_id": "MDQ6VXNlcjU2MDczMTk4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/56073198?v=4",
-      "html_url": "https://github.com/Raunakk02",
-      "contributions": 218
+      "login": "sandeep-v1404",
+      "id": 57038543,
+      "node_id": "MDQ6VXNlcjU3MDM4NTQz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/57038543?v=4",
+      "html_url": "https://github.com/sandeep-v1404",
+      "contributions": 47
+    },
+    {
+      "login": "EshaanAgg",
+      "id": 96648934,
+      "node_id": "U_kgDOBcK-5g",
+      "avatar_url": "https://avatars.githubusercontent.com/u/96648934?v=4",
+      "html_url": "https://github.com/EshaanAgg",
+      "contributions": 43
+    },
+    {
+      "login": "kb-0311",
+      "id": 96020697,
+      "node_id": "U_kgDOBbko2Q",
+      "avatar_url": "https://avatars.githubusercontent.com/u/96020697?v=4",
+      "html_url": "https://github.com/kb-0311",
+      "contributions": 32
+    },
+    {
+      "login": "ranilwallace",
+      "id": 12215778,
+      "node_id": "MDQ6VXNlcjEyMjE1Nzc4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12215778?v=4",
+      "html_url": "https://github.com/ranilwallace",
+      "contributions": 32
+    },
+    {
+      "login": "anshgoyalevil",
+      "id": 94157520,
+      "node_id": "U_kgDOBZy60A",
+      "avatar_url": "https://avatars.githubusercontent.com/u/94157520?v=4",
+      "html_url": "https://github.com/anshgoyalevil",
+      "contributions": 27
+    },
+    {
+      "login": "SiddheshKukade",
+      "id": 65951872,
+      "node_id": "MDQ6VXNlcjY1OTUxODcy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/65951872?v=4",
+      "html_url": "https://github.com/SiddheshKukade",
+      "contributions": 24
+    },
+    {
+      "login": "beingnoble03",
+      "id": 62551163,
+      "node_id": "MDQ6VXNlcjYyNTUxMTYz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/62551163?v=4",
+      "html_url": "https://github.com/beingnoble03",
+      "contributions": 20
+    },
+    {
+      "login": "nishant3721",
+      "id": 76558924,
+      "node_id": "MDQ6VXNlcjc2NTU4OTI0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76558924?v=4",
+      "html_url": "https://github.com/nishant3721",
+      "contributions": 20
+    },
+    {
+      "login": "KunalAnkur",
+      "id": 57923976,
+      "node_id": "MDQ6VXNlcjU3OTIzOTc2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/57923976?v=4",
+      "html_url": "https://github.com/KunalAnkur",
+      "contributions": 18
+    },
+    {
+      "login": "xoldd",
+      "id": 82873939,
+      "node_id": "MDQ6VXNlcjgyODczOTM5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/82873939?v=4",
+      "html_url": "https://github.com/xoldd",
+      "contributions": 17
+    },
+    {
+      "login": "iamsaumya",
+      "id": 40148448,
+      "node_id": "MDQ6VXNlcjQwMTQ4NDQ4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40148448?v=4",
+      "html_url": "https://github.com/iamsaumya",
+      "contributions": 17
+    },
+    {
+      "login": "KrutikaBhatt",
+      "id": 65107474,
+      "node_id": "MDQ6VXNlcjY1MTA3NDc0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/65107474?v=4",
+      "html_url": "https://github.com/KrutikaBhatt",
+      "contributions": 14
     },
     {
       "login": "Sagar2366",
@@ -916,28 +1154,100 @@
       "contributions": 169
     },
     {
+      "login": "tasneemkoushar",
+      "id": 58592306,
+      "node_id": "MDQ6VXNlcjU4NTkyMzA2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/58592306?v=4",
+      "html_url": "https://github.com/tasneemkoushar",
+      "contributions": 10
+    },
+    {
+      "login": "anwersayeed",
+      "id": 57287988,
+      "node_id": "MDQ6VXNlcjU3Mjg3OTg4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/57287988?v=4",
+      "html_url": "https://github.com/anwersayeed",
+      "contributions": 8
+    },
+    {
+      "login": "ebrahim354",
+      "id": 74679570,
+      "node_id": "MDQ6VXNlcjc0Njc5NTcw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/74679570?v=4",
+      "html_url": "https://github.com/ebrahim354",
+      "contributions": 8
+    },
+    {
+      "login": "aviraldevv",
+      "id": 121368112,
+      "node_id": "U_kgDOBzvuMA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/121368112?v=4",
+      "html_url": "https://github.com/aviraldevv",
+      "contributions": 7
+    },
+    {
+      "login": "evasharma12",
+      "id": 79697910,
+      "node_id": "MDQ6VXNlcjc5Njk3OTEw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/79697910?v=4",
+      "html_url": "https://github.com/evasharma12",
+      "contributions": 6
+    },
+    {
+      "login": "saga0p",
+      "id": 66516087,
+      "node_id": "MDQ6VXNlcjY2NTE2MDg3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/66516087?v=4",
+      "html_url": "https://github.com/saga0p",
+      "contributions": 6
+    },
+    {
+      "login": "anonymous-ME",
+      "id": 18220411,
+      "node_id": "MDQ6VXNlcjE4MjIwNDEx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/18220411?v=4",
+      "html_url": "https://github.com/anonymous-ME",
+      "contributions": 5
+    },
+    {
+      "login": "guptapriyanshu7",
+      "id": 60141300,
+      "node_id": "MDQ6VXNlcjYwMTQxMzAw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/60141300?v=4",
+      "html_url": "https://github.com/guptapriyanshu7",
+      "contributions": 5
+    },
+    {
+      "login": "prathamesh-mutkure",
+      "id": 28570857,
+      "node_id": "MDQ6VXNlcjI4NTcwODU3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/28570857?v=4",
+      "html_url": "https://github.com/prathamesh-mutkure",
+      "contributions": 5
+    },
+    {
+      "login": "asmitsirohi",
+      "id": 63240102,
+      "node_id": "MDQ6VXNlcjYzMjQwMTAy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/63240102?v=4",
+      "html_url": "https://github.com/asmitsirohi",
+      "contributions": 5
+    },
+    {
+      "login": "Raunakk02",
+      "id": 56073198,
+      "node_id": "MDQ6VXNlcjU2MDczMTk4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/56073198?v=4",
+      "html_url": "https://github.com/Raunakk02",
+      "contributions": 218
+    },
+    {
       "login": "Deandrew007",
       "id": 16479694,
       "node_id": "MDQ6VXNlcjE2NDc5Njk0",
       "avatar_url": "https://avatars.githubusercontent.com/u/16479694?v=4",
       "html_url": "https://github.com/Deandrew007",
       "contributions": 120
-    },
-    {
-      "login": "yasharth291",
-      "id": 55004621,
-      "node_id": "MDQ6VXNlcjU1MDA0NjIx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/55004621?v=4",
-      "html_url": "https://github.com/yasharth291",
-      "contributions": 106
-    },
-    {
-      "login": "palisadoes",
-      "id": 16875803,
-      "node_id": "MDQ6VXNlcjE2ODc1ODAz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/16875803?v=4",
-      "html_url": "https://github.com/palisadoes",
-      "contributions": 102
     },
     {
       "login": "StrangeNoob",
@@ -1100,11 +1410,11 @@
       "contributions": 10
     },
     {
-      "login": "anand-aman",
-      "id": 54910807,
-      "node_id": "MDQ6VXNlcjU0OTEwODA3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/54910807?v=4",
-      "html_url": "https://github.com/anand-aman",
+      "login": "jordanliu",
+      "id": 9423525,
+      "node_id": "MDQ6VXNlcjk0MjM1MjU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9423525?v=4",
+      "html_url": "https://github.com/jordanliu",
       "contributions": 9
     },
     {
@@ -1116,19 +1426,19 @@
       "contributions": 9
     },
     {
-      "login": "jordanliu",
-      "id": 9423525,
-      "node_id": "MDQ6VXNlcjk0MjM1MjU=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/9423525?v=4",
-      "html_url": "https://github.com/jordanliu",
+      "login": "anand-aman",
+      "id": 54910807,
+      "node_id": "MDQ6VXNlcjU0OTEwODA3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/54910807?v=4",
+      "html_url": "https://github.com/anand-aman",
       "contributions": 9
     },
     {
-      "login": "Enigma04",
-      "id": 32870564,
-      "node_id": "MDQ6VXNlcjMyODcwNTY0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/32870564?v=4",
-      "html_url": "https://github.com/Enigma04",
+      "login": "ahluwaliatikant",
+      "id": 52076751,
+      "node_id": "MDQ6VXNlcjUyMDc2NzUx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/52076751?v=4",
+      "html_url": "https://github.com/ahluwaliatikant",
       "contributions": 8
     }
   ],

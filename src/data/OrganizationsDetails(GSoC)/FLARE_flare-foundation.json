@@ -3,7 +3,7 @@
   "image_url": "https://summerofcode.withgoogle.com/media/org/flare/6so0wjs76qeewe9v-360.png",
   "image_background_color": "#ffffff",
   "description": "Industry leading malware analysis",
-  "url": "https://www.mandiant.com/",
+  "url": "https://cloud.google.com/security/flare",
   "category": [
     "Security"
   ],
@@ -17,18 +17,20 @@
   "technologies": [
     "python",
     "ida-pro",
-    "Ghidra"
+    "Ghidra",
+    "Sandbox"
   ],
   "irc_channel": null,
   "contact_email": "mailto:flare-gsoc-2023@mandiant.com",
-  "mailing_list": "https://github.com/mandiant/flare-gsoc-2025/discussions",
-  "twitter_url": "https://twitter.com/Mandiant",
-  "blog_url": "https://www.mandiant.com/resources/blog",
+  "mailing_list": "https://github.com/mandiant/flare-gsoc/discussions",
+  "twitter_url": "https://x.com/Mandiant",
+  "blog_url": "https://cloud.google.com/blog/topics/threat-intelligence/",
   "facebook_url": null,
   "year": [
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2023": [
@@ -80,146 +82,41 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/cR3hjbsq"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Multi-Backend Abstraction Layer with Binary Ninja/Ghidra Support",
+        "short_description": "Xrefer currently functions as an IDA plugin for static binary feature extraction. The goal of this project is to abstract Xrefer’s core functionality...",
+        "description": "Xrefer currently functions as an IDA plugin for static binary feature extraction. The goal of this project is to abstract Xrefer’s core functionality into a flexible multi-backend pipeline supporting static analysis on IDA, Ghidra and Binary Ninja.",
+        "student_name": "__mike__",
+        "code_url": "https://docs.google.com/document/d/1FjOfDliIe-bYgQUhUQ3aXIr9kXNH8eA-kZ_MfLduAiQ/edit?usp=sharing",
+        "proposal_id": "jQ0EQ30E",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/BXcLum6o"
+      },
+      {
+        "title": "capa: add Frida dynamic analysis for Android",
+        "short_description": "This project extends capa, FLARE's open-source capability detection tool, with Android dynamic analysis using Frida instrumentation. The...",
+        "description": "This project extends capa, FLARE's open-source capability detection tool, with Android dynamic analysis using Frida instrumentation. The implementation automates the complete Frida workflow from template-driven script generation to feature extraction. This brings capa capability detection to the broader Android dynamic malware analysis community.",
+        "student_name": "Xukun Zhang",
+        "code_url": "https://docs.google.com/document/d/180E7YAm5iJe1Txo6fZ2xF-E1u2vBCqehTAN1BqJhauA/edit?tab=t.4zns2hymfk0c#heading=h.44umx36hv439",
+        "proposal_id": "I1FANDNa",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/E61CThH6"
+      }
+    ],
+    "2026": []
   },
   "githubID": "flare-foundation",
   "repositories": [
-    {
-      "id": 664711521,
-      "node_id": "R_kgDOJ56xYQ",
-      "name": "flare-p-chain-indexer",
-      "full_name": "flare-foundation/flare-p-chain-indexer",
-      "html_url": "https://github.com/flare-foundation/flare-p-chain-indexer",
-      "description": null,
-      "language": "Go",
-      "stargazers_count": 0,
-      "forks_count": 11,
-      "open_issues_count": 1,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 820571237,
-      "node_id": "R_kgDOMOjsZQ",
-      "name": "rnat-distribution-tool",
-      "full_name": "flare-foundation/rnat-distribution-tool",
-      "html_url": "https://github.com/flare-foundation/rnat-distribution-tool",
-      "description": "RNat Distribution Tool",
-      "language": "TypeScript",
-      "stargazers_count": 1,
-      "forks_count": 4,
-      "open_issues_count": 0,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 984723296,
-      "node_id": "R_kgDOOrGvYA",
-      "name": "fsp-observer",
-      "full_name": "flare-foundation/fsp-observer",
-      "html_url": "https://github.com/flare-foundation/fsp-observer",
-      "description": null,
-      "language": "Python",
-      "stargazers_count": 2,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 810781748,
-      "node_id": "R_kgDOMFOMNA",
-      "name": "developer-hub",
-      "full_name": "flare-foundation/developer-hub",
-      "html_url": "https://github.com/flare-foundation/developer-hub",
-      "description": "The decentralized origin for Flare builders  ☀️",
-      "language": "MDX",
-      "stargazers_count": 24,
-      "forks_count": 29,
-      "open_issues_count": 5,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": [
-        "documentation",
-        "flare-network"
-      ]
-    },
-    {
-      "id": 694566091,
-      "node_id": "R_kgDOKWY8yw",
-      "name": "reward-scripts",
-      "full_name": "flare-foundation/reward-scripts",
-      "html_url": "https://github.com/flare-foundation/reward-scripts",
-      "description": null,
-      "language": "TypeScript",
-      "stargazers_count": 5,
-      "forks_count": 10,
-      "open_issues_count": 0,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 859229384,
-      "node_id": "R_kgDOMzbMyA",
-      "name": "fsp-rewards",
-      "full_name": "flare-foundation/fsp-rewards",
-      "html_url": "https://github.com/flare-foundation/fsp-rewards",
-      "description": null,
-      "language": null,
-      "stargazers_count": 4,
-      "forks_count": 1,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 765807466,
-      "node_id": "R_kgDOLaVLag",
-      "name": "flare-system-client",
-      "full_name": "flare-foundation/flare-system-client",
-      "html_url": "https://github.com/flare-foundation/flare-system-client",
-      "description": null,
-      "language": "Go",
-      "stargazers_count": 3,
-      "forks_count": 7,
-      "open_issues_count": 3,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
     {
       "id": 946703455,
       "node_id": "R_kgDOOG2MXw",
       "name": "flare-ai-kit",
       "full_name": "flare-foundation/flare-ai-kit",
       "html_url": "https://github.com/flare-foundation/flare-ai-kit",
-      "description": "SDK for building verifiable AI Agents on Flare using Confidential Space",
+      "description": "🚧 SDK for building verifiable AI Agents on Flare using Confidential Space",
       "language": "Python",
-      "stargazers_count": 5,
-      "forks_count": 3,
-      "open_issues_count": 23,
+      "stargazers_count": 23,
+      "forks_count": 31,
+      "open_issues_count": 47,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -235,13 +132,40 @@
       ]
     },
     {
-      "id": 982918330,
-      "node_id": "R_kgDOOpYkug",
-      "name": "fasset-indexer",
-      "full_name": "flare-foundation/fasset-indexer",
-      "html_url": "https://github.com/flare-foundation/fasset-indexer",
+      "id": 810781748,
+      "node_id": "R_kgDOMFOMNA",
+      "name": "developer-hub",
+      "full_name": "flare-foundation/developer-hub",
+      "html_url": "https://github.com/flare-foundation/developer-hub",
+      "description": "Flare’s documentation site for builders ☀️",
+      "language": "MDX",
+      "stargazers_count": 47,
+      "forks_count": 48,
+      "open_issues_count": 40,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": [
+        "api",
+        "documentation",
+        "evm",
+        "flare-network",
+        "reference",
+        "tutorial"
+      ]
+    },
+    {
+      "id": 1191779534,
+      "node_id": "R_kgDORwkczg",
+      "name": "go-verifier-api",
+      "full_name": "flare-foundation/go-verifier-api",
+      "html_url": "https://github.com/flare-foundation/go-verifier-api",
       "description": null,
-      "language": "TypeScript",
+      "language": "Go",
       "stargazers_count": 0,
       "forks_count": 0,
       "open_issues_count": 0,
@@ -255,35 +179,15 @@
       "topics": []
     },
     {
-      "id": 747766249,
-      "node_id": "R_kgDOLJIB6Q",
-      "name": "flare-tx-verifier",
-      "full_name": "flare-foundation/flare-tx-verifier",
-      "html_url": "https://github.com/flare-foundation/flare-tx-verifier",
-      "description": "This repository contains a command line interface tool for verification of transactions on Flare and Songbird networks, as well as on Coston and Coston2 test networks, prior to their signing.",
-      "language": "TypeScript",
-      "stargazers_count": 7,
-      "forks_count": 9,
-      "open_issues_count": 0,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 747601863,
-      "node_id": "R_kgDOLI9_xw",
-      "name": "flare-tx-verifier-lib",
-      "full_name": "flare-foundation/flare-tx-verifier-lib",
-      "html_url": "https://github.com/flare-foundation/flare-tx-verifier-lib",
-      "description": "This repository contains a typescript library for verification of transactions on Flare and Songbird networks prior to their signing",
-      "language": "TypeScript",
+      "id": 1191655268,
+      "node_id": "R_kgDORwc3ZA",
+      "name": "tee-proxy",
+      "full_name": "flare-foundation/tee-proxy",
+      "html_url": "https://github.com/flare-foundation/tee-proxy",
+      "description": null,
+      "language": "Go",
       "stargazers_count": 0,
-      "forks_count": 5,
+      "forks_count": 0,
       "open_issues_count": 0,
       "license": {
         "key": "mit",
@@ -305,89 +209,25 @@
       "stargazers_count": 0,
       "forks_count": 0,
       "open_issues_count": 0,
-      "license": null,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
       "topics": []
     },
     {
-      "id": 707106579,
-      "node_id": "R_kgDOKiWXEw",
-      "name": "flare-hardhat-starter",
-      "full_name": "flare-foundation/flare-hardhat-starter",
-      "html_url": "https://github.com/flare-foundation/flare-hardhat-starter",
+      "id": 1156070757,
+      "node_id": "R_kgDOROg9ZQ",
+      "name": "flare-ai-skills",
+      "full_name": "flare-foundation/flare-ai-skills",
+      "html_url": "https://github.com/flare-foundation/flare-ai-skills",
       "description": null,
       "language": "TypeScript",
-      "stargazers_count": 19,
-      "forks_count": 20,
-      "open_issues_count": 4,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 927719185,
-      "node_id": "R_kgDON0vfEQ",
-      "name": "flare-specs",
-      "full_name": "flare-foundation/flare-specs",
-      "html_url": "https://github.com/flare-foundation/flare-specs",
-      "description": null,
-      "language": "Solidity",
-      "stargazers_count": 2,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 982916576,
-      "node_id": "R_kgDOOpYd4A",
-      "name": "fasset-bots-deploy",
-      "full_name": "flare-foundation/fasset-bots-deploy",
-      "html_url": "https://github.com/flare-foundation/fasset-bots-deploy",
-      "description": null,
-      "language": "Shell",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 982914303,
-      "node_id": "R_kgDOOpYU_w",
-      "name": "fasset-agent-ui",
-      "full_name": "flare-foundation/fasset-agent-ui",
-      "html_url": "https://github.com/flare-foundation/fasset-agent-ui",
-      "description": null,
-      "language": "TypeScript",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 797704107,
-      "node_id": "R_kgDOL4v_qw",
-      "name": "bug-bounty",
-      "full_name": "flare-foundation/bug-bounty",
-      "html_url": "https://github.com/flare-foundation/bug-bounty",
-      "description": null,
-      "language": null,
-      "stargazers_count": 4,
-      "forks_count": 7,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 982911728,
-      "node_id": "R_kgDOOpYK8A",
-      "name": "fasset-bots",
-      "full_name": "flare-foundation/fasset-bots",
-      "html_url": "https://github.com/flare-foundation/fasset-bots",
-      "description": null,
-      "language": "TypeScript",
-      "stargazers_count": 1,
-      "forks_count": 0,
+      "stargazers_count": 10,
+      "forks_count": 3,
       "open_issues_count": 0,
       "license": {
         "key": "mit",
@@ -399,125 +239,15 @@
       "topics": []
     },
     {
-      "id": 982918848,
-      "node_id": "R_kgDOOpYmwA",
-      "name": "agent-log-viewer",
-      "full_name": "flare-foundation/agent-log-viewer",
-      "html_url": "https://github.com/flare-foundation/agent-log-viewer",
+      "id": 1159089397,
+      "node_id": "R_kgDORRZM9Q",
+      "name": "tee-node",
+      "full_name": "flare-foundation/tee-node",
+      "html_url": "https://github.com/flare-foundation/tee-node",
       "description": null,
-      "language": "Python",
+      "language": "Go",
       "stargazers_count": 0,
       "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 982901001,
-      "node_id": "R_kgDOOpXhCQ",
-      "name": "fassets",
-      "full_name": "flare-foundation/fassets",
-      "html_url": "https://github.com/flare-foundation/fassets",
-      "description": null,
-      "language": "TypeScript",
-      "stargazers_count": 1,
-      "forks_count": 6,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 959216953,
-      "node_id": "R_kgDOOSx9OQ",
-      "name": "flare-js",
-      "full_name": "flare-foundation/flare-js",
-      "html_url": "https://github.com/flare-foundation/flare-js",
-      "description": null,
-      "language": "TypeScript",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 7,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 899080455,
-      "node_id": "R_kgDONZbhBw",
-      "name": "py-flare-common",
-      "full_name": "flare-foundation/py-flare-common",
-      "html_url": "https://github.com/flare-foundation/py-flare-common",
-      "description": null,
-      "language": "Python",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 574922901,
-      "node_id": "R_kgDOIkSglQ",
-      "name": "flare-solidity-periphery-package-mirror",
-      "full_name": "flare-foundation/flare-solidity-periphery-package-mirror",
-      "html_url": "https://github.com/flare-foundation/flare-solidity-periphery-package-mirror",
-      "description": "Github mirror for flare solidity interfaces periphery package",
-      "language": "Solidity",
-      "stargazers_count": 0,
-      "forks_count": 5,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 884327909,
-      "node_id": "R_kgDONLXF5Q",
-      "name": "data-availability",
-      "full_name": "flare-foundation/data-availability",
-      "html_url": "https://github.com/flare-foundation/data-availability",
-      "description": null,
-      "language": "Python",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 765769333,
-      "node_id": "R_kgDOLaS2dQ",
-      "name": "FTSO-Scaling",
-      "full_name": "flare-foundation/FTSO-Scaling",
-      "html_url": "https://github.com/flare-foundation/FTSO-Scaling",
-      "description": null,
-      "language": "TypeScript",
-      "stargazers_count": 7,
-      "forks_count": 14,
-      "open_issues_count": 3,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 760430846,
-      "node_id": "R_kgDOLVNA_g",
-      "name": "flare-smart-contracts-v2",
-      "full_name": "flare-foundation/flare-smart-contracts-v2",
-      "html_url": "https://github.com/flare-foundation/flare-smart-contracts-v2",
-      "description": null,
-      "language": "Solidity",
-      "stargazers_count": 13,
-      "forks_count": 21,
       "open_issues_count": 0,
       "license": {
         "key": "mit",
@@ -536,10 +266,362 @@
       "html_url": "https://github.com/flare-foundation/flare-systems-deployment",
       "description": null,
       "language": "Shell",
-      "stargazers_count": 6,
-      "forks_count": 5,
+      "stargazers_count": 15,
+      "forks_count": 14,
       "open_issues_count": 1,
       "license": null,
+      "topics": []
+    },
+    {
+      "id": 694566091,
+      "node_id": "R_kgDOKWY8yw",
+      "name": "reward-scripts",
+      "full_name": "flare-foundation/reward-scripts",
+      "html_url": "https://github.com/flare-foundation/reward-scripts",
+      "description": null,
+      "language": "TypeScript",
+      "stargazers_count": 6,
+      "forks_count": 10,
+      "open_issues_count": 0,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 859229384,
+      "node_id": "R_kgDOMzbMyA",
+      "name": "fsp-rewards",
+      "full_name": "flare-foundation/fsp-rewards",
+      "html_url": "https://github.com/flare-foundation/fsp-rewards",
+      "description": null,
+      "language": null,
+      "stargazers_count": 6,
+      "forks_count": 1,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1193369058,
+      "node_id": "R_kgDORyFd4g",
+      "name": "rebalancer",
+      "full_name": "flare-foundation/rebalancer",
+      "html_url": "https://github.com/flare-foundation/rebalancer",
+      "description": null,
+      "language": "Go",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 765807466,
+      "node_id": "R_kgDOLaVLag",
+      "name": "flare-system-client",
+      "full_name": "flare-foundation/flare-system-client",
+      "html_url": "https://github.com/flare-foundation/flare-system-client",
+      "description": null,
+      "language": "Go",
+      "stargazers_count": 4,
+      "forks_count": 9,
+      "open_issues_count": 3,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 884327909,
+      "node_id": "R_kgDONLXF5Q",
+      "name": "data-availability",
+      "full_name": "flare-foundation/data-availability",
+      "html_url": "https://github.com/flare-foundation/data-availability",
+      "description": null,
+      "language": "Python",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1191769887,
+      "node_id": "R_kgDORwj3Hw",
+      "name": "tee-relay-client",
+      "full_name": "flare-foundation/tee-relay-client",
+      "html_url": "https://github.com/flare-foundation/tee-relay-client",
+      "description": null,
+      "language": "Go",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 887213183,
+      "node_id": "R_kgDONOHMfw",
+      "name": "fdc-suite-deployment",
+      "full_name": "flare-foundation/fdc-suite-deployment",
+      "html_url": "https://github.com/flare-foundation/fdc-suite-deployment",
+      "description": null,
+      "language": "Python",
+      "stargazers_count": 7,
+      "forks_count": 6,
+      "open_issues_count": 3,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 874344211,
+      "node_id": "R_kgDONB1vEw",
+      "name": "fdc-client",
+      "full_name": "flare-foundation/fdc-client",
+      "html_url": "https://github.com/flare-foundation/fdc-client",
+      "description": null,
+      "language": "Go",
+      "stargazers_count": 1,
+      "forks_count": 4,
+      "open_issues_count": 1,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 1189418012,
+      "node_id": "R_kgDORuUUHA",
+      "name": "npm-release-action",
+      "full_name": "flare-foundation/npm-release-action",
+      "html_url": "https://github.com/flare-foundation/npm-release-action",
+      "description": "npm-release-action",
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 1059421399,
+      "node_id": "R_kgDOPyV81w",
+      "name": "flare-smart-accounts",
+      "full_name": "flare-foundation/flare-smart-accounts",
+      "html_url": "https://github.com/flare-foundation/flare-smart-accounts",
+      "description": null,
+      "language": "Solidity",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 765769333,
+      "node_id": "R_kgDOLaS2dQ",
+      "name": "FTSO-Scaling",
+      "full_name": "flare-foundation/FTSO-Scaling",
+      "html_url": "https://github.com/flare-foundation/FTSO-Scaling",
+      "description": null,
+      "language": "TypeScript",
+      "stargazers_count": 9,
+      "forks_count": 16,
+      "open_issues_count": 3,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 984723296,
+      "node_id": "R_kgDOOrGvYA",
+      "name": "fsp-observer",
+      "full_name": "flare-foundation/fsp-observer",
+      "html_url": "https://github.com/flare-foundation/fsp-observer",
+      "description": null,
+      "language": "Python",
+      "stargazers_count": 5,
+      "forks_count": 11,
+      "open_issues_count": 3,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 488164381,
+      "node_id": "R_kgDOHRjMHQ",
+      "name": "multi-chain-client",
+      "full_name": "flare-foundation/multi-chain-client",
+      "html_url": "https://github.com/flare-foundation/multi-chain-client",
+      "description": null,
+      "language": "TypeScript",
+      "stargazers_count": 4,
+      "forks_count": 7,
+      "open_issues_count": 0,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 982918330,
+      "node_id": "R_kgDOOpYkug",
+      "name": "fasset-indexer",
+      "full_name": "flare-foundation/fasset-indexer",
+      "html_url": "https://github.com/flare-foundation/fasset-indexer",
+      "description": null,
+      "language": "TypeScript",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 790183876,
+      "node_id": "R_kgDOLxk_xA",
+      "name": "fast-updates",
+      "full_name": "flare-foundation/fast-updates",
+      "html_url": "https://github.com/flare-foundation/fast-updates",
+      "description": "This repo contains MVP of an implementation of the new Fast Updates proposal",
+      "language": "Go",
+      "stargazers_count": 1,
+      "forks_count": 6,
+      "open_issues_count": 1,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1138142841,
+      "node_id": "R_kgDOQ9aueQ",
+      "name": "flare-smart-accounts-viem",
+      "full_name": "flare-foundation/flare-smart-accounts-viem",
+      "html_url": "https://github.com/flare-foundation/flare-smart-accounts-viem",
+      "description": null,
+      "language": "TypeScript",
+      "stargazers_count": 2,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 887827622,
+      "node_id": "R_kgDONOsspg",
+      "name": "verifier-indexer-api",
+      "full_name": "flare-foundation/verifier-indexer-api",
+      "html_url": "https://github.com/flare-foundation/verifier-indexer-api",
+      "description": null,
+      "language": "TypeScript",
+      "stargazers_count": 4,
+      "forks_count": 2,
+      "open_issues_count": 1,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 546014973,
+      "node_id": "R_kgDOIIuG_Q",
+      "name": "flare-rosetta",
+      "full_name": "flare-foundation/flare-rosetta",
+      "html_url": "https://github.com/flare-foundation/flare-rosetta",
+      "description": "Go Flare Rosetta implementation ",
+      "language": "Go",
+      "stargazers_count": 3,
+      "forks_count": 8,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 540136736,
+      "node_id": "R_kgDOIDHVIA",
+      "name": "go-flare",
+      "full_name": "flare-foundation/go-flare",
+      "html_url": "https://github.com/flare-foundation/go-flare",
+      "description": "go-flare is a modified version of avalanchego + coreth that incorporates the Flare Time Series Oracle (FTSO) and State Connector.",
+      "language": "Go",
+      "stargazers_count": 78,
+      "forks_count": 43,
+      "open_issues_count": 8,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 790657621,
+      "node_id": "R_kgDOLyB6VQ",
+      "name": "ftso-v2-example-value-provider",
+      "full_name": "flare-foundation/ftso-v2-example-value-provider",
+      "html_url": "https://github.com/flare-foundation/ftso-v2-example-value-provider",
+      "description": null,
+      "language": "TypeScript",
+      "stargazers_count": 10,
+      "forks_count": 13,
+      "open_issues_count": 2,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
       "topics": []
     },
     {
@@ -552,7 +634,7 @@
       "language": "Solidity",
       "stargazers_count": 3,
       "forks_count": 10,
-      "open_issues_count": 0,
+      "open_issues_count": 1,
       "license": null,
       "topics": []
     },
@@ -564,7 +646,7 @@
       "html_url": "https://github.com/flare-foundation/flare-npm-periphery-package",
       "description": null,
       "language": "TypeScript",
-      "stargazers_count": 0,
+      "stargazers_count": 1,
       "forks_count": 5,
       "open_issues_count": 1,
       "license": {
@@ -575,38 +657,176 @@
         "node_id": "MDc6TGljZW5zZTEz"
       },
       "topics": []
-    },
-    {
-      "id": 707107869,
-      "node_id": "R_kgDOKiWcHQ",
-      "name": "flare-foundry-starter",
-      "full_name": "flare-foundation/flare-foundry-starter",
-      "html_url": "https://github.com/flare-foundation/flare-foundry-starter",
-      "description": null,
-      "language": "Solidity",
-      "stargazers_count": 5,
-      "forks_count": 4,
-      "open_issues_count": 1,
-      "license": null,
-      "topics": []
     }
   ],
   "contributorsDetails": [
     {
-      "login": "mboben",
-      "id": 23452639,
-      "node_id": "MDQ6VXNlcjIzNDUyNjM5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/23452639?v=4",
-      "html_url": "https://github.com/mboben",
-      "contributions": 223
+      "login": "dineshpinto",
+      "id": 15251343,
+      "node_id": "MDQ6VXNlcjE1MjUxMzQz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/15251343?v=4",
+      "html_url": "https://github.com/dineshpinto",
+      "contributions": 1933
     },
     {
-      "login": "ryanc414",
-      "id": 19290101,
-      "node_id": "MDQ6VXNlcjE5MjkwMTAx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/19290101?v=4",
-      "html_url": "https://github.com/ryanc414",
-      "contributions": 60
+      "login": "big14way",
+      "id": 115630820,
+      "node_id": "U_kgDOBuRi5A",
+      "avatar_url": "https://avatars.githubusercontent.com/u/115630820?v=4",
+      "html_url": "https://github.com/big14way",
+      "contributions": 48
+    },
+    {
+      "login": "bernardev254",
+      "id": 60809345,
+      "node_id": "MDQ6VXNlcjYwODA5MzQ1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/60809345?v=4",
+      "html_url": "https://github.com/bernardev254",
+      "contributions": 22
+    },
+    {
+      "login": "superman32432432",
+      "id": 7228420,
+      "node_id": "MDQ6VXNlcjcyMjg0MjA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7228420?v=4",
+      "html_url": "https://github.com/superman32432432",
+      "contributions": 19
+    },
+    {
+      "login": "Bosun-Josh121",
+      "id": 96661657,
+      "node_id": "U_kgDOBcLwmQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/96661657?v=4",
+      "html_url": "https://github.com/Bosun-Josh121",
+      "contributions": 12
+    },
+    {
+      "login": "fishonamos",
+      "id": 43862685,
+      "node_id": "MDQ6VXNlcjQzODYyNjg1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43862685?v=4",
+      "html_url": "https://github.com/fishonamos",
+      "contributions": 12
+    },
+    {
+      "login": "Dannynsikak",
+      "id": 141313914,
+      "node_id": "U_kgDOCGxHeg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/141313914?v=4",
+      "html_url": "https://github.com/Dannynsikak",
+      "contributions": 10
+    },
+    {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "html_url": "https://github.com/apps/dependabot",
+      "contributions": 12
+    },
+    {
+      "login": "magurh",
+      "id": 122356566,
+      "node_id": "U_kgDOB0sDVg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/122356566?v=4",
+      "html_url": "https://github.com/magurh",
+      "contributions": 40
+    },
+    {
+      "login": "vicradon",
+      "id": 40396070,
+      "node_id": "MDQ6VXNlcjQwMzk2MDcw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40396070?v=4",
+      "html_url": "https://github.com/vicradon",
+      "contributions": 3
+    },
+    {
+      "login": "swarna1101",
+      "id": 113277972,
+      "node_id": "U_kgDOBsB8FA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/113277972?v=4",
+      "html_url": "https://github.com/swarna1101",
+      "contributions": 341
+    },
+    {
+      "login": "fassko",
+      "id": 29482,
+      "node_id": "MDQ6VXNlcjI5NDgy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/29482?v=4",
+      "html_url": "https://github.com/fassko",
+      "contributions": 335
+    },
+    {
+      "login": "nikerzetic-aflabs",
+      "id": 192684350,
+      "node_id": "U_kgDOC3whPg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/192684350?v=4",
+      "html_url": "https://github.com/nikerzetic-aflabs",
+      "contributions": 159
+    },
+    {
+      "login": "0xreflexivity",
+      "id": 174391528,
+      "node_id": "U_kgDOCmUA6A",
+      "avatar_url": "https://avatars.githubusercontent.com/u/174391528?v=4",
+      "html_url": "https://github.com/0xreflexivity",
+      "contributions": 80
+    },
+    {
+      "login": "samclusker",
+      "id": 9279784,
+      "node_id": "MDQ6VXNlcjkyNzk3ODQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9279784?v=4",
+      "html_url": "https://github.com/samclusker",
+      "contributions": 32
+    },
+    {
+      "login": "stevenflare",
+      "id": 117661781,
+      "node_id": "U_kgDOBwNgVQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/117661781?v=4",
+      "html_url": "https://github.com/stevenflare",
+      "contributions": 12
+    },
+    {
+      "login": "vidbregar-flare",
+      "id": 138197854,
+      "node_id": "U_kgDOCDy7Xg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/138197854?v=4",
+      "html_url": "https://github.com/vidbregar-flare",
+      "contributions": 9
+    },
+    {
+      "login": "jO-Osko",
+      "id": 6787313,
+      "node_id": "MDQ6VXNlcjY3ODczMTM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6787313?v=4",
+      "html_url": "https://github.com/jO-Osko",
+      "contributions": 8
+    },
+    {
+      "login": "TheVictorMunoz",
+      "id": 53861440,
+      "node_id": "MDQ6VXNlcjUzODYxNDQw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/53861440?v=4",
+      "html_url": "https://github.com/TheVictorMunoz",
+      "contributions": 6
+    },
+    {
+      "login": "GrePod",
+      "id": 110988202,
+      "node_id": "U_kgDOBp2Lqg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/110988202?v=4",
+      "html_url": "https://github.com/GrePod",
+      "contributions": 4
+    },
+    {
+      "login": "Abdulazeez41",
+      "id": 57098969,
+      "node_id": "MDQ6VXNlcjU3MDk4OTY5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/57098969?v=4",
+      "html_url": "https://github.com/Abdulazeez41",
+      "contributions": 1
     },
     {
       "login": "aljazs-flare",
@@ -614,40 +834,72 @@
       "node_id": "U_kgDOBvmN4Q",
       "avatar_url": "https://avatars.githubusercontent.com/u/117018081?v=4",
       "html_url": "https://github.com/aljazs-flare",
-      "contributions": 4
+      "contributions": 1
     },
     {
-      "login": "ryanc-flare",
-      "id": 140620533,
-      "node_id": "U_kgDOCGGy9Q",
-      "avatar_url": "https://avatars.githubusercontent.com/u/140620533?v=4",
-      "html_url": "https://github.com/ryanc-flare",
+      "login": "Jordy-Baby",
+      "id": 82444671,
+      "node_id": "MDQ6VXNlcjgyNDQ0Njcx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/82444671?v=4",
+      "html_url": "https://github.com/Jordy-Baby",
+      "contributions": 1
+    },
+    {
+      "login": "LukaAvbreht",
+      "id": 12804493,
+      "node_id": "MDQ6VXNlcjEyODA0NDkz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12804493?v=4",
+      "html_url": "https://github.com/LukaAvbreht",
+      "contributions": 1
+    },
+    {
+      "login": "mboben",
+      "id": 23452639,
+      "node_id": "MDQ6VXNlcjIzNDUyNjM5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/23452639?v=4",
+      "html_url": "https://github.com/mboben",
+      "contributions": 1
+    },
+    {
+      "login": "emysore-flare",
+      "id": 173286923,
+      "node_id": "U_kgDOClQmCw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/173286923?v=4",
+      "html_url": "https://github.com/emysore-flare",
+      "contributions": 1
+    },
+    {
+      "login": "pashap9990",
+      "id": 59392590,
+      "node_id": "MDQ6VXNlcjU5MzkyNTkw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/59392590?v=4",
+      "html_url": "https://github.com/pashap9990",
+      "contributions": 1
+    },
+    {
+      "login": "urska19",
+      "id": 6882194,
+      "node_id": "MDQ6VXNlcjY4ODIxOTQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6882194?v=4",
+      "html_url": "https://github.com/urska19",
+      "contributions": 64
+    },
+    {
+      "login": "elangerholc",
+      "id": 256772525,
+      "node_id": "U_kgDOD04JrQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/256772525?v=4",
+      "html_url": "https://github.com/elangerholc",
       "contributions": 2
     },
     {
-      "login": "janezicmatej",
-      "id": 33402885,
-      "node_id": "MDQ6VXNlcjMzNDAyODg1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/33402885?v=4",
-      "html_url": "https://github.com/janezicmatej",
+      "login": "tilenflare",
+      "id": 144669107,
+      "node_id": "U_kgDOCJ95sw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/144669107?v=4",
+      "html_url": "https://github.com/tilenflare",
       "contributions": 1
-    },
-    {
-      "login": "klemenfn",
-      "id": 102049210,
-      "node_id": "U_kgDOBhUlug",
-      "avatar_url": "https://avatars.githubusercontent.com/u/102049210?v=4",
-      "html_url": "https://github.com/klemenfn",
-      "contributions": 1
-    },
-    {
-      "login": "timotejvesel",
-      "id": 28406835,
-      "node_id": "MDQ6VXNlcjI4NDA2ODM1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/28406835?v=4",
-      "html_url": "https://github.com/timotejvesel",
-      "contributions": 38
     }
   ],
-  "activeOrg": false
+  "activeOrg": true
 }

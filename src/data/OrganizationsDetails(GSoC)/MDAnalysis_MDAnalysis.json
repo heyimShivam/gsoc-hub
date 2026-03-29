@@ -43,7 +43,8 @@
     2022,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2020": [
@@ -157,7 +158,45 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/sfy3kuqc"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Integrating MDAnalysis streaming analysis within WESTPA propagators",
+        "short_description": "Weighted ensemble (WE) simulations enhance the exploration of a molecular system’s phase space by running numerous short, parallel simulations and...",
+        "description": "Weighted ensemble (WE) simulations enhance the exploration of a molecular system’s phase space by running numerous short, parallel simulations and selectively replicating trajectories that enter under-sampled regions. This approach improves sampling efficiency compared to traditional long, continuous simulations. However, a potential bottleneck arises from the need to analyze each iteration’s trajectories before starting the next round of simulations. Typically, this involves loading and processing trajectory data after each iteration, which can introduce significant delays due to disk I/O. To address this issue, my project focuses on integrating trajectory streaming into WESTPA using MDAnalysis. Instead of waiting for full trajectories to be written and reloaded for analysis, this implementation will enable real-time, on-the-fly analysis of simulation data as it is generated. By eliminating post-processing delays, this modification will streamline the weighted ensemble workflow.",
+        "student_name": "Jamie Rowe",
+        "code_url": "https://jpkrowe.github.io/finalblogpost/",
+        "proposal_id": "LNYoLsOS",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/SvFaSgr5"
+      },
+      {
+        "title": "Enhancing ProLIF Visualizations: A Hybrid Approach for Automated, Customizable 2D Interaction Layout",
+        "short_description": "ProLIF’s current 2D interaction diagrams often suffer from overlapping protein residues and tangled edges due to reliance on a default physics engine...",
+        "description": "ProLIF’s current 2D interaction diagrams often suffer from overlapping protein residues and tangled edges due to reliance on a default physics engine of vis.js. I propose to enhance ProLIF by developing an automated residue layout system that computes optimal 2D coordinates using graph-based algorithms (e.g., force-directed, radial, or circular layouts via NetworkX). This system will integrate into ProLIF’s visualization framework, allowing users to select and refine layouts interactively. Additionally, I will implement an export function to convert interaction fingerprints into a NetworkX graph for further analysis. Deliverables include a coordinate generation function, updates to the visualization module, comprehensive testing, and detailed documentation.",
+        "student_name": "Nilay Verma",
+        "code_url": "https://gist.github.com/nilay-v3rma/16be81e139816a0e8660acb6928526fe",
+        "proposal_id": "jwWjwKlG",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/XWsglxQM"
+      },
+      {
+        "title": "Better interfacing of Blender and MDAnalysis",
+        "short_description": "Blender is an industry leading open-source 3D modelling and animation software. MDAnalysis is an open-source Python library for analyzing molecuar...",
+        "description": "Blender is an industry leading open-source 3D modelling and animation software. MDAnalysis is an open-source Python library for analyzing molecuar dynamics (MD) trajectories across multiple formats. MDAnalysis has a basic interface with Blender through a popular extension called Molecular Nodes which allows importing MDAnalysis universes and provides advanced rendering capabilities through a GUI.\n\nThe ability to script and support advanced visualizations of MDAnalysis results is currently lacking. This project attempts to define, prototype and implement various APIs along with an integrated GUI within Blender that will together provide advanced visualization capabilities for MDAnalysis.",
+        "student_name": "Pardhav Maradani",
+        "code_url": "https://pardhavmaradani.github.io/posts/gsoc-2025-final-report/",
+        "proposal_id": "lJaY5qzB",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/9BR8jbvV"
+      },
+      {
+        "title": "MDAnalysis x ProLIF Project 5:  H-Bond interactions from implicit hydrogens",
+        "short_description": "ProLIF, a tool for identifying protein-molecule interactions in molecular dynamics trajectories, lacks a straightforward method for evaluating...",
+        "description": "ProLIF, a tool for identifying protein-molecule interactions in molecular dynamics trajectories, lacks a straightforward method for evaluating hydrogen bonds when only heavy atoms are present. Many users usually compare experimental and computational structures without explicit hydrogens, but the existing protonation tools are cumbersome and error-prone for beginner-level programming users. This proposal introduces an \"implicit hydrogen bond (H-bond) interaction method\" directly using heavy atom positions to detect H-bonds.  The goal is to strike a balance between efficiency and accuracy and increase ProLIF's usability. The method will leverage distance-based calculations with geometrical constraints, similar to Mol* and Chimera, and incorporate a confidence score based on AutoDock Vina's hydrogen bond term.  Standardizing residue names from various force fields (CHARMM, AMBER, GROMOS, OPLS-AA) and assigning their associated protonation/hybridization states will be crucial for the new \"Protein helper function” before the H-bond detection.  Lastly, I plan to use the PINDER and PLINDER datasets (protein-protein and protein-ligand interactions, respectively) to validate the implicit H-bond interaction method by comparing the results from the standard H-bond method.",
+        "student_name": "Yu-Yuan (Stuart) Yang",
+        "code_url": "https://gist.github.com/yuyuan871111/aadf9da9e0d2fc52ca93cbda61ccadde",
+        "proposal_id": "5YgE67yN",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/5Otkx8vp"
+      }
+    ],
+    "2026": []
   },
   "githubID": "MDAnalysis",
   "repositories": [
@@ -169,9 +208,9 @@
       "html_url": "https://github.com/MDAnalysis/MDAKits",
       "description": "The MDAnalysis Toolkits Registry",
       "language": "Python",
-      "stargazers_count": 17,
-      "forks_count": 30,
-      "open_issues_count": 43,
+      "stargazers_count": 19,
+      "forks_count": 34,
+      "open_issues_count": 63,
       "license": {
         "key": "other",
         "name": "Other",
@@ -189,9 +228,9 @@
       "html_url": "https://github.com/MDAnalysis/benchmarks",
       "description": "Performance benchmarks of MDAnalysis provided by ASV. ",
       "language": "Shell",
-      "stargazers_count": 2,
-      "forks_count": 1,
-      "open_issues_count": 0,
+      "stargazers_count": 3,
+      "forks_count": 4,
+      "open_issues_count": 1,
       "license": {
         "key": "bsd-3-clause",
         "name": "BSD 3-Clause \"New\" or \"Revised\" License",
@@ -204,6 +243,26 @@
       ]
     },
     {
+      "id": 202356942,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMDIzNTY5NDI=",
+      "name": "UserGuide",
+      "full_name": "MDAnalysis/UserGuide",
+      "html_url": "https://github.com/MDAnalysis/UserGuide",
+      "description": "User Guide for MDAnalysis",
+      "language": "Python",
+      "stargazers_count": 29,
+      "forks_count": 47,
+      "open_issues_count": 61,
+      "license": {
+        "key": "lgpl-2.1",
+        "name": "GNU Lesser General Public License v2.1",
+        "spdx_id": "LGPL-2.1",
+        "url": "https://api.github.com/licenses/lgpl-2.1",
+        "node_id": "MDc6TGljZW5zZTEx"
+      },
+      "topics": []
+    },
+    {
       "id": 33389183,
       "node_id": "MDEwOlJlcG9zaXRvcnkzMzM4OTE4Mw==",
       "name": "mdanalysis",
@@ -211,9 +270,9 @@
       "html_url": "https://github.com/MDAnalysis/mdanalysis",
       "description": "MDAnalysis is a Python library to analyze molecular dynamics simulations.",
       "language": "Python",
-      "stargazers_count": 1422,
-      "forks_count": 710,
-      "open_issues_count": 493,
+      "stargazers_count": 1559,
+      "forks_count": 827,
+      "open_issues_count": 521,
       "license": {
         "key": "other",
         "name": "Other",
@@ -233,24 +292,34 @@
       ]
     },
     {
-      "id": 202356942,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMDIzNTY5NDI=",
-      "name": "UserGuide",
-      "full_name": "MDAnalysis/UserGuide",
-      "html_url": "https://github.com/MDAnalysis/UserGuide",
-      "description": "User Guide for MDAnalysis",
-      "language": "Python",
-      "stargazers_count": 25,
-      "forks_count": 42,
-      "open_issues_count": 67,
-      "license": {
-        "key": "lgpl-2.1",
-        "name": "GNU Lesser General Public License v2.1",
-        "spdx_id": "LGPL-2.1",
-        "url": "https://api.github.com/licenses/lgpl-2.1",
-        "node_id": "MDc6TGljZW5zZTEx"
-      },
+      "id": 518010502,
+      "node_id": "R_kgDOHuA2hg",
+      "name": "mdakit-cookie",
+      "full_name": "MDAnalysis/mdakit-cookie",
+      "html_url": "https://github.com/MDAnalysis/mdakit-cookie",
+      "description": null,
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
       "topics": []
+    },
+    {
+      "id": 1014058478,
+      "node_id": "R_kgDOPHFN7g",
+      "name": "mdanalysis-subprojects-branding",
+      "full_name": "MDAnalysis/mdanalysis-subprojects-branding",
+      "html_url": "https://github.com/MDAnalysis/mdanalysis-subprojects-branding",
+      "description": "Logos and branding for MDAnalysis subprojects",
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 1,
+      "open_issues_count": 1,
+      "license": null,
+      "topics": [
+        "mdanalysis"
+      ]
     },
     {
       "id": 33080483,
@@ -260,54 +329,24 @@
       "html_url": "https://github.com/MDAnalysis/MDAnalysis.github.io",
       "description": "MDAnalysis home page mdanalysis.org as GitHub pages.",
       "language": "CSS",
-      "stargazers_count": 15,
-      "forks_count": 46,
-      "open_issues_count": 20,
+      "stargazers_count": 14,
+      "forks_count": 48,
+      "open_issues_count": 26,
       "license": null,
       "topics": []
     },
     {
-      "id": 583090385,
-      "node_id": "R_kgDOIsFA0Q",
-      "name": "mdahole2",
-      "full_name": "MDAnalysis/mdahole2",
-      "html_url": "https://github.com/MDAnalysis/mdahole2",
-      "description": "An MDAKit implementing a Python interface for the HOLE program.",
-      "language": "Python",
-      "stargazers_count": 7,
-      "forks_count": 3,
-      "open_issues_count": 9,
-      "license": {
-        "key": "lgpl-2.1",
-        "name": "GNU Lesser General Public License v2.1",
-        "spdx_id": "LGPL-2.1",
-        "url": "https://api.github.com/licenses/lgpl-2.1",
-        "node_id": "MDc6TGljZW5zZTEx"
-      },
-      "topics": [
-        "mdanalysis",
-        "python",
-        "structural-biology"
-      ]
-    },
-    {
-      "id": 700600798,
-      "node_id": "R_kgDOKcJR3g",
-      "name": "PathSimAnalysis",
-      "full_name": "MDAnalysis/PathSimAnalysis",
-      "html_url": "https://github.com/MDAnalysis/PathSimAnalysis",
-      "description": "An MDAKit that calculates the geometric similarity of molecular dynamics trajectories using path metrics such as the Hausdorff or Fréchet distances.",
-      "language": "Python",
+      "id": 540191148,
+      "node_id": "R_kgDOIDKprA",
+      "name": "branding",
+      "full_name": "MDAnalysis/branding",
+      "html_url": "https://github.com/MDAnalysis/branding",
+      "description": "Resources for MDAnalysis branding",
+      "language": null,
       "stargazers_count": 0,
-      "forks_count": 1,
-      "open_issues_count": 4,
-      "license": {
-        "key": "lgpl-2.1",
-        "name": "GNU Lesser General Public License v2.1",
-        "spdx_id": "LGPL-2.1",
-        "url": "https://api.github.com/licenses/lgpl-2.1",
-        "node_id": "MDc6TGljZW5zZTEx"
-      },
+      "forks_count": 2,
+      "open_issues_count": 1,
+      "license": null,
       "topics": []
     },
     {
@@ -320,7 +359,7 @@
       "language": "Python",
       "stargazers_count": 7,
       "forks_count": 5,
-      "open_issues_count": 34,
+      "open_issues_count": 32,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -331,131 +370,89 @@
       "topics": []
     },
     {
-      "id": 820165107,
-      "node_id": "R_kgDOMOK58w",
-      "name": "helanal",
-      "full_name": "MDAnalysis/helanal",
-      "html_url": "https://github.com/MDAnalysis/helanal",
-      "description": "A package to characterise the geometry of protein helicies.",
+      "id": 287262645,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyODcyNjI2NDU=",
+      "name": "mdacli",
+      "full_name": "MDAnalysis/mdacli",
+      "html_url": "https://github.com/MDAnalysis/mdacli",
+      "description": "Command line interface for MDAnalysis",
       "language": "Python",
-      "stargazers_count": 1,
-      "forks_count": 2,
-      "open_issues_count": 1,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 799790512,
-      "node_id": "R_kgDOL6vVsA",
-      "name": "mda-openbabel-converter",
-      "full_name": "MDAnalysis/mda-openbabel-converter",
-      "html_url": "https://github.com/MDAnalysis/mda-openbabel-converter",
-      "description": "MDAnalysis-OpenBabel Converter",
-      "language": "Python",
-      "stargazers_count": 0,
-      "forks_count": 1,
-      "open_issues_count": 5,
+      "stargazers_count": 23,
+      "forks_count": 8,
+      "open_issues_count": 9,
       "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
       },
-      "topics": []
-    },
-    {
-      "id": 669119648,
-      "node_id": "R_kgDOJ-H0oA",
-      "name": "MDAnalysisWorkshop-Intro0.5Day",
-      "full_name": "MDAnalysis/MDAnalysisWorkshop-Intro0.5Day",
-      "html_url": "https://github.com/MDAnalysis/MDAnalysisWorkshop-Intro0.5Day",
-      "description": "Materials for 0.5-day MDAnalysis workshops",
-      "language": "Jupyter Notebook",
-      "stargazers_count": 9,
-      "forks_count": 9,
-      "open_issues_count": 5,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 287255103,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyODcyNTUxMDM=",
-      "name": "distopia",
-      "full_name": "MDAnalysis/distopia",
-      "html_url": "https://github.com/MDAnalysis/distopia",
-      "description": "SIMD instructions for faster distance calculations.",
-      "language": "C++",
-      "stargazers_count": 19,
-      "forks_count": 6,
-      "open_issues_count": 10,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 643419869,
-      "node_id": "R_kgDOJlnO3Q",
-      "name": "mdanalysis-compatible-python",
-      "full_name": "MDAnalysis/mdanalysis-compatible-python",
-      "html_url": "https://github.com/MDAnalysis/mdanalysis-compatible-python",
-      "description": null,
-      "language": "Python",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 875050237,
-      "node_id": "R_kgDONCg0_Q",
-      "name": "imd-workshop-2024",
-      "full_name": "MDAnalysis/imd-workshop-2024",
-      "html_url": "https://github.com/MDAnalysis/imd-workshop-2024",
-      "description": "Materials for the virtual 2024 MDAnalysis IMD streaming workshop.",
-      "language": "Jupyter Notebook",
-      "stargazers_count": 7,
-      "forks_count": 1,
-      "open_issues_count": 0,
-      "license": null,
       "topics": [
-        "gromacs",
-        "lammps",
+        "cli",
+        "command-line",
+        "command-line-tool",
+        "computational-chemistry",
         "mdanalysis",
-        "namd",
+        "molecular-dynamics",
+        "molecular-dynamics-simulation",
         "python",
-        "streaming"
+        "science",
+        "trajectory-analysis"
       ]
     },
     {
-      "id": 701092705,
-      "node_id": "R_kgDOKcnTYQ",
-      "name": "waterdynamics",
-      "full_name": "MDAnalysis/waterdynamics",
-      "html_url": "https://github.com/MDAnalysis/waterdynamics",
-      "description": "Analysis of water dynamics in molecular dynamics trajectories and water interactions with other molecules.",
+      "id": 72727671,
+      "node_id": "MDEwOlJlcG9zaXRvcnk3MjcyNzY3MQ==",
+      "name": "griddataformats-feedstock",
+      "full_name": "MDAnalysis/griddataformats-feedstock",
+      "html_url": "https://github.com/MDAnalysis/griddataformats-feedstock",
+      "description": "A conda-smithy repository for griddataformats.",
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 1,
+      "open_issues_count": 0,
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "topics": []
+    },
+    {
+      "id": 895341,
+      "node_id": "MDEwOlJlcG9zaXRvcnk4OTUzNDE=",
+      "name": "GridDataFormats",
+      "full_name": "MDAnalysis/GridDataFormats",
+      "html_url": "https://github.com/MDAnalysis/GridDataFormats",
+      "description": "GridDataFormats is a pure Python library to handle data on a regular grid using commonly used file formats in molecular simulations.",
       "language": "Python",
-      "stargazers_count": 7,
-      "forks_count": 4,
-      "open_issues_count": 12,
+      "stargazers_count": 32,
+      "forks_count": 22,
+      "open_issues_count": 13,
+      "license": {
+        "key": "lgpl-3.0",
+        "name": "GNU Lesser General Public License v3.0",
+        "spdx_id": "LGPL-3.0",
+        "url": "https://api.github.com/licenses/lgpl-3.0",
+        "node_id": "MDc6TGljZW5zZTEy"
+      },
+      "topics": [
+        "python"
+      ]
+    },
+    {
+      "id": 1117051466,
+      "node_id": "R_kgDOQpTaSg",
+      "name": "parallelization-benchmarks",
+      "full_name": "MDAnalysis/parallelization-benchmarks",
+      "html_url": "https://github.com/MDAnalysis/parallelization-benchmarks",
+      "description": "Repository for coordination of parallelization paper writing",
+      "language": "TeX",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 4,
       "license": {
         "key": "lgpl-2.1",
         "name": "GNU Lesser General Public License v2.1",
@@ -466,22 +463,22 @@
       "topics": []
     },
     {
-      "id": 682075053,
-      "node_id": "R_kgDOKKejrQ",
-      "name": "pypi-deployment",
-      "full_name": "MDAnalysis/pypi-deployment",
-      "html_url": "https://github.com/MDAnalysis/pypi-deployment",
-      "description": "Reusable github action to package, deploy and and check code to PyPi & TestPyPi",
-      "language": null,
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 2,
+      "id": 371804402,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzNzE4MDQ0MDI=",
+      "name": "solvation-analysis",
+      "full_name": "MDAnalysis/solvation-analysis",
+      "html_url": "https://github.com/MDAnalysis/solvation-analysis",
+      "description": "A comprehensive tool for analyzing liquid solvation structure.",
+      "language": "Python",
+      "stargazers_count": 54,
+      "forks_count": 15,
+      "open_issues_count": 10,
       "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
       },
       "topics": []
     },
@@ -495,7 +492,7 @@
       "language": "Sass",
       "stargazers_count": 1,
       "forks_count": 1,
-      "open_issues_count": 10,
+      "open_issues_count": 12,
       "license": {
         "key": "other",
         "name": "Other",
@@ -506,26 +503,89 @@
       "topics": []
     },
     {
-      "id": 895341,
-      "node_id": "MDEwOlJlcG9zaXRvcnk4OTUzNDE=",
-      "name": "GridDataFormats",
-      "full_name": "MDAnalysis/GridDataFormats",
-      "html_url": "https://github.com/MDAnalysis/GridDataFormats",
-      "description": "GridDataFormats is a pure Python library to handle data on a regular grid using commonly used file formats in molecular simulations.",
-      "language": "Python",
-      "stargazers_count": 29,
-      "forks_count": 18,
-      "open_issues_count": 7,
+      "id": 1074457300,
+      "node_id": "R_kgDOQArq1A",
+      "name": "UGM2025",
+      "full_name": "MDAnalysis/UGM2025",
+      "html_url": "https://github.com/MDAnalysis/UGM2025",
+      "description": "Materials for the 2025 MDAnalysis User Group Meeting",
+      "language": "Jupyter Notebook",
+      "stargazers_count": 3,
+      "forks_count": 17,
+      "open_issues_count": 4,
       "license": {
-        "key": "lgpl-3.0",
-        "name": "GNU Lesser General Public License v3.0",
-        "spdx_id": "LGPL-3.0",
-        "url": "https://api.github.com/licenses/lgpl-3.0",
-        "node_id": "MDc6TGljZW5zZTEy"
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 92180386,
+      "node_id": "MDEwOlJlcG9zaXRvcnk5MjE4MDM4Ng==",
+      "name": "pytng",
+      "full_name": "MDAnalysis/pytng",
+      "html_url": "https://github.com/MDAnalysis/pytng",
+      "description": "Python bindings for TNG file format",
+      "language": "C",
+      "stargazers_count": 13,
+      "forks_count": 5,
+      "open_issues_count": 12,
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
       },
       "topics": [
-        "python"
+        "file-format",
+        "gromacs",
+        "molecular-dynamics-simulation",
+        "trajectory"
       ]
+    },
+    {
+      "id": 287255103,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyODcyNTUxMDM=",
+      "name": "distopia",
+      "full_name": "MDAnalysis/distopia",
+      "html_url": "https://github.com/MDAnalysis/distopia",
+      "description": "SIMD instructions for faster distance calculations.",
+      "language": "C++",
+      "stargazers_count": 25,
+      "forks_count": 7,
+      "open_issues_count": 14,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 553235271,
+      "node_id": "R_kgDOIPmzRw",
+      "name": "mda-xdrlib",
+      "full_name": "MDAnalysis/mda-xdrlib",
+      "html_url": "https://github.com/MDAnalysis/mda-xdrlib",
+      "description": "Stand-alone XDRLIB module (from cpython 3.10.8)",
+      "language": "Python",
+      "stargazers_count": 1,
+      "forks_count": 1,
+      "open_issues_count": 1,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
     },
     {
       "id": 49365749,
@@ -548,16 +608,57 @@
       "topics": []
     },
     {
-      "id": 668886906,
-      "node_id": "R_kgDOJ95neg",
-      "name": "mdaencore",
-      "full_name": "MDAnalysis/mdaencore",
-      "html_url": "https://github.com/MDAnalysis/mdaencore",
-      "description": "Ensemble overlap comparison software for molecular data.",
+      "id": 875050237,
+      "node_id": "R_kgDONCg0_Q",
+      "name": "imd-workshop-2024",
+      "full_name": "MDAnalysis/imd-workshop-2024",
+      "html_url": "https://github.com/MDAnalysis/imd-workshop-2024",
+      "description": "Materials for the virtual 2024 MDAnalysis IMD streaming workshop.",
+      "language": "Jupyter Notebook",
+      "stargazers_count": 8,
+      "forks_count": 3,
+      "open_issues_count": 1,
+      "license": null,
+      "topics": [
+        "gromacs",
+        "lammps",
+        "mdanalysis",
+        "namd",
+        "python",
+        "streaming"
+      ]
+    },
+    {
+      "id": 799790512,
+      "node_id": "R_kgDOL6vVsA",
+      "name": "mda-openbabel-converter",
+      "full_name": "MDAnalysis/mda-openbabel-converter",
+      "html_url": "https://github.com/MDAnalysis/mda-openbabel-converter",
+      "description": "MDAnalysis-OpenBabel Converter",
       "language": "Python",
       "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 20,
+      "forks_count": 1,
+      "open_issues_count": 5,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 646603824,
+      "node_id": "R_kgDOJopkMA",
+      "name": "transport-analysis",
+      "full_name": "MDAnalysis/transport-analysis",
+      "html_url": "https://github.com/MDAnalysis/transport-analysis",
+      "description": "A Python package to compute and analyze transport properties.",
+      "language": "Python",
+      "stargazers_count": 16,
+      "forks_count": 2,
+      "open_issues_count": 21,
       "license": {
         "key": "gpl-2.0",
         "name": "GNU General Public License v2.0",
@@ -568,100 +669,36 @@
       "topics": []
     },
     {
-      "id": 92180386,
-      "node_id": "MDEwOlJlcG9zaXRvcnk5MjE4MDM4Ng==",
-      "name": "pytng",
-      "full_name": "MDAnalysis/pytng",
-      "html_url": "https://github.com/MDAnalysis/pytng",
-      "description": "Python bindings for TNG file format",
-      "language": "C",
-      "stargazers_count": 13,
-      "forks_count": 5,
-      "open_issues_count": 13,
-      "license": {
-        "key": "bsd-3-clause",
-        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
-        "spdx_id": "BSD-3-Clause",
-        "url": "https://api.github.com/licenses/bsd-3-clause",
-        "node_id": "MDc6TGljZW5zZTU="
-      },
-      "topics": [
-        "file-format",
-        "gromacs",
-        "molecular-dynamics-simulation",
-        "trajectory"
-      ]
-    },
-    {
-      "id": 540191148,
-      "node_id": "R_kgDOIDKprA",
-      "name": "branding",
-      "full_name": "MDAnalysis/branding",
-      "html_url": "https://github.com/MDAnalysis/branding",
-      "description": "Resources for MDAnalysis branding",
-      "language": null,
-      "stargazers_count": 0,
-      "forks_count": 2,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 147885122,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNDc4ODUxMjI=",
-      "name": "MDAnalysisData",
-      "full_name": "MDAnalysis/MDAnalysisData",
-      "html_url": "https://github.com/MDAnalysis/MDAnalysisData",
-      "description": "Access to data for workshops and extended tests of MDAnalysis.",
-      "language": "Python",
-      "stargazers_count": 17,
-      "forks_count": 4,
-      "open_issues_count": 9,
-      "license": {
-        "key": "bsd-3-clause",
-        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
-        "spdx_id": "BSD-3-Clause",
-        "url": "https://api.github.com/licenses/bsd-3-clause",
-        "node_id": "MDc6TGljZW5zZTU="
-      },
-      "topics": [
-        "dataset-manager",
-        "mdanalysis",
-        "molecular-dynamics",
-        "python"
-      ]
-    },
-    {
-      "id": 553235271,
-      "node_id": "R_kgDOIPmzRw",
-      "name": "mda-xdrlib",
-      "full_name": "MDAnalysis/mda-xdrlib",
-      "html_url": "https://github.com/MDAnalysis/mda-xdrlib",
-      "description": "Stand-alone XDRLIB module (from cpython 3.10.8)",
-      "language": "Python",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "open_issues_count": 1,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 836399890,
-      "node_id": "R_kgDOMdpzEg",
-      "name": "UGM2024",
-      "full_name": "MDAnalysis/UGM2024",
-      "html_url": "https://github.com/MDAnalysis/UGM2024",
-      "description": "Materials for the 2024 MDAnalysis User Group Meeting",
+      "id": 145646867,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNDU2NDY4Njc=",
+      "name": "WorkshopHackathon2018",
+      "full_name": "MDAnalysis/WorkshopHackathon2018",
+      "html_url": "https://github.com/MDAnalysis/WorkshopHackathon2018",
+      "description": "Materials, issues and things for the 2018 Workshop and Hackathon",
       "language": "Jupyter Notebook",
-      "stargazers_count": 1,
-      "forks_count": 2,
-      "open_issues_count": 0,
+      "stargazers_count": 14,
+      "forks_count": 22,
+      "open_issues_count": 4,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "topics": []
+    },
+    {
+      "id": 497868196,
+      "node_id": "R_kgDOHazdpA",
+      "name": "WorkshopMDMLEdinburgh2022",
+      "full_name": "MDAnalysis/WorkshopMDMLEdinburgh2022",
+      "html_url": "https://github.com/MDAnalysis/WorkshopMDMLEdinburgh2022",
+      "description": null,
+      "language": "Jupyter Notebook",
+      "stargazers_count": 65,
+      "forks_count": 14,
+      "open_issues_count": 7,
       "license": {
         "key": "other",
         "name": "Other",
@@ -672,16 +709,16 @@
       "topics": []
     },
     {
-      "id": 852084734,
-      "node_id": "R_kgDOMsnH_g",
-      "name": "MDAnalysisWorkshop-Intermediate1Day",
-      "full_name": "MDAnalysis/MDAnalysisWorkshop-Intermediate1Day",
-      "html_url": "https://github.com/MDAnalysis/MDAnalysisWorkshop-Intermediate1Day",
-      "description": "Materials for 1-day intermediate workshop",
+      "id": 669120156,
+      "node_id": "R_kgDOJ-H2nA",
+      "name": "UGM2023",
+      "full_name": "MDAnalysis/UGM2023",
+      "html_url": "https://github.com/MDAnalysis/UGM2023",
+      "description": "Materials for the 2023 MDAnalysis User Group Meeting",
       "language": "Jupyter Notebook",
       "stargazers_count": 4,
-      "forks_count": 1,
-      "open_issues_count": 1,
+      "forks_count": 10,
+      "open_issues_count": 13,
       "license": {
         "key": "other",
         "name": "Other",
@@ -692,17 +729,43 @@
       "topics": []
     },
     {
-      "id": 518010502,
-      "node_id": "R_kgDOHuA2hg",
-      "name": "mdakit-cookie",
-      "full_name": "MDAnalysis/mdakit-cookie",
-      "html_url": "https://github.com/MDAnalysis/mdakit-cookie",
+      "id": 795468164,
+      "node_id": "R_kgDOL2nhhA",
+      "name": "MDAnalysisWorkshop-Intro1Day",
+      "full_name": "MDAnalysis/MDAnalysisWorkshop-Intro1Day",
+      "html_url": "https://github.com/MDAnalysis/MDAnalysisWorkshop-Intro1Day",
+      "description": "Materials for 1-day MDAnalysis workshops",
+      "language": "Jupyter Notebook",
+      "stargazers_count": 3,
+      "forks_count": 1,
+      "open_issues_count": 2,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 810395736,
+      "node_id": "R_kgDOME2oWA",
+      "name": "MDAnalysisMolSSIWorkshop-Intermediate2Day",
+      "full_name": "MDAnalysis/MDAnalysisMolSSIWorkshop-Intermediate2Day",
+      "html_url": "https://github.com/MDAnalysis/MDAnalysisMolSSIWorkshop-Intermediate2Day",
       "description": null,
-      "language": null,
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
+      "language": "Jupyter Notebook",
+      "stargazers_count": 13,
+      "forks_count": 16,
+      "open_issues_count": 4,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
       "topics": []
     },
     {
@@ -713,8 +776,8 @@
       "html_url": "https://github.com/MDAnalysis/membrane-curvature",
       "description": "MDAnalysis tool to calculate membrane curvature. ",
       "language": "Python",
-      "stargazers_count": 32,
-      "forks_count": 8,
+      "stargazers_count": 35,
+      "forks_count": 9,
       "open_issues_count": 7,
       "license": {
         "key": "gpl-3.0",
@@ -731,37 +794,23 @@
       ]
     },
     {
-      "id": 646603824,
-      "node_id": "R_kgDOJopkMA",
-      "name": "transport-analysis",
-      "full_name": "MDAnalysis/transport-analysis",
-      "html_url": "https://github.com/MDAnalysis/transport-analysis",
-      "description": "A Python package to compute and analyze transport properties.",
-      "language": "Python",
-      "stargazers_count": 13,
-      "forks_count": 2,
-      "open_issues_count": 21,
+      "id": 852084734,
+      "node_id": "R_kgDOMsnH_g",
+      "name": "MDAnalysisWorkshop-Intermediate1Day",
+      "full_name": "MDAnalysis/MDAnalysisWorkshop-Intermediate1Day",
+      "html_url": "https://github.com/MDAnalysis/MDAnalysisWorkshop-Intermediate1Day",
+      "description": "Materials for 1-day intermediate workshop",
+      "language": "Jupyter Notebook",
+      "stargazers_count": 5,
+      "forks_count": 1,
+      "open_issues_count": 1,
       "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
       },
-      "topics": []
-    },
-    {
-      "id": 358339869,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzNTgzMzk4Njk=",
-      "name": "omnireader",
-      "full_name": "MDAnalysis/omnireader",
-      "html_url": "https://github.com/MDAnalysis/omnireader",
-      "description": null,
-      "language": "Cython",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 5,
-      "license": null,
       "topics": []
     }
   ],
@@ -772,7 +821,7 @@
       "node_id": "MDQ6VXNlcjEyNDYwMTI1",
       "avatar_url": "https://avatars.githubusercontent.com/u/12460125?v=4",
       "html_url": "https://github.com/IAlibay",
-      "contributions": 2
+      "contributions": 39
     },
     {
       "login": "orbeckst",
@@ -780,7 +829,7 @@
       "node_id": "MDQ6VXNlcjIzNzk4MA==",
       "avatar_url": "https://avatars.githubusercontent.com/u/237980?v=4",
       "html_url": "https://github.com/orbeckst",
-      "contributions": 672
+      "contributions": 25
     },
     {
       "login": "lilyminium",
@@ -788,7 +837,7 @@
       "node_id": "MDQ6VXNlcjMxMTE1MTAx",
       "avatar_url": "https://avatars.githubusercontent.com/u/31115101?v=4",
       "html_url": "https://github.com/lilyminium",
-      "contributions": 12
+      "contributions": 119
     },
     {
       "login": "ianmkenney",
@@ -815,27 +864,27 @@
       "contributions": 5
     },
     {
-      "login": "Marcello-Sega",
-      "id": 466063,
-      "node_id": "MDQ6VXNlcjQ2NjA2Mw==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/466063?v=4",
-      "html_url": "https://github.com/Marcello-Sega",
+      "login": "hejamu",
+      "id": 24970080,
+      "node_id": "MDQ6VXNlcjI0OTcwMDgw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/24970080?v=4",
+      "html_url": "https://github.com/hejamu",
+      "contributions": 3
+    },
+    {
+      "login": "PicoCentauri",
+      "id": 15192133,
+      "node_id": "MDQ6VXNlcjE1MTkyMTMz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/15192133?v=4",
+      "html_url": "https://github.com/PicoCentauri",
       "contributions": 2
     },
     {
-      "login": "ricard1997",
-      "id": 63318224,
-      "node_id": "MDQ6VXNlcjYzMzE4MjI0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/63318224?v=4",
-      "html_url": "https://github.com/ricard1997",
-      "contributions": 2
-    },
-    {
-      "login": "RMeli",
-      "id": 11348981,
-      "node_id": "MDQ6VXNlcjExMzQ4OTgx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/11348981?v=4",
-      "html_url": "https://github.com/RMeli",
+      "login": "cabb99",
+      "id": 2429859,
+      "node_id": "MDQ6VXNlcjI0Mjk4NTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2429859?v=4",
+      "html_url": "https://github.com/cabb99",
       "contributions": 2
     },
     {
@@ -847,59 +896,51 @@
       "contributions": 2
     },
     {
-      "login": "hejamu",
-      "id": 24970080,
-      "node_id": "MDQ6VXNlcjI0OTcwMDgw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/24970080?v=4",
-      "html_url": "https://github.com/hejamu",
+      "login": "RMeli",
+      "id": 11348981,
+      "node_id": "MDQ6VXNlcjExMzQ4OTgx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11348981?v=4",
+      "html_url": "https://github.com/RMeli",
+      "contributions": 12
+    },
+    {
+      "login": "ricard1997",
+      "id": 63318224,
+      "node_id": "MDQ6VXNlcjYzMzE4MjI0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/63318224?v=4",
+      "html_url": "https://github.com/ricard1997",
       "contributions": 2
     },
     {
-      "login": "yusuferentunc",
-      "id": 61586335,
-      "node_id": "MDQ6VXNlcjYxNTg2MzM1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/61586335?v=4",
-      "html_url": "https://github.com/yusuferentunc",
+      "login": "Marcello-Sega",
+      "id": 466063,
+      "node_id": "MDQ6VXNlcjQ2NjA2Mw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/466063?v=4",
+      "html_url": "https://github.com/Marcello-Sega",
+      "contributions": 2
+    },
+    {
+      "login": "EtienneReboul",
+      "id": 45311890,
+      "node_id": "MDQ6VXNlcjQ1MzExODkw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/45311890?v=4",
+      "html_url": "https://github.com/EtienneReboul",
       "contributions": 1
     },
     {
-      "login": "sef43",
-      "id": 25941757,
-      "node_id": "MDQ6VXNlcjI1OTQxNzU3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/25941757?v=4",
-      "html_url": "https://github.com/sef43",
-      "contributions": 1
+      "login": "hmacdope",
+      "id": 24581003,
+      "node_id": "MDQ6VXNlcjI0NTgxMDAz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/24581003?v=4",
+      "html_url": "https://github.com/hmacdope",
+      "contributions": 4
     },
     {
-      "login": "pegerto",
-      "id": 261659,
-      "node_id": "MDQ6VXNlcjI2MTY1OQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/261659?v=4",
-      "html_url": "https://github.com/pegerto",
-      "contributions": 1
-    },
-    {
-      "login": "p-j-smith",
-      "id": 29753790,
-      "node_id": "MDQ6VXNlcjI5NzUzNzkw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/29753790?v=4",
-      "html_url": "https://github.com/p-j-smith",
-      "contributions": 1
-    },
-    {
-      "login": "orionarcher",
-      "id": 27712051,
-      "node_id": "MDQ6VXNlcjI3NzEyMDUx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/27712051?v=4",
-      "html_url": "https://github.com/orionarcher",
-      "contributions": 1
-    },
-    {
-      "login": "m-a-r-i-u-s",
-      "id": 44572437,
-      "node_id": "MDQ6VXNlcjQ0NTcyNDM3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/44572437?v=4",
-      "html_url": "https://github.com/m-a-r-i-u-s",
+      "login": "jaybraunjr",
+      "id": 72469846,
+      "node_id": "MDQ6VXNlcjcyNDY5ODQ2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/72469846?v=4",
+      "html_url": "https://github.com/jaybraunjr",
       "contributions": 1
     },
     {
@@ -911,27 +952,51 @@
       "contributions": 1
     },
     {
-      "login": "hmacdope",
-      "id": 24581003,
-      "node_id": "MDQ6VXNlcjI0NTgxMDAz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/24581003?v=4",
-      "html_url": "https://github.com/hmacdope",
+      "login": "m-a-r-i-u-s",
+      "id": 44572437,
+      "node_id": "MDQ6VXNlcjQ0NTcyNDM3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/44572437?v=4",
+      "html_url": "https://github.com/m-a-r-i-u-s",
       "contributions": 1
     },
     {
-      "login": "EtienneReboul",
-      "id": 45311890,
-      "node_id": "MDQ6VXNlcjQ1MzExODkw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/45311890?v=4",
-      "html_url": "https://github.com/EtienneReboul",
+      "login": "orionarcher",
+      "id": 27712051,
+      "node_id": "MDQ6VXNlcjI3NzEyMDUx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/27712051?v=4",
+      "html_url": "https://github.com/orionarcher",
       "contributions": 1
     },
     {
-      "login": "cabb99",
-      "id": 2429859,
-      "node_id": "MDQ6VXNlcjI0Mjk4NTk=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/2429859?v=4",
-      "html_url": "https://github.com/cabb99",
+      "login": "p-j-smith",
+      "id": 29753790,
+      "node_id": "MDQ6VXNlcjI5NzUzNzkw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/29753790?v=4",
+      "html_url": "https://github.com/p-j-smith",
+      "contributions": 1
+    },
+    {
+      "login": "pegerto",
+      "id": 261659,
+      "node_id": "MDQ6VXNlcjI2MTY1OQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/261659?v=4",
+      "html_url": "https://github.com/pegerto",
+      "contributions": 1
+    },
+    {
+      "login": "sef43",
+      "id": 25941757,
+      "node_id": "MDQ6VXNlcjI1OTQxNzU3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25941757?v=4",
+      "html_url": "https://github.com/sef43",
+      "contributions": 1
+    },
+    {
+      "login": "yusuferentunc",
+      "id": 61586335,
+      "node_id": "MDQ6VXNlcjYxNTg2MzM1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/61586335?v=4",
+      "html_url": "https://github.com/yusuferentunc",
       "contributions": 1
     },
     {
@@ -940,6 +1005,118 @@
       "node_id": "MDQ6VXNlcjc5MDMwNzg=",
       "avatar_url": "https://avatars.githubusercontent.com/u/7903078?v=4",
       "html_url": "https://github.com/tylerjereddy",
+      "contributions": 1
+    },
+    {
+      "login": "jandom",
+      "id": 395931,
+      "node_id": "MDQ6VXNlcjM5NTkzMQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/395931?v=4",
+      "html_url": "https://github.com/jandom",
+      "contributions": 35
+    },
+    {
+      "login": "richardjgowers",
+      "id": 9249543,
+      "node_id": "MDQ6VXNlcjkyNDk1NDM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9249543?v=4",
+      "html_url": "https://github.com/richardjgowers",
+      "contributions": 12
+    },
+    {
+      "login": "pgbarletta",
+      "id": 5693483,
+      "node_id": "MDQ6VXNlcjU2OTM0ODM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5693483?v=4",
+      "html_url": "https://github.com/pgbarletta",
+      "contributions": 9
+    },
+    {
+      "login": "mhmohona",
+      "id": 14244685,
+      "node_id": "MDQ6VXNlcjE0MjQ0Njg1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14244685?v=4",
+      "html_url": "https://github.com/mhmohona",
+      "contributions": 8
+    },
+    {
+      "login": "yuxuanzhuang",
+      "id": 24636656,
+      "node_id": "MDQ6VXNlcjI0NjM2NjU2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/24636656?v=4",
+      "html_url": "https://github.com/yuxuanzhuang",
+      "contributions": 4
+    },
+    {
+      "login": "micaela-matta",
+      "id": 31009265,
+      "node_id": "MDQ6VXNlcjMxMDA5MjY1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/31009265?v=4",
+      "html_url": "https://github.com/micaela-matta",
+      "contributions": 2
+    },
+    {
+      "login": "mieczyslaw",
+      "id": 3063282,
+      "node_id": "MDQ6VXNlcjMwNjMyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3063282?v=4",
+      "html_url": "https://github.com/mieczyslaw",
+      "contributions": 2
+    },
+    {
+      "login": "BFedder",
+      "id": 80363742,
+      "node_id": "MDQ6VXNlcjgwMzYzNzQy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/80363742?v=4",
+      "html_url": "https://github.com/BFedder",
+      "contributions": 1
+    },
+    {
+      "login": "FloLangenfeld",
+      "id": 29724732,
+      "node_id": "MDQ6VXNlcjI5NzI0NzMy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/29724732?v=4",
+      "html_url": "https://github.com/FloLangenfeld",
+      "contributions": 1
+    },
+    {
+      "login": "mikemhenry",
+      "id": 11765982,
+      "node_id": "MDQ6VXNlcjExNzY1OTgy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11765982?v=4",
+      "html_url": "https://github.com/mikemhenry",
+      "contributions": 1
+    },
+    {
+      "login": "RubenChM",
+      "id": 183065295,
+      "node_id": "U_kgDOCulazw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/183065295?v=4",
+      "html_url": "https://github.com/RubenChM",
+      "contributions": 1
+    },
+    {
+      "login": "yuyuan871111",
+      "id": 41790561,
+      "node_id": "MDQ6VXNlcjQxNzkwNTYx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/41790561?v=4",
+      "html_url": "https://github.com/yuyuan871111",
+      "contributions": 1
+    },
+    {
+      "login": "namiroues",
+      "id": 35582930,
+      "node_id": "MDQ6VXNlcjM1NTgyOTMw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/35582930?v=4",
+      "html_url": "https://github.com/namiroues",
+      "contributions": 1
+    },
+    {
+      "login": "readthedocs-assistant",
+      "id": 96542097,
+      "node_id": "U_kgDOBcEdkQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/96542097?v=4",
+      "html_url": "https://github.com/readthedocs-assistant",
       "contributions": 1
     }
   ],

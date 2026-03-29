@@ -155,7 +155,26 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/eBGM1aHc"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Genetic Optimization Module",
+        "short_description": "The Genetic Optimization Module for MBDyn seeks to integrate a genetic algorithm (GA) into MBDyn, a multibody dynamics simulation software, to enable...",
+        "description": "The Genetic Optimization Module for MBDyn seeks to integrate a genetic algorithm (GA) into MBDyn, a multibody dynamics simulation software, to enable optimization within simulation runs. As a super-element, the module will leverage MBDyn’s drive system—taking inputs from drives that expose simulation data and outputting optimized variables to other drives. Inspired by the mbdyn module’s structure, the project emphasizes a self-contained GA implementation in C++ to ensure minimal dependencies. The development is split into two phases: a 175-hour baseline solver with core functionality and a 350-hour fully-featured solver with advanced features and optional external library integration. This proposal targets the 350-hour project, aligning with the Google Summer of Code’s 12-week timeline (approximately 480 hours at 40 hours/week), delivering a robust optimization tool for MBDyn users.",
+        "student_name": "Rahul Drabit",
+        "code_url": "https://github.com/Rahuldrabit/MBDyn",
+        "proposal_id": "A6u3aqo5",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/iemnSvFQ"
+      },
+      {
+        "title": "MBDyn Python Preprocessor Development",
+        "short_description": "The MBDyn Python Preprocessor simplifies the creation of input files for MBDyn simulations by bridging Python programming with MBDyn's input format....",
+        "description": "The MBDyn Python Preprocessor simplifies the creation of input files for MBDyn simulations by bridging Python programming with MBDyn's input format. This project enhances the simulation workflow through two key improvements. The first transforms the YAML-based Rotorcraft Parametric Modeling tool into Python classes within the preprocessor, creating an object-oriented framework for rotorcraft modeling. The second integrates the preprocessor with Blendyn (a Blender add-on), enabling users to create, edit, simulate and visualize MBDyn models entirely within Blender. These enhancements make MBDyn modeling more intuitive and accessible while providing a seamless workflow for both pre- and post-processing tasks.",
+        "student_name": "Shimul Baidya",
+        "code_url": "https://public.gitlab.polimi.it/DAER/mbdyn/-/issues/393",
+        "proposal_id": "2qeLt7ia",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/YatS9WKL"
+      }
+    ]
   },
   "githubID": "NA",
   "activeOrg": false,

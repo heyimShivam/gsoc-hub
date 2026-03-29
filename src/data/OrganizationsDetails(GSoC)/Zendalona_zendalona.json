@@ -71,10 +71,229 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/Q0ctBiAh"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Accessibility in the Ubuntu Installer for Visually Impaired Users - Support Accessible-Coconut 24.04",
+        "short_description": "This project aims to make the Ubuntu Desktop Provision installer fully accessible to visually impaired users by addressing key accessibility issues...",
+        "description": "This project aims to make the Ubuntu Desktop Provision installer fully accessible to visually impaired users by addressing key accessibility issues in its Flutter-based interface. Currently, the installer lacks proper screen reader support, suffers from poor keyboard navigation, and fails to provide audio feedback, making it unusable for blind and low-vision users, especially those relying on Accessible-Coconut, a Ubuntu-based distribution developed by Zendalona.\n\nThe solution involves fixing both architectural and UI-level problems in how Flutter components interact with Linux accessibility frameworks (AT-SPI). It will include:\n- Implementing semantic accessibility wrappers\n- Ensuring proper focus and navigation flow\n- Enhancing screen reader feedback using Orca\n- Improving the accessibility of complex UI components, such as partitioning\n- Conducting extensive user testing and providing detailed documentation\n\nDeliverables\n- A fully accessible Ubuntu installer with complete screen reader compatibility\n- Keyboard-navigable UI with audio cues and meaningful semantic labels\n- Documentation and developer guidelines for future accessibility improvements\n- Tested integration with Accessible-Coconut 24.04\n\nThis project will enable independent system installation for visually impaired users and contribute long-term value to Flutter-Linux accessibility efforts and the broader open-source community.",
+        "student_name": "Akshay Waghmare",
+        "code_url": "https://github.com/akshayw1/ubuntu-desktop-provision/blob/ubuntu/24.04-accessblity-improvement/Proejct_Report.md",
+        "proposal_id": "DQwExLHp",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/WRFeuRPW"
+      },
+      {
+        "title": "AI-Powered Agent to provide support for Zendalona products",
+        "short_description": "I will build an accessible AI support agent for Zendalona product.. This project addresses a critical gap in accessibility support by creating a...",
+        "description": "I will build an accessible AI support agent for Zendalona product.. This project addresses a critical gap in accessibility support by creating a conversational interface that seamlessly accepts both voice and text input, allowing users to interact naturally with Zendalona's product ecosystem.\nThe technical architecture employs an Agentic Retrieval-Augmented Generation (RAG) approach using LlamaIndex. This system will methodically index all Zendalona product information, documentation, and support materials in a vector database (ChromaDB or FAISS). When users submit queries, the system retrieves contextually relevant information and passes it to a large language model alongside the query, enabling precise, helpful responses based on accurate product knowledge.\nThe implementation follows a three-tier approach: First, a comprehensive data ingestion pipeline that processes, cleans, and vectorizes Zendalona's product information. Second, a robust Python backend built with FastAPI that handles query processing, context retrieval, and response generation through integration with STT/TTS services and LLM APIs. Third, a fully accessible React-based multimodal chat interface featuring high-contrast text, complete keyboard navigation, ARIA attributes, and seamless screen reader compatibility, particularly with Orca.\nKey deliverables include a modular, containerized system with separate frontend and backend Docker containers orchestrated via Docker Compose, comprehensive API documentation, extensive accessibility testing results, and detailed user guides. The solution prioritizes WCAG 2.2 compliance, minimal latency, data privacy, and security throughout the architecture. The final product will provide visually impaired users with an intuitive, conversational way to access product support that works effectively with their existing assistive technologies.",
+        "student_name": "Ashish Baghel",
+        "code_url": "https://github.com/nevernever69/AI-AGENT-Zendalona/",
+        "proposal_id": "3wfUCgu7",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/GMl3b6RZ"
+      },
+      {
+        "title": "Accessible-Bluff Bot",
+        "short_description": "In the current accessible bluff game, users often have to wait for other players to take their turn, which can be tedious and boring. To address...",
+        "description": "In the current accessible bluff game, users often have to wait for other players to take their turn, which can be tedious and boring. To address this, I propose developing an AI Bluff Bot that allows users to play anytime against a bot and adjust the difficulty based on their experience. The AI Mentor feature will provide real-time hints based on past moves to assist players during gameplay. All bot actions and AI Mentor features will be fully accessible, ensuring an inclusive gaming experience for all users.",
+        "student_name": "Faisal Majeed",
+        "code_url": "https://bluff.zendalona.com/",
+        "proposal_id": "21yUtJzG",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/5PRtUndn"
+      },
+      {
+        "title": "Linux-Intelligence-OCR-Solution(LIOS) - Enhancement",
+        "short_description": "Summary: The goal of this project is to improve the Linux-Intelligent OCR Solution (LIOS), an open-source tool for text extraction from images,...",
+        "description": "Summary:\nThe goal of this project is to improve the Linux-Intelligent OCR Solution (LIOS), an open-source tool for text extraction from images, scanned documents, and PDFs using Tesseract and Cuneiform OCR engines. The primary focus will be on enhancing usability, accessibility, and performance, particularly for visually impaired users, while also addressing several existing issues.\n\nProblem:\nLIOS is a powerful tool, but there are several issues that hinder its usability and accessibility. These include problems with the UI/UX design, scanner compatibility, OCR integration, and the lack of proper error handling, which often leads to crashes. Additionally, there are several other bugs that need attention, such as issues with text focus, icon display, and preview functionality.\n\nSolution:\nThe project will focus on addressing these issues and improving the overall user experience:\n\nUI/UX Improvements: Simplify the interface and improve accessibility, particularly for low-vision users.\n\nBug Fixes & Code Refinements: Address the following specific issues:\n\nText Focus: Ensure the textview regains focus after using Goto Line and Goto Page.\n\nTab Focus: Improve tab focus handling for better navigation.\n\nIcon Display: Fix the larger icon issue in the icon view for consistent UI presentation.\n\nPrint Preview: Fix the Print Preview functionality, which currently isn’t working as expected.\n\nError Handling: Implement proper error handling to prevent crashes and unexpected behavior.\n\nImage Rotation: Resolve the automatic deletion issue when rotating selected areas of the image.\n\nFind/Replace Accessibility: Ensure the Find and Find & Replace features are fully accessible and functional.\n\nScanner Compatibility: Improve compatibility with various scanner models, ensuring better cross-platform support.\n\nTesseract Integration: Enhance the detection of Tesseract data paths for more accurate OCR functionality.",
+        "student_name": "Nihal_Rodge",
+        "code_url": "https://github.com/MrSpideyNihal/lios",
+        "proposal_id": "6NbyfqXq",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/17ibgYz9"
+      },
+      {
+        "title": "Liblouis table editor - Enhancement",
+        "short_description": "Liblouis Table Editor, a tool that helps users create and edit braille translation tables used by screen readers and braille devices. Editing these...",
+        "description": "Liblouis Table Editor, a tool that helps users create and edit braille translation tables used by screen readers and braille devices. Editing these tables manually is difficult, especially when working with Unicode code points and special rules. I will add important missing features like forward and backward translation testing, fix existing bugs, improve the interface. I will also create easy-to-use installers for Linux and Windows.",
+        "student_name": "Sahil Rakhaiya",
+        "code_url": "https://gist.github.com/SahilRakhaiya05/939e8e91cf26610f3c40c6210fa9813b",
+        "proposal_id": "PaTuP05Z",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/1id80PNv"
+      },
+      {
+        "title": "Maths-Mantra Enhancement",
+        "short_description": "Maths-Mantra is an inclusive Android math learning app designed for visually impaired and sighted learners, transforming the way mathematics is...",
+        "description": "Maths-Mantra is an inclusive Android math learning app designed for visually impaired and sighted learners, transforming the way mathematics is explored through touch, sound, and interaction. Building on a foundation of accessible learning, the app introduces Quick Play, Learning Mode, and additional game modes, offering varied, engaging experiences for learners of different skill levels. It integrates device sensors such as the gyroscope, accelerometer, and multi-touch inputs to make geometry, number lines, and spatial concepts interactive and tangible. With gesture-based navigation, audio-tactile feedback, adjustable difficulty levels, and localization support, Maths-Mantra creates a multi-sensory, barrier-free environment that empowers students to understand and enjoy mathematics in a playful, engaging, and fully accessible way.",
+        "student_name": "SHADIL AM",
+        "code_url": "https://github.com/shadil-rayyan/Math-Mantra",
+        "proposal_id": "cXlttnyA",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/SL9ZcwNI"
+      }
+    ]
   },
   "githubID": "zendalona",
   "repositories": [
+    {
+      "id": 15411955,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNTQxMTk1NQ==",
+      "name": "lios",
+      "full_name": "zendalona/lios",
+      "html_url": "https://github.com/zendalona/lios",
+      "description": "Linux-intelligent-ocr-solution",
+      "language": "Python",
+      "stargazers_count": 149,
+      "forks_count": 52,
+      "open_issues_count": 34,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "topics": []
+    },
+    {
+      "id": 1115561520,
+      "node_id": "R_kgDOQn4eMA",
+      "name": "z.WebKeyBind",
+      "full_name": "zendalona/z.WebKeyBind",
+      "html_url": "https://github.com/zendalona/z.WebKeyBind",
+      "description": "An accessibility-focused browser extension, inclusively designed for visually impaired users, that enables them to define custom keyboard shortcuts for any clickable button or element on any webpage.",
+      "language": "JavaScript",
+      "stargazers_count": 1,
+      "forks_count": 1,
+      "open_issues_count": 2,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 876771007,
+      "node_id": "R_kgDONEJ2vw",
+      "name": "tdesktop",
+      "full_name": "zendalona/tdesktop",
+      "html_url": "https://github.com/zendalona/tdesktop",
+      "description": "Telegram Desktop messaging app",
+      "language": "C++",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 1134702117,
+      "node_id": "R_kgDOQ6IuJQ",
+      "name": "lib_ui",
+      "full_name": "zendalona/lib_ui",
+      "html_url": "https://github.com/zendalona/lib_ui",
+      "description": "GUI controls library.",
+      "language": "C++",
+      "stargazers_count": 0,
+      "forks_count": 1,
+      "open_issues_count": 1,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1163061597,
+      "node_id": "R_kgDORVLpXQ",
+      "name": "patches",
+      "full_name": "zendalona/patches",
+      "html_url": "https://github.com/zendalona/patches",
+      "description": "Required patches for open source libraries and tools.",
+      "language": "Shell",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1142235684,
+      "node_id": "R_kgDORBUiJA",
+      "name": "z.Agent",
+      "full_name": "zendalona/z.Agent",
+      "html_url": "https://github.com/zendalona/z.Agent",
+      "description": "AI agent for helping visually impaired",
+      "language": null,
+      "stargazers_count": 1,
+      "forks_count": 1,
+      "open_issues_count": 1,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1142245612,
+      "node_id": "R_kgDORBVI7A",
+      "name": "z.Mantra",
+      "full_name": "zendalona/z.Mantra",
+      "html_url": "https://github.com/zendalona/z.Mantra",
+      "description": "zMantra is a fun, inclusive math learning app for Android, thoughtfully designed for both visually impaired and sighted learners.",
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 808153975,
+      "node_id": "R_kgDOMCtzdw",
+      "name": "liblouis-table-editor",
+      "full_name": "zendalona/liblouis-table-editor",
+      "html_url": "https://github.com/zendalona/liblouis-table-editor",
+      "description": null,
+      "language": "Python",
+      "stargazers_count": 2,
+      "forks_count": 11,
+      "open_issues_count": 6,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 1142236413,
+      "node_id": "R_kgDORBUk_Q",
+      "name": "z.Agent-UI",
+      "full_name": "zendalona/z.Agent-UI",
+      "html_url": "https://github.com/zendalona/z.Agent-UI",
+      "description": null,
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1000627520,
+      "node_id": "R_kgDOO6RdQA",
+      "name": "ubuntu-desktop-provision-accessible",
+      "full_name": "zendalona/ubuntu-desktop-provision-accessible",
+      "html_url": "https://github.com/zendalona/ubuntu-desktop-provision-accessible",
+      "description": null,
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "topics": []
+    },
     {
       "id": 817141487,
       "node_id": "R_kgDOMLSW7w",
@@ -83,9 +302,9 @@
       "html_url": "https://github.com/zendalona/maths-tutor-v2",
       "description": null,
       "language": "Python",
-      "stargazers_count": 2,
-      "forks_count": 10,
-      "open_issues_count": 5,
+      "stargazers_count": 3,
+      "forks_count": 12,
+      "open_issues_count": 7,
       "license": null,
       "topics": []
     },
@@ -98,34 +317,14 @@
       "description": "Maths-Tutor for smart devices",
       "language": "Java",
       "stargazers_count": 1,
-      "forks_count": 12,
-      "open_issues_count": 11,
+      "forks_count": 13,
+      "open_issues_count": 8,
       "license": {
         "key": "gpl-2.0",
         "name": "GNU General Public License v2.0",
         "spdx_id": "GPL-2.0",
         "url": "https://api.github.com/licenses/gpl-2.0",
         "node_id": "MDc6TGljZW5zZTg="
-      },
-      "topics": []
-    },
-    {
-      "id": 15411955,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNTQxMTk1NQ==",
-      "name": "lios",
-      "full_name": "zendalona/lios",
-      "html_url": "https://github.com/zendalona/lios",
-      "description": "Linux-intelligent-ocr-solution",
-      "language": "Python",
-      "stargazers_count": 141,
-      "forks_count": 40,
-      "open_issues_count": 25,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
       },
       "topics": []
     },
@@ -137,8 +336,8 @@
       "html_url": "https://github.com/zendalona/world-map-explorer-v2",
       "description": null,
       "language": "JavaScript",
-      "stargazers_count": 14,
-      "forks_count": 43,
+      "stargazers_count": 17,
+      "forks_count": 48,
       "open_issues_count": 53,
       "license": {
         "key": "agpl-3.0",
@@ -157,9 +356,9 @@
       "html_url": "https://github.com/zendalona/accessible-coconut",
       "description": "A community-driven GNU/Linux operating system that is fully accessible for individuals with visual impairments. AC is based on Ubuntu MATE. The goal is to create a free and open-source desktop environment that is accessible without relying on vision.",
       "language": null,
-      "stargazers_count": 0,
+      "stargazers_count": 1,
       "forks_count": 1,
-      "open_issues_count": 0,
+      "open_issues_count": 1,
       "license": null,
       "topics": []
     },
@@ -174,26 +373,6 @@
       "stargazers_count": 1,
       "forks_count": 4,
       "open_issues_count": 1,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 876771007,
-      "node_id": "R_kgDONEJ2vw",
-      "name": "tdesktop",
-      "full_name": "zendalona/tdesktop",
-      "html_url": "https://github.com/zendalona/tdesktop",
-      "description": "Telegram Desktop messaging app",
-      "language": "C++",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
       "license": {
         "key": "other",
         "name": "Other",
@@ -226,8 +405,8 @@
       "description": null,
       "language": "JavaScript",
       "stargazers_count": 8,
-      "forks_count": 21,
-      "open_issues_count": 19,
+      "forks_count": 19,
+      "open_issues_count": 17,
       "license": null,
       "topics": []
     },
@@ -240,7 +419,7 @@
       "description": null,
       "language": "Python",
       "stargazers_count": 1,
-      "forks_count": 1,
+      "forks_count": 3,
       "open_issues_count": 0,
       "license": null,
       "topics": []
@@ -286,26 +465,6 @@
       "topics": []
     },
     {
-      "id": 808153975,
-      "node_id": "R_kgDOMCtzdw",
-      "name": "liblouis-table-editor",
-      "full_name": "zendalona/liblouis-table-editor",
-      "html_url": "https://github.com/zendalona/liblouis-table-editor",
-      "description": null,
-      "language": "Python",
-      "stargazers_count": 1,
-      "forks_count": 8,
-      "open_issues_count": 13,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
       "id": 791307429,
       "node_id": "R_kgDOLypkpQ",
       "name": "zen-maths-tutor",
@@ -314,7 +473,7 @@
       "description": "Maths-Tutor for smart devices",
       "language": null,
       "stargazers_count": 1,
-      "forks_count": 16,
+      "forks_count": 18,
       "open_issues_count": 4,
       "license": {
         "key": "gpl-2.0",
@@ -347,9 +506,9 @@
       "html_url": "https://github.com/zendalona/maths-tutor",
       "description": null,
       "language": "Python",
-      "stargazers_count": 4,
-      "forks_count": 14,
-      "open_issues_count": 7,
+      "stargazers_count": 5,
+      "forks_count": 15,
+      "open_issues_count": 8,
       "license": null,
       "topics": []
     },
@@ -376,8 +535,8 @@
       "description": null,
       "language": "Python",
       "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
+      "forks_count": 1,
+      "open_issues_count": 1,
       "license": null,
       "topics": []
     },
@@ -390,7 +549,7 @@
       "description": null,
       "language": "JavaScript",
       "stargazers_count": 0,
-      "forks_count": 1,
+      "forks_count": 0,
       "open_issues_count": 1,
       "license": null,
       "topics": []
@@ -404,7 +563,7 @@
       "description": "A small software through which one can run scripts provided by Accessible-Coconut development team. Many fixes can be provided through this channel so that users don’t have to jump to new release of Coconut. Also optional software or drivers can be installed using the same.",
       "language": "Shell",
       "stargazers_count": 0,
-      "forks_count": 0,
+      "forks_count": 1,
       "open_issues_count": 1,
       "license": {
         "key": "gpl-3.0",
@@ -423,8 +582,8 @@
       "html_url": "https://github.com/zendalona/ibus-braille",
       "description": null,
       "language": "Python",
-      "stargazers_count": 6,
-      "forks_count": 2,
+      "stargazers_count": 8,
+      "forks_count": 4,
       "open_issues_count": 1,
       "license": {
         "key": "gpl-2.0",
@@ -478,36 +637,332 @@
   ],
   "contributorsDetails": [
     {
-      "login": "roopasreeap",
-      "id": 121877572,
-      "node_id": "U_kgDOB0O0RA",
-      "avatar_url": "https://avatars.githubusercontent.com/u/121877572?v=4",
-      "html_url": "https://github.com/roopasreeap",
-      "contributions": 19
-    },
-    {
       "login": "Nalin-x-Linux",
       "id": 2972201,
       "node_id": "MDQ6VXNlcjI5NzIyMDE=",
       "avatar_url": "https://avatars.githubusercontent.com/u/2972201?v=4",
       "html_url": "https://github.com/Nalin-x-Linux",
-      "contributions": 3
+      "contributions": 1
     },
     {
-      "login": "greeshnasarath",
-      "id": 135806965,
-      "node_id": "U_kgDOCBg_9Q",
-      "avatar_url": "https://avatars.githubusercontent.com/u/135806965?v=4",
-      "html_url": "https://github.com/greeshnasarath",
-      "contributions": 3
+      "login": "krishij03",
+      "id": 97391220,
+      "node_id": "U_kgDOBc4SdA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/97391220?v=4",
+      "html_url": "https://github.com/krishij03",
+      "contributions": 5
     },
     {
-      "login": "ayush27prasad",
-      "id": 104075394,
-      "node_id": "U_kgDOBjQQgg",
-      "avatar_url": "https://avatars.githubusercontent.com/u/104075394?v=4",
-      "html_url": "https://github.com/ayush27prasad",
-      "contributions": 23
+      "login": "sthibaul",
+      "id": 5405051,
+      "node_id": "MDQ6VXNlcjU0MDUwNTE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5405051?v=4",
+      "html_url": "https://github.com/sthibaul",
+      "contributions": 4
+    },
+    {
+      "login": "nandedamana",
+      "id": 32795897,
+      "node_id": "MDQ6VXNlcjMyNzk1ODk3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/32795897?v=4",
+      "html_url": "https://github.com/nandedamana",
+      "contributions": 2
+    },
+    {
+      "login": "HFC-Jerry",
+      "id": 183752117,
+      "node_id": "U_kgDOCvPVtQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/183752117?v=4",
+      "html_url": "https://github.com/HFC-Jerry",
+      "contributions": 2
+    },
+    {
+      "login": "MrSpideyNihal",
+      "id": 91406248,
+      "node_id": "MDQ6VXNlcjkxNDA2MjQ4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/91406248?v=4",
+      "html_url": "https://github.com/MrSpideyNihal",
+      "contributions": 2
+    },
+    {
+      "login": "xzz53",
+      "id": 31386028,
+      "node_id": "MDQ6VXNlcjMxMzg2MDI4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/31386028?v=4",
+      "html_url": "https://github.com/xzz53",
+      "contributions": 1
+    },
+    {
+      "login": "balazsszalab",
+      "id": 24574626,
+      "node_id": "MDQ6VXNlcjI0NTc0NjI2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/24574626?v=4",
+      "html_url": "https://github.com/balazsszalab",
+      "contributions": 1
+    },
+    {
+      "login": "freddii",
+      "id": 7213207,
+      "node_id": "MDQ6VXNlcjcyMTMyMDc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7213207?v=4",
+      "html_url": "https://github.com/freddii",
+      "contributions": 1
+    },
+    {
+      "login": "Adarshoffl",
+      "id": 123091976,
+      "node_id": "U_kgDOB1Y8CA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/123091976?v=4",
+      "html_url": "https://github.com/Adarshoffl",
+      "contributions": 13
+    },
+    {
+      "login": "prajwalpatle-1",
+      "id": 192879728,
+      "node_id": "U_kgDOC38ccA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/192879728?v=4",
+      "html_url": "https://github.com/prajwalpatle-1",
+      "contributions": 11
+    },
+    {
+      "login": "john-preston",
+      "id": 17900494,
+      "node_id": "MDQ6VXNlcjE3OTAwNDk0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/17900494?v=4",
+      "html_url": "https://github.com/john-preston",
+      "contributions": 13115
+    },
+    {
+      "login": "23rd",
+      "id": 4051126,
+      "node_id": "MDQ6VXNlcjQwNTExMjY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4051126?v=4",
+      "html_url": "https://github.com/23rd",
+      "contributions": 3080
+    },
+    {
+      "login": "ilya-fedin",
+      "id": 17829319,
+      "node_id": "MDQ6VXNlcjE3ODI5MzE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/17829319?v=4",
+      "html_url": "https://github.com/ilya-fedin",
+      "contributions": 1643
+    },
+    {
+      "login": "auchri",
+      "id": 5092164,
+      "node_id": "MDQ6VXNlcjUwOTIxNjQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5092164?v=4",
+      "html_url": "https://github.com/auchri",
+      "contributions": 51
+    },
+    {
+      "login": "actions-user",
+      "id": 65916846,
+      "node_id": "MDQ6VXNlcjY1OTE2ODQ2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/65916846?v=4",
+      "html_url": "https://github.com/actions-user",
+      "contributions": 47
+    },
+    {
+      "login": "mymedia2",
+      "id": 9163157,
+      "node_id": "MDQ6VXNlcjkxNjMxNTc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9163157?v=4",
+      "html_url": "https://github.com/mymedia2",
+      "contributions": 27
+    },
+    {
+      "login": "EricKotato",
+      "id": 2903496,
+      "node_id": "MDQ6VXNlcjI5MDM0OTY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2903496?v=4",
+      "html_url": "https://github.com/EricKotato",
+      "contributions": 26
+    },
+    {
+      "login": "novomesk",
+      "id": 52529860,
+      "node_id": "MDQ6VXNlcjUyNTI5ODYw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/52529860?v=4",
+      "html_url": "https://github.com/novomesk",
+      "contributions": 17
+    },
+    {
+      "login": "xvitaly",
+      "id": 966711,
+      "node_id": "MDQ6VXNlcjk2NjcxMQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/966711?v=4",
+      "html_url": "https://github.com/xvitaly",
+      "contributions": 14
+    },
+    {
+      "login": "3v1n0",
+      "id": 345675,
+      "node_id": "MDQ6VXNlcjM0NTY3NQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/345675?v=4",
+      "html_url": "https://github.com/3v1n0",
+      "contributions": 14
+    },
+    {
+      "login": "klemensn",
+      "id": 91517496,
+      "node_id": "U_kgDOBXRyOA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/91517496?v=4",
+      "html_url": "https://github.com/klemensn",
+      "contributions": 10
+    },
+    {
+      "login": "farseerfc",
+      "id": 861563,
+      "node_id": "MDQ6VXNlcjg2MTU2Mw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/861563?v=4",
+      "html_url": "https://github.com/farseerfc",
+      "contributions": 9
+    },
+    {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "html_url": "https://github.com/apps/dependabot",
+      "contributions": 9
+    },
+    {
+      "login": "Johnnynator",
+      "id": 7373356,
+      "node_id": "MDQ6VXNlcjczNzMzNTY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7373356?v=4",
+      "html_url": "https://github.com/Johnnynator",
+      "contributions": 9
+    },
+    {
+      "login": "zurg3",
+      "id": 20664125,
+      "node_id": "MDQ6VXNlcjIwNjY0MTI1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20664125?v=4",
+      "html_url": "https://github.com/zurg3",
+      "contributions": 8
+    },
+    {
+      "login": "vimpostor",
+      "id": 21310755,
+      "node_id": "MDQ6VXNlcjIxMzEwNzU1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21310755?v=4",
+      "html_url": "https://github.com/vimpostor",
+      "contributions": 8
+    },
+    {
+      "login": "agl-1984",
+      "id": 142352140,
+      "node_id": "U_kgDOCHwfDA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/142352140?v=4",
+      "html_url": "https://github.com/agl-1984",
+      "contributions": 8
+    },
+    {
+      "login": "stek29",
+      "id": 11808223,
+      "node_id": "MDQ6VXNlcjExODA4MjIz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11808223?v=4",
+      "html_url": "https://github.com/stek29",
+      "contributions": 7
+    },
+    {
+      "login": "udf",
+      "id": 13610073,
+      "node_id": "MDQ6VXNlcjEzNjEwMDcz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13610073?v=4",
+      "html_url": "https://github.com/udf",
+      "contributions": 6
+    },
+    {
+      "login": "vedantmgoyal9",
+      "id": 83997633,
+      "node_id": "MDQ6VXNlcjgzOTk3NjMz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/83997633?v=4",
+      "html_url": "https://github.com/vedantmgoyal9",
+      "contributions": 6
+    },
+    {
+      "login": "c0re100",
+      "id": 5726473,
+      "node_id": "MDQ6VXNlcjU3MjY0NzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5726473?v=4",
+      "html_url": "https://github.com/c0re100",
+      "contributions": 6
+    },
+    {
+      "login": "osokin",
+      "id": 130814,
+      "node_id": "MDQ6VXNlcjEzMDgxNA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/130814?v=4",
+      "html_url": "https://github.com/osokin",
+      "contributions": 6
+    },
+    {
+      "login": "eduardosm",
+      "id": 761151,
+      "node_id": "MDQ6VXNlcjc2MTE1MQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/761151?v=4",
+      "html_url": "https://github.com/eduardosm",
+      "contributions": 6
+    },
+    {
+      "login": "CrisMystik",
+      "id": 62919067,
+      "node_id": "MDQ6VXNlcjYyOTE5MDY3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/62919067?v=4",
+      "html_url": "https://github.com/CrisMystik",
+      "contributions": 6
+    },
+    {
+      "login": "omkarnathsingh",
+      "id": 12734027,
+      "node_id": "MDQ6VXNlcjEyNzM0MDI3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12734027?v=4",
+      "html_url": "https://github.com/omkarnathsingh",
+      "contributions": 5
+    },
+    {
+      "login": "Sea-n",
+      "id": 10102616,
+      "node_id": "MDQ6VXNlcjEwMTAyNjE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10102616?v=4",
+      "html_url": "https://github.com/Sea-n",
+      "contributions": 5
+    },
+    {
+      "login": "mid-kid",
+      "id": 1339276,
+      "node_id": "MDQ6VXNlcjEzMzkyNzY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1339276?v=4",
+      "html_url": "https://github.com/mid-kid",
+      "contributions": 5
+    },
+    {
+      "login": "eegorov",
+      "id": 776524,
+      "node_id": "MDQ6VXNlcjc3NjUyNA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/776524?v=4",
+      "html_url": "https://github.com/eegorov",
+      "contributions": 5
+    },
+    {
+      "login": "eworm-de",
+      "id": 970853,
+      "node_id": "MDQ6VXNlcjk3MDg1Mw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/970853?v=4",
+      "html_url": "https://github.com/eworm-de",
+      "contributions": 5
+    },
+    {
+      "login": "alex65536",
+      "id": 25226083,
+      "node_id": "MDQ6VXNlcjI1MjI2MDgz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25226083?v=4",
+      "html_url": "https://github.com/alex65536",
+      "contributions": 4
     }
   ],
   "activeOrg": false

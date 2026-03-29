@@ -62,7 +62,8 @@
     2022,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2016": [
@@ -272,117 +273,40 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/fHFlLaVM"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Complete Angular migration of the KomMonitor Web Client",
+        "short_description": "The KomMonitor web client, a tool for geospatial data monitoring in urban planning, is currently based on AngularJS and requires a complete migration...",
+        "description": "The KomMonitor web client, a tool for geospatial data monitoring in urban planning, is currently based on AngularJS and requires a complete migration to the modern Angular framework to improve maintainability, scalability, and ease future contributions. While migration started previously, significant parts remain in AngularJS, and foundational issues like specific AngularJS patterns ($rootScope, $compile) and JavaScript files hinder the direct use of standard upgrade tools.   \n\nSolution: This project aims to fully migrate the KomMonitor web client from AngularJS to Angular. The approach involves:   \n\n1. Addressing the foundational roadblocks identified by analysis tools (e.g., refactoring $rootScope usage, eliminating $compile, converting JavaScript to TypeScript).   \n2. Incrementally migrating remaining AngularJS components and services to Angular, leveraging ngUpgrade within a hybrid architecture during the transition.   \n3. Implementing modern Angular best practices, including modular architecture, dependency injection, and potentially lazy loading.   \n4. Refactoring components using design patterns like Observer (RxJS), Facade, and Container-Presenter to improve structure and data handling.   \n5. Ensuring UI consistency using ng-bootstrap.   \n6. Establishing a robust testing strategy encompassing unit, integration, and end-to-end tests using frameworks like Jest and Cypress.   \n\nDeliverables:\n1. A fully migrated KomMonitor web client codebase, transitioned from AngularJS to Angular.   \n2. Resolution of key AngularJS patterns ($rootScope, $compile) and conversion of necessary JavaScript files to TypeScript.   \n3. Migrated and optimized components/services adhering to modern Angular standards and design patterns.   \n4. A comprehensive test suite ensuring application stability and functionality post-migration.   \n5. Updated documentation reflecting the migrated codebase.   \n6. Final project code, documentation, and evaluation report.",
+        "student_name": "goyalpranjal_",
+        "code_url": "https://blog.52north.org/2025/09/23/kommonitor-breathing-new-life-into-an-open-source-gem/",
+        "proposal_id": "M4rSb0sW",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/oiPd6sfN"
+      },
+      {
+        "title": "Weather Routing Tool",
+        "short_description": "The Weather Routing Tool is a system designed to find optimal shipping routes between two geographic points, taking into account weather data, local...",
+        "description": "The Weather Routing Tool is a system designed to find optimal shipping routes between two geographic points, taking into account weather data, local boundaries, and other environmental factors. The tool currently assumes constant ship speed and has a basic genetic algorithm for route optimization. This project aims to improve the routing logic by:\n\nIntroducing ship speed optimization along a route\n\nEnhancing the genetic algorithm for more effective route modeling\n\nImproving the usability and extensibility of the tool for end-users\n\nProject Deliverables\n1. Ship Speed Optimization\nGoal: Allow optimization of ship speed along the route instead of assuming it constant.\n\nApproach:\n\nModify the Isofuel algorithm to use speed as a minimization criterion.\n\nDefine a new scoring function:\nscore = (distance / time) - alpha * remaining_distance\n\nEnable this feature via configuration: ISOCHRONE_MINIMISATION_CRITERION = \"speed\"\n\n2. Genetic Algorithm Enhancements\nGoal: Improve the existing genetic algorithm’s efficiency and flexibility.\n\nPlanned Improvements:\n\nAdd multi-objective cost function support (e.g., fuel, speed, wear & tear).\n\nEnhance crossover logic with:\n\nMulti-point crossover\n\nUniform crossover\n\nAdaptive crossover\n\nImprove mutation strategies and population initialization.\n\nLeverage the pymoo library with custom configurations.\n\n3. Tool Usability Improvements\nGoal: Make the Weather Routing Tool more modular, user-friendly, and extensible.\n\nKey Features:\n\nDynamic Python file injection using CLI:\n\npython cli.py -f config.template.json custom.py\n\nLoad modules dynamically with:\nload_file_as_module(path: str) -> types.ModuleType\n\nCommand-line utility packaging:\n\nTool installable via PyPI (pip install wrt)\n\nUsage: wrt -h\n\nRationale: Enable users to add custom boat models and configurations without modifying core code.",
+        "student_name": "shreyass-ranganatha",
+        "code_url": "https://blog.52north.org/2025/09/29/genetic-algorithm-for-ship-route-optimization/",
+        "proposal_id": "qoOOkYRa",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/JRNm78Uz"
+      }
+    ],
+    "2026": []
   },
   "githubID": "52North",
   "repositories": [
     {
-      "id": 741896621,
-      "node_id": "R_kgDOLDhxrQ",
-      "name": "WeatherRoutingTool",
-      "full_name": "52North/WeatherRoutingTool",
-      "html_url": "https://github.com/52North/WeatherRoutingTool",
-      "description": "A tool to perform optimization of ship routes based on fuel consumption in different weather conditions",
+      "id": 955339712,
+      "node_id": "R_kgDOOPFTwA",
+      "name": "pygeoapi_k8s-manager",
+      "full_name": "52North/pygeoapi_k8s-manager",
+      "html_url": "https://github.com/52North/pygeoapi_k8s-manager",
+      "description": "Extends pygeoapi by a manager for kubernetes jobs and a process to execute any container image on a cluster.",
       "language": "Python",
-      "stargazers_count": 24,
-      "forks_count": 14,
-      "open_issues_count": 11,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 12555873,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMjU1NTg3Mw==",
-      "name": "sensorweb-server-helgoland",
-      "full_name": "52North/sensorweb-server-helgoland",
-      "html_url": "https://github.com/52North/sensorweb-server-helgoland",
-      "description": "Thin Web binding API to access series data.",
-      "language": "Java",
-      "stargazers_count": 25,
-      "forks_count": 22,
-      "open_issues_count": 10,
-      "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
-      },
-      "topics": [
-        "52north",
-        "java",
-        "observation",
-        "rest-api",
-        "sensor",
-        "sensorweb",
-        "series-data",
-        "spi"
-      ]
-    },
-    {
-      "id": 962826752,
-      "node_id": "R_kgDOOWOSAA",
-      "name": "WRT-sandbox",
-      "full_name": "52North/WRT-sandbox",
-      "html_url": "https://github.com/52North/WRT-sandbox",
-      "description": null,
-      "language": "Python",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 724980501,
-      "node_id": "R_kgDOKzZTFQ",
-      "name": "istg_geonode",
-      "full_name": "52North/istg_geonode",
-      "html_url": "https://github.com/52North/istg_geonode",
-      "description": "Docker Blueprint for a GeoNode Installation",
-      "language": "HTML",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 107370507,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMDczNzA1MDc=",
-      "name": "helgoland-toolbox",
-      "full_name": "52North/helgoland-toolbox",
-      "html_url": "https://github.com/52North/helgoland-toolbox",
-      "description": "Collection of tools for a sensor observation based client",
-      "language": "TypeScript",
-      "stargazers_count": 13,
-      "forks_count": 17,
-      "open_issues_count": 16,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 208224001,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMDgyMjQwMDE=",
-      "name": "jackson-datatype-jts",
-      "full_name": "52North/jackson-datatype-jts",
-      "html_url": "https://github.com/52North/jackson-datatype-jts",
-      "description": "Jackson JTS datatype",
-      "language": "Java",
-      "stargazers_count": 23,
-      "forks_count": 8,
+      "stargazers_count": 2,
+      "forks_count": 3,
       "open_issues_count": 6,
       "license": {
         "key": "apache-2.0",
@@ -394,15 +318,35 @@
       "topics": []
     },
     {
-      "id": 679309318,
-      "node_id": "R_kgDOKH1wBg",
-      "name": "server-landingpage",
-      "full_name": "52North/server-landingpage",
-      "html_url": "https://github.com/52North/server-landingpage",
-      "description": "Image with simple landing page for development and demonstration servers",
-      "language": "HTML",
+      "id": 1193421734,
+      "node_id": "R_kgDORyIrpg",
+      "name": "spateGAN_ERA5",
+      "full_name": "52North/spateGAN_ERA5",
+      "html_url": "https://github.com/52North/spateGAN_ERA5",
+      "description": "spateGAN-ERA5: deep learning based spatio-temporal downscaling of ERA5 precipitation",
+      "language": null,
       "stargazers_count": 0,
       "forks_count": 0,
+      "open_issues_count": 1,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 327403458,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzMjc0MDM0NTg=",
+      "name": "deu-geoviewer",
+      "full_name": "52North/deu-geoviewer",
+      "html_url": "https://github.com/52North/deu-geoviewer",
+      "description": null,
+      "language": "SCSS",
+      "stargazers_count": 0,
+      "forks_count": 1,
       "open_issues_count": 0,
       "license": {
         "key": "apache-2.0",
@@ -414,17 +358,23 @@
       "topics": []
     },
     {
-      "id": 858042991,
-      "node_id": "R_kgDOMySybw",
-      "name": "OpenSenseMapToolbox",
-      "full_name": "52North/OpenSenseMapToolbox",
-      "html_url": "https://github.com/52North/OpenSenseMapToolbox",
-      "description": "OpenSenseMapToolbox",
-      "language": "Python",
+      "id": 165819606,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNjU4MTk2MDY=",
+      "name": "deu-geoviewer-proxy",
+      "full_name": "52North/deu-geoviewer-proxy",
+      "html_url": "https://github.com/52North/deu-geoviewer-proxy",
+      "description": null,
+      "language": "JavaScript",
       "stargazers_count": 0,
-      "forks_count": 4,
-      "open_issues_count": 0,
-      "license": null,
+      "forks_count": 5,
+      "open_issues_count": 9,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
       "topics": []
     },
     {
@@ -435,9 +385,9 @@
       "html_url": "https://github.com/52North/SOS",
       "description": "52°North Sensor Observation Service",
       "language": "Java",
-      "stargazers_count": 116,
-      "forks_count": 91,
-      "open_issues_count": 66,
+      "stargazers_count": 130,
+      "forks_count": 105,
+      "open_issues_count": 78,
       "license": {
         "key": "gpl-2.0",
         "name": "GNU General Public License v2.0",
@@ -461,16 +411,65 @@
       ]
     },
     {
-      "id": 88588033,
-      "node_id": "MDEwOlJlcG9zaXRvcnk4ODU4ODAzMw==",
-      "name": "sensorweb-server-db-model",
-      "full_name": "52North/sensorweb-server-db-model",
-      "html_url": "https://github.com/52North/sensorweb-server-db-model",
-      "description": "Hibernate files and Entities for 52°North Sensor Web Server database model",
+      "id": 12555873,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMjU1NTg3Mw==",
+      "name": "sensorweb-server-helgoland",
+      "full_name": "52North/sensorweb-server-helgoland",
+      "html_url": "https://github.com/52North/sensorweb-server-helgoland",
+      "description": "Thin Web binding API to access series data.",
       "language": "Java",
-      "stargazers_count": 5,
-      "forks_count": 4,
-      "open_issues_count": 12,
+      "stargazers_count": 26,
+      "forks_count": 28,
+      "open_issues_count": 4,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "topics": [
+        "52north",
+        "java",
+        "observation",
+        "rest-api",
+        "sensor",
+        "sensorweb",
+        "series-data",
+        "spi"
+      ]
+    },
+    {
+      "id": 741896621,
+      "node_id": "R_kgDOLDhxrQ",
+      "name": "WeatherRoutingTool",
+      "full_name": "52North/WeatherRoutingTool",
+      "html_url": "https://github.com/52North/WeatherRoutingTool",
+      "description": "A tool to perform optimization of ship routes based on fuel consumption in different weather conditions",
+      "language": "Python",
+      "stargazers_count": 58,
+      "forks_count": 108,
+      "open_issues_count": 48,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 208224001,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMDgyMjQwMDE=",
+      "name": "jackson-datatype-jts",
+      "full_name": "52North/jackson-datatype-jts",
+      "html_url": "https://github.com/52North/jackson-datatype-jts",
+      "description": "Jackson JTS datatype",
+      "language": "Java",
+      "stargazers_count": 27,
+      "forks_count": 12,
+      "open_issues_count": 5,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -481,22 +480,22 @@
       "topics": []
     },
     {
-      "id": 954553107,
-      "node_id": "R_kgDOOOVTEw",
-      "name": "keycloak-ip-authenticator",
-      "full_name": "52North/keycloak-ip-authenticator",
-      "html_url": "https://github.com/52North/keycloak-ip-authenticator",
-      "description": null,
-      "language": "Java",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
+      "id": 749720595,
+      "node_id": "R_kgDOLK_UEw",
+      "name": "OGITO",
+      "full_name": "52North/OGITO",
+      "html_url": "https://github.com/52North/OGITO",
+      "description": "OGITO (Open Geospatial Interactive Tool) is a web-based collaborative mapping application",
+      "language": "TypeScript",
+      "stargazers_count": 6,
+      "forks_count": 7,
+      "open_issues_count": 4,
       "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
       },
       "topics": []
     },
@@ -508,9 +507,9 @@
       "html_url": "https://github.com/52North/connected-systems-pygeoapi",
       "description": "Proof of Concept of OGC Connected Systems API based on pygeoapi",
       "language": "Python",
-      "stargazers_count": 2,
-      "forks_count": 2,
-      "open_issues_count": 4,
+      "stargazers_count": 4,
+      "forks_count": 9,
+      "open_issues_count": 18,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -521,124 +520,193 @@
       "topics": []
     },
     {
-      "id": 560870934,
-      "node_id": "R_kgDOIW42Fg",
-      "name": "geonode-mapstore-client",
-      "full_name": "52North/geonode-mapstore-client",
-      "html_url": "https://github.com/52North/geonode-mapstore-client",
-      "description": "MapStore Client for GeoNode",
-      "language": "JavaScript",
-      "stargazers_count": 3,
-      "forks_count": 5,
-      "open_issues_count": 0,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 705549525,
-      "node_id": "R_kgDOKg3U1Q",
-      "name": "innovation-prize",
-      "full_name": "52North/innovation-prize",
-      "html_url": "https://github.com/52North/innovation-prize",
-      "description": null,
-      "language": null,
-      "stargazers_count": 5,
-      "forks_count": 13,
-      "open_issues_count": 15,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 314505906,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzMTQ1MDU5MDY=",
-      "name": "geonode",
-      "full_name": "52North/geonode",
-      "html_url": "https://github.com/52North/geonode",
-      "description": "GeoNode is an open source platform that facilitates the creation, sharing, and collaborative use of geospatial data.",
-      "language": "JavaScript",
-      "stargazers_count": 5,
-      "forks_count": 8,
-      "open_issues_count": 0,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 940628012,
-      "node_id": "R_kgDOOBDYLA",
-      "name": "edis-dict-api",
-      "full_name": "52North/edis-dict-api",
-      "html_url": "https://github.com/52North/edis-dict-api",
-      "description": null,
-      "language": "TypeScript",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 899071048,
-      "node_id": "R_kgDONZa8SA",
-      "name": "trails-geonode-base-packages",
-      "full_name": "52North/trails-geonode-base-packages",
-      "html_url": "https://github.com/52North/trails-geonode-base-packages",
-      "description": null,
-      "language": "TypeScript",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 771438097,
-      "node_id": "R_kgDOLfs2EQ",
-      "name": "plasticobs-geonode",
-      "full_name": "52North/plasticobs-geonode",
-      "html_url": "https://github.com/52North/plasticobs-geonode",
-      "description": "PlasticOps+ GeoNode Installation",
+      "id": 1166661215,
+      "node_id": "R_kgDORYnWXw",
+      "name": "WRT-API",
+      "full_name": "52North/WRT-API",
+      "html_url": "https://github.com/52North/WRT-API",
+      "description": "Weather Routing API based on the OGC API Processes standard",
       "language": "Python",
       "stargazers_count": 0,
-      "forks_count": 3,
-      "open_issues_count": 1,
+      "forks_count": 0,
+      "open_issues_count": 0,
       "license": null,
       "topics": []
     },
     {
-      "id": 514225995,
-      "node_id": "R_kgDOHqZ3Sw",
-      "name": "OSGeoLive-doc",
-      "full_name": "52North/OSGeoLive-doc",
-      "html_url": "https://github.com/52North/OSGeoLive-doc",
-      "description": "Documentation of OSGeoLive project.",
-      "language": "Shell",
-      "stargazers_count": 0,
-      "forks_count": 0,
+      "id": 585952749,
+      "node_id": "R_kgDOIuzt7Q",
+      "name": "read2burn",
+      "full_name": "52North/read2burn",
+      "html_url": "https://github.com/52North/read2burn",
+      "description": "transport passwords more secure by email",
+      "language": "JavaScript",
+      "stargazers_count": 2,
+      "forks_count": 12,
       "open_issues_count": 0,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 107370507,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMDczNzA1MDc=",
+      "name": "helgoland-toolbox",
+      "full_name": "52North/helgoland-toolbox",
+      "html_url": "https://github.com/52North/helgoland-toolbox",
+      "description": "Collection of tools for a sensor observation based client",
+      "language": "TypeScript",
+      "stargazers_count": 14,
+      "forks_count": 20,
+      "open_issues_count": 20,
       "license": {
         "key": "other",
         "name": "Other",
         "spdx_id": "NOASSERTION",
         "url": null,
         "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 1150522071,
+      "node_id": "R_kgDORJOS1w",
+      "name": "sms-muenster-kommonitor",
+      "full_name": "52North/sms-muenster-kommonitor",
+      "html_url": "https://github.com/52North/sms-muenster-kommonitor",
+      "description": null,
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1165824196,
+      "node_id": "R_kgDORX0QxA",
+      "name": "geovectors",
+      "full_name": "52North/geovectors",
+      "html_url": "https://github.com/52North/geovectors",
+      "description": "Vectorized geodesic methods.",
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 42522068,
+      "node_id": "MDEwOlJlcG9zaXRvcnk0MjUyMjA2OA==",
+      "name": "maven-parents",
+      "full_name": "52North/maven-parents",
+      "html_url": "https://github.com/52North/maven-parents",
+      "description": "Parent POM's for 52°North",
+      "language": null,
+      "stargazers_count": 5,
+      "forks_count": 6,
+      "open_issues_count": 15,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "maven",
+        "parent-pom"
+      ]
+    },
+    {
+      "id": 954553107,
+      "node_id": "R_kgDOOOVTEw",
+      "name": "keycloak-ip-authenticator",
+      "full_name": "52North/keycloak-ip-authenticator",
+      "html_url": "https://github.com/52North/keycloak-ip-authenticator",
+      "description": null,
+      "language": "Java",
+      "stargazers_count": 2,
+      "forks_count": 2,
+      "open_issues_count": 0,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 42431906,
+      "node_id": "MDEwOlJlcG9zaXRvcnk0MjQzMTkwNg==",
+      "name": "helgoland",
+      "full_name": "52North/helgoland",
+      "html_url": "https://github.com/52North/helgoland",
+      "description": "Visual Exploration and Analysis of Sensor Web Data",
+      "language": "TypeScript",
+      "stargazers_count": 62,
+      "forks_count": 58,
+      "open_issues_count": 66,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 1110724222,
+      "node_id": "R_kgDOQjROfg",
+      "name": "contrib_externalapplications",
+      "full_name": "52North/contrib_externalapplications",
+      "html_url": "https://github.com/52North/contrib_externalapplications",
+      "description": "GeoNode contrib module adding an externalapplication resource ",
+      "language": "HTML",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "topics": []
+    },
+    {
+      "id": 420154849,
+      "node_id": "R_kgDOGQsN4Q",
+      "name": "pygeoapi",
+      "full_name": "52North/pygeoapi",
+      "html_url": "https://github.com/52North/pygeoapi",
+      "description": "pygeoapi is a Python server implementation of the OGC API suite of standards. The project emerged as part of the next generation OGC API efforts in 2018 and provides the capability for organizations to deploy a RESTful OGC API endpoint using OpenAPI, GeoJSON, and HTML. pygeoapi is open source and released under an MIT license.",
+      "language": "Python",
+      "stargazers_count": 2,
+      "forks_count": 1,
+      "open_issues_count": 0,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
       },
       "topics": []
     },
@@ -649,7 +717,7 @@
       "full_name": "52North/ogcapi-connected-systems",
       "html_url": "https://github.com/52North/ogcapi-connected-systems",
       "description": "Public Repository for the Connected Systems SWG",
-      "language": "HTML",
+      "language": "Makefile",
       "stargazers_count": 0,
       "forks_count": 2,
       "open_issues_count": 0,
@@ -663,55 +731,16 @@
       "topics": []
     },
     {
-      "id": 318179790,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzMTgxNzk3OTA=",
-      "name": "label-spec",
-      "full_name": "52North/label-spec",
-      "html_url": "https://github.com/52North/label-spec",
-      "description": "Examples for  52°North Image and Container Label Specification.",
-      "language": "Dockerfile",
-      "stargazers_count": 2,
-      "forks_count": 0,
-      "open_issues_count": 3,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": [
-        "container",
-        "docker",
-        "image",
-        "label"
-      ]
-    },
-    {
-      "id": 26207931,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNjIwNzkzMQ==",
-      "name": "IlwisObjects",
-      "full_name": "52North/IlwisObjects",
-      "html_url": "https://github.com/52North/IlwisObjects",
-      "description": null,
-      "language": "C++",
-      "stargazers_count": 15,
-      "forks_count": 11,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 927646156,
-      "node_id": "R_kgDON0rBzA",
-      "name": "plasticobs-opt",
-      "full_name": "52North/plasticobs-opt",
-      "html_url": "https://github.com/52North/plasticobs-opt",
-      "description": "Open Pioneer Trails Starter for PlasticObs+ Project",
-      "language": "TypeScript",
-      "stargazers_count": 0,
+      "id": 42525128,
+      "node_id": "MDEwOlJlcG9zaXRvcnk0MjUyNTEyOA==",
+      "name": "youngs",
+      "full_name": "52North/youngs",
+      "html_url": "https://github.com/52North/youngs",
+      "description": "Integration component for Elasticsearch and ISO / OGC standards (catalogues)",
+      "language": "Java",
+      "stargazers_count": 9,
       "forks_count": 2,
-      "open_issues_count": 3,
+      "open_issues_count": 9,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -722,12 +751,26 @@
       "topics": []
     },
     {
+      "id": 858042991,
+      "node_id": "R_kgDOMySybw",
+      "name": "OpenSenseMapToolbox",
+      "full_name": "52North/OpenSenseMapToolbox",
+      "html_url": "https://github.com/52North/OpenSenseMapToolbox",
+      "description": "OpenSenseMapToolbox",
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 5,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
       "id": 742027097,
       "node_id": "R_kgDOLDpvWQ",
       "name": "maridatadownloader",
       "full_name": "52North/maridatadownloader",
       "html_url": "https://github.com/52North/maridatadownloader",
-      "description": null,
+      "description": "Downloading tools for environmental/marine/weather data.",
       "language": "Jupyter Notebook",
       "stargazers_count": 0,
       "forks_count": 0,
@@ -736,23 +779,45 @@
       "topics": []
     },
     {
-      "id": 749720595,
-      "node_id": "R_kgDOLK_UEw",
-      "name": "OGITO",
-      "full_name": "52North/OGITO",
-      "html_url": "https://github.com/52North/OGITO",
-      "description": "OGITO (Open Geospatial Interactive Tool) is a web-based collaborative mapping application",
-      "language": "TypeScript",
-      "stargazers_count": 4,
-      "forks_count": 5,
-      "open_issues_count": 4,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
+      "id": 1015904271,
+      "node_id": "R_kgDOPI14Dw",
+      "name": "gfz-workshop",
+      "full_name": "52North/gfz-workshop",
+      "html_url": "https://github.com/52North/gfz-workshop",
+      "description": null,
+      "language": "Scheme",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 813725441,
+      "node_id": "R_kgDOMIB3AQ",
+      "name": "geonode-webais",
+      "full_name": "52North/geonode-webais",
+      "html_url": "https://github.com/52North/geonode-webais",
+      "description": "WebAIS GeoNode Installation",
+      "language": "HTML",
+      "stargazers_count": 0,
+      "forks_count": 3,
+      "open_issues_count": 1,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 26207931,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyNjIwNzkzMQ==",
+      "name": "IlwisObjects",
+      "full_name": "52North/IlwisObjects",
+      "html_url": "https://github.com/52North/IlwisObjects",
+      "description": null,
+      "language": "C++",
+      "stargazers_count": 16,
+      "forks_count": 10,
+      "open_issues_count": 0,
+      "license": null,
       "topics": []
     },
     {
@@ -776,150 +841,42 @@
       "topics": []
     },
     {
-      "id": 262619213,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNjI2MTkyMTM=",
-      "name": "sos4py",
-      "full_name": "52North/sos4py",
-      "html_url": "https://github.com/52North/sos4py",
-      "description": null,
-      "language": "Python",
-      "stargazers_count": 4,
-      "forks_count": 5,
-      "open_issues_count": 3,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 914888246,
-      "node_id": "R_kgDONogWNg",
-      "name": "pygeoapi-prefect",
-      "full_name": "52North/pygeoapi-prefect",
-      "html_url": "https://github.com/52North/pygeoapi-prefect",
-      "description": "A prefect process manager for pygeoapi ",
+      "id": 962826752,
+      "node_id": "R_kgDOOWOSAA",
+      "name": "WRT-sandbox",
+      "full_name": "52North/WRT-sandbox",
+      "html_url": "https://github.com/52North/WRT-sandbox",
+      "description": "Sandbox for the 52°North Weather Routing Tool",
       "language": "Python",
       "stargazers_count": 0,
-      "forks_count": 2,
-      "open_issues_count": 0,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
+      "forks_count": 3,
+      "open_issues_count": 1,
+      "license": null,
       "topics": []
     },
     {
-      "id": 17212426,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNzIxMjQyNg==",
-      "name": "GeoMetaFacet",
-      "full_name": "52North/GeoMetaFacet",
-      "html_url": "https://github.com/52North/GeoMetaFacet",
-      "description": "GeoMetaFacet  is a web client to explore and visualize geodata and metadata.",
-      "language": "JavaScript",
-      "stargazers_count": 5,
-      "forks_count": 5,
-      "open_issues_count": 0,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 420154849,
-      "node_id": "R_kgDOGQsN4Q",
-      "name": "pygeoapi",
-      "full_name": "52North/pygeoapi",
-      "html_url": "https://github.com/52North/pygeoapi",
-      "description": "pygeoapi is a Python server implementation of the OGC API suite of standards. The project emerged as part of the next generation OGC API efforts in 2018 and provides the capability for organizations to deploy a RESTful OGC API endpoint using OpenAPI, GeoJSON, and HTML. pygeoapi is open source and released under an MIT license.",
-      "language": "Python",
-      "stargazers_count": 2,
+      "id": 724980501,
+      "node_id": "R_kgDOKzZTFQ",
+      "name": "istg_geonode",
+      "full_name": "52North/istg_geonode",
+      "html_url": "https://github.com/52North/istg_geonode",
+      "description": "Docker Blueprint for a GeoNode Installation",
+      "language": "HTML",
+      "stargazers_count": 1,
       "forks_count": 0,
       "open_issues_count": 0,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
+      "license": null,
       "topics": []
     }
   ],
   "contributorsDetails": [
-    {
-      "login": "kdemmich",
-      "id": 115631903,
-      "node_id": "U_kgDOBuRnHw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/115631903?v=4",
-      "html_url": "https://github.com/kdemmich",
-      "contributions": 356
-    },
-    {
-      "login": "MartinPontius",
-      "id": 46755352,
-      "node_id": "MDQ6VXNlcjQ2NzU1MzUy",
-      "avatar_url": "https://avatars.githubusercontent.com/u/46755352?v=4",
-      "html_url": "https://github.com/MartinPontius",
-      "contributions": 150
-    },
-    {
-      "login": "MPremasiri",
-      "id": 129958530,
-      "node_id": "U_kgDOB78Cgg",
-      "avatar_url": "https://avatars.githubusercontent.com/u/129958530?v=4",
-      "html_url": "https://github.com/MPremasiri",
-      "contributions": 78
-    },
-    {
-      "login": "iquaresma",
-      "id": 129734480,
-      "node_id": "U_kgDOB7uXUA",
-      "avatar_url": "https://avatars.githubusercontent.com/u/129734480?v=4",
-      "html_url": "https://github.com/iquaresma",
-      "contributions": 31
-    },
-    {
-      "login": "shiwakotisurendra",
-      "id": 63626177,
-      "node_id": "MDQ6VXNlcjYzNjI2MTc3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/63626177?v=4",
-      "html_url": "https://github.com/shiwakotisurendra",
-      "contributions": 18
-    },
-    {
-      "login": "parichay-mandal",
-      "id": 103055859,
-      "node_id": "U_kgDOBiSB8w",
-      "avatar_url": "https://avatars.githubusercontent.com/u/103055859?v=4",
-      "html_url": "https://github.com/parichay-mandal",
-      "contributions": 16
-    },
     {
       "login": "EHJ-52n",
       "id": 3839896,
       "node_id": "MDQ6VXNlcjM4Mzk4OTY=",
       "avatar_url": "https://avatars.githubusercontent.com/u/3839896?v=4",
       "html_url": "https://github.com/EHJ-52n",
-      "contributions": 16
-    },
-    {
-      "login": "ridoo",
-      "id": 881756,
-      "node_id": "MDQ6VXNlcjg4MTc1Ng==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/881756?v=4",
-      "html_url": "https://github.com/ridoo",
-      "contributions": 1961
+      "contributions": 168
     },
     {
       "login": "dependabot[bot]",
@@ -927,15 +884,31 @@
       "node_id": "MDM6Qm90NDk2OTkzMzM=",
       "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
       "html_url": "https://github.com/apps/dependabot",
-      "contributions": 115
+      "contributions": 9
     },
     {
-      "login": "dependabot-preview[bot]",
-      "id": 27856297,
-      "node_id": "MDM6Qm90Mjc4NTYyOTc=",
-      "avatar_url": "https://avatars.githubusercontent.com/in/2141?v=4",
-      "html_url": "https://github.com/apps/dependabot-preview",
-      "contributions": 111
+      "login": "MartinPontius",
+      "id": 46755352,
+      "node_id": "MDQ6VXNlcjQ2NzU1MzUy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46755352?v=4",
+      "html_url": "https://github.com/MartinPontius",
+      "contributions": 7
+    },
+    {
+      "login": "LGlawion",
+      "id": 65294156,
+      "node_id": "MDQ6VXNlcjY1Mjk0MTU2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/65294156?v=4",
+      "html_url": "https://github.com/LGlawion",
+      "contributions": 14
+    },
+    {
+      "login": "jpolz",
+      "id": 56866670,
+      "node_id": "MDQ6VXNlcjU2ODY2Njcw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/56866670?v=4",
+      "html_url": "https://github.com/jpolz",
+      "contributions": 1
     },
     {
       "login": "janschulte",
@@ -943,15 +916,7 @@
       "node_id": "MDQ6VXNlcjM4MzAzMTQ=",
       "avatar_url": "https://avatars.githubusercontent.com/u/3830314?v=4",
       "html_url": "https://github.com/janschulte",
-      "contributions": 99
-    },
-    {
-      "login": "SpeckiJ",
-      "id": 13851077,
-      "node_id": "MDQ6VXNlcjEzODUxMDc3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/13851077?v=4",
-      "html_url": "https://github.com/SpeckiJ",
-      "contributions": 56
+      "contributions": 161
     },
     {
       "login": "autermann",
@@ -959,15 +924,23 @@
       "node_id": "MDQ6VXNlcjY0MTMwOA==",
       "avatar_url": "https://avatars.githubusercontent.com/u/641308?v=4",
       "html_url": "https://github.com/autermann",
-      "contributions": 31
+      "contributions": 55
     },
     {
-      "login": "antego",
-      "id": 1451467,
-      "node_id": "MDQ6VXNlcjE0NTE0Njc=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1451467?v=4",
-      "html_url": "https://github.com/antego",
-      "contributions": 15
+      "login": "SufianZa",
+      "id": 15470828,
+      "node_id": "MDQ6VXNlcjE1NDcwODI4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/15470828?v=4",
+      "html_url": "https://github.com/SufianZa",
+      "contributions": 3
+    },
+    {
+      "login": "simonjirka",
+      "id": 4703542,
+      "node_id": "MDQ6VXNlcjQ3MDM1NDI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4703542?v=4",
+      "html_url": "https://github.com/simonjirka",
+      "contributions": 1
     }
   ],
   "activeOrg": false

@@ -115,9 +115,9 @@
       "html_url": "https://github.com/sktime/sktime",
       "description": "A unified framework for machine learning with time series",
       "language": "Python",
-      "stargazers_count": 8389,
-      "forks_count": 1533,
-      "open_issues_count": 1452,
+      "stargazers_count": 9667,
+      "forks_count": 2024,
+      "open_issues_count": 2049,
       "license": {
         "key": "bsd-3-clause",
         "name": "BSD 3-Clause \"New\" or \"Revised\" License",
@@ -151,9 +151,9 @@
       "html_url": "https://github.com/sktime/pytorch-forecasting",
       "description": "Time series forecasting with PyTorch",
       "language": "Python",
-      "stargazers_count": 4298,
-      "forks_count": 682,
-      "open_issues_count": 551,
+      "stargazers_count": 4847,
+      "forks_count": 857,
+      "open_issues_count": 740,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -163,11 +163,12 @@
       },
       "topics": [
         "ai",
-        "artifical-intelligense",
+        "artificial-intelligence",
         "data-science",
         "deep-learning",
         "forecasting",
         "gpu",
+        "hacktoberfest",
         "machine-learning",
         "neural-networks",
         "pandas",
@@ -181,68 +182,6 @@
       ]
     },
     {
-      "id": 285372625,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyODUzNzI2MjU=",
-      "name": "enhancement-proposals",
-      "full_name": "sktime/enhancement-proposals",
-      "html_url": "https://github.com/sktime/enhancement-proposals",
-      "description": "sktime enhancement proposals",
-      "language": "Jupyter Notebook",
-      "stargazers_count": 7,
-      "forks_count": 28,
-      "open_issues_count": 9,
-      "license": {
-        "key": "bsd-3-clause",
-        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
-        "spdx_id": "BSD-3-Clause",
-        "url": "https://api.github.com/licenses/bsd-3-clause",
-        "node_id": "MDc6TGljZW5zZTU="
-      },
-      "topics": [
-        "software-architecture",
-        "software-design",
-        "software-engineering"
-      ]
-    },
-    {
-      "id": 103107372,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMDMxMDczNzI=",
-      "name": "skpro",
-      "full_name": "sktime/skpro",
-      "html_url": "https://github.com/sktime/skpro",
-      "description": "A unified framework for tabular probabilistic regression, time-to-event prediction, and probability distributions in python",
-      "language": "Python",
-      "stargazers_count": 267,
-      "forks_count": 54,
-      "open_issues_count": 81,
-      "license": {
-        "key": "bsd-3-clause",
-        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
-        "spdx_id": "BSD-3-Clause",
-        "url": "https://api.github.com/licenses/bsd-3-clause",
-        "node_id": "MDc6TGljZW5zZTU="
-      },
-      "topics": [
-        "ai",
-        "data-science",
-        "distributional-regression",
-        "distributions",
-        "failure-prediction",
-        "framework",
-        "machine-learning",
-        "prediction",
-        "probability-distributions",
-        "python",
-        "regression",
-        "sklearn",
-        "sktime",
-        "survival-analysis",
-        "survival-models",
-        "survival-prediction",
-        "time-to-event"
-      ]
-    },
-    {
       "id": 494649836,
       "node_id": "R_kgDOHXvB7A",
       "name": "skbase",
@@ -250,9 +189,9 @@
       "html_url": "https://github.com/sktime/skbase",
       "description": "Base classes for creating scikit-learn-like parametric objects, and tools for working with them.",
       "language": "Python",
-      "stargazers_count": 26,
-      "forks_count": 17,
-      "open_issues_count": 24,
+      "stargazers_count": 34,
+      "forks_count": 45,
+      "open_issues_count": 48,
       "license": {
         "key": "bsd-3-clause",
         "name": "BSD 3-Clause \"New\" or \"Revised\" License",
@@ -269,16 +208,16 @@
       ]
     },
     {
-      "id": 891604770,
-      "node_id": "R_kgDONSTPIg",
-      "name": "sktime-tutorial-pydata-global-2024",
-      "full_name": "sktime/sktime-tutorial-pydata-global-2024",
-      "html_url": "https://github.com/sktime/sktime-tutorial-pydata-global-2024",
-      "description": null,
-      "language": "Jupyter Notebook",
-      "stargazers_count": 11,
-      "forks_count": 2,
-      "open_issues_count": 0,
+      "id": 103107372,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMDMxMDczNzI=",
+      "name": "skpro",
+      "full_name": "sktime/skpro",
+      "html_url": "https://github.com/sktime/skpro",
+      "description": "A unified framework for tabular probabilistic regression, time-to-event prediction, and probability distributions in python",
+      "language": "Python",
+      "stargazers_count": 319,
+      "forks_count": 180,
+      "open_issues_count": 255,
       "license": {
         "key": "bsd-3-clause",
         "name": "BSD 3-Clause \"New\" or \"Revised\" License",
@@ -286,7 +225,50 @@
         "url": "https://api.github.com/licenses/bsd-3-clause",
         "node_id": "MDc6TGljZW5zZTU="
       },
-      "topics": []
+      "topics": [
+        "ai",
+        "data-science",
+        "distributional-regression",
+        "distributions",
+        "failure-prediction",
+        "framework",
+        "hacktoberfest",
+        "machine-learning",
+        "prediction",
+        "probability-distributions",
+        "python",
+        "regression",
+        "sklearn",
+        "sktime",
+        "survival-analysis",
+        "survival-models",
+        "survival-prediction",
+        "time-to-event"
+      ]
+    },
+    {
+      "id": 285372625,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyODUzNzI2MjU=",
+      "name": "enhancement-proposals",
+      "full_name": "sktime/enhancement-proposals",
+      "html_url": "https://github.com/sktime/enhancement-proposals",
+      "description": "sktime enhancement proposals",
+      "language": "Jupyter Notebook",
+      "stargazers_count": 7,
+      "forks_count": 30,
+      "open_issues_count": 11,
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "topics": [
+        "software-architecture",
+        "software-design",
+        "software-engineering"
+      ]
     },
     {
       "id": 301354039,
@@ -296,13 +278,87 @@
       "html_url": "https://github.com/sktime/mentoring",
       "description": "sktime mentorship program",
       "language": null,
-      "stargazers_count": 25,
-      "forks_count": 8,
-      "open_issues_count": 45,
+      "stargazers_count": 36,
+      "forks_count": 18,
+      "open_issues_count": 57,
       "license": null,
       "topics": [
         "mentoring"
       ]
+    },
+    {
+      "id": 1077008663,
+      "node_id": "R_kgDOQDHZFw",
+      "name": "python_brasil_2025",
+      "full_name": "sktime/python_brasil_2025",
+      "html_url": "https://github.com/sktime/python_brasil_2025",
+      "description": "Python Brasil",
+      "language": "Jupyter Notebook",
+      "stargazers_count": 6,
+      "forks_count": 3,
+      "open_issues_count": 0,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 1010792913,
+      "node_id": "R_kgDOPD950Q",
+      "name": "sktime-workshop-pycon-colombia-2025",
+      "full_name": "sktime/sktime-workshop-pycon-colombia-2025",
+      "html_url": "https://github.com/sktime/sktime-workshop-pycon-colombia-2025",
+      "description": "Workshop for Pycon Colombia 2025",
+      "language": "Jupyter Notebook",
+      "stargazers_count": 0,
+      "forks_count": 1,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 990185331,
+      "node_id": "R_kgDOOwUHcw",
+      "name": "tutorial_haicon_prologue_day",
+      "full_name": "sktime/tutorial_haicon_prologue_day",
+      "html_url": "https://github.com/sktime/tutorial_haicon_prologue_day",
+      "description": null,
+      "language": "Jupyter Notebook",
+      "stargazers_count": 0,
+      "forks_count": 1,
+      "open_issues_count": 1,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 891604770,
+      "node_id": "R_kgDONSTPIg",
+      "name": "sktime-tutorial-pydata-global-2024",
+      "full_name": "sktime/sktime-tutorial-pydata-global-2024",
+      "html_url": "https://github.com/sktime/sktime-tutorial-pydata-global-2024",
+      "description": null,
+      "language": "Jupyter Notebook",
+      "stargazers_count": 13,
+      "forks_count": 3,
+      "open_issues_count": 2,
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "topics": []
     },
     {
       "id": 929605968,
@@ -346,7 +402,7 @@
       "html_url": "https://github.com/sktime/community-org",
       "description": "Community organisation for sktime",
       "language": null,
-      "stargazers_count": 8,
+      "stargazers_count": 9,
       "forks_count": 8,
       "open_issues_count": 16,
       "license": null,
@@ -365,7 +421,7 @@
       "html_url": "https://github.com/sktime/sktime-tutorial-ODSC-Europe-2024",
       "description": null,
       "language": "Jupyter Notebook",
-      "stargazers_count": 5,
+      "stargazers_count": 4,
       "forks_count": 3,
       "open_issues_count": 0,
       "license": {
@@ -465,8 +521,8 @@
       "html_url": "https://github.com/sktime/sktime-dl",
       "description": "DEPRECATED, now in sktime - companion package for deep learning based on TensorFlow",
       "language": "Python",
-      "stargazers_count": 598,
-      "forks_count": 78,
+      "stargazers_count": 599,
+      "forks_count": 76,
       "open_issues_count": 6,
       "license": {
         "key": "bsd-3-clause",
@@ -497,7 +553,7 @@
       "description": null,
       "language": "Jupyter Notebook",
       "stargazers_count": 17,
-      "forks_count": 5,
+      "forks_count": 7,
       "open_issues_count": 0,
       "license": {
         "key": "bsd-3-clause",
@@ -611,7 +667,7 @@
       "description": "PyData London 2022 sktime workshop",
       "language": "Jupyter Notebook",
       "stargazers_count": 11,
-      "forks_count": 5,
+      "forks_count": 4,
       "open_issues_count": 0,
       "license": null,
       "topics": []
@@ -689,57 +745,17 @@
       "open_issues_count": 0,
       "license": null,
       "topics": []
-    },
-    {
-      "id": 494022424,
-      "node_id": "R_kgDOHXIvGA",
-      "name": "distance-based-time-series-clustering",
-      "full_name": "sktime/distance-based-time-series-clustering",
-      "html_url": "https://github.com/sktime/distance-based-time-series-clustering",
-      "description": null,
-      "language": "Jupyter Notebook",
-      "stargazers_count": 10,
-      "forks_count": 0,
-      "open_issues_count": 1,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 565119017,
-      "node_id": "R_kgDOIa8IKQ",
-      "name": "sktime-tutorial-pydata-global-2022",
-      "full_name": "sktime/sktime-tutorial-pydata-global-2022",
-      "html_url": "https://github.com/sktime/sktime-tutorial-pydata-global-2022",
-      "description": "sktime - python toolbox for time series: pipelines and transformers",
-      "language": "Jupyter Notebook",
-      "stargazers_count": 24,
-      "forks_count": 12,
-      "open_issues_count": 0,
-      "license": {
-        "key": "bsd-3-clause",
-        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
-        "spdx_id": "BSD-3-Clause",
-        "url": "https://api.github.com/licenses/bsd-3-clause",
-        "node_id": "MDc6TGljZW5zZTU="
-      },
-      "topics": []
-    },
-    {
-      "id": 382038384,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzODIwMzgzODQ=",
-      "name": "sktime-neuro",
-      "full_name": "sktime/sktime-neuro",
-      "html_url": "https://github.com/sktime/sktime-neuro",
-      "description": "time series machine learning for neurological data",
-      "language": "Python",
-      "stargazers_count": 7,
-      "forks_count": 3,
-      "open_issues_count": 5,
-      "license": null,
-      "topics": []
     }
   ],
   "contributorsDetails": [
+    {
+      "login": "fkiraly",
+      "id": 7985502,
+      "node_id": "MDQ6VXNlcjc5ODU1MDI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7985502?v=4",
+      "html_url": "https://github.com/fkiraly",
+      "contributions": 324
+    },
     {
       "login": "mloning",
       "id": 21020482,
@@ -765,20 +781,12 @@
       "contributions": 224
     },
     {
-      "login": "fkiraly",
-      "id": 7985502,
-      "node_id": "MDQ6VXNlcjc5ODU1MDI=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/7985502?v=4",
-      "html_url": "https://github.com/fkiraly",
-      "contributions": 28
-    },
-    {
       "login": "dependabot[bot]",
       "id": 49699333,
       "node_id": "MDM6Qm90NDk2OTkzMzM=",
       "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
       "html_url": "https://github.com/apps/dependabot",
-      "contributions": 351
+      "contributions": 42
     },
     {
       "login": "yarnabrina",
@@ -834,7 +842,7 @@
       "node_id": "MDQ6VXNlcjk3MjUyOTY=",
       "avatar_url": "https://avatars.githubusercontent.com/u/9725296?v=4",
       "html_url": "https://github.com/benHeid",
-      "contributions": 53
+      "contributions": 57
     },
     {
       "login": "lmmentel",
@@ -845,12 +853,20 @@
       "contributions": 40
     },
     {
+      "login": "jgyasu",
+      "id": 94278611,
+      "node_id": "U_kgDOBZ6T0w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/94278611?v=4",
+      "html_url": "https://github.com/jgyasu",
+      "contributions": 37
+    },
+    {
       "login": "achieveordie",
       "id": 54197164,
       "node_id": "MDQ6VXNlcjU0MTk3MTY0",
       "avatar_url": "https://avatars.githubusercontent.com/u/54197164?v=4",
       "html_url": "https://github.com/achieveordie",
-      "contributions": 32
+      "contributions": 1
     },
     {
       "login": "chrisholder",
@@ -890,7 +906,7 @@
       "node_id": "MDQ6VXNlcjI2OTA3MjQ0",
       "avatar_url": "https://avatars.githubusercontent.com/u/26907244?v=4",
       "html_url": "https://github.com/RNKuhns",
-      "contributions": 20
+      "contributions": 502
     },
     {
       "login": "ciaran-g",
@@ -914,7 +930,7 @@
       "node_id": "MDQ6VXNlcjY3MDQyNTI3",
       "avatar_url": "https://avatars.githubusercontent.com/u/67042527?v=4",
       "html_url": "https://github.com/fnhirwa",
-      "contributions": 8
+      "contributions": 15
     },
     {
       "login": "hazrulakmal",
@@ -930,14 +946,14 @@
       "node_id": "MDQ6VXNlcjU3NjEyNzky",
       "avatar_url": "https://avatars.githubusercontent.com/u/57612792?v=4",
       "html_url": "https://github.com/XinyuWuu",
-      "contributions": 13
+      "contributions": 2
     },
     {
-      "login": "Alex-JG3",
+      "login": "alex-gregory-ds",
       "id": 49785867,
       "node_id": "MDQ6VXNlcjQ5Nzg1ODY3",
       "avatar_url": "https://avatars.githubusercontent.com/u/49785867?v=4",
-      "html_url": "https://github.com/Alex-JG3",
+      "html_url": "https://github.com/alex-gregory-ds",
       "contributions": 15
     },
     {
@@ -949,6 +965,14 @@
       "contributions": 14
     },
     {
+      "login": "pranavvp16",
+      "id": 94780581,
+      "node_id": "U_kgDOBaY8pQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/94780581?v=4",
+      "html_url": "https://github.com/pranavvp16",
+      "contributions": 14
+    },
+    {
       "login": "thayeylolu",
       "id": 13348874,
       "node_id": "MDQ6VXNlcjEzMzQ4ODc0",
@@ -957,28 +981,12 @@
       "contributions": 14
     },
     {
-      "login": "prockenschaub",
-      "id": 15381732,
-      "node_id": "MDQ6VXNlcjE1MzgxNzMy",
-      "avatar_url": "https://avatars.githubusercontent.com/u/15381732?v=4",
-      "html_url": "https://github.com/prockenschaub",
+      "login": "ericjb",
+      "id": 7001287,
+      "node_id": "MDQ6VXNlcjcwMDEyODc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7001287?v=4",
+      "html_url": "https://github.com/ericjb",
       "contributions": 14
-    },
-    {
-      "login": "felipeangelimvieira",
-      "id": 28349103,
-      "node_id": "MDQ6VXNlcjI4MzQ5MTAz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/28349103?v=4",
-      "html_url": "https://github.com/felipeangelimvieira",
-      "contributions": 13
-    },
-    {
-      "login": "pranavvp16",
-      "id": 94780581,
-      "node_id": "U_kgDOBaY8pQ",
-      "avatar_url": "https://avatars.githubusercontent.com/u/94780581?v=4",
-      "html_url": "https://github.com/pranavvp16",
-      "contributions": 13
     },
     {
       "login": "jdb78",
@@ -986,7 +994,7 @@
       "node_id": "MDQ6VXNlcjEzMDA4NTQw",
       "avatar_url": "https://avatars.githubusercontent.com/u/13008540?v=4",
       "html_url": "https://github.com/jdb78",
-      "contributions": 435
+      "contributions": 436
     },
     {
       "login": "github-actions[bot]",
@@ -1005,6 +1013,14 @@
       "contributions": 115
     },
     {
+      "login": "phoeenniixx",
+      "id": 116151399,
+      "node_id": "U_kgDOBuxUZw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/116151399?v=4",
+      "html_url": "https://github.com/phoeenniixx",
+      "contributions": 28
+    },
+    {
       "login": "dehoyosb",
       "id": 38916863,
       "node_id": "MDQ6VXNlcjM4OTE2ODYz",
@@ -1021,12 +1037,12 @@
       "contributions": 13
     },
     {
-      "login": "bendavidsteel",
-      "id": 38535985,
-      "node_id": "MDQ6VXNlcjM4NTM1OTg1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/38535985?v=4",
-      "html_url": "https://github.com/bendavidsteel",
-      "contributions": 6
+      "login": "PranavBhatP",
+      "id": 63770398,
+      "node_id": "MDQ6VXNlcjYzNzcwMzk4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/63770398?v=4",
+      "html_url": "https://github.com/PranavBhatP",
+      "contributions": 12
     },
     {
       "login": "Borda",
@@ -1034,7 +1050,15 @@
       "node_id": "MDQ6VXNlcjYwMzUyODQ=",
       "avatar_url": "https://avatars.githubusercontent.com/u/6035284?v=4",
       "html_url": "https://github.com/Borda",
-      "contributions": 4
+      "contributions": 8
+    },
+    {
+      "login": "bendavidsteel",
+      "id": 38535985,
+      "node_id": "MDQ6VXNlcjM4NTM1OTg1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/38535985?v=4",
+      "html_url": "https://github.com/bendavidsteel",
+      "contributions": 6
     },
     {
       "login": "snumumrik",
@@ -1061,19 +1085,19 @@
       "contributions": 4
     },
     {
-      "login": "phoeenniixx",
-      "id": 116151399,
-      "node_id": "U_kgDOBuxUZw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/116151399?v=4",
-      "html_url": "https://github.com/phoeenniixx",
-      "contributions": 3
-    },
-    {
       "login": "JakeForsey",
       "id": 15824258,
       "node_id": "MDQ6VXNlcjE1ODI0MjU4",
       "avatar_url": "https://avatars.githubusercontent.com/u/15824258?v=4",
       "html_url": "https://github.com/JakeForsey",
+      "contributions": 3
+    },
+    {
+      "login": "cngmid",
+      "id": 29770180,
+      "node_id": "MDQ6VXNlcjI5NzcwMTgw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/29770180?v=4",
+      "html_url": "https://github.com/cngmid",
       "contributions": 3
     },
     {
@@ -1117,6 +1141,14 @@
       "contributions": 2
     },
     {
+      "login": "szepeviktor",
+      "id": 952007,
+      "node_id": "MDQ6VXNlcjk1MjAwNw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/952007?v=4",
+      "html_url": "https://github.com/szepeviktor",
+      "contributions": 4
+    },
+    {
       "login": "TKlerx",
       "id": 1579185,
       "node_id": "MDQ6VXNlcjE1NzkxODU=",
@@ -1125,59 +1157,155 @@
       "contributions": 2
     },
     {
-      "login": "stllfe",
-      "id": 16418545,
-      "node_id": "MDQ6VXNlcjE2NDE4NTQ1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/16418545?v=4",
-      "html_url": "https://github.com/stllfe",
+      "login": "QuantumByte-01",
+      "id": 150924480,
+      "node_id": "U_kgDOCP7swA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/150924480?v=4",
+      "html_url": "https://github.com/QuantumByte-01",
       "contributions": 2
     },
     {
-      "login": "abcnishant007",
-      "id": 9101260,
-      "node_id": "MDQ6VXNlcjkxMDEyNjA=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/9101260?v=4",
-      "html_url": "https://github.com/abcnishant007",
+      "login": "Soham-47",
+      "id": 179202202,
+      "node_id": "U_kgDOCq5omg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/179202202?v=4",
+      "html_url": "https://github.com/Soham-47",
       "contributions": 2
     },
     {
-      "login": "JustinNeumann",
-      "id": 9866138,
-      "node_id": "MDQ6VXNlcjk4NjYxMzg=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/9866138?v=4",
-      "html_url": "https://github.com/JustinNeumann",
+      "login": "Sohaib-Ahmed21",
+      "id": 113179991,
+      "node_id": "U_kgDOBr79Vw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/113179991?v=4",
+      "html_url": "https://github.com/Sohaib-Ahmed21",
       "contributions": 2
     },
     {
-      "login": "ewth",
-      "id": 29100840,
-      "node_id": "MDQ6VXNlcjI5MTAwODQw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/29100840?v=4",
-      "html_url": "https://github.com/ewth",
+      "login": "amruth6002",
+      "id": 156193119,
+      "node_id": "U_kgDOCU9RXw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/156193119?v=4",
+      "html_url": "https://github.com/amruth6002",
       "contributions": 2
     },
     {
-      "login": "Eliacus",
-      "id": 25045629,
-      "node_id": "MDQ6VXNlcjI1MDQ1NjI5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/25045629?v=4",
-      "html_url": "https://github.com/Eliacus",
+      "login": "pre-commit-ci[bot]",
+      "id": 66853113,
+      "node_id": "MDM6Qm90NjY4NTMxMTM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/68672?v=4",
+      "html_url": "https://github.com/apps/pre-commit-ci",
+      "contributions": 77
+    },
+    {
+      "login": "SimonBlanke",
+      "id": 20640612,
+      "node_id": "MDQ6VXNlcjIwNjQwNjEy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20640612?v=4",
+      "html_url": "https://github.com/SimonBlanke",
+      "contributions": 5
+    },
+    {
+      "login": "tpvasconcelos",
+      "id": 17701527,
+      "node_id": "MDQ6VXNlcjE3NzAxNTI3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/17701527?v=4",
+      "html_url": "https://github.com/tpvasconcelos",
+      "contributions": 4
+    },
+    {
+      "login": "Dreamstick9",
+      "id": 222502230,
+      "node_id": "U_kgDODUMdVg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/222502230?v=4",
+      "html_url": "https://github.com/Dreamstick9",
+      "contributions": 3
+    },
+    {
+      "login": "Spinachboul",
+      "id": 105979087,
+      "node_id": "U_kgDOBlEczw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/105979087?v=4",
+      "html_url": "https://github.com/Spinachboul",
       "contributions": 2
     },
     {
-      "login": "christy",
-      "id": 94918,
-      "node_id": "MDQ6VXNlcjk0OTE4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/94918?v=4",
-      "html_url": "https://github.com/christy",
-      "contributions": 2
+      "login": "auderson",
+      "id": 48577571,
+      "node_id": "MDQ6VXNlcjQ4NTc3NTcx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/48577571?v=4",
+      "html_url": "https://github.com/auderson",
+      "contributions": 1
     },
     {
-      "login": "nsarang",
-      "id": 25885841,
-      "node_id": "MDQ6VXNlcjI1ODg1ODQx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/25885841?v=4",
-      "html_url": "https://github.com/nsarang",
+      "login": "allcontributors[bot]",
+      "id": 46447321,
+      "node_id": "MDM6Qm90NDY0NDczMjE=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/23186?v=4",
+      "html_url": "https://github.com/apps/allcontributors",
+      "contributions": 1
+    },
+    {
+      "login": "ParamThakkar123",
+      "id": 128291516,
+      "node_id": "U_kgDOB6WSvA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/128291516?v=4",
+      "html_url": "https://github.com/ParamThakkar123",
+      "contributions": 1
+    },
+    {
+      "login": "RecreationalMath",
+      "id": 6928297,
+      "node_id": "MDQ6VXNlcjY5MjgyOTc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6928297?v=4",
+      "html_url": "https://github.com/RecreationalMath",
+      "contributions": 1
+    },
+    {
+      "login": "MBristle",
+      "id": 12894818,
+      "node_id": "MDQ6VXNlcjEyODk0ODE4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12894818?v=4",
+      "html_url": "https://github.com/MBristle",
+      "contributions": 1
+    },
+    {
+      "login": "Abelarm",
+      "id": 6976921,
+      "node_id": "MDQ6VXNlcjY5NzY5MjE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6976921?v=4",
+      "html_url": "https://github.com/Abelarm",
+      "contributions": 1
+    },
+    {
+      "login": "lgtm-migrator",
+      "id": 116650770,
+      "node_id": "U_kgDOBvPzEg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/116650770?v=4",
+      "html_url": "https://github.com/lgtm-migrator",
+      "contributions": 1
+    },
+    {
+      "login": "JahnaviDhanaSri",
+      "id": 143936922,
+      "node_id": "U_kgDOCJRNmg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/143936922?v=4",
+      "html_url": "https://github.com/JahnaviDhanaSri",
+      "contributions": 1
+    },
+    {
+      "login": "WHOIM1205",
+      "id": 212489404,
+      "node_id": "U_kgDODKpUvA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/212489404?v=4",
+      "html_url": "https://github.com/WHOIM1205",
+      "contributions": 1
+    },
+    {
+      "login": "arnavk23",
+      "id": 169632461,
+      "node_id": "U_kgDOChxizQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/169632461?v=4",
+      "html_url": "https://github.com/arnavk23",
       "contributions": 1
     }
   ],

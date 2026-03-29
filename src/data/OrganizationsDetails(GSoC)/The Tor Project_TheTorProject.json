@@ -183,7 +183,35 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2023/projects/zQRvTgia"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Rewrite of the Tor Metrics Library in Rust",
+        "short_description": "The goal of this project is to rewrite the current Java-based Tor Metrics Library in Rust. This library is a crucial component for parsing and...",
+        "description": "The goal of this project is to rewrite the current Java-based Tor Metrics Library in Rust. This library is a crucial component for parsing and analyzing Tor network descriptors used by various services and researchers.\n\nBy reimplementing the library in Rust, we aim to improve performance, take advantage of Rust’s modern language features, and provide a more ergonomic API. This rewrite will also allow the Network Health Team (and others) to migrate some of their services to Rust.\n\nIn addition to replicating current features, the new library will include some features from the DescriptorParser for exporting parsed descriptor data into formats like CSV, Parquet, or PostgreSQL tables, thereby enabling more advanced integrations and analysis capabilities.",
+        "student_name": "Axyom",
+        "code_url": "https://gitlab.torproject.org/tpo/network-health/metrics/library-rs",
+        "proposal_id": "XIpWFYmP",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/dlQVNFec"
+      },
+      {
+        "title": "The Tor Project: Onion Service Support Tooling for Arti",
+        "short_description": "My proposal involves expanding Arti's state management subcommands: hss and hsc (very limited in functionalities at the moment). These new features...",
+        "description": "My proposal involves expanding Arti's state management subcommands: hss and hsc (very limited in functionalities at the moment).\n\nThese new features will be added after the completion of GSoC:\n a subcommand for listing keys and certificates from the configured keystores; \n a subcommand for listing keystores by their identifier;\n a subcommand for performing consistency, validity, and integrity checks on the specified stores; \n an arti hss destroy subcommand, for removing the persistent state and all the keys of a onion service; \n an arti hss destroy-and-recreate subcommand, for generating a new identity for an existing onion service;\n miscellaneous low-level \"plumbing\" subcommands, which deal with individual files from the keystore and state directories;\n a C Tor to Arti key migration tool, which will enable onion service operators to seamlessly migrate from C Tor to Arti;\n field-formatted output to be easily parseable by other programs.\n\nThese objectives will be achieved mostly by extending already existing facilities, like InertTorClient and OnionService, and by creating new ones.",
+        "student_name": "Omar Gorni",
+        "code_url": "https://github.com/hjrgrn/gsoc-final",
+        "proposal_id": "hrQuEdHf",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/lFvAwMfD"
+      },
+      {
+        "title": "The Tor Project - Network Health: Enhancing eRPC - Network Partition Analysis and Visualization",
+        "short_description": "The Tor network's anonymity guarantee depends heavily on the connectivity between relays. Partitioning in the network can significantly compromise...",
+        "description": "The Tor network's anonymity guarantee depends heavily on the connectivity between relays.\nPartitioning in the network can significantly compromise these guarantees by limiting the\npossible paths available to users. During GSoC 2023, the eRPC tool was built to detect such\npartitions by building two-hop circuits between relays and storing the results in a Neo4j graph database, where vertices represent relay fingerprints and edges represent successful or failed circuit builds. \n\nThis project aims to enhance the existing eRPC tool by developing analysis capabilities to\ndetect, visualize, and understand network partitions. The focus will be on implementing\nefficient graph algorithms to identify disconnected components and communities within\nthe Tor network. By utilizing Neo4j's Graph Data Science (GDS) library, we can apply\ncommunity detection and clustering algorithms to find potential partitions in the directed\ngraph that represents the Tor network. \n\nBy the end of the project, I aim to deliver an enhanced eRPC tool with robust analysis\ncapabilities, interactive visualizations, and comprehensive documentation. This will provide\nthe Tor community with valuable insights into the network's connectivity patterns and help\nidentify areas that need attention to strengthen Tor's anonymity guarantees.",
+        "student_name": "Shivam Vats",
+        "code_url": "https://gitlab.torproject.org/tpo/network-health/erpc/-/blob/main/erpc-analysis/README.md",
+        "proposal_id": "GxNa3CWi",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/hKZzP0GA"
+      }
+    ]
   },
   "githubID": "TheTorProject",
   "repositories": [
@@ -195,8 +223,8 @@
       "html_url": "https://github.com/TheTorProject/gettorbrowser",
       "description": null,
       "language": null,
-      "stargazers_count": 713,
-      "forks_count": 155,
+      "stargazers_count": 780,
+      "forks_count": 164,
       "open_issues_count": 33,
       "license": null,
       "topics": []
@@ -209,9 +237,9 @@
       "html_url": "https://github.com/TheTorProject/tor-messenger-build",
       "description": "Tor Messenger Build scripts (https://gitweb.torproject.org/tor-messenger-build.git/)",
       "language": "Shell",
-      "stargazers_count": 51,
+      "stargazers_count": 61,
       "forks_count": 24,
-      "open_issues_count": 4,
+      "open_issues_count": 3,
       "license": null,
       "topics": []
     },
@@ -223,8 +251,8 @@
       "html_url": "https://github.com/TheTorProject/bwscanner",
       "description": "Bandwidth authority scanner. This project is deprecated in favour of https://gitlab.torproject.org/tpo/network-health/sbws",
       "language": "Python",
-      "stargazers_count": 41,
-      "forks_count": 28,
+      "stargazers_count": 43,
+      "forks_count": 29,
       "open_issues_count": 25,
       "license": {
         "key": "gpl-2.0",
@@ -243,8 +271,8 @@
       "html_url": "https://github.com/TheTorProject/gettor",
       "description": "GetTor - a Tor Browser distribution system",
       "language": "Python",
-      "stargazers_count": 111,
-      "forks_count": 40,
+      "stargazers_count": 120,
+      "forks_count": 44,
       "open_issues_count": 5,
       "license": {
         "key": "other",
@@ -263,7 +291,7 @@
       "html_url": "https://github.com/TheTorProject/tor-messenger-website",
       "description": null,
       "language": "HTML",
-      "stargazers_count": 22,
+      "stargazers_count": 23,
       "forks_count": 9,
       "open_issues_count": 1,
       "license": null,
@@ -277,8 +305,8 @@
       "html_url": "https://github.com/TheTorProject/stegotorus",
       "description": "Advanced development framework for stealthier pluggable transports",
       "language": "C++",
-      "stargazers_count": 94,
-      "forks_count": 31,
+      "stargazers_count": 102,
+      "forks_count": 33,
       "open_issues_count": 7,
       "license": {
         "key": "other",
@@ -297,7 +325,7 @@
       "html_url": "https://github.com/TheTorProject/tor-media",
       "description": "This is an archive of official Tor images, videos, and related files.",
       "language": null,
-      "stargazers_count": 25,
+      "stargazers_count": 27,
       "forks_count": 12,
       "open_issues_count": 2,
       "license": null,
@@ -311,7 +339,7 @@
       "html_url": "https://github.com/TheTorProject/lepidopter",
       "description": "lepidopter: raspberry pi image for conducting OONI network measurements",
       "language": "Python",
-      "stargazers_count": 49,
+      "stargazers_count": 52,
       "forks_count": 20,
       "open_issues_count": 17,
       "license": {
@@ -382,6 +410,54 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/5112602?v=4",
       "html_url": "https://github.com/vqhuy",
       "contributions": 6
+    },
+    {
+      "login": "DonnchaC",
+      "id": 3081375,
+      "node_id": "MDQ6VXNlcjMwODEzNzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3081375?v=4",
+      "html_url": "https://github.com/DonnchaC",
+      "contributions": 89
+    },
+    {
+      "login": "aagbsn",
+      "id": 315010,
+      "node_id": "MDQ6VXNlcjMxNTAxMA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/315010?v=4",
+      "html_url": "https://github.com/aagbsn",
+      "contributions": 43
+    },
+    {
+      "login": "juga0",
+      "id": 14002720,
+      "node_id": "MDQ6VXNlcjE0MDAyNzIw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14002720?v=4",
+      "html_url": "https://github.com/juga0",
+      "contributions": 40
+    },
+    {
+      "login": "david415",
+      "id": 50611,
+      "node_id": "MDQ6VXNlcjUwNjEx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/50611?v=4",
+      "html_url": "https://github.com/david415",
+      "contributions": 25
+    },
+    {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "html_url": "https://github.com/apps/dependabot",
+      "contributions": 1
+    },
+    {
+      "login": "teor2345",
+      "id": 8951843,
+      "node_id": "MDQ6VXNlcjg5NTE4NDM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8951843?v=4",
+      "html_url": "https://github.com/teor2345",
+      "contributions": 1
     }
   ],
   "activeOrg": false

@@ -3,7 +3,7 @@
   "image_url": "https://summerofcode.withgoogle.com/media/org/cloudcv/mxq9gvskhg4i5lyw-360.png",
   "image_background_color": "#ffffff",
   "description": "Building platforms for reproducible AI Research",
-  "url": "https://cloudcv.org/",
+  "url": "https://eval.ai/",
   "category": [
     "Infrastructure and cloud",
     "Data",
@@ -44,7 +44,7 @@
     "aws",
     "angular"
   ],
-  "irc_channel": "https://join.slack.com/t/cloudcv-community/shared_invite/zt-1rkm0m8pw-TBkjRjx~_GyIvMVlF5iDHg",
+  "irc_channel": "https://join.slack.com/t/cloudcv-community/shared_invite/zt-32d77sbma-OjV24gfcKy1tmcl576ZyIg",
   "contact_email": "mailto:team@cloudcv.org",
   "mailing_list": "https://groups.google.com/forum/#!forum/cloudcv",
   "twitter_url": "https://twitter.com/eval_ai",
@@ -282,7 +282,35 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/TITGUVUt"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "RAG-Based Chat Bot for Enhanced Challenge Support",
+        "short_description": "RAG-Based Chatbot for Enhanced EvalAI Challenge Support Problem EvalAI struggles with providing consistent, timely, and accurate support for AI...",
+        "description": "RAG-Based Chatbot for Enhanced EvalAI Challenge Support\n\nProblem\nEvalAI struggles with providing consistent, timely, and accurate support for AI challenge participants and hosts, especially during peak periods and with frequently updated guidelines.\n\nSolution\nI propose developing a Retrieval-Augmented Generation (RAG) chatbot that integrates seamlessly with EvalAI to offer instant, context-aware support.\n\nKey Components\n1. Document Ingestion Pipeline: Process and version diverse documentation formats\n2. Vector Database (Milvus): Efficient storage and retrieval of embeddings\n3. RAG Engine: Hybrid retrieval and context-aware answer generation\n4. Web Interface: Intuitive chat UI integrated with EvalAI's platform\n\nDeliverables\n1. Production-ready RAG chatbot integrated with EvalAI\n2. Comprehensive documentation and test suite\n3. Contribution guidelines for future enhancements\n\nThis project aims to significantly improve EvalAI's support system, ensuring quick, consistent, and up-to-date responses for all users.",
+        "student_name": "Aditi Bindal",
+        "code_url": "https://medium.com/@halfacupoftea/google-summer-of-code-2025-with-cloudcv-45cf853e5a6a",
+        "proposal_id": "AoLufrRa",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/uh8YMZEU"
+      },
+      {
+        "title": "Enhanced Test Suite and Improved User Experience",
+        "short_description": "This project is focused on significantly improving EvalAI’s usability by enhancing exsiting comprehensive test suite alongside a series of user...",
+        "description": "This project is focused on significantly improving EvalAI’s usability by enhancing exsiting comprehensive test suite alongside a series of user experience enhancements. By increasing our test coverage, automating critical workflows, and refining the platform’s interface and documentation, this initiative aims to create a more robust, user-friendly, and resilient environment for both challenge hosts and participants.\n\nThe enhanced test suite will ensure that all core functionalities, from challenge creation to submission processing are verified, reducing bugs and increasing system reliability. In parallel, targeted user experience improvements will simplify navigation, enhance error reporting, and streamline user interactions, leading to a more intuitive and supportive EvalAI ecosystem.",
+        "student_name": "Akshat_Singh",
+        "code_url": "https://medium.com/@akshat.singh11123/contributing-to-cloudcv-gsoc-2025-2828f9b0a216",
+        "proposal_id": "PBMNI7Pv",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/IA5TwFwY"
+      },
+      {
+        "title": "RAG-Based Chat Bot for Enhanced Challenge Support",
+        "short_description": "This project aims to enhance the user experience for both challenge hosts and participants by developing an intelligent, RAG (Retrieval Augmented...",
+        "description": "This project aims to enhance the user experience for both challenge hosts and participants by developing an intelligent, RAG (Retrieval Augmented Generation) based chatbot. The chatbot will efficiently address queries related to challenge hosting, guidelines, troubleshooting, and FAQs. \nBy integrating state-of-the-art NLP techniques with robust retrieval mechanisms, the solution will ensure prompt, accurate, and context-aware responses that reduce support overhead and streamline communication.\nUsing the RAG approach, the chatbot will retrieve relevant information from challenge documentation and combine it with generative models to create coherent and helpful answers. This will empower hosts to manage challenges more effectively and assist participants in resolving queries, ultimately contributing to a smoother and more interactive challenge experience.\n\n\nDeliverables include :\nRAG Framework Implementation\nChat UI\nComprehensive Documentation\nTesting, Feedback, and Continuous Improvement",
+        "student_name": "Zahed",
+        "code_url": "https://medium.com/@zahedriyaz2109/contributing-to-cloudcv-google-summer-of-code-2025-11a106a81277",
+        "proposal_id": "S2iMtPvU",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/BwLKGHrI"
+      }
+    ]
   },
   "githubID": "CloudCV",
   "repositories": [
@@ -294,7 +322,7 @@
       "html_url": "https://github.com/CloudCV/cloudcv-bootstrap",
       "description": "A starter template for Node.js with OpenCV bindings. This project lets you to quickly prototype a REST API in a Node.js for a image processing service written in C++. ",
       "language": "JavaScript",
-      "stargazers_count": 76,
+      "stargazers_count": 74,
       "forks_count": 21,
       "open_issues_count": 1,
       "license": {
@@ -382,7 +410,7 @@
       "node_id": "MDQ6VXNlcjUzMjMyMA==",
       "avatar_url": "https://avatars.githubusercontent.com/u/532320?v=4",
       "html_url": "https://github.com/BloodAxe",
-      "contributions": 1
+      "contributions": 18
     }
   ],
   "activeOrg": false

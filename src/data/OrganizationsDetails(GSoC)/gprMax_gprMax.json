@@ -23,7 +23,7 @@
     "mpi",
     "opencl"
   ],
-  "irc_channel": "https://gprmax-fdtd.slack.com",
+  "irc_channel": "https://gprmax.zulipchat.com/join/gkhcp65r3zin6rfoqdhhhbu3/",
   "contact_email": "mailto:info@gprmax.com",
   "mailing_list": "https://groups.google.com/g/gprmax",
   "twitter_url": "https://twitter.com/gprmax_fdtd",
@@ -34,7 +34,8 @@
     2021,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2019": [
@@ -165,7 +166,45 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/4Zh4wnzY"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "AMD ROCm HIP Port Proposal",
+        "short_description": "This project focuses on porting the PyCUDA-based FDTD method solver of gprMax to HIP API. The final target is to run gprMax on AMD ROCm GPUs. HIP...",
+        "description": "This project focuses on porting the PyCUDA-based FDTD method solver of gprMax to HIP API. The final target is to run gprMax on AMD ROCm GPUs.  HIP Python and HIPIFY+Pybind are considered to be used to do the porting work. The final deliverables consist of the ported kernels and the adaption to the original gprMax code, the setup script, benchmarks, and documents.",
+        "student_name": "Anjie",
+        "code_url": "https://github.com/gprMax/gprMax/pull/506",
+        "proposal_id": "7YQMK1eo",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/oM0R3IbA"
+      },
+      {
+        "title": "Building Comprehensive AI support system for gprMax",
+        "short_description": "This project aims to enhance gprMax's user support capabilities by integrating advanced Language Model (LLM) technologies. The core goal is...",
+        "description": "This project aims to enhance gprMax's user support capabilities by integrating advanced Language Model (LLM) technologies. The core goal is developing an AI-driven chatbot capable of interpreting natural language user instructions and generating accurate, ready-to-run gprMax input files. The project is scheduled for completion within a 12-week timeframe, divided into clear milestones ensuring systematic progression and iterative refinements. The final deliverables will great improve the user experience of gprMax and laying foundation for future AI integration.",
+        "student_name": "Jichao Fang",
+        "code_url": "https://huggingface.co/spaces/jfang/gprmax-support-gsoc25",
+        "proposal_id": "NK2a3aQS",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/AYkOXMci"
+      },
+      {
+        "title": "Implementation of a Near to Far Field Transformation (NFFT) Calculation  and Output of Relevant Info",
+        "short_description": "This project aims to implement a Near-to-Far Field Transformation (NFFT) feature in gprMax. This will enable users to compute the far-field radiation...",
+        "description": "This project aims to implement a Near-to-Far Field Transformation (NFFT) feature in gprMax. This will enable users to compute the far-field radiation patterns and radar crosssections(RCS) from the near-field data. It will expand gprMax’s capabilities for antenna design, scattering analysis, etc.\nI propose to implement the Near-to-Far Field Transformation (NFFT) module\nand its integration at several key points in the existing workflow:\n- Adding the NFFT command\n- Module for Field Sampling during FDTD\n- Post-Processing & Far-Field Calculation\n- Integration with the API\n- Validation and Testing\n- Documentation and Review",
+        "student_name": "Karan Khajanchi",
+        "code_url": "https://github.com/gprMax/gprMax/pull/509",
+        "proposal_id": "vftLZS4t",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/fc4B9yzr"
+      },
+      {
+        "title": "Apple Metal Port",
+        "short_description": "This project aims to complete the development of an Apple Metal port for gprMax, building upon the initial work in PR #457. gprMax is an open-source...",
+        "description": "This project aims to complete the development of an Apple Metal port for gprMax, building upon the initial work in PR #457. gprMax is an open-source electromagnetic wave propagation simulator using the Finite-Difference Time-Domain (FDTD) method, and this port will enable efficient execution on Apple Silicon hardware.\nThe implementation involves translating CUDA/OpenCL FDTD kernels to Metal Shading Language (MSL), creating Python bindings to manage Metal devices and memory, and integrating Metal as a first-class backend option alongside CPU and CUDA/OpenCL.\nKey components include:\nFinalizing Metal device detection and selection\nCompleting MSL kernels for field updates, PML boundaries, sources, and outputs\nImplementing Python interfaces for Metal device management and memory operations\nIntegrating Metal execution into the main solver loop\nCreating a comprehensive testing framework to validate numerical accuracy\nOptimizing performance through profiling and tuning\nDocumenting the Metal backend for users and developers\nThe project will follow a structured development approach, starting with reviewing existing code in PR #457, implementing remaining kernels, building integration tests, and finally optimizing performance. This systematic progression ensures a stable, validated, and efficient Metal implementation.\nThe primary challenge lies in achieving competitive performance compared to existing implementations, requiring a deep understanding of Apple's GPU architecture and careful optimization.\nUpon completion, the Metal port will enhance gprMax's capabilities on Apple hardware, potentially offering superior performance to CPU implementations. This will benefit researchers, students, and professionals in electromagnetics, particularly those using Apple devices, and demonstrate Metal's viability for scientific computing applications.",
+        "student_name": "Manobhav Sachan",
+        "code_url": "https://github.com/gprMax/gprMax/pull/504",
+        "proposal_id": "zlUSTGD9",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/lKjuDV7t"
+      }
+    ],
+    "2026": []
   },
   "githubID": "gprMax",
   "repositories": [
@@ -177,9 +216,9 @@
       "html_url": "https://github.com/gprMax/gprMax",
       "description": "gprMax is open source software that simulates electromagnetic wave propagation using the Finite-Difference Time-Domain (FDTD) method for numerical modelling of Ground Penetrating Radar (GPR)",
       "language": "Python",
-      "stargazers_count": 696,
-      "forks_count": 269,
-      "open_issues_count": 22,
+      "stargazers_count": 822,
+      "forks_count": 367,
+      "open_issues_count": 122,
       "license": {
         "key": "gpl-3.0",
         "name": "GNU General Public License v3.0",
@@ -209,9 +248,9 @@
       "html_url": "https://github.com/gprMax/GSoC",
       "description": "gprMax participation in Google Summer of Code (GSoC)",
       "language": null,
-      "stargazers_count": 17,
-      "forks_count": 6,
-      "open_issues_count": 0,
+      "stargazers_count": 22,
+      "forks_count": 10,
+      "open_issues_count": 2,
       "license": null,
       "topics": []
     },
@@ -223,8 +262,8 @@
       "html_url": "https://github.com/gprMax/iwagpr2017-model",
       "description": "This model was created using gprMax. It is a 3D, near-surface example of a fictional but realistic landmine detection environment.",
       "language": "Matlab",
-      "stargazers_count": 17,
-      "forks_count": 8,
+      "stargazers_count": 18,
+      "forks_count": 7,
       "open_issues_count": 0,
       "license": null,
       "topics": []
@@ -237,7 +276,7 @@
       "node_id": "MDQ6VXNlcjExMjc5NDk1",
       "avatar_url": "https://avatars.githubusercontent.com/u/11279495?v=4",
       "html_url": "https://github.com/craig-warren",
-      "contributions": 10
+      "contributions": 18
     },
     {
       "login": "dependabot[bot]",
@@ -245,7 +284,7 @@
       "node_id": "MDM6Qm90NDk2OTkzMzM=",
       "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
       "html_url": "https://github.com/apps/dependabot",
-      "contributions": 27
+      "contributions": 39
     },
     {
       "login": "jasminium",
@@ -296,14 +335,6 @@
       "contributions": 5
     },
     {
-      "login": "agianno",
-      "id": 11274551,
-      "node_id": "MDQ6VXNlcjExMjc0NTUx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/11274551?v=4",
-      "html_url": "https://github.com/agianno",
-      "contributions": 1
-    },
-    {
       "login": "Tagussan",
       "id": 3764516,
       "node_id": "MDQ6VXNlcjM3NjQ1MTY=",
@@ -312,12 +343,12 @@
       "contributions": 3
     },
     {
-      "login": "rajathkmp",
-      "id": 6078431,
-      "node_id": "MDQ6VXNlcjYwNzg0MzE=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/6078431?v=4",
-      "html_url": "https://github.com/rajathkmp",
-      "contributions": 2
+      "login": "agianno",
+      "id": 11274551,
+      "node_id": "MDQ6VXNlcjExMjc0NTUx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11274551?v=4",
+      "html_url": "https://github.com/agianno",
+      "contributions": 1
     },
     {
       "login": "sigurdeide",
@@ -325,6 +356,22 @@
       "node_id": "MDQ6VXNlcjQ2NTI3MDMy",
       "avatar_url": "https://avatars.githubusercontent.com/u/46527032?v=4",
       "html_url": "https://github.com/sigurdeide",
+      "contributions": 2
+    },
+    {
+      "login": "archerc",
+      "id": 189394,
+      "node_id": "MDQ6VXNlcjE4OTM5NA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/189394?v=4",
+      "html_url": "https://github.com/archerc",
+      "contributions": 2
+    },
+    {
+      "login": "rajathkmp",
+      "id": 6078431,
+      "node_id": "MDQ6VXNlcjYwNzg0MzE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6078431?v=4",
+      "html_url": "https://github.com/rajathkmp",
       "contributions": 2
     },
     {
@@ -357,6 +404,14 @@
       "node_id": "MDQ6VXNlcjg3MDg3NzQx",
       "avatar_url": "https://avatars.githubusercontent.com/u/87087741?v=4",
       "html_url": "https://github.com/Sai-Suraj-27",
+      "contributions": 1
+    },
+    {
+      "login": "QuentinGPU",
+      "id": 219846081,
+      "node_id": "U_kgDODRqVwQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/219846081?v=4",
+      "html_url": "https://github.com/QuentinGPU",
       "contributions": 1
     },
     {
@@ -408,11 +463,27 @@
       "contributions": 1
     },
     {
+      "login": "jeis4wpi",
+      "id": 42679190,
+      "node_id": "MDQ6VXNlcjQyNjc5MTkw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/42679190?v=4",
+      "html_url": "https://github.com/jeis4wpi",
+      "contributions": 1
+    },
+    {
       "login": "JingziC",
       "id": 140467318,
       "node_id": "U_kgDOCF9cdg",
       "avatar_url": "https://avatars.githubusercontent.com/u/140467318?v=4",
       "html_url": "https://github.com/JingziC",
+      "contributions": 1
+    },
+    {
+      "login": "jsenellart",
+      "id": 1520492,
+      "node_id": "MDQ6VXNlcjE1MjA0OTI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1520492?v=4",
+      "html_url": "https://github.com/jsenellart",
       "contributions": 1
     },
     {
@@ -432,11 +503,11 @@
       "contributions": 1
     },
     {
-      "login": "Angelisd",
+      "login": "dimitriosangelis",
       "id": 37277513,
       "node_id": "MDQ6VXNlcjM3Mjc3NTEz",
       "avatar_url": "https://avatars.githubusercontent.com/u/37277513?v=4",
-      "html_url": "https://github.com/Angelisd",
+      "html_url": "https://github.com/dimitriosangelis",
       "contributions": 1
     },
     {

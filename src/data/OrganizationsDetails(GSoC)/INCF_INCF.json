@@ -52,7 +52,8 @@
     2022,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2016": [
@@ -1603,7 +1604,234 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/8qKxblbL"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Conda packaging for GeNN",
+        "short_description": "GeNN is a C++ library that generates code for efficiently simulating Spiking Neural Networks (SNNs) using GPUs. In order to compile this generated...",
+        "description": "GeNN is a C++ library that\ngenerates code for efficiently simulating Spiking Neural Networks (SNNs)\nusing GPUs. In order to compile this generated code, it requires a\ncompiler and development versions of backend requirements such as CUDA.\nBecause of this, GeNN must currently be installed from source which puts\noff some users.\n\nSo for this project, I aim to develop a conda (forge)\npackage for GeNN which will handle the installation of the required\ndependencies and ease installation for end users.\nDeliverables:\n-Conda Forge Recipe\n-User Documentation",
+        "student_name": "Agrim Patil",
+        "code_url": "https://gist.github.com/Agrim-P777/35943fdd3f84c3c98cd1a6a2068ca00d",
+        "proposal_id": "1iPpZRow",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/SfBDu4n2"
+      },
+      {
+        "title": "Studying Peripheral Physiological Modulation of Brain Activity (INCF #27)",
+        "short_description": "Traditionally, brain activity has been analyzed independently from peripheral physiological measurements like the electrocardiogram (ECG), but our...",
+        "description": "Traditionally, brain activity has been analyzed independently from peripheral physiological measurements like the electrocardiogram (ECG), but our understanding of brain-heart interactions (BHI) has significantly evolved since then: we now know that not only does the brain modulate the heart but surprisingly the heart exerts a powerful influence on the brain. For example, the timing of a learning task relative to the cycle of the heartbeat modulates its event-related potential (ERP), and heart-beats interact with activity in the insula, an area critically involved in internal monitoring. However, despite this increased interest in BHI in the neuroscientific community, there is a lack of well-documented tool, that incorporates much of the modern BHI identification techniques, treats sensitively ECG artifacts, and furthermore complements modern brain connectivity analysis. BHI studies point to a much greater complexity in neural signals that current connectivity packages fail to account for, such as recent work pointing to the modulating of brain oscillations by respiration. As such, this project has two main purposes: extract BHI and direct respiratory modulation of the brain and build a brain connectivity tool that accounts for these confounding measures, built in the Python MNE environment to complement traditional data analysis pipelines. Our analysis functions will furthermore be validated through tutorial-like experiments, written as Jupyter notebooks on open datasets, and we hope that the results I show will convince the scientific audience of the importance of confounding peripheral measures in neural data.  \n\nThe minimal set of deliverables include: individual analysis functions for peripheral physiological signals, connectivity measures between peripheral and neural signals, and brain connectivity measures, both regular, and conditioned on peripheral physiological signals to remove their effect, and experiments demonstrating these tools on open datasets.",
+        "student_name": "Alex Zhao",
+        "code_url": "https://gist.github.com/azhao915/17510ecaa25944c18dcb5c397b1e5803",
+        "proposal_id": "kv253PMr",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/ZiQox6Iu"
+      },
+      {
+        "title": "Python API for new cell types",
+        "short_description": "This project will involve refactoring the Human Neocortical Neurosolver (HNN-core) codebase to enable flexible development of neural circuits with...",
+        "description": "This project will involve refactoring the Human Neocortical Neurosolver (HNN-core) codebase to enable flexible development of neural circuits with customizable cell types. Currently, HNN-core contains hard-coded assumptions about cell types, locations, and connectivity that limit researchers' ability to implement networks with different architectures.\n\nI will restructure key modules to replace these hard-coded constraints with dynamic definitions, allowing users to flexibly select and connect cell types with different morphologies and electrophysiological properties. The solution involves refactoring cells_default.py for dynamic cell creation, modifying network.py to handle arbitrary cell types, and updating related components to support custom cell types.\n\nThe proposed plan includes dynamic cell type implementation, updated network connectivity handling, a demonstration model with custom cell types, comprehensive documentation, and unit tests ensuring backward compatibility. This work will significantly enhance HNN's capabilities for hypothesis testing in EEG/MEG research while maintaining its user-friendly approach for neuroscientists.",
+        "student_name": "Chetan Kandpal",
+        "code_url": "https://github.com/Chetank99/GSoC_HNN",
+        "proposal_id": "3l9QywDJ",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/EpVSFMhb"
+      },
+      {
+        "title": "GestureCap: Using markerless motion capture and gesture recognition for music generation",
+        "short_description": "Last year, work on GestureCap focused on developing an Arduino-based latency measurement system and optimizing the pipeline for low-latency...",
+        "description": "Last year, work on GestureCap focused on developing an Arduino-based latency measurement system and optimizing the pipeline for low-latency performance. Additionally, OSC-based communication between Python and PureData was implemented to enable real-time audio processing. Building on this foundation, this project will introduce AI-driven gesture recognition using lightweight, GPU-accelerated models to improve accuracy and responsiveness. The gesture-music mapping will be expanded to support both trigger-based events (e.g., drum beats) and continuous controls (e.g., pitch, reverb, and panning), allowing for more expressive musical interactions. The project will also integrate GestureCap with MaxMSP and Ableton Live, making it more accessible to musicians and producers. Further improvements will focus on latency reduction, real-time inference optimizations, and testing OpenPose-based feature extraction as a potential enhancement. If time permits, a visualizer for live gesture-music interaction will also be developed. These advancements will refine GestureCap’s capabilities, ensuring a more responsive and expressive experience for users.",
+        "student_name": "Deepansh Goel",
+        "code_url": "https://github.com/m2b3/gesturecap2025",
+        "proposal_id": "OHmJ6d3T",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/lxOVr6GO"
+      },
+      {
+        "title": "Developing standardised biophysically detailed neuronal circuit models using NeuroML",
+        "short_description": "This project will convert Macaque auditory thalamocortical circuits model based on NetPyNE implementation into NeuroML standard formats and testing...",
+        "description": "This project will convert Macaque auditory thalamocortical circuits model based on NetPyNE implementation into NeuroML standard formats and testing it across multiple simulation engines to ensure that it produce the same results. I'll convert the whole model.",
+        "student_name": "Hengye Zhu",
+        "code_url": "https://github.com/OpenSourceBrain/Macaque_auditory_thalamocortical_model_data/tree/feat-neuroml-gsoc",
+        "proposal_id": "QFzv7DVd",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/3MM7t8J3"
+      },
+      {
+        "title": "Developing an ISPC Backend for GeNN to Enable CPU-Based SNN Simulations",
+        "short_description": "GeNN is a C++ library used for simulating Spiking Neural Networks through GPU-based code generation (CUDA/HIP). Currently, its accessibility is...",
+        "description": "GeNN is a C++ library used for simulating Spiking Neural Networks through GPU-based code generation (CUDA/HIP). Currently, its accessibility is limited to users with a dedicated GPU system. This project aims to address this limitation by adding an ISPC (Intel’s Implicit SPMD Program Compiler) code generation backend model to the GeNN library to enable efficient SNN simulations on SIMD (Single Instruction, Multiple Data) capable CPUs .\nMy project will expand GeNN’s accessibility to those users who do not have a dedicated GPU system while delivering high performance through CPU SIMD parallelism. I will work on backend architecture design, SIMD optimization, build system integration, and benchmarking against existing GPU implementations .",
+        "student_name": "Jash Vora",
+        "code_url": "https://jrv7903.github.io/blog/GSoC2025/",
+        "proposal_id": "E32R7Vyl",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/ilNUQGQl"
+      },
+      {
+        "title": "DevoTG: Dynamic Graph Neural Networks for Modeling C. elegans Development",
+        "short_description": "The nematode Caenorhabditis elegans serves as a pivotal model organism in developmental biology due to its well-defined cell lineage, compact genome,...",
+        "description": "The nematode Caenorhabditis elegans serves as a pivotal model organism in developmental biology due to its well-defined cell lineage, compact genome, and the availability of comprehensive datasets detailing its development from a single cell to a complex multicellular organism. This project aims to leverage the existing DevoGraph framework to model the intricate developmental processes of C. elegans, specifically focusing on embryogenesis and the formation of its connectome, using advanced temporal graph techniques. The core methodology will involve employing Discrete-Time Dynamic Graph (DTDG) models, with an initial emphasis on the EvolveGCN architecture. The project will begin by constructing temporal graph representations from available C. elegans developmental datasets, including cell lineage and connectome data. Subsequently, EvolveGCN, a model known for its ability to handle evolving graph structures, will be applied and potentially adapted to capture the dynamic nature of these developmental processes. The expected outcomes include a functional implementation within the DevoGraph repository, a model capable of explaining key aspects of C. elegans development, and valuable insights into the efficacy of temporal graph techniques for addressing this complex biological problem. Furthermore, the project will explore potential future directions such as the visualization of the developmental graphs and the investigation of continuous-time models to capture finer developmental dynamics.",
+        "student_name": "JayaG",
+        "code_url": "https://github.com/DevoLearn/DevoGraph/tree/main/DevoTG",
+        "proposal_id": "K2WlAxao",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/gP6abSHH"
+      },
+      {
+        "title": "3. HarmonyHub: Front-end interface refactoring and expansion  for multi-instrument support",
+        "short_description": "HarmonyHub is an open-source, modular web application designed to revolutionize music education by integrating modern technologies and pedagogical...",
+        "description": "HarmonyHub is an open-source, modular web application designed to\nrevolutionize music education by integrating modern technologies and\npedagogical principles. Built using Ionic and Angular, it provides educators with\nreusable components and services to create adaptive and personalized\nlearning experiences. Initially focused on trumpet players, the platform is now\nbeing expanded to support other variable-pitch instruments like wind (e.g.,\nFlute, Clarinet) and bowed string instruments (e.g., Violin, Viola). By blending\ntraditional music instruction with cutting-edge digital tools, HarmonyHub\nenhances practice strategies, making learning more engaging and effective.\nMastering wind and bowed string instruments is challenging, requiring\nstructured practice and targeted support. HarmonyHub addresses this need by\nbridging the gap between conventional teaching methods and modern\ntechnological advancements, ensuring students receive interactive and\npersonalized guidance. In an era where digital transformation is redefining\neducation, integrating Information and Communication Technology (ICT) into\nmusic learning enhances skill development, creativity, and motivation. By\nrefining its interface and expanding its instrument coverage, HarmonyHub\npaves the way for a more inclusive, accessible, and innovative approach to\nmusic education.",
+        "student_name": "Komal Bhalotia",
+        "code_url": "https://gist.github.com/bhalotia05/0202d8d8cdab05e1b545c969440848bc",
+        "proposal_id": "iKRPZGJz",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/KIO5vKBn"
+      },
+      {
+        "title": "MODELING NEURAL DEVELOPMENTAL PROGRAMS OF C. elegans USING GROWING HYPERGRAPH NEURAL NETWORKS",
+        "short_description": "This proposal outlines a novel computational framework for modeling neural developmental programs using Growing Hypergraph Neural Networks (Growing...",
+        "description": "This proposal outlines a novel computational framework for modeling neural developmental programs using Growing Hypergraph Neural Networks (Growing HNNs). These models serve as unified representations by integrating both spatial and lineage dynamics during the embryo-genetic development. This is achieved by encoding cells, spatial structures, lineage relationships, and developmental cues into a dynamic hypergraph, this approach enables end-to-end simulation and prediction of neural growth, differentiation, and functional emergence. The framework is biologically inspired, scalable, and aligned with recent advances in graph neural networks and developmental biology. The goal is to model the cross-connections between diverging networks (anastomoses) using Hypergraphs during the embryo-genetic development.",
+        "student_name": "Lalith Bharadwaj",
+        "code_url": "https://github.com/DevoLearn/DevoGraph/tree/main/NDP-HNN",
+        "proposal_id": "DbczNIHo",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/YRLq7bQE"
+      },
+      {
+        "title": "ActiveVision: a data and model portal for the study of goal-directed vision",
+        "short_description": "This project develops an open portal for goal-directed vision research, integrating eye-tracking datasets and machine learning models with tools for...",
+        "description": "This project develops an open portal for goal-directed vision research, integrating eye-tracking datasets and machine learning models with tools for benchmarking and validation. A key focus is vision-language integration, enabling better task-driven attention modeling. This platform will also serve as a prototype for similar data+model initiatives on public hardware platforms, improving reproducibility and accessibility in multimodal AI research.",
+        "student_name": "Lihong Chen",
+        "code_url": "https://gist.github.com/lc542/a6d58ded278ab4d13570d5d99e7cb306",
+        "proposal_id": "pEGH718t",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/ZopxGpMS"
+      },
+      {
+        "title": "Develop Python API for Multi-Network Simulations in Human Neocortical Neurosolver (HNN)",
+        "short_description": "​The Human Neocortical Neurosolver (HNN) is an open-source neural modeling tool designed to help researchers and clinicians interpret human brain...",
+        "description": "​The Human Neocortical Neurosolver (HNN) is an open-source neural modeling tool designed to help researchers and clinicians interpret human brain imaging data. Currently, HNN primarily focuses on simulating neural activity within single neocortical columns. This project aims to extend HNN's capabilities by developing a Python API that facilitates multi-network simulations, enabling the modeling of interactions between multiple neocortical networks. This enhancement will provide neuroscientists with a more comprehensive tool to study complex brain interactions and better understand the neural mechanisms underlying MEG/EEG data. The project will involve designing and implementing the API, developing comprehensive documentation and tutorials, ensuring compatibility with existing HNN functionalities, and conducting validation tests to verify the accuracy and reliability of multi-network simulations. By expanding HNN's capabilities, this project will support a broader range of research applications, fostering innovation and collaboration within the neuroscience community",
+        "student_name": "Maira usman",
+        "code_url": "https://github.com/Myrausman/GSOC2025_INCF_HNN-Core/blob/main/README.md",
+        "proposal_id": "prf2xAlE",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/tOqXGb6K"
+      },
+      {
+        "title": "A Python Command Line Interface (CLI) for the CBRAIN Distributed Computing Platform",
+        "short_description": "The project will develop a Python-based CLI for CBRAIN using its Python API Client Swagger API, allowing advanced users to manage research data and...",
+        "description": "The project will develop a Python-based CLI for CBRAIN using its Python API Client Swagger API, allowing advanced users to manage research data and computational workflows directly via the API. This CLI will support data upload/download, file querying, task creation, execution, and monitoring, enabling remote access to complex research operations without relying on the web interface. The goal is to improve CBRAIN's usability by providing a flexible, programmatic tool for advanced research workflows.",
+        "student_name": "Md Asiful Alam",
+        "code_url": "https://github.com/aces/cbrain-cli",
+        "proposal_id": "F2VOxrUj",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/1An4Dp8N"
+      },
+      {
+        "title": "BreathState: an open-source Android/iOS and PC app for breathing and heart-rate synchronization",
+        "short_description": "The project will develop the first version of an app that uses Bluetooth to connect with heart-rate and respiration sensors, calculate metrics of...",
+        "description": "The project will develop the first version of an app that uses Bluetooth to connect with heart-rate and respiration sensors, calculate metrics of synchronization and variability based on these measurements and implement a biofeedback protocol to control this variability. This will allow the study of autonomic nervous function, and will allow biofeedback protocols for mood and health intervention to be implemented via live tracking of breathing and heart-rate. I plan to use the available open source code which is in python and re-write the modules in dart using the pub dev packages.",
+        "student_name": "Michael Lewis",
+        "code_url": "https://gist.github.com/michaelLewis04/126e29b5450704977f8c45c1d443813b",
+        "proposal_id": "hJWUlTAX",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/P9nXg703"
+      },
+      {
+        "title": "#23 SciCommons : A Social-Web Tool For Scientific Discussion, Interaction, Rating and Peer Review",
+        "short_description": "SciCommons is an open-source platform aimed at improving the scientific peer review process through better user experience and web application...",
+        "description": "SciCommons is an open-source platform aimed at improving the scientific peer review process through better user experience and web application optimization. It focuses on refining the frontend UI, following best practices, and enhancing performance. Contributors will work on UI improvements, optimizing API performance, and ensuring cross-platform compatibility.",
+        "student_name": "Mohd Faisal Ansari",
+        "code_url": "https://gist.github.com/airfusion64/e5fbdf58b33cbd3fb8adef69606f1abd",
+        "proposal_id": "7bBLFG3Y",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/qGyE3iBz"
+      },
+      {
+        "title": "Transitioning from Simulation-Based Inference to Automatic MCMC for Virtual Brain Inference",
+        "short_description": "This project aims to replace Simulation-Based Inference (SBI) methods with Markov Chain Monte Carlo (MCMC) techniques for inference problems...",
+        "description": "This project aims to replace Simulation-Based Inference (SBI) methods with Markov Chain Monte Carlo (MCMC) techniques for inference problems involving complex or intractable likelihood functions, such as those in Virtual Brain Inference (VBI). While SBI uses deep networks to approximate posterior distributions, it can introduce hard-to-control biases and limit interpretability. In contrast, MCMC provides a more principled Bayesian approach by directly sampling from the posterior. A key challenge in using MCMC methods like Hamiltonian Monte Carlo (HMC) and the No-U-Turn Sampler (NUTS) is their need for differentiable likelihoods, which are often unavailable in high-dimensional models like those for fMRI, EEG, or MEG data. This project addresses that issue by leveraging Automatic Differentiation (AD), which allows efficient gradient computation. Implemented in libraries like JAX, which enables fast, parallel computation on GPUs. The first goal is to translate existing Virtual Brain models - specifically the Montbrió model - into JAX. This model simulates brain dynamics and links simulated EEG BOLD dynamics to fMRI observations. Its parameters, currently estimated via SBI, will instead be inferred using MCMC for improved accuracy and scalability. Reparameterization strategies and hierarchical structures will be used to enhance MCMC performance and convergence. Deliverables include a JAX-based translation of the Montbrió model, implementation of MCMC-based inference, reparameterization strategies, benchmarking against SBI methods, and application to real neuroimaging data. The outcome will offer more robust tools for understanding neural dynamics and disorders, improving the accuracy and interpretability of brain models.",
+        "student_name": "Monica Paoletti",
+        "code_url": "https://github.com/monicapaoletti/GSoC_T3.3_inference/blob/84f4b10b00fae51801e3d6cf5a7d795b0883edb5/GSoC_final_submission.md",
+        "proposal_id": "KUn7IhBx",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/zCDQQX7p"
+      },
+      {
+        "title": "PROJECT #8: Brian Simulator ::  Replace Brian’s just-in-time compilation mechanism",
+        "short_description": "This project aims to replace Brian’s current just-in-time (JIT) compilation system, which relies on Cython. While functional, Cython introduces slow...",
+        "description": "This project aims to replace Brian’s current just-in-time (JIT) compilation system, which relies on Cython. While functional, Cython introduces slow compile times and adds complexity by requiring separate code generation paths for Python and C++.  \r\n\r\nThe goal is to simplify and speed up Brian's runtime by:  \r\n- Replacing Python-based structures (e.g. dynamic arrays, spike queues) with C++ equivalents  \r\n- Enabling direct, efficient C++ calls from Python with shared memory  \r\n- Exploring JIT alternatives like Numba or SciPy Weave  \r\n- Refactoring the runtime to support this new architecture",
+        "student_name": "Mrigesh_Thakur",
+        "code_url": "https://brian.discourse.group/t/gsoc-2025-replacing-brians-just-in-time-compilation-mechanism/1450/9",
+        "proposal_id": "8c5r4d0K",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/pHhJpEKr"
+      },
+      {
+        "title": "Brian2Wasm: simulations in the browser",
+        "short_description": "This project focuses on enhancing the overall workflow by improving the detection and configuration of the Emscripten toolchain. It aims to optimize...",
+        "description": "This project focuses on enhancing the overall workflow by improving the detection and configuration of the Emscripten toolchain. It aims to optimize data transfer between the WebAssembly simulation and JavaScript for efficient result visualization. Additionally, it provides user-friendly tools for website customization and plot display. Comprehensive documentation will be included to ensure ease of use and integration.",
+        "student_name": "Palash Chitnavis",
+        "code_url": "https://brian.discourse.group/t/gsoc-2025-brian2wasm-simulations-in-the-browser/1452",
+        "proposal_id": "WFBqt0tG",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/bzxZlEfN"
+      },
+      {
+        "title": "Harmony Hub: Using Generative AI for Adaptive Learning in Music",
+        "short_description": "While music educators strive to provide personalized learning paths, existing educational tools often lack the flexibility to adapt to diverse...",
+        "description": "While music educators strive to provide personalized learning paths, existing educational tools often lack the flexibility to adapt to diverse student needs. HarmonyHub bridges this gap by integrating Generative AI into a modular, web-based platform, empowering teachers to design customized exercises and dynamically adjust lessons based on individual progress.By leveraging AI-assisted personalization, HarmonyHub enhances the teacher’s ability to cater to different learning styles, ensuring a more engaging and effective music education experience for all students.\n\n2. Key Features\nThis project contributes to the open-source music education ecosystem by:\nEmpowering teachers with AI-driven tools for personalized lesson planning.\nProviding a no-code interface to enable educators to create and modify exercises.\nEnhancing inclusivity by tailoring lessons based on students’ technical proficiency, learning speed, and backgrounds.\nExpanding the Harmony Hub ecosystem by integrating Generative AI for real-time content creation and assessment.\nDemonstrating how LLMs can be effectively applied to domains involving non-textual data, such as music.",
+        "student_name": "PRIYANSHU2026",
+        "code_url": "https://gist.github.com/PRIYANSHU2026/924ee51ab3704b452ace5823c0c5b7ed",
+        "proposal_id": "Wup4UTtT",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/e2mngo2U"
+      },
+      {
+        "title": "Automating BIDS Dataset Registration into the EBRAINS Knowledge Graph",
+        "short_description": "This project aims to build an automated workflow to register BIDS-compliant neuroimaging datasets from external repositories (e.g. Public nEUro) into...",
+        "description": "This project aims to build an automated workflow to register BIDS-compliant neuroimaging datasets from external repositories (e.g. Public nEUro) into the EBRAINS Knowledge Graph. Using the bids2openMINDS converter and EBRAINS APIs, the pipeline will convert BIDS metadata into openMINDS JSON-LD format and programmatically submit it to EBRAINS. The solution will eliminate manual submission, improving scalability, metadata consistency, and dataset discoverability. Deliverables include a secure authentication module, an end-to-end ingestion pipeline, documentation, and a user tutorial. Optional features include batch submission support and broader modality coverage.",
+        "student_name": "Renqing Cuomao",
+        "code_url": "https://gitlab.ebrains.eu/ri/projects-and-initiatives/bids2ebrains/bids2ebrains/-/tree/dev",
+        "proposal_id": "qvH7ukMd",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/n3fNbjpO"
+      },
+      {
+        "title": "Parallel Filter Implementation for ASP/IJ",
+        "short_description": "The Active Segmentation Platform for ImageJ (ASP/IJ) aims to provide a general-purpose workbench that allows biologists and other domain experts to...",
+        "description": "The Active Segmentation Platform for ImageJ (ASP/IJ) aims to provide a general-purpose workbench that allows biologists and other domain experts to access state-of-the-art techniques in machine learning to achieve excellent image segmentation and classification. This project aims to speed up the convolution engine  in ASP/IJ by implementing GPU parallelization using JCuda, a Java-based framework for CUDA. Currently, the convolution engine runs only on the CPU.",
+        "student_name": "Rikas Ilamdeen",
+        "code_url": "https://github.com/sumit3203/ACTIVESEGMENTATION/pull/89",
+        "proposal_id": "9jaqwFOr",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/Dbuw5Bsp"
+      },
+      {
+        "title": "[Project 20] Build an AI Agent for KnowledgeSpace using Retrieval-Augmented Generation (RAG)",
+        "short_description": "This project builds an AI-powered agent for KnowledgeSpace using Retrieval-Augmented Generation (RAG) to deliver precise, context-aware, and...",
+        "description": "This project builds an AI-powered agent for KnowledgeSpace using Retrieval-Augmented Generation (RAG) to deliver precise, context-aware, and scientifically accurate answers. It combines Elasticsearch results with vector search (e.g., Vertex AI Vector Search) through an agentic system implemented in LangGraph, which orchestrates tool calls and fuses evidence for high-quality responses. The backend is a FastAPI service deployed on Google Cloud Platform with Vertex AI, and the frontend is a responsive React application. An automated update script regularly ingests new datasets and refreshes indices/embeddings to keep answers current. Together, these components streamline how neuroscientists explore and use complex neuroscience data.",
+        "student_name": "Swastik R",
+        "code_url": "https://github.com/INCF/knowledge-space-agent",
+        "proposal_id": "9f3zlXLG",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/6fMVQPH7"
+      },
+      {
+        "title": "19. Contribute to LORIS",
+        "short_description": "LORIS is a comprehensive data management platform that supports diverse datasets in neuroscience research, including imaging, behavioural, clinical,...",
+        "description": "LORIS is a comprehensive data management platform that supports diverse datasets in neuroscience research, including imaging, behavioural, clinical, and genetic data. As part of my contributions, I will focus on implementing new modules to extend the platform’s capabilities. These modules may include advanced data processing pipelines, automated anomaly detection for quality control, and enhanced user authentication mechanisms to ensure secure access to sensitive medical data. Additionally, I aim to develop tools for improved data annotation, visualisation, and integration with external analytics frameworks. By enhancing the modular architecture of LORIS, my work will help streamline research workflows, improve data integrity, and facilitate broader adoption of the platform within the scientific community.",
+        "student_name": "T Saket Hatwar",
+        "code_url": "https://docs.google.com/document/d/1ubVx64cVuoAg4ma9ESSu5w32jME6m2e32SzGcuhN74Y/edit?usp=sharing",
+        "proposal_id": "930pnRdG",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/CEifUSW2"
+      },
+      {
+        "title": "Fullstack cloud deployment for NiiVue",
+        "short_description": "NiiVue is a versatile tool for visualizing and handling neuroimaging data, but insufficient documentation creates friction in using it in deploying...",
+        "description": "NiiVue is a versatile tool for visualizing and handling neuroimaging data, but insufficient documentation creates friction in using it in deploying workflows. This makes it challenging for developers to integrate, reducing the usability of NiiVue.\n\nAs demand grows for secure and efficient web-based processing, this project aims to provide a demo that helps developers implement and customize cloud providers and analysis tools for scalable, secure neuroimaging workflows. \n\nThis project will develop a full-stack solution for scalable neuroimaging analysis, integrating client-side preprocessing with Niimath and visualization using NiiVue. A PostgreSQL database will be designed to manage neuroimaging tasks and results. Two backend approaches will be tested: one using Flask with Nipype to interface with neuroimaging tools like FSL and FreeSurfer, supporting parallel processing, and another using Flask with containerized neuroimaging tools managed via Docker orchestration (Kubernetes/ECS) for greater flexibility. The system will be deployed on AWS with secure infrastructure, including EC2 and S3, ensuring data security through encryption and access control. A minimal demo will showcase the workflow using FSL BET or FreeSurfer, accompanied by clear documentation for easy replication and deployment by developers with their own cloud provider.",
+        "student_name": "Thuy T. Dao",
+        "code_url": "https://iishiishii.github.io/projects/2_project/",
+        "proposal_id": "xaEIJCnY",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/h9cDmi0E"
+      },
+      {
+        "title": "Project 28 Analysim , Preparing for beta release by adding admin section, forking datasets etc.",
+        "short_description": "Project Deliverables • Admin Section : Implement an admin dashboard to manage users, projects, and datasets. Add moderation tools for handling...",
+        "description": "Project Deliverables\n• Admin Section : Implement an admin dashboard to manage users, projects, and datasets. Add moderation tools for handling flagged content and project approvals. Implement role-based access control (RBAC) for better user management. \n• Forking Datasets/Projects : Enable users to fork existing projects and datasets, creating editable copies. Implement versioning & attribution tracking for forked projects. Ensure that forked projects maintain links to original versions. Provide users with a UI to track changes between original and forked projects. \n• Following/Joining Projects : Allow users to follow projects for updates and notifications. Implement a Join Project feature requiring owner approval for collaborations. \n• Project Dashboard Improvements : Improve UI/UX for easier navigation and better data organization. Add interactive components for better visualization of project statistics. Enable filtering and sorting options for users to manage multiple projects efficiently. \n• Notebook Management Enhancements : Enhance notebook versioning, metadata, and organization. Improve JupyterLite integration for a smoother editing experience. Implement a notebook history tracker, allowing users to revert to previous versions. \n• Publication List Enhancements : Improve publication listing, filtering, and categorization. Enable direct linking to project-related publications. \n• Versioning & Querying Enhancements : Implement dataset version control for reproducibility. Improve querying components to facilitate advanced data filtering. Enable users to compare different versions of datasets using a visual diff tool.",
+        "student_name": "Uday Biswas",
+        "code_url": "https://docs.google.com/document/d/1NzNeA1kY5EUMyOTtLE1jScEcSI9-Cag6EJJhQSXqhvU/edit?usp=sharing",
+        "proposal_id": "UvDWxjtD",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/RofHkXYa"
+      },
+      {
+        "title": "Open Source Community Sustainability",
+        "short_description": "SustainHub is an AI-driven simulation platform designed to study and enhance the sustainability of open-source communities. It models contributors,...",
+        "description": "SustainHub is an AI-driven simulation platform designed to study and enhance the sustainability of open-source communities. It models contributors, tasks, and decision-making using reinforcement learning to mimic real-world collaboration dynamics. By integrating methods like Multi-Armed Bandits for task allocation and SARSA for adaptive learning, SustainHub provides insights into workload balance, contributor retention, and project health. The system introduces quantitative metrics such as the Harmony Index to measure long-term sustainability. Ultimately, SustainHub helps researchers and organizations design strategies for thriving, resilient open-source ecosystems.",
+        "student_name": "Vidhi Rohira",
+        "code_url": "https://medium.com/orel-group/google-summer-of-code-2025-at-orel-orthogonal-research-and-education-lab-in-incf-international-741b99b25d1e",
+        "proposal_id": "mcZkFBPa",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/5ar0UXAF"
+      }
+    ],
+    "2026": []
   },
   "githubID": "INCF",
   "repositories": [
@@ -1614,16 +1842,56 @@
       "full_name": "INCF/knowledge-space-agent",
       "html_url": "https://github.com/INCF/knowledge-space-agent",
       "description": "GenAI Chat agent for Knowledge Space",
-      "language": null,
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
+      "language": "Python",
+      "stargazers_count": 22,
+      "forks_count": 36,
+      "open_issues_count": 36,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
         "spdx_id": "Apache-2.0",
         "url": "https://api.github.com/licenses/apache-2.0",
         "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 379617341,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzNzk2MTczNDE=",
+      "name": "artem-is",
+      "full_name": "INCF/artem-is",
+      "html_url": "https://github.com/INCF/artem-is",
+      "description": "https://incf.github.io/artem-is/",
+      "language": "Python",
+      "stargazers_count": 15,
+      "forks_count": 23,
+      "open_issues_count": 30,
+      "license": {
+        "key": "cc-by-4.0",
+        "name": "Creative Commons Attribution 4.0 International",
+        "spdx_id": "CC-BY-4.0",
+        "url": "https://api.github.com/licenses/cc-by-4.0",
+        "node_id": "MDc6TGljZW5zZTI1"
+      },
+      "topics": []
+    },
+    {
+      "id": 71465821,
+      "node_id": "MDEwOlJlcG9zaXRvcnk3MTQ2NTgyMQ==",
+      "name": "csa",
+      "full_name": "INCF/csa",
+      "html_url": "https://github.com/INCF/csa",
+      "description": "The Python implementation of the Connection-Set Algebra",
+      "language": "Python",
+      "stargazers_count": 15,
+      "forks_count": 25,
+      "open_issues_count": 21,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
       },
       "topics": []
     },
@@ -1635,9 +1903,9 @@
       "html_url": "https://github.com/INCF/nineml-python",
       "description": "A Python library for reading, parsing, validating and writing the 9ML (http://nineml.net) object model",
       "language": "Python",
-      "stargazers_count": 6,
-      "forks_count": 9,
-      "open_issues_count": 11,
+      "stargazers_count": 8,
+      "forks_count": 14,
+      "open_issues_count": 14,
       "license": {
         "key": "other",
         "name": "Other",
@@ -1655,9 +1923,9 @@
       "html_url": "https://github.com/INCF/MUSIC",
       "description": "MUSIC, the MUltiSimulation Coordinator",
       "language": "C++",
-      "stargazers_count": 43,
-      "forks_count": 49,
-      "open_issues_count": 43,
+      "stargazers_count": 46,
+      "forks_count": 55,
+      "open_issues_count": 44,
       "license": {
         "key": "gpl-3.0",
         "name": "GNU General Public License v3.0",
@@ -1677,28 +1945,8 @@
       "language": null,
       "stargazers_count": 0,
       "forks_count": 1,
-      "open_issues_count": 1,
+      "open_issues_count": 2,
       "license": null,
-      "topics": []
-    },
-    {
-      "id": 379617341,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzNzk2MTczNDE=",
-      "name": "artem-is",
-      "full_name": "INCF/artem-is",
-      "html_url": "https://github.com/INCF/artem-is",
-      "description": "https://incf.github.io/artem-is/",
-      "language": "Python",
-      "stargazers_count": 14,
-      "forks_count": 15,
-      "open_issues_count": 22,
-      "license": {
-        "key": "cc-by-4.0",
-        "name": "Creative Commons Attribution 4.0 International",
-        "spdx_id": "CC-BY-4.0",
-        "url": "https://api.github.com/licenses/cc-by-4.0",
-        "node_id": "MDc6TGljZW5zZTI1"
-      },
       "topics": []
     },
     {
@@ -1710,7 +1958,7 @@
       "description": "NeuroImaging Quality Control (niQC)",
       "language": "JavaScript",
       "stargazers_count": 13,
-      "forks_count": 19,
+      "forks_count": 23,
       "open_issues_count": 15,
       "license": {
         "key": "mit",
@@ -1735,9 +1983,9 @@
       "html_url": "https://github.com/INCF/neuroshapes",
       "description": "Open schemas for F.A.I.R. neuroscience data",
       "language": "Python",
-      "stargazers_count": 41,
-      "forks_count": 35,
-      "open_issues_count": 73,
+      "stargazers_count": 43,
+      "forks_count": 43,
+      "open_issues_count": 80,
       "license": {
         "key": "cc-by-4.0",
         "name": "Creative Commons Attribution 4.0 International",
@@ -1793,9 +2041,9 @@
       "html_url": "https://github.com/INCF/knowledge-space",
       "description": "KnowledgeSpace (KS) is a data-driven encyclopedia and search engine for the neuroscience community.",
       "language": "HTML",
-      "stargazers_count": 7,
-      "forks_count": 16,
-      "open_issues_count": 5,
+      "stargazers_count": 8,
+      "forks_count": 19,
+      "open_issues_count": 8,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -1817,8 +2065,8 @@
       "html_url": "https://github.com/INCF/neuroscience-data-structure",
       "description": "Space for discussion of a standardized structure (directory layout + metadata) for experimental data in systems neuroscience, similar to the idea of BIDS in neuroimaging",
       "language": "Python",
-      "stargazers_count": 21,
-      "forks_count": 3,
+      "stargazers_count": 23,
+      "forks_count": 5,
       "open_issues_count": 16,
       "license": null,
       "topics": []
@@ -1864,26 +2112,6 @@
       "topics": []
     },
     {
-      "id": 71465821,
-      "node_id": "MDEwOlJlcG9zaXRvcnk3MTQ2NTgyMQ==",
-      "name": "csa",
-      "full_name": "INCF/csa",
-      "html_url": "https://github.com/INCF/csa",
-      "description": "The Python implementation of the Connection-Set Algebra",
-      "language": "Python",
-      "stargazers_count": 13,
-      "forks_count": 17,
-      "open_issues_count": 6,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": []
-    },
-    {
       "id": 47213909,
       "node_id": "MDEwOlJlcG9zaXRvcnk0NzIxMzkwOQ==",
       "name": "HAWG-examples",
@@ -1905,7 +2133,7 @@
       "html_url": "https://github.com/INCF/automaticanalysis",
       "description": "Automatic Analysis (aa)",
       "language": "MATLAB",
-      "stargazers_count": 2,
+      "stargazers_count": 1,
       "forks_count": 2,
       "open_issues_count": 4,
       "license": {
@@ -1926,7 +2154,7 @@
       "description": "INCF Interactive Viewer Plugin",
       "language": "JavaScript",
       "stargazers_count": 2,
-      "forks_count": 1,
+      "forks_count": 0,
       "open_issues_count": 5,
       "license": null,
       "topics": []
@@ -1939,9 +2167,9 @@
       "html_url": "https://github.com/INCF/eeg-database",
       "description": " EEG/ERP portal enables community researchers to store, update, download and search data and metadata from EEG/ERP experiments. The system is developed as a standalone product; the database access is available through a web interface.",
       "language": "Java",
-      "stargazers_count": 51,
-      "forks_count": 19,
-      "open_issues_count": 32,
+      "stargazers_count": 54,
+      "forks_count": 24,
+      "open_issues_count": 31,
       "license": null,
       "topics": []
     },
@@ -1954,7 +2182,7 @@
       "description": null,
       "language": "Java",
       "stargazers_count": 3,
-      "forks_count": 5,
+      "forks_count": 6,
       "open_issues_count": 6,
       "license": null,
       "topics": []
@@ -1967,7 +2195,7 @@
       "html_url": "https://github.com/INCF/bids-validator",
       "description": "Placeholder. This content has moved to https://github.com/bids-standard/bids-validator",
       "language": "HTML",
-      "stargazers_count": 1,
+      "stargazers_count": 2,
       "forks_count": 3,
       "open_issues_count": 0,
       "license": null,
@@ -2134,6 +2362,54 @@
   ],
   "contributorsDetails": [
     {
+      "login": "QuantumByte-01",
+      "id": 150924480,
+      "node_id": "U_kgDOCP7swA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/150924480?v=4",
+      "html_url": "https://github.com/QuantumByte-01",
+      "contributions": 50
+    },
+    {
+      "login": "HARSHDIPSAHA",
+      "id": 141698575,
+      "node_id": "U_kgDOCHImDw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/141698575?v=4",
+      "html_url": "https://github.com/HARSHDIPSAHA",
+      "contributions": 2
+    },
+    {
+      "login": "pragati-0208",
+      "id": 209926680,
+      "node_id": "U_kgDODIM6GA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/209926680?v=4",
+      "html_url": "https://github.com/pragati-0208",
+      "contributions": 2
+    },
+    {
+      "login": "mustafat52",
+      "id": 114147039,
+      "node_id": "U_kgDOBs2-3w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114147039?v=4",
+      "html_url": "https://github.com/mustafat52",
+      "contributions": 1
+    },
+    {
+      "login": "ulekarsiddhant0-boop",
+      "id": 236006214,
+      "node_id": "U_kgDODhErRg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/236006214?v=4",
+      "html_url": "https://github.com/ulekarsiddhant0-boop",
+      "contributions": 1
+    },
+    {
+      "login": "tisha-varma",
+      "id": 180446439,
+      "node_id": "U_kgDOCsFk5w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/180446439?v=4",
+      "html_url": "https://github.com/tisha-varma",
+      "contributions": 1
+    },
+    {
       "login": "visakhmr",
       "id": 1980366,
       "node_id": "MDQ6VXNlcjE5ODAzNjY=",
@@ -2142,35 +2418,115 @@
       "contributions": 1
     },
     {
-      "login": "tclose",
-      "id": 1054870,
-      "node_id": "MDQ6VXNlcjEwNTQ4NzA=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1054870?v=4",
-      "html_url": "https://github.com/tclose",
-      "contributions": 439
-    },
-    {
-      "login": "apdavison",
-      "id": 260552,
-      "node_id": "MDQ6VXNlcjI2MDU1Mg==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/260552?v=4",
-      "html_url": "https://github.com/apdavison",
-      "contributions": 92
-    },
-    {
-      "login": "Alkholy53",
-      "id": 111626073,
-      "node_id": "U_kgDOBqdHWQ",
-      "avatar_url": "https://avatars.githubusercontent.com/u/111626073?v=4",
-      "html_url": "https://github.com/Alkholy53",
+      "login": "zohaib-7035",
+      "id": 196353530,
+      "node_id": "U_kgDOC7Qd-g",
+      "avatar_url": "https://avatars.githubusercontent.com/u/196353530?v=4",
+      "html_url": "https://github.com/zohaib-7035",
       "contributions": 1
     },
     {
-      "login": "sanjayankur31",
-      "id": 102575,
-      "node_id": "MDQ6VXNlcjEwMjU3NQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/102575?v=4",
-      "html_url": "https://github.com/sanjayankur31",
+      "login": "sam22ridhi",
+      "id": 87869105,
+      "node_id": "MDQ6VXNlcjg3ODY5MTA1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/87869105?v=4",
+      "html_url": "https://github.com/sam22ridhi",
+      "contributions": 1
+    },
+    {
+      "login": "subh123321",
+      "id": 193154707,
+      "node_id": "U_kgDOC4NOkw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193154707?v=4",
+      "html_url": "https://github.com/subh123321",
+      "contributions": 1
+    },
+    {
+      "login": "Remi-Gau",
+      "id": 6961185,
+      "node_id": "MDQ6VXNlcjY5NjExODU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6961185?v=4",
+      "html_url": "https://github.com/Remi-Gau",
+      "contributions": 69
+    },
+    {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "html_url": "https://github.com/apps/dependabot",
+      "contributions": 14
+    },
+    {
+      "login": "asoskic",
+      "id": 34712730,
+      "node_id": "MDQ6VXNlcjM0NzEyNzMw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/34712730?v=4",
+      "html_url": "https://github.com/asoskic",
+      "contributions": 13
+    },
+    {
+      "login": "robertoostenveld",
+      "id": 899043,
+      "node_id": "MDQ6VXNlcjg5OTA0Mw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/899043?v=4",
+      "html_url": "https://github.com/robertoostenveld",
+      "contributions": 2
+    },
+    {
+      "login": "peeplika",
+      "id": 109645817,
+      "node_id": "U_kgDOBokP-Q",
+      "avatar_url": "https://avatars.githubusercontent.com/u/109645817?v=4",
+      "html_url": "https://github.com/peeplika",
+      "contributions": 2
+    },
+    {
+      "login": "its-me-abhishek",
+      "id": 114338679,
+      "node_id": "U_kgDOBtCrdw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114338679?v=4",
+      "html_url": "https://github.com/its-me-abhishek",
+      "contributions": 1
+    },
+    {
+      "login": "mdjurfeldt",
+      "id": 3612425,
+      "node_id": "MDQ6VXNlcjM2MTI0MjU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3612425?v=4",
+      "html_url": "https://github.com/mdjurfeldt",
+      "contributions": 112
+    },
+    {
+      "login": "jougs",
+      "id": 2678428,
+      "node_id": "MDQ6VXNlcjI2Nzg0Mjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2678428?v=4",
+      "html_url": "https://github.com/jougs",
+      "contributions": 3
+    },
+    {
+      "login": "pherbers",
+      "id": 7869416,
+      "node_id": "MDQ6VXNlcjc4Njk0MTY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7869416?v=4",
+      "html_url": "https://github.com/pherbers",
+      "contributions": 3
+    },
+    {
+      "login": "bjuergens",
+      "id": 4362465,
+      "node_id": "MDQ6VXNlcjQzNjI0NjU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4362465?v=4",
+      "html_url": "https://github.com/bjuergens",
+      "contributions": 1
+    },
+    {
+      "login": "espenhgn",
+      "id": 2492641,
+      "node_id": "MDQ6VXNlcjI0OTI2NDE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2492641?v=4",
+      "html_url": "https://github.com/espenhgn",
       "contributions": 1
     }
   ],

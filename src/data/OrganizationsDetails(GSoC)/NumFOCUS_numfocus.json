@@ -45,7 +45,8 @@
     2022,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2016": [
@@ -2103,21 +2104,319 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/oEBt7vSe"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "From \"Stringly Typed\" to \"Strongly Typed\" Arguments in sbi",
+        "short_description": "sbi is an open-source Python package used for simulation-based inference. It provides an interface for running algorithms that are used to identify...",
+        "description": "sbi is an open-source Python package used for simulation-based inference. It provides an interface for running algorithms that are used to identify model parameters that are consistent with data. Currently, this project uses “stringly typed” values for its functions' arguments. Even though stringly typed code is flexible and easier to implement, it comes with a set of drawbacks. Using stringly typed code leads to a suboptimal developer experience with limited IDE support and subtle bugs that are hard to identify and fix. This project aims to improve the developer experience and mitigate these issues by updating arguments in functions to use strongly typed code. In addition, it plans to create a pattern for sbi contributors to follow when defining new functions and classes that would otherwise use stringly typed arguments.",
+        "student_name": "Abel Abate",
+        "code_url": "https://gist.github.com/abelaba/7683bcce527f2499160978bc3b85dd00",
+        "proposal_id": "QQlvQRzu",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/pPYqxGL6"
+      },
+      {
+        "title": "Adding embarrassingly parallel graph algorithms in nx-parallel",
+        "short_description": "Expanded and enhanced nx-parallel, a parallel backend for NetworkX that leverages joblib to parallelize graph algorithms. I implemented several...",
+        "description": "Expanded and enhanced nx-parallel, a parallel backend for NetworkX that leverages joblib to parallelize graph algorithms. I implemented several embarrassingly parallel algorithms, analyzed their performance speedups, and optimized existing implementations with the help of a mem-mapping approach. Additionally, I switched the default configuration to use NetworkX’s system in place of joblib’s, developed a more reliable timing script to reduce measurement variability, introduced a `should_run` mechanism to determine when the parallel backend should be applied, and improved ASV benchmarks by adding setup functions for consistent performance testing. The entire development workflow was documented in a series of eight GSoC blogs, published biweekly throughout the project duration.",
+        "student_name": "Akshita Sure",
+        "code_url": "https://akshitasure12.github.io/",
+        "proposal_id": "N9I4BYNH",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/GxfLMOTC"
+      },
+      {
+        "title": "State-Space Models: Dynamic Factor Models",
+        "short_description": "State-space models (SSMs) provide a flexible framework for modeling dynamic systems where latent states evolve over time. In econometrics, Dynamic...",
+        "description": "State-space models (SSMs) provide a flexible framework for modeling dynamic systems where\nlatent states evolve over time. In econometrics, Dynamic Factor Models (DFMs) are widely\nused to capture the co-movement of multiple time series by assuming that a small number of\nlatent factors drive the observed variables. The PyMC library already includes implemen-\ntations of SARIMAX, VARMAX, and structural state-space models, along with example\nnotebooks for their usage. This project aims to extend the existing PyMC state-space module by implementing Dynamic Factor Models, aligning with the functionality available in\nstatsmodels. Our implementation will follow a Bayesian approach, leveraging PyMC’s probabilistic programming\nframework and PyTensor for computation. Additionally, an accompanying example notebook will demonstrate estimation, forecasting, and causal analysis with the new model,\nensuring accessibility for users.\nThis enhancement will significantly expand PyMC's capabilities, empowering student, practitioners and researchers in econometrics, macroeconomics, and beyond to model complex time-series data probabilistically.",
+        "student_name": "Andrea Catelli",
+        "code_url": "https://andreacate.github.io/gsoc/",
+        "proposal_id": "FhdBlLOy",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/OU9piGFJ"
+      },
+      {
+        "title": "Versioning System for DISCOVER Cookbook",
+        "short_description": "This project focuses on implementing a versioning system for the DISCOVER Cookbook, enabling seamless navigation across distinct documentation...",
+        "description": "This project focuses on implementing a versioning system for the DISCOVER Cookbook, enabling seamless navigation across distinct documentation editions via a dynamic, metadata-informed version-switching interface. Moreover, each version will support multiple languages, necessitating the development of both version and language switchers.\n\nLeveraging Git branches and an enhanced GitHub Actions deployment pipeline, the project will programmatically build and deploy versioned instances, ensuring persistent access to historical content alongside current revisions.\n\nThe user interface will include a dynamic version-switching mechanism and a context-aware notification banner to alert users when they are viewing outdated content.\n\nThis enhancement will improve the usability, maintainability, and accessibility of the Cookbook for both users and contributors, while providing maintainers with a scalable and transparent content management workflow.",
+        "student_name": "Ashish Mahajan",
+        "code_url": "https://gist.github.com/AR21SM/f351a85dcc897c740a9f123bcd0a3972",
+        "proposal_id": "TbjLxyav",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/ovpNbdUa"
+      },
+      {
+        "title": "Multidimensional SDE PINN solvers",
+        "short_description": "Stochastic dynamical systems play an important role in scientific and engineering domains, particularly in systems governed by Brownian motion or...",
+        "description": "Stochastic dynamical systems play an important role in scientific and engineering domains, particularly in systems governed by Brownian motion or subject to random perturbations from the environment. Stochastic Differential Equations (SDEs) and Stochastic Partial Differential Equations (SPDEs) provide a mathematical framework to describe such complex stochastic behaviour. Understanding the hidden physics within these systems is pretty much essential for analyzing their stochastic and nonlinear dynamics.\n\nThe NeuralPDE package in the SciML ecosystem currently lacks documentation for its existing SDE Physics-Informed Neural Network (PINN) solver and does not yet support multidimensional SDEs and SPDEs. This project aims to document the existing solver while also extending it to include PINN solvers for multidimensional SDEs based on the Wiener expansion, which expresses stochastic solutions as spectral expansions in terms of a set of random basis functions. The proposed SDE PINN solver uses the Kosambi-Karhunen-Loève (KKL) expansion for the Wiener process to obtain finite-dimensional approximations, effectively transforming SDEs into rough path ODEs. These ODEs can then be solved using the standard loss function formulation of PINNs for ODEs.\n\nAs a natural extension, this approach can be generalized to SPDEs using the Polynomial Chaos Expansion (PCE), which extends the Wiener expansion to handle spatially distributed noise in stochastic systems. By developing and implementing these solvers, this project aims to enhance NeuralPDE's capabilities in solving high-dimensional stochastic systems, making it a more comprehensive tool for data-driven modelling and simulation of stochastic dynamical systems.",
+        "student_name": "Astitva Aggarwal",
+        "code_url": "https://github.com/SciML/NeuralPDE.jl/pull/956",
+        "proposal_id": "QSu6ACOR",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/SayjRFPs"
+      },
+      {
+        "title": "SubOrganization: Aeon Project #3: Forecasting – Deep Learning for Forecasting",
+        "short_description": "Time series forecasting is paramount in many domains, including finance, healthcare, energy, and climate science. This project suggests incorporating...",
+        "description": "Time series forecasting is paramount in many domains, including finance, healthcare, energy, and climate science. This project suggests incorporating deep learning-based forecasting models—Informer, TCN, and DeepAR—into the aeon/tookit. The objectives are to construct an efficient and scalable framework for forecasting that accommodates top-performing models, is compatible with Aeon’s data management, and provides stable training, evaluation, and documentation. Through simplifying the\navailability of advanced forecasting software, the project would make it easier to utilize the toolkit to assist researchers with streamlined time series analysis.",
+        "student_name": "balgopal",
+        "code_url": "https://gist.github.com/lucifer4073/9c47bec3fe4f180c0fec5afce5f74bde",
+        "proposal_id": "XgNTLDNe",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/arjEn266"
+      },
+      {
+        "title": "Community detection guide with igraph",
+        "short_description": "Community detection is one of the most commonly used network analysis techniques. It is the process of grouping nodes of a network together based on...",
+        "description": "Community detection is one of the most commonly used network analysis techniques. It is the process of grouping nodes of a network together based on their connections, with the scope of finding clusters which are more connected internally than externally. By uncovering these communities one can gain insight into how groups interact and how the network is organized. Community detection finds use in various scientific disciplines, including biology, neuroscience, sociology, and physics. \nThis project aims to develop a hands-on guide to community detection with python-igraph, tailored to empirical researchers who may only have limited network science experience. The guide will be delivered in the form of an interactive, executable document, and will include detailed code examples, case studies, and visual demonstrations of the main concepts of community detection. We will cover key ideas such as modularity, hierarchical clustering, consensus clustering, and overlapping communities. Additionally, we will provide brief descriptions of community detection methods and their tradeoffs, along with examples of visualization techniques.",
+        "student_name": "Bea Márton",
+        "code_url": "https://medium.com/@marton.ildikobeata/final-submission-gsoc2025-f825853a344a",
+        "proposal_id": "vRD6VfmI",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/yD4aJtvm"
+      },
+      {
+        "title": "Creating New Plots with Bayesplot (Stan)",
+        "short_description": "The bayesplot package is a key tool in the Stan ecosystem for visualizing Bayesian analysis results. However, it currently lacks specialized...",
+        "description": "The bayesplot package is a key tool in the Stan ecosystem for visualizing Bayesian analysis results. However, it currently lacks specialized visualizations for predictive checks of discrete and categorical outcomes, and some existing plots could be improved for better usability and accuracy. These limitations hinder researchers' ability to thoroughly validate their models against real-world data, particularly for discrete and bounded data types.\r\n\r\nThis project aims to expand and refine bayesplot by implementing new visualization techniques based on recommendations from Säilynoja et al. (2025). \r\n\r\nDeliverables:\r\nNew plotting functions integrated into bayesplot (e.g., ppc_density_bounded, calibration plots).\r\nEnhanced versions of existing functions (e.g., rootograms, residual plots).\r\nComprehensive documentation with examples and guides.\r\nUnit tests for robustness and edge cases.\r\nBlog posts tracking progress and showcasing new features.\r\n\r\nBy the end of the project, bayesplot will offer a more versatile and user-friendly toolkit for Bayesian model checking, strengthening its role in the Stan community. These improvements will empower researchers to diagnose and communicate model fit more effectively, advancing Bayesian workflows across disciplines like machine learning, statistics, and data science.",
+        "student_name": "Behram",
+        "code_url": "https://behramulukir.github.io/gsoc-diaries-8-final-evaluation/",
+        "proposal_id": "5XqxINgB",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/wAdAD4kH"
+      },
+      {
+        "title": "Adding Translation System for DISCOVER Cookbook",
+        "short_description": "Currently, the Cookbook has multiple resources that can help any event became inclusive and accessible to everyone. However, its accessibility...",
+        "description": "Currently, the Cookbook has multiple resources that can help any event became inclusive and accessible to everyone. However, its accessibility remains limited due to its exclusive support for English. This language restriction creates a barrier for a global audience, preventing many from fully benefiting from its guidance.\nThis project aims to develop a comprehensive translation workflow for the DISCOVER Cookbook, enabling seamless multilingual support. A language selection mechanism will be integrated within the book, allowing users to easily switch between available translations. Additionally, an automated update system will be implemented to ensure translations remain synchronized as content evolves. To maintain high-quality translations, the project will engage and onboard community translators, fostering collaboration and sustainability in the translation process.",
+        "student_name": "Dia29",
+        "code_url": "https://rebrand.ly/6cxjb3x",
+        "proposal_id": "isPHCAP2",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/iMKr9viy"
+      },
+      {
+        "title": "LiftOver2D: A Tool for Converting Hi-C Matrices Across Assemblies and Binning Schemes",
+        "short_description": "The LiftOver2D project aims to develop a high-performance tool for converting Hi-C matrices between different genome assemblies and binning schemes....",
+        "description": "The LiftOver2D project aims to develop a high-performance tool for converting Hi-C matrices between different genome assemblies and binning schemes. This functionality is essential for integrating data from various sources and experiments — especially with the growing popularity of multi-omics approaches and the increasing availability of public datasets. Existing solutions, such as HiCLift, offer partial support but often fail to provide an optimal balance between accuracy and performance, particularly in cases of partial bin mismatches or complex remapping scenarios.\r\n\r\nLiftOver2D seeks to overcome these limitations by leveraging background contact distributions at the bin level, allowing for more precise and efficient remapping. The main goal is to design a method that achieves an acceptable trade-off between accuracy and speed, ensuring the tool is practical for real-world bioinformatics pipelines without sacrificing data quality or runtime efficiency. During the project, we plan to develop a custom model for bin-level remapping and optimal bin-to-bin matching across genome assemblies, and test our tool on various experiments and organisms using publicly available data from open databases (such as NCBI GEO). We aim to maximize performance and parallelization using both high-level data frameworks (like Dask or Polars) and lower-level languages where appropriate. The resulting algorithm will be wrapped into convenient packages for Python, R, and the command line. We also plan to collaborate with major tools in the Hi-C ecosystem (such as Cooler or Muon for multimodal experiments) to integrate our functionality into widely-used frameworks.\r\n\r\nIn the long term, LiftOver2D aspires to become a community-standard solution for fast remapping of 2D genomic contact data. The development will be carried out as an open-source project in collaboration with the community and aligned with NumFOCUS’s mission to support sustainable scientific software.",
+        "student_name": "Egor Pitikov",
+        "code_url": "https://github.com/Reovirus/liftover_2d/blob/main/README.md",
+        "proposal_id": "7Tr5GXxw",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/XnTtGYoC"
+      },
+      {
+        "title": "[PYSAL] - Produce Routing Engine for `spopt`",
+        "short_description": "In the Python Spatial Analysis Library (pysal), the spopt package is concerned with the formulation and solving of various spatial optimization...",
+        "description": "In the Python Spatial Analysis Library (pysal), the spopt package is concerned with the formulation and solving of various spatial optimization problems, particularly regionalization and location-based problems. This project proposes to enhance the spopt package with a route module, which will function as an API to set up and solve vehicle routing problems (VRP), including parameterizing vehicles, depots, and routes\nin various VRP setups.",
+        "student_name": "fiendskrah",
+        "code_url": "https://fiendskrah.github.io/gsoc-2025-blog/2025/08/25/closing.html",
+        "proposal_id": "GD0ipSN6",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/JhcSXfTK"
+      },
+      {
+        "title": "Adding More Optimizer Interfaces to optimagic",
+        "short_description": "optimagic is a optimization library which aims to provide a unified interface to optimizers from SciPy, NlOpt and many other widely used packages....",
+        "description": "optimagic is a optimization library which aims to provide a unified interface to optimizers from SciPy, NlOpt and many other widely used packages. This project aims to add more optimizers specifically from ensmallen, PRIMA, Nevergrad, Bayesian Optimization, Knitro and if possible, others. I will implement each particular optimizer, reading the literature and official documentation related to each optimizer, and keeping in mind optimagic's core idea. The main goal is to wrap as many optimizers as possible, giving them a consistent interface with optimagic's minimize function. For users, this will mean more freedom while choosing and comparing optimizers that best suits their needs. This will involve writing well-tested code, tests, and benchmarking to further improve performance. Also, I will write documentation, how-to-guides and example notebooks to guide users using the library.",
+        "student_name": "gauravmanmode",
+        "code_url": "https://gauravmanmode.github.io/gsoc_2025_blog/report",
+        "proposal_id": "zscWDapL",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/j9i3Vx5T"
+      },
+      {
+        "title": "Benchmarking and Profiling in toqito",
+        "short_description": "This project aims to test the performance of |toqito⟩ and compare it with other quantum computing libraries. It is divided into three parts: (1)...",
+        "description": "This project aims to test the performance of |toqito⟩ and compare it with other quantum \ncomputing libraries. It is divided into three parts: (1) Comparing |toqito⟩ with libraries like \nPennyLane, Qiskit, etc. by running standardized tests inside Docker to ensure consistency \nacross different computers; (2) Automatic benchmarking using GitHub Actions, where \nperformance tests run on every update and results are stored for analysis; and (3) \nIdentifying slow parts of |toqito⟩ using cProfile, focusing on operations like matrix \ncalculations, quantum measurements, and random object generation. \n------------------------------------------------------------------------------\nDeliverables include:\n\n1. A new benchmark/ folder in |toqito⟩ that can run and store benchmarks, \nincluding support for running them in Docker. \n2. A system to track |toqito⟩’s performance over time using monthly benchmarks or \nwe can choose to run only relevant benchmarks after each merged PR. \n3. Found and suggested improvements for slow parts in at least one full module of \n|toqito⟩.",
+        "student_name": "justuy",
+        "code_url": "https://rajdeepaher.github.io/2025/08/31/GSoC-Report.html",
+        "proposal_id": "XPJ9Zkex",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/5DqdhWwe"
+      },
+      {
+        "title": "Extending ONNX-mlpack Translator with Advanced Model Support",
+        "short_description": "This project aims to extend the capabilities of the ONNX-to-mlpack converter by adding support for more advanced and diverse model architectures. The...",
+        "description": "This project aims to extend the capabilities of the ONNX-to-mlpack converter by adding support for more advanced and diverse model architectures. The focus will be on enabling the translation of complex ONNX computational graphs, including LSTM-based models and Directed Acyclic Graph (DAG) structures. Additionally, the project will introduce support for NLP models and incorporate foundational NLP components such as Word2Vec-based tokenizers, encoders and decoders in mlpack.",
+        "student_name": "kumar utkarsh",
+        "code_url": "https://medium.com/@nvnukumarutkarsh/gsoc-2025-final-report-with-mlpack-bf34334eaf70",
+        "proposal_id": "I9KbneYo",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/57ne67Mj"
+      },
+      {
+        "title": "Adding More Optimizer Interfaces to optimagic",
+        "short_description": "This project integrates optimizers from bayesian-optimization, PyGAD, and PySwarms into optimagic, a Python package that offers a unified interface...",
+        "description": "This project integrates optimizers from bayesian-optimization, PyGAD, and PySwarms into optimagic, a Python package that offers a unified interface for numerical optimization. optimagic allows users to effortlessly switch between a wide range of optimization algorithms, enabling them to focus on their problems rather than the specifics of each method. The project aimed to expand the list of available optimizers in optimagic, providing users with seamless access to diverse optimization techniques, including Bayesian methods, genetic algorithms, and particle swarm optimization. Alongside implementation, comprehensive documentation and unit tests were developed to ensure reliability and ease of use. This enhancement makes optimagic a better and more accessible tool for numerical optimization.",
+        "student_name": "madman",
+        "code_url": "https://gist.github.com/spline2hg/e3d9e90d868a4b6d11e6055da5f1b784",
+        "proposal_id": "CefkTUbv",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/kggF8GVK"
+      },
+      {
+        "title": "Implementing the Simformer for sbi",
+        "short_description": "sbi is a Python package providing simulation-based inference tools for researchers and practitioners; given simulation results, sbi aims to infer the...",
+        "description": "sbi is a Python package providing simulation-based inference tools for researchers and practitioners; given simulation results, sbi aims to infer the distribution of parameters of the phenomena under study. The sbi package lacks an implementation of the Simformer, a novel Transformer-based approach to simulation-based inference introduced by Gloeckler et al. (2024). This project aims to implement the Simformer in sbi using PyTorch, documenting the API produced, and providing tutorials and benchmarks for the sbi community to use the Simformer for their analysis.",
+        "student_name": "Massimiliano Carli",
+        "code_url": "https://github.com/sbi-dev/sbi/pull/1621",
+        "proposal_id": "2s4i7lWR",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/Joey5EeQ"
+      },
+      {
+        "title": "Implementing RUBI (Rule-based Integrator) in the Julia package Symbolics.jl",
+        "short_description": "This project aims to implement the RUBI integration system - a powerful, open source, rule-based integration system developed for the computational...",
+        "description": "This project aims to implement the RUBI integration system - a powerful, open source, rule-based integration system developed for the computational software system Mathematica - in the julia package Symbolics.jl. The goal is to enhance Julia's symbolic computation capabilities, providing a faster and more comprehensive solution for symbolic integration.",
+        "student_name": "Mattia Micheletta Merlin",
+        "code_url": "https://github.com/Bumblebee00/SymbolicIntegration.jl/blob/848f539f67e13d6a833a918e75916f7d3bb0b454/GSoCfinalReport_MattiaMichelettaMerlin.md",
+        "proposal_id": "p9SH8uh7",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/TRqpJPrm"
+      },
+      {
+        "title": "PyBaMM - Adding a Dispatching Mechanism  for Third Party Models.",
+        "short_description": "This project will make the addition and sharing of third-party battery models easier in PyBaMM. It is an extension of the PyBaMM cookiecutter project...",
+        "description": "This project will make the addition and sharing of third-party battery models easier in PyBaMM. It is an extension of the PyBaMM cookiecutter project of year 2024 and will include a Dispatch API, a single location to register models, and enhance model loading using entry points. The copier template will also be enhanced so that individuals with varying levels of experience will be able to use it more easily. By incorporating features such as dynamic model loading, caching, and enhanced documentation, the project will make it easier for more users and developers to work with external models and make PyBaMM more flexible and convenient to use in the long term.",
+        "student_name": "Medha-Bhardwaj",
+        "code_url": "https://medium.com/@medha140904/gsoc25-dispatching-mechanism-for-third-party-models-9af81bed1d68",
+        "proposal_id": "P1wcpcyH",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/3t9McTvW"
+      },
+      {
+        "title": "Implementing Integrated Nested Laplace Approximations (INLA)",
+        "short_description": "A key component of Bayesian inference is integrating over prior distributions to obtain posteriors. In practice however, these distributions are...",
+        "description": "A key component of Bayesian inference is integrating over prior distributions to obtain posteriors. In practice however, these distributions are often high-dimensional, resulting in a significant computational cost associated with integration, which remains a key challenge in Bayesian ML. Under certain assumptions, it is possible to efficiently compute posteriors for Latent Gaussian Models (LGMs), which represent a broad class of statistical models in Bayesian statistics. This is known as the method of Integrated Nested Laplace Approximations (INLA), and this project aims to implement a working basis for INLA in the PyMC library.",
+        "student_name": "Michal Novomestsky",
+        "code_url": "https://michal-novomestsky.github.io/posts/2025/08/gsoc-10/",
+        "proposal_id": "AaC2yTpG",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/Djw07Zv0"
+      },
+      {
+        "title": "Create and Add to an Example Gallery for toqito",
+        "short_description": "This project addresses the need for enhanced usability and learning resources within the toqito quantum information library by creating a...",
+        "description": "This project addresses the need for enhanced usability and learning resources within the toqito quantum information library by creating a user-friendly example gallery, inspired by successful models like scikit-learn's. The core problem is the current lack of diverse, executable examples demonstrating toqito's capabilities in practical scenarios. The proposed solution involves developing the gallery's web infrastructure (potentially using Sphinx-Gallery) integrated into toqito's existing documentation, and populating it with high-quality, self-contained Python examples. Key deliverables include the functional gallery structure and 6 core examples demonstrating crucial toqito functionalities: modeling cryptographic protocols (Bit Commitment, QKD QBER) using ExtendedNonlocalGame, verifying state antidistinguishability thresholds from recent literature using the state_opt module, and illustrating channel properties (is_extremal) using channel_props. This gallery will significantly improve toqito's accessibility for researchers and new users, providing practical code and explanations for core quantum information concepts.",
+        "student_name": "Nafisa Shamim Rafa",
+        "code_url": "https://creativebinbag.github.io/Google-Summer-of-Code-Blog/",
+        "proposal_id": "zWtvWyMX",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/lI08brT4"
+      },
+      {
+        "title": "Developing an Active Learning  Module for DeepForest",
+        "short_description": "This project aims to enhance DeepForest by integrating and extending the active learning capabilities from Weecology/BOEM into its training pipeline....",
+        "description": "This project aims to enhance DeepForest by integrating and extending the active learning capabilities from Weecology/BOEM into its training pipeline. The goal is to enhance the efficiency and scalability of tree and bird detection in aerial imagery, enabling smarter sample selection and reduced annotation effort. By using advanced sampling strategies such as uncertainty-based and diversity-based selection, users will be able to automatically generate predictions, identify the most valuable samples for annotation, and streamline the entire labeling process. The project will also focus on building an intuitive workflow, writing clear documentation, ensuring strong test coverage, and creating user-friendly interfaces. Ultimately, this work will help reduce manual annotation efforts, speed up training, and improve model performance, making DeepForest more adaptable.",
+        "student_name": "Nakshatra Piplad",
+        "code_url": "https://gist.github.com/naxatra2/e647dc884ddc589d3fd2b383702d683c",
+        "proposal_id": "Zfi87i6M",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/n9Ophyn4"
+      },
+      {
+        "title": "Finite Volume Method Implementation for TNL",
+        "short_description": "Template Numerical Library (TNL) already includes several solvers for partial differential equations, such as the Finite Element Method (FEM),...",
+        "description": "Template Numerical Library (TNL) already includes several solvers for partial differential equations, such as the Finite Element Method (FEM), Lattice Boltzmann Method (LBM), and Smoothed Particle Hydrodynamics (SPH). However, it currently lacks native support for the Finite Volume Method (FVM), which I aim to implement. An FVM solver for the Navier-Stokes equations would make it possible to address a wide range of problems in computational fluid dynamics and aerospace.\n\nI plan to start by rewriting my 2D Euler equation solver from my Bachelor's thesis to work within TNL. Then, I’ll extend the implementation to support the Navier-Stokes equations in 2D, and finally in 3D, using an LU-SGS approach. In the final phase, I’ll focus on code optimization, documentation, and creating a clean, user-friendly interface.\n\nI plan to deliver a Finite Volume Method solver for the Euler equations in 2D integrated into TNL. This will be followed by an extension to support 2D Navier-Stokes equations, and finally, a 3D Navier-Stokes solver. The final code will be documented and unified with TNL's code standards.",
+        "student_name": "Petr Sokol",
+        "code_url": "https://gitlab.com/tnl-project/incubator/tnl-fvm",
+        "proposal_id": "wCElOp8v",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/dLFOcSDt"
+      },
+      {
+        "title": "Add support for 3D thermal simulations in PyBaMM",
+        "short_description": "Seeing the current increasing demand of high performance batteries, accurate thermal modelling of battery behaviour is essential. This project...",
+        "description": "Seeing the current increasing demand of high performance batteries, accurate thermal modelling of battery behaviour is essential.\n\nThis project extends PyBaMM by adding the capability to simulate battery temperature in three dimensions. It starts by developing 3D meshes (box, cylinder etc) and FEM method. Then we develop a 3D thermal model for batteries, initially assuming a constant heat source. This thermal model is then coupled with existing battery models (like the SPM or DFN) so that the heat generated during battery operation can be simulated.\n\nThe model will also eventually allow temperature data from the thermal simulation to feed back into the battery model, enabling more realistic, two-way interactions.",
+        "student_name": "Rishab Kumar Jha",
+        "code_url": "https://www.rishab.xyz/blog/07-gsoc-final-product-url",
+        "proposal_id": "z6jK4f0y",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/epbg9kwP"
+      },
+      {
+        "title": "Data Retriever: Creating a multi-sensor airborne benchmark for Tree Species classification",
+        "short_description": "This project aims to create a benchmark dataset for tree species classification using multi-sensor airborne data (RGB, HSI, and LiDAR) from the...",
+        "description": "This project aims to create a benchmark dataset for tree species classification using multi-sensor airborne data (RGB, HSI, and LiDAR) from the National Ecological Observatory Network (NEON). The goal is to build a reproducible, well-documented dataset of hand-annotated tree crowns and use it to train baseline models for each modality individually and in combination. Alongside this, we’ll explore integration with DeepForest to support crown detection and classification workflows.\n\nDeliverables:\n1. A finalized, curated data product for tree species classification using NEON data added to TorchGeo.\n2. Baseline models for each modality and multi-modal combinations.\n3. Reproducible training pipelines and clear documentation.\n4. A utility to simplify NEON data access.\n5. Integration work and documentation linking this effort with DeepForest.",
+        "student_name": "Ritesh Chowdhry",
+        "code_url": "https://gist.github.com/Ritesh313/3b9367e40fde4893a85f6d69fe279a41",
+        "proposal_id": "i3yTem2k",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/nrEEuvuB"
+      },
+      {
+        "title": "Integrating DeepForest Object Detection with LLM for Automated Ecological Image Analysis",
+        "short_description": "This project attempts to integrate DeepForest's object detection models into Large Language Models (LLMs) so that ecological images can be queried...",
+        "description": "This project attempts to integrate DeepForest's object detection models into Large Language Models (LLMs) so that ecological images can be queried using natural language. Building on the pre-built models in DeepForest for tree, bird, and livestock detection, the system would extract structured annotations from images and convert them to an LLM-compatible format. Users can interact with an image through a queryable interface and receive proper responses based on object detection and spatial reasoning. This will involve prompt engineering, fine-tuning and experimentation with different LLMs.",
+        "student_name": "Samia Haque Tisha",
+        "code_url": "https://gist.github.com/Samia35-2973/777d1b400653a5454715156e1204c3bf",
+        "proposal_id": "3UTR8SA4",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/ItYAp7By"
+      },
+      {
+        "title": "ArviZ Plots Feature Parity",
+        "short_description": "ArviZ is a Python library for the exploratory analysis of Bayesian inference models. It is currently undergoing a major refactor into a modular...",
+        "description": "ArviZ is a Python library for the exploratory analysis of Bayesian inference models. It is currently undergoing a major refactor into a modular structure comprising three sub-packages: arviz-base, arviz-stats, and arviz-plots. This refactoring brings changes to both the API and the internal implementation, with most of the design decisions already in place. The primary task that remains is migrating and reimplementing existing features from legacy ArviZ into the new structure.\n\nThis project focuses on achieving feature parity in arviz-plots by reintroducing essential visualization tools from the original ArviZ while also enhancing them with new capabilities. These include plots for MCSE, t-statistics, parallel coordinates, quantile dot plots, support for circular variables in trace plots and rank distribution plots, among others. Additionally, new features such as a dark theme and improved rank plots with better envelopes for multiple sample comparisons will be incorporated.\n\nThe goal is to implement and rigorously test these plotting functions, which are critical for model comparison, criticism, and sampling diagnostics. By ensuring that arviz-plots matches and improves upon the original functionality, this project will enhance the usability, maintainability, and extensibility of ArviZ. Ultimately, it will help strengthen ArviZ’s position as a go-to library for Bayesian model visualization and diagnostics.",
+        "student_name": "Shreyansh868",
+        "code_url": "https://github.com/The-Broken-Keyboard/gsoc",
+        "proposal_id": "HGRFMu2T",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/QEEVWGcd"
+      },
+      {
+        "title": "aeon - Implementing and Evaluating Machine Learning Forecasters",
+        "short_description": "This project will investigate algorithms for forecasting based on traditional machine learning (tree based) and time series machine learning...",
+        "description": "This project will investigate algorithms for forecasting based on traditional machine learning (tree based) and time series machine learning (transformation based). It will involve helping develop the aeon framework to process both standard ML and extrisnic regression algorithms for forecasting. This will involve evaluating regression algorithms already in `aeon` for forecasting problems as well as `scikit-learn` regressors. The tree-based SETAR-Tree and SETAR-Forest algorithms will also be implemented in the forecasting module.",
+        "student_name": "Tina0228",
+        "code_url": "https://medium.com/@jintina48/summary-of-my-work-during-gsoc25-959274eee1a6",
+        "proposal_id": "Xw5VtsDR",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/MPYRSOTi"
+      },
+      {
+        "title": "Hamiltonian Library for QuTiP",
+        "short_description": "This project aims to develop a comprehensive Hamiltonian Library for QuTiP (Quantum Toolbox in Python). Currently, QuTiP users must frequently...",
+        "description": "This project aims to develop a comprehensive Hamiltonian Library for QuTiP (Quantum Toolbox in Python). Currently, QuTiP users must frequently recreate common quantum system Hamiltonians from scratch, leading to redundant work and inconsistencies. The library will provide ready-to-use implementations of frequently used quantum systems like Jaynes-Cummings, Rabi, Dicke, and various spin-chain models. Key features include a standardised API, JSON serialisation for cross-platform compatibility, time-dependent parameter support, and LaTeX representation capabilities. The deliverables include a core Hamiltonian base class, at least 10 implemented quantum models, comprehensive documentation, tutorials, and full integration with QuTiP's existing functionality. This project will significantly enhance user experience and reduce redundancy in quantum simulations.",
+        "student_name": "VanshajB",
+        "code_url": "https://vanshaj0429.github.io/qutip-gsoc-blog/project.html",
+        "proposal_id": "T5zlMdzC",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/TgdXdTXP"
+      },
+      {
+        "title": "Extending the loo Package",
+        "short_description": "The `loo` package is a widely used R package in the Stan ecosystem which exposes a clean API to cross-validate (CV) Bayesian models. As new CV...",
+        "description": "The `loo` package is a widely used R package in the Stan ecosystem which exposes a clean API to cross-validate (CV) Bayesian models. As new CV methods and diagnostics are created and adopted by the field, the `loo` package must be updated to support them. Currently different predictive performance measures have different APIs and varying level of supported features. This project is focused on refactoring the API to unify the support for different predictive measures to make all useful features available for all predictive measures to make it easier for the modellers to use the most appropriate measures for their applications.\n\nKey technical components will include creating a flexible object which can report multiple metrics and scores. Additionally, we need to create functions to support model comparisons for all these scores and metrics. We will also allow for measures besides log score for LOO-CV to be used under the same, unified interface as existing options and create a consistent loo object for all measures. We will further unify the interface by allowing for non-log score measures for in-sample, test data, and K-fold-CV use cases. We will also be extending the model comparison functions to carry forward information on what measure is being compared, diagnostic data, and information on how to calculate the standard error (SE) of the differences of various measures.",
+        "student_name": "Visruth",
+        "code_url": "http://www.visruth.com/blog/20250830-01/",
+        "proposal_id": "F8mxdlIA",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/NxqejlhZ"
+      },
+      {
+        "title": "igraph | Degree-Constrained Null Models & Graph Construction",
+        "short_description": "Graphs are powerful tools for understanding relationships and structures — from social media connections to brain networks. Often, we want to study...",
+        "description": "Graphs are powerful tools for understanding relationships and structures — from social media connections to brain networks. Often, we want to study whether these structures exhibit unusual features. To do so, we compare the graph in question to a \"baseline\" or \"generic\" graph, called a null model; this gives us a point of reference to identify whether the features we see are truly unusual or simply a result of random chance. \n\nAs such, the goal of this project is to expand the igraph library's ability to work with null models. Given a set of characteristics about a graph, we want to make it more flexible to 1) check whether a graph with these characteristics exist (graphicality), 2) create a graph with these characteristics (construction), and 3) derive other graphs that share the same characteristics (rewiring). \n\nWith more flexible and performant tools for working with null models, igraph can better support the network science underpinning so many scientific domains.",
+        "student_name": "Zara Zong",
+        "code_url": "https://minifinity.github.io/writing/havel-hakimi/",
+        "proposal_id": "ui2N1vyT",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/q04crkoi"
+      },
+      {
+        "title": "Proposal for PYSAL– SPOPT",
+        "short_description": "This project aims to extend PySAL's spatial optimisation library (spopt) by implementing flow-based facility location models, specifically the Flow...",
+        "description": "This project aims to extend PySAL's spatial optimisation library (spopt) by implementing flow-based facility location models, specifically the Flow Refueling Location Model and the Deviated Flow Refueling Location Model. While spopt currently includes various node-based location optimisation models, it lacks flow-based models that are crucial for transportation infrastructure planning. The proposed implementation will include comprehensive data processing components for network and flow data, core optimisation model implementations with solver integration, and output processing tools for visualisation and analysis.",
+        "student_name": "ZixinFeng",
+        "code_url": "https://github.com/fengzixin0617/gsoc25-final-submission-Pysal-spopt/blob/main/GSOC25%20final%20submission%20spopt.md",
+        "proposal_id": "pi6dq8ii",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/rCb85IXn"
+      }
+    ],
+    "2026": []
   },
   "githubID": "numfocus",
   "repositories": [
     {
-      "id": 964802373,
-      "node_id": "R_kgDOOYG3RQ",
-      "name": "small-development-grant-proposals",
-      "full_name": "numfocus/small-development-grant-proposals",
-      "html_url": "https://github.com/numfocus/small-development-grant-proposals",
-      "description": "This repository stores the proposals submitted to the NumFOCUS Small Development Grants (SDG) program.",
+      "id": 30978155,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzMDk3ODE1NQ==",
+      "name": "gsoc",
+      "full_name": "numfocus/gsoc",
+      "html_url": "https://github.com/numfocus/gsoc",
+      "description": "NumFOCUS Google Summer of Code Materials",
+      "language": "TeX",
+      "stargazers_count": 618,
+      "forks_count": 436,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": [
+        "gsoc",
+        "gsoc-2023"
+      ]
+    },
+    {
+      "id": 252748114,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyNTI3NDgxMTQ=",
+      "name": "infrastructure",
+      "full_name": "numfocus/infrastructure",
+      "html_url": "https://github.com/numfocus/infrastructure",
+      "description": "Policies, Configurations, and Documentation of NumFOCUS Managed Infrastructure",
       "language": null,
-      "stargazers_count": 6,
-      "forks_count": 0,
-      "open_issues_count": 2,
+      "stargazers_count": 16,
+      "forks_count": 8,
+      "open_issues_count": 12,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -2128,23 +2427,17 @@
       "topics": []
     },
     {
-      "id": 823174486,
-      "node_id": "R_kgDOMRClVg",
-      "name": "MOSS",
-      "full_name": "numfocus/MOSS",
-      "html_url": "https://github.com/numfocus/MOSS",
-      "description": "Map of Open Source Science",
-      "language": "Python",
-      "stargazers_count": 39,
-      "forks_count": 23,
-      "open_issues_count": 12,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
+      "id": 1153186086,
+      "node_id": "R_kgDORLw5Jg",
+      "name": "tsc",
+      "full_name": "numfocus/tsc",
+      "html_url": "https://github.com/numfocus/tsc",
+      "description": "Public documentation and website for the NumFOCUS' Technical Steering Committee",
+      "language": null,
+      "stargazers_count": 1,
+      "forks_count": 1,
+      "open_issues_count": 0,
+      "license": null,
       "topics": []
     },
     {
@@ -2154,10 +2447,10 @@
       "full_name": "numfocus/DISCOVER-Cookbook",
       "html_url": "https://github.com/numfocus/DISCOVER-Cookbook",
       "description": "The NumFOCUS DISCOVER Cookbook (Diverse & Inclusive Spaces and Conferences: Overall Vision and Essential Resources). A guide for organizing more diverse and inclusive events and conferences, produced by the NumFOCUS Diversity & Inclusion in Scientific Computing (DISC) Program, with support from the Moore Foundation.",
-      "language": "JavaScript",
-      "stargazers_count": 261,
-      "forks_count": 205,
-      "open_issues_count": 41,
+      "language": "HTML",
+      "stargazers_count": 280,
+      "forks_count": 265,
+      "open_issues_count": 105,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -2173,6 +2466,142 @@
       ]
     },
     {
+      "id": 293912144,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyOTM5MTIxNDQ=",
+      "name": "jobs-board",
+      "full_name": "numfocus/jobs-board",
+      "html_url": "https://github.com/numfocus/jobs-board",
+      "description": "Minimalist jobs board implementation",
+      "language": "JavaScript",
+      "stargazers_count": 22,
+      "forks_count": 43,
+      "open_issues_count": 1,
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "topics": []
+    },
+    {
+      "id": 561415859,
+      "node_id": "R_kgDOIXaGsw",
+      "name": "numfocus.org",
+      "full_name": "numfocus/numfocus.org",
+      "html_url": "https://github.com/numfocus/numfocus.org",
+      "description": "A repository to add comments / suggests / improvements to the NumFOCUS website",
+      "language": "TypeScript",
+      "stargazers_count": 6,
+      "forks_count": 8,
+      "open_issues_count": 3,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 689584813,
+      "node_id": "R_kgDOKRo6rQ",
+      "name": "disc-unconference-2023-projects",
+      "full_name": "numfocus/disc-unconference-2023-projects",
+      "html_url": "https://github.com/numfocus/disc-unconference-2023-projects",
+      "description": "Project outputs for the DISC Unconference 2023",
+      "language": "Python",
+      "stargazers_count": 10,
+      "forks_count": 26,
+      "open_issues_count": 9,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 774490455,
+      "node_id": "R_kgDOLinJVw",
+      "name": "elections",
+      "full_name": "numfocus/elections",
+      "html_url": "https://github.com/numfocus/elections",
+      "description": "Board election process - documentation and tracking",
+      "language": null,
+      "stargazers_count": 16,
+      "forks_count": 7,
+      "open_issues_count": 5,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 964802373,
+      "node_id": "R_kgDOOYG3RQ",
+      "name": "small-development-grant-proposals",
+      "full_name": "numfocus/small-development-grant-proposals",
+      "html_url": "https://github.com/numfocus/small-development-grant-proposals",
+      "description": "This repository stores the proposals submitted to the NumFOCUS Small Development Grants (SDG) program.",
+      "language": "Python",
+      "stargazers_count": 19,
+      "forks_count": 9,
+      "open_issues_count": 25,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 1080591612,
+      "node_id": "R_kgDOQGiE_A",
+      "name": "summit-2025",
+      "full_name": "numfocus/summit-2025",
+      "html_url": "https://github.com/numfocus/summit-2025",
+      "description": null,
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 10,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1056053291,
+      "node_id": "R_kgDOPvIYKw",
+      "name": "pydata-strategic-committee",
+      "full_name": "numfocus/pydata-strategic-committee",
+      "html_url": "https://github.com/numfocus/pydata-strategic-committee",
+      "description": "PyData Strategic Committee serve as a coordinating body, facilitating the underlying infrastructure to provide essential resources to PyData groups worldwide.",
+      "language": null,
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 134774331,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMzQ3NzQzMzE=",
+      "name": "privacy-policy",
+      "full_name": "numfocus/privacy-policy",
+      "html_url": "https://github.com/numfocus/privacy-policy",
+      "description": "The NumFOCUS privacy policy",
+      "language": null,
+      "stargazers_count": 4,
+      "forks_count": 2,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
       "id": 86638540,
       "node_id": "MDEwOlJlcG9zaXRvcnk4NjYzODU0MA==",
       "name": "DISC-committee",
@@ -2180,9 +2609,9 @@
       "html_url": "https://github.com/numfocus/DISC-committee",
       "description": "✊🏾 Diversity & Inclusion in Scientific Computing committee of NumFOCUS",
       "language": null,
-      "stargazers_count": 13,
-      "forks_count": 3,
-      "open_issues_count": 3,
+      "stargazers_count": 14,
+      "forks_count": 4,
+      "open_issues_count": 1,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -2199,22 +2628,56 @@
       ]
     },
     {
-      "id": 293912144,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyOTM5MTIxNDQ=",
-      "name": "jobs-board",
-      "full_name": "numfocus/jobs-board",
-      "html_url": "https://github.com/numfocus/jobs-board",
-      "description": "Minimalist jobs board implementation",
-      "language": "JavaScript",
-      "stargazers_count": 19,
-      "forks_count": 42,
-      "open_issues_count": 4,
+      "id": 877419246,
+      "node_id": "R_kgDONExa7g",
+      "name": "project-fundraising",
+      "full_name": "numfocus/project-fundraising",
+      "html_url": "https://github.com/numfocus/project-fundraising",
+      "description": "List of new Project Fundraising Opportunities for NumFOCUS Sponsored Projects ",
+      "language": null,
+      "stargazers_count": 11,
+      "forks_count": 3,
+      "open_issues_count": 127,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 823174486,
+      "node_id": "R_kgDOMRClVg",
+      "name": "MOSS",
+      "full_name": "numfocus/MOSS",
+      "html_url": "https://github.com/numfocus/MOSS",
+      "description": "Map of Open Source Science",
+      "language": "Python",
+      "stargazers_count": 47,
+      "forks_count": 27,
+      "open_issues_count": 18,
       "license": {
-        "key": "bsd-3-clause",
-        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
-        "spdx_id": "BSD-3-Clause",
-        "url": "https://api.github.com/licenses/bsd-3-clause",
-        "node_id": "MDc6TGljZW5zZTU="
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 1019166247,
+      "node_id": "R_kgDOPL8-Jw",
+      "name": "numfocus-ed-hc",
+      "full_name": "numfocus/numfocus-ed-hc",
+      "html_url": "https://github.com/numfocus/numfocus-ed-hc",
+      "description": "Artefacts and data produced and utilised by the NumFOCUS Executive Director Hiring Committee",
+      "language": "Jupyter Notebook",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "cc0-1.0",
+        "name": "Creative Commons Zero v1.0 Universal",
+        "spdx_id": "CC0-1.0",
+        "url": "https://api.github.com/licenses/cc0-1.0",
+        "node_id": "MDc6TGljZW5zZTY="
       },
       "topics": []
     },
@@ -2239,23 +2702,6 @@
       "topics": []
     },
     {
-      "id": 30978155,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzMDk3ODE1NQ==",
-      "name": "gsoc",
-      "full_name": "numfocus/gsoc",
-      "html_url": "https://github.com/numfocus/gsoc",
-      "description": "NumFOCUS Google Summer of Code Materials",
-      "language": "TeX",
-      "stargazers_count": 509,
-      "forks_count": 325,
-      "open_issues_count": 2,
-      "license": null,
-      "topics": [
-        "gsoc",
-        "gsoc-2023"
-      ]
-    },
-    {
       "id": 843080635,
       "node_id": "R_kgDOMkBjuw",
       "name": "disc-unconference-2025",
@@ -2264,8 +2710,8 @@
       "description": "The annual DISC Unconference",
       "language": "JavaScript",
       "stargazers_count": 3,
-      "forks_count": 15,
-      "open_issues_count": 1,
+      "forks_count": 12,
+      "open_issues_count": 0,
       "license": {
         "key": "cc0-1.0",
         "name": "Creative Commons Zero v1.0 Universal",
@@ -2285,55 +2731,7 @@
       "language": "TeX",
       "stargazers_count": 4,
       "forks_count": 6,
-      "open_issues_count": 24,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 877419246,
-      "node_id": "R_kgDONExa7g",
-      "name": "project-fundraising",
-      "full_name": "numfocus/project-fundraising",
-      "html_url": "https://github.com/numfocus/project-fundraising",
-      "description": "List of new Project Fundraising Opportunities for NumFOCUS Sponsored Projects ",
-      "language": null,
-      "stargazers_count": 8,
-      "forks_count": 2,
-      "open_issues_count": 52,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 774490455,
-      "node_id": "R_kgDOLinJVw",
-      "name": "elections",
-      "full_name": "numfocus/elections",
-      "html_url": "https://github.com/numfocus/elections",
-      "description": "Board election process - documentation and tracking",
-      "language": null,
-      "stargazers_count": 11,
-      "forks_count": 5,
-      "open_issues_count": 3,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 252748114,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNTI3NDgxMTQ=",
-      "name": "infrastructure",
-      "full_name": "numfocus/infrastructure",
-      "html_url": "https://github.com/numfocus/infrastructure",
-      "description": "Policies, Configurations, and Documentation of NumFOCUS Managed Infrastructure",
-      "language": null,
-      "stargazers_count": 13,
-      "forks_count": 6,
-      "open_issues_count": 13,
+      "open_issues_count": 23,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -2352,8 +2750,8 @@
       "description": null,
       "language": null,
       "stargazers_count": 1,
-      "forks_count": 5,
-      "open_issues_count": 2,
+      "forks_count": 4,
+      "open_issues_count": 3,
       "license": null,
       "topics": []
     },
@@ -2420,8 +2818,8 @@
       "description": null,
       "language": null,
       "stargazers_count": 1,
-      "forks_count": 2,
-      "open_issues_count": 2,
+      "forks_count": 3,
+      "open_issues_count": 3,
       "license": null,
       "topics": []
     },
@@ -2433,7 +2831,7 @@
       "html_url": "https://github.com/numfocus/numhack-2024",
       "description": null,
       "language": null,
-      "stargazers_count": 18,
+      "stargazers_count": 17,
       "forks_count": 6,
       "open_issues_count": 11,
       "license": {
@@ -2442,26 +2840,6 @@
         "spdx_id": "MIT",
         "url": "https://api.github.com/licenses/mit",
         "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 689584813,
-      "node_id": "R_kgDOKRo6rQ",
-      "name": "disc-unconference-2023-projects",
-      "full_name": "numfocus/disc-unconference-2023-projects",
-      "html_url": "https://github.com/numfocus/disc-unconference-2023-projects",
-      "description": "Project outputs for the DISC Unconference 2023",
-      "language": "Python",
-      "stargazers_count": 10,
-      "forks_count": 25,
-      "open_issues_count": 6,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
       },
       "topics": []
     },
@@ -2493,7 +2871,7 @@
       "html_url": "https://github.com/numfocus/project-summit-2024-unconference",
       "description": "This repository will be used to gather unconference topics and facilitate voting on topics for the NumFOCUS 2024 Project Summit. ",
       "language": null,
-      "stargazers_count": 9,
+      "stargazers_count": 10,
       "forks_count": 1,
       "open_issues_count": 24,
       "license": {
@@ -2534,26 +2912,6 @@
       "topics": []
     },
     {
-      "id": 561415859,
-      "node_id": "R_kgDOIXaGsw",
-      "name": "numfocus.org",
-      "full_name": "numfocus/numfocus.org",
-      "html_url": "https://github.com/numfocus/numfocus.org",
-      "description": "A repository to add comments / suggests / improvements to the NumFOCUS website",
-      "language": null,
-      "stargazers_count": 4,
-      "forks_count": 2,
-      "open_issues_count": 2,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
       "id": 677486310,
       "node_id": "R_kgDOKGGe5g",
       "name": "DISC-Unconference-2023",
@@ -2572,110 +2930,304 @@
         "node_id": "MDc6TGljZW5zZTY="
       },
       "topics": []
-    },
-    {
-      "id": 112534431,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMTI1MzQ0MzE=",
-      "name": "getting-started-with-open-source",
-      "full_name": "numfocus/getting-started-with-open-source",
-      "html_url": "https://github.com/numfocus/getting-started-with-open-source",
-      "description": "Getting Started with Open Source",
-      "language": null,
-      "stargazers_count": 75,
-      "forks_count": 34,
-      "open_issues_count": 0,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 608772926,
-      "node_id": "R_kgDOJEkjPg",
-      "name": "outreachy-contributions-2023",
-      "full_name": "numfocus/outreachy-contributions-2023",
-      "html_url": "https://github.com/numfocus/outreachy-contributions-2023",
-      "description": "This repository will be used to capture Outreachy applicants' contributions during the Applications phase - May-July 2023 Cohort",
-      "language": null,
-      "stargazers_count": 15,
-      "forks_count": 4,
-      "open_issues_count": 36,
-      "license": {
-        "key": "bsd-3-clause",
-        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
-        "spdx_id": "BSD-3-Clause",
-        "url": "https://api.github.com/licenses/bsd-3-clause",
-        "node_id": "MDc6TGljZW5zZTU="
-      },
-      "topics": []
-    },
-    {
-      "id": 11240507,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMTI0MDUwNw==",
-      "name": "python-benchmarks",
-      "full_name": "numfocus/python-benchmarks",
-      "html_url": "https://github.com/numfocus/python-benchmarks",
-      "description": "A set of benchmark problems and implementations for Python",
-      "language": "CSS",
-      "stargazers_count": 64,
-      "forks_count": 23,
-      "open_issues_count": 8,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 9723674,
-      "node_id": "MDEwOlJlcG9zaXRvcnk5NzIzNjc0",
-      "name": "fiscal-sponsorship",
-      "full_name": "numfocus/fiscal-sponsorship",
-      "html_url": "https://github.com/numfocus/fiscal-sponsorship",
-      "description": "Materials for the Fiscal Sponsorship of open source projects under the NumFOCUS umbrella.",
-      "language": "TeX",
-      "stargazers_count": 6,
-      "forks_count": 5,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 545000673,
-      "node_id": "R_kgDOIHwM4Q",
-      "name": "project-summit-2022-topic-discussions",
-      "full_name": "numfocus/project-summit-2022-topic-discussions",
-      "html_url": "https://github.com/numfocus/project-summit-2022-topic-discussions",
-      "description": null,
-      "language": null,
-      "stargazers_count": 1,
-      "forks_count": 1,
-      "open_issues_count": 26,
-      "license": {
-        "key": "bsd-3-clause",
-        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
-        "spdx_id": "BSD-3-Clause",
-        "url": "https://api.github.com/licenses/bsd-3-clause",
-        "node_id": "MDc6TGljZW5zZTU="
-      },
-      "topics": []
     }
   ],
   "contributorsDetails": [
     {
-      "login": "dpshelio",
-      "id": 963242,
-      "node_id": "MDQ6VXNlcjk2MzI0Mg==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/963242?v=4",
-      "html_url": "https://github.com/dpshelio",
-      "contributions": 5
+      "login": "henrykironde",
+      "id": 5192965,
+      "node_id": "MDQ6VXNlcjUxOTI5NjU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5192965?v=4",
+      "html_url": "https://github.com/henrykironde",
+      "contributions": 2
+    },
+    {
+      "login": "MridulS",
+      "id": 5363860,
+      "node_id": "MDQ6VXNlcjUzNjM4NjA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5363860?v=4",
+      "html_url": "https://github.com/MridulS",
+      "contributions": 1
+    },
+    {
+      "login": "kain88-de",
+      "id": 4302678,
+      "node_id": "MDQ6VXNlcjQzMDI2Nzg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4302678?v=4",
+      "html_url": "https://github.com/kain88-de",
+      "contributions": 123
+    },
+    {
+      "login": "rgaiacs",
+      "id": 1506457,
+      "node_id": "MDQ6VXNlcjE1MDY0NTc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1506457?v=4",
+      "html_url": "https://github.com/rgaiacs",
+      "contributions": 115
+    },
+    {
+      "login": "pbanaszkiewicz",
+      "id": 72821,
+      "node_id": "MDQ6VXNlcjcyODIx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/72821?v=4",
+      "html_url": "https://github.com/pbanaszkiewicz",
+      "contributions": 28
+    },
+    {
+      "login": "prerit2010",
+      "id": 5612204,
+      "node_id": "MDQ6VXNlcjU2MTIyMDQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5612204?v=4",
+      "html_url": "https://github.com/prerit2010",
+      "contributions": 22
+    },
+    {
+      "login": "raj-maurya",
+      "id": 9070249,
+      "node_id": "MDQ6VXNlcjkwNzAyNDk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9070249?v=4",
+      "html_url": "https://github.com/raj-maurya",
+      "contributions": 21
+    },
+    {
+      "login": "moorepants",
+      "id": 276007,
+      "node_id": "MDQ6VXNlcjI3NjAwNw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/276007?v=4",
+      "html_url": "https://github.com/moorepants",
+      "contributions": 16
+    },
+    {
+      "login": "ethanwhite",
+      "id": 744427,
+      "node_id": "MDQ6VXNlcjc0NDQyNw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/744427?v=4",
+      "html_url": "https://github.com/ethanwhite",
+      "contributions": 15
+    },
+    {
+      "login": "story645",
+      "id": 1300499,
+      "node_id": "MDQ6VXNlcjEzMDA0OTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1300499?v=4",
+      "html_url": "https://github.com/story645",
+      "contributions": 15
+    },
+    {
+      "login": "chrismedrela",
+      "id": 1645996,
+      "node_id": "MDQ6VXNlcjE2NDU5OTY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1645996?v=4",
+      "html_url": "https://github.com/chrismedrela",
+      "contributions": 11
+    },
+    {
+      "login": "raivivek",
+      "id": 3218617,
+      "node_id": "MDQ6VXNlcjMyMTg2MTc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3218617?v=4",
+      "html_url": "https://github.com/raivivek",
+      "contributions": 11
+    },
+    {
+      "login": "mwiebe",
+      "id": 399551,
+      "node_id": "MDQ6VXNlcjM5OTU1MQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/399551?v=4",
+      "html_url": "https://github.com/mwiebe",
+      "contributions": 10
+    },
+    {
+      "login": "Dr-G",
+      "id": 7980466,
+      "node_id": "MDQ6VXNlcjc5ODA0NjY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7980466?v=4",
+      "html_url": "https://github.com/Dr-G",
+      "contributions": 9
+    },
+    {
+      "login": "tacaswell",
+      "id": 199813,
+      "node_id": "MDQ6VXNlcjE5OTgxMw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/199813?v=4",
+      "html_url": "https://github.com/tacaswell",
+      "contributions": 9
+    },
+    {
+      "login": "MatthewMiddlehurst",
+      "id": 25731235,
+      "node_id": "MDQ6VXNlcjI1NzMxMjM1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25731235?v=4",
+      "html_url": "https://github.com/MatthewMiddlehurst",
+      "contributions": 8
+    },
+    {
+      "login": "jainamritanshu",
+      "id": 15127027,
+      "node_id": "MDQ6VXNlcjE1MTI3MDI3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/15127027?v=4",
+      "html_url": "https://github.com/jainamritanshu",
+      "contributions": 8
+    },
+    {
+      "login": "jhale",
+      "id": 2894451,
+      "node_id": "MDQ6VXNlcjI4OTQ0NTE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2894451?v=4",
+      "html_url": "https://github.com/jhale",
+      "contributions": 7
+    },
+    {
+      "login": "shubhsingh594",
+      "id": 15982349,
+      "node_id": "MDQ6VXNlcjE1OTgyMzQ5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/15982349?v=4",
+      "html_url": "https://github.com/shubhsingh594",
+      "contributions": 7
+    },
+    {
+      "login": "aloctavodia",
+      "id": 1338958,
+      "node_id": "MDQ6VXNlcjEzMzg5NTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1338958?v=4",
+      "html_url": "https://github.com/aloctavodia",
+      "contributions": 7
+    },
+    {
+      "login": "prabh27",
+      "id": 6776137,
+      "node_id": "MDQ6VXNlcjY3NzYxMzc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6776137?v=4",
+      "html_url": "https://github.com/prabh27",
+      "contributions": 7
+    },
+    {
+      "login": "aa-dit-yuh",
+      "id": 6830800,
+      "node_id": "MDQ6VXNlcjY4MzA4MDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6830800?v=4",
+      "html_url": "https://github.com/aa-dit-yuh",
+      "contributions": 7
+    },
+    {
+      "login": "kmaehashi",
+      "id": 939877,
+      "node_id": "MDQ6VXNlcjkzOTg3Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/939877?v=4",
+      "html_url": "https://github.com/kmaehashi",
+      "contributions": 7
+    },
+    {
+      "login": "chrisrichardson",
+      "id": 4329467,
+      "node_id": "MDQ6VXNlcjQzMjk0Njc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4329467?v=4",
+      "html_url": "https://github.com/chrisrichardson",
+      "contributions": 6
+    },
+    {
+      "login": "fverdugo",
+      "id": 48508177,
+      "node_id": "MDQ6VXNlcjQ4NTA4MTc3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/48508177?v=4",
+      "html_url": "https://github.com/fverdugo",
+      "contributions": 6
+    },
+    {
+      "login": "terfilip",
+      "id": 6852065,
+      "node_id": "MDQ6VXNlcjY4NTIwNjU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6852065?v=4",
+      "html_url": "https://github.com/terfilip",
+      "contributions": 6
+    },
+    {
+      "login": "darshan95",
+      "id": 6889955,
+      "node_id": "MDQ6VXNlcjY4ODk5NTU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6889955?v=4",
+      "html_url": "https://github.com/darshan95",
+      "contributions": 6
+    },
+    {
+      "login": "bhargavvader",
+      "id": 8374816,
+      "node_id": "MDQ6VXNlcjgzNzQ4MTY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8374816?v=4",
+      "html_url": "https://github.com/bhargavvader",
+      "contributions": 6
+    },
+    {
+      "login": "gvwilson",
+      "id": 911566,
+      "node_id": "MDQ6VXNlcjkxMTU2Ng==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/911566?v=4",
+      "html_url": "https://github.com/gvwilson",
+      "contributions": 6
+    },
+    {
+      "login": "insertinterestingnamehere",
+      "id": 1847484,
+      "node_id": "MDQ6VXNlcjE4NDc0ODQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1847484?v=4",
+      "html_url": "https://github.com/insertinterestingnamehere",
+      "contributions": 6
+    },
+    {
+      "login": "nabobalis",
+      "id": 1392107,
+      "node_id": "MDQ6VXNlcjEzOTIxMDc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1392107?v=4",
+      "html_url": "https://github.com/nabobalis",
+      "contributions": 62
+    },
+    {
+      "login": "aterrel",
+      "id": 30583,
+      "node_id": "MDQ6VXNlcjMwNTgz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/30583?v=4",
+      "html_url": "https://github.com/aterrel",
+      "contributions": 18
+    },
+    {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "html_url": "https://github.com/apps/dependabot",
+      "contributions": 15
+    },
+    {
+      "login": "Aditya30ag",
+      "id": 162010355,
+      "node_id": "U_kgDOCagU8w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/162010355?v=4",
+      "html_url": "https://github.com/Aditya30ag",
+      "contributions": 8
+    },
+    {
+      "login": "bryevdv",
+      "id": 1078448,
+      "node_id": "MDQ6VXNlcjEwNzg0NDg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1078448?v=4",
+      "html_url": "https://github.com/bryevdv",
+      "contributions": 2
+    },
+    {
+      "login": "datapythonista",
+      "id": 10058240,
+      "node_id": "MDQ6VXNlcjEwMDU4MjQw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10058240?v=4",
+      "html_url": "https://github.com/datapythonista",
+      "contributions": 2
+    },
+    {
+      "login": "vfdev-5",
+      "id": 2459423,
+      "node_id": "MDQ6VXNlcjI0NTk0MjM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2459423?v=4",
+      "html_url": "https://github.com/vfdev-5",
+      "contributions": 2
     },
     {
       "login": "arliss-NF",
@@ -2683,87 +3235,15 @@
       "node_id": "MDQ6VXNlcjkwOTE5MTk0",
       "avatar_url": "https://avatars.githubusercontent.com/u/90919194?v=4",
       "html_url": "https://github.com/arliss-NF",
-      "contributions": 3
+      "contributions": 1
     },
     {
-      "login": "eyermt",
-      "id": 31872549,
-      "node_id": "MDQ6VXNlcjMxODcyNTQ5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/31872549?v=4",
-      "html_url": "https://github.com/eyermt",
-      "contributions": 21
-    },
-    {
-      "login": "jring-o",
-      "id": 29245250,
-      "node_id": "MDQ6VXNlcjI5MjQ1MjUw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/29245250?v=4",
-      "html_url": "https://github.com/jring-o",
-      "contributions": 18
-    },
-    {
-      "login": "dgiltz",
-      "id": 70062287,
-      "node_id": "MDQ6VXNlcjcwMDYyMjg3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/70062287?v=4",
-      "html_url": "https://github.com/dgiltz",
-      "contributions": 5
-    },
-    {
-      "login": "AAYUSH-SPIDEY-SHARMA",
-      "id": 183186958,
-      "node_id": "U_kgDOCus2Dg",
-      "avatar_url": "https://avatars.githubusercontent.com/u/183186958?v=4",
-      "html_url": "https://github.com/AAYUSH-SPIDEY-SHARMA",
-      "contributions": 4
-    },
-    {
-      "login": "df0o",
-      "id": 12823973,
-      "node_id": "MDQ6VXNlcjEyODIzOTcz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/12823973?v=4",
-      "html_url": "https://github.com/df0o",
+      "login": "jni",
+      "id": 492549,
+      "node_id": "MDQ6VXNlcjQ5MjU0OQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/492549?v=4",
+      "html_url": "https://github.com/jni",
       "contributions": 2
-    },
-    {
-      "login": "borisveytsman",
-      "id": 5191147,
-      "node_id": "MDQ6VXNlcjUxOTExNDc=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/5191147?v=4",
-      "html_url": "https://github.com/borisveytsman",
-      "contributions": 1
-    },
-    {
-      "login": "CoderRony955",
-      "id": 159680854,
-      "node_id": "U_kgDOCYSJVg",
-      "avatar_url": "https://avatars.githubusercontent.com/u/159680854?v=4",
-      "html_url": "https://github.com/CoderRony955",
-      "contributions": 1
-    },
-    {
-      "login": "jameshowison",
-      "id": 91986,
-      "node_id": "MDQ6VXNlcjkxOTg2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/91986?v=4",
-      "html_url": "https://github.com/jameshowison",
-      "contributions": 1
-    },
-    {
-      "login": "Shaanworkspace",
-      "id": 168273225,
-      "node_id": "U_kgDOCgelSQ",
-      "avatar_url": "https://avatars.githubusercontent.com/u/168273225?v=4",
-      "html_url": "https://github.com/Shaanworkspace",
-      "contributions": 1
-    },
-    {
-      "login": "speco29",
-      "id": 173687368,
-      "node_id": "U_kgDOClpCSA",
-      "avatar_url": "https://avatars.githubusercontent.com/u/173687368?v=4",
-      "html_url": "https://github.com/speco29",
-      "contributions": 1
     }
   ],
   "activeOrg": false

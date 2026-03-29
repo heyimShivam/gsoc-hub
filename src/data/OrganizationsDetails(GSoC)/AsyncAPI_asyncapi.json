@@ -69,7 +69,71 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/pinRCdss"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "AsyncAPI Generator Maintainership",
+        "short_description": "The is a project to take maintenership of the \"asyncapi/generator\" repository. The focus is on developing maintainer skills by handling issue...",
+        "description": "The is a project to take maintenership of the \"asyncapi/generator\" repository. The focus is on developing maintainer skills by handling issue triaging, bug fixes, PR reviews, writing tests, improving documentation, helping newcomers to contribute and guiding the project's long-term growth. The mentorship provides a deep understanding of open-source maintenance, making it a valuable opportunity for career growth and industry experience.",
+        "student_name": "Adi Boghawala",
+        "code_url": "https://gist.github.com/Adi-204/a4040124ed8cb510465e8e38b1fd422d",
+        "proposal_id": "qt8BcFe0",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/MsWQPcNn"
+      },
+      {
+        "title": "Implement E2E UI tests for the website critical flows",
+        "short_description": "AsyncAPI currently lacks comprehensive end-to-end (E2E) testing, making it difficult to ensure that critical user flows remain functional across...",
+        "description": "AsyncAPI currently lacks comprehensive end-to-end (E2E) testing, making it difficult to ensure that critical user flows remain functional across updates. Without automated testing, regressions can go unnoticed, potentially affecting critical user flows. This project aims to  implement robust E2E testing suite. We will identify critical user workflows, develop automated , and integrate them with GitHub Actions to enable continuous testing with every pull request. By ensuring that core functionalities are thoroughly tested, we can improve reliability, reduce manual QA efforts, and enhance the overall developer experience.",
+        "student_name": "Anushka Sharan",
+        "code_url": "https://gist.github.com/anushkaaaaaaaa/ae181e428d170f08bf3dcfb22ea274e7",
+        "proposal_id": "JuoydM7y",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/ZohGWe1F"
+      },
+      {
+        "title": "VS Code Extension Maintainership",
+        "short_description": "It focuses on maintaining and improving the AsyncAPI VS Code extension to ensure stability, better usability, and full support for the latest...",
+        "description": "It focuses on maintaining and improving the AsyncAPI VS Code extension to ensure stability, better usability, and full support for the latest AsyncAPI specifications. The work includes modernizing the codebase, adding real-time linting and validation, improving the document preview experience, automating release workflows, and enhancing contributor documentation. The goal is to deliver a well-documented, user-friendly, and production-ready extension that improves the overall developer experience.",
+        "student_name": "Ruchi Pakhle",
+        "code_url": "https://gist.github.com/Ruchip16/6c6f10c70188a2b422d418c13fed1f05",
+        "proposal_id": "zbidsT1N",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/4l304KrX"
+      },
+      {
+        "title": "Add npm folder for the scripts and add integration tests for this folder",
+        "short_description": "There are many static .mdx and .json files in the codebase that are used to render pages or components on the AsyncAPI website. These static files...",
+        "description": "There are many static .mdx and .json files in the codebase that are used to render pages or components on the AsyncAPI website. These static files are regularly updated by some scripts on builds and via cron jobs and my task is to refactor the scripts.\nCurrently, some scripts contain a main function that directly executes the scripts. In this refactoring, I am removing those direct executions and instead call all script functions from a central npm folder. This will allow us to structure integration tests directly for these scripts. As a next step, I will be writing the integration tests as well for these script and fix the existing unit tests affected due to refactoring. \nTech Stack: TypeScript, Data Structures and Algorithms, NPM, Testing, Unit Testing, Integration Testing, Code Refactoring, Next.Js",
+        "student_name": "Sagar Kori",
+        "code_url": "https://docs.google.com/document/d/12X52qNCN6BvnFOVNcl2uq4YrBw6eYEF3d42P_siYwec/edit?usp=sharing",
+        "proposal_id": "VAvk94yO",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/Z37G7QFl"
+      },
+      {
+        "title": "Redesign the AsyncAPI Website and Implement Dark Theme",
+        "short_description": "The website lacks visual consistency, accessibility features, and a dark mode—critical elements for enhancing the experience of developers and...",
+        "description": "The website lacks visual consistency, accessibility features, and a dark mode—critical elements for enhancing the experience of developers and engaging contributing organizations. To address this, I will follow a two-phase approach: first, planning and designing UI components and layouts.; second, implementing these designs using React.js, Next.js, TypeScript, and Tailwind CSS v4.0. Deliverables include a responsive, accessible interface, reusable component system, robust dark mode support, and performance-optimized code.",
+        "student_name": "Shriya Chauhan",
+        "code_url": "https://gist.github.com/Shriya-Chauhan/d4ef9904b83cf88d3d9554b8afa1903e",
+        "proposal_id": "DANyatjF",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/dVEjdU4X"
+      },
+      {
+        "title": "Extending AsyncAPI's Generator Java Templates with Quarkus",
+        "short_description": "This project aims to extend AsyncAPI suite of community maintained, production ready templates by developing and maintaining a new Java + Quarkus...",
+        "description": "This project aims to extend AsyncAPI suite of community maintained, production ready templates by developing and maintaining a new Java + Quarkus template for generating asynchronous applications using AsyncAPI’s generator repository. Quarkus, a Kubernetes-native Java stack , is an ideal framework for building modern event-driven microservices. This project aims to simplify the development of asynchronous services in Java by generating code and documentation for developers looking to use EDAs in a cloud-native application. Furthermore, this template will be one of the first templates developed inside the AsyncAPI’s generator repository. Allowing developers to test changes locally in the generator repository, making the development easier and reducing the number of workarounds in the template codes. This project will start the improved way of developing and maintaining templates for the AsyncAPI initiative. Key deliverables include: dynamic code generation from AsyncAPI specs using the React engine with integrated WebSocket support, extensions support for Kafka protocol, and a Kubernetes CRD integration.",
+        "student_name": "Shuaib Salad",
+        "code_url": "https://gist.github.com/ssala034/4f90f4695a34d0e6bb897d2551aea973",
+        "proposal_id": "zHuBK2rI",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/qDs74iei"
+      },
+      {
+        "title": "AsyncAPI Conference Website UI Kit Development",
+        "short_description": "AsyncAPI Conference Website is an essential part of the AsyncAPI Community, it serves as the gateway for the Conference Speakers, Participant and the...",
+        "description": "AsyncAPI Conference Website is an essential part of the AsyncAPI Community, it serves as the gateway for the Conference Speakers, Participant and the community member to view the upcoming conferences and participate within it . As the conference website grows, there is a need to enhance the conference website repository in terms of reusability and maintainability for future growth. The goal of this project is to develop a comprehensive UI Kit that can enhance the existing design, and streamline the development process to simplify the creation and management of cohesive elements in the website. This UI Kit will help in preventing the process of rebuilding similar components.",
+        "student_name": "Tenzin Delek",
+        "code_url": "https://gist.github.com/TenzDelek/a6e653cfaae6eb2bca793374ce1695a9",
+        "proposal_id": "760L3LOM",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/juAST6cE"
+      }
+    ]
   },
   "githubID": "asyncapi",
   "repositories": [
@@ -81,9 +145,9 @@
       "html_url": "https://github.com/asyncapi/kotlin-asyncapi",
       "description": "Simplify event-driven API documentation for Kotlin microservices",
       "language": "Kotlin",
-      "stargazers_count": 31,
-      "forks_count": 2,
-      "open_issues_count": 3,
+      "stargazers_count": 45,
+      "forks_count": 6,
+      "open_issues_count": 7,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -102,16 +166,16 @@
       ]
     },
     {
-      "id": 558460590,
-      "node_id": "R_kgDOIUlurg",
-      "name": "jasyncapi-idea-plugin",
-      "full_name": "asyncapi/jasyncapi-idea-plugin",
-      "html_url": "https://github.com/asyncapi/jasyncapi-idea-plugin",
-      "description": "/jay-sync-api/-idea-plugin is a IDEA plugin for AsyncAPI specification ",
-      "language": "Kotlin",
-      "stargazers_count": 12,
-      "forks_count": 4,
-      "open_issues_count": 7,
+      "id": 91116029,
+      "node_id": "MDEwOlJlcG9zaXRvcnk5MTExNjAyOQ==",
+      "name": "website",
+      "full_name": "asyncapi/website",
+      "html_url": "https://github.com/asyncapi/website",
+      "description": "AsyncAPI specification website",
+      "language": "TypeScript",
+      "stargazers_count": 698,
+      "forks_count": 1208,
+      "open_issues_count": 228,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -120,40 +184,9 @@
         "node_id": "MDc6TGljZW5zZTI="
       },
       "topics": [
-        "asyncapi",
-        "asyncapi-schemas",
-        "asyncapi-specification",
-        "intellij-plugin"
-      ]
-    },
-    {
-      "id": 142165796,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNDIxNjU3OTY=",
-      "name": "generator",
-      "full_name": "asyncapi/generator",
-      "html_url": "https://github.com/asyncapi/generator",
-      "description": "Use your AsyncAPI definition to generate literally anything. Markdown documentation, Node.js code, HTML documentation, anything!",
-      "language": "JavaScript",
-      "stargazers_count": 880,
-      "forks_count": 295,
-      "open_issues_count": 53,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "asyncapi",
-        "codegen",
-        "codegenerator",
-        "documentation",
-        "generator",
-        "get-global-docs-autoupdate",
-        "get-global-prettierignore",
-        "hacktoberfest",
-        "nodejs"
+        "nextjs",
+        "react",
+        "tailwindcss"
       ]
     },
     {
@@ -164,77 +197,33 @@
       "html_url": "https://github.com/asyncapi/community",
       "description": "AsyncAPI community-related stuff.",
       "language": "JavaScript",
-      "stargazers_count": 120,
-      "forks_count": 139,
-      "open_issues_count": 40,
-      "license": null,
+      "stargazers_count": 138,
+      "forks_count": 177,
+      "open_issues_count": 23,
+      "license": {
+        "key": "cc-by-4.0",
+        "name": "Creative Commons Attribution 4.0 International",
+        "spdx_id": "CC-BY-4.0",
+        "url": "https://api.github.com/licenses/cc-by-4.0",
+        "node_id": "MDc6TGljZW5zZTI1"
+      },
       "topics": [
+        "get-global-holopin",
         "hacktoberfest",
         "nodejs"
       ]
     },
     {
-      "id": 91116029,
-      "node_id": "MDEwOlJlcG9zaXRvcnk5MTExNjAyOQ==",
-      "name": "website",
-      "full_name": "asyncapi/website",
-      "html_url": "https://github.com/asyncapi/website",
-      "description": "AsyncAPI specification website",
-      "language": "TypeScript",
-      "stargazers_count": 587,
-      "forks_count": 899,
-      "open_issues_count": 119,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "hacktoberfest",
-        "nextjs",
-        "react",
-        "tailwindcss"
-      ]
-    },
-    {
-      "id": 127419043,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMjc0MTkwNDM=",
-      "name": "spec-json-schemas",
-      "full_name": "asyncapi/spec-json-schemas",
-      "html_url": "https://github.com/asyncapi/spec-json-schemas",
-      "description": "AsyncAPI schema versions",
-      "language": "JavaScript",
-      "stargazers_count": 63,
-      "forks_count": 57,
-      "open_issues_count": 5,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "asyncapi",
-        "get-global-node-release-workflows",
-        "get-global-releaserc",
-        "hacktoberfest",
-        "nodejs"
-      ]
-    },
-    {
-      "id": 74170071,
-      "node_id": "MDEwOlJlcG9zaXRvcnk3NDE3MDA3MQ==",
-      "name": "spec",
-      "full_name": "asyncapi/spec",
-      "html_url": "https://github.com/asyncapi/spec",
-      "description": "The AsyncAPI specification allows you to create machine-readable definitions of your asynchronous APIs.",
-      "language": "JavaScript",
-      "stargazers_count": 4625,
-      "forks_count": 304,
-      "open_issues_count": 25,
+      "id": 209155540,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMDkxNTU1NDA=",
+      "name": "saunter",
+      "full_name": "asyncapi/saunter",
+      "html_url": "https://github.com/asyncapi/saunter",
+      "description": "Saunter is a code-first AsyncAPI documentation generator for dotnet.",
+      "language": "C#",
+      "stargazers_count": 226,
+      "forks_count": 61,
+      "open_issues_count": 54,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -244,27 +233,24 @@
       },
       "topics": [
         "amqp",
+        "aspnetcore",
         "asyncapi",
-        "hacktoberfest",
-        "kafka",
-        "mqtt",
-        "reactive",
-        "specification",
-        "stomp",
-        "websockets"
+        "documentation",
+        "dotnet",
+        "openapi"
       ]
     },
     {
-      "id": 204180806,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMDQxODA4MDY=",
-      "name": "bindings",
-      "full_name": "asyncapi/bindings",
-      "html_url": "https://github.com/asyncapi/bindings",
-      "description": "AsyncAPI bindings specifications",
-      "language": null,
-      "stargazers_count": 75,
-      "forks_count": 77,
-      "open_issues_count": 12,
+      "id": 248822851,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyNDg4MjI4NTE=",
+      "name": "nodejs-ws-template",
+      "full_name": "asyncapi/nodejs-ws-template",
+      "html_url": "https://github.com/asyncapi/nodejs-ws-template",
+      "description": "Node.js WebSockets template for the AsyncAPI Generator. It showcases how from a single AsyncAPI document you can generate a server and a client at the same time.",
+      "language": "JavaScript",
+      "stargazers_count": 31,
+      "forks_count": 30,
+      "open_issues_count": 15,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -272,7 +258,71 @@
         "url": "https://api.github.com/licenses/apache-2.0",
         "node_id": "MDc6TGljZW5zZTI="
       },
-      "topics": []
+      "topics": [
+        "asyncapi",
+        "generator",
+        "get-global-node-release-workflows",
+        "get-global-releaserc",
+        "nodejs",
+        "template",
+        "websocket",
+        "websockets"
+      ]
+    },
+    {
+      "id": 246628307,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyNDY2MjgzMDc=",
+      "name": "openapi-schema-parser",
+      "full_name": "asyncapi/openapi-schema-parser",
+      "html_url": "https://github.com/asyncapi/openapi-schema-parser",
+      "description": "An AsyncAPI schema parser for OpenAPI 3.0.x and Swagger 2.x schemas.",
+      "language": "TypeScript",
+      "stargazers_count": 18,
+      "forks_count": 9,
+      "open_issues_count": 5,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "get-global-node-release-workflows",
+        "get-global-releaserc",
+        "nodejs",
+        "openapi",
+        "parser"
+      ]
+    },
+    {
+      "id": 156510564,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNTY1MTA1NjQ=",
+      "name": "asyncapi-react",
+      "full_name": "asyncapi/asyncapi-react",
+      "html_url": "https://github.com/asyncapi/asyncapi-react",
+      "description": "React component for rendering documentation from your specification in real-time in the browser. It also provides a WebComponent and bundle for Angular and Vue",
+      "language": "TypeScript",
+      "stargazers_count": 233,
+      "forks_count": 175,
+      "open_issues_count": 35,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "asyncapi",
+        "asyncapi-specification",
+        "event",
+        "get-global-node-release-workflows",
+        "hacktoberfest",
+        "nodejs",
+        "react",
+        "reactjs"
+      ]
     },
     {
       "id": 331620831,
@@ -282,9 +332,9 @@
       "html_url": "https://github.com/asyncapi/modelina",
       "description": "A library for generating typed models based on inputs such as AsyncAPI, OpenAPI, and JSON Schema documents with high customization",
       "language": "TypeScript",
-      "stargazers_count": 366,
-      "forks_count": 209,
-      "open_issues_count": 25,
+      "stargazers_count": 431,
+      "forks_count": 227,
+      "open_issues_count": 39,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -314,16 +364,69 @@
       ]
     },
     {
-      "id": 293630791,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyOTM2MzA3OTE=",
-      "name": "go-watermill-template",
-      "full_name": "asyncapi/go-watermill-template",
-      "html_url": "https://github.com/asyncapi/go-watermill-template",
-      "description": "Go template for the AsyncAPI Generator using Watermill module",
+      "id": 252443703,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyNTI0NDM3MDM=",
+      "name": "conference-website",
+      "full_name": "asyncapi/conference-website",
+      "html_url": "https://github.com/asyncapi/conference-website",
+      "description": "Website for the AsyncAPI online conference",
+      "language": "TypeScript",
+      "stargazers_count": 47,
+      "forks_count": 205,
+      "open_issues_count": 41,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "hacktoberfest",
+        "nextjs",
+        "react"
+      ]
+    },
+    {
+      "id": 74170071,
+      "node_id": "MDEwOlJlcG9zaXRvcnk3NDE3MDA3MQ==",
+      "name": "spec",
+      "full_name": "asyncapi/spec",
+      "html_url": "https://github.com/asyncapi/spec",
+      "description": "The AsyncAPI specification allows you to create machine-readable definitions of your asynchronous APIs.",
       "language": "JavaScript",
-      "stargazers_count": 51,
-      "forks_count": 17,
-      "open_issues_count": 4,
+      "stargazers_count": 5132,
+      "forks_count": 383,
+      "open_issues_count": 34,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "amqp",
+        "asyncapi",
+        "kafka",
+        "mqtt",
+        "reactive",
+        "specification",
+        "stomp",
+        "websockets"
+      ]
+    },
+    {
+      "id": 248820246,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyNDg4MjAyNDY=",
+      "name": "nodejs-template",
+      "full_name": "asyncapi/nodejs-template",
+      "html_url": "https://github.com/asyncapi/nodejs-template",
+      "description": "This template generates a server using your AsyncAPI document. It supports multiple different protocols, like Kafka or MQTT.  It is designed in the way that generated code is a library and with it's API you can start the server, send messages or register a middleware for listening incoming messages. Runtime message validation included.",
+      "language": "JavaScript",
+      "stargazers_count": 47,
+      "forks_count": 34,
+      "open_issues_count": 6,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -334,25 +437,51 @@
       "topics": [
         "asyncapi",
         "generator",
-        "go",
-        "hacktoberfest",
+        "get-global-node-release-workflows",
+        "get-global-releaserc",
         "nodejs",
-        "rabbitmq",
-        "template",
-        "watermill"
+        "template"
       ]
     },
     {
-      "id": 474910288,
-      "node_id": "R_kgDOHE6OUA",
-      "name": "dotnet-rabbitmq-template",
-      "full_name": "asyncapi/dotnet-rabbitmq-template",
-      "html_url": "https://github.com/asyncapi/dotnet-rabbitmq-template",
-      "description": "This template is for generating a .NET C# wrapper for the RabbitMQ client based on your AsyncAPI document.",
+      "id": 248818855,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyNDg4MTg4NTU=",
+      "name": "markdown-template",
+      "full_name": "asyncapi/markdown-template",
+      "html_url": "https://github.com/asyncapi/markdown-template",
+      "description": "Markdown template for the AsyncAPI Generator",
       "language": "JavaScript",
-      "stargazers_count": 12,
-      "forks_count": 3,
-      "open_issues_count": 3,
+      "stargazers_count": 35,
+      "forks_count": 38,
+      "open_issues_count": 5,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "asyncapi",
+        "generator",
+        "get-global-node-release-workflows",
+        "get-global-releaserc",
+        "markdown",
+        "nodejs",
+        "template"
+      ]
+    },
+    {
+      "id": 142165796,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNDIxNjU3OTY=",
+      "name": "generator",
+      "full_name": "asyncapi/generator",
+      "html_url": "https://github.com/asyncapi/generator",
+      "description": "Use your AsyncAPI definition to generate literally anything. Markdown documentation, Node.js code, HTML documentation, anything!",
+      "language": "JavaScript",
+      "stargazers_count": 1037,
+      "forks_count": 380,
+      "open_issues_count": 64,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -363,10 +492,71 @@
       "topics": [
         "asyncapi",
         "codegen",
+        "codegenerator",
+        "documentation",
         "generator",
+        "get-global-docs-autoupdate",
+        "get-global-holopin",
+        "get-global-prettierignore",
+        "hacktoberfest",
+        "nodejs"
+      ]
+    },
+    {
+      "id": 248824902,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyNDg4MjQ5MDI=",
+      "name": "java-spring-template",
+      "full_name": "asyncapi/java-spring-template",
+      "html_url": "https://github.com/asyncapi/java-spring-template",
+      "description": "Java Spring template for the AsyncAPI Generator",
+      "language": "Java",
+      "stargazers_count": 81,
+      "forks_count": 64,
+      "open_issues_count": 20,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "asyncapi",
+        "generator",
+        "get-global-node-release-workflows",
+        "get-global-releaserc",
+        "java",
         "nodejs",
-        "rabbitmq",
+        "spring",
+        "spring-boot",
+        "springboot",
         "template"
+      ]
+    },
+    {
+      "id": 186131784,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxODYxMzE3ODQ=",
+      "name": "converter-js",
+      "full_name": "asyncapi/converter-js",
+      "html_url": "https://github.com/asyncapi/converter-js",
+      "description": "Convert to or migrate between AsyncAPI versions with the converter",
+      "language": "TypeScript",
+      "stargazers_count": 24,
+      "forks_count": 20,
+      "open_issues_count": 2,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "convert",
+        "converter",
+        "get-global-node-release-workflows",
+        "get-global-releaserc",
+        "nodejs"
       ]
     },
     {
@@ -377,9 +567,9 @@
       "html_url": "https://github.com/asyncapi/cli",
       "description": "CLI to work with your AsyncAPI files. You can validate them and in the future use a generator and even bootstrap a new file. Contributions are welcomed!",
       "language": "TypeScript",
-      "stargazers_count": 222,
-      "forks_count": 234,
-      "open_issues_count": 41,
+      "stargazers_count": 268,
+      "forks_count": 336,
+      "open_issues_count": 91,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -398,34 +588,16 @@
       ]
     },
     {
-      "id": 252443703,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNTI0NDM3MDM=",
-      "name": "conference-website",
-      "full_name": "asyncapi/conference-website",
-      "html_url": "https://github.com/asyncapi/conference-website",
-      "description": "Website for the AsyncAPI online conference",
+      "id": 127419043,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMjc0MTkwNDM=",
+      "name": "spec-json-schemas",
+      "full_name": "asyncapi/spec-json-schemas",
+      "html_url": "https://github.com/asyncapi/spec-json-schemas",
+      "description": "AsyncAPI schema versions",
       "language": "JavaScript",
-      "stargazers_count": 41,
-      "forks_count": 157,
-      "open_issues_count": 55,
-      "license": null,
-      "topics": [
-        "hacktoberfest",
-        "nextjs",
-        "react"
-      ]
-    },
-    {
-      "id": 262555517,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNjI1NTU1MTc=",
-      "name": "jasyncapi",
-      "full_name": "asyncapi/jasyncapi",
-      "html_url": "https://github.com/asyncapi/jasyncapi",
-      "description": "/jay-sync-api/ is a Java code-first tool for AsyncAPI specification",
-      "language": "Kotlin",
-      "stargazers_count": 71,
-      "forks_count": 24,
-      "open_issues_count": 2,
+      "stargazers_count": 72,
+      "forks_count": 63,
+      "open_issues_count": 10,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -435,10 +607,83 @@
       },
       "topics": [
         "asyncapi",
-        "code-first",
-        "java-library",
-        "kotlin-library"
+        "get-global-node-release-workflows",
+        "get-global-releaserc",
+        "nodejs"
       ]
+    },
+    {
+      "id": 248811187,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyNDg4MTExODc=",
+      "name": "html-template",
+      "full_name": "asyncapi/html-template",
+      "html_url": "https://github.com/asyncapi/html-template",
+      "description": "HTML template for AsyncAPI Generator. Use it to generate a static docs. It is using AsyncAPI React component under the hood.",
+      "language": "JavaScript",
+      "stargazers_count": 91,
+      "forks_count": 71,
+      "open_issues_count": 7,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "asyncapi",
+        "generator",
+        "get-",
+        "get-global-node-release-workflows",
+        "get-global-releaserc",
+        "html",
+        "nodejs",
+        "template"
+      ]
+    },
+    {
+      "id": 412989299,
+      "node_id": "R_kgDOGJ23cw",
+      "name": "bundler",
+      "full_name": "asyncapi/bundler",
+      "html_url": "https://github.com/asyncapi/bundler",
+      "description": "Combine multiple AsyncAPI specification files into one.",
+      "language": "TypeScript",
+      "stargazers_count": 33,
+      "forks_count": 16,
+      "open_issues_count": 4,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "get-global-node-release-workflows",
+        "get-global-releaserc",
+        "nodejs"
+      ]
+    },
+    {
+      "id": 204180806,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMDQxODA4MDY=",
+      "name": "bindings",
+      "full_name": "asyncapi/bindings",
+      "html_url": "https://github.com/asyncapi/bindings",
+      "description": "AsyncAPI bindings specifications",
+      "language": null,
+      "stargazers_count": 78,
+      "forks_count": 80,
+      "open_issues_count": 13,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
     },
     {
       "id": 244036821,
@@ -448,9 +693,9 @@
       "html_url": "https://github.com/asyncapi/studio",
       "description": "Visually design your AsyncAPI files and event-driven architecture.",
       "language": "TypeScript",
-      "stargazers_count": 179,
-      "forks_count": 113,
-      "open_issues_count": 27,
+      "stargazers_count": 205,
+      "forks_count": 137,
+      "open_issues_count": 38,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -472,9 +717,9 @@
       "html_url": "https://github.com/asyncapi/vs-asyncapi-preview",
       "description": "VSCode AsyncAPI Preview Extension",
       "language": "TypeScript",
-      "stargazers_count": 53,
+      "stargazers_count": 60,
       "forks_count": 47,
-      "open_issues_count": 20,
+      "open_issues_count": 0,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -489,112 +734,15 @@
       ]
     },
     {
-      "id": 248811187,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNDg4MTExODc=",
-      "name": "html-template",
-      "full_name": "asyncapi/html-template",
-      "html_url": "https://github.com/asyncapi/html-template",
-      "description": "HTML template for AsyncAPI Generator. Use it to generate a static docs. It is using AsyncAPI React component under the hood.",
-      "language": "JavaScript",
-      "stargazers_count": 74,
-      "forks_count": 63,
-      "open_issues_count": 5,
-      "license": null,
-      "topics": [
-        "asyncapi",
-        "generator",
-        "get-",
-        "get-global-node-release-workflows",
-        "get-global-releaserc",
-        "html",
-        "nodejs",
-        "template"
-      ]
-    },
-    {
-      "id": 372236368,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzNzIyMzYzNjg=",
-      "name": "glee",
-      "full_name": "asyncapi/glee",
-      "html_url": "https://github.com/asyncapi/glee",
-      "description": "Glee — The AsyncAPI framework that will make you smile again :)",
-      "language": "HTML",
-      "stargazers_count": 96,
-      "forks_count": 60,
-      "open_issues_count": 6,
-      "license": null,
-      "topics": [
-        "get-global-docs-autoupdate",
-        "get-global-releaserc",
-        "hacktoberfest",
-        "nodejs"
-      ]
-    },
-    {
-      "id": 248818855,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNDg4MTg4NTU=",
-      "name": "markdown-template",
-      "full_name": "asyncapi/markdown-template",
-      "html_url": "https://github.com/asyncapi/markdown-template",
-      "description": "Markdown template for the AsyncAPI Generator",
-      "language": "JavaScript",
-      "stargazers_count": 31,
-      "forks_count": 37,
-      "open_issues_count": 1,
-      "license": null,
-      "topics": [
-        "asyncapi",
-        "generator",
-        "get-global-node-release-workflows",
-        "get-global-releaserc",
-        "hacktoberfest",
-        "markdown",
-        "nodejs",
-        "template"
-      ]
-    },
-    {
-      "id": 383475660,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzODM0NzU2NjA=",
-      "name": "net-sdk",
-      "full_name": "asyncapi/net-sdk",
-      "html_url": "https://github.com/asyncapi/net-sdk",
-      "description": "A .NET SDK for the Async API specification",
-      "language": "C#",
-      "stargazers_count": 76,
-      "forks_count": 14,
-      "open_issues_count": 1,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "amqp",
-        "asyncapi",
-        "client",
-        "code-first",
-        "documentation",
-        "dotnet",
-        "generator",
-        "kafka",
-        "mqtt",
-        "nats",
-        "websocket"
-      ]
-    },
-    {
-      "id": 246134748,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNDYxMzQ3NDg=",
-      "name": "raml-dt-schema-parser",
-      "full_name": "asyncapi/raml-dt-schema-parser",
-      "html_url": "https://github.com/asyncapi/raml-dt-schema-parser",
-      "description": "AsyncAPI schema parser for RAML data types",
+      "id": 371318697,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzNzEzMTg2OTc=",
+      "name": "optimizer",
+      "full_name": "asyncapi/optimizer",
+      "html_url": "https://github.com/asyncapi/optimizer",
+      "description": "AsyncAPI offers many different ways to reuse certain parts of the document like messages or schemas definitions or references to external files, not to even mention the traits. There is a need for a tool that can be plugged into any workflows and optimize documents that are generated from code, but not only.",
       "language": "TypeScript",
-      "stargazers_count": 7,
-      "forks_count": 7,
+      "stargazers_count": 12,
+      "forks_count": 11,
       "open_issues_count": 4,
       "license": {
         "key": "apache-2.0",
@@ -607,20 +755,77 @@
         "get-global-node-release-workflows",
         "get-global-releaserc",
         "nodejs",
-        "parser",
-        "raml"
+        "typescript"
       ]
     },
     {
-      "id": 442422660,
-      "node_id": "R_kgDOGl7VhA",
-      "name": "java-template",
-      "full_name": "asyncapi/java-template",
-      "html_url": "https://github.com/asyncapi/java-template",
-      "description": "Java template for the AsyncAPI Generator",
+      "id": 558460590,
+      "node_id": "R_kgDOIUlurg",
+      "name": "jasyncapi-idea-plugin",
+      "full_name": "asyncapi/jasyncapi-idea-plugin",
+      "html_url": "https://github.com/asyncapi/jasyncapi-idea-plugin",
+      "description": "/jay-sync-api/-idea-plugin is a IDEA plugin for AsyncAPI specification ",
+      "language": "Kotlin",
+      "stargazers_count": 16,
+      "forks_count": 7,
+      "open_issues_count": 11,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "asyncapi",
+        "asyncapi-schemas",
+        "asyncapi-specification",
+        "intellij-plugin"
+      ]
+    },
+    {
+      "id": 558456165,
+      "node_id": "R_kgDOIUldZQ",
+      "name": "EDAVisualiser",
+      "full_name": "asyncapi/EDAVisualiser",
+      "html_url": "https://github.com/asyncapi/EDAVisualiser",
+      "description": "View your system, events, applications through different perspectives",
+      "language": "TypeScript",
+      "stargazers_count": 28,
+      "forks_count": 10,
+      "open_issues_count": 3,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "angular",
+        "asyncapi",
+        "edavisualiser",
+        "get-global-node-release-workflows",
+        "get-global-releaserc",
+        "nextjs",
+        "nodejs",
+        "react",
+        "visualiser",
+        "visualizer",
+        "vue",
+        "webcomponent"
+      ]
+    },
+    {
+      "id": 249808540,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyNDk4MDg1NDA=",
+      "name": "python-paho-template",
+      "full_name": "asyncapi/python-paho-template",
+      "html_url": "https://github.com/asyncapi/python-paho-template",
+      "description": "Python Paho template for the AsyncAPI generator",
       "language": "JavaScript",
-      "stargazers_count": 15,
-      "forks_count": 16,
+      "stargazers_count": 30,
+      "forks_count": 24,
       "open_issues_count": 6,
       "license": {
         "key": "apache-2.0",
@@ -633,23 +838,8 @@
         "asyncapi",
         "generator",
         "nodejs",
+        "python",
         "template"
-      ]
-    },
-    {
-      "id": 254598177,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNTQ1OTgxNzc=",
-      "name": ".github",
-      "full_name": "asyncapi/.github",
-      "html_url": "https://github.com/asyncapi/.github",
-      "description": "Location of all reusable community health files",
-      "language": null,
-      "stargazers_count": 35,
-      "forks_count": 72,
-      "open_issues_count": 18,
-      "license": null,
-      "topics": [
-        "hacktoberfest"
       ]
     },
     {
@@ -660,7 +850,7 @@
       "html_url": "https://github.com/asyncapi/protobuf-schema-parser",
       "description": "Schema parser for Protobuf compatible with AsyncAPI JS Parser",
       "language": "TypeScript",
-      "stargazers_count": 6,
+      "stargazers_count": 10,
       "forks_count": 2,
       "open_issues_count": 0,
       "license": {
@@ -680,143 +870,15 @@
       ]
     },
     {
-      "id": 358226966,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzNTgyMjY5NjY=",
-      "name": "template-for-go-projects",
-      "full_name": "asyncapi/template-for-go-projects",
-      "html_url": "https://github.com/asyncapi/template-for-go-projects",
-      "description": "This is a repository template for golang projects",
-      "language": "Makefile",
-      "stargazers_count": 3,
-      "forks_count": 2,
-      "open_issues_count": 2,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "go",
-        "golang"
-      ]
-    },
-    {
-      "id": 279697446,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNzk2OTc0NDY=",
-      "name": "avro-schema-parser",
-      "full_name": "asyncapi/avro-schema-parser",
-      "html_url": "https://github.com/asyncapi/avro-schema-parser",
-      "description": "An AsyncAPI schema parser for Avro 1.x schemas.",
-      "language": "TypeScript",
-      "stargazers_count": 33,
-      "forks_count": 19,
-      "open_issues_count": 13,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "avro",
-        "avro-schema",
-        "avro-schema-registry",
-        "get-global-node-release-workflows",
-        "get-global-releaserc",
-        "nodejs",
-        "parser"
-      ]
-    },
-    {
-      "id": 558458733,
-      "node_id": "R_kgDOIUlnbQ",
-      "name": "problem",
-      "full_name": "asyncapi/problem",
-      "html_url": "https://github.com/asyncapi/problem",
-      "description": "Library that implements the Problem interface. Reference https://www.rfc-editor.org/rfc/rfc7807",
-      "language": "TypeScript",
-      "stargazers_count": 7,
-      "forks_count": 2,
-      "open_issues_count": 2,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "asyncapi",
-        "get-global-node-release-workflows",
-        "get-global-releaserc",
-        "nodejs",
-        "problem"
-      ]
-    },
-    {
-      "id": 412989299,
-      "node_id": "R_kgDOGJ23cw",
-      "name": "bundler",
-      "full_name": "asyncapi/bundler",
-      "html_url": "https://github.com/asyncapi/bundler",
-      "description": "Combine multiple AsyncAPI specification files into one.",
-      "language": "TypeScript",
-      "stargazers_count": 30,
-      "forks_count": 15,
-      "open_issues_count": 2,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "get-global-node-release-workflows",
-        "get-global-releaserc",
-        "nodejs"
-      ]
-    },
-    {
-      "id": 418476433,
-      "node_id": "R_kgDOGPFxkQ",
-      "name": "server-api",
-      "full_name": "asyncapi/server-api",
-      "html_url": "https://github.com/asyncapi/server-api",
-      "description": "Server API providing official AsyncAPI tools",
-      "language": "TypeScript",
-      "stargazers_count": 33,
-      "forks_count": 34,
-      "open_issues_count": 3,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "asyncapi",
-        "docker",
-        "get-global-node-release-workflows",
-        "get-global-releaserc",
-        "hacktoberfest",
-        "nodejs"
-      ]
-    },
-    {
-      "id": 246628307,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNDY2MjgzMDc=",
-      "name": "openapi-schema-parser",
-      "full_name": "asyncapi/openapi-schema-parser",
-      "html_url": "https://github.com/asyncapi/openapi-schema-parser",
-      "description": "An AsyncAPI schema parser for OpenAPI 3.0.x and Swagger 2.x schemas.",
-      "language": "TypeScript",
-      "stargazers_count": 17,
-      "forks_count": 7,
+      "id": 442422660,
+      "node_id": "R_kgDOGl7VhA",
+      "name": "java-template",
+      "full_name": "asyncapi/java-template",
+      "html_url": "https://github.com/asyncapi/java-template",
+      "description": "Java template for the AsyncAPI Generator",
+      "language": "JavaScript",
+      "stargazers_count": 14,
+      "forks_count": 18,
       "open_issues_count": 1,
       "license": {
         "key": "apache-2.0",
@@ -826,30 +888,63 @@
         "node_id": "MDc6TGljZW5zZTI="
       },
       "topics": [
-        "get-global-node-release-workflows",
-        "get-global-releaserc",
+        "asyncapi",
+        "generator",
         "nodejs",
-        "openapi",
-        "parser"
+        "template"
       ]
+    },
+    {
+      "id": 360411659,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzNjA0MTE2NTk=",
+      "name": "parser-api",
+      "full_name": "asyncapi/parser-api",
+      "html_url": "https://github.com/asyncapi/parser-api",
+      "description": "Global API definition for all AsyncAPI Parser implementations.",
+      "language": null,
+      "stargazers_count": 10,
+      "forks_count": 10,
+      "open_issues_count": 9,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 419826548,
+      "node_id": "R_kgDOGQYLdA",
+      "name": "brand",
+      "full_name": "asyncapi/brand",
+      "html_url": "https://github.com/asyncapi/brand",
+      "description": "AsyncAPI brand guidelines and strategy",
+      "language": null,
+      "stargazers_count": 8,
+      "forks_count": 10,
+      "open_issues_count": 4,
+      "license": null,
+      "topics": []
     }
   ],
   "contributorsDetails": [
-    {
-      "login": "lorenzsimon",
-      "id": 39913716,
-      "node_id": "MDQ6VXNlcjM5OTEzNzE2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/39913716?v=4",
-      "html_url": "https://github.com/lorenzsimon",
-      "contributions": 89
-    },
     {
       "login": "dependabot[bot]",
       "id": 49699333,
       "node_id": "MDM6Qm90NDk2OTkzMzM=",
       "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
       "html_url": "https://github.com/apps/dependabot",
-      "contributions": 96
+      "contributions": 110
+    },
+    {
+      "login": "lorenzsimon",
+      "id": 39913716,
+      "node_id": "MDQ6VXNlcjM5OTEzNzE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/39913716?v=4",
+      "html_url": "https://github.com/lorenzsimon",
+      "contributions": 104
     },
     {
       "login": "asyncapi-bot",
@@ -857,7 +952,7 @@
       "node_id": "MDQ6VXNlcjYxODY1MDE0",
       "avatar_url": "https://avatars.githubusercontent.com/u/61865014?v=4",
       "html_url": "https://github.com/asyncapi-bot",
-      "contributions": 30
+      "contributions": 471
     },
     {
       "login": "azizabah",
@@ -865,6 +960,14 @@
       "node_id": "MDQ6VXNlcjEzMTM2NDkx",
       "avatar_url": "https://avatars.githubusercontent.com/u/13136491?v=4",
       "html_url": "https://github.com/azizabah",
+      "contributions": 1
+    },
+    {
+      "login": "Ishita-190",
+      "id": 181350135,
+      "node_id": "U_kgDOCs8u9w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/181350135?v=4",
+      "html_url": "https://github.com/Ishita-190",
       "contributions": 1
     },
     {
@@ -876,44 +979,12 @@
       "contributions": 1
     },
     {
-      "login": "Pakisan",
-      "id": 3388414,
-      "node_id": "MDQ6VXNlcjMzODg0MTQ=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/3388414?v=4",
-      "html_url": "https://github.com/Pakisan",
-      "contributions": 299
-    },
-    {
-      "login": "asyncapi-bot-eve",
-      "id": 100576866,
-      "node_id": "U_kgDOBf6uYg",
-      "avatar_url": "https://avatars.githubusercontent.com/u/100576866?v=4",
-      "html_url": "https://github.com/asyncapi-bot-eve",
-      "contributions": 16
-    },
-    {
-      "login": "philCryoport",
-      "id": 28901899,
-      "node_id": "MDQ6VXNlcjI4OTAxODk5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/28901899?v=4",
-      "html_url": "https://github.com/philCryoport",
-      "contributions": 9
-    },
-    {
-      "login": "nexoscp",
-      "id": 5007045,
-      "node_id": "MDQ6VXNlcjUwMDcwNDU=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/5007045?v=4",
-      "html_url": "https://github.com/nexoscp",
-      "contributions": 2
-    },
-    {
-      "login": "DennisHartrampf",
-      "id": 6458469,
-      "node_id": "MDQ6VXNlcjY0NTg0Njk=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/6458469?v=4",
-      "html_url": "https://github.com/DennisHartrampf",
-      "contributions": 1
+      "login": "fmvilas",
+      "id": 242119,
+      "node_id": "MDQ6VXNlcjI0MjExOQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/242119?v=4",
+      "html_url": "https://github.com/fmvilas",
+      "contributions": 17
     },
     {
       "login": "derberg",
@@ -921,8 +992,360 @@
       "node_id": "MDQ6VXNlcjY5OTU5Mjc=",
       "avatar_url": "https://avatars.githubusercontent.com/u/6995927?v=4",
       "html_url": "https://github.com/derberg",
-      "contributions": 1
+      "contributions": 56
+    },
+    {
+      "login": "thulieblack",
+      "id": 66913810,
+      "node_id": "MDQ6VXNlcjY2OTEzODEw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/66913810?v=4",
+      "html_url": "https://github.com/thulieblack",
+      "contributions": 32
+    },
+    {
+      "login": "akshatnema",
+      "id": 76521428,
+      "node_id": "MDQ6VXNlcjc2NTIxNDI4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76521428?v=4",
+      "html_url": "https://github.com/akshatnema",
+      "contributions": 60
+    },
+    {
+      "login": "allcontributors[bot]",
+      "id": 46447321,
+      "node_id": "MDM6Qm90NDY0NDczMjE=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/23186?v=4",
+      "html_url": "https://github.com/apps/allcontributors",
+      "contributions": 17
+    },
+    {
+      "login": "reachaadrika",
+      "id": 64789514,
+      "node_id": "MDQ6VXNlcjY0Nzg5NTE0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/64789514?v=4",
+      "html_url": "https://github.com/reachaadrika",
+      "contributions": 33
+    },
+    {
+      "login": "vishvamsinh28",
+      "id": 90895835,
+      "node_id": "MDQ6VXNlcjkwODk1ODM1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/90895835?v=4",
+      "html_url": "https://github.com/vishvamsinh28",
+      "contributions": 30
+    },
+    {
+      "login": "sambhavgupta0705",
+      "id": 81870866,
+      "node_id": "MDQ6VXNlcjgxODcwODY2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/81870866?v=4",
+      "html_url": "https://github.com/sambhavgupta0705",
+      "contributions": 3
+    },
+    {
+      "login": "anshgoyalevil",
+      "id": 94157520,
+      "node_id": "U_kgDOBZy60A",
+      "avatar_url": "https://avatars.githubusercontent.com/u/94157520?v=4",
+      "html_url": "https://github.com/anshgoyalevil",
+      "contributions": 23
+    },
+    {
+      "login": "AceTheCreator",
+      "id": 40604284,
+      "node_id": "MDQ6VXNlcjQwNjA0Mjg0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40604284?v=4",
+      "html_url": "https://github.com/AceTheCreator",
+      "contributions": 25
+    },
+    {
+      "login": "magicmatatjahu",
+      "id": 20404945,
+      "node_id": "MDQ6VXNlcjIwNDA0OTQ1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20404945?v=4",
+      "html_url": "https://github.com/magicmatatjahu",
+      "contributions": 21
+    },
+    {
+      "login": "quetzalliwrites",
+      "id": 19964402,
+      "node_id": "MDQ6VXNlcjE5OTY0NDAy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19964402?v=4",
+      "html_url": "https://github.com/quetzalliwrites",
+      "contributions": 6
+    },
+    {
+      "login": "smoya",
+      "id": 1083296,
+      "node_id": "MDQ6VXNlcjEwODMyOTY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1083296?v=4",
+      "html_url": "https://github.com/smoya",
+      "contributions": 18
+    },
+    {
+      "login": "ashmitjsg",
+      "id": 43639341,
+      "node_id": "MDQ6VXNlcjQzNjM5MzQx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43639341?v=4",
+      "html_url": "https://github.com/ashmitjsg",
+      "contributions": 17
+    },
+    {
+      "login": "jonaslagoni",
+      "id": 13396189,
+      "node_id": "MDQ6VXNlcjEzMzk2MTg5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13396189?v=4",
+      "html_url": "https://github.com/jonaslagoni",
+      "contributions": 15
+    },
+    {
+      "login": "bandantonio",
+      "id": 16765690,
+      "node_id": "MDQ6VXNlcjE2NzY1Njkw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16765690?v=4",
+      "html_url": "https://github.com/bandantonio",
+      "contributions": 15
+    },
+    {
+      "login": "iambami",
+      "id": 64528871,
+      "node_id": "MDQ6VXNlcjY0NTI4ODcx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/64528871?v=4",
+      "html_url": "https://github.com/iambami",
+      "contributions": 5
+    },
+    {
+      "login": "aayushmau5",
+      "id": 54525741,
+      "node_id": "MDQ6VXNlcjU0NTI1NzQx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/54525741?v=4",
+      "html_url": "https://github.com/aayushmau5",
+      "contributions": 9
+    },
+    {
+      "login": "Olaleye-Blessing",
+      "id": 70102539,
+      "node_id": "MDQ6VXNlcjcwMTAyNTM5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/70102539?v=4",
+      "html_url": "https://github.com/Olaleye-Blessing",
+      "contributions": 9
+    },
+    {
+      "login": "sagarkori143",
+      "id": 129517558,
+      "node_id": "U_kgDOB7hH9g",
+      "avatar_url": "https://avatars.githubusercontent.com/u/129517558?v=4",
+      "html_url": "https://github.com/sagarkori143",
+      "contributions": 9
+    },
+    {
+      "login": "boyney123",
+      "id": 3268013,
+      "node_id": "MDQ6VXNlcjMyNjgwMTM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3268013?v=4",
+      "html_url": "https://github.com/boyney123",
+      "contributions": 8
+    },
+    {
+      "login": "anushkaaaaaaaa",
+      "id": 111284729,
+      "node_id": "U_kgDOBqIR-Q",
+      "avatar_url": "https://avatars.githubusercontent.com/u/111284729?v=4",
+      "html_url": "https://github.com/anushkaaaaaaaa",
+      "contributions": 8
+    },
+    {
+      "login": "Shurtu-gal",
+      "id": 100484401,
+      "node_id": "U_kgDOBf1FMQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/100484401?v=4",
+      "html_url": "https://github.com/Shurtu-gal",
+      "contributions": 12
+    },
+    {
+      "login": "KhudaDad414",
+      "id": 32505158,
+      "node_id": "MDQ6VXNlcjMyNTA1MTU4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/32505158?v=4",
+      "html_url": "https://github.com/KhudaDad414",
+      "contributions": 8
+    },
+    {
+      "login": "janvi01",
+      "id": 34344234,
+      "node_id": "MDQ6VXNlcjM0MzQ0MjM0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/34344234?v=4",
+      "html_url": "https://github.com/janvi01",
+      "contributions": 7
+    },
+    {
+      "login": "Ankitchaudharyy",
+      "id": 46367738,
+      "node_id": "MDQ6VXNlcjQ2MzY3NzM4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46367738?v=4",
+      "html_url": "https://github.com/Ankitchaudharyy",
+      "contributions": 7
+    },
+    {
+      "login": "starlightknown",
+      "id": 74637789,
+      "node_id": "MDQ6VXNlcjc0NjM3Nzg5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/74637789?v=4",
+      "html_url": "https://github.com/starlightknown",
+      "contributions": 6
+    },
+    {
+      "login": "jessemenning",
+      "id": 62108913,
+      "node_id": "MDQ6VXNlcjYyMTA4OTEz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/62108913?v=4",
+      "html_url": "https://github.com/jessemenning",
+      "contributions": 6
+    },
+    {
+      "login": "14Richa",
+      "id": 41283476,
+      "node_id": "MDQ6VXNlcjQxMjgzNDc2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/41283476?v=4",
+      "html_url": "https://github.com/14Richa",
+      "contributions": 23
+    },
+    {
+      "login": "aeworxet",
+      "id": 16149591,
+      "node_id": "MDQ6VXNlcjE2MTQ5NTkx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16149591?v=4",
+      "html_url": "https://github.com/aeworxet",
+      "contributions": 16
+    },
+    {
+      "login": "Barbanio",
+      "id": 77982319,
+      "node_id": "MDQ6VXNlcjc3OTgyMzE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/77982319?v=4",
+      "html_url": "https://github.com/Barbanio",
+      "contributions": 15
+    },
+    {
+      "login": "AayushSaini101",
+      "id": 60972989,
+      "node_id": "MDQ6VXNlcjYwOTcyOTg5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/60972989?v=4",
+      "html_url": "https://github.com/AayushSaini101",
+      "contributions": 12
+    },
+    {
+      "login": "ezinneanne",
+      "id": 79814820,
+      "node_id": "MDQ6VXNlcjc5ODE0ODIw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/79814820?v=4",
+      "html_url": "https://github.com/ezinneanne",
+      "contributions": 11
+    },
+    {
+      "login": "CBID2",
+      "id": 105683440,
+      "node_id": "U_kgDOBkyZ8A",
+      "avatar_url": "https://avatars.githubusercontent.com/u/105683440?v=4",
+      "html_url": "https://github.com/CBID2",
+      "contributions": 8
+    },
+    {
+      "login": "Souvikns",
+      "id": 41781438,
+      "node_id": "MDQ6VXNlcjQxNzgxNDM4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/41781438?v=4",
+      "html_url": "https://github.com/Souvikns",
+      "contributions": 7
+    },
+    {
+      "login": "harikrishnan83",
+      "id": 126087,
+      "node_id": "MDQ6VXNlcjEyNjA4Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/126087?v=4",
+      "html_url": "https://github.com/harikrishnan83",
+      "contributions": 6
+    },
+    {
+      "login": "animeshk923",
+      "id": 99868037,
+      "node_id": "U_kgDOBfPdhQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/99868037?v=4",
+      "html_url": "https://github.com/animeshk923",
+      "contributions": 6
+    },
+    {
+      "login": "Aahil13",
+      "id": 63567230,
+      "node_id": "MDQ6VXNlcjYzNTY3MjMw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/63567230?v=4",
+      "html_url": "https://github.com/Aahil13",
+      "contributions": 5
+    },
+    {
+      "login": "Amzani",
+      "id": 554438,
+      "node_id": "MDQ6VXNlcjU1NDQzOA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/554438?v=4",
+      "html_url": "https://github.com/Amzani",
+      "contributions": 5
+    },
+    {
+      "login": "ivangsa",
+      "id": 1246876,
+      "node_id": "MDQ6VXNlcjEyNDY4NzY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1246876?v=4",
+      "html_url": "https://github.com/ivangsa",
+      "contributions": 4
+    },
+    {
+      "login": "M3lkior",
+      "id": 5501911,
+      "node_id": "MDQ6VXNlcjU1MDE5MTE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5501911?v=4",
+      "html_url": "https://github.com/M3lkior",
+      "contributions": 4
+    },
+    {
+      "login": "princerajpoot20",
+      "id": 44585452,
+      "node_id": "MDQ6VXNlcjQ0NTg1NDUy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/44585452?v=4",
+      "html_url": "https://github.com/princerajpoot20",
+      "contributions": 4
+    },
+    {
+      "login": "SaxenaAnushka102",
+      "id": 58849657,
+      "node_id": "MDQ6VXNlcjU4ODQ5NjU3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/58849657?v=4",
+      "html_url": "https://github.com/SaxenaAnushka102",
+      "contributions": 3
+    },
+    {
+      "login": "Mayaleeeee",
+      "id": 105395613,
+      "node_id": "U_kgDOBkg1nQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/105395613?v=4",
+      "html_url": "https://github.com/Mayaleeeee",
+      "contributions": 3
+    },
+    {
+      "login": "aminoxix",
+      "id": 75872316,
+      "node_id": "MDQ6VXNlcjc1ODcyMzE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/75872316?v=4",
+      "html_url": "https://github.com/aminoxix",
+      "contributions": 3
+    },
+    {
+      "login": "TRohit20",
+      "id": 108233235,
+      "node_id": "U_kgDOBnOCEw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/108233235?v=4",
+      "html_url": "https://github.com/TRohit20",
+      "contributions": 3
     }
   ],
-  "activeOrg": false
+  "activeOrg": true
 }

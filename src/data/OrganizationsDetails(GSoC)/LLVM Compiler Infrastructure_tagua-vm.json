@@ -45,7 +45,8 @@
     2022,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2016": [
@@ -972,7 +973,126 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/tqzvhY0X"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Rich Disassembler for LLDB",
+        "short_description": "This project aims to enhance LLDB's disassembler by annotating machine instructions with source-level variable information, such as variable...",
+        "description": "This project aims to enhance LLDB's disassembler by annotating machine instructions with source-level variable information, such as variable locations and lifetimes, based on debug data like DWARF.\n\nCurrently, LLDB’s disassembler outputs only low-level instructions, requiring users to manually infer where source variables are located. By enriching disassembly output with variable annotations (e.g., which register or constant a variable is stored in), this project will make debugging optimized and low-level code significantly easier.\n\nThe solution involves extending LLDB’s disassembly printing pipeline to query live variables at each instruction address, limited to variables that reside in CPU registers or are represented as constants, ensuring efficiency and clarity.\n\nDeliverables include:\nAnnotated disassembly output in the LLDB command-line interface.\nFull test coverage against optimized and unoptimized binaries.\nDocumentation and usage examples for developers and users.\n\nThis work will be designed to be debug information format-agnostic wherever possible, making it extensible across formats like DWARF and PDB.",
+        "student_name": "Abdullah_Amin",
+        "code_url": "https://gist.github.com/UltimateForce21/205b606af744beea5b47ad55c2e0ad04",
+        "proposal_id": "JgwrP6nV",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/dCPV3zhW"
+      },
+      {
+        "title": "ClangIR upstreaming",
+        "short_description": "ClangIR is a new, MLIR-based intermediate representation of C and C++ code. It has been developed in an LLVM incubator project, but work is now...",
+        "description": "ClangIR is a new, MLIR-based intermediate representation of C and C++ code. It has been developed in an LLVM incubator project, but work is now underway to migrate the code from the incubator to the main LLVM repository. The goal for this project is to upstream the VectorType, ComplexType and Exception handling",
+        "student_name": "Amr Hesham Gaber",
+        "code_url": "https://gist.github.com/AmrDeveloper/c937e4080dae482b0cc2477532dd728d",
+        "proposal_id": "tCQ1W4Kv",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/uMSjfmTF"
+      },
+      {
+        "title": "Usability Improvements for trapping Undefined Behavior Sanitizer",
+        "short_description": "The primary vision is to enhance clang’s UBSan trap mode by tackling the three main goals, which include adding a warning to the...",
+        "description": "The primary vision is to enhance clang’s UBSan trap mode by tackling the three main goals, which include adding a warning to the -fsanitize-trap=undefined, teaching clang to emit the UBSan trap reasons, and confirm LLDB is able to recognize the UBSan trap reasons. The deliverables are: implementing a check to properly emit a warning for when -fsanitize-trap=undefined is passed alone, creating an enumeration to list out all possible UBSan trap reasons, adding functionality to encode those trap reasons, and display the trap reasons to the user with LLDB. If time permits, work can be conducted on emitting more precise trap reasons from information that may be available within the compiler.",
+        "student_name": "Anthony Tran",
+        "code_url": "https://gist.github.com/anthonyhatran/83bd9b70ad01fca8b273f28e82d38964",
+        "proposal_id": "yTvTWCyV",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/I5x5BdbP"
+      },
+      {
+        "title": "Improving Core Clang-Doc Functionality",
+        "short_description": "Clang-Doc leverages Clang’s robust tooling and rich symbol information in the AST to generate documentation. It is lacking in some essential...",
+        "description": "Clang-Doc leverages Clang’s robust tooling and rich symbol  information in the AST to generate documentation.  It is lacking in some essential functionality such as not supporting some fundamental C++ language constructs, not supporting Doxygen comment commands used in Clang's source code, and not being able to render Markdown. These are essential features in modern documentation tools that should be addressed for Clang-Doc's core feature set.",
+        "student_name": "Erick Velez",
+        "code_url": "https://docs.google.com/document/d/19SJQq3N4sIrdKhX5yUmO-vqdWMkI6C22anQiunuw2X4/edit?usp=sharing",
+        "proposal_id": "ah3SPOgs",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/OXcKUH3X"
+      },
+      {
+        "title": "Improve Rust-Enzyme Reliability and Compile Times",
+        "short_description": "Enzyme, Rust's automatic differentiation tool, faces challenges with reliability and performance due to limited type information in LLVM-IR. This...",
+        "description": "Enzyme, Rust's automatic differentiation tool, faces challenges with reliability and performance due to limited type information in LLVM-IR. This project proposes to enhance Enzyme by extending the Rust compiler to lower richer type information from MIR into LLVM-IR metadata. This will involve improving the MIR type parser and generating accurate metadata. Deliverables include an extended MIR parser, new Rust compiler LIT tests demonstrating improved Enzyme functionality, comprehensive documentation, and a final report. This work aims to significantly improve the reliability and efficiency of automatic differentiation in Rust.",
+        "student_name": "Karan Janthe",
+        "code_url": "https://github.com/KMJ-007/GSOC2025",
+        "proposal_id": "iY8JzAW9",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/GjIzkThY"
+      },
+      {
+        "title": "Bfloat16 in LLVM libc",
+        "short_description": "This proposal is based on the LLVM project for GSoC 2025 with the same title, from Tue Ly and Nicolas Celik. Discourse:...",
+        "description": "This proposal is based on the LLVM project for GSoC 2025 with the same title, from Tue Ly and Nicolas Celik. Discourse: https://discourse.llvm.org/t/libc-gsoc-2025-bfloat16-in-llvm-libc/84469.\nBfloat16 (aka \"Brain Floating Point\") is a recently developed floating point format by Google. Similar to IEEE 754 binary16, it is applicable in machine learning and AI providing significant improvements in training and performance. It is officially standardized as std::bfloat_t in the latest C++23 standard. The goal of this project is to implement support for this type in LLVM libc.\nDeliverables:\n- Implement the type in a compiler and architecture agnostic way.\n- Implement generic basic math operations that work on all supported architectures.\n- Implement specialized hardware specific optimizations and compiler built-ins for higher performance.\n- Investigate higher math functions if time permits.",
+        "student_name": "Krishna Pandey",
+        "code_url": "https://gist.github.com/krishna2803/ed99e42bf40291285f6953c688ca1616",
+        "proposal_id": "ZBBR2N4I",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/KvfIM1m7"
+      },
+      {
+        "title": "Performance and Exhaustive Testing of C Standard Math Functions on GPUs",
+        "short_description": "This proposal aims to refine and expand the testing infrastructure in the LLVM C library to help users balance speed and accuracy of math functions...",
+        "description": "This proposal aims to refine and expand the testing infrastructure in the LLVM C library to help users balance speed and accuracy of math functions on GPUs. On the performance side, the proposal intends to improve the existing benchmarks that compare the LLVM C library’s implementations to vendor libraries, and add new math functions to the test suite. On the accuracy side, the proposal seeks to develop an exhaustive (brute force) test suite that verifies conformance to error tolerances, such as those defined in the OpenCL standard. The resulting deliverables include an enhanced performance test suite, a new accuracy test suite, and a consolidated report of performance and accuracy results for the covered functions.",
+        "student_name": "Leandro Lacerda",
+        "code_url": "https://gist.github.com/leandrolcampos/51435c133190e0ec8870c7ce15c3246b",
+        "proposal_id": "pbSq0LV9",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/xBm3IS1C"
+      },
+      {
+        "title": "LLVM Compiler Remarks Visualization Tool for Offloading",
+        "short_description": "LLVM generates valuable information through remarks, profiling, and runtime annotations that becomes difficult to navigate as projects grow. This...",
+        "description": "LLVM generates valuable information through remarks, profiling, and runtime annotations that becomes difficult to navigate as projects grow. This project aims to create a unified infrastructure to collect, organize, and visualize compilation data from the LLVM offloading toolchain. The tool will function as a compiler wrapper that captures JSON-formatted information and presents it through an interactive web interface. By providing accessible visualization of optimization decisions, profiling data, and compilation metrics, the tool will help developers make data-driven decisions rather than relying on trial and error.",
+        "student_name": "Miguel Cárdenas",
+        "code_url": "https://github.com/llvm/llvm-project/pull/147451",
+        "proposal_id": "k3OgxR66",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/nGLC8Sd5"
+      },
+      {
+        "title": "Introduce an ABI lowering library",
+        "short_description": "The current implementations of the LLVM Project, have a drawback that every language frontend that wants to support Foreign Function Interface(FFI)...",
+        "description": "The current implementations of the LLVM Project, have a drawback that every\nlanguage frontend that wants to support Foreign Function Interface(FFI) into C\ncode needs to implement Application Binary Interface(ABI) handling logic by\nitself. This leads to tremendous duplication of efforts and leaves the chance of\npotential inconsistencies.\nThe aim of this project is to create a comprehensive ABI library housed within\nLLVM which would encapsulate the details of various platform specific calling\nconventions, argument passing strategies and return value handling.",
+        "student_name": "Narayan Sreekumar",
+        "code_url": "https://gist.github.com/vortex73/0291fc5bf83c55950cfdf1b924c80dd7",
+        "proposal_id": "0LsyXnKN",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/BAWJ3Z6i"
+      },
+      {
+        "title": "Support simple C++ modules use from the Clang Driver without a Build System",
+        "short_description": "This proposal seeks to extend the build system in Clang's driver to natively support module-based builds by leveraging Clang's existing support for...",
+        "description": "This proposal seeks to extend the build system in Clang's driver to natively support module-based builds by leveraging Clang's existing support for scanning C++20 module dependencies between source files and adding support for generating the appropriate build steps.",
+        "student_name": "Naveen Seth Hanig",
+        "code_url": "https://gist.github.com/naveen-seth/1d1ab39d7e2a8765df5daf741af2ba4b",
+        "proposal_id": "Lidrhzp4",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/JfOGwzdP"
+      },
+      {
+        "title": "Byte type",
+        "short_description": "LLVM currently lacks a type capable of representing raw memory, similar to unsigned char, char and std::byte in C/C++. The absence of such a type is...",
+        "description": "LLVM currently lacks a type capable of representing raw memory, similar to unsigned char, char and std::byte in C/C++. The absence of such a type is the root cause of many unsound optimizations, such as the lowering of calls to memcpy/memmove/memcmp to integer loads of the corresponding bitwidth. This optimization is incompatible with the use of pointer provenance, as loading a pointer from memory as an integer discards provenance information, leading to miscompilations.\n\nThis project aims to introduce a new byte type to the IR, capable of representing raw memory, and lower the char, unsigned char and std::byte C/C++ types to the new type. It also addresses the incorrect lowerings of memory related intrinsics, providing a way to natively implement such intrinsics in the IR, fixes optimizations that do not correctly account for type punning, and adds support for the byte type in the Alive2 optimization verifier.",
+        "student_name": "Pedro Lobo",
+        "code_url": "https://github.com/pedroclobo/gsoc-2025",
+        "proposal_id": "QtpwoGb9",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/F3yLFcWR"
+      },
+      {
+        "title": "Improve I/O performance in the libc implementation for GPU using io_uring",
+        "short_description": "Many HPC applications rely on GPUs for fast and efficient computation. At the same time, there is an effort to bring more programmability and...",
+        "description": "Many HPC applications rely on GPUs for fast and efficient computation. At the same time, there is an effort to bring more programmability and portability when writing code for the GPU. One of such efforts is the implementation of the libc and libc++ in LLVM project for execution on the accelerator itself. This allows standard host applications to run on the GPU automatically, without modification to the user code. One consideration of such an approach is that some functions are not natively supported on the GPU and rely on RPC calls to the host. This poses a limitation on the bandwidth of data transfer.\r\nThus, this project aims to improve current file operations triggered by GPU, leveraging the new Linux io_uring interface. io_uring allows the program to register a queue to asynchronously request file operations and pool the completion by interacting with such a queue. Apart from registering the queue, requesting and polling operations do not require a syscall, making it faster and more flexible than regular POSIX operations or Linux AIO calls. We will map and register/pin a memory region on the GPU side and use that region for io_uring interaction, driven by the GPU. \r\nWe expect such a process to deliver more performance than current RPC round-trips to complete I/O transfers, which require a CPU polling thread for each request and do not come close to the theoretical bandwidth of PCIe interfaces.",
+        "student_name": "Rodrigo Ceccato",
+        "code_url": "https://gist.github.com/rodrigo-ceccato/6475e8a3aaa669661386203be38b9093",
+        "proposal_id": "N0UuAy6Z",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/oRouV5VX"
+      },
+      {
+        "title": "Advanced symbol resolution and reoptimization for clang-repl",
+        "short_description": "Clang-REPL is an incremental compiler that enables interactive programming in C and C++, combining the flexibility of a REPL with the performance of...",
+        "description": "Clang-REPL is an incremental compiler that enables interactive programming in C and C++, combining the flexibility of a REPL with the performance of compiled languages.\n\nCurrently, users must manually load dynamic libraries when Clang-REPL encounters unresolved external symbols. This project aims to improve the user experience by implementing an Auto-Loading mechanism that automatically loads the required libraries when missing symbols are detected.\n\nIn addition to auto-loading, the project will introduce Runtime Re-Optimization using Profile-Guided Optimizations (PGO). By collecting profiling information at runtime, Clang-REPL will be able to re-optimize initializers dynamically, leading to better performance without user intervention.\n\nDeliverables:\n\n1. An Auto-Loading system that seamlessly resolves missing external symbols.\n2. Runtime Re-Optimization support based on profiling data to improve execution performance.",
+        "student_name": "Sahil Patidar",
+        "code_url": "https://gist.github.com/SahilPatidar/1522b2a8024b206398b153ca10122fb3",
+        "proposal_id": "Uzo39pkf",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/WAGNDXHx"
+      }
+    ],
+    "2026": []
   },
   "githubID": "tagua-vm",
   "repositories": [
@@ -1021,7 +1141,7 @@
       "description": "Tagua VM is an experimental PHP Virtual Machine that guarantees safety and quality by removing large classes of vulnerabilities thanks to the Rust language and the LLVM Compiler Infrastructure.",
       "language": "Rust",
       "stargazers_count": 424,
-      "forks_count": 23,
+      "forks_count": 22,
       "open_issues_count": 12,
       "license": null,
       "topics": [
@@ -1072,7 +1192,7 @@
       "node_id": "MDQ6VXNlcjk0NjEwNA==",
       "avatar_url": "https://avatars.githubusercontent.com/u/946104?v=4",
       "html_url": "https://github.com/Hywan",
-      "contributions": 2
+      "contributions": 138
     },
     {
       "login": "johnnypeck",
@@ -1096,7 +1216,7 @@
       "node_id": "MDQ6VXNlcjMyNzIzNw==",
       "avatar_url": "https://avatars.githubusercontent.com/u/327237?v=4",
       "html_url": "https://github.com/jubianchi",
-      "contributions": 3
+      "contributions": 2
     },
     {
       "login": "airtonzanon",
@@ -1120,6 +1240,38 @@
       "node_id": "MDQ6VXNlcjUxMzM0ODc=",
       "avatar_url": "https://avatars.githubusercontent.com/u/5133487?v=4",
       "html_url": "https://github.com/Pierozi",
+      "contributions": 1
+    },
+    {
+      "login": "benaryorg",
+      "id": 6145260,
+      "node_id": "MDQ6VXNlcjYxNDUyNjA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6145260?v=4",
+      "html_url": "https://github.com/benaryorg",
+      "contributions": 4
+    },
+    {
+      "login": "vonglasow",
+      "id": 1275202,
+      "node_id": "MDQ6VXNlcjEyNzUyMDI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1275202?v=4",
+      "html_url": "https://github.com/vonglasow",
+      "contributions": 1
+    },
+    {
+      "login": "stof",
+      "id": 439401,
+      "node_id": "MDQ6VXNlcjQzOTQwMQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/439401?v=4",
+      "html_url": "https://github.com/stof",
+      "contributions": 1
+    },
+    {
+      "login": "gitter-badger",
+      "id": 8518239,
+      "node_id": "MDQ6VXNlcjg1MTgyMzk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8518239?v=4",
+      "html_url": "https://github.com/gitter-badger",
       "contributions": 1
     }
   ],

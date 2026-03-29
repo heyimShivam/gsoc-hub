@@ -52,7 +52,8 @@
     2022,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2018": [
@@ -346,10 +347,122 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/0oTx6AYV"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Data Pipeline For Safaa",
+        "short_description": "Currently in Safaa Project data was manually curated And we see that most of the things are manual here. This project will concentrate on creating a...",
+        "description": "Currently in Safaa Project data was manually curated And we see that most of the things are manual here. This project will concentrate on creating a pipeline, Scripts to copy copyright data automatically from fossology instance to train the model, Utilizing LLMS and deep learning techniques to increase the accuracy of our output.",
+        "student_name": "Abdul sobur",
+        "code_url": "https://github.com/smilingprogrammer/GSOC25",
+        "proposal_id": "alfVXho5",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/mlPA9FVj"
+      },
+      {
+        "title": "Enhancing Debian Packaging for FOSSology",
+        "short_description": "This project aims to improve the Debian packaging process for FOSSology, an open-source license compliance tool. Currently, FOSSology relies on CPack...",
+        "description": "This project aims to improve the Debian packaging process for FOSSology, an open-source license compliance tool. Currently, FOSSology relies on CPack for packaging, which has limitations in flexibility and Debian policy compliance. This proposal suggests transitioning to Debian's native packaging tools (dpkg, debhelper, and lintian), automating the build process, and integrating continuous integration (CI) for better package management. Deliverables include structured Debian packages, automated build scripts, CI pipelines, and detailed documentation to facilitate future maintenance. This work will make FOSSology more accessible, easier to install, and compliant with Debian standards, benefiting system administrators and developers.",
+        "student_name": "Ahmed-Gamal",
+        "code_url": "https://github.com/Ahmed-Gamal24/GSoC2025",
+        "proposal_id": "MxWGJCxd",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/x53xJCC2"
+      },
+      {
+        "title": "LicenseDB Platform Improvements",
+        "short_description": "The goal of this project is to enhance the LicenseDB platform by integrating several important features including advanced database migrations,...",
+        "description": "The goal of this project is to enhance the LicenseDB platform by integrating several important features including advanced database migrations, support for refresh tokens, and a notification system to notify users when a license is updated. In addition, it will require setting up a clean backend and fronted monorepo for simplified development. The improvements will ensure the platform is better, reliable, scalable, and more user-friendly.",
+        "student_name": "Chayan_Das",
+        "code_url": "https://github.com/ChayanDass/GSoC-25",
+        "proposal_id": "bMxldsPE",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/vphnpwAh"
+      },
+      {
+        "title": "FOSSology UX and UI Redesign",
+        "short_description": "This project aims to redesign the FOSSology interface with a user-centered design approach that enhances usability and accessibility. The redesign...",
+        "description": "This project aims to redesign the FOSSology interface with a user-centered design approach that enhances usability and accessibility. The redesign will focus on improving the navigation, making it easier for users to find what they need and complete tasks more efficiently. Enhancing visual hierarchy, and ensuring consistent formatting, we will create a more intuitive experience. A scalable, reusable design system will be developed to ensure that the platform can grow and evolve in the future. Iterative testing and user feedback will guide the design process, ensuring that the final result meets user expectations and improves their overall experience with FOSSology.",
+        "student_name": "Devanshi Sachan",
+        "code_url": "https://github.com/devxnshi/GSoC-2025",
+        "proposal_id": "vZGiEH2T",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/gX6omKmk"
+      },
+      {
+        "title": "Support text phrases and bulk based scanning for MONK a like agent",
+        "short_description": "Standard license scanning tools often overlook custom or organization-specific texts, leaving critical gaps in compliance. This project enhances...",
+        "description": "Standard license scanning tools often overlook custom or organization-specific texts, leaving critical gaps in compliance. This project enhances FOSSology by upgrading the MONK BULK agent to detect custom text phrases. Users will be able to define these phrases through the UI, store them in the database, and perform bulk scans to identify exact matches in uploaded files. This extension not only strengthens FOSSology’s scanning capabilities but also improves UI and database efficiency for seamless retrieval. With thorough testing for accuracy and scalability, this upgrade will make FOSSology an even more powerful and adaptable license compliance tool.\n\nDeliverables for this project:\n1.) Creating a User Interface for Text and Bulk Phrases Management\n2.) Supporting Text Phrases Scanning\n3.) Implementing Bulk Phrases Scanning\n4.) Enhancing MONK Agent Functionality\n5.) Documentation",
+        "student_name": "Harshit Gandhi",
+        "code_url": "https://github.com/fossology/fossology/pull/3086",
+        "proposal_id": "Y9Llh838",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/897MRrjD"
+      },
+      {
+        "title": "Complete microservices  infrastructure for  FOSSology",
+        "short_description": "This project aims to complete the microservices infrastructure for FOSSology by continuing the work from GSoC 2021, with a goal to fully deploy...",
+        "description": "This project aims to complete the microservices infrastructure for FOSSology by continuing the work from GSoC 2021, with a goal to fully deploy FOSSology on Kubernetes. Over the past few years, multiple changes have been made to the codebase and the build system, requiring updates and integration strategies. \n\nKey deliverables include:\n- Reviewing and aligning the legacy GSoC Kubernetes setup with the current codebase\n- Completing pending work from pull request #2086\n- Providing a fully working FOSSology Kubernetes deployment\n- Creating comprehensive documentation for Kubernetes setup\n- (Stretch Goals): Creating a single setup script, implementing health checks, and exposing usage/performance metrics\n\nThis project ensures easier deployment, better scalability, and modern DevOps practices for FOSSology’s infrastructure.",
+        "student_name": "M.Salman",
+        "code_url": "https://salmandeveloperz.github.io/GSoC-2025/",
+        "proposal_id": "7DYrZrbk",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/MjOyiOj7"
+      },
+      {
+        "title": "Integrating OSS Review Toolkit with FOSSology",
+        "short_description": "The OSS Review Toolkit (ORT) is a robust solution designed to identify and analyze the dependencies within a software project. FOSSology, on the...",
+        "description": "The OSS Review Toolkit (ORT) is a robust solution designed to identify and analyze the dependencies within a software project. FOSSology, on the other hand, is a specialized tool for scanning source code to detect software licenses. This project aims to integrate FOSSology, a robust license scanning tool, into the OSS Review Toolkit (ORT), which analyzes project dependencies. By building a scanner plugin within ORT, users will have the option to utilize FOSSology’s capabilities directly in ORT workflows. The integration will involve sending SPDX data to FOSSology, retrieving scan results, and presenting them alongside ORT’s output, enhancing license compliance checks through a unified toolchain.",
+        "student_name": "Prakash Mishra",
+        "code_url": "https://github.com/Prakash-Mishra-9ghz/GSoC-2025",
+        "proposal_id": "qqwc7aXM",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/zaei2pGq"
+      },
+      {
+        "title": "Enhance Atarashi's ability",
+        "short_description": "Atarashi is a modern, information-retrieval-based license scanner. Unlike traditional rule-based approaches, Atarashi leverages statistical...",
+        "description": "Atarashi is a modern, information-retrieval-based license scanner. Unlike traditional rule-based approaches, Atarashi leverages statistical techniques such as TF-IDF, cosine similarity, Damerau Levenshtein distance and N-gram distance to detect licenses in source code files. While the system achieves good accuracy (approximately 80%), there is still scope for improvement.\nThis proposal aims to enhance Atarashi’s accuracy and robustness by integrating a keyword-based pre-filtering model, improving the existing classifier, and adding fallback mechanisms for ambiguous license predictions. Apart from that, from a previous initiative we have a Minerva, which is an augmented license dataset which can be used to train ML Models for licence identification. The goal is not only to refine license identification but also to integrate the work seamlessly into the current open pull request (#1634) and ensure its successful merging into the main FOSSology codebase.",
+        "student_name": "Rajul Jha",
+        "code_url": "https://rajuljha.github.io/posts/gsoc-25-project-report",
+        "proposal_id": "uS1bUq0O",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/Lbnvb90g"
+      },
+      {
+        "title": "Completion of UI using React.js",
+        "short_description": "This project aims to complete and modernize the React-based UI of FOSSology by aligning it with the updated REST API v2 and current frontend best...",
+        "description": "This project aims to complete and modernize the React-based UI of FOSSology by aligning it with the updated REST API v2 and current frontend best practices. The work includes finalizing the incomplete interface, upgrading React to 19.1.0 for improved performance and concurrency, and migrating from yarn to pnpm for faster, space-efficient development. It will also implement UX improvements from the  FOSSology UX and UI redesign project and create a reusable component library with Storybook. Comprehensive documentation and deployment guidelines will be provided to ensure long-term maintainability and contributor onboarding.",
+        "student_name": "Tiyasa Kundu",
+        "code_url": "https://github.com/tiyasakundu/GSoC2025",
+        "proposal_id": "zWU8PbfQ",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/QJCf0exh"
+      },
+      {
+        "title": "Reuse of clearing decisions using reports from OSSelot project.",
+        "short_description": "In this project, I am going to add improvements to FOSSology by making the Scancode integration faster and more stable using multithreading. I will...",
+        "description": "In this project, I am going to add improvements to FOSSology by making the Scancode integration faster and more stable using multithreading. I will also add a feature on the upload page that lets users select reports from OSSelot to reuse during analysis.Using the current spasht implementation to fetch the details of the folder from OSSelot. I will enhance the functionality of the existing Import Dump and Export Dump features to support reuse based on reports. Additionally, I will create a new page where users can easily contribute their FOSSology-generated reports back to the OSSelot project as GitHub pull requests. I will also write test cases to ensure the reliability of import/export functionality.",
+        "student_name": "Vaibhav_Sahu",
+        "code_url": "https://github.com/Vaibhavsahu2810/Google_Summer_Of_Code_2025---FOSSology",
+        "proposal_id": "MqOxPVht",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/ER9UmRSf"
+      }
+    ],
+    "2026": []
   },
   "githubID": "fossology",
   "repositories": [
+    {
+      "id": 141552538,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNDE1NTI1Mzg=",
+      "name": "fossology.github.io",
+      "full_name": "fossology/fossology.github.io",
+      "html_url": "https://github.com/fossology/fossology.github.io",
+      "description": "FOSSology API generated using Doxygen",
+      "language": "HTML",
+      "stargazers_count": 2,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "topics": []
+    },
     {
       "id": 15866170,
       "node_id": "MDEwOlJlcG9zaXRvcnkxNTg2NjE3MA==",
@@ -358,9 +471,9 @@
       "html_url": "https://github.com/fossology/fossology",
       "description": "FOSSology is an open source license compliance software system and toolkit.  As a toolkit you can run license, copyright and export control scans from the command line.  As a system, a database and web ui are provided to give you a compliance workflow. License, copyright and export scanners are tools used in the workflow.",
       "language": "HTML",
-      "stargazers_count": 864,
-      "forks_count": 470,
-      "open_issues_count": 358,
+      "stargazers_count": 976,
+      "forks_count": 615,
+      "open_issues_count": 361,
       "license": {
         "key": "gpl-2.0",
         "name": "GNU General Public License v2.0",
@@ -383,16 +496,16 @@
       ]
     },
     {
-      "id": 141552538,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNDE1NTI1Mzg=",
-      "name": "fossology.github.io",
-      "full_name": "fossology/fossology.github.io",
-      "html_url": "https://github.com/fossology/fossology.github.io",
-      "description": "FOSSology API generated using Doxygen",
-      "language": "HTML",
-      "stargazers_count": 2,
-      "forks_count": 0,
-      "open_issues_count": 0,
+      "id": 133481261,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMzM0ODEyNjE=",
+      "name": "atarashi",
+      "full_name": "fossology/atarashi",
+      "html_url": "https://github.com/fossology/atarashi",
+      "description": "Atarashi scans for license statements in open source software, focusing on text statistics. Designed to work stand-alone and with FOSSology.",
+      "language": "Python",
+      "stargazers_count": 33,
+      "forks_count": 38,
+      "open_issues_count": 24,
       "license": {
         "key": "gpl-2.0",
         "name": "GNU General Public License v2.0",
@@ -400,19 +513,25 @@
         "url": "https://api.github.com/licenses/gpl-2.0",
         "node_id": "MDc6TGljZW5zZTg="
       },
-      "topics": []
+      "topics": [
+        "fossology",
+        "information-retrieval",
+        "license",
+        "license-scan",
+        "text-processing"
+      ]
     },
     {
-      "id": 706674456,
-      "node_id": "R_kgDOKh7_GA",
-      "name": "safaa",
-      "full_name": "fossology/safaa",
-      "html_url": "https://github.com/fossology/safaa",
-      "description": "Agent to compliment FOSSology's copyright scanner and find false positive findings.",
+      "id": 265269946,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyNjUyNjk5NDY=",
+      "name": "Nirjas",
+      "full_name": "fossology/Nirjas",
+      "html_url": "https://github.com/fossology/Nirjas",
+      "description": "A Python library to extract comments and source code out of your file(s).",
       "language": "Python",
-      "stargazers_count": 4,
-      "forks_count": 6,
-      "open_issues_count": 3,
+      "stargazers_count": 67,
+      "forks_count": 31,
+      "open_issues_count": 11,
       "license": {
         "key": "lgpl-2.1",
         "name": "GNU Lesser General Public License v2.1",
@@ -421,76 +540,34 @@
         "node_id": "MDc6TGljZW5zZTEx"
       },
       "topics": [
-        "copyright",
-        "nlp",
-        "pos"
+        "extract-comments",
+        "hacktoberfest",
+        "python3"
       ]
     },
     {
-      "id": 378043387,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzNzgwNDMzODc=",
-      "name": "gsoc",
-      "full_name": "fossology/gsoc",
-      "html_url": "https://github.com/fossology/gsoc",
-      "description": "Updates and reports about GSoC projects at FOSSology.",
-      "language": "JavaScript",
-      "stargazers_count": 21,
-      "forks_count": 41,
-      "open_issues_count": 4,
+      "id": 221675060,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMjE2NzUwNjA=",
+      "name": "fossology-python",
+      "full_name": "fossology/fossology-python",
+      "html_url": "https://github.com/fossology/fossology-python",
+      "description": "Python wrapper for the Fossology API",
+      "language": "Python",
+      "stargazers_count": 15,
+      "forks_count": 14,
+      "open_issues_count": 5,
       "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
       },
       "topics": [
+        "automation",
         "fossology",
-        "gsoc",
-        "gsoc-2021",
-        "gsoc-2022",
-        "gsoc-2023"
+        "oss-clearing"
       ]
-    },
-    {
-      "id": 823602950,
-      "node_id": "R_kgDOMRcvBg",
-      "name": "fossology-action",
-      "full_name": "fossology/fossology-action",
-      "html_url": "https://github.com/fossology/fossology-action",
-      "description": "GitHub Action for FOSSology CI scanners.",
-      "language": "Shell",
-      "stargazers_count": 2,
-      "forks_count": 3,
-      "open_issues_count": 3,
-      "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
-      },
-      "topics": []
-    },
-    {
-      "id": 646775841,
-      "node_id": "R_kgDOJo0EIQ",
-      "name": "LicenseDb",
-      "full_name": "fossology/LicenseDb",
-      "html_url": "https://github.com/fossology/LicenseDb",
-      "description": null,
-      "language": "Go",
-      "stargazers_count": 14,
-      "forks_count": 15,
-      "open_issues_count": 21,
-      "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
-      },
-      "topics": []
     },
     {
       "id": 374651287,
@@ -499,10 +576,10 @@
       "full_name": "fossology/FOSSologyUI",
       "html_url": "https://github.com/fossology/FOSSologyUI",
       "description": "Repository to hold the new UI framework for FOSSology built with React",
-      "language": "HTML",
-      "stargazers_count": 54,
-      "forks_count": 105,
-      "open_issues_count": 62,
+      "language": "JavaScript",
+      "stargazers_count": 68,
+      "forks_count": 150,
+      "open_issues_count": 52,
       "license": {
         "key": "gpl-2.0",
         "name": "GNU General Public License v2.0",
@@ -520,46 +597,126 @@
       ]
     },
     {
-      "id": 221675060,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMjE2NzUwNjA=",
-      "name": "fossology-python",
-      "full_name": "fossology/fossology-python",
-      "html_url": "https://github.com/fossology/fossology-python",
-      "description": "Python wrapper for the Fossology API",
-      "language": "Python",
-      "stargazers_count": 18,
-      "forks_count": 9,
-      "open_issues_count": 4,
+      "id": 1008939833,
+      "node_id": "R_kgDOPCMzOQ",
+      "name": "LicenseDb-UI",
+      "full_name": "fossology/LicenseDb-UI",
+      "html_url": "https://github.com/fossology/LicenseDb-UI",
+      "description": "LicenseDb-UI a frontend for LicenseDb project(https://github.com/fossology/LicenseDb). LicenseDb is an open-source project designed to simplify license and obligation management for tools such as FOSSology and SW360. Its goal is to streamline the workflow for legal teams by providing a centralized interface.",
+      "language": "HTML",
+      "stargazers_count": 3,
+      "forks_count": 8,
+      "open_issues_count": 7,
       "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
       },
       "topics": [
-        "automation",
-        "fossology",
-        "oss-clearing"
+        "license-management",
+        "licensedb-ui",
+        "licenses",
+        "obligation-management",
+        "obligations",
+        "oss"
       ]
     },
     {
-      "id": 223210061,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMjMyMTAwNjE=",
-      "name": "FOSSology.REST.shell",
-      "full_name": "fossology/FOSSology.REST.shell",
-      "html_url": "https://github.com/fossology/FOSSology.REST.shell",
-      "description": "A rest client using shell scripts for the integration of FOSSology into a CI system",
-      "language": "Shell",
+      "id": 646775841,
+      "node_id": "R_kgDOJo0EIQ",
+      "name": "LicenseDb",
+      "full_name": "fossology/LicenseDb",
+      "html_url": "https://github.com/fossology/LicenseDb",
+      "description": "LicenseDb is an open-source project designed to simplify license and obligation management for tools such as FOSSology and SW360. Its goal is to streamline the workflow for legal teams by providing a centralized interface, eliminating the need to log into and navigate multiple tools.",
+      "language": "Go",
       "stargazers_count": 14,
-      "forks_count": 5,
-      "open_issues_count": 0,
+      "forks_count": 27,
+      "open_issues_count": 19,
       "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "topics": [
+        "license-management",
+        "licensedb",
+        "licenses",
+        "obligation-management",
+        "obligations",
+        "oss"
+      ]
+    },
+    {
+      "id": 378043387,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzNzgwNDMzODc=",
+      "name": "gsoc",
+      "full_name": "fossology/gsoc",
+      "html_url": "https://github.com/fossology/gsoc",
+      "description": "Updates and reports about GSoC projects at FOSSology.",
+      "language": "JavaScript",
+      "stargazers_count": 26,
+      "forks_count": 52,
+      "open_issues_count": 5,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": [
+        "fossology",
+        "gsoc",
+        "gsoc-2021",
+        "gsoc-2022",
+        "gsoc-2023"
+      ]
+    },
+    {
+      "id": 706674456,
+      "node_id": "R_kgDOKh7_GA",
+      "name": "safaa",
+      "full_name": "fossology/safaa",
+      "html_url": "https://github.com/fossology/safaa",
+      "description": "Agent to compliment FOSSology's copyright scanner and find false positive findings.",
+      "language": "Python",
+      "stargazers_count": 7,
+      "forks_count": 7,
+      "open_issues_count": 9,
+      "license": {
+        "key": "lgpl-2.1",
+        "name": "GNU Lesser General Public License v2.1",
+        "spdx_id": "LGPL-2.1",
+        "url": "https://api.github.com/licenses/lgpl-2.1",
+        "node_id": "MDc6TGljZW5zZTEx"
+      },
+      "topics": [
+        "copyright",
+        "nlp",
+        "pos"
+      ]
+    },
+    {
+      "id": 823602950,
+      "node_id": "R_kgDOMRcvBg",
+      "name": "fossology-action",
+      "full_name": "fossology/fossology-action",
+      "html_url": "https://github.com/fossology/fossology-action",
+      "description": "GitHub Action for FOSSology CI scanners.",
+      "language": "Shell",
+      "stargazers_count": 3,
+      "forks_count": 3,
+      "open_issues_count": 2,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
       },
       "topics": []
     },
@@ -584,28 +741,24 @@
       "topics": []
     },
     {
-      "id": 265269946,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNjUyNjk5NDY=",
-      "name": "Nirjas",
-      "full_name": "fossology/Nirjas",
-      "html_url": "https://github.com/fossology/Nirjas",
-      "description": "A Python library to extract comments and source code out of your file(s).",
-      "language": "Python",
-      "stargazers_count": 62,
-      "forks_count": 25,
-      "open_issues_count": 2,
+      "id": 223210061,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMjMyMTAwNjE=",
+      "name": "FOSSology.REST.shell",
+      "full_name": "fossology/FOSSology.REST.shell",
+      "html_url": "https://github.com/fossology/FOSSology.REST.shell",
+      "description": "A rest client using shell scripts for the integration of FOSSology into a CI system",
+      "language": "Shell",
+      "stargazers_count": 13,
+      "forks_count": 4,
+      "open_issues_count": 1,
       "license": {
-        "key": "lgpl-2.1",
-        "name": "GNU Lesser General Public License v2.1",
-        "spdx_id": "LGPL-2.1",
-        "url": "https://api.github.com/licenses/lgpl-2.1",
-        "node_id": "MDc6TGljZW5zZTEx"
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
       },
-      "topics": [
-        "extract-comments",
-        "hacktoberfest",
-        "python3"
-      ]
+      "topics": []
     },
     {
       "id": 203105162,
@@ -616,7 +769,7 @@
       "description": "Machine learning for a FOSSology server: rigel is for mining of data from conclusions, clearing expert corrections and bulk scans, create a model, use this model for providing a new classifier for licenses.",
       "language": "Python",
       "stargazers_count": 9,
-      "forks_count": 5,
+      "forks_count": 6,
       "open_issues_count": 2,
       "license": {
         "key": "gpl-2.0",
@@ -660,7 +813,7 @@
       "description": "Python library to enable scriptable control of a FOSSology server",
       "language": "Python",
       "stargazers_count": 11,
-      "forks_count": 12,
+      "forks_count": 10,
       "open_issues_count": 11,
       "license": {
         "key": "other",
@@ -672,32 +825,6 @@
       "topics": []
     },
     {
-      "id": 133481261,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMzM0ODEyNjE=",
-      "name": "atarashi",
-      "full_name": "fossology/atarashi",
-      "html_url": "https://github.com/fossology/atarashi",
-      "description": "Atarashi scans for license statements in open source software, focusing on text statistics. Designed to work stand-alone and with FOSSology.",
-      "language": "Python",
-      "stargazers_count": 29,
-      "forks_count": 30,
-      "open_issues_count": 17,
-      "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
-      },
-      "topics": [
-        "fossology",
-        "information-retrieval",
-        "license",
-        "license-scan",
-        "text-processing"
-      ]
-    },
-    {
       "id": 384182245,
       "node_id": "MDEwOlJlcG9zaXRvcnkzODQxODIyNDU=",
       "name": "Minerva-Dataset-Generation",
@@ -705,9 +832,9 @@
       "html_url": "https://github.com/fossology/Minerva-Dataset-Generation",
       "description": "Validated dataset generation using regex along with NLP Algorithms.",
       "language": null,
-      "stargazers_count": 4,
-      "forks_count": 4,
-      "open_issues_count": 3,
+      "stargazers_count": 5,
+      "forks_count": 7,
+      "open_issues_count": 1,
       "license": {
         "key": "gpl-2.0",
         "name": "GNU General Public License v2.0",
@@ -741,7 +868,7 @@
       "html_url": "https://github.com/fossology/fossdash",
       "description": "A set of tools that collects, stores and displays metrics about Open Source",
       "language": "Shell",
-      "stargazers_count": 4,
+      "stargazers_count": 6,
       "forks_count": 2,
       "open_issues_count": 0,
       "license": {
@@ -770,6 +897,14 @@
   ],
   "contributorsDetails": [
     {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "html_url": "https://github.com/apps/github-actions",
+      "contributions": 1
+    },
+    {
       "login": "markdo",
       "id": 4692356,
       "node_id": "MDQ6VXNlcjQ2OTIzNTY=",
@@ -791,7 +926,7 @@
       "node_id": "MDQ6VXNlcjE4MDc3NTQy",
       "avatar_url": "https://avatars.githubusercontent.com/u/18077542?v=4",
       "html_url": "https://github.com/GMishx",
-      "contributions": 927
+      "contributions": 43
     },
     {
       "login": "shaheemazmalmmd",
@@ -799,7 +934,7 @@
       "node_id": "MDQ6VXNlcjEwMTU1OTc2",
       "avatar_url": "https://avatars.githubusercontent.com/u/10155976?v=4",
       "html_url": "https://github.com/shaheemazmalmmd",
-      "contributions": 691
+      "contributions": 807
     },
     {
       "login": "larainema",
@@ -839,7 +974,7 @@
       "node_id": "MDQ6VXNlcjYzNjA2NDA=",
       "avatar_url": "https://avatars.githubusercontent.com/u/6360640?v=4",
       "html_url": "https://github.com/ag4ums",
-      "contributions": 185
+      "contributions": 27
     },
     {
       "login": "mcjaeger",
@@ -847,7 +982,7 @@
       "node_id": "MDQ6VXNlcjM0MTg5Nzc=",
       "avatar_url": "https://avatars.githubusercontent.com/u/3418977?v=4",
       "html_url": "https://github.com/mcjaeger",
-      "contributions": 161
+      "contributions": 3
     },
     {
       "login": "fogninid",
@@ -856,6 +991,14 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/10155861?v=4",
       "html_url": "https://github.com/fogninid",
       "contributions": 63
+    },
+    {
+      "login": "Kaushl2208",
+      "id": 41343571,
+      "node_id": "MDQ6VXNlcjQxMzQzNTcx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/41343571?v=4",
+      "html_url": "https://github.com/Kaushl2208",
+      "contributions": 4
     },
     {
       "login": "max-wittig",
@@ -874,12 +1017,28 @@
       "contributions": 50
     },
     {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "html_url": "https://github.com/apps/dependabot",
+      "contributions": 3
+    },
+    {
       "login": "NicolasToussaint",
       "id": 22956329,
       "node_id": "MDQ6VXNlcjIyOTU2MzI5",
       "avatar_url": "https://avatars.githubusercontent.com/u/22956329?v=4",
       "html_url": "https://github.com/NicolasToussaint",
       "contributions": 40
+    },
+    {
+      "login": "its-sushant",
+      "id": 76658675,
+      "node_id": "MDQ6VXNlcjc2NjU4Njc1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76658675?v=4",
+      "html_url": "https://github.com/its-sushant",
+      "contributions": 1
     },
     {
       "login": "pguttmann",
@@ -898,22 +1057,6 @@
       "contributions": 27
     },
     {
-      "login": "dependabot[bot]",
-      "id": 49699333,
-      "node_id": "MDM6Qm90NDk2OTkzMzM=",
-      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-      "html_url": "https://github.com/apps/dependabot",
-      "contributions": 27
-    },
-    {
-      "login": "Kaushl2208",
-      "id": 41343571,
-      "node_id": "MDQ6VXNlcjQxMzQzNTcx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/41343571?v=4",
-      "html_url": "https://github.com/Kaushl2208",
-      "contributions": 26
-    },
-    {
       "login": "soham4abc",
       "id": 63705023,
       "node_id": "MDQ6VXNlcjYzNzA1MDIz",
@@ -927,14 +1070,6 @@
       "node_id": "MDQ6VXNlcjIwOTEyMTY3",
       "avatar_url": "https://avatars.githubusercontent.com/u/20912167?v=4",
       "html_url": "https://github.com/robertvolkmann",
-      "contributions": 24
-    },
-    {
-      "login": "rlintu",
-      "id": 9692647,
-      "node_id": "MDQ6VXNlcjk2OTI2NDc=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/9692647?v=4",
-      "html_url": "https://github.com/rlintu",
       "contributions": 24
     },
     {
@@ -952,14 +1087,6 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/378909?v=4",
       "html_url": "https://github.com/bufferoverflow",
       "contributions": 19
-    },
-    {
-      "login": "its-sushant",
-      "id": 76658675,
-      "node_id": "MDQ6VXNlcjc2NjU4Njc1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/76658675?v=4",
-      "html_url": "https://github.com/its-sushant",
-      "contributions": 18
     },
     {
       "login": "darshank15",
@@ -994,6 +1121,14 @@
       "contributions": 14
     },
     {
+      "login": "JanAltenberg",
+      "id": 115026331,
+      "node_id": "U_kgDOBtspmw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/115026331?v=4",
+      "html_url": "https://github.com/JanAltenberg",
+      "contributions": 13
+    },
+    {
       "login": "vargenau",
       "id": 378154,
       "node_id": "MDQ6VXNlcjM3ODE1NA==",
@@ -1010,11 +1145,67 @@
       "contributions": 12
     },
     {
-      "login": "github-actions[bot]",
-      "id": 41898282,
-      "node_id": "MDM6Qm90NDE4OTgyODI=",
-      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
-      "html_url": "https://github.com/apps/github-actions",
+      "login": "amanjain97",
+      "id": 11582770,
+      "node_id": "MDQ6VXNlcjExNTgyNzcw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11582770?v=4",
+      "html_url": "https://github.com/amanjain97",
+      "contributions": 69
+    },
+    {
+      "login": "hastagAB",
+      "id": 31137526,
+      "node_id": "MDQ6VXNlcjMxMTM3NTI2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/31137526?v=4",
+      "html_url": "https://github.com/hastagAB",
+      "contributions": 10
+    },
+    {
+      "login": "Aman-Codes",
+      "id": 54680709,
+      "node_id": "MDQ6VXNlcjU0NjgwNzA5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/54680709?v=4",
+      "html_url": "https://github.com/Aman-Codes",
+      "contributions": 3
+    },
+    {
+      "login": "xavierfigueroav",
+      "id": 34988012,
+      "node_id": "MDQ6VXNlcjM0OTg4MDEy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/34988012?v=4",
+      "html_url": "https://github.com/xavierfigueroav",
+      "contributions": 2
+    },
+    {
+      "login": "Olexandr88",
+      "id": 93856062,
+      "node_id": "U_kgDOBZghPg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/93856062?v=4",
+      "html_url": "https://github.com/Olexandr88",
+      "contributions": 1
+    },
+    {
+      "login": "SinghShreya05",
+      "id": 50830709,
+      "node_id": "MDQ6VXNlcjUwODMwNzA5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/50830709?v=4",
+      "html_url": "https://github.com/SinghShreya05",
+      "contributions": 1
+    },
+    {
+      "login": "TanweerulHaque",
+      "id": 50830237,
+      "node_id": "MDQ6VXNlcjUwODMwMjM3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/50830237?v=4",
+      "html_url": "https://github.com/TanweerulHaque",
+      "contributions": 1
+    },
+    {
+      "login": "vasudevmaduri",
+      "id": 15100202,
+      "node_id": "MDQ6VXNlcjE1MTAwMjAy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/15100202?v=4",
+      "html_url": "https://github.com/vasudevmaduri",
       "contributions": 1
     }
   ],

@@ -43,7 +43,8 @@
     2021,
     2022,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2018": [
@@ -599,7 +600,36 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/Jlxc4B1L"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Documenting and improving cmm",
+        "short_description": "Cmm is the intermediate representation and code generation layer used by the Glasgow Haskell Compiler (GHC). It is written in Haskell and sits...",
+        "description": "Cmm is the intermediate representation and code generation layer used by the Glasgow Haskell Compiler (GHC). It is written in Haskell and sits between GHC's high-level STG output and low-level native or LLVM code generation.\n\n Cmm enables multiple backends: a fast native code generator and a more sophisticated LLVM backend. In principle, this design allows users to choose between faster compilation or better runtime performance.\n\nHowever, like other parts of GHC, the documentation for Cmm is sparse, fragmented, and in many places outdated. For example, references to Static Single Assignment (SSA) form often describe it as \"future work,\" even though there has been a prior attempt at implementing it. There is no cohesive documentation to explain what was done, how the backend currently works, or how one might extend it. This is an obstacle to contributors, researchers, and users alike.\n\nIn practice, the LLVM backend suffers from long compile times and a fragile implementation. It depends on a custom LLVM AST that is hard to maintain, and requires users to install a specific, outdated version of LLVM. Meanwhile, the native backend is fast but unable to fully optimize performance-critical code.\n\nThis project proposes to address these issues in stages:\n1. Document the Cmm pipeline, the backend interfaces, and existing SSA infrastructure.\n2. Then, depending on the mentor's and community's feedback, pursue one of two improvement paths:",
+        "student_name": "Diego Antonio Rosario Palomino",
+        "code_url": "https://github.com/GunpowderGuy/cmm-documentation",
+        "proposal_id": "SB4X5EZF",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/BvobfRuf"
+      },
+      {
+        "title": "Implement Signature Help for Haskell Language Server",
+        "short_description": "Haskell language server (HLS) implements the server part of Language Server Protocol (LSP) to improve user experience of reading and writing Haskell....",
+        "description": "Haskell language server (HLS) implements the server part of Language Server Protocol (LSP) to improve user experience of reading and writing Haskell. Signature help is a LSP language feature which shows function signatures and documentation when the cursor is inside a function application. It can also highlight part of the signature related to the current parameter the cursor is at. Users want this useful feature. This project implements signature help for HLS.",
+        "student_name": "linj",
+        "code_url": "https://github.com/haskell/haskell-language-server/pull/4626",
+        "proposal_id": "drz3Jsus",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/uxv4Yppj"
+      },
+      {
+        "title": "Qualified Imports and Alias Resolution in Liquid Haskell",
+        "short_description": "This proposal aims to enhance Liquid Haskell’s name resolution mechanism by enabling qualified imports for both (logic) type and predicate aliases....",
+        "description": "This proposal aims to enhance Liquid Haskell’s name resolution mechanism by enabling qualified imports for both (logic) type and predicate aliases. Currently, ambiguities arise when identical aliases are exported from multiple modules, adversely affecting both user experience and internal processing. The proposed solution will modify the internal alias representation and update all relevant use sites to construct fully qualified names, thereby allowing users to disambiguate identical aliases. Additionally, the project will conduct a detailed study of predicate alias use cases to evaluate the potential deprecation of these aliases in favor of the overlapping functionality provided by inline annotations. The primary deliverables include merged pull requests implementing qualified import support for type and predicate aliases, comprehensive documentation, and a blog post detailing design decisions, implementation processes, and the outcomes of the predicate alias study.",
+        "student_name": "Xavier Góngora",
+        "code_url": "https://gist.github.com/ninioArtillero/9658ebd4b806bb82ab3494457897e23e",
+        "proposal_id": "rRRfZzRj",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/ALSN6wwr"
+      }
+    ],
+    "2026": []
   },
   "githubID": "haskell-infra",
   "repositories": [
@@ -610,10 +640,10 @@
       "full_name": "haskell-infra/www.haskell.org",
       "html_url": "https://github.com/haskell-infra/www.haskell.org",
       "description": "www.haskell.org site source",
-      "language": "CSS",
-      "stargazers_count": 112,
-      "forks_count": 102,
-      "open_issues_count": 41,
+      "language": "HTML",
+      "stargazers_count": 120,
+      "forks_count": 112,
+      "open_issues_count": 35,
       "license": {
         "key": "bsd-3-clause",
         "name": "BSD 3-Clause \"New\" or \"Revised\" License",
@@ -624,15 +654,29 @@
       "topics": []
     },
     {
-      "id": 216666959,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMTY2NjY5NTk=",
-      "name": "hackage-doc-builder-config",
-      "full_name": "haskell-infra/hackage-doc-builder-config",
-      "html_url": "https://github.com/haskell-infra/hackage-doc-builder-config",
-      "description": "Configuration and documentation for the Hackage documentation builder",
-      "language": "Nix",
-      "stargazers_count": 3,
-      "forks_count": 8,
+      "id": 29522946,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyOTUyMjk0Ng==",
+      "name": "hackage-trustees",
+      "full_name": "haskell-infra/hackage-trustees",
+      "html_url": "https://github.com/haskell-infra/hackage-trustees",
+      "description": "Issue tracker for Hackage maintainance and trustee operations",
+      "language": null,
+      "stargazers_count": 42,
+      "forks_count": 6,
+      "open_issues_count": 9,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 295779480,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyOTU3Nzk0ODA=",
+      "name": "haskell-admins",
+      "full_name": "haskell-infra/haskell-admins",
+      "html_url": "https://github.com/haskell-infra/haskell-admins",
+      "description": "Information and resources regarding Haskell infrastructure admin team",
+      "language": null,
+      "stargazers_count": 4,
+      "forks_count": 3,
       "open_issues_count": 2,
       "license": null,
       "topics": []
@@ -652,29 +696,15 @@
       "topics": []
     },
     {
-      "id": 29522946,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyOTUyMjk0Ng==",
-      "name": "hackage-trustees",
-      "full_name": "haskell-infra/hackage-trustees",
-      "html_url": "https://github.com/haskell-infra/hackage-trustees",
-      "description": "Issue tracker for Hackage maintainance and trustee operations",
-      "language": null,
-      "stargazers_count": 42,
-      "forks_count": 7,
-      "open_issues_count": 11,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 295779480,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyOTU3Nzk0ODA=",
-      "name": "haskell-admins",
-      "full_name": "haskell-infra/haskell-admins",
-      "html_url": "https://github.com/haskell-infra/haskell-admins",
-      "description": "Information and resources regarding Haskell infrastructure admin team",
-      "language": null,
+      "id": 216666959,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMTY2NjY5NTk=",
+      "name": "hackage-doc-builder-config",
+      "full_name": "haskell-infra/hackage-doc-builder-config",
+      "html_url": "https://github.com/haskell-infra/hackage-doc-builder-config",
+      "description": "Configuration and documentation for the Hackage documentation builder",
+      "language": "Nix",
       "stargazers_count": 3,
-      "forks_count": 4,
+      "forks_count": 11,
       "open_issues_count": 2,
       "license": null,
       "topics": []
@@ -729,7 +759,7 @@
       "language": "HTML",
       "stargazers_count": 158,
       "forks_count": 92,
-      "open_issues_count": 38,
+      "open_issues_count": 39,
       "license": {
         "key": "bsd-3-clause",
         "name": "BSD 3-Clause \"New\" or \"Revised\" License",
@@ -747,9 +777,9 @@
       "html_url": "https://github.com/haskell-infra/arc-lite",
       "description": "Arcanist \"lite\" (CLI tool for Phabricator)",
       "language": "Haskell",
-      "stargazers_count": 8,
+      "stargazers_count": 7,
       "forks_count": 2,
-      "open_issues_count": 0,
+      "open_issues_count": 1,
       "license": {
         "key": "gpl-3.0",
         "name": "GNU General Public License v3.0",
@@ -767,7 +797,7 @@
       "html_url": "https://github.com/haskell-infra/auron",
       "description": "Theoretical Next Gen™ automation for Haskell.org (DO NOT USE)",
       "language": "Nix",
-      "stargazers_count": 21,
+      "stargazers_count": 20,
       "forks_count": 0,
       "open_issues_count": 0,
       "license": {
@@ -1003,7 +1033,7 @@
       "language": "Haskell",
       "stargazers_count": 6,
       "forks_count": 0,
-      "open_issues_count": 0,
+      "open_issues_count": 1,
       "license": {
         "key": "bsd-3-clause",
         "name": "BSD 3-Clause \"New\" or \"Revised\" License",
@@ -1083,7 +1113,7 @@
       "language": "Makefile",
       "stargazers_count": 0,
       "forks_count": 0,
-      "open_issues_count": 0,
+      "open_issues_count": 1,
       "license": {
         "key": "other",
         "name": "Other",
@@ -1117,7 +1147,7 @@
       "language": "Haskell",
       "stargazers_count": 2,
       "forks_count": 0,
-      "open_issues_count": 0,
+      "open_issues_count": 1,
       "license": {
         "key": "bsd-3-clause",
         "name": "BSD 3-Clause \"New\" or \"Revised\" License",
@@ -1157,7 +1187,7 @@
       "language": null,
       "stargazers_count": 0,
       "forks_count": 0,
-      "open_issues_count": 0,
+      "open_issues_count": 1,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -1170,6 +1200,14 @@
   ],
   "contributorsDetails": [
     {
+      "login": "tomjaguarpaw",
+      "id": 1951567,
+      "node_id": "MDQ6VXNlcjE5NTE1Njc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1951567?v=4",
+      "html_url": "https://github.com/tomjaguarpaw",
+      "contributions": 1
+    },
+    {
       "login": "TikhonJelvis",
       "id": 624310,
       "node_id": "MDQ6VXNlcjYyNDMxMA==",
@@ -1178,20 +1216,12 @@
       "contributions": 61
     },
     {
-      "login": "tomjaguarpaw",
-      "id": 1951567,
-      "node_id": "MDQ6VXNlcjE5NTE1Njc=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1951567?v=4",
-      "html_url": "https://github.com/tomjaguarpaw",
-      "contributions": 58
-    },
-    {
       "login": "rebeccaskinner",
       "id": 203691,
       "node_id": "MDQ6VXNlcjIwMzY5MQ==",
       "avatar_url": "https://avatars.githubusercontent.com/u/203691?v=4",
       "html_url": "https://github.com/rebeccaskinner",
-      "contributions": 42
+      "contributions": 43
     },
     {
       "login": "Fresheyeball",
@@ -1200,6 +1230,14 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/609279?v=4",
       "html_url": "https://github.com/Fresheyeball",
       "contributions": 29
+    },
+    {
+      "login": "Kleidukos",
+      "id": 29253044,
+      "node_id": "MDQ6VXNlcjI5MjUzMDQ0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/29253044?v=4",
+      "html_url": "https://github.com/Kleidukos",
+      "contributions": 17
     },
     {
       "login": "Tritlo",
@@ -1215,7 +1253,7 @@
       "node_id": "MDQ6VXNlcjgxMTI2ODg=",
       "avatar_url": "https://avatars.githubusercontent.com/u/8112688?v=4",
       "html_url": "https://github.com/gwils",
-      "contributions": 14
+      "contributions": 2
     },
     {
       "login": "gbaz",
@@ -1223,15 +1261,7 @@
       "node_id": "MDQ6VXNlcjExMjU4NDk=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1125849?v=4",
       "html_url": "https://github.com/gbaz",
-      "contributions": 5
-    },
-    {
-      "login": "Kleidukos",
-      "id": 29253044,
-      "node_id": "MDQ6VXNlcjI5MjUzMDQ0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/29253044?v=4",
-      "html_url": "https://github.com/Kleidukos",
-      "contributions": 10
+      "contributions": 8
     },
     {
       "login": "ketzacoatl",
@@ -1239,6 +1269,14 @@
       "node_id": "MDQ6VXNlcjEwMTIyOTM3",
       "avatar_url": "https://avatars.githubusercontent.com/u/10122937?v=4",
       "html_url": "https://github.com/ketzacoatl",
+      "contributions": 8
+    },
+    {
+      "login": "frasertweedale",
+      "id": 2331938,
+      "node_id": "MDQ6VXNlcjIzMzE5Mzg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2331938?v=4",
+      "html_url": "https://github.com/frasertweedale",
       "contributions": 8
     },
     {
@@ -1250,19 +1288,11 @@
       "contributions": 7
     },
     {
-      "login": "frasertweedale",
-      "id": 2331938,
-      "node_id": "MDQ6VXNlcjIzMzE5Mzg=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/2331938?v=4",
-      "html_url": "https://github.com/frasertweedale",
-      "contributions": 7
-    },
-    {
-      "login": "julian-carvajal-gh",
+      "login": "jcarvajal-dev",
       "id": 54204155,
       "node_id": "MDQ6VXNlcjU0MjA0MTU1",
       "avatar_url": "https://avatars.githubusercontent.com/u/54204155?v=4",
-      "html_url": "https://github.com/julian-carvajal-gh",
+      "html_url": "https://github.com/jcarvajal-dev",
       "contributions": 5
     },
     {
@@ -1272,6 +1302,22 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/87714215?v=4",
       "html_url": "https://github.com/ffaf1",
       "contributions": 5
+    },
+    {
+      "login": "aviaviavi",
+      "id": 1388071,
+      "node_id": "MDQ6VXNlcjEzODgwNzE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1388071?v=4",
+      "html_url": "https://github.com/aviaviavi",
+      "contributions": 5
+    },
+    {
+      "login": "hasufell",
+      "id": 1241845,
+      "node_id": "MDQ6VXNlcjEyNDE4NDU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1241845?v=4",
+      "html_url": "https://github.com/hasufell",
+      "contributions": 4
     },
     {
       "login": "Ericson2314",
@@ -1290,6 +1336,38 @@
       "contributions": 4
     },
     {
+      "login": "soupi",
+      "id": 8547573,
+      "node_id": "MDQ6VXNlcjg1NDc1NzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8547573?v=4",
+      "html_url": "https://github.com/soupi",
+      "contributions": 3
+    },
+    {
+      "login": "andys8",
+      "id": 13085980,
+      "node_id": "MDQ6VXNlcjEzMDg1OTgw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13085980?v=4",
+      "html_url": "https://github.com/andys8",
+      "contributions": 3
+    },
+    {
+      "login": "sekunho",
+      "id": 20364796,
+      "node_id": "MDQ6VXNlcjIwMzY0Nzk2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20364796?v=4",
+      "html_url": "https://github.com/sekunho",
+      "contributions": 3
+    },
+    {
+      "login": "Martinsos",
+      "id": 1536647,
+      "node_id": "MDQ6VXNlcjE1MzY2NDc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1536647?v=4",
+      "html_url": "https://github.com/Martinsos",
+      "contributions": 3
+    },
+    {
       "login": "emilypi",
       "id": 10459342,
       "node_id": "MDQ6VXNlcjEwNDU5MzQy",
@@ -1306,59 +1384,11 @@
       "contributions": 3
     },
     {
-      "login": "hasufell",
-      "id": 1241845,
-      "node_id": "MDQ6VXNlcjEyNDE4NDU=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1241845?v=4",
-      "html_url": "https://github.com/hasufell",
-      "contributions": 3
-    },
-    {
-      "login": "Martinsos",
-      "id": 1536647,
-      "node_id": "MDQ6VXNlcjE1MzY2NDc=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1536647?v=4",
-      "html_url": "https://github.com/Martinsos",
-      "contributions": 3
-    },
-    {
-      "login": "sekunho",
-      "id": 20364796,
-      "node_id": "MDQ6VXNlcjIwMzY0Nzk2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/20364796?v=4",
-      "html_url": "https://github.com/sekunho",
-      "contributions": 3
-    },
-    {
-      "login": "andys8",
-      "id": 13085980,
-      "node_id": "MDQ6VXNlcjEzMDg1OTgw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/13085980?v=4",
-      "html_url": "https://github.com/andys8",
-      "contributions": 3
-    },
-    {
-      "login": "aviaviavi",
-      "id": 1388071,
-      "node_id": "MDQ6VXNlcjEzODgwNzE=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1388071?v=4",
-      "html_url": "https://github.com/aviaviavi",
-      "contributions": 3
-    },
-    {
       "login": "expede",
       "id": 1052016,
       "node_id": "MDQ6VXNlcjEwNTIwMTY=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1052016?v=4",
       "html_url": "https://github.com/expede",
-      "contributions": 3
-    },
-    {
-      "login": "soupi",
-      "id": 8547573,
-      "node_id": "MDQ6VXNlcjg1NDc1NzM=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/8547573?v=4",
-      "html_url": "https://github.com/soupi",
       "contributions": 3
     },
     {
@@ -1394,30 +1424,6 @@
       "contributions": 2
     },
     {
-      "login": "0xAlexS",
-      "id": 20154401,
-      "node_id": "MDQ6VXNlcjIwMTU0NDAx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/20154401?v=4",
-      "html_url": "https://github.com/0xAlexS",
-      "contributions": 1
-    },
-    {
-      "login": "mjhoy",
-      "id": 106337,
-      "node_id": "MDQ6VXNlcjEwNjMzNw==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/106337?v=4",
-      "html_url": "https://github.com/mjhoy",
-      "contributions": 1
-    },
-    {
-      "login": "bgamari",
-      "id": 1010174,
-      "node_id": "MDQ6VXNlcjEwMTAxNzQ=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1010174?v=4",
-      "html_url": "https://github.com/bgamari",
-      "contributions": 42
-    },
-    {
       "login": "andreasabel",
       "id": 1155218,
       "node_id": "MDQ6VXNlcjExNTUyMTg=",
@@ -1426,27 +1432,91 @@
       "contributions": 1
     },
     {
-      "login": "fjvallarino",
-      "id": 6565497,
-      "node_id": "MDQ6VXNlcjY1NjU0OTc=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/6565497?v=4",
-      "html_url": "https://github.com/fjvallarino",
+      "login": "sadikkuzu",
+      "id": 23168063,
+      "node_id": "MDQ6VXNlcjIzMTY4MDYz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/23168063?v=4",
+      "html_url": "https://github.com/sadikkuzu",
       "contributions": 1
     },
     {
-      "login": "alex404",
-      "id": 2581658,
-      "node_id": "MDQ6VXNlcjI1ODE2NTg=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/2581658?v=4",
-      "html_url": "https://github.com/alex404",
+      "login": "bergmark",
+      "id": 100681,
+      "node_id": "MDQ6VXNlcjEwMDY4MQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/100681?v=4",
+      "html_url": "https://github.com/bergmark",
+      "contributions": 18
+    },
+    {
+      "login": "hvr",
+      "id": 285533,
+      "node_id": "MDQ6VXNlcjI4NTUzMw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/285533?v=4",
+      "html_url": "https://github.com/hvr",
+      "contributions": 9
+    },
+    {
+      "login": "phadej",
+      "id": 51087,
+      "node_id": "MDQ6VXNlcjUxMDg3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51087?v=4",
+      "html_url": "https://github.com/phadej",
+      "contributions": 8
+    },
+    {
+      "login": "Vlix",
+      "id": 6840701,
+      "node_id": "MDQ6VXNlcjY4NDA3MDE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6840701?v=4",
+      "html_url": "https://github.com/Vlix",
       "contributions": 1
     },
     {
-      "login": "Bodigrim",
-      "id": 2293557,
-      "node_id": "MDQ6VXNlcjIyOTM1NTc=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/2293557?v=4",
-      "html_url": "https://github.com/Bodigrim",
+      "login": "nomeata",
+      "id": 148037,
+      "node_id": "MDQ6VXNlcjE0ODAzNw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/148037?v=4",
+      "html_url": "https://github.com/nomeata",
+      "contributions": 1
+    },
+    {
+      "login": "SimonAlling",
+      "id": 7497533,
+      "node_id": "MDQ6VXNlcjc0OTc1MzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7497533?v=4",
+      "html_url": "https://github.com/SimonAlling",
+      "contributions": 1
+    },
+    {
+      "login": "davean",
+      "id": 234955,
+      "node_id": "MDQ6VXNlcjIzNDk1NQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/234955?v=4",
+      "html_url": "https://github.com/davean",
+      "contributions": 4
+    },
+    {
+      "login": "kraai",
+      "id": 552646,
+      "node_id": "MDQ6VXNlcjU1MjY0Ng==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/552646?v=4",
+      "html_url": "https://github.com/kraai",
+      "contributions": 3
+    },
+    {
+      "login": "chreekat",
+      "id": 538538,
+      "node_id": "MDQ6VXNlcjUzODUzOA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/538538?v=4",
+      "html_url": "https://github.com/chreekat",
+      "contributions": 1
+    },
+    {
+      "login": "relrod",
+      "id": 43930,
+      "node_id": "MDQ6VXNlcjQzOTMw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43930?v=4",
+      "html_url": "https://github.com/relrod",
       "contributions": 1
     }
   ],

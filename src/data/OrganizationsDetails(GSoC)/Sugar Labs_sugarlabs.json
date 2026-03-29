@@ -41,7 +41,7 @@
   ],
   "irc_channel": "https://discord.com/channels/1078051575580336249/1078051576284975226",
   "contact_email": "mailto:walter@sugarlabs.org",
-  "mailing_list": "https://lists.sugarlabs.org/listinfo/sugar-devel",
+  "mailing_list": "https://lists.sugarlabs.org/mailman3/lists/sugar-devel.lists.sugarlabs.org/",
   "twitter_url": "https://twitter.com/sugar_labs",
   "blog_url": "https://matrix.to/#/#sugar:matrix.org",
   "facebook_url": "https://www.facebook.com/SugarLabsforall/",
@@ -55,7 +55,8 @@
     2022,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2016": [
@@ -719,30 +720,111 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/2rgufs89"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Sugarizer Human Activity pack",
+        "short_description": "The Sugarizer Human Activity Pack project aims to enhance the educational tools provided by Sugar Labs by developing two engaging and interactive...",
+        "description": "The Sugarizer Human Activity Pack project aims to enhance the educational tools provided by Sugar Labs by developing two engaging and interactive activities. The first, the 3D Human Body Activity, will expand on the existing anatomical visualization tool by integrating multiple 3D models, including skeletal, human body and organ system. It will allow users to toggle between different layers, interact with body structures dynamically, and engage in real-time collaborative learning. Additional features such as interactive quizzes, UI/UX refinements, and localization support will ensure accessibility and usability across different regions and devices.\n\nThe second component, the Stickman Animation Activity, will introduce an interactive keyframe animation tool where users can manipulate a stick figure by adjusting its nodes to create animations. This tool will support essential animation features such as playback, speed control, and exporting animations as videos. It will also include a collection of pre-designed templates for common movements like running, jumping, and dancing. A standout feature of this activity is the ability to import a photo of a human body and generate a corresponding stick figure in the same pose using AI-assisted pose detection.\n\nBy the end of the project, Sugar Labs will gain two fully functional, optimized, and localized activities that provide immersive learning experiences in human anatomy and animation principles. The enhancements to the 3D Human Body Activity will enable students to explore anatomy in a more interactive and engaging way, moving beyond static textbook images to dynamic 3D models. The Stickman Animation Activity will encourage creativity and spatial understanding by allowing students to experiment with motion and animation concepts. Together, these activities will significantly contribute to making education more engaging, interactive, and widely accessible.",
+        "student_name": "AdityaKrSingh",
+        "code_url": "https://github.com/AdityaKrSingh26/GSoC-25/blob/main/README.md",
+        "proposal_id": "gczEWONn",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/etFtxnpi"
+      },
+      {
+        "title": "Math Games",
+        "short_description": "I plan to develop 10 Math games for Sugar within the GSoC’25 timeline. The development of these activities will include basic functionalities of the...",
+        "description": "I plan to develop 10 Math games for Sugar within the GSoC’25 timeline. \nThe development of these activities will include basic functionalities of the game in addition to other features which are not mentioned particularly like Sound and themes and sugar features like journals (to keep the changes saved for game resume features), user color schemes, toolbar, etc",
+        "student_name": "Bishoy Wadea",
+        "code_url": "https://github.com/sugarlabs/www-v2/blob/main/src/constants/MarkdownFiles/posts/2025-09-12-gsoc-25-bishoy-wadea-final-report.md",
+        "proposal_id": "NUVZBGuk",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/F4pBAJ4C"
+      },
+      {
+        "title": "AI tools for reflection",
+        "short_description": "Reflective learning enables students to recall past experiences, develop critical thinking skills, and improve future actions by analyzing them. This...",
+        "description": "Reflective learning enables students to recall past experiences, develop critical thinking skills, and improve future actions by analyzing them. This technique allows students to learn quickly and intelligently. Hence, this project aims to implement a reflective learning feature in Music Blocks using open source LLMs and frameworks like LangChain to harness AI to assist student in their reflective learning process.",
+        "student_name": "Diwangshu Kakoty",
+        "code_url": "https://github.com/sugarlabs/musicblocks/pull/4747",
+        "proposal_id": "hdCFsDaA",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/R3d0p1yv"
+      },
+      {
+        "title": "Advanced JavaScript Editor with MusicBlocks Interactions",
+        "short_description": "This project aims to significantly enhance the JavaScript editor within Sugar Labs' MusicBlocks environment. By implementing translation from...",
+        "description": "This project aims to significantly enhance the JavaScript editor within Sugar Labs' MusicBlocks environment. By implementing translation from JavaScript code to MusicBlocks visual blocks, users will gain a powerful tool for iterative learning and code exploration. Additionally, the project will introduce a JavaScript visualizer for step-by-step debugging and syntax highlighting to improve the editor's usability and appeal to young learners. This upgrade will bridge the gap between visual programming and text-based coding, promoting a deeper understanding of real programming and empowering kids to debug effectively.",
+        "student_name": "ElwinL",
+        "code_url": "https://github.com/ebeetles/gsoc-musicblocks-JSeditor-and-MIDI",
+        "proposal_id": "alwlr3wn",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/dIr4SJCY"
+      },
+      {
+        "title": "Refactor the chatbot in the Speak Activity to use gen-AI",
+        "short_description": "This project aims to modernize the Speak Activity by integrating a large language model (LLM) & small language model (SLM) to enhance the chatbot and...",
+        "description": "This project aims to modernize the Speak Activity by integrating a large language model (LLM) & small language model (SLM) to enhance the chatbot and integrate a modern TTS model to improve the voice features, making it more educational and engaging for early learners. The Speak Activity, traditionally used for promoting reading skills through synthetic speech, will be upgraded to provide a more natural and interactive experience.\n\nThe primary objective is to implement an LLM-based chatbot offering improved conversational abilities and a more human-like interaction style. For the voice feature a high-quality, natural-sounding Text-to-Speech (TTS) model that accurately handles pronunciation and phonetics will be used. By fine-tuning the LLM to manage invented spelling and grammatical inaccuracies, the chatbot will offer a supportive and child-friendly interaction, guiding learners in an encouraging manner.\n\nThe project will utilize Python and a fine-tuned model hosted on the cloud and accessed via an API endpoint. This design ensures compatibility and seamless integration with the existing Speak Activity, without adding extra dependencies.\n\nTo support offline functionality, a lightweight, fine-tuned fallback model will be packaged with the activity. This fallback ensures continued usability even without an internet connection, albeit with slightly less accurate responses compared to the cloud-hosted model.\n\nThis enhancement will make the Speak Activity a more effective and child-friendly tool, promoting better language learning through engaging and conversational interactions.",
+        "student_name": "Mebin J Thattil",
+        "code_url": "https://github.com/mebinthattil/GSoC-25-Final-Report/blob/main/README.md",
+        "proposal_id": "2jdsUR6J",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/tOYcmF2u"
+      },
+      {
+        "title": "GTK4 Exploration",
+        "short_description": "The Sugar desktop environment currently relies on GTK3, which is approaching EOL. This project aims to modernize Sugar by completing its migration to...",
+        "description": "The Sugar desktop environment currently relies on GTK3, which is approaching EOL. This project aims to modernize Sugar by completing its migration to GTK4, ensuring long-term sustainability improved performance and give access to modern UI features. The work involves porting the core toolkit (sugar-toolkit-gtk3), updating the Sugar shell migrating key activities (Fructose set) (Given Time Permits) , and creating comprehensive documentation for upcoming contributors.",
+        "student_name": "MostlyK",
+        "code_url": "https://github.com/sugarlabs/sugar-toolkit-gtk4/pull/3",
+        "proposal_id": "KtiWMUWh",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/rsHsYZKy"
+      },
+      {
+        "title": "Git backend for Turtle Blocks and Music Blocks",
+        "short_description": "Music Blocks and Turtle Blocks lack a structured version control system, making it difficult for users to manage project history, collaborate, and...",
+        "description": "Music Blocks and Turtle Blocks lack a structured version control system, making it difficult for users to manage project history, collaborate, and contribute effectively. This project aims to integrate Git-based version control, allowing users to track changes, fork projects, submit pull requests, and collaborate seamlessly.\n\nTo achieve this, I will develop a backend API that interacts with GitHub or GitLab, enabling repository creation, commit tracking, forking, and merging. A user-friendly frontend UI will be implemented to provide an intuitive experience for project management. \nDeliverables:\n-A backend API supporting Git operations (repository creation, commits, forks, PRs, merges)\n-A frontend \"Git Menu\" for managing project versions, viewing history, and contributing.\n-A \"Projects\" page displaying repositories with commit history and branches.\n-Robust testing and documentation to ensure maintainability.\n-Initial user testing with community contributors and educators.\nThe goal is to use GitHub as a back-end and database and use Git's powerful features to make learning more effective for students.",
+        "student_name": "Nikhil-Bhatt",
+        "code_url": "https://github.com/BeNikk/GSoC-2025",
+        "proposal_id": "Yevsh2rd",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/WmtwWvab"
+      },
+      {
+        "title": "AI-powered Debugger for Music Blocks",
+        "short_description": "Music Blocks is a visual programming environment that combines programming and music creation, but users often struggle to debug their projects due...",
+        "description": "Music Blocks is a visual programming environment that combines programming and music creation, but users often struggle to debug their projects due to unclear error messages and a lack of guided assistance. This challenge limits the platform’s educational potential. To address this, the project proposes an AI-powered debugger that will analyze user projects, detect errors, and provide real-time, context-aware solutions. By leveraging open-source LLMs like LLaMA 3 and Retrieval-Augmented Generation (RAG), the debugger will understand Music Blocks-specific issues and offer structured guidance, helping users learn while troubleshooting.\nThe solution involves developing a JSON-to-text converter to interpret project structures, training an LLM on curated Music Blocks datasets, and implementing RAG to fetch relevant documentation and examples. A user-friendly debugger widget will be integrated into the Music Blocks interface, enabling seamless interaction with features like error detection, step-by-step explanations, and creative suggestions. The backend will use FastAPI for efficient API handling and AWS for scalable deployment, ensuring the system remains responsive and accessible to users worldwide.\nThe debugger will empower users to independently troubleshoot projects, enhance learning, and make Music Blocks more accessible. By combining AI with guided problem-solving, it aligns with Sugar Labs’ mission to foster creativity and education through open-source tools.",
+        "student_name": "Om Santosh Suneri",
+        "code_url": "https://gist.github.com/omsuneri/bd5d7e5f142265edd45b51320d6010df",
+        "proposal_id": "HoNzSpMt",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/l4402WCJ"
+      },
+      {
+        "title": "Music Blocks 4 Program Engine",
+        "short_description": "This project will develop the core execution engine for Music Blocks 4, an educational platform that helps students explore music, mathematics, and...",
+        "description": "This project will develop the core execution engine for Music Blocks 4, an educational platform that helps students explore music, mathematics, and programming through block-based coding. The Program Engine will allow users to create musical programs by arranging visual blocks and then execute these programs to generate music with precise timing.\n\nI will implement a robust Abstract Syntax Tree (AST) representation of programs, an interpreter that executes block instructions, a state manager to track variables and program state, and a scheduler for time-based musical operations. Key deliverables include a complete execution system for basic programming constructs, music generation capabilities, concurrent execution for multi-part compositions, and comprehensive error handling to provide clear feedback to users.\n\nThe end result will be a performant, reliable foundation that enables Music Blocks users to create, share, and learn through interactive musical programming, with special attention to educational use cases and accessibility.",
+        "student_name": "Safwan Sayeed",
+        "code_url": "https://github.com/sa-fw-an/GSoC-25-SugarLabs",
+        "proposal_id": "q5FZwPwX",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/5JJPNdip"
+      },
+      {
+        "title": "Music Blocks v4 Masonry Module",
+        "short_description": "Music Blocks v4 is a visual programming environment that lets learners explore programming concepts through music. Students use lego-like “bricks” to...",
+        "description": "Music Blocks v4 is a visual programming environment that lets learners explore programming concepts through music. Students use lego-like “bricks” to compose melodies, rhythms, and logical structures — making coding more approachable and creative.\n\nAs part of GSoC, I developed the Masonry Module, a new system for how these bricks are generated and used. My work introduced a scalable block engine with detailed model-view architecture, a categorized palette,  smooth drag-and-drop interactions, disconnection logic, and collision detection system to help users build programs.\n\nI also worked on connecting the visual bricks to Music Blocks underlying execution engine using the ASTs, so what students build visually can be run as code. This makes the environment both more intuitive for learners and more maintainable for developers. The Masonry Module now serves as a strong foundation for future features in Music Blocks v4, like macros, advanced animations, and performance optimizations.",
+        "student_name": "Saumya Shahi",
+        "code_url": "https://github.com/saumyashahi/GSoC-2025/blob/main/Final-Report.md",
+        "proposal_id": "6DeIZrJU",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/41SuFWum"
+      },
+      {
+        "title": "Color sensor for Music Blocks for photos and real-time video.",
+        "short_description": "Music Blocks has a feature to detect the color of pixels generated from drawing within the program, but it cannot detect the color of pixels from...",
+        "description": "Music Blocks has a feature to detect the color of pixels generated from drawing within the program, but it cannot detect the color of pixels from images that are either uploaded or from a webcam. By adding a feature to detect color from both uploaded images and a live webcam stream, users would be able to implement Lego music notation for the blind and similarly interactive programs.\n\nThe goal of the project is to develop extended functionality to our existing tools of turtle/mouse glyph movement and limited color detection to sense color from uploaded images, as well as the real-time feed from a webcam. Upon successful implementation, the turtle/mouse glyph will be able to detect the color of pixels underneath it, regardless of whether those pixels were drawn by the turtle/mouse itself, part of an uploaded image stamped to the canvas, or part of a live webcam video feed into Music Blocks. One test of success is to run our Lego music notation for the blind project with a live feed. The result should be able to playback and record the abstract brick notation based on its contrasting colors.",
+        "student_name": "ShubhamSingh1",
+        "code_url": "https://github.com/FirePheonix/GSoC-2025",
+        "proposal_id": "iwB9eB4A",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/N4KQIX8T"
+      }
+    ],
+    "2026": []
   },
   "githubID": "sugarlabs",
   "repositories": [
-    {
-      "id": 10601176,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMDYwMTE3Ng==",
-      "name": "sugar",
-      "full_name": "sugarlabs/sugar",
-      "html_url": "https://github.com/sugarlabs/sugar",
-      "description": "Sugar GTK shell",
-      "language": "Python",
-      "stargazers_count": 278,
-      "forks_count": 273,
-      "open_issues_count": 66,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": []
-    },
     {
       "id": 42062097,
       "node_id": "MDEwOlJlcG9zaXRvcnk0MjA2MjA5Nw==",
@@ -751,9 +833,9 @@
       "html_url": "https://github.com/sugarlabs/musicblocks",
       "description": "Music Blocks -- A musical microworld",
       "language": "JavaScript",
-      "stargazers_count": 683,
-      "forks_count": 1116,
-      "open_issues_count": 151,
+      "stargazers_count": 823,
+      "forks_count": 1529,
+      "open_issues_count": 690,
       "license": {
         "key": "agpl-3.0",
         "name": "GNU Affero General Public License v3.0",
@@ -767,16 +849,56 @@
       ]
     },
     {
-      "id": 931132846,
-      "node_id": "R_kgDON3_1rg",
-      "name": "www-v2",
-      "full_name": "sugarlabs/www-v2",
-      "html_url": "https://github.com/sugarlabs/www-v2",
-      "description": "The Sugar Labs Website -v2",
-      "language": "TypeScript",
+      "id": 24685617,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyNDY4NTYxNw==",
+      "name": "turtleblocksjs",
+      "full_name": "sugarlabs/turtleblocksjs",
+      "html_url": "https://github.com/sugarlabs/turtleblocksjs",
+      "description": "Javascript/HTML5 port of Turtle Blocks",
+      "language": "JavaScript",
+      "stargazers_count": 97,
+      "forks_count": 173,
+      "open_issues_count": 43,
+      "license": {
+        "key": "agpl-3.0",
+        "name": "GNU Affero General Public License v3.0",
+        "spdx_id": "AGPL-3.0",
+        "url": "https://api.github.com/licenses/agpl-3.0",
+        "node_id": "MDc6TGljZW5zZTE="
+      },
+      "topics": []
+    },
+    {
+      "id": 24715759,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyNDcxNTc1OQ==",
+      "name": "browse-activity",
+      "full_name": "sugarlabs/browse-activity",
+      "html_url": "https://github.com/sugarlabs/browse-activity",
+      "description": "Sugar activity to browse the internet; WebKit on GTK on Sugar Toolkit",
+      "language": "Python",
       "stargazers_count": 8,
-      "forks_count": 45,
-      "open_issues_count": 9,
+      "forks_count": 48,
+      "open_issues_count": 21,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "topics": []
+    },
+    {
+      "id": 10601176,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMDYwMTE3Ng==",
+      "name": "sugar",
+      "full_name": "sugarlabs/sugar",
+      "html_url": "https://github.com/sugarlabs/sugar",
+      "description": "Sugar GTK shell",
+      "language": "Python",
+      "stargazers_count": 308,
+      "forks_count": 318,
+      "open_issues_count": 89,
       "license": {
         "key": "gpl-3.0",
         "name": "GNU General Public License v3.0",
@@ -787,16 +909,170 @@
       "topics": []
     },
     {
-      "id": 82415447,
-      "node_id": "MDEwOlJlcG9zaXRvcnk4MjQxNTQ0Nw==",
-      "name": "cartoon-builder",
-      "full_name": "sugarlabs/cartoon-builder",
-      "html_url": "https://github.com/sugarlabs/cartoon-builder",
+      "id": 162171080,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNjIxNzEwODA=",
+      "name": "GSoC",
+      "full_name": "sugarlabs/GSoC",
+      "html_url": "https://github.com/sugarlabs/GSoC",
+      "description": "A guide for participating in Google Summer of Code with Sugar Labs",
+      "language": "Shell",
+      "stargazers_count": 489,
+      "forks_count": 208,
+      "open_issues_count": 2,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1029083820,
+      "node_id": "R_kgDOPVaSrA",
+      "name": "speak-ai",
+      "full_name": "sugarlabs/speak-ai",
+      "html_url": "https://github.com/sugarlabs/speak-ai",
+      "description": "This activity is based on the speak activity and has more voices using Kokoro, it uses both a SLM and a LLM.",
+      "language": "Python",
+      "stargazers_count": 15,
+      "forks_count": 52,
+      "open_issues_count": 81,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "topics": []
+    },
+    {
+      "id": 88962163,
+      "node_id": "MDEwOlJlcG9zaXRvcnk4ODk2MjE2Mw==",
+      "name": "countries-activity",
+      "full_name": "sugarlabs/countries-activity",
+      "html_url": "https://github.com/sugarlabs/countries-activity",
       "description": null,
       "language": "Python",
       "stargazers_count": 1,
+      "forks_count": 11,
+      "open_issues_count": 16,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "topics": []
+    },
+    {
+      "id": 28283445,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyODI4MzQ0NQ==",
+      "name": "typing-turtle-activity",
+      "full_name": "sugarlabs/typing-turtle-activity",
+      "html_url": "https://github.com/sugarlabs/typing-turtle-activity",
+      "description": "A typing tutor for the sugar learning environment",
+      "language": "Python",
+      "stargazers_count": 5,
       "forks_count": 10,
-      "open_issues_count": 6,
+      "open_issues_count": 8,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "topics": []
+    },
+    {
+      "id": 18691294,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxODY5MTI5NA==",
+      "name": "dimensions",
+      "full_name": "sugarlabs/dimensions",
+      "html_url": "https://github.com/sugarlabs/dimensions",
+      "description": "a pattern-matching game",
+      "language": "Python",
+      "stargazers_count": 1,
+      "forks_count": 19,
+      "open_issues_count": 1,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "topics": []
+    },
+    {
+      "id": 48656458,
+      "node_id": "MDEwOlJlcG9zaXRvcnk0ODY1NjQ1OA==",
+      "name": "Time-Line",
+      "full_name": "sugarlabs/Time-Line",
+      "html_url": "https://github.com/sugarlabs/Time-Line",
+      "description": "Time Line Sugar activity",
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 5,
+      "open_issues_count": 2,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "topics": []
+    },
+    {
+      "id": 29254501,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyOTI1NDUwMQ==",
+      "name": "calculate-activity",
+      "full_name": "sugarlabs/calculate-activity",
+      "html_url": "https://github.com/sugarlabs/calculate-activity",
+      "description": "The sugar calculate activity.",
+      "language": "Python",
+      "stargazers_count": 1,
+      "forks_count": 39,
+      "open_issues_count": 13,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "topics": []
+    },
+    {
+      "id": 22480718,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMjQ4MDcxOA==",
+      "name": "write-activity",
+      "full_name": "sugarlabs/write-activity",
+      "html_url": "https://github.com/sugarlabs/write-activity",
+      "description": "A simple word processor for the Sugar learning environment",
+      "language": "Python",
+      "stargazers_count": 6,
+      "forks_count": 53,
+      "open_issues_count": 18,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "topics": []
+    },
+    {
+      "id": 22482347,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMjQ4MjM0Nw==",
+      "name": "terminal-activity",
+      "full_name": "sugarlabs/terminal-activity",
+      "html_url": "https://github.com/sugarlabs/terminal-activity",
+      "description": "A traditional linux terminal activity for the Sugar learning environment",
+      "language": "Python",
+      "stargazers_count": 4,
+      "forks_count": 29,
+      "open_issues_count": 5,
       "license": {
         "key": "gpl-2.0",
         "name": "GNU General Public License v2.0",
@@ -815,7 +1091,7 @@
       "description": "A activity to read PDF and TXT files in the Sugar learning environment  ",
       "language": "Python",
       "stargazers_count": 1,
-      "forks_count": 17,
+      "forks_count": 18,
       "open_issues_count": 3,
       "license": {
         "key": "gpl-2.0",
@@ -827,69 +1103,63 @@
       "topics": []
     },
     {
-      "id": 21439020,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMTQzOTAyMA==",
-      "name": "speak",
-      "full_name": "sugarlabs/speak",
-      "html_url": "https://github.com/sugarlabs/speak",
-      "description": "Sugar voice synthesizer",
+      "id": 18720202,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxODcyMDIwMg==",
+      "name": "turtleart-activity",
+      "full_name": "sugarlabs/turtleart-activity",
+      "html_url": "https://github.com/sugarlabs/turtleart-activity",
+      "description": "A block-based Logo programming environment",
       "language": "Python",
-      "stargazers_count": 18,
-      "forks_count": 40,
+      "stargazers_count": 19,
+      "forks_count": 56,
       "open_issues_count": 9,
       "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
       },
       "topics": []
     },
     {
-      "id": 18694485,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxODY5NDQ4NQ==",
-      "name": "activity-abacus",
-      "full_name": "sugarlabs/activity-abacus",
-      "html_url": "https://github.com/sugarlabs/activity-abacus",
-      "description": "a tool for simple arithmetic calculations",
+      "id": 388520921,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzODg1MjA5MjE=",
+      "name": "Simplegraph",
+      "full_name": "sugarlabs/Simplegraph",
+      "html_url": "https://github.com/sugarlabs/Simplegraph",
+      "description": null,
       "language": "Python",
-      "stargazers_count": 4,
-      "forks_count": 15,
-      "open_issues_count": 3,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
+      "stargazers_count": 0,
+      "forks_count": 2,
+      "open_issues_count": 0,
+      "license": null,
       "topics": []
     },
     {
-      "id": 813632890,
-      "node_id": "R_kgDOMH8Neg",
-      "name": "collaboration-server",
-      "full_name": "sugarlabs/collaboration-server",
-      "html_url": "https://github.com/sugarlabs/collaboration-server",
-      "description": "Server for the Real Time Collaboration in Music Blocks",
-      "language": "JavaScript",
-      "stargazers_count": 2,
-      "forks_count": 2,
+      "id": 102155620,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMDIxNTU2MjA=",
+      "name": "fototoon-activity",
+      "full_name": "sugarlabs/fototoon-activity",
+      "html_url": "https://github.com/sugarlabs/fototoon-activity",
+      "description": "A activity to create comics for the Sugar learning environment",
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 6,
       "open_issues_count": 1,
       "license": null,
       "topics": []
     },
     {
-      "id": 22474758,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMjQ3NDc1OA==",
-      "name": "imageviewer-activity",
-      "full_name": "sugarlabs/imageviewer-activity",
-      "html_url": "https://github.com/sugarlabs/imageviewer-activity",
-      "description": "ImageViewer activity for the Sugar learning environment",
+      "id": 28525030,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyODUyNTAzMA==",
+      "name": "readetexts",
+      "full_name": "sugarlabs/readetexts",
+      "html_url": "https://github.com/sugarlabs/readetexts",
+      "description": "Read Etexts Activity -- Read Plain Text books published by Project Gutenberg.",
       "language": "Python",
-      "stargazers_count": 0,
-      "forks_count": 13,
+      "stargazers_count": 3,
+      "forks_count": 7,
       "open_issues_count": 1,
       "license": {
         "key": "gpl-2.0",
@@ -901,35 +1171,135 @@
       "topics": []
     },
     {
-      "id": 235256748,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMzUyNTY3NDg=",
-      "name": "mateton-activity",
-      "full_name": "sugarlabs/mateton-activity",
-      "html_url": "https://github.com/sugarlabs/mateton-activity",
-      "description": "A blackboard that let the children do basic math as they would in their exercise book, and let the teachers analyze how the children thinks and where and how they made mistakes.",
+      "id": 28403653,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyODQwMzY1Mw==",
+      "name": "tamtam",
+      "full_name": "sugarlabs/tamtam",
+      "html_url": "https://github.com/sugarlabs/tamtam",
+      "description": null,
       "language": "Python",
       "stargazers_count": 0,
-      "forks_count": 3,
-      "open_issues_count": 1,
+      "forks_count": 8,
+      "open_issues_count": 6,
       "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
       },
       "topics": []
     },
     {
-      "id": 82415396,
-      "node_id": "MDEwOlJlcG9zaXRvcnk4MjQxNTM5Ng==",
-      "name": "colors",
-      "full_name": "sugarlabs/colors",
-      "html_url": "https://github.com/sugarlabs/colors",
+      "id": 28246585,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyODI0NjU4NQ==",
+      "name": "AnalyzeJournal",
+      "full_name": "sugarlabs/AnalyzeJournal",
+      "html_url": "https://github.com/sugarlabs/AnalyzeJournal",
       "description": null,
       "language": "Python",
       "stargazers_count": 0,
-      "forks_count": 2,
+      "forks_count": 7,
+      "open_issues_count": 1,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "topics": []
+    },
+    {
+      "id": 22477549,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMjQ3NzU0OQ==",
+      "name": "paint-activity",
+      "full_name": "sugarlabs/paint-activity",
+      "html_url": "https://github.com/sugarlabs/paint-activity",
+      "description": "A simple drawing activity for the Sugar learning environment",
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 18,
+      "open_issues_count": 6,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "topics": []
+    },
+    {
+      "id": 106625112,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMDY2MjUxMTI=",
+      "name": "implode-activity",
+      "full_name": "sugarlabs/implode-activity",
+      "html_url": "https://github.com/sugarlabs/implode-activity",
+      "description": "coloured block logic game",
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 5,
+      "open_issues_count": 0,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "topics": []
+    },
+    {
+      "id": 22483763,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMjQ4Mzc2Mw==",
+      "name": "memorize-activity",
+      "full_name": "sugarlabs/memorize-activity",
+      "html_url": "https://github.com/sugarlabs/memorize-activity",
+      "description": "A memory game, not only to play but also to create you own games, for the Sugar learning environment",
+      "language": "Python",
+      "stargazers_count": 2,
+      "forks_count": 17,
+      "open_issues_count": 5,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "topics": []
+    },
+    {
+      "id": 28246796,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyODI0Njc5Ng==",
+      "name": "slideruler",
+      "full_name": "sugarlabs/slideruler",
+      "html_url": "https://github.com/sugarlabs/slideruler",
+      "description": null,
+      "language": "Python",
+      "stargazers_count": 2,
+      "forks_count": 8,
+      "open_issues_count": 3,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "topics": []
+    },
+    {
+      "id": 22483233,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMjQ4MzIzMw==",
+      "name": "finance-activity",
+      "full_name": "sugarlabs/finance-activity",
+      "html_url": "https://github.com/sugarlabs/finance-activity",
+      "description": null,
+      "language": "Python",
+      "stargazers_count": 2,
+      "forks_count": 19,
       "open_issues_count": 2,
       "license": {
         "key": "gpl-3.0",
@@ -941,73 +1311,6 @@
       "topics": []
     },
     {
-      "id": 177470826,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNzc0NzA4MjY=",
-      "name": "math-hurdler",
-      "full_name": "sugarlabs/math-hurdler",
-      "html_url": "https://github.com/sugarlabs/math-hurdler",
-      "description": "A Sugar math game.",
-      "language": "Python",
-      "stargazers_count": 0,
-      "forks_count": 7,
-      "open_issues_count": 1,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 31067414,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzMTA2NzQxNA==",
-      "name": "www",
-      "full_name": "sugarlabs/www",
-      "html_url": "https://github.com/sugarlabs/www",
-      "description": "The Sugar Labs web site",
-      "language": "HTML",
-      "stargazers_count": 84,
-      "forks_count": 264,
-      "open_issues_count": 13,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": [
-        "hacktoberfest"
-      ]
-    },
-    {
-      "id": 270257918,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNzAyNTc5MTg=",
-      "name": "aslo-v4",
-      "full_name": "sugarlabs/aslo-v4",
-      "html_url": "https://github.com/sugarlabs/aslo-v4",
-      "description": "A simple app store for sugarlabs",
-      "language": "Python",
-      "stargazers_count": 7,
-      "forks_count": 20,
-      "open_issues_count": 7,
-      "license": {
-        "key": "agpl-3.0",
-        "name": "GNU Affero General Public License v3.0",
-        "spdx_id": "AGPL-3.0",
-        "url": "https://api.github.com/licenses/agpl-3.0",
-        "node_id": "MDc6TGljZW5zZTE="
-      },
-      "topics": [
-        "bundles",
-        "sugar",
-        "sugarlabs",
-        "xo-files"
-      ]
-    },
-    {
       "id": 18690389,
       "node_id": "MDEwOlJlcG9zaXRvcnkxODY5MDM4OQ==",
       "name": "Pippy",
@@ -1015,9 +1318,9 @@
       "html_url": "https://github.com/sugarlabs/Pippy",
       "description": "Pippy allows the student to examine, execute, and modify simple Python programs.  In addition it is possible to write Python statements to play sounds, calculate  expressions, or make simple text based interactive games.",
       "language": "Python",
-      "stargazers_count": 13,
-      "forks_count": 50,
-      "open_issues_count": 14,
+      "stargazers_count": 15,
+      "forks_count": 51,
+      "open_issues_count": 19,
       "license": {
         "key": "gpl-2.0",
         "name": "GNU General Public License v2.0",
@@ -1028,16 +1331,16 @@
       "topics": []
     },
     {
-      "id": 23711348,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMzcxMTM0OA==",
-      "name": "reflect",
-      "full_name": "sugarlabs/reflect",
-      "html_url": "https://github.com/sugarlabs/reflect",
-      "description": "reflection activity for Sugar",
+      "id": 28013147,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyODAxMzE0Nw==",
+      "name": "followmeButia",
+      "full_name": "sugarlabs/followmeButia",
+      "html_url": "https://github.com/sugarlabs/followmeButia",
+      "description": "A sugar activity to use a camera as color tracker for Butia robot",
       "language": "Python",
-      "stargazers_count": 0,
-      "forks_count": 16,
-      "open_issues_count": 3,
+      "stargazers_count": 1,
+      "forks_count": 3,
+      "open_issues_count": 1,
       "license": {
         "key": "gpl-3.0",
         "name": "GNU General Public License v3.0",
@@ -1048,15 +1351,35 @@
       "topics": []
     },
     {
-      "id": 82415721,
-      "node_id": "MDEwOlJlcG9zaXRvcnk4MjQxNTcyMQ==",
-      "name": "arithmetic",
-      "full_name": "sugarlabs/arithmetic",
-      "html_url": "https://github.com/sugarlabs/arithmetic",
+      "id": 28496802,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyODQ5NjgwMg==",
+      "name": "read-sd-comics",
+      "full_name": "sugarlabs/read-sd-comics",
+      "html_url": "https://github.com/sugarlabs/read-sd-comics",
+      "description": "Read SD Comics",
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 4,
+      "open_issues_count": 3,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "topics": []
+    },
+    {
+      "id": 82415326,
+      "node_id": "MDEwOlJlcG9zaXRvcnk4MjQxNTMyNg==",
+      "name": "flipsticks",
+      "full_name": "sugarlabs/flipsticks",
+      "html_url": "https://github.com/sugarlabs/flipsticks",
       "description": null,
       "language": "Python",
       "stargazers_count": 0,
-      "forks_count": 11,
+      "forks_count": 13,
       "open_issues_count": 4,
       "license": {
         "key": "gpl-2.0",
@@ -1068,250 +1391,16 @@
       "topics": []
     },
     {
-      "id": 21388186,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMTM4ODE4Ng==",
-      "name": "story",
-      "full_name": "sugarlabs/story",
-      "html_url": "https://github.com/sugarlabs/story",
-      "description": "The Sugar Story activity",
-      "language": "Python",
-      "stargazers_count": 1,
-      "forks_count": 16,
-      "open_issues_count": 3,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": []
-    },
-    {
-      "id": 22483553,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMjQ4MzU1Mw==",
-      "name": "maze-activity",
-      "full_name": "sugarlabs/maze-activity",
-      "html_url": "https://github.com/sugarlabs/maze-activity",
-      "description": "A simple maze game for the Sugar learning environment",
-      "language": "Python",
-      "stargazers_count": 1,
-      "forks_count": 13,
-      "open_issues_count": 0,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": []
-    },
-    {
-      "id": 82415297,
-      "node_id": "MDEwOlJlcG9zaXRvcnk4MjQxNTI5Nw==",
-      "name": "gogo",
-      "full_name": "sugarlabs/gogo",
-      "html_url": "https://github.com/sugarlabs/gogo",
+      "id": 28246669,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyODI0NjY2OQ==",
+      "name": "paths",
+      "full_name": "sugarlabs/paths",
+      "html_url": "https://github.com/sugarlabs/paths",
       "description": null,
       "language": "Python",
       "stargazers_count": 0,
       "forks_count": 5,
-      "open_issues_count": 3,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 30810438,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzMDgxMDQzOA==",
-      "name": "lettermatch",
-      "full_name": "sugarlabs/lettermatch",
-      "html_url": "https://github.com/sugarlabs/lettermatch",
-      "description": null,
-      "language": "Python",
-      "stargazers_count": 0,
-      "forks_count": 5,
-      "open_issues_count": 0,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": []
-    },
-    {
-      "id": 30809433,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzMDgwOTQzMw==",
-      "name": "AEIOU",
-      "full_name": "sugarlabs/AEIOU",
-      "html_url": "https://github.com/sugarlabs/AEIOU",
-      "description": "language game",
-      "language": "Python",
-      "stargazers_count": 0,
-      "forks_count": 6,
-      "open_issues_count": 1,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": []
-    },
-    {
-      "id": 30877926,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzMDg3NzkyNg==",
-      "name": "iknowmyabcs",
-      "full_name": "sugarlabs/iknowmyabcs",
-      "html_url": "https://github.com/sugarlabs/iknowmyabcs",
-      "description": null,
-      "language": "Python",
-      "stargazers_count": 3,
-      "forks_count": 8,
-      "open_issues_count": 0,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": []
-    },
-    {
-      "id": 28246653,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyODI0NjY1Mw==",
-      "name": "locosugar",
-      "full_name": "sugarlabs/locosugar",
-      "html_url": "https://github.com/sugarlabs/locosugar",
-      "description": null,
-      "language": "Python",
-      "stargazers_count": 0,
-      "forks_count": 5,
-      "open_issues_count": 1,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": []
-    },
-    {
-      "id": 128839904,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMjg4Mzk5MDQ=",
-      "name": "bulletinboard",
-      "full_name": "sugarlabs/bulletinboard",
-      "html_url": "https://github.com/sugarlabs/bulletinboard",
-      "description": null,
-      "language": "Python",
-      "stargazers_count": 0,
-      "forks_count": 3,
-      "open_issues_count": 0,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": []
-    },
-    {
-      "id": 18703538,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxODcwMzUzOA==",
-      "name": "physics",
-      "full_name": "sugarlabs/physics",
-      "html_url": "https://github.com/sugarlabs/physics",
-      "description": "a box2d playpen",
-      "language": "Python",
-      "stargazers_count": 7,
-      "forks_count": 27,
-      "open_issues_count": 9,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": []
-    },
-    {
-      "id": 48045242,
-      "node_id": "MDEwOlJlcG9zaXRvcnk0ODA0NTI0Mg==",
-      "name": "Bridge",
-      "full_name": "sugarlabs/Bridge",
-      "html_url": "https://github.com/sugarlabs/Bridge",
-      "description": "Bridge Sugar activity",
-      "language": "Python",
-      "stargazers_count": 2,
-      "forks_count": 17,
-      "open_issues_count": 7,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": []
-    },
-    {
-      "id": 28246782,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyODI0Njc4Mg==",
-      "name": "reflection",
-      "full_name": "sugarlabs/reflection",
-      "html_url": "https://github.com/sugarlabs/reflection",
-      "description": null,
-      "language": "Python",
-      "stargazers_count": 0,
-      "forks_count": 6,
-      "open_issues_count": 2,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": []
-    },
-    {
-      "id": 28008586,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyODAwODU4Ng==",
-      "name": "biorhythm",
-      "full_name": "sugarlabs/biorhythm",
-      "html_url": "https://github.com/sugarlabs/biorhythm",
-      "description": "A sugar activity that calculates your biorhythm",
-      "language": "Python",
-      "stargazers_count": 2,
-      "forks_count": 6,
-      "open_issues_count": 2,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": []
-    },
-    {
-      "id": 88950932,
-      "node_id": "MDEwOlJlcG9zaXRvcnk4ODk1MDkzMg==",
-      "name": "ball-and-brick-activity",
-      "full_name": "sugarlabs/ball-and-brick-activity",
-      "html_url": "https://github.com/sugarlabs/ball-and-brick-activity",
-      "description": null,
-      "language": "Python",
-      "stargazers_count": 0,
-      "forks_count": 12,
-      "open_issues_count": 6,
+      "open_issues_count": 4,
       "license": {
         "key": "gpl-3.0",
         "name": "GNU General Public License v3.0",
@@ -1324,244 +1413,12 @@
   ],
   "contributorsDetails": [
     {
-      "login": "pootle-sugarlabs",
-      "id": 4662134,
-      "node_id": "MDQ6VXNlcjQ2NjIxMzQ=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/4662134?v=4",
-      "html_url": "https://github.com/pootle-sugarlabs",
-      "contributions": 683
-    },
-    {
-      "login": "tomeuv",
-      "id": 864195,
-      "node_id": "MDQ6VXNlcjg2NDE5NQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/864195?v=4",
-      "html_url": "https://github.com/tomeuv",
-      "contributions": 605
-    },
-    {
-      "login": "dcbw",
-      "id": 10926354,
-      "node_id": "MDQ6VXNlcjEwOTI2MzU0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/10926354?v=4",
-      "html_url": "https://github.com/dcbw",
-      "contributions": 597
-    },
-    {
-      "login": "erikos",
-      "id": 3714785,
-      "node_id": "MDQ6VXNlcjM3MTQ3ODU=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/3714785?v=4",
-      "html_url": "https://github.com/erikos",
-      "contributions": 493
-    },
-    {
-      "login": "quozl",
-      "id": 2936481,
-      "node_id": "MDQ6VXNlcjI5MzY0ODE=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/2936481?v=4",
-      "html_url": "https://github.com/quozl",
-      "contributions": 220
-    },
-    {
-      "login": "godiard",
-      "id": 4050778,
-      "node_id": "MDQ6VXNlcjQwNTA3Nzg=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/4050778?v=4",
-      "html_url": "https://github.com/godiard",
-      "contributions": 170
-    },
-    {
-      "login": "samdroid-apps",
-      "id": 6022042,
-      "node_id": "MDQ6VXNlcjYwMjIwNDI=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/6022042?v=4",
-      "html_url": "https://github.com/samdroid-apps",
-      "contributions": 135
-    },
-    {
-      "login": "dnarvaez",
-      "id": 1846600,
-      "node_id": "MDQ6VXNlcjE4NDY2MDA=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1846600?v=4",
-      "html_url": "https://github.com/dnarvaez",
-      "contributions": 126
-    },
-    {
-      "login": "smcv",
-      "id": 1561141,
-      "node_id": "MDQ6VXNlcjE1NjExNDE=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1561141?v=4",
-      "html_url": "https://github.com/smcv",
-      "contributions": 123
-    },
-    {
-      "login": "tchx84",
-      "id": 481418,
-      "node_id": "MDQ6VXNlcjQ4MTQxOA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/481418?v=4",
-      "html_url": "https://github.com/tchx84",
-      "contributions": 116
-    },
-    {
-      "login": "worr",
-      "id": 183837,
-      "node_id": "MDQ6VXNlcjE4MzgzNw==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/183837?v=4",
-      "html_url": "https://github.com/worr",
-      "contributions": 93
-    },
-    {
       "login": "walterbender",
       "id": 3996641,
       "node_id": "MDQ6VXNlcjM5OTY2NDE=",
       "avatar_url": "https://avatars.githubusercontent.com/u/3996641?v=4",
       "html_url": "https://github.com/walterbender",
-      "contributions": 5907
-    },
-    {
-      "login": "devAbnull",
-      "id": 16541261,
-      "node_id": "MDQ6VXNlcjE2NTQxMjYx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/16541261?v=4",
-      "html_url": "https://github.com/devAbnull",
-      "contributions": 55
-    },
-    {
-      "login": "benzea",
-      "id": 55234,
-      "node_id": "MDQ6VXNlcjU1MjM0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/55234?v=4",
-      "html_url": "https://github.com/benzea",
-      "contributions": 43
-    },
-    {
-      "login": "sayamindu",
-      "id": 163931,
-      "node_id": "MDQ6VXNlcjE2MzkzMQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/163931?v=4",
-      "html_url": "https://github.com/sayamindu",
-      "contributions": 43
-    },
-    {
-      "login": "i5o",
-      "id": 2650479,
-      "node_id": "MDQ6VXNlcjI2NTA0Nzk=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/2650479?v=4",
-      "html_url": "https://github.com/i5o",
-      "contributions": 40
-    },
-    {
-      "login": "silbe",
-      "id": 4546556,
-      "node_id": "MDQ6VXNlcjQ1NDY1NTY=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/4546556?v=4",
-      "html_url": "https://github.com/silbe",
-      "contributions": 27
-    },
-    {
-      "login": "heeres",
-      "id": 580954,
-      "node_id": "MDQ6VXNlcjU4MDk1NA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/580954?v=4",
-      "html_url": "https://github.com/heeres",
-      "contributions": 22
-    },
-    {
-      "login": "chimosky",
-      "id": 16203834,
-      "node_id": "MDQ6VXNlcjE2MjAzODM0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/16203834?v=4",
-      "html_url": "https://github.com/chimosky",
-      "contributions": 34
-    },
-    {
-      "login": "mdengler",
-      "id": 777015,
-      "node_id": "MDQ6VXNlcjc3NzAxNQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/777015?v=4",
-      "html_url": "https://github.com/mdengler",
-      "contributions": 16
-    },
-    {
-      "login": "manuq",
-      "id": 83944,
-      "node_id": "MDQ6VXNlcjgzOTQ0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/83944?v=4",
-      "html_url": "https://github.com/manuq",
-      "contributions": 14
-    },
-    {
-      "login": "cscott",
-      "id": 156080,
-      "node_id": "MDQ6VXNlcjE1NjA4MA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/156080?v=4",
-      "html_url": "https://github.com/cscott",
-      "contributions": 13
-    },
-    {
-      "login": "edsiper",
-      "id": 369718,
-      "node_id": "MDQ6VXNlcjM2OTcxOA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/369718?v=4",
-      "html_url": "https://github.com/edsiper",
-      "contributions": 12
-    },
-    {
-      "login": "doublea",
-      "id": 658116,
-      "node_id": "MDQ6VXNlcjY1ODExNg==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/658116?v=4",
-      "html_url": "https://github.com/doublea",
-      "contributions": 11
-    },
-    {
-      "login": "mstone",
-      "id": 412508,
-      "node_id": "MDQ6VXNlcjQxMjUwOA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/412508?v=4",
-      "html_url": "https://github.com/mstone",
-      "contributions": 10
-    },
-    {
-      "login": "ezequielpereira",
-      "id": 3056586,
-      "node_id": "MDQ6VXNlcjMwNTY1ODY=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/3056586?v=4",
-      "html_url": "https://github.com/ezequielpereira",
-      "contributions": 9
-    },
-    {
-      "login": "codefrau",
-      "id": 733388,
-      "node_id": "MDQ6VXNlcjczMzM4OA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/733388?v=4",
-      "html_url": "https://github.com/codefrau",
-      "contributions": 8
-    },
-    {
-      "login": "marcopg",
-      "id": 218759,
-      "node_id": "MDQ6VXNlcjIxODc1OQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/218759?v=4",
-      "html_url": "https://github.com/marcopg",
-      "contributions": 8
-    },
-    {
-      "login": "leonardcj",
-      "id": 5068244,
-      "node_id": "MDQ6VXNlcjUwNjgyNDQ=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/5068244?v=4",
-      "html_url": "https://github.com/leonardcj",
-      "contributions": 8
-    },
-    {
-      "login": "edudev",
-      "id": 5237377,
-      "node_id": "MDQ6VXNlcjUyMzczNzc=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/5237377?v=4",
-      "html_url": "https://github.com/edudev",
-      "contributions": 7
+      "contributions": 2184
     },
     {
       "login": "meganindya",
@@ -1570,6 +1427,14 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/33328728?v=4",
       "html_url": "https://github.com/meganindya",
       "contributions": 370
+    },
+    {
+      "login": "omsuneri",
+      "id": 142336291,
+      "node_id": "U_kgDOCHvhIw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/142336291?v=4",
+      "html_url": "https://github.com/omsuneri",
+      "contributions": 164
     },
     {
       "login": "hemantkasat",
@@ -1617,7 +1482,7 @@
       "node_id": "MDQ6VXNlcjE4NTExMzg0",
       "avatar_url": "https://avatars.githubusercontent.com/u/18511384?v=4",
       "html_url": "https://github.com/Tabs16",
-      "contributions": 87
+      "contributions": 6
     },
     {
       "login": "ksraj123",
@@ -1633,7 +1498,7 @@
       "node_id": "MDQ6VXNlcjgyODMyOTg=",
       "avatar_url": "https://avatars.githubusercontent.com/u/8283298?v=4",
       "html_url": "https://github.com/euanong",
-      "contributions": 85
+      "contributions": 12
     },
     {
       "login": "sparsh0204",
@@ -1652,12 +1517,12 @@
       "contributions": 73
     },
     {
-      "login": "omsuneri",
-      "id": 142336291,
-      "node_id": "U_kgDOCHvhIw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/142336291?v=4",
-      "html_url": "https://github.com/omsuneri",
-      "contributions": 72
+      "login": "daksh4469",
+      "id": 60084414,
+      "node_id": "MDQ6VXNlcjYwMDg0NDE0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/60084414?v=4",
+      "html_url": "https://github.com/daksh4469",
+      "contributions": 70
     },
     {
       "login": "AndreaGon",
@@ -1665,14 +1530,6 @@
       "node_id": "MDQ6VXNlcjQ0MzYxMTMw",
       "avatar_url": "https://avatars.githubusercontent.com/u/44361130?v=4",
       "html_url": "https://github.com/AndreaGon",
-      "contributions": 70
-    },
-    {
-      "login": "daksh4469",
-      "id": 60084414,
-      "node_id": "MDQ6VXNlcjYwMDg0NDE0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/60084414?v=4",
-      "html_url": "https://github.com/daksh4469",
       "contributions": 70
     },
     {
@@ -1705,7 +1562,7 @@
       "node_id": "MDQ6VXNlcjk2Mzc1MDc=",
       "avatar_url": "https://avatars.githubusercontent.com/u/9637507?v=4",
       "html_url": "https://github.com/khandelwalYash",
-      "contributions": 57
+      "contributions": 10
     },
     {
       "login": "pidddgy",
@@ -1724,6 +1581,22 @@
       "contributions": 48
     },
     {
+      "login": "Ashutoshx7",
+      "id": 181958559,
+      "node_id": "U_kgDOCth3nw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/181958559?v=4",
+      "html_url": "https://github.com/Ashutoshx7",
+      "contributions": 43
+    },
+    {
+      "login": "Commanderk3",
+      "id": 142284646,
+      "node_id": "U_kgDOCHsXZg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/142284646?v=4",
+      "html_url": "https://github.com/Commanderk3",
+      "contributions": 37
+    },
+    {
       "login": "Ashnidh",
       "id": 44440524,
       "node_id": "MDQ6VXNlcjQ0NDQwNTI0",
@@ -1740,12 +1613,36 @@
       "contributions": 36
     },
     {
+      "login": "chimosky",
+      "id": 16203834,
+      "node_id": "MDQ6VXNlcjE2MjAzODM0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16203834?v=4",
+      "html_url": "https://github.com/chimosky",
+      "contributions": 2
+    },
+    {
       "login": "a-ritwik",
       "id": 26305432,
       "node_id": "MDQ6VXNlcjI2MzA1NDMy",
       "avatar_url": "https://avatars.githubusercontent.com/u/26305432?v=4",
       "html_url": "https://github.com/a-ritwik",
       "contributions": 35
+    },
+    {
+      "login": "vanshika2720",
+      "id": 215134072,
+      "node_id": "U_kgDODNKveA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/215134072?v=4",
+      "html_url": "https://github.com/vanshika2720",
+      "contributions": 35
+    },
+    {
+      "login": "zealot-zew",
+      "id": 140606048,
+      "node_id": "U_kgDOCGF6YA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/140606048?v=4",
+      "html_url": "https://github.com/zealot-zew",
+      "contributions": 34
     },
     {
       "login": "Ishakikani9117",
@@ -1756,36 +1653,412 @@
       "contributions": 34
     },
     {
-      "login": "Kachachan",
-      "id": 6000894,
-      "node_id": "MDQ6VXNlcjYwMDA4OTQ=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/6000894?v=4",
-      "html_url": "https://github.com/Kachachan",
-      "contributions": 33
+      "login": "i5o",
+      "id": 2650479,
+      "node_id": "MDQ6VXNlcjI2NTA0Nzk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2650479?v=4",
+      "html_url": "https://github.com/i5o",
+      "contributions": 3
     },
     {
-      "login": "Commanderk3",
-      "id": 142284646,
-      "node_id": "U_kgDOCHsXZg",
-      "avatar_url": "https://avatars.githubusercontent.com/u/142284646?v=4",
-      "html_url": "https://github.com/Commanderk3",
-      "contributions": 30
+      "login": "samdroid-apps",
+      "id": 6022042,
+      "node_id": "MDQ6VXNlcjYwMjIwNDI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6022042?v=4",
+      "html_url": "https://github.com/samdroid-apps",
+      "contributions": 52
     },
     {
-      "login": "b18050",
-      "id": 45814442,
-      "node_id": "MDQ6VXNlcjQ1ODE0NDQy",
-      "avatar_url": "https://avatars.githubusercontent.com/u/45814442?v=4",
-      "html_url": "https://github.com/b18050",
-      "contributions": 30
+      "login": "tradzik",
+      "id": 3431139,
+      "node_id": "MDQ6VXNlcjM0MzExMzk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3431139?v=4",
+      "html_url": "https://github.com/tradzik",
+      "contributions": 35
     },
     {
-      "login": "ashutoshgautams",
-      "id": 75945709,
-      "node_id": "MDQ6VXNlcjc1OTQ1NzA5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/75945709?v=4",
-      "html_url": "https://github.com/ashutoshgautams",
-      "contributions": 25
+      "login": "librarianmage",
+      "id": 12386291,
+      "node_id": "MDQ6VXNlcjEyMzg2Mjkx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12386291?v=4",
+      "html_url": "https://github.com/librarianmage",
+      "contributions": 24
+    },
+    {
+      "login": "tchx84",
+      "id": 481418,
+      "node_id": "MDQ6VXNlcjQ4MTQxOA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/481418?v=4",
+      "html_url": "https://github.com/tchx84",
+      "contributions": 21
+    },
+    {
+      "login": "vaibhavdaren",
+      "id": 17678138,
+      "node_id": "MDQ6VXNlcjE3Njc4MTM4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/17678138?v=4",
+      "html_url": "https://github.com/vaibhavdaren",
+      "contributions": 21
+    },
+    {
+      "login": "godiard",
+      "id": 4050778,
+      "node_id": "MDQ6VXNlcjQwNTA3Nzg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4050778?v=4",
+      "html_url": "https://github.com/godiard",
+      "contributions": 47
+    },
+    {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "html_url": "https://github.com/apps/dependabot",
+      "contributions": 14
+    },
+    {
+      "login": "mikklfr",
+      "id": 1873619,
+      "node_id": "MDQ6VXNlcjE4NzM2MTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1873619?v=4",
+      "html_url": "https://github.com/mikklfr",
+      "contributions": 12
+    },
+    {
+      "login": "ortegaps",
+      "id": 24188112,
+      "node_id": "MDQ6VXNlcjI0MTg4MTEy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/24188112?v=4",
+      "html_url": "https://github.com/ortegaps",
+      "contributions": 8
+    },
+    {
+      "login": "Mathwhiz",
+      "id": 87322303,
+      "node_id": "MDQ6VXNlcjg3MzIyMzAz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/87322303?v=4",
+      "html_url": "https://github.com/Mathwhiz",
+      "contributions": 7
+    },
+    {
+      "login": "ayushwashere",
+      "id": 4640097,
+      "node_id": "MDQ6VXNlcjQ2NDAwOTc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4640097?v=4",
+      "html_url": "https://github.com/ayushwashere",
+      "contributions": 6
+    },
+    {
+      "login": "rafaelcor",
+      "id": 1537237,
+      "node_id": "MDQ6VXNlcjE1MzcyMzc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1537237?v=4",
+      "html_url": "https://github.com/rafaelcor",
+      "contributions": 6
+    },
+    {
+      "login": "garyservin",
+      "id": 475165,
+      "node_id": "MDQ6VXNlcjQ3NTE2NQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/475165?v=4",
+      "html_url": "https://github.com/garyservin",
+      "contributions": 6
+    },
+    {
+      "login": "Amitjha1412",
+      "id": 3899569,
+      "node_id": "MDQ6VXNlcjM4OTk1Njk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3899569?v=4",
+      "html_url": "https://github.com/Amitjha1412",
+      "contributions": 5
+    },
+    {
+      "login": "sneh1234",
+      "id": 11407306,
+      "node_id": "MDQ6VXNlcjExNDA3MzA2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11407306?v=4",
+      "html_url": "https://github.com/sneh1234",
+      "contributions": 5
+    },
+    {
+      "login": "drakosvlad",
+      "id": 10036435,
+      "node_id": "MDQ6VXNlcjEwMDM2NDM1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10036435?v=4",
+      "html_url": "https://github.com/drakosvlad",
+      "contributions": 4
+    },
+    {
+      "login": "sdziuda",
+      "id": 44412838,
+      "node_id": "MDQ6VXNlcjQ0NDEyODM4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/44412838?v=4",
+      "html_url": "https://github.com/sdziuda",
+      "contributions": 3
+    },
+    {
+      "login": "Abhay-dot",
+      "id": 55094435,
+      "node_id": "MDQ6VXNlcjU1MDk0NDM1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55094435?v=4",
+      "html_url": "https://github.com/Abhay-dot",
+      "contributions": 3
+    },
+    {
+      "login": "Ebukaabazie",
+      "id": 11161546,
+      "node_id": "MDQ6VXNlcjExMTYxNTQ2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11161546?v=4",
+      "html_url": "https://github.com/Ebukaabazie",
+      "contributions": 3
+    },
+    {
+      "login": "sanatankc",
+      "id": 20373641,
+      "node_id": "MDQ6VXNlcjIwMzczNjQx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20373641?v=4",
+      "html_url": "https://github.com/sanatankc",
+      "contributions": 3
+    },
+    {
+      "login": "S-kus",
+      "id": 86892991,
+      "node_id": "MDQ6VXNlcjg2ODkyOTkx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/86892991?v=4",
+      "html_url": "https://github.com/S-kus",
+      "contributions": 3
+    },
+    {
+      "login": "rgs1",
+      "id": 1349891,
+      "node_id": "MDQ6VXNlcjEzNDk4OTE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1349891?v=4",
+      "html_url": "https://github.com/rgs1",
+      "contributions": 3
+    },
+    {
+      "login": "Mrunal-M-N",
+      "id": 11703692,
+      "node_id": "MDQ6VXNlcjExNzAzNjky",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11703692?v=4",
+      "html_url": "https://github.com/Mrunal-M-N",
+      "contributions": 3
+    },
+    {
+      "login": "jaskiratsingh2000",
+      "id": 10228651,
+      "node_id": "MDQ6VXNlcjEwMjI4NjUx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10228651?v=4",
+      "html_url": "https://github.com/jaskiratsingh2000",
+      "contributions": 3
+    },
+    {
+      "login": "pootle-sugarlabs",
+      "id": 4662134,
+      "node_id": "MDQ6VXNlcjQ2NjIxMzQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4662134?v=4",
+      "html_url": "https://github.com/pootle-sugarlabs",
+      "contributions": 262
+    },
+    {
+      "login": "erikos",
+      "id": 3714785,
+      "node_id": "MDQ6VXNlcjM3MTQ3ODU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3714785?v=4",
+      "html_url": "https://github.com/erikos",
+      "contributions": 203
+    },
+    {
+      "login": "tomeuv",
+      "id": 864195,
+      "node_id": "MDQ6VXNlcjg2NDE5NQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/864195?v=4",
+      "html_url": "https://github.com/tomeuv",
+      "contributions": 104
+    },
+    {
+      "login": "quozl",
+      "id": 2936481,
+      "node_id": "MDQ6VXNlcjI5MzY0ODE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2936481?v=4",
+      "html_url": "https://github.com/quozl",
+      "contributions": 80
+    },
+    {
+      "login": "humitos",
+      "id": 244656,
+      "node_id": "MDQ6VXNlcjI0NDY1Ng==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244656?v=4",
+      "html_url": "https://github.com/humitos",
+      "contributions": 34
+    },
+    {
+      "login": "luci1900",
+      "id": 101894,
+      "node_id": "MDQ6VXNlcjEwMTg5NA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/101894?v=4",
+      "html_url": "https://github.com/luci1900",
+      "contributions": 10
+    },
+    {
+      "login": "silbe",
+      "id": 4546556,
+      "node_id": "MDQ6VXNlcjQ1NDY1NTY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4546556?v=4",
+      "html_url": "https://github.com/silbe",
+      "contributions": 9
+    },
+    {
+      "login": "leonardcj",
+      "id": 5068244,
+      "node_id": "MDQ6VXNlcjUwNjgyNDQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5068244?v=4",
+      "html_url": "https://github.com/leonardcj",
+      "contributions": 8
+    },
+    {
+      "login": "Dimi20cen",
+      "id": 49369105,
+      "node_id": "MDQ6VXNlcjQ5MzY5MTA1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/49369105?v=4",
+      "html_url": "https://github.com/Dimi20cen",
+      "contributions": 7
+    },
+    {
+      "login": "dcbw",
+      "id": 10926354,
+      "node_id": "MDQ6VXNlcjEwOTI2MzU0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10926354?v=4",
+      "html_url": "https://github.com/dcbw",
+      "contributions": 6
+    },
+    {
+      "login": "Saumya-Mishra9129",
+      "id": 45252461,
+      "node_id": "MDQ6VXNlcjQ1MjUyNDYx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/45252461?v=4",
+      "html_url": "https://github.com/Saumya-Mishra9129",
+      "contributions": 5
+    },
+    {
+      "login": "vipulgupta2048",
+      "id": 22801822,
+      "node_id": "MDQ6VXNlcjIyODAxODIy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/22801822?v=4",
+      "html_url": "https://github.com/vipulgupta2048",
+      "contributions": 4
+    },
+    {
+      "login": "nswarup14",
+      "id": 34597895,
+      "node_id": "MDQ6VXNlcjM0NTk3ODk1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/34597895?v=4",
+      "html_url": "https://github.com/nswarup14",
+      "contributions": 4
+    },
+    {
+      "login": "jirwin",
+      "id": 61822,
+      "node_id": "MDQ6VXNlcjYxODIy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/61822?v=4",
+      "html_url": "https://github.com/jirwin",
+      "contributions": 3
+    },
+    {
+      "login": "iamutkarshtiwari",
+      "id": 6258810,
+      "node_id": "MDQ6VXNlcjYyNTg4MTA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6258810?v=4",
+      "html_url": "https://github.com/iamutkarshtiwari",
+      "contributions": 3
+    },
+    {
+      "login": "Aniket21mathur",
+      "id": 35092582,
+      "node_id": "MDQ6VXNlcjM1MDkyNTgy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/35092582?v=4",
+      "html_url": "https://github.com/Aniket21mathur",
+      "contributions": 3
+    },
+    {
+      "login": "korakurider",
+      "id": 133538,
+      "node_id": "MDQ6VXNlcjEzMzUzOA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/133538?v=4",
+      "html_url": "https://github.com/korakurider",
+      "contributions": 2
+    },
+    {
+      "login": "srevinsaju",
+      "id": 48695438,
+      "node_id": "MDQ6VXNlcjQ4Njk1NDM4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/48695438?v=4",
+      "html_url": "https://github.com/srevinsaju",
+      "contributions": 2
+    },
+    {
+      "login": "shaansubbaiah",
+      "id": 11163839,
+      "node_id": "MDQ6VXNlcjExMTYzODM5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11163839?v=4",
+      "html_url": "https://github.com/shaansubbaiah",
+      "contributions": 2
+    },
+    {
+      "login": "rbuj",
+      "id": 10171411,
+      "node_id": "MDQ6VXNlcjEwMTcxNDEx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10171411?v=4",
+      "html_url": "https://github.com/rbuj",
+      "contributions": 2
+    },
+    {
+      "login": "goutamnair7",
+      "id": 7141709,
+      "node_id": "MDQ6VXNlcjcxNDE3MDk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7141709?v=4",
+      "html_url": "https://github.com/goutamnair7",
+      "contributions": 1
+    },
+    {
+      "login": "gauravp94",
+      "id": 4757435,
+      "node_id": "MDQ6VXNlcjQ3NTc0MzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4757435?v=4",
+      "html_url": "https://github.com/gauravp94",
+      "contributions": 1
+    },
+    {
+      "login": "avinashbharti97",
+      "id": 22724583,
+      "node_id": "MDQ6VXNlcjIyNzI0NTgz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/22724583?v=4",
+      "html_url": "https://github.com/avinashbharti97",
+      "contributions": 1
+    },
+    {
+      "login": "marsian83",
+      "id": 114365550,
+      "node_id": "U_kgDOBtEUbg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114365550?v=4",
+      "html_url": "https://github.com/marsian83",
+      "contributions": 1
+    },
+    {
+      "login": "smcv",
+      "id": 1561141,
+      "node_id": "MDQ6VXNlcjE1NjExNDE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1561141?v=4",
+      "html_url": "https://github.com/smcv",
+      "contributions": 1
+    },
+    {
+      "login": "icarito",
+      "id": 199755,
+      "node_id": "MDQ6VXNlcjE5OTc1NQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/199755?v=4",
+      "html_url": "https://github.com/icarito",
+      "contributions": 1
     }
   ],
   "activeOrg": true

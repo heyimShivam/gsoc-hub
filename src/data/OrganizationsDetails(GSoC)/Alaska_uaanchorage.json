@@ -29,7 +29,8 @@
   "facebook_url": null,
   "year": [
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2024": [
@@ -70,7 +71,81 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/aTdHTFqR"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Support for Logarithmic Number Systems in a Deep-Learning Framework",
+        "short_description": "This project aims to integrate Logarithmic Number Systems (LNS) into a deep-learning framework, offering an alternative to traditional floating-point...",
+        "description": "This project aims to integrate Logarithmic Number Systems (LNS) into a deep-learning framework, offering an alternative to traditional floating-point arithmetic. LNS simplifies multiplication and division, potentially reducing power consumption and improving efficiency in applications like deep learning, where approximate results are acceptable. However, current deep-learning frameworks, such as PyTorch and TensorFlow, are hardcoded to use floating-point (FP) operations, limiting the adoption of LNS.\n\nWe seek to bridge that gap by developing a system that supports LNS arithmetic while maintaining compatibility with PyTorch. By creating custom layers, optimizers, and benchmarking tools, the project will enable the simulation of LNS arithmetic in FP hardware for neural network training and inference. The expected outcome is a robust, open-source solution to make research and exploration of LNS in deep-learning applications easier, paving the way for future hardware implementations.",
+        "student_name": "akrentz6",
+        "code_url": "https://github.com/xlnsresearch/xlns/wiki/Alex-Krentz-GSoC-2025-Final-Report:-XLNSTorch",
+        "proposal_id": "M4o1WvbW",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/syhxELgs"
+      },
+      {
+        "title": "Time and Ordering in Beehive",
+        "short_description": "This project intends to introduce time as a new fourth dimension for uploads, enabling a deeper understanding and analysis of the evolution of...",
+        "description": "This project intends to introduce time as a new fourth dimension for uploads, enabling a deeper understanding and analysis of the evolution of marginalised communities and their art forms. By incorporating time (in all its relevant forms), the initiative will facilitate time-based tracking and establish an evolution timeline—a representation capable of narrating its own journey.\r\nThe project further aims to implement advanced metadata structuring and pattern recognition algorithms to reveal the intricate stories behind each image. By integrating time as a critical attribute, researchers and human service professionals will be able to explore and analyse photo collections with greater depth and clarity.",
+        "student_name": "Bagwan",
+        "code_url": "https://github.com/KathiraveluLab/DREAMS/discussions/24",
+        "proposal_id": "567tuvB2",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/p7uybuUg"
+      },
+      {
+        "title": "Developing Distributed Algorithm for Metagenomic Error Correction and Assembly",
+        "short_description": "Metagenomic assembly is essential for understanding microbial communities, but existing tools often struggle with fragmented genomes, misclassified...",
+        "description": "Metagenomic assembly is essential for understanding microbial communities, but existing tools often struggle with fragmented genomes, misclassified errors, and scalability issues. My goal is to develop a distributed algorithm for error correction and assembly, making it easier to process large and complex metagenomic datasets efficiently.\n\nTo achieve this, I plan to use distributed computing frameworks like Dask to improve scalability, ensuring that even terabyte-scale datasets can be handled smoothly. I also aim to design better error correction techniques to preserve low-abundance species and improve assembly accuracy. Additionally, I want to explore GPU acceleration and machine learning to refine error detection and optimize processing times.\n\nAt the core of my approach is a distributed de Bruijn graph assembly algorithm that constructs graphs from k-mers while clustering and annotating nodes based on coverage, GC content, and paired-end data. Unlike existing tools like Velvet (designed for single-genome assembly) and MetaVelvet (for metagenomic assembly), my method will efficiently break down graphs into species-specific subgraphs, reducing errors and improving the quality of the final assemblies. This will lead to better contig generation, taxonomic classification, and error correction, while also ensuring the method scales well for large datasets.\n\nDeliverables:\n1. A distributed error correction module that improves accuracy while retaining biologically important data.\n2. An optimized assembly pipeline to generate high-quality contigs and scaffolds for taxonomic and functional analysis.\n3. A novel species-aware de Bruijn graph decomposition to improve metagenomic assembly and reduce errors.\n4. Scalability improvements to ensure smooth performance across HPC clusters and cloud platforms.\n5. AI/ML enhancements to improve error correction and sequencing accuracy.\n6. Comprehensive documentation and testing to make the tool easy to use and reproducible.",
+        "student_name": "Gauri Ket",
+        "code_url": "https://gist.github.com/gauriket/ca82e6d0edc787ed504e5513c09dce9f",
+        "proposal_id": "GaVT5Vua",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/7MLG6Q1y"
+      },
+      {
+        "title": "Beehive:  Health Metrics Framework for Behavioral Health in Alaska.",
+        "short_description": "Beehive aims to be a scalable web application that enables users to capture, upload, and manage images seamlessly while ensuring automation,...",
+        "description": "Beehive aims to be a scalable web application that enables users to capture, upload, and manage images seamlessly while ensuring automation, security, and efficiency. The project will feature a robust UI, a secure backend with role-based access, and cloud deployment with CI/CD integration for smooth updates.\n\nFinal Deliverables:\n- Fully functional web application\n- Secure authentication and role-based access\n- Automated CI/CD & cloud deployment\n- Testing & security validation",
+        "student_name": "IshaanxGupta",
+        "code_url": "https://github.com/KathiraveluLab/Beehive/discussions/235",
+        "proposal_id": "h6qWQxN2",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/VEikwBq6"
+      },
+      {
+        "title": "Bio-Block: A Blockchain-based Data Repository and Payment Portal.",
+        "short_description": "The problem I am trying to solve is less monetary benefits received by the data owners. I am creating a decentralized solution where the data owner...",
+        "description": "The problem I am trying to solve is less monetary benefits received by the data owners. I am creating a decentralized solution where the data owner can upload his/her dataset and get compensated well whenever people buy the dataset. My proposed architecture is secure as well as scalable.",
+        "student_name": "Karthik Sathish",
+        "code_url": "https://github.com/bio-block/healthy",
+        "proposal_id": "Kk4UEmnf",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/0fukgxzJ"
+      },
+      {
+        "title": "AWANTA: A Virtual Router based on RIPE Atlas Internet Measurements",
+        "short_description": "It is a network measurement tool that leverages the RIPE Atlas platform to perform latency measurements and monitoring across different geographical...",
+        "description": "It is a network measurement tool that leverages the RIPE Atlas platform to perform latency measurements and monitoring across different geographical regions. It enables automated creation of measurements, efficient result collection, and robust data processing for network analysis and real-time application optimization. When network anomalies or performance degradations are detected, it can trigger intelligent path re-routing to maintain optimal connectivity. By utilizing RIPE Atlas data helps improve network performance and resilience across diverse locations through informed, adaptive routing decisions.",
+        "student_name": "Mohamed Abdullah",
+        "code_url": "https://github.com/KathiraveluLab/Sintra",
+        "proposal_id": "5zBuGw2D",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/VAxzRsh8"
+      },
+      {
+        "title": "Automated Coastline Extraction for Erosion modeling in Alaska",
+        "short_description": "Alaskan coastlines are rapidly evolving due to the direct impacts of climate change. Rising sea levels, melting sea ice, and shifting environmental...",
+        "description": "Alaskan coastlines are rapidly evolving due to the direct impacts of climate change. Rising sea levels, melting sea ice, and shifting environmental conditions make accurate modeling of coastal changes a pressing need. Current approaches often miss key environmental variables like tidal shifts, temperature variation, and wave energy. Moreover, manual coastline digitization remains time-consuming and inefficient, limiting scalability.\nThe aim of the project is to develop and deliver a highly accurate, automated model that can extract vectorized coastlines directly from PlanetLabs satellite imagery. This will build upon the existing pipeline and model by re-training the water detection (NDWI-based) and segmentation methods to perform well on PlanetLabs’ imagery.\nFurther aims include:\nEnsuring the extraction is robust in challenging conditions such as water shadows, buildings, artifacts, and especially steep, cliff-like coastal areas.\nIntegrating additional data sources if needed, such as SWIR data   \nthe project will also explore the use of auxiliary data sources (Landsat & sentinel) and  elevation data for addition of topographic information, to improve accuracy.\n\nUltimately producing a finished model that can process large amounts of imagery and accurately predict coastline changes over time, which is essential for improving coastal erosion forecasts in Alaska considering the effects of climate change.",
+        "student_name": "Ritika  Kumari",
+        "code_url": "https://github.com/Ritika-K7/GSoC-2025-Final-Report-Alaska-Project",
+        "proposal_id": "92vZvvGp",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/BxxPW8Ec"
+      },
+      {
+        "title": "Making ZeroMQ A First Class Feature of Concore",
+        "short_description": "Closed-loop peripheral neuromodulation systems, essential for developing adaptive therapies like vagus nerve stimulation that can be modularly...",
+        "description": "Closed-loop peripheral neuromodulation systems, essential for developing\nadaptive therapies like vagus nerve stimulation that can be modularly simulated\nusing the CONTROL-CORE framework. Although CONTROL-CORE currently\nsupports file-based and shared-memory communication, these approaches have\nlimitations about distributed execution, scalability, and latency.\n\nTo overcome these obstacles, this project suggests utilizing ZeroMQ that will\ncontribute as a high-performance messaging library as another means of\ncommunication.",
+        "student_name": "Saksham Gera",
+        "code_url": "https://github.com/ControlCore-Project/concore/pull/167",
+        "proposal_id": "P88ZkrJs",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/SRg27gwq"
+      }
+    ],
+    "2026": []
   },
   "githubID": "uaanchorage",
   "repositories": [
@@ -82,8 +157,8 @@
       "html_url": "https://github.com/uaanchorage/GSoC",
       "description": "Alaska Project Ideas, mentored by the researchers and collaborators of University of Alaska and supported by open-source entities and enthusiasts in Alaska.",
       "language": null,
-      "stargazers_count": 51,
-      "forks_count": 13,
+      "stargazers_count": 97,
+      "forks_count": 31,
       "open_issues_count": 0,
       "license": {
         "key": "apache-2.0",
@@ -98,17 +173,35 @@
         "biomedical-informatics",
         "coastal-modelling",
         "control-systems",
+        "dicom",
         "healthcare",
         "imaging",
-        "java",
+        "internet",
         "machine-learning",
+        "matlab",
+        "networks",
         "polar-science",
         "python",
         "radiology",
+        "telehealth",
         "wildfire-detection",
         "wildfire-management",
         "wildfires"
       ]
+    },
+    {
+      "id": 1030600227,
+      "node_id": "R_kgDOPW22Iw",
+      "name": "UAA-Housing-Contactless-Door-Login",
+      "full_name": "uaanchorage/UAA-Housing-Contactless-Door-Login",
+      "html_url": "https://github.com/uaanchorage/UAA-Housing-Contactless-Door-Login",
+      "description": null,
+      "language": "PowerShell",
+      "stargazers_count": 0,
+      "forks_count": 1,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
     },
     {
       "id": 191461916,
@@ -139,8 +232,8 @@
       "description": "OU Campus gadget for renaming a page and setting up an automatic redirect from the old location",
       "language": "HTML",
       "stargazers_count": 1,
-      "forks_count": 1,
-      "open_issues_count": 0,
+      "forks_count": 2,
+      "open_issues_count": 1,
       "license": null,
       "topics": []
     },
@@ -166,9 +259,9 @@
       "html_url": "https://github.com/uaanchorage/wordpress-to-oucampus",
       "description": "A simple utility for importing a WordPress blog into OU Campus.",
       "language": "C#",
-      "stargazers_count": 1,
-      "forks_count": 1,
-      "open_issues_count": 0,
+      "stargazers_count": 2,
+      "forks_count": 2,
+      "open_issues_count": 2,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -214,7 +307,15 @@
       "node_id": "MDQ6VXNlcjIyNTYzMQ==",
       "avatar_url": "https://avatars.githubusercontent.com/u/225631?v=4",
       "html_url": "https://github.com/pradeeban",
-      "contributions": 153
+      "contributions": 203
+    },
+    {
+      "login": "mdxabu",
+      "id": 115330277,
+      "node_id": "U_kgDOBt_M5Q",
+      "avatar_url": "https://avatars.githubusercontent.com/u/115330277?v=4",
+      "html_url": "https://github.com/mdxabu",
+      "contributions": 5
     },
     {
       "login": "ishaanxgupta",
@@ -233,20 +334,20 @@
       "contributions": 1
     },
     {
-      "login": "jmzetterman",
-      "id": 51725468,
-      "node_id": "MDQ6VXNlcjUxNzI1NDY4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/51725468?v=4",
-      "html_url": "https://github.com/jmzetterman",
-      "contributions": 11
-    },
-    {
       "login": "jzetterman",
       "id": 10645254,
       "node_id": "MDQ6VXNlcjEwNjQ1MjU0",
       "avatar_url": "https://avatars.githubusercontent.com/u/10645254?v=4",
       "html_url": "https://github.com/jzetterman",
       "contributions": 2
+    },
+    {
+      "login": "jmzetterman",
+      "id": 51725468,
+      "node_id": "MDQ6VXNlcjUxNzI1NDY4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51725468?v=4",
+      "html_url": "https://github.com/jmzetterman",
+      "contributions": 11
     }
   ],
   "activeOrg": false

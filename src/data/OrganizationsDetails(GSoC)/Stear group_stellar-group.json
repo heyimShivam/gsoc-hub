@@ -61,7 +61,8 @@
     2022,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2016": [
@@ -354,20 +355,104 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/gSURYDFF"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Integrate HPX algorithms with Nvidia CCCL (Thrust)",
+        "short_description": "This project proposes integrating NVIDIA's Thrust parallel algorithms library with HPX to enable GPU acceleration while maintaining consistency with...",
+        "description": "This project proposes integrating NVIDIA's Thrust parallel algorithms library with HPX to enable GPU acceleration while maintaining consistency with HPX's existing parallel algorithm interfaces. The solution involves creating a specialized Thrust executor that extends HPX's CUDA executor capabilities, implementing automatic memory management for data transfers between host and device, and developing a dispatching mechanism that selects the appropriate backend (CPU or GPU) based on execution policies. Key technical components include a version-aware API layer to handle Thrust compatibility, exception handling that bridges Thrust/CUDA errors with HPX's error system, and template-based algorithm overloads that transparently route calls to Thrust implementations when GPU execution is requested. The implementation will proceed through four phases: establishing core infrastructure (executor, memory management), integrating fundamental algorithms (transform, reduce, sort), adding HPX execution policy support, and concluding with comprehensive testing and optimization. The resulting system will allow developers to write single code paths that automatically leverage GPU acceleration through Thrust when available, all while maintaining HPX's asynchronous execution model through future-based interfaces.",
+        "student_name": "Aditya Sapra",
+        "code_url": "https://gist.github.com/adityacodes30/c21cb451dba8e4fe9ec95de44e07825b",
+        "proposal_id": "exlde62T",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/4lvpXgm7"
+      },
+      {
+        "title": "Annotate Public Api with Contracts",
+        "short_description": "HPX being a library for parallel and distributed computing should address errors that are hard to catch during development due to the unpredictable...",
+        "description": "HPX being a library for parallel and distributed computing should address errors that are hard to\r\ncatch during development due to the unpredictable use and the complexity of thread safety. Contracts solve these problems by allowing developers to define preconditions, postconditions,\r\nand invariants within function declarations to make sure that correctness rules are enforced and\r\nclear in the code.",
+        "student_name": "Alexandros Papadakis",
+        "code_url": "https://alexpapadakis.github.io/hpx_contracts/",
+        "proposal_id": "9x73rDgZ",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/6RKWFH8U"
+      },
+      {
+        "title": "Exposing HPX Using C++ 20 Modules",
+        "short_description": "This project aims to modernize the HPX parallel computing library by introducing C++20 Modules, addressing compilation performance and code...",
+        "description": "This project aims to modernize the HPX parallel computing library by introducing C++20 Modules, addressing compilation performance and code organization challenges. I develop a comprehensive conversion strategy using a Python-based tracking system to analyze dependencies, create module interfaces, and ensure backward compatibility. The project will deliver a modularized HPX library with improved build system integration, enhanced symbol visibility, and detailed documentation, ultimately providing developers with a more efficient and maintainable parallel computing framework.",
+        "student_name": "Haokun Wu",
+        "code_url": "https://gist.github.com/kylehaokunwu/38e9c50aecadf20bfad633f9401e37af",
+        "proposal_id": "9TbGh1dq",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/JA1znIsG"
+      },
+      {
+        "title": "SymPy-HPX: High-Performance Symbolic Computing with HPX Integration",
+        "short_description": "This project develops a pip-installable Python library that bridges SymPy's symbolic mathematics capabilities with HPX's high-performance parallel...",
+        "description": "This project develops a pip-installable Python library that bridges SymPy's symbolic mathematics capabilities with HPX's high-performance parallel computing framework. SymPy-HPX automatically generates optimized C++ code from symbolic mathematical expressions, compiles it with HPX integration, and provides a seamless Python interface. The library supports multi-dimensional arrays, stencil operations, and multiple equation systems, making it particularly powerful for scientific computing applications. \n\nKey features include automatic code generation with HPX parallelization, efficient runtime management, support for complex numerical operations, and a user-friendly Python API. The project progressed through four major versions, each adding significant capabilities: from basic expression handling to advanced features like multi-dimensional arrays and persistent runtime optimization.",
+        "student_name": "Rohit-Raj",
+        "code_url": "https://medium.com/@rraj.official5/accelerating-scientific-computing-with-hpx-my-gsoc-2025-journey-7faab7864aef",
+        "proposal_id": "oUT11mn6",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/KcLXVKMJ"
+      },
+      {
+        "title": "Implement hpx::system_scheduler as described in P2079 (System Execution Context)",
+        "short_description": "This project implements hpx::system_scheduler as a P2079-compliant parallel execution context for HPX, mapping tasks to hpx::threads for scalability...",
+        "description": "This project implements hpx::system_scheduler as a P2079-compliant parallel execution context for HPX, mapping tasks to hpx::threads for scalability and performance. The scheduler aligns with P2079 and P2300’s Senders/Receivers, optimizes bulk scheduling, and ensures thread safety. It includes a user-facing API with get_parallel_scheduler() for parallel task scheduling, link-time replaceability via system_context_replaceability for custom backends, and bulk unchunked execution processing items individually with execute(i, i+1) calls. The plan comprises four phases: scheduler development, performance optimization, Senders/Receivers integration, and testing/benchmarking.",
+        "student_name": "Sai Charan Arvapally",
+        "code_url": "https://charan-003.github.io/stdexec-domain-customization-blog/",
+        "proposal_id": "qNj7PF3h",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/1y8CtN5n"
+      },
+      {
+        "title": "Fix S/R versions of the parallel algorithms",
+        "short_description": "This project aims to fix critical issues in the S/R versions of HPX’s algorithms. Specifically, the parallel version of the following twelve...",
+        "description": "This project aims to fix critical issues in the S/R versions of HPX’s algorithms. Specifically, the parallel version of the following twelve algorithms: nth_element, partial_sort, partial_sort_copy, set_difference, set_intersection, set_symmetric_difference, set_union, shift_left, shift_right, sort, sort_by_key, and stable_sort. These algorithms currently have not passed the S/R unit tests defined in PR #6494, which undermines their reliability and efficiency in parallel processing environments. Also, for the sort_by_key, shift_left, and shift_right algorithms, their CPO (Customization Point Object) is not based on tag_parallel_algorithm, which needs further improvement.",
+        "student_name": "Zhengnan Hua",
+        "code_url": "https://sususu5.github.io/p/google-summer-of-code-final-report/",
+        "proposal_id": "dGncMF8M",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/5o95cHBr"
+      }
+    ],
+    "2026": []
   },
   "githubID": "stellar-group",
   "repositories": [
     {
-      "id": 236960235,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMzY5NjAyMzU=",
-      "name": "hpx-docs",
-      "full_name": "STEllAR-GROUP/hpx-docs",
-      "html_url": "https://github.com/STEllAR-GROUP/hpx-docs",
-      "description": "Generated documentation for HPX (https://github.com/STEllAR-GROUP/hpx)",
-      "language": "HTML",
-      "stargazers_count": 2,
-      "forks_count": 2,
+      "id": 4455628,
+      "node_id": "MDEwOlJlcG9zaXRvcnk0NDU1NjI4",
+      "name": "hpx",
+      "full_name": "STEllAR-GROUP/hpx",
+      "html_url": "https://github.com/STEllAR-GROUP/hpx",
+      "description": "The C++ Standard Library for Parallelism and Concurrency",
+      "language": "C++",
+      "stargazers_count": 2815,
+      "forks_count": 540,
+      "open_issues_count": 160,
+      "license": {
+        "key": "bsl-1.0",
+        "name": "Boost Software License 1.0",
+        "spdx_id": "BSL-1.0",
+        "url": "https://api.github.com/licenses/bsl-1.0",
+        "node_id": "MDc6TGljZW5zZTI4"
+      },
+      "topics": [
+        "c-plus-plus",
+        "concurrency",
+        "cpp20",
+        "cpp20-modules",
+        "cross-platform",
+        "distributed",
+        "parallelism"
+      ]
+    },
+    {
+      "id": 33244153,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzMzI0NDE1Mw==",
+      "name": "docker_build_env",
+      "full_name": "STEllAR-GROUP/docker_build_env",
+      "html_url": "https://github.com/STEllAR-GROUP/docker_build_env",
+      "description": "This repository contains a base docker image that is suitable to build HPX.",
+      "language": "Dockerfile",
+      "stargazers_count": 5,
+      "forks_count": 8,
       "open_issues_count": 0,
       "license": {
         "key": "bsl-1.0",
@@ -381,16 +466,76 @@
       ]
     },
     {
-      "id": 4455628,
-      "node_id": "MDEwOlJlcG9zaXRvcnk0NDU1NjI4",
-      "name": "hpx",
-      "full_name": "STEllAR-GROUP/hpx",
-      "html_url": "https://github.com/STEllAR-GROUP/hpx",
-      "description": "The C++ Standard Library for Parallelism and Concurrency",
+      "id": 591517431,
+      "node_id": "R_kgDOI0HW9w",
+      "name": "NWGraph",
+      "full_name": "STEllAR-GROUP/NWGraph",
+      "html_url": "https://github.com/STEllAR-GROUP/NWGraph",
+      "description": "Complete Project Documentation",
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 605802857,
+      "node_id": "R_kgDOJBvRaQ",
+      "name": "chplx",
+      "full_name": "STEllAR-GROUP/chplx",
+      "html_url": "https://github.com/STEllAR-GROUP/chplx",
+      "description": "A new Chapel backend",
+      "language": "Chapel",
+      "stargazers_count": 2,
+      "forks_count": 1,
+      "open_issues_count": 3,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 936060297,
+      "node_id": "R_kgDON8sliQ",
+      "name": "cccl",
+      "full_name": "STEllAR-GROUP/cccl",
+      "html_url": "https://github.com/STEllAR-GROUP/cccl",
+      "description": "CUDA Core Compute Libraries",
       "language": "C++",
-      "stargazers_count": 2633,
-      "forks_count": 471,
-      "open_issues_count": 148,
+      "stargazers_count": 1,
+      "forks_count": 4,
+      "open_issues_count": 3,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 73526736,
+      "node_id": "MDEwOlJlcG9zaXRvcnk3MzUyNjczNg==",
+      "name": "octotiger",
+      "full_name": "STEllAR-GROUP/octotiger",
+      "html_url": "https://github.com/STEllAR-GROUP/octotiger",
+      "description": "Astrophysics program simulating the evolution of star systems based on the fast multipole method on adaptive Octrees",
+      "language": "C++",
+      "stargazers_count": 55,
+      "forks_count": 22,
+      "open_issues_count": 7,
       "license": {
         "key": "bsl-1.0",
         "name": "Boost Software License 1.0",
@@ -399,13 +544,103 @@
         "node_id": "MDc6TGljZW5zZTI4"
       },
       "topics": [
-        "c-plus-plus",
-        "concurrency",
-        "cpp17",
-        "cross-platform",
-        "distributed",
-        "parallelism"
+        "astrophysics",
+        "cuda",
+        "cuda-kernels",
+        "hpx",
+        "kokkos",
+        "simd",
+        "stellar-mergers",
+        "sycl"
       ]
+    },
+    {
+      "id": 1119800058,
+      "node_id": "R_kgDOQr7K-g",
+      "name": "traveler-integrated",
+      "full_name": "STEllAR-GROUP/traveler-integrated",
+      "html_url": "https://github.com/STEllAR-GROUP/traveler-integrated",
+      "description": "An integrated visualization system for connecting OTF2 stack traces and aggregate expression trees",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1010695051,
+      "node_id": "R_kgDOPD37iw",
+      "name": "spack-packages",
+      "full_name": "STEllAR-GROUP/spack-packages",
+      "html_url": "https://github.com/STEllAR-GROUP/spack-packages",
+      "description": "Spack's community package recipes",
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 244703507,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyNDQ3MDM1MDc=",
+      "name": "rostam-docs",
+      "full_name": "STEllAR-GROUP/rostam-docs",
+      "html_url": "https://github.com/STEllAR-GROUP/rostam-docs",
+      "description": null,
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 2,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 91950580,
+      "node_id": "MDEwOlJlcG9zaXRvcnk5MTk1MDU4MA==",
+      "name": "vcpkg",
+      "full_name": "STEllAR-GROUP/vcpkg",
+      "html_url": "https://github.com/STEllAR-GROUP/vcpkg",
+      "description": "VC++ Packaging Tool",
+      "language": "CMake",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 994263479,
+      "node_id": "R_kgDOO0NBtw",
+      "name": "apex",
+      "full_name": "STEllAR-GROUP/apex",
+      "html_url": "https://github.com/STEllAR-GROUP/apex",
+      "description": "Autonomic Performance Environment for eXascale (APEX)",
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
     },
     {
       "id": 33540864,
@@ -428,26 +663,6 @@
       "topics": []
     },
     {
-      "id": 936060297,
-      "node_id": "R_kgDON8sliQ",
-      "name": "cccl",
-      "full_name": "STEllAR-GROUP/cccl",
-      "html_url": "https://github.com/STEllAR-GROUP/cccl",
-      "description": "CUDA Core Compute Libraries",
-      "language": "C++",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 1,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
       "id": 206299416,
       "node_id": "MDEwOlJlcG9zaXRvcnkyMDYyOTk0MTY=",
       "name": "hpx-kokkos",
@@ -455,7 +670,7 @@
       "html_url": "https://github.com/STEllAR-GROUP/hpx-kokkos",
       "description": "HPX/Kokkos interoperability library",
       "language": "C++",
-      "stargazers_count": 9,
+      "stargazers_count": 12,
       "forks_count": 3,
       "open_issues_count": 0,
       "license": {
@@ -464,75 +679,6 @@
         "spdx_id": "BSL-1.0",
         "url": "https://api.github.com/licenses/bsl-1.0",
         "node_id": "MDc6TGljZW5zZTI4"
-      },
-      "topics": []
-    },
-    {
-      "id": 605802857,
-      "node_id": "R_kgDOJBvRaQ",
-      "name": "chplx",
-      "full_name": "STEllAR-GROUP/chplx",
-      "html_url": "https://github.com/STEllAR-GROUP/chplx",
-      "description": "A new Chapel backend",
-      "language": "Chapel",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 73526736,
-      "node_id": "MDEwOlJlcG9zaXRvcnk3MzUyNjczNg==",
-      "name": "octotiger",
-      "full_name": "STEllAR-GROUP/octotiger",
-      "html_url": "https://github.com/STEllAR-GROUP/octotiger",
-      "description": "Astrophysics program simulating the evolution of star systems based on the fast multipole method on adaptive Octrees",
-      "language": "C++",
-      "stargazers_count": 51,
-      "forks_count": 19,
-      "open_issues_count": 7,
-      "license": {
-        "key": "bsl-1.0",
-        "name": "Boost Software License 1.0",
-        "spdx_id": "BSL-1.0",
-        "url": "https://api.github.com/licenses/bsl-1.0",
-        "node_id": "MDc6TGljZW5zZTI4"
-      },
-      "topics": [
-        "astrophysics",
-        "cuda",
-        "cuda-kernels",
-        "hpx",
-        "kokkos",
-        "simd",
-        "stellar-mergers",
-        "sycl"
-      ]
-    },
-    {
-      "id": 591517431,
-      "node_id": "R_kgDOI0HW9w",
-      "name": "NWGraph",
-      "full_name": "STEllAR-GROUP/NWGraph",
-      "html_url": "https://github.com/STEllAR-GROUP/NWGraph",
-      "description": "Complete Project Documentation",
-      "language": null,
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
       },
       "topics": []
     },
@@ -571,20 +717,6 @@
       "topics": []
     },
     {
-      "id": 244703507,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNDQ3MDM1MDc=",
-      "name": "rostam-docs",
-      "full_name": "STEllAR-GROUP/rostam-docs",
-      "html_url": "https://github.com/STEllAR-GROUP/rostam-docs",
-      "description": null,
-      "language": null,
-      "stargazers_count": 0,
-      "forks_count": 1,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
       "id": 38055889,
       "node_id": "MDEwOlJlcG9zaXRvcnkzODA1NTg4OQ==",
       "name": "hpxio",
@@ -597,28 +729,6 @@
       "open_issues_count": 1,
       "license": null,
       "topics": []
-    },
-    {
-      "id": 33244153,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzMzI0NDE1Mw==",
-      "name": "docker_build_env",
-      "full_name": "STEllAR-GROUP/docker_build_env",
-      "html_url": "https://github.com/STEllAR-GROUP/docker_build_env",
-      "description": "This repository contains a base docker image that is suitable to build HPX.",
-      "language": "Dockerfile",
-      "stargazers_count": 5,
-      "forks_count": 8,
-      "open_issues_count": 0,
-      "license": {
-        "key": "bsl-1.0",
-        "name": "Boost Software License 1.0",
-        "spdx_id": "BSL-1.0",
-        "url": "https://api.github.com/licenses/bsl-1.0",
-        "node_id": "MDc6TGljZW5zZTI4"
-      },
-      "topics": [
-        "hpx"
-      ]
     },
     {
       "id": 823069638,
@@ -648,7 +758,7 @@
       "html_url": "https://github.com/STEllAR-GROUP/hpxc",
       "description": "HPX C Interface",
       "language": "C++",
-      "stargazers_count": 6,
+      "stargazers_count": 7,
       "forks_count": 6,
       "open_issues_count": 1,
       "license": {
@@ -748,26 +858,6 @@
       "html_url": "https://github.com/STEllAR-GROUP/spack",
       "description": "A flexible package manager that supports multiple versions, configurations, platforms, and compilers.",
       "language": null,
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 91950580,
-      "node_id": "MDEwOlJlcG9zaXRvcnk5MTk1MDU4MA==",
-      "name": "vcpkg",
-      "full_name": "STEllAR-GROUP/vcpkg",
-      "html_url": "https://github.com/STEllAR-GROUP/vcpkg",
-      "description": "VC++ Packaging Tool",
-      "language": "CMake",
       "stargazers_count": 0,
       "forks_count": 0,
       "open_issues_count": 0,
@@ -915,47 +1005,13 @@
       "html_url": "https://github.com/STEllAR-GROUP/tutorials",
       "description": "This repository contains material for HPX tutorials given by members of the STE||AR-Group",
       "language": "TeX",
-      "stargazers_count": 34,
-      "forks_count": 12,
+      "stargazers_count": 36,
+      "forks_count": 14,
       "open_issues_count": 2,
       "license": null,
       "topics": [
         "hpx"
       ]
-    },
-    {
-      "id": 221257908,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMjEyNTc5MDg=",
-      "name": "JetLag",
-      "full_name": "STEllAR-GROUP/JetLag",
-      "html_url": "https://github.com/STEllAR-GROUP/JetLag",
-      "description": "Repo for the integrated Phylanx Jupyter Notebook Solution",
-      "language": "Python",
-      "stargazers_count": 0,
-      "forks_count": 3,
-      "open_issues_count": 3,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 603231590,
-      "node_id": "R_kgDOI_SVZg",
-      "name": "chapel_hpx",
-      "full_name": "STEllAR-GROUP/chapel_hpx",
-      "html_url": "https://github.com/STEllAR-GROUP/chapel_hpx",
-      "description": "Chapel examples, hand-converted to HPX ",
-      "language": "Python",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "bsl-1.0",
-        "name": "Boost Software License 1.0",
-        "spdx_id": "BSL-1.0",
-        "url": "https://api.github.com/licenses/bsl-1.0",
-        "node_id": "MDc6TGljZW5zZTI4"
-      },
-      "topics": []
     }
   ],
   "contributorsDetails": [
@@ -965,7 +1021,7 @@
       "node_id": "MDQ6VXNlcjU2ODA2Mw==",
       "avatar_url": "https://avatars.githubusercontent.com/u/568063?v=4",
       "html_url": "https://github.com/hkaiser",
-      "contributions": 11439
+      "contributions": 47
     },
     {
       "login": "msimberg",
@@ -973,31 +1029,7 @@
       "node_id": "MDQ6VXNlcjQyOTc3",
       "avatar_url": "https://avatars.githubusercontent.com/u/42977?v=4",
       "html_url": "https://github.com/msimberg",
-      "contributions": 3535
-    },
-    {
-      "login": "sithhell",
-      "id": 53655,
-      "node_id": "MDQ6VXNlcjUzNjU1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/53655?v=4",
-      "html_url": "https://github.com/sithhell",
-      "contributions": 1462
-    },
-    {
-      "login": "Finomnis",
-      "id": 3129043,
-      "node_id": "MDQ6VXNlcjMxMjkwNDM=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/3129043?v=4",
-      "html_url": "https://github.com/Finomnis",
-      "contributions": 73
-    },
-    {
-      "login": "Syntaf",
-      "id": 1827631,
-      "node_id": "MDQ6VXNlcjE4Mjc2MzE=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1827631?v=4",
-      "html_url": "https://github.com/Syntaf",
-      "contributions": 170
+      "contributions": 42
     },
     {
       "login": "brycelelbach",
@@ -1008,12 +1040,20 @@
       "contributions": 2626
     },
     {
+      "login": "sithhell",
+      "id": 53655,
+      "node_id": "MDQ6VXNlcjUzNjU1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/53655?v=4",
+      "html_url": "https://github.com/sithhell",
+      "contributions": 23
+    },
+    {
       "login": "K-ballo",
       "id": 1700391,
       "node_id": "MDQ6VXNlcjE3MDAzOTE=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1700391?v=4",
       "html_url": "https://github.com/K-ballo",
-      "contributions": 1256
+      "contributions": 1259
     },
     {
       "login": "biddisco",
@@ -1029,7 +1069,7 @@
       "node_id": "MDQ6VXNlcjQ4Njg0NDMy",
       "avatar_url": "https://avatars.githubusercontent.com/u/48684432?v=4",
       "html_url": "https://github.com/aurianer",
-      "contributions": 729
+      "contributions": 24
     },
     {
       "login": "dimitraka",
@@ -1037,7 +1077,7 @@
       "node_id": "MDQ6VXNlcjQ2Njc1MDgx",
       "avatar_url": "https://avatars.githubusercontent.com/u/46675081?v=4",
       "html_url": "https://github.com/dimitraka",
-      "contributions": 305
+      "contributions": 3
     },
     {
       "login": "isidorostsa",
@@ -1045,7 +1085,7 @@
       "node_id": "MDQ6VXNlcjYzNTUxOTUw",
       "avatar_url": "https://avatars.githubusercontent.com/u/63551950?v=4",
       "html_url": "https://github.com/isidorostsa",
-      "contributions": 250
+      "contributions": 256
     },
     {
       "login": "AntonBikineev",
@@ -1072,6 +1112,14 @@
       "contributions": 180
     },
     {
+      "login": "Syntaf",
+      "id": 1827631,
+      "node_id": "MDQ6VXNlcjE4Mjc2MzE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1827631?v=4",
+      "html_url": "https://github.com/Syntaf",
+      "contributions": 170
+    },
+    {
       "login": "gentryx",
       "id": 1305099,
       "node_id": "MDQ6VXNlcjEzMDUwOTk=",
@@ -1088,20 +1136,20 @@
       "contributions": 159
     },
     {
+      "login": "SAtacker",
+      "id": 61797109,
+      "node_id": "MDQ6VXNlcjYxNzk3MTA5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/61797109?v=4",
+      "html_url": "https://github.com/SAtacker",
+      "contributions": 145
+    },
+    {
       "login": "aserio",
       "id": 1649622,
       "node_id": "MDQ6VXNlcjE2NDk2MjI=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1649622?v=4",
       "html_url": "https://github.com/aserio",
       "contributions": 145
-    },
-    {
-      "login": "SAtacker",
-      "id": 61797109,
-      "node_id": "MDQ6VXNlcjYxNzk3MTA5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/61797109?v=4",
-      "html_url": "https://github.com/SAtacker",
-      "contributions": 144
     },
     {
       "login": "taeguk",
@@ -1117,7 +1165,7 @@
       "node_id": "MDQ6VXNlcjYxNjQ1NjEz",
       "avatar_url": "https://avatars.githubusercontent.com/u/61645613?v=4",
       "html_url": "https://github.com/bhumitattarde",
-      "contributions": 122
+      "contributions": 5
     },
     {
       "login": "VeXocide",
@@ -1144,6 +1192,14 @@
       "contributions": 93
     },
     {
+      "login": "Pansysk75",
+      "id": 75637426,
+      "node_id": "MDQ6VXNlcjc1NjM3NDI2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/75637426?v=4",
+      "html_url": "https://github.com/Pansysk75",
+      "contributions": 8
+    },
+    {
       "login": "gonidelis",
       "id": 20652095,
       "node_id": "MDQ6VXNlcjIwNjUyMDk1",
@@ -1160,12 +1216,36 @@
       "contributions": 87
     },
     {
-      "login": "Pansysk75",
-      "id": 75637426,
-      "node_id": "MDQ6VXNlcjc1NjM3NDI2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/75637426?v=4",
-      "html_url": "https://github.com/Pansysk75",
-      "contributions": 80
+      "login": "waleed7715",
+      "id": 99066717,
+      "node_id": "U_kgDOBeejXQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/99066717?v=4",
+      "html_url": "https://github.com/waleed7715",
+      "contributions": 83
+    },
+    {
+      "login": "JiakunYan",
+      "id": 29711311,
+      "node_id": "MDQ6VXNlcjI5NzExMzEx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/29711311?v=4",
+      "html_url": "https://github.com/JiakunYan",
+      "contributions": 74
+    },
+    {
+      "login": "Finomnis",
+      "id": 3129043,
+      "node_id": "MDQ6VXNlcjMxMjkwNDM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3129043?v=4",
+      "html_url": "https://github.com/Finomnis",
+      "contributions": 26
+    },
+    {
+      "login": "sleepingeight",
+      "id": 178897067,
+      "node_id": "U_kgDOCqnAqw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/178897067?v=4",
+      "html_url": "https://github.com/sleepingeight",
+      "contributions": 72
     },
     {
       "login": "dcbdan",
@@ -1176,28 +1256,84 @@
       "contributions": 72
     },
     {
-      "login": "JiakunYan",
-      "id": 29711311,
-      "node_id": "MDQ6VXNlcjI5NzExMzEx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/29711311?v=4",
-      "html_url": "https://github.com/JiakunYan",
-      "contributions": 70
+      "login": "haampie",
+      "id": 194764,
+      "node_id": "MDQ6VXNlcjE5NDc2NA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/194764?v=4",
+      "html_url": "https://github.com/haampie",
+      "contributions": 4
     },
     {
-      "login": "rstobaugh",
-      "id": 54450075,
-      "node_id": "MDQ6VXNlcjU0NDUwMDc1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/54450075?v=4",
-      "html_url": "https://github.com/rstobaugh",
-      "contributions": 69
+      "login": "diehlpk",
+      "id": 3922435,
+      "node_id": "MDQ6VXNlcjM5MjI0MzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3922435?v=4",
+      "html_url": "https://github.com/diehlpk",
+      "contributions": 3
     },
     {
-      "login": "Naios",
-      "id": 1146834,
-      "node_id": "MDQ6VXNlcjExNDY4MzQ=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1146834?v=4",
-      "html_url": "https://github.com/Naios",
-      "contributions": 61
+      "login": "parsa",
+      "id": 322657,
+      "node_id": "MDQ6VXNlcjMyMjY1Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/322657?v=4",
+      "html_url": "https://github.com/parsa",
+      "contributions": 2
+    },
+    {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "html_url": "https://github.com/apps/dependabot",
+      "contributions": 2
+    },
+    {
+      "login": "srinivasyadav18",
+      "id": 43375352,
+      "node_id": "MDQ6VXNlcjQzMzc1MzUy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43375352?v=4",
+      "html_url": "https://github.com/srinivasyadav18",
+      "contributions": 2
+    },
+    {
+      "login": "emiliostassios",
+      "id": 122368931,
+      "node_id": "U_kgDOB0szow",
+      "avatar_url": "https://avatars.githubusercontent.com/u/122368931?v=4",
+      "html_url": "https://github.com/emiliostassios",
+      "contributions": 2
+    },
+    {
+      "login": "John98Zakaria",
+      "id": 30316353,
+      "node_id": "MDQ6VXNlcjMwMzE2MzUz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/30316353?v=4",
+      "html_url": "https://github.com/John98Zakaria",
+      "contributions": 1
+    },
+    {
+      "login": "lums658",
+      "id": 26538637,
+      "node_id": "MDQ6VXNlcjI2NTM4NjM3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/26538637?v=4",
+      "html_url": "https://github.com/lums658",
+      "contributions": 15
+    },
+    {
+      "login": "tonythomascn",
+      "id": 5780587,
+      "node_id": "MDQ6VXNlcjU3ODA1ODc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5780587?v=4",
+      "html_url": "https://github.com/tonythomascn",
+      "contributions": 3
+    },
+    {
+      "login": "sei-smcmillan",
+      "id": 15343718,
+      "node_id": "MDQ6VXNlcjE1MzQzNzE4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/15343718?v=4",
+      "html_url": "https://github.com/sei-smcmillan",
+      "contributions": 1
     }
   ],
   "activeOrg": true

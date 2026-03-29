@@ -41,7 +41,8 @@
     2022,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2016": [
@@ -1609,7 +1610,198 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/6T65nrnD"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Torchvision in R",
+        "short_description": "This project focuses on extending the R interface of the torchvision library by implementing support for core computer vision datasets and model...",
+        "description": "This project focuses on extending the R interface of the torchvision library by implementing support for core computer vision datasets and model architectures. The scope includes adding native loaders for widely used datasets such as COCO and VOC, along with support for key models including Faster R-CNN, Mask R-CNN, FCN, Keypoint R-CNN, and quantized ResNet variants. The proposed work enhances the torch ecosystem in R by enabling advanced computer vision workflows with consistent APIs, GPU compatibility, and clean documentation. The implementation will follow package development best practices with robust testing, reusable components, and user-friendly examples. The resulting contributions aim to reduce the gap between R and Python in deep learning tools, enabling R users to build scalable, efficient, and modern vision pipelines.",
+        "student_name": "Akanksha Koshti",
+        "code_url": "https://medium.com/@koshtiakanksha12/gsoc-2025-final-reflections-and-contributions-to-the-r-project-e1b4e319e4ee",
+        "proposal_id": "Nq8MqJUE",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/GVZWEuNf"
+      },
+      {
+        "title": "DBmaps: An R Tool for Streamlining Database Joins",
+        "short_description": "The DBmaps package aims to simplify and automate the analysis of complex relational data in R. A common challenge in data analysis is the need to...",
+        "description": "The DBmaps package aims to simplify and automate the analysis of complex relational data in R. A common challenge in data analysis is the need to first aggregate event-level \"fact\" tables (e.g., transactions, views) before they can be meaningfully joined with descriptive \"dimension\" tables (e.g., customers, products). This process is often manual, repetitive, and error-prone.\n\nDBmaps solves this problem by providing a metadata-driven framework for metaprogramming. Instead of writing complex data.table code by hand, users define the analytical potential of their database in a simple, machine-readable format. The package then uses this \"map\" to automatically generate and execute the necessary aggregation and join code, making the entire workflow more efficient, consistent, and scalable.",
+        "student_name": "Akshat Maurya",
+        "code_url": "https://docs.google.com/document/d/1Neo9Ea2jTVOPQnoNApXqOuS2rzojp0Tt9PSOe0J6Nkc/edit?usp=sharing",
+        "proposal_id": "50BnuSs0",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/ahkUTc1i"
+      },
+      {
+        "title": "Expected Returns: Factor Formation",
+        "short_description": "Financial factor investing relies on rigorous quantitative research to explain asset returns and generate alpha. While many academic models and...",
+        "description": "Financial factor investing relies on rigorous quantitative research to explain asset returns and generate alpha. While many academic models and institutional frameworks exist, open-source tools that replicate these methods — especially in R — are few and far between. This project aims to close that gap by contributing to the ExpectedReturns package, developing clean, modular functions that implement and generalize key factor construction techniques inspired by Antti Ilmanen’s Investing Amid Low Expected Returns.\n\nThe focus will be on engineering reusable code for factors like value, momentum, profitability, and investment using raw or semi-structured financial data. These will be built using lightweight, testable components supported by packages like FactorAnalytics, PerformanceAnalytics, and tinytest, while following conventions used by Chen, Zimmermann, and Kelly. Also included will be vignettes and documentation that show how to reproduce these concepts in practice — making the tools both transparent and portable. This will be a two-month project.\n\nDeliverables will include:\n– Core functions for factor construction and data prep\n– Lightweight unit tests and clean vignettes\n– Documentation of inputs, outputs, and assumptions\n– A reproducible build setup that works across systems\n\nThe goal is to make these concepts accessible — not just for researchers, but for anyone trying to understand and apply factor models in real-world contexts. If successful, this project will leave behind a set of tools that are as useful to the open-source community as they are to academic replication.",
+        "student_name": "Al Pakrosnis",
+        "code_url": "https://apakr.com/posts/GSoC/",
+        "proposal_id": "uYJIvgV4",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/AcSDZYbO"
+      },
+      {
+        "title": "Modern time series estimation",
+        "short_description": "This project will implement the recent techniques from Gallagher et al. (2024) and Gallagher et al. (2025) for improved time series simulation...",
+        "description": "This project will implement the recent techniques from Gallagher et al. (2024) and Gallagher et al. (2025) for improved time series simulation studies covering the whole parameter space of time series models (and not just cherry-pick one or two parameter settings) and also bring modern estimates of the acf/pacf and consistency in AIC selection of ar models (which is not currently available).\n\nSpecifically, the project will:\n- create functions for acf and pacf estimation based on a dual shrinkage approach\n- create functions for ar estimation based on the dual shrinkage pacf\n- interface the new ar estimation function with standard methods such as AIC for consistent estimation\n- create new graphics for displaying these estimates that make clear to the user the effect of the dual shrinkage approach (as an option)\n- create functions to generate ARMA parameters that satisfy a correlation constraint (high/med/low or a fixed correlation strength)\n- create functions to generate random ARMA parameter values that cover the whole parameter space regardless of the model order\n- create a wrapper for the above two functions to generate simulation datasets for researchers in one line of code\n\nAll this functionality will require appropriate documentation, testing and a vignette for users.",
+        "student_name": "Andrea Storey",
+        "code_url": "https://github.com/Andrea-S-8/GSoC-2025-Evaluation/tree/main",
+        "proposal_id": "ApwcXc2h",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/hjbxobxb"
+      },
+      {
+        "title": "grepreaper R Package Development",
+        "short_description": "The grepreaper package addresses the critical need for efficient pattern matching and selective data loading in R, particularly for large datasets....",
+        "description": "The grepreaper package addresses the critical need for efficient pattern matching and selective data loading in R, particularly for large datasets. Currently, R users must load entire files before filtering, creating performance bottlenecks.\n\nMy solution implements four core functions:\n1. grep_count(): Counts pattern matches without loading entire files\n2. grep_read(): Selectively loads only matching data\n3. grep_files(): Discovers files containing specific patterns\n4. grep_context(): Shows matches with surrounding context lines\n\nThe package leverages system commands for pre-filtering, significantly improving performance by avoiding unnecessary data loading. It supports flexible pattern matching options, including case sensitivity control, inverted matching, and multi-pattern support across multiple files.\n\nDeliverables include:\n1. Complete R package with documented functions\n2. Comprehensive test suite\n3. Performance benchmarks against traditional methods\n4. Introductory vignette with practical examples\n5. Integration with popular data manipulation workflows\n\nThis project will provide R users with a powerful tool for efficient data exploration, particularly beneficial for large dataset analysis and text mining applications.",
+        "student_name": "Atharv Raskar",
+        "code_url": "https://github.com/atharv-1511/grepreaper/",
+        "proposal_id": "mazM4FI5",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/g0vwQ3rj"
+      },
+      {
+        "title": "Enhancing Animint2 with New Features and Gallery Updates.",
+        "short_description": "This project aims to improve Animint2 by, enhancing grid layouts for ggplot2 to simplify plot arrangement, porting the Animint gallery from NAU...",
+        "description": "This project aims to improve Animint2 by, enhancing grid layouts for ggplot2 to simplify plot arrangement, porting the Animint gallery from NAU rcdata to GitHub Pages while resolving existing issues, migrating tests from selenium to chromote for a modern testing framework.\nIf time permits, I’ll also work on replacing RJSONIO with jsonlite, adding code coverage via GitHub Actions using covr and V8.",
+        "student_name": "Biplab Sutradhar",
+        "code_url": "https://biplab-sutradhar.github.io/gsoc_journey/",
+        "proposal_id": "VejXMQiW",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/O5OXfDuO"
+      },
+      {
+        "title": "AI Scholar: A Modern AI RAG-aware Model Utilizing GraphRAG for Thoughtful Academic Paper Analysis",
+        "short_description": "Researchers have tremendous difficulty keeping up with the exponential growth of scientific literature, hindering their ability to stay on top of the...",
+        "description": "Researchers have tremendous difficulty keeping up with the exponential growth of scientific literature, hindering their ability to stay on top of the latest insights in their field. This is especially true in quantum physics, where groundbreaking findings and complex concepts are emerging at a rapid pace, demanding constant attention and analysis from researchers. There is a dire need for AI that can efficiently process and summarize these vast volumes of scientific papers, helping human researchers focus their efforts on the most promising areas of investigation.\n\nThe problem of knowledge overload and the need for efficient systems to navigate and synthesize vast amounts of literature is not unique to quantum physics. In fact, it is a pervasive challenge across various academic and scientific disciplines, including statistics and data science – the very fields that led to the development of large language models (LLMs) and retrieval-augmented generation (RAG) models.\n\nThe exponential growth of research papers, coupled with the rapid advancement of statistical methodologies and data-driven approaches, has created a significant knowledge bottleneck in these domains. Researchers and practitioners in statistics and data science often struggle to keep up with the latest developments, hindering their ability to effectively leverage cutting-edge techniques and methodologies in their work. This knowledge overload problem has motivated the development of AI-powered systems like LLMs and RAG models, which aim to streamline the process of knowledge discovery, synthesis, and dissemination.\n\nBy adapting the proposed \"AI Scholar\" system to the domains of statistics and data science, researchers in these fields could benefit from personalized recommendations, automated literature analysis, and idea generation capabilities, ultimately accelerating the pace of innovation and fostering cross-disciplinary collaboration.",
+        "student_name": "Christopher Mejo",
+        "code_url": "https://github.com/cmejo/AI_Scholar",
+        "proposal_id": "Vt09iHmW",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/VTupUmtG"
+      },
+      {
+        "title": "Extending Torchvision Support in R for Computer Vision Tasks",
+        "short_description": "The torch ecosystem is rapidly growing in R, but it still lacks support for several key computer vision capabilities available in Python's...",
+        "description": "The torch ecosystem is rapidly growing in R, but it still lacks support for several key computer vision capabilities available in Python's torchvision package. This proposal aims to close the gap by implementing a wide range of torchvision datasets and models directly in R. Specifically, the project will:\n\nImplement all torchvision datasets.\n\nAdd support for 5 key computer vision tasks: Object Detection, Instance Segmentation, Keypoint Detection, Semantic Segmentation, and Quantized Models.\n\nProvide native R implementations that don't rely on Python bindings, making it easier to install and use.\n\nDeliverables include tested R implementations of datasets and models, documented APIs, and example use cases. This will make R a more viable option for computer vision research and production.",
+        "student_name": "Derrick Richard",
+        "code_url": "https://medium.com/@derrickrds/final-reflections-on-my-gsoc-journey-with-torchvision-r-a10133990206",
+        "proposal_id": "Hi6MONRe",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/u3JnFx2t"
+      },
+      {
+        "title": "Interactive diagnostics for NLDR visualizations",
+        "short_description": "This project aims to improve the interpretation of non-linear dimension reduction (NLDR) methods like t-SNE and UMAP by linking them with linear...",
+        "description": "This project aims to improve the interpretation of non-linear dimension reduction (NLDR) methods like t-SNE and UMAP by linking them with linear dimension reduction, for example using a grand tour. I will develop an interactive Shiny app and R package that integrates NLDR methods with the detourr package, allowing users to explore and diagnose NLDR views through linked brushing and dynamic tour displays. The app will support advanced diagnostics including slice and sage tours, and integrate quollr visualizations. The final deliverable will be a CRAN-ready tool for reliable, scalable exploration of high-dimensional data.",
+        "student_name": "Divendra Yadav",
+        "code_url": "https://github.com/Divendra2006/polarisR/tree/main",
+        "proposal_id": "j6Qojn53",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/8VfHze7F"
+      },
+      {
+        "title": "pandemonium: GUI for cluster analysis with interactive visualization",
+        "short_description": "The pandemonium package is a specialized cluster analysis tool designed for physics applications. It employs hierarchical clustering and provides an...",
+        "description": "The pandemonium package is a specialized cluster analysis tool designed for physics applications. It employs hierarchical clustering and provides an interactive interface for selecting tuning parameters such as distance metrics and linkage methods. The app currently includes eight analysis tabs that explore clustering solutions across two representation spaces of the same observations using techniques like parallel coordinate plots, tour visualizations, and dimension reduction.\n\nThis project aims to generalize pandemonium into a more flexible, general-purpose tool applicable to any domain where cluster analysis can help uncover relationships between two connected data spaces. In addition to broadening its applicability, the project will explore and implement new visualization techniques, including interactive visualizations, slice tour visualizations, and projection pursuit within tours.\n\nBy the end of the project, pandemonium will be developed as an R package and submitted to CRAN for public availability. The package will provide an accessible, interactive platform for exploring clustering solutions across connected data spaces, integrating cluster analysis and multivariate data visualization into an intuitive graphical user interface (GUI). This will significantly enhance accessibility, making these advanced analytical tools available to a broad community of users across different fields.",
+        "student_name": "GabrielMccoy",
+        "code_url": "https://github.com/GabrielMccoy/pandemonium/discussions/1",
+        "proposal_id": "1pk553lA",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/AzH5lZMH"
+      },
+      {
+        "title": "ChatR: A Local, Inclusive, and Accurate R Expert Chatbot for the R Ecosystem",
+        "short_description": "Problem: While Large Language Models (LLMs) like ChatGPT can generate R code, they often lack precision when answering questions about third-party R...",
+        "description": "Problem:\nWhile Large Language Models (LLMs) like ChatGPT can generate R code, they often lack precision when answering questions about third-party R packages or contributing to the R language itself. This can limit their usefulness for R users, particularly for new contributors seeking to understand the R core or engage in package development. Furthermore, many of these AI tools are proprietary or resource-intensive, excluding users with limited hardware or funding.\n\nSolution:\nChatR proposes a specialized R chatbot that is lightweight, locally runnable (even without a GPU), and customized to provide reliable support on R packages, documentation, and contribution practices. The project will use Retrieval-Augmented Generation (RAG), prompt engineering, and a lightweight open-source LLM (via Ollama and llama3.2:3b-instruct) to deliver targeted responses. It will be delivered as an R package with both CLI and Shiny UI interfaces.\n\nDeliverables:\n\nAn R package wrapping the chatbot and customizable prompts\n\nLocal model integration using Ollama and ellmer\n\nRAG-based indexing of documentation (e.g., CRAN, Writing R Extensions)\n\nA Shiny widget interface for interactive usage in RStudio\n\nDocumentation, test suite, and demo applications\n\nThis project will significantly support learners, developers, and contributors by democratizing access to reliable AI-based R support and onboarding tools.",
+        "student_name": "Hanxia Li",
+        "code_url": "https://github.com/freedom12321/chatR-GSOC",
+        "proposal_id": "2slDi0mv",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/3M6xt7fm"
+      },
+      {
+        "title": "Ecotourism Data Package",
+        "short_description": "This project proposes the development of an R data package designed to support teaching and exploration of data visualization through the lens of...",
+        "description": "This project proposes the development of an R data package designed to support teaching and exploration of data visualization through the lens of ecotourism in Australia. The package will integrate wildlife sighting records, domestic tourism data, and weather information into well-documented, tidy datasets. These datasets will enable users to practice map-based plotting, time series analysis, and spatial joins in R. Inspired by packages like nycflights13 and palmerpenguins, this project emphasizes real-world applications and reproducibility. The final product will be CRAN-ready and accompanied by a detailed vignette.",
+        "student_name": "Javad Vahdat Atashgah",
+        "code_url": "https://github.com/vahdatjavad/ecotourism",
+        "proposal_id": "ULHTPxfl",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/65ApzLCv"
+      },
+      {
+        "title": "Enhancing the Jaya R Package for Efficient Optimization",
+        "short_description": "The Jaya R package implements the Jaya optimization algorithm, a gradient-free, population-based method for solving both single-objective and...",
+        "description": "The Jaya R package implements the Jaya optimization algorithm, a gradient-free,\npopulation-based method for solving both single-objective and multi-objective\noptimization problems. The Jaya algorithm, introduced by Rao in 2016, has gained\nattention for its simplicity and effectiveness, as it requires no hyperparameter\ntuning, making it particularly useful for users who need fast and reliable\noptimization solutions. However, while the current version (1.0.3) of the Jaya\npackage is functional, there is significant room for improvement in terms of\ncomputational efficiency, usability, and integration with the broader R ecosystem.\nThis GSoC project proposes a major upgrade to the Jaya package with the goal of\nimproving algorithmic performance, enhancing parallel computation capabilities,\nand expanding the package's compatibility with widely-used R tools. Additionally,\nthe project aims to make the package more user-friendly by streamlining the\ninterface and improving documentation. These updates will help integrate Jaya\ninto modern optimization workflows, benefiting researchers, practitioners, and\neducators alike.",
+        "student_name": "Kartik Kasrewar",
+        "code_url": "https://github.com/kartikkasrewar/Jaya-R",
+        "proposal_id": "szf0PQUZ",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/q2pQmhyA"
+      },
+      {
+        "title": "rupturesRcpp: High-Performance Change-Point Detection in R via Modern C++",
+        "short_description": "This project aims to develop an object-oriented R package for offline change-point detection, based on the widely used Python library `ruptures`,...",
+        "description": "This project aims to develop an object-oriented R package for offline change-point detection, based on the widely used Python library `ruptures`, which has received over 500,000 downloads as of April 8, 2025. These methods identify shifts in the underlying structure of time series and are widely used in fields such as signal processing and econometrics. Despite the popularity of `ruptures` and related R packages, their implementations do not achieve the optimal runtime complexities. Several efficient C++ implementations exist, but they lack consistent API and offer limited support for multivariate time series. To address these limitations, we will re-implement core change-point detection algorithms in `ruptures` in modern C++ and wrap these implementations in an object-oriented R package with consistent interface. This will make state-of-the-art change-point detection tools more efficient and accessible to practitioners.",
+        "student_name": "Minh Long Nguyen",
+        "code_url": "https://github.com/edelweiss611428/rupturesRcpp/tree/gsoc-2025",
+        "proposal_id": "27QoRb0S",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/O5AWBzpG"
+      },
+      {
+        "title": "Enhancing data.table: Enhancing Functionality, and Ensuring  Quality",
+        "short_description": "This project aims to improve the user experience for data.table by closing some of the hundreds of outstanding issues. The focus will be on resolving...",
+        "description": "This project aims to improve the user experience for data.table by closing some of the hundreds of outstanding issues. The focus will be on resolving key issues, including bug fixes, feature requests, enhancements  and documentation improvements. Each issue will be approached with thorough discussion with the maintainer and the community following a test-driven development pattern, to ensure all changes are meaningful, impactful and done to the project’s high standards.",
+        "student_name": "Mukul Kumar Yadav",
+        "code_url": "https://mukulyadav2004.github.io/Mukul-GSoC-2025/2025-08-29-final-submission/",
+        "proposal_id": "R1YlfwNN",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/cJEEbCzI"
+      },
+      {
+        "title": "Updates in VedicDateTime R Package",
+        "short_description": "The VedicDateTime R package is a specialized toolkit designed to handle date-time computations in the context of the Vedic calendar system. Initially...",
+        "description": "The VedicDateTime R package is a specialized toolkit designed to handle\ndate-time computations in the context of the Vedic calendar system. Initially\ndeveloped through GSoC 2022, the package has proven valuable for\nresearchers, historians, and practitioners interested in traditional Indian\ntimekeeping. However, as user adoption has grown, so has the demand for\nimproved accuracy, better integration with modern R workflows, and expanded\nfunctionalities.",
+        "student_name": "Peeyush Kulgude",
+        "code_url": "https://github.com/PeeyushKulgude/VedicDateTime-main",
+        "proposal_id": "j6gAaSen",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/5mc4pOWE"
+      },
+      {
+        "title": "Reimplementing the Core Samplers of the dirichletprocess R Package in C++",
+        "short_description": "This project aims to address performance limitations of the dirichletprocess R package by reimplementing its computationally intensive core sampling...",
+        "description": "This project aims to address performance limitations of the dirichletprocess R package by reimplementing its computationally intensive core sampling algorithms in C++ while maintaining the existing R interface. The current pure R implementation faces significant scaling challenges with larger datasets. By leveraging Rcpp and RcppArmadillo for seamless integration, I will optimize the MCMC sampling algorithms—particularly the Chinese Restaurant Process sampler and cluster update functions—which are inherently sequential and difficult to vectorize in R. This reimplementation will significantly enhance package performance while preserving the flexible, object-oriented design that distinguishes dirichletprocess from other implementations and allows it to serve as building blocks in custom hierarchical Bayesian nonparametric models.",
+        "student_name": "priyanshuTiwari",
+        "code_url": "https://plato-12.github.io/files/GSoC_2025_Work_Product.html",
+        "proposal_id": "6QXh7fkP",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/ckk9j4pw"
+      },
+      {
+        "title": "imputeTestbench for multivariate time series",
+        "short_description": "The imputeTestbench package offers an automated framework to benchmark various imputation techniques on univariate time series. It has been widely...",
+        "description": "The imputeTestbench package offers an automated framework to benchmark various imputation techniques on univariate time series. It has been widely used in research for its ability to simulate missing data scenarios and evaluate multiple methods side-by-side. However, its current scope is limited to univariate data and lacks the performance and flexibility needed for more complex real-world applications.\nThis project proposes a major upgrade to the imputeTestbench package by extending its capabilities to multivariate time series, improving its computational performance, and adding a modern, interactive user interface via Shiny. The new version will also support advanced imputation techniques, including machine learning and deep learning-based approaches, and provide options for distributed computation using tools like Apache Spark.",
+        "student_name": "Seema_Kumari",
+        "code_url": "https://github.com/phogatcseema/imputeTestbench_GSoC_2025/",
+        "proposal_id": "xvEPsi48",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/mU6fBoTV"
+      },
+      {
+        "title": "Advancing Animint2 - Testing, Rendering and Gallery port",
+        "short_description": "This project focuses on extending Animint2 with new features like smart, non-overlapping label placement using quadratic programming through the...",
+        "description": "This project focuses on extending Animint2 with new features like smart, non-overlapping label placement using quadratic programming through the newly implemented geom_label_aligned, as well as fast, interactive tooltips powered by D3 for an improved user experience. It also includes adding code coverage tracking for both R and JavaScript components, with automated deployment to Codecov, and involves porting and refining the interactive visualization gallery.  Bug fixes, like addressing the geom_abline issue and optimizing dynamic scale calculations, are also part of the work. These improvements aim to enhance Animint2’s flexibility and interactivity for complex statistical visualizations.",
+        "student_name": "Suhaani Agarwal",
+        "code_url": "https://suhaani-agarwal.github.io/suhaani-gsoc25/",
+        "proposal_id": "oozHry7K",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/nSDQwvny"
+      },
+      {
+        "title": "Enhancing the spinebil Package for Projection Pursuit Diagnostics",
+        "short_description": "The spinebil package provides diagnostic tools to evaluate projection pursuit (PP) index functions, which are used to discover informative...",
+        "description": "The spinebil package provides diagnostic tools to evaluate projection pursuit (PP) index functions, which are used to discover informative low-dimensional projections of high-dimensional data. However, current tools for understanding the behavior of these indices under varying data conditions are limited. This project aims to enhance spinebil by developing diagnostics that assess how PP indices behave under noise, structure, varying sample sizes, and scale interpretation.\n\nI will implement routines to test index performance across noise-to-structure transitions, evaluate index value ranges, analyze sample size sensitivity, and apply these diagnostics to both existing and scagnostic-based indices (e.g., stringy, skinny). I will also optimize the code for performance and clarity, write detailed documentation and a vignette, and design a hex sticker for the package to support its identity on CRAN.\n\nThis project will support the development of more robust, interpretable projection pursuit indices and make spinebil more accessible to researchers, educators, and developers.",
+        "student_name": "Tina.rj",
+        "code_url": "https://github.com/Tinarj/spinebil",
+        "proposal_id": "6HYahUWq",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/yNHVdH9D"
+      },
+      {
+        "title": "data.table",
+        "short_description": "This project focuses on strengthening the data.table package by improving its documentation, enhancing consistency, fixing bugs, refactoring code,...",
+        "description": "This project focuses on strengthening the data.table package by improving its documentation, enhancing consistency, fixing bugs, refactoring code, and introducing new features. The primary goal is to enrich the user experience by addressing a wide range of open issues within the package. Each issue will be carefully examined through collaborative discussions and resolved using a test-driven development approach, ensuring that every contribution is deliberate, valuable, and meets the high quality standards of the project.",
+        "student_name": "Vinit Thakur",
+        "code_url": "https://venom1204.github.io/2025-08-29-final-submission/",
+        "proposal_id": "5IhhYWN5",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/hlOK6uzk"
+      }
+    ],
+    "2026": []
   },
   "githubID": "R-project",
   "repositories": [],

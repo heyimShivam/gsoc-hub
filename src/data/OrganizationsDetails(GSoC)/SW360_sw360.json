@@ -27,33 +27,34 @@
   "blog_url": "https://eclipse.dev/sw360/",
   "facebook_url": null,
   "year": [
-    2025
+    2025,
+    2026
   ],
   "projects": {
-    "2025": []
+    "2025": [
+      {
+        "title": "Improving Integration of SW360 with FOSSology",
+        "short_description": "Currently, SW360’s integration with FOSSology is limited to only basic functionalities using outdated endpoints namely, triggering scans and checking...",
+        "description": "Currently, SW360’s integration with FOSSology is limited to only basic functionalities using outdated endpoints namely, triggering scans and checking scan status. This results in inefficient workflows, redundant uploads, lack of flexibility in scanning configurations, and restricted report formats. It also misses opportunities for reuse of scan data and lacks user-level attribution and secure token handling. This project and proposal aims to refactor and extend SW360's FOSSology integration by utilizing the modern RESTful API (OpenAPI v2 spec) offered by FOSSology. It will enable advanced functionalities such as:\n1. Direct Source Uploads via POST /uploads\n2. Checksum-Based Search and Reuse using /filesearch\n3. Selectable Scanning Agents (e.g., Nomos, Monk, Reuser)\n4. Multi-Format Report Generation (SPDX, CycloneDX, etc.)\n5. User-Specific Token Support for secure and auditable API interactions\nThese enhancements will be implemented through a modular, secure, and scalable API integration layer in SW360, with robust error handling, polling mechanisms, and extensibility for future API versions.\nDeliverables:\n1. REST API Refactoring of SW360's FOSSology connector using modern v2 endpoints.\n2. Efficient File Upload System with token-based authentication and job initiation.\n3. Checksum Reuse Logic to avoid duplicate scans and utilize FOSSology’s “Reuser” agent.\n4. Configurable Scanning Agent Support exposed via backend APIs.\n5. Support for Diverse Report Formats, download mechanisms, and metadata linking.\n6. Secure Token Management for both server-wide and user-specific workflows.\n7. Robust Error Handling, retry logic, audit logging, and performance tuning.\n8. Comprehensive Testing, documentation, and CI/CD pipeline integration.",
+        "student_name": "Ritankar Saha",
+        "code_url": "https://github.com/ritankarsaha/Google_Summer_of_Code_2025_-Sw360/blob/main/README.md",
+        "proposal_id": "wLz1nPMY",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/gh7uLcOi"
+      },
+      {
+        "title": "Improve tests for all REST API endpoints",
+        "short_description": "This proposal aims to improve the testing framework for SW360’s REST API endpoints by addressing limited test coverage, insufficient integration...",
+        "description": "This proposal aims to improve the testing framework for SW360’s REST API endpoints by addressing limited test coverage, insufficient integration tests, and outdated testing workflows. The project will focus on writing comprehensive unit tests for CRUD operations and edge cases, developing integration tests for multi-endpoint workflows, and creating reusable utilities for database mocking and error simulation. Additionally, CI/CD pipelines will be automated with tools like JaCoCo for test coverage tracking and regression prevention. Deliverables include a robust test suite, enhanced testing infrastructure, automated pipelines, and detailed documentation to simplify onboarding and contributions. These improvements will make SW360's APIs more reliable, scalable, and maintainable for the developer community.",
+        "student_name": "Rohit Borra",
+        "code_url": "https://github.com/rohit11544/GSoC-2025/",
+        "proposal_id": "xRPL0ZgH",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/GTS6j5jV"
+      }
+    ],
+    "2026": []
   },
   "githubID": "sw360",
   "repositories": [
-    {
-      "id": 951124059,
-      "node_id": "R_kgDOOLEAWw",
-      "name": "capywfa",
-      "full_name": "sw360/capywfa",
-      "html_url": "https://github.com/sw360/capywfa",
-      "description": "Clearing workflow automation for SW360",
-      "language": "Python",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
     {
       "id": 637681495,
       "node_id": "R_kgDOJgI_Vw",
@@ -62,9 +63,9 @@
       "html_url": "https://github.com/sw360/capycli",
       "description": "CaPyCLI - Python scripts for software license compliance automation with SW360",
       "language": "Python",
-      "stargazers_count": 18,
-      "forks_count": 10,
-      "open_issues_count": 11,
+      "stargazers_count": 21,
+      "forks_count": 14,
+      "open_issues_count": 19,
       "license": {
         "key": "other",
         "name": "Other",
@@ -89,9 +90,9 @@
       "html_url": "https://github.com/sw360/sw360python",
       "description": "Python library for SW360 REST API access",
       "language": "Python",
-      "stargazers_count": 5,
-      "forks_count": 10,
-      "open_issues_count": 4,
+      "stargazers_count": 4,
+      "forks_count": 11,
+      "open_issues_count": 3,
       "license": {
         "key": "other",
         "name": "Other",
@@ -103,6 +104,46 @@
         "python",
         "sw360"
       ]
+    },
+    {
+      "id": 951124059,
+      "node_id": "R_kgDOOLEAWw",
+      "name": "capywfa",
+      "full_name": "sw360/capywfa",
+      "html_url": "https://github.com/sw360/capywfa",
+      "description": "Clearing workflow automation for SW360",
+      "language": "Python",
+      "stargazers_count": 2,
+      "forks_count": 1,
+      "open_issues_count": 3,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 1017904538,
+      "node_id": "R_kgDOPKv9mg",
+      "name": "sw360-dashboard",
+      "full_name": "sw360/sw360-dashboard",
+      "html_url": "https://github.com/sw360/sw360-dashboard",
+      "description": "This repository contains helper scripts which help generate usage metrics to be shown on a Dashboard for SW360.",
+      "language": "Python",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "open_issues_count": 3,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
     },
     {
       "id": 579066119,
@@ -190,7 +231,7 @@
       "description": "Vagrant-based, Puppet-based scripting for sw360 deloyment in one virtual machine. It is for project at eclipse/sw360. It will download Liferay Community Edition 7.3.4 GA5",
       "language": "Ruby",
       "stargazers_count": 7,
-      "forks_count": 17,
+      "forks_count": 16,
       "open_issues_count": 9,
       "license": null,
       "topics": []
@@ -217,7 +258,7 @@
       "html_url": "https://github.com/sw360/sw360portal",
       "description": "We have moved and *archived* this repository. Pls. continue at the new place at https://github.com/eclipse/sw360 ... A software component catalogue application - designed to work with FOSSology.",
       "language": "Java",
-      "stargazers_count": 35,
+      "stargazers_count": 37,
       "forks_count": 20,
       "open_issues_count": 163,
       "license": {
@@ -309,20 +350,12 @@
   ],
   "contributorsDetails": [
     {
-      "login": "gernot-h",
-      "id": 2518769,
-      "node_id": "MDQ6VXNlcjI1MTg3Njk=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/2518769?v=4",
-      "html_url": "https://github.com/gernot-h",
-      "contributions": 60
-    },
-    {
       "login": "tngraf",
       "id": 1225388,
       "node_id": "MDQ6VXNlcjEyMjUzODg=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1225388?v=4",
       "html_url": "https://github.com/tngraf",
-      "contributions": 196
+      "contributions": 122
     },
     {
       "login": "t-graf",
@@ -330,7 +363,15 @@
       "node_id": "MDQ6VXNlcjg0OTU4NTc3",
       "avatar_url": "https://avatars.githubusercontent.com/u/84958577?v=4",
       "html_url": "https://github.com/t-graf",
-      "contributions": 78
+      "contributions": 65
+    },
+    {
+      "login": "gernot-h",
+      "id": 2518769,
+      "node_id": "MDQ6VXNlcjI1MTg3Njk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2518769?v=4",
+      "html_url": "https://github.com/gernot-h",
+      "contributions": 33
     },
     {
       "login": "nzupan",
@@ -338,7 +379,7 @@
       "node_id": "MDQ6VXNlcjM4NzIyNDUx",
       "avatar_url": "https://avatars.githubusercontent.com/u/38722451?v=4",
       "html_url": "https://github.com/nzupan",
-      "contributions": 15
+      "contributions": 1
     },
     {
       "login": "16Martin",
@@ -354,7 +395,7 @@
       "node_id": "MDQ6VXNlcjE1MTkyNDUy",
       "avatar_url": "https://avatars.githubusercontent.com/u/15192452?v=4",
       "html_url": "https://github.com/OliverFendt",
-      "contributions": 6
+      "contributions": 1
     },
     {
       "login": "maxhbr",
@@ -362,6 +403,30 @@
       "node_id": "MDQ6VXNlcjExODcwNTA=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1187050?v=4",
       "html_url": "https://github.com/maxhbr",
+      "contributions": 1
+    },
+    {
+      "login": "heliocastro",
+      "id": 418176,
+      "node_id": "MDQ6VXNlcjQxODE3Ng==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/418176?v=4",
+      "html_url": "https://github.com/heliocastro",
+      "contributions": 1
+    },
+    {
+      "login": "deveaud-m",
+      "id": 11165188,
+      "node_id": "MDQ6VXNlcjExMTY1MTg4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11165188?v=4",
+      "html_url": "https://github.com/deveaud-m",
+      "contributions": 1
+    },
+    {
+      "login": "its-sushant",
+      "id": 76658675,
+      "node_id": "MDQ6VXNlcjc2NjU4Njc1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76658675?v=4",
+      "html_url": "https://github.com/its-sushant",
       "contributions": 1
     }
   ],

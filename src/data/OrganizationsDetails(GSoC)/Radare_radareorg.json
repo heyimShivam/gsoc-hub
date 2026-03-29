@@ -178,9 +178,9 @@
       "html_url": "https://github.com/radareorg/radare2",
       "description": "UNIX-like reverse engineering framework and command-line toolset",
       "language": "C",
-      "stargazers_count": 21679,
-      "forks_count": 3065,
-      "open_issues_count": 888,
+      "stargazers_count": 23338,
+      "forks_count": 3178,
+      "open_issues_count": 827,
       "license": {
         "key": "other",
         "name": "Other",
@@ -202,53 +202,16 @@
       ]
     },
     {
-      "id": 60208982,
-      "node_id": "MDEwOlJlcG9zaXRvcnk2MDIwODk4Mg==",
-      "name": "radare2-pm",
-      "full_name": "radareorg/radare2-pm",
-      "html_url": "https://github.com/radareorg/radare2-pm",
-      "description": "Package Manager for Radare2",
-      "language": "Shell",
-      "stargazers_count": 135,
-      "forks_count": 72,
-      "open_issues_count": 10,
-      "license": null,
-      "topics": [
-        "r2pm",
-        "radare2"
-      ]
-    },
-    {
-      "id": 323166300,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzMjMxNjYzMDA=",
-      "name": "r2ghidra",
-      "full_name": "radareorg/r2ghidra",
-      "html_url": "https://github.com/radareorg/r2ghidra",
-      "description": "Native Ghidra Decompiler for r2",
-      "language": "C++",
-      "stargazers_count": 391,
-      "forks_count": 51,
-      "open_issues_count": 23,
-      "license": {
-        "key": "lgpl-3.0",
-        "name": "GNU Lesser General Public License v3.0",
-        "spdx_id": "LGPL-3.0",
-        "url": "https://api.github.com/licenses/lgpl-3.0",
-        "node_id": "MDc6TGljZW5zZTEy"
-      },
-      "topics": []
-    },
-    {
       "id": 705649405,
       "node_id": "R_kgDOKg9a_Q",
       "name": "r2ai",
       "full_name": "radareorg/r2ai",
       "html_url": "https://github.com/radareorg/r2ai",
-      "description": "local language model for radare2",
+      "description": "LLM-based reversing for radare2",
       "language": "Python",
-      "stargazers_count": 278,
-      "forks_count": 33,
-      "open_issues_count": 34,
+      "stargazers_count": 398,
+      "forks_count": 52,
+      "open_issues_count": 11,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -264,20 +227,310 @@
       ]
     },
     {
-      "id": 846116082,
-      "node_id": "R_kgDOMm608g",
-      "name": "iaito-snap",
-      "full_name": "radareorg/iaito-snap",
-      "html_url": "https://github.com/radareorg/iaito-snap",
-      "description": "iaito snap repository",
+      "id": 953244333,
+      "node_id": "R_kgDOONFarQ",
+      "name": "radare2-mcp",
+      "full_name": "radareorg/radare2-mcp",
+      "html_url": "https://github.com/radareorg/radare2-mcp",
+      "description": "MCP stdio server for radare2",
+      "language": "C",
+      "stargazers_count": 181,
+      "forks_count": 30,
+      "open_issues_count": 6,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 326524229,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzMjY1MjQyMjk=",
+      "name": "iaito",
+      "full_name": "radareorg/iaito",
+      "html_url": "https://github.com/radareorg/iaito",
+      "description": "Official radare2 GUI",
+      "language": "Makefile",
+      "stargazers_count": 1574,
+      "forks_count": 125,
+      "open_issues_count": 23,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "topics": []
+    },
+    {
+      "id": 1058649220,
+      "node_id": "R_kgDOPxm0hA",
+      "name": "r2hermes",
+      "full_name": "radareorg/r2hermes",
+      "html_url": "https://github.com/radareorg/r2hermes",
+      "description": "React Native VM (Hermes Bytecode Library) in C",
+      "language": "C",
+      "stargazers_count": 64,
+      "forks_count": 5,
+      "open_issues_count": 5,
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "topics": []
+    },
+    {
+      "id": 1141934889,
+      "node_id": "R_kgDORBCLKQ",
+      "name": "radius2",
+      "full_name": "radareorg/radius2",
+      "html_url": "https://github.com/radareorg/radius2",
+      "description": "radius2 is a fast binary emulation and symbolic execution framework using radare2",
+      "language": "Rust",
+      "stargazers_count": 21,
+      "forks_count": 5,
+      "open_issues_count": 3,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 1187127762,
+      "node_id": "R_kgDORsIh0g",
+      "name": "radare2-skills",
+      "full_name": "radareorg/radare2-skills",
+      "html_url": "https://github.com/radareorg/radare2-skills",
+      "description": null,
       "language": "Makefile",
       "stargazers_count": 1,
       "forks_count": 0,
-      "open_issues_count": 1,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 226302671,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMjYzMDI2NzE=",
+      "name": "radare2-testbins",
+      "full_name": "radareorg/radare2-testbins",
+      "html_url": "https://github.com/radareorg/radare2-testbins",
+      "description": null,
+      "language": "Rebol",
+      "stargazers_count": 20,
+      "forks_count": 45,
+      "open_issues_count": 2,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1132871804,
+      "node_id": "R_kgDOQ4ZAfA",
+      "name": "r2sleigh",
+      "full_name": "radareorg/r2sleigh",
+      "html_url": "https://github.com/radareorg/r2sleigh",
+      "description": null,
+      "language": "Rust",
+      "stargazers_count": 3,
+      "forks_count": 0,
+      "open_issues_count": 5,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "topics": []
+    },
+    {
+      "id": 70247098,
+      "node_id": "MDEwOlJlcG9zaXRvcnk3MDI0NzA5OA==",
+      "name": "radare2-r2pipe",
+      "full_name": "radareorg/radare2-r2pipe",
+      "html_url": "https://github.com/radareorg/radare2-r2pipe",
+      "description": "Access radare2 via pipe from any programming language!",
+      "language": "JavaScript",
+      "stargazers_count": 448,
+      "forks_count": 104,
+      "open_issues_count": 18,
       "license": null,
       "topics": [
+        "r2pipe",
+        "radare2"
+      ]
+    },
+    {
+      "id": 96860446,
+      "node_id": "MDEwOlJlcG9zaXRvcnk5Njg2MDQ0Ng==",
+      "name": "radare2-r2papi",
+      "full_name": "radareorg/radare2-r2papi",
+      "html_url": "https://github.com/radareorg/radare2-r2papi",
+      "description": "High Level API on top of the R2Pipe interface",
+      "language": "TypeScript",
+      "stargazers_count": 45,
+      "forks_count": 17,
+      "open_issues_count": 4,
+      "license": null,
+      "topics": [
+        "python",
+        "r2pipe",
         "radare2",
-        "snapcraft"
+        "rust",
+        "typescript"
+      ]
+    },
+    {
+      "id": 35782470,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzNTc4MjQ3MA==",
+      "name": "radeco",
+      "full_name": "radareorg/radeco",
+      "html_url": "https://github.com/radareorg/radeco",
+      "description": "radare2-based decompiler and symbol executor",
+      "language": "Rust",
+      "stargazers_count": 386,
+      "forks_count": 51,
+      "open_issues_count": 92,
+      "license": null,
+      "topics": [
+        "decompiler",
+        "esil",
+        "radare2",
+        "rust"
+      ]
+    },
+    {
+      "id": 699763702,
+      "node_id": "R_kgDOKbWL9g",
+      "name": "r2yara",
+      "full_name": "radareorg/r2yara",
+      "html_url": "https://github.com/radareorg/r2yara",
+      "description": "yara and radare2, better together",
+      "language": "C",
+      "stargazers_count": 27,
+      "forks_count": 6,
+      "open_issues_count": 7,
+      "license": {
+        "key": "lgpl-3.0",
+        "name": "GNU Lesser General Public License v3.0",
+        "spdx_id": "LGPL-3.0",
+        "url": "https://api.github.com/licenses/lgpl-3.0",
+        "node_id": "MDc6TGljZW5zZTEy"
+      },
+      "topics": [
+        "malware",
+        "radare2",
+        "rules",
+        "yara"
+      ]
+    },
+    {
+      "id": 323166300,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzMjMxNjYzMDA=",
+      "name": "r2ghidra",
+      "full_name": "radareorg/r2ghidra",
+      "html_url": "https://github.com/radareorg/r2ghidra",
+      "description": "Native Ghidra Decompiler for r2",
+      "language": "C++",
+      "stargazers_count": 487,
+      "forks_count": 65,
+      "open_issues_count": 26,
+      "license": {
+        "key": "lgpl-3.0",
+        "name": "GNU Lesser General Public License v3.0",
+        "spdx_id": "LGPL-3.0",
+        "url": "https://api.github.com/licenses/lgpl-3.0",
+        "node_id": "MDc6TGljZW5zZTEy"
+      },
+      "topics": []
+    },
+    {
+      "id": 22724464,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMjcyNDQ2NA==",
+      "name": "radare2-book",
+      "full_name": "radareorg/radare2-book",
+      "html_url": "https://github.com/radareorg/radare2-book",
+      "description": "The Official Radare2 Book",
+      "language": "C",
+      "stargazers_count": 878,
+      "forks_count": 244,
+      "open_issues_count": 40,
+      "license": {
+        "key": "cc-by-sa-4.0",
+        "name": "Creative Commons Attribution Share Alike 4.0 International",
+        "spdx_id": "CC-BY-SA-4.0",
+        "url": "https://api.github.com/licenses/cc-by-sa-4.0",
+        "node_id": "MDc6TGljZW5zZTI2"
+      },
+      "topics": [
+        "book",
+        "radare",
+        "radare2",
+        "reverse-engineering",
+        "reversing"
+      ]
+    },
+    {
+      "id": 15324802,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNTMyNDgwMg==",
+      "name": "radare2-bindings",
+      "full_name": "radareorg/radare2-bindings",
+      "html_url": "https://github.com/radareorg/radare2-bindings",
+      "description": "Bindings of the r2 api for Valabind and friends",
+      "language": "Python",
+      "stargazers_count": 135,
+      "forks_count": 93,
+      "open_issues_count": 12,
+      "license": {
+        "key": "lgpl-3.0",
+        "name": "GNU Lesser General Public License v3.0",
+        "spdx_id": "LGPL-3.0",
+        "url": "https://api.github.com/licenses/lgpl-3.0",
+        "node_id": "MDc6TGljZW5zZTEy"
+      },
+      "topics": [
+        "c",
+        "java",
+        "lua",
+        "perl",
+        "python",
+        "radare2",
+        "swig",
+        "vala"
+      ]
+    },
+    {
+      "id": 1040439356,
+      "node_id": "R_kgDOPgPYPA",
+      "name": "r2web",
+      "full_name": "radareorg/r2web",
+      "html_url": "https://github.com/radareorg/r2web",
+      "description": "Access radare2 from anywhere, anytime.",
+      "language": "TypeScript",
+      "stargazers_count": 44,
+      "forks_count": 10,
+      "open_issues_count": 3,
+      "license": null,
+      "topics": [
+        "binary-analysis",
+        "disassembler",
+        "r2web",
+        "radare2",
+        "reverse-engineering",
+        "wasi",
+        "wasm",
+        "wasmer"
       ]
     },
     {
@@ -301,6 +554,23 @@
       ]
     },
     {
+      "id": 846116082,
+      "node_id": "R_kgDOMm608g",
+      "name": "iaito-snap",
+      "full_name": "radareorg/iaito-snap",
+      "html_url": "https://github.com/radareorg/iaito-snap",
+      "description": "iaito snap repository",
+      "language": "Makefile",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "open_issues_count": 1,
+      "license": null,
+      "topics": [
+        "radare2",
+        "snapcraft"
+      ]
+    },
+    {
       "id": 605268338,
       "node_id": "R_kgDOJBOpcg",
       "name": "radare2-snap",
@@ -308,8 +578,8 @@
       "html_url": "https://github.com/radareorg/radare2-snap",
       "description": "Radare2 snap and docker repository",
       "language": "Makefile",
-      "stargazers_count": 4,
-      "forks_count": 0,
+      "stargazers_count": 5,
+      "forks_count": 1,
       "open_issues_count": 0,
       "license": null,
       "topics": [
@@ -325,24 +595,37 @@
       ]
     },
     {
-      "id": 326524229,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzMjY1MjQyMjk=",
-      "name": "iaito",
-      "full_name": "radareorg/iaito",
-      "html_url": "https://github.com/radareorg/iaito",
-      "description": "Official radare2 GUI",
-      "language": "Makefile",
-      "stargazers_count": 1268,
-      "forks_count": 105,
-      "open_issues_count": 22,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
+      "id": 219674173,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMTk2NzQxNzM=",
+      "name": "radare2-rlang",
+      "full_name": "radareorg/radare2-rlang",
+      "html_url": "https://github.com/radareorg/radare2-rlang",
+      "description": "Writing Radare2 plugins in various languages",
+      "language": "C",
+      "stargazers_count": 18,
+      "forks_count": 7,
+      "open_issues_count": 11,
+      "license": null,
       "topics": []
+    },
+    {
+      "id": 774418043,
+      "node_id": "R_kgDOLiiuew",
+      "name": "r2sarif",
+      "full_name": "radareorg/r2sarif",
+      "html_url": "https://github.com/radareorg/r2sarif",
+      "description": "Load, manage and create SARIF documents with radare2",
+      "language": "TypeScript",
+      "stargazers_count": 3,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": [
+        "radare2",
+        "reports",
+        "sarif",
+        "security"
+      ]
     },
     {
       "id": 5665061,
@@ -352,9 +635,9 @@
       "html_url": "https://github.com/radareorg/sdb",
       "description": "Simple and fast string based key-value database with support for arrays and json",
       "language": "C",
-      "stargazers_count": 220,
+      "stargazers_count": 225,
       "forks_count": 62,
-      "open_issues_count": 32,
+      "open_issues_count": 29,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -372,65 +655,67 @@
       ]
     },
     {
-      "id": 96860446,
-      "node_id": "MDEwOlJlcG9zaXRvcnk5Njg2MDQ0Ng==",
-      "name": "radare2-r2papi",
-      "full_name": "radareorg/radare2-r2papi",
-      "html_url": "https://github.com/radareorg/radare2-r2papi",
-      "description": "High Level API on top of the R2Pipe interface",
-      "language": "TypeScript",
-      "stargazers_count": 38,
-      "forks_count": 16,
-      "open_issues_count": 2,
-      "license": null,
+      "id": 5562299,
+      "node_id": "MDEwOlJlcG9zaXRvcnk1NTYyMjk5",
+      "name": "acr",
+      "full_name": "radareorg/acr",
+      "html_url": "https://github.com/radareorg/acr",
+      "description": "autoconf replacement",
+      "language": "Shell",
+      "stargazers_count": 37,
+      "forks_count": 10,
+      "open_issues_count": 7,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "topics": []
+    },
+    {
+      "id": 37282046,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzNzI4MjA0Ng==",
+      "name": "r2pipe.rs",
+      "full_name": "radareorg/r2pipe.rs",
+      "html_url": "https://github.com/radareorg/r2pipe.rs",
+      "description": "Rust crate for r2pipe",
+      "language": "Rust",
+      "stargazers_count": 46,
+      "forks_count": 20,
+      "open_issues_count": 9,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
       "topics": [
-        "python",
         "r2pipe",
         "radare2",
-        "rust",
-        "typescript"
+        "rust-crate"
       ]
     },
     {
-      "id": 743351119,
-      "node_id": "R_kgDOLE6jTw",
-      "name": "r2wasm",
-      "full_name": "radareorg/r2wasm",
-      "html_url": "https://github.com/radareorg/r2wasm",
+      "id": 373562029,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzNzM1NjIwMjk=",
+      "name": "ghidra-native",
+      "full_name": "radareorg/ghidra-native",
+      "html_url": "https://github.com/radareorg/ghidra-native",
       "description": null,
-      "language": "TypeScript",
-      "stargazers_count": 1,
-      "forks_count": 0,
+      "language": "C++",
+      "stargazers_count": 37,
+      "forks_count": 14,
       "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 878119720,
-      "node_id": "R_kgDONFcLKA",
-      "name": "r2ai-model",
-      "full_name": "radareorg/r2ai-model",
-      "html_url": "https://github.com/radareorg/r2ai-model",
-      "description": "Dataset to train or finetune language models with knowledge about radare2",
-      "language": "Jupyter Notebook",
-      "stargazers_count": 4,
-      "forks_count": 1,
-      "open_issues_count": 1,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 226302671,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMjYzMDI2NzE=",
-      "name": "radare2-testbins",
-      "full_name": "radareorg/radare2-testbins",
-      "html_url": "https://github.com/radareorg/radare2-testbins",
-      "description": null,
-      "language": "Rebol",
-      "stargazers_count": 18,
-      "forks_count": 37,
-      "open_issues_count": 2,
-      "license": null,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
       "topics": []
     },
     {
@@ -441,9 +726,9 @@
       "html_url": "https://github.com/radareorg/radare2-extras",
       "description": "Source graveyard and random candy for radare2",
       "language": "C",
-      "stargazers_count": 245,
+      "stargazers_count": 255,
       "forks_count": 113,
-      "open_issues_count": 40,
+      "open_issues_count": 42,
       "license": {
         "key": "lgpl-3.0",
         "name": "GNU Lesser General Public License v3.0",
@@ -457,227 +742,21 @@
       ]
     },
     {
-      "id": 699763702,
-      "node_id": "R_kgDOKbWL9g",
-      "name": "r2yara",
-      "full_name": "radareorg/r2yara",
-      "html_url": "https://github.com/radareorg/r2yara",
-      "description": "yara and radare2, better together",
-      "language": "C",
-      "stargazers_count": 25,
-      "forks_count": 5,
-      "open_issues_count": 6,
-      "license": {
-        "key": "lgpl-3.0",
-        "name": "GNU Lesser General Public License v3.0",
-        "spdx_id": "LGPL-3.0",
-        "url": "https://api.github.com/licenses/lgpl-3.0",
-        "node_id": "MDc6TGljZW5zZTEy"
-      },
-      "topics": [
-        "malware",
-        "radare2",
-        "rules",
-        "yara"
-      ]
-    },
-    {
-      "id": 953244333,
-      "node_id": "R_kgDOONFarQ",
-      "name": "radare2-mcp",
-      "full_name": "radareorg/radare2-mcp",
-      "html_url": "https://github.com/radareorg/radare2-mcp",
-      "description": "MCP stdio server for radare2",
-      "language": "C",
-      "stargazers_count": 48,
-      "forks_count": 9,
-      "open_issues_count": 2,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 70247098,
-      "node_id": "MDEwOlJlcG9zaXRvcnk3MDI0NzA5OA==",
-      "name": "radare2-r2pipe",
-      "full_name": "radareorg/radare2-r2pipe",
-      "html_url": "https://github.com/radareorg/radare2-r2pipe",
-      "description": "Access radare2 via pipe from any programming language!",
-      "language": "JavaScript",
-      "stargazers_count": 420,
-      "forks_count": 100,
-      "open_issues_count": 26,
-      "license": null,
-      "topics": [
-        "r2pipe",
-        "radare2"
-      ]
-    },
-    {
-      "id": 373562029,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzNzM1NjIwMjk=",
-      "name": "ghidra-native",
-      "full_name": "radareorg/ghidra-native",
-      "html_url": "https://github.com/radareorg/ghidra-native",
-      "description": null,
-      "language": "C++",
-      "stargazers_count": 32,
-      "forks_count": 9,
-      "open_issues_count": 0,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 774418043,
-      "node_id": "R_kgDOLiiuew",
-      "name": "r2sarif",
-      "full_name": "radareorg/r2sarif",
-      "html_url": "https://github.com/radareorg/r2sarif",
-      "description": "Load, manage and create SARIF documents with radare2",
-      "language": "TypeScript",
-      "stargazers_count": 2,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": [
-        "radare2",
-        "reports",
-        "sarif",
-        "security"
-      ]
-    },
-    {
-      "id": 22724464,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMjcyNDQ2NA==",
-      "name": "radare2-book",
-      "full_name": "radareorg/radare2-book",
-      "html_url": "https://github.com/radareorg/radare2-book",
-      "description": "The Official Radare2 Book",
-      "language": "C",
-      "stargazers_count": 840,
-      "forks_count": 233,
-      "open_issues_count": 42,
-      "license": {
-        "key": "cc-by-sa-4.0",
-        "name": "Creative Commons Attribution Share Alike 4.0 International",
-        "spdx_id": "CC-BY-SA-4.0",
-        "url": "https://api.github.com/licenses/cc-by-sa-4.0",
-        "node_id": "MDc6TGljZW5zZTI2"
-      },
-      "topics": [
-        "book",
-        "radare",
-        "radare2",
-        "reverse-engineering",
-        "reversing"
-      ]
-    },
-    {
-      "id": 12689819,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMjY4OTgxOQ==",
-      "name": "radare.org",
-      "full_name": "radareorg/radare.org",
-      "html_url": "https://github.com/radareorg/radare.org",
-      "description": "http://www.radare.org/",
-      "language": "CSS",
-      "stargazers_count": 14,
-      "forks_count": 48,
-      "open_issues_count": 7,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 219674173,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMTk2NzQxNzM=",
-      "name": "radare2-rlang",
-      "full_name": "radareorg/radare2-rlang",
-      "html_url": "https://github.com/radareorg/radare2-rlang",
-      "description": "Writing Radare2 plugins in various languages",
-      "language": "C",
-      "stargazers_count": 16,
-      "forks_count": 8,
-      "open_issues_count": 11,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 174108824,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNzQxMDg4MjQ=",
-      "name": "ghidra-r2web",
-      "full_name": "radareorg/ghidra-r2web",
-      "html_url": "https://github.com/radareorg/ghidra-r2web",
-      "description": "Ghidra plugin to start an r2 webserver to let r2 interact with it",
-      "language": "Java",
-      "stargazers_count": 48,
-      "forks_count": 3,
-      "open_issues_count": 2,
-      "license": null,
-      "topics": [
-        "decompiler",
-        "ghidra",
-        "integration",
-        "plugin",
-        "radare2"
-      ]
-    },
-    {
-      "id": 5562299,
-      "node_id": "MDEwOlJlcG9zaXRvcnk1NTYyMjk5",
-      "name": "acr",
-      "full_name": "radareorg/acr",
-      "html_url": "https://github.com/radareorg/acr",
-      "description": "autoconf replacement",
+      "id": 60208982,
+      "node_id": "MDEwOlJlcG9zaXRvcnk2MDIwODk4Mg==",
+      "name": "radare2-pm",
+      "full_name": "radareorg/radare2-pm",
+      "html_url": "https://github.com/radareorg/radare2-pm",
+      "description": "Package Manager for Radare2",
       "language": "Shell",
-      "stargazers_count": 34,
-      "forks_count": 11,
-      "open_issues_count": 7,
-      "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
-      },
-      "topics": []
-    },
-    {
-      "id": 360156355,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzNjAxNTYzNTU=",
-      "name": "radare2-fuzz",
-      "full_name": "radareorg/radare2-fuzz",
-      "html_url": "https://github.com/radareorg/radare2-fuzz",
-      "description": null,
-      "language": "Python",
-      "stargazers_count": 5,
-      "forks_count": 2,
-      "open_issues_count": 0,
+      "stargazers_count": 139,
+      "forks_count": 73,
+      "open_issues_count": 10,
       "license": null,
-      "topics": []
-    },
-    {
-      "id": 355682197,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzNTU2ODIxOTc=",
-      "name": "iaito-translations",
-      "full_name": "radareorg/iaito-translations",
-      "html_url": "https://github.com/radareorg/iaito-translations",
-      "description": null,
-      "language": "Makefile",
-      "stargazers_count": 3,
-      "forks_count": 2,
-      "open_issues_count": 1,
-      "license": null,
-      "topics": []
+      "topics": [
+        "r2pm",
+        "radare2"
+      ]
     },
     {
       "id": 718263134,
@@ -686,9 +765,9 @@
       "full_name": "radareorg/radare2-skel",
       "html_url": "https://github.com/radareorg/radare2-skel",
       "description": "Sample radare2 project templates ",
-      "language": "Python",
-      "stargazers_count": 8,
-      "forks_count": 4,
+      "language": "C",
+      "stargazers_count": 14,
+      "forks_count": 7,
       "open_issues_count": 0,
       "license": null,
       "topics": [
@@ -699,55 +778,15 @@
       ]
     },
     {
-      "id": 381309396,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzODEzMDkzOTY=",
-      "name": "vector35-arch-arm64",
-      "full_name": "radareorg/vector35-arch-arm64",
-      "html_url": "https://github.com/radareorg/vector35-arch-arm64",
-      "description": "Aarch64 architecture plugin",
-      "language": "C",
-      "stargazers_count": 1,
-      "forks_count": 1,
-      "open_issues_count": 0,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 386314457,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzODYzMTQ0NTc=",
-      "name": "vector35-arch-armv7",
-      "full_name": "radareorg/vector35-arch-armv7",
-      "html_url": "https://github.com/radareorg/vector35-arch-armv7",
-      "description": "ARMv7 architecture plugin",
-      "language": "C++",
+      "id": 743351119,
+      "node_id": "R_kgDOLE6jTw",
+      "name": "r2wasm",
+      "full_name": "radareorg/r2wasm",
+      "html_url": "https://github.com/radareorg/r2wasm",
+      "description": null,
+      "language": "TypeScript",
       "stargazers_count": 2,
       "forks_count": 1,
-      "open_issues_count": 0,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 885483770,
-      "node_id": "R_kgDONMdo-g",
-      "name": "r2con2024",
-      "full_name": "radareorg/r2con2024",
-      "html_url": "https://github.com/radareorg/r2con2024",
-      "description": null,
-      "language": null,
-      "stargazers_count": 19,
-      "forks_count": 13,
       "open_issues_count": 0,
       "license": null,
       "topics": []
@@ -760,7 +799,7 @@
       "node_id": "MDQ6VXNlcjkxNzE0Mg==",
       "avatar_url": "https://avatars.githubusercontent.com/u/917142?v=4",
       "html_url": "https://github.com/radare",
-      "contributions": 527
+      "contributions": 195
     },
     {
       "login": "trufae",
@@ -768,7 +807,7 @@
       "node_id": "MDQ6VXNlcjY0MzE1MTU=",
       "avatar_url": "https://avatars.githubusercontent.com/u/6431515?v=4",
       "html_url": "https://github.com/trufae",
-      "contributions": 6
+      "contributions": 18
     },
     {
       "login": "condret",
@@ -776,7 +815,7 @@
       "node_id": "MDQ6VXNlcjU5MDQzMDI=",
       "avatar_url": "https://avatars.githubusercontent.com/u/5904302?v=4",
       "html_url": "https://github.com/condret",
-      "contributions": 2
+      "contributions": 885
     },
     {
       "login": "alvarofe",
@@ -792,7 +831,7 @@
       "node_id": "MDQ6VXNlcjIwMzI2MQ==",
       "avatar_url": "https://avatars.githubusercontent.com/u/203261?v=4",
       "html_url": "https://github.com/XVilka",
-      "contributions": 7
+      "contributions": 841
     },
     {
       "login": "kazarmy",
@@ -800,7 +839,7 @@
       "node_id": "MDQ6VXNlcjEyMDAyNjcy",
       "avatar_url": "https://avatars.githubusercontent.com/u/12002672?v=4",
       "html_url": "https://github.com/kazarmy",
-      "contributions": 2
+      "contributions": 796
     },
     {
       "login": "ret2libc",
@@ -808,7 +847,7 @@
       "node_id": "MDQ6VXNlcjU2MjMyMQ==",
       "avatar_url": "https://avatars.githubusercontent.com/u/562321?v=4",
       "html_url": "https://github.com/ret2libc",
-      "contributions": 1
+      "contributions": 678
     },
     {
       "login": "jroimartin",
@@ -816,7 +855,7 @@
       "node_id": "MDQ6VXNlcjEyMjM0NzY=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1223476?v=4",
       "html_url": "https://github.com/jroimartin",
-      "contributions": 1
+      "contributions": 651
     },
     {
       "login": "jvoisin",
@@ -832,7 +871,7 @@
       "node_id": "MDQ6VXNlcjE0NjA5OTc=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1460997?v=4",
       "html_url": "https://github.com/thestr4ng3r",
-      "contributions": 3
+      "contributions": 430
     },
     {
       "login": "Vane11ope",
@@ -864,7 +903,7 @@
       "node_id": "MDQ6VXNlcjQxMzkwNjk=",
       "avatar_url": "https://avatars.githubusercontent.com/u/4139069?v=4",
       "html_url": "https://github.com/mrmacete",
-      "contributions": 4
+      "contributions": 251
     },
     {
       "login": "devnexen",
@@ -904,15 +943,7 @@
       "node_id": "MDQ6VXNlcjEwNzcyNjA1",
       "avatar_url": "https://avatars.githubusercontent.com/u/10772605?v=4",
       "html_url": "https://github.com/xarkes",
-      "contributions": 2
-    },
-    {
-      "login": "pelijah",
-      "id": 16493991,
-      "node_id": "MDQ6VXNlcjE2NDkzOTkx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/16493991?v=4",
-      "html_url": "https://github.com/pelijah",
-      "contributions": 158
+      "contributions": 163
     },
     {
       "login": "eagleoflqj",
@@ -928,7 +959,7 @@
       "node_id": "MDQ6VXNlcjMxMjc4",
       "avatar_url": "https://avatars.githubusercontent.com/u/31278?v=4",
       "html_url": "https://github.com/Svenito",
-      "contributions": 4
+      "contributions": 146
     },
     {
       "login": "sivaramaaa",
@@ -944,7 +975,7 @@
       "node_id": "MDQ6VXNlcjU2MTE4NA==",
       "avatar_url": "https://avatars.githubusercontent.com/u/561184?v=4",
       "html_url": "https://github.com/wargio",
-      "contributions": 5
+      "contributions": 120
     },
     {
       "login": "cyanpencil",
@@ -960,7 +991,7 @@
       "node_id": "MDQ6VXNlcjcwNDc0MTk=",
       "avatar_url": "https://avatars.githubusercontent.com/u/7047419?v=4",
       "html_url": "https://github.com/sylvainpelissier",
-      "contributions": 20
+      "contributions": 109
     },
     {
       "login": "oddcoder",
@@ -995,132 +1026,36 @@
       "contributions": 94
     },
     {
-      "login": "apkunpacker",
-      "id": 27184655,
-      "node_id": "MDQ6VXNlcjI3MTg0NjU1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/27184655?v=4",
-      "html_url": "https://github.com/apkunpacker",
-      "contributions": 19
+      "login": "SrimantaBarua",
+      "id": 8581292,
+      "node_id": "MDQ6VXNlcjg1ODEyOTI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8581292?v=4",
+      "html_url": "https://github.com/SrimantaBarua",
+      "contributions": 87
     },
     {
-      "login": "securisec",
-      "id": 22226823,
-      "node_id": "MDQ6VXNlcjIyMjI2ODIz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/22226823?v=4",
-      "html_url": "https://github.com/securisec",
-      "contributions": 4
+      "login": "dnakov",
+      "id": 3777433,
+      "node_id": "MDQ6VXNlcjM3Nzc0MzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3777433?v=4",
+      "html_url": "https://github.com/dnakov",
+      "contributions": 8
     },
     {
-      "login": "p4n74",
-      "id": 92345653,
-      "node_id": "U_kgDOBYEVNQ",
-      "avatar_url": "https://avatars.githubusercontent.com/u/92345653?v=4",
-      "html_url": "https://github.com/p4n74",
-      "contributions": 4
+      "login": "nitanmarcel",
+      "id": 41646249,
+      "node_id": "MDQ6VXNlcjQxNjQ2MjQ5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/41646249?v=4",
+      "html_url": "https://github.com/nitanmarcel",
+      "contributions": 10
     },
     {
-      "login": "jpenalbae",
-      "id": 8380459,
-      "node_id": "MDQ6VXNlcjgzODA0NTk=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/8380459?v=4",
-      "html_url": "https://github.com/jpenalbae",
-      "contributions": 4
-    },
-    {
-      "login": "gcolajan",
-      "id": 4128709,
-      "node_id": "MDQ6VXNlcjQxMjg3MDk=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/4128709?v=4",
-      "html_url": "https://github.com/gcolajan",
-      "contributions": 2
-    },
-    {
-      "login": "zlowram",
-      "id": 627317,
-      "node_id": "MDQ6VXNlcjYyNzMxNw==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/627317?v=4",
-      "html_url": "https://github.com/zlowram",
-      "contributions": 2
-    },
-    {
-      "login": "s0i37",
-      "id": 22872513,
-      "node_id": "MDQ6VXNlcjIyODcyNTEz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/22872513?v=4",
-      "html_url": "https://github.com/s0i37",
-      "contributions": 2
-    },
-    {
-      "login": "d4em0n",
-      "id": 29397847,
-      "node_id": "MDQ6VXNlcjI5Mzk3ODQ3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/29397847?v=4",
-      "html_url": "https://github.com/d4em0n",
-      "contributions": 2
-    },
-    {
-      "login": "VPaulV",
-      "id": 5863225,
-      "node_id": "MDQ6VXNlcjU4NjMyMjU=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/5863225?v=4",
-      "html_url": "https://github.com/VPaulV",
-      "contributions": 2
-    },
-    {
-      "login": "FXTi",
-      "id": 3260882,
-      "node_id": "MDQ6VXNlcjMyNjA4ODI=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/3260882?v=4",
-      "html_url": "https://github.com/FXTi",
-      "contributions": 2
-    },
-    {
-      "login": "zamaudio",
-      "id": 3164348,
-      "node_id": "MDQ6VXNlcjMxNjQzNDg=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/3164348?v=4",
-      "html_url": "https://github.com/zamaudio",
-      "contributions": 2
-    },
-    {
-      "login": "fr0ster",
-      "id": 922889,
-      "node_id": "MDQ6VXNlcjkyMjg4OQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/922889?v=4",
-      "html_url": "https://github.com/fr0ster",
-      "contributions": 2
-    },
-    {
-      "login": "alexkornitzer",
-      "id": 2750747,
-      "node_id": "MDQ6VXNlcjI3NTA3NDc=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/2750747?v=4",
-      "html_url": "https://github.com/alexkornitzer",
-      "contributions": 1
-    },
-    {
-      "login": "NicolaiSoeborg",
-      "id": 8722223,
-      "node_id": "MDQ6VXNlcjg3MjIyMjM=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/8722223?v=4",
-      "html_url": "https://github.com/NicolaiSoeborg",
-      "contributions": 1
-    },
-    {
-      "login": "oleavr",
-      "id": 735197,
-      "node_id": "MDQ6VXNlcjczNTE5Nw==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/735197?v=4",
-      "html_url": "https://github.com/oleavr",
-      "contributions": 1
-    },
-    {
-      "login": "packmad",
-      "id": 5713555,
-      "node_id": "MDQ6VXNlcjU3MTM1NTU=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/5713555?v=4",
-      "html_url": "https://github.com/packmad",
-      "contributions": 1
+      "login": "cryptax",
+      "id": 2493690,
+      "node_id": "MDQ6VXNlcjI0OTM2OTA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2493690?v=4",
+      "html_url": "https://github.com/cryptax",
+      "contributions": 8
     },
     {
       "login": "riptl",
@@ -1128,6 +1063,150 @@
       "node_id": "MDQ6VXNlcjIxMzcxODEw",
       "avatar_url": "https://avatars.githubusercontent.com/u/21371810?v=4",
       "html_url": "https://github.com/riptl",
+      "contributions": 4
+    },
+    {
+      "login": "FernandoDoming",
+      "id": 6620286,
+      "node_id": "MDQ6VXNlcjY2MjAyODY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6620286?v=4",
+      "html_url": "https://github.com/FernandoDoming",
+      "contributions": 3
+    },
+    {
+      "login": "prodrigestivill",
+      "id": 1381592,
+      "node_id": "MDQ6VXNlcjEzODE1OTI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1381592?v=4",
+      "html_url": "https://github.com/prodrigestivill",
+      "contributions": 3
+    },
+    {
+      "login": "sha0coder",
+      "id": 1431618,
+      "node_id": "MDQ6VXNlcjE0MzE2MTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1431618?v=4",
+      "html_url": "https://github.com/sha0coder",
+      "contributions": 1
+    },
+    {
+      "login": "emilius3m",
+      "id": 8901201,
+      "node_id": "MDQ6VXNlcjg5MDEyMDE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8901201?v=4",
+      "html_url": "https://github.com/emilius3m",
+      "contributions": 1
+    },
+    {
+      "login": "Xplo8E",
+      "id": 55936553,
+      "node_id": "MDQ6VXNlcjU1OTM2NTUz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55936553?v=4",
+      "html_url": "https://github.com/Xplo8E",
+      "contributions": 1
+    },
+    {
+      "login": "stevenengland",
+      "id": 11787949,
+      "node_id": "MDQ6VXNlcjExNzg3OTQ5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11787949?v=4",
+      "html_url": "https://github.com/stevenengland",
+      "contributions": 1
+    },
+    {
+      "login": "brainstorm",
+      "id": 175587,
+      "node_id": "MDQ6VXNlcjE3NTU4Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/175587?v=4",
+      "html_url": "https://github.com/brainstorm",
+      "contributions": 1
+    },
+    {
+      "login": "kxynos",
+      "id": 784290,
+      "node_id": "MDQ6VXNlcjc4NDI5MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/784290?v=4",
+      "html_url": "https://github.com/kxynos",
+      "contributions": 1
+    },
+    {
+      "login": "eltociear",
+      "id": 22633385,
+      "node_id": "MDQ6VXNlcjIyNjMzMzg1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/22633385?v=4",
+      "html_url": "https://github.com/eltociear",
+      "contributions": 1
+    },
+    {
+      "login": "AdamBromiley",
+      "id": 40538037,
+      "node_id": "MDQ6VXNlcjQwNTM4MDM3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40538037?v=4",
+      "html_url": "https://github.com/AdamBromiley",
+      "contributions": 1
+    },
+    {
+      "login": "AbhiTheModder",
+      "id": 85984486,
+      "node_id": "MDQ6VXNlcjg1OTg0NDg2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/85984486?v=4",
+      "html_url": "https://github.com/AbhiTheModder",
+      "contributions": 1
+    },
+    {
+      "login": "as0ler",
+      "id": 11234807,
+      "node_id": "MDQ6VXNlcjExMjM0ODA3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11234807?v=4",
+      "html_url": "https://github.com/as0ler",
+      "contributions": 12
+    },
+    {
+      "login": "cpholguera",
+      "id": 29175115,
+      "node_id": "MDQ6VXNlcjI5MTc1MTE1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/29175115?v=4",
+      "html_url": "https://github.com/cpholguera",
+      "contributions": 2
+    },
+    {
+      "login": "manthanghasadiya",
+      "id": 68530736,
+      "node_id": "MDQ6VXNlcjY4NTMwNzM2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/68530736?v=4",
+      "html_url": "https://github.com/manthanghasadiya",
+      "contributions": 2
+    },
+    {
+      "login": "3therealm",
+      "id": 103083601,
+      "node_id": "U_kgDOBiTuUQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/103083601?v=4",
+      "html_url": "https://github.com/3therealm",
+      "contributions": 1
+    },
+    {
+      "login": "evilcel3ri",
+      "id": 3540752,
+      "node_id": "MDQ6VXNlcjM1NDA3NTI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3540752?v=4",
+      "html_url": "https://github.com/evilcel3ri",
+      "contributions": 1
+    },
+    {
+      "login": "Taardisaa",
+      "id": 73750035,
+      "node_id": "MDQ6VXNlcjczNzUwMDM1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/73750035?v=4",
+      "html_url": "https://github.com/Taardisaa",
+      "contributions": 1
+    },
+    {
+      "login": "juergenhoetzel",
+      "id": 52547,
+      "node_id": "MDQ6VXNlcjUyNTQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/52547?v=4",
+      "html_url": "https://github.com/juergenhoetzel",
       "contributions": 1
     }
   ],

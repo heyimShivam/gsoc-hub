@@ -29,7 +29,8 @@
   "facebook_url": null,
   "year": [
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2024": [
@@ -52,7 +53,45 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/JpL7n5Ji"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Refactor AtomDB",
+        "short_description": "Efficient data storage and retrieval are essential for the performance and scalability of scientific databases. AtomDB, a valuable resource for...",
+        "description": "Efficient data storage and retrieval are essential for the performance and scalability of scientific databases. AtomDB, a valuable resource for atomic data, currently relies on MsgPack for data storage, which presents several challenges, such as limited compatibility with querying, performance limitations, and difficulties in handling MsgPack files. This project proposes refactoring AtomDB by replacing MsgPack with PyTables, a hierarchical database package designed for managing large amounts of data efficiently. The proposed implementation includes refactoring modules to remove dependencies on the old methodology and instead use PyTables, enhancing the database structure and migrating existing data to HDF5 files. The refactored solution will undergo comprehensive testing to ensure improved maintainability and performance. It will preserve existing functionality while offering improvements and aligning more closely with modern data management practices.",
+        "student_name": "Enjy Ashraf",
+        "code_url": "https://gist.github.com/enjyashraf18/8facbd0be8c33ffb408a6edb40bf8a72",
+        "proposal_id": "mmuKbfEl",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/iOSDCvNs"
+      },
+      {
+        "title": "ModelHamiltonian: Manipulating Model Hamiltonians and Building Interfaces to External Packages",
+        "short_description": "ModelHamiltonians is already a well-structured library to express and simulate Hamiltonians in the context of quantum chemistry. The package,...",
+        "description": "ModelHamiltonians is already a well-structured library to express and simulate\nHamiltonians in the context of quantum chemistry. The package, however, lacks some\nmanipulations of the Hamiltonians that can be useful to researchers to efficiently\nmanipulate and analyze electronic structure calculations while maintaining the flexibility to work with different standard theoretical frameworks.\nTo address this, this proposal is related to the creation of a toolkit module that will\nmainly allow:\n1. Atomic Orbital to Molecular Orbital transformations, generalizing to all\nHamiltonians are available in the library;\n2. Conversions to the geminal basis, enabling researchers to work with alternative\nrepresentations of Hamiltonians for specialized applications.\n3. Reduced Density Matrix (RDM) manipulations, improving the usability of ModelHamiltonians in many-body representations.\n4. Add support for FCIDump file format reading and writing\n5. Develop an interface with PySCF and write tests for all implemented\nfunctionalities.",
+        "student_name": "Giovanni BENEDETTI DA ROSA",
+        "code_url": "https://gist.github.com/giovanni-br/e33a67e0ca3f7100b0677b0add43f4d3",
+        "proposal_id": "EDyipDJe",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/UUGIKoxV"
+      },
+      {
+        "title": "Improving Gbasis Performance Using Screening",
+        "short_description": "The efficient computation of molecular integrals is crucial for large-scale quantum chemistry calculations to obtain the properties of the system....",
+        "description": "The efficient computation of molecular integrals is crucial for large-scale quantum chemistry calculations to obtain the properties of the system. Gbasis is a free and open-source Python library for molecular property calculations using Gaussian basis functions, which are commonly used in quantum chemistry. It can evaluate various functions expanded in a Gaussian basis set, such as the electron density, as well as integrals over Gaussian basis functions. For all of these computations, a large number of complex integrals must be evaluated. Gbasis can compute various one- and two-electron integrals, but as the system size increases, these integrations become increasingly time- and memory-intensive.\n\nScreening is common in computational chemistry, and most codes use it to skip unnecessary integral evaluations. Currently, Gbasis applies screening only to overlap integrals. The aim of this project is to extend screening to other one-electron and two-electron integrals. By evaluating different types of integrals, a variety of properties such as the electrostatic potential, electron density, and its derivatives can be obtained. These evaluations are typically performed on a spatial grid, and screening for such grid-based evaluations will also be addressed in this work.",
+        "student_name": "Omid Hosseinzadeh",
+        "code_url": "https://gist.github.com/ohzde/11089149d25eff074d4fa65e8188773c",
+        "proposal_id": "9pOylRb3",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/z7Ryg9a3"
+      },
+      {
+        "title": "Transformed Cubic Grids",
+        "short_description": "My GSoC 2025 proposal focuses on enhancing the \"Transformed Cubic Grids\" framework (Issue #264) within the QC-Devs organization by implementing...",
+        "description": "My GSoC 2025 proposal focuses on enhancing the \"Transformed Cubic Grids\" framework (Issue #264) within the QC-Devs organization by implementing adaptive quadrature methods. Current Becke-style molecular grids suffer from overlapping atomic grids, leading to redundant computations and reduced accuracy in quantum chemistry simulations. Building on prior work (Issues #7, #15, #96), I will develop algorithms to dynamically adjust grid points and weights based on integrand behavior, such as electron density, ensuring high accuracy with fewer points. My deliverables include refreshing and merging Pull Request #136, implementing adaptive methods (e.g., trapezoidal or Simpson’s rule with refinement), writing comprehensive tests and documentation, and creating Jupyter notebook tutorials for practical use in molecular property calculations.",
+        "student_name": "tutou2356",
+        "code_url": "https://gist.github.com/tutou2356/683d5689bec00280dfda8c82720529f6",
+        "proposal_id": "tkC29Gz5",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/gL4q2C9U"
+      }
+    ],
+    "2026": []
   },
   "githubID": "QC-Devs",
   "repositories": [],

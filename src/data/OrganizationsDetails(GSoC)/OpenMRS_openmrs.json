@@ -59,7 +59,8 @@
     2022,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2016": [
@@ -783,289 +784,130 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/2ntgox2n"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Interactive Translation Builder for the Form Builder",
+        "short_description": "This project introduces an interactive Translation Builder for OpenMRS Form Builder to streamline and simplify the process of localizing forms. The...",
+        "description": "This project introduces an interactive Translation Builder for OpenMRS Form Builder to streamline and simplify the process of localizing forms. The current method requires editing JSON files and restarting the server, making it inaccessible for non-technical users. This tool enables users to extract translatable text, edit translations via an intuitive UI, preview the form in different languages in real time, and export language-specific files that can be used with the OpenMRS initializer. The aim is to improve accessibility, reduce dependency on technical expertise, and promote faster multilingual adoption.",
+        "student_name": "Bharath Kumar Shetty",
+        "code_url": "https://talk.openmrs.org/t/gsoc-2025-translation-builder-for-the-form-builder-final-presentation/46977",
+        "proposal_id": "8CTWupDf",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/eDSv1Ozm"
+      },
+      {
+        "title": "Enhancing Performance Testing Infrastructure for OpenMRS",
+        "short_description": "The current OpenMRS performance testing project provides a foundational skeleton with some initial scenarios already implemented. This proposal aims...",
+        "description": "The current OpenMRS performance testing project provides a foundational skeleton with some initial scenarios already implemented. This proposal aims to enhance that framework by making it more comprehensive, scalable, and user-friendly. Key improvements include modularizing the backend structure to promote reusability, introducing a flexible LoadShare JSON-based configuration system to simplify test setups, and expanding coverage to include additional user personas and real-world scenarios that represent a wide range of application functionalities. The project will also address data duplication issues and introduce support for scalable, cloud-based test execution via AWS. To ensure long-term sustainability and ease of contribution, detailed documentation and an onboarding guide for new contributors will also be provided.",
+        "student_name": "Ganesh Devisetti",
+        "code_url": "https://medium.com/@jayendraganesh21/gsoc-2024-performance-testing-framework-for-openmrs-3-x-final-blog-9b86e4bdba49",
+        "proposal_id": "noUmBV51",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/BQKar0kG"
+      },
+      {
+        "title": "Improved Implementer Tools",
+        "short_description": "This proposal focuses on improving the Implementer Tools in OpenMRS 3 by addressing current limitations and adding key features. The project aims to...",
+        "description": "This proposal focuses on improving the Implementer Tools in OpenMRS 3 by addressing current limitations and adding key features. The project aims to support object editing in config fields, enable UI-based translation overrides, improve extension handling, and add privilege-based display conditions. It also proposes implementing Carbon React-based dark mode, a color picker for branding, server-side configuration saving, and fixing UI inconsistencies. These changes are aimed at making the tool more complete and easier to use for OpenMRS implementers.",
+        "student_name": "Harsh Thakkar",
+        "code_url": "https://medium.com/@harshthkkr/gsoc-2025-with-openmrs-improved-implementer-tools-284518951560",
+        "proposal_id": "igzPXV3X",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/e0aIyyEE"
+      },
+      {
+        "title": "Immunization & Vaccination Schedule app for O3",
+        "short_description": "This project enhances the openmrs-esm-immunizations-app in OpenMRS 3’s patient-chart to improve vaccination management for clinicians. Motivated by...",
+        "description": "This project enhances the openmrs-esm-immunizations-app in OpenMRS 3’s patient-chart to improve vaccination management for clinicians. Motivated by the need for better visualization and functionality, it adds vaccination schedules, overdue alerts, and add immunization history table",
+        "student_name": "M Praneeth",
+        "code_url": "https://talk.openmrs.org/t/gsoc-2025-immunization-and-vaccination-schedule-in-o3-final-presentation/46980",
+        "proposal_id": "zrWn9O9G",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/4iLzkJe0"
+      },
+      {
+        "title": "Enhancing OpenAPI Documentation Generation",
+        "short_description": "This project implements a Maven plugin that generates accurate OpenAPI 3.0 specifications for any OpenMRS module by introspecting REST resources at...",
+        "description": "This project implements a Maven plugin that generates accurate OpenAPI 3.0 specifications for any OpenMRS module by introspecting REST resources at build-time. The plugin leverages the OpenMRS test context within a forked JVM to discover all resource handlers, automatically detecting every available property including those accessible through custom representations, without requiring any code annotations or modifications. Key deliverables include the functional Maven plugin with comprehensive schema introspection, generated OpenAPI specifications with full representation support and developer documentation, enabling automated API documentation for OpenMRS implementations.",
+        "student_name": "Marvin Sukumar",
+        "code_url": "https://gsoc-openapi-docs.hashnode.dev/gsoc-2025-enhancing-openapi-documentation-generation-final-evaluation",
+        "proposal_id": "wCPP7K09",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/F5dYGN8b"
+      },
+      {
+        "title": "GSoC 2025 Proposal: Replacing OpenMRS Standalone with a Modern, User-Friendly Alternative",
+        "short_description": "The OpenMRS Standalone version is outdated, no longer builds successfully with the latest releases, and has been deprecated. However, many...",
+        "description": "The OpenMRS Standalone version is outdated, no longer builds successfully with the latest releases, and has been deprecated. However, many users—especially those in resource-limited settings—still rely on it because it offers a simple, self-contained installation without requiring advanced IT skills.\n\nThis project aims to replace the OpenMRS Standalone with a modern, lightweight, and easy-to-use alternative that works on Windows, macOS (including Apple Silicon), and Linux. The new setup will use a Java-based local installation that allows users to double-click and run OpenMRS, mariadb4j for an embedded- hassle-free database solution, docker Compose (only for CI/CD) to automate testing and deployment pipelines.\n\nBy the end of the project, OpenMRS will have a user-friendly, cross-platform installer, an embedded database, and an automated build process for multiple OpenMRS versions (2.x, 3.x, and Core Platform 2.7.x+).",
+        "student_name": "Mutagubya Jonathan",
+        "code_url": "https://medium.com/@mutajonathan4/gsoc-2025-replacing-openmrs-standalone-with-a-modern-user-friendly-alternative-319e725bc105",
+        "proposal_id": "7vJST3Vn",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/6nL3MZY9"
+      },
+      {
+        "title": "Improved Audit Logging",
+        "short_description": "OpenMRS currently utilizes Hibernate Envers to track database changes, offering robust audit capabilities. However, the system lacks a user-friendly...",
+        "description": "OpenMRS currently utilizes Hibernate Envers to track database changes, offering robust audit capabilities. However, the system lacks a user-friendly way for administrators to view, filter, and interact with audit logs. This project proposes building a backend module that exposes audit log data in a meaningful way through a legacy UI-based audit log viewer, REST endpoints for external access, and an extension that tracks read operations on selected entities—something Envers does not support out-of-the-box.\n\nThe solution will include:\n\n1. Audit log retrieval and visualization within the legacy UI\n\n2. Custom tracking of read operations using Hibernate event listeners or an alternative approach\n\n3. Filtering capabilities (by user, date, and entity)\n\n4. RESTful APIs for external access to audit data\n\n5. A well-documented architecture, extensible to other OpenMRS modules\n\nBy the end of this project, OpenMRS administrators will have a comprehensive and usable interface to audit system activity, improving transparency, traceability, and compliance with healthcare data standards.",
+        "student_name": "Njidda Salifu",
+        "code_url": "https://medium.com/@njiddasalifu/improved-audit-logging-for-openmrs-1360c48e1ca7",
+        "proposal_id": "UaZKp8hJ",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/diQMBDSZ"
+      },
+      {
+        "title": "Fix The Fast Data Entry Feature For The O3 ReffApp",
+        "short_description": "The Form Engine (FDE) is a specialized module for the OpenMRS healthcare platform. Its primary purpose is to enable a natural and efficient workflow...",
+        "description": "The Form Engine (FDE) is a specialized module for the OpenMRS healthcare platform. Its primary purpose is to enable a natural and efficient workflow for entering multiple pre-recorded forms at once.\nIt is specifically designed for retrospective data entry tasks and is not intended for use in real-time, point-of-care clinical workflows.\nFor comprehensive details and guidance, please refer to the official FDE Wiki [https://openmrs.atlassian.net/wiki/spaces/docs/pages/150962486/Key+O3+Repositories#Fast-Data-Entry] Documentation.\n\nObjectives of the GSoC project:\nThis project will enhance the React Form Engine to natively support the requirements of the Fast Data Entry (FDE) feature. The improved engine will then be used by FDE to deliver faster and more efficient patient data entry. A key objective is to maintain full backwards compatibility with the existing Angular Form Engine, ensuring that current implementations continue to function smoothly while enabling a seamless transition to the React-based workflow.",
+        "student_name": "Twiine",
+        "code_url": "https://medium.com/@twiineenockfox/concluding-my-gsoc-journey-edf196aea8ae",
+        "proposal_id": "YrDw0RUM",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/ZT80j9qv"
+      }
+    ],
+    "2026": []
   },
   "githubID": "openmrs",
   "repositories": [
     {
-      "id": 504825082,
-      "node_id": "R_kgDOHhcE-g",
-      "name": "openmrs-esm-form-builder",
-      "full_name": "openmrs/openmrs-esm-form-builder",
-      "html_url": "https://github.com/openmrs/openmrs-esm-form-builder",
-      "description": "OpenMRS Form Builder microfrontend",
-      "language": "TypeScript",
-      "stargazers_count": 12,
-      "forks_count": 100,
-      "open_issues_count": 12,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
+      "id": 803682972,
+      "node_id": "R_kgDOL-c6nA",
+      "name": "openmrs-contrib-performance-test",
+      "full_name": "openmrs/openmrs-contrib-performance-test",
+      "html_url": "https://github.com/openmrs/openmrs-contrib-performance-test",
+      "description": "Performance tests for O3",
+      "language": "Java",
+      "stargazers_count": 7,
+      "forks_count": 24,
+      "open_issues_count": 9,
+      "license": null,
       "topics": []
     },
     {
-      "id": 368526248,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzNjg1MjYyNDg=",
-      "name": "openmrs-esm-patient-management",
-      "full_name": "openmrs/openmrs-esm-patient-management",
-      "html_url": "https://github.com/openmrs/openmrs-esm-patient-management",
-      "description": "Frontend modules for patient management, including appointment scheduling, patient list management, registration, search and service queue management",
-      "language": "TypeScript",
-      "stargazers_count": 48,
-      "forks_count": 261,
-      "open_issues_count": 21,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": [
-        "healthcare",
-        "microfrontends",
-        "openmrs",
-        "react"
-      ]
-    },
-    {
-      "id": 504739002,
-      "node_id": "R_kgDOHhW0ug",
-      "name": "openmrs-esm-cohortbuilder-app",
-      "full_name": "openmrs/openmrs-esm-cohortbuilder-app",
-      "html_url": "https://github.com/openmrs/openmrs-esm-cohortbuilder-app",
-      "description": "The Cohort Builder is a tool in OpenMRS 3.0 in the Reporting Compatibility module that lets the user perform ad-hoc queries for patients with defined characteristics, and combines multiple queries into more complex ones.",
-      "language": "TypeScript",
-      "stargazers_count": 6,
-      "forks_count": 16,
+      "id": 1135062356,
+      "node_id": "R_kgDOQ6etVA",
+      "name": "openmrs-contrib-cvss-scanning",
+      "full_name": "openmrs/openmrs-contrib-cvss-scanning",
+      "html_url": "https://github.com/openmrs/openmrs-contrib-cvss-scanning",
+      "description": "Real-time vulnerability checking for OpenMRS",
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 3,
       "open_issues_count": 0,
       "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
+        "key": "mpl-2.0",
+        "name": "Mozilla Public License 2.0",
+        "spdx_id": "MPL-2.0",
+        "url": "https://api.github.com/licenses/mpl-2.0",
+        "node_id": "MDc6TGljZW5zZTE0"
       },
       "topics": []
     },
     {
-      "id": 749801481,
-      "node_id": "R_kgDOLLEQCQ",
-      "name": "openmrs-esm-billing-app",
-      "full_name": "openmrs/openmrs-esm-billing-app",
-      "html_url": "https://github.com/openmrs/openmrs-esm-billing-app",
-      "description": "OpenMRS frontend module for handling billing concerns",
-      "language": "TypeScript",
-      "stargazers_count": 6,
-      "forks_count": 24,
-      "open_issues_count": 7,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 468491216,
-      "node_id": "R_kgDOG-yb0A",
-      "name": "openmrs-esm-dispensing-app",
-      "full_name": "openmrs/openmrs-esm-dispensing-app",
-      "html_url": "https://github.com/openmrs/openmrs-esm-dispensing-app",
-      "description": "OpenMRS Frontend Module for Medication Dispensing",
-      "language": "TypeScript",
-      "stargazers_count": 4,
-      "forks_count": 42,
-      "open_issues_count": 5,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 684776979,
-      "node_id": "R_kgDOKNDeEw",
-      "name": "openmrs-esm-laboratory-app",
-      "full_name": "openmrs/openmrs-esm-laboratory-app",
-      "html_url": "https://github.com/openmrs/openmrs-esm-laboratory-app",
-      "description": "Laboratory ESM built on OpenMRS 3.x",
-      "language": "TypeScript",
-      "stargazers_count": 1,
-      "forks_count": 60,
-      "open_issues_count": 3,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 9224950,
-      "node_id": "MDEwOlJlcG9zaXRvcnk5MjI0OTUw",
-      "name": "openmrs-module-coreapps",
-      "full_name": "openmrs/openmrs-module-coreapps",
-      "html_url": "https://github.com/openmrs/openmrs-module-coreapps",
-      "description": "Provides apps for performing the common tasks",
+      "id": 1178297173,
+      "node_id": "R_kgDORjtjVQ",
+      "name": "openmrs-module-chartsearchai",
+      "full_name": "openmrs/openmrs-module-chartsearchai",
+      "html_url": "https://github.com/openmrs/openmrs-module-chartsearchai",
+      "description": "AI-powered chart search module for OpenMRS",
       "language": "Java",
-      "stargazers_count": 13,
-      "forks_count": 184,
-      "open_issues_count": 15,
+      "stargazers_count": 0,
+      "forks_count": 3,
+      "open_issues_count": 2,
       "license": null,
-      "topics": []
-    },
-    {
-      "id": 213561684,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMTM1NjE2ODQ=",
-      "name": "openmrs-esm-patient-chart",
-      "full_name": "openmrs/openmrs-esm-patient-chart",
-      "html_url": "https://github.com/openmrs/openmrs-esm-patient-chart",
-      "description": "This repo houses all EMR patient chart components for OpenMRS v3",
-      "language": "TypeScript",
-      "stargazers_count": 52,
-      "forks_count": 277,
-      "open_issues_count": 38,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": [
-        "fhir",
-        "healthcare",
-        "microfrontend",
-        "openmrs",
-        "react",
-        "spa",
-        "typescript"
-      ]
-    },
-    {
-      "id": 289570704,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyODk1NzA3MDQ=",
-      "name": "openmrs-esm-core",
-      "full_name": "openmrs/openmrs-esm-core",
-      "html_url": "https://github.com/openmrs/openmrs-esm-core",
-      "description": "The core modules of the OpenMRS 3.0 Frontend system",
-      "language": "TypeScript",
-      "stargazers_count": 68,
-      "forks_count": 243,
-      "open_issues_count": 16,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 675996821,
-      "node_id": "R_kgDOKErklQ",
-      "name": "openmrs-esm-stock-management",
-      "full_name": "openmrs/openmrs-esm-stock-management",
-      "html_url": "https://github.com/openmrs/openmrs-esm-stock-management",
-      "description": null,
-      "language": "TypeScript",
-      "stargazers_count": 5,
-      "forks_count": 50,
-      "open_issues_count": 7,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 374793865,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzNzQ3OTM4NjU=",
-      "name": "openmrs-esm-template-app",
-      "full_name": "openmrs/openmrs-esm-template-app",
-      "html_url": "https://github.com/openmrs/openmrs-esm-template-app",
-      "description": "A \"Hello World\" app you can use as a template for creating new microfrontend apps in OpenMRS v3",
-      "language": "TypeScript",
-      "stargazers_count": 18,
-      "forks_count": 86,
-      "open_issues_count": 1,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 621231147,
-      "node_id": "R_kgDOJQc8Kw",
-      "name": "openmrs-esm-form-engine-lib",
-      "full_name": "openmrs/openmrs-esm-form-engine-lib",
-      "html_url": "https://github.com/openmrs/openmrs-esm-form-engine-lib",
-      "description": "React Form Engine library for O3",
-      "language": "TypeScript",
-      "stargazers_count": 14,
-      "forks_count": 89,
-      "open_issues_count": 16,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 489321724,
-      "node_id": "R_kgDOHSp0_A",
-      "name": "openmrs-esm-fast-data-entry-app",
-      "full_name": "openmrs/openmrs-esm-fast-data-entry-app",
-      "html_url": "https://github.com/openmrs/openmrs-esm-fast-data-entry-app",
-      "description": "Fast Data Entry App",
-      "language": "TypeScript",
-      "stargazers_count": 4,
-      "forks_count": 24,
-      "open_issues_count": 8,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 819842632,
-      "node_id": "R_kgDOMN3OSA",
-      "name": "openmrs-esm-user-onboarding",
-      "full_name": "openmrs/openmrs-esm-user-onboarding",
-      "html_url": "https://github.com/openmrs/openmrs-esm-user-onboarding",
-      "description": null,
-      "language": "TypeScript",
-      "stargazers_count": 3,
-      "forks_count": 9,
-      "open_issues_count": 4,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
       "topics": []
     },
     {
@@ -1077,178 +919,28 @@
       "description": "Administrative microfrontends for OpenMRS 3.0",
       "language": "TypeScript",
       "stargazers_count": 3,
-      "forks_count": 24,
-      "open_issues_count": 5,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 2680621,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNjgwNjIx",
-      "name": "openmrs-module-htmlformentry",
-      "full_name": "openmrs/openmrs-module-htmlformentry",
-      "html_url": "https://github.com/openmrs/openmrs-module-htmlformentry",
-      "description": "HTML Form Entry module",
-      "language": "Java",
-      "stargazers_count": 41,
-      "forks_count": 225,
-      "open_issues_count": 10,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 203839620,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMDM4Mzk2MjA=",
-      "name": "openmrs-esm-home",
-      "full_name": "openmrs/openmrs-esm-home",
-      "html_url": "https://github.com/openmrs/openmrs-esm-home",
-      "description": "The homepage microfrontend for the OpenMRS SPA",
-      "language": "TypeScript",
-      "stargazers_count": 16,
-      "forks_count": 81,
-      "open_issues_count": 4,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": [
-        "microfrontend",
-        "openmrs",
-        "react",
-        "spa",
-        "typescript"
-      ]
-    },
-    {
-      "id": 455288116,
-      "node_id": "R_kgDOGyMlNA",
-      "name": "openmrs-module-labonfhir",
-      "full_name": "openmrs/openmrs-module-labonfhir",
-      "html_url": "https://github.com/openmrs/openmrs-module-labonfhir",
-      "description": "A FHIR-based Lab Workflow for OpenMRS and FHIR Based LIS",
-      "language": "Java",
-      "stargazers_count": 1,
-      "forks_count": 14,
-      "open_issues_count": 9,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 986397363,
-      "node_id": "R_kgDOOss6sw",
-      "name": "openmrs-module-auditlogweb",
-      "full_name": "openmrs/openmrs-module-auditlogweb",
-      "html_url": "https://github.com/openmrs/openmrs-module-auditlogweb",
-      "description": null,
-      "language": null,
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 12002935,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMjAwMjkzNQ==",
-      "name": "openmrs-sdk",
-      "full_name": "openmrs/openmrs-sdk",
-      "html_url": "https://github.com/openmrs/openmrs-sdk",
-      "description": "OpenMRS SDK is a toolset which facilitates OpenMRS development",
-      "language": "PLpgSQL",
-      "stargazers_count": 19,
-      "forks_count": 87,
-      "open_issues_count": 3,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 803682972,
-      "node_id": "R_kgDOL-c6nA",
-      "name": "openmrs-contrib-performance-test",
-      "full_name": "openmrs/openmrs-contrib-performance-test",
-      "html_url": "https://github.com/openmrs/openmrs-contrib-performance-test",
-      "description": "Performance tests for O3",
-      "language": "Java",
-      "stargazers_count": 4,
-      "forks_count": 12,
+      "forks_count": 36,
       "open_issues_count": 7,
-      "license": null,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
       "topics": []
     },
     {
-      "id": 4704771,
-      "node_id": "MDEwOlJlcG9zaXRvcnk0NzA0Nzcx",
-      "name": "openmrs-module-htmlwidgets",
-      "full_name": "openmrs/openmrs-module-htmlwidgets",
-      "html_url": "https://github.com/openmrs/openmrs-module-htmlwidgets",
-      "description": "A set of reusable HTML form field widgets in order encapsulate the common input requirements for OpenMRS",
-      "language": "Java",
-      "stargazers_count": 2,
-      "forks_count": 32,
-      "open_issues_count": 1,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 10168225,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMDE2ODIyNQ==",
-      "name": "openmrs-module-referencemetadata",
-      "full_name": "openmrs/openmrs-module-referencemetadata",
-      "html_url": "https://github.com/openmrs/openmrs-module-referencemetadata",
-      "description": "Metadata for the Reference Application",
+      "id": 1041145370,
+      "node_id": "R_kgDOPg6eGg",
+      "name": "openmrs-contrib-openapi-maven-plugin",
+      "full_name": "openmrs/openmrs-contrib-openapi-maven-plugin",
+      "html_url": "https://github.com/openmrs/openmrs-contrib-openapi-maven-plugin",
+      "description": null,
       "language": "Java",
       "stargazers_count": 1,
-      "forks_count": 48,
-      "open_issues_count": 1,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 3690150,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzNjkwMTUw",
-      "name": "openmrs-module-uiframework",
-      "full_name": "openmrs/openmrs-module-uiframework",
-      "html_url": "https://github.com/openmrs/openmrs-module-uiframework",
-      "description": "OpenMRS UI Framework",
-      "language": "Java",
-      "stargazers_count": 17,
-      "forks_count": 125,
-      "open_issues_count": 4,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 608695746,
-      "node_id": "R_kgDOJEf1wg",
-      "name": "openmrs-module-mamba-core",
-      "full_name": "openmrs/openmrs-module-mamba-core",
-      "html_url": "https://github.com/openmrs/openmrs-module-mamba-core",
-      "description": "An OpenMRS Library module containing core logic, a compiler and other artifacts for the OpenMRS ETL solution",
-      "language": "Java",
-      "stargazers_count": 2,
-      "forks_count": 11,
-      "open_issues_count": 15,
+      "forks_count": 1,
+      "open_issues_count": 2,
       "license": {
         "key": "other",
         "name": "Other",
@@ -1256,54 +948,6 @@
         "url": null,
         "node_id": "MDc6TGljZW5zZTA="
       },
-      "topics": []
-    },
-    {
-      "id": 7172255,
-      "node_id": "MDEwOlJlcG9zaXRvcnk3MTcyMjU1",
-      "name": "openmrs-module-event",
-      "full_name": "openmrs/openmrs-module-event",
-      "html_url": "https://github.com/openmrs/openmrs-module-event",
-      "description": "Provides an event bus for OpenMRS",
-      "language": "Java",
-      "stargazers_count": 5,
-      "forks_count": 37,
-      "open_issues_count": 0,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 9099216,
-      "node_id": "MDEwOlJlcG9zaXRvcnk5MDk5MjE2",
-      "name": "openmrs-distro-referenceapplication",
-      "full_name": "openmrs/openmrs-distro-referenceapplication",
-      "html_url": "https://github.com/openmrs/openmrs-distro-referenceapplication",
-      "description": "The reference distribution of the OpenMRS EMR application (v3)",
-      "language": "Shell",
-      "stargazers_count": 69,
-      "forks_count": 417,
-      "open_issues_count": 6,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 924763210,
-      "node_id": "R_kgDONx7ESg",
-      "name": "openmrs-content-referenceapplication-demo",
-      "full_name": "openmrs/openmrs-content-referenceapplication-demo",
-      "html_url": "https://github.com/openmrs/openmrs-content-referenceapplication-demo",
-      "description": null,
-      "language": null,
-      "stargazers_count": 0,
-      "forks_count": 11,
-      "open_issues_count": 0,
-      "license": null,
       "topics": []
     },
     {
@@ -1314,9 +958,9 @@
       "html_url": "https://github.com/openmrs/openmrs-core",
       "description": "OpenMRS API and web application code",
       "language": "Java",
-      "stargazers_count": 1536,
-      "forks_count": 3822,
-      "open_issues_count": 69,
+      "stargazers_count": 1802,
+      "forks_count": 4248,
+      "open_issues_count": 170,
       "license": {
         "key": "other",
         "name": "Other",
@@ -1337,16 +981,41 @@
       ]
     },
     {
-      "id": 232160993,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMzIxNjA5OTM=",
-      "name": "openmrs-module-fhir2",
-      "full_name": "openmrs/openmrs-module-fhir2",
-      "html_url": "https://github.com/openmrs/openmrs-module-fhir2",
-      "description": "The FHIR REST API and related services for OpenMRS",
-      "language": "Java",
+      "id": 368526248,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzNjg1MjYyNDg=",
+      "name": "openmrs-esm-patient-management",
+      "full_name": "openmrs/openmrs-esm-patient-management",
+      "html_url": "https://github.com/openmrs/openmrs-esm-patient-management",
+      "description": "Frontend modules for patient management, including appointment scheduling, patient list management, registration, search and service queue management",
+      "language": "TypeScript",
       "stargazers_count": 73,
-      "forks_count": 125,
-      "open_issues_count": 22,
+      "forks_count": 395,
+      "open_issues_count": 101,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": [
+        "healthcare",
+        "microfrontends",
+        "openmrs",
+        "react"
+      ]
+    },
+    {
+      "id": 213561684,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMTM1NjE2ODQ=",
+      "name": "openmrs-esm-patient-chart",
+      "full_name": "openmrs/openmrs-esm-patient-chart",
+      "html_url": "https://github.com/openmrs/openmrs-esm-patient-chart",
+      "description": "This repo houses all EMR patient chart components for OpenMRS v3",
+      "language": "TypeScript",
+      "stargazers_count": 77,
+      "forks_count": 373,
+      "open_issues_count": 65,
       "license": {
         "key": "other",
         "name": "Other",
@@ -1356,68 +1025,433 @@
       },
       "topics": [
         "fhir",
-        "fhir-r4",
+        "healthcare",
+        "microfrontend",
         "openmrs",
-        "openmrs-fhir"
+        "react",
+        "spa",
+        "typescript"
       ]
+    },
+    {
+      "id": 9099216,
+      "node_id": "MDEwOlJlcG9zaXRvcnk5MDk5MjE2",
+      "name": "openmrs-distro-referenceapplication",
+      "full_name": "openmrs/openmrs-distro-referenceapplication",
+      "html_url": "https://github.com/openmrs/openmrs-distro-referenceapplication",
+      "description": "The reference distribution of the OpenMRS EMR application (v3)",
+      "language": "Shell",
+      "stargazers_count": 101,
+      "forks_count": 553,
+      "open_issues_count": 24,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 24343754,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyNDM0Mzc1NA==",
+      "name": "openmrs-distro-platform",
+      "full_name": "openmrs/openmrs-distro-platform",
+      "html_url": "https://github.com/openmrs/openmrs-distro-platform",
+      "description": "This project is used to package the core OpenMRS war file with bundled modules",
+      "language": "Dockerfile",
+      "stargazers_count": 3,
+      "forks_count": 26,
+      "open_issues_count": 1,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 468491216,
+      "node_id": "R_kgDOG-yb0A",
+      "name": "openmrs-esm-dispensing-app",
+      "full_name": "openmrs/openmrs-esm-dispensing-app",
+      "html_url": "https://github.com/openmrs/openmrs-esm-dispensing-app",
+      "description": "OpenMRS Frontend Module for Medication Dispensing",
+      "language": "TypeScript",
+      "stargazers_count": 9,
+      "forks_count": 57,
+      "open_issues_count": 12,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 1168666156,
+      "node_id": "R_kgDORahuLA",
+      "name": "openmrs-contrib-dependency-vulnerability-dashboard",
+      "full_name": "openmrs/openmrs-contrib-dependency-vulnerability-dashboard",
+      "html_url": "https://github.com/openmrs/openmrs-contrib-dependency-vulnerability-dashboard",
+      "description": null,
+      "language": "JavaScript",
+      "stargazers_count": 1,
+      "forks_count": 26,
+      "open_issues_count": 12,
+      "license": {
+        "key": "mpl-2.0",
+        "name": "Mozilla Public License 2.0",
+        "spdx_id": "MPL-2.0",
+        "url": "https://api.github.com/licenses/mpl-2.0",
+        "node_id": "MDc6TGljZW5zZTE0"
+      },
+      "topics": []
+    },
+    {
+      "id": 6951233,
+      "node_id": "MDEwOlJlcG9zaXRvcnk2OTUxMjMz",
+      "name": "openmrs-module-webservices.rest",
+      "full_name": "openmrs/openmrs-module-webservices.rest",
+      "html_url": "https://github.com/openmrs/openmrs-module-webservices.rest",
+      "description": "Provides RESTful web services for OpenMRS (REST API)",
+      "language": "Java",
+      "stargazers_count": 103,
+      "forks_count": 580,
+      "open_issues_count": 39,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": [
+        "java",
+        "openmrs",
+        "openmrs-api",
+        "restful-api",
+        "webservice"
+      ]
+    },
+    {
+      "id": 9224950,
+      "node_id": "MDEwOlJlcG9zaXRvcnk5MjI0OTUw",
+      "name": "openmrs-module-coreapps",
+      "full_name": "openmrs/openmrs-module-coreapps",
+      "html_url": "https://github.com/openmrs/openmrs-module-coreapps",
+      "description": "Provides apps for performing the common tasks",
+      "language": "Java",
+      "stargazers_count": 13,
+      "forks_count": 190,
+      "open_issues_count": 17,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 504825082,
+      "node_id": "R_kgDOHhcE-g",
+      "name": "openmrs-esm-form-builder",
+      "full_name": "openmrs/openmrs-esm-form-builder",
+      "html_url": "https://github.com/openmrs/openmrs-esm-form-builder",
+      "description": "Build and publish clinical forms for O3 using the O3 standard JSON schema ",
+      "language": "TypeScript",
+      "stargazers_count": 15,
+      "forks_count": 125,
+      "open_issues_count": 23,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 621231147,
+      "node_id": "R_kgDOJQc8Kw",
+      "name": "openmrs-esm-form-engine-lib",
+      "full_name": "openmrs/openmrs-esm-form-engine-lib",
+      "html_url": "https://github.com/openmrs/openmrs-esm-form-engine-lib",
+      "description": "React Form Engine library for O3",
+      "language": "TypeScript",
+      "stargazers_count": 18,
+      "forks_count": 106,
+      "open_issues_count": 18,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 1188704176,
+      "node_id": "R_kgDORtovsA",
+      "name": "openmrs-esm-chartsearchai",
+      "full_name": "openmrs/openmrs-esm-chartsearchai",
+      "html_url": "https://github.com/openmrs/openmrs-esm-chartsearchai",
+      "description": "AI-powered chart search for OpenMRS O3",
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "forks_count": 2,
+      "open_issues_count": 1,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 684776979,
+      "node_id": "R_kgDOKNDeEw",
+      "name": "openmrs-esm-laboratory-app",
+      "full_name": "openmrs/openmrs-esm-laboratory-app",
+      "html_url": "https://github.com/openmrs/openmrs-esm-laboratory-app",
+      "description": "Laboratory lite frontend module for O3",
+      "language": "TypeScript",
+      "stargazers_count": 5,
+      "forks_count": 81,
+      "open_issues_count": 10,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 489321724,
+      "node_id": "R_kgDOHSp0_A",
+      "name": "openmrs-esm-fast-data-entry-app",
+      "full_name": "openmrs/openmrs-esm-fast-data-entry-app",
+      "html_url": "https://github.com/openmrs/openmrs-esm-fast-data-entry-app",
+      "description": "Fast Data Entry App",
+      "language": "TypeScript",
+      "stargazers_count": 6,
+      "forks_count": 32,
+      "open_issues_count": 8,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 504739002,
+      "node_id": "R_kgDOHhW0ug",
+      "name": "openmrs-esm-cohortbuilder-app",
+      "full_name": "openmrs/openmrs-esm-cohortbuilder-app",
+      "html_url": "https://github.com/openmrs/openmrs-esm-cohortbuilder-app",
+      "description": "The Cohort Builder is a tool in OpenMRS 3.0 in the Reporting Compatibility module that lets the user perform ad-hoc queries for patients with defined characteristics, and combines multiple queries into more complex ones.",
+      "language": "TypeScript",
+      "stargazers_count": 6,
+      "forks_count": 20,
+      "open_issues_count": 11,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 749801481,
+      "node_id": "R_kgDOLLEQCQ",
+      "name": "openmrs-esm-billing-app",
+      "full_name": "openmrs/openmrs-esm-billing-app",
+      "html_url": "https://github.com/openmrs/openmrs-esm-billing-app",
+      "description": "OpenMRS frontend module for handling billing concerns",
+      "language": "TypeScript",
+      "stargazers_count": 10,
+      "forks_count": 69,
+      "open_issues_count": 13,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 819842632,
+      "node_id": "R_kgDOMN3OSA",
+      "name": "openmrs-esm-user-onboarding",
+      "full_name": "openmrs/openmrs-esm-user-onboarding",
+      "html_url": "https://github.com/openmrs/openmrs-esm-user-onboarding",
+      "description": null,
+      "language": "TypeScript",
+      "stargazers_count": 4,
+      "forks_count": 21,
+      "open_issues_count": 7,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 374793865,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzNzQ3OTM4NjU=",
+      "name": "openmrs-esm-template-app",
+      "full_name": "openmrs/openmrs-esm-template-app",
+      "html_url": "https://github.com/openmrs/openmrs-esm-template-app",
+      "description": "A \"Hello World\" app you can use as a template for creating new microfrontend apps in OpenMRS v3",
+      "language": "TypeScript",
+      "stargazers_count": 29,
+      "forks_count": 110,
+      "open_issues_count": 1,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 675996821,
+      "node_id": "R_kgDOKErklQ",
+      "name": "openmrs-esm-stock-management",
+      "full_name": "openmrs/openmrs-esm-stock-management",
+      "html_url": "https://github.com/openmrs/openmrs-esm-stock-management",
+      "description": null,
+      "language": "TypeScript",
+      "stargazers_count": 6,
+      "forks_count": 62,
+      "open_issues_count": 7,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 838774114,
+      "node_id": "R_kgDOMf6tYg",
+      "name": "openmrs-contrib-gha-workflows",
+      "full_name": "openmrs/openmrs-contrib-gha-workflows",
+      "html_url": "https://github.com/openmrs/openmrs-contrib-gha-workflows",
+      "description": "Collection of github centralised workflows that are automatically synced to other repos in the github org.",
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 4,
+      "open_issues_count": 1,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1091154288,
+      "node_id": "R_kgDOQQmxcA",
+      "name": "openmrs-esm-task-list",
+      "full_name": "openmrs/openmrs-esm-task-list",
+      "html_url": "https://github.com/openmrs/openmrs-esm-task-list",
+      "description": "The patient task list. Requires openmrs-module-tasks.",
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 1,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 982764970,
+      "node_id": "R_kgDOOpPNqg",
+      "name": "openmrs-module-patientdocuments",
+      "full_name": "openmrs/openmrs-module-patientdocuments",
+      "html_url": "https://github.com/openmrs/openmrs-module-patientdocuments",
+      "description": null,
+      "language": "Java",
+      "stargazers_count": 1,
+      "forks_count": 14,
+      "open_issues_count": 5,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 289570704,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyODk1NzA3MDQ=",
+      "name": "openmrs-esm-core",
+      "full_name": "openmrs/openmrs-esm-core",
+      "html_url": "https://github.com/openmrs/openmrs-esm-core",
+      "description": "The core modules of the OpenMRS 3.0 Frontend system",
+      "language": "TypeScript",
+      "stargazers_count": 87,
+      "forks_count": 353,
+      "open_issues_count": 65,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 527724291,
+      "node_id": "R_kgDOH3RvAw",
+      "name": "openmrs-ngx-formentry",
+      "full_name": "openmrs/openmrs-ngx-formentry",
+      "html_url": "https://github.com/openmrs/openmrs-ngx-formentry",
+      "description": "Form Engine for OpenMRS 3.0. Built in Angular.",
+      "language": "TypeScript",
+      "stargazers_count": 7,
+      "forks_count": 29,
+      "open_issues_count": 6,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 7172255,
+      "node_id": "MDEwOlJlcG9zaXRvcnk3MTcyMjU1",
+      "name": "openmrs-module-event",
+      "full_name": "openmrs/openmrs-module-event",
+      "html_url": "https://github.com/openmrs/openmrs-module-event",
+      "description": "Provides an event bus for OpenMRS",
+      "language": "Java",
+      "stargazers_count": 6,
+      "forks_count": 39,
+      "open_issues_count": 0,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
     }
   ],
   "contributorsDetails": [
     {
-      "login": "denniskigen",
-      "id": 8509731,
-      "node_id": "MDQ6VXNlcjg1MDk3MzE=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/8509731?v=4",
-      "html_url": "https://github.com/denniskigen",
-      "contributions": 259
-    },
-    {
-      "login": "openmrs-bot",
-      "id": 7291161,
-      "node_id": "MDQ6VXNlcjcyOTExNjE=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/7291161?v=4",
-      "html_url": "https://github.com/openmrs-bot",
-      "contributions": 54
-    },
-    {
-      "login": "github-actions[bot]",
-      "id": 41898282,
-      "node_id": "MDM6Qm90NDE4OTgyODI=",
-      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
-      "html_url": "https://github.com/apps/github-actions",
-      "contributions": 52
-    },
-    {
-      "login": "kumuditha-udayanga",
-      "id": 27630091,
-      "node_id": "MDQ6VXNlcjI3NjMwMDkx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/27630091?v=4",
-      "html_url": "https://github.com/kumuditha-udayanga",
-      "contributions": 29
-    },
-    {
-      "login": "NethmiRodrigo",
-      "id": 34070216,
-      "node_id": "MDQ6VXNlcjM0MDcwMjE2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/34070216?v=4",
-      "html_url": "https://github.com/NethmiRodrigo",
-      "contributions": 19
-    },
-    {
-      "login": "samuelmale",
-      "id": 26084581,
-      "node_id": "MDQ6VXNlcjI2MDg0NTgx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/26084581?v=4",
-      "html_url": "https://github.com/samuelmale",
-      "contributions": 17
-    },
-    {
-      "login": "larslemos",
-      "id": 4475142,
-      "node_id": "MDQ6VXNlcjQ0NzUxNDI=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/4475142?v=4",
-      "html_url": "https://github.com/larslemos",
-      "contributions": 13
+      "login": "jayasanka-sack",
+      "id": 33048395,
+      "node_id": "MDQ6VXNlcjMzMDQ4Mzk1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/33048395?v=4",
+      "html_url": "https://github.com/jayasanka-sack",
+      "contributions": 8
     },
     {
       "login": "dependabot[bot]",
@@ -1425,7 +1459,39 @@
       "node_id": "MDM6Qm90NDk2OTkzMzM=",
       "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
       "html_url": "https://github.com/apps/dependabot",
-      "contributions": 13
+      "contributions": 61
+    },
+    {
+      "login": "jayg2002",
+      "id": 85500670,
+      "node_id": "MDQ6VXNlcjg1NTAwNjcw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/85500670?v=4",
+      "html_url": "https://github.com/jayg2002",
+      "contributions": 33
+    },
+    {
+      "login": "Bawanthathilan",
+      "id": 38850236,
+      "node_id": "MDQ6VXNlcjM4ODUwMjM2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/38850236?v=4",
+      "html_url": "https://github.com/Bawanthathilan",
+      "contributions": 14
+    },
+    {
+      "login": "dilankavishka",
+      "id": 109354298,
+      "node_id": "U_kgDOBoSdOg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/109354298?v=4",
+      "html_url": "https://github.com/dilankavishka",
+      "contributions": 5
+    },
+    {
+      "login": "janithRS",
+      "id": 45779947,
+      "node_id": "MDQ6VXNlcjQ1Nzc5OTQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/45779947?v=4",
+      "html_url": "https://github.com/janithRS",
+      "contributions": 3
     },
     {
       "login": "ibacher",
@@ -1433,311 +1499,63 @@
       "node_id": "MDQ6VXNlcjUyNTA0MTcw",
       "avatar_url": "https://avatars.githubusercontent.com/u/52504170?v=4",
       "html_url": "https://github.com/ibacher",
-      "contributions": 50
+      "contributions": 1
     },
     {
-      "login": "hadijahkyampeire",
-      "id": 30952856,
-      "node_id": "MDQ6VXNlcjMwOTUyODU2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/30952856?v=4",
-      "html_url": "https://github.com/hadijahkyampeire",
-      "contributions": 17
+      "login": "wikumChamith",
+      "id": 61653572,
+      "node_id": "MDQ6VXNlcjYxNjUzNTcy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/61653572?v=4",
+      "html_url": "https://github.com/wikumChamith",
+      "contributions": 1
     },
     {
-      "login": "anjula-sack",
-      "id": 43912578,
-      "node_id": "MDQ6VXNlcjQzOTEyNTc4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/43912578?v=4",
-      "html_url": "https://github.com/anjula-sack",
-      "contributions": 9
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "html_url": "https://github.com/apps/github-actions",
+      "contributions": 1
     },
     {
-      "login": "pirupius",
-      "id": 15266028,
-      "node_id": "MDQ6VXNlcjE1MjY2MDI4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/15266028?v=4",
-      "html_url": "https://github.com/pirupius",
-      "contributions": 9
+      "login": "openmrs-bot",
+      "id": 7291161,
+      "node_id": "MDQ6VXNlcjcyOTExNjE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7291161?v=4",
+      "html_url": "https://github.com/openmrs-bot",
+      "contributions": 1
     },
     {
-      "login": "vasharma05",
-      "id": 51502471,
-      "node_id": "MDQ6VXNlcjUxNTAyNDcx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/51502471?v=4",
-      "html_url": "https://github.com/vasharma05",
-      "contributions": 113
-    },
-    {
-      "login": "Bharath-K-Shetty",
-      "id": 173593621,
-      "node_id": "U_kgDOCljUFQ",
-      "avatar_url": "https://avatars.githubusercontent.com/u/173593621?v=4",
-      "html_url": "https://github.com/Bharath-K-Shetty",
+      "login": "npnorman",
+      "id": 118709193,
+      "node_id": "U_kgDOBxNbyQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/118709193?v=4",
+      "html_url": "https://github.com/npnorman",
       "contributions": 6
     },
     {
-      "login": "CynthiaKamau",
-      "id": 19533785,
-      "node_id": "MDQ6VXNlcjE5NTMzNzg1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/19533785?v=4",
-      "html_url": "https://github.com/CynthiaKamau",
-      "contributions": 178
+      "login": "ZhenanYin",
+      "id": 44460093,
+      "node_id": "MDQ6VXNlcjQ0NDYwMDkz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/44460093?v=4",
+      "html_url": "https://github.com/ZhenanYin",
+      "contributions": 6
     },
     {
-      "login": "kdaud",
-      "id": 38831673,
-      "node_id": "MDQ6VXNlcjM4ODMxNjcz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/38831673?v=4",
-      "html_url": "https://github.com/kdaud",
-      "contributions": 9
-    },
-    {
-      "login": "donaldkibet",
-      "id": 28008754,
-      "node_id": "MDQ6VXNlcjI4MDA4NzU0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/28008754?v=4",
-      "html_url": "https://github.com/donaldkibet",
-      "contributions": 111
-    },
-    {
-      "login": "gitcliff",
-      "id": 46714226,
-      "node_id": "MDQ6VXNlcjQ2NzE0MjI2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/46714226?v=4",
-      "html_url": "https://github.com/gitcliff",
-      "contributions": 5
-    },
-    {
-      "login": "UNCANNY69",
-      "id": 85500670,
-      "node_id": "MDQ6VXNlcjg1NTAwNjcw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/85500670?v=4",
-      "html_url": "https://github.com/UNCANNY69",
-      "contributions": 4
-    },
-    {
-      "login": "jayasanka-sack",
-      "id": 33048395,
-      "node_id": "MDQ6VXNlcjMzMDQ4Mzk1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/33048395?v=4",
-      "html_url": "https://github.com/jayasanka-sack",
-      "contributions": 14
-    },
-    {
-      "login": "Twiineenock",
-      "id": 122885804,
-      "node_id": "U_kgDOB1MWrA",
-      "avatar_url": "https://avatars.githubusercontent.com/u/122885804?v=4",
-      "html_url": "https://github.com/Twiineenock",
+      "login": "christopherhochgesang",
+      "id": 35300978,
+      "node_id": "MDQ6VXNlcjM1MzAwOTc4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/35300978?v=4",
+      "html_url": "https://github.com/christopherhochgesang",
       "contributions": 3
     },
     {
-      "login": "MohamedAliMefteh",
-      "id": 155548713,
-      "node_id": "U_kgDOCUV8KQ",
-      "avatar_url": "https://avatars.githubusercontent.com/u/155548713?v=4",
-      "html_url": "https://github.com/MohamedAliMefteh",
-      "contributions": 3
-    },
-    {
-      "login": "Piumal1999",
-      "id": 27498587,
-      "node_id": "MDQ6VXNlcjI3NDk4NTg3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/27498587?v=4",
-      "html_url": "https://github.com/Piumal1999",
-      "contributions": 2
-    },
-    {
-      "login": "jwnasambu",
-      "id": 33891016,
-      "node_id": "MDQ6VXNlcjMzODkxMDE2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/33891016?v=4",
-      "html_url": "https://github.com/jwnasambu",
-      "contributions": 19
-    },
-    {
-      "login": "gracepotma",
-      "id": 67400059,
-      "node_id": "MDQ6VXNlcjY3NDAwMDU5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/67400059?v=4",
-      "html_url": "https://github.com/gracepotma",
-      "contributions": 8
-    },
-    {
-      "login": "kajambiya",
-      "id": 12844964,
-      "node_id": "MDQ6VXNlcjEyODQ0OTY0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/12844964?v=4",
-      "html_url": "https://github.com/kajambiya",
-      "contributions": 2
-    },
-    {
-      "login": "arodidev",
-      "id": 51090527,
-      "node_id": "MDQ6VXNlcjUxMDkwNTI3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/51090527?v=4",
-      "html_url": "https://github.com/arodidev",
-      "contributions": 2
-    },
-    {
-      "login": "harshthakkr",
-      "id": 139233593,
-      "node_id": "U_kgDOCEyJOQ",
-      "avatar_url": "https://avatars.githubusercontent.com/u/139233593?v=4",
-      "html_url": "https://github.com/harshthakkr",
-      "contributions": 2
-    },
-    {
-      "login": "suubi-joshua",
-      "id": 78343336,
-      "node_id": "MDQ6VXNlcjc4MzQzMzM2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/78343336?v=4",
-      "html_url": "https://github.com/suubi-joshua",
-      "contributions": 1
-    },
-    {
-      "login": "elishabantana",
-      "id": 35806222,
-      "node_id": "MDQ6VXNlcjM1ODA2MjIy",
-      "avatar_url": "https://avatars.githubusercontent.com/u/35806222?v=4",
-      "html_url": "https://github.com/elishabantana",
-      "contributions": 1
-    },
-    {
-      "login": "chibongho",
-      "id": 509602,
-      "node_id": "MDQ6VXNlcjUwOTYwMg==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/509602?v=4",
-      "html_url": "https://github.com/chibongho",
-      "contributions": 90
-    },
-    {
-      "login": "mogoodrich",
-      "id": 1163015,
-      "node_id": "MDQ6VXNlcjExNjMwMTU=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1163015?v=4",
-      "html_url": "https://github.com/mogoodrich",
-      "contributions": 65
-    },
-    {
-      "login": "ayush-AI",
-      "id": 54752747,
-      "node_id": "MDQ6VXNlcjU0NzUyNzQ3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/54752747?v=4",
-      "html_url": "https://github.com/ayush-AI",
-      "contributions": 49
-    },
-    {
-      "login": "brandones",
-      "id": 1031876,
-      "node_id": "MDQ6VXNlcjEwMzE4NzY=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1031876?v=4",
-      "html_url": "https://github.com/brandones",
-      "contributions": 40
-    },
-    {
-      "login": "FlorianRappl",
-      "id": 1766191,
-      "node_id": "MDQ6VXNlcjE3NjYxOTE=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1766191?v=4",
-      "html_url": "https://github.com/FlorianRappl",
-      "contributions": 39
-    },
-    {
-      "login": "makombe",
-      "id": 4432218,
-      "node_id": "MDQ6VXNlcjQ0MzIyMTg=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/4432218?v=4",
-      "html_url": "https://github.com/makombe",
-      "contributions": 38
-    },
-    {
-      "login": "usamaidrsk",
-      "id": 53287480,
-      "node_id": "MDQ6VXNlcjUzMjg3NDgw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/53287480?v=4",
-      "html_url": "https://github.com/usamaidrsk",
-      "contributions": 32
-    },
-    {
-      "login": "manuelroemer",
-      "id": 30902964,
-      "node_id": "MDQ6VXNlcjMwOTAyOTY0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/30902964?v=4",
-      "html_url": "https://github.com/manuelroemer",
-      "contributions": 23
-    },
-    {
-      "login": "mseaton",
-      "id": 356297,
-      "node_id": "MDQ6VXNlcjM1NjI5Nw==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/356297?v=4",
-      "html_url": "https://github.com/mseaton",
-      "contributions": 16
-    },
-    {
-      "login": "gabriel090",
-      "id": 8075969,
-      "node_id": "MDQ6VXNlcjgwNzU5Njk=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/8075969?v=4",
-      "html_url": "https://github.com/gabriel090",
-      "contributions": 13
-    },
-    {
-      "login": "kb019",
-      "id": 115476530,
-      "node_id": "U_kgDOBuIIMg",
-      "avatar_url": "https://avatars.githubusercontent.com/u/115476530?v=4",
-      "html_url": "https://github.com/kb019",
-      "contributions": 12
-    },
-    {
-      "login": "mccarthyaaron",
-      "id": 121826239,
-      "node_id": "U_kgDOB0Lrvw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/121826239?v=4",
-      "html_url": "https://github.com/mccarthyaaron",
-      "contributions": 11
-    },
-    {
-      "login": "ZacButko",
-      "id": 5445264,
-      "node_id": "MDQ6VXNlcjU0NDUyNjQ=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/5445264?v=4",
-      "html_url": "https://github.com/ZacButko",
-      "contributions": 10
-    },
-    {
-      "login": "Muppasanipraneeth",
-      "id": 141117659,
-      "node_id": "U_kgDOCGlI2w",
-      "avatar_url": "https://avatars.githubusercontent.com/u/141117659?v=4",
-      "html_url": "https://github.com/Muppasanipraneeth",
-      "contributions": 10
-    },
-    {
-      "login": "RandilaP",
-      "id": 106733522,
-      "node_id": "U_kgDOBlyf0g",
-      "avatar_url": "https://avatars.githubusercontent.com/u/106733522?v=4",
-      "html_url": "https://github.com/RandilaP",
-      "contributions": 9
-    },
-    {
-      "login": "rbuisson",
-      "id": 10692811,
-      "node_id": "MDQ6VXNlcjEwNjkyODEx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/10692811?v=4",
-      "html_url": "https://github.com/rbuisson",
-      "contributions": 9
-    },
-    {
-      "login": "jnsereko",
-      "id": 58003327,
-      "node_id": "MDQ6VXNlcjU4MDAzMzI3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/58003327?v=4",
-      "html_url": "https://github.com/jnsereko",
-      "contributions": 9
+      "login": "dkayiwa",
+      "id": 1390773,
+      "node_id": "MDQ6VXNlcjEzOTA3NzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1390773?v=4",
+      "html_url": "https://github.com/dkayiwa",
+      "contributions": 310
     }
   ],
   "activeOrg": true

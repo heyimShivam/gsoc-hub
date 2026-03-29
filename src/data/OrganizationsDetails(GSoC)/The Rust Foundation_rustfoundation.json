@@ -23,7 +23,8 @@
   "facebook_url": null,
   "year": [
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2024": [
@@ -109,7 +110,171 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/rk1Ey4hN"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Modernising the libc Crate",
+        "short_description": "The libc crate has been a core part of Rust since its early days, making breaking changes increasingly difficult over time. Redundant and legacy code...",
+        "description": "The libc crate has been a core part of Rust since its early days, making breaking changes increasingly difficult over time. Redundant and legacy code have complicated maintenance. This project aims to release a new major version of libc, introducing breaking changes and improving the testing infrastructure to ensure better long-term maintainability.",
+        "student_name": "Abdul Muiz",
+        "code_url": "https://github.com/mbyx/gsoc25_blog/blob/5fd32d35ea4237b2f586f0d8abceeb2dabd86139/_posts/2025-09-01-work_submission.markdown",
+        "proposal_id": "uXE1dZY2",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/r3LkZkOy"
+      },
+      {
+        "title": "Add safety contracts",
+        "short_description": "There is ongoing work to instrument the Rust standard library with safety contracts. Based on a discussion by the Formal Verification Working Group...",
+        "description": "There is ongoing work to instrument the Rust standard library with safety contracts. Based on a discussion by the Formal Verification Working Group there is still a lot of work to leverage the power of separation logic in contracts, and make it compatible with existing tools that use separation logic. The nature of my contribution would be more research-oriented, since a very good understanding of the connection between separation logic, existing tools and what we can and need to support in Rust contracts is necessary. Based on this research, a successful project should deliver the appropriate code contributions to support (partially or fully) separation logic in Rust contracts, and ideally demonstrate its compatibility with existing tools by tackling selected challenges in the Verify Rust Std Lib project.",
+        "student_name": "Dawid Lachowicz",
+        "code_url": "https://gist.github.com/dawidl022/e7ec4e1674156dd43c58e76e05267abe",
+        "proposal_id": "fkcac6gI",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/UYWEKUkd"
+      },
+      {
+        "title": "Bootstrap of rustc with rustc_codegen_gcc",
+        "short_description": "Currently, the new, experimental GCC based compiler backend for Rust(`rustc_codegeng_gcc`) is not able to build the Rust compiler. The goal of this...",
+        "description": "Currently, the new, experimental GCC based compiler backend for Rust(`rustc_codegeng_gcc`) is not able to build the Rust compiler.\n\nThe goal of this proposal is to add the fixes and features necessary for `cg_gcc` to build a fully functional stage 2(and possibly 3) of the Rust compiler. This will require adding support for 128 bit SwitchInt terminators, fixing recursive `#[inline(always)]`, and plugging some soundness holes within the backend.\n\nThis should help the GCC based codegen become more mature. In the future, this could also open the way towards building and running the Rust compiler on platforms not supported by LLVM.\n\nImproving this codegen backend could allow Rust to be used in more places, speeding up the language's adoption.",
+        "student_name": "Fractal Fir",
+        "code_url": "https://fractalfir.github.io/generated_html/gsoc_2025_wp.html",
+        "proposal_id": "i8ZQ8OIl",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/KmfCY0i6"
+      },
+      {
+        "title": "Make Rustup Concurrent",
+        "short_description": "Rustup is the official toolchain installer and version manager for the Rust programming language. The current implementation of Rustup processes...",
+        "description": "Rustup is the official toolchain installer and version manager for the Rust programming language. The current implementation of Rustup processes operations sequentially, downloading components one at a time and performing extraction and installation in order. This approach does not fully leverage the capabilities of modern hardware, particularly on systems with multi-core processors and high-bandwidth connections. A potential solution is to introduce concurrency into the implementation, enabling parallel processing of these tasks to better utilize system resources, leading to a more performant Rustup.",
+        "student_name": "Francisco Gouveia",
+        "code_url": "https://web.tecnico.ulisboa.pt/francisco.t.gouveia/posts/03-gsoc-final-report/",
+        "proposal_id": "zF6wjcjj",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/CpXV4kzH"
+      },
+      {
+        "title": "Prototype an alternative architecture for cargo fix using cargo check",
+        "short_description": "The current implementation of cargo fix is quite slow and makes extra calls to rustc slowing down the process. A simplified architecture would also...",
+        "description": "The current implementation of cargo fix is quite slow and makes extra calls to rustc slowing down the process. A simplified architecture would also make it easier to add features to cargo fix. This project aims to create a new prototype version of cargo fix that uses cargo check instead of calling rustc directly.",
+        "student_name": "Glen Thalakottur",
+        "code_url": "https://gist.github.com/Pyr0de/363ef42d31364003a534059e02690565",
+        "proposal_id": "Dxonkkz4",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/fBOCR2Sp"
+      },
+      {
+        "title": "Distributed and resource-efficient verification",
+        "short_description": "Reduce CI time in verify-rust-std repo by offloading proof verification to multiple Github Runner machines to run verification in parallel, and more...",
+        "description": "Reduce CI time in verify-rust-std repo by offloading proof verification to multiple Github Runner machines to run verification in parallel, and more importantly only verifying needed proofs by skipping proofs where no code related is modified as more and more proofs are added.",
+        "student_name": "Jiping Zhou",
+        "code_url": "https://github.com/os-checker/distributed-verification/blob/f480981dbf529a25ae50e4cc799e5398165fc325/GSoC2025.md",
+        "proposal_id": "aTmqiED2",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/5677hd6S"
+      },
+      {
+        "title": "Make cargo-semver-checks faster",
+        "short_description": "cargo-semver-checks is a development tool that allows rust libraries to check whether a release breaks semver by running lints on the API. For...",
+        "description": "cargo-semver-checks is a development tool that allows rust libraries to check whether a release breaks semver by running lints on the API. For example, it can detect whether an enum not marked #[non_exhaustive] has additional members added, and warn that this is a major breaking change. However, cargo-semver-checks can take a long time to run, and for many users, is the longest step in their CI. On top of that, the number of lints implemented is nearly doubling each year. \n\nThe core of this project's work is:\n(1) Constructing a performance tracing tool that is capable of identifying bottlenecks and hotspots in trustfall’s execution model, and \n(2) Using this tool to implement performance improvements, most likely in the database adapter level in trustfall-rustdoc-adapter, with the goal of reducing runtime by 50-80%.",
+        "student_name": "Joseph Chung",
+        "code_url": "https://clidragon.github.io/blog/gsoc-2025/",
+        "proposal_id": "BjZ1rpWu",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/qs2rDLG4"
+      },
+      {
+        "title": "Mapping the Maze of Rust's UI Test Suite with Established Continuous Integration Practices",
+        "short_description": "Despite `tests/ui`'s usefulness to maintainers, it acts as a barrier to new contributors - with how expansive it is, major pull requests can break...",
+        "description": "Despite `tests/ui`'s usefulness to maintainers, it acts as a barrier to new contributors - with how expansive it is, major pull requests can break tiny, unexpected checks among the thousands of tests. The process of finding which part of your PR is breaking the test written 10 years ago with no documentation is commonly known as \"very fun\".\n\nThis project will reorganize the UI directory with measures such as metadata tagging by category, identification of duplicate tests, as well as detection of tests which do not do anything or do not test what they are trying to.",
+        "student_name": "Julien Robert",
+        "code_url": "https://oneirical.github.io/25-09-27gsoc/",
+        "proposal_id": "Vjb0T1sk",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/KP02lKL4"
+      },
+      {
+        "title": "Improve Wild linker test suites",
+        "short_description": "This project aims to enhance the testing of the Wild linker by leveraging existing linker test suites, providing strong support for its development....",
+        "description": "This project aims to enhance the testing of the Wild linker by leveraging existing linker test suites, providing strong support for its development. Develop some programs that apply existing linker test suites to Wild, automatically categorizes the results to some extent, and visualizes them in a format that allows Wild developers to easily review them.\nSubsequent work will focus on a variety of improvements to Wild, including adding support for new architectures, fixing existing bugs, implementing new features, and more.",
+        "student_name": "Kei Akiyama",
+        "code_url": "https://lapla.dev/posts/gsoc_final/",
+        "proposal_id": "Oxj4azl3",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/ps99Kaqk"
+      },
+      {
+        "title": "Parallel Macro Expansion",
+        "short_description": "A lot of work has been done to parallelize the Rust compiler frontend, with notable success in code generation and some post-HIR lowering stages....",
+        "description": "A lot of work has been done to parallelize the Rust compiler frontend, with notable success in code generation and some post-HIR lowering stages. Other critical components, such as lexical parsing and macro expansion, are still implemented serially. Macro expansion is fundamental in Rust, enabling code generation at compile-time based on patterns and user-defined rules in the source code itself. However, due to dependencies between macros and the strict ordering of name resolution, its inherently sequential nature poses a significant challenge for parallelization.\nCurrently, macro expansion and import resolution are tightly coupled and executed sequentially, making parallel execution difficult. This project aims to develop a parallel and order-independent algorithm for these two processes, improving compiler performance while maintaining correctness. Addressing the dependencies and execution order constraints could significantly reduce compilation time and enhance the compiler's overall compilation speed.",
+        "student_name": "Lorrens Pantelis",
+        "code_url": "https://lorrens.me/2025/10/26/GSoC-Parallel-Macro-Expansion.html",
+        "proposal_id": "hsG6Nh5f",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/SBW3GMno"
+      },
+      {
+        "title": "Extend behavioural testing of std::arch intrinsics",
+        "short_description": "Rust's std::arch module houses vendor-specific intrinsics (low-level functions that typically correspond to single machine instructions) which are...",
+        "description": "Rust's std::arch module houses vendor-specific intrinsics (low-level functions that typically correspond to single machine instructions) which are intended to be used by other libraries.\n\nCurrently, there is good coverage of type-based tests and instruction-based tests (checking if the assembly instruction generated is correct) in std::arch, however behavioural tests (checking if the Rust implementation of the intrinsic has the same behaviour as the C implementation) cover only the aarch32 and aarch64 targets.\n\nThis project intends to restructure the way behavioral testing is performed, so that it is simpler to extend coverage to more targets in future. Additionally this project also intends to extend behavioral testing to x86, Wasm32 and LoongArch targets.",
+        "student_name": "Madhav Madhusoodanan",
+        "code_url": "https://hackmd.io/@madhav-madhusoodanan/extend-behavioural-testing-of-stdarch-intrinsics",
+        "proposal_id": "rfAtzzAz",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/DeMQAjwi"
+      },
+      {
+        "title": "Prepare stable_mir crate for publishing",
+        "short_description": "StableMIR aims to provide a stable Rust compiler interface via a stable_mir crate on crates.io, shielding external tools from internal changes....",
+        "description": "StableMIR aims to provide a stable Rust compiler interface via a stable_mir crate on crates.io, shielding external tools from internal changes. Currently, the dependency between stable_mir and rustc_smir requires hard-coded versions in the rustc_smir crate, making it harder for the user to select which stable_mir crate to depend on. This project will invert the dependency, refactor the crates, and establish infrastructure—including build checks, testing workflows, and automation, easing maintenance for rustc developers and future contributors.",
+        "student_name": "Makai",
+        "code_url": "https://makai410.dev/posts/gsoc-25-final/",
+        "proposal_id": "2pRTlIy6",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/3y9x5X8O"
+      },
+      {
+        "title": "Cargo: Build script delegation",
+        "short_description": "This project aims to overcome the limitations of the current Build Script system by allowing multiple, well-organised build scripts, that are...",
+        "description": "This project aims to overcome the limitations of the current Build Script system by allowing multiple, well-organised build scripts, that are optional and run only when required. This approach will require less auditing, will enhance the build transparency and reduce the compile-time overhead.\n\nBuild scripts in Rust facilitate compiling and linking 3rd party code, such as existing C/C++ libraries, before building a package. They are immensely important for interoperability since it prevents replacing/rewriting the already existing tools that are well-optimized for their tasks. \n\nHowever, the current build system has certain limitations. Only one build script is allowed per package, and it must be run before building the package, often causing unnecessary computation (e.g., during unit tests). Single Large script needs extra auditing, increase compile-time, and reduce transparency for third-party build tools, especially while passing parameters. They also cannot run unit tests within themselves.\n\nThis project aims to overcome the above limitations by allowing multiple, well-organized build scripts that can be run directly from the Cargo.toml. These scripts are optional and run only when required, avoiding unnecessary expensive logic. With this, only the shared build scripts will need auditing. This approach enhances build transparency, reduces compile-time overhead, and even enables unit testing of build scripts if they are treated as a dedicated package.",
+        "student_name": "Naman Garg ( namanlp )",
+        "code_url": "https://gist.github.com/namanlp/90f96165d92f848b0452b34c68892a1c",
+        "proposal_id": "lDLOfMGc",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/nUt4PdAA"
+      },
+      {
+        "title": "ABI/Layout handling for the automatic differentiation feature",
+        "short_description": "The integration of automatic differentiation (autodiff) into the Rust compiler via Enzyme faces challenges due to ABI adjustments that alter function...",
+        "description": "The integration of automatic differentiation (autodiff) into the Rust compiler via Enzyme faces challenges due to ABI adjustments that alter function signatures. These transformations, while beneficial for performance, interfere with autodiff functionality, leading to incorrect differentiation.\n\nThis project aims to prevent unwanted ABI adjustments for functions marked with #[rustc_autodiff], ensuring autodiff functions maintain their intended behavior without affecting other optimizations. The approach involves modifying Rust’s function ABI handling to recognize and preserve differentiation-related information. Key steps include identifying problematic transformations, encoding autodiff metadata in FnAbi, and preventing ABI changes that break autodiff.\n\nBy addressing these challenges, the project will improve autodiff support in Rust, making it more reliable and consistent while preserving compiler efficiency.",
+        "student_name": "Sa4dUs",
+        "code_url": "https://sa4dus.github.io/posts/gsoc2025-final-report/",
+        "proposal_id": "a6pq51Th",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/USQvru7i"
+      },
+      {
+        "title": "Implement merge functionality in bors",
+        "short_description": "Various Rust repositories under the rust-lang organization use a merge queue bot, bors, for testing and merging pull requests. This project aims to...",
+        "description": "Various Rust repositories under the rust-lang organization use a merge queue bot, bors, for testing and merging pull requests. This project aims to complete the remaining functionality required to make the new bors bot usable on the rust-lang/rust repository, replacing the legacy bot homu. This includes implementing PR merges, rollup support, and the queue website.",
+        "student_name": "Sakibul Islam",
+        "code_url": "https://sakib25800.notion.site/Google-Summer-of-Code-2025-Implement-merge-functionality-in-bors-25ca1a53f49280a88ecdf72b00cb912d",
+        "proposal_id": "5dB7oEle",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/HlR12jqX"
+      },
+      {
+        "title": "Improve bootstrap",
+        "short_description": "This project aims to enhance the testability of Bootstrap and make it faster, the Rust build system, by improving its architecture, refining its...",
+        "description": "This project aims to enhance the testability of Bootstrap and make it faster, the Rust build system, by improving its architecture, refining its configuration handling, and establishing a robust testing framework. It will ublock on centralizing command execution, minimizing unnecessary I/O operations and implementing testing framework. These improvements will make Bootstrap more maintainable, fast, and easier to develop and test.",
+        "student_name": "Shourya Sharma",
+        "code_url": "https://gist.github.com/Shourya742/b15bbbfdc49c98060171a0bf487c4164",
+        "proposal_id": "7Vv1Pm6B",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/2KNHAlKz"
+      },
+      {
+        "title": "Enable Witness Generation in cargo-semver-checks",
+        "short_description": "The crate cargo-semver-checks provides feedback to user based on what possible breaking changes they may have made, which as per semantic versioning...",
+        "description": "The crate cargo-semver-checks provides feedback to user based on what possible breaking changes they may have made, which as per semantic versioning may require that the user accordingly update the semantic version of their library. This ensures that major breaking changes do not occur without notice. However, the feedback from cargo-semver-checks is not always the easiest to understand, in that whatever problem may actually be present is not always obvious. Additionally, cargo-semver-checks sometimes suffers from false-positive, where it detects a breaking change where there is none. \n\nThis project proposes to remedy many of these issues by leveraging the existing lint data to implement so-called \"witness programs\", which are designed to demonstrate the breaking change by compiling successfully on a baseline version of the crate being tested, but failing to compile on the new version, due to the error caused by the breaking change.\n\nThe plan is, following some research at the start, to implement a basic witness system that allows for additional internal queries and generation of a witness program from a template. Following that, implement automated testing of these witness programs to verify they do fail when expected. In the event of an unexpected behaviour, the system should be designed to provide the user with diagnostic information and an easy way to submit an issue to the cargo-semver-checks team. Lastly, these witness program templates then need to be written en masse, utilizing the now created system to provide these witness programs to as many lints as possible. Ideally, by the end of the Google Summer of Code program, 80% of the current lints should have witness program templates. \n\nAdditionally, it is planned to continuously engage with the Rust community so as to both inform members of the progress of this proposal, but also to encourage accountability over the process of developing this project.",
+        "student_name": "Talyn Veugelers",
+        "code_url": "https://glitchlesscode.ca/posts/2025-11-05a/",
+        "proposal_id": "ac3wp2Fb",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/MMRSG9WU"
+      },
+      {
+        "title": "Prototype Cargo Plumbing Commands",
+        "short_description": "This project prototypes a new set of Cargo plumbing commands, aligned with Rust’s 2025H1 project goals. Plumbing commands are lower-level, less...",
+        "description": "This project prototypes a new set of Cargo plumbing commands, aligned with Rust’s 2025H1 project goals. Plumbing commands are lower-level, less opinionated commands to interact with the Cargo API. By focusing on lower-level functionality, this project aims to better support Cargo users’ specific processes and use cases. Moreover, the introduction of these new Cargo plumbing commands aims to fix current issues of existing commands and improve their integration.",
+        "student_name": "Vito Secona",
+        "code_url": "https://hackmd.io/@secona/gsoc-2025-final-report",
+        "proposal_id": "1DfblSyM",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/fTDzc0sk"
+      }
+    ],
+    "2026": []
   },
   "githubID": "rustfoundation",
   "repositories": [
@@ -121,9 +286,9 @@
       "html_url": "https://github.com/rustfoundation/safety-critical-rust-coding-guidelines",
       "description": "Coding Guidelines for Safety Critical Rust developed by the Safety Critical Rust Consortium.",
       "language": "Python",
-      "stargazers_count": 16,
-      "forks_count": 14,
-      "open_issues_count": 37,
+      "stargazers_count": 73,
+      "forks_count": 37,
+      "open_issues_count": 145,
       "license": {
         "key": "other",
         "name": "Other",
@@ -140,16 +305,121 @@
       "full_name": "rustfoundation/safety-critical-rust-consortium",
       "html_url": "https://github.com/rustfoundation/safety-critical-rust-consortium",
       "description": "Documentation, code and information for the Safety Critical Rust Consortium",
-      "language": "TypeScript",
-      "stargazers_count": 72,
-      "forks_count": 26,
-      "open_issues_count": 32,
+      "language": "HTML",
+      "stargazers_count": 151,
+      "forks_count": 47,
+      "open_issues_count": 58,
       "license": {
         "key": "other",
         "name": "Other",
         "spdx_id": "NOASSERTION",
         "url": null,
         "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 876439352,
+      "node_id": "R_kgDOND1nOA",
+      "name": "interop-initiative",
+      "full_name": "rustfoundation/interop-initiative",
+      "html_url": "https://github.com/rustfoundation/interop-initiative",
+      "description": "In collaboration with the Rust Foundation, Rust Project, and appropriate external stakeholders, make C++ and Rust interoperability easily accessible and approachable to the widest possible audience.",
+      "language": null,
+      "stargazers_count": 76,
+      "forks_count": 18,
+      "open_issues_count": 33,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": [
+        "cplusplus",
+        "interop",
+        "interoperability",
+        "rust"
+      ]
+    },
+    {
+      "id": 1037550032,
+      "node_id": "R_kgDOPdfB0A",
+      "name": "rust-innovation-lab",
+      "full_name": "rustfoundation/rust-innovation-lab",
+      "html_url": "https://github.com/rustfoundation/rust-innovation-lab",
+      "description": "The Rust Innovation Lab (RIL) is a program that allows relevant and interested open source projects to receive fiscal sponsorship from the Rust Foundation including legal, networking, administrative, marketing, and governance support. Here you will find policies that govern participation in the RIL.",
+      "language": null,
+      "stargazers_count": 3,
+      "forks_count": 1,
+      "open_issues_count": 2,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 1103662832,
+      "node_id": "R_kgDOQciO8A",
+      "name": "cargo-capslock",
+      "full_name": "rustfoundation/cargo-capslock",
+      "html_url": "https://github.com/rustfoundation/cargo-capslock",
+      "description": "Experimental tool for Rust capability analysis",
+      "language": "Rust",
+      "stargazers_count": 7,
+      "forks_count": 1,
+      "open_issues_count": 0,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 1075531198,
+      "node_id": "R_kgDOQBtNvg",
+      "name": "safety-critical-rust-consortium-rfcs",
+      "full_name": "rustfoundation/safety-critical-rust-consortium-rfcs",
+      "html_url": "https://github.com/rustfoundation/safety-critical-rust-consortium-rfcs",
+      "description": "RFCs for the Safety Critical Rust Consortium",
+      "language": null,
+      "stargazers_count": 4,
+      "forks_count": 2,
+      "open_issues_count": 3,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 1041979148,
+      "node_id": "R_kgDOPhtXDA",
+      "name": "rust-innovation-lab-new-project-template",
+      "full_name": "rustfoundation/rust-innovation-lab-new-project-template",
+      "html_url": "https://github.com/rustfoundation/rust-innovation-lab-new-project-template",
+      "description": "A template repository to base Rust Innovation Lab projects upon",
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
       },
       "topics": []
     },
@@ -161,9 +431,9 @@
       "html_url": "https://github.com/rustfoundation/painter",
       "description": "Library and tools for managing ecosystem wide call graphs and llvm-ir analysis",
       "language": "Rust",
-      "stargazers_count": 169,
-      "forks_count": 5,
-      "open_issues_count": 2,
+      "stargazers_count": 182,
+      "forks_count": 6,
+      "open_issues_count": 4,
       "license": {
         "key": "other",
         "name": "Other",
@@ -181,7 +451,7 @@
       "html_url": "https://github.com/rustfoundation/foundation.rust-lang.org",
       "description": "website for Rust Foundation",
       "language": "Nunjucks",
-      "stargazers_count": 27,
+      "stargazers_count": 30,
       "forks_count": 33,
       "open_issues_count": 7,
       "license": {
@@ -194,26 +464,6 @@
       "topics": []
     },
     {
-      "id": 876439352,
-      "node_id": "R_kgDOND1nOA",
-      "name": "interop-initiative",
-      "full_name": "rustfoundation/interop-initiative",
-      "html_url": "https://github.com/rustfoundation/interop-initiative",
-      "description": "In collaboration with the Rust Foundation, Rust Project, and appropriate external stakeholders, make C++ and Rust interoperability easily accessible and approachable to the widest possible audience",
-      "language": null,
-      "stargazers_count": 53,
-      "forks_count": 2,
-      "open_issues_count": 0,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
       "id": 723197313,
       "node_id": "R_kgDOKxsdgQ",
       "name": "graciegregory-2023_survey",
@@ -221,7 +471,7 @@
       "html_url": "https://github.com/rustfoundation/graciegregory-2023_survey",
       "description": "The Rust Programming Language Blog",
       "language": "HTML",
-      "stargazers_count": 1,
+      "stargazers_count": 2,
       "forks_count": 0,
       "open_issues_count": 0,
       "license": {
@@ -241,9 +491,9 @@
       "html_url": "https://github.com/rustfoundation/typomania",
       "description": "A toolbox to check for typosquatting in package registries",
       "language": "Rust",
-      "stargazers_count": 24,
+      "stargazers_count": 30,
       "forks_count": 0,
-      "open_issues_count": 3,
+      "open_issues_count": 4,
       "license": {
         "key": "other",
         "name": "Other",
@@ -261,7 +511,7 @@
       "html_url": "https://github.com/rustfoundation/typomania-crates",
       "description": "An example of using typomania with a crates.io database dump",
       "language": "Rust",
-      "stargazers_count": 1,
+      "stargazers_count": 2,
       "forks_count": 0,
       "open_issues_count": 0,
       "license": {
@@ -281,7 +531,7 @@
       "html_url": "https://github.com/rustfoundation/bitflip-rs",
       "description": "Rust crate for generating bitflips of byte and UTF-8 strings",
       "language": "Rust",
-      "stargazers_count": 2,
+      "stargazers_count": 5,
       "forks_count": 0,
       "open_issues_count": 0,
       "license": {
@@ -301,15 +551,15 @@
       "node_id": "MDQ6VXNlcjExNjIyMTE5",
       "avatar_url": "https://avatars.githubusercontent.com/u/11622119?v=4",
       "html_url": "https://github.com/PLeVasseur",
-      "contributions": 41
+      "contributions": 88
     },
     {
-      "login": "JoelMarcey",
-      "id": 3757713,
-      "node_id": "MDQ6VXNlcjM3NTc3MTM=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/3757713?v=4",
-      "html_url": "https://github.com/JoelMarcey",
-      "contributions": 31
+      "login": "felix91gr",
+      "id": 11747623,
+      "node_id": "MDQ6VXNlcjExNzQ3NjIz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11747623?v=4",
+      "html_url": "https://github.com/felix91gr",
+      "contributions": 1
     },
     {
       "login": "x0rw",
@@ -317,14 +567,78 @@
       "node_id": "MDQ6VXNlcjE0MDAzMDE4",
       "avatar_url": "https://avatars.githubusercontent.com/u/14003018?v=4",
       "html_url": "https://github.com/x0rw",
-      "contributions": 5
+      "contributions": 11
     },
     {
-      "login": "AchimKriso",
-      "id": 197080153,
-      "node_id": "U_kgDOC780WQ",
-      "avatar_url": "https://avatars.githubusercontent.com/u/197080153?v=4",
-      "html_url": "https://github.com/AchimKriso",
+      "login": "JoelMarcey",
+      "id": 3757713,
+      "node_id": "MDQ6VXNlcjM3NTc3MTM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3757713?v=4",
+      "html_url": "https://github.com/JoelMarcey",
+      "contributions": 34
+    },
+    {
+      "login": "rcseacord",
+      "id": 3037076,
+      "node_id": "MDQ6VXNlcjMwMzcwNzY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3037076?v=4",
+      "html_url": "https://github.com/rcseacord",
+      "contributions": 1
+    },
+    {
+      "login": "plaindocs",
+      "id": 95874,
+      "node_id": "MDQ6VXNlcjk1ODc0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/95874?v=4",
+      "html_url": "https://github.com/plaindocs",
+      "contributions": 6
+    },
+    {
+      "login": "vapdrs",
+      "id": 48334845,
+      "node_id": "MDQ6VXNlcjQ4MzM0ODQ1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/48334845?v=4",
+      "html_url": "https://github.com/vapdrs",
+      "contributions": 7
+    },
+    {
+      "login": "MarcosBorgesPhD",
+      "id": 205091563,
+      "node_id": "U_kgDODDly6w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/205091563?v=4",
+      "html_url": "https://github.com/MarcosBorgesPhD",
+      "contributions": 4
+    },
+    {
+      "login": "iglesias",
+      "id": 1158006,
+      "node_id": "MDQ6VXNlcjExNTgwMDY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1158006?v=4",
+      "html_url": "https://github.com/iglesias",
+      "contributions": 4
+    },
+    {
+      "login": "AlexCeleste",
+      "id": 1959106,
+      "node_id": "MDQ6VXNlcjE5NTkxMDY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1959106?v=4",
+      "html_url": "https://github.com/AlexCeleste",
+      "contributions": 16
+    },
+    {
+      "login": "scrc-cg-pr-from-issue[bot]",
+      "id": 224646245,
+      "node_id": "BOT_kgDODWPUZQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/83618382?v=4",
+      "html_url": "https://github.com/apps/scrc-cg-pr-from-issue",
+      "contributions": 2
+    },
+    {
+      "login": "manhatsu",
+      "id": 86408910,
+      "node_id": "MDQ6VXNlcjg2NDA4OTEw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/86408910?v=4",
+      "html_url": "https://github.com/manhatsu",
       "contributions": 2
     },
     {
@@ -336,12 +650,28 @@
       "contributions": 1
     },
     {
-      "login": "AlexCeleste",
-      "id": 1959106,
-      "node_id": "MDQ6VXNlcjE5NTkxMDY=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1959106?v=4",
-      "html_url": "https://github.com/AlexCeleste",
-      "contributions": 4
+      "login": "vakriso",
+      "id": 197080153,
+      "node_id": "U_kgDOC780WQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/197080153?v=4",
+      "html_url": "https://github.com/vakriso",
+      "contributions": 2
+    },
+    {
+      "login": "adfernandes",
+      "id": 436770,
+      "node_id": "MDQ6VXNlcjQzNjc3MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/436770?v=4",
+      "html_url": "https://github.com/adfernandes",
+      "contributions": 9
+    },
+    {
+      "login": "Dillonmcewan",
+      "id": 5778334,
+      "node_id": "MDQ6VXNlcjU3NzgzMzQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5778334?v=4",
+      "html_url": "https://github.com/Dillonmcewan",
+      "contributions": 1
     },
     {
       "login": "Blindspot22",
@@ -350,14 +680,6 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/148756598?v=4",
       "html_url": "https://github.com/Blindspot22",
       "contributions": 1
-    },
-    {
-      "login": "iglesias",
-      "id": 1158006,
-      "node_id": "MDQ6VXNlcjExNTgwMDY=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1158006?v=4",
-      "html_url": "https://github.com/iglesias",
-      "contributions": 3
     },
     {
       "login": "skade",
@@ -376,11 +698,19 @@
       "contributions": 1
     },
     {
-      "login": "plaindocs",
-      "id": 95874,
-      "node_id": "MDQ6VXNlcjk1ODc0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/95874?v=4",
-      "html_url": "https://github.com/plaindocs",
+      "login": "darkwisebear",
+      "id": 3289071,
+      "node_id": "MDQ6VXNlcjMyODkwNzE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3289071?v=4",
+      "html_url": "https://github.com/darkwisebear",
+      "contributions": 9
+    },
+    {
+      "login": "Strange-Satwik",
+      "id": 90311556,
+      "node_id": "MDQ6VXNlcjkwMzExNTU2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/90311556?v=4",
+      "html_url": "https://github.com/Strange-Satwik",
       "contributions": 1
     },
     {
@@ -389,6 +719,14 @@
       "node_id": "MDQ6VXNlcjI1NDAyMDE4",
       "avatar_url": "https://avatars.githubusercontent.com/u/25402018?v=4",
       "html_url": "https://github.com/scrabsha",
+      "contributions": 2
+    },
+    {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "html_url": "https://github.com/apps/github-actions",
       "contributions": 1
     },
     {
@@ -397,7 +735,7 @@
       "node_id": "MDQ6VXNlcjI4MzgxNzc=",
       "avatar_url": "https://avatars.githubusercontent.com/u/2838177?v=4",
       "html_url": "https://github.com/alexandruradovici",
-      "contributions": 16
+      "contributions": 22
     },
     {
       "login": "MerrimanInd",
@@ -405,39 +743,7 @@
       "node_id": "MDQ6VXNlcjM4ODcxMzgz",
       "avatar_url": "https://avatars.githubusercontent.com/u/38871383?v=4",
       "html_url": "https://github.com/MerrimanInd",
-      "contributions": 4
-    },
-    {
-      "login": "vapdrs",
-      "id": 48334845,
-      "node_id": "MDQ6VXNlcjQ4MzM0ODQ1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/48334845?v=4",
-      "html_url": "https://github.com/vapdrs",
-      "contributions": 4
-    },
-    {
-      "login": "adfernandes",
-      "id": 436770,
-      "node_id": "MDQ6VXNlcjQzNjc3MA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/436770?v=4",
-      "html_url": "https://github.com/adfernandes",
-      "contributions": 3
-    },
-    {
-      "login": "darkwisebear",
-      "id": 3289071,
-      "node_id": "MDQ6VXNlcjMyODkwNzE=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/3289071?v=4",
-      "html_url": "https://github.com/darkwisebear",
-      "contributions": 3
-    },
-    {
-      "login": "jgust",
-      "id": 21278,
-      "node_id": "MDQ6VXNlcjIxMjc4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/21278?v=4",
-      "html_url": "https://github.com/jgust",
-      "contributions": 2
+      "contributions": 12
     },
     {
       "login": "jmqd",
@@ -445,6 +751,54 @@
       "node_id": "MDQ6VXNlcjE2ODc0MDQz",
       "avatar_url": "https://avatars.githubusercontent.com/u/16874043?v=4",
       "html_url": "https://github.com/jmqd",
+      "contributions": 4
+    },
+    {
+      "login": "pellico",
+      "id": 16132532,
+      "node_id": "MDQ6VXNlcjE2MTMyNTMy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16132532?v=4",
+      "html_url": "https://github.com/pellico",
+      "contributions": 4
+    },
+    {
+      "login": "manczak-ifx",
+      "id": 164331279,
+      "node_id": "U_kgDOCct_Dw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/164331279?v=4",
+      "html_url": "https://github.com/manczak-ifx",
+      "contributions": 3
+    },
+    {
+      "login": "rayslava",
+      "id": 640889,
+      "node_id": "MDQ6VXNlcjY0MDg4OQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/640889?v=4",
+      "html_url": "https://github.com/rayslava",
+      "contributions": 2
+    },
+    {
+      "login": "tshepang",
+      "id": 588486,
+      "node_id": "MDQ6VXNlcjU4ODQ4Ng==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/588486?v=4",
+      "html_url": "https://github.com/tshepang",
+      "contributions": 2
+    },
+    {
+      "login": "mhatzl",
+      "id": 49341624,
+      "node_id": "MDQ6VXNlcjQ5MzQxNjI0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/49341624?v=4",
+      "html_url": "https://github.com/mhatzl",
+      "contributions": 2
+    },
+    {
+      "login": "jgust",
+      "id": 21278,
+      "node_id": "MDQ6VXNlcjIxMjc4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21278?v=4",
+      "html_url": "https://github.com/jgust",
       "contributions": 2
     },
     {
@@ -456,6 +810,30 @@
       "contributions": 2
     },
     {
+      "login": "ComicSansMS",
+      "id": 1123655,
+      "node_id": "MDQ6VXNlcjExMjM2NTU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1123655?v=4",
+      "html_url": "https://github.com/ComicSansMS",
+      "contributions": 1
+    },
+    {
+      "login": "arnoox",
+      "id": 18502091,
+      "node_id": "MDQ6VXNlcjE4NTAyMDkx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/18502091?v=4",
+      "html_url": "https://github.com/arnoox",
+      "contributions": 1
+    },
+    {
+      "login": "blietaer",
+      "id": 38951944,
+      "node_id": "MDQ6VXNlcjM4OTUxOTQ0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/38951944?v=4",
+      "html_url": "https://github.com/blietaer",
+      "contributions": 1
+    },
+    {
       "login": "flba-eb",
       "id": 108917393,
       "node_id": "U_kgDOBn3ykQ",
@@ -464,13 +842,53 @@
       "contributions": 1
     },
     {
-      "login": "vjonaswolf",
-      "id": 171920110,
-      "node_id": "U_kgDOCj9K7g",
-      "avatar_url": "https://avatars.githubusercontent.com/u/171920110?v=4",
-      "html_url": "https://github.com/vjonaswolf",
+      "login": "squell",
+      "id": 4155359,
+      "node_id": "MDQ6VXNlcjQxNTUzNTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4155359?v=4",
+      "html_url": "https://github.com/squell",
       "contributions": 1
+    },
+    {
+      "login": "mikhailantoshkin",
+      "id": 51194616,
+      "node_id": "MDQ6VXNlcjUxMTk0NjE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51194616?v=4",
+      "html_url": "https://github.com/mikhailantoshkin",
+      "contributions": 1
+    },
+    {
+      "login": "fried-gluttony",
+      "id": 22733190,
+      "node_id": "MDQ6VXNlcjIyNzMzMTkw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/22733190?v=4",
+      "html_url": "https://github.com/fried-gluttony",
+      "contributions": 1
+    },
+    {
+      "login": "onixie",
+      "id": 817073,
+      "node_id": "MDQ6VXNlcjgxNzA3Mw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/817073?v=4",
+      "html_url": "https://github.com/onixie",
+      "contributions": 1
+    },
+    {
+      "login": "teor2345",
+      "id": 8951843,
+      "node_id": "MDQ6VXNlcjg5NTE4NDM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8951843?v=4",
+      "html_url": "https://github.com/teor2345",
+      "contributions": 40
+    },
+    {
+      "login": "baumanj",
+      "id": 5906042,
+      "node_id": "MDQ6VXNlcjU5MDYwNDI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5906042?v=4",
+      "html_url": "https://github.com/baumanj",
+      "contributions": 5
     }
   ],
-  "activeOrg": false
+  "activeOrg": true
 }

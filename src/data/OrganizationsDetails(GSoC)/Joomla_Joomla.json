@@ -27,11 +27,12 @@
     "html/css",
     "mysql",
     "html5/css3",
-    "cms"
+    "cms",
+    "ai"
   ],
-  "irc_channel": "https://joomlacommunity.cloud.mattermost.com/main/channels/gsoc-2025",
+  "irc_channel": "https://joomlacommunity.cloud.mattermost.com/main/channels/gsoc-2026",
   "contact_email": "mailto:gsoc@joomla.org",
-  "mailing_list": "c",
+  "mailing_list": "https://forms.gle/jE63n81vfctCTAeE7",
   "twitter_url": "https://twitter.com/joomla",
   "blog_url": "https://community.joomla.org/",
   "facebook_url": "https://www.facebook.com/joomla/",
@@ -42,7 +43,8 @@
     2019,
     2021,
     2022,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2016": [
@@ -313,109 +315,48 @@
         "project_url": "https://summerofcode.withgoogle.com/archive/2022/projects/XJwp022t/"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Joomla! AI framework",
+        "short_description": "The project’s objective is to smoothly incorporate an AI module library into Joomla CMS so that site managers, developers, and content producers can...",
+        "description": "The project’s objective is to smoothly incorporate an AI module library into\nJoomla CMS so that site managers, developers, and content producers can take\nadvantage of AI-powered tools for improved user engagement, content management, and creation. A few of the varied use cases that will be made possible by the integration’s adaptable framework, which supports a number of AI models\nand providers are:\n• Text Generation.\n• Image Creation.\n• Content Analysis.\n• Intelligent Search.",
+        "student_name": "CharviMehra",
+        "code_url": "https://github.com/joomla-projects/gsoc25_ai_framework",
+        "proposal_id": "qMbxlxcX",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/5xSLuReL"
+      },
+      {
+        "title": "Joomla CMS Workflow Enhancements",
+        "short_description": "The project aims to improve Joomla's workflow system by enhancing its UI and functionality. The current workflow implementation is not intuitive,...",
+        "description": "The project aims to improve Joomla's workflow system by enhancing its UI and functionality. The current workflow implementation is not intuitive, making it challenging for users to create, modify, and manage workflows effectively. The proposed solution includes a graphical workflow builder, predefined workflow templates, enhanced documentation, and thorough testing. The project will introduce drag-and-drop functionality, interactive flowcharts, and default workflow templates to streamline the process.",
+        "student_name": "Dileepadari",
+        "code_url": "https://gist.github.com/Dileepadari/3c887bf3cb647c7cfbcef0ef09952e73",
+        "proposal_id": "ZiZInVpQ",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/YX3u3lHq"
+      },
+      {
+        "title": "Modernizing and Enhancing the Joomla! Weblinks Extension",
+        "short_description": "The project is about making the Joomla! Weblinks tool work better with the newest Joomla! (version 5). First, I want to clean up the code so it...",
+        "description": "The project is about making the Joomla! Weblinks tool work better with the newest Joomla! (version 5).\n\nFirst, I want to clean up the code so it follows the latest rules and is easier for other programmers to understand and work on. This means organizing the codebase using the standard way Joomla! 5 builds things.\n\nSecond, I want to make sure Weblinks is really reliable. To do this, I'll be writing a lot of automated tests using Cypress. These tests will check if everything is working correctly, so we can catch and fix problems easily. I'm aiming for really good test coverage – checking almost everything important.\n\nThird, I'll be looking at the list of problems people have reported with Weblinks and trying to fix them. This will make the tool much better for everyone who uses it.\n\nFinally, I'll be updating the instructions and explanations (the documentation) for Weblinks. This will help people understand how to use it and help other programmers contribute to it in the future.\n\nI've planned out how I'll do all this over the summer, step by step. I'll start by working on the main parts of the tool, then add the tests, fix the problems, and update the instructions. If I have time at the end, I might even try to add a new feature to help manage how weblinks are used.",
+        "student_name": "Mahmoud Magdy",
+        "code_url": "https://github.com/joomla-projects/gsoc25_weblinks",
+        "proposal_id": "187L0OmX",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/xZ08EQgY"
+      },
+      {
+        "title": "Content Migration Between CMSs Using CCM & MDE",
+        "short_description": "Migrating content between different CMSs like Joomla, WordPress, and Drupal is challenging due to their distinct data structures. Traditional...",
+        "description": "Migrating content between different CMSs like Joomla, WordPress, and Drupal is challenging due to their distinct data structures. Traditional migration methods require custom tools for each CMS pair, leading to an O(n²) scalability problem. This project introduces a Common Content Model (CCM) as an intermediate format to simplify migrations to O(n) complexity. Using Model-Driven Engineering (MDE), we will dynamically adapt to various CMS schemas and automate migration script generation.\n\nThe solution will be a Joomla component acting as a universal mediator to extract and transform content between CMSs. It can be installed on any Joomla instance, either directly or as a temporary migration app to handle API-based content migration between any CMSs.\n\nThis project reduces development overhead, enables reusable migration structure, and positions Joomla as a central hub for content exchange across platforms.\n\nDeliverables:\n* CCM Joomla Component: A standalone migration component built for Joomla.\n* WordPress-to-Joomla Migration: Real implementation example using the CCM.\n* Testing Suite: Unit, integration, and E2E tests to ensure migration reliability.\n* Documentation: Clear guides for extending to other CMSs.",
+        "student_name": "Reem Atalah",
+        "code_url": "https://github.com/joomla-projects/gsoc25_api",
+        "proposal_id": "xs69HGEp",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/n5xuzOro"
+      }
+    ],
+    "2026": []
   },
   "githubID": "Joomla",
   "repositories": [
-    {
-      "id": 85763085,
-      "node_id": "MDEwOlJlcG9zaXRvcnk4NTc2MzA4NQ==",
-      "name": "downloads.joomla.org",
-      "full_name": "joomla/downloads.joomla.org",
-      "html_url": "https://github.com/joomla/downloads.joomla.org",
-      "description": "Repository holding custom extensions in use on the Joomla! Downloads Portal",
-      "language": "JavaScript",
-      "stargazers_count": 17,
-      "forks_count": 14,
-      "open_issues_count": 11,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 516419915,
-      "node_id": "R_kgDOHsfxSw",
-      "name": "Manual",
-      "full_name": "joomla/Manual",
-      "html_url": "https://github.com/joomla/Manual",
-      "description": "Joomla Developer Documentation",
-      "language": "JavaScript",
-      "stargazers_count": 32,
-      "forks_count": 85,
-      "open_issues_count": 38,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": [
-        "documentation",
-        "hacktoberfest",
-        "joomla"
-      ]
-    },
-    {
-      "id": 2464908,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNDY0OTA4",
-      "name": "joomla-cms",
-      "full_name": "joomla/joomla-cms",
-      "html_url": "https://github.com/joomla/joomla-cms",
-      "description": "Home of the Joomla! Content Management System",
-      "language": "PHP",
-      "stargazers_count": 4918,
-      "forks_count": 3714,
-      "open_issues_count": 1038,
-      "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
-      },
-      "topics": [
-        "cms",
-        "content-management",
-        "ha",
-        "hacktoberfest",
-        "joomla",
-        "multilingual-websites",
-        "php",
-        "php-cms",
-        "website-builder"
-      ]
-    },
-    {
-      "id": 471951308,
-      "node_id": "R_kgDOHCFnzA",
-      "name": "updates",
-      "full_name": "joomla/updates",
-      "html_url": "https://github.com/joomla/updates",
-      "description": "The signed Updates repository for Joomla! core",
-      "language": null,
-      "stargazers_count": 0,
-      "forks_count": 2,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 378232923,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzNzgyMzI5MjM=",
-      "name": "core-translations",
-      "full_name": "joomla/core-translations",
-      "html_url": "https://github.com/joomla/core-translations",
-      "description": "The repository to store the Source and Translations for the Joomla Core (CMS). Connected to the Crowdin Translation Platform and other repositories if needed.",
-      "language": "PHP",
-      "stargazers_count": 16,
-      "forks_count": 35,
-      "open_issues_count": 7,
-      "license": null,
-      "topics": [
-        "joomla",
-        "translation"
-      ]
-    },
     {
       "id": 6099080,
       "node_id": "MDEwOlJlcG9zaXRvcnk2MDk5MDgw",
@@ -424,9 +365,9 @@
       "html_url": "https://github.com/joomla/jissues",
       "description": "Issue tracking application extending GitHub's issues and pull requests for the Joomla! project.",
       "language": "PHP",
-      "stargazers_count": 70,
-      "forks_count": 79,
-      "open_issues_count": 46,
+      "stargazers_count": 73,
+      "forks_count": 78,
+      "open_issues_count": 54,
       "license": {
         "key": "gpl-2.0",
         "name": "GNU General Public License v2.0",
@@ -442,18 +383,130 @@
       ]
     },
     {
-      "id": 15213633,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNTIxMzYzMw==",
-      "name": "update.joomla.org",
-      "full_name": "joomla/update.joomla.org",
-      "html_url": "https://github.com/joomla/update.joomla.org",
-      "description": "Joomla CMS Update Channel",
+      "id": 62478568,
+      "node_id": "MDEwOlJlcG9zaXRvcnk2MjQ3ODU2OA==",
+      "name": "help.joomla.org",
+      "full_name": "joomla/help.joomla.org",
+      "html_url": "https://github.com/joomla/help.joomla.org",
+      "description": "Application powering the Joomla! Help Screen proxy serving help screens to Joomla! installations",
       "language": "PHP",
-      "stargazers_count": 16,
-      "forks_count": 33,
+      "stargazers_count": 9,
+      "forks_count": 8,
+      "open_issues_count": 9,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "topics": [
+        "application",
+        "joomla",
+        "php"
+      ]
+    },
+    {
+      "id": 378232923,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzNzgyMzI5MjM=",
+      "name": "core-translations",
+      "full_name": "joomla/core-translations",
+      "html_url": "https://github.com/joomla/core-translations",
+      "description": "The repository to store the Source and Translations for the Joomla Core (CMS). Connected to the Crowdin Translation Platform and other repositories if needed.",
+      "language": "PHP",
+      "stargazers_count": 21,
+      "forks_count": 38,
+      "open_issues_count": 2,
+      "license": null,
+      "topics": [
+        "joomla",
+        "translation"
+      ]
+    },
+    {
+      "id": 471951308,
+      "node_id": "R_kgDOHCFnzA",
+      "name": "updates",
+      "full_name": "joomla/updates",
+      "html_url": "https://github.com/joomla/updates",
+      "description": "The signed Updates repository for Joomla! core",
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 1,
       "open_issues_count": 0,
       "license": null,
-      "topics": []
+      "topics": [
+        "hacktoberfest"
+      ]
+    },
+    {
+      "id": 14972233,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNDk3MjIzMw==",
+      "name": "framework.joomla.org",
+      "full_name": "joomla/framework.joomla.org",
+      "html_url": "https://github.com/joomla/framework.joomla.org",
+      "description": "Application powering the internet home of the Joomla! Framework",
+      "language": "PHP",
+      "stargazers_count": 37,
+      "forks_count": 27,
+      "open_issues_count": 5,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "topics": [
+        "application",
+        "joomla",
+        "php"
+      ]
+    },
+    {
+      "id": 85763085,
+      "node_id": "MDEwOlJlcG9zaXRvcnk4NTc2MzA4NQ==",
+      "name": "downloads.joomla.org",
+      "full_name": "joomla/downloads.joomla.org",
+      "html_url": "https://github.com/joomla/downloads.joomla.org",
+      "description": "Repository holding custom extensions in use on the Joomla! Downloads Portal",
+      "language": "JavaScript",
+      "stargazers_count": 19,
+      "forks_count": 14,
+      "open_issues_count": 9,
+      "license": null,
+      "topics": [
+        "hacktoberfest"
+      ]
+    },
+    {
+      "id": 2464908,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyNDY0OTA4",
+      "name": "joomla-cms",
+      "full_name": "joomla/joomla-cms",
+      "html_url": "https://github.com/joomla/joomla-cms",
+      "description": "Home of the Joomla! Content Management System",
+      "language": "PHP",
+      "stargazers_count": 5061,
+      "forks_count": 3843,
+      "open_issues_count": 856,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "topics": [
+        "cms",
+        "content-management",
+        "hacktoberfest",
+        "joomla",
+        "multilingual-websites",
+        "php",
+        "php-cms",
+        "website-builder"
+      ]
     },
     {
       "id": 36957249,
@@ -463,8 +516,8 @@
       "html_url": "https://github.com/joomla/statistics-server",
       "description": "Server for collecting environment stats for Joomla Installations",
       "language": "PHP",
-      "stargazers_count": 11,
-      "forks_count": 17,
+      "stargazers_count": 12,
+      "forks_count": 16,
       "open_issues_count": 4,
       "license": {
         "key": "gpl-2.0",
@@ -481,62 +534,28 @@
       ]
     },
     {
-      "id": 62478568,
-      "node_id": "MDEwOlJlcG9zaXRvcnk2MjQ3ODU2OA==",
-      "name": "help.joomla.org",
-      "full_name": "joomla/help.joomla.org",
-      "html_url": "https://github.com/joomla/help.joomla.org",
-      "description": "Application powering the Joomla! Help Screen proxy serving help screens to Joomla! installations",
-      "language": "PHP",
-      "stargazers_count": 9,
-      "forks_count": 9,
-      "open_issues_count": 4,
+      "id": 516419915,
+      "node_id": "R_kgDOHsfxSw",
+      "name": "Manual",
+      "full_name": "joomla/Manual",
+      "html_url": "https://github.com/joomla/Manual",
+      "description": "Joomla Developer Documentation",
+      "language": "JavaScript",
+      "stargazers_count": 34,
+      "forks_count": 109,
+      "open_issues_count": 44,
       "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
       },
       "topics": [
-        "application",
-        "joomla",
-        "php"
+        "documentation",
+        "hacktoberfest",
+        "joomla"
       ]
-    },
-    {
-      "id": 83153380,
-      "node_id": "MDEwOlJlcG9zaXRvcnk4MzE1MzM4MA==",
-      "name": "developer.joomla.org",
-      "full_name": "joomla/developer.joomla.org",
-      "html_url": "https://github.com/joomla/developer.joomla.org",
-      "description": "Repository holding custom extensions in use on the Joomla! Developer Network",
-      "language": "PHP",
-      "stargazers_count": 7,
-      "forks_count": 7,
-      "open_issues_count": 4,
-      "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
-      },
-      "topics": []
-    },
-    {
-      "id": 254319506,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNTQzMTk1MDY=",
-      "name": "opensourcematters.org",
-      "full_name": "joomla/opensourcematters.org",
-      "html_url": "https://github.com/joomla/opensourcematters.org",
-      "description": "The OSM Website store",
-      "language": "CSS",
-      "stargazers_count": 1,
-      "forks_count": 3,
-      "open_issues_count": 2,
-      "license": null,
-      "topics": []
     },
     {
       "id": 10681052,
@@ -547,75 +566,7 @@
       "description": "Repository containing the source files for building the Joomla! API website",
       "language": "Twig",
       "stargazers_count": 5,
-      "forks_count": 8,
-      "open_issues_count": 7,
-      "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
-      },
-      "topics": []
-    },
-    {
-      "id": 934848630,
-      "node_id": "R_kgDON7iodg",
-      "name": "documentation",
-      "full_name": "joomla/documentation",
-      "html_url": "https://github.com/joomla/documentation",
-      "description": "Issues with user documentation",
-      "language": null,
-      "stargazers_count": 0,
-      "forks_count": 3,
-      "open_issues_count": 13,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 785405136,
-      "node_id": "R_kgDOLtBU0A",
-      "name": "manual-examples",
-      "full_name": "joomla/manual-examples",
-      "html_url": "https://github.com/joomla/manual-examples",
-      "description": "Examples for manual tutorials",
-      "language": "PHP",
-      "stargazers_count": 8,
-      "forks_count": 6,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 61070679,
-      "node_id": "MDEwOlJlcG9zaXRvcnk2MTA3MDY3OQ==",
-      "name": "volunteers.joomla.org",
-      "full_name": "joomla/volunteers.joomla.org",
-      "html_url": "https://github.com/joomla/volunteers.joomla.org",
-      "description": "Extension for the volunteers portal",
-      "language": "PHP",
-      "stargazers_count": 21,
-      "forks_count": 20,
-      "open_issues_count": 13,
-      "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
-      },
-      "topics": []
-    },
-    {
-      "id": 14972233,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNDk3MjIzMw==",
-      "name": "framework.joomla.org",
-      "full_name": "joomla/framework.joomla.org",
-      "html_url": "https://github.com/joomla/framework.joomla.org",
-      "description": "Application powering the internet home of the Joomla! Framework",
-      "language": "PHP",
-      "stargazers_count": 38,
-      "forks_count": 29,
+      "forks_count": 7,
       "open_issues_count": 9,
       "license": {
         "key": "gpl-2.0",
@@ -624,38 +575,6 @@
         "url": "https://api.github.com/licenses/gpl-2.0",
         "node_id": "MDc6TGljZW5zZTg="
       },
-      "topics": [
-        "application",
-        "joomla",
-        "php"
-      ]
-    },
-    {
-      "id": 14983368,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNDk4MzM2OA==",
-      "name": "install-from-web-server",
-      "full_name": "joomla/install-from-web-server",
-      "html_url": "https://github.com/joomla/install-from-web-server",
-      "description": "Repository holding the component powering the Install from Web server.",
-      "language": "PHP",
-      "stargazers_count": 9,
-      "forks_count": 29,
-      "open_issues_count": 9,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 45819615,
-      "node_id": "MDEwOlJlcG9zaXRvcnk0NTgxOTYxNQ==",
-      "name": "joomla.org",
-      "full_name": "joomla/joomla.org",
-      "html_url": "https://github.com/joomla/joomla.org",
-      "description": "The Joomla Main Website store",
-      "language": "JavaScript",
-      "stargazers_count": 14,
-      "forks_count": 32,
-      "open_issues_count": 6,
-      "license": null,
       "topics": []
     },
     {
@@ -666,9 +585,9 @@
       "html_url": "https://github.com/joomla/coding-standards",
       "description": "Joomla Coding Standards Definition",
       "language": "PHP",
-      "stargazers_count": 128,
-      "forks_count": 127,
-      "open_issues_count": 39,
+      "stargazers_count": 129,
+      "forks_count": 125,
+      "open_issues_count": 36,
       "license": {
         "key": "gpl-2.0",
         "name": "GNU General Public License v2.0",
@@ -684,6 +603,34 @@
       ]
     },
     {
+      "id": 15213633,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNTIxMzYzMw==",
+      "name": "update.joomla.org",
+      "full_name": "joomla/update.joomla.org",
+      "html_url": "https://github.com/joomla/update.joomla.org",
+      "description": "Joomla CMS Update Channel",
+      "language": "PHP",
+      "stargazers_count": 16,
+      "forks_count": 32,
+      "open_issues_count": 1,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 785405136,
+      "node_id": "R_kgDOLtBU0A",
+      "name": "manual-examples",
+      "full_name": "joomla/manual-examples",
+      "html_url": "https://github.com/joomla/manual-examples",
+      "description": "Examples for manual tutorials",
+      "language": "PHP",
+      "stargazers_count": 10,
+      "forks_count": 10,
+      "open_issues_count": 1,
+      "license": null,
+      "topics": []
+    },
+    {
       "id": 40225774,
       "node_id": "MDEwOlJlcG9zaXRvcnk0MDIyNTc3NA==",
       "name": "joomla-websites",
@@ -691,9 +638,119 @@
       "html_url": "https://github.com/joomla/joomla-websites",
       "description": "This repository is for reporting issues with the joomla.org websites only.  Please report issues with the Joomla CMS at https://github.com/joomla/joomla-cms/issues/new",
       "language": null,
-      "stargazers_count": 49,
-      "forks_count": 58,
-      "open_issues_count": 48,
+      "stargazers_count": 52,
+      "forks_count": 62,
+      "open_issues_count": 49,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 934848630,
+      "node_id": "R_kgDON7iodg",
+      "name": "documentation",
+      "full_name": "joomla/documentation",
+      "html_url": "https://github.com/joomla/documentation",
+      "description": "Issues with user documentation",
+      "language": null,
+      "stargazers_count": 2,
+      "forks_count": 4,
+      "open_issues_count": 56,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 14983368,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNDk4MzM2OA==",
+      "name": "install-from-web-server",
+      "full_name": "joomla/install-from-web-server",
+      "html_url": "https://github.com/joomla/install-from-web-server",
+      "description": "Repository holding the component powering the Install from Web server.",
+      "language": "PHP",
+      "stargazers_count": 9,
+      "forks_count": 28,
+      "open_issues_count": 11,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 83153380,
+      "node_id": "MDEwOlJlcG9zaXRvcnk4MzE1MzM4MA==",
+      "name": "developer.joomla.org",
+      "full_name": "joomla/developer.joomla.org",
+      "html_url": "https://github.com/joomla/developer.joomla.org",
+      "description": "Repository holding custom extensions in use on the Joomla! Developer Network",
+      "language": "PHP",
+      "stargazers_count": 8,
+      "forks_count": 7,
+      "open_issues_count": 5,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "topics": []
+    },
+    {
+      "id": 993352460,
+      "node_id": "R_kgDOOzVbDA",
+      "name": ".github",
+      "full_name": "joomla/.github",
+      "html_url": "https://github.com/joomla/.github",
+      "description": null,
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 254319506,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyNTQzMTk1MDY=",
+      "name": "opensourcematters.org",
+      "full_name": "joomla/opensourcematters.org",
+      "html_url": "https://github.com/joomla/opensourcematters.org",
+      "description": "The OSM Website store",
+      "language": "CSS",
+      "stargazers_count": 1,
+      "forks_count": 2,
+      "open_issues_count": 2,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 61070679,
+      "node_id": "MDEwOlJlcG9zaXRvcnk2MTA3MDY3OQ==",
+      "name": "volunteers.joomla.org",
+      "full_name": "joomla/volunteers.joomla.org",
+      "html_url": "https://github.com/joomla/volunteers.joomla.org",
+      "description": "Extension for the volunteers portal",
+      "language": "PHP",
+      "stargazers_count": 23,
+      "forks_count": 18,
+      "open_issues_count": 13,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "topics": []
+    },
+    {
+      "id": 45819615,
+      "node_id": "MDEwOlJlcG9zaXRvcnk0NTgxOTYxNQ==",
+      "name": "joomla.org",
+      "full_name": "joomla/joomla.org",
+      "html_url": "https://github.com/joomla/joomla.org",
+      "description": "The Joomla Main Website store",
+      "language": "JavaScript",
+      "stargazers_count": 14,
+      "forks_count": 32,
+      "open_issues_count": 9,
       "license": null,
       "topics": []
     },
@@ -706,7 +763,7 @@
       "description": "A central place for RFCs for new Features for the Joomla! projects and Specifications (interfaces) for further development.",
       "language": null,
       "stargazers_count": 11,
-      "forks_count": 12,
+      "forks_count": 9,
       "open_issues_count": 24,
       "license": {
         "key": "other",
@@ -731,7 +788,7 @@
       "description": "Extended Joomla Coding Standards definition for use in the Joomla CMS environment",
       "language": null,
       "stargazers_count": 9,
-      "forks_count": 9,
+      "forks_count": 6,
       "open_issues_count": 1,
       "license": {
         "key": "gpl-2.0",
@@ -756,9 +813,9 @@
       "html_url": "https://github.com/joomla/schemas",
       "description": "Schemas for the Joomla! CMS",
       "language": "PHP",
-      "stargazers_count": 6,
-      "forks_count": 8,
-      "open_issues_count": 3,
+      "stargazers_count": 7,
+      "forks_count": 5,
+      "open_issues_count": 2,
       "license": null,
       "topics": []
     },
@@ -771,7 +828,7 @@
       "description": "Joomla! Documentation website store",
       "language": "JavaScript",
       "stargazers_count": 3,
-      "forks_count": 12,
+      "forks_count": 11,
       "open_issues_count": 5,
       "license": null,
       "topics": []
@@ -785,7 +842,7 @@
       "description": "A MW skin specifically designed for Joomla! Docs from a fork of Foreground",
       "language": "CSS",
       "stargazers_count": 0,
-      "forks_count": 3,
+      "forks_count": 2,
       "open_issues_count": 1,
       "license": {
         "key": "bsd-2-clause",
@@ -805,7 +862,7 @@
       "description": "Collaboration to implement accessbility into Joomla",
       "language": null,
       "stargazers_count": 8,
-      "forks_count": 12,
+      "forks_count": 11,
       "open_issues_count": 22,
       "license": null,
       "topics": []
@@ -819,7 +876,7 @@
       "description": "A repository for the en-GB style guide of Joomla! language strings.",
       "language": null,
       "stargazers_count": 11,
-      "forks_count": 13,
+      "forks_count": 11,
       "open_issues_count": 0,
       "license": {
         "key": "other",
@@ -857,26 +914,6 @@
       "open_issues_count": 11,
       "license": null,
       "topics": []
-    },
-    {
-      "id": 555737037,
-      "node_id": "R_kgDOIR_fzQ",
-      "name": "3rd-party-extension-testing",
-      "full_name": "joomla/3rd-party-extension-testing",
-      "html_url": "https://github.com/joomla/3rd-party-extension-testing",
-      "description": "Holds the testing code for extension that will be tested with the nighly builds of Joomla!",
-      "language": null,
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": []
     }
   ],
   "contributorsDetails": [
@@ -886,31 +923,23 @@
       "node_id": "MDQ6VXNlcjM2ODU0NQ==",
       "avatar_url": "https://avatars.githubusercontent.com/u/368545?v=4",
       "html_url": "https://github.com/mbabker",
-      "contributions": 256
+      "contributions": 188
     },
     {
-      "login": "Sandra97",
-      "id": 4682328,
-      "node_id": "MDQ6VXNlcjQ2ODIzMjg=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/4682328?v=4",
-      "html_url": "https://github.com/Sandra97",
-      "contributions": 152
+      "login": "elkuku",
+      "id": 33978,
+      "node_id": "MDQ6VXNlcjMzOTc4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/33978?v=4",
+      "html_url": "https://github.com/elkuku",
+      "contributions": 1313
     },
     {
-      "login": "crowdin-bot",
-      "id": 58779643,
-      "node_id": "MDQ6VXNlcjU4Nzc5NjQz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/58779643?v=4",
-      "html_url": "https://github.com/crowdin-bot",
-      "contributions": 80
-    },
-    {
-      "login": "tecpromotion",
-      "id": 1752513,
-      "node_id": "MDQ6VXNlcjE3NTI1MTM=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1752513?v=4",
-      "html_url": "https://github.com/tecpromotion",
-      "contributions": 48
+      "login": "b2z",
+      "id": 3051676,
+      "node_id": "MDQ6VXNlcjMwNTE2NzY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3051676?v=4",
+      "html_url": "https://github.com/b2z",
+      "contributions": 389
     },
     {
       "login": "wilsonge",
@@ -918,31 +947,7 @@
       "node_id": "MDQ6VXNlcjE5ODYwMDA=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1986000?v=4",
       "html_url": "https://github.com/wilsonge",
-      "contributions": 5
-    },
-    {
-      "login": "conconnl",
-      "id": 11913918,
-      "node_id": "MDQ6VXNlcjExOTEzOTE4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/11913918?v=4",
-      "html_url": "https://github.com/conconnl",
-      "contributions": 24
-    },
-    {
-      "login": "dependabot[bot]",
-      "id": 49699333,
-      "node_id": "MDM6Qm90NDk2OTkzMzM=",
-      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-      "html_url": "https://github.com/apps/dependabot",
-      "contributions": 21
-    },
-    {
-      "login": "HLeithner",
-      "id": 1497730,
-      "node_id": "MDQ6VXNlcjE0OTc3MzA=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1497730?v=4",
-      "html_url": "https://github.com/HLeithner",
-      "contributions": 361
+      "contributions": 1
     },
     {
       "login": "zero-24",
@@ -950,151 +955,15 @@
       "node_id": "MDQ6VXNlcjI1OTY1NTQ=",
       "avatar_url": "https://avatars.githubusercontent.com/u/2596554?v=4",
       "html_url": "https://github.com/zero-24",
-      "contributions": 12
+      "contributions": 61
     },
     {
-      "login": "Alam9835",
-      "id": 88643897,
-      "node_id": "MDQ6VXNlcjg4NjQzODk3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/88643897?v=4",
-      "html_url": "https://github.com/Alam9835",
-      "contributions": 2
-    },
-    {
-      "login": "marcodings",
-      "id": 3484222,
-      "node_id": "MDQ6VXNlcjM0ODQyMjI=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/3484222?v=4",
-      "html_url": "https://github.com/marcodings",
-      "contributions": 2
-    },
-    {
-      "login": "particthistle",
-      "id": 5515866,
-      "node_id": "MDQ6VXNlcjU1MTU4NjY=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/5515866?v=4",
-      "html_url": "https://github.com/particthistle",
-      "contributions": 1
-    },
-    {
-      "login": "wojsmol",
-      "id": 4176111,
-      "node_id": "MDQ6VXNlcjQxNzYxMTE=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/4176111?v=4",
-      "html_url": "https://github.com/wojsmol",
-      "contributions": 1
-    },
-    {
-      "login": "robbiejackson",
-      "id": 5058681,
-      "node_id": "MDQ6VXNlcjUwNTg2ODE=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/5058681?v=4",
-      "html_url": "https://github.com/robbiejackson",
-      "contributions": 273
-    },
-    {
-      "login": "Fedik",
-      "id": 1568198,
-      "node_id": "MDQ6VXNlcjE1NjgxOTg=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1568198?v=4",
-      "html_url": "https://github.com/Fedik",
-      "contributions": 114
-    },
-    {
-      "login": "laoneo",
-      "id": 251072,
-      "node_id": "MDQ6VXNlcjI1MTA3Mg==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/251072?v=4",
-      "html_url": "https://github.com/laoneo",
-      "contributions": 63
-    },
-    {
-      "login": "ceford",
-      "id": 1560390,
-      "node_id": "MDQ6VXNlcjE1NjAzOTA=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1560390?v=4",
-      "html_url": "https://github.com/ceford",
-      "contributions": 57
-    },
-    {
-      "login": "chmst",
-      "id": 1035262,
-      "node_id": "MDQ6VXNlcjEwMzUyNjI=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1035262?v=4",
-      "html_url": "https://github.com/chmst",
-      "contributions": 43
-    },
-    {
-      "login": "softforge",
-      "id": 1078933,
-      "node_id": "MDQ6VXNlcjEwNzg5MzM=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1078933?v=4",
-      "html_url": "https://github.com/softforge",
-      "contributions": 40
-    },
-    {
-      "login": "joomla-dependency-bot",
-      "id": 106467380,
-      "node_id": "U_kgDOBliQNA",
-      "avatar_url": "https://avatars.githubusercontent.com/u/106467380?v=4",
-      "html_url": "https://github.com/joomla-dependency-bot",
-      "contributions": 35
-    },
-    {
-      "login": "brianteeman",
-      "id": 1296369,
-      "node_id": "MDQ6VXNlcjEyOTYzNjk=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1296369?v=4",
-      "html_url": "https://github.com/brianteeman",
-      "contributions": 29
-    },
-    {
-      "login": "Hackwar",
-      "id": 313866,
-      "node_id": "MDQ6VXNlcjMxMzg2Ng==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/313866?v=4",
-      "html_url": "https://github.com/Hackwar",
-      "contributions": 25
-    },
-    {
-      "login": "mfleeson",
-      "id": 961654,
-      "node_id": "MDQ6VXNlcjk2MTY1NA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/961654?v=4",
-      "html_url": "https://github.com/mfleeson",
-      "contributions": 20
-    },
-    {
-      "login": "rogercreagh",
-      "id": 44980188,
-      "node_id": "MDQ6VXNlcjQ0OTgwMTg4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/44980188?v=4",
-      "html_url": "https://github.com/rogercreagh",
-      "contributions": 20
-    },
-    {
-      "login": "bembelimen",
-      "id": 1229869,
-      "node_id": "MDQ6VXNlcjEyMjk4Njk=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1229869?v=4",
-      "html_url": "https://github.com/bembelimen",
-      "contributions": 19
-    },
-    {
-      "login": "ALsJourney",
-      "id": 63744576,
-      "node_id": "MDQ6VXNlcjYzNzQ0NTc2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/63744576?v=4",
-      "html_url": "https://github.com/ALsJourney",
-      "contributions": 15
-    },
-    {
-      "login": "obuisard",
-      "id": 5964177,
-      "node_id": "MDQ6VXNlcjU5NjQxNzc=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/5964177?v=4",
-      "html_url": "https://github.com/obuisard",
-      "contributions": 15
+      "login": "allenzhao",
+      "id": 3326332,
+      "node_id": "MDQ6VXNlcjMzMjYzMzI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3326332?v=4",
+      "html_url": "https://github.com/allenzhao",
+      "contributions": 128
     },
     {
       "login": "renovate-bot",
@@ -1102,79 +971,255 @@
       "node_id": "MDQ6VXNlcjI1MTgwNjgx",
       "avatar_url": "https://avatars.githubusercontent.com/u/25180681?v=4",
       "html_url": "https://github.com/renovate-bot",
-      "contributions": 13
+      "contributions": 2
     },
     {
-      "login": "dgrammatiko",
-      "id": 3889375,
-      "node_id": "MDQ6VXNlcjM4ODkzNzU=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/3889375?v=4",
-      "html_url": "https://github.com/dgrammatiko",
-      "contributions": 12
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "html_url": "https://github.com/apps/dependabot",
+      "contributions": 86
     },
     {
-      "login": "marcorensch",
-      "id": 11912135,
-      "node_id": "MDQ6VXNlcjExOTEyMTM1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/11912135?v=4",
-      "html_url": "https://github.com/marcorensch",
-      "contributions": 9
+      "login": "Hackwar",
+      "id": 313866,
+      "node_id": "MDQ6VXNlcjMxMzg2Ng==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/313866?v=4",
+      "html_url": "https://github.com/Hackwar",
+      "contributions": 20
     },
     {
-      "login": "LadySolveig",
-      "id": 64533137,
-      "node_id": "MDQ6VXNlcjY0NTMzMTM3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/64533137?v=4",
-      "html_url": "https://github.com/LadySolveig",
+      "login": "drmmr763",
+      "id": 643104,
+      "node_id": "MDQ6VXNlcjY0MzEwNA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/643104?v=4",
+      "html_url": "https://github.com/drmmr763",
+      "contributions": 29
+    },
+    {
+      "login": "avinashdaiict",
+      "id": 5761829,
+      "node_id": "MDQ6VXNlcjU3NjE4Mjk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5761829?v=4",
+      "html_url": "https://github.com/avinashdaiict",
+      "contributions": 11
+    },
+    {
+      "login": "brianteeman",
+      "id": 1296369,
+      "node_id": "MDQ6VXNlcjEyOTYzNjk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1296369?v=4",
+      "html_url": "https://github.com/brianteeman",
+      "contributions": 1
+    },
+    {
+      "login": "HLeithner",
+      "id": 1497730,
+      "node_id": "MDQ6VXNlcjE0OTc3MzA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1497730?v=4",
+      "html_url": "https://github.com/HLeithner",
+      "contributions": 21
+    },
+    {
+      "login": "betweenbrain",
+      "id": 634119,
+      "node_id": "MDQ6VXNlcjYzNDExOQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/634119?v=4",
+      "html_url": "https://github.com/betweenbrain",
       "contributions": 7
     },
     {
-      "login": "drmenzelit",
-      "id": 9153168,
-      "node_id": "MDQ6VXNlcjkxNTMxNjg=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/9153168?v=4",
-      "html_url": "https://github.com/drmenzelit",
+      "login": "jasonwilliams",
+      "id": 936006,
+      "node_id": "MDQ6VXNlcjkzNjAwNg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/936006?v=4",
+      "html_url": "https://github.com/jasonwilliams",
       "contributions": 6
     },
     {
-      "login": "rdeutz",
-      "id": 467356,
-      "node_id": "MDQ6VXNlcjQ2NzM1Ng==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/467356?v=4",
-      "html_url": "https://github.com/rdeutz",
+      "login": "phproberto",
+      "id": 1119272,
+      "node_id": "MDQ6VXNlcjExMTkyNzI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1119272?v=4",
+      "html_url": "https://github.com/phproberto",
       "contributions": 6
     },
     {
-      "login": "Razzo1987",
-      "id": 906604,
-      "node_id": "MDQ6VXNlcjkwNjYwNA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/906604?v=4",
-      "html_url": "https://github.com/Razzo1987",
-      "contributions": 6
-    },
-    {
-      "login": "SniperSister",
-      "id": 498096,
-      "node_id": "MDQ6VXNlcjQ5ODA5Ng==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/498096?v=4",
-      "html_url": "https://github.com/SniperSister",
+      "login": "PhilETaylor",
+      "id": 400092,
+      "node_id": "MDQ6VXNlcjQwMDA5Mg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/400092?v=4",
+      "html_url": "https://github.com/PhilETaylor",
       "contributions": 5
     },
     {
-      "login": "pe7er",
-      "id": 1217850,
-      "node_id": "MDQ6VXNlcjEyMTc4NTA=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1217850?v=4",
-      "html_url": "https://github.com/pe7er",
+      "login": "dongilbert",
+      "id": 718028,
+      "node_id": "MDQ6VXNlcjcxODAyOA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/718028?v=4",
+      "html_url": "https://github.com/dongilbert",
       "contributions": 5
     },
     {
-      "login": "rabahalishah",
-      "id": 117630286,
-      "node_id": "U_kgDOBwLlTg",
-      "avatar_url": "https://avatars.githubusercontent.com/u/117630286?v=4",
-      "html_url": "https://github.com/rabahalishah",
-      "contributions": 5
+      "login": "eddieajau",
+      "id": 700871,
+      "node_id": "MDQ6VXNlcjcwMDg3MQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/700871?v=4",
+      "html_url": "https://github.com/eddieajau",
+      "contributions": 4
+    },
+    {
+      "login": "Sandra97",
+      "id": 4682328,
+      "node_id": "MDQ6VXNlcjQ2ODIzMjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4682328?v=4",
+      "html_url": "https://github.com/Sandra97",
+      "contributions": 1
+    },
+    {
+      "login": "jissues-bot",
+      "id": 4283294,
+      "node_id": "MDQ6VXNlcjQyODMyOTQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4283294?v=4",
+      "html_url": "https://github.com/jissues-bot",
+      "contributions": 3
+    },
+    {
+      "login": "pjwiseman",
+      "id": 1196675,
+      "node_id": "MDQ6VXNlcjExOTY2NzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1196675?v=4",
+      "html_url": "https://github.com/pjwiseman",
+      "contributions": 3
+    },
+    {
+      "login": "nibra",
+      "id": 827605,
+      "node_id": "MDQ6VXNlcjgyNzYwNQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/827605?v=4",
+      "html_url": "https://github.com/nibra",
+      "contributions": 2
+    },
+    {
+      "login": "roland-d",
+      "id": 359377,
+      "node_id": "MDQ6VXNlcjM1OTM3Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/359377?v=4",
+      "html_url": "https://github.com/roland-d",
+      "contributions": 2
+    },
+    {
+      "login": "smz",
+      "id": 552475,
+      "node_id": "MDQ6VXNlcjU1MjQ3NQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/552475?v=4",
+      "html_url": "https://github.com/smz",
+      "contributions": 2
+    },
+    {
+      "login": "pashaarshad",
+      "id": 182348177,
+      "node_id": "U_kgDOCt5pkQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/182348177?v=4",
+      "html_url": "https://github.com/pashaarshad",
+      "contributions": 1
+    },
+    {
+      "login": "javigomez",
+      "id": 1375475,
+      "node_id": "MDQ6VXNlcjEzNzU0NzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1375475?v=4",
+      "html_url": "https://github.com/javigomez",
+      "contributions": 1
+    },
+    {
+      "login": "oc666",
+      "id": 1040582,
+      "node_id": "MDQ6VXNlcjEwNDA1ODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1040582?v=4",
+      "html_url": "https://github.com/oc666",
+      "contributions": 1
+    },
+    {
+      "login": "SharkyKZ",
+      "id": 7325021,
+      "node_id": "MDQ6VXNlcjczMjUwMjE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7325021?v=4",
+      "html_url": "https://github.com/SharkyKZ",
+      "contributions": 1
+    },
+    {
+      "login": "vietvh",
+      "id": 689523,
+      "node_id": "MDQ6VXNlcjY4OTUyMw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/689523?v=4",
+      "html_url": "https://github.com/vietvh",
+      "contributions": 1
+    },
+    {
+      "login": "Hutchy68",
+      "id": 3527469,
+      "node_id": "MDQ6VXNlcjM1Mjc0Njk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3527469?v=4",
+      "html_url": "https://github.com/Hutchy68",
+      "contributions": 3
+    },
+    {
+      "login": "HermanPeeren",
+      "id": 298799,
+      "node_id": "MDQ6VXNlcjI5ODc5OQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/298799?v=4",
+      "html_url": "https://github.com/HermanPeeren",
+      "contributions": 1
+    },
+    {
+      "login": "crowdin-bot",
+      "id": 58779643,
+      "node_id": "MDQ6VXNlcjU4Nzc5NjQz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/58779643?v=4",
+      "html_url": "https://github.com/crowdin-bot",
+      "contributions": 11309
+    },
+    {
+      "login": "joomla-translation-bot",
+      "id": 87496051,
+      "node_id": "MDQ6VXNlcjg3NDk2MDUx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/87496051?v=4",
+      "html_url": "https://github.com/joomla-translation-bot",
+      "contributions": 10882
+    },
+    {
+      "login": "tecpromotion",
+      "id": 1752513,
+      "node_id": "MDQ6VXNlcjE3NTI1MTM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1752513?v=4",
+      "html_url": "https://github.com/tecpromotion",
+      "contributions": 2146
+    },
+    {
+      "login": "conconnl",
+      "id": 11913918,
+      "node_id": "MDQ6VXNlcjExOTEzOTE4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11913918?v=4",
+      "html_url": "https://github.com/conconnl",
+      "contributions": 255
+    },
+    {
+      "login": "wojsmol",
+      "id": 4176111,
+      "node_id": "MDQ6VXNlcjQxNzYxMTE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4176111?v=4",
+      "html_url": "https://github.com/wojsmol",
+      "contributions": 110
+    },
+    {
+      "login": "artur-stepien",
+      "id": 2000754,
+      "node_id": "MDQ6VXNlcjIwMDA3NTQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2000754?v=4",
+      "html_url": "https://github.com/artur-stepien",
+      "contributions": 21
     },
     {
       "login": "heelc29",
@@ -1182,31 +1227,55 @@
       "node_id": "MDQ6VXNlcjY2OTIyMzI1",
       "avatar_url": "https://avatars.githubusercontent.com/u/66922325?v=4",
       "html_url": "https://github.com/heelc29",
-      "contributions": 4
+      "contributions": 21
     },
     {
-      "login": "muhme",
-      "id": 25269712,
-      "node_id": "MDQ6VXNlcjI1MjY5NzEy",
-      "avatar_url": "https://avatars.githubusercontent.com/u/25269712?v=4",
-      "html_url": "https://github.com/muhme",
-      "contributions": 4
+      "login": "Kostelano",
+      "id": 8440661,
+      "node_id": "MDQ6VXNlcjg0NDA2NjE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8440661?v=4",
+      "html_url": "https://github.com/Kostelano",
+      "contributions": 6
     },
     {
-      "login": "sandewt",
-      "id": 9271775,
-      "node_id": "MDQ6VXNlcjkyNzE3NzU=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/9271775?v=4",
-      "html_url": "https://github.com/sandewt",
-      "contributions": 4
+      "login": "zwiastunsw",
+      "id": 29527200,
+      "node_id": "MDQ6VXNlcjI5NTI3MjAw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/29527200?v=4",
+      "html_url": "https://github.com/zwiastunsw",
+      "contributions": 3
     },
     {
-      "login": "ConfidantCommunications",
-      "id": 1410814,
-      "node_id": "MDQ6VXNlcjE0MTA4MTQ=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1410814?v=4",
-      "html_url": "https://github.com/ConfidantCommunications",
-      "contributions": 4
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "html_url": "https://github.com/apps/github-actions",
+      "contributions": 2
+    },
+    {
+      "login": "denysdesign",
+      "id": 1041797,
+      "node_id": "MDQ6VXNlcjEwNDE3OTc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1041797?v=4",
+      "html_url": "https://github.com/denysdesign",
+      "contributions": 1
+    },
+    {
+      "login": "Valc",
+      "id": 417247,
+      "node_id": "MDQ6VXNlcjQxNzI0Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/417247?v=4",
+      "html_url": "https://github.com/Valc",
+      "contributions": 1
+    },
+    {
+      "login": "VBeytok",
+      "id": 46049489,
+      "node_id": "MDQ6VXNlcjQ2MDQ5NDg5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46049489?v=4",
+      "html_url": "https://github.com/VBeytok",
+      "contributions": 1
     }
   ],
   "activeOrg": true

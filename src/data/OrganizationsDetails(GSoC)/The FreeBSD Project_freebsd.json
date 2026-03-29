@@ -47,7 +47,8 @@
     2022,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2016": [
@@ -613,10 +614,140 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/NEYEC0Wt"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "VMM Accelerator support for QEMU",
+        "short_description": "This project aims to add VMM acceleration support to QEMU on FreeBSD, bridging the gap between QEMU’s userspace emulation and FreeBSD’s kernel-based...",
+        "description": "This project aims to add VMM acceleration support to QEMU on FreeBSD, bridging the gap between QEMU’s userspace emulation and FreeBSD’s kernel-based VMM hypervisor. Currently, QEMU on FreeBSD lacks hardware acceleration, forcing users to rely on slower TCG emulation or switch to bhyve. I plan to modify QEMU’s memory management to work with VMM’s kernel-allocated guest memory. Additionally, I will adapt VMM to make non-critical devices (HPET, RTC) optional, letting QEMU handle them in user space. This would enable a hybrid interrupt model (kernel vLAPIC + emulated IOAPIC). The deliverables for this project would be a working -accel=vmm backend for QEMU. I will also add some changes to VMM, allowing some of the in-kernel devices to be made optional. Finally, I will add comprehensive documentation and benchmarks for the libvmmapi interface. This will enable near-native performance for QEMU on FreeBSD, expanding virtualization options while maintaining compatibility with existing QEMU tooling.",
+        "student_name": "Abhinav Chavali",
+        "code_url": "https://wiki.freebsd.org/SummerOfCode2025Projects/VMMAcceleratorSupportForQEMU",
+        "proposal_id": "2O2bpZmi",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/lRkVElCJ"
+      },
+      {
+        "title": "Testing & Development for Rust FreeBSD Device Drivers",
+        "short_description": "The current FreeBSD environment lacks robust automated testing for Rust kernel modules and officially maintained Rust drivers. Past projects for Rust...",
+        "description": "The current FreeBSD environment lacks robust automated testing for Rust kernel modules and officially maintained Rust drivers. Past projects for Rust in FreeBSD started with Johannes Lundberg's Master's Thesis, where he created a RustKPI, e1000 Rust Network Driver, and a Rust kmod Hello World Example. From this, we saw Anatol Ulrich create a Hello World kernel module and a research article about writing FreeBSD kernel modules in Rust by David Young. Outside these contributions, Rust's current progress in FreeBSD is very shallow. This lack of depth makes it difficult for others to learn and build upon. I propose to analyze and extend the past work of others to assist anyone wanting to further the development of Rust in the FreeBSD kernel.\n\nMy project will focus on these primary goals:\n\n1. Creating tests in /usr/tests tree using ATF & Kyua for an existing Rust Driver\n\n2. Use these tests to find errors in the driver logic, repairing them when needed.\n\n3. Create a updated environment where developers can easily code and compile Rust FreeBSD device drivers.\n\n4. Create both a Hello World driver and an Echo character driver with this environment.\n\n6. Publishing clean and effective Rust device driver documentation for future developers to expand and work with the environment.",
+        "student_name": "Acesp25",
+        "code_url": "https://gist.github.com/Acesp25/8928e35e710fdce1896b5448fc6327df",
+        "proposal_id": "gAK6urTr",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/FnDSAZEj"
+      },
+      {
+        "title": "Full Disk Administration Tool for FreeBSD",
+        "short_description": "FreeBSD currently lacks a tool to manage partitions and manipulate file systems like GParted does in Linux. The proposed project aims to use sade, a...",
+        "description": "FreeBSD currently lacks a tool to manage partitions and manipulate file systems like GParted does in Linux. The proposed project aims to use sade, a FreeBSD TUI tool that allows creation, modification, and deletion of partitions with UFS, ZFS, FAT16, and FAT32 filesystems, as a starting point to develop a new tool. This project will add operations like copying/pasting, moving, resizing, and checking partitions with different file systems, like the ones that are already supported as UFS, FAT16, and FAT32. As well as adding the same support for new filesystems like EXT2, EXT3, EXT4, exFAT, and NTFS. Another set of FreeBSD exclusive operations is labeling and encrypting partitions using the GEOM framework. Finally, the tool would handle ZFS too: creating pools, configuring mirrors, raids, and replacing disks.",
+        "student_name": "Braulio Rivas",
+        "code_url": "https://wiki.freebsd.org/SummerOfCode2025Projects/FullDiskAdministrationToolForFreeBSD",
+        "proposal_id": "17bP4joe",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/AQdl28ee"
+      },
+      {
+        "title": "Adding QCOW2 compressed image support to mkimg(1)",
+        "short_description": "mkimg(1), a FreeBSD tool used for creating disk images in various formats, currently lacks support for creating compressed QCOW2 images. This project...",
+        "description": "mkimg(1), a FreeBSD tool used for creating disk images in various formats, currently lacks support for creating compressed QCOW2 images. This project aims to extend mkimg by adding support for generating QCOW2 images with compression enabled, reducing FreeBSD's reliance on external tools for this functionality and improving the system's self-sufficiency in image creation workflows.",
+        "student_name": "Christos Komis",
+        "code_url": "https://gist.github.com/ckkomis/2b54a6fec5df3d909c65c174bafe0abf",
+        "proposal_id": "phu8BfcG",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/HENL3VNt"
+      },
+      {
+        "title": "Sockstat UI Improvements",
+        "short_description": "Problem Statement: Sockstat is a useful FreeBSD utility for displaying active sockets, but its current output format is rigid and lacks flexibility....",
+        "description": "Problem Statement:\r\nSockstat is a useful FreeBSD utility for displaying active sockets, but its current output format is rigid and lacks flexibility. The -w option is a workaround to accommodate wide output, and the tool does not support structured data formats. Enhancing its user interface will improve usability and integration with modern tools.\r\n\r\nProposed Solution:\r\nThis project aims to improve sockstat by integrating libxo, which will allow structured output in multiple formats (JSON, XML, etc.). Additionally, the column sizes will be dynamically adjusted to enhance readability, eliminating the need for the -w option.\r\n\r\nDeliverables:\r\n\r\n-> Rewrite sockstat output using libxo for JSON, XML, and other formats.\r\n-> Implement automatic column sizing for better readability.\r\n-> Remove the -w option and replace it with a more intelligent formatting approach.\r\n-> Ensure backward compatibility and proper testing.\r\n\r\nThis project will enhance sockstat’s usability while maintaining its lightweight and efficient design.",
+        "student_name": "Damin Rido J V",
+        "code_url": "https://wiki.freebsd.org/SummerOfCode2025Projects/SockstatUIImprovements",
+        "proposal_id": "wePcTBjE",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/GuMgVDOs"
+      },
+      {
+        "title": "ACPI Initialization in Loader With Lua Bindings",
+        "short_description": "Intel™’s Advanced Configuration and Power Interface (ACPI) is an industry standard specification that revolutionized power management by putting it...",
+        "description": "Intel™’s Advanced Configuration and Power Interface (ACPI) is an industry standard specification that revolutionized power management by putting it in the hands of the operating system, rather than the BIOS. As it currently stands, it is widely available across 32-bit and 64-bit architectures, with specially tailored manuals towards Windows™ and UNIX. \n\nFreeBSD has implemented ACPI, utilizing Intel™’s ACPI Computer Architecture (ACPICA). The major contention point is that it is outside the loader. In this state, it is inefficient; information that’s only available to ACPI, is therefore unavailable to the boot loader. As such, the boot loader essentially has to guess what that information is, and is often wrong. This proposal aims to alleviate this bottleneck by bringing a lightweight version of ACPICA into the loader. With this integration, ACPI will not only be more efficiently managed, but it will also be script-able with Lua, providing FreeBSD users ease of configuration.\n\nDeliverables include: (1) stand/efi/acpica/Osd/ with necessary ACPICA/AML initialization, (2) stand/efi/loader/arch/$ARCH for arm64 and amd64 specific glue code, (3) complete integration of both architectures: ACPI initialized in the loader, (4) the ACPI namespace enumerated in C, (5) an ACPI API layer, (6) Lua bindings, and (7) updated FreeBSD ACPI handbook and man pages.",
+        "student_name": "kpowkitty",
+        "code_url": "https://wiki.freebsd.org/SummerOfCode2025Projects/ACPI%20Initialization%20in%20Loader%20With%20Lua%20Bindings",
+        "proposal_id": "SRQZkCjT",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/vcXeKCzJ"
+      },
+      {
+        "title": "Speed up the FreeBSD boot process",
+        "short_description": "This proposal aims to accelerate FreeBSD’s boot process by using the TSLOG framework to identify and target specific delays. Initial profiling...",
+        "description": "This proposal aims to accelerate FreeBSD’s boot process by using the TSLOG framework to identify and target specific delays. Initial profiling revealed significant slowdowns caused by unnecessary sleep intervals in disk detection, timeouts in AT keyboard controller resets, and prolonged waiting in IPv6 configuration and the boot menu. The project will set up controlled test environments, apply targeted code modifications (including ZFS adjustments and adopting approaches from Linux), and iteratively validate improvements through repeated profiling. By systematically optimizing each boot phase while ensuring system stability, the project intends to deliver measurable reductions in boot time, ultimately benefiting the FreeBSD community through faster system reboots and a replicable methodology for future performance enhancements.",
+        "student_name": "Lahiru Gunathilake",
+        "code_url": "https://bllgg.github.io/projects/freebsd_boot_process_optimization/",
+        "proposal_id": "O9hDr9Lu",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/x8yTB4un"
+      },
+      {
+        "title": "WiFi Management UI",
+        "short_description": "This project aims to build a CLI and TUI utility for easy WiFi and network management on the FreeBSD operating system. The base features for...",
+        "description": "This project aims to build a CLI and TUI utility for easy WiFi and network management on the FreeBSD operating system. The base features for listing/configuring network interfaces, scanning, connecting/disconnecting from wireless networks will be implemented using libifconfig, with additional functionality added to the library as needed. The project aims to keep the dependencies to a minimal so that it can be suitable for inclusion into the FreeBSD base system. The CLI will include a REPL interface like iwctl, and a TUI like NetworkManager's nmtui will be built using terminal raw mode and control sequences, avoiding libraries like ncurses.",
+        "student_name": "Muhammad Saheed",
+        "code_url": "https://wiki.freebsd.org/SummerOfCode2025Projects/WiFiManagementUI",
+        "proposal_id": "tj5Fn8zg",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/0MvQZDLg"
+      },
+      {
+        "title": "Implement Journaling for FreeBSD's ext3/4",
+        "short_description": "This project aims to implement Linux-compatible journaling within FreeBSD's ext filesystem, which is a standard feature in Linux's ext3 and ext4...",
+        "description": "This project aims to implement Linux-compatible journaling within FreeBSD's ext filesystem, which is a standard feature in Linux's ext3 and ext4 filesystems. The absence of journaling in FreeBSD's implementation results in reduced filesystem consistency and slower recovery times after system crashes compared to its Linux. The proposed solution involves modifying the ext filesystem to understand the on-disk format and transaction mechanisms of Linux's journaling implementation. Key deliverables include integrated code for detecting, parsing, and managing journal data, functional logging of metadata changes within transactions, a complete implementation for committing these transactions to the on-disk journal, integration of journaling across major metadata operations, support for ordered journaling mode, and comprehensive test cases accompanied by thorough documentation.",
+        "student_name": "Pau Sum",
+        "code_url": "https://wiki.freebsd.org/SummerOfCode2025Projects/ImplementJournalingForFreeBSDExt34",
+        "proposal_id": "C8vIvH1U",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/kIeG9hSh"
+      },
+      {
+        "title": "FreeBSD Power Profiling Tool",
+        "short_description": "FreeBSD previously lacked process-level power profiling, relying only on ACPI whole-system statistics. To address this, I built a FreeBSD-native...",
+        "description": "FreeBSD previously lacked process-level power profiling, relying only on ACPI whole-system statistics. To address this, I built a FreeBSD-native power profiling tool inspired by Linux’s PowerTOP, keeping the design lightweight and integrated with FreeBSD’s user-space libraries.\n\nThe core of the project was implementing librapl, a library to read Intel/AMD RAPL counters via /dev/cpuctl, and combining it with process data from libkvm. This allowed attributing energy usage from domains such as Package, Cores, and DRAM to individual processes. Special handling for multi-threaded processes ensured accurate per-thread runtime tracking, validated through workloads like OpenSSL (CPU stress) and Firefox (multi-threaded).\n\nThe prototype currently outputs real-time per-process power usage, providing actionable insights into system energy behavior. Next steps include daemonizing the tool for continuous monitoring, extending support to ARM64 (via AMUs or SCMI) and Intel TPMI, and adding user-friendly visualization. This work establishes the first foundation for granular power profiling on FreeBSD and opens the path for advanced power management features.",
+        "student_name": "Sai Kasyap Jannabhatla",
+        "code_url": "https://wiki.freebsd.org/SummerOfCode2025Projects/FreeBSDPowerProfilingTool",
+        "proposal_id": "d54mNutX",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/CuSjdaYl"
+      },
+      {
+        "title": "mac_do(4) and mdo(1) improvements",
+        "short_description": "The FreeBSD mac_do(4) and mdo(1) utilities enable controlled transitions of user and group credentials without relying on inherently risky setuid...",
+        "description": "The FreeBSD mac_do(4) and mdo(1) utilities enable controlled transitions of user and group credentials without relying on inherently risky setuid executables. Currently, mac_do only authorizes the /usr/bin/mdo executable, and does not fully support granular group transitions or per-jail executable authorization. This project enhances security by allowing configurable paths for authorized executables (beyond mdo), implementing granular group management via mdo(1) (new -g and -G flags), and integrating comprehensive jail support for isolating credential rules. Key deliverables include kernel-side implementation of allowed executable path lists, enhanced per-jail rule management, extended userland functionality for group management, password authentication integration, and complete documentation updates.",
+        "student_name": "thesynthax",
+        "code_url": "https://wiki.freebsd.org/SummerOfCode2025Projects/MacDoAndMDoImprovements",
+        "proposal_id": "sI7FNtEM",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/gZAnOBRn"
+      },
+      {
+        "title": "Port FreeBSD to QEMU microvm",
+        "short_description": "QEMU microvm is a lightweight virtual machine environment designed to run operating systems quickly with few hardware dependencies. This project...",
+        "description": "QEMU microvm is a lightweight virtual machine environment designed to run operating systems quickly with few hardware dependencies. This project aimed to port FreeBSD to the platform.",
+        "student_name": "WGeckle80",
+        "code_url": "https://wiki.freebsd.org/SummerOfCode2025Projects/PortFreeBSDToQEMUMicrovm",
+        "proposal_id": "qpKwAYYx",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/rd4vVntG"
+      }
+    ],
+    "2026": []
   },
   "githubID": "freebsd",
   "repositories": [
+    {
+      "id": 2328181,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMzI4MTgx",
+      "name": "freebsd-src",
+      "full_name": "freebsd/freebsd-src",
+      "html_url": "https://github.com/freebsd/freebsd-src",
+      "description": "The FreeBSD src tree publish-only repository. Experimenting with 'simple' pull requests....",
+      "language": "C",
+      "stargazers_count": 8969,
+      "forks_count": 3239,
+      "open_issues_count": 104,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
     {
       "id": 1803961,
       "node_id": "MDEwOlJlcG9zaXRvcnkxODAzOTYx",
@@ -625,9 +756,9 @@
       "html_url": "https://github.com/freebsd/freebsd-ports",
       "description": "FreeBSD ports tree (read-only mirror)",
       "language": "Makefile",
-      "stargazers_count": 1037,
-      "forks_count": 788,
-      "open_issues_count": 43,
+      "stargazers_count": 1148,
+      "forks_count": 841,
+      "open_issues_count": 58,
       "license": {
         "key": "other",
         "name": "Other",
@@ -645,9 +776,9 @@
       "html_url": "https://github.com/freebsd/freebsd-doc",
       "description": "FreeBSD doc tree (read-only mirror)",
       "language": "HTML",
-      "stargazers_count": 333,
-      "forks_count": 354,
-      "open_issues_count": 46,
+      "stargazers_count": 375,
+      "forks_count": 407,
+      "open_issues_count": 33,
       "license": {
         "key": "other",
         "name": "Other",
@@ -655,207 +786,6 @@
         "url": null,
         "node_id": "MDc6TGljZW5zZTA="
       },
-      "topics": []
-    },
-    {
-      "id": 2328181,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMzI4MTgx",
-      "name": "freebsd-src",
-      "full_name": "freebsd/freebsd-src",
-      "html_url": "https://github.com/freebsd/freebsd-src",
-      "description": "The FreeBSD src tree publish-only repository. Experimenting with 'simple' pull requests....",
-      "language": "C",
-      "stargazers_count": 8259,
-      "forks_count": 2995,
-      "open_issues_count": 77,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 1530481,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNTMwNDgx",
-      "name": "pkg",
-      "full_name": "freebsd/pkg",
-      "html_url": "https://github.com/freebsd/pkg",
-      "description": "Package management tool for FreeBSD. Help at #pkg on Libera Chat or pkg@FreeBSD.org",
-      "language": "C",
-      "stargazers_count": 766,
-      "forks_count": 283,
-      "open_issues_count": 213,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": [
-        "freebsd",
-        "package-management",
-        "package-manager",
-        "packages"
-      ]
-    },
-    {
-      "id": 261718139,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNjE3MTgxMzk=",
-      "name": "drm-kmod",
-      "full_name": "freebsd/drm-kmod",
-      "html_url": "https://github.com/freebsd/drm-kmod",
-      "description": "drm driver for FreeBSD",
-      "language": "C",
-      "stargazers_count": 169,
-      "forks_count": 69,
-      "open_issues_count": 80,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 369868603,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzNjk4Njg2MDM=",
-      "name": "freebsd-doc-translate",
-      "full_name": "freebsd/freebsd-doc-translate",
-      "html_url": "https://github.com/freebsd/freebsd-doc-translate",
-      "description": "Repository used for translating documents of FreeBSD, now using Weblate.",
-      "language": null,
-      "stargazers_count": 6,
-      "forks_count": 5,
-      "open_issues_count": 0,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 91950240,
-      "node_id": "MDEwOlJlcG9zaXRvcnk5MTk1MDI0MA==",
-      "name": "freebsd-ports-kde",
-      "full_name": "freebsd/freebsd-ports-kde",
-      "html_url": "https://github.com/freebsd/freebsd-ports-kde",
-      "description": " FreeBSD KDE development repo ",
-      "language": "Makefile",
-      "stargazers_count": 63,
-      "forks_count": 40,
-      "open_issues_count": 2,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 49584579,
-      "node_id": "MDEwOlJlcG9zaXRvcnk0OTU4NDU3OQ==",
-      "name": "portscout",
-      "full_name": "freebsd/portscout",
-      "html_url": "https://github.com/freebsd/portscout",
-      "description": "A tool which looks for new versions of software in the FreeBSD ports tree",
-      "language": "Perl",
-      "stargazers_count": 22,
-      "forks_count": 17,
-      "open_issues_count": 10,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 122494795,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMjI0OTQ3OTU=",
-      "name": "freebsd-ports-libreoffice",
-      "full_name": "freebsd/freebsd-ports-libreoffice",
-      "html_url": "https://github.com/freebsd/freebsd-ports-libreoffice",
-      "description": "Staging area of LibreOffice port on FreeBSD",
-      "language": "Makefile",
-      "stargazers_count": 17,
-      "forks_count": 11,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 16887424,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNjg4NzQyNA==",
-      "name": "kyua",
-      "full_name": "freebsd/kyua",
-      "html_url": "https://github.com/freebsd/kyua",
-      "description": "Port/Package build and test system",
-      "language": "C++",
-      "stargazers_count": 149,
-      "forks_count": 42,
-      "open_issues_count": 57,
-      "license": {
-        "key": "bsd-3-clause",
-        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
-        "spdx_id": "BSD-3-Clause",
-        "url": "https://api.github.com/licenses/bsd-3-clause",
-        "node_id": "MDc6TGljZW5zZTU="
-      },
-      "topics": [
-        "automated-tests",
-        "automation",
-        "framework",
-        "infrastructure",
-        "testing"
-      ]
-    },
-    {
-      "id": 173161274,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNzMxNjEyNzQ=",
-      "name": "meetings",
-      "full_name": "freebsd/meetings",
-      "html_url": "https://github.com/freebsd/meetings",
-      "description": "Notes from meetings of various FreeBSD-related groups.",
-      "language": null,
-      "stargazers_count": 31,
-      "forks_count": 18,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 782097216,
-      "node_id": "R_kgDOLp3bQA",
-      "name": "iocage",
-      "full_name": "freebsd/iocage",
-      "html_url": "https://github.com/freebsd/iocage",
-      "description": "A FreeBSD jail manager",
-      "language": "Python",
-      "stargazers_count": 36,
-      "forks_count": 12,
-      "open_issues_count": 14,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 781857627,
-      "node_id": "R_kgDOLpozWw",
-      "name": "virtual_oss",
-      "full_name": "freebsd/virtual_oss",
-      "html_url": "https://github.com/freebsd/virtual_oss",
-      "description": "Virtual OSSv4 compatible digital audio workstation daemon",
-      "language": "C",
-      "stargazers_count": 4,
-      "forks_count": 2,
-      "open_issues_count": 0,
-      "license": null,
       "topics": []
     },
     {
@@ -866,9 +796,9 @@
       "html_url": "https://github.com/freebsd/poudriere",
       "description": "Port/Package build and test system",
       "language": "Shell",
-      "stargazers_count": 415,
-      "forks_count": 164,
-      "open_issues_count": 254,
+      "stargazers_count": 441,
+      "forks_count": 172,
+      "open_issues_count": 262,
       "license": {
         "key": "bsd-2-clause",
         "name": "BSD 2-Clause \"Simplified\" License",
@@ -891,8 +821,8 @@
       "html_url": "https://github.com/freebsd/openjdk",
       "description": "OpenJDK for FreeBSD",
       "language": "Java",
-      "stargazers_count": 0,
-      "forks_count": 0,
+      "stargazers_count": 6,
+      "forks_count": 1,
       "open_issues_count": 0,
       "license": {
         "key": "gpl-2.0",
@@ -904,16 +834,61 @@
       "topics": []
     },
     {
-      "id": 16577491,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNjU3NzQ5MQ==",
-      "name": "atf",
-      "full_name": "freebsd/atf",
-      "html_url": "https://github.com/freebsd/atf",
-      "description": "Libraries to write tests in C, C++ and shell",
+      "id": 1530481,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNTMwNDgx",
+      "name": "pkg",
+      "full_name": "freebsd/pkg",
+      "html_url": "https://github.com/freebsd/pkg",
+      "description": "Package management tool for FreeBSD. Help at #pkg on Libera Chat or pkg@FreeBSD.org",
       "language": "C",
-      "stargazers_count": 133,
-      "forks_count": 48,
-      "open_issues_count": 20,
+      "stargazers_count": 815,
+      "forks_count": 301,
+      "open_issues_count": 150,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": [
+        "freebsd",
+        "package-management",
+        "package-manager",
+        "packages"
+      ]
+    },
+    {
+      "id": 91950240,
+      "node_id": "MDEwOlJlcG9zaXRvcnk5MTk1MDI0MA==",
+      "name": "freebsd-ports-kde",
+      "full_name": "freebsd/freebsd-ports-kde",
+      "html_url": "https://github.com/freebsd/freebsd-ports-kde",
+      "description": " FreeBSD KDE development repo ",
+      "language": "Makefile",
+      "stargazers_count": 61,
+      "forks_count": 38,
+      "open_issues_count": 1,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 369868603,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzNjk4Njg2MDM=",
+      "name": "freebsd-doc-translate",
+      "full_name": "freebsd/freebsd-doc-translate",
+      "html_url": "https://github.com/freebsd/freebsd-doc-translate",
+      "description": "Repository used for translating documents of FreeBSD, now using Weblate.",
+      "language": null,
+      "stargazers_count": 9,
+      "forks_count": 7,
+      "open_issues_count": 0,
       "license": {
         "key": "other",
         "name": "Other",
@@ -931,9 +906,9 @@
       "html_url": "https://github.com/freebsd/vm-bhyve",
       "description": "Shell based, minimal dependency bhyve manager",
       "language": "Shell",
-      "stargazers_count": 29,
-      "forks_count": 3,
-      "open_issues_count": 1,
+      "stargazers_count": 159,
+      "forks_count": 30,
+      "open_issues_count": 18,
       "license": {
         "key": "bsd-2-clause",
         "name": "BSD 2-Clause \"Simplified\" License",
@@ -941,6 +916,20 @@
         "url": "https://api.github.com/licenses/bsd-2-clause",
         "node_id": "MDc6TGljZW5zZTQ="
       },
+      "topics": []
+    },
+    {
+      "id": 122494795,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMjI0OTQ3OTU=",
+      "name": "freebsd-ports-libreoffice",
+      "full_name": "freebsd/freebsd-ports-libreoffice",
+      "html_url": "https://github.com/freebsd/freebsd-ports-libreoffice",
+      "description": "Staging area of LibreOffice port on FreeBSD",
+      "language": "Makefile",
+      "stargazers_count": 17,
+      "forks_count": 11,
+      "open_issues_count": 1,
+      "license": null,
       "topics": []
     },
     {
@@ -952,29 +941,9 @@
       "description": null,
       "language": "Perl",
       "stargazers_count": 0,
-      "forks_count": 1,
-      "open_issues_count": 0,
+      "forks_count": 2,
+      "open_issues_count": 1,
       "license": null,
-      "topics": []
-    },
-    {
-      "id": 16526193,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNjUyNjE5Mw==",
-      "name": "lutok",
-      "full_name": "freebsd/lutok",
-      "html_url": "https://github.com/freebsd/lutok",
-      "description": "Lightweight C++ API for Lua",
-      "language": "C++",
-      "stargazers_count": 25,
-      "forks_count": 18,
-      "open_issues_count": 8,
-      "license": {
-        "key": "bsd-3-clause",
-        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
-        "spdx_id": "BSD-3-Clause",
-        "url": "https://api.github.com/licenses/bsd-3-clause",
-        "node_id": "MDc6TGljZW5zZTU="
-      },
       "topics": []
     },
     {
@@ -985,9 +954,9 @@
       "html_url": "https://github.com/freebsd/freebsd-ci",
       "description": "FreeBSD Continuous Integration (CI)",
       "language": "Shell",
-      "stargazers_count": 120,
-      "forks_count": 85,
-      "open_issues_count": 5,
+      "stargazers_count": 134,
+      "forks_count": 89,
+      "open_issues_count": 8,
       "license": {
         "key": "other",
         "name": "Other",
@@ -1002,34 +971,16 @@
       ]
     },
     {
-      "id": 134000627,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMzQwMDA2Mjc=",
-      "name": "freebsd-papers",
-      "full_name": "freebsd/freebsd-papers",
-      "html_url": "https://github.com/freebsd/freebsd-papers",
-      "description": "The FreeBSD Papers, Slides, and Video Collection",
-      "language": "HTML",
-      "stargazers_count": 110,
-      "forks_count": 67,
-      "open_issues_count": 15,
-      "license": null,
-      "topics": [
-        "conference",
-        "freebsd",
-        "slides"
-      ]
-    },
-    {
-      "id": 722520536,
-      "node_id": "R_kgDOKxDJ2A",
-      "name": "cpdup",
-      "full_name": "freebsd/cpdup",
-      "html_url": "https://github.com/freebsd/cpdup",
-      "description": "Filesystem mirroring utility from DragonFly BSD - FreeBSD fork",
+      "id": 16577491,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNjU3NzQ5MQ==",
+      "name": "atf",
+      "full_name": "freebsd/atf",
+      "html_url": "https://github.com/freebsd/atf",
+      "description": "Libraries to write tests in C, C++ and shell",
       "language": "C",
-      "stargazers_count": 6,
-      "forks_count": 1,
-      "open_issues_count": 0,
+      "stargazers_count": 145,
+      "forks_count": 54,
+      "open_issues_count": 17,
       "license": {
         "key": "other",
         "name": "Other",
@@ -1040,70 +991,16 @@
       "topics": []
     },
     {
-      "id": 905828581,
-      "node_id": "R_kgDONf3Y5Q",
-      "name": "grimoire",
-      "full_name": "freebsd/grimoire",
-      "html_url": "https://github.com/freebsd/grimoire",
-      "description": "Characterization of the Bugzilla Backlog",
-      "language": null,
-      "stargazers_count": 3,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 84431760,
-      "node_id": "MDEwOlJlcG9zaXRvcnk4NDQzMTc2MA==",
-      "name": "drm-kmod-firmware",
-      "full_name": "freebsd/drm-kmod-firmware",
-      "html_url": "https://github.com/freebsd/drm-kmod-firmware",
-      "description": "KMS firmware components for graphics/kms-firmware port",
-      "language": "Makefile",
-      "stargazers_count": 26,
-      "forks_count": 18,
-      "open_issues_count": 2,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 8840035,
-      "node_id": "MDEwOlJlcG9zaXRvcnk4ODQwMDM1",
-      "name": "crochet",
-      "full_name": "freebsd/crochet",
-      "html_url": "https://github.com/freebsd/crochet",
-      "description": "Build FreeBSD images for RaspberryPi, BeagleBone, PandaBoard, and others.",
-      "language": "Shell",
-      "stargazers_count": 619,
-      "forks_count": 190,
-      "open_issues_count": 43,
-      "license": {
-        "key": "bsd-2-clause",
-        "name": "BSD 2-Clause \"Simplified\" License",
-        "spdx_id": "BSD-2-Clause",
-        "url": "https://api.github.com/licenses/bsd-2-clause",
-        "node_id": "MDc6TGljZW5zZTQ="
-      },
-      "topics": []
-    },
-    {
-      "id": 20556130,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMDU1NjEzMA==",
-      "name": "bugzilla",
-      "full_name": "freebsd/bugzilla",
-      "html_url": "https://github.com/freebsd/bugzilla",
-      "description": "Bugzilla",
-      "language": "Perl",
-      "stargazers_count": 23,
-      "forks_count": 19,
-      "open_issues_count": 1,
+      "id": 261718139,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyNjE3MTgxMzk=",
+      "name": "drm-kmod",
+      "full_name": "freebsd/drm-kmod",
+      "html_url": "https://github.com/freebsd/drm-kmod",
+      "description": "drm driver for FreeBSD",
+      "language": "C",
+      "stargazers_count": 194,
+      "forks_count": 79,
+      "open_issues_count": 100,
       "license": null,
       "topics": []
     },
@@ -1115,37 +1012,57 @@
       "html_url": "https://github.com/freebsd/portmaster",
       "description": "FreeBSD port management script without external databases or languages",
       "language": "Shell",
-      "stargazers_count": 82,
-      "forks_count": 40,
-      "open_issues_count": 40,
+      "stargazers_count": 87,
+      "forks_count": 42,
+      "open_issues_count": 39,
       "license": null,
       "topics": []
     },
     {
-      "id": 872882952,
-      "node_id": "R_kgDONAcjCA",
-      "name": "pkg-status",
-      "full_name": "freebsd/pkg-status",
-      "html_url": "https://github.com/freebsd/pkg-status",
-      "description": "package builder status",
-      "language": "Python",
-      "stargazers_count": 0,
-      "forks_count": 1,
+      "id": 173161274,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNzMxNjEyNzQ=",
+      "name": "meetings",
+      "full_name": "freebsd/meetings",
+      "html_url": "https://github.com/freebsd/meetings",
+      "description": "Notes from meetings of various FreeBSD-related groups.",
+      "language": null,
+      "stargazers_count": 35,
+      "forks_count": 18,
       "open_issues_count": 0,
       "license": null,
       "topics": []
     },
     {
-      "id": 29156085,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyOTE1NjA4NQ==",
-      "name": "phabricator",
-      "full_name": "freebsd/phabricator",
-      "html_url": "https://github.com/freebsd/phabricator",
-      "description": "FreeBSD fork of Phabricator code review",
-      "language": "PHP",
-      "stargazers_count": 8,
-      "forks_count": 13,
-      "open_issues_count": 2,
+      "id": 16526193,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNjUyNjE5Mw==",
+      "name": "lutok",
+      "full_name": "freebsd/lutok",
+      "html_url": "https://github.com/freebsd/lutok",
+      "description": "Lightweight C++ API for Lua",
+      "language": "C++",
+      "stargazers_count": 26,
+      "forks_count": 18,
+      "open_issues_count": 7,
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "topics": []
+    },
+    {
+      "id": 1140072314,
+      "node_id": "R_kgDOQ_Qfeg",
+      "name": "arcanist",
+      "full_name": "freebsd/arcanist",
+      "html_url": "https://github.com/freebsd/arcanist",
+      "description": "A command line tool for interacting with Phorge. Read only mirror!",
+      "language": null,
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "open_issues_count": 0,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -1156,16 +1073,36 @@
       "topics": []
     },
     {
-      "id": 712098962,
-      "node_id": "R_kgDOKnHEkg",
-      "name": "wireless",
-      "full_name": "freebsd/wireless",
-      "html_url": "https://github.com/freebsd/wireless",
-      "description": null,
+      "id": 1139297705,
+      "node_id": "R_kgDOQ-hNqQ",
+      "name": "phorge",
+      "full_name": "freebsd/phorge",
+      "html_url": "https://github.com/freebsd/phorge",
+      "description": "Phorge: A powerful developer toolkit. Read only mirror!",
       "language": null,
-      "stargazers_count": 2,
-      "forks_count": 1,
+      "stargazers_count": 1,
+      "forks_count": 0,
       "open_issues_count": 0,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 722520536,
+      "node_id": "R_kgDOKxDJ2A",
+      "name": "cpdup",
+      "full_name": "freebsd/cpdup",
+      "html_url": "https://github.com/freebsd/cpdup",
+      "description": "Filesystem mirroring utility from DragonFly BSD - FreeBSD fork",
+      "language": "C",
+      "stargazers_count": 12,
+      "forks_count": 3,
+      "open_issues_count": 1,
       "license": {
         "key": "other",
         "name": "Other",
@@ -1174,48 +1111,358 @@
         "node_id": "MDc6TGljZW5zZTA="
       },
       "topics": []
+    },
+    {
+      "id": 16887424,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNjg4NzQyNA==",
+      "name": "kyua",
+      "full_name": "freebsd/kyua",
+      "html_url": "https://github.com/freebsd/kyua",
+      "description": "Port/Package build and test system",
+      "language": "C++",
+      "stargazers_count": 176,
+      "forks_count": 43,
+      "open_issues_count": 55,
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "topics": [
+        "automated-tests",
+        "automation",
+        "framework",
+        "infrastructure",
+        "testing"
+      ]
+    },
+    {
+      "id": 872882952,
+      "node_id": "R_kgDONAcjCA",
+      "name": "pkg-status",
+      "full_name": "freebsd/pkg-status",
+      "html_url": "https://github.com/freebsd/pkg-status",
+      "description": "package builder status",
+      "language": "Python",
+      "stargazers_count": 2,
+      "forks_count": 2,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 782097216,
+      "node_id": "R_kgDOLp3bQA",
+      "name": "iocage",
+      "full_name": "freebsd/iocage",
+      "html_url": "https://github.com/freebsd/iocage",
+      "description": "A FreeBSD jail manager",
+      "language": "Python",
+      "stargazers_count": 50,
+      "forks_count": 15,
+      "open_issues_count": 19,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 84431760,
+      "node_id": "MDEwOlJlcG9zaXRvcnk4NDQzMTc2MA==",
+      "name": "drm-kmod-firmware",
+      "full_name": "freebsd/drm-kmod-firmware",
+      "html_url": "https://github.com/freebsd/drm-kmod-firmware",
+      "description": "KMS firmware components for graphics/kms-firmware port",
+      "language": "Makefile",
+      "stargazers_count": 33,
+      "forks_count": 22,
+      "open_issues_count": 4,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 134000627,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMzQwMDA2Mjc=",
+      "name": "freebsd-papers",
+      "full_name": "freebsd/freebsd-papers",
+      "html_url": "https://github.com/freebsd/freebsd-papers",
+      "description": "The FreeBSD Papers, Slides, and Video Collection",
+      "language": "HTML",
+      "stargazers_count": 129,
+      "forks_count": 68,
+      "open_issues_count": 17,
+      "license": null,
+      "topics": [
+        "conference",
+        "freebsd",
+        "slides"
+      ]
+    },
+    {
+      "id": 905828581,
+      "node_id": "R_kgDONf3Y5Q",
+      "name": "grimoire",
+      "full_name": "freebsd/grimoire",
+      "html_url": "https://github.com/freebsd/grimoire",
+      "description": "Characterization of the Bugzilla Backlog",
+      "language": null,
+      "stargazers_count": 6,
+      "forks_count": 1,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 781857627,
+      "node_id": "R_kgDOLpozWw",
+      "name": "virtual_oss",
+      "full_name": "freebsd/virtual_oss",
+      "html_url": "https://github.com/freebsd/virtual_oss",
+      "description": "Virtual OSSv4 compatible digital audio workstation daemon",
+      "language": "C",
+      "stargazers_count": 9,
+      "forks_count": 4,
+      "open_issues_count": 1,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1064628156,
+      "node_id": "R_kgDOP3TvvA",
+      "name": "srcmgr",
+      "full_name": "freebsd/srcmgr",
+      "html_url": "https://github.com/freebsd/srcmgr",
+      "description": "Administrative stuff for srcmgr@",
+      "language": null,
+      "stargazers_count": 3,
+      "forks_count": 1,
+      "open_issues_count": 19,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 275170353,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyNzUxNzAzNTM=",
+      "name": "mfctracker",
+      "full_name": "freebsd/mfctracker",
+      "html_url": "https://github.com/freebsd/mfctracker",
+      "description": "Code source behind https://mfc.freebsd.org",
+      "language": "Python",
+      "stargazers_count": 7,
+      "forks_count": 3,
+      "open_issues_count": 2,
+      "license": {
+        "key": "bsd-2-clause",
+        "name": "BSD 2-Clause \"Simplified\" License",
+        "spdx_id": "BSD-2-Clause",
+        "url": "https://api.github.com/licenses/bsd-2-clause",
+        "node_id": "MDc6TGljZW5zZTQ="
+      },
+      "topics": []
+    },
+    {
+      "id": 1016685979,
+      "node_id": "R_kgDOPJllmw",
+      "name": "thermite",
+      "full_name": "freebsd/thermite",
+      "html_url": "https://github.com/freebsd/thermite",
+      "description": "Thermite scripts used by FreeBSD Release Engineering Team",
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
     }
   ],
   "contributorsDetails": [
     {
-      "login": "sunpoet",
-      "id": 688777,
-      "node_id": "MDQ6VXNlcjY4ODc3Nw==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/688777?v=4",
-      "html_url": "https://github.com/sunpoet",
-      "contributions": 101216
+      "login": "bsdimp",
+      "id": 4139006,
+      "node_id": "MDQ6VXNlcjQxMzkwMDY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4139006?v=4",
+      "html_url": "https://github.com/bsdimp",
+      "contributions": 10669
     },
     {
-      "login": "yurivict",
-      "id": 271906,
-      "node_id": "MDQ6VXNlcjI3MTkwNg==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/271906?v=4",
-      "html_url": "https://github.com/yurivict",
-      "contributions": 23760
+      "login": "bsdjhb",
+      "id": 8976613,
+      "node_id": "MDQ6VXNlcjg5NzY2MTM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8976613?v=4",
+      "html_url": "https://github.com/bsdjhb",
+      "contributions": 9292
     },
     {
-      "login": "miwi-fbsd",
-      "id": 6657176,
-      "node_id": "MDQ6VXNlcjY2NTcxNzY=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/6657176?v=4",
-      "html_url": "https://github.com/miwi-fbsd",
-      "contributions": 20204
+      "login": "kostikbel",
+      "id": 2607252,
+      "node_id": "MDQ6VXNlcjI2MDcyNTI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2607252?v=4",
+      "html_url": "https://github.com/kostikbel",
+      "contributions": 6895
     },
     {
-      "login": "AMDmi3",
-      "id": 474217,
-      "node_id": "MDQ6VXNlcjQ3NDIxNw==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/474217?v=4",
-      "html_url": "https://github.com/AMDmi3",
-      "contributions": 17083
+      "login": "bsdphk",
+      "id": 567236,
+      "node_id": "MDQ6VXNlcjU2NzIzNg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/567236?v=4",
+      "html_url": "https://github.com/bsdphk",
+      "contributions": 6572
     },
     {
-      "login": "jbeich",
-      "id": 11153579,
-      "node_id": "MDQ6VXNlcjExMTUzNTc5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/11153579?v=4",
-      "html_url": "https://github.com/jbeich",
-      "contributions": 16266
+      "login": "DarkHelmet433",
+      "id": 342419,
+      "node_id": "MDQ6VXNlcjM0MjQxOQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/342419?v=4",
+      "html_url": "https://github.com/DarkHelmet433",
+      "contributions": 6165
+    },
+    {
+      "login": "markjdb",
+      "id": 782170,
+      "node_id": "MDQ6VXNlcjc4MjE3MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/782170?v=4",
+      "html_url": "https://github.com/markjdb",
+      "contributions": 4471
+    },
+    {
+      "login": "amotin",
+      "id": 5219480,
+      "node_id": "MDQ6VXNlcjUyMTk0ODA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5219480?v=4",
+      "html_url": "https://github.com/amotin",
+      "contributions": 4445
+    },
+    {
+      "login": "rwatson",
+      "id": 186862,
+      "node_id": "MDQ6VXNlcjE4Njg2Mg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/186862?v=4",
+      "html_url": "https://github.com/rwatson",
+      "contributions": 714
+    },
+    {
+      "login": "dag-erling",
+      "id": 4972155,
+      "node_id": "MDQ6VXNlcjQ5NzIxNTU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4972155?v=4",
+      "html_url": "https://github.com/dag-erling",
+      "contributions": 4216
+    },
+    {
+      "login": "emaste",
+      "id": 1034582,
+      "node_id": "MDQ6VXNlcjEwMzQ1ODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1034582?v=4",
+      "html_url": "https://github.com/emaste",
+      "contributions": 4015
+    },
+    {
+      "login": "glebius",
+      "id": 6034387,
+      "node_id": "MDQ6VXNlcjYwMzQzODc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6034387?v=4",
+      "html_url": "https://github.com/glebius",
+      "contributions": 3644
+    },
+    {
+      "login": "DimitryAndric",
+      "id": 9060368,
+      "node_id": "MDQ6VXNlcjkwNjAzNjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9060368?v=4",
+      "html_url": "https://github.com/DimitryAndric",
+      "contributions": 3572
+    },
+    {
+      "login": "hselasky",
+      "id": 1541461,
+      "node_id": "MDQ6VXNlcjE1NDE0NjE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1541461?v=4",
+      "html_url": "https://github.com/hselasky",
+      "contributions": 2688
+    },
+    {
+      "login": "alcriceedu",
+      "id": 5333486,
+      "node_id": "MDQ6VXNlcjUzMzM0ODY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5333486?v=4",
+      "html_url": "https://github.com/alcriceedu",
+      "contributions": 2665
+    },
+    {
+      "login": "zxombie",
+      "id": 72266,
+      "node_id": "MDQ6VXNlcjcyMjY2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/72266?v=4",
+      "html_url": "https://github.com/zxombie",
+      "contributions": 2597
+    },
+    {
+      "login": "delphij",
+      "id": 1045626,
+      "node_id": "MDQ6VXNlcjEwNDU2MjY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1045626?v=4",
+      "html_url": "https://github.com/delphij",
+      "contributions": 616
+    },
+    {
+      "login": "ngie-eign",
+      "id": 1574099,
+      "node_id": "MDQ6VXNlcjE1NzQwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1574099?v=4",
+      "html_url": "https://github.com/ngie-eign",
+      "contributions": 2557
+    },
+    {
+      "login": "mjguzik",
+      "id": 9325157,
+      "node_id": "MDQ6VXNlcjkzMjUxNTc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9325157?v=4",
+      "html_url": "https://github.com/mjguzik",
+      "contributions": 2393
+    },
+    {
+      "login": "behlendorf",
+      "id": 148917,
+      "node_id": "MDQ6VXNlcjE0ODkxNw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/148917?v=4",
+      "html_url": "https://github.com/behlendorf",
+      "contributions": 2299
+    },
+    {
+      "login": "sleffler",
+      "id": 6475681,
+      "node_id": "MDQ6VXNlcjY0NzU2ODE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6475681?v=4",
+      "html_url": "https://github.com/sleffler",
+      "contributions": 2158
+    },
+    {
+      "login": "kevans91",
+      "id": 646318,
+      "node_id": "MDQ6VXNlcjY0NjMxOA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/646318?v=4",
+      "html_url": "https://github.com/kevans91",
+      "contributions": 2104
+    },
+    {
+      "login": "trasz",
+      "id": 1238567,
+      "node_id": "MDQ6VXNlcjEyMzg1Njc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1238567?v=4",
+      "html_url": "https://github.com/trasz",
+      "contributions": 2072
     },
     {
       "login": "bapt",
@@ -1223,7 +1470,95 @@
       "node_id": "MDQ6VXNlcjEwMzYwNw==",
       "avatar_url": "https://avatars.githubusercontent.com/u/103607?v=4",
       "html_url": "https://github.com/bapt",
-      "contributions": 11530
+      "contributions": 11716
+    },
+    {
+      "login": "kprovost",
+      "id": 4460555,
+      "node_id": "MDQ6VXNlcjQ0NjA1NTU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4460555?v=4",
+      "html_url": "https://github.com/kprovost",
+      "contributions": 1915
+    },
+    {
+      "login": "tuexen",
+      "id": 62450,
+      "node_id": "MDQ6VXNlcjYyNDUw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/62450?v=4",
+      "html_url": "https://github.com/tuexen",
+      "contributions": 1896
+    },
+    {
+      "login": "brooksdavis",
+      "id": 3629693,
+      "node_id": "MDQ6VXNlcjM2Mjk2OTM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3629693?v=4",
+      "html_url": "https://github.com/brooksdavis",
+      "contributions": 1781
+    },
+    {
+      "login": "avg-I",
+      "id": 1499700,
+      "node_id": "MDQ6VXNlcjE0OTk3MDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1499700?v=4",
+      "html_url": "https://github.com/avg-I",
+      "contributions": 1769
+    },
+    {
+      "login": "sparcplug",
+      "id": 26117443,
+      "node_id": "MDQ6VXNlcjI2MTE3NDQz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/26117443?v=4",
+      "html_url": "https://github.com/sparcplug",
+      "contributions": 1718
+    },
+    {
+      "login": "juikim",
+      "id": 1071564,
+      "node_id": "MDQ6VXNlcjEwNzE1NjQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1071564?v=4",
+      "html_url": "https://github.com/juikim",
+      "contributions": 1660
+    },
+    {
+      "login": "bdrewery",
+      "id": 33693,
+      "node_id": "MDQ6VXNlcjMzNjkz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/33693?v=4",
+      "html_url": "https://github.com/bdrewery",
+      "contributions": 1603
+    },
+    {
+      "login": "sunpoet",
+      "id": 688777,
+      "node_id": "MDQ6VXNlcjY4ODc3Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/688777?v=4",
+      "html_url": "https://github.com/sunpoet",
+      "contributions": 111466
+    },
+    {
+      "login": "yurivict",
+      "id": 271906,
+      "node_id": "MDQ6VXNlcjI3MTkwNg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/271906?v=4",
+      "html_url": "https://github.com/yurivict",
+      "contributions": 25898
+    },
+    {
+      "login": "AMDmi3",
+      "id": 474217,
+      "node_id": "MDQ6VXNlcjQ3NDIxNw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/474217?v=4",
+      "html_url": "https://github.com/AMDmi3",
+      "contributions": 17244
+    },
+    {
+      "login": "jbeich",
+      "id": 11153579,
+      "node_id": "MDQ6VXNlcjExMTUzNTc5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11153579?v=4",
+      "html_url": "https://github.com/jbeich",
+      "contributions": 16845
     },
     {
       "login": "5u623l20",
@@ -1231,7 +1566,7 @@
       "node_id": "MDQ6VXNlcjYwMTk3OTY=",
       "avatar_url": "https://avatars.githubusercontent.com/u/6019796?v=4",
       "html_url": "https://github.com/5u623l20",
-      "contributions": 9077
+      "contributions": 10162
     },
     {
       "login": "wenheping",
@@ -1239,7 +1574,7 @@
       "node_id": "MDQ6VXNlcjQ5NzI3Nw==",
       "avatar_url": "https://avatars.githubusercontent.com/u/497277?v=4",
       "html_url": "https://github.com/wenheping",
-      "contributions": 8735
+      "contributions": 9039
     },
     {
       "login": "swills",
@@ -1263,7 +1598,7 @@
       "node_id": "MDQ6VXNlcjI5MTMzNDY=",
       "avatar_url": "https://avatars.githubusercontent.com/u/2913346?v=4",
       "html_url": "https://github.com/ant1",
-      "contributions": 8129
+      "contributions": 8163
     },
     {
       "login": "ehaupt",
@@ -1271,7 +1606,7 @@
       "node_id": "MDQ6VXNlcjc3NzcyNDQ=",
       "avatar_url": "https://avatars.githubusercontent.com/u/7777244?v=4",
       "html_url": "https://github.com/ehaupt",
-      "contributions": 6277
+      "contributions": 6478
     },
     {
       "login": "olgeni",
@@ -1279,15 +1614,7 @@
       "node_id": "MDQ6VXNlcjQxMjAzMQ==",
       "avatar_url": "https://avatars.githubusercontent.com/u/412031?v=4",
       "html_url": "https://github.com/olgeni",
-      "contributions": 5861
-    },
-    {
-      "login": "vanillahsu",
-      "id": 22189,
-      "node_id": "MDQ6VXNlcjIyMTg5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/22189?v=4",
-      "html_url": "https://github.com/vanillahsu",
-      "contributions": 5623
+      "contributions": 6045
     },
     {
       "login": "mat813",
@@ -1295,7 +1622,15 @@
       "node_id": "MDQ6VXNlcjc1Nzgz",
       "avatar_url": "https://avatars.githubusercontent.com/u/75783?v=4",
       "html_url": "https://github.com/mat813",
-      "contributions": 457
+      "contributions": 459
+    },
+    {
+      "login": "vanillahsu",
+      "id": 22189,
+      "node_id": "MDQ6VXNlcjIyMTg5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/22189?v=4",
+      "html_url": "https://github.com/vanillahsu",
+      "contributions": 5708
     },
     {
       "login": "krionbsd",
@@ -1303,15 +1638,7 @@
       "node_id": "MDQ6VXNlcjI1NjE2NTQz",
       "avatar_url": "https://avatars.githubusercontent.com/u/25616543?v=4",
       "html_url": "https://github.com/krionbsd",
-      "contributions": 5470
-    },
-    {
-      "login": "thierry-FreeBSD",
-      "id": 6819982,
-      "node_id": "MDQ6VXNlcjY4MTk5ODI=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/6819982?v=4",
-      "html_url": "https://github.com/thierry-FreeBSD",
-      "contributions": 5087
+      "contributions": 5501
     },
     {
       "login": "rene0",
@@ -1319,7 +1646,31 @@
       "node_id": "MDQ6VXNlcjIwOTAxMg==",
       "avatar_url": "https://avatars.githubusercontent.com/u/209012?v=4",
       "html_url": "https://github.com/rene0",
-      "contributions": 773
+      "contributions": 791
+    },
+    {
+      "login": "thierry-FreeBSD",
+      "id": 6819982,
+      "node_id": "MDQ6VXNlcjY4MTk5ODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6819982?v=4",
+      "html_url": "https://github.com/thierry-FreeBSD",
+      "contributions": 5311
+    },
+    {
+      "login": "pkubaj",
+      "id": 4457924,
+      "node_id": "MDQ6VXNlcjQ0NTc5MjQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4457924?v=4",
+      "html_url": "https://github.com/pkubaj",
+      "contributions": 4492
+    },
+    {
+      "login": "assistcontrol",
+      "id": 2219761,
+      "node_id": "MDQ6VXNlcjIyMTk3NjE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2219761?v=4",
+      "html_url": "https://github.com/assistcontrol",
+      "contributions": 4325
     },
     {
       "login": "tcberner",
@@ -1330,12 +1681,12 @@
       "contributions": 4274
     },
     {
-      "login": "pkubaj",
-      "id": 4457924,
-      "node_id": "MDQ6VXNlcjQ0NTc5MjQ=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/4457924?v=4",
-      "html_url": "https://github.com/pkubaj",
-      "contributions": 4262
+      "login": "cschuber",
+      "id": 7910327,
+      "node_id": "MDQ6VXNlcjc5MTAzMjc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7910327?v=4",
+      "html_url": "https://github.com/cschuber",
+      "contributions": 4266
     },
     {
       "login": "knu",
@@ -1346,14 +1697,6 @@
       "contributions": 4232
     },
     {
-      "login": "assistcontrol",
-      "id": 2219761,
-      "node_id": "MDQ6VXNlcjIyMTk3NjE=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/2219761?v=4",
-      "html_url": "https://github.com/assistcontrol",
-      "contributions": 4139
-    },
-    {
       "login": "kuriyama",
       "id": 55382,
       "node_id": "MDQ6VXNlcjU1Mzgy",
@@ -1362,20 +1705,12 @@
       "contributions": 817
     },
     {
-      "login": "cschuber",
-      "id": 7910327,
-      "node_id": "MDQ6VXNlcjc5MTAzMjc=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/7910327?v=4",
-      "html_url": "https://github.com/cschuber",
-      "contributions": 4014
-    },
-    {
       "login": "tota",
       "id": 70422,
       "node_id": "MDQ6VXNlcjcwNDIy",
       "avatar_url": "https://avatars.githubusercontent.com/u/70422?v=4",
       "html_url": "https://github.com/tota",
-      "contributions": 3736
+      "contributions": 3830
     },
     {
       "login": "lwhsu",
@@ -1383,7 +1718,7 @@
       "node_id": "MDQ6VXNlcjUzMDE0MA==",
       "avatar_url": "https://avatars.githubusercontent.com/u/530140?v=4",
       "html_url": "https://github.com/lwhsu",
-      "contributions": 296
+      "contributions": 312
     },
     {
       "login": "jrmarino",
@@ -1407,15 +1742,23 @@
       "node_id": "MDQ6VXNlcjY1OTc3ODA=",
       "avatar_url": "https://avatars.githubusercontent.com/u/6597780?v=4",
       "html_url": "https://github.com/opsec",
-      "contributions": 3430
+      "contributions": 3441
     },
     {
-      "login": "gahr",
-      "id": 959474,
-      "node_id": "MDQ6VXNlcjk1OTQ3NA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/959474?v=4",
-      "html_url": "https://github.com/gahr",
-      "contributions": 3254
+      "login": "madpilot78",
+      "id": 8821849,
+      "node_id": "MDQ6VXNlcjg4MjE4NDk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8821849?v=4",
+      "html_url": "https://github.com/madpilot78",
+      "contributions": 3392
+    },
+    {
+      "login": "osokin",
+      "id": 130814,
+      "node_id": "MDQ6VXNlcjEzMDgxNA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/130814?v=4",
+      "html_url": "https://github.com/osokin",
+      "contributions": 3315
     },
     {
       "login": "wosch",
@@ -1423,7 +1766,7 @@
       "node_id": "MDQ6VXNlcjE3OTYwMg==",
       "avatar_url": "https://avatars.githubusercontent.com/u/179602?v=4",
       "html_url": "https://github.com/wosch",
-      "contributions": 1999
+      "contributions": 2076
     },
     {
       "login": "murraystokely",
@@ -1482,20 +1825,20 @@
       "contributions": 896
     },
     {
-      "login": "rwatson",
-      "id": 186862,
-      "node_id": "MDQ6VXNlcjE4Njg2Mg==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/186862?v=4",
-      "html_url": "https://github.com/rwatson",
-      "contributions": 714
-    },
-    {
       "login": "remkolodder",
       "id": 695440,
       "node_id": "MDQ6VXNlcjY5NTQ0MA==",
       "avatar_url": "https://avatars.githubusercontent.com/u/695440?v=4",
       "html_url": "https://github.com/remkolodder",
       "contributions": 710
+    },
+    {
+      "login": "bsdbcr",
+      "id": 25948773,
+      "node_id": "MDQ6VXNlcjI1OTQ4Nzcz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25948773?v=4",
+      "html_url": "https://github.com/bsdbcr",
+      "contributions": 675
     },
     {
       "login": "bsdtrhodes",
@@ -1522,36 +1865,20 @@
       "contributions": 656
     },
     {
-      "login": "bsdbcr",
-      "id": 25948773,
-      "node_id": "MDQ6VXNlcjI1OTQ4Nzcz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/25948773?v=4",
-      "html_url": "https://github.com/bsdbcr",
-      "contributions": 645
-    },
-    {
-      "login": "simonlbn",
-      "id": 9915240,
-      "node_id": "MDQ6VXNlcjk5MTUyNDA=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/9915240?v=4",
-      "html_url": "https://github.com/simonlbn",
-      "contributions": 633
-    },
-    {
-      "login": "delphij",
-      "id": 1045626,
-      "node_id": "MDQ6VXNlcjEwNDU2MjY=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1045626?v=4",
-      "html_url": "https://github.com/delphij",
-      "contributions": 615
-    },
-    {
       "login": "sergio-carlavilla",
       "id": 68603922,
       "node_id": "MDQ6VXNlcjY4NjAzOTIy",
       "avatar_url": "https://avatars.githubusercontent.com/u/68603922?v=4",
       "html_url": "https://github.com/sergio-carlavilla",
-      "contributions": 515
+      "contributions": 535
+    },
+    {
+      "login": "cperciva",
+      "id": 5085436,
+      "node_id": "MDQ6VXNlcjUwODU0MzY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5085436?v=4",
+      "html_url": "https://github.com/cperciva",
+      "contributions": 506
     },
     {
       "login": "ma10",
@@ -1567,7 +1894,7 @@
       "node_id": "MDQ6VXNlcjMyNjExNQ==",
       "avatar_url": "https://avatars.githubusercontent.com/u/326115?v=4",
       "html_url": "https://github.com/jkoshy",
-      "contributions": 436
+      "contributions": 437
     },
     {
       "login": "dbaio",
@@ -1575,15 +1902,7 @@
       "node_id": "MDQ6VXNlcjI1MjkzMzU=",
       "avatar_url": "https://avatars.githubusercontent.com/u/2529335?v=4",
       "html_url": "https://github.com/dbaio",
-      "contributions": 429
-    },
-    {
-      "login": "cperciva",
-      "id": 5085436,
-      "node_id": "MDQ6VXNlcjUwODU0MzY=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/5085436?v=4",
-      "html_url": "https://github.com/cperciva",
-      "contributions": 368
+      "contributions": 435
     },
     {
       "login": "gavinatkinson",
@@ -1599,7 +1918,15 @@
       "node_id": "MDQ6VXNlcjc4MzE2ODU=",
       "avatar_url": "https://avatars.githubusercontent.com/u/7831685?v=4",
       "html_url": "https://github.com/raycherng",
-      "contributions": 284
+      "contributions": 297
+    },
+    {
+      "login": "fernape",
+      "id": 2565871,
+      "node_id": "MDQ6VXNlcjI1NjU4NzE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2565871?v=4",
+      "html_url": "https://github.com/fernape",
+      "contributions": 269
     },
     {
       "login": "dgerzo",
@@ -1610,12 +1937,12 @@
       "contributions": 268
     },
     {
-      "login": "fernape",
-      "id": 2565871,
-      "node_id": "MDQ6VXNlcjI1NjU4NzE=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/2565871?v=4",
-      "html_url": "https://github.com/fernape",
-      "contributions": 252
+      "login": "lsalvadore",
+      "id": 102471231,
+      "node_id": "U_kgDOBhuWPw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/102471231?v=4",
+      "html_url": "https://github.com/lsalvadore",
+      "contributions": 259
     }
   ],
   "activeOrg": true

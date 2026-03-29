@@ -61,56 +61,16 @@
   "githubID": "RADAR-base",
   "repositories": [
     {
-      "id": 181897529,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxODE4OTc1Mjk=",
-      "name": "RADAR-Kubernetes",
-      "full_name": "RADAR-base/RADAR-Kubernetes",
-      "html_url": "https://github.com/RADAR-base/RADAR-Kubernetes",
-      "description": "Kubernetes deployment of RADAR-base",
-      "language": "Shell",
-      "stargazers_count": 21,
-      "forks_count": 10,
-      "open_issues_count": 36,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 156412627,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNTY0MTI2Mjc=",
-      "name": "RADAR-Appserver",
-      "full_name": "RADAR-base/RADAR-Appserver",
-      "html_url": "https://github.com/RADAR-base/RADAR-Appserver",
-      "description": "General purpose application server for the radar platform currently with capability to schedule push notifications",
-      "language": "Java",
-      "stargazers_count": 10,
-      "forks_count": 3,
-      "open_issues_count": 34,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 82068774,
-      "node_id": "MDEwOlJlcG9zaXRvcnk4MjA2ODc3NA==",
-      "name": "radar-commons",
-      "full_name": "RADAR-base/radar-commons",
-      "html_url": "https://github.com/RADAR-base/radar-commons",
-      "description": "RADAR-base platform's common Java utilities library containing basic schemas, streaming features, testing bridges and utils.",
+      "id": 142870020,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNDI4NzAwMjA=",
+      "name": "RADAR-Rest-Source-Auth",
+      "full_name": "RADAR-base/RADAR-Rest-Source-Auth",
+      "html_url": "https://github.com/RADAR-base/RADAR-Rest-Source-Auth",
+      "description": "A simple application to support authorization of wearable devices using OAuth using a webservice with REST Endpoints.",
       "language": "Kotlin",
-      "stargazers_count": 2,
-      "forks_count": 4,
-      "open_issues_count": 5,
+      "stargazers_count": 1,
+      "forks_count": 2,
+      "open_issues_count": 35,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -119,23 +79,24 @@
         "node_id": "MDc6TGljZW5zZTI="
       },
       "topics": [
-        "kafka-streams",
-        "radar-cns",
-        "schema",
+        "angular6",
+        "authorization",
+        "fitbit",
+        "spring",
         "wearables"
       ]
     },
     {
-      "id": 68295976,
-      "node_id": "MDEwOlJlcG9zaXRvcnk2ODI5NTk3Ng==",
-      "name": "RADAR-Questionnaire",
-      "full_name": "RADAR-base/RADAR-Questionnaire",
-      "html_url": "https://github.com/RADAR-base/RADAR-Questionnaire",
-      "description": "Questionnaire mobile application (Active App) for RADAR-base",
-      "language": "TypeScript",
-      "stargazers_count": 18,
-      "forks_count": 15,
-      "open_issues_count": 86,
+      "id": 835217831,
+      "node_id": "R_kgDOMchppw",
+      "name": "radar-self-enrolment-definitions",
+      "full_name": "RADAR-base/radar-self-enrolment-definitions",
+      "html_url": "https://github.com/RADAR-base/radar-self-enrolment-definitions",
+      "description": "Definition files to define the contents and behaviour of various parts of self enrolment portal such as study information, eligibility, consent and more.",
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 1,
+      "open_issues_count": 3,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -143,12 +104,27 @@
         "url": "https://api.github.com/licenses/apache-2.0",
         "node_id": "MDc6TGljZW5zZTI="
       },
-      "topics": [
-        "android",
-        "cordova",
-        "ionic",
-        "radar-cns"
-      ]
+      "topics": []
+    },
+    {
+      "id": 194677355,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxOTQ2NzczNTU=",
+      "name": "radar-app-config",
+      "full_name": "RADAR-base/radar-app-config",
+      "html_url": "https://github.com/RADAR-base/radar-app-config",
+      "description": "App configuration engine",
+      "language": "Kotlin",
+      "stargazers_count": 3,
+      "forks_count": 1,
+      "open_issues_count": 6,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
     },
     {
       "id": 418411927,
@@ -158,9 +134,9 @@
       "html_url": "https://github.com/RADAR-base/radar-helm-charts",
       "description": "Helm charts of the RADAR-base platform components.",
       "language": "Mustache",
-      "stargazers_count": 7,
-      "forks_count": 5,
-      "open_issues_count": 1986,
+      "stargazers_count": 9,
+      "forks_count": 6,
+      "open_issues_count": 180,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -174,41 +150,15 @@
       ]
     },
     {
-      "id": 90646368,
-      "node_id": "MDEwOlJlcG9zaXRvcnk5MDY0NjM2OA==",
-      "name": "ManagementPortal",
-      "full_name": "RADAR-base/ManagementPortal",
-      "html_url": "https://github.com/RADAR-base/ManagementPortal",
-      "description": "Management Portal to manage research studies ",
-      "language": "Kotlin",
-      "stargazers_count": 21,
-      "forks_count": 18,
-      "open_issues_count": 109,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "angularjs",
-        "jhipster",
-        "oauth2",
-        "spring",
-        "spring-boot"
-      ]
-    },
-    {
-      "id": 87934177,
-      "node_id": "MDEwOlJlcG9zaXRvcnk4NzkzNDE3Nw==",
-      "name": "RADAR-Gateway",
-      "full_name": "RADAR-base/RADAR-Gateway",
-      "html_url": "https://github.com/RADAR-base/RADAR-Gateway",
-      "description": "Gateway to the Confluent Kafka REST Proxy. It does the authentication and authorization, content validation and decompression if needed.",
+      "id": 307485421,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzMDc0ODU0MjE=",
+      "name": "RADAR-PushEndpoint",
+      "full_name": "RADAR-base/RADAR-PushEndpoint",
+      "html_url": "https://github.com/RADAR-base/RADAR-PushEndpoint",
+      "description": "A gateway to expose endpoints for Push based services to POST data to RADAR-Base platform.",
       "language": "Kotlin",
       "stargazers_count": 2,
-      "forks_count": 1,
+      "forks_count": 3,
       "open_issues_count": 11,
       "license": {
         "key": "apache-2.0",
@@ -217,24 +167,19 @@
         "url": "https://api.github.com/licenses/apache-2.0",
         "node_id": "MDc6TGljZW5zZTI="
       },
-      "topics": [
-        "auth",
-        "gateway",
-        "jersey",
-        "kotlin"
-      ]
+      "topics": []
     },
     {
-      "id": 920650125,
-      "node_id": "R_kgDONuABjQ",
-      "name": "radar-gatling",
-      "full_name": "RADAR-base/radar-gatling",
-      "html_url": "https://github.com/RADAR-base/radar-gatling",
-      "description": "Gatling tests for RADAR-Kubernetes",
+      "id": 1164652966,
+      "node_id": "R_kgDORWsxpg",
+      "name": "radar-platform-backend",
+      "full_name": "RADAR-base/radar-platform-backend",
+      "html_url": "https://github.com/RADAR-base/radar-platform-backend",
+      "description": "A microservices-based backend platform for RADAR-base built with Kotlin and Jersey.",
       "language": "Kotlin",
       "stargazers_count": 0,
       "forks_count": 0,
-      "open_issues_count": 0,
+      "open_issues_count": 9,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -245,30 +190,16 @@
       "topics": []
     },
     {
-      "id": 820444278,
-      "node_id": "R_kgDOMOb8dg",
-      "name": "radar-self-enrolment-ui",
-      "full_name": "RADAR-base/radar-self-enrolment-ui",
-      "html_url": "https://github.com/RADAR-base/radar-self-enrolment-ui",
-      "description": "RADAR Self enrolment UI for enrolling participants remotely.",
-      "language": "TypeScript",
-      "stargazers_count": 1,
-      "forks_count": 1,
-      "open_issues_count": 4,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 107894536,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMDc4OTQ1MzY=",
-      "name": "RADAR-REDCap-aRMT-Definitions",
-      "full_name": "RADAR-base/RADAR-REDCap-aRMT-Definitions",
-      "html_url": "https://github.com/RADAR-base/RADAR-REDCap-aRMT-Definitions",
-      "description": null,
-      "language": "JavaScript",
-      "stargazers_count": 2,
-      "forks_count": 15,
-      "open_issues_count": 10,
+      "id": 181897529,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxODE4OTc1Mjk=",
+      "name": "RADAR-Kubernetes",
+      "full_name": "RADAR-base/RADAR-Kubernetes",
+      "html_url": "https://github.com/RADAR-base/RADAR-Kubernetes",
+      "description": "Kubernetes deployment of RADAR-base",
+      "language": "Python",
+      "stargazers_count": 25,
+      "forks_count": 14,
+      "open_issues_count": 37,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -301,38 +232,16 @@
       ]
     },
     {
-      "id": 428238903,
-      "node_id": "R_kgDOGYZoNw",
-      "name": "radarpipeline",
-      "full_name": "RADAR-base/radarpipeline",
-      "html_url": "https://github.com/RADAR-base/radarpipeline",
-      "description": "A python feature generation and visualzation package use with RADAR project data.",
-      "language": "Python",
-      "stargazers_count": 6,
-      "forks_count": 4,
-      "open_issues_count": 17,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "python"
-      ]
-    },
-    {
-      "id": 85591443,
-      "node_id": "MDEwOlJlcG9zaXRvcnk4NTU5MTQ0Mw==",
-      "name": "radar-commons-android",
-      "full_name": "RADAR-base/radar-commons-android",
-      "html_url": "https://github.com/RADAR-base/radar-commons-android",
-      "description": "Base android functionality for the RADAR passive application plugins",
-      "language": "C++",
-      "stargazers_count": 5,
-      "forks_count": 9,
-      "open_issues_count": 39,
+      "id": 88144691,
+      "node_id": "MDEwOlJlcG9zaXRvcnk4ODE0NDY5MQ==",
+      "name": "radar-output-restructure",
+      "full_name": "RADAR-base/radar-output-restructure",
+      "html_url": "https://github.com/RADAR-base/radar-output-restructure",
+      "description": "Reads avro files in HDFS and outputs json or csv per topic per user in local file system",
+      "language": "Kotlin",
+      "stargazers_count": 1,
+      "forks_count": 1,
+      "open_issues_count": 13,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -343,16 +252,61 @@
       "topics": []
     },
     {
-      "id": 307485421,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzMDc0ODU0MjE=",
-      "name": "RADAR-PushEndpoint",
-      "full_name": "RADAR-base/RADAR-PushEndpoint",
-      "html_url": "https://github.com/RADAR-base/RADAR-PushEndpoint",
-      "description": "A gateway to expose endpoints for Push based services to POST data to RADAR-Base platform.",
+      "id": 87934177,
+      "node_id": "MDEwOlJlcG9zaXRvcnk4NzkzNDE3Nw==",
+      "name": "RADAR-Gateway",
+      "full_name": "RADAR-base/RADAR-Gateway",
+      "html_url": "https://github.com/RADAR-base/RADAR-Gateway",
+      "description": "Gateway to the Confluent Kafka REST Proxy. It does the authentication and authorization, content validation and decompression if needed.",
       "language": "Kotlin",
       "stargazers_count": 2,
+      "forks_count": 1,
+      "open_issues_count": 5,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "auth",
+        "gateway",
+        "jersey",
+        "kotlin"
+      ]
+    },
+    {
+      "id": 790680509,
+      "node_id": "R_kgDOLyDTvQ",
+      "name": "radar-data-dashboard-backend",
+      "full_name": "RADAR-base/radar-data-dashboard-backend",
+      "html_url": "https://github.com/RADAR-base/radar-data-dashboard-backend",
+      "description": "RADAR-base Data Dashboard backend",
+      "language": "Kotlin",
+      "stargazers_count": 0,
+      "forks_count": 1,
+      "open_issues_count": 1,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 156412627,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNTY0MTI2Mjc=",
+      "name": "RADAR-Appserver",
+      "full_name": "RADAR-base/RADAR-Appserver",
+      "html_url": "https://github.com/RADAR-base/RADAR-Appserver",
+      "description": "General purpose application server for the radar platform currently with capability to schedule push notifications",
+      "language": "Java",
+      "stargazers_count": 11,
       "forks_count": 3,
-      "open_issues_count": 12,
+      "open_issues_count": 41,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -372,7 +326,7 @@
       "language": "Java",
       "stargazers_count": 5,
       "forks_count": 5,
-      "open_issues_count": 21,
+      "open_issues_count": 26,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -389,42 +343,16 @@
       ]
     },
     {
-      "id": 142870020,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNDI4NzAwMjA=",
-      "name": "RADAR-Rest-Source-Auth",
-      "full_name": "RADAR-base/RADAR-Rest-Source-Auth",
-      "html_url": "https://github.com/RADAR-base/RADAR-Rest-Source-Auth",
-      "description": "A simple application to support authorization of wearable devices using OAuth using a webservice with REST Endpoints.",
-      "language": "Kotlin",
-      "stargazers_count": 1,
-      "forks_count": 1,
-      "open_issues_count": 27,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "angular6",
-        "authorization",
-        "fitbit",
-        "spring",
-        "wearables"
-      ]
-    },
-    {
-      "id": 212096820,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMTIwOTY4MjA=",
-      "name": "radar-jersey",
-      "full_name": "RADAR-base/radar-jersey",
-      "html_url": "https://github.com/RADAR-base/radar-jersey",
-      "description": "Jersey integration for ManagementPortal authentication",
-      "language": "Kotlin",
-      "stargazers_count": 2,
-      "forks_count": 1,
-      "open_issues_count": 1,
+      "id": 1139186878,
+      "node_id": "R_kgDOQ-acvg",
+      "name": "radar-airflow-dynamic-config",
+      "full_name": "RADAR-base/radar-airflow-dynamic-config",
+      "html_url": "https://github.com/RADAR-base/radar-airflow-dynamic-config",
+      "description": "Module to conver configs file and converting it into DAGs for airflow",
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -435,16 +363,16 @@
       "topics": []
     },
     {
-      "id": 630989987,
-      "node_id": "R_kgDOJZwkow",
-      "name": "RADAR-K8s-Infrastructure",
-      "full_name": "RADAR-base/RADAR-K8s-Infrastructure",
-      "html_url": "https://github.com/RADAR-base/RADAR-K8s-Infrastructure",
-      "description": "Streamline RADAR-base K8s deployment with cloud infrastructure provisioning",
-      "language": "HCL",
-      "stargazers_count": 2,
-      "forks_count": 2,
-      "open_issues_count": 16,
+      "id": 68295976,
+      "node_id": "MDEwOlJlcG9zaXRvcnk2ODI5NTk3Ng==",
+      "name": "RADAR-Questionnaire",
+      "full_name": "RADAR-base/RADAR-Questionnaire",
+      "html_url": "https://github.com/RADAR-base/RADAR-Questionnaire",
+      "description": "Questionnaire mobile application (Active App) for RADAR-base",
+      "language": "TypeScript",
+      "stargazers_count": 19,
+      "forks_count": 15,
+      "open_issues_count": 78,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -453,59 +381,10 @@
         "node_id": "MDc6TGljZW5zZTI="
       },
       "topics": [
-        "radar-base",
-        "terraform"
-      ]
-    },
-    {
-      "id": 101426351,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMDE0MjYzNTE=",
-      "name": "RADAR-RedcapIntegration",
-      "full_name": "RADAR-base/RADAR-RedcapIntegration",
-      "html_url": "https://github.com/RADAR-base/RADAR-RedcapIntegration",
-      "description": "REDCap - RADAR-base Integration webapp",
-      "language": "Kotlin",
-      "stargazers_count": 1,
-      "forks_count": 2,
-      "open_issues_count": 15,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "radar-base",
-        "redcap",
-        "survey"
-      ]
-    },
-    {
-      "id": 69361881,
-      "node_id": "MDEwOlJlcG9zaXRvcnk2OTM2MTg4MQ==",
-      "name": "radar-prmt-android",
-      "full_name": "RADAR-base/radar-prmt-android",
-      "html_url": "https://github.com/RADAR-base/radar-prmt-android",
-      "description": "Application to be run on an Android device to interact with the wearable devices & phone sensors for passive data streaming",
-      "language": "Kotlin",
-      "stargazers_count": 23,
-      "forks_count": 27,
-      "open_issues_count": 24,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "android-application",
-        "empatica-android-sdk",
-        "empatica-e4",
-        "kafka-rest-proxy",
-        "pebble",
-        "wearable-devices"
+        "android",
+        "cordova",
+        "ionic",
+        "radar-cns"
       ]
     },
     {
@@ -518,87 +397,7 @@
       "language": "Java",
       "stargazers_count": 0,
       "forks_count": 1,
-      "open_issues_count": 4,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 179307077,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNzkzMDcwNzc=",
-      "name": "radar-upload-source-connector",
-      "full_name": "RADAR-base/radar-upload-source-connector",
-      "html_url": "https://github.com/RADAR-base/radar-upload-source-connector",
-      "description": "Manually upload data files",
-      "language": "Kotlin",
-      "stargazers_count": 1,
-      "forks_count": 2,
-      "open_issues_count": 21,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 185201348,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxODUyMDEzNDg=",
-      "name": "cp-helm-charts",
-      "full_name": "RADAR-base/cp-helm-charts",
-      "html_url": "https://github.com/RADAR-base/cp-helm-charts",
-      "description": "The Confluent Platform Helm charts enable you to deploy Confluent Platform services on Kubernetes for development, test, and proof of concept environments.",
-      "language": "Mustache",
-      "stargazers_count": 0,
-      "forks_count": 2,
-      "open_issues_count": 1964,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 835217831,
-      "node_id": "R_kgDOMchppw",
-      "name": "radar-self-enrolment-definitions",
-      "full_name": "RADAR-base/radar-self-enrolment-definitions",
-      "html_url": "https://github.com/RADAR-base/radar-self-enrolment-definitions",
-      "description": "Definition files to define the contents and behaviour of various parts of self enrolment portal such as study information, eligibility, consent and more.",
-      "language": "Python",
-      "stargazers_count": 0,
-      "forks_count": 1,
-      "open_issues_count": 2,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 317874539,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzMTc4NzQ1Mzk=",
-      "name": "radar-home",
-      "full_name": "RADAR-base/radar-home",
-      "html_url": "https://github.com/RADAR-base/radar-home",
-      "description": null,
-      "language": "HTML",
-      "stargazers_count": 1,
-      "forks_count": 1,
-      "open_issues_count": 1,
+      "open_issues_count": 6,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -629,6 +428,71 @@
       "topics": []
     },
     {
+      "id": 820444278,
+      "node_id": "R_kgDOMOb8dg",
+      "name": "radar-self-enrolment-ui",
+      "full_name": "RADAR-base/radar-self-enrolment-ui",
+      "html_url": "https://github.com/RADAR-base/radar-self-enrolment-ui",
+      "description": "RADAR Self enrolment UI for enrolling participants remotely.",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "forks_count": 2,
+      "open_issues_count": 10,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 90646368,
+      "node_id": "MDEwOlJlcG9zaXRvcnk5MDY0NjM2OA==",
+      "name": "ManagementPortal",
+      "full_name": "RADAR-base/ManagementPortal",
+      "html_url": "https://github.com/RADAR-base/ManagementPortal",
+      "description": "Management Portal to manage research studies ",
+      "language": "Kotlin",
+      "stargazers_count": 22,
+      "forks_count": 20,
+      "open_issues_count": 55,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "angularjs",
+        "jhipster",
+        "oauth2",
+        "spring",
+        "spring-boot"
+      ]
+    },
+    {
+      "id": 82068774,
+      "node_id": "MDEwOlJlcG9zaXRvcnk4MjA2ODc3NA==",
+      "name": "radar-commons",
+      "full_name": "RADAR-base/radar-commons",
+      "html_url": "https://github.com/RADAR-base/radar-commons",
+      "description": "RADAR-base platform's common Java utilities library containing basic schemas, streaming features, testing bridges and utils.",
+      "language": "Kotlin",
+      "stargazers_count": 2,
+      "forks_count": 4,
+      "open_issues_count": 13,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "kafka-streams",
+        "radar-cns",
+        "schema",
+        "wearables"
+      ]
+    },
+    {
       "id": 69376658,
       "node_id": "MDEwOlJlcG9zaXRvcnk2OTM3NjY1OA==",
       "name": "RADAR-Schemas",
@@ -637,8 +501,8 @@
       "description": "Catalog of the schemas for RADAR-base",
       "language": "Kotlin",
       "stargazers_count": 16,
-      "forks_count": 23,
-      "open_issues_count": 22,
+      "forks_count": 24,
+      "open_issues_count": 23,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -654,16 +518,16 @@
       ]
     },
     {
-      "id": 194677355,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxOTQ2NzczNTU=",
-      "name": "radar-app-config",
-      "full_name": "RADAR-base/radar-app-config",
-      "html_url": "https://github.com/RADAR-base/radar-app-config",
-      "description": "App configuration engine",
-      "language": "TypeScript",
-      "stargazers_count": 3,
-      "forks_count": 1,
-      "open_issues_count": 6,
+      "id": 85591443,
+      "node_id": "MDEwOlJlcG9zaXRvcnk4NTU5MTQ0Mw==",
+      "name": "radar-commons-android",
+      "full_name": "RADAR-base/radar-commons-android",
+      "html_url": "https://github.com/RADAR-base/radar-commons-android",
+      "description": "Base android functionality for the RADAR passive application plugins",
+      "language": "C++",
+      "stargazers_count": 6,
+      "forks_count": 9,
+      "open_issues_count": 33,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -672,6 +536,69 @@
         "node_id": "MDc6TGljZW5zZTI="
       },
       "topics": []
+    },
+    {
+      "id": 107894536,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMDc4OTQ1MzY=",
+      "name": "RADAR-REDCap-aRMT-Definitions",
+      "full_name": "RADAR-base/RADAR-REDCap-aRMT-Definitions",
+      "html_url": "https://github.com/RADAR-base/RADAR-REDCap-aRMT-Definitions",
+      "description": null,
+      "language": "JavaScript",
+      "stargazers_count": 2,
+      "forks_count": 16,
+      "open_issues_count": 12,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 212096820,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMTIwOTY4MjA=",
+      "name": "radar-jersey",
+      "full_name": "RADAR-base/radar-jersey",
+      "html_url": "https://github.com/RADAR-base/radar-jersey",
+      "description": "Jersey integration for ManagementPortal authentication",
+      "language": "Kotlin",
+      "stargazers_count": 2,
+      "forks_count": 1,
+      "open_issues_count": 2,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 630989987,
+      "node_id": "R_kgDOJZwkow",
+      "name": "RADAR-K8s-Infrastructure",
+      "full_name": "RADAR-base/RADAR-K8s-Infrastructure",
+      "html_url": "https://github.com/RADAR-base/RADAR-K8s-Infrastructure",
+      "description": "Streamline RADAR-base K8s deployment with cloud infrastructure provisioning",
+      "language": "HCL",
+      "stargazers_count": 2,
+      "forks_count": 3,
+      "open_issues_count": 9,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "radar-base",
+        "terraform"
+      ]
     },
     {
       "id": 68805727,
@@ -683,7 +610,7 @@
       "language": "Java",
       "stargazers_count": 19,
       "forks_count": 6,
-      "open_issues_count": 17,
+      "open_issues_count": 18,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -697,16 +624,40 @@
       ]
     },
     {
-      "id": 88144691,
-      "node_id": "MDEwOlJlcG9zaXRvcnk4ODE0NDY5MQ==",
-      "name": "radar-output-restructure",
-      "full_name": "RADAR-base/radar-output-restructure",
-      "html_url": "https://github.com/RADAR-base/radar-output-restructure",
-      "description": "Reads avro files in HDFS and outputs json or csv per topic per user in local file system",
+      "id": 460471244,
+      "node_id": "R_kgDOG3I7zA",
+      "name": "GSoC",
+      "full_name": "RADAR-base/GSoC",
+      "html_url": "https://github.com/RADAR-base/GSoC",
+      "description": "The Google Summer of Code  (GSoC) page for RADAR-base ",
+      "language": null,
+      "stargazers_count": 10,
+      "forks_count": 4,
+      "open_issues_count": 0,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "community",
+        "gsoc",
+        "open-source"
+      ]
+    },
+    {
+      "id": 920650125,
+      "node_id": "R_kgDONuABjQ",
+      "name": "radar-gatling",
+      "full_name": "RADAR-base/radar-gatling",
+      "html_url": "https://github.com/RADAR-base/radar-gatling",
+      "description": "Gatling tests for RADAR-Kubernetes",
       "language": "Kotlin",
-      "stargazers_count": 1,
-      "forks_count": 1,
-      "open_issues_count": 13,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -715,32 +666,66 @@
         "node_id": "MDc6TGljZW5zZTI="
       },
       "topics": []
+    },
+    {
+      "id": 1139188149,
+      "node_id": "R_kgDOQ-ahtQ",
+      "name": "radar-base-docs",
+      "full_name": "RADAR-base/radar-base-docs",
+      "html_url": "https://github.com/RADAR-base/radar-base-docs",
+      "description": "Repository to compile and host all the radar-base developer docs to Github pages",
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 428238903,
+      "node_id": "R_kgDOGYZoNw",
+      "name": "radarpipeline",
+      "full_name": "RADAR-base/radarpipeline",
+      "html_url": "https://github.com/RADAR-base/radarpipeline",
+      "description": "A python feature generation and visualzation package use with RADAR project data.",
+      "language": "Python",
+      "stargazers_count": 8,
+      "forks_count": 5,
+      "open_issues_count": 17,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "python"
+      ]
     }
   ],
   "contributorsDetails": [
+    {
+      "login": "mpgxvii",
+      "id": 16977973,
+      "node_id": "MDQ6VXNlcjE2OTc3OTcz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16977973?v=4",
+      "html_url": "https://github.com/mpgxvii",
+      "contributions": 76
+    },
     {
       "login": "blootsvoets",
       "id": 313450,
       "node_id": "MDQ6VXNlcjMxMzQ1MA==",
       "avatar_url": "https://avatars.githubusercontent.com/u/313450?v=4",
       "html_url": "https://github.com/blootsvoets",
-      "contributions": 32
-    },
-    {
-      "login": "keyvaann",
-      "id": 53298451,
-      "node_id": "MDQ6VXNlcjUzMjk4NDUx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/53298451?v=4",
-      "html_url": "https://github.com/keyvaann",
-      "contributions": 172
-    },
-    {
-      "login": "pvannierop",
-      "id": 745885,
-      "node_id": "MDQ6VXNlcjc0NTg4NQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/745885?v=4",
-      "html_url": "https://github.com/pvannierop",
-      "contributions": 70
+      "contributions": 212
     },
     {
       "login": "nivemaham",
@@ -748,31 +733,7 @@
       "node_id": "MDQ6VXNlcjEzMTUzNzg=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1315378?v=4",
       "html_url": "https://github.com/nivemaham",
-      "contributions": 126
-    },
-    {
-      "login": "mpgxvii",
-      "id": 16977973,
-      "node_id": "MDQ6VXNlcjE2OTc3OTcz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/16977973?v=4",
-      "html_url": "https://github.com/mpgxvii",
-      "contributions": 339
-    },
-    {
-      "login": "Hsankesara",
-      "id": 21009715,
-      "node_id": "MDQ6VXNlcjIxMDA5NzE1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/21009715?v=4",
-      "html_url": "https://github.com/Hsankesara",
-      "contributions": 16
-    },
-    {
-      "login": "afolarin",
-      "id": 2489685,
-      "node_id": "MDQ6VXNlcjI0ODk2ODU=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/2489685?v=4",
-      "html_url": "https://github.com/afolarin",
-      "contributions": 8
+      "contributions": 176
     },
     {
       "login": "yatharthranjan",
@@ -780,7 +741,23 @@
       "node_id": "MDQ6VXNlcjExMDkzNTQ0",
       "avatar_url": "https://avatars.githubusercontent.com/u/11093544?v=4",
       "html_url": "https://github.com/yatharthranjan",
-      "contributions": 276
+      "contributions": 32
+    },
+    {
+      "login": "pvannierop",
+      "id": 745885,
+      "node_id": "MDQ6VXNlcjc0NTg4NQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/745885?v=4",
+      "html_url": "https://github.com/pvannierop",
+      "contributions": 54
+    },
+    {
+      "login": "peyman-mohtashami",
+      "id": 14027710,
+      "node_id": "MDQ6VXNlcjE0MDI3NzEw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14027710?v=4",
+      "html_url": "https://github.com/peyman-mohtashami",
+      "contributions": 1
     },
     {
       "login": "Bdegraaf1234",
@@ -788,23 +765,23 @@
       "node_id": "MDQ6VXNlcjM1NzY5NTc0",
       "avatar_url": "https://avatars.githubusercontent.com/u/35769574?v=4",
       "html_url": "https://github.com/Bdegraaf1234",
-      "contributions": 19
+      "contributions": 22
     },
     {
-      "login": "ewelinagr",
-      "id": 20908736,
-      "node_id": "MDQ6VXNlcjIwOTA4NzM2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/20908736?v=4",
-      "html_url": "https://github.com/ewelinagr",
-      "contributions": 1
+      "login": "Hsankesara",
+      "id": 21009715,
+      "node_id": "MDQ6VXNlcjIxMDA5NzE1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21009715?v=4",
+      "html_url": "https://github.com/Hsankesara",
+      "contributions": 31
     },
     {
-      "login": "dependabot-preview[bot]",
-      "id": 27856297,
-      "node_id": "MDM6Qm90Mjc4NTYyOTc=",
-      "avatar_url": "https://avatars.githubusercontent.com/in/2141?v=4",
-      "html_url": "https://github.com/apps/dependabot-preview",
-      "contributions": 32
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "html_url": "https://github.com/apps/dependabot",
+      "contributions": 8
     },
     {
       "login": "this-Aditya",
@@ -812,22 +789,54 @@
       "node_id": "U_kgDOBeHDng",
       "avatar_url": "https://avatars.githubusercontent.com/u/98681758?v=4",
       "html_url": "https://github.com/this-Aditya",
-      "contributions": 8
+      "contributions": 3
     },
     {
-      "login": "baixiac",
-      "id": 82581439,
-      "node_id": "MDQ6VXNlcjgyNTgxNDM5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/82581439?v=4",
-      "html_url": "https://github.com/baixiac",
-      "contributions": 4
+      "login": "dependabot-preview[bot]",
+      "id": 27856297,
+      "node_id": "MDM6Qm90Mjc4NTYyOTc=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/2141?v=4",
+      "html_url": "https://github.com/apps/dependabot-preview",
+      "contributions": 3
     },
     {
-      "login": "dependabot-support",
-      "id": 112581971,
-      "node_id": "U_kgDOBrXdUw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/112581971?v=4",
-      "html_url": "https://github.com/dependabot-support",
+      "login": "mbegalevibrent",
+      "id": 22062327,
+      "node_id": "MDQ6VXNlcjIyMDYyMzI3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/22062327?v=4",
+      "html_url": "https://github.com/mbegalevibrent",
+      "contributions": 3
+    },
+    {
+      "login": "callumstew",
+      "id": 9533119,
+      "node_id": "MDQ6VXNlcjk1MzMxMTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9533119?v=4",
+      "html_url": "https://github.com/callumstew",
+      "contributions": 1
+    },
+    {
+      "login": "ec18130",
+      "id": 72093266,
+      "node_id": "MDQ6VXNlcjcyMDkzMjY2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/72093266?v=4",
+      "html_url": "https://github.com/ec18130",
+      "contributions": 454
+    },
+    {
+      "login": "EIjo",
+      "id": 33732080,
+      "node_id": "MDQ6VXNlcjMzNzMyMDgw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/33732080?v=4",
+      "html_url": "https://github.com/EIjo",
+      "contributions": 20
+    },
+    {
+      "login": "afolarin",
+      "id": 2489685,
+      "node_id": "MDQ6VXNlcjI0ODk2ODU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2489685?v=4",
+      "html_url": "https://github.com/afolarin",
       "contributions": 1
     },
     {

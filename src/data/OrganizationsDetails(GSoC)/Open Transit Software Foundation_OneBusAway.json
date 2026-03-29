@@ -30,7 +30,8 @@
   "facebook_url": null,
   "year": [
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2024": [
@@ -80,120 +81,58 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/RHtM4Lyc"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "WayStation - Next Generation Sign Mode",
+        "short_description": "Waystation is a transit information display that provides reliable, real-time arrival and departure times at bus stops, train stations, and transit...",
+        "description": "Waystation is a transit information display that provides reliable, real-time arrival and departure times at bus stops, train stations, and transit hubs. It also delivers service alerts and supports multiple languages, ensuring accurate information is accessible to a wide range of riders.",
+        "student_name": "Amr Abdelfattah",
+        "code_url": "https://drive.google.com/file/d/1rpTS52UyXKmd4Scd0eSoOLad0R2OCD_S/view?usp=sharing",
+        "proposal_id": "uDUI5ktf",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/PmZ9fdSN"
+      },
+      {
+        "title": "Trip Planner: Building OTPKit, a Swift Library for OpenTripPlanner on iOS",
+        "short_description": "The goal of this project is to build OTPKit, a Swift library that brings OpenTripPlanner to iOS. It will work as a standalone package that can be...",
+        "description": "The goal of this project is to build OTPKit, a Swift library that brings OpenTripPlanner to iOS. It will work as a standalone package that can be added to any iOS app. The first use will be in the OneBusAway app, giving users a modern trip planning experience with real-time updates, smart routing, and easy-to-follow directions.\n\nOTPKit will support key features like trip requests, walking directions, and smooth map interaction. Built with SwiftUI and a clean architecture, it will be easy to maintain and integrate with other iOS apps.\n\nBy the end of the project, OTPKit will be the first Swift-based, Apache 2.0-licensed OpenTripPlanner library—making trip planning better for OneBusAway and available to other iOS transit apps too.",
+        "student_name": "Manu R",
+        "code_url": "https://gist.github.com/manu-r12/cf10fd8c05bc0cab2ca258953e3f8b2b",
+        "proposal_id": "FeO1LuPr",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/7hA4Gs1k"
+      },
+      {
+        "title": "Enhancing Watchdog: Metrics Expansion for OBA Monitoring",
+        "short_description": "This project aims to enhance the monitoring capabilities of OneBusAway (OBA), an open-source platform that provides real-time transit information to...",
+        "description": "This project aims to enhance the monitoring capabilities of OneBusAway (OBA), an open-source platform that provides real-time transit information to riders across multiple cities. The focus is on improving Watchdog, a Go-based backend service that tracks the health and data integrity of OBA servers by reporting detailed metrics to Prometheus.\n\nIn the past, a Python script was used to monitor the system by checking real-time API data and identifying issues such as expired transit bundles or data mismatches. However, this legacy solution lacked flexibility and scalability. The current Watchdog framework, built in Go, addresses these shortcomings but still requires the addition of several key metrics.\n\nThe proposed solution builds on the existing Go codebase, expanding and refining the metrics to ensure accurate, real-time tracking of issues such as unmatched trips, stale data, and anomalies in transit information. The project also prioritizes maintainability by refactoring code, implementing robust error reporting through Sentry, and ensuring comprehensive test coverage to maintain reliability.\n\nKey deliverables include:\n\nImplementation of multiple high-priority metrics\n\nComplete test coverage and improved modularity of the codebase\n\nClear, user-friendly documentation\n\nA production-ready, extensible monitoring service for OBA\n\nThis work will provide transit agencies with better insights into data health and system performance, ultimately enhancing the experience for thousands of daily riders.",
+        "student_name": "Mohamed Aboomar",
+        "code_url": "https://gist.github.com/0xaboomar/cc4499a50583a57a6926c5b42455fd8f",
+        "proposal_id": "Ps9vXt8j",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/ZzUiW13a"
+      },
+      {
+        "title": "Integration Test System For OBA",
+        "short_description": "Summary : The OBA project aims to develop an integration testing system to ensure the accuracy and stability of the OneBusAway API server. This...",
+        "description": "Summary : The OBA project aims to develop an integration testing system to ensure the accuracy and stability of the OneBusAway API server. This system will use Docker to create a controlled test environment to simulate various test scenarios and a Golang-based tool to validate API responses against expected outputs using GTFS and GTFS-RT data. It will include time simulation, structured test cases, and CI/CD integration to detect regressions and prevent inconsistencies. By automating the validation process, this project will enhance API reliability, making it easier for developers to trust and build upon OBA transit data services.",
+        "student_name": "Satyam Kumar Chauhan",
+        "code_url": "https://gist.github.com/Satyam709/93d182dff98f50b5c52274d940a6b9d0",
+        "proposal_id": "NqgOqRQM",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/gxPo5O7k"
+      }
+    ],
+    "2026": []
   },
   "githubID": "OneBusAway",
   "repositories": [
-    {
-      "id": 864202238,
-      "node_id": "R_kgDOM4Kt_g",
-      "name": "java-sdk",
-      "full_name": "OneBusAway/java-sdk",
-      "html_url": "https://github.com/OneBusAway/java-sdk",
-      "description": "The official Java SDK for the OneBusAway API",
-      "language": "Kotlin",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "open_issues_count": 1,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
     {
       "id": 928635898,
       "node_id": "R_kgDON1nb-g",
       "name": "ruby-sdk",
       "full_name": "OneBusAway/ruby-sdk",
       "html_url": "https://github.com/OneBusAway/ruby-sdk",
-      "description": null,
+      "description": "The official Ruby SDK for the OneBusAway API",
       "language": "Ruby",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 1,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 818816202,
-      "node_id": "R_kgDOMM4kyg",
-      "name": "sdk-config",
-      "full_name": "OneBusAway/sdk-config",
-      "html_url": "https://github.com/OneBusAway/sdk-config",
-      "description": null,
-      "language": null,
       "stargazers_count": 1,
       "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 869113248,
-      "node_id": "R_kgDOM82doA",
-      "name": "kotlin-sdk",
-      "full_name": "OneBusAway/kotlin-sdk",
-      "html_url": "https://github.com/OneBusAway/kotlin-sdk",
-      "description": "The official Kotlin SDK for the OneBusAway API",
-      "language": "Kotlin",
-      "stargazers_count": 1,
-      "forks_count": 1,
-      "open_issues_count": 0,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 818773249,
-      "node_id": "R_kgDOMM19AQ",
-      "name": "js-sdk",
-      "full_name": "OneBusAway/js-sdk",
-      "html_url": "https://github.com/OneBusAway/js-sdk",
-      "description": "The official Js SDK for the OneBusAway API",
-      "language": "TypeScript",
-      "stargazers_count": 3,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 828672631,
-      "node_id": "R_kgDOMWSKdw",
-      "name": "python-sdk",
-      "full_name": "OneBusAway/python-sdk",
-      "html_url": "https://github.com/OneBusAway/python-sdk",
-      "description": "The official Python SDK for the OneBusAway API",
-      "language": "Python",
-      "stargazers_count": 10,
-      "forks_count": 3,
       "open_issues_count": 0,
       "license": {
         "key": "apache-2.0",
@@ -212,7 +151,47 @@
       "html_url": "https://github.com/OneBusAway/go-sdk",
       "description": "The official Go SDK for the OneBusAway API",
       "language": "Go",
-      "stargazers_count": 4,
+      "stargazers_count": 9,
+      "forks_count": 4,
+      "open_issues_count": 2,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 828672631,
+      "node_id": "R_kgDOMWSKdw",
+      "name": "python-sdk",
+      "full_name": "OneBusAway/python-sdk",
+      "html_url": "https://github.com/OneBusAway/python-sdk",
+      "description": "The official Python SDK for the OneBusAway API",
+      "language": "Python",
+      "stargazers_count": 11,
+      "forks_count": 4,
+      "open_issues_count": 0,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 818773249,
+      "node_id": "R_kgDOMM19AQ",
+      "name": "js-sdk",
+      "full_name": "OneBusAway/js-sdk",
+      "html_url": "https://github.com/OneBusAway/js-sdk",
+      "description": "The official Js SDK for the OneBusAway API",
+      "language": "TypeScript",
+      "stargazers_count": 5,
       "forks_count": 1,
       "open_issues_count": 0,
       "license": {
@@ -225,42 +204,62 @@
       "topics": []
     },
     {
-      "id": 3423262,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzNDIzMjYy",
-      "name": "onebusaway-gtfs-modules",
-      "full_name": "OneBusAway/onebusaway-gtfs-modules",
-      "html_url": "https://github.com/OneBusAway/onebusaway-gtfs-modules",
-      "description": "A Java-based library for reading, writing, and transforming public transit data in the GTFS format, including database support.",
-      "language": "Java",
-      "stargazers_count": 137,
-      "forks_count": 110,
-      "open_issues_count": 39,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 72930448,
-      "node_id": "MDEwOlJlcG9zaXRvcnk3MjkzMDQ0OA==",
-      "name": "onebusaway-deep-links",
-      "full_name": "OneBusAway/onebusaway-deep-links",
-      "html_url": "https://github.com/OneBusAway/onebusaway-deep-links",
-      "description": "A web app with a URL pattern designed for deep linking in native apps",
-      "language": "Ruby",
-      "stargazers_count": 9,
-      "forks_count": 5,
-      "open_issues_count": 11,
+      "id": 869113248,
+      "node_id": "R_kgDOM82doA",
+      "name": "kotlin-sdk",
+      "full_name": "OneBusAway/kotlin-sdk",
+      "html_url": "https://github.com/OneBusAway/kotlin-sdk",
+      "description": "The official Kotlin SDK for the OneBusAway API",
+      "language": "Kotlin",
+      "stargazers_count": 2,
+      "forks_count": 1,
+      "open_issues_count": 0,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
         "spdx_id": "Apache-2.0",
         "url": "https://api.github.com/licenses/apache-2.0",
         "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 864202238,
+      "node_id": "R_kgDOM4Kt_g",
+      "name": "java-sdk",
+      "full_name": "OneBusAway/java-sdk",
+      "html_url": "https://github.com/OneBusAway/java-sdk",
+      "description": "The official Java SDK for the OneBusAway API",
+      "language": "Kotlin",
+      "stargazers_count": 2,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 977405204,
+      "node_id": "R_kgDOOkIFFA",
+      "name": "maglev",
+      "full_name": "OneBusAway/maglev",
+      "html_url": "https://github.com/OneBusAway/maglev",
+      "description": "Next-generation OBA REST API server",
+      "language": "Go",
+      "stargazers_count": 43,
+      "forks_count": 87,
+      "open_issues_count": 80,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
       },
       "topics": []
     },
@@ -272,9 +271,9 @@
       "html_url": "https://github.com/OneBusAway/onebusaway-ios",
       "description": "OneBusAway for iOS, written in Swift.",
       "language": "Swift",
-      "stargazers_count": 112,
-      "forks_count": 52,
-      "open_issues_count": 96,
+      "stargazers_count": 142,
+      "forks_count": 75,
+      "open_issues_count": 97,
       "license": {
         "key": "other",
         "name": "Other",
@@ -293,22 +292,82 @@
       ]
     },
     {
-      "id": 911904455,
-      "node_id": "R_kgDONlqOxw",
-      "name": "watchdog",
-      "full_name": "OneBusAway/watchdog",
-      "html_url": "https://github.com/OneBusAway/watchdog",
-      "description": "Golang-based Watchdog service for OBA REST API servers",
+      "id": 949125672,
+      "node_id": "R_kgDOOJKCKA",
+      "name": "waystation",
+      "full_name": "OneBusAway/waystation",
+      "html_url": "https://github.com/OneBusAway/waystation",
+      "description": "Transportation information display built with SvelteKit",
+      "language": "JavaScript",
+      "stargazers_count": 6,
+      "forks_count": 12,
+      "open_issues_count": 0,
+      "license": {
+        "key": "agpl-3.0",
+        "name": "GNU Affero General Public License v3.0",
+        "spdx_id": "AGPL-3.0",
+        "url": "https://api.github.com/licenses/agpl-3.0",
+        "node_id": "MDc6TGljZW5zZTE="
+      },
+      "topics": []
+    },
+    {
+      "id": 1160641334,
+      "node_id": "R_kgDORS37Ng",
+      "name": "vehicle-positions",
+      "full_name": "OneBusAway/vehicle-positions",
+      "html_url": "https://github.com/OneBusAway/vehicle-positions",
+      "description": null,
       "language": "Go",
-      "stargazers_count": 10,
+      "stargazers_count": 14,
       "forks_count": 15,
-      "open_issues_count": 11,
+      "open_issues_count": 25,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
         "spdx_id": "Apache-2.0",
         "url": "https://api.github.com/licenses/apache-2.0",
         "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 817997562,
+      "node_id": "R_kgDOMMGm-g",
+      "name": "wayfinder",
+      "full_name": "OneBusAway/wayfinder",
+      "html_url": "https://github.com/OneBusAway/wayfinder",
+      "description": "Modern web app frontend for OneBusAway built in JavaScript with SvelteKit",
+      "language": "JavaScript",
+      "stargazers_count": 28,
+      "forks_count": 71,
+      "open_issues_count": 71,
+      "license": {
+        "key": "agpl-3.0",
+        "name": "GNU Affero General Public License v3.0",
+        "spdx_id": "AGPL-3.0",
+        "url": "https://api.github.com/licenses/agpl-3.0",
+        "node_id": "MDc6TGljZW5zZTE="
+      },
+      "topics": []
+    },
+    {
+      "id": 3423262,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzNDIzMjYy",
+      "name": "onebusaway-gtfs-modules",
+      "full_name": "OneBusAway/onebusaway-gtfs-modules",
+      "html_url": "https://github.com/OneBusAway/onebusaway-gtfs-modules",
+      "description": "A Java-based library for reading, writing, and transforming public transit data in the GTFS format, including database support.",
+      "language": "Java",
+      "stargazers_count": 144,
+      "forks_count": 110,
+      "open_issues_count": 31,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
       },
       "topics": []
     },
@@ -320,9 +379,9 @@
       "html_url": "https://github.com/OneBusAway/onebusaway-android",
       "description": "The official Android app for OneBusAway",
       "language": "Java",
-      "stargazers_count": 510,
-      "forks_count": 336,
-      "open_issues_count": 164,
+      "stargazers_count": 540,
+      "forks_count": 378,
+      "open_issues_count": 184,
       "license": {
         "key": "other",
         "name": "Other",
@@ -340,22 +399,82 @@
       ]
     },
     {
-      "id": 794858792,
-      "node_id": "R_kgDOL2CVKA",
-      "name": "otpkit",
-      "full_name": "OneBusAway/otpkit",
-      "html_url": "https://github.com/OneBusAway/otpkit",
-      "description": "OpenTripPlanner library for iOS, written in Swift",
-      "language": "Swift",
-      "stargazers_count": 6,
-      "forks_count": 8,
-      "open_issues_count": 12,
+      "id": 842058857,
+      "node_id": "R_kgDOMjDMaQ",
+      "name": "android-fab",
+      "full_name": "OneBusAway/android-fab",
+      "html_url": "https://github.com/OneBusAway/android-fab",
+      "description": "Floating action button (FAB) for Android with speed-dial menu functionality",
+      "language": "Kotlin",
+      "stargazers_count": 0,
+      "forks_count": 1,
+      "open_issues_count": 1,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
         "spdx_id": "Apache-2.0",
         "url": "https://api.github.com/licenses/apache-2.0",
         "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 818816202,
+      "node_id": "R_kgDOMM4kyg",
+      "name": "sdk-config",
+      "full_name": "OneBusAway/sdk-config",
+      "html_url": "https://github.com/OneBusAway/sdk-config",
+      "description": null,
+      "language": null,
+      "stargazers_count": 2,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 752531233,
+      "node_id": "R_kgDOLNq3IQ",
+      "name": "onebusaway-docs",
+      "full_name": "OneBusAway/onebusaway-docs",
+      "html_url": "https://github.com/OneBusAway/onebusaway-docs",
+      "description": "Official developer documentation for OneBusAway",
+      "language": "HTML",
+      "stargazers_count": 14,
+      "forks_count": 42,
+      "open_issues_count": 21,
+      "license": null,
+      "topics": [
+        "documentation",
+        "gtfs",
+        "gtfs-rt",
+        "public-transit",
+        "transit"
+      ]
+    },
+    {
+      "id": 1138756969,
+      "node_id": "R_kgDOQ-ANaQ",
+      "name": "maglev-validator",
+      "full_name": "OneBusAway/maglev-validator",
+      "html_url": "https://github.com/OneBusAway/maglev-validator",
+      "description": "A specialized developer toolkit for OneBusAway API parity testing and GTFS-Realtime debugging",
+      "language": "Svelte",
+      "stargazers_count": 5,
+      "forks_count": 4,
+      "open_issues_count": 0,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
       },
       "topics": []
     },
@@ -367,15 +486,75 @@
       "html_url": "https://github.com/OneBusAway/docker",
       "description": "Docker configuration for the OneBusAway Application Modules (https://github.com/OneBusAway/onebusaway-application-modules)",
       "language": "Shell",
-      "stargazers_count": 24,
-      "forks_count": 34,
-      "open_issues_count": 2,
+      "stargazers_count": 28,
+      "forks_count": 35,
+      "open_issues_count": 0,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
         "spdx_id": "Apache-2.0",
         "url": "https://api.github.com/licenses/apache-2.0",
         "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 72930448,
+      "node_id": "MDEwOlJlcG9zaXRvcnk3MjkzMDQ0OA==",
+      "name": "onebusaway-deep-links",
+      "full_name": "OneBusAway/onebusaway-deep-links",
+      "html_url": "https://github.com/OneBusAway/onebusaway-deep-links",
+      "description": "A web app with a URL pattern designed for deep linking in native apps",
+      "language": "Ruby",
+      "stargazers_count": 9,
+      "forks_count": 5,
+      "open_issues_count": 10,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 794858792,
+      "node_id": "R_kgDOL2CVKA",
+      "name": "otpkit",
+      "full_name": "OneBusAway/otpkit",
+      "html_url": "https://github.com/OneBusAway/otpkit",
+      "description": "OpenTripPlanner library for iOS, written in Swift",
+      "language": "Swift",
+      "stargazers_count": 10,
+      "forks_count": 13,
+      "open_issues_count": 1,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 1009915955,
+      "node_id": "R_kgDOPDIYMw",
+      "name": "go-gtfs",
+      "full_name": "OneBusAway/go-gtfs",
+      "html_url": "https://github.com/OneBusAway/go-gtfs",
+      "description": "Go library for parsing GTFS static and realtime feeds",
+      "language": "Go",
+      "stargazers_count": 4,
+      "forks_count": 1,
+      "open_issues_count": 0,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
       },
       "topics": []
     },
@@ -387,9 +566,9 @@
       "html_url": "https://github.com/OneBusAway/onebusaway-application-modules",
       "description": "The core OneBusAway application suite.",
       "language": "Java",
-      "stargazers_count": 223,
-      "forks_count": 144,
-      "open_issues_count": 69,
+      "stargazers_count": 238,
+      "forks_count": 150,
+      "open_issues_count": 79,
       "license": {
         "key": "other",
         "name": "Other",
@@ -409,42 +588,102 @@
       ]
     },
     {
-      "id": 817997562,
-      "node_id": "R_kgDOMMGm-g",
-      "name": "wayfinder",
-      "full_name": "OneBusAway/wayfinder",
-      "html_url": "https://github.com/OneBusAway/wayfinder",
-      "description": "Modern web app frontend for OneBusAway built in JavaScript with SvelteKit",
-      "language": "Svelte",
-      "stargazers_count": 18,
-      "forks_count": 28,
-      "open_issues_count": 16,
+      "id": 1141656808,
+      "node_id": "R_kgDORAxM6A",
+      "name": "usage-map-visualization",
+      "full_name": "OneBusAway/usage-map-visualization",
+      "html_url": "https://github.com/OneBusAway/usage-map-visualization",
+      "description": "A usage map of OBA in Puget Sound",
+      "language": "TypeScript",
+      "stargazers_count": 3,
+      "forks_count": 1,
+      "open_issues_count": 0,
       "license": {
-        "key": "agpl-3.0",
-        "name": "GNU Affero General Public License v3.0",
-        "spdx_id": "AGPL-3.0",
-        "url": "https://api.github.com/licenses/agpl-3.0",
-        "node_id": "MDc6TGljZW5zZTE="
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
       },
       "topics": []
     },
     {
-      "id": 949125672,
-      "node_id": "R_kgDOOJKCKA",
-      "name": "waystation",
-      "full_name": "OneBusAway/waystation",
-      "html_url": "https://github.com/OneBusAway/waystation",
-      "description": "Transportation information display built with SvelteKit",
-      "language": "JavaScript",
-      "stargazers_count": 4,
-      "forks_count": 9,
-      "open_issues_count": 5,
+      "id": 957648024,
+      "node_id": "R_kgDOORSMmA",
+      "name": "gtfstidy",
+      "full_name": "OneBusAway/gtfstidy",
+      "html_url": "https://github.com/OneBusAway/gtfstidy",
+      "description": "A tool for checking, sanitizing and minimizing GTFS feeds.",
+      "language": "Go",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "open_issues_count": 0,
       "license": {
-        "key": "agpl-3.0",
-        "name": "GNU Affero General Public License v3.0",
-        "spdx_id": "AGPL-3.0",
-        "url": "https://api.github.com/licenses/agpl-3.0",
-        "node_id": "MDc6TGljZW5zZTE="
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "topics": []
+    },
+    {
+      "id": 911904455,
+      "node_id": "R_kgDONlqOxw",
+      "name": "watchdog",
+      "full_name": "OneBusAway/watchdog",
+      "html_url": "https://github.com/OneBusAway/watchdog",
+      "description": "Golang-based Watchdog service for OBA REST API servers",
+      "language": "Go",
+      "stargazers_count": 20,
+      "forks_count": 19,
+      "open_issues_count": 9,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 1058274464,
+      "node_id": "R_kgDOPxP8oA",
+      "name": "gtfs-merge-service",
+      "full_name": "OneBusAway/gtfs-merge-service",
+      "html_url": "https://github.com/OneBusAway/gtfs-merge-service",
+      "description": "Docker container that hosts onebusaway-gtfs-merge-cli",
+      "language": "Go",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 945312644,
+      "node_id": "R_kgDOOFhThA",
+      "name": "api-validator",
+      "full_name": "OneBusAway/api-validator",
+      "html_url": "https://github.com/OneBusAway/api-validator",
+      "description": null,
+      "language": "Go",
+      "stargazers_count": 2,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
       },
       "topics": []
     },
@@ -476,7 +715,7 @@
       "html_url": "https://github.com/OneBusAway/plausible-svelte-sdk",
       "description": null,
       "language": "TypeScript",
-      "stargazers_count": 0,
+      "stargazers_count": 2,
       "forks_count": 0,
       "open_issues_count": 0,
       "license": {
@@ -485,26 +724,6 @@
         "spdx_id": "MIT",
         "url": "https://api.github.com/licenses/mit",
         "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 957648024,
-      "node_id": "R_kgDOORSMmA",
-      "name": "gtfstidy",
-      "full_name": "OneBusAway/gtfstidy",
-      "html_url": "https://github.com/OneBusAway/gtfstidy",
-      "description": "A tool for checking, sanitizing and minimizing GTFS feeds.",
-      "language": null,
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
       },
       "topics": []
     },
@@ -527,186 +746,6 @@
         "node_id": "MDc6TGljZW5zZTI="
       },
       "topics": []
-    },
-    {
-      "id": 752531233,
-      "node_id": "R_kgDOLNq3IQ",
-      "name": "onebusaway-docs",
-      "full_name": "OneBusAway/onebusaway-docs",
-      "html_url": "https://github.com/OneBusAway/onebusaway-docs",
-      "description": "Official developer documentation for OneBusAway",
-      "language": "HTML",
-      "stargazers_count": 10,
-      "forks_count": 35,
-      "open_issues_count": 27,
-      "license": null,
-      "topics": [
-        "documentation",
-        "gtfs",
-        "gtfs-rt",
-        "public-transit",
-        "transit"
-      ]
-    },
-    {
-      "id": 8689888,
-      "node_id": "MDEwOlJlcG9zaXRvcnk4Njg5ODg4",
-      "name": "onebusaway-multiregion-support",
-      "full_name": "OneBusAway/onebusaway-multiregion-support",
-      "html_url": "https://github.com/OneBusAway/onebusaway-multiregion-support",
-      "description": "Support files for multi-region support in OneBusAway",
-      "language": "Python",
-      "stargazers_count": 3,
-      "forks_count": 5,
-      "open_issues_count": 3,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 841658104,
-      "node_id": "R_kgDOMiqu-A",
-      "name": "pelias-client-library",
-      "full_name": "OneBusAway/pelias-client-library",
-      "html_url": "https://github.com/OneBusAway/pelias-client-library",
-      "description": "A Java library for the Mapzen Pelias Geocoder (https://mapzen.com/documentation/search/search/)",
-      "language": "Java",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 841656881,
-      "node_id": "R_kgDOMiqqMQ",
-      "name": "open311-client",
-      "full_name": "OneBusAway/open311-client",
-      "html_url": "https://github.com/OneBusAway/open311-client",
-      "description": "Java client to submit issues to Open311-compliant systems",
-      "language": "Java",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 3424890,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzNDI0ODkw",
-      "name": "onebusaway-gtfs-realtime-api",
-      "full_name": "OneBusAway/onebusaway-gtfs-realtime-api",
-      "html_url": "https://github.com/OneBusAway/onebusaway-gtfs-realtime-api",
-      "description": "Java classes generated for GTFS-realtime extensions.",
-      "language": "Java",
-      "stargazers_count": 22,
-      "forks_count": 17,
-      "open_issues_count": 4,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 3418658,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzNDE4NjU4",
-      "name": "onebusaway-collections",
-      "full_name": "OneBusAway/onebusaway-collections",
-      "html_url": "https://github.com/OneBusAway/onebusaway-collections",
-      "description": "A library with a number of convenient methods for working with collections.",
-      "language": "Java",
-      "stargazers_count": 1,
-      "forks_count": 2,
-      "open_issues_count": 0,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 3422796,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzNDIyNzk2",
-      "name": "onebusaway-csv-entities",
-      "full_name": "OneBusAway/onebusaway-csv-entities",
-      "html_url": "https://github.com/OneBusAway/onebusaway-csv-entities",
-      "description": "A Java library for reading and writing Java objects from comma-separated-values files.",
-      "language": "Java",
-      "stargazers_count": 2,
-      "forks_count": 12,
-      "open_issues_count": 8,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 814348209,
-      "node_id": "R_kgDOMIn3sQ",
-      "name": "onebusaway-deployment",
-      "full_name": "OneBusAway/onebusaway-deployment",
-      "html_url": "https://github.com/OneBusAway/onebusaway-deployment",
-      "description": null,
-      "language": "HCL",
-      "stargazers_count": 2,
-      "forks_count": 2,
-      "open_issues_count": 0,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 842058857,
-      "node_id": "R_kgDOMjDMaQ",
-      "name": "android-fab",
-      "full_name": "OneBusAway/android-fab",
-      "html_url": "https://github.com/OneBusAway/android-fab",
-      "description": "Floating action button (FAB) for Android with speed-dial menu functionality",
-      "language": null,
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
     }
   ],
   "contributorsDetails": [
@@ -716,7 +755,7 @@
       "node_id": "BOT_kgDOCIBorg",
       "avatar_url": "https://avatars.githubusercontent.com/in/378072?v=4",
       "html_url": "https://github.com/apps/stainless-app",
-      "contributions": 623
+      "contributions": 379
     },
     {
       "login": "Ahmedhossamdev",
@@ -724,15 +763,15 @@
       "node_id": "U_kgDOBe1cyg",
       "avatar_url": "https://avatars.githubusercontent.com/u/99441866?v=4",
       "html_url": "https://github.com/Ahmedhossamdev",
-      "contributions": 16
+      "contributions": 185
     },
     {
-      "login": "stainless-bot",
-      "id": 107565488,
-      "node_id": "U_kgDOBmlRsA",
-      "avatar_url": "https://avatars.githubusercontent.com/u/107565488?v=4",
-      "html_url": "https://github.com/stainless-bot",
-      "contributions": 6
+      "login": "aaronbrethorst",
+      "id": 2254,
+      "node_id": "MDQ6VXNlcjIyNTQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2254?v=4",
+      "html_url": "https://github.com/aaronbrethorst",
+      "contributions": 3
     },
     {
       "login": "stainless-sdks[bot]",
@@ -743,12 +782,12 @@
       "contributions": 1
     },
     {
-      "login": "aaronbrethorst",
-      "id": 2254,
-      "node_id": "MDQ6VXNlcjIyNTQ=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/2254?v=4",
-      "html_url": "https://github.com/aaronbrethorst",
-      "contributions": 5
+      "login": "stainless-bot",
+      "id": 107565488,
+      "node_id": "U_kgDOBmlRsA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/107565488?v=4",
+      "html_url": "https://github.com/stainless-bot",
+      "contributions": 47
     }
   ],
   "activeOrg": true

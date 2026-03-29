@@ -51,7 +51,8 @@
     2022,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2016": [
@@ -662,10 +663,77 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/ehBYTrDa"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Electronic spectra for RADIS",
+        "short_description": "This project will extend RADIS to calculate electronic spectra, enabling analysis of high-temperature phenomena in plasmas, flames, and exoplanet...",
+        "description": "This project will extend RADIS to calculate electronic spectra, enabling analysis of high-temperature phenomena in plasmas, flames, and exoplanet atmospheres. Currently, RADIS excels at rovibrational calculations but lacks electronic capabilities. This project will implement electronic spectroscopy in RADIS by leveraging existing ExoMol integration, adding separate electronic temperature parameters, implementing population distributions for electronic states, and creating functions for manual adjustment of electronic band intensities. Deliverables include OH electronic spectra with manual band adjustment capability, implementation of electronic temperature handling, non-equilibrium OH spectrum calculation, and extension to support electronic spectra for all ExoMol molecules. This enhancement will make RADIS a comprehensive spectroscopic tool capable of handling the full range of molecular transitions within a unified framework.",
+        "student_name": "Darshan Patil",
+        "code_url": "https://medium.com/@darshvn/gsoc25-openastronomy-final-report-b76e4f0ea2e3",
+        "proposal_id": "XZKy7plx",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/P7UQlBwc"
+      },
+      {
+        "title": "Time Series Analysis in Stingray.jl",
+        "short_description": "This project enhanced Stingray.jl, the Julia-based implementation of the Stingray library for X-ray timing analysis in high-energy astrophysics....",
+        "description": "This project enhanced Stingray.jl, the Julia-based implementation of the Stingray library for X-ray timing analysis in high-energy astrophysics. Starting from my childhood passion for astronomy, GSoC allowed me to contribute to real astronomical research tools that analyze signals from stars and X-ray telescopes.\nTechnical Journey & Contributions:\nBeginning with learning Julia from scratch and understanding astronomical data formats through NASA HEASARC documentation, I implemented core functionality across multiple areas:\n\nEvent Data Processing: Developed comprehensive read events functionality supporting .evt and .fits files from telescopes like NICER, including GTI (Good Time Intervals) handling, energy filtering (filter_energy), and metadata extraction. This enables astronomers to process millions of X-ray events efficiently.\n\nLight Curve Analysis: Built complete lightcurve workflows from raw telescope data to scientific plots, including creation, error handling, rebinning, and intuitive plotting recipes allowing simple plot(lc) commands.\n\nSpectral Analysis: Implemented Power Spectrum and Averaged Power Spectrum analysis for both binned and unbinned data, with multiple normalization options (Leahy, fractional, absolute) and comprehensive visualization capabilities.\n\nCross-Spectrum Analysis: Tackled the most challenging component - Cross-Spectrum and Averaged Cross-Spectrum implementation for studying phase lags and time delays between different energy bands. This contribution includes advanced plotting for amplitude, coherence, time lag, and phase lag analysis.\n\nThe project transformed my understanding from basic stargazing to sophisticated astronomical data analysis, creating tools that real astronomers will use to unlock the mysteries of the universe.",
+        "student_name": "Kashish Shrivastav",
+        "code_url": "https://kashish2210.blogspot.com/2025/08/time-series-analysis-in-stingrayjl.html",
+        "proposal_id": "IfDjxgAi",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/bDXTorET"
+      },
+      {
+        "title": "Interactive Database for X-ray observations",
+        "short_description": "The project aims to create an interactive database for X-ray observations, enabling on-the-fly visualization of data products generated with the...",
+        "description": "The project aims to create an interactive database for X-ray observations, enabling on-the-fly visualization of data products generated with the Stingray library. The final product will be a quick-look dashboard application that stores, analyzes, and organizes key data products from multiple observations, allowing the astrophysics research community to track and predict the evolution of black hole binaries. By removing the difficulties of traditional data processing procedures—which vary across missions—this tool simplifies the workflow, enabling astrophysicists to extract all data products with just one click. It also provides the functionality to study multiple data products from an observation in real time, offering a comprehensive view of these sources' phenomenology and ultimately enhancing the efficiency of scientific decision-making.",
+        "student_name": "MOHAMMAD ADNAN",
+        "code_url": "https://sejifukishima.blogspot.com/2025/09/gsoc-2025-final-report-flyingray.html",
+        "proposal_id": "mddnlYxD",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/j5YJQN6s"
+      },
+      {
+        "title": "[RADIS] Optimizing Radis app",
+        "short_description": "The RADIS app is a web application designed for high-resolution infrared molecular spectra using RADIS. Instead of requiring users to write code,...",
+        "description": "The RADIS app is a web application designed for high-resolution infrared molecular spectra using RADIS. Instead of requiring users to write code, this project focuses on developing an intuitive user interface (UI). It leverages RADIS internally to generate spectra, with its optimized algorithms enabling the computation of millions of spectral lines within minutes. However, certain enhancements are needed. This project aims to improve the user experience by introducing advanced features, modernizing the UI, optimizing performance through caching, and ensuring system reliability by establishing comprehensive test coverage.",
+        "student_name": "Mohy Elden Khalid",
+        "code_url": "https://gist.github.com/mohyware/7d56755f64ec932445c57de6e8669ad2",
+        "proposal_id": "HVgjDmRn",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/iYVASbTw"
+      },
+      {
+        "title": "High-Performance Parsing and Selective Access for Large Dataset",
+        "short_description": "The HITEMP CO₂ spectroscopic database is extremely large and inefficient to work with. The distributed file is about 6 GB when compressed, but...",
+        "description": "The HITEMP CO₂ spectroscopic database is extremely large and inefficient to work with. The distributed file is about 6 GB when compressed, but expands to nearly 50 GB upon decompression. The existing workflow requires fully decompressing and batch-parsing the entire file, an operation that takes close to 2.5 hours and consumes significant disk I/O, memory, and network bandwidth. This full-decompress/parse approach forces users to rely on large, high-speed storage, makes quick exploratory analysis or iterative development impractical, and wastes both bandwidth and time when only a small subset of the data is actually needed.\n\nThis project addressed the problem by implementing a partial download mechanism, where only the required data chunks are downloaded, decompressed, and parsed based on user queries. The parsed results are then cached for reuse.\n\nFor performance, the cache parsing was accelerated using a C++ SIMD (Single Instruction, Multiple Data) parser optimized for AVX2 architectures, while for other architectures the system falls back to an optimized Python vectorized parser.",
+        "student_name": "Pratham Hole",
+        "code_url": "https://medium.com/@prathamhole/google-summer-of-code-final-submission-f20883688f73",
+        "proposal_id": "YccBzIme",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/va1YConE"
+      }
+    ],
+    "2026": []
   },
   "githubID": "OpenAstronomy",
   "repositories": [
+    {
+      "id": 1127347973,
+      "node_id": "R_kgDOQzH3BQ",
+      "name": "gsoc-proposals",
+      "full_name": "OpenAstronomy/gsoc-proposals",
+      "html_url": "https://github.com/OpenAstronomy/gsoc-proposals",
+      "description": null,
+      "language": null,
+      "stargazers_count": 2,
+      "forks_count": 27,
+      "open_issues_count": 22,
+      "license": {
+        "key": "cc-by-sa-4.0",
+        "name": "Creative Commons Attribution Share Alike 4.0 International",
+        "spdx_id": "CC-BY-SA-4.0",
+        "url": "https://api.github.com/licenses/cc-by-sa-4.0",
+        "node_id": "MDc6TGljZW5zZTI2"
+      },
+      "topics": []
+    },
     {
       "id": 463175679,
       "node_id": "R_kgDOG5t__w",
@@ -674,9 +742,66 @@
       "html_url": "https://github.com/OpenAstronomy/github-actions-workflows",
       "description": "Reusable workflows for GitHub Actions",
       "language": "Python",
-      "stargazers_count": 20,
-      "forks_count": 16,
-      "open_issues_count": 29,
+      "stargazers_count": 21,
+      "forks_count": 25,
+      "open_issues_count": 28,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 30926520,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzMDkyNjUyMA==",
+      "name": "openastronomy.github.io",
+      "full_name": "OpenAstronomy/openastronomy.github.io",
+      "html_url": "https://github.com/OpenAstronomy/openastronomy.github.io",
+      "description": "The website source code  for the Open Astronomy effort.",
+      "language": "SCSS",
+      "stargazers_count": 82,
+      "forks_count": 179,
+      "open_issues_count": 15,
+      "license": {
+        "key": "bsd-2-clause",
+        "name": "BSD 2-Clause \"Simplified\" License",
+        "spdx_id": "BSD-2-Clause",
+        "url": "https://api.github.com/licenses/bsd-2-clause",
+        "node_id": "MDc6TGljZW5zZTQ="
+      },
+      "topics": [
+        "astronomy",
+        "open-source"
+      ]
+    },
+    {
+      "id": 516286399,
+      "node_id": "R_kgDOHsXnvw",
+      "name": "publish-wheels-anaconda",
+      "full_name": "OpenAstronomy/publish-wheels-anaconda",
+      "html_url": "https://github.com/OpenAstronomy/publish-wheels-anaconda",
+      "description": "GitHub action to publish wheels to Anaconda.org and clear away old wheels",
+      "language": "Python",
+      "stargazers_count": 3,
+      "forks_count": 3,
+      "open_issues_count": 5,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 463137667,
+      "node_id": "R_kgDOG5rrgw",
+      "name": "build-python-dist",
+      "full_name": "OpenAstronomy/build-python-dist",
+      "html_url": "https://github.com/OpenAstronomy/build-python-dist",
+      "description": "GitHub action to build a source distribution for a Python package, and optionally a wheel for pure-Python packages.",
+      "language": "Python",
+      "stargazers_count": 2,
+      "forks_count": 6,
+      "open_issues_count": 3,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -694,9 +819,9 @@
       "html_url": "https://github.com/OpenAstronomy/Universe_OA",
       "description": null,
       "language": "Python",
-      "stargazers_count": 12,
-      "forks_count": 88,
-      "open_issues_count": 2,
+      "stargazers_count": 13,
+      "forks_count": 90,
+      "open_issues_count": 3,
       "license": null,
       "topics": []
     },
@@ -708,10 +833,30 @@
       "html_url": "https://github.com/OpenAstronomy/packaging-guide",
       "description": "A generic Python packaging guide and template. Slightly focused more towards scientific packages.",
       "language": "Python",
-      "stargazers_count": 48,
+      "stargazers_count": 52,
       "forks_count": 28,
-      "open_issues_count": 9,
+      "open_issues_count": 16,
       "license": null,
+      "topics": []
+    },
+    {
+      "id": 600130337,
+      "node_id": "R_kgDOI8VDIQ",
+      "name": "minimum_dependencies",
+      "full_name": "OpenAstronomy/minimum_dependencies",
+      "html_url": "https://github.com/OpenAstronomy/minimum_dependencies",
+      "description": null,
+      "language": "Python",
+      "stargazers_count": 9,
+      "forks_count": 4,
+      "open_issues_count": 3,
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
       "topics": []
     },
     {
@@ -729,29 +874,6 @@
       "topics": []
     },
     {
-      "id": 30926520,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzMDkyNjUyMA==",
-      "name": "openastronomy.github.io",
-      "full_name": "OpenAstronomy/openastronomy.github.io",
-      "html_url": "https://github.com/OpenAstronomy/openastronomy.github.io",
-      "description": "The web site for the Open Astronomy effort.",
-      "language": "SCSS",
-      "stargazers_count": 77,
-      "forks_count": 165,
-      "open_issues_count": 19,
-      "license": {
-        "key": "bsd-2-clause",
-        "name": "BSD 2-Clause \"Simplified\" License",
-        "spdx_id": "BSD-2-Clause",
-        "url": "https://api.github.com/licenses/bsd-2-clause",
-        "node_id": "MDc6TGljZW5zZTQ="
-      },
-      "topics": [
-        "astronomy",
-        "open-source"
-      ]
-    },
-    {
       "id": 343424313,
       "node_id": "MDEwOlJlcG9zaXRvcnkzNDM0MjQzMTM=",
       "name": "sphinx-changelog",
@@ -760,22 +882,8 @@
       "description": "A package to render your changelog into your sphinx documentation",
       "language": "Python",
       "stargazers_count": 8,
-      "forks_count": 11,
+      "forks_count": 10,
       "open_issues_count": 2,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 516286399,
-      "node_id": "R_kgDOHsXnvw",
-      "name": "publish-wheels-anaconda",
-      "full_name": "OpenAstronomy/publish-wheels-anaconda",
-      "html_url": "https://github.com/OpenAstronomy/publish-wheels-anaconda",
-      "description": "GitHub action to publish wheels to Anaconda.org and clear away old wheels",
-      "language": "Python",
-      "stargazers_count": 3,
-      "forks_count": 3,
-      "open_issues_count": 5,
       "license": null,
       "topics": []
     },
@@ -800,46 +908,6 @@
       "topics": []
     },
     {
-      "id": 600130337,
-      "node_id": "R_kgDOI8VDIQ",
-      "name": "minimum_dependencies",
-      "full_name": "OpenAstronomy/minimum_dependencies",
-      "html_url": "https://github.com/OpenAstronomy/minimum_dependencies",
-      "description": null,
-      "language": "Python",
-      "stargazers_count": 8,
-      "forks_count": 4,
-      "open_issues_count": 3,
-      "license": {
-        "key": "bsd-3-clause",
-        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
-        "spdx_id": "BSD-3-Clause",
-        "url": "https://api.github.com/licenses/bsd-3-clause",
-        "node_id": "MDc6TGljZW5zZTU="
-      },
-      "topics": []
-    },
-    {
-      "id": 463137667,
-      "node_id": "R_kgDOG5rrgw",
-      "name": "build-python-dist",
-      "full_name": "OpenAstronomy/build-python-dist",
-      "html_url": "https://github.com/OpenAstronomy/build-python-dist",
-      "description": "GitHub action to build a source distribution for a Python package, and optionally a wheel for pure-Python packages.",
-      "language": "Python",
-      "stargazers_count": 2,
-      "forks_count": 5,
-      "open_issues_count": 3,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
       "id": 134001900,
       "node_id": "MDEwOlJlcG9zaXRvcnkxMzQwMDE5MDA=",
       "name": "baldrick",
@@ -848,7 +916,7 @@
       "description": "I have a cunning plan!",
       "language": "Python",
       "stargazers_count": 14,
-      "forks_count": 8,
+      "forks_count": 9,
       "open_issues_count": 36,
       "license": {
         "key": "mit",
@@ -873,7 +941,7 @@
       "html_url": "https://github.com/OpenAstronomy/workshop_sunpy_astropy",
       "description": "A set of lessons covering SunPy and Astropy",
       "language": "Jupyter Notebook",
-      "stargazers_count": 4,
+      "stargazers_count": 5,
       "forks_count": 8,
       "open_issues_count": 3,
       "license": {
@@ -894,7 +962,7 @@
       "description": "An opinionated set of Azure Pipelines templates for Python projects using pyproject.toml (PEP517) and tox",
       "language": "Shell",
       "stargazers_count": 11,
-      "forks_count": 20,
+      "forks_count": 19,
       "open_issues_count": 15,
       "license": {
         "key": "bsd-2-clause",
@@ -974,8 +1042,8 @@
       "description": "Webpages for the Python in Astronomy Conference Series",
       "language": "JavaScript",
       "stargazers_count": 11,
-      "forks_count": 13,
-      "open_issues_count": 4,
+      "forks_count": 14,
+      "open_issues_count": 5,
       "license": null,
       "topics": [
         "astronomy-conference-series",
@@ -993,7 +1061,7 @@
       "description": null,
       "language": "Python",
       "stargazers_count": 76,
-      "forks_count": 32,
+      "forks_count": 30,
       "open_issues_count": 5,
       "license": null,
       "topics": []
@@ -1061,7 +1129,7 @@
       "description": "application for Google Summer of Code",
       "language": null,
       "stargazers_count": 2,
-      "forks_count": 1,
+      "forks_count": 2,
       "open_issues_count": 0,
       "license": null,
       "topics": []
@@ -1135,7 +1203,7 @@
       "description": "Learners notes for the 2016-01-11 workshop",
       "language": "Jupyter Notebook",
       "stargazers_count": 0,
-      "forks_count": 19,
+      "forks_count": 18,
       "open_issues_count": 0,
       "license": {
         "key": "other",
@@ -1175,7 +1243,7 @@
       "description": "General repo",
       "language": null,
       "stargazers_count": 5,
-      "forks_count": 2,
+      "forks_count": 3,
       "open_issues_count": 4,
       "license": {
         "key": "bsd-3-clause",
@@ -1189,12 +1257,12 @@
   ],
   "contributorsDetails": [
     {
-      "login": "ConorMacBride",
-      "id": 25007832,
-      "node_id": "MDQ6VXNlcjI1MDA3ODMy",
-      "avatar_url": "https://avatars.githubusercontent.com/u/25007832?v=4",
-      "html_url": "https://github.com/ConorMacBride",
-      "contributions": 212
+      "login": "dpshelio",
+      "id": 963242,
+      "node_id": "MDQ6VXNlcjk2MzI0Mg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/963242?v=4",
+      "html_url": "https://github.com/dpshelio",
+      "contributions": 240
     },
     {
       "login": "Cadair",
@@ -1202,7 +1270,23 @@
       "node_id": "MDQ6VXNlcjEzOTEwNTE=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1391051?v=4",
       "html_url": "https://github.com/Cadair",
-      "contributions": 2
+      "contributions": 182
+    },
+    {
+      "login": "nabobalis",
+      "id": 1392107,
+      "node_id": "MDQ6VXNlcjEzOTIxMDc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1392107?v=4",
+      "html_url": "https://github.com/nabobalis",
+      "contributions": 82
+    },
+    {
+      "login": "ConorMacBride",
+      "id": 25007832,
+      "node_id": "MDQ6VXNlcjI1MDA3ODMy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25007832?v=4",
+      "html_url": "https://github.com/ConorMacBride",
+      "contributions": 228
     },
     {
       "login": "pre-commit-ci[bot]",
@@ -1210,7 +1294,7 @@
       "node_id": "MDM6Qm90NjY4NTMxMTM=",
       "avatar_url": "https://avatars.githubusercontent.com/in/68672?v=4",
       "html_url": "https://github.com/apps/pre-commit-ci",
-      "contributions": 61
+      "contributions": 87
     },
     {
       "login": "astrofrog",
@@ -1218,7 +1302,7 @@
       "node_id": "MDQ6VXNlcjMxNDcxNg==",
       "avatar_url": "https://avatars.githubusercontent.com/u/314716?v=4",
       "html_url": "https://github.com/astrofrog",
-      "contributions": 48
+      "contributions": 18
     },
     {
       "login": "dependabot[bot]",
@@ -1226,7 +1310,7 @@
       "node_id": "MDM6Qm90NDk2OTkzMzM=",
       "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
       "html_url": "https://github.com/apps/dependabot",
-      "contributions": 42
+      "contributions": 50
     },
     {
       "login": "zacharyburnett",
@@ -1234,7 +1318,15 @@
       "node_id": "MDQ6VXNlcjE2MDI0Mjk5",
       "avatar_url": "https://avatars.githubusercontent.com/u/16024299?v=4",
       "html_url": "https://github.com/zacharyburnett",
-      "contributions": 27
+      "contributions": 30
+    },
+    {
+      "login": "neutrinoceros",
+      "id": 14075922,
+      "node_id": "MDQ6VXNlcjE0MDc1OTIy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14075922?v=4",
+      "html_url": "https://github.com/neutrinoceros",
+      "contributions": 22
     },
     {
       "login": "pllim",
@@ -1245,28 +1337,12 @@
       "contributions": 5
     },
     {
-      "login": "nabobalis",
-      "id": 1392107,
-      "node_id": "MDQ6VXNlcjEzOTIxMDc=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1392107?v=4",
-      "html_url": "https://github.com/nabobalis",
-      "contributions": 3
-    },
-    {
       "login": "wtbarnes",
       "id": 8676141,
       "node_id": "MDQ6VXNlcjg2NzYxNDE=",
       "avatar_url": "https://avatars.githubusercontent.com/u/8676141?v=4",
       "html_url": "https://github.com/wtbarnes",
-      "contributions": 3
-    },
-    {
-      "login": "neutrinoceros",
-      "id": 14075922,
-      "node_id": "MDQ6VXNlcjE0MDc1OTIy",
-      "avatar_url": "https://avatars.githubusercontent.com/u/14075922?v=4",
-      "html_url": "https://github.com/neutrinoceros",
-      "contributions": 2
+      "contributions": 7
     },
     {
       "login": "braingram",
@@ -1274,7 +1350,7 @@
       "node_id": "MDQ6VXNlcjExNDI2Nw==",
       "avatar_url": "https://avatars.githubusercontent.com/u/114267?v=4",
       "html_url": "https://github.com/braingram",
-      "contributions": 1
+      "contributions": 2
     },
     {
       "login": "dstansby",
@@ -1282,6 +1358,14 @@
       "node_id": "MDQ6VXNlcjYxOTc2Mjg=",
       "avatar_url": "https://avatars.githubusercontent.com/u/6197628?v=4",
       "html_url": "https://github.com/dstansby",
+      "contributions": 7
+    },
+    {
+      "login": "finnagin",
+      "id": 20198864,
+      "node_id": "MDQ6VXNlcjIwMTk4ODY0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20198864?v=4",
+      "html_url": "https://github.com/finnagin",
       "contributions": 1
     },
     {
@@ -1317,44 +1401,20 @@
       "contributions": 1
     },
     {
-      "login": "dpshelio",
-      "id": 963242,
-      "node_id": "MDQ6VXNlcjk2MzI0Mg==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/963242?v=4",
-      "html_url": "https://github.com/dpshelio",
-      "contributions": 146
-    },
-    {
       "login": "bsipocz",
       "id": 6788290,
       "node_id": "MDQ6VXNlcjY3ODgyOTA=",
       "avatar_url": "https://avatars.githubusercontent.com/u/6788290?v=4",
       "html_url": "https://github.com/bsipocz",
-      "contributions": 13
+      "contributions": 217
     },
     {
-      "login": "Abinash-bit",
-      "id": 89697294,
-      "node_id": "MDQ6VXNlcjg5Njk3Mjk0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/89697294?v=4",
-      "html_url": "https://github.com/Abinash-bit",
-      "contributions": 3
-    },
-    {
-      "login": "rachittshah",
-      "id": 57140143,
-      "node_id": "MDQ6VXNlcjU3MTQwMTQz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/57140143?v=4",
-      "html_url": "https://github.com/rachittshah",
-      "contributions": 2
-    },
-    {
-      "login": "siddharthlal25",
-      "id": 34659233,
-      "node_id": "MDQ6VXNlcjM0NjU5MjMz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/34659233?v=4",
-      "html_url": "https://github.com/siddharthlal25",
-      "contributions": 2
+      "login": "eteq",
+      "id": 346587,
+      "node_id": "MDQ6VXNlcjM0NjU4Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/346587?v=4",
+      "html_url": "https://github.com/eteq",
+      "contributions": 52
     },
     {
       "login": "mirca",
@@ -1362,15 +1422,23 @@
       "node_id": "MDQ6VXNlcjEzMDc3MDUx",
       "avatar_url": "https://avatars.githubusercontent.com/u/13077051?v=4",
       "html_url": "https://github.com/mirca",
-      "contributions": 2
+      "contributions": 29
     },
     {
-      "login": "adwaitbhope",
-      "id": 32306983,
-      "node_id": "MDQ6VXNlcjMyMzA2OTgz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/32306983?v=4",
-      "html_url": "https://github.com/adwaitbhope",
-      "contributions": 1
+      "login": "matteobachetti",
+      "id": 7190189,
+      "node_id": "MDQ6VXNlcjcxOTAxODk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7190189?v=4",
+      "html_url": "https://github.com/matteobachetti",
+      "contributions": 27
+    },
+    {
+      "login": "SolarDrew",
+      "id": 1914702,
+      "node_id": "MDQ6VXNlcjE5MTQ3MDI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1914702?v=4",
+      "html_url": "https://github.com/SolarDrew",
+      "contributions": 19
     },
     {
       "login": "Alex-Ian-Hamilton",
@@ -1378,23 +1446,63 @@
       "node_id": "MDQ6VXNlcjQ0NDMzMTE=",
       "avatar_url": "https://avatars.githubusercontent.com/u/4443311?v=4",
       "html_url": "https://github.com/Alex-Ian-Hamilton",
-      "contributions": 1
+      "contributions": 18
     },
     {
-      "login": "theand9",
-      "id": 39396816,
-      "node_id": "MDQ6VXNlcjM5Mzk2ODE2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/39396816?v=4",
-      "html_url": "https://github.com/theand9",
-      "contributions": 1
+      "login": "taldcroft",
+      "id": 348089,
+      "node_id": "MDQ6VXNlcjM0ODA4OQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/348089?v=4",
+      "html_url": "https://github.com/taldcroft",
+      "contributions": 17
     },
     {
-      "login": "Sedictious",
-      "id": 36453738,
-      "node_id": "MDQ6VXNlcjM2NDUzNzM4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/36453738?v=4",
-      "html_url": "https://github.com/Sedictious",
-      "contributions": 1
+      "login": "nietootein",
+      "id": 23263050,
+      "node_id": "MDQ6VXNlcjIzMjYzMDUw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/23263050?v=4",
+      "html_url": "https://github.com/nietootein",
+      "contributions": 13
+    },
+    {
+      "login": "mtambos",
+      "id": 1522032,
+      "node_id": "MDQ6VXNlcjE1MjIwMzI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1522032?v=4",
+      "html_url": "https://github.com/mtambos",
+      "contributions": 13
+    },
+    {
+      "login": "minouHub",
+      "id": 36677294,
+      "node_id": "MDQ6VXNlcjM2Njc3Mjk0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/36677294?v=4",
+      "html_url": "https://github.com/minouHub",
+      "contributions": 12
+    },
+    {
+      "login": "mgullik",
+      "id": 14329835,
+      "node_id": "MDQ6VXNlcjE0MzI5ODM1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14329835?v=4",
+      "html_url": "https://github.com/mgullik",
+      "contributions": 11
+    },
+    {
+      "login": "erwanp",
+      "id": 16088743,
+      "node_id": "MDQ6VXNlcjE2MDg4NzQz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16088743?v=4",
+      "html_url": "https://github.com/erwanp",
+      "contributions": 10
+    },
+    {
+      "login": "DanRyanIrish",
+      "id": 6806704,
+      "node_id": "MDQ6VXNlcjY4MDY3MDQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6806704?v=4",
+      "html_url": "https://github.com/DanRyanIrish",
+      "contributions": 9
     },
     {
       "login": "astrojuanlu",
@@ -1402,103 +1510,23 @@
       "node_id": "MDQ6VXNlcjMxNjUxNw==",
       "avatar_url": "https://avatars.githubusercontent.com/u/316517?v=4",
       "html_url": "https://github.com/astrojuanlu",
-      "contributions": 1
+      "contributions": 9
     },
     {
-      "login": "jredondopizarro",
-      "id": 45992560,
-      "node_id": "MDQ6VXNlcjQ1OTkyNTYw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/45992560?v=4",
-      "html_url": "https://github.com/jredondopizarro",
-      "contributions": 1
+      "login": "bmorris3",
+      "id": 3497584,
+      "node_id": "MDQ6VXNlcjM0OTc1ODQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3497584?v=4",
+      "html_url": "https://github.com/bmorris3",
+      "contributions": 8
     },
     {
-      "login": "JeS24",
-      "id": 31299799,
-      "node_id": "MDQ6VXNlcjMxMjk5Nzk5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/31299799?v=4",
-      "html_url": "https://github.com/JeS24",
-      "contributions": 1
-    },
-    {
-      "login": "kakirastern",
-      "id": 26264600,
-      "node_id": "MDQ6VXNlcjI2MjY0NjAw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/26264600?v=4",
-      "html_url": "https://github.com/kakirastern",
-      "contributions": 1
-    },
-    {
-      "login": "Meuge",
-      "id": 9794029,
-      "node_id": "MDQ6VXNlcjk3OTQwMjk=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/9794029?v=4",
-      "html_url": "https://github.com/Meuge",
-      "contributions": 1
-    },
-    {
-      "login": "nocturnalastro",
-      "id": 8648919,
-      "node_id": "MDQ6VXNlcjg2NDg5MTk=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/8648919?v=4",
-      "html_url": "https://github.com/nocturnalastro",
-      "contributions": 1
-    },
-    {
-      "login": "pkj-m",
-      "id": 17577971,
-      "node_id": "MDQ6VXNlcjE3NTc3OTcx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/17577971?v=4",
-      "html_url": "https://github.com/pkj-m",
-      "contributions": 1
-    },
-    {
-      "login": "aquatiko",
-      "id": 23431811,
-      "node_id": "MDQ6VXNlcjIzNDMxODEx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/23431811?v=4",
-      "html_url": "https://github.com/aquatiko",
-      "contributions": 1
-    },
-    {
-      "login": "sahilyadav27",
-      "id": 53268444,
-      "node_id": "MDQ6VXNlcjUzMjY4NDQ0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/53268444?v=4",
-      "html_url": "https://github.com/sahilyadav27",
-      "contributions": 1
-    },
-    {
-      "login": "TianxiaoMA",
-      "id": 8070460,
-      "node_id": "MDQ6VXNlcjgwNzA0NjA=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/8070460?v=4",
-      "html_url": "https://github.com/TianxiaoMA",
-      "contributions": 1
-    },
-    {
-      "login": "tcjansen",
-      "id": 33158521,
-      "node_id": "MDQ6VXNlcjMzMTU4NTIx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/33158521?v=4",
-      "html_url": "https://github.com/tcjansen",
-      "contributions": 1
-    },
-    {
-      "login": "yashrsharma44",
-      "id": 31438680,
-      "node_id": "MDQ6VXNlcjMxNDM4Njgw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/31438680?v=4",
-      "html_url": "https://github.com/yashrsharma44",
-      "contributions": 1
-    },
-    {
-      "login": "abhijeetmanhas",
-      "id": 43112347,
-      "node_id": "MDQ6VXNlcjQzMTEyMzQ3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/43112347?v=4",
-      "html_url": "https://github.com/abhijeetmanhas",
-      "contributions": 1
+      "login": "mohammad-akhlaghi",
+      "id": 44807546,
+      "node_id": "MDQ6VXNlcjQ0ODA3NTQ2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/44807546?v=4",
+      "html_url": "https://github.com/mohammad-akhlaghi",
+      "contributions": 7
     },
     {
       "login": "anandxkumar",
@@ -1506,31 +1534,63 @@
       "node_id": "MDQ6VXNlcjQ0NTg0MDY3",
       "avatar_url": "https://avatars.githubusercontent.com/u/44584067?v=4",
       "html_url": "https://github.com/anandxkumar",
-      "contributions": 1
+      "contributions": 7
     },
     {
-      "login": "encrypted-soul",
-      "id": 62807661,
-      "node_id": "MDQ6VXNlcjYyODA3NjYx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/62807661?v=4",
-      "html_url": "https://github.com/encrypted-soul",
-      "contributions": 1
+      "login": "cdeil",
+      "id": 852409,
+      "node_id": "MDQ6VXNlcjg1MjQwOQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/852409?v=4",
+      "html_url": "https://github.com/cdeil",
+      "contributions": 7
     },
     {
-      "login": "rirze",
-      "id": 3255334,
-      "node_id": "MDQ6VXNlcjMyNTUzMzQ=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/3255334?v=4",
-      "html_url": "https://github.com/rirze",
-      "contributions": 1
+      "login": "wafels",
+      "id": 983575,
+      "node_id": "MDQ6VXNlcjk4MzU3NQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/983575?v=4",
+      "html_url": "https://github.com/wafels",
+      "contributions": 6
     },
     {
-      "login": "vatch123",
-      "id": 39871718,
-      "node_id": "MDQ6VXNlcjM5ODcxNzE4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/39871718?v=4",
-      "html_url": "https://github.com/vatch123",
-      "contributions": 1
+      "login": "giordano",
+      "id": 765740,
+      "node_id": "MDQ6VXNlcjc2NTc0MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/765740?v=4",
+      "html_url": "https://github.com/giordano",
+      "contributions": 6
+    },
+    {
+      "login": "mwcraig",
+      "id": 1147167,
+      "node_id": "MDQ6VXNlcjExNDcxNjc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1147167?v=4",
+      "html_url": "https://github.com/mwcraig",
+      "contributions": 5
+    },
+    {
+      "login": "samaloney",
+      "id": 24570854,
+      "node_id": "MDQ6VXNlcjI0NTcwODU0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/24570854?v=4",
+      "html_url": "https://github.com/samaloney",
+      "contributions": 5
+    },
+    {
+      "login": "arunavabasucom",
+      "id": 73842340,
+      "node_id": "MDQ6VXNlcjczODQyMzQw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/73842340?v=4",
+      "html_url": "https://github.com/arunavabasucom",
+      "contributions": 5
+    },
+    {
+      "login": "dhuppenkothen",
+      "id": 5237391,
+      "node_id": "MDQ6VXNlcjUyMzczOTE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5237391?v=4",
+      "html_url": "https://github.com/dhuppenkothen",
+      "contributions": 4
     }
   ],
   "activeOrg": false

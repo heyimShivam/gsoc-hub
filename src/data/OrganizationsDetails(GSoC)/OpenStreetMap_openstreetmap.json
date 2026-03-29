@@ -33,7 +33,7 @@
     "docker",
     "postgresql",
     "c++",
-    "rust"
+    "glTF"
   ],
   "irc_channel": "https://wiki.openstreetmap.org/wiki/Google_Summer_of_Code/2021#Contact",
   "contact_email": null,
@@ -51,7 +51,8 @@
     2022,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2016": [
@@ -392,10 +393,173 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/vh3NAhvi"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Nominatim: Transliteration of Search Results",
+        "short_description": "OpenStreetMap (OSM) commonly stores names of streets, places, and points of interest in their local language and script. As a result, users searching...",
+        "description": "OpenStreetMap (OSM) commonly stores names of streets, places, and points of interest in their local language and script. As a result, users searching in unfamiliar regions may receive results that are unreadable—especially when those names are rendered in non-Latin scripts like Cyrillic, Arabic, or Chinese. This project will enhance Nominatim, OSM’s geocoding engine, by adding transliteration support to its search results.\n\nThe goal is to detect when names are in a script unfamiliar to the user and provide a readable transliteration alongside the original. This involves detecting the script of place names, selecting an appropriate transliteration library (e.g., pyicu, unidecode), and integrating a new transliterated_name field into Nominatim’s output format. The solution will be designed to be modular and extensible to multiple languages and target scripts.\n\nDeliverables include a working transliteration pipeline, user-configurable options, improved search result formatting, robust test coverage, and complete documentation. This will make OpenStreetMap data more accessible to users worldwide by bridging language and script barriers during location search.",
+        "student_name": "anqixu",
+        "code_url": "https://www.openstreetmap.org/user/anqixu/diary/407362",
+        "proposal_id": "zFJh4Fe9",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/hnNINYNC"
+      },
+      {
+        "title": "Temporary  Road  Closures  Database  and  API",
+        "short_description": "The Temporary Road Closures Database and API project addresses a critical gap in the OpenStreetMap (OSM) ecosystem by creating a centralized,...",
+        "description": "The Temporary Road Closures Database and API project addresses a critical gap in the OpenStreetMap (OSM) ecosystem by creating a centralized, real-time database and web service to manage temporary road closures caused by construction, accidents, and events. The system will leverage PostgreSQL for robust geospatial data storage, provide a RESTful API using FastAPI with OpenLR standard for universal compatibility, and include a user-friendly web interface for community submissions and real-time closure viewing. Additionally, a prototype integration with the OsmAnd navigation app will demonstrate practical utility by enabling dynamic routing adjustments around closures. By project completion, deliverables will include a functional database, API, web interface, and a demonstrable OsmAnd integration, significantly enhancing routing accuracy and safety for OSM users.",
+        "student_name": "Archit Rathod",
+        "code_url": "https://www.openstreetmap.org/user/Archit%20Rathod/diary/407336",
+        "proposal_id": "gRSNgXhx",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/tF4ccCqZ"
+      },
+      {
+        "title": "Modernize the 3D Model Repository",
+        "short_description": "3DMR is a community-driven repository for 3D models and their metadata, designed to enhance 3D map rendering. It was originally developed during...",
+        "description": "3DMR is a community-driven repository for 3D models and their metadata, designed to enhance 3D map rendering. It was originally developed during Google Summer of Code 2017 by Pedro Amaro, under the mentorship of the OpenStreetMap community, with Jan Marsch and Tobias Knerr serving as mentors.\n\nSince then, the project has been left largely abandoned and now runs on an outdated Django 2.0.5 codebase. This proposal aims to revive 3DMR by modernizing its foundation—upgrading the framework, adopting glTF as the standard model format, and introducing a range of improvements including robust model validation, enhanced preview functionality, and automated quality analysis feedback.",
+        "student_name": "Ayush Dhar Dubey",
+        "code_url": "https://www.openstreetmap.org/user/Ayush%20Dhar%20Dubey/diary/407356",
+        "proposal_id": "aPnS4hMI",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/ZJyIdiWg"
+      },
+      {
+        "title": "Modernize iD Editor Session Management with IndexedDB",
+        "short_description": "The iD Editor is a powerful tool used by thousands to contribute to OpenStreetMap, but its current session management system relies on localStorage,...",
+        "description": "The iD Editor is a powerful tool used by thousands to contribute to OpenStreetMap, but its current session management system relies on localStorage, which poses several usability and technical challenges. With a small 5MB storage limit and synchronous behavior that blocks the main thread, users often face sluggish performance and occasional data loss. These issues become even more pronounced when users work across multiple browser tabs, where localStorage provides no real synchronization, leading to conflicts and inconsistent states between sessions.\n\nThis project proposes to modernize session management in iD by adopting IndexedDB for efficient, large-scale, and non-blocking data storage. A key focus will be enabling real-time multi-tab editing support using the BroadcastChannel API to keep changes synchronized across tabs without clobbering data. The project will also improve crash resilience, ensure safe cleanup of resources using modern browser lifecycle events like pagehide, and introduce a graceful fallback for older browsers. Together, these improvements aim to make iD more robust, responsive, and aligned with modern web standards while keeping the editing experience reliable and smooth for all contributors.",
+        "student_name": "Deeptanshu Sankhwar",
+        "code_url": "https://community.openstreetmap.org/t/introducing-my-gsoc-project-modernizing-session-management-in-id-editor/130928/4",
+        "proposal_id": "B1DwNbPA",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/VxNSENnT"
+      },
+      {
+        "title": "Ferrostar - Navigation Recording, Replay & Snapshot Testing",
+        "short_description": "This project aims to enhance Ferrostar by implementing a session recording and replay system for debugging and testing navigation flows. The system...",
+        "description": "This project aims to enhance Ferrostar by implementing a session recording and replay system for debugging and testing navigation flows. \nThe system will provide an efficient and platform-independent recording system, allowing developers to capture interactions leading up to an error by manually enabling recording for testing. \nThe recorded sessions can later be replayed to reproduce bugs, validate behavior across versions, and automate regression testing.\nThis project will improve the developer experience and make Ferrostar more robust for production use.",
+        "student_name": "Kandarp Jindal",
+        "code_url": "https://github.com/stadiamaps/ferrostar/discussions/681",
+        "proposal_id": "9UdPFN9L",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/Bsi6d3Fr"
+      }
+    ],
+    "2026": []
   },
   "githubID": "openstreetmap",
   "repositories": [
+    {
+      "id": 4989235,
+      "node_id": "MDEwOlJlcG9zaXRvcnk0OTg5MjM1",
+      "name": "iD",
+      "full_name": "openstreetmap/iD",
+      "html_url": "https://github.com/openstreetmap/iD",
+      "description": "🆔 The easy-to-use OpenStreetMap editor in JavaScript.",
+      "language": "JavaScript",
+      "stargazers_count": 3760,
+      "forks_count": 1429,
+      "open_issues_count": 1134,
+      "license": {
+        "key": "isc",
+        "name": "ISC License",
+        "spdx_id": "ISC",
+        "url": "https://api.github.com/licenses/isc",
+        "node_id": "MDc6TGljZW5zZTEw"
+      },
+      "topics": [
+        "d3",
+        "editor",
+        "mapping",
+        "openstreetmap"
+      ]
+    },
+    {
+      "id": 297393321,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyOTczOTMzMjE=",
+      "name": "prometheus-exporters",
+      "full_name": "openstreetmap/prometheus-exporters",
+      "html_url": "https://github.com/openstreetmap/prometheus-exporters",
+      "description": "prometheus-exporters used by OpenStreetMap Operations team for monitoring the project's infrastructure",
+      "language": "Ruby",
+      "stargazers_count": 5,
+      "forks_count": 6,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 310233994,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzMTAyMzM5OTQ=",
+      "name": "id-tagging-schema",
+      "full_name": "openstreetmap/id-tagging-schema",
+      "html_url": "https://github.com/openstreetmap/id-tagging-schema",
+      "description": "🆔🏷 The presets and other tagging data used by the iD editor",
+      "language": "JSON",
+      "stargazers_count": 205,
+      "forks_count": 242,
+      "open_issues_count": 386,
+      "license": {
+        "key": "isc",
+        "name": "ISC License",
+        "spdx_id": "ISC",
+        "url": "https://api.github.com/licenses/isc",
+        "node_id": "MDc6TGljZW5zZTEw"
+      },
+      "topics": [
+        "openstreetmap",
+        "osm",
+        "presets",
+        "tagging"
+      ]
+    },
+    {
+      "id": 933171906,
+      "node_id": "R_kgDON58Swg",
+      "name": "stateofthemap-2025",
+      "full_name": "openstreetmap/stateofthemap-2025",
+      "html_url": "https://github.com/openstreetmap/stateofthemap-2025",
+      "description": "Conference website for the State of the Map 2025 in Manila",
+      "language": "CSS",
+      "stargazers_count": 10,
+      "forks_count": 6,
+      "open_issues_count": 1,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "conference",
+        "openstreetmap",
+        "osm",
+        "sotm",
+        "stateofthemap"
+      ]
+    },
+    {
+      "id": 26653684,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyNjY1MzY4NA==",
+      "name": "chef",
+      "full_name": "openstreetmap/chef",
+      "html_url": "https://github.com/openstreetmap/chef",
+      "description": "Chef configuration management repo for configuring & maintaining the OpenStreetMap servers.",
+      "language": "Ruby",
+      "stargazers_count": 112,
+      "forks_count": 81,
+      "open_issues_count": 7,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "chef",
+        "hardware",
+        "infrastructure",
+        "openstreetmap",
+        "ops"
+      ]
+    },
     {
       "id": 641512,
       "node_id": "MDEwOlJlcG9zaXRvcnk2NDE1MTI=",
@@ -404,9 +568,9 @@
       "html_url": "https://github.com/openstreetmap/openstreetmap-website",
       "description": "The Rails application that powers OpenStreetMap",
       "language": "Ruby",
-      "stargazers_count": 2385,
-      "forks_count": 966,
-      "open_issues_count": 590,
+      "stargazers_count": 2669,
+      "forks_count": 1046,
+      "open_issues_count": 640,
       "license": {
         "key": "gpl-2.0",
         "name": "GNU General Public License v2.0",
@@ -428,35 +592,207 @@
       "html_url": "https://github.com/openstreetmap/tile-attribution",
       "description": "This repository is used for reporting and tracking sites which are using tile.openstreetmap.org tiles but without attributing OpenStreetMap. The sites are tracked in the issue tracker.",
       "language": "Ruby",
-      "stargazers_count": 42,
-      "forks_count": 4,
-      "open_issues_count": 18,
+      "stargazers_count": 48,
+      "forks_count": 5,
+      "open_issues_count": 45,
       "license": null,
       "topics": []
     },
     {
-      "id": 310233994,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzMTAyMzM5OTQ=",
-      "name": "id-tagging-schema",
-      "full_name": "openstreetmap/id-tagging-schema",
-      "html_url": "https://github.com/openstreetmap/id-tagging-schema",
-      "description": "🆔🏷 The presets and other tagging data used by the iD editor",
+      "id": 6135153,
+      "node_id": "MDEwOlJlcG9zaXRvcnk2MTM1MTUz",
+      "name": "leaflet-osm",
+      "full_name": "openstreetmap/leaflet-osm",
+      "html_url": "https://github.com/openstreetmap/leaflet-osm",
+      "description": "OpenStreetMap plugin for Leaflet",
       "language": "JavaScript",
-      "stargazers_count": 166,
-      "forks_count": 183,
-      "open_issues_count": 374,
+      "stargazers_count": 115,
+      "forks_count": 34,
+      "open_issues_count": 6,
       "license": {
-        "key": "isc",
-        "name": "ISC License",
-        "spdx_id": "ISC",
-        "url": "https://api.github.com/licenses/isc",
-        "node_id": "MDc6TGljZW5zZTEw"
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 17978243,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNzk3ODI0Mw==",
+      "name": "owg-website",
+      "full_name": "openstreetmap/owg-website",
+      "html_url": "https://github.com/openstreetmap/owg-website",
+      "description": "The website for the OSMF Operations Working Group (OWG)",
+      "language": "CSS",
+      "stargazers_count": 59,
+      "forks_count": 43,
+      "open_issues_count": 1,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 999708243,
+      "node_id": "R_kgDOO5ZWUw",
+      "name": "help-website",
+      "full_name": "openstreetmap/help-website",
+      "html_url": "https://github.com/openstreetmap/help-website",
+      "description": "help-website static site built with hugo from OQSA export",
+      "language": "HTML",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "open_issues_count": 1,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
       },
       "topics": [
+        "container",
+        "docker",
+        "hugo",
+        "openstreetmap",
+        "osqa"
+      ]
+    },
+    {
+      "id": 642462,
+      "node_id": "MDEwOlJlcG9zaXRvcnk2NDI0NjI=",
+      "name": "mod_tile",
+      "full_name": "openstreetmap/mod_tile",
+      "html_url": "https://github.com/openstreetmap/mod_tile",
+      "description": "Renders map tiles with mapnik and serves them using apache",
+      "language": "C++",
+      "stargazers_count": 313,
+      "forks_count": 199,
+      "open_issues_count": 61,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "topics": []
+    },
+    {
+      "id": 1092409117,
+      "node_id": "R_kgDOQRzXHQ",
+      "name": "stateofthemap-2026",
+      "full_name": "openstreetmap/stateofthemap-2026",
+      "html_url": "https://github.com/openstreetmap/stateofthemap-2026",
+      "description": "Conference website for the State of the Map 2026 in Paris",
+      "language": "CSS",
+      "stargazers_count": 1,
+      "forks_count": 7,
+      "open_issues_count": 1,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "conference",
         "openstreetmap",
         "osm",
-        "presets",
-        "tagging"
+        "sotm",
+        "stateofthemap"
+      ]
+    },
+    {
+      "id": 826897,
+      "node_id": "MDEwOlJlcG9zaXRvcnk4MjY4OTc=",
+      "name": "OSM-binary",
+      "full_name": "openstreetmap/OSM-binary",
+      "html_url": "https://github.com/openstreetmap/OSM-binary",
+      "description": null,
+      "language": "Java",
+      "stargazers_count": 210,
+      "forks_count": 79,
+      "open_issues_count": 2,
+      "license": {
+        "key": "lgpl-3.0",
+        "name": "GNU Lesser General Public License v3.0",
+        "spdx_id": "LGPL-3.0",
+        "url": "https://api.github.com/licenses/lgpl-3.0",
+        "node_id": "MDc6TGljZW5zZTEy"
+      },
+      "topics": []
+    },
+    {
+      "id": 806980917,
+      "node_id": "R_kgDOMBmNNQ",
+      "name": "wordpress-container",
+      "full_name": "openstreetmap/wordpress-container",
+      "html_url": "https://github.com/openstreetmap/wordpress-container",
+      "description": "wordpress-container",
+      "language": "Dockerfile",
+      "stargazers_count": 0,
+      "forks_count": 1,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 171942537,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNzE5NDI1Mzc=",
+      "name": "dns",
+      "full_name": "openstreetmap/dns",
+      "html_url": "https://github.com/openstreetmap/dns",
+      "description": "OpenStreetMap DNS",
+      "language": "JavaScript",
+      "stargazers_count": 23,
+      "forks_count": 14,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 114921765,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMTQ5MjE3NjU=",
+      "name": "stateofthemap-website",
+      "full_name": "openstreetmap/stateofthemap-website",
+      "html_url": "https://github.com/openstreetmap/stateofthemap-website",
+      "description": "State of the Map website resources",
+      "language": "HTML",
+      "stargazers_count": 6,
+      "forks_count": 5,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": [
+        "docker-image",
+        "stateofthemap"
+      ]
+    },
+    {
+      "id": 65283335,
+      "node_id": "MDEwOlJlcG9zaXRvcnk2NTI4MzMzNQ==",
+      "name": "tirex",
+      "full_name": "openstreetmap/tirex",
+      "html_url": "https://github.com/openstreetmap/tirex",
+      "description": "Tirex tile queue manager. A drop-in replacement for renderd.",
+      "language": "Perl",
+      "stargazers_count": 72,
+      "forks_count": 22,
+      "open_issues_count": 19,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "topics": [
+        "map-renderer",
+        "maps",
+        "openstreetmap",
+        "osm",
+        "tiles"
       ]
     },
     {
@@ -466,10 +802,10 @@
       "full_name": "openstreetmap/vectortile-website",
       "html_url": "https://github.com/openstreetmap/vectortile-website",
       "description": null,
-      "language": "TypeScript",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "open_issues_count": 1,
+      "language": "Dockerfile",
+      "stargazers_count": 5,
+      "forks_count": 1,
+      "open_issues_count": 8,
       "license": {
         "key": "other",
         "name": "Other",
@@ -483,68 +819,50 @@
       ]
     },
     {
-      "id": 4989235,
-      "node_id": "MDEwOlJlcG9zaXRvcnk0OTg5MjM1",
-      "name": "iD",
-      "full_name": "openstreetmap/iD",
-      "html_url": "https://github.com/openstreetmap/iD",
-      "description": "🆔 The easy-to-use OpenStreetMap editor in JavaScript.",
-      "language": "JavaScript",
-      "stargazers_count": 3531,
-      "forks_count": 1287,
-      "open_issues_count": 1214,
+      "id": 1054252125,
+      "node_id": "R_kgDOPtacXQ",
+      "name": "software-roadmap",
+      "full_name": "openstreetmap/software-roadmap",
+      "html_url": "https://github.com/openstreetmap/software-roadmap",
+      "description": "Proposed roadmap for OpenStreetMap core software projects",
+      "language": null,
+      "stargazers_count": 11,
+      "forks_count": 3,
+      "open_issues_count": 1,
       "license": {
-        "key": "isc",
-        "name": "ISC License",
-        "spdx_id": "ISC",
-        "url": "https://api.github.com/licenses/isc",
-        "node_id": "MDc6TGljZW5zZTEw"
+        "key": "cc0-1.0",
+        "name": "Creative Commons Zero v1.0 Universal",
+        "spdx_id": "CC0-1.0",
+        "url": "https://api.github.com/licenses/cc0-1.0",
+        "node_id": "MDc6TGljZW5zZTY="
       },
-      "topics": [
-        "d3",
-        "editor",
-        "javascript",
-        "mapping",
-        "openstreetmap"
-      ]
+      "topics": []
     },
     {
-      "id": 26653684,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNjY1MzY4NA==",
-      "name": "chef",
-      "full_name": "openstreetmap/chef",
-      "html_url": "https://github.com/openstreetmap/chef",
-      "description": "Chef configuration management repo for configuring & maintaining the OpenStreetMap servers.",
-      "language": "Ruby",
-      "stargazers_count": 102,
-      "forks_count": 72,
-      "open_issues_count": 6,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "chef",
-        "hardware",
-        "infrastructure",
-        "openstreetmap",
-        "ops"
-      ]
+      "id": 534213752,
+      "node_id": "R_kgDOH9d0eA",
+      "name": "oxidized",
+      "full_name": "openstreetmap/oxidized",
+      "html_url": "https://github.com/openstreetmap/oxidized",
+      "description": "Gem bundler files for managing installed oxidized version",
+      "language": "Dockerfile",
+      "stargazers_count": 0,
+      "forks_count": 1,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
     },
     {
-      "id": 933171906,
-      "node_id": "R_kgDON58Swg",
-      "name": "stateofthemap-2025",
-      "full_name": "openstreetmap/stateofthemap-2025",
-      "html_url": "https://github.com/openstreetmap/stateofthemap-2025",
-      "description": "Conference website for the State of the Map 2025",
+      "id": 719947756,
+      "node_id": "R_kgDOKumH7A",
+      "name": "stateofthemap-2024",
+      "full_name": "openstreetmap/stateofthemap-2024",
+      "html_url": "https://github.com/openstreetmap/stateofthemap-2024",
+      "description": " Conference website for the State of the Map 2025 in Nairobi",
       "language": "CSS",
-      "stargazers_count": 8,
-      "forks_count": 2,
-      "open_issues_count": 4,
+      "stargazers_count": 6,
+      "forks_count": 9,
+      "open_issues_count": 0,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -556,34 +874,58 @@
         "conference",
         "openstreetmap",
         "osm",
-        "sotm"
+        "sotm",
+        "stateofthemap"
       ]
     },
     {
-      "id": 297393321,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyOTczOTMzMjE=",
-      "name": "prometheus-exporters",
-      "full_name": "openstreetmap/prometheus-exporters",
-      "html_url": "https://github.com/openstreetmap/prometheus-exporters",
+      "id": 1007043499,
+      "node_id": "R_kgDOPAZDqw",
+      "name": "github-shared-workflows",
+      "full_name": "openstreetmap/github-shared-workflows",
+      "html_url": "https://github.com/openstreetmap/github-shared-workflows",
       "description": null,
-      "language": "Ruby",
-      "stargazers_count": 3,
-      "forks_count": 6,
-      "open_issues_count": 1,
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 3,
       "license": null,
       "topics": []
     },
     {
-      "id": 6135153,
-      "node_id": "MDEwOlJlcG9zaXRvcnk2MTM1MTUz",
-      "name": "leaflet-osm",
-      "full_name": "openstreetmap/leaflet-osm",
-      "html_url": "https://github.com/openstreetmap/leaflet-osm",
-      "description": "OpenStreetMap plugin for Leaflet",
-      "language": "JavaScript",
-      "stargazers_count": 114,
-      "forks_count": 36,
-      "open_issues_count": 5,
+      "id": 78233214,
+      "node_id": "MDEwOlJlcG9zaXRvcnk3ODIzMzIxNA==",
+      "name": "stateofthemap-2017",
+      "full_name": "openstreetmap/stateofthemap-2017",
+      "html_url": "https://github.com/openstreetmap/stateofthemap-2017",
+      "description": " State of the Map 2017 website",
+      "language": "HTML",
+      "stargazers_count": 4,
+      "forks_count": 9,
+      "open_issues_count": 0,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "docker-image",
+        "stateofthemap"
+      ]
+    },
+    {
+      "id": 641598,
+      "node_id": "MDEwOlJlcG9zaXRvcnk2NDE1OTg=",
+      "name": "merkaartor",
+      "full_name": "openstreetmap/merkaartor",
+      "html_url": "https://github.com/openstreetmap/merkaartor",
+      "description": "Home of Merkaartor, an openstreetmap mapping program.",
+      "language": "C++",
+      "stargazers_count": 333,
+      "forks_count": 80,
+      "open_issues_count": 68,
       "license": {
         "key": "other",
         "name": "Other",
@@ -591,40 +933,30 @@
         "url": null,
         "node_id": "MDc6TGljZW5zZTA="
       },
-      "topics": []
+      "topics": [
+        "hacktoberfest",
+        "hacktoberfest2021",
+        "openstreetmap"
+      ]
     },
     {
-      "id": 642462,
-      "node_id": "MDEwOlJlcG9zaXRvcnk2NDI0NjI=",
-      "name": "mod_tile",
-      "full_name": "openstreetmap/mod_tile",
-      "html_url": "https://github.com/openstreetmap/mod_tile",
-      "description": "Renders map tiles with mapnik and serves them using apache",
-      "language": "C++",
-      "stargazers_count": 295,
-      "forks_count": 194,
-      "open_issues_count": 64,
+      "id": 350678007,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzNTA2NzgwMDc=",
+      "name": "tilelog",
+      "full_name": "openstreetmap/tilelog",
+      "html_url": "https://github.com/openstreetmap/tilelog",
+      "description": null,
+      "language": "Python",
+      "stargazers_count": 4,
+      "forks_count": 2,
+      "open_issues_count": 5,
       "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
       },
-      "topics": []
-    },
-    {
-      "id": 171942537,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNzE5NDI1Mzc=",
-      "name": "dns",
-      "full_name": "openstreetmap/dns",
-      "html_url": "https://github.com/openstreetmap/dns",
-      "description": "OpenStreetMap DNS",
-      "language": "JavaScript",
-      "stargazers_count": 21,
-      "forks_count": 14,
-      "open_issues_count": 0,
-      "license": null,
       "topics": []
     },
     {
@@ -642,274 +974,15 @@
       "topics": []
     },
     {
-      "id": 17978243,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNzk3ODI0Mw==",
-      "name": "owg-website",
-      "full_name": "openstreetmap/owg-website",
-      "html_url": "https://github.com/openstreetmap/owg-website",
-      "description": "The website for the OSMF Operations Working Group (OWG)",
-      "language": "CSS",
-      "stargazers_count": 56,
-      "forks_count": 36,
-      "open_issues_count": 6,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 65283335,
-      "node_id": "MDEwOlJlcG9zaXRvcnk2NTI4MzMzNQ==",
-      "name": "tirex",
-      "full_name": "openstreetmap/tirex",
-      "html_url": "https://github.com/openstreetmap/tirex",
-      "description": "Tirex tile queue manager. A drop-in replacement for renderd.",
-      "language": "Perl",
-      "stargazers_count": 66,
-      "forks_count": 24,
-      "open_issues_count": 18,
-      "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
-      },
-      "topics": [
-        "map-renderer",
-        "maps",
-        "openstreetmap",
-        "osm",
-        "tiles"
-      ]
-    },
-    {
-      "id": 534213752,
-      "node_id": "R_kgDOH9d0eA",
-      "name": "oxidized",
-      "full_name": "openstreetmap/oxidized",
-      "html_url": "https://github.com/openstreetmap/oxidized",
-      "description": "Gem bundler files for managing installed oxidized version",
+      "id": 621768361,
+      "node_id": "R_kgDOJQ9uqQ",
+      "name": "preview.ideditor.com-website",
+      "full_name": "openstreetmap/preview.ideditor.com-website",
+      "html_url": "https://github.com/openstreetmap/preview.ideditor.com-website",
+      "description": "container and builder for preview.ideditor.com website",
       "language": "Dockerfile",
       "stargazers_count": 0,
-      "forks_count": 1,
-      "open_issues_count": 1,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 641598,
-      "node_id": "MDEwOlJlcG9zaXRvcnk2NDE1OTg=",
-      "name": "merkaartor",
-      "full_name": "openstreetmap/merkaartor",
-      "html_url": "https://github.com/openstreetmap/merkaartor",
-      "description": "Home of Merkaartor, an openstreetmap mapping program.",
-      "language": "C++",
-      "stargazers_count": 316,
-      "forks_count": 81,
-      "open_issues_count": 66,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": [
-        "hacktoberfest",
-        "hacktoberfest2021",
-        "openstreetmap"
-      ]
-    },
-    {
-      "id": 114921765,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMTQ5MjE3NjU=",
-      "name": "stateofthemap-website",
-      "full_name": "openstreetmap/stateofthemap-website",
-      "html_url": "https://github.com/openstreetmap/stateofthemap-website",
-      "description": "State of the Map website resources",
-      "language": "HTML",
-      "stargazers_count": 5,
-      "forks_count": 6,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": [
-        "docker-image",
-        "stateofthemap"
-      ]
-    },
-    {
-      "id": 719947756,
-      "node_id": "R_kgDOKumH7A",
-      "name": "stateofthemap-2024",
-      "full_name": "openstreetmap/stateofthemap-2024",
-      "html_url": "https://github.com/openstreetmap/stateofthemap-2024",
-      "description": "State of the Map 2024 website",
-      "language": "CSS",
-      "stargazers_count": 5,
-      "forks_count": 7,
-      "open_issues_count": 0,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "sotm"
-      ]
-    },
-    {
-      "id": 569996097,
-      "node_id": "R_kgDOIflzQQ",
-      "name": "osqa",
-      "full_name": "openstreetmap/osqa",
-      "html_url": "https://github.com/openstreetmap/osqa",
-      "description": "OSQA is a free, entry-level Q&A system from the makers of AnswerHub, the market-leading professional Q&A platform.   Looking for Enterprise functionality?  Checkout https://devada.com/answerhub/",
-      "language": "Python",
-      "stargazers_count": 1,
       "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 155368002,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNTUzNjgwMDI=",
-      "name": "stateofthemap-2019",
-      "full_name": "openstreetmap/stateofthemap-2019",
-      "html_url": "https://github.com/openstreetmap/stateofthemap-2019",
-      "description": " State of the Map 2019 website",
-      "language": "HTML",
-      "stargazers_count": 12,
-      "forks_count": 9,
-      "open_issues_count": 0,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "docker-image",
-        "stateofthemap"
-      ]
-    },
-    {
-      "id": 339547097,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzMzk1NDcwOTc=",
-      "name": "stateofthemap-2021",
-      "full_name": "openstreetmap/stateofthemap-2021",
-      "html_url": "https://github.com/openstreetmap/stateofthemap-2021",
-      "description": " State of the Map 2021 website",
-      "language": "CSS",
-      "stargazers_count": 1,
-      "forks_count": 6,
-      "open_issues_count": 0,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "docker-image",
-        "stateofthemap"
-      ]
-    },
-    {
-      "id": 468376364,
-      "node_id": "R_kgDOG-rbLA",
-      "name": "stateofthemap-2022",
-      "full_name": "openstreetmap/stateofthemap-2022",
-      "html_url": "https://github.com/openstreetmap/stateofthemap-2022",
-      "description": null,
-      "language": "CSS",
-      "stargazers_count": 11,
-      "forks_count": 11,
-      "open_issues_count": 0,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "docker-image",
-        "stateofthemap"
-      ]
-    },
-    {
-      "id": 212073266,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMTIwNzMyNjY=",
-      "name": "stateofthemap-2020",
-      "full_name": "openstreetmap/stateofthemap-2020",
-      "html_url": "https://github.com/openstreetmap/stateofthemap-2020",
-      "description": "State of the Map 2020 website",
-      "language": "CSS",
-      "stargazers_count": 9,
-      "forks_count": 15,
-      "open_issues_count": 1,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "docker-image",
-        "stateofthemap"
-      ]
-    },
-    {
-      "id": 14120061,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNDEyMDA2MQ==",
-      "name": "openstreetmap-license-change",
-      "full_name": "openstreetmap/openstreetmap-license-change",
-      "html_url": "https://github.com/openstreetmap/openstreetmap-license-change",
-      "description": "Algorithm for OpenStreetMap ODbL transition.",
-      "language": "Ruby",
-      "stargazers_count": 3,
-      "forks_count": 7,
-      "open_issues_count": 10,
-      "license": null,
-      "topics": [
-        "openstreetmap"
-      ]
-    },
-    {
-      "id": 2564522,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNTY0NTIy",
-      "name": "osmosis",
-      "full_name": "openstreetmap/osmosis",
-      "html_url": "https://github.com/openstreetmap/osmosis",
-      "description": "Osmosis is a command line Java application for processing OSM data.",
-      "language": "Java",
-      "stargazers_count": 704,
-      "forks_count": 213,
-      "open_issues_count": 49,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 508860653,
-      "node_id": "R_kgDOHlSY7Q",
-      "name": "dmca-website",
-      "full_name": "openstreetmap/dmca-website",
-      "html_url": "https://github.com/openstreetmap/dmca-website",
-      "description": "OpenStreetMap's DMCA notice website",
-      "language": "CSS",
-      "stargazers_count": 1,
-      "forks_count": 1,
       "open_issues_count": 0,
       "license": null,
       "topics": [
@@ -917,122 +990,80 @@
       ]
     },
     {
-      "id": 826897,
-      "node_id": "MDEwOlJlcG9zaXRvcnk4MjY4OTc=",
-      "name": "OSM-binary",
-      "full_name": "openstreetmap/OSM-binary",
-      "html_url": "https://github.com/openstreetmap/OSM-binary",
-      "description": null,
-      "language": "Java",
-      "stargazers_count": 200,
-      "forks_count": 75,
-      "open_issues_count": 1,
+      "id": 155368002,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNTUzNjgwMDI=",
+      "name": "stateofthemap-2019",
+      "full_name": "openstreetmap/stateofthemap-2019",
+      "html_url": "https://github.com/openstreetmap/stateofthemap-2019",
+      "description": " Conference website for the State of the Map 2025 in Heidelberg",
+      "language": "HTML",
+      "stargazers_count": 14,
+      "forks_count": 8,
+      "open_issues_count": 0,
       "license": {
-        "key": "lgpl-3.0",
-        "name": "GNU Lesser General Public License v3.0",
-        "spdx_id": "LGPL-3.0",
-        "url": "https://api.github.com/licenses/lgpl-3.0",
-        "node_id": "MDc6TGljZW5zZTEy"
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
       },
-      "topics": []
+      "topics": [
+        "conference",
+        "openstreetmap",
+        "osm",
+        "sotm",
+        "stateofthemap"
+      ]
     },
     {
-      "id": 28057148,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyODA1NzE0OA==",
-      "name": "operations",
-      "full_name": "openstreetmap/operations",
-      "html_url": "https://github.com/openstreetmap/operations",
-      "description": "OSMF Operations Working Group issue tracking",
-      "language": null,
-      "stargazers_count": 104,
-      "forks_count": 12,
-      "open_issues_count": 135,
+      "id": 858940153,
+      "node_id": "R_kgDOMzJi-Q",
+      "name": "stateofthemap-2009",
+      "full_name": "openstreetmap/stateofthemap-2009",
+      "html_url": "https://github.com/openstreetmap/stateofthemap-2009",
+      "description": "State Of The Map 2009 website",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
       "license": null,
       "topics": [
-        "issue-tracker",
-        "openstreetmap",
-        "ops"
+        "docker-image"
       ]
     },
     {
-      "id": 45741382,
-      "node_id": "MDEwOlJlcG9zaXRvcnk0NTc0MTM4Mg==",
-      "name": "stateofthemap-2016",
-      "full_name": "openstreetmap/stateofthemap-2016",
-      "html_url": "https://github.com/openstreetmap/stateofthemap-2016",
-      "description": "State of the Map 2016",
-      "language": "CSS",
-      "stargazers_count": 4,
-      "forks_count": 16,
-      "open_issues_count": 3,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
+      "id": 858790233,
+      "node_id": "R_kgDOMzAZWQ",
+      "name": "stateofthemap-2008",
+      "full_name": "openstreetmap/stateofthemap-2008",
+      "html_url": "https://github.com/openstreetmap/stateofthemap-2008",
+      "description": "State Of The Map 2008 website",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
       "topics": [
-        "docker-image",
-        "stateofthemap"
-      ]
-    },
-    {
-      "id": 110017404,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMTAwMTc0MDQ=",
-      "name": "stateofthemap-2018",
-      "full_name": "openstreetmap/stateofthemap-2018",
-      "html_url": "https://github.com/openstreetmap/stateofthemap-2018",
-      "description": " State of the Map 2018 website",
-      "language": "HTML",
-      "stargazers_count": 6,
-      "forks_count": 10,
-      "open_issues_count": 2,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "docker-image",
-        "stateofthemap"
+        "docker-image"
       ]
     }
   ],
   "contributorsDetails": [
     {
-      "login": "tomhughes",
-      "id": 147741,
-      "node_id": "MDQ6VXNlcjE0Nzc0MQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/147741?v=4",
-      "html_url": "https://github.com/tomhughes",
-      "contributions": 7556
+      "login": "bhousel",
+      "id": 38784,
+      "node_id": "MDQ6VXNlcjM4Nzg0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/38784?v=4",
+      "html_url": "https://github.com/bhousel",
+      "contributions": 5
     },
     {
-      "login": "AntonKhorev",
-      "id": 4158490,
-      "node_id": "MDQ6VXNlcjQxNTg0OTA=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/4158490?v=4",
-      "html_url": "https://github.com/AntonKhorev",
-      "contributions": 1619
-    },
-    {
-      "login": "gravitystorm",
-      "id": 360803,
-      "node_id": "MDQ6VXNlcjM2MDgwMw==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/360803?v=4",
-      "html_url": "https://github.com/gravitystorm",
-      "contributions": 1605
-    },
-    {
-      "login": "translatewiki",
-      "id": 24829418,
-      "node_id": "MDQ6VXNlcjI0ODI5NDE4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/24829418?v=4",
-      "html_url": "https://github.com/translatewiki",
-      "contributions": 714
+      "login": "quincylvania",
+      "id": 2046746,
+      "node_id": "MDQ6VXNlcjIwNDY3NDY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2046746?v=4",
+      "html_url": "https://github.com/quincylvania",
+      "contributions": 72
     },
     {
       "login": "jfirebaugh",
@@ -1040,151 +1071,7 @@
       "node_id": "MDQ6VXNlcjk4NjAx",
       "avatar_url": "https://avatars.githubusercontent.com/u/98601?v=4",
       "html_url": "https://github.com/jfirebaugh",
-      "contributions": 483
-    },
-    {
-      "login": "systemed",
-      "id": 694425,
-      "node_id": "MDQ6VXNlcjY5NDQyNQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/694425?v=4",
-      "html_url": "https://github.com/systemed",
-      "contributions": 363
-    },
-    {
-      "login": "dependabot[bot]",
-      "id": 49699333,
-      "node_id": "MDM6Qm90NDk2OTkzMzM=",
-      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-      "html_url": "https://github.com/apps/dependabot",
-      "contributions": 42
-    },
-    {
-      "login": "avar",
-      "id": 45301,
-      "node_id": "MDQ6VXNlcjQ1MzAx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/45301?v=4",
-      "html_url": "https://github.com/avar",
-      "contributions": 342
-    },
-    {
-      "login": "smsm1",
-      "id": 82719,
-      "node_id": "MDQ6VXNlcjgyNzE5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/82719?v=4",
-      "html_url": "https://github.com/smsm1",
-      "contributions": 271
-    },
-    {
-      "login": "zerebubuth",
-      "id": 271360,
-      "node_id": "MDQ6VXNlcjI3MTM2MA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/271360?v=4",
-      "html_url": "https://github.com/zerebubuth",
-      "contributions": 245
-    },
-    {
-      "login": "siebrand",
-      "id": 210297,
-      "node_id": "MDQ6VXNlcjIxMDI5Nw==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/210297?v=4",
-      "html_url": "https://github.com/siebrand",
-      "contributions": 214
-    },
-    {
-      "login": "SteveC",
-      "id": 123912,
-      "node_id": "MDQ6VXNlcjEyMzkxMg==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/123912?v=4",
-      "html_url": "https://github.com/SteveC",
-      "contributions": 148
-    },
-    {
-      "login": "Nikerabbit",
-      "id": 1109395,
-      "node_id": "MDQ6VXNlcjExMDkzOTU=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1109395?v=4",
-      "html_url": "https://github.com/Nikerabbit",
-      "contributions": 103
-    },
-    {
-      "login": "bhousel",
-      "id": 38784,
-      "node_id": "MDQ6VXNlcjM4Nzg0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/38784?v=4",
-      "html_url": "https://github.com/bhousel",
-      "contributions": 98
-    },
-    {
-      "login": "hlfan",
-      "id": 50826859,
-      "node_id": "MDQ6VXNlcjUwODI2ODU5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/50826859?v=4",
-      "html_url": "https://github.com/hlfan",
-      "contributions": 87
-    },
-    {
-      "login": "aaronlidman",
-      "id": 58878,
-      "node_id": "MDQ6VXNlcjU4ODc4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/58878?v=4",
-      "html_url": "https://github.com/aaronlidman",
-      "contributions": 86
-    },
-    {
-      "login": "apmon",
-      "id": 251447,
-      "node_id": "MDQ6VXNlcjI1MTQ0Nw==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/251447?v=4",
-      "html_url": "https://github.com/apmon",
-      "contributions": 84
-    },
-    {
-      "login": "mmd-osm",
-      "id": 5842757,
-      "node_id": "MDQ6VXNlcjU4NDI3NTc=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/5842757?v=4",
-      "html_url": "https://github.com/mmd-osm",
-      "contributions": 84
-    },
-    {
-      "login": "IgnoredAmbience",
-      "id": 98555,
-      "node_id": "MDQ6VXNlcjk4NTU1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/98555?v=4",
-      "html_url": "https://github.com/IgnoredAmbience",
-      "contributions": 79
-    },
-    {
-      "login": "stefanb",
-      "id": 319826,
-      "node_id": "MDQ6VXNlcjMxOTgyNg==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/319826?v=4",
-      "html_url": "https://github.com/stefanb",
-      "contributions": 74
-    },
-    {
-      "login": "crschmidt",
-      "id": 183112,
-      "node_id": "MDQ6VXNlcjE4MzExMg==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/183112?v=4",
-      "html_url": "https://github.com/crschmidt",
-      "contributions": 63
-    },
-    {
-      "login": "John07",
-      "id": 109067,
-      "node_id": "MDQ6VXNlcjEwOTA2Nw==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/109067?v=4",
-      "html_url": "https://github.com/John07",
-      "contributions": 63
-    },
-    {
-      "login": "saintamh",
-      "id": 24832766,
-      "node_id": "MDQ6VXNlcjI0ODMyNzY2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/24832766?v=4",
-      "html_url": "https://github.com/saintamh",
-      "contributions": 62
+      "contributions": 1882
     },
     {
       "login": "tmcw",
@@ -1192,7 +1079,223 @@
       "node_id": "MDQ6VXNlcjMyMzE0",
       "avatar_url": "https://avatars.githubusercontent.com/u/32314?v=4",
       "html_url": "https://github.com/tmcw",
-      "contributions": 61
+      "contributions": 1274
+    },
+    {
+      "login": "tyrasd",
+      "id": 1927298,
+      "node_id": "MDQ6VXNlcjE5MjcyOTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1927298?v=4",
+      "html_url": "https://github.com/tyrasd",
+      "contributions": 807
+    },
+    {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "html_url": "https://github.com/apps/dependabot",
+      "contributions": 68
+    },
+    {
+      "login": "ansis",
+      "id": 1421652,
+      "node_id": "MDQ6VXNlcjE0MjE2NTI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1421652?v=4",
+      "html_url": "https://github.com/ansis",
+      "contributions": 701
+    },
+    {
+      "login": "samanpwbb",
+      "id": 108094,
+      "node_id": "MDQ6VXNlcjEwODA5NA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/108094?v=4",
+      "html_url": "https://github.com/samanpwbb",
+      "contributions": 505
+    },
+    {
+      "login": "kymckay",
+      "id": 5459452,
+      "node_id": "MDQ6VXNlcjU0NTk0NTI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5459452?v=4",
+      "html_url": "https://github.com/kymckay",
+      "contributions": 161
+    },
+    {
+      "login": "greenkeeper[bot]",
+      "id": 23040076,
+      "node_id": "MDM6Qm90MjMwNDAwNzY=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/505?v=4",
+      "html_url": "https://github.com/apps/greenkeeper",
+      "contributions": 154
+    },
+    {
+      "login": "k-yle",
+      "id": 16009897,
+      "node_id": "MDQ6VXNlcjE2MDA5ODk3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16009897?v=4",
+      "html_url": "https://github.com/k-yle",
+      "contributions": 55
+    },
+    {
+      "login": "kepta",
+      "id": 6966254,
+      "node_id": "MDQ6VXNlcjY5NjYyNTQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6966254?v=4",
+      "html_url": "https://github.com/kepta",
+      "contributions": 131
+    },
+    {
+      "login": "mbrzakovic",
+      "id": 78906108,
+      "node_id": "MDQ6VXNlcjc4OTA2MTA4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/78906108?v=4",
+      "html_url": "https://github.com/mbrzakovic",
+      "contributions": 14
+    },
+    {
+      "login": "greenkeeperio-bot",
+      "id": 14790466,
+      "node_id": "MDQ6VXNlcjE0NzkwNDY2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14790466?v=4",
+      "html_url": "https://github.com/greenkeeperio-bot",
+      "contributions": 116
+    },
+    {
+      "login": "JamesKingdom",
+      "id": 11473673,
+      "node_id": "MDQ6VXNlcjExNDczNjcz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11473673?v=4",
+      "html_url": "https://github.com/JamesKingdom",
+      "contributions": 113
+    },
+    {
+      "login": "1ec5",
+      "id": 1231218,
+      "node_id": "MDQ6VXNlcjEyMzEyMTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1231218?v=4",
+      "html_url": "https://github.com/1ec5",
+      "contributions": 32
+    },
+    {
+      "login": "thomas-hervey",
+      "id": 1840672,
+      "node_id": "MDQ6VXNlcjE4NDA2NzI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1840672?v=4",
+      "html_url": "https://github.com/thomas-hervey",
+      "contributions": 104
+    },
+    {
+      "login": "aaronlidman",
+      "id": 58878,
+      "node_id": "MDQ6VXNlcjU4ODc4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/58878?v=4",
+      "html_url": "https://github.com/aaronlidman",
+      "contributions": 64
+    },
+    {
+      "login": "maxgrossman",
+      "id": 15100429,
+      "node_id": "MDQ6VXNlcjE1MTAwNDI5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/15100429?v=4",
+      "html_url": "https://github.com/maxgrossman",
+      "contributions": 49
+    },
+    {
+      "login": "westnordost",
+      "id": 4661658,
+      "node_id": "MDQ6VXNlcjQ2NjE2NTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4661658?v=4",
+      "html_url": "https://github.com/westnordost",
+      "contributions": 29
+    },
+    {
+      "login": "vershwal",
+      "id": 17474532,
+      "node_id": "MDQ6VXNlcjE3NDc0NTMy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/17474532?v=4",
+      "html_url": "https://github.com/vershwal",
+      "contributions": 46
+    },
+    {
+      "login": "mattiapezzotti",
+      "id": 45800507,
+      "node_id": "MDQ6VXNlcjQ1ODAwNTA3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/45800507?v=4",
+      "html_url": "https://github.com/mattiapezzotti",
+      "contributions": 45
+    },
+    {
+      "login": "systemed",
+      "id": 694425,
+      "node_id": "MDQ6VXNlcjY5NDQyNQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/694425?v=4",
+      "html_url": "https://github.com/systemed",
+      "contributions": 42
+    },
+    {
+      "login": "jguthrie100",
+      "id": 4670502,
+      "node_id": "MDQ6VXNlcjQ2NzA1MDI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4670502?v=4",
+      "html_url": "https://github.com/jguthrie100",
+      "contributions": 42
+    },
+    {
+      "login": "willemarcel",
+      "id": 666291,
+      "node_id": "MDQ6VXNlcjY2NjI5MQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/666291?v=4",
+      "html_url": "https://github.com/willemarcel",
+      "contributions": 38
+    },
+    {
+      "login": "tordans",
+      "id": 111561,
+      "node_id": "MDQ6VXNlcjExMTU2MQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/111561?v=4",
+      "html_url": "https://github.com/tordans",
+      "contributions": 77
+    },
+    {
+      "login": "hikemaniac",
+      "id": 31667811,
+      "node_id": "MDQ6VXNlcjMxNjY3ODEx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/31667811?v=4",
+      "html_url": "https://github.com/hikemaniac",
+      "contributions": 32
+    },
+    {
+      "login": "Psigio",
+      "id": 8970101,
+      "node_id": "MDQ6VXNlcjg5NzAxMDE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8970101?v=4",
+      "html_url": "https://github.com/Psigio",
+      "contributions": 32
+    },
+    {
+      "login": "manfredbrandl",
+      "id": 5360273,
+      "node_id": "MDQ6VXNlcjUzNjAyNzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5360273?v=4",
+      "html_url": "https://github.com/manfredbrandl",
+      "contributions": 31
+    },
+    {
+      "login": "nickplesha",
+      "id": 3823786,
+      "node_id": "MDQ6VXNlcjM4MjM3ODY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3823786?v=4",
+      "html_url": "https://github.com/nickplesha",
+      "contributions": 29
+    },
+    {
+      "login": "tomhughes",
+      "id": 147741,
+      "node_id": "MDQ6VXNlcjE0Nzc0MQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/147741?v=4",
+      "html_url": "https://github.com/tomhughes",
+      "contributions": 241
     },
     {
       "login": "Firefishy",
@@ -1203,68 +1306,172 @@
       "contributions": 36
     },
     {
-      "login": "simonpoole",
-      "id": 1011860,
-      "node_id": "MDQ6VXNlcjEwMTE4NjA=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1011860?v=4",
-      "html_url": "https://github.com/simonpoole",
-      "contributions": 56
-    },
-    {
-      "login": "samanpwbb",
-      "id": 108094,
-      "node_id": "MDQ6VXNlcjEwODA5NA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/108094?v=4",
-      "html_url": "https://github.com/samanpwbb",
-      "contributions": 56
-    },
-    {
-      "login": "nenad-vujicic",
-      "id": 25298521,
-      "node_id": "MDQ6VXNlcjI1Mjk4NTIx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/25298521?v=4",
-      "html_url": "https://github.com/nenad-vujicic",
-      "contributions": 54
-    },
-    {
-      "login": "tyrasd",
-      "id": 1927298,
-      "node_id": "MDQ6VXNlcjE5MjcyOTg=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1927298?v=4",
-      "html_url": "https://github.com/tyrasd",
-      "contributions": 54
-    },
-    {
-      "login": "woodpeck",
-      "id": 705471,
-      "node_id": "MDQ6VXNlcjcwNTQ3MQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/705471?v=4",
-      "html_url": "https://github.com/woodpeck",
-      "contributions": 50
-    },
-    {
       "login": "matkoniecz",
       "id": 899988,
       "node_id": "MDQ6VXNlcjg5OTk4OA==",
       "avatar_url": "https://avatars.githubusercontent.com/u/899988?v=4",
       "html_url": "https://github.com/matkoniecz",
-      "contributions": 41
+      "contributions": 111
     },
     {
-      "login": "grischard",
-      "id": 1556567,
-      "node_id": "MDQ6VXNlcjE1NTY1Njc=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1556567?v=4",
-      "html_url": "https://github.com/grischard",
+      "login": "arch0345",
+      "id": 85302075,
+      "node_id": "MDQ6VXNlcjg1MzAyMDc1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/85302075?v=4",
+      "html_url": "https://github.com/arch0345",
+      "contributions": 103
+    },
+    {
+      "login": "kjonosm",
+      "id": 51236777,
+      "node_id": "MDQ6VXNlcjUxMjM2Nzc3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51236777?v=4",
+      "html_url": "https://github.com/kjonosm",
+      "contributions": 74
+    },
+    {
+      "login": "Dimitar5555",
+      "id": 19364673,
+      "node_id": "MDQ6VXNlcjE5MzY0Njcz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19364673?v=4",
+      "html_url": "https://github.com/Dimitar5555",
+      "contributions": 20
+    },
+    {
+      "login": "FloEdelmann",
+      "id": 202916,
+      "node_id": "MDQ6VXNlcjIwMjkxNg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/202916?v=4",
+      "html_url": "https://github.com/FloEdelmann",
+      "contributions": 19
+    },
+    {
+      "login": "novolife",
+      "id": 43333869,
+      "node_id": "MDQ6VXNlcjQzMzMzODY5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43333869?v=4",
+      "html_url": "https://github.com/novolife",
+      "contributions": 12
+    },
+    {
+      "login": "Binnette",
+      "id": 6597721,
+      "node_id": "MDQ6VXNlcjY1OTc3MjE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6597721?v=4",
+      "html_url": "https://github.com/Binnette",
+      "contributions": 11
+    },
+    {
+      "login": "paulklie",
+      "id": 73854742,
+      "node_id": "MDQ6VXNlcjczODU0NzQy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/73854742?v=4",
+      "html_url": "https://github.com/paulklie",
+      "contributions": 10
+    },
+    {
+      "login": "andrewharvey",
+      "id": 117278,
+      "node_id": "MDQ6VXNlcjExNzI3OA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/117278?v=4",
+      "html_url": "https://github.com/andrewharvey",
+      "contributions": 9
+    },
+    {
+      "login": "Hufkratzer",
+      "id": 5958184,
+      "node_id": "MDQ6VXNlcjU5NTgxODQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5958184?v=4",
+      "html_url": "https://github.com/Hufkratzer",
       "contributions": 8
     },
     {
-      "login": "pnorman",
-      "id": 1190866,
-      "node_id": "MDQ6VXNlcjExOTA4NjY=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1190866?v=4",
-      "html_url": "https://github.com/pnorman",
-      "contributions": 1
+      "login": "qugebert",
+      "id": 44033795,
+      "node_id": "MDQ6VXNlcjQ0MDMzNzk1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/44033795?v=4",
+      "html_url": "https://github.com/qugebert",
+      "contributions": 8
+    },
+    {
+      "login": "gy-mate",
+      "id": 13014176,
+      "node_id": "MDQ6VXNlcjEzMDE0MTc2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13014176?v=4",
+      "html_url": "https://github.com/gy-mate",
+      "contributions": 7
+    },
+    {
+      "login": "tiptoptom",
+      "id": 73886169,
+      "node_id": "MDQ6VXNlcjczODg2MTY5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/73886169?v=4",
+      "html_url": "https://github.com/tiptoptom",
+      "contributions": 7
+    },
+    {
+      "login": "ak8abhinay",
+      "id": 221490338,
+      "node_id": "U_kgDODTOsog",
+      "avatar_url": "https://avatars.githubusercontent.com/u/221490338?v=4",
+      "html_url": "https://github.com/ak8abhinay",
+      "contributions": 6
+    },
+    {
+      "login": "mnalis",
+      "id": 156656,
+      "node_id": "MDQ6VXNlcjE1NjY1Ng==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/156656?v=4",
+      "html_url": "https://github.com/mnalis",
+      "contributions": 6
+    },
+    {
+      "login": "harahu",
+      "id": 6145801,
+      "node_id": "MDQ6VXNlcjYxNDU4MDE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6145801?v=4",
+      "html_url": "https://github.com/harahu",
+      "contributions": 5
+    },
+    {
+      "login": "danieldegroot2",
+      "id": 67521919,
+      "node_id": "MDQ6VXNlcjY3NTIxOTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/67521919?v=4",
+      "html_url": "https://github.com/danieldegroot2",
+      "contributions": 5
+    },
+    {
+      "login": "govvin",
+      "id": 5821688,
+      "node_id": "MDQ6VXNlcjU4MjE2ODg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5821688?v=4",
+      "html_url": "https://github.com/govvin",
+      "contributions": 5
+    },
+    {
+      "login": "Elefant-aus-Wuppertal",
+      "id": 35879422,
+      "node_id": "MDQ6VXNlcjM1ODc5NDIy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/35879422?v=4",
+      "html_url": "https://github.com/Elefant-aus-Wuppertal",
+      "contributions": 5
+    },
+    {
+      "login": "Zverik",
+      "id": 766031,
+      "node_id": "MDQ6VXNlcjc2NjAzMQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/766031?v=4",
+      "html_url": "https://github.com/Zverik",
+      "contributions": 5
+    },
+    {
+      "login": "Marc-marc-marc",
+      "id": 31963329,
+      "node_id": "MDQ6VXNlcjMxOTYzMzI5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/31963329?v=4",
+      "html_url": "https://github.com/Marc-marc-marc",
+      "contributions": 4
     }
   ],
   "activeOrg": true

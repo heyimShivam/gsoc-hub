@@ -2,7 +2,7 @@
   "name": "The Libreswan Project",
   "image_url": "https://summerofcode.withgoogle.com/media/org/the-libreswan-project/k7boxaxvirkfj1ti-360.png",
   "image_background_color": "#ffffff",
-  "description": "Encrypting the Internet with IKE / IPsec",
+  "description": "Encrypting the Internet with IKE / IPsec VPN",
   "url": "https://libreswan.org",
   "category": [
     "Security",
@@ -28,13 +28,15 @@
     "kvm",
     "namespaces",
     "shell",
-    "RFCs"
+    "RFCs",
+    "kernel",
+    "libevent"
   ],
-  "irc_channel": "https://meet.google.com",
-  "contact_email": "gsoc@libreswan.org",
+  "irc_channel": "https://web.libera.chat/#libreswan",
+  "contact_email": "mailto:gsoc@libreswan.org",
   "mailing_list": "swan@lists.libreswan.org",
   "twitter_url": "https://twitter.com/libreswan/",
-  "blog_url": null,
+  "blog_url": "https://github.com/libreswan",
   "facebook_url": null,
   "year": [
     2017,
@@ -42,7 +44,8 @@
     2019,
     2020,
     2021,
-    2022
+    2022,
+    2026
   ],
   "projects": {
     "2017": [
@@ -135,7 +138,8 @@
         "project_url": "https://summerofcode.withgoogle.com/archive/2021/projects/6544758175956992/"
       }
     ],
-    "2022": []
+    "2022": [],
+    "2026": []
   },
   "githubID": "libreswan",
   "repositories": [
@@ -147,9 +151,9 @@
       "html_url": "https://github.com/libreswan/libreswan",
       "description": "libreswan",
       "language": "C",
-      "stargazers_count": 887,
-      "forks_count": 228,
-      "open_issues_count": 551,
+      "stargazers_count": 935,
+      "forks_count": 262,
+      "open_issues_count": 625,
       "license": {
         "key": "other",
         "name": "Other",
@@ -160,6 +164,20 @@
       "topics": [
         "ipsec"
       ]
+    },
+    {
+      "id": 1078417739,
+      "node_id": "R_kgDOQEdZSw",
+      "name": ".github",
+      "full_name": "libreswan/.github",
+      "html_url": "https://github.com/libreswan/.github",
+      "description": "Special repo for github",
+      "language": null,
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
     }
   ],
   "contributorsDetails": [
@@ -169,7 +187,7 @@
       "node_id": "MDQ6VXNlcjQyMzQ5",
       "avatar_url": "https://avatars.githubusercontent.com/u/42349?v=4",
       "html_url": "https://github.com/cagney",
-      "contributions": 16646
+      "contributions": 4
     },
     {
       "login": "letoams",
@@ -185,7 +203,7 @@
       "node_id": "MDQ6VXNlcjIwMjA4NzU=",
       "avatar_url": "https://avatars.githubusercontent.com/u/2020875?v=4",
       "html_url": "https://github.com/HughR",
-      "contributions": 1820
+      "contributions": 1821
     },
     {
       "login": "antonyantony",
@@ -201,7 +219,7 @@
       "node_id": "MDQ6VXNlcjcxMDkxMjM=",
       "avatar_url": "https://avatars.githubusercontent.com/u/7109123?v=4",
       "html_url": "https://github.com/bleve",
-      "contributions": 1190
+      "contributions": 1201
     },
     {
       "login": "paulwouters",
@@ -209,7 +227,7 @@
       "node_id": "MDQ6VXNlcjgzOTYxOTc0",
       "avatar_url": "https://avatars.githubusercontent.com/u/83961974?v=4",
       "html_url": "https://github.com/paulwouters",
-      "contributions": 453
+      "contributions": 458
     },
     {
       "login": "dkg",
@@ -249,7 +267,7 @@
       "node_id": "MDQ6VXNlcjExOTc2MjQ=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1197624?v=4",
       "html_url": "https://github.com/vukasink",
-      "contributions": 77
+      "contributions": 80
     },
     {
       "login": "hardaker",
@@ -292,20 +310,20 @@
       "contributions": 58
     },
     {
+      "login": "ueno",
+      "id": 47549,
+      "node_id": "MDQ6VXNlcjQ3NTQ5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/47549?v=4",
+      "html_url": "https://github.com/ueno",
+      "contributions": 39
+    },
+    {
       "login": "fweimer-rh",
       "id": 75532728,
       "node_id": "MDQ6VXNlcjc1NTMyNzI4",
       "avatar_url": "https://avatars.githubusercontent.com/u/75532728?v=4",
       "html_url": "https://github.com/fweimer-rh",
       "contributions": 28
-    },
-    {
-      "login": "ueno",
-      "id": 47549,
-      "node_id": "MDQ6VXNlcjQ3NTQ5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/47549?v=4",
-      "html_url": "https://github.com/ueno",
-      "contributions": 26
     },
     {
       "login": "simondeziel",
@@ -356,12 +374,12 @@
       "contributions": 12
     },
     {
-      "login": "RaviTejaCMS",
-      "id": 13203149,
-      "node_id": "MDQ6VXNlcjEzMjAzMTQ5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/13203149?v=4",
-      "html_url": "https://github.com/RaviTejaCMS",
-      "contributions": 10
+      "login": "Rishabh-Kumar-07",
+      "id": 53990286,
+      "node_id": "MDQ6VXNlcjUzOTkwMjg2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/53990286?v=4",
+      "html_url": "https://github.com/Rishabh-Kumar-07",
+      "contributions": 11
     },
     {
       "login": "lkundrak",
@@ -372,6 +390,22 @@
       "contributions": 10
     },
     {
+      "login": "The-Mule",
+      "id": 11003652,
+      "node_id": "MDQ6VXNlcjExMDAzNjUy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11003652?v=4",
+      "html_url": "https://github.com/The-Mule",
+      "contributions": 10
+    },
+    {
+      "login": "rtcms",
+      "id": 35173068,
+      "node_id": "MDQ6VXNlcjM1MTczMDY4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/35173068?v=4",
+      "html_url": "https://github.com/rtcms",
+      "contributions": 9
+    },
+    {
       "login": "fabled",
       "id": 389042,
       "node_id": "MDQ6VXNlcjM4OTA0Mg==",
@@ -380,28 +414,12 @@
       "contributions": 9
     },
     {
-      "login": "The-Mule",
-      "id": 11003652,
-      "node_id": "MDQ6VXNlcjExMDAzNjUy",
-      "avatar_url": "https://avatars.githubusercontent.com/u/11003652?v=4",
-      "html_url": "https://github.com/The-Mule",
+      "login": "amrindersinghscaler",
+      "id": 244498292,
+      "node_id": "U_kgDODpK_dA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/244498292?v=4",
+      "html_url": "https://github.com/amrindersinghscaler",
       "contributions": 7
-    },
-    {
-      "login": "ucdevel",
-      "id": 8470849,
-      "node_id": "MDQ6VXNlcjg0NzA4NDk=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/8470849?v=4",
-      "html_url": "https://github.com/ucdevel",
-      "contributions": 5
-    },
-    {
-      "login": "qyanu",
-      "id": 3034970,
-      "node_id": "MDQ6VXNlcjMwMzQ5NzA=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/3034970?v=4",
-      "html_url": "https://github.com/qyanu",
-      "contributions": 5
     }
   ],
   "activeOrg": true

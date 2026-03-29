@@ -223,6 +223,20 @@
   "githubID": "performancecopilot",
   "repositories": [
     {
+      "id": 268810024,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyNjg4MTAwMjQ=",
+      "name": "qa-reports",
+      "full_name": "performancecopilot/qa-reports",
+      "html_url": "https://github.com/performancecopilot/qa-reports",
+      "description": "Daily QA Reports",
+      "language": "JavaScript",
+      "stargazers_count": 2,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
       "id": 23028937,
       "node_id": "MDEwOlJlcG9zaXRvcnkyMzAyODkzNw==",
       "name": "pcp",
@@ -230,9 +244,9 @@
       "html_url": "https://github.com/performancecopilot/pcp",
       "description": "Performance Co-Pilot",
       "language": "C",
-      "stargazers_count": 1003,
-      "forks_count": 244,
-      "open_issues_count": 172,
+      "stargazers_count": 1053,
+      "forks_count": 262,
+      "open_issues_count": 166,
       "license": {
         "key": "other",
         "name": "Other",
@@ -252,17 +266,23 @@
       ]
     },
     {
-      "id": 268810024,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNjg4MTAwMjQ=",
-      "name": "qa-reports",
-      "full_name": "performancecopilot/qa-reports",
-      "html_url": "https://github.com/performancecopilot/qa-reports",
-      "description": "Daily QA Reports",
-      "language": "JavaScript",
-      "stargazers_count": 2,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
+      "id": 30047349,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzMDA0NzM0OQ==",
+      "name": "parfait",
+      "full_name": "performancecopilot/parfait",
+      "html_url": "https://github.com/performancecopilot/parfait",
+      "description": "A Java performance monitoring library, exposing and collecting metrics through a variety of outputs",
+      "language": "Java",
+      "stargazers_count": 95,
+      "forks_count": 34,
+      "open_issues_count": 19,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
       "topics": []
     },
     {
@@ -274,7 +294,66 @@
       "description": "Performance Co-Pilot website",
       "language": "Haml",
       "stargazers_count": 8,
-      "forks_count": 19,
+      "forks_count": 18,
+      "open_issues_count": 2,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 1054667258,
+      "node_id": "R_kgDOPtzx-g",
+      "name": "helm-charts",
+      "full_name": "performancecopilot/helm-charts",
+      "html_url": "https://github.com/performancecopilot/helm-charts",
+      "description": "Helm charts for Performance Co-Pilot",
+      "language": "Go Template",
+      "stargazers_count": 2,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": [
+        "helm",
+        "helm-charts",
+        "kubernetes",
+        "openshift"
+      ]
+    },
+    {
+      "id": 175303059,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNzUzMDMwNTk=",
+      "name": "grafana-pcp",
+      "full_name": "performancecopilot/grafana-pcp",
+      "html_url": "https://github.com/performancecopilot/grafana-pcp",
+      "description": "Performance Co-Pilot Grafana Plugin",
+      "language": "TypeScript",
+      "stargazers_count": 126,
+      "forks_count": 20,
+      "open_issues_count": 16,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 1109643185,
+      "node_id": "R_kgDOQiPPsQ",
+      "name": "homebrew-pcp",
+      "full_name": "performancecopilot/homebrew-pcp",
+      "html_url": "https://github.com/performancecopilot/homebrew-pcp",
+      "description": "Homebrew tap for pcp - sadly the `pcp` name was already taken.",
+      "language": "Ruby",
+      "stargazers_count": 1,
+      "forks_count": 0,
       "open_issues_count": 0,
       "license": null,
       "topics": []
@@ -287,9 +366,9 @@
       "html_url": "https://github.com/performancecopilot/ansible-pcp",
       "description": "Ansible roles for the Performance Co-Pilot toolkit",
       "language": "Jinja",
-      "stargazers_count": 20,
-      "forks_count": 13,
-      "open_issues_count": 5,
+      "stargazers_count": 22,
+      "forks_count": 14,
+      "open_issues_count": 6,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -306,26 +385,6 @@
         "performancecopilot",
         "redis"
       ]
-    },
-    {
-      "id": 175303059,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNzUzMDMwNTk=",
-      "name": "grafana-pcp",
-      "full_name": "performancecopilot/grafana-pcp",
-      "html_url": "https://github.com/performancecopilot/grafana-pcp",
-      "description": "Performance Co-Pilot Grafana Plugin",
-      "language": "TypeScript",
-      "stargazers_count": 122,
-      "forks_count": 20,
-      "open_issues_count": 15,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
     },
     {
       "id": 693287211,
@@ -345,40 +404,6 @@
         "url": "https://api.github.com/licenses/gpl-2.0",
         "node_id": "MDc6TGljZW5zZTg="
       },
-      "topics": []
-    },
-    {
-      "id": 30047349,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzMDA0NzM0OQ==",
-      "name": "parfait",
-      "full_name": "performancecopilot/parfait",
-      "html_url": "https://github.com/performancecopilot/parfait",
-      "description": "A Java performance monitoring library, exposing and collecting metrics through a variety of outputs",
-      "language": "Java",
-      "stargazers_count": 92,
-      "forks_count": 33,
-      "open_issues_count": 26,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 790041243,
-      "node_id": "R_kgDOLxcSmw",
-      "name": "xsos-pcp",
-      "full_name": "performancecopilot/xsos-pcp",
-      "html_url": "https://github.com/performancecopilot/xsos-pcp",
-      "description": "Performance Co-Pilot xsos-inspired script for fast sosreport diagnostics",
-      "language": "Shell",
-      "stargazers_count": 3,
-      "forks_count": 3,
-      "open_issues_count": 2,
-      "license": null,
       "topics": []
     },
     {
@@ -445,20 +470,6 @@
       ]
     },
     {
-      "id": 208296554,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMDgyOTY1NTQ=",
-      "name": "pcp-preview",
-      "full_name": "performancecopilot/pcp-preview",
-      "html_url": "https://github.com/performancecopilot/pcp-preview",
-      "description": "Performance Co-Pilot Preview Container",
-      "language": "Dockerfile",
-      "stargazers_count": 5,
-      "forks_count": 4,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
       "id": 99165263,
       "node_id": "MDEwOlJlcG9zaXRvcnk5OTE2NTI2Mw==",
       "name": "qa-status",
@@ -468,20 +479,6 @@
       "language": "Shell",
       "stargazers_count": 2,
       "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 127209804,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMjcyMDk4MDQ=",
-      "name": "pcp-go",
-      "full_name": "performancecopilot/pcp-go",
-      "html_url": "https://github.com/performancecopilot/pcp-go",
-      "description": "golang support for Performance Co-Pilot",
-      "language": "Go",
-      "stargazers_count": 4,
-      "forks_count": 1,
       "open_issues_count": 0,
       "license": null,
       "topics": []
@@ -514,7 +511,7 @@
       "html_url": "https://github.com/performancecopilot/hornet",
       "description": " A Rust implementation of the PCP instrumentation API ",
       "language": "Rust",
-      "stargazers_count": 34,
+      "stargazers_count": 35,
       "forks_count": 4,
       "open_issues_count": 2,
       "license": {
@@ -549,12 +546,12 @@
   ],
   "contributorsDetails": [
     {
-      "login": "natoscott",
-      "id": 960510,
-      "node_id": "MDQ6VXNlcjk2MDUxMA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/960510?v=4",
-      "html_url": "https://github.com/natoscott",
-      "contributions": 12118
+      "login": "actions-user",
+      "id": 65916846,
+      "node_id": "MDQ6VXNlcjY1OTE2ODQ2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/65916846?v=4",
+      "html_url": "https://github.com/actions-user",
+      "contributions": 1
     },
     {
       "login": "kmcdonell",
@@ -562,7 +559,15 @@
       "node_id": "MDQ6VXNlcjQ2MjgzOTU=",
       "avatar_url": "https://avatars.githubusercontent.com/u/4628395?v=4",
       "html_url": "https://github.com/kmcdonell",
-      "contributions": 12111
+      "contributions": 13079
+    },
+    {
+      "login": "natoscott",
+      "id": 960510,
+      "node_id": "MDQ6VXNlcjk2MDUxMA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/960510?v=4",
+      "html_url": "https://github.com/natoscott",
+      "contributions": 147
     },
     {
       "login": "goodwinos",
@@ -578,7 +583,7 @@
       "node_id": "MDQ6VXNlcjI0NDEzNjMy",
       "avatar_url": "https://avatars.githubusercontent.com/u/24413632?v=4",
       "html_url": "https://github.com/myllynen",
-      "contributions": 1180
+      "contributions": 2
     },
     {
       "login": "lberk",
@@ -586,7 +591,7 @@
       "node_id": "MDQ6VXNlcjIwODY4MDg=",
       "avatar_url": "https://avatars.githubusercontent.com/u/2086808?v=4",
       "html_url": "https://github.com/lberk",
-      "contributions": 821
+      "contributions": 1
     },
     {
       "login": "fche",
@@ -602,7 +607,15 @@
       "node_id": "MDQ6VXNlcjUzODAxMQ==",
       "avatar_url": "https://avatars.githubusercontent.com/u/538011?v=4",
       "html_url": "https://github.com/andreasgerstmayr",
-      "contributions": 683
+      "contributions": 1
+    },
+    {
+      "login": "tallpsmith",
+      "id": 203682,
+      "node_id": "MDQ6VXNlcjIwMzY4Mg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/203682?v=4",
+      "html_url": "https://github.com/tallpsmith",
+      "contributions": 201
     },
     {
       "login": "minnus",
@@ -629,6 +642,14 @@
       "contributions": 117
     },
     {
+      "login": "pauljevans",
+      "id": 4302146,
+      "node_id": "MDQ6VXNlcjQzMDIxNDY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4302146?v=4",
+      "html_url": "https://github.com/pauljevans",
+      "contributions": 111
+    },
+    {
       "login": "drsmith2",
       "id": 30117349,
       "node_id": "MDQ6VXNlcjMwMTE3MzQ5",
@@ -643,14 +664,6 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/1424835?v=4",
       "html_url": "https://github.com/mmakc",
       "contributions": 98
-    },
-    {
-      "login": "pauljevans",
-      "id": 4302146,
-      "node_id": "MDQ6VXNlcjQzMDIxNDY=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/4302146?v=4",
-      "html_url": "https://github.com/pauljevans",
-      "contributions": 82
     },
     {
       "login": "jronak",
@@ -669,6 +682,30 @@
       "contributions": 72
     },
     {
+      "login": "orasagar",
+      "id": 109339325,
+      "node_id": "U_kgDOBoRivQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/109339325?v=4",
+      "html_url": "https://github.com/orasagar",
+      "contributions": 69
+    },
+    {
+      "login": "kurik",
+      "id": 503451,
+      "node_id": "MDQ6VXNlcjUwMzQ1MQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/503451?v=4",
+      "html_url": "https://github.com/kurik",
+      "contributions": 66
+    },
+    {
+      "login": "wcohen",
+      "id": 1050609,
+      "node_id": "MDQ6VXNlcjEwNTA2MDk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1050609?v=4",
+      "html_url": "https://github.com/wcohen",
+      "contributions": 58
+    },
+    {
       "login": "hamishcoleman",
       "id": 18585683,
       "node_id": "MDQ6VXNlcjE4NTg1Njgz",
@@ -685,6 +722,14 @@
       "contributions": 53
     },
     {
+      "login": "sfeifer",
+      "id": 64805811,
+      "node_id": "MDQ6VXNlcjY0ODA1ODEx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/64805811?v=4",
+      "html_url": "https://github.com/sfeifer",
+      "contributions": 52
+    },
+    {
       "login": "christianhorn",
       "id": 1409927,
       "node_id": "MDQ6VXNlcjE0MDk5Mjc=",
@@ -693,27 +738,19 @@
       "contributions": 49
     },
     {
-      "login": "ElephantZhang",
-      "id": 20384581,
-      "node_id": "MDQ6VXNlcjIwMzg0NTgx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/20384581?v=4",
-      "html_url": "https://github.com/ElephantZhang",
-      "contributions": 46
-    },
-    {
-      "login": "kurik",
-      "id": 503451,
-      "node_id": "MDQ6VXNlcjUwMzQ1MQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/503451?v=4",
-      "html_url": "https://github.com/kurik",
-      "contributions": 46
-    },
-    {
       "login": "not4win",
       "id": 31366763,
       "node_id": "MDQ6VXNlcjMxMzY2NzYz",
       "avatar_url": "https://avatars.githubusercontent.com/u/31366763?v=4",
       "html_url": "https://github.com/not4win",
+      "contributions": 46
+    },
+    {
+      "login": "ElephantZhang",
+      "id": 20384581,
+      "node_id": "MDQ6VXNlcjIwMzg0NTgx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20384581?v=4",
+      "html_url": "https://github.com/ElephantZhang",
       "contributions": 46
     },
     {
@@ -733,12 +770,12 @@
       "contributions": 40
     },
     {
-      "login": "orasagar",
-      "id": 109339325,
-      "node_id": "U_kgDOBoRivQ",
-      "avatar_url": "https://avatars.githubusercontent.com/u/109339325?v=4",
-      "html_url": "https://github.com/orasagar",
-      "contributions": 40
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "html_url": "https://github.com/apps/dependabot",
+      "contributions": 13
     },
     {
       "login": "ddiss",
@@ -757,43 +794,155 @@
       "contributions": 35
     },
     {
-      "login": "smalinux",
-      "id": 8196176,
-      "node_id": "MDQ6VXNlcjgxOTYxNzY=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/8196176?v=4",
-      "html_url": "https://github.com/smalinux",
-      "contributions": 34
+      "login": "thecowan",
+      "id": 317030,
+      "node_id": "MDQ6VXNlcjMxNzAzMA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/317030?v=4",
+      "html_url": "https://github.com/thecowan",
+      "contributions": 81
     },
     {
-      "login": "hkshaw1990",
-      "id": 4476151,
-      "node_id": "MDQ6VXNlcjQ0NzYxNTE=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/4476151?v=4",
-      "html_url": "https://github.com/hkshaw1990",
-      "contributions": 28
+      "login": "ryandoyle",
+      "id": 887536,
+      "node_id": "MDQ6VXNlcjg4NzUzNg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/887536?v=4",
+      "html_url": "https://github.com/ryandoyle",
+      "contributions": 55
     },
     {
-      "login": "wcohen",
-      "id": 1050609,
-      "node_id": "MDQ6VXNlcjEwNTA2MDk=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1050609?v=4",
-      "html_url": "https://github.com/wcohen",
-      "contributions": 26
+      "login": "pwinckles",
+      "id": 1196698,
+      "node_id": "MDQ6VXNlcjExOTY2OTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1196698?v=4",
+      "html_url": "https://github.com/pwinckles",
+      "contributions": 13
     },
     {
-      "login": "mohith-kumar-thummaluru",
-      "id": 136433948,
-      "node_id": "U_kgDOCCHRHA",
-      "avatar_url": "https://avatars.githubusercontent.com/u/136433948?v=4",
-      "html_url": "https://github.com/mohith-kumar-thummaluru",
-      "contributions": 25
+      "login": "whimet",
+      "id": 44074,
+      "node_id": "MDQ6VXNlcjQ0MDc0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/44074?v=4",
+      "html_url": "https://github.com/whimet",
+      "contributions": 12
     },
     {
-      "login": "actions-user",
-      "id": 65916846,
-      "node_id": "MDQ6VXNlcjY1OTE2ODQ2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/65916846?v=4",
-      "html_url": "https://github.com/actions-user",
+      "login": "hwiputra",
+      "id": 52440667,
+      "node_id": "MDQ6VXNlcjUyNDQwNjY3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/52440667?v=4",
+      "html_url": "https://github.com/hwiputra",
+      "contributions": 7
+    },
+    {
+      "login": "keilw",
+      "id": 70496,
+      "node_id": "MDQ6VXNlcjcwNDk2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/70496?v=4",
+      "html_url": "https://github.com/keilw",
+      "contributions": 6
+    },
+    {
+      "login": "timols",
+      "id": 456103,
+      "node_id": "MDQ6VXNlcjQ1NjEwMw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/456103?v=4",
+      "html_url": "https://github.com/timols",
+      "contributions": 5
+    },
+    {
+      "login": "georgekankava",
+      "id": 16732352,
+      "node_id": "MDQ6VXNlcjE2NzMyMzUy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16732352?v=4",
+      "html_url": "https://github.com/georgekankava",
+      "contributions": 3
+    },
+    {
+      "login": "nicktindall",
+      "id": 861395,
+      "node_id": "MDQ6VXNlcjg2MTM5NQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/861395?v=4",
+      "html_url": "https://github.com/nicktindall",
+      "contributions": 3
+    },
+    {
+      "login": "akshayahn",
+      "id": 13435732,
+      "node_id": "MDQ6VXNlcjEzNDM1NzMy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13435732?v=4",
+      "html_url": "https://github.com/akshayahn",
+      "contributions": 2
+    },
+    {
+      "login": "ykulbak",
+      "id": 215043,
+      "node_id": "MDQ6VXNlcjIxNTA0Mw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/215043?v=4",
+      "html_url": "https://github.com/ykulbak",
+      "contributions": 2
+    },
+    {
+      "login": "claude",
+      "id": 81847,
+      "node_id": "MDQ6VXNlcjgxODQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/81847?v=4",
+      "html_url": "https://github.com/claude",
+      "contributions": 2
+    },
+    {
+      "login": "ajeeshpu",
+      "id": 643364,
+      "node_id": "MDQ6VXNlcjY0MzM2NA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/643364?v=4",
+      "html_url": "https://github.com/ajeeshpu",
+      "contributions": 1
+    },
+    {
+      "login": "JLLeitschuh",
+      "id": 1323708,
+      "node_id": "MDQ6VXNlcjEzMjM3MDg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1323708?v=4",
+      "html_url": "https://github.com/JLLeitschuh",
+      "contributions": 1
+    },
+    {
+      "login": "lgtm-migrator",
+      "id": 116650770,
+      "node_id": "U_kgDOBvPzEg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/116650770?v=4",
+      "html_url": "https://github.com/lgtm-migrator",
+      "contributions": 1
+    },
+    {
+      "login": "PratyushTalreja",
+      "id": 11702318,
+      "node_id": "MDQ6VXNlcjExNzAyMzE4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11702318?v=4",
+      "html_url": "https://github.com/PratyushTalreja",
+      "contributions": 1
+    },
+    {
+      "login": "scotte",
+      "id": 188352,
+      "node_id": "MDQ6VXNlcjE4ODM1Mg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/188352?v=4",
+      "html_url": "https://github.com/scotte",
+      "contributions": 1
+    },
+    {
+      "login": "suyash",
+      "id": 16324837,
+      "node_id": "MDQ6VXNlcjE2MzI0ODM3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16324837?v=4",
+      "html_url": "https://github.com/suyash",
+      "contributions": 1
+    },
+    {
+      "login": "yanhuilioracle",
+      "id": 93648945,
+      "node_id": "U_kgDOBZT4MQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/93648945?v=4",
+      "html_url": "https://github.com/yanhuilioracle",
       "contributions": 1
     }
   ],

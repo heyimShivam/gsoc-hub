@@ -59,7 +59,8 @@
     2022,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2016": [
@@ -1128,7 +1129,126 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/mEC7s9zc"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Extending Reachability Analysis with Matrix Zonotopes in ReachabilityAnalysis.jl",
+        "short_description": "This project aims to extend the existing capabilities of ReachabilityAnalysis.jl with a new state-of-the-art algorithm for reachability analysis,...",
+        "description": "This project aims to extend the existing capabilities of ReachabilityAnalysis.jl with a new state-of-the-art algorithm for reachability analysis, based on recent literature. The algorithm will improve the precision of reachable set computations for systems with uncertain parameters, utilizing matrix zonotopes—a set representation that provides tighter enclosures than traditional convex sets. Building on recent research, I will develop a new Julia package, MatrixZonotopes.jl, which will provide the necessary operations for working with matrix zonotopes and integrate it into the JuliaReach ecosystem. Based on the functionalities added by the new package, a reachability algorithm for linear systems will be implemented. At the end of the project, the new package will be available, along with the reachability algorithm, and a blog post will document their performance and functionalities.",
+        "student_name": "alecarraro",
+        "code_url": "https://alecarraro.github.io/alecarraro-blog/2025/08/21/gsoc-project-with-juliareach/",
+        "proposal_id": "4spsZSSY",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/lTdvJXDe"
+      },
+      {
+        "title": "Sharing is Caring; Improving the Julia GPU Stack Portability.",
+        "short_description": "The state of Julia GPU support ranges from “very good” (CUDA.jl) to “on the way” (Metal.jl). Recently, the shared high-level interface GPUArrays.jl...",
+        "description": "The state of Julia GPU support ranges from “very good” (CUDA.jl) to “on the way” (Metal.jl). Recently, the shared high-level interface GPUArrays.jl added support for KernelAbstractions.jl, which defines a common interface that can be used to write optimized kernel implementations once for all the downstream vendor-specific GPU packages such as CUDA.jl, AMDGPU.jl, Metal.jl, and oneAPI.jl. However, most optimized kernel implementations still live in the vendor-specific package they were written for, leaving the other packages to either reimplement their own version, use the current unoptimized fallback implementation from GPUArrays.jl, or in many cases, the operation is not supported.\n\nThis project aims to rewrite these optimized operations in GPUArrays.jl using the KernelAbstractions interface to improve performance and functionality for all GPU backends at once. The end result being that users of the less mature backends will benefit from more functionality, as well as increasing the impact of future contributions for all users of the JuliaGPU ecosystem.",
+        "student_name": "christiangnrd",
+        "code_url": "https://gist.github.com/christiangnrd/bcd2548b31194bb945eb3ac91fd9f389",
+        "proposal_id": "rmu1DQrR",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/9M7UdqlC"
+      },
+      {
+        "title": "Improving the Performance of GNNs Using Sparse Linear Algebra",
+        "short_description": "Graph Neural Networks (GNNs) are powerful tools for processing graph-structured data, with applications spanning social networks, recommendation...",
+        "description": "Graph Neural Networks (GNNs) are powerful tools for processing graph-structured data, with applications spanning social networks, recommendation systems, molecular modeling, and beyond. The Julia package GraphNeuralNetworks.jl, based on Flux.jl, provides access to common graph convolutional layers, offering a flexible framework for building GNN models.\nSparse computations are essential for the efficient implementation of GNNs, since many operations, such as propagating node features, can be expressed as the multiplication of a sparse adjacency matrix with a dense feature matrix.\nImproving these operations through enhanced GPU kernels and fused operations is critical to reducing memory overhead and increasing the overall performance.\nThis project aims to address these limitations by enhancing CUDA.jl’s sparse matrix support and integrating these improvements into GraphNeuralNetworks.jl, ultimately enabling faster and more scalable GNN computations in Julia.",
+        "student_name": "Davide Ferre'",
+        "code_url": "https://gist.github.com/dferre97/cd3834b9125d3059b03ffb2ce61bdb1a",
+        "proposal_id": "oDiQiG2W",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/pVuVXJ5N"
+      },
+      {
+        "title": "A Digital Twin approach for Advanced Supervoxel Visualization for Multi-Image View in Imaging",
+        "short_description": "This project extends the capabilities of the MedEye3D framework by developing an advanced visualization tool for supervoxel-based comparison across...",
+        "description": "This project extends the capabilities of the MedEye3D framework by developing an advanced visualization tool for supervoxel-based comparison across multiple medical imaging modalities (e.g., CT and MRI). The tool will enable users to interactively explore supervoxels on synchronized image views, with automatic highlighting of corresponding regions to aid in non-rigid registration and comparative analysis. Features include side-by-side image displays, interactive correction of supervoxel associations, and annotation of anatomical control points to support image alignment. Built using Julia, ModernGL.jl, and ITK/SimpleITK, this tool will enhance clinical workflows and research by improving registration accuracy and facilitating reliable visualization in complex imaging scenarios. The project contributes to digital twin applications in healthcare by enabling robust, user-guided multi-modality analysis.",
+        "student_name": "Divyansh-Goyal",
+        "code_url": "https://juliahealth.org/JuliaHealthBlog/posts/divyansh-gsoc-2025/gsoc-2025-fellows.html",
+        "proposal_id": "RIMV79En",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/0MEiJ7Ty"
+      },
+      {
+        "title": "Integrating Agents.jl with Reinforcement Learning Techniques",
+        "short_description": "The proposal aims to integrate the Julia package Agents.jl (for agent-based modeling) with ReinforcementLearning.jl or Crux.jl, enabling intelligent...",
+        "description": "The proposal aims to integrate the Julia package Agents.jl (for agent-based modeling) with ReinforcementLearning.jl or Crux.jl, enabling intelligent agents in simulations to learn optimal policies via reinforcement learning. The integration will allow for dynamic, reward-based behaviors rather than static rule-based actions. The project involves updating the chosen RL library for compatibility with the latest Julia version, building a lightweight interface (ABMEnv) to connect it with Agents.jl, and showcasing the integration through example applications like herding, civil violence, and predator-prey models. This work will expand the capabilities of Julia’s ecosystem for researchers in fields such as economics, social sciences, and robotics, while offering a standardized and accessible way to combine RL and ABM.",
+        "student_name": "giorgio bertone",
+        "code_url": "https://github.com/bergio13/GSoC-2025/blob/main/README.md",
+        "proposal_id": "FsEP1SS7",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/T5qvWEvO"
+      },
+      {
+        "title": "Implementing a Graph-State Backend for QuantumClifford.jl",
+        "short_description": "QuantumClifford.jl enables efficient simulation of Clifford circuits acting on stabilizer states using the (de)stabilizer formalism, with complexity...",
+        "description": "QuantumClifford.jl enables efficient simulation of Clifford circuits acting on stabilizer states using the (de)stabilizer formalism, with complexity O(𝑛²), where 𝑛 is the number of qubits. For sparse stabilizer states—those with a qubit connectivity of O(log 𝑛)—an alternative algorithm based on graph states achieves improved complexity of O(𝑛 log 𝑛). This project aims to implement this graph-states-based simulator as an alternative backend in `QuantumClifford.jl`. Specifically, the project will: support the simulation of generator gates {𝐻, 𝑆, Λ𝑍}, enable the decomposition of arbitrary Clifford gates into these three generators, and implement single-qubit Pauli measurements on graph states. The goal is to provide a seamless transition to the graph-based simulator through compatibility with existing `apply!` and `project!` APIs in `QuantumClifford.jl`.",
+        "student_name": "Kanyang Ying",
+        "code_url": "https://gist.github.com/LEXUGE/9eca4aacf301a35d51ec972926f52b27",
+        "proposal_id": "ioO0Njeb",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/vEtdXncS"
+      },
+      {
+        "title": "Supporting Patient Level Prediction Pipelines within JuliaHealth",
+        "short_description": "This project focused on making patient-level prediction (PLP) more practical within the JuliaHealth ecosystem by building some of the missing...",
+        "description": "This project focused on making patient-level prediction (PLP) more practical within the JuliaHealth ecosystem by building some of the missing foundations around OMOP CDM data. The main challenges were around data preprocessing and consistent cohort construction, which are essential before any prediction pipeline can be reliable. To address this, the project delivered two key pieces: first, a standardized Tables.jl interface in HealthBase.jl to make OMOP CDM data easier to work with and preprocess; and second, a new package, OMOPCDMFeasibility.jl, which adds tools for checking cohort feasibility and data readiness. Both were designed to work hand-in-hand with existing JuliaHealth packages like OMOPCDMCohortCreator.jl and OHDSICohortExpressions.jl. Together, these contributions provide a more reproducible, end-to-end path for building PLP models directly on OMOP CDM datasets.",
+        "student_name": "Kosuri Lakshmi Indu",
+        "code_url": "https://medium.com/@kosurilindu/google-summer-of-code-2025-the-julia-language-juliahealth-final-work-report-954fa157c38c",
+        "proposal_id": "qJtt1NtZ",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/xpSEgu5b"
+      },
+      {
+        "title": "Ab-Initio Quantum Chemistry with Rimu.jl",
+        "short_description": "This project proposes adding new features to Rimu.jl --- a Julia package that implements a random integrator for many-body quantum systems ---...",
+        "description": "This project proposes adding new features to Rimu.jl --- a Julia package that implements a random integrator for many-body quantum systems --- allowing it to read FCIDUMP files or directly use data from the ElemCo.jl package and construct a molecular Hamiltonian. This will provide users with the ability to obtain highly accurate data from quantum Monte Carlo simulations and exact diagonalisation for extensible models involving the electronic structure of molecules starting from readily available quantum chemistry data.",
+        "student_name": "lch",
+        "code_url": "https://github.com/RimuQMC/Rimu.jl/discussions/348",
+        "proposal_id": "KHLOSfKn",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/rIUlYnPe"
+      },
+      {
+        "title": "R Interface for JuliaBUGS",
+        "short_description": "The main goal of this project is to develop the R interface for JuliaBUGS, enabling a broader range of users already familiar with these languages to...",
+        "description": "The main goal of this project is to develop the R interface for JuliaBUGS, enabling a broader range of users already familiar with these languages to leverage the features of JuliaBUGS. This integration will not only facilitate the use of JuliaBUGS’ concise formulation alongside modern methods such as Hamiltonian Monte Carlo (HMC) and Automatic Differentiation (AD) but will also attract new users, helping to expand, consolidate, and strengthen the Julia community.\n\nThe project will be under the umbrella project Turing.jl, and will have a duration of 175 hours.",
+        "student_name": "Mateus Maia",
+        "code_url": "https://github.com/TuringLang/JuliaBUGS.jl/pull/389",
+        "proposal_id": "6awtv3XJ",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/WgOorFxH"
+      },
+      {
+        "title": "Improving search functionality for Documenter.jl",
+        "short_description": "This project aims to significantly enhance the search experience within documentation generated by Documenter.jl. The current client-side search...",
+        "description": "This project aims to significantly enhance the search experience within documentation generated by Documenter.jl. The current client-side search encounters difficulties accurately indexing and retrieving results for Julia-specific syntax, leading to suboptimal relevance. Furthermore, issues like unnecessarily large search indices and repeated listing of the same location hinder usability. This proposal outlines a plan to address these shortcomings by: 1) Implementing search performance benchmarks (relevance, precision/recall, index size) to measure and guide improvements. 2) Developing and integrating an improved, Julia-aware tokenizer within the search JavaScript. 3) Optimizing the index by investigating and removing redundant data, ensuring unique location entries are stored, and adding warnings for potentially problematic large indices. 4) Creating comprehensive developer documentation for the enhanced search system. The outcome will be a more robust, accurate, and efficient search capability for users navigating Julia package documentation.",
+        "student_name": "Mohd Rahban Ghani",
+        "code_url": "https://rahban1.github.io/gsoc-documenter/dev/",
+        "proposal_id": "rP5jGhCZ",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/KGUrSI9I"
+      },
+      {
+        "title": "Browser-Based Graphical Interface for JuliaBUGS",
+        "short_description": "JuliaBUGS is a modern Julia implementation of the classic Bayesian Inference using Gibbs Sampling — BUGS language for Bayesian modeling, combining...",
+        "description": "JuliaBUGS is a modern Julia implementation of the classic Bayesian Inference using Gibbs Sampling — BUGS language for Bayesian modeling, combining BUGS’s intuitive model specification with Julia’s high-performance sampling methods like Hamiltonian Monte Carlo. This project proposes a browser-based graphical model editor for JuliaBUGS, enabling users to visually construct probabilistic graphical models by adding nodes and drawing arrows, instead of writing code. Built using React with TypeScript and React Flow, the web interface will support adding, connecting, grouping, and editing random variables and deterministic nodes via an interactive canvas. Users can specify probability distributions and hyperparameters through intuitive forms. The editor will export model structures to JSON and generate valid JuliaBUGS (or BUGS) code. The GSoC project will focus entirely on delivering a polished, user-friendly frontend with clear usage examples and tutorials. Inspired by tools like DoodleBUGS (for WinBUGS or MultiBUGS), shinystan, and the R Package causact, this editor aims to make model specification more accessible and streamline the Bayesian modeling workflow.",
+        "student_name": "Shravanpuri Goswami",
+        "code_url": "https://turinglang.org/GSoC-2025-Report-DoodleBUGS",
+        "proposal_id": "TFBJC1aI",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/4ecMbDwU"
+      },
+      {
+        "title": "Productive Scalable Distributed Task Scheduling Using an MPI-based Backend for Dagger",
+        "short_description": "This project extends Dagger.jl with an MPI-based backend, allowing it to scale more effectively on high-performance computing (HPC) clusters that use...",
+        "description": "This project extends Dagger.jl with an MPI-based backend, allowing it to scale more effectively on high-performance computing (HPC) clusters that use low-latency interconnects like Infiniband or HPE Slingshot. Dagger already offers a productive way to express parallelism in Julia, using Directed Acyclic Graphs (DAGs) to schedule and run tasks. However, it currently relies on Julia’s Distributed.jl and TCP for communication, which becomes a bottleneck at large scales. In the exaflop era, where extreme-scale simulations demand both scalability and productivity, this limitation is significant. By integrating MPI, we build on vendor-optimized communication libraries to combine Dagger’s ease of use with the performance needed in HPC environments, much like frameworks such as Legion and Iris.",
+        "student_name": "Yan Guimarães",
+        "code_url": "https://discourse.julialang.org/t/productive-scalable-distributed-task-scheduling-using-an-mpi-based-backend-for-dagger/131995",
+        "proposal_id": "yyGDhNfS",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/aCA4KJ3B"
+      },
+      {
+        "title": "Development of a New Language Server for Julia",
+        "short_description": "The Language Server Protocol (LSP) is a communication protocol between editors and analysis engines. Many major editors support this protocol, making...",
+        "description": "The Language Server Protocol (LSP) is a communication protocol between editors and analysis engines.\n\nMany major editors support this protocol, making Language\nServers—development support tools that communicate with editors via LSP—highly\nsignificant in modern development environments.\n\nIn this proposal, I aim to implement and enhance some new features for a new Language Server called JETLS, which is deeply integrated with the latest Julia compiler infrastructure.\n\nI will strive to deliver low-latency, precisely source-mapped feedback to users, enhancing the overall development experience by leveraging JET.jl, Revise.jl, JuliaSyntax.jl, and JuliaLowering.jl.  \n\nJETLS will provide powerful editor support for programmers working on large-scale Julia codebases, helping them discover potential bugs and write more efficient code.",
+        "student_name": "Yuchi Yamaguchi",
+        "code_url": "https://www.abap34.com/posts/gsoc2025_final_report.html",
+        "proposal_id": "TlN9rASt",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/9PZY6C2m"
+      }
+    ],
+    "2026": []
   },
   "githubID": "JuliaLang",
   "repositories": [
@@ -1140,9 +1260,9 @@
       "html_url": "https://github.com/JuliaLang/docs.julialang.org",
       "description": "Repository for hosting the manual for the Julia language",
       "language": "Julia",
-      "stargazers_count": 29,
-      "forks_count": 19,
-      "open_issues_count": 2,
+      "stargazers_count": 31,
+      "forks_count": 21,
+      "open_issues_count": 0,
       "license": null,
       "topics": []
     },
@@ -1154,9 +1274,9 @@
       "html_url": "https://github.com/JuliaLang/julia",
       "description": "The Julia Programming Language",
       "language": "Julia",
-      "stargazers_count": 47058,
-      "forks_count": 5590,
-      "open_issues_count": 5031,
+      "stargazers_count": 48529,
+      "forks_count": 5753,
+      "open_issues_count": 4736,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -1178,16 +1298,36 @@
       ]
     },
     {
-      "id": 82341193,
-      "node_id": "MDEwOlJlcG9zaXRvcnk4MjM0MTE5Mw==",
-      "name": "Pkg.jl",
-      "full_name": "JuliaLang/Pkg.jl",
-      "html_url": "https://github.com/JuliaLang/Pkg.jl",
-      "description": "Pkg - Package manager for the Julia programming language",
+      "id": 273582663,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyNzM1ODI2NjM=",
+      "name": "juliaup",
+      "full_name": "JuliaLang/juliaup",
+      "html_url": "https://github.com/JuliaLang/juliaup",
+      "description": "Julia installer and version multiplexer",
+      "language": "Rust",
+      "stargazers_count": 1262,
+      "forks_count": 105,
+      "open_issues_count": 253,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 1033863568,
+      "node_id": "R_kgDOPZ-BkA",
+      "name": "SecurityAdvisories.jl",
+      "full_name": "JuliaLang/SecurityAdvisories.jl",
+      "html_url": "https://github.com/JuliaLang/SecurityAdvisories.jl",
+      "description": "The Julia Security Advisory Database",
       "language": "Julia",
-      "stargazers_count": 634,
-      "forks_count": 277,
-      "open_issues_count": 705,
+      "stargazers_count": 19,
+      "forks_count": 6,
+      "open_issues_count": 12,
       "license": {
         "key": "other",
         "name": "Other",
@@ -1196,8 +1336,9 @@
         "node_id": "MDc6TGljZW5zZTA="
       },
       "topics": [
+        "cve",
         "julia",
-        "package-manager"
+        "security"
       ]
     },
     {
@@ -1207,10 +1348,10 @@
       "full_name": "JuliaLang/www.julialang.org",
       "html_url": "https://github.com/JuliaLang/www.julialang.org",
       "description": "Julia Project website",
-      "language": "Julia",
-      "stargazers_count": 377,
-      "forks_count": 470,
-      "open_issues_count": 31,
+      "language": "CSS",
+      "stargazers_count": 386,
+      "forks_count": 478,
+      "open_issues_count": 3,
       "license": {
         "key": "other",
         "name": "Other",
@@ -1226,16 +1367,16 @@
       ]
     },
     {
-      "id": 430564540,
-      "node_id": "R_kgDOGankvA",
-      "name": "JuliaSyntax.jl",
-      "full_name": "JuliaLang/JuliaSyntax.jl",
-      "html_url": "https://github.com/JuliaLang/JuliaSyntax.jl",
-      "description": "The Julia compiler frontend",
+      "id": 1029979413,
+      "node_id": "R_kgDOPWQ9FQ",
+      "name": "JuliaC.jl",
+      "full_name": "JuliaLang/JuliaC.jl",
+      "html_url": "https://github.com/JuliaLang/JuliaC.jl",
+      "description": "CLI app for compiling and bundling julia binaries, especially trimmed ones",
       "language": "Julia",
-      "stargazers_count": 281,
-      "forks_count": 36,
-      "open_issues_count": 101,
+      "stargazers_count": 249,
+      "forks_count": 17,
+      "open_issues_count": 51,
       "license": {
         "key": "other",
         "name": "Other",
@@ -1243,12 +1384,21 @@
         "url": null,
         "node_id": "MDc6TGljZW5zZTA="
       },
-      "topics": [
-        "compiler",
-        "julia",
-        "parser",
-        "syntax"
-      ]
+      "topics": []
+    },
+    {
+      "id": 1135809644,
+      "node_id": "R_kgDOQ7MUbA",
+      "name": "backporter-github-actions-workflows",
+      "full_name": "JuliaLang/backporter-github-actions-workflows",
+      "html_url": "https://github.com/JuliaLang/backporter-github-actions-workflows",
+      "description": null,
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 4,
+      "license": null,
+      "topics": []
     },
     {
       "id": 888364997,
@@ -1258,9 +1408,9 @@
       "html_url": "https://github.com/JuliaLang/LinearAlgebra.jl",
       "description": "Julia Linear Algebra standard library",
       "language": "Julia",
-      "stargazers_count": 43,
-      "forks_count": 22,
-      "open_issues_count": 219,
+      "stargazers_count": 64,
+      "forks_count": 51,
+      "open_issues_count": 243,
       "license": {
         "key": "other",
         "name": "Other",
@@ -1274,16 +1424,82 @@
       ]
     },
     {
-      "id": 8585955,
-      "node_id": "MDEwOlJlcG9zaXRvcnk4NTg1OTU1",
-      "name": "IJulia.jl",
-      "full_name": "JuliaLang/IJulia.jl",
-      "html_url": "https://github.com/JuliaLang/IJulia.jl",
-      "description": "Julia kernel for Jupyter",
+      "id": 110719120,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMTA3MTkxMjA=",
+      "name": "PackageCompiler.jl",
+      "full_name": "JuliaLang/PackageCompiler.jl",
+      "html_url": "https://github.com/JuliaLang/PackageCompiler.jl",
+      "description": "Compile your Julia Package",
       "language": "Julia",
-      "stargazers_count": 2835,
-      "forks_count": 420,
-      "open_issues_count": 114,
+      "stargazers_count": 1532,
+      "forks_count": 197,
+      "open_issues_count": 163,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": [
+        "julia",
+        "packagecompiler"
+      ]
+    },
+    {
+      "id": 705638750,
+      "node_id": "R_kgDOKg8xXg",
+      "name": "headscale.julialang.org",
+      "full_name": "JuliaLang/headscale.julialang.org",
+      "html_url": "https://github.com/JuliaLang/headscale.julialang.org",
+      "description": "Headscale configuration for JuliaLang",
+      "language": "Makefile",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 82341193,
+      "node_id": "MDEwOlJlcG9zaXRvcnk4MjM0MTE5Mw==",
+      "name": "Pkg.jl",
+      "full_name": "JuliaLang/Pkg.jl",
+      "html_url": "https://github.com/JuliaLang/Pkg.jl",
+      "description": "Pkg - Package manager for the Julia programming language",
+      "language": "Julia",
+      "stargazers_count": 662,
+      "forks_count": 294,
+      "open_issues_count": 493,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": [
+        "julia",
+        "package-manager"
+      ]
+    },
+    {
+      "id": 179126935,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNzkxMjY5MzU=",
+      "name": "libuv",
+      "full_name": "JuliaLang/libuv",
+      "html_url": "https://github.com/JuliaLang/libuv",
+      "description": "Cross-platform asynchronous I/O",
+      "language": "C",
+      "stargazers_count": 11,
+      "forks_count": 16,
+      "open_issues_count": 4,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -1301,9 +1517,322 @@
       "html_url": "https://github.com/JuliaLang/llvm-project",
       "description": "Fork of https://github.com/llvm/llvm-project",
       "language": null,
-      "stargazers_count": 8,
-      "forks_count": 9,
-      "open_issues_count": 2,
+      "stargazers_count": 7,
+      "forks_count": 10,
+      "open_issues_count": 3,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 1182159018,
+      "node_id": "R_kgDORnZQqg",
+      "name": "docs-pdf-backup",
+      "full_name": "JuliaLang/docs-pdf-backup",
+      "html_url": "https://github.com/JuliaLang/docs-pdf-backup",
+      "description": null,
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 679524413,
+      "node_id": "R_kgDOKIC4PQ",
+      "name": "ScopedValues.jl",
+      "full_name": "JuliaLang/ScopedValues.jl",
+      "html_url": "https://github.com/JuliaLang/ScopedValues.jl",
+      "description": null,
+      "language": "Julia",
+      "stargazers_count": 22,
+      "forks_count": 12,
+      "open_issues_count": 10,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 8585955,
+      "node_id": "MDEwOlJlcG9zaXRvcnk4NTg1OTU1",
+      "name": "IJulia.jl",
+      "full_name": "JuliaLang/IJulia.jl",
+      "html_url": "https://github.com/JuliaLang/IJulia.jl",
+      "description": "Julia kernel for Jupyter",
+      "language": "Julia",
+      "stargazers_count": 2895,
+      "forks_count": 426,
+      "open_issues_count": 34,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 629132920,
+      "node_id": "R_kgDOJX_OeA",
+      "name": "PrecompileTools.jl",
+      "full_name": "JuliaLang/PrecompileTools.jl",
+      "html_url": "https://github.com/JuliaLang/PrecompileTools.jl",
+      "description": "Reduce time-to-first-execution of Julia code",
+      "language": "Julia",
+      "stargazers_count": 247,
+      "forks_count": 18,
+      "open_issues_count": 18,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 43431263,
+      "node_id": "MDEwOlJlcG9zaXRvcnk0MzQzMTI2Mw==",
+      "name": "PkgDev.jl",
+      "full_name": "JuliaLang/PkgDev.jl",
+      "html_url": "https://github.com/JuliaLang/PkgDev.jl",
+      "description": "Tools for Julia package developers",
+      "language": "Julia",
+      "stargazers_count": 74,
+      "forks_count": 35,
+      "open_issues_count": 9,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 700648272,
+      "node_id": "R_kgDOKcMLUA",
+      "name": "StyledStrings.jl",
+      "full_name": "JuliaLang/StyledStrings.jl",
+      "html_url": "https://github.com/JuliaLang/StyledStrings.jl",
+      "description": "Write with ✨ style ✨ and ease",
+      "language": "Julia",
+      "stargazers_count": 34,
+      "forks_count": 14,
+      "open_issues_count": 19,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 701508541,
+      "node_id": "R_kgDOKdArvQ",
+      "name": "Distributed.jl",
+      "full_name": "JuliaLang/Distributed.jl",
+      "html_url": "https://github.com/JuliaLang/Distributed.jl",
+      "description": "Create and control multiple Julia processes remotely for distributed computing. Ships as a Julia stdlib.",
+      "language": "Julia",
+      "stargazers_count": 53,
+      "forks_count": 18,
+      "open_issues_count": 91,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": [
+        "distributed-computing",
+        "julia",
+        "parallel-computing"
+      ]
+    },
+    {
+      "id": 123968373,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMjM5NjgzNzM=",
+      "name": "Microbenchmarks",
+      "full_name": "JuliaLang/Microbenchmarks",
+      "html_url": "https://github.com/JuliaLang/Microbenchmarks",
+      "description": "Microbenchmarks comparing the Julia Programming language with other languages",
+      "language": "C",
+      "stargazers_count": 91,
+      "forks_count": 49,
+      "open_issues_count": 0,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": [
+        "benchmark",
+        "julia",
+        "julialang",
+        "language-comparison",
+        "microbenchmark",
+        "performance"
+      ]
+    },
+    {
+      "id": 6360817,
+      "node_id": "MDEwOlJlcG9zaXRvcnk2MzYwODE3",
+      "name": "Example.jl",
+      "full_name": "JuliaLang/Example.jl",
+      "html_url": "https://github.com/JuliaLang/Example.jl",
+      "description": "Example Julia package repo.",
+      "language": "Julia",
+      "stargazers_count": 147,
+      "forks_count": 132,
+      "open_issues_count": 4,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 430564540,
+      "node_id": "R_kgDOGankvA",
+      "name": "JuliaSyntax.jl",
+      "full_name": "JuliaLang/JuliaSyntax.jl",
+      "html_url": "https://github.com/JuliaLang/JuliaSyntax.jl",
+      "description": "The Julia compiler frontend",
+      "language": "Julia",
+      "stargazers_count": 292,
+      "forks_count": 48,
+      "open_issues_count": 110,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": [
+        "compiler",
+        "julia",
+        "parser",
+        "syntax"
+      ]
+    },
+    {
+      "id": 214147949,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMTQxNDc5NDk=",
+      "name": ".github",
+      "full_name": "JuliaLang/.github",
+      "html_url": "https://github.com/JuliaLang/.github",
+      "description": "Repository for default community health files",
+      "language": null,
+      "stargazers_count": 4,
+      "forks_count": 8,
+      "open_issues_count": 0,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
+      "id": 24995432,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyNDk5NTQzMg==",
+      "name": "Compat.jl",
+      "full_name": "JuliaLang/Compat.jl",
+      "html_url": "https://github.com/JuliaLang/Compat.jl",
+      "description": "Compatibility across Julia versions",
+      "language": "Julia",
+      "stargazers_count": 155,
+      "forks_count": 116,
+      "open_issues_count": 18,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": [
+        "compatibility",
+        "julia"
+      ]
+    },
+    {
+      "id": 254790461,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyNTQ3OTA0NjE=",
+      "name": "BugReporting.jl",
+      "full_name": "JuliaLang/BugReporting.jl",
+      "html_url": "https://github.com/JuliaLang/BugReporting.jl",
+      "description": "Streamlines bug reporting for julia",
+      "language": "Julia",
+      "stargazers_count": 20,
+      "forks_count": 14,
+      "open_issues_count": 11,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 41854188,
+      "node_id": "MDEwOlJlcG9zaXRvcnk0MTg1NDE4OA==",
+      "name": "MbedTLS.jl",
+      "full_name": "JuliaLang/MbedTLS.jl",
+      "html_url": "https://github.com/JuliaLang/MbedTLS.jl",
+      "description": "Wrapper around mbedtls",
+      "language": "Julia",
+      "stargazers_count": 42,
+      "forks_count": 48,
+      "open_issues_count": 33,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 898458836,
+      "node_id": "R_kgDONY1k1A",
+      "name": "SharedArrays.jl",
+      "full_name": "JuliaLang/SharedArrays.jl",
+      "html_url": "https://github.com/JuliaLang/SharedArrays.jl",
+      "description": null,
+      "language": "Julia",
+      "stargazers_count": 5,
+      "forks_count": 1,
+      "open_issues_count": 0,
       "license": {
         "key": "other",
         "name": "Other",
@@ -1322,22 +1851,8 @@
       "description": "Contains a text file of the subset of Julia committers that have opted-in to be randomly assigned to newly opened PRs.",
       "language": null,
       "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 977834433,
-      "node_id": "R_kgDOOkiRwQ",
-      "name": "BaseCompiler.jl",
-      "full_name": "JuliaLang/BaseCompiler.jl",
-      "html_url": "https://github.com/JuliaLang/BaseCompiler.jl",
-      "description": "A placeholder implementation of Julia's Compiler standard library that re-exports bundled compiler with native package switching capabilities.",
-      "language": "Julia",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "open_issues_count": 0,
+      "forks_count": 1,
+      "open_issues_count": 1,
       "license": null,
       "topics": []
     },
@@ -1349,252 +1864,8 @@
       "html_url": "https://github.com/JuliaLang/JuliaSyntaxHighlighting.jl",
       "description": null,
       "language": "Julia",
-      "stargazers_count": 16,
-      "forks_count": 3,
-      "open_issues_count": 3,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 273582663,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNzM1ODI2NjM=",
-      "name": "juliaup",
-      "full_name": "JuliaLang/juliaup",
-      "html_url": "https://github.com/JuliaLang/juliaup",
-      "description": "Julia installer and version multiplexer",
-      "language": "Rust",
-      "stargazers_count": 1108,
-      "forks_count": 92,
-      "open_issues_count": 208,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 391696780,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzOTE2OTY3ODA=",
-      "name": "VersionsJSONUtil.jl",
-      "full_name": "JuliaLang/VersionsJSONUtil.jl",
-      "html_url": "https://github.com/JuliaLang/VersionsJSONUtil.jl",
-      "description": null,
-      "language": "Julia",
-      "stargazers_count": 4,
-      "forks_count": 4,
-      "open_issues_count": 7,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 745778141,
-      "node_id": "R_kgDOLHOr3Q",
-      "name": "Public.jl",
-      "full_name": "JuliaLang/Public.jl",
-      "html_url": "https://github.com/JuliaLang/Public.jl",
-      "description": null,
-      "language": "Julia",
-      "stargazers_count": 12,
-      "forks_count": 1,
-      "open_issues_count": 5,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 700648272,
-      "node_id": "R_kgDOKcMLUA",
-      "name": "StyledStrings.jl",
-      "full_name": "JuliaLang/StyledStrings.jl",
-      "html_url": "https://github.com/JuliaLang/StyledStrings.jl",
-      "description": "Write with ✨ style ✨ and ease",
-      "language": "Julia",
-      "stargazers_count": 27,
-      "forks_count": 11,
-      "open_issues_count": 16,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 110719120,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMTA3MTkxMjA=",
-      "name": "PackageCompiler.jl",
-      "full_name": "JuliaLang/PackageCompiler.jl",
-      "html_url": "https://github.com/JuliaLang/PackageCompiler.jl",
-      "description": "Compile your Julia Package",
-      "language": "Julia",
-      "stargazers_count": 1480,
-      "forks_count": 197,
-      "open_issues_count": 140,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": [
-        "julia",
-        "packagecompiler"
-      ]
-    },
-    {
-      "id": 629132920,
-      "node_id": "R_kgDOJX_OeA",
-      "name": "PrecompileTools.jl",
-      "full_name": "JuliaLang/PrecompileTools.jl",
-      "html_url": "https://github.com/JuliaLang/PrecompileTools.jl",
-      "description": "Reduce time-to-first-execution of Julia code",
-      "language": "Julia",
-      "stargazers_count": 222,
-      "forks_count": 15,
-      "open_issues_count": 10,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 691627133,
-      "node_id": "R_kgDOKTlkfQ",
-      "name": "AllocCheck.jl",
-      "full_name": "JuliaLang/AllocCheck.jl",
-      "html_url": "https://github.com/JuliaLang/AllocCheck.jl",
-      "description": "AllocCheck",
-      "language": "Julia",
-      "stargazers_count": 237,
-      "forks_count": 10,
-      "open_issues_count": 22,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 24995432,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNDk5NTQzMg==",
-      "name": "Compat.jl",
-      "full_name": "JuliaLang/Compat.jl",
-      "html_url": "https://github.com/JuliaLang/Compat.jl",
-      "description": "Compatibility across Julia versions",
-      "language": "Julia",
-      "stargazers_count": 150,
-      "forks_count": 116,
-      "open_issues_count": 14,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": [
-        "compatibility",
-        "julia"
-      ]
-    },
-    {
-      "id": 701508541,
-      "node_id": "R_kgDOKdArvQ",
-      "name": "Distributed.jl",
-      "full_name": "JuliaLang/Distributed.jl",
-      "html_url": "https://github.com/JuliaLang/Distributed.jl",
-      "description": "Create and control multiple Julia processes remotely for distributed computing. Ships as a Julia stdlib.",
-      "language": "Julia",
-      "stargazers_count": 40,
-      "forks_count": 14,
-      "open_issues_count": 79,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": [
-        "distributed-computing",
-        "julia",
-        "parallel-computing"
-      ]
-    },
-    {
-      "id": 254790461,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNTQ3OTA0NjE=",
-      "name": "BugReporting.jl",
-      "full_name": "JuliaLang/BugReporting.jl",
-      "html_url": "https://github.com/JuliaLang/BugReporting.jl",
-      "description": "Streamlines bug reporting for julia",
-      "language": "Julia",
       "stargazers_count": 19,
-      "forks_count": 14,
-      "open_issues_count": 10,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 287472106,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyODc0NzIxMDY=",
-      "name": "Downloads.jl",
-      "full_name": "JuliaLang/Downloads.jl",
-      "html_url": "https://github.com/JuliaLang/Downloads.jl",
-      "description": null,
-      "language": "Julia",
-      "stargazers_count": 92,
-      "forks_count": 34,
-      "open_issues_count": 42,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 311383516,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzMTEzODM1MTY=",
-      "name": "NetworkOptions.jl",
-      "full_name": "JuliaLang/NetworkOptions.jl",
-      "html_url": "https://github.com/JuliaLang/NetworkOptions.jl",
-      "description": null,
-      "language": "Julia",
-      "stargazers_count": 13,
-      "forks_count": 16,
+      "forks_count": 8,
       "open_issues_count": 3,
       "license": {
         "key": "mit",
@@ -1604,148 +1875,17 @@
         "node_id": "MDc6TGljZW5zZTEz"
       },
       "topics": []
-    },
-    {
-      "id": 936330152,
-      "node_id": "R_kgDON89DqA",
-      "name": "Testing-GitHub-UI-Please-Ignore",
-      "full_name": "JuliaLang/Testing-GitHub-UI-Please-Ignore",
-      "html_url": "https://github.com/JuliaLang/Testing-GitHub-UI-Please-Ignore",
-      "description": null,
-      "language": null,
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 179126935,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNzkxMjY5MzU=",
-      "name": "libuv",
-      "full_name": "JuliaLang/libuv",
-      "html_url": "https://github.com/JuliaLang/libuv",
-      "description": "Cross-platform asynchronous I/O",
-      "language": "C",
-      "stargazers_count": 10,
-      "forks_count": 14,
-      "open_issues_count": 5,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 701801176,
-      "node_id": "R_kgDOKdSi2A",
-      "name": "Test.jl",
-      "full_name": "JuliaLang/Test.jl",
-      "html_url": "https://github.com/JuliaLang/Test.jl",
-      "description": null,
-      "language": "Julia",
-      "stargazers_count": 2,
-      "forks_count": 2,
-      "open_issues_count": 0,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 237285053,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMzcyODUwNTM=",
-      "name": "BumpStdlibs.jl",
-      "full_name": "JuliaLang/BumpStdlibs.jl",
-      "html_url": "https://github.com/JuliaLang/BumpStdlibs.jl",
-      "description": "Update the hashes and checksums of all Julia stdlibs in just four clicks.",
-      "language": "Julia",
-      "stargazers_count": 13,
-      "forks_count": 5,
-      "open_issues_count": 1,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": [
-        "julia",
-        "stdlibs"
-      ]
-    },
-    {
-      "id": 6360817,
-      "node_id": "MDEwOlJlcG9zaXRvcnk2MzYwODE3",
-      "name": "Example.jl",
-      "full_name": "JuliaLang/Example.jl",
-      "html_url": "https://github.com/JuliaLang/Example.jl",
-      "description": "Example Julia package repo.",
-      "language": "Julia",
-      "stargazers_count": 143,
-      "forks_count": 130,
-      "open_issues_count": 2,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 898458836,
-      "node_id": "R_kgDONY1k1A",
-      "name": "SharedArrays.jl",
-      "full_name": "JuliaLang/SharedArrays.jl",
-      "html_url": "https://github.com/JuliaLang/SharedArrays.jl",
-      "description": null,
-      "language": "Julia",
-      "stargazers_count": 4,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 64649740,
-      "node_id": "MDEwOlJlcG9zaXRvcnk2NDY0OTc0MA==",
-      "name": "FunctionWrappers.jl",
-      "full_name": "JuliaLang/FunctionWrappers.jl",
-      "html_url": "https://github.com/JuliaLang/FunctionWrappers.jl",
-      "description": "Type stable and efficient wrapper of arbitrary Julia functions",
-      "language": "Julia",
-      "stargazers_count": 112,
-      "forks_count": 10,
-      "open_issues_count": 1,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": [
-        "julia"
-      ]
     }
   ],
   "contributorsDetails": [
+    {
+      "login": "ViralBShah",
+      "id": 744411,
+      "node_id": "MDQ6VXNlcjc0NDQxMQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/744411?v=4",
+      "html_url": "https://github.com/ViralBShah",
+      "contributions": 2918
+    },
     {
       "login": "mortenpi",
       "id": 147757,
@@ -1760,15 +1900,15 @@
       "node_id": "MDQ6VXNlcjExNjk4NzQ0",
       "avatar_url": "https://avatars.githubusercontent.com/u/11698744?v=4",
       "html_url": "https://github.com/fredrikekre",
-      "contributions": 384
+      "contributions": 392
     },
     {
-      "login": "ViralBShah",
-      "id": 744411,
-      "node_id": "MDQ6VXNlcjc0NDQxMQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/744411?v=4",
-      "html_url": "https://github.com/ViralBShah",
-      "contributions": 2897
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "html_url": "https://github.com/apps/dependabot",
+      "contributions": 50
     },
     {
       "login": "barucden",
@@ -1784,7 +1924,7 @@
       "node_id": "MDQ6VXNlcjU2MTk4ODU=",
       "avatar_url": "https://avatars.githubusercontent.com/u/5619885?v=4",
       "html_url": "https://github.com/DilumAluthge",
-      "contributions": 1
+      "contributions": 14
     },
     {
       "login": "JeffBezanson",
@@ -1792,7 +1932,7 @@
       "node_id": "MDQ6VXNlcjc0NDU1Ng==",
       "avatar_url": "https://avatars.githubusercontent.com/u/744556?v=4",
       "html_url": "https://github.com/JeffBezanson",
-      "contributions": 9947
+      "contributions": 9967
     },
     {
       "login": "StefanKarpinski",
@@ -1800,7 +1940,7 @@
       "node_id": "MDQ6VXNlcjE1MzU5Ng==",
       "avatar_url": "https://avatars.githubusercontent.com/u/153596?v=4",
       "html_url": "https://github.com/StefanKarpinski",
-      "contributions": 4263
+      "contributions": 3
     },
     {
       "login": "Keno",
@@ -1808,7 +1948,7 @@
       "node_id": "MDQ6VXNlcjEyOTE2NzE=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1291671?v=4",
       "html_url": "https://github.com/Keno",
-      "contributions": 2591
+      "contributions": 2719
     },
     {
       "login": "tkelman",
@@ -1824,7 +1964,7 @@
       "node_id": "MDQ6VXNlcjE1MjU0ODE=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1525481?v=4",
       "html_url": "https://github.com/timholy",
-      "contributions": 1662
+      "contributions": 1679
     },
     {
       "login": "yuyichao",
@@ -1832,23 +1972,7 @@
       "node_id": "MDQ6VXNlcjcxMjIzMg==",
       "avatar_url": "https://avatars.githubusercontent.com/u/712232?v=4",
       "html_url": "https://github.com/yuyichao",
-      "contributions": 1368
-    },
-    {
-      "login": "kshyatt",
-      "id": 828643,
-      "node_id": "MDQ6VXNlcjgyODY0Mw==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/828643?v=4",
-      "html_url": "https://github.com/kshyatt",
-      "contributions": 1227
-    },
-    {
-      "login": "staticfloat",
-      "id": 130920,
-      "node_id": "MDQ6VXNlcjEzMDkyMA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/130920?v=4",
-      "html_url": "https://github.com/staticfloat",
-      "contributions": 1202
+      "contributions": 1383
     },
     {
       "login": "KristofferC",
@@ -1856,7 +1980,23 @@
       "node_id": "MDQ6VXNlcjEyODI2OTE=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1282691?v=4",
       "html_url": "https://github.com/KristofferC",
-      "contributions": 1113
+      "contributions": 15
+    },
+    {
+      "login": "kshyatt",
+      "id": 828643,
+      "node_id": "MDQ6VXNlcjgyODY0Mw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/828643?v=4",
+      "html_url": "https://github.com/kshyatt",
+      "contributions": 1228
+    },
+    {
+      "login": "staticfloat",
+      "id": 130920,
+      "node_id": "MDQ6VXNlcjEzMDkyMA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/130920?v=4",
+      "html_url": "https://github.com/staticfloat",
+      "contributions": 1208
     },
     {
       "login": "stevengj",
@@ -1864,7 +2004,7 @@
       "node_id": "MDQ6VXNlcjI5MTM2Nzk=",
       "avatar_url": "https://avatars.githubusercontent.com/u/2913679?v=4",
       "html_url": "https://github.com/stevengj",
-      "contributions": 1048
+      "contributions": 1058
     },
     {
       "login": "aviatesk",
@@ -1872,7 +2012,15 @@
       "node_id": "MDQ6VXNlcjQwNTE0MzA2",
       "avatar_url": "https://avatars.githubusercontent.com/u/40514306?v=4",
       "html_url": "https://github.com/aviatesk",
-      "contributions": 888
+      "contributions": 986
+    },
+    {
+      "login": "c42f",
+      "id": 601473,
+      "node_id": "MDQ6VXNlcjYwMTQ3Mw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/601473?v=4",
+      "html_url": "https://github.com/c42f",
+      "contributions": 900
     },
     {
       "login": "andreasnoack",
@@ -1888,7 +2036,7 @@
       "node_id": "MDQ6VXNlcjE0NTI1OA==",
       "avatar_url": "https://avatars.githubusercontent.com/u/145258?v=4",
       "html_url": "https://github.com/vchuravy",
-      "contributions": 815
+      "contributions": 819
     },
     {
       "login": "nolta",
@@ -1896,7 +2044,7 @@
       "node_id": "MDQ6VXNlcjIwMTQ1Ng==",
       "avatar_url": "https://avatars.githubusercontent.com/u/201456?v=4",
       "html_url": "https://github.com/nolta",
-      "contributions": 724
+      "contributions": 725
     },
     {
       "login": "jiahao",
@@ -1936,7 +2084,7 @@
       "node_id": "MDQ6VXNlcjg0NjI5MTQ=",
       "avatar_url": "https://avatars.githubusercontent.com/u/8462914?v=4",
       "html_url": "https://github.com/rfourquet",
-      "contributions": 546
+      "contributions": 550
     },
     {
       "login": "mbauman",
@@ -1944,7 +2092,7 @@
       "node_id": "MDQ6VXNlcjE1NDY0MQ==",
       "avatar_url": "https://avatars.githubusercontent.com/u/154641?v=4",
       "html_url": "https://github.com/mbauman",
-      "contributions": 514
+      "contributions": 524
     },
     {
       "login": "maleadt",
@@ -1952,7 +2100,7 @@
       "node_id": "MDQ6VXNlcjM4MzA2OA==",
       "avatar_url": "https://avatars.githubusercontent.com/u/383068?v=4",
       "html_url": "https://github.com/maleadt",
-      "contributions": 451
+      "contributions": 8
     },
     {
       "login": "amitmurthy",
@@ -1963,12 +2111,28 @@
       "contributions": 410
     },
     {
+      "login": "IanButterworth",
+      "id": 1694067,
+      "node_id": "MDQ6VXNlcjE2OTQwNjc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1694067?v=4",
+      "html_url": "https://github.com/IanButterworth",
+      "contributions": 75
+    },
+    {
+      "login": "DilumAluthgeBot",
+      "id": 43731525,
+      "node_id": "MDQ6VXNlcjQzNzMxNTI1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43731525?v=4",
+      "html_url": "https://github.com/DilumAluthgeBot",
+      "contributions": 389
+    },
+    {
       "login": "nalimilan",
       "id": 1120448,
       "node_id": "MDQ6VXNlcjExMjA0NDg=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1120448?v=4",
       "html_url": "https://github.com/nalimilan",
-      "contributions": 379
+      "contributions": 381
     },
     {
       "login": "simonbyrne",
@@ -1976,15 +2140,7 @@
       "node_id": "MDQ6VXNlcjE2OTIwMDk=",
       "avatar_url": "https://avatars.githubusercontent.com/u/1692009?v=4",
       "html_url": "https://github.com/simonbyrne",
-      "contributions": 373
-    },
-    {
-      "login": "omus",
-      "id": 1675958,
-      "node_id": "MDQ6VXNlcjE2NzU5NTg=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1675958?v=4",
-      "html_url": "https://github.com/omus",
-      "contributions": 365
+      "contributions": 375
     },
     {
       "login": "jishnub",
@@ -1992,23 +2148,199 @@
       "node_id": "MDQ6VXNlcjEwNDYxNjY1",
       "avatar_url": "https://avatars.githubusercontent.com/u/10461665?v=4",
       "html_url": "https://github.com/jishnub",
-      "contributions": 358
+      "contributions": 367
     },
     {
-      "login": "quinnj",
-      "id": 2896623,
-      "node_id": "MDQ6VXNlcjI4OTY2MjM=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/2896623?v=4",
-      "html_url": "https://github.com/quinnj",
-      "contributions": 346
+      "login": "davidanthoff",
+      "id": 1036561,
+      "node_id": "MDQ6VXNlcjEwMzY1NjE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1036561?v=4",
+      "html_url": "https://github.com/davidanthoff",
+      "contributions": 1832
     },
     {
-      "login": "IanButterworth",
-      "id": 1694067,
-      "node_id": "MDQ6VXNlcjE2OTQwNjc=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1694067?v=4",
-      "html_url": "https://github.com/IanButterworth",
-      "contributions": 329
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "html_url": "https://github.com/apps/github-actions",
+      "contributions": 61
+    },
+    {
+      "login": "simeonschaub",
+      "id": 5220528,
+      "node_id": "MDQ6VXNlcjUyMjA1Mjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5220528?v=4",
+      "html_url": "https://github.com/simeonschaub",
+      "contributions": 37
+    },
+    {
+      "login": "christiangnrd",
+      "id": 28689358,
+      "node_id": "MDQ6VXNlcjI4Njg5MzU4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/28689358?v=4",
+      "html_url": "https://github.com/christiangnrd",
+      "contributions": 21
+    },
+    {
+      "login": "wolthom",
+      "id": 69199968,
+      "node_id": "MDQ6VXNlcjY5MTk5OTY4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/69199968?v=4",
+      "html_url": "https://github.com/wolthom",
+      "contributions": 19
+    },
+    {
+      "login": "uncomfyhalomacro",
+      "id": 66054069,
+      "node_id": "MDQ6VXNlcjY2MDU0MDY5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/66054069?v=4",
+      "html_url": "https://github.com/uncomfyhalomacro",
+      "contributions": 13
+    },
+    {
+      "login": "heetbeet",
+      "id": 4103775,
+      "node_id": "MDQ6VXNlcjQxMDM3NzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4103775?v=4",
+      "html_url": "https://github.com/heetbeet",
+      "contributions": 11
+    },
+    {
+      "login": "LilithHafner",
+      "id": 60898866,
+      "node_id": "MDQ6VXNlcjYwODk4ODY2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/60898866?v=4",
+      "html_url": "https://github.com/LilithHafner",
+      "contributions": 11
+    },
+    {
+      "login": "ararslan",
+      "id": 6396159,
+      "node_id": "MDQ6VXNlcjYzOTYxNTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6396159?v=4",
+      "html_url": "https://github.com/ararslan",
+      "contributions": 10
+    },
+    {
+      "login": "ghyatzo",
+      "id": 8601724,
+      "node_id": "MDQ6VXNlcjg2MDE3MjQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8601724?v=4",
+      "html_url": "https://github.com/ghyatzo",
+      "contributions": 10
+    },
+    {
+      "login": "jakobnissen",
+      "id": 23193950,
+      "node_id": "MDQ6VXNlcjIzMTkzOTUw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/23193950?v=4",
+      "html_url": "https://github.com/jakobnissen",
+      "contributions": 8
+    },
+    {
+      "login": "JBlaschke",
+      "id": 4178946,
+      "node_id": "MDQ6VXNlcjQxNzg5NDY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4178946?v=4",
+      "html_url": "https://github.com/JBlaschke",
+      "contributions": 8
+    },
+    {
+      "login": "t-bltg",
+      "id": 13423344,
+      "node_id": "MDQ6VXNlcjEzNDIzMzQ0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13423344?v=4",
+      "html_url": "https://github.com/t-bltg",
+      "contributions": 7
+    },
+    {
+      "login": "fingolfin",
+      "id": 241512,
+      "node_id": "MDQ6VXNlcjI0MTUxMg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/241512?v=4",
+      "html_url": "https://github.com/fingolfin",
+      "contributions": 7
+    },
+    {
+      "login": "gambitier",
+      "id": 22792359,
+      "node_id": "MDQ6VXNlcjIyNzkyMzU5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/22792359?v=4",
+      "html_url": "https://github.com/gambitier",
+      "contributions": 6
+    },
+    {
+      "login": "ktdq",
+      "id": 105746631,
+      "node_id": "U_kgDOBk2Qxw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/105746631?v=4",
+      "html_url": "https://github.com/ktdq",
+      "contributions": 5
+    },
+    {
+      "login": "MilesCranmer",
+      "id": 7593028,
+      "node_id": "MDQ6VXNlcjc1OTMwMjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7593028?v=4",
+      "html_url": "https://github.com/MilesCranmer",
+      "contributions": 5
+    },
+    {
+      "login": "evetion",
+      "id": 8655030,
+      "node_id": "MDQ6VXNlcjg2NTUwMzA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8655030?v=4",
+      "html_url": "https://github.com/evetion",
+      "contributions": 4
+    },
+    {
+      "login": "alecloudenback",
+      "id": 711879,
+      "node_id": "MDQ6VXNlcjcxMTg3OQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/711879?v=4",
+      "html_url": "https://github.com/alecloudenback",
+      "contributions": 3
+    },
+    {
+      "login": "aramirezreyes",
+      "id": 6992761,
+      "node_id": "MDQ6VXNlcjY5OTI3NjE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6992761?v=4",
+      "html_url": "https://github.com/aramirezreyes",
+      "contributions": 3
+    },
+    {
+      "login": "DhruvaSambrani",
+      "id": 44899822,
+      "node_id": "MDQ6VXNlcjQ0ODk5ODIy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/44899822?v=4",
+      "html_url": "https://github.com/DhruvaSambrani",
+      "contributions": 3
+    },
+    {
+      "login": "visr",
+      "id": 4471859,
+      "node_id": "MDQ6VXNlcjQ0NzE4NTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4471859?v=4",
+      "html_url": "https://github.com/visr",
+      "contributions": 3
+    },
+    {
+      "login": "tedbyron",
+      "id": 39110425,
+      "node_id": "MDQ6VXNlcjM5MTEwNDI1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/39110425?v=4",
+      "html_url": "https://github.com/tedbyron",
+      "contributions": 3
+    },
+    {
+      "login": "GunnarFarneback",
+      "id": 1903707,
+      "node_id": "MDQ6VXNlcjE5MDM3MDc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1903707?v=4",
+      "html_url": "https://github.com/GunnarFarneback",
+      "contributions": 2
     }
   ],
   "activeOrg": true

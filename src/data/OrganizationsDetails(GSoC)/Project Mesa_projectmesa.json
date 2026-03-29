@@ -3,20 +3,24 @@
   "image_url": "https://summerofcode.withgoogle.com/media/org/project-mesa/fh3o8surszufvjpv-360.png",
   "image_background_color": "#ffffff",
   "description": "Mesa: Agent-based modeling in Python 3+",
-  "url": "https://mesa.readthedocs.io/en/latest/",
+  "url": "https://mesa.readthedocs.io/latest/",
   "category": [
     "Science and medicine"
   ],
   "topics": [
     "Agent Based Models",
-    "Generative Science"
+    "Generative Science",
+    "simulation"
   ],
   "technologies": [
     "python",
     "javascript",
     "ui/ux",
+    "object oriented programming",
     "LLMs",
-    "Vector Operations"
+    "Vector Operations",
+    "gis",
+    "network topology"
   ],
   "irc_channel": "https://matrix.to/#/#GSoC:matrix.org",
   "contact_email": "mailto:maintainers@projectmesa.dev",
@@ -26,7 +30,8 @@
   "facebook_url": null,
   "year": [
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2024": [
@@ -58,524 +63,48 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/j5r6wYRM"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Mesa-Frames: Stats & Event-Driven Data Collection with Streamed Storage",
+        "short_description": "This project aims to significantly enhance Mesa-Frames by building efficient and scalable data collection tools for large-scale agent-based...",
+        "description": "This project aims to significantly enhance Mesa-Frames by building efficient and scalable data collection tools for large-scale agent-based simulations. The core focus is on developing a flexible framework that allows researchers to analyze simulation data with greater precision and lower overhead. One of the main components, the Stats Collection, will enable users to define exactly which statistics they want to track—such as mean, max, or count—helping reduce both memory usage and computation time.\n\nAnother key feature is the Event Driven Collection, which records data only when predefined conditions are met. This ensures researchers capture meaningful insights while avoiding unnecessary logging and storage. To support even larger simulations, the project will also include integration with external storage systems like PostgreSQL and S3, allowing collected data to be streamed directly to disk or the cloud.\n\nIn addition to these core improvements, the project will focus on performance optimization through lazy execution with Polars and better vectorization. Clear, modular documentation and a focus on usability will ensure Mesa-Frames remains an accessible and powerful tool.",
+        "student_name": "Ben Geo Abraham",
+        "code_url": "https://github.com/Ben-geo/gsoc25-mesa/blob/main/README.md",
+        "proposal_id": "jP5YuRsu",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/k8Emw4vz"
+      },
+      {
+        "title": "Mesa-LLM",
+        "short_description": "As an agent-based modeling (ABM) framework, Mesa is easy to use and applicable for a wide range of simulations. But traditional ABM agents rely on...",
+        "description": "As an agent-based modeling (ABM) framework, Mesa is easy to use and applicable for a wide range of simulations. But traditional ABM agents rely on simple rules and patterns that are chosen by the users themselves, which can limit their adaptability. \n\nThe objective of this project is to develop an extension of Mesa that give agents access to LLMs for reasoning, decision-making, and communication, that can be used not only for simulations, but also to study the impact of different paradigms and reasoning modules in ABM. \n\nThe work involves designing a very modular LLM-agent API (with memory, reasoning, and tool-use components), that integrate with Mesa’s existing architecture (Model, Agent, Scheduler), as well as studying and solving LLM-related problems like memory management, consistency and computing-related challenges.",
+        "student_name": "Colin Frisch",
+        "code_url": "https://github.com/colinfrisch/GSoC_2025/blob/main/GSoC_2025.md",
+        "proposal_id": "AbSX07FN",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/vL10Nnvs"
+      },
+      {
+        "title": "Project MESA: Front-End Upgrade",
+        "short_description": "This proposal aims to enhance the visualization system of Mesa, an agent-based modeling (ABM) framework in python, to make it more modular,...",
+        "description": "This proposal aims to enhance the visualization system of Mesa, an agent-based modeling (ABM) framework in python, to make it more modular, user-friendly, and feature-rich. The project addresses two key issues in the current visualization system: clumped API design and difficulties in model sharing.\n\nThe implementation plan is divided into two phases:\n1) Phase 1 focuses on creating a more modular API for space drawing by developing AgentPortrayalStyle and PropertyLayerStyle components, separating agent drawing from grid drawing with a CoordinateMapper, and creating a unified SpaceRenderer class.\n2) Phase 2 implements model sharing through links, upgrades the Altair visualization backend to match matplotlib capabilities and improves documentation.\n\nDeliverables include: a separate and intuitive visualization API, easy model sharing functionality, an improved Altair backend and comprehensive documentation. This upgrade will significantly improve the user experience for Mesa users.",
+        "student_name": "Sahil Chhoker",
+        "code_url": "https://gist.github.com/Sahil-Chhoker/470d78683664dffc05725bd858beb494",
+        "proposal_id": "OVA4YH5y",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/xggC05EB"
+      },
+      {
+        "title": "Mesa_LLM",
+        "short_description": "This project will aim to create an LLM module within Mesa that enables the use of large language models as autonomous agents, via mesa.llm. This...",
+        "description": "This project will aim to create an LLM module within Mesa that enables the use of large language models as autonomous agents, via mesa.llm. This module will extend Mesa by providing tools to define, simulate, and analyze agents powered by large language models.",
+        "student_name": "Sanika Nair",
+        "code_url": "https://github.com/sanika-n/GSoC_report/blob/main/README.md",
+        "proposal_id": "NkR2LwjM",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/u2qoJn8P"
+      }
+    ],
+    "2026": []
   },
   "githubID": "projectmesa",
-  "repositories": [
-    {
-      "id": 24245737,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNDI0NTczNw==",
-      "name": "mesa",
-      "full_name": "projectmesa/mesa",
-      "html_url": "https://github.com/projectmesa/mesa",
-      "description": "Mesa is an open-source Python library for agent-based modeling, ideal for simulating complex systems and exploring emergent behaviors.",
-      "language": "Python",
-      "stargazers_count": 2954,
-      "forks_count": 996,
-      "open_issues_count": 159,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "agent-based-modeling",
-        "agent-based-simulation",
-        "complex-systems",
-        "complexity-analysis",
-        "gis",
-        "mesa",
-        "modeling-agents",
-        "simulation",
-        "simulation-environment",
-        "simulation-framework",
-        "spatial-models"
-      ]
-    },
-    {
-      "id": 103516534,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMDM1MTY1MzQ=",
-      "name": "mesa-geo",
-      "full_name": "projectmesa/mesa-geo",
-      "html_url": "https://github.com/projectmesa/mesa-geo",
-      "description": "GIS Extension for Mesa Agent-Based Modeling",
-      "language": "Python",
-      "stargazers_count": 187,
-      "forks_count": 67,
-      "open_issues_count": 14,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "agent-based-modeling",
-        "complex-systems",
-        "geospatial-modeling",
-        "gis",
-        "mesa",
-        "mesa-geo",
-        "python",
-        "simulation"
-      ]
-    },
-    {
-      "id": 986435266,
-      "node_id": "R_kgDOOsvOwg",
-      "name": ".github",
-      "full_name": "projectmesa/.github",
-      "html_url": "https://github.com/projectmesa/.github",
-      "description": "Default github settings.",
-      "language": null,
-      "stargazers_count": 0,
-      "forks_count": 1,
-      "open_issues_count": 2,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 42205414,
-      "node_id": "MDEwOlJlcG9zaXRvcnk0MjIwNTQxNA==",
-      "name": "mesa-examples",
-      "full_name": "projectmesa/mesa-examples",
-      "html_url": "https://github.com/projectmesa/mesa-examples",
-      "description": "User and showcase agent-based models developed using Mesa",
-      "language": "Python",
-      "stargazers_count": 167,
-      "forks_count": 179,
-      "open_issues_count": 64,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": [
-        "agent-based-modeling",
-        "agent-based-simulation",
-        "complex",
-        "complexity",
-        "generative-models"
-      ]
-    },
-    {
-      "id": 738465564,
-      "node_id": "R_kgDOLAQXHA",
-      "name": "mesa-frames",
-      "full_name": "projectmesa/mesa-frames",
-      "html_url": "https://github.com/projectmesa/mesa-frames",
-      "description": "Extension of mesa for performance and scalability",
-      "language": "Python",
-      "stargazers_count": 25,
-      "forks_count": 14,
-      "open_issues_count": 53,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "agent-based-modeling",
-        "agent-based-modelling",
-        "complex-systems",
-        "complexity-analysis",
-        "gis",
-        "mesa",
-        "modeling-agents",
-        "pandas",
-        "simulation",
-        "simulation-environment",
-        "simulation-framework",
-        "spatial-models"
-      ]
-    },
-    {
-      "id": 672926432,
-      "node_id": "R_kgDOKBwK4A",
-      "name": "mesa-viz-tornado",
-      "full_name": "projectmesa/mesa-viz-tornado",
-      "html_url": "https://github.com/projectmesa/mesa-viz-tornado",
-      "description": null,
-      "language": "JavaScript",
-      "stargazers_count": 4,
-      "forks_count": 9,
-      "open_issues_count": 34,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 734363572,
-      "node_id": "R_kgDOK8V_tA",
-      "name": "meps",
-      "full_name": "projectmesa/meps",
-      "html_url": "https://github.com/projectmesa/meps",
-      "description": "Mesa Enhancement Proposals",
-      "language": null,
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 3,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 65640496,
-      "node_id": "MDEwOlJlcG9zaXRvcnk2NTY0MDQ5Ng==",
-      "name": "mesa-schelling-example",
-      "full_name": "projectmesa/mesa-schelling-example",
-      "html_url": "https://github.com/projectmesa/mesa-schelling-example",
-      "description": "This is an example of a stand alone model, not located inside the Mesa repo.",
-      "language": "Jupyter Notebook",
-      "stargazers_count": 15,
-      "forks_count": 12,
-      "open_issues_count": 1,
-      "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
-      },
-      "topics": []
-    },
-    {
-      "id": 35854796,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzNTg1NDc5Ng==",
-      "name": "scipy_proceedings",
-      "full_name": "projectmesa/scipy_proceedings",
-      "html_url": "https://github.com/projectmesa/scipy_proceedings",
-      "description": "Tools used to generate the SciPy conference proceedings",
-      "language": "Python",
-      "stargazers_count": 2,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 38844283,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzODg0NDI4Mw==",
-      "name": "Presentations",
-      "full_name": "projectmesa/Presentations",
-      "html_url": "https://github.com/projectmesa/Presentations",
-      "description": "Mesa presentations",
-      "language": "Python",
-      "stargazers_count": 4,
-      "forks_count": 5,
-      "open_issues_count": 0,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    }
-  ],
-  "contributorsDetails": [
-    {
-      "login": "jackiekazil",
-      "id": 166734,
-      "node_id": "MDQ6VXNlcjE2NjczNA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/166734?v=4",
-      "html_url": "https://github.com/jackiekazil",
-      "contributions": 553
-    },
-    {
-      "login": "rht",
-      "id": 395821,
-      "node_id": "MDQ6VXNlcjM5NTgyMQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/395821?v=4",
-      "html_url": "https://github.com/rht",
-      "contributions": 5
-    },
-    {
-      "login": "EwoutH",
-      "id": 15776622,
-      "node_id": "MDQ6VXNlcjE1Nzc2NjIy",
-      "avatar_url": "https://avatars.githubusercontent.com/u/15776622?v=4",
-      "html_url": "https://github.com/EwoutH",
-      "contributions": 27
-    },
-    {
-      "login": "dmasad",
-      "id": 596978,
-      "node_id": "MDQ6VXNlcjU5Njk3OA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/596978?v=4",
-      "html_url": "https://github.com/dmasad",
-      "contributions": 297
-    },
-    {
-      "login": "Corvince",
-      "id": 13568919,
-      "node_id": "MDQ6VXNlcjEzNTY4OTE5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/13568919?v=4",
-      "html_url": "https://github.com/Corvince",
-      "contributions": 46
-    },
-    {
-      "login": "tpike3",
-      "id": 22775448,
-      "node_id": "MDQ6VXNlcjIyNzc1NDQ4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/22775448?v=4",
-      "html_url": "https://github.com/tpike3",
-      "contributions": 13
-    },
-    {
-      "login": "quaquel",
-      "id": 1073249,
-      "node_id": "MDQ6VXNlcjEwNzMyNDk=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1073249?v=4",
-      "html_url": "https://github.com/quaquel",
-      "contributions": 134
-    },
-    {
-      "login": "Tortar",
-      "id": 68152031,
-      "node_id": "MDQ6VXNlcjY4MTUyMDMx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/68152031?v=4",
-      "html_url": "https://github.com/Tortar",
-      "contributions": 58
-    },
-    {
-      "login": "TaylorMutch",
-      "id": 10428066,
-      "node_id": "MDQ6VXNlcjEwNDI4MDY2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/10428066?v=4",
-      "html_url": "https://github.com/TaylorMutch",
-      "contributions": 51
-    },
-    {
-      "login": "pre-commit-ci[bot]",
-      "id": 66853113,
-      "node_id": "MDM6Qm90NjY4NTMxMTM=",
-      "avatar_url": "https://avatars.githubusercontent.com/in/68672?v=4",
-      "html_url": "https://github.com/apps/pre-commit-ci",
-      "contributions": 27
-    },
-    {
-      "login": "cauemello",
-      "id": 4811457,
-      "node_id": "MDQ6VXNlcjQ4MTE0NTc=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/4811457?v=4",
-      "html_url": "https://github.com/cauemello",
-      "contributions": 33
-    },
-    {
-      "login": "djmitche",
-      "id": 28673,
-      "node_id": "MDQ6VXNlcjI4Njcz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/28673?v=4",
-      "html_url": "https://github.com/djmitche",
-      "contributions": 24
-    },
-    {
-      "login": "ReblochonMasque",
-      "id": 6275531,
-      "node_id": "MDQ6VXNlcjYyNzU1MzE=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/6275531?v=4",
-      "html_url": "https://github.com/ReblochonMasque",
-      "contributions": 17
-    },
-    {
-      "login": "nissu99",
-      "id": 131552285,
-      "node_id": "U_kgDOB9dUHQ",
-      "avatar_url": "https://avatars.githubusercontent.com/u/131552285?v=4",
-      "html_url": "https://github.com/nissu99",
-      "contributions": 15
-    },
-    {
-      "login": "SebastianoF",
-      "id": 8709755,
-      "node_id": "MDQ6VXNlcjg3MDk3NTU=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/8709755?v=4",
-      "html_url": "https://github.com/SebastianoF",
-      "contributions": 15
-    },
-    {
-      "login": "lowcloudnine",
-      "id": 2600139,
-      "node_id": "MDQ6VXNlcjI2MDAxMzk=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/2600139?v=4",
-      "html_url": "https://github.com/lowcloudnine",
-      "contributions": 15
-    },
-    {
-      "login": "drewrey",
-      "id": 7526790,
-      "node_id": "MDQ6VXNlcjc1MjY3OTA=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/7526790?v=4",
-      "html_url": "https://github.com/drewrey",
-      "contributions": 13
-    },
-    {
-      "login": "wang-boyu",
-      "id": 10785873,
-      "node_id": "MDQ6VXNlcjEwNzg1ODcz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/10785873?v=4",
-      "html_url": "https://github.com/wang-boyu",
-      "contributions": 120
-    },
-    {
-      "login": "JamesArruda",
-      "id": 31418520,
-      "node_id": "MDQ6VXNlcjMxNDE4NTIw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/31418520?v=4",
-      "html_url": "https://github.com/JamesArruda",
-      "contributions": 11
-    },
-    {
-      "login": "dependabot[bot]",
-      "id": 49699333,
-      "node_id": "MDM6Qm90NDk2OTkzMzM=",
-      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-      "html_url": "https://github.com/apps/dependabot",
-      "contributions": 7
-    },
-    {
-      "login": "jiffyclub",
-      "id": 920492,
-      "node_id": "MDQ6VXNlcjkyMDQ5Mg==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/920492?v=4",
-      "html_url": "https://github.com/jiffyclub",
-      "contributions": 10
-    },
-    {
-      "login": "Sahil-Chhoker",
-      "id": 155215308,
-      "node_id": "U_kgDOCUBlzA",
-      "avatar_url": "https://avatars.githubusercontent.com/u/155215308?v=4",
-      "html_url": "https://github.com/Sahil-Chhoker",
-      "contributions": 10
-    },
-    {
-      "login": "njvrzm",
-      "id": 19716792,
-      "node_id": "MDQ6VXNlcjE5NzE2Nzky",
-      "avatar_url": "https://avatars.githubusercontent.com/u/19716792?v=4",
-      "html_url": "https://github.com/njvrzm",
-      "contributions": 10
-    },
-    {
-      "login": "sanika-n",
-      "id": 174671967,
-      "node_id": "U_kgDOCmlIXw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/174671967?v=4",
-      "html_url": "https://github.com/sanika-n",
-      "contributions": 9
-    },
-    {
-      "login": "rlskoeser",
-      "id": 691231,
-      "node_id": "MDQ6VXNlcjY5MTIzMQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/691231?v=4",
-      "html_url": "https://github.com/rlskoeser",
-      "contributions": 9
-    },
-    {
-      "login": "Holzhauer",
-      "id": 1692563,
-      "node_id": "MDQ6VXNlcjE2OTI1NjM=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1692563?v=4",
-      "html_url": "https://github.com/Holzhauer",
-      "contributions": 1
-    },
-    {
-      "login": "gcallah",
-      "id": 9886904,
-      "node_id": "MDQ6VXNlcjk4ODY5MDQ=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/9886904?v=4",
-      "html_url": "https://github.com/gcallah",
-      "contributions": 8
-    },
-    {
-      "login": "ankitk50",
-      "id": 19813545,
-      "node_id": "MDQ6VXNlcjE5ODEzNTQ1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/19813545?v=4",
-      "html_url": "https://github.com/ankitk50",
-      "contributions": 7
-    },
-    {
-      "login": "Spartan-71",
-      "id": 179602042,
-      "node_id": "U_kgDOCrSCeg",
-      "avatar_url": "https://avatars.githubusercontent.com/u/179602042?v=4",
-      "html_url": "https://github.com/Spartan-71",
-      "contributions": 7
-    },
-    {
-      "login": "ihopethiswillfi",
-      "id": 17611570,
-      "node_id": "MDQ6VXNlcjE3NjExNTcw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/17611570?v=4",
-      "html_url": "https://github.com/ihopethiswillfi",
-      "contributions": 7
-    },
-    {
-      "login": "glicerico",
-      "id": 23503930,
-      "node_id": "MDQ6VXNlcjIzNTAzOTMw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/23503930?v=4",
-      "html_url": "https://github.com/glicerico",
-      "contributions": 3
-    },
-    {
-      "login": "SongshGeo",
-      "id": 45836839,
-      "node_id": "MDQ6VXNlcjQ1ODM2ODM5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/45836839?v=4",
-      "html_url": "https://github.com/SongshGeo",
-      "contributions": 2
-    },
-    {
-      "login": "majdal",
-      "id": 360058,
-      "node_id": "MDQ6VXNlcjM2MDA1OA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/360058?v=4",
-      "html_url": "https://github.com/majdal",
-      "contributions": 2
-    },
-    {
-      "login": "dhruv4",
-      "id": 4268798,
-      "node_id": "MDQ6VXNlcjQyNjg3OTg=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/4268798?v=4",
-      "html_url": "https://github.com/dhruv4",
-      "contributions": 1
-    }
-  ],
-  "activeOrg": true
+  "repositories": [],
+  "contributorsDetails": [],
+  "activeOrg": false
 }

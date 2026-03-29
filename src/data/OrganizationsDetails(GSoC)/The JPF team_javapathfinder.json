@@ -48,7 +48,8 @@
     2022,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2016": [
@@ -427,7 +428,36 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/eXcgkDiq"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Support Java 11/17 for JPF extensions",
+        "short_description": "Java Path Finder (JPF), a specialized Java Virtual Machine for software verification, excels with Java 8 but faces challenges with modern features in...",
+        "description": "Java Path Finder (JPF), a specialized Java Virtual Machine for software verification, excels with Java 8 but faces challenges with modern features in Java 11 and 17, such as bootstrap methods (e.g., lambdas and string concatenation) and internal functions like toString() and hashCode() for records. My project seeks to address this by enhancing JPF to fully support Java 11 and 17. I will upgrade BootstrapMethodInfo to manage string concatenation effectively, refine INVOKEDYNAMIC execution to mirror the host JVM’s dynamic call site generation, and ensure internal functions operate correctly for new Java features. Drawing on OpenJDK research, I’ll implement these changes and validate them with thorough testing. Deliverables include full Java 17 support in JPF’s default branch, a comprehensive test suite for string concatenation and records and  updated documentation. This work will modernize JPF, enabling it to verify advanced Java programs and strengthening its value to the verification community.",
+        "student_name": "Mahmoud Khawaja",
+        "code_url": "https://mahmoud-khawaja.github.io/GSoC2025-The-Jpf-Team/",
+        "proposal_id": "bw96ogIq",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/3FSUKUlW"
+      },
+      {
+        "title": "Support portfolio of solvers in SPF",
+        "short_description": "Java PathFinder (JPF) is an extensible software analysis framework for java bytecode which can be used to check for concurrency defects like...",
+        "description": "Java PathFinder (JPF) is an extensible software analysis framework for java bytecode which can be used to check for concurrency defects like deadlocks, and unhandled exceptions like NullPointerExceptions and AssertionErrors. Symbolic PathFinder (SPF) is its extension that enables symbolic execution of java programs. \n\nThis proposal outlines my plan to contribute to The JPF Team by working on the Support portfolio of solvers in SPF Project during Google Summer of Code 2025. \n\nThe main goal of this project is to enable the simultaneous invocation of multiple constraint solvers, where execution halts as soon as any solver returns a satisfactory result. This approach is expected to enhance SPF's ability to handle a broader range of constraints. \n\nThis Project will extend SPF branch sv-comp. The outcome will enhance SPF’s scalability and applicability in symbolic execution tasks.",
+        "student_name": "Rehan Chalana",
+        "code_url": "https://gist.github.com/RehanChalana/491ca00aa5631dc3a66b15b3d4058650",
+        "proposal_id": "zKPj1vc8",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/XWELkdRG"
+      },
+      {
+        "title": "Support Runtime Exception In SPF",
+        "short_description": "The main goal of this project is to add support for handling runtime exceptions in SPF that will improve SPF's performance on SV-COMP benchmarks....",
+        "description": "The main goal of this project is to add support for handling runtime exceptions in SPF that will improve SPF's performance on SV-COMP benchmarks. There are two main reasons why SPF is losing many points in runtime exception verification tasks. First, SPF is not systematically exploring execution paths where symbolic variables could lead to runtime exceptions like NullPointerException and StringIndexOutOfBoundsException, resulting in many incorrect false results where actual exceptions are not detected. Second, the SV-COMP execution script is lacking proper property detection and result classification for runtime exception scenarios. To address these problems, we should extended SPF to have additional choices that will explore potential runtime exception scenarios when symbolic variables could represent values that can raise them. To deal with this, we can analyze why SPF outputs wrong answers for certain verification tasks and fix them. This systematic approach to runtime exception path exploration will help fix SPF's behavior, improving its scores on SV-COMP benchmarks. This project extends the SPF branch, sv-comp.",
+        "student_name": "Saiff",
+        "code_url": "https://github.com/saifk16/spf-logs/blob/main/Support_For_RuntimeException_In_SPF_GSoC_2025.md",
+        "proposal_id": "XL7amYVo",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/wxOGtvXL"
+      }
+    ],
+    "2026": []
   },
   "githubID": "javapathfinder",
   "repositories": [
@@ -439,9 +469,9 @@
       "html_url": "https://github.com/javapathfinder/jpf-core",
       "description": "JPF is an extensible software analysis framework for Java bytecode. jpf-core is the basis for all JPF projects; you always need to install it. It contains the basic VM and model checking infrastructure, and can be used to check for concurrency defects like deadlocks, and unhandled exceptions like NullPointerExceptions and AssertionErrors.",
       "language": "Java",
-      "stargazers_count": 567,
-      "forks_count": 369,
-      "open_issues_count": 50,
+      "stargazers_count": 609,
+      "forks_count": 407,
+      "open_issues_count": 75,
       "license": null,
       "topics": []
     },
@@ -454,8 +484,8 @@
       "description": null,
       "language": "Java",
       "stargazers_count": 6,
-      "forks_count": 10,
-      "open_issues_count": 3,
+      "forks_count": 15,
+      "open_issues_count": 8,
       "license": {
         "key": "gpl-3.0",
         "name": "GNU General Public License v3.0",
@@ -463,6 +493,20 @@
         "url": "https://api.github.com/licenses/gpl-3.0",
         "node_id": "MDc6TGljZW5zZTk="
       },
+      "topics": []
+    },
+    {
+      "id": 213897769,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMTM4OTc3Njk=",
+      "name": "jpf-nas",
+      "full_name": "javapathfinder/jpf-nas",
+      "html_url": "https://github.com/javapathfinder/jpf-nas",
+      "description": null,
+      "language": "Java",
+      "stargazers_count": 2,
+      "forks_count": 4,
+      "open_issues_count": 6,
+      "license": null,
       "topics": []
     },
     {
@@ -475,7 +519,7 @@
       "language": "TeX",
       "stargazers_count": 3,
       "forks_count": 29,
-      "open_issues_count": 6,
+      "open_issues_count": 4,
       "license": null,
       "topics": []
     },
@@ -488,21 +532,7 @@
       "description": "Symbolic PathFinder",
       "language": null,
       "stargazers_count": 6,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 213897769,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMTM4OTc3Njk=",
-      "name": "jpf-nas",
-      "full_name": "javapathfinder/jpf-nas",
-      "html_url": "https://github.com/javapathfinder/jpf-nas",
-      "description": null,
-      "language": "Java",
-      "stargazers_count": 2,
-      "forks_count": 1,
+      "forks_count": 3,
       "open_issues_count": 0,
       "license": null,
       "topics": []
@@ -603,7 +633,7 @@
       "node_id": "MDQ6VXNlcjcyOTg2MzE=",
       "avatar_url": "https://avatars.githubusercontent.com/u/7298631?v=4",
       "html_url": "https://github.com/cyrille-artho",
-      "contributions": 2
+      "contributions": 1
     },
     {
       "login": "jeandersonbc",
@@ -654,6 +684,14 @@
       "contributions": 8
     },
     {
+      "login": "Mahmoud-Khawaja",
+      "id": 66871920,
+      "node_id": "MDQ6VXNlcjY2ODcxOTIw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/66871920?v=4",
+      "html_url": "https://github.com/Mahmoud-Khawaja",
+      "contributions": 1
+    },
+    {
       "login": "zhangwen0411",
       "id": 11740593,
       "node_id": "MDQ6VXNlcjExNzQwNTkz",
@@ -678,11 +716,11 @@
       "contributions": 4
     },
     {
-      "login": "Mahmoud-Khawaja",
-      "id": 66871920,
-      "node_id": "MDQ6VXNlcjY2ODcxOTIw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/66871920?v=4",
-      "html_url": "https://github.com/Mahmoud-Khawaja",
+      "login": "HritikRaj2",
+      "id": 109974819,
+      "node_id": "U_kgDOBo4VIw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/109974819?v=4",
+      "html_url": "https://github.com/HritikRaj2",
       "contributions": 3
     },
     {
@@ -715,6 +753,14 @@
       "node_id": "MDQ6VXNlcjc0MTk1MTY=",
       "avatar_url": "https://avatars.githubusercontent.com/u/7419516?v=4",
       "html_url": "https://github.com/qsphan",
+      "contributions": 2
+    },
+    {
+      "login": "PritamP20",
+      "id": 102867939,
+      "node_id": "U_kgDOBiGj4w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/102867939?v=4",
+      "html_url": "https://github.com/PritamP20",
       "contributions": 2
     },
     {
@@ -758,11 +804,11 @@
       "contributions": 1
     },
     {
-      "login": "gaurangkudale",
-      "id": 64984006,
-      "node_id": "MDQ6VXNlcjY0OTg0MDA2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/64984006?v=4",
-      "html_url": "https://github.com/gaurangkudale",
+      "login": "Gaoyan1999",
+      "id": 59534933,
+      "node_id": "MDQ6VXNlcjU5NTM0OTMz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/59534933?v=4",
+      "html_url": "https://github.com/Gaoyan1999",
       "contributions": 1
     },
     {
@@ -771,6 +817,22 @@
       "node_id": "U_kgDOBfu3Mw",
       "avatar_url": "https://avatars.githubusercontent.com/u/100382515?v=4",
       "html_url": "https://github.com/jayshah1819",
+      "contributions": 1
+    },
+    {
+      "login": "eklaDFF",
+      "id": 78310039,
+      "node_id": "MDQ6VXNlcjc4MzEwMDM5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/78310039?v=4",
+      "html_url": "https://github.com/eklaDFF",
+      "contributions": 1
+    },
+    {
+      "login": "Sameersawant77",
+      "id": 69522317,
+      "node_id": "MDQ6VXNlcjY5NTIyMzE3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/69522317?v=4",
+      "html_url": "https://github.com/Sameersawant77",
       "contributions": 1
     },
     {
@@ -795,15 +857,7 @@
       "node_id": "MDQ6VXNlcjIxNjkyNTk2",
       "avatar_url": "https://avatars.githubusercontent.com/u/21692596?v=4",
       "html_url": "https://github.com/nas-sh",
-      "contributions": 107
-    },
-    {
-      "login": "hrishi2814",
-      "id": 114474484,
-      "node_id": "U_kgDOBtK99A",
-      "avatar_url": "https://avatars.githubusercontent.com/u/114474484?v=4",
-      "html_url": "https://github.com/hrishi2814",
-      "contributions": 1
+      "contributions": 53
     },
     {
       "login": "quantumfrost",
@@ -820,6 +874,14 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/35465312?v=4",
       "html_url": "https://github.com/franck-van-breugel",
       "contributions": 2
+    },
+    {
+      "login": "hrishi2814",
+      "id": 114474484,
+      "node_id": "U_kgDOBtK99A",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114474484?v=4",
+      "html_url": "https://github.com/hrishi2814",
+      "contributions": 1
     }
   ],
   "activeOrg": false

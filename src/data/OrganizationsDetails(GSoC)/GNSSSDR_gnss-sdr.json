@@ -268,7 +268,35 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/LWPfDnVC"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Characterizing and implementing missing vector operations in the volk-gnsssdr library",
+        "short_description": "Currently, certain essential signal-processing functions, called kernels here, in volk-gnssdr, the Vector-Optimized Library of Kernels for GNSS-SDR,...",
+        "description": "Currently, certain essential signal-processing functions, called kernels here, in volk-gnssdr, the Vector-Optimized Library of Kernels for GNSS-SDR, are not completely optimized. This project hopes to diagnose performance-limiting kernels, implement missing SIMD/vector optimizations for both ARM (NEON) and RISC-V architectures (vector, or V, extension), then benchmark and validate the kernels’ continued functionalities.",
+        "student_name": "Marcus Alagar",
+        "code_url": "https://github.com/gnss-sdr/gnss-sdr/pull/921",
+        "proposal_id": "HJJUwFMp",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/g60T12bi"
+      },
+      {
+        "title": "GNSS-SDR Vector Tracking Loop",
+        "short_description": "This project aims to implement a Vector Tracking Loop (VTL) architecture in GNSS-SDR, a widely used open-source software-defined GNSS receiver....",
+        "description": "This project aims to implement a Vector Tracking Loop (VTL) architecture in GNSS-SDR, a widely used open-source software-defined GNSS receiver. Traditional scalar tracking architecture tracks satellite signals independently, limiting robustness in dynamic or degraded signal environments. In contrast, VTL integrates tracking and navigation tasks into a single algorithm, where all channels collaborate to enhance signal tracking performance, particularly under challenging conditions such as interference or temporary outages.\nThe proposed work will design and integrate a modular, configurable VTL architecture supporting multi-constellation and multi-frequency operation, aligning with the existing capabilities of GNSS-SDR. \nDeliverables include: VTL algorithm implementation, real-time feedback to tracking channels, multi-constellation and multi-frequency support, benchmarking, and documentation. \nThis contribution will enable researchers and developers to explore advanced GNSS techniques related to the VTL architecture within a real-time, open-source SDR.",
+        "student_name": "PedroPereira",
+        "code_url": "https://gist.github.com/pedromiguelcp/0429efab963c9680f5ba5c0d48b5ae29",
+        "proposal_id": "sxxJtUmk",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/pyRTzjuZ"
+      },
+      {
+        "title": "GNSS + INS Sensor Fusion",
+        "short_description": "The goal is to implement a functional GNSS receiver that uses INS measurements to improve the position, velocity and time solutions. This will...",
+        "description": "The goal is to implement a functional GNSS receiver that uses INS measurements to improve the position, velocity and time solutions. This will advance research on sensor fusion, enabling reliable high-accuracy navigation solutions in challenging environments such as the urban cannon. I will leverage state-of-the-art AI techniques, such as Bayesian filters (e.g., Kalman filters and particle filters), graph neural networks (GNNs), and transformers for spatiotemporal data modeling. The end product will consist of a functional prototype receiver which will implement the necessary algorithms.",
+        "student_name": "Víctor Castillo",
+        "code_url": "https://gist.github.com/castle055/902862007ac1d97f35702bc51347b549",
+        "proposal_id": "Qhf0Xufa",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/ItPRA36a"
+      }
+    ]
   },
   "githubID": "gnss-sdr",
   "repositories": [
@@ -280,9 +308,9 @@
       "html_url": "https://github.com/gnss-sdr/gnss-sdr",
       "description": "GNSS-SDR, an open-source software-defined GNSS receiver",
       "language": "C++",
-      "stargazers_count": 1802,
-      "forks_count": 641,
-      "open_issues_count": 187,
+      "stargazers_count": 2046,
+      "forks_count": 694,
+      "open_issues_count": 216,
       "license": {
         "key": "gpl-3.0",
         "name": "GNU General Public License v3.0",
@@ -305,26 +333,6 @@
       ]
     },
     {
-      "id": 547284814,
-      "node_id": "R_kgDOIJ7nTg",
-      "name": "gnss-sdr-vtl",
-      "full_name": "gnss-sdr/gnss-sdr-vtl",
-      "html_url": "https://github.com/gnss-sdr/gnss-sdr-vtl",
-      "description": "GNSS-SDR, an open-source software-defined GNSS receiver",
-      "language": "C++",
-      "stargazers_count": 8,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": []
-    },
-    {
       "id": 67603297,
       "node_id": "MDEwOlJlcG9zaXRvcnk2NzYwMzI5Nw==",
       "name": "geniuss-place",
@@ -332,9 +340,9 @@
       "html_url": "https://github.com/gnss-sdr/geniuss-place",
       "description": "GNSS-SDR Website",
       "language": "SCSS",
-      "stargazers_count": 22,
-      "forks_count": 23,
-      "open_issues_count": 3,
+      "stargazers_count": 24,
+      "forks_count": 24,
+      "open_issues_count": 7,
       "license": {
         "key": "cc-by-4.0",
         "name": "Creative Commons Attribution 4.0 International",
@@ -352,6 +360,26 @@
         "pwa",
         "software-defined-radio"
       ]
+    },
+    {
+      "id": 547284814,
+      "node_id": "R_kgDOIJ7nTg",
+      "name": "gnss-sdr-vtl",
+      "full_name": "gnss-sdr/gnss-sdr-vtl",
+      "html_url": "https://github.com/gnss-sdr/gnss-sdr-vtl",
+      "description": "GNSS-SDR, an open-source software-defined GNSS receiver",
+      "language": "C++",
+      "stargazers_count": 9,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "topics": []
     },
     {
       "id": 60791259,
@@ -375,7 +403,7 @@
       "html_url": "https://github.com/gnss-sdr/gr-dbfcttc",
       "description": "A GNU Radio module of a digital beamformer prototype for GNSS receivers",
       "language": "CMake",
-      "stargazers_count": 18,
+      "stargazers_count": 20,
       "forks_count": 9,
       "open_issues_count": 1,
       "license": null,
@@ -622,7 +650,31 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/6589560?v=4",
       "html_url": "https://github.com/wkazubski",
       "contributions": 2
+    },
+    {
+      "login": "ImgBotApp",
+      "id": 31427850,
+      "node_id": "MDQ6VXNlcjMxNDI3ODUw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/31427850?v=4",
+      "html_url": "https://github.com/ImgBotApp",
+      "contributions": 43
+    },
+    {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "html_url": "https://github.com/apps/dependabot",
+      "contributions": 29
+    },
+    {
+      "login": "devnulling",
+      "id": 11846824,
+      "node_id": "MDQ6VXNlcjExODQ2ODI0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11846824?v=4",
+      "html_url": "https://github.com/devnulling",
+      "contributions": 2
     }
   ],
-  "activeOrg": true
+  "activeOrg": false
 }

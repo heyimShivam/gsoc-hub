@@ -152,7 +152,26 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/FGmF8gS3"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Verifier Selection using LLMs",
+        "short_description": "This project developed a machine-learning framework to predict the most effective software verifier for a given C program – trained on the Software...",
+        "description": "This project developed a machine-learning framework to predict the most effective software verifier for a given C program – trained on the Software Verification Competion (SV-COMP) 2025. The system comprises Verifier-Moira, a modular library for selecting verifiers using program embeddings (e.g., GraphCodeBERT) and predictors (e.g., LightGBM, XGBoost, neural classifier), and Verifier-Moira-Data, a repository for training and publishing predictors. Evaluations show that predictors consistently outperform the best verifier-per-property baseline. Together, the two repositories offer a unique, fully integrated solution: one for training predictors, the other for applying them efficiently to real programs.",
+        "student_name": "Patrik Felbinger",
+        "code_url": "https://www.sosy-lab.org/gsoc/2025/llm-verifier-selection/report.pdf",
+        "proposal_id": "eOmIYm2s",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/RiOOLRsU"
+      },
+      {
+        "title": "CPA-Daemon: Behavior Driven Tests",
+        "short_description": "CPA-Daemon is a microservice (currently gRPC service) for continuous verification of C programs with CPAchecker. Clients could craft gRPC requests...",
+        "description": "CPA-Daemon is a microservice (currently gRPC service) for continuous verification of C programs with CPAchecker. Clients could craft gRPC requests (with details for instructing a CPAchecker program run) sending to CPA-Daemon and receive the program-verification response.\n\nCurrent CPA-Daemon integration tests require large inputs that are difficult to read within code: c input programs, CPAchecker specifications, CPAchecker configurations[3]. So our goal in this project is \"A running integration-test suite for CPA-Daemon based on Cucumber\". \n\nWith Cucumber clear \"Given / When / Then\" semantics in writing test, we aim to reach the same or more branch coverage than the existing integration tests. Adopt Cucumber should help us easily add more test in the future.",
+        "student_name": "Wenyi Shi",
+        "code_url": "https://gitlab.com/sosy-lab/software/cpa-daemon/-/merge_requests/93",
+        "proposal_id": "fn4dzqim",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/gfeHjXL3"
+      }
+    ]
   },
   "githubID": "sosy-lab",
   "repositories": [
@@ -163,9 +182,9 @@
       "full_name": "sosy-lab/cpachecker",
       "html_url": "https://github.com/sosy-lab/cpachecker",
       "description": "CPAchecker, the Configurable Software-Verification Platform (read-only mirror)",
-      "language": "SWIG",
-      "stargazers_count": 240,
-      "forks_count": 90,
+      "language": "Java",
+      "stargazers_count": 252,
+      "forks_count": 92,
       "open_issues_count": 0,
       "license": {
         "key": "apache-2.0",
@@ -190,9 +209,9 @@
       "html_url": "https://github.com/sosy-lab/java-smt",
       "description": "JavaSMT - Unified Java API for SMT solvers.",
       "language": "Java",
-      "stargazers_count": 224,
-      "forks_count": 52,
-      "open_issues_count": 86,
+      "stargazers_count": 232,
+      "forks_count": 57,
+      "open_issues_count": 105,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -214,9 +233,9 @@
       "html_url": "https://github.com/sosy-lab/java-common-lib",
       "description": "SoSy-Lab Java Common Library",
       "language": "Java",
-      "stargazers_count": 12,
-      "forks_count": 12,
-      "open_issues_count": 12,
+      "stargazers_count": 14,
+      "forks_count": 11,
+      "open_issues_count": 15,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -236,9 +255,9 @@
       "html_url": "https://github.com/sosy-lab/benchexec",
       "description": "BenchExec: A Framework for Reliable Benchmarking and Resource Measurement",
       "language": "Python",
-      "stargazers_count": 258,
-      "forks_count": 212,
-      "open_issues_count": 87,
+      "stargazers_count": 281,
+      "forks_count": 223,
+      "open_issues_count": 107,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -257,6 +276,26 @@
       ]
     },
     {
+      "id": 1180833668,
+      "node_id": "R_kgDORmIXhA",
+      "name": "react-vis",
+      "full_name": "sosy-lab/react-vis",
+      "html_url": "https://github.com/sosy-lab/react-vis",
+      "description": "Data Visualization Components",
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": []
+    },
+    {
       "id": 46493895,
       "node_id": "MDEwOlJlcG9zaXRvcnk0NjQ5Mzg5NQ==",
       "name": "cpu-energy-meter",
@@ -264,7 +303,7 @@
       "html_url": "https://github.com/sosy-lab/cpu-energy-meter",
       "description": "A tool for measuring energy consumption of Intel CPUs",
       "language": "C",
-      "stargazers_count": 334,
+      "stargazers_count": 344,
       "forks_count": 31,
       "open_issues_count": 2,
       "license": {
@@ -282,26 +321,6 @@
       ]
     },
     {
-      "id": 596010794,
-      "node_id": "R_kgDOI4ZnKg",
-      "name": "eclipse-cdt",
-      "full_name": "sosy-lab/eclipse-cdt",
-      "html_url": "https://github.com/sosy-lab/eclipse-cdt",
-      "description": "Eclipse CDT™ C/C++ Development Tools",
-      "language": null,
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "license": {
-        "key": "epl-2.0",
-        "name": "Eclipse Public License 2.0",
-        "spdx_id": "EPL-2.0",
-        "url": "https://api.github.com/licenses/epl-2.0",
-        "node_id": "MDc6TGljZW5zZTMy"
-      },
-      "topics": []
-    },
-    {
       "id": 403228859,
       "node_id": "MDEwOlJlcG9zaXRvcnk0MDMyMjg4NTk=",
       "name": "artifact-evaluation",
@@ -310,7 +329,7 @@
       "description": null,
       "language": null,
       "stargazers_count": 0,
-      "forks_count": 1,
+      "forks_count": 0,
       "open_issues_count": 0,
       "license": null,
       "topics": []
@@ -324,7 +343,7 @@
       "description": "An Exchange Format for Verification Witnesses (MOVED, please follow the link)",
       "language": "Python",
       "stargazers_count": 18,
-      "forks_count": 9,
+      "forks_count": 8,
       "open_issues_count": 24,
       "license": {
         "key": "apache-2.0",
@@ -348,7 +367,7 @@
       "html_url": "https://github.com/sosy-lab/sv-benchmarks",
       "description": "Collection of Verification Tasks (MOVED, please follow the link)",
       "language": null,
-      "stargazers_count": 184,
+      "stargazers_count": 188,
       "forks_count": 169,
       "open_issues_count": 80,
       "license": null,
@@ -372,8 +391,8 @@
       "html_url": "https://github.com/sosy-lab/llvm-j",
       "description": "Java bindings for LLVM libraries",
       "language": "Java",
-      "stargazers_count": 8,
-      "forks_count": 2,
+      "stargazers_count": 9,
+      "forks_count": 1,
       "open_issues_count": 2,
       "license": {
         "key": "other",
@@ -396,7 +415,7 @@
       "description": "Implementation of the paper translating XCSP3 benchmarks to C code",
       "language": "C++",
       "stargazers_count": 0,
-      "forks_count": 1,
+      "forks_count": 0,
       "open_issues_count": 0,
       "license": null,
       "topics": []
@@ -410,7 +429,7 @@
       "description": "Information to reproduce results from SV-COMP (MOVED, please follow the link)",
       "language": null,
       "stargazers_count": 15,
-      "forks_count": 51,
+      "forks_count": 50,
       "open_issues_count": 0,
       "license": {
         "key": "apache-2.0",
@@ -435,7 +454,7 @@
       "description": "A collectd plugin for monitoring the power usage of 2nd gen (or later) Intel Core processors",
       "language": "C",
       "stargazers_count": 0,
-      "forks_count": 1,
+      "forks_count": 0,
       "open_issues_count": 0,
       "license": null,
       "topics": []
@@ -449,7 +468,7 @@
       "description": "A framework for using test case generators to locate errors in C programs",
       "language": "OCaml",
       "stargazers_count": 9,
-      "forks_count": 7,
+      "forks_count": 6,
       "open_issues_count": 1,
       "license": {
         "key": "other",
@@ -474,7 +493,7 @@
       "description": "This project is for the development and maintenance of a license for participation in research competitions.",
       "language": null,
       "stargazers_count": 0,
-      "forks_count": 1,
+      "forks_count": 0,
       "open_issues_count": 0,
       "license": {
         "key": "other",
@@ -494,7 +513,7 @@
       "description": "CREST is a concolic test generation tool for C.",
       "language": "C",
       "stargazers_count": 2,
-      "forks_count": 1,
+      "forks_count": 0,
       "open_issues_count": 0,
       "license": {
         "key": "bsd-2-clause",
@@ -514,7 +533,7 @@
       "description": "ReproZip is a tool that simplifies the process of creating reproducible experiments from command-line executions, a frequently-used common denominator in computational science.",
       "language": "Python",
       "stargazers_count": 2,
-      "forks_count": 1,
+      "forks_count": 0,
       "open_issues_count": 0,
       "license": {
         "key": "bsd-3-clause",
@@ -534,7 +553,7 @@
       "description": "Collectd plugin to receive and parse data packets from an SML-capable electricity meter",
       "language": "Java",
       "stargazers_count": 0,
-      "forks_count": 1,
+      "forks_count": 0,
       "open_issues_count": 0,
       "license": null,
       "topics": []
@@ -548,7 +567,7 @@
       "description": "Receive data packets from an SML-capable electricity meter and print their contents in a human-readable format",
       "language": "Java",
       "stargazers_count": 0,
-      "forks_count": 1,
+      "forks_count": 0,
       "open_issues_count": 0,
       "license": {
         "key": "other",
@@ -568,7 +587,7 @@
       "description": "C Bounded Model Checker",
       "language": "C++",
       "stargazers_count": 0,
-      "forks_count": 1,
+      "forks_count": 0,
       "open_issues_count": 0,
       "license": {
         "key": "other",
@@ -587,7 +606,7 @@
       "node_id": "MDQ6VXNlcjI1NDUzMzU=",
       "avatar_url": "https://avatars.githubusercontent.com/u/2545335?v=4",
       "html_url": "https://github.com/PhilippWendler",
-      "contributions": 394
+      "contributions": 1125
     },
     {
       "login": "kfriedberger",
@@ -595,7 +614,15 @@
       "node_id": "MDQ6VXNlcjEwOTk4NTQy",
       "avatar_url": "https://avatars.githubusercontent.com/u/10998542?v=4",
       "html_url": "https://github.com/kfriedberger",
-      "contributions": 2239
+      "contributions": 49
+    },
+    {
+      "login": "baierd",
+      "id": 5865140,
+      "node_id": "MDQ6VXNlcjU4NjUxNDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5865140?v=4",
+      "html_url": "https://github.com/baierd",
+      "contributions": 956
     },
     {
       "login": "lembergerth",
@@ -603,23 +630,23 @@
       "node_id": "MDQ6VXNlcjQ0OTk1MTk=",
       "avatar_url": "https://avatars.githubusercontent.com/u/4499519?v=4",
       "html_url": "https://github.com/lembergerth",
-      "contributions": 4
+      "contributions": 21
     },
     {
-      "login": "cheshire",
-      "id": 348959,
-      "node_id": "MDQ6VXNlcjM0ODk1OQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/348959?v=4",
-      "html_url": "https://github.com/cheshire",
-      "contributions": 516
+      "login": "noahkoenig",
+      "id": 93188136,
+      "node_id": "U_kgDOBY3wKA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/93188136?v=4",
+      "html_url": "https://github.com/noahkoenig",
+      "contributions": 1445
     },
     {
-      "login": "stieglma",
-      "id": 6758666,
-      "node_id": "MDQ6VXNlcjY3NTg2NjY=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/6758666?v=4",
-      "html_url": "https://github.com/stieglma",
-      "contributions": 116
+      "login": "marian-lingsch",
+      "id": 72811099,
+      "node_id": "MDQ6VXNlcjcyODExMDk5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/72811099?v=4",
+      "html_url": "https://github.com/marian-lingsch",
+      "contributions": 1267
     },
     {
       "login": "matthiaskettl",
@@ -627,7 +654,31 @@
       "node_id": "MDQ6VXNlcjQ1NzQyOTkw",
       "avatar_url": "https://avatars.githubusercontent.com/u/45742990?v=4",
       "html_url": "https://github.com/matthiaskettl",
-      "contributions": 915
+      "contributions": 1133
+    },
+    {
+      "login": "cheshire",
+      "id": 348959,
+      "node_id": "MDQ6VXNlcjM0ODk1OQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/348959?v=4",
+      "html_url": "https://github.com/cheshire",
+      "contributions": 75
+    },
+    {
+      "login": "stieglma",
+      "id": 6758666,
+      "node_id": "MDQ6VXNlcjY3NTg2NjY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6758666?v=4",
+      "html_url": "https://github.com/stieglma",
+      "contributions": 1
+    },
+    {
+      "login": "daniel-raffler",
+      "id": 37504648,
+      "node_id": "MDQ6VXNlcjM3NTA0NjQ4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/37504648?v=4",
+      "html_url": "https://github.com/daniel-raffler",
+      "contributions": 1
     },
     {
       "login": "mjankola",
@@ -635,7 +686,7 @@
       "node_id": "U_kgDOCN-WYw",
       "avatar_url": "https://avatars.githubusercontent.com/u/148870755?v=4",
       "html_url": "https://github.com/mjankola",
-      "contributions": 262
+      "contributions": 636
     },
     {
       "login": "schrodibear",
@@ -651,15 +702,15 @@
       "node_id": "MDQ6VXNlcjI5MjAzNzk=",
       "avatar_url": "https://avatars.githubusercontent.com/u/2920379?v=4",
       "html_url": "https://github.com/stephanlukasczyk",
-      "contributions": 9
+      "contributions": 10
     },
     {
-      "login": "daniel-raffler",
-      "id": 37504648,
-      "node_id": "MDQ6VXNlcjM3NTA0NjQ4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/37504648?v=4",
-      "html_url": "https://github.com/daniel-raffler",
-      "contributions": 619
+      "login": "Po-Chun-Chien",
+      "id": 26144660,
+      "node_id": "MDQ6VXNlcjI2MTQ0NjYw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/26144660?v=4",
+      "html_url": "https://github.com/Po-Chun-Chien",
+      "contributions": 144
     },
     {
       "login": "ricffb",
@@ -667,7 +718,15 @@
       "node_id": "MDQ6VXNlcjM1NDM4NTA4",
       "avatar_url": "https://avatars.githubusercontent.com/u/35438508?v=4",
       "html_url": "https://github.com/ricffb",
-      "contributions": 75
+      "contributions": 76
+    },
+    {
+      "login": "leventeBajczi",
+      "id": 12221540,
+      "node_id": "MDQ6VXNlcjEyMjIxNTQw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12221540?v=4",
+      "html_url": "https://github.com/leventeBajczi",
+      "contributions": 26
     },
     {
       "login": "weisenic",
@@ -686,12 +745,28 @@
       "contributions": 34
     },
     {
+      "login": "AkshayWarrier",
+      "id": 58233418,
+      "node_id": "MDQ6VXNlcjU4MjMzNDE4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/58233418?v=4",
+      "html_url": "https://github.com/AkshayWarrier",
+      "contributions": 30
+    },
+    {
       "login": "diiegoNacho",
       "id": 133705573,
       "node_id": "U_kgDOB_gvZQ",
       "avatar_url": "https://avatars.githubusercontent.com/u/133705573?v=4",
       "html_url": "https://github.com/diiegoNacho",
       "contributions": 21
+    },
+    {
+      "login": "cinnacatto",
+      "id": 181373245,
+      "node_id": "U_kgDOCs-JPQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/181373245?v=4",
+      "html_url": "https://github.com/cinnacatto",
+      "contributions": 10
     },
     {
       "login": "Ruckster00",
@@ -710,28 +785,28 @@
       "contributions": 4
     },
     {
-      "login": "Po-Chun-Chien",
-      "id": 26144660,
-      "node_id": "MDQ6VXNlcjI2MTQ0NjYw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/26144660?v=4",
-      "html_url": "https://github.com/Po-Chun-Chien",
-      "contributions": 1
+      "login": "mibrowave",
+      "id": 181993983,
+      "node_id": "U_kgDOCtkB_w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/181993983?v=4",
+      "html_url": "https://github.com/mibrowave",
+      "contributions": 3
     },
     {
-      "login": "sosy-bot",
-      "id": 91528941,
-      "node_id": "U_kgDOBXSe7Q",
-      "avatar_url": "https://avatars.githubusercontent.com/u/91528941?v=4",
-      "html_url": "https://github.com/sosy-bot",
-      "contributions": 1
+      "login": "Qifan234",
+      "id": 171241613,
+      "node_id": "U_kgDOCjTwjQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/171241613?v=4",
+      "html_url": "https://github.com/Qifan234",
+      "contributions": 2
     },
     {
-      "login": "baierd",
-      "id": 5865140,
-      "node_id": "MDQ6VXNlcjU4NjUxNDA=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/5865140?v=4",
-      "html_url": "https://github.com/baierd",
-      "contributions": 401
+      "login": "dbeyer",
+      "id": 2941008,
+      "node_id": "MDQ6VXNlcjI5NDEwMDg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2941008?v=4",
+      "html_url": "https://github.com/dbeyer",
+      "contributions": 4
     },
     {
       "login": "MichaelObermeier",
@@ -787,15 +862,7 @@
       "node_id": "MDQ6VXNlcjE2MTUwNzc5",
       "avatar_url": "https://avatars.githubusercontent.com/u/16150779?v=4",
       "html_url": "https://github.com/ottseb",
-      "contributions": 18
-    },
-    {
-      "login": "leventeBajczi",
-      "id": 12221540,
-      "node_id": "MDQ6VXNlcjEyMjIxNTQw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/12221540?v=4",
-      "html_url": "https://github.com/leventeBajczi",
-      "contributions": 18
+      "contributions": 3
     },
     {
       "login": "serras",
@@ -814,11 +881,19 @@
       "contributions": 10
     },
     {
-      "login": "pruemmer",
-      "id": 4580351,
-      "node_id": "MDQ6VXNlcjQ1ODAzNTE=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/4580351?v=4",
-      "html_url": "https://github.com/pruemmer",
+      "login": "anaslari23",
+      "id": 134554010,
+      "node_id": "U_kgDOCAUhmg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/134554010?v=4",
+      "html_url": "https://github.com/anaslari23",
+      "contributions": 9
+    },
+    {
+      "login": "Notes03",
+      "id": 12072996,
+      "node_id": "MDQ6VXNlcjEyMDcyOTk2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12072996?v=4",
+      "html_url": "https://github.com/Notes03",
       "contributions": 6
     },
     {
@@ -830,11 +905,11 @@
       "contributions": 6
     },
     {
-      "login": "Notes03",
-      "id": 12072996,
-      "node_id": "MDQ6VXNlcjEyMDcyOTk2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/12072996?v=4",
-      "html_url": "https://github.com/Notes03",
+      "login": "pruemmer",
+      "id": 4580351,
+      "node_id": "MDQ6VXNlcjQ1ODAzNTE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4580351?v=4",
+      "html_url": "https://github.com/pruemmer",
       "contributions": 6
     },
     {
@@ -854,14 +929,6 @@
       "contributions": 3
     },
     {
-      "login": "dbeyer",
-      "id": 2941008,
-      "node_id": "MDQ6VXNlcjI5NDEwMDg=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/2941008?v=4",
-      "html_url": "https://github.com/dbeyer",
-      "contributions": 2
-    },
-    {
       "login": "dependabot[bot]",
       "id": 49699333,
       "node_id": "MDM6Qm90NDk2OTkzMzM=",
@@ -875,7 +942,7 @@
       "node_id": "MDQ6VXNlcjE1ODU1OTI3",
       "avatar_url": "https://avatars.githubusercontent.com/u/15855927?v=4",
       "html_url": "https://github.com/stahlbauer",
-      "contributions": 1
+      "contributions": 3
     },
     {
       "login": "refactormyself",
@@ -902,12 +969,36 @@
       "contributions": 1
     },
     {
-      "login": "GrishaVar",
-      "id": 33952698,
-      "node_id": "MDQ6VXNlcjMzOTUyNjk4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/33952698?v=4",
-      "html_url": "https://github.com/GrishaVar",
-      "contributions": 1
+      "login": "alexrhein",
+      "id": 1135510,
+      "node_id": "MDQ6VXNlcjExMzU1MTA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1135510?v=4",
+      "html_url": "https://github.com/alexrhein",
+      "contributions": 6
+    },
+    {
+      "login": "BCSol",
+      "id": 25235834,
+      "node_id": "MDQ6VXNlcjI1MjM1ODM0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25235834?v=4",
+      "html_url": "https://github.com/BCSol",
+      "contributions": 3
+    },
+    {
+      "login": "KlaraCimbalnik",
+      "id": 83311966,
+      "node_id": "MDQ6VXNlcjgzMzExOTY2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/83311966?v=4",
+      "html_url": "https://github.com/KlaraCimbalnik",
+      "contributions": 2
+    },
+    {
+      "login": "mdangl",
+      "id": 13728932,
+      "node_id": "MDQ6VXNlcjEzNzI4OTMy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13728932?v=4",
+      "html_url": "https://github.com/mdangl",
+      "contributions": 2
     }
   ],
   "activeOrg": true

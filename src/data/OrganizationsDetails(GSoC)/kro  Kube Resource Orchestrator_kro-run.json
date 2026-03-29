@@ -30,272 +30,29 @@
     2025
   ],
   "projects": {
-    "2025": []
+    "2025": [
+      {
+        "title": "CLI for kro Resource Management",
+        "short_description": "Building a cli tool for kro resource management. using golang's cobra library. mentioned are the proposed tasks which are about to be completed under...",
+        "description": "Building a cli tool for kro resource management. using golang's cobra library. mentioned are the proposed tasks which are about to be completed under the project scope. \n\nProject goals:\n1) Build a CLI tool to help developers and admins manage kro.\n2) Create commands for common RGD operations [validate/generate/install/publish/package]. 3) Create commands to for RGD and instance viewing and dry-runs. 4) Create commands for monitoring and troubleshooting RGDs, instances and CRDs.",
+        "student_name": "Dhairya Amrish Majmudar",
+        "code_url": "https://gist.github.com/DhairyaMajmudar/7b8a4ba6879931675f050916b3fdd696",
+        "proposal_id": "v5jq3msB",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/usQIHr4B"
+      },
+      {
+        "title": "Enhanced Developer Tools and IDE Integration",
+        "short_description": "I’m building a tool to make working with Kro YAML files easier and more efficient. This tool, called a Language Server Protocol (LSP), will help...",
+        "description": "I’m building a tool to make working with Kro YAML files easier and more efficient. This tool, called a Language Server Protocol (LSP), will help developers by giving real-time feedback, catching errors early, and suggesting code completions. It will also make code more readable with better syntax highlighting and helpful pop-ups.\n\nThe LSP will support popular code editors, starting with VS Code. I’ll also include clear instructions and examples to help users get started. My goal is to make writing and managing Kro YAML files faster and less error-prone, so developers can focus on their work without getting stuck on small issues.",
+        "student_name": "Himanshu Kumar Sharma",
+        "code_url": "https://github.com/kro-run/kro",
+        "proposal_id": "PRR6ABKV",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/Io5wpFgU"
+      }
+    ]
   },
   "githubID": "kro-run",
-  "repositories": [
-    {
-      "id": 856507666,
-      "node_id": "R_kgDOMw1FEg",
-      "name": "kro",
-      "full_name": "kro-run/kro",
-      "html_url": "https://github.com/kro-run/kro",
-      "description": "kro | Kube Resource Orchestrator",
-      "language": "Go",
-      "stargazers_count": 2012,
-      "forks_count": 197,
-      "open_issues_count": 132,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    }
-  ],
-  "contributorsDetails": [
-    {
-      "login": "a-hilaly",
-      "id": 10897901,
-      "node_id": "MDQ6VXNlcjEwODk3OTAx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/10897901?v=4",
-      "html_url": "https://github.com/a-hilaly",
-      "contributions": 285
-    },
-    {
-      "login": "michaelhtm",
-      "id": 98621731,
-      "node_id": "U_kgDOBeDZIw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/98621731?v=4",
-      "html_url": "https://github.com/michaelhtm",
-      "contributions": 55
-    },
-    {
-      "login": "barney-s",
-      "id": 6457279,
-      "node_id": "MDQ6VXNlcjY0NTcyNzk=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/6457279?v=4",
-      "html_url": "https://github.com/barney-s",
-      "contributions": 38
-    },
-    {
-      "login": "joshuabaird",
-      "id": 6271918,
-      "node_id": "MDQ6VXNlcjYyNzE5MTg=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/6271918?v=4",
-      "html_url": "https://github.com/joshuabaird",
-      "contributions": 22
-    },
-    {
-      "login": "candonov",
-      "id": 25967713,
-      "node_id": "MDQ6VXNlcjI1OTY3NzEz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/25967713?v=4",
-      "html_url": "https://github.com/candonov",
-      "contributions": 16
-    },
-    {
-      "login": "DhairyaMajmudar",
-      "id": 124715224,
-      "node_id": "U_kgDOB28A2A",
-      "avatar_url": "https://avatars.githubusercontent.com/u/124715224?v=4",
-      "html_url": "https://github.com/DhairyaMajmudar",
-      "contributions": 14
-    },
-    {
-      "login": "dependabot[bot]",
-      "id": 49699333,
-      "node_id": "MDM6Qm90NDk2OTkzMzM=",
-      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-      "html_url": "https://github.com/apps/dependabot",
-      "contributions": 13
-    },
-    {
-      "login": "rushmash91",
-      "id": 26841233,
-      "node_id": "MDQ6VXNlcjI2ODQxMjMz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/26841233?v=4",
-      "html_url": "https://github.com/rushmash91",
-      "contributions": 12
-    },
-    {
-      "login": "jlbutler",
-      "id": 7277138,
-      "node_id": "MDQ6VXNlcjcyNzcxMzg=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/7277138?v=4",
-      "html_url": "https://github.com/jlbutler",
-      "contributions": 10
-    },
-    {
-      "login": "nicslatts",
-      "id": 17674080,
-      "node_id": "MDQ6VXNlcjE3Njc0MDgw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/17674080?v=4",
-      "html_url": "https://github.com/nicslatts",
-      "contributions": 10
-    },
-    {
-      "login": "tomasaschan",
-      "id": 1550920,
-      "node_id": "MDQ6VXNlcjE1NTA5MjA=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1550920?v=4",
-      "html_url": "https://github.com/tomasaschan",
-      "contributions": 10
-    },
-    {
-      "login": "feliperubo",
-      "id": 38696124,
-      "node_id": "MDQ6VXNlcjM4Njk2MTI0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/38696124?v=4",
-      "html_url": "https://github.com/feliperubo",
-      "contributions": 8
-    },
-    {
-      "login": "n3wscott",
-      "id": 32305648,
-      "node_id": "MDQ6VXNlcjMyMzA1NjQ4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/32305648?v=4",
-      "html_url": "https://github.com/n3wscott",
-      "contributions": 7
-    },
-    {
-      "login": "matthchr",
-      "id": 8798850,
-      "node_id": "MDQ6VXNlcjg3OTg4NTA=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/8798850?v=4",
-      "html_url": "https://github.com/matthchr",
-      "contributions": 7
-    },
-    {
-      "login": "RinkiyaKeDad",
-      "id": 56963264,
-      "node_id": "MDQ6VXNlcjU2OTYzMjY0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/56963264?v=4",
-      "html_url": "https://github.com/RinkiyaKeDad",
-      "contributions": 5
-    },
-    {
-      "login": "yashisrani",
-      "id": 118755067,
-      "node_id": "U_kgDOBxQO-w",
-      "avatar_url": "https://avatars.githubusercontent.com/u/118755067?v=4",
-      "html_url": "https://github.com/yashisrani",
-      "contributions": 5
-    },
-    {
-      "login": "iamahgoub",
-      "id": 87230837,
-      "node_id": "MDQ6VXNlcjg3MjMwODM3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/87230837?v=4",
-      "html_url": "https://github.com/iamahgoub",
-      "contributions": 5
-    },
-    {
-      "login": "7navyasa",
-      "id": 140163168,
-      "node_id": "U_kgDOCFq4YA",
-      "avatar_url": "https://avatars.githubusercontent.com/u/140163168?v=4",
-      "html_url": "https://github.com/7navyasa",
-      "contributions": 4
-    },
-    {
-      "login": "giedri",
-      "id": 27443268,
-      "node_id": "MDQ6VXNlcjI3NDQzMjY4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/27443268?v=4",
-      "html_url": "https://github.com/giedri",
-      "contributions": 4
-    },
-    {
-      "login": "nic-george",
-      "id": 43705712,
-      "node_id": "MDQ6VXNlcjQzNzA1NzEy",
-      "avatar_url": "https://avatars.githubusercontent.com/u/43705712?v=4",
-      "html_url": "https://github.com/nic-george",
-      "contributions": 4
-    },
-    {
-      "login": "justinsb",
-      "id": 100893,
-      "node_id": "MDQ6VXNlcjEwMDg5Mw==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/100893?v=4",
-      "html_url": "https://github.com/justinsb",
-      "contributions": 3
-    },
-    {
-      "login": "Rudra-Sankha-Sinhamahapatra",
-      "id": 101992909,
-      "node_id": "U_kgDOBhRJzQ",
-      "avatar_url": "https://avatars.githubusercontent.com/u/101992909?v=4",
-      "html_url": "https://github.com/Rudra-Sankha-Sinhamahapatra",
-      "contributions": 3
-    },
-    {
-      "login": "bridgetkromhout",
-      "id": 2104453,
-      "node_id": "MDQ6VXNlcjIxMDQ0NTM=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/2104453?v=4",
-      "html_url": "https://github.com/bridgetkromhout",
-      "contributions": 3
-    },
-    {
-      "login": "greghaynes",
-      "id": 42657,
-      "node_id": "MDQ6VXNlcjQyNjU3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/42657?v=4",
-      "html_url": "https://github.com/greghaynes",
-      "contributions": 3
-    },
-    {
-      "login": "tzahimizrahi",
-      "id": 5658093,
-      "node_id": "MDQ6VXNlcjU2NTgwOTM=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/5658093?v=4",
-      "html_url": "https://github.com/tzahimizrahi",
-      "contributions": 2
-    },
-    {
-      "login": "vmanikes",
-      "id": 16039325,
-      "node_id": "MDQ6VXNlcjE2MDM5MzI1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/16039325?v=4",
-      "html_url": "https://github.com/vmanikes",
-      "contributions": 2
-    },
-    {
-      "login": "allamand",
-      "id": 8956643,
-      "node_id": "MDQ6VXNlcjg5NTY2NDM=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/8956643?v=4",
-      "html_url": "https://github.com/allamand",
-      "contributions": 2
-    },
-    {
-      "login": "DanielKlt",
-      "id": 45208653,
-      "node_id": "MDQ6VXNlcjQ1MjA4NjUz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/45208653?v=4",
-      "html_url": "https://github.com/DanielKlt",
-      "contributions": 2
-    },
-    {
-      "login": "chamodshehanka",
-      "id": 19349315,
-      "node_id": "MDQ6VXNlcjE5MzQ5MzE1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/19349315?v=4",
-      "html_url": "https://github.com/chamodshehanka",
-      "contributions": 2
-    },
-    {
-      "login": "vibe",
-      "id": 30784921,
-      "node_id": "MDQ6VXNlcjMwNzg0OTIx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/30784921?v=4",
-      "html_url": "https://github.com/vibe",
-      "contributions": 2
-    }
-  ],
-  "activeOrg": true
+  "repositories": [],
+  "contributorsDetails": [],
+  "activeOrg": false
 }

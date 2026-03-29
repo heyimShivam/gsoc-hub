@@ -2,7 +2,7 @@
   "name": "API Dash",
   "image_url": "https://summerofcode.withgoogle.com/media/org/api-dash/wgtarubdkvdp5qih-360.png",
   "image_background_color": "#ffffff",
-  "description": "Next-gen Open Source AI powered API DevTool",
+  "description": "Next-gen AI powered Open Source API DevTool",
   "url": "https://apidash.dev",
   "category": [
     "Development tools"
@@ -13,7 +13,10 @@
     "developer tools",
     "automation",
     "app development",
-    "GenAI"
+    "GenAI",
+    "ai",
+    "Agents",
+    "MCP"
   ],
   "technologies": [
     "flutter",
@@ -21,7 +24,10 @@
     "nosql",
     "dart",
     "ai",
-    "ui/ux"
+    "ui/ux",
+    "python",
+    "react",
+    "typescript"
   ],
   "irc_channel": "https://discord.com/invite/bBeSdtJ6Ue",
   "contact_email": "mailto:ankit@apidash.dev",
@@ -31,7 +37,8 @@
   "facebook_url": null,
   "year": [
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2024": [
@@ -45,7 +52,27 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/exbL7COY"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "AI-Based API Response to Dynamic UI and Tool Generator",
+        "short_description": "This project introduces an AI-powered agent that automates the transformation of API responses into structured UI schemas and functional UI...",
+        "description": "This project introduces an AI-powered agent that automates the transformation of API responses into structured UI schemas and functional UI components across various frontend frameworks. Using Multiple LLM-Based Agents, the system eliminates the need for manual UI creation by intelligently analysing API responses and generating corresponding UI structures. Additionally, it enables dynamic modification of UI components based on user prompts, allowing for customisation in design, layout, and behavior. By seamlessly integrating these capabilities into a unified workflow, the project streamlines frontend development, reducing manual effort and accelerating the UI generation process with a single-click solution.\nThe project also aims to create a simple one-click API Request to Tool Generation pipeline that can enable external AI agents to interact with APIs without any manual coding\n\nDeliverables:\n• A Modular AI Agent Creation & calling mechanism for apidash's future AI-based tasks\n\n• One-Click solution to generate UI components from an API Response\n\n• One-Click solution to automatically generate API Tools to be used in various Agentic Frameworks like Langchain, Autogen and so on.",
+        "student_name": "Manas Hejmadi",
+        "code_url": "https://github.com/foss42/apidash/blob/main/doc/gsoc/2025/manas_hejmadi.md",
+        "proposal_id": "pNJ1dRGp",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/hhUUM8wl"
+      },
+      {
+        "title": "DashBot and API Authentication",
+        "short_description": "I will be developing DashBot - the AI assistant for API Dash which supercharges developer productivity by helping developers automate tedious tasks,...",
+        "description": "I will be developing DashBot - the AI assistant for API Dash which supercharges developer productivity by helping developers automate tedious tasks, follow best practices, interact & obtain contextual suggestions, all via natural-language input. DashBot will be designed in a modular and extensible manner and provide the following list of features:\n\n1. Explain responses & identify any discrepancy\n2. Debug requests based on Status codes & Error messages\n3. Generate API documentation\n4. Understand API and generate tests\n5. Generate plots & visualizations for API responses along with ability to customize\n6. Generate API integration frontend code for frontend frameworks like React, Flutter, etc.\n\nFor each of the tasks benchmark evaluations will also be done so that it is easier for end users to choose the right backend LLM.\n\nAdd support for various API Authentication Methods such as, Basic authentication, API Auth, API key, Bearer token, JWT Bearer, Digest Auth, OAuth 1.0, OAuth 2.0.",
+        "student_name": "Udhay Adithya J",
+        "code_url": "https://github.com/foss42/apidash/blob/main/doc/gsoc/2025/udhay_adithya_j.md",
+        "proposal_id": "OYPJKcur",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/1Yf6TmCm"
+      }
+    ],
+    "2026": []
   },
   "githubID": "foss42",
   "repositories": [
@@ -57,9 +84,9 @@
       "html_url": "https://github.com/foss42/apidash",
       "description": "API Dash is a beautiful AI-powered open-source cross-platform (Desktop & Mobile) API Client built using Flutter which can help you easily create & customize your HTTP & GraphQL API requests, visually inspect responses and generate API integration code. A lightweight alternative to postman/insomnia.",
       "language": "Dart",
-      "stargazers_count": 2112,
-      "forks_count": 536,
-      "open_issues_count": 97,
+      "stargazers_count": 2769,
+      "forks_count": 924,
+      "open_issues_count": 309,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -90,35 +117,6 @@
       ]
     },
     {
-      "id": 580287790,
-      "node_id": "R_kgDOIpZ9Lg",
-      "name": "api",
-      "full_name": "foss42/api",
-      "html_url": "https://github.com/foss42/api",
-      "description": "Open Source APIs",
-      "language": "Python",
-      "stargazers_count": 63,
-      "forks_count": 30,
-      "open_issues_count": 9,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "api",
-        "api-rest",
-        "apis",
-        "fast-api",
-        "fastapi",
-        "gssoc",
-        "public-api",
-        "public-apis"
-      ]
-    },
-    {
       "id": 792686444,
       "node_id": "R_kgDOLz9vbA",
       "name": "awesome-generative-ai-apis",
@@ -126,8 +124,8 @@
       "html_url": "https://github.com/foss42/awesome-generative-ai-apis",
       "description": "A curated list of useful Generative AI APIs for developers",
       "language": "Dart",
-      "stargazers_count": 171,
-      "forks_count": 69,
+      "stargazers_count": 212,
+      "forks_count": 80,
       "open_issues_count": 0,
       "license": {
         "key": "apache-2.0",
@@ -146,6 +144,61 @@
       ]
     },
     {
+      "id": 580287790,
+      "node_id": "R_kgDOIpZ9Lg",
+      "name": "api",
+      "full_name": "foss42/api",
+      "html_url": "https://github.com/foss42/api",
+      "description": "Open Source APIs",
+      "language": "Python",
+      "stargazers_count": 69,
+      "forks_count": 35,
+      "open_issues_count": 14,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "api",
+        "api-rest",
+        "apis",
+        "fast-api",
+        "fastapi",
+        "gssoc",
+        "hacktoberfest",
+        "public-api",
+        "public-apis"
+      ]
+    },
+    {
+      "id": 587904628,
+      "node_id": "R_kgDOIwq2dA",
+      "name": "foss42-core",
+      "full_name": "foss42/foss42-core",
+      "html_url": "https://github.com/foss42/foss42-core",
+      "description": "Core library of our APIs",
+      "language": "Python",
+      "stargazers_count": 30,
+      "forks_count": 41,
+      "open_issues_count": 3,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "gssoc",
+        "hacktoberfest",
+        "python",
+        "python3"
+      ]
+    },
+    {
       "id": 828525168,
       "node_id": "R_kgDOMWJKcA",
       "name": "curl_converter",
@@ -153,7 +206,7 @@
       "html_url": "https://github.com/foss42/curl_converter",
       "description": "Moved to: https://github.com/foss42/apidash/tree/main/packages/curl_parser. A Dart package for effortless conversion between cURL commands and Dart classes.",
       "language": "Dart",
-      "stargazers_count": 0,
+      "stargazers_count": 1,
       "forks_count": 1,
       "open_issues_count": 0,
       "license": {
@@ -166,38 +219,14 @@
       "topics": []
     },
     {
-      "id": 587904628,
-      "node_id": "R_kgDOIwq2dA",
-      "name": "foss42-core",
-      "full_name": "foss42/foss42-core",
-      "html_url": "https://github.com/foss42/foss42-core",
-      "description": "Core library of our APIs",
-      "language": "Python",
-      "stargazers_count": 29,
-      "forks_count": 39,
-      "open_issues_count": 3,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "gssoc",
-        "python",
-        "python3"
-      ]
-    },
-    {
       "id": 828272798,
       "node_id": "R_kgDOMV5wng",
       "name": "multi_trigger_autocomplete",
       "full_name": "foss42/multi_trigger_autocomplete",
       "html_url": "https://github.com/foss42/multi_trigger_autocomplete",
-      "description": "A flutter widget to add trigger based autocomplete functionality to your app.",
+      "description": "Moved to https://github.com/foss42/apidash/tree/main/packages/multi_trigger_autocomplete_plus . A flutter widget to add trigger based autocomplete functionality to your app.",
       "language": null,
-      "stargazers_count": 0,
+      "stargazers_count": 1,
       "forks_count": 1,
       "open_issues_count": 0,
       "license": {
@@ -217,7 +246,7 @@
       "html_url": "https://github.com/foss42/json_data_explorer",
       "description": "Moved to: https://github.com/foss42/apidash/tree/main/packages/json_explorer. A highly customizable Flutter widget to render and interact with JSON objects.",
       "language": "Dart",
-      "stargazers_count": 0,
+      "stargazers_count": 1,
       "forks_count": 2,
       "open_issues_count": 0,
       "license": {
@@ -246,6 +275,14 @@
   ],
   "contributorsDetails": [
     {
+      "login": "animator",
+      "id": 615622,
+      "node_id": "MDQ6VXNlcjYxNTYyMg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/615622?v=4",
+      "html_url": "https://github.com/animator",
+      "contributions": 30
+    },
+    {
       "login": "ashitaprasad",
       "id": 1382619,
       "node_id": "MDQ6VXNlcjEzODI2MTk=",
@@ -254,12 +291,12 @@
       "contributions": 30
     },
     {
-      "login": "animator",
-      "id": 615622,
-      "node_id": "MDQ6VXNlcjYxNTYyMg==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/615622?v=4",
-      "html_url": "https://github.com/animator",
-      "contributions": 27
+      "login": "Udhay-Adithya",
+      "id": 164346077,
+      "node_id": "U_kgDOCcu43Q",
+      "avatar_url": "https://avatars.githubusercontent.com/u/164346077?v=4",
+      "html_url": "https://github.com/Udhay-Adithya",
+      "contributions": 7
     },
     {
       "login": "DenserMeerkat",
@@ -268,6 +305,14 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/95911940?v=4",
       "html_url": "https://github.com/DenserMeerkat",
       "contributions": 203
+    },
+    {
+      "login": "synapsecode",
+      "id": 67999871,
+      "node_id": "MDQ6VXNlcjY3OTk5ODcx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/67999871?v=4",
+      "html_url": "https://github.com/synapsecode",
+      "contributions": 134
     },
     {
       "login": "AcousticDeveloper",
@@ -284,6 +329,14 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/117105258?v=4",
       "html_url": "https://github.com/Clasherzz",
       "contributions": 68
+    },
+    {
+      "login": "siddu015",
+      "id": 116783967,
+      "node_id": "U_kgDOBvX7Xw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/116783967?v=4",
+      "html_url": "https://github.com/siddu015",
+      "contributions": 42
     },
     {
       "login": "badnikhil",
@@ -307,14 +360,6 @@
       "node_id": "MDQ6VXNlcjU1NDg4MTY1",
       "avatar_url": "https://avatars.githubusercontent.com/u/55488165?v=4",
       "html_url": "https://github.com/Tanish2002",
-      "contributions": 30
-    },
-    {
-      "login": "siddu015",
-      "id": 116783967,
-      "node_id": "U_kgDOBvX7Xw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/116783967?v=4",
-      "html_url": "https://github.com/siddu015",
       "contributions": 30
     },
     {
@@ -342,12 +387,12 @@
       "contributions": 21
     },
     {
-      "login": "Udhay-Adithya",
-      "id": 164346077,
-      "node_id": "U_kgDOCcu43Q",
-      "avatar_url": "https://avatars.githubusercontent.com/u/164346077?v=4",
-      "html_url": "https://github.com/Udhay-Adithya",
-      "contributions": 6
+      "login": "ayaan-md-blr",
+      "id": 173680997,
+      "node_id": "U_kgDOClopZQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/173680997?v=4",
+      "html_url": "https://github.com/ayaan-md-blr",
+      "contributions": 16
     },
     {
       "login": "YoussefMoRabie",
@@ -366,12 +411,36 @@
       "contributions": 15
     },
     {
+      "login": "adityasuhane-06",
+      "id": 118586813,
+      "node_id": "U_kgDOBxF9vQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/118586813?v=4",
+      "html_url": "https://github.com/adityasuhane-06",
+      "contributions": 14
+    },
+    {
       "login": "mmjsmohit",
       "id": 65406090,
       "node_id": "MDQ6VXNlcjY1NDA2MDkw",
       "avatar_url": "https://avatars.githubusercontent.com/u/65406090?v=4",
       "html_url": "https://github.com/mmjsmohit",
       "contributions": 14
+    },
+    {
+      "login": "gauravk16in",
+      "id": 233145009,
+      "node_id": "U_kgDODeWCsQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/233145009?v=4",
+      "html_url": "https://github.com/gauravk16in",
+      "contributions": 13
+    },
+    {
+      "login": "ShashwatXD",
+      "id": 71784456,
+      "node_id": "MDQ6VXNlcjcxNzg0NDU2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/71784456?v=4",
+      "html_url": "https://github.com/ShashwatXD",
+      "contributions": 13
     },
     {
       "login": "royshruti",
@@ -406,6 +475,22 @@
       "contributions": 11
     },
     {
+      "login": "rithakith",
+      "id": 105145054,
+      "node_id": "U_kgDOBkRi3g",
+      "avatar_url": "https://avatars.githubusercontent.com/u/105145054?v=4",
+      "html_url": "https://github.com/rithakith",
+      "contributions": 11
+    },
+    {
+      "login": "praaatap",
+      "id": 98013953,
+      "node_id": "U_kgDOBdeTAQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/98013953?v=4",
+      "html_url": "https://github.com/praaatap",
+      "contributions": 11
+    },
+    {
       "login": "Mixel2004",
       "id": 84668201,
       "node_id": "MDQ6VXNlcjg0NjY4MjAx",
@@ -422,30 +507,6 @@
       "contributions": 10
     },
     {
-      "login": "AffanShaikhsurab",
-      "id": 51104750,
-      "node_id": "MDQ6VXNlcjUxMTA0NzUw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/51104750?v=4",
-      "html_url": "https://github.com/AffanShaikhsurab",
-      "contributions": 9
-    },
-    {
-      "login": "ketan-sonar",
-      "id": 62693272,
-      "node_id": "MDQ6VXNlcjYyNjkzMjcy",
-      "avatar_url": "https://avatars.githubusercontent.com/u/62693272?v=4",
-      "html_url": "https://github.com/ketan-sonar",
-      "contributions": 9
-    },
-    {
-      "login": "morpheus-30",
-      "id": 95480625,
-      "node_id": "U_kgDOBbDrMQ",
-      "avatar_url": "https://avatars.githubusercontent.com/u/95480625?v=4",
-      "html_url": "https://github.com/morpheus-30",
-      "contributions": 9
-    },
-    {
       "login": "Kop3sh",
       "id": 30801129,
       "node_id": "MDQ6VXNlcjMwODAxMTI5",
@@ -454,36 +515,228 @@
       "contributions": 9
     },
     {
-      "login": "GANGSTER0910",
-      "id": 131845175,
-      "node_id": "U_kgDOB9vMNw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/131845175?v=4",
-      "html_url": "https://github.com/GANGSTER0910",
-      "contributions": 8
+      "login": "Aditijainnn",
+      "id": 144632601,
+      "node_id": "U_kgDOCJ7rGQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/144632601?v=4",
+      "html_url": "https://github.com/Aditijainnn",
+      "contributions": 6
     },
     {
-      "login": "Azur3-bit",
-      "id": 73417492,
-      "node_id": "MDQ6VXNlcjczNDE3NDky",
-      "avatar_url": "https://avatars.githubusercontent.com/u/73417492?v=4",
-      "html_url": "https://github.com/Azur3-bit",
-      "contributions": 8
+      "login": "sharmi4590",
+      "id": 102676949,
+      "node_id": "U_kgDOBh651Q",
+      "avatar_url": "https://avatars.githubusercontent.com/u/102676949?v=4",
+      "html_url": "https://github.com/sharmi4590",
+      "contributions": 6
     },
     {
-      "login": "PCoder23",
-      "id": 85278795,
-      "node_id": "MDQ6VXNlcjg1Mjc4Nzk1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/85278795?v=4",
-      "html_url": "https://github.com/PCoder23",
-      "contributions": 8
+      "login": "VVKMulukutla",
+      "id": 105053426,
+      "node_id": "U_kgDOBkL88g",
+      "avatar_url": "https://avatars.githubusercontent.com/u/105053426?v=4",
+      "html_url": "https://github.com/VVKMulukutla",
+      "contributions": 6
     },
     {
-      "login": "Mrudul-2",
-      "id": 147049798,
-      "node_id": "U_kgDOCMPNRg",
-      "avatar_url": "https://avatars.githubusercontent.com/u/147049798?v=4",
-      "html_url": "https://github.com/Mrudul-2",
-      "contributions": 8
+      "login": "Antiquely3059",
+      "id": 112797055,
+      "node_id": "U_kgDOBrklfw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/112797055?v=4",
+      "html_url": "https://github.com/Antiquely3059",
+      "contributions": 5
+    },
+    {
+      "login": "Abhay182005dat",
+      "id": 145827052,
+      "node_id": "U_kgDOCLEk7A",
+      "avatar_url": "https://avatars.githubusercontent.com/u/145827052?v=4",
+      "html_url": "https://github.com/Abhay182005dat",
+      "contributions": 4
+    },
+    {
+      "login": "aditya-bhaumik",
+      "id": 92214013,
+      "node_id": "U_kgDOBX8S_Q",
+      "avatar_url": "https://avatars.githubusercontent.com/u/92214013?v=4",
+      "html_url": "https://github.com/aditya-bhaumik",
+      "contributions": 4
+    },
+    {
+      "login": "Santhosh-Siddhardha",
+      "id": 103999924,
+      "node_id": "U_kgDOBjLptA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/103999924?v=4",
+      "html_url": "https://github.com/Santhosh-Siddhardha",
+      "contributions": 3
+    },
+    {
+      "login": "PradnyaGaitonde",
+      "id": 116059908,
+      "node_id": "U_kgDOBurvBA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/116059908?v=4",
+      "html_url": "https://github.com/PradnyaGaitonde",
+      "contributions": 3
+    },
+    {
+      "login": "sarayusreeyadavpadala",
+      "id": 134043600,
+      "node_id": "U_kgDOB_1X0A",
+      "avatar_url": "https://avatars.githubusercontent.com/u/134043600?v=4",
+      "html_url": "https://github.com/sarayusreeyadavpadala",
+      "contributions": 3
+    },
+    {
+      "login": "Shantnu-singh",
+      "id": 98252196,
+      "node_id": "U_kgDOBds1pA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/98252196?v=4",
+      "html_url": "https://github.com/Shantnu-singh",
+      "contributions": 3
+    },
+    {
+      "login": "VShalini01",
+      "id": 163420743,
+      "node_id": "U_kgDOCb2aRw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/163420743?v=4",
+      "html_url": "https://github.com/VShalini01",
+      "contributions": 3
+    },
+    {
+      "login": "umairullah0905",
+      "id": 114903251,
+      "node_id": "U_kgDOBtlI0w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114903251?v=4",
+      "html_url": "https://github.com/umairullah0905",
+      "contributions": 3
+    },
+    {
+      "login": "divyansh-2005",
+      "id": 118552563,
+      "node_id": "U_kgDOBxD38w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/118552563?v=4",
+      "html_url": "https://github.com/divyansh-2005",
+      "contributions": 2
+    },
+    {
+      "login": "dhj2025",
+      "id": 195521130,
+      "node_id": "U_kgDOC6dqag",
+      "avatar_url": "https://avatars.githubusercontent.com/u/195521130?v=4",
+      "html_url": "https://github.com/dhj2025",
+      "contributions": 2
+    },
+    {
+      "login": "StutiRajput07",
+      "id": 110724092,
+      "node_id": "U_kgDOBpmD_A",
+      "avatar_url": "https://avatars.githubusercontent.com/u/110724092?v=4",
+      "html_url": "https://github.com/StutiRajput07",
+      "contributions": 2
+    },
+    {
+      "login": "voodoohop",
+      "id": 5099901,
+      "node_id": "MDQ6VXNlcjUwOTk5MDE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5099901?v=4",
+      "html_url": "https://github.com/voodoohop",
+      "contributions": 1
+    },
+    {
+      "login": "prakash-in21",
+      "id": 935187,
+      "node_id": "MDQ6VXNlcjkzNTE4Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/935187?v=4",
+      "html_url": "https://github.com/prakash-in21",
+      "contributions": 1
+    },
+    {
+      "login": "paneer24",
+      "id": 99405385,
+      "node_id": "U_kgDOBezOSQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/99405385?v=4",
+      "html_url": "https://github.com/paneer24",
+      "contributions": 1
+    },
+    {
+      "login": "Nikita1kum",
+      "id": 124607024,
+      "node_id": "U_kgDOB21aMA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/124607024?v=4",
+      "html_url": "https://github.com/Nikita1kum",
+      "contributions": 1
+    },
+    {
+      "login": "iABn0rma1",
+      "id": 75512370,
+      "node_id": "MDQ6VXNlcjc1NTEyMzcw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/75512370?v=4",
+      "html_url": "https://github.com/iABn0rma1",
+      "contributions": 1
+    },
+    {
+      "login": "Praneeth2312",
+      "id": 153410698,
+      "node_id": "U_kgDOCSTcig",
+      "avatar_url": "https://avatars.githubusercontent.com/u/153410698?v=4",
+      "html_url": "https://github.com/Praneeth2312",
+      "contributions": 1
+    },
+    {
+      "login": "Zayn111666",
+      "id": 220637857,
+      "node_id": "U_kgDODSaqoQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/220637857?v=4",
+      "html_url": "https://github.com/Zayn111666",
+      "contributions": 1
+    },
+    {
+      "login": "vivekvardhan2810",
+      "id": 91594529,
+      "node_id": "U_kgDOBXWfIQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/91594529?v=4",
+      "html_url": "https://github.com/vivekvardhan2810",
+      "contributions": 1
+    },
+    {
+      "login": "Vaibhav-kesarwani",
+      "id": 116189379,
+      "node_id": "U_kgDOBuzoww",
+      "avatar_url": "https://avatars.githubusercontent.com/u/116189379?v=4",
+      "html_url": "https://github.com/Vaibhav-kesarwani",
+      "contributions": 1
+    },
+    {
+      "login": "tanyasheru23",
+      "id": 115335731,
+      "node_id": "U_kgDOBt_iMw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/115335731?v=4",
+      "html_url": "https://github.com/tanyasheru23",
+      "contributions": 1
+    },
+    {
+      "login": "Sundramrai3691",
+      "id": 161126632,
+      "node_id": "U_kgDOCZqY6A",
+      "avatar_url": "https://avatars.githubusercontent.com/u/161126632?v=4",
+      "html_url": "https://github.com/Sundramrai3691",
+      "contributions": 1
+    },
+    {
+      "login": "Sneha-mav",
+      "id": 130782754,
+      "node_id": "U_kgDOB8uWIg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/130782754?v=4",
+      "html_url": "https://github.com/Sneha-mav",
+      "contributions": 1
+    },
+    {
+      "login": "root-0101",
+      "id": 142779809,
+      "node_id": "U_kgDOCIKloQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/142779809?v=4",
+      "html_url": "https://github.com/root-0101",
+      "contributions": 1
     },
     {
       "login": "arpy8",
@@ -491,6 +744,14 @@
       "node_id": "MDQ6VXNlcjc0ODA5NDY4",
       "avatar_url": "https://avatars.githubusercontent.com/u/74809468?v=4",
       "html_url": "https://github.com/arpy8",
+      "contributions": 1
+    },
+    {
+      "login": "hafijulali",
+      "id": 34641911,
+      "node_id": "MDQ6VXNlcjM0NjQxOTEx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/34641911?v=4",
+      "html_url": "https://github.com/hafijulali",
       "contributions": 1
     },
     {

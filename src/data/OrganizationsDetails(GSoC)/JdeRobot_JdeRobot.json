@@ -29,7 +29,7 @@
   "contact_email": "mailto:jderobot@gmail.com",
   "mailing_list": "https://gsyc.urjc.es/cgi-bin/mailman/listinfo/jde-developers",
   "twitter_url": "https://twitter.com/JdeRobot",
-  "blog_url": null,
+  "blog_url": "https://www.linkedin.com/company/jderobot/",
   "facebook_url": null,
   "year": [
     2017,
@@ -40,7 +40,8 @@
     2022,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2017": [
@@ -396,10 +397,95 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/QckhmL6q"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Robotics Academy: CI & Testing",
+        "short_description": "The primary goal of this project is to establish an automated testing framework for the Robotics Academy (RA), Robotics Infrastructure (RI), and...",
+        "description": "The primary goal of this project is to establish an automated testing framework for the Robotics Academy (RA), Robotics Infrastructure (RI), and Robotics Application Manager (RAM) repositories. This framework will include a suite of unit and integration tests to verify functional correctness and ensure that the software remains maintainable and robust.\nAdditionally, the project will focus on creating continuous integration (CI) pipelines, ensuring early detection of issues, and fostering a culture of quality and accountability across the projects.",
+        "student_name": "Abdallah Ibrahim Ismail",
+        "code_url": "https://theroboticsclub.github.io/gsoc2025-Abdallah_Ibrahim_Ismail/final-report",
+        "proposal_id": "JYvjvTkj",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/msXOO4mb"
+      },
+      {
+        "title": "Robotics-Academy: Porting Exercises to Native ROS2 with Direct Topic Integration",
+        "short_description": "This project aims to enhance the Robotics-Academy platform by porting selected exercises to native ROS 2, removing the need for the Hardware...",
+        "description": "This project aims to enhance the Robotics-Academy platform by porting selected exercises to native ROS 2, removing the need for the Hardware Abstraction Layer (HAL). The current implementation relies on a custom interface, limiting exposure to standard ROS 2 practices. By transitioning exercises like Follow Line and Basic Vacuum Cleaner to use native ROS 2 nodes, topics, publishers, and subscribers, users will gain hands-on experience with real-world ROS development patterns. The project will also ensure compatibility with ROS 2 tools like rqt_graph, ros2 topic echo, and rviz2 for debugging and visualization.\n\nDeliverables include:\n - ROS 2-native versions of two exercises (Follow Line and Basic Vacuum Cleaner)\n - Removal of HAL dependencies\n - Integration with standard ROS 2 tools and practices\n - Documentation and examples to help users build, debug, and run their solutions \n    using native ROS 2\nBy the end of this project, Robotics-Academy will offer a more authentic ROS 2 learning experience, better preparing users for real-world robotics development.",
+        "student_name": "Ashish Ramesh",
+        "code_url": "https://theroboticsclub.github.io/gsoc2025-Ashish_Ramesh/posts/Final-Report/",
+        "proposal_id": "8kJ9tbS9",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/EXcpJT5g"
+      },
+      {
+        "title": "BT-Studio: a tool for programming robots with Behavior Trees",
+        "short_description": "The primary objective of this project is to enhance BT Studio's capabilities by upgrading the library of behavior trees and composition tools....",
+        "description": "The primary objective of this project is to enhance BT Studio's capabilities by upgrading the library of behavior trees and composition tools. Currently, BT Studio BT library is simple, really overcomplicated and buggy which makes reusing behaviors trees from the library difficult. This update aims to simplify and improve this tools and to increase the amount of entries in the library. \n\nAlso it will improve other features of BT Studio such as the custom universes, making them fully functional and with all the features of the already existing ones inside the Robotics Backend, the docker execution enviroment for robotics applications.\n\nAll of this changes would enable users to test applications across a wider range of scenarios, thereby enhancing debugging and solution robustness.",
+        "student_name": "Javier Izquierdo",
+        "code_url": "https://theroboticsclub.github.io/gsoc2025-Javier_Izquierdo/weekly%20log/Final/",
+        "proposal_id": "uUHZJ3vG",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/O1mpAQXE"
+      },
+      {
+        "title": "Robotics-Academy: Exercise on End-to-End Visual Control of an Autonomous Vehicle Using Deep Learning",
+        "short_description": "This project aims to develop a new deep learning exercise within Robotics-Academy, focusing on end-to-end visual control of autonomous vehicles. The...",
+        "description": "This project aims to develop a new deep learning exercise within Robotics-Academy,\nfocusing on end-to-end visual control of autonomous vehicles. The exercise will allow\nusers to upload trained PyTorch/TensorFlow models that process camera input from a\nsimulated car or drone in Gazebo and output control vehicle movement based on the\nmodel’s predictions. A web interface will enable model upload, real-time visualization,\nand performance monitoring. The exercise will include a demo model trained on\nsynthetic data, a Gazebo simulation environment, and integration with ROS2. This\nexercise will leverage existing infrastructure from previous deep learning-based\nRobotics-Academy exercises, such as Human Detection and Digit Classifier.",
+        "student_name": "Md. Shariar Kabir",
+        "code_url": "https://theroboticsclub.github.io/gsoc2025-Md_Shariar_Kabir/blog/2025/gsoc-2025-recap/",
+        "proposal_id": "lEj8p04S",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/xJ2gOWNQ"
+      },
+      {
+        "title": "Robotics Academy: improvement of Gazebo scenarios and robot models",
+        "short_description": "This project aims to significantly enhance two specific simulation scenarios within the JdeRobot Robotics Academy: Follow Line and Vacuum Cleaner....",
+        "description": "This project aims to significantly enhance two specific simulation scenarios within the JdeRobot Robotics Academy: Follow Line and Vacuum Cleaner. While these exercises serve as valuable educational tools for robotics learners, the current Gazebo environments and robot models lack visual realism, accurate physical behavior, and modular ROS2 integration. To address these limitations, the project will refactor the URDF model used in the Follow Line scenario using modular Xacro descriptions and realistic textures. The line track world will also be improved with high-quality road textures and better lighting for consistent perception results. In the Vacuum Cleaner scenario, the environment will be rebuilt using realistic room furniture and obstacles imported from Blender assets. Additionally, the Roomba robot model will be upgraded for improved physical dynamics, and its SLAM and navigation performance will be enhanced by tuning ROS2 Navigation2 parameters. Common improvements across both scenarios include updating the launch files to align with ROS2 Humble best practices, ensuring compatibility with the latest versions of Gazebo such as Fortress or Ignition, and producing clear documentation to support scenario creation and extension. The final deliverables will include the revamped simulation scenarios, reusable robot models, an organized and modular launch structure, and comprehensive user documentation. These improvements aim to boost the realism, engagement, and overall educational value of the Robotics Academy platform.",
+        "student_name": "Nikhil_36",
+        "code_url": "https://theroboticsclub.github.io/gsoc2025-Nikhil_Gupta/report/",
+        "proposal_id": "HrnBZzml",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/2pUk2XLx"
+      },
+      {
+        "title": "Extend DetectionMetrics: GUI, CI Workflow, and Object Detection",
+        "short_description": "DetectionMetrics is a toolkit designed to unify and streamline the evaluation of perception models across different frameworks and datasets. The...",
+        "description": "DetectionMetrics is a toolkit designed to unify and streamline the evaluation of perception models across different frameworks and datasets. The older version i.e DetectionMetrics v1  provides objective performance metrics such as mean average precision and mean inference time for object detection models. Now DetectionMetrics v2 was introduced in which the previous version was redesigned with an expanded focus on image and LiDAR segmentation. \n\nCurrently, DetectionMetrics v2 functions as both a Python library and CLI, focusing on the quantitative evaluation of image and LiDAR segmentation models, with plans to expand into object detection. It supports PyTorch and TensorFlow models, along with multiple public datasets. Its modular design allows easy integration of new models and datasets. \nThis project aims to bring back the key functionalities from v1 that were lost while redesigning, build a GUI and set up a CI workflow.",
+        "student_name": "Sakhineti Praveena",
+        "code_url": "https://theroboticsclub.github.io/gsoc2025-Sakhineti_Praveena/blog/2025/Final-report/",
+        "proposal_id": "JoZBg13e",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/lKrxCeUr"
+      },
+      {
+        "title": "Migration and Enhancement of 'Machine Vision' Exercise to ROS2 + MoveIt2 in Robotics Academy",
+        "short_description": "This project aims to migrate the existing “Machine Vision” exercise from the old Robotics Academy version (ROS1 + MoveIt1) to the current ROS2 +...",
+        "description": "This project aims to migrate the existing “Machine Vision” exercise from the old Robotics Academy version (ROS1 + MoveIt1) to the current ROS2 + MoveIt2 Docker-based system. The updated version will include a modernized Python API for students, a GUI for visualizing vision images and controlling the manipulator, and improved documentation. The goal is to create a student-friendly, robust, and engaging learning experience aligned with contemporary ROS2 best practices.",
+        "student_name": "Shu Xiao",
+        "code_url": "https://github.com/TheRoboticsClub/gsoc2025-Shu_Xiao",
+        "proposal_id": "ySLKtIfl",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/3Rh06QPO"
+      }
+    ],
+    "2026": []
   },
   "githubID": "JdeRobot",
   "repositories": [
+    {
+      "id": 277535606,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyNzc1MzU2MDY=",
+      "name": "RoboticsInfrastructure",
+      "full_name": "JdeRobot/RoboticsInfrastructure",
+      "html_url": "https://github.com/JdeRobot/RoboticsInfrastructure",
+      "description": "Infrastructure for robotic applications",
+      "language": "Python",
+      "stargazers_count": 55,
+      "forks_count": 69,
+      "open_issues_count": 23,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "topics": []
+    },
     {
       "id": 122512069,
       "node_id": "MDEwOlJlcG9zaXRvcnkxMjI1MTIwNjk=",
@@ -408,9 +494,9 @@
       "html_url": "https://github.com/JdeRobot/VisualCircuit",
       "description": "Visual programming of robots using hardware blocks composition and Python ",
       "language": "JavaScript",
-      "stargazers_count": 17,
-      "forks_count": 17,
-      "open_issues_count": 19,
+      "stargazers_count": 21,
+      "forks_count": 32,
+      "open_issues_count": 26,
       "license": {
         "key": "gpl-3.0",
         "name": "GNU General Public License v3.0",
@@ -433,10 +519,10 @@
       "full_name": "JdeRobot/RoboticsAcademy",
       "html_url": "https://github.com/JdeRobot/RoboticsAcademy",
       "description": "Learn Robotics with JdeRobot",
-      "language": "Python",
-      "stargazers_count": 362,
-      "forks_count": 250,
-      "open_issues_count": 77,
+      "language": "C++",
+      "stargazers_count": 453,
+      "forks_count": 344,
+      "open_issues_count": 61,
       "license": {
         "key": "gpl-3.0",
         "name": "GNU General Public License v3.0",
@@ -454,6 +540,79 @@
       ]
     },
     {
+      "id": 635670635,
+      "node_id": "R_kgDOJeOQaw",
+      "name": "RoboticsApplicationManager",
+      "full_name": "JdeRobot/RoboticsApplicationManager",
+      "html_url": "https://github.com/JdeRobot/RoboticsApplicationManager",
+      "description": "Robotic applications lifecycle management",
+      "language": "Python",
+      "stargazers_count": 11,
+      "forks_count": 27,
+      "open_issues_count": 9,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "topics": []
+    },
+    {
+      "id": 219559345,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMTk1NTkzNDU=",
+      "name": "BehaviorMetrics",
+      "full_name": "JdeRobot/BehaviorMetrics",
+      "html_url": "https://github.com/JdeRobot/BehaviorMetrics",
+      "description": "Autonomous driving neural network comparison tool",
+      "language": "Python",
+      "stargazers_count": 64,
+      "forks_count": 52,
+      "open_issues_count": 61,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "topics": [
+        "computer-vision",
+        "deeplearning",
+        "machine-learning",
+        "reinforcement-learning"
+      ]
+    },
+    {
+      "id": 97260971,
+      "node_id": "MDEwOlJlcG9zaXRvcnk5NzI2MDk3MQ==",
+      "name": "PerceptionMetrics",
+      "full_name": "JdeRobot/PerceptionMetrics",
+      "html_url": "https://github.com/JdeRobot/PerceptionMetrics",
+      "description": "A toolkit designed to unify and streamline the evaluation of object detection and segmentation models across different sensor modalities, frameworks, and datasets. ",
+      "language": "Python",
+      "stargazers_count": 109,
+      "forks_count": 96,
+      "open_issues_count": 60,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "topics": [
+        "computer-vision",
+        "deep-learning",
+        "image-segmantation",
+        "lidar",
+        "lidar-segementation",
+        "object-detection",
+        "pytorch"
+      ]
+    },
+    {
       "id": 179667147,
       "node_id": "MDEwOlJlcG9zaXRvcnkxNzk2NjcxNDc=",
       "name": "jderobot.github.io",
@@ -461,9 +620,9 @@
       "html_url": "https://github.com/JdeRobot/jderobot.github.io",
       "description": "Web page for JdeRobot Organization",
       "language": "JavaScript",
-      "stargazers_count": 3,
-      "forks_count": 19,
-      "open_issues_count": 4,
+      "stargazers_count": 5,
+      "forks_count": 20,
+      "open_issues_count": 5,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -481,16 +640,44 @@
       ]
     },
     {
+      "id": 1003107552,
+      "node_id": "R_kgDOO8o04A",
+      "name": "jderobot-ide-interface",
+      "full_name": "JdeRobot/jderobot-ide-interface",
+      "html_url": "https://github.com/JdeRobot/jderobot-ide-interface",
+      "description": null,
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "forks_count": 1,
+      "open_issues_count": 3,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 823749597,
+      "node_id": "R_kgDOMRlr3Q",
+      "name": "RoboticsBackend",
+      "full_name": "JdeRobot/RoboticsBackend",
+      "html_url": "https://github.com/JdeRobot/RoboticsBackend",
+      "description": null,
+      "language": "Shell",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "open_issues_count": 3,
+      "license": null,
+      "topics": []
+    },
+    {
       "id": 606651179,
       "node_id": "R_kgDOJCjDKw",
       "name": "bt-studio",
       "full_name": "JdeRobot/bt-studio",
       "html_url": "https://github.com/JdeRobot/bt-studio",
       "description": "A ROS-based visual IDE for creating Behavior Trees",
-      "language": "TypeScript",
-      "stargazers_count": 93,
-      "forks_count": 19,
-      "open_issues_count": 12,
+      "language": "Python",
+      "stargazers_count": 118,
+      "forks_count": 21,
+      "open_issues_count": 3,
       "license": {
         "key": "gpl-3.0",
         "name": "GNU General Public License v3.0",
@@ -504,94 +691,29 @@
       ]
     },
     {
-      "id": 97260971,
-      "node_id": "MDEwOlJlcG9zaXRvcnk5NzI2MDk3MQ==",
-      "name": "DetectionMetrics",
-      "full_name": "JdeRobot/DetectionMetrics",
-      "html_url": "https://github.com/JdeRobot/DetectionMetrics",
-      "description": "A tool designed to unify and streamline the evaluation of perception models across different frameworks and datasets.",
-      "language": "Python",
-      "stargazers_count": 78,
-      "forks_count": 47,
-      "open_issues_count": 11,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": [
-        "deeplearning",
-        "image-segmentation",
-        "lidar-segmentation",
-        "pytorch",
-        "tensorflow2"
-      ]
-    },
-    {
-      "id": 635670635,
-      "node_id": "R_kgDOJeOQaw",
-      "name": "RoboticsApplicationManager",
-      "full_name": "JdeRobot/RoboticsApplicationManager",
-      "html_url": "https://github.com/JdeRobot/RoboticsApplicationManager",
-      "description": "Robotic applications lifecycle management",
-      "language": "Python",
-      "stargazers_count": 8,
-      "forks_count": 14,
-      "open_issues_count": 24,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 277535606,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNzc1MzU2MDY=",
-      "name": "RoboticsInfrastructure",
-      "full_name": "JdeRobot/RoboticsInfrastructure",
-      "html_url": "https://github.com/JdeRobot/RoboticsInfrastructure",
-      "description": "Infrastructure for robotic applications",
-      "language": "Python",
-      "stargazers_count": 46,
-      "forks_count": 42,
-      "open_issues_count": 26,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 219559345,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMTk1NTkzNDU=",
-      "name": "BehaviorMetrics",
-      "full_name": "JdeRobot/BehaviorMetrics",
-      "html_url": "https://github.com/JdeRobot/BehaviorMetrics",
-      "description": "Autonomous driving neural network comparison tool",
-      "language": "Python",
-      "stargazers_count": 60,
-      "forks_count": 50,
-      "open_issues_count": 58,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": [
-        "computer-vision",
-        "deeplearning",
-        "machine-learning",
-        "reinforcement-learning"
-      ]
-    },
-    {
-      "id": 823749597,
-      "node_id": "R_kgDOMRlr3Q",
-      "name": "RoboticsBackend",
-      "full_name": "JdeRobot/RoboticsBackend",
-      "html_url": "https://github.com/JdeRobot/RoboticsBackend",
+      "id": 1002893608,
+      "node_id": "R_kgDOO8bxKA",
+      "name": "jderobot-commsmanager",
+      "full_name": "JdeRobot/jderobot-commsmanager",
+      "html_url": "https://github.com/JdeRobot/jderobot-commsmanager",
       "description": null,
-      "language": "Shell",
-      "stargazers_count": 1,
+      "language": "TypeScript",
+      "stargazers_count": 0,
       "forks_count": 0,
+      "open_issues_count": 1,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 243535145,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyNDM1MzUxNDU=",
+      "name": "IndustrialRobots",
+      "full_name": "JdeRobot/IndustrialRobots",
+      "html_url": "https://github.com/JdeRobot/IndustrialRobots",
+      "description": "Industrial robotics with ROS, Gazebo and MoveIt!",
+      "language": "C++",
+      "stargazers_count": 37,
+      "forks_count": 19,
       "open_issues_count": 1,
       "license": null,
       "topics": []
@@ -636,7 +758,7 @@
       "description": null,
       "language": "Python",
       "stargazers_count": 17,
-      "forks_count": 14,
+      "forks_count": 13,
       "open_issues_count": 7,
       "license": null,
       "topics": []
@@ -649,7 +771,7 @@
       "html_url": "https://github.com/JdeRobot/RL-Studio",
       "description": "Robotic library for the training of Reinforcement Learning algorithms",
       "language": "Python",
-      "stargazers_count": 25,
+      "stargazers_count": 34,
       "forks_count": 8,
       "open_issues_count": 7,
       "license": {
@@ -678,8 +800,8 @@
       "html_url": "https://github.com/JdeRobot/FPGA-robotics",
       "description": "Verilog library for developing robotics applications using FPGAs",
       "language": "VHDL",
-      "stargazers_count": 70,
-      "forks_count": 12,
+      "stargazers_count": 80,
+      "forks_count": 13,
       "open_issues_count": 3,
       "license": {
         "key": "gpl-3.0",
@@ -712,8 +834,8 @@
       "html_url": "https://github.com/JdeRobot/DeepLearningStudio",
       "description": "Collection of Deep Learning algorithms for autonomous control of vehicles on Behavior Metrics Circuits. Contains both PyTorch and Tensorflow implementations.",
       "language": "Jupyter Notebook",
-      "stargazers_count": 11,
-      "forks_count": 6,
+      "stargazers_count": 12,
+      "forks_count": 7,
       "open_issues_count": 7,
       "license": null,
       "topics": [
@@ -772,7 +894,7 @@
       "html_url": "https://github.com/JdeRobot/drones",
       "description": null,
       "language": null,
-      "stargazers_count": 15,
+      "stargazers_count": 16,
       "forks_count": 11,
       "open_issues_count": 16,
       "license": null,
@@ -820,7 +942,7 @@
       "html_url": "https://github.com/JdeRobot/SlamStudio",
       "description": null,
       "language": "C++",
-      "stargazers_count": 3,
+      "stargazers_count": 4,
       "forks_count": 6,
       "open_issues_count": 10,
       "license": null,
@@ -854,7 +976,7 @@
       "html_url": "https://github.com/JdeRobot/ThirdParty",
       "description": "ThirdParty software to JdeRobot project",
       "language": "C++",
-      "stargazers_count": 10,
+      "stargazers_count": 11,
       "forks_count": 9,
       "open_issues_count": 7,
       "license": null,
@@ -889,20 +1011,6 @@
       "topics": []
     },
     {
-      "id": 243535145,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNDM1MzUxNDU=",
-      "name": "IndustrialRobots",
-      "full_name": "JdeRobot/IndustrialRobots",
-      "html_url": "https://github.com/JdeRobot/IndustrialRobots",
-      "description": "Industrial robotics with ROS, Gazebo and MoveIt!",
-      "language": "C++",
-      "stargazers_count": 27,
-      "forks_count": 14,
-      "open_issues_count": 1,
-      "license": null,
-      "topics": []
-    },
-    {
       "id": 206609160,
       "node_id": "MDEwOlJlcG9zaXRvcnkyMDY2MDkxNjA=",
       "name": "CamViz",
@@ -915,50 +1023,144 @@
       "open_issues_count": 5,
       "license": null,
       "topics": []
-    },
-    {
-      "id": 137225114,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMzcyMjUxMTQ=",
-      "name": "viz",
-      "full_name": "JdeRobot/viz",
-      "html_url": "https://github.com/JdeRobot/viz",
-      "description": null,
-      "language": "JavaScript",
-      "stargazers_count": 1,
-      "forks_count": 4,
-      "open_issues_count": 19,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 122483544,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMjI0ODM1NDQ=",
-      "name": "VisualStates",
-      "full_name": "JdeRobot/VisualStates",
-      "html_url": "https://github.com/JdeRobot/VisualStates",
-      "description": "Tool for visual programming of robots using automata",
-      "language": "Python",
-      "stargazers_count": 9,
-      "forks_count": 8,
-      "open_issues_count": 11,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": []
     }
   ],
   "contributorsDetails": [
     {
-      "login": "dependabot[bot]",
-      "id": 49699333,
-      "node_id": "MDM6Qm90NDk2OTkzMzM=",
-      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-      "html_url": "https://github.com/apps/dependabot",
-      "contributions": 52
+      "login": "javizqh",
+      "id": 124056014,
+      "node_id": "U_kgDOB2Txzg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/124056014?v=4",
+      "html_url": "https://github.com/javizqh",
+      "contributions": 1419
+    },
+    {
+      "login": "aleon2020",
+      "id": 90764564,
+      "node_id": "MDQ6VXNlcjkwNzY0NTY0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/90764564?v=4",
+      "html_url": "https://github.com/aleon2020",
+      "contributions": 229
+    },
+    {
+      "login": "jmjimenez2020",
+      "id": 90764617,
+      "node_id": "MDQ6VXNlcjkwNzY0NjE3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/90764617?v=4",
+      "html_url": "https://github.com/jmjimenez2020",
+      "contributions": 148
+    },
+    {
+      "login": "Blancasr",
+      "id": 79047431,
+      "node_id": "MDQ6VXNlcjc5MDQ3NDMx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/79047431?v=4",
+      "html_url": "https://github.com/Blancasr",
+      "contributions": 68
+    },
+    {
+      "login": "aquintan4",
+      "id": 130976363,
+      "node_id": "U_kgDOB86Kaw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/130976363?v=4",
+      "html_url": "https://github.com/aquintan4",
+      "contributions": 56
+    },
+    {
+      "login": "sergiopaniego",
+      "id": 17179696,
+      "node_id": "MDQ6VXNlcjE3MTc5Njk2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/17179696?v=4",
+      "html_url": "https://github.com/sergiopaniego",
+      "contributions": 76
+    },
+    {
+      "login": "Apolo151",
+      "id": 64263339,
+      "node_id": "MDQ6VXNlcjY0MjYzMzM5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/64263339?v=4",
+      "html_url": "https://github.com/Apolo151",
+      "contributions": 65
+    },
+    {
+      "login": "lu164",
+      "id": 78978037,
+      "node_id": "MDQ6VXNlcjc4OTc4MDM3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/78978037?v=4",
+      "html_url": "https://github.com/lu164",
+      "contributions": 54
+    },
+    {
+      "login": "ReyDoran",
+      "id": 55508840,
+      "node_id": "MDQ6VXNlcjU1NTA4ODQw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55508840?v=4",
+      "html_url": "https://github.com/ReyDoran",
+      "contributions": 399
+    },
+    {
+      "login": "pariaspe",
+      "id": 35956525,
+      "node_id": "MDQ6VXNlcjM1OTU2NTI1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/35956525?v=4",
+      "html_url": "https://github.com/pariaspe",
+      "contributions": 412
+    },
+    {
+      "login": "Arcane-01",
+      "id": 92448515,
+      "node_id": "U_kgDOBYKnAw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/92448515?v=4",
+      "html_url": "https://github.com/Arcane-01",
+      "contributions": 48
+    },
+    {
+      "login": "Jepear19",
+      "id": 245030549,
+      "node_id": "U_kgDODprelQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/245030549?v=4",
+      "html_url": "https://github.com/Jepear19",
+      "contributions": 48
+    },
+    {
+      "login": "OscarMrZ",
+      "id": 73278373,
+      "node_id": "MDQ6VXNlcjczMjc4Mzcz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/73278373?v=4",
+      "html_url": "https://github.com/OscarMrZ",
+      "contributions": 37
+    },
+    {
+      "login": "pawanw17",
+      "id": 40732709,
+      "node_id": "MDQ6VXNlcjQwNzMyNzA5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40732709?v=4",
+      "html_url": "https://github.com/pawanw17",
+      "contributions": 83
+    },
+    {
+      "login": "SakshayMahna",
+      "id": 40422728,
+      "node_id": "MDQ6VXNlcjQwNDIyNzI4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40422728?v=4",
+      "html_url": "https://github.com/SakshayMahna",
+      "contributions": 341
+    },
+    {
+      "login": "nikhilg2603",
+      "id": 121499292,
+      "node_id": "U_kgDOBz3unA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/121499292?v=4",
+      "html_url": "https://github.com/nikhilg2603",
+      "contributions": 24
+    },
+    {
+      "login": "dpascualhe",
+      "id": 9001663,
+      "node_id": "MDQ6VXNlcjkwMDE2NjM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9001663?v=4",
+      "html_url": "https://github.com/dpascualhe",
+      "contributions": 57
     },
     {
       "login": "jmplaza",
@@ -966,7 +1168,111 @@
       "node_id": "MDQ6VXNlcjEwOTYxNTcz",
       "avatar_url": "https://avatars.githubusercontent.com/u/10961573?v=4",
       "html_url": "https://github.com/jmplaza",
-      "contributions": 185
+      "contributions": 215
+    },
+    {
+      "login": "aastha51551",
+      "id": 134774307,
+      "node_id": "U_kgDOCAh-Iw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/134774307?v=4",
+      "html_url": "https://github.com/aastha51551",
+      "contributions": 20
+    },
+    {
+      "login": "JuanFernandezEva",
+      "id": 79044637,
+      "node_id": "MDQ6VXNlcjc5MDQ0NjM3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/79044637?v=4",
+      "html_url": "https://github.com/JuanFernandezEva",
+      "contributions": 19
+    },
+    {
+      "login": "fernanditicus",
+      "id": 65710856,
+      "node_id": "MDQ6VXNlcjY1NzEwODU2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/65710856?v=4",
+      "html_url": "https://github.com/fernanditicus",
+      "contributions": 19
+    },
+    {
+      "login": "ciglesias1995",
+      "id": 60138852,
+      "node_id": "MDQ6VXNlcjYwMTM4ODUy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/60138852?v=4",
+      "html_url": "https://github.com/ciglesias1995",
+      "contributions": 16
+    },
+    {
+      "login": "dvalladaresv",
+      "id": 47456806,
+      "node_id": "MDQ6VXNlcjQ3NDU2ODA2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/47456806?v=4",
+      "html_url": "https://github.com/dvalladaresv",
+      "contributions": 331
+    },
+    {
+      "login": "Amglega",
+      "id": 78961878,
+      "node_id": "MDQ6VXNlcjc4OTYxODc4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/78961878?v=4",
+      "html_url": "https://github.com/Amglega",
+      "contributions": 12
+    },
+    {
+      "login": "antoniojromero",
+      "id": 14020779,
+      "node_id": "MDQ6VXNlcjE0MDIwNzc5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14020779?v=4",
+      "html_url": "https://github.com/antoniojromero",
+      "contributions": 12
+    },
+    {
+      "login": "gbernalr",
+      "id": 78974537,
+      "node_id": "MDQ6VXNlcjc4OTc0NTM3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/78974537?v=4",
+      "html_url": "https://github.com/gbernalr",
+      "contributions": 12
+    },
+    {
+      "login": "miniesda",
+      "id": 63803821,
+      "node_id": "MDQ6VXNlcjYzODAzODIx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/63803821?v=4",
+      "html_url": "https://github.com/miniesda",
+      "contributions": 93
+    },
+    {
+      "login": "dduro2020",
+      "id": 90764701,
+      "node_id": "MDQ6VXNlcjkwNzY0NzAx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/90764701?v=4",
+      "html_url": "https://github.com/dduro2020",
+      "contributions": 39
+    },
+    {
+      "login": "igarag",
+      "id": 9017430,
+      "node_id": "MDQ6VXNlcjkwMTc0MzA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9017430?v=4",
+      "html_url": "https://github.com/igarag",
+      "contributions": 83
+    },
+    {
+      "login": "ango1994",
+      "id": 81623139,
+      "node_id": "MDQ6VXNlcjgxNjIzMTM5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/81623139?v=4",
+      "html_url": "https://github.com/ango1994",
+      "contributions": 404
+    },
+    {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "html_url": "https://github.com/apps/dependabot",
+      "contributions": 84
     },
     {
       "login": "Suhas-G",
@@ -998,7 +1304,7 @@
       "node_id": "MDQ6VXNlcjYyNTg4MDU5",
       "avatar_url": "https://avatars.githubusercontent.com/u/62588059?v=4",
       "html_url": "https://github.com/BkPankaj",
-      "contributions": 7
+      "contributions": 9
     },
     {
       "login": "muhammadtahasuhail",
@@ -1009,11 +1315,27 @@
       "contributions": 2
     },
     {
+      "login": "Aditya-Sarna",
+      "id": 107273722,
+      "node_id": "U_kgDOBmTd-g",
+      "avatar_url": "https://avatars.githubusercontent.com/u/107273722?v=4",
+      "html_url": "https://github.com/Aditya-Sarna",
+      "contributions": 1
+    },
+    {
       "login": "Shahmirtk",
       "id": 65752526,
       "node_id": "MDQ6VXNlcjY1NzUyNTI2",
       "avatar_url": "https://avatars.githubusercontent.com/u/65752526?v=4",
       "html_url": "https://github.com/Shahmirtk",
+      "contributions": 1
+    },
+    {
+      "login": "Sarvesh-Mishra1981",
+      "id": 191090264,
+      "node_id": "U_kgDOC2POWA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/191090264?v=4",
+      "html_url": "https://github.com/Sarvesh-Mishra1981",
       "contributions": 1
     },
     {
@@ -1033,60 +1355,20 @@
       "contributions": 1
     },
     {
-      "login": "javizqh",
-      "id": 124056014,
-      "node_id": "U_kgDOB2Txzg",
-      "avatar_url": "https://avatars.githubusercontent.com/u/124056014?v=4",
-      "html_url": "https://github.com/javizqh",
-      "contributions": 663
-    },
-    {
-      "login": "pariaspe",
-      "id": 35956525,
-      "node_id": "MDQ6VXNlcjM1OTU2NTI1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/35956525?v=4",
-      "html_url": "https://github.com/pariaspe",
-      "contributions": 409
-    },
-    {
-      "login": "ango1994",
-      "id": 81623139,
-      "node_id": "MDQ6VXNlcjgxNjIzMTM5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/81623139?v=4",
-      "html_url": "https://github.com/ango1994",
-      "contributions": 404
-    },
-    {
-      "login": "ReyDoran",
-      "id": 55508840,
-      "node_id": "MDQ6VXNlcjU1NTA4ODQw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/55508840?v=4",
-      "html_url": "https://github.com/ReyDoran",
-      "contributions": 399
-    },
-    {
-      "login": "SakshayMahna",
-      "id": 40422728,
-      "node_id": "MDQ6VXNlcjQwNDIyNzI4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/40422728?v=4",
-      "html_url": "https://github.com/SakshayMahna",
-      "contributions": 341
-    },
-    {
-      "login": "dvalladaresv",
-      "id": 47456806,
-      "node_id": "MDQ6VXNlcjQ3NDU2ODA2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/47456806?v=4",
-      "html_url": "https://github.com/dvalladaresv",
-      "contributions": 331
-    },
-    {
       "login": "pmvera",
       "id": 25414677,
       "node_id": "MDQ6VXNlcjI1NDE0Njc3",
       "avatar_url": "https://avatars.githubusercontent.com/u/25414677?v=4",
       "html_url": "https://github.com/pmvera",
       "contributions": 215
+    },
+    {
+      "login": "codezerro",
+      "id": 38008170,
+      "node_id": "MDQ6VXNlcjM4MDA4MTcw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/38008170?v=4",
+      "html_url": "https://github.com/codezerro",
+      "contributions": 134
     },
     {
       "login": "aitormf",
@@ -1113,52 +1395,12 @@
       "contributions": 100
     },
     {
-      "login": "igarag",
-      "id": 9017430,
-      "node_id": "MDQ6VXNlcjkwMTc0MzA=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/9017430?v=4",
-      "html_url": "https://github.com/igarag",
-      "contributions": 88
-    },
-    {
-      "login": "pawanw17",
-      "id": 40732709,
-      "node_id": "MDQ6VXNlcjQwNzMyNzA5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/40732709?v=4",
-      "html_url": "https://github.com/pawanw17",
-      "contributions": 83
-    },
-    {
       "login": "Apoorvgarg-creator",
       "id": 57873504,
       "node_id": "MDQ6VXNlcjU3ODczNTA0",
       "avatar_url": "https://avatars.githubusercontent.com/u/57873504?v=4",
       "html_url": "https://github.com/Apoorvgarg-creator",
       "contributions": 76
-    },
-    {
-      "login": "Blancasr",
-      "id": 79047431,
-      "node_id": "MDQ6VXNlcjc5MDQ3NDMx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/79047431?v=4",
-      "html_url": "https://github.com/Blancasr",
-      "contributions": 68
-    },
-    {
-      "login": "codezerro",
-      "id": 38008170,
-      "node_id": "MDQ6VXNlcjM4MDA4MTcw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/38008170?v=4",
-      "html_url": "https://github.com/codezerro",
-      "contributions": 58
-    },
-    {
-      "login": "dpascualhe",
-      "id": 9001663,
-      "node_id": "MDQ6VXNlcjkwMDE2NjM=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/9001663?v=4",
-      "html_url": "https://github.com/dpascualhe",
-      "contributions": 57
     },
     {
       "login": "RUFFY-369",
@@ -1193,14 +1435,6 @@
       "contributions": 43
     },
     {
-      "login": "OscarMrZ",
-      "id": 73278373,
-      "node_id": "MDQ6VXNlcjczMjc4Mzcz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/73278373?v=4",
-      "html_url": "https://github.com/OscarMrZ",
-      "contributions": 37
-    },
-    {
       "login": "reysam93",
       "id": 10724295,
       "node_id": "MDQ6VXNlcjEwNzI0Mjk1",
@@ -1217,14 +1451,6 @@
       "contributions": 36
     },
     {
-      "login": "dduro2020",
-      "id": 90764701,
-      "node_id": "MDQ6VXNlcjkwNzY0NzAx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/90764701?v=4",
-      "html_url": "https://github.com/dduro2020",
-      "contributions": 36
-    },
-    {
       "login": "dmariaa",
       "id": 5584976,
       "node_id": "MDQ6VXNlcjU1ODQ5NzY=",
@@ -1233,28 +1459,12 @@
       "contributions": 32
     },
     {
-      "login": "dhrodao",
-      "id": 47364836,
-      "node_id": "MDQ6VXNlcjQ3MzY0ODM2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/47364836?v=4",
-      "html_url": "https://github.com/dhrodao",
+      "login": "CDAM2020",
+      "id": 73487951,
+      "node_id": "MDQ6VXNlcjczNDg3OTUx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/73487951?v=4",
+      "html_url": "https://github.com/CDAM2020",
       "contributions": 32
-    },
-    {
-      "login": "shashwat623",
-      "id": 42846105,
-      "node_id": "MDQ6VXNlcjQyODQ2MTA1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/42846105?v=4",
-      "html_url": "https://github.com/shashwat623",
-      "contributions": 31
-    },
-    {
-      "login": "jessiffmm",
-      "id": 15524618,
-      "node_id": "MDQ6VXNlcjE1NTI0NjE4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/15524618?v=4",
-      "html_url": "https://github.com/jessiffmm",
-      "contributions": 28
     }
   ],
   "activeOrg": true

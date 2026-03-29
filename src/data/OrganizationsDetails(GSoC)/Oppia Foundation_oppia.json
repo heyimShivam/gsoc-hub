@@ -51,7 +51,8 @@
     2022,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2016": [
@@ -661,7 +662,63 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/KxTcWISl"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Lesson Player Redesign",
+        "short_description": "Oppia's Exploration Player has several issues affecting the learning experience. Learners struggle to distinguish between hints and solutions, and...",
+        "description": "Oppia's Exploration Player has several issues affecting the learning experience. Learners struggle to distinguish between hints and solutions, and the audio player is hard to find on desktop and takes up too much space on mobile, reducing content visibility. Progress tracking is unclear, and navigation between lessons is difficult. On mobile, limited space and a cluttered UI make it challenging to focus on the content. This proposal aims to redesign the player for better clarity, usability, and efficiency, ensuring a smoother experience across all platforms.",
+        "student_name": "HARDIK GOYAL",
+        "code_url": "https://medium.com/@hardikgoyal2003/gsoc-2025-final-project-report-my-overall-experience-cb111069a801",
+        "proposal_id": "U6Hwajnf",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/ZkQDPP94"
+      },
+      {
+        "title": "Acceptance Tests",
+        "short_description": "In order to streamline releases, we are planning to ensure that all critical user journeys (CUJs) on the Oppia web application are covered by...",
+        "description": "In order to streamline releases, we are planning to ensure that all critical user journeys (CUJs) on the Oppia web application are covered by acceptance tests. This is important because it will provide assurance that, on the merge of every PR, these critical user journeys still function correctly, which means that no major breakages will result if the develop branch gets deployed to production. Additionally, having a complete set of acceptance tests that are organized by CUJ makes it easier to audit whether or not a particular CUJ has been included, and it also helps developers add tests for new CUJs while still keeping the tests well-organized.\n\nThis project includes:\n\nWriting acceptance tests for the as-yet-uncovered CUJs in a way that keeps the tests organized and maintainable. This might also include small updates to the acceptance test framework, e.g. extracting utility functions to enable code reuse or providing relevant functionality for a group of tests.\nTightening all page utility functions to have pre/post checks (in the form of \"wait\" statements) and proper error messaging, so that it is easier to debug flakes. The pre-check wait ensures that the conditions are good for performing the action, and the post-check wait ensures that the action has fully completed.\nDeleting e2e tests whose functionality has been fully replaced by the acceptance tests.",
+        "student_name": "Jayam",
+        "code_url": "https://garden.jayampatel.space/projects/acceptance-tests-gsoc-2025/final-note",
+        "proposal_id": "1iJ6GjQq",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/WyCNXoH0"
+      },
+      {
+        "title": "Android lint infrastructure and fixes",
+        "short_description": "The Android build ecosystem includes a robust linting tool designed to detect Android-specific issues that general-purpose linters may overlook....",
+        "description": "The Android build ecosystem includes a robust linting tool designed to detect Android-specific issues that general-purpose linters may overlook. Currently, Android Lint is not integrated into Oppia's Bazel-based build system. This project aims to bridge that gap by introducing a custom linting script that runs Android Lint independently of Gradle, with support for configurable exemptions via textproto files—ensuring alignment with Oppia’s existing scripting infrastructure.\n\nThe project will proceed in two phases. The first will establish a foundational script that interfaces with Android Lint, handles exemption logic, and integrates with continuous integration workflows. The second will focus on resolving high-priority lint issues to improve overall code quality.\n\nThe completed project will deliver a scalable and maintainable Android linting workflow tailored to the Bazel environment, enhancing code quality and developer productivity across the Oppia Android codebase.",
+        "student_name": "manas-yu",
+        "code_url": "https://docs.google.com/document/d/14fFV5Vi-DqEwj29KiFjuYMawk2SQlYy1WMzfs_DcP1w/edit?usp=sharing",
+        "proposal_id": "lQfkNKSn",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/ijQbIqAi"
+      },
+      {
+        "title": "Clean up the structure for study guides and worked examples",
+        "short_description": "Currently, the study guides are made of a single long monolithic content field which makes it hard for the learners to focus and difficult for the...",
+        "description": "Currently, the study guides are made of a single long monolithic content field which makes it hard for the learners to focus and difficult for the translators to translate. Also, worked examples can only be added to skills. This project aims to restructure the study guides to have multiple short sections and make their translations follow the pattern of other entities in the codebase. It also aims to create a WorkedExample Rich Text Editor component for the Skill and Subtopic Editor Pages.",
+        "student_name": "Mohit Ruwatia",
+        "code_url": "https://medium.com/@mohitruwatia2312/gsoc-2025-final-project-report-and-my-overall-experience-7eccf5851031",
+        "proposal_id": "n0vopejF",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/BIAviwcL"
+      },
+      {
+        "title": "Flashbacks",
+        "short_description": "The current app experience can be frustrating for learners who are redirected to earlier concepts for revision after making a mistake, as they must...",
+        "description": "The current app experience can be frustrating for learners who are redirected to earlier concepts for revision after making a mistake, as they must re-answer all intermediate questions to return to their original point. This proposal introduces a new Flashback feature that allows learners to view the correct answer or revisit previously solved question answer tied to their misconception and then return directly to the point where they became stuck—eliminating the need to reattempt intermediate steps. This reinforces foundational understanding while enabling a smoother, frustration-free learning journey.\n\nAdditionally, this project improves the visual presentation of submitted answers for multiple choice and item selection interactions by replacing the current HTML-based approach with a cleaner, natively rendered experience.",
+        "student_name": "Subhajit Mallick",
+        "code_url": "https://medium.com/@subhajitmallick879/flashback-final-gsoc25-report-3c011f1b9f48",
+        "proposal_id": "svxqaczM",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/7Hv4NPOU"
+      },
+      {
+        "title": "Platform Parameters Dashboard",
+        "short_description": "The Platform Parameters Dashboard project aims to enhance Oppia Android's developer options by introducing a user interface for managing platform...",
+        "description": "The Platform Parameters Dashboard project aims to enhance Oppia Android's developer options by introducing a user interface for managing platform parameters and feature flags. This dashboard will enable developers to dynamically view, override, and reset parameter values, facilitating real-time feature flag toggling without modifying source code. The implementation includes persistent storage of overrides, force synchronization with the Oppia Web backend, and comprehensive unit testing to ensure reliability. This feature will significantly improve debugging capabilities and streamline testing of various app configurations.",
+        "student_name": "theayushyadav11",
+        "code_url": "https://gist.github.com/theayushyadav11/92e9772c9ddd36927ca1ce39d80cae45",
+        "proposal_id": "OPzf5Yne",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/Faw0gBBe"
+      }
+    ],
+    "2026": []
   },
   "githubID": "oppia",
   "repositories": [
@@ -673,9 +730,9 @@
       "html_url": "https://github.com/oppia/oppia",
       "description": "A free, online learning platform to make quality education accessible for all.",
       "language": "Python",
-      "stargazers_count": 6048,
-      "forks_count": 4583,
-      "open_issues_count": 1540,
+      "stargazers_count": 6628,
+      "forks_count": 5547,
+      "open_issues_count": 1807,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -707,26 +764,6 @@
       ]
     },
     {
-      "id": 443449388,
-      "node_id": "R_kgDOGm6ALA",
-      "name": "oppia-web-developer-docs",
-      "full_name": "oppia/oppia-web-developer-docs",
-      "html_url": "https://github.com/oppia/oppia-web-developer-docs",
-      "description": "Repo for Web developer documentation on Oppia. For contribution instructions, see: https://github.com/oppia/oppia/wiki/Wiki#contributing-to-the-wiki",
-      "language": "Python",
-      "stargazers_count": 13,
-      "forks_count": 103,
-      "open_issues_count": 63,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
       "id": 148093817,
       "node_id": "MDEwOlJlcG9zaXRvcnkxNDgwOTM4MTc=",
       "name": "oppia-android",
@@ -734,9 +771,9 @@
       "html_url": "https://github.com/oppia/oppia-android",
       "description": "A free online & offline learning platform to make quality education accessible for all.",
       "language": "Kotlin",
-      "stargazers_count": 348,
-      "forks_count": 554,
-      "open_issues_count": 483,
+      "stargazers_count": 392,
+      "forks_count": 632,
+      "open_issues_count": 509,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -763,6 +800,100 @@
       ]
     },
     {
+      "id": 443449388,
+      "node_id": "R_kgDOGm6ALA",
+      "name": "oppia-web-developer-docs",
+      "full_name": "oppia/oppia-web-developer-docs",
+      "html_url": "https://github.com/oppia/oppia-web-developer-docs",
+      "description": "Repo for Web developer documentation on Oppia. For contribution instructions, see: https://github.com/oppia/oppia/wiki/Wiki#contributing-to-the-wiki",
+      "language": "Python",
+      "stargazers_count": 18,
+      "forks_count": 128,
+      "open_issues_count": 68,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 391216176,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzOTEyMTYxNzY=",
+      "name": "oppia-proto-api",
+      "full_name": "oppia/oppia-proto-api",
+      "html_url": "https://github.com/oppia/oppia-proto-api",
+      "description": "Published Android-specific API for the Oppia backend.",
+      "language": null,
+      "stargazers_count": 1,
+      "forks_count": 2,
+      "open_issues_count": 6,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 288135843,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyODgxMzU4NDM=",
+      "name": "guppy",
+      "full_name": "oppia/guppy",
+      "html_url": "https://github.com/oppia/guppy",
+      "description": "WYSIWYG mathematics editor with structured, searchable, LaTeX-compatible, and parseable output",
+      "language": "JavaScript",
+      "stargazers_count": 2,
+      "forks_count": 9,
+      "open_issues_count": 5,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 207632626,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMDc2MzI2MjY=",
+      "name": "creator-documentation",
+      "full_name": "oppia/creator-documentation",
+      "html_url": "https://github.com/oppia/creator-documentation",
+      "description": "GitHub repo powering Oppia's creator and contributor \"Read the Docs\" site.",
+      "language": null,
+      "stargazers_count": 3,
+      "forks_count": 8,
+      "open_issues_count": 1,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 131213171,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMzEyMTMxNzE=",
+      "name": "oppiabot",
+      "full_name": "oppia/oppiabot",
+      "html_url": "https://github.com/oppia/oppiabot",
+      "description": "Helper bot for the Oppia code repository dev workflow.",
+      "language": "JavaScript",
+      "stargazers_count": 24,
+      "forks_count": 82,
+      "open_issues_count": 28,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
       "id": 904081132,
       "node_id": "R_kgDONeMu7A",
       "name": "product-operations-team",
@@ -771,9 +902,29 @@
       "description": "Workflow repository for the Oppia Product Operations team.",
       "language": null,
       "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 11,
+      "forks_count": 1,
+      "open_issues_count": 20,
       "license": null,
+      "topics": []
+    },
+    {
+      "id": 466715232,
+      "node_id": "R_kgDOG9GCYA",
+      "name": ".github",
+      "full_name": "oppia/.github",
+      "html_url": "https://github.com/oppia/.github",
+      "description": null,
+      "language": null,
+      "stargazers_count": 2,
+      "forks_count": 3,
+      "open_issues_count": 0,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
       "topics": []
     },
     {
@@ -786,7 +937,7 @@
       "language": null,
       "stargazers_count": 0,
       "forks_count": 1,
-      "open_issues_count": 84,
+      "open_issues_count": 95,
       "license": null,
       "topics": []
     },
@@ -799,7 +950,7 @@
       "description": null,
       "language": "Python",
       "stargazers_count": 1,
-      "forks_count": 2,
+      "forks_count": 4,
       "open_issues_count": 0,
       "license": {
         "key": "apache-2.0",
@@ -833,28 +984,8 @@
       "description": "Common GitHub Actions that are reused by Oppia repositories.",
       "language": null,
       "stargazers_count": 0,
-      "forks_count": 0,
+      "forks_count": 2,
       "open_issues_count": 4,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 391216176,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzOTEyMTYxNzY=",
-      "name": "oppia-proto-api",
-      "full_name": "oppia/oppia-proto-api",
-      "html_url": "https://github.com/oppia/oppia-proto-api",
-      "description": "Published Android-specific API for the Oppia backend.",
-      "language": null,
-      "stargazers_count": 1,
-      "forks_count": 1,
-      "open_issues_count": 6,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -875,26 +1006,6 @@
       "stargazers_count": 1,
       "forks_count": 1,
       "open_issues_count": 0,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 131213171,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMzEyMTMxNzE=",
-      "name": "oppiabot",
-      "full_name": "oppia/oppiabot",
-      "html_url": "https://github.com/oppia/oppiabot",
-      "description": "Helper bot for the Oppia code repository dev workflow.",
-      "language": "JavaScript",
-      "stargazers_count": 19,
-      "forks_count": 71,
-      "open_issues_count": 15,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -933,29 +1044,9 @@
       "description": "Repo for the marketing team to plan new posts.",
       "language": null,
       "stargazers_count": 4,
-      "forks_count": 0,
-      "open_issues_count": 31,
+      "forks_count": 1,
+      "open_issues_count": 32,
       "license": null,
-      "topics": []
-    },
-    {
-      "id": 466715232,
-      "node_id": "R_kgDOG9GCYA",
-      "name": ".github",
-      "full_name": "oppia/.github",
-      "html_url": "https://github.com/oppia/.github",
-      "description": null,
-      "language": null,
-      "stargazers_count": 1,
-      "forks_count": 4,
-      "open_issues_count": 0,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
       "topics": []
     },
     {
@@ -976,20 +1067,6 @@
         "url": "https://api.github.com/licenses/mit",
         "node_id": "MDc6TGljZW5zZTEz"
       },
-      "topics": []
-    },
-    {
-      "id": 288135843,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyODgxMzU4NDM=",
-      "name": "guppy",
-      "full_name": "oppia/guppy",
-      "html_url": "https://github.com/oppia/guppy",
-      "description": "WYSIWYG mathematics editor with structured, searchable, LaTeX-compatible, and parseable output",
-      "language": "JavaScript",
-      "stargazers_count": 1,
-      "forks_count": 5,
-      "open_issues_count": 3,
-      "license": null,
       "topics": []
     },
     {
@@ -1041,7 +1118,7 @@
       "description": "Android Library that lights items for tutorials or walk-throughs etc...",
       "language": "Kotlin",
       "stargazers_count": 0,
-      "forks_count": 1,
+      "forks_count": 2,
       "open_issues_count": 1,
       "license": {
         "key": "apache-2.0",
@@ -1061,7 +1138,7 @@
       "description": "katex porting for kotlin.",
       "language": "Kotlin",
       "stargazers_count": 0,
-      "forks_count": 2,
+      "forks_count": 3,
       "open_issues_count": 0,
       "license": {
         "key": "mit",
@@ -1120,7 +1197,7 @@
       "html_url": "https://github.com/oppia/oppia.github.io",
       "description": "Main page of the Oppia project on GitHub.",
       "language": "HTML",
-      "stargazers_count": 5,
+      "stargazers_count": 6,
       "forks_count": 30,
       "open_issues_count": 4,
       "license": {
@@ -1161,8 +1238,8 @@
       "description": "Perceptual image hashing library used to match similar images",
       "language": "Java",
       "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
+      "forks_count": 1,
+      "open_issues_count": 1,
       "license": {
         "key": "mit",
         "name": "MIT License",
@@ -1251,22 +1328,6 @@
         "node_id": "MDc6TGljZW5zZTEz"
       },
       "topics": []
-    },
-    {
-      "id": 542874743,
-      "node_id": "R_kgDOIFucdw",
-      "name": "hacktoberfest-2022-non-code-contributions",
-      "full_name": "oppia/hacktoberfest-2022-non-code-contributions",
-      "html_url": "https://github.com/oppia/hacktoberfest-2022-non-code-contributions",
-      "description": "Repository for logging low/non-code Hacktoberfest participation activities.",
-      "language": null,
-      "stargazers_count": 0,
-      "forks_count": 2,
-      "open_issues_count": 1,
-      "license": null,
-      "topics": [
-        "hacktoberfest"
-      ]
     }
   ],
   "contributorsDetails": [
@@ -1276,7 +1337,7 @@
       "node_id": "MDQ6VXNlcjEwNTc1NTYy",
       "avatar_url": "https://avatars.githubusercontent.com/u/10575562?v=4",
       "html_url": "https://github.com/seanlip",
-      "contributions": 1333
+      "contributions": 1335
     },
     {
       "login": "BenHenning",
@@ -1284,7 +1345,7 @@
       "node_id": "MDQ6VXNlcjEyOTgzNzQy",
       "avatar_url": "https://avatars.githubusercontent.com/u/12983742?v=4",
       "html_url": "https://github.com/BenHenning",
-      "contributions": 73
+      "contributions": 76
     },
     {
       "login": "vojtechjelinek",
@@ -1372,7 +1433,7 @@
       "node_id": "MDQ6VXNlcjE5ODc4NjM5",
       "avatar_url": "https://avatars.githubusercontent.com/u/19878639?v=4",
       "html_url": "https://github.com/U8NWXD",
-      "contributions": 212
+      "contributions": 220
     },
     {
       "login": "czxcjx",
@@ -1383,6 +1444,14 @@
       "contributions": 136
     },
     {
+      "login": "Nik-09",
+      "id": 57531197,
+      "node_id": "MDQ6VXNlcjU3NTMxMTk3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/57531197?v=4",
+      "html_url": "https://github.com/Nik-09",
+      "contributions": 68
+    },
+    {
       "login": "nithusha21",
       "id": 11898234,
       "node_id": "MDQ6VXNlcjExODk4MjM0",
@@ -1391,20 +1460,20 @@
       "contributions": 79
     },
     {
-      "login": "Showtim3",
-      "id": 30312043,
-      "node_id": "MDQ6VXNlcjMwMzEyMDQz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/30312043?v=4",
-      "html_url": "https://github.com/Showtim3",
-      "contributions": 21
-    },
-    {
       "login": "giritheja",
       "id": 8845039,
       "node_id": "MDQ6VXNlcjg4NDUwMzk=",
       "avatar_url": "https://avatars.githubusercontent.com/u/8845039?v=4",
       "html_url": "https://github.com/giritheja",
       "contributions": 122
+    },
+    {
+      "login": "Showtim3",
+      "id": 30312043,
+      "node_id": "MDQ6VXNlcjMwMzEyMDQz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/30312043?v=4",
+      "html_url": "https://github.com/Showtim3",
+      "contributions": 21
     },
     {
       "login": "kashida",
@@ -1423,20 +1492,20 @@
       "contributions": 118
     },
     {
-      "login": "sbhowmik89",
-      "id": 8260362,
-      "node_id": "MDQ6VXNlcjgyNjAzNjI=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/8260362?v=4",
-      "html_url": "https://github.com/sbhowmik89",
-      "contributions": 115
-    },
-    {
       "login": "bansalnitish",
       "id": 22434689,
       "node_id": "MDQ6VXNlcjIyNDM0Njg5",
       "avatar_url": "https://avatars.githubusercontent.com/u/22434689?v=4",
       "html_url": "https://github.com/bansalnitish",
       "contributions": 47
+    },
+    {
+      "login": "sbhowmik89",
+      "id": 8260362,
+      "node_id": "MDQ6VXNlcjgyNjAzNjI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8260362?v=4",
+      "html_url": "https://github.com/sbhowmik89",
+      "contributions": 115
     },
     {
       "login": "526avijitgupta",
@@ -1471,14 +1540,6 @@
       "contributions": 101
     },
     {
-      "login": "Nik-09",
-      "id": 57531197,
-      "node_id": "MDQ6VXNlcjU3NTMxMTk3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/57531197?v=4",
-      "html_url": "https://github.com/Nik-09",
-      "contributions": 65
-    },
-    {
       "login": "1995YogeshSharma",
       "id": 9693472,
       "node_id": "MDQ6VXNlcjk2OTM0NzI=",
@@ -1500,7 +1561,7 @@
       "node_id": "MDQ6VXNlcjM2OTg5MTEy",
       "avatar_url": "https://avatars.githubusercontent.com/u/36989112?v=4",
       "html_url": "https://github.com/nishantwrp",
-      "contributions": 15
+      "contributions": 90
     },
     {
       "login": "gp201",
@@ -1508,6 +1569,238 @@
       "node_id": "MDQ6VXNlcjMwMDUwODYy",
       "avatar_url": "https://avatars.githubusercontent.com/u/30050862?v=4",
       "html_url": "https://github.com/gp201",
+      "contributions": 18
+    },
+    {
+      "login": "rt4914",
+      "id": 9396084,
+      "node_id": "MDQ6VXNlcjkzOTYwODQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9396084?v=4",
+      "html_url": "https://github.com/rt4914",
+      "contributions": 288
+    },
+    {
+      "login": "anandwana001",
+      "id": 25057618,
+      "node_id": "MDQ6VXNlcjI1MDU3NjE4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25057618?v=4",
+      "html_url": "https://github.com/anandwana001",
+      "contributions": 124
+    },
+    {
+      "login": "veena14cs",
+      "id": 16301028,
+      "node_id": "MDQ6VXNlcjE2MzAxMDI4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16301028?v=4",
+      "html_url": "https://github.com/veena14cs",
+      "contributions": 104
+    },
+    {
+      "login": "MohamedMedhat1998",
+      "id": 8533363,
+      "node_id": "MDQ6VXNlcjg1MzMzNjM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8533363?v=4",
+      "html_url": "https://github.com/MohamedMedhat1998",
+      "contributions": 72
+    },
+    {
+      "login": "MohitGupta121",
+      "id": 76530270,
+      "node_id": "MDQ6VXNlcjc2NTMwMjcw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76530270?v=4",
+      "html_url": "https://github.com/MohitGupta121",
+      "contributions": 70
+    },
+    {
+      "login": "nikitamarysolomanpvt",
+      "id": 54615666,
+      "node_id": "MDQ6VXNlcjU0NjE1NjY2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/54615666?v=4",
+      "html_url": "https://github.com/nikitamarysolomanpvt",
+      "contributions": 53
+    },
+    {
+      "login": "translatewiki",
+      "id": 24829418,
+      "node_id": "MDQ6VXNlcjI0ODI5NDE4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/24829418?v=4",
+      "html_url": "https://github.com/translatewiki",
+      "contributions": 44
+    },
+    {
+      "login": "prayutsu",
+      "id": 54636525,
+      "node_id": "MDQ6VXNlcjU0NjM2NTI1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/54636525?v=4",
+      "html_url": "https://github.com/prayutsu",
+      "contributions": 43
+    },
+    {
+      "login": "adhiamboperes",
+      "id": 59600948,
+      "node_id": "MDQ6VXNlcjU5NjAwOTQ4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/59600948?v=4",
+      "html_url": "https://github.com/adhiamboperes",
+      "contributions": 41
+    },
+    {
+      "login": "manas-yu",
+      "id": 119405883,
+      "node_id": "U_kgDOBx39Ow",
+      "avatar_url": "https://avatars.githubusercontent.com/u/119405883?v=4",
+      "html_url": "https://github.com/manas-yu",
+      "contributions": 41
+    },
+    {
+      "login": "aggarwalpulkit596",
+      "id": 29139786,
+      "node_id": "MDQ6VXNlcjI5MTM5Nzg2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/29139786?v=4",
+      "html_url": "https://github.com/aggarwalpulkit596",
+      "contributions": 40
+    },
+    {
+      "login": "Arjupta",
+      "id": 64064110,
+      "node_id": "MDQ6VXNlcjY0MDY0MTEw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/64064110?v=4",
+      "html_url": "https://github.com/Arjupta",
+      "contributions": 40
+    },
+    {
+      "login": "FareesHussain",
+      "id": 54740946,
+      "node_id": "MDQ6VXNlcjU0NzQwOTQ2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/54740946?v=4",
+      "html_url": "https://github.com/FareesHussain",
+      "contributions": 38
+    },
+    {
+      "login": "theMr17",
+      "id": 84731134,
+      "node_id": "MDQ6VXNlcjg0NzMxMTM0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/84731134?v=4",
+      "html_url": "https://github.com/theMr17",
+      "contributions": 32
+    },
+    {
+      "login": "Sarthak2601",
+      "id": 53938155,
+      "node_id": "MDQ6VXNlcjUzOTM4MTU1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/53938155?v=4",
+      "html_url": "https://github.com/Sarthak2601",
+      "contributions": 31
+    },
+    {
+      "login": "vinitamurthi",
+      "id": 11780495,
+      "node_id": "MDQ6VXNlcjExNzgwNDk1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11780495?v=4",
+      "html_url": "https://github.com/vinitamurthi",
+      "contributions": 37
+    },
+    {
+      "login": "Rd4dev",
+      "id": 122200035,
+      "node_id": "U_kgDOB0if4w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/122200035?v=4",
+      "html_url": "https://github.com/Rd4dev",
+      "contributions": 26
+    },
+    {
+      "login": "MaskedCarrot",
+      "id": 53645584,
+      "node_id": "MDQ6VXNlcjUzNjQ1NTg0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/53645584?v=4",
+      "html_url": "https://github.com/MaskedCarrot",
+      "contributions": 25
+    },
+    {
+      "login": "yashraj-01",
+      "id": 63469151,
+      "node_id": "MDQ6VXNlcjYzNDY5MTUx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/63469151?v=4",
+      "html_url": "https://github.com/yashraj-01",
+      "contributions": 24
+    },
+    {
+      "login": "vrajdesai78",
+      "id": 43074241,
+      "node_id": "MDQ6VXNlcjQzMDc0MjQx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43074241?v=4",
+      "html_url": "https://github.com/vrajdesai78",
+      "contributions": 23
+    },
+    {
+      "login": "jamesxu0",
+      "id": 40580399,
+      "node_id": "MDQ6VXNlcjQwNTgwMzk5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40580399?v=4",
+      "html_url": "https://github.com/jamesxu0",
+      "contributions": 22
+    },
+    {
+      "login": "bhaktideshmukh",
+      "id": 78796264,
+      "node_id": "MDQ6VXNlcjc4Nzk2MjY0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/78796264?v=4",
+      "html_url": "https://github.com/bhaktideshmukh",
+      "contributions": 21
+    },
+    {
+      "login": "subhajitxyz",
+      "id": 153619690,
+      "node_id": "U_kgDOCSgM6g",
+      "avatar_url": "https://avatars.githubusercontent.com/u/153619690?v=4",
+      "html_url": "https://github.com/subhajitxyz",
+      "contributions": 21
+    },
+    {
+      "login": "theayushyadav11",
+      "id": 143514610,
+      "node_id": "U_kgDOCI3b8g",
+      "avatar_url": "https://avatars.githubusercontent.com/u/143514610?v=4",
+      "html_url": "https://github.com/theayushyadav11",
+      "contributions": 21
+    },
+    {
+      "login": "JishnuGoyal",
+      "id": 64526117,
+      "node_id": "MDQ6VXNlcjY0NTI2MTE3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/64526117?v=4",
+      "html_url": "https://github.com/JishnuGoyal",
+      "contributions": 20
+    },
+    {
+      "login": "Vishwajith-Shettigar",
+      "id": 76042077,
+      "node_id": "MDQ6VXNlcjc2MDQyMDc3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76042077?v=4",
+      "html_url": "https://github.com/Vishwajith-Shettigar",
+      "contributions": 20
+    },
+    {
+      "login": "kkmurerwa",
+      "id": 18438114,
+      "node_id": "MDQ6VXNlcjE4NDM4MTE0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/18438114?v=4",
+      "html_url": "https://github.com/kkmurerwa",
+      "contributions": 20
+    },
+    {
+      "login": "Sparsh1212",
+      "id": 55937724,
+      "node_id": "MDQ6VXNlcjU1OTM3NzI0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55937724?v=4",
+      "html_url": "https://github.com/Sparsh1212",
+      "contributions": 19
+    },
+    {
+      "login": "miaboloix",
+      "id": 36868381,
+      "node_id": "MDQ6VXNlcjM2ODY4Mzgx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/36868381?v=4",
+      "html_url": "https://github.com/miaboloix",
       "contributions": 18
     },
     {
@@ -1525,14 +1818,6 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/23002114?v=4",
       "html_url": "https://github.com/srijanreddy98",
       "contributions": 47
-    },
-    {
-      "login": "vinitamurthi",
-      "id": 11780495,
-      "node_id": "MDQ6VXNlcjExNzgwNDk1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/11780495?v=4",
-      "html_url": "https://github.com/vinitamurthi",
-      "contributions": 37
     },
     {
       "login": "shaz13",
@@ -1589,6 +1874,14 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/20942000?v=4",
       "html_url": "https://github.com/bhavukJain",
       "contributions": 16
+    },
+    {
+      "login": "EricZLou",
+      "id": 21316782,
+      "node_id": "MDQ6VXNlcjIxMzE2Nzgy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21316782?v=4",
+      "html_url": "https://github.com/EricZLou",
+      "contributions": 15
     }
   ],
   "activeOrg": true

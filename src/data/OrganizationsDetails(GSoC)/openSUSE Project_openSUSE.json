@@ -59,7 +59,7 @@
   "irc_channel": "https://discord.com/invite/opensuse",
   "contact_email": "mailto:ddemaio@opensuse.org",
   "mailing_list": "https://lists.opensuse.org/archives/list/factory@lists.opensuse.org/",
-  "twitter_url": "https://twitter.com/openSUSE",
+  "twitter_url": "https://x.com/openSUSE",
   "blog_url": "https://news.opensuse.org/",
   "facebook_url": "https://www.facebook.com/groups/opensuseproject/",
   "year": [
@@ -71,7 +71,8 @@
     2022,
     2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "projects": {
     "2016": [
@@ -469,7 +470,72 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/K4b6hfyY"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Log Detective for openSUSE/OBS",
+        "short_description": "This research project addresses the problem of time-consuming debugging of RPM build failures in openSUSE. By integrating the Log Detective model...",
+        "description": "This research project addresses the problem of time-consuming debugging of RPM build failures in openSUSE. By integrating the Log Detective model into the openSUSE workflow. The integration will be achieved through developing an osc plugin for command-line interaction and creating a web component within the Open Build Service (OBS) interface.    \nThe project aims to deliver a research document detailing Log Detective's AI approach, tools and scripts for log submission, and proof-of-concept implementations of both the osc plugin and the OBS web component.",
+        "student_name": "Aazam Thakur",
+        "code_url": "https://alcadeus.hashnode.dev/gsoc2025-recap?showSharer=true",
+        "proposal_id": "ArYWKuFH",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/SZ1Va8yZ"
+      },
+      {
+        "title": "AI-Driven Test Selection in Uyuni's Pull Request Acceptance Tests",
+        "short_description": "Uyuni is the open-source upstream of SUSE Manager, a configuration and infrastructure management solution for administering multiple Linux systems....",
+        "description": "Uyuni is the open-source upstream of SUSE Manager, a configuration and infrastructure management solution for administering multiple Linux systems. To ensure code quality, Uyuni employs two types of tests:\n\n1. Continuous Integration Tests: These tests are run periodically on the master branch to catch breakages that have slipped through earlier testing. When these tests fail, developers must revisit older tasks, leading to frequent context switching and reduced productivity.\n\n2. Pull Request Acceptance Tests: These tests are run on new pull requests to prevent breakages from reaching the master branch. They provide fast feedback to developers, helping them fix issues while they are still focused on their tasks.\n\nCurrently, Pull Request Acceptance Tests execute most of the test suite, with an average runtime of one hour. This delays feedback for developers and increases infrastructure costs.\n\nThis project aims to develop a machine learning model that, using past pull requests, test results, code coverage data, and other relevant information, predicts which small subset of tests is most likely to fail for a new pull request. Running only this smaller subset of tests will speed up developer feedback, reduce infrastructure costs, and maintain high test coverage.\n\nInspired by Facebook's Predictive Test Selection paper, this project applies and extends its techniques to optimize Uyuni’s testing strategy and increase developer productivity.",
+        "student_name": "Ahmed Khaled (Akayiz)",
+        "code_url": "https://ahmed.khaled.yousry.org/blogs/gsoc-2025-final-report/",
+        "proposal_id": "Wge1bqbJ",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/2mlAbkgB"
+      },
+      {
+        "title": "Analytics edge ecosystem workloads: entertainment vertical",
+        "short_description": "In this project, we aim to demonstrate an open-source example deployment of a fully functional workload. This project focuses on the entertainment...",
+        "description": "In this project, we aim to demonstrate an open-source example deployment of a fully functional workload. This project focuses on the entertainment vertical, the main idea is to segment movies into scenes and make the segmented scenes queryable with natural language text. This project would involve LLMs, text embeddings to create scene summaries and vector database to store the embeddings for each scene, so that it can be queried easily . We will brainstorm an end-to-end example approach and explore the possibility of adapting certain components to different technological contexts. Our strategy involves utilizing Rancher, a Kubernetes-as-a-Service platform, to efficiently manage clusters and deploy microservices.",
+        "student_name": "AkashKumar",
+        "code_url": "https://news.opensuse.org/2025/10/08/gsoc-semantic-video-search/",
+        "proposal_id": "42FJaL3F",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/D4vbeivQ"
+      },
+      {
+        "title": "Support for Ubuntu Snap Packages in Uyuni",
+        "short_description": "Today, with Ubuntu increasingly adopting Snap packages, Uyuni currently lacks support for managing these applications. This project proposes adding...",
+        "description": "Today, with Ubuntu increasingly adopting Snap packages, Uyuni currently lacks support for managing these applications. This project proposes adding native Snap support to Uyuni, including install, update, remove, and channel management. By extending Uyuni’s capabilities to cover Snap, this work fills a key gap and ensures continued relevance for Ubuntu system management.\n\nI explored how Uyuni manages CVE audits and package upgrades for Ubuntu systems. Initially, Uyuni connects to client machines via SSH to install and register the Salt Minion. Once set up, all communication occurs through Salt’s remote execution system, eliminating the need for SSH. Salt gathers package data using grains, pillars, and custom modules, which Uyuni then compares to its centralized SUSE Manager database.\n\nFor CVE auditing, Uyuni fetches security metadata (e.g., CVEs, OVAL data) from upstream sources like Ubuntu Security Notices and stores it in a PostgreSQL database. When Salt reports installed packages, Uyuni analyzes the data and generates patch or upgrade recommendations. APT repositories are mirrored into structured software channels, allowing clients to receive updates without direct internet access.\n\nBuilding on this workflow, I propose extending Uyuni to support Snap packages. While Snap lacks structured CVE metadata, we can implement a version-based upgrade system: Uyuni retrieves the latest Snap versions from the Snap Store and compares them to client versions reported via Salt, suggesting upgrades when newer versions exist.\n\nTo support airgapped environments, we can pre-download .snap and .assert files on a connected system and distribute them through Uyuni’s software channels. Additionally, to manage storage and stability, Uyuni admins can choose which Snap channels (stable, beta, etc.) to mirror—defaulting to stable.\n\nDeliverables: Support Snap auditing, lifecycle management, airgapped environments, testing/validation, and user documentation in Uyuni.",
+        "student_name": "Kathy Xu",
+        "code_url": "https://github.com/Kathy0704/GSoC-openSUSE-Uyuni-Support-for-Ubuntu-Snap-Packages-in-Uyuni/tree/main",
+        "proposal_id": "dG7pSUah",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/qJxTxgAc"
+      },
+      {
+        "title": "Edge Focused Deep Research AI Agents using openSUSE and SUSE Rancher",
+        "short_description": "In this project, we look forward to developing Edge-Focused Deep Research AI Agents that operate fully on edge devices using open-source Large...",
+        "description": "In this project, we look forward to developing Edge-Focused Deep Research AI Agents that operate fully on edge devices using open-source Large Language Models (LLMs) and Small Language Models (SLMs). Building on last year’s openSUSE GSoC project in edge analytics and Retrieval-Augmented Generation (RAG) pipelines, we will create a privacy-first AI research assistant. The agent will leverage Ollama to run LLMs locally, ensuring no sensitive data or queries are sent to the cloud. It will iteratively search and analyze information, combine local knowledge base queries with optional web search, and produce comprehensive markdown reports with citations. Deployment will utilize the SUSE stack (openSUSE Leap as base layer operating system, SUSE Rancher, K3s, Longhorn, and SLE BCI containers) to orchestrate the solution on resource-constrained edge environments. This project aims to deliver a fully open-source research agent that empowers domains like document Q&A, local knowledge bases, and on-site research, all while maintaining data privacy and leveraging openSUSE Leap as base  layer operating system for containerization.",
+        "student_name": "Rudraksh Karpe",
+        "code_url": "https://gist.github.com/rudrakshkarpe/684794ca183a564476363d9b27b16496",
+        "proposal_id": "G5Piic8E",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/JPbCjwEn"
+      },
+      {
+        "title": "Smart Cities - Traffic Prediction Microservice",
+        "short_description": "Project Summary: Real-Time Traffic Prediction and Management System Problem: Urban traffic congestion poses significant challenges, leading to...",
+        "description": "Project Summary: Real-Time Traffic Prediction and Management System\n\nProblem: Urban traffic congestion poses significant challenges, leading to delays, increased pollution, and inefficient resource allocation. Existing systems often lack real-time predictive capabilities and edge-based solutions, limiting their effectiveness in dynamic environments.\n\nSolution: This project will develop a scalable, real-time traffic prediction and management system using AI-driven models (e.g., LSTM, GRU) trained on diverse data sources (Kaggle, OpenStreetMap, real-time APIs). The solution will integrate a data ingestion pipeline (using Apache Kafka/Airflow,ML), deploy models on edge devices via Docker and Kubernetes, and provide a Streamlit-based web UI for visualization and alerts. The system will predict traffic flow, detect anomalies, and trigger congestion alerts to optimize traffic management.\n\nDeliverables:\nA fully deployed edge-based traffic prediction microservice with low-latency inference.\nAn automated data pipeline integrating multiple traffic data sources.\nA user-friendly Streamlit web interface for real-time monitoring and alerts.\nComprehensive documentation (setup, architecture, deployment) and a 5-minute demo video showcasing the system’s capabilities.",
+        "student_name": "sameer singh chauhan",
+        "code_url": "https://github.com/SamIeer/traffic-prediction",
+        "proposal_id": "s0HF6b5B",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/qc3bwrNj"
+      },
+      {
+        "title": "GSoC Proposal - Extract and Containerize Uyuni Salt Event Processor",
+        "short_description": "This project aims to extract the Salt event processor from Uyuni's Tomcat web server and turn it into a standalone containerized service. Currently,...",
+        "description": "This project aims to extract the Salt event processor from Uyuni's Tomcat web server and turn it into a standalone containerized service. Currently, Tomcat handles both web requests and Salt event processing. The problem is that processing Salt events can be resource-intensive, potentially affecting the performance of the web application also running in Tomcat. By decoupling these components, I'll create a containerized service that processes Salt events independently, improving overall system performance and reliability.\n\nThe implementation will involve extracting the existing Salt event processing logic, packaging it as a standalone service, containerizing it, and extending Uyuni-tools to deploy and manage this new component with scalable considerations. The current event processing logic will be preserved while adding proper scaling, monitoring, and configuration capabilities.\n\nDeliverables include a fully functional Salt event processor containerized service, integration with Uyuni-tools for deployment management, documentation, and performance benchmarks showing improvements. This architectural improvement will allow Tomcat to focus solely on serving web requests while the event processor can handle Salt events in a more scalable manner.",
+        "student_name": "Sywen Chen",
+        "code_url": "https://github.com/Symorglass/GSoC-openSUSE-Uyuni-Salt-Event-Processor-Extraction-and-Containerization",
+        "proposal_id": "HPaGA0ut",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/xq7KEb4Y"
+      }
+    ],
+    "2026": []
   },
   "githubID": "openSUSE",
   "repositories": [
@@ -481,7 +547,7 @@
       "html_url": "https://github.com/openSUSE/openqa-tests-backlog",
       "description": "Backlog overview and automatic reminders for openQA tests",
       "language": null,
-      "stargazers_count": 2,
+      "stargazers_count": 3,
       "forks_count": 3,
       "open_issues_count": 0,
       "license": null,
@@ -495,8 +561,62 @@
       "html_url": "https://github.com/openSUSE/mirrors-static",
       "description": "Keep a static openSUSE mirrors report",
       "language": "HTML",
-      "stargazers_count": 1,
+      "stargazers_count": 2,
       "forks_count": 4,
+      "open_issues_count": 1,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 27374183,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyNzM3NDE4Mw==",
+      "name": "kernel-source",
+      "full_name": "openSUSE/kernel-source",
+      "html_url": "https://github.com/openSUSE/kernel-source",
+      "description": "A quilt-like series of patches plus scripts and .spec files to produce the kernel RPM package. If you are looking for a ready-to-use kernel tree, have a look at https://github.com/openSUSE/kernel",
+      "language": "Python",
+      "stargazers_count": 173,
+      "forks_count": 85,
+      "open_issues_count": 0,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "topics": []
+    },
+    {
+      "id": 1077866893,
+      "node_id": "R_kgDOQD7xjQ",
+      "name": "kudos-badges",
+      "full_name": "openSUSE/kudos-badges",
+      "html_url": "https://github.com/openSUSE/kudos-badges",
+      "description": "Badges for openSUSE Kudos recognition system",
+      "language": "Shell",
+      "stargazers_count": 0,
+      "forks_count": 2,
+      "open_issues_count": 2,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 1154755441,
+      "node_id": "R_kgDORNQrcQ",
+      "name": "cve-backport-tool",
+      "full_name": "openSUSE/cve-backport-tool",
+      "html_url": "https://github.com/openSUSE/cve-backport-tool",
+      "description": "AI-assisted CVE patch backporting for SUSE/openSUSE",
+      "language": "Python",
+      "stargazers_count": 1,
+      "forks_count": 0,
       "open_issues_count": 0,
       "license": null,
       "topics": []
@@ -509,8 +629,8 @@
       "html_url": "https://github.com/openSUSE/kernel",
       "description": "Our patched kernel sources. This repository is generated from https://github.com/openSUSE/kernel-source",
       "language": "C",
-      "stargazers_count": 208,
-      "forks_count": 92,
+      "stargazers_count": 232,
+      "forks_count": 96,
       "open_issues_count": 2,
       "license": {
         "key": "other",
@@ -522,76 +642,16 @@
       "topics": []
     },
     {
-      "id": 935930556,
-      "node_id": "R_kgDON8kqvA",
-      "name": "cockpit-packages",
-      "full_name": "openSUSE/cockpit-packages",
-      "html_url": "https://github.com/openSUSE/cockpit-packages",
-      "description": null,
+      "id": 1080426121,
+      "node_id": "R_kgDOQGX-iQ",
+      "name": "cockpit-bootloader",
+      "full_name": "openSUSE/cockpit-bootloader",
+      "html_url": "https://github.com/openSUSE/cockpit-bootloader",
+      "description": "Cockpit module for editing grub",
       "language": "TypeScript",
-      "stargazers_count": 1,
-      "forks_count": 3,
-      "open_issues_count": 1,
-      "license": {
-        "key": "lgpl-2.1",
-        "name": "GNU Lesser General Public License v2.1",
-        "spdx_id": "LGPL-2.1",
-        "url": "https://api.github.com/licenses/lgpl-2.1",
-        "node_id": "MDc6TGljZW5zZTEx"
-      },
-      "topics": []
-    },
-    {
-      "id": 460028490,
-      "node_id": "R_kgDOG2t6Sg",
-      "name": "cockpit-tukit",
-      "full_name": "openSUSE/cockpit-tukit",
-      "html_url": "https://github.com/openSUSE/cockpit-tukit",
-      "description": null,
-      "language": "TypeScript",
-      "stargazers_count": 8,
-      "forks_count": 11,
-      "open_issues_count": 4,
-      "license": {
-        "key": "lgpl-2.1",
-        "name": "GNU Lesser General Public License v2.1",
-        "spdx_id": "LGPL-2.1",
-        "url": "https://api.github.com/licenses/lgpl-2.1",
-        "node_id": "MDc6TGljZW5zZTEx"
-      },
-      "topics": []
-    },
-    {
-      "id": 650320693,
-      "node_id": "R_kgDOJsMbNQ",
-      "name": "opengm",
-      "full_name": "openSUSE/opengm",
-      "html_url": "https://github.com/openSUSE/opengm",
-      "description": "open source group manager, previously part of openSUSE defrag",
-      "language": "Python",
       "stargazers_count": 2,
-      "forks_count": 1,
-      "open_issues_count": 2,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
-      "topics": []
-    },
-    {
-      "id": 859808303,
-      "node_id": "R_kgDOMz-iLw",
-      "name": "cockpit-subscriptions",
-      "full_name": "openSUSE/cockpit-subscriptions",
-      "html_url": "https://github.com/openSUSE/cockpit-subscriptions",
-      "description": null,
-      "language": "TypeScript",
-      "stargazers_count": 0,
       "forks_count": 2,
-      "open_issues_count": 1,
+      "open_issues_count": 5,
       "license": {
         "key": "lgpl-2.1",
         "name": "GNU Lesser General Public License v2.1",
@@ -602,66 +662,24 @@
       "topics": []
     },
     {
-      "id": 926460189,
-      "node_id": "R_kgDONzipHQ",
-      "name": "cockpit-repos",
-      "full_name": "openSUSE/cockpit-repos",
-      "html_url": "https://github.com/openSUSE/cockpit-repos",
+      "id": 1070648693,
+      "node_id": "R_kgDOP9DNdQ",
+      "name": "cockpit-snapshots",
+      "full_name": "openSUSE/cockpit-snapshots",
+      "html_url": "https://github.com/openSUSE/cockpit-snapshots",
       "description": null,
       "language": "TypeScript",
       "stargazers_count": 2,
-      "forks_count": 3,
-      "open_issues_count": 2,
-      "license": {
-        "key": "lgpl-2.1",
-        "name": "GNU Lesser General Public License v2.1",
-        "spdx_id": "LGPL-2.1",
-        "url": "https://api.github.com/licenses/lgpl-2.1",
-        "node_id": "MDc6TGljZW5zZTEx"
-      },
-      "topics": []
-    },
-    {
-      "id": 27374183,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNzM3NDE4Mw==",
-      "name": "kernel-source",
-      "full_name": "openSUSE/kernel-source",
-      "html_url": "https://github.com/openSUSE/kernel-source",
-      "description": "A quilt-like series of patches plus scripts and .spec files to produce the kernel RPM package. If you are looking for a ready-to-use kernel tree, have a look at https://github.com/openSUSE/kernel",
-      "language": "Python",
-      "stargazers_count": 153,
-      "forks_count": 78,
-      "open_issues_count": 3,
-      "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
-      },
-      "topics": []
-    },
-    {
-      "id": 452310079,
-      "node_id": "R_kgDOGvW0Pw",
-      "name": "qem-bot",
-      "full_name": "openSUSE/qem-bot",
-      "html_url": "https://github.com/openSUSE/qem-bot",
-      "description": "tool for scheduling openQA related maintenance jobs + syncing SMELT/openQA data to QEM-Dashboard",
-      "language": "Python",
-      "stargazers_count": 5,
-      "forks_count": 26,
+      "forks_count": 2,
       "open_issues_count": 9,
       "license": {
-        "key": "mit",
-        "name": "MIT License",
-        "spdx_id": "MIT",
-        "url": "https://api.github.com/licenses/mit",
-        "node_id": "MDc6TGljZW5zZTEz"
+        "key": "lgpl-2.1",
+        "name": "GNU Lesser General Public License v2.1",
+        "spdx_id": "LGPL-2.1",
+        "url": "https://api.github.com/licenses/lgpl-2.1",
+        "node_id": "MDc6TGljZW5zZTEx"
       },
-      "topics": [
-        "hacktoberfest"
-      ]
+      "topics": []
     },
     {
       "id": 434563667,
@@ -671,9 +689,9 @@
       "html_url": "https://github.com/openSUSE/qem-dashboard",
       "description": "A graphical user interface add-on for openSUSE/qem-bot",
       "language": "Perl",
-      "stargazers_count": 8,
-      "forks_count": 14,
-      "open_issues_count": 10,
+      "stargazers_count": 10,
+      "forks_count": 15,
+      "open_issues_count": 14,
       "license": {
         "key": "gpl-2.0",
         "name": "GNU General Public License v2.0",
@@ -681,126 +699,41 @@
         "url": "https://api.github.com/licenses/gpl-2.0",
         "node_id": "MDc6TGljZW5zZTg="
       },
-      "topics": []
-    },
-    {
-      "id": 150092514,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNTAwOTI1MTQ=",
-      "name": "docserv",
-      "full_name": "openSUSE/docserv",
-      "html_url": "https://github.com/openSUSE/docserv",
-      "description": "A server for building and publishing documentation with DAPS ",
-      "language": "Python",
-      "stargazers_count": 4,
-      "forks_count": 3,
-      "open_issues_count": 104,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
       "topics": [
-        "daps",
-        "python3",
-        "rest-api",
-        "server"
+        "hacktoberfest"
       ]
     },
     {
-      "id": 349979748,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzNDk5Nzk3NDg=",
-      "name": "Customize-IBus",
-      "full_name": "openSUSE/Customize-IBus",
-      "html_url": "https://github.com/openSUSE/Customize-IBus",
-      "description": "Full customization of appearance, behavior, system tray and input source indicator for IBus. (深度定制 IBus 的外观、行为、系统托盘以及输入指示)",
-      "language": "JavaScript",
-      "stargazers_count": 76,
+      "id": 1051232763,
+      "node_id": "R_kgDOPqiJ-w",
+      "name": "mcp-bugzilla",
+      "full_name": "openSUSE/mcp-bugzilla",
+      "html_url": "https://github.com/openSUSE/mcp-bugzilla",
+      "description": "Bugzilla Model context protocol (MCP) Server",
+      "language": "Python",
+      "stargazers_count": 9,
       "forks_count": 7,
-      "open_issues_count": 5,
-      "license": {
-        "key": "gpl-3.0",
-        "name": "GNU General Public License v3.0",
-        "spdx_id": "GPL-3.0",
-        "url": "https://api.github.com/licenses/gpl-3.0",
-        "node_id": "MDc6TGljZW5zZTk="
-      },
+      "open_issues_count": 1,
+      "license": null,
       "topics": [
-        "gnome-shell-ibus",
-        "hacktoberfest",
-        "ibus",
-        "theme"
+        "bugzilla",
+        "mcp",
+        "mcp-server"
       ]
     },
     {
-      "id": 567403769,
-      "node_id": "R_kgDOIdHk-Q",
-      "name": "libvirt",
-      "full_name": "openSUSE/libvirt",
-      "html_url": "https://github.com/openSUSE/libvirt",
-      "description": "Libvirt native C API and daemons",
-      "language": "C",
-      "stargazers_count": 1,
-      "forks_count": 3,
-      "open_issues_count": 0,
-      "license": {
-        "key": "lgpl-2.1",
-        "name": "GNU Lesser General Public License v2.1",
-        "spdx_id": "LGPL-2.1",
-        "url": "https://api.github.com/licenses/lgpl-2.1",
-        "node_id": "MDc6TGljZW5zZTEx"
-      },
-      "topics": []
-    },
-    {
-      "id": 433092645,
-      "node_id": "R_kgDOGdB4JQ",
-      "name": "obs-scm-bridge",
-      "full_name": "openSUSE/obs-scm-bridge",
-      "html_url": "https://github.com/openSUSE/obs-scm-bridge",
-      "description": null,
-      "language": "Python",
+      "id": 64468062,
+      "node_id": "MDEwOlJlcG9zaXRvcnk2NDQ2ODA2Mg==",
+      "name": "gs-stats.o.o",
+      "full_name": "openSUSE/gs-stats.o.o",
+      "html_url": "https://github.com/openSUSE/gs-stats.o.o",
+      "description": "Tumbleweed AppStream statistics",
+      "language": "HTML",
       "stargazers_count": 3,
-      "forks_count": 8,
-      "open_issues_count": 3,
-      "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
-      },
+      "forks_count": 4,
+      "open_issues_count": 0,
+      "license": null,
       "topics": []
-    },
-    {
-      "id": 31659744,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzMTY1OTc0NA==",
-      "name": "suse-xsl",
-      "full_name": "openSUSE/suse-xsl",
-      "html_url": "https://github.com/openSUSE/suse-xsl",
-      "description": "DocBook XSL Stylesheets for SUSE branding",
-      "language": "XSLT",
-      "stargazers_count": 11,
-      "forks_count": 10,
-      "open_issues_count": 78,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": [
-        "docbook",
-        "docbook5",
-        "epub",
-        "html5",
-        "suse",
-        "xhtml",
-        "xsl-fo",
-        "xslt"
-      ]
     },
     {
       "id": 2046192,
@@ -810,9 +743,9 @@
       "html_url": "https://github.com/openSUSE/open-build-service",
       "description": "Build and distribute Linux packages from sources in an automatic, consistent and reproducible way #obs",
       "language": "Ruby",
-      "stargazers_count": 970,
-      "forks_count": 446,
-      "open_issues_count": 1152,
+      "stargazers_count": 1040,
+      "forks_count": 474,
+      "open_issues_count": 1217,
       "license": {
         "key": "gpl-2.0",
         "name": "GNU General Public License v2.0",
@@ -843,16 +776,36 @@
       ]
     },
     {
-      "id": 271075385,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNzEwNzUzODU=",
-      "name": "orthos2",
-      "full_name": "openSUSE/orthos2",
-      "html_url": "https://github.com/openSUSE/orthos2",
-      "description": "Orthos is a machine administration tool.",
-      "language": "Python",
-      "stargazers_count": 16,
-      "forks_count": 13,
-      "open_issues_count": 35,
+      "id": 1108298355,
+      "node_id": "R_kgDOQg9Kcw",
+      "name": "virtx",
+      "full_name": "openSUSE/virtx",
+      "html_url": "https://github.com/openSUSE/virtx",
+      "description": "A simple federation of KVM hosts based on libvirt and serf, working with centralized shared storage",
+      "language": "Go",
+      "stargazers_count": 2,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "topics": []
+    },
+    {
+      "id": 2606144,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyNjA2MTQ0",
+      "name": "obs-build",
+      "full_name": "openSUSE/obs-build",
+      "html_url": "https://github.com/openSUSE/obs-build",
+      "description": "OBS build script, can be used with OBS or stand alone",
+      "language": "Perl",
+      "stargazers_count": 147,
+      "forks_count": 204,
+      "open_issues_count": 184,
       "license": {
         "key": "gpl-2.0",
         "name": "GNU General Public License v2.0",
@@ -861,135 +814,61 @@
         "node_id": "MDc6TGljZW5zZTg="
       },
       "topics": [
-        "hacktoberfest",
-        "machine-administration"
+        "perl",
+        "shell"
       ]
     },
     {
-      "id": 2442713,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyNDQyNzEz",
-      "name": "obs-service-source_validator",
-      "full_name": "openSUSE/obs-service-source_validator",
-      "html_url": "https://github.com/openSUSE/obs-service-source_validator",
-      "description": "The default source validator as used by openSUSE:Factory distribution",
-      "language": "Shell",
+      "id": 926460189,
+      "node_id": "R_kgDONzipHQ",
+      "name": "cockpit-repos",
+      "full_name": "openSUSE/cockpit-repos",
+      "html_url": "https://github.com/openSUSE/cockpit-repos",
+      "description": null,
+      "language": "TypeScript",
       "stargazers_count": 3,
-      "forks_count": 27,
-      "open_issues_count": 27,
-      "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
-      },
-      "topics": []
-    },
-    {
-      "id": 114356872,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMTQzNTY4NzI=",
-      "name": "doc-kit",
-      "full_name": "openSUSE/doc-kit",
-      "html_url": "https://github.com/openSUSE/doc-kit",
-      "description": "Initialize & update DAPS-based docs ",
-      "language": "Shell",
-      "stargazers_count": 4,
       "forks_count": 4,
-      "open_issues_count": 8,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 114640901,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMTQ2NDA5MDE=",
-      "name": "salt-packaging",
-      "full_name": "openSUSE/salt-packaging",
-      "html_url": "https://github.com/openSUSE/salt-packaging",
-      "description": "Stuff which makes a Salt packager's life easier",
-      "language": "Shell",
-      "stargazers_count": 6,
-      "forks_count": 22,
       "open_issues_count": 5,
       "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
+        "key": "lgpl-2.1",
+        "name": "GNU Lesser General Public License v2.1",
+        "spdx_id": "LGPL-2.1",
+        "url": "https://api.github.com/licenses/lgpl-2.1",
+        "node_id": "MDc6TGljZW5zZTEx"
       },
       "topics": []
     },
     {
-      "id": 47326272,
-      "node_id": "MDEwOlJlcG9zaXRvcnk0NzMyNjI3Mg==",
-      "name": "systemd",
-      "full_name": "openSUSE/systemd",
-      "html_url": "https://github.com/openSUSE/systemd",
-      "description": null,
-      "language": "C",
-      "stargazers_count": 9,
-      "forks_count": 21,
-      "open_issues_count": 6,
-      "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
-      },
-      "topics": []
-    },
-    {
-      "id": 43946944,
-      "node_id": "MDEwOlJlcG9zaXRvcnk0Mzk0Njk0NA==",
-      "name": "salt",
-      "full_name": "openSUSE/salt",
-      "html_url": "https://github.com/openSUSE/salt",
-      "description": "openSUSE and SUSE patches and backports for SaltStack",
-      "language": "Python",
-      "stargazers_count": 22,
-      "forks_count": 51,
-      "open_issues_count": 13,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 397724532,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzOTc3MjQ1MzI=",
-      "name": "heroes-salt",
-      "full_name": "openSUSE/heroes-salt",
-      "html_url": "https://github.com/openSUSE/heroes-salt",
-      "description": "The openSUSE infrastructure as code! Read-only mirror of https://gitlab.infra.opensuse.org/infra/salt.",
-      "language": "SaltStack",
-      "stargazers_count": 3,
-      "forks_count": 3,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 2123340,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMTIzMzQw",
-      "name": "zypper",
-      "full_name": "openSUSE/zypper",
-      "html_url": "https://github.com/openSUSE/zypper",
-      "description": "World's most powerful command line package manager",
+      "id": 4086360,
+      "node_id": "MDEwOlJlcG9zaXRvcnk0MDg2MzYw",
+      "name": "snapper",
+      "full_name": "openSUSE/snapper",
+      "html_url": "https://github.com/openSUSE/snapper",
+      "description": "Manage filesystem snapshots and allow undo of system modifications",
       "language": "C++",
-      "stargazers_count": 434,
-      "forks_count": 120,
-      "open_issues_count": 140,
+      "stargazers_count": 1108,
+      "forks_count": 149,
+      "open_issues_count": 111,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "topics": []
+    },
+    {
+      "id": 2123336,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMTIzMzM2",
+      "name": "libzypp",
+      "full_name": "openSUSE/libzypp",
+      "html_url": "https://github.com/openSUSE/libzypp",
+      "description": "ZYpp Package Management library",
+      "language": "C++",
+      "stargazers_count": 125,
+      "forks_count": 88,
+      "open_issues_count": 69,
       "license": {
         "key": "other",
         "name": "Other",
@@ -1002,84 +881,259 @@
       ]
     },
     {
-      "id": 67227872,
-      "node_id": "MDEwOlJlcG9zaXRvcnk2NzIyNzg3Mg==",
-      "name": "packages-i18n",
-      "full_name": "openSUSE/packages-i18n",
-      "html_url": "https://github.com/openSUSE/packages-i18n",
-      "description": " Translations of openSUSE packages descriptions ",
-      "language": "Shell",
-      "stargazers_count": 7,
+      "id": 2442885,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyNDQyODg1",
+      "name": "osc",
+      "full_name": "openSUSE/osc",
+      "html_url": "https://github.com/openSUSE/osc",
+      "description": "The Command Line Interface to work with an Open Build Service",
+      "language": "Python",
+      "stargazers_count": 194,
+      "forks_count": 200,
+      "open_issues_count": 131,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "topics": []
+    },
+    {
+      "id": 15340881,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNTM0MDg4MQ==",
+      "name": "mkmedia",
+      "full_name": "openSUSE/mkmedia",
+      "html_url": "https://github.com/openSUSE/mkmedia",
+      "description": "Script to create a SUSE installation ISO image.",
+      "language": "Perl",
+      "stargazers_count": 27,
       "forks_count": 11,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 4086360,
-      "node_id": "MDEwOlJlcG9zaXRvcnk0MDg2MzYw",
-      "name": "snapper",
-      "full_name": "openSUSE/snapper",
-      "html_url": "https://github.com/openSUSE/snapper",
-      "description": "Manage filesystem snapshots and allow undo of system modifications",
-      "language": "C++",
-      "stargazers_count": 981,
-      "forks_count": 131,
-      "open_issues_count": 112,
+      "open_issues_count": 1,
       "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
       },
       "topics": []
     },
     {
-      "id": 892224160,
-      "node_id": "R_kgDONS5CoA",
-      "name": "obs-service-elixir_mix_deps",
-      "full_name": "openSUSE/obs-service-elixir_mix_deps",
-      "html_url": "https://github.com/openSUSE/obs-service-elixir_mix_deps",
-      "description": "OBS Source Service for Elixir software packaging",
-      "language": "Rust",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "open_issues_count": 0,
+      "id": 349979748,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzNDk5Nzk3NDg=",
+      "name": "Customize-IBus",
+      "full_name": "openSUSE/Customize-IBus",
+      "html_url": "https://github.com/openSUSE/Customize-IBus",
+      "description": "Full customization of appearance, behavior, system tray and input source indicator for IBus. (深度定制 IBus 的外观、行为、系统托盘以及输入指示)",
+      "language": "JavaScript",
+      "stargazers_count": 82,
+      "forks_count": 8,
+      "open_issues_count": 9,
       "license": {
-        "key": "gpl-2.0",
-        "name": "GNU General Public License v2.0",
-        "spdx_id": "GPL-2.0",
-        "url": "https://api.github.com/licenses/gpl-2.0",
-        "node_id": "MDc6TGljZW5zZTg="
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
       },
-      "topics": []
+      "topics": [
+        "gnome-shell-ibus",
+        "hacktoberfest",
+        "ibus",
+        "theme"
+      ]
     },
     {
-      "id": 9170795,
-      "node_id": "MDEwOlJlcG9zaXRvcnk5MTcwNzk1",
-      "name": "KDEteam",
-      "full_name": "openSUSE/KDEteam",
-      "html_url": "https://github.com/openSUSE/KDEteam",
-      "description": "openSUSE specific KDE patches, shell-scripts utilities for updating packages based on new tarballs, etc. ",
-      "language": "Shell",
+      "id": 567403769,
+      "node_id": "R_kgDOIdHk-Q",
+      "name": "libvirt",
+      "full_name": "openSUSE/libvirt",
+      "html_url": "https://github.com/openSUSE/libvirt",
+      "description": "Libvirt native C API and daemons",
+      "language": "C",
       "stargazers_count": 2,
-      "forks_count": 5,
+      "forks_count": 4,
       "open_issues_count": 0,
-      "license": null,
+      "license": {
+        "key": "lgpl-2.1",
+        "name": "GNU Lesser General Public License v2.1",
+        "spdx_id": "LGPL-2.1",
+        "url": "https://api.github.com/licenses/lgpl-2.1",
+        "node_id": "MDc6TGljZW5zZTEx"
+      },
       "topics": []
     },
     {
-      "id": 983737955,
-      "node_id": "R_kgDOOqKmYw",
-      "name": "redmine-theme-opensuse",
-      "full_name": "openSUSE/redmine-theme-opensuse",
-      "html_url": "https://github.com/openSUSE/redmine-theme-opensuse",
-      "description": "Redmine theme forked from https://github.com/mrliptontea/PurpleMine2 and enhanced with openSUSE touches.",
-      "language": "SCSS",
+      "id": 14141256,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNDE0MTI1Ng==",
+      "name": "checkmedia",
+      "full_name": "openSUSE/checkmedia",
+      "html_url": "https://github.com/openSUSE/checkmedia",
+      "description": "Check installation CDs and DVDs for errors.",
+      "language": "C",
+      "stargazers_count": 1,
+      "forks_count": 6,
+      "open_issues_count": 1,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "topics": []
+    },
+    {
+      "id": 153484875,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNTM0ODQ4NzU=",
+      "name": "cavil",
+      "full_name": "openSUSE/cavil",
+      "html_url": "https://github.com/openSUSE/cavil",
+      "description": "The legal review and SBOM system used by SUSE and openSUSE",
+      "language": "Perl",
+      "stargazers_count": 61,
+      "forks_count": 7,
+      "open_issues_count": 32,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "topics": [
+        "ai",
+        "legal",
+        "opensuse",
+        "sbom",
+        "spdx"
+      ]
+    },
+    {
+      "id": 1167436978,
+      "node_id": "R_kgDORZWssg",
+      "name": "git-obs-hooks",
+      "full_name": "openSUSE/git-obs-hooks",
+      "html_url": "https://github.com/openSUSE/git-obs-hooks",
+      "description": null,
+      "language": "Shell",
       "stargazers_count": 0,
       "forks_count": 0,
-      "open_issues_count": 1,
+      "open_issues_count": 3,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "topics": []
+    },
+    {
+      "id": 452310079,
+      "node_id": "R_kgDOGvW0Pw",
+      "name": "qem-bot",
+      "full_name": "openSUSE/qem-bot",
+      "html_url": "https://github.com/openSUSE/qem-bot",
+      "description": "tool for scheduling openQA related maintenance jobs + syncing SMELT/openQA data to QEM-Dashboard",
+      "language": "Python",
+      "stargazers_count": 8,
+      "forks_count": 32,
+      "open_issues_count": 19,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": [
+        "hacktoberfest"
+      ]
+    },
+    {
+      "id": 991257783,
+      "node_id": "R_kgDOOxVktw",
+      "name": "quiz",
+      "full_name": "openSUSE/quiz",
+      "html_url": "https://github.com/openSUSE/quiz",
+      "description": "A goal of this project is to provide openSUSE booth staff with a local instance of a quiz",
+      "language": "JavaScript",
+      "stargazers_count": 18,
+      "forks_count": 17,
+      "open_issues_count": 15,
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "topics": [
+        "events",
+        "open-source",
+        "opensuse",
+        "quiz"
+      ]
+    },
+    {
+      "id": 433092645,
+      "node_id": "R_kgDOGdB4JQ",
+      "name": "obs-scm-bridge",
+      "full_name": "openSUSE/obs-scm-bridge",
+      "html_url": "https://github.com/openSUSE/obs-scm-bridge",
+      "description": null,
+      "language": "Python",
+      "stargazers_count": 4,
+      "forks_count": 13,
+      "open_issues_count": 7,
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "topics": []
+    },
+    {
+      "id": 150092514,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNTAwOTI1MTQ=",
+      "name": "docserv",
+      "full_name": "openSUSE/docserv",
+      "html_url": "https://github.com/openSUSE/docserv",
+      "description": "A server for building and publishing documentation with DAPS ",
+      "language": "Python",
+      "stargazers_count": 5,
+      "forks_count": 3,
+      "open_issues_count": 104,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "topics": [
+        "daps",
+        "python3",
+        "rest-api",
+        "server"
+      ]
+    },
+    {
+      "id": 1071098316,
+      "node_id": "R_kgDOP9epzA",
+      "name": "kudos",
+      "full_name": "openSUSE/kudos",
+      "html_url": "https://github.com/openSUSE/kudos",
+      "description": "openSUSE Kudos recognition software",
+      "language": "JavaScript",
+      "stargazers_count": 12,
+      "forks_count": 10,
+      "open_issues_count": 21,
       "license": {
         "key": "other",
         "name": "Other",
@@ -1087,8 +1141,32 @@
         "url": null,
         "node_id": "MDc6TGljZW5zZTA="
       },
+      "topics": []
+    },
+    {
+      "id": 174497711,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNzQ0OTc3MTE=",
+      "name": "news-o-o",
+      "full_name": "openSUSE/news-o-o",
+      "html_url": "https://github.com/openSUSE/news-o-o",
+      "description": "📰 News from the openSUSE Land",
+      "language": "HTML",
+      "stargazers_count": 35,
+      "forks_count": 78,
+      "open_issues_count": 8,
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
       "topics": [
-        "redmine"
+        "blog",
+        "hacktoberfest",
+        "jekyll",
+        "markdown",
+        "news"
       ]
     }
   ],
@@ -1134,20 +1212,252 @@
       "contributions": 370
     },
     {
-      "login": "eliroca",
-      "id": 42994510,
-      "node_id": "MDQ6VXNlcjQyOTk0NTEw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/42994510?v=4",
-      "html_url": "https://github.com/eliroca",
-      "contributions": 1
-    },
-    {
       "login": "lrupp",
       "id": 3956279,
       "node_id": "MDQ6VXNlcjM5NTYyNzk=",
       "avatar_url": "https://avatars.githubusercontent.com/u/3956279?v=4",
       "html_url": "https://github.com/lrupp",
       "contributions": 1
+    },
+    {
+      "login": "jeffmahoney",
+      "id": 1482271,
+      "node_id": "MDQ6VXNlcjE0ODIyNzE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1482271?v=4",
+      "html_url": "https://github.com/jeffmahoney",
+      "contributions": 2152
+    },
+    {
+      "login": "olafhering",
+      "id": 942324,
+      "node_id": "MDQ6VXNlcjk0MjMyNA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/942324?v=4",
+      "html_url": "https://github.com/olafhering",
+      "contributions": 2106
+    },
+    {
+      "login": "mkubecek",
+      "id": 1962116,
+      "node_id": "MDQ6VXNlcjE5NjIxMTY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1962116?v=4",
+      "html_url": "https://github.com/mkubecek",
+      "contributions": 1284
+    },
+    {
+      "login": "michal42",
+      "id": 5213912,
+      "node_id": "MDQ6VXNlcjUyMTM5MTI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5213912?v=4",
+      "html_url": "https://github.com/michal42",
+      "contributions": 1096
+    },
+    {
+      "login": "hramrach",
+      "id": 787652,
+      "node_id": "MDQ6VXNlcjc4NzY1Mg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/787652?v=4",
+      "html_url": "https://github.com/hramrach",
+      "contributions": 896
+    },
+    {
+      "login": "tiwai",
+      "id": 306482,
+      "node_id": "MDQ6VXNlcjMwNjQ4Mg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/306482?v=4",
+      "html_url": "https://github.com/tiwai",
+      "contributions": 749
+    },
+    {
+      "login": "gregkh",
+      "id": 14953,
+      "node_id": "MDQ6VXNlcjE0OTUz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14953?v=4",
+      "html_url": "https://github.com/gregkh",
+      "contributions": 589
+    },
+    {
+      "login": "hreinecke",
+      "id": 995545,
+      "node_id": "MDQ6VXNlcjk5NTU0NQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/995545?v=4",
+      "html_url": "https://github.com/hreinecke",
+      "contributions": 535
+    },
+    {
+      "login": "andreas-schwab",
+      "id": 2175493,
+      "node_id": "MDQ6VXNlcjIxNzU0OTM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2175493?v=4",
+      "html_url": "https://github.com/andreas-schwab",
+      "contributions": 505
+    },
+    {
+      "login": "okirch",
+      "id": 4538181,
+      "node_id": "MDQ6VXNlcjQ1MzgxODE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4538181?v=4",
+      "html_url": "https://github.com/okirch",
+      "contributions": 473
+    },
+    {
+      "login": "mantel",
+      "id": 1080885,
+      "node_id": "MDQ6VXNlcjEwODA4ODU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1080885?v=4",
+      "html_url": "https://github.com/mantel",
+      "contributions": 369
+    },
+    {
+      "login": "jdelvare",
+      "id": 4045314,
+      "node_id": "MDQ6VXNlcjQwNDUzMTQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4045314?v=4",
+      "html_url": "https://github.com/jdelvare",
+      "contributions": 234
+    },
+    {
+      "login": "watologo1",
+      "id": 5288789,
+      "node_id": "MDQ6VXNlcjUyODg3ODk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5288789?v=4",
+      "html_url": "https://github.com/watologo1",
+      "contributions": 200
+    },
+    {
+      "login": "agraf",
+      "id": 367209,
+      "node_id": "MDQ6VXNlcjM2NzIwOQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/367209?v=4",
+      "html_url": "https://github.com/agraf",
+      "contributions": 182
+    },
+    {
+      "login": "mirekfranc",
+      "id": 7672274,
+      "node_id": "MDQ6VXNlcjc2NzIyNzQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7672274?v=4",
+      "html_url": "https://github.com/mirekfranc",
+      "contributions": 179
+    },
+    {
+      "login": "gobenji",
+      "id": 254681,
+      "node_id": "MDQ6VXNlcjI1NDY4MQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/254681?v=4",
+      "html_url": "https://github.com/gobenji",
+      "contributions": 170
+    },
+    {
+      "login": "afaerber",
+      "id": 309527,
+      "node_id": "MDQ6VXNlcjMwOTUyNw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/309527?v=4",
+      "html_url": "https://github.com/afaerber",
+      "contributions": 159
+    },
+    {
+      "login": "dirkmueller",
+      "id": 1029152,
+      "node_id": "MDQ6VXNlcjEwMjkxNTI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1029152?v=4",
+      "html_url": "https://github.com/dirkmueller",
+      "contributions": 140
+    },
+    {
+      "login": "Werkov",
+      "id": 630751,
+      "node_id": "MDQ6VXNlcjYzMDc1MQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/630751?v=4",
+      "html_url": "https://github.com/Werkov",
+      "contributions": 129
+    },
+    {
+      "login": "jbeulich",
+      "id": 5610135,
+      "node_id": "MDQ6VXNlcjU2MTAxMzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5610135?v=4",
+      "html_url": "https://github.com/jbeulich",
+      "contributions": 87
+    },
+    {
+      "login": "mbgg",
+      "id": 259494,
+      "node_id": "MDQ6VXNlcjI1OTQ5NA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/259494?v=4",
+      "html_url": "https://github.com/mbgg",
+      "contributions": 71
+    },
+    {
+      "login": "jankara",
+      "id": 5585575,
+      "node_id": "MDQ6VXNlcjU1ODU1NzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5585575?v=4",
+      "html_url": "https://github.com/jankara",
+      "contributions": 64
+    },
+    {
+      "login": "ykaukab",
+      "id": 39487765,
+      "node_id": "MDQ6VXNlcjM5NDg3NzY1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/39487765?v=4",
+      "html_url": "https://github.com/ykaukab",
+      "contributions": 63
+    },
+    {
+      "login": "petrpavlu",
+      "id": 31453820,
+      "node_id": "MDQ6VXNlcjMxNDUzODIw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/31453820?v=4",
+      "html_url": "https://github.com/petrpavlu",
+      "contributions": 63
+    },
+    {
+      "login": "ajaeger",
+      "id": 16867,
+      "node_id": "MDQ6VXNlcjE2ODY3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16867?v=4",
+      "html_url": "https://github.com/ajaeger",
+      "contributions": 59
+    },
+    {
+      "login": "tonyj-suse",
+      "id": 98611331,
+      "node_id": "U_kgDOBeCwgw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/98611331?v=4",
+      "html_url": "https://github.com/tonyj-suse",
+      "contributions": 52
+    },
+    {
+      "login": "kdave",
+      "id": 1729844,
+      "node_id": "MDQ6VXNlcjE3Mjk4NDQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1729844?v=4",
+      "html_url": "https://github.com/kdave",
+      "contributions": 50
+    },
+    {
+      "login": "neilbrown",
+      "id": 57437,
+      "node_id": "MDQ6VXNlcjU3NDM3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/57437?v=4",
+      "html_url": "https://github.com/neilbrown",
+      "contributions": 45
+    },
+    {
+      "login": "tdz",
+      "id": 182914,
+      "node_id": "MDQ6VXNlcjE4MjkxNA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/182914?v=4",
+      "html_url": "https://github.com/tdz",
+      "contributions": 43
+    },
+    {
+      "login": "joeyli",
+      "id": 124434,
+      "node_id": "MDQ6VXNlcjEyNDQzNA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/124434?v=4",
+      "html_url": "https://github.com/joeyli",
+      "contributions": 28
     }
   ],
   "activeOrg": true

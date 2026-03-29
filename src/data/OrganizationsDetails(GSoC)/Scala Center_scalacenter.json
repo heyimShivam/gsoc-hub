@@ -1,6 +1,6 @@
 {
   "name": "Scala Center",
-  "image_url": "https://summerofcode.withgoogle.com/media/org/scala-center/f5qjbrwguri7g3sv-360.png",
+  "image_url": "https://summerofcode.withgoogle.com/media/org/scala-center/0umytpqshifjeevx-360.png",
   "image_background_color": "#ffffff",
   "description": "Guide and support the Scala community",
   "url": "https://scala-lang.org/",
@@ -22,7 +22,9 @@
     "#programming-languages",
     "#education",
     "education",
-    "tooling"
+    "tooling",
+    "web",
+    "gpu"
   ],
   "technologies": [
     "jvm",
@@ -34,10 +36,11 @@
     "#llvm",
     "#js",
     "scala.js",
-    "scala native"
+    "scala native",
+    "functional programming"
   ],
   "irc_channel": "https://gitter.im/scala/scala",
-  "contact_email": "mailto:scala.center@epfl.ch",
+  "contact_email": "mailto:scala-gsoc@epfl.ch",
   "mailing_list": "https://users.scala-lang.org/",
   "twitter_url": "https://twitter.com/scala_lang/",
   "blog_url": "https://www.scala-lang.org/blog/",
@@ -419,61 +422,148 @@
         "project_url": "https://summerofcode.withgoogle.com/programs/2024/projects/4nuShODP"
       }
     ],
-    "2025": []
+    "2025": [
+      {
+        "title": "Enhancing Metals with Play Framework Support",
+        "short_description": "In Metals, the LSP implementation for Scala, there is currently no built-in support for Play Framework-specific files such as .scala.html templates...",
+        "description": "In Metals, the LSP implementation for Scala, there is currently no built-in support for Play Framework-specific files such as .scala.html templates and routes files. This limitation affects essential features like syntax highlighting, linting, and navigation, making it difficult for developers to work efficiently with Play Framework projects in editors that rely on metals. eg. VSCode. This is exacerbated by people who wish to migrate from proprietary editors like IntelliJ which provides such facilities.",
+        "student_name": "Abdullah Arif Jafri",
+        "code_url": "https://github.com/scalameta/metals/pull/7751",
+        "proposal_id": "XEbkqEBt",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/zty5gv0n"
+      },
+      {
+        "title": "LLM4S - Support image, voice and other LLM modalites : A Proposal",
+        "short_description": "LLM4S aims to establish Scala as a premier language for building multimodal Large Language Model applications. This project extends the toolkit's...",
+        "description": "LLM4S aims to establish Scala as a premier language for building multimodal Large\r\nLanguage Model applications. This project extends the toolkit's capabilities beyond text\r\nprocessing to support image generation, speech-to-text, text-to-speech, and\r\nmultimodal embeddings. By leveraging Scala's type safety and functional programming\r\nparadigms, we will create APIs that enable seamless integration of visual, auditory, and\r\ntextual modalities while maintaining enterprise-grade reliability. The implementation\r\nwill bridge Python-centric AI ecosystems with Scala's performance advantages, offering\r\ndevelopers a robust alternative for building complex multimodal AI systems.",
+        "student_name": "AnshumanAI",
+        "code_url": "https://awesomegsoc.hashnode.dev/gsoc-2025-with-scala-center-the-final-report",
+        "proposal_id": "lKj7aZN9",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/eK6iAuUM"
+      },
+      {
+        "title": "Workflows4s : Web UI for Tracking & Debugging",
+        "short_description": "This project aims to create a dedicated web-based user interface for the workflows4s library to address the current lack of visual debugging tools....",
+        "description": "This project aims to create a dedicated web-based user interface for the workflows4s library to address the current lack of visual debugging tools. By building a full-stack solution with a ScalaJS frontend, the UI will enhance workflow development by allowing developers to visually inspect detailed workflow state at any point in history, clearly see the execution paths taken within a workflow diagram, and easily navigate the workflow's history using a timeline. Ultimately, this visual feedback will make understanding, developing, and debugging complex workflows significantly more accessible and intuitive compared to relying solely on logs.",
+        "student_name": "Atharva-Kanherkar",
+        "code_url": "https://gist.github.com/Atharva-Kanherkar/2c8d15d6219d7800e8ff6c474a2a7358",
+        "proposal_id": "xJtiZBv8",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/BPm3F7G8"
+      },
+      {
+        "title": "Cyfra: Support for basic GPU computations on data streams with fs2 integration",
+        "short_description": "Cyfra is a GPU runtime and a DSL that makes Scala a viable choice for GPU programming. Currently, the Scala ecosystem does not have an easy-to-use...",
+        "description": "Cyfra is a GPU runtime and a DSL that makes Scala a viable choice for GPU programming.\n\nCurrently, the Scala ecosystem does not have an easy-to-use library for doing general computations on the GPU. Cyfra aims to fill this gap.\n\nGoal of the project is to implement support for GPU computations on data streams, with focus on usability, and integration with the popular fs2 (Functional Streams for Scala) library, which is used widely in the Scala ecosystem.\n\nCyfra should enable developers that do not have background in GPU programming to write a\nsimple data processing pipeline in Cyfra that performs compute on GPU and efficiently\nmanages memory. The pipeline should be interoperable with fs2.\n\nIntegrating Cyfra's pipeline with fs2 will also make it compatible with major Scala open source libraries, opening them up to execution on the GPU.",
+        "student_name": "Bora Bosna",
+        "code_url": "https://spamegg1.github.io/gsoc-2025/",
+        "proposal_id": "CVCK2AUK",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/lvFyMPh1"
+      },
+      {
+        "title": "LLM4S - Implement an agentic toolkit for Large Language Models",
+        "short_description": "LLM4S is building a Scala-native AI toolkit that leverages functional programming principles and strict compile-time checks to ensure the reliability...",
+        "description": "LLM4S is building a Scala-native AI toolkit that leverages functional programming principles and strict compile-time checks to ensure the reliability and maintainability of LLM-powered applications. This project aims to extend the initial agentic loop and implement essential tools, empowering Scala developers to build robust, reliable, and explainable AI solutions. \nKey objectives include implementing a robust agentic loop, integrating MCP for dynamic tool interaction, developing core tools for file systems, ensuring context management, testing frameworks, and comprehensive documentation to support reliable LLM-powered applications.",
+        "student_name": "Elvan Konukseven",
+        "code_url": "https://elvankonukseven.com/gsoc-links.html",
+        "proposal_id": "tzaM7am8",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/DT8i5a1y"
+      },
+      {
+        "title": "Optimizing Retrieval-Augmented Generation Pipelines for Accurate and Efficient Q&A Systems",
+        "short_description": "This project aims to bring the power of Retrieval-Augmented Generation (RAG) into the Scala ecosystem by building a robust Scala interface to...",
+        "description": "This project aims to bring the power of Retrieval-Augmented Generation (RAG) into the Scala ecosystem by building a robust Scala interface to interact with RAG pipelines. I will design a Scala-compatible wrapper to connect with Python-based components like FAISS and Hugging Face Transformers via gRPC or HTTP APIs. The project will also include developing idiomatic Scala modules for preprocessing, querying, and evaluating textual data, making it easier for Scala developers to integrate RAG into NLP or search applications. By providing seamless interoperability and modular architecture, this will empower the Scala community to build intelligent, language-aware systems more efficiently.",
+        "student_name": "GOPI TRINADH MADDIKUNTA",
+        "code_url": "https://gopitrinadh.site/final-work-submission/",
+        "proposal_id": "k8ttdRcU",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/lzRwkExt"
+      },
+      {
+        "title": "ChatOps4s Prototype - MS Teams Backend",
+        "short_description": "This project focuses on building a seamless API integration between MS Teams and the ChatOps4s prototype through a clean, efficient interface. The...",
+        "description": "This project focuses on building a seamless API integration between MS Teams and the ChatOps4s prototype through a clean, efficient interface. The key goals are to ensure high performance, minimize dependencies, and maintain feature parity with other integrations, such as Discord. The MS Teams API interface will be well-documented, rigorously tested, and designed for interoperability, allowing developers to switch to another platform, like Discord, with minimal code modifications.",
+        "student_name": "Liam Grossman",
+        "code_url": "https://gist.github.com/LGmatrix13/97c52560a5c312bdf5dbbe46d0089550",
+        "proposal_id": "09NFHhYd",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/iife3HTc"
+      },
+      {
+        "title": "A Pandas Experience",
+        "short_description": "This project aims to improve the way Scautable handles CSV files by making structured data parsing in Scala more robust, flexible, and user-friendly...",
+        "description": "This project aims to improve the way Scautable handles CSV files by making structured data parsing in Scala more robust, flexible, and user-friendly — especially for data exploration and quick scripting tasks.\n\nKey problems being addressed include poor handling of row/column mismatches, limited support for malformed or missing headers and lack of custom delimiter options. Inspired by the usability of Pandas, this proposal introduces enhancements such as configurable error-handling modes (e.g., skip or autofill bad lines), support for automatic or custom headers, smarter handling of duplicate or malformed columns, and flexible delimiter parsing.\n\nFor large files, methods to access specific columns will be distributed across implicit classes to avoid JVM method count limitations, improving scalability. Additionally, clear error messages and diagnostics will guide users through common issues and edge cases.\n\nBy addressing these aspects, the project will significantly improve Scautable’s reliability and make it a more powerful tool for developers working with structured data in Scala.",
+        "student_name": "Lidiia Zaparenko",
+        "code_url": "https://gist.github.com/Kvintochka/d487ce0c4daefcc364aa506980ebf860",
+        "proposal_id": "idYUsWzI",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/TRq5tgr9"
+      },
+      {
+        "title": "ChatOps4s Prototype",
+        "short_description": "This project aims to develop a prototype that simplifies data exchange within Slack, enabling seamless information retrieval and input with minimal...",
+        "description": "This project aims to develop a prototype that simplifies data exchange within Slack, enabling seamless information retrieval and input with minimal effort. The primary focus is on creating an intuitive, efficient interface to streamline workflows and enhance productivity. Additionally, the project involves researching the feasibility of extending support to other communication platforms (e.g., Microsoft Teams, Discord) by analyzing API complexities, authentication mechanisms, and integration challenges. The outcome will include a functional Slack prototype alongside a comparative assessment of cross-platform compatibility, identifying key barriers and potential solutions for future expansion. This work will contribute to a more interconnected and automated workspace ecosystem, reducing manual effort in information management.",
+        "student_name": "master-hj",
+        "code_url": "https://gist.github.com/masterhj/e18cfd48c1febfac49ba85a7bcad9592",
+        "proposal_id": "mJlA33ys",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/5zCBqWkE"
+      },
+      {
+        "title": "Creation of blueprints in Scalus",
+        "short_description": "Currently Scalus doesn't have a lot of non-trivial examples. In this project we will develop application examples (blueprints) for Scalus, which can...",
+        "description": "Currently Scalus doesn't have a lot of non-trivial examples. In this project we will develop application examples (blueprints) for Scalus, which can be used as a starting point for new users. These examples will include tests and documentation.",
+        "student_name": "Nikita Zakharchuk",
+        "code_url": "https://github.com/nau/scalus",
+        "proposal_id": "0XJVWJWy",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/JJiv7gSd"
+      },
+      {
+        "title": "Cyfra: Real-time Rendering Pipeline",
+        "short_description": "Cyfra is a GPU runtime and DSL that simplifies GPU programming in Scala by abstracting Vulkan. This project will build a real-time rendering pipeline...",
+        "description": "Cyfra is a GPU runtime and DSL that simplifies GPU programming in Scala by abstracting Vulkan. This project will build a real-time rendering pipeline with outputs to a window, data stream, and file. Deliverables include high-level GPU APIs, GLFW integration, efficient swap chain/synchronization, and clear documentation with examples—making high-performance graphics more accessible to Scala developers.",
+        "student_name": "Rudra Beniwal",
+        "code_url": "https://github.com/ComputeNode/cyfra/pull/70",
+        "proposal_id": "tAcBNxS9",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/9Ul3o0jK"
+      },
+      {
+        "title": "Implementing Bitmap Convolutions for Doodle",
+        "short_description": "This project will add bitmap convolution support to Doodle, enabling powerful image processing effects like blurring, sharpening, edge detection, and...",
+        "description": "This project will add bitmap convolution support to Doodle, enabling powerful image processing effects like blurring, sharpening, edge detection, and embossing. The implementation will design a clean functional API for convolutions that works across Doodle's backends (Java2D and SVG), despite their different underlying implementations. For Java2D, the solution will render elements to bitmap buffers before applying convolutions, while for SVG, it will leverage native filter capabilities. The project will include standard convolution kernels, composition operations, comprehensive documentation, and examples. This enhancement will significantly expand Doodle's capabilities beyond vector graphics while maintaining its functional programming model.",
+        "student_name": "untainsYD",
+        "code_url": "https://untainsyd.github.io/posts/gsoc25",
+        "proposal_id": "4DKlIDro",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/LuH487qS"
+      },
+      {
+        "title": "Scaladex: Support for Compiler Plugins",
+        "short_description": "Scaladex, the central index for open-source Scala libraries, currently does not have dedicated support for Scala compiler plugins—special artifacts...",
+        "description": "Scaladex, the central index for open-source Scala libraries, currently does not have dedicated support for Scala compiler plugins—special artifacts used to extend or modify compiler behavior. These plugins are vital tools in the Scala ecosystem but are difficult to discover due to lack of indexing and classification.\r\n\r\nThis project proposes adding full support for Scala compiler plugins in Scaladex. The implementation includes extending the binary version parser to recognize plugin naming conventions, adding a new platform type (CompilerPlugin), and integrating plugin-specific metadata into the indexing pipeline. The user interface will be updated to allow filtering and discovery of compiler plugins, and best practices for plugin authors will be documented.\r\n\r\nThe key deliverables of this project include:\r\n\r\nParsing and indexing improvements to recognize compiler plugin artifacts.\r\n\r\nUI enhancements for discoverability, including tags and platform filters.\r\n\r\nUpdated documentation and contribution guidelines for plugin maintainers.\r\n\r\nA technical blog post summarizing design decisions, edge cases handled, and outcomes.\r\n\r\nBy implementing these features, this project will significantly improve the visibility, discoverability, and usability of compiler plugins in the Scala community.",
+        "student_name": "Vidisha Gawas",
+        "code_url": "https://opensourcegirl.hashnode.dev/gsoc-2025-scaladex-project-review",
+        "proposal_id": "x5RUY9lW",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/D71ZWImy"
+      },
+      {
+        "title": "LLM4S - Tracing Support",
+        "short_description": "The proposed solution introduces comprehensive tracing capabilities to the LLM4S toolkit by integrating OpenTelemetry (otel4s) for capturing detailed...",
+        "description": "The proposed solution introduces comprehensive tracing capabilities to the LLM4S toolkit by integrating OpenTelemetry (otel4s) for capturing detailed spans and metrics during LLM operations such as prompt construction, model invocation, and response parsing. These telemetry signals are exported in Prometheus and Jaeger-compatible formats and processed through the OpenTelemetry Collector. The data is then visualized on a unified Grafana dashboard, allowing developers to monitor performance, debug errors, and analyze execution flows across different LLM providers in real-time.",
+        "student_name": "Vishub",
+        "code_url": "https://shubhams-gsoc-journey.hashnode.dev/my-gsoc-2025-final-report-tracing-the-road-to-multi-agent-reliability",
+        "proposal_id": "BOPkaUZM",
+        "project_url": "https://summerofcode.withgoogle.com/programs/2025/projects/K7yAKwnV"
+      }
+    ]
   },
   "githubID": "scalacenter",
   "repositories": [
     {
-      "id": 319588458,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzMTk1ODg0NTg=",
-      "name": "scala-debug-adapter",
-      "full_name": "scalacenter/scala-debug-adapter",
-      "html_url": "https://github.com/scalacenter/scala-debug-adapter",
-      "description": "Implementation of the Debug Adapter Protocol for Scala",
+      "id": 99112925,
+      "node_id": "MDEwOlJlcG9zaXRvcnk5OTExMjkyNQ==",
+      "name": "scalac-profiling",
+      "full_name": "scalacenter/scalac-profiling",
+      "html_url": "https://github.com/scalacenter/scalac-profiling",
+      "description": "Compilation profiling tool for Scala 2 projects",
       "language": "Scala",
-      "stargazers_count": 64,
-      "forks_count": 26,
-      "open_issues_count": 42,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 569289613,
-      "node_id": "R_kgDOIe6rjQ",
-      "name": "bloop-config",
-      "full_name": "scalacenter/bloop-config",
-      "html_url": "https://github.com/scalacenter/bloop-config",
-      "description": "Bloop configuration library",
-      "language": "Scala",
-      "stargazers_count": 1,
-      "forks_count": 6,
-      "open_issues_count": 4,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 504158746,
-      "node_id": "R_kgDOHgzaGg",
-      "name": "sbt-dependency-submission",
-      "full_name": "scalacenter/sbt-dependency-submission",
-      "html_url": "https://github.com/scalacenter/sbt-dependency-submission",
-      "description": "A Github Action to submit the dependency graph of an sbt build to the Dependency Submission API",
-      "language": "Scala",
-      "stargazers_count": 66,
-      "forks_count": 21,
-      "open_issues_count": 19,
+      "stargazers_count": 132,
+      "forks_count": 20,
+      "open_issues_count": 8,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -482,12 +572,57 @@
         "node_id": "MDc6TGljZW5zZTI="
       },
       "topics": [
-        "actions",
-        "dependencies",
-        "github-actions",
-        "sbt",
+        "implicit-searches",
+        "macros",
+        "reproducibility",
+        "sbt-plugin",
+        "scala-development",
+        "scalac",
+        "statistics"
+      ]
+    },
+    {
+      "id": 319588458,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzMTk1ODg0NTg=",
+      "name": "scala-debug-adapter",
+      "full_name": "scalacenter/scala-debug-adapter",
+      "html_url": "https://github.com/scalacenter/scala-debug-adapter",
+      "description": "Implementation of the Debug Adapter Protocol for Scala",
+      "language": "Scala",
+      "stargazers_count": 65,
+      "forks_count": 27,
+      "open_issues_count": 43,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 294039914,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyOTQwMzk5MTQ=",
+      "name": "scala3-migrate",
+      "full_name": "scalacenter/scala3-migrate",
+      "html_url": "https://github.com/scalacenter/scala3-migrate",
+      "description": "A tool to help migrating from Scala 2 to Scala 3",
+      "language": "Scala",
+      "stargazers_count": 115,
+      "forks_count": 26,
+      "open_issues_count": 8,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
         "scala",
-        "submission-api"
+        "scala3",
+        "tool"
       ]
     },
     {
@@ -498,9 +633,9 @@
       "html_url": "https://github.com/scalacenter/bloop",
       "description": "Bloop is a build server and CLI tool to compile, test and run Scala fast from any editor or build tool.",
       "language": "Scala",
-      "stargazers_count": 917,
-      "forks_count": 205,
-      "open_issues_count": 101,
+      "stargazers_count": 939,
+      "forks_count": 214,
+      "open_issues_count": 89,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -519,6 +654,150 @@
       ]
     },
     {
+      "id": 504158746,
+      "node_id": "R_kgDOHgzaGg",
+      "name": "sbt-dependency-submission",
+      "full_name": "scalacenter/sbt-dependency-submission",
+      "html_url": "https://github.com/scalacenter/sbt-dependency-submission",
+      "description": "A Github Action to submit the dependency graph of an sbt build to the Dependency Submission API",
+      "language": "Scala",
+      "stargazers_count": 68,
+      "forks_count": 22,
+      "open_issues_count": 16,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "actions",
+        "dependencies",
+        "github-actions",
+        "sbt",
+        "scala",
+        "submission-api"
+      ]
+    },
+    {
+      "id": 165665628,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNjU2NjU2Mjg=",
+      "name": "library-example",
+      "full_name": "scalacenter/library-example",
+      "html_url": "https://github.com/scalacenter/library-example",
+      "description": null,
+      "language": "Scala",
+      "stargazers_count": 7,
+      "forks_count": 7,
+      "open_issues_count": 26,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 100618336,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMDA2MTgzMzY=",
+      "name": "sbt-scalafix-example",
+      "full_name": "scalacenter/sbt-scalafix-example",
+      "html_url": "https://github.com/scalacenter/sbt-scalafix-example",
+      "description": "Example sbt build using scalafix ",
+      "language": "Scala",
+      "stargazers_count": 4,
+      "forks_count": 12,
+      "open_issues_count": 1,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 206831039,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMDY4MzEwMzk=",
+      "name": "sbt-missinglink",
+      "full_name": "scalacenter/sbt-missinglink",
+      "html_url": "https://github.com/scalacenter/sbt-missinglink",
+      "description": "An sbt plugin for missinglink",
+      "language": "Scala",
+      "stargazers_count": 138,
+      "forks_count": 17,
+      "open_issues_count": 4,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 577757594,
+      "node_id": "R_kgDOIm_hmg",
+      "name": "gradle-bloop",
+      "full_name": "scalacenter/gradle-bloop",
+      "html_url": "https://github.com/scalacenter/gradle-bloop",
+      "description": "Gradle plugin for Bloop",
+      "language": "Scala",
+      "stargazers_count": 9,
+      "forks_count": 8,
+      "open_issues_count": 9,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 138408163,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMzg0MDgxNjM=",
+      "name": "sbt-scalafix",
+      "full_name": "scalacenter/sbt-scalafix",
+      "html_url": "https://github.com/scalacenter/sbt-scalafix",
+      "description": "sbt plugin for Scalafix",
+      "language": "Scala",
+      "stargazers_count": 116,
+      "forks_count": 45,
+      "open_issues_count": 5,
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "topics": []
+    },
+    {
+      "id": 74487588,
+      "node_id": "MDEwOlJlcG9zaXRvcnk3NDQ4NzU4OA==",
+      "name": "scastie",
+      "full_name": "scalacenter/scastie",
+      "html_url": "https://github.com/scalacenter/scastie",
+      "description": "An interactive playground for Scala",
+      "language": "Scala",
+      "stargazers_count": 438,
+      "forks_count": 105,
+      "open_issues_count": 121,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": [
+        "online-repl",
+        "sbt"
+      ]
+    },
+    {
       "id": 65199839,
       "node_id": "MDEwOlJlcG9zaXRvcnk2NTE5OTgzOQ==",
       "name": "scalafix",
@@ -526,9 +805,9 @@
       "html_url": "https://github.com/scalacenter/scalafix",
       "description": "Refactoring and linting tool for Scala",
       "language": "Scala",
-      "stargazers_count": 852,
-      "forks_count": 187,
-      "open_issues_count": 75,
+      "stargazers_count": 872,
+      "forks_count": 192,
+      "open_issues_count": 73,
       "license": {
         "key": "bsd-3-clause",
         "name": "BSD 3-Clause \"New\" or \"Revised\" License",
@@ -548,6 +827,47 @@
       ]
     },
     {
+      "id": 93752237,
+      "node_id": "MDEwOlJlcG9zaXRvcnk5Mzc1MjIzNw==",
+      "name": "scalafix.g8",
+      "full_name": "scalacenter/scalafix.g8",
+      "html_url": "https://github.com/scalacenter/scalafix.g8",
+      "description": "Giter8 template to implement custom rewrites",
+      "language": "Scala",
+      "stargazers_count": 10,
+      "forks_count": 7,
+      "open_issues_count": 4,
+      "license": null,
+      "topics": [
+        "giter8",
+        "giter8-template",
+        "refactoring",
+        "scala",
+        "scalafix",
+        "scalameta"
+      ]
+    },
+    {
+      "id": 143409363,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNDM0MDkzNjM=",
+      "name": "example-scalafix-rule",
+      "full_name": "scalacenter/example-scalafix-rule",
+      "html_url": "https://github.com/scalacenter/example-scalafix-rule",
+      "description": null,
+      "language": "Scala",
+      "stargazers_count": 3,
+      "forks_count": 4,
+      "open_issues_count": 1,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
       "id": 57165621,
       "node_id": "MDEwOlJlcG9zaXRvcnk1NzE2NTYyMQ==",
       "name": "scaladex",
@@ -555,9 +875,9 @@
       "html_url": "https://github.com/scalacenter/scaladex",
       "description": "The Scala Package Index",
       "language": "Scala",
-      "stargazers_count": 207,
-      "forks_count": 81,
-      "open_issues_count": 102,
+      "stargazers_count": 217,
+      "forks_count": 87,
+      "open_issues_count": 128,
       "license": {
         "key": "bsd-3-clause",
         "name": "BSD 3-Clause \"New\" or \"Revised\" License",
@@ -576,127 +896,6 @@
       ]
     },
     {
-      "id": 138408163,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMzg0MDgxNjM=",
-      "name": "sbt-scalafix",
-      "full_name": "scalacenter/sbt-scalafix",
-      "html_url": "https://github.com/scalacenter/sbt-scalafix",
-      "description": "sbt plugin for Scalafix",
-      "language": "Scala",
-      "stargazers_count": 107,
-      "forks_count": 44,
-      "open_issues_count": 3,
-      "license": {
-        "key": "bsd-3-clause",
-        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
-        "spdx_id": "BSD-3-Clause",
-        "url": "https://api.github.com/licenses/bsd-3-clause",
-        "node_id": "MDc6TGljZW5zZTU="
-      },
-      "topics": []
-    },
-    {
-      "id": 74487588,
-      "node_id": "MDEwOlJlcG9zaXRvcnk3NDQ4NzU4OA==",
-      "name": "scastie",
-      "full_name": "scalacenter/scastie",
-      "html_url": "https://github.com/scalacenter/scastie",
-      "description": "An interactive playground for Scala",
-      "language": "Scala",
-      "stargazers_count": 437,
-      "forks_count": 106,
-      "open_issues_count": 117,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "online-repl",
-        "sbt"
-      ]
-    },
-    {
-      "id": 577757594,
-      "node_id": "R_kgDOIm_hmg",
-      "name": "gradle-bloop",
-      "full_name": "scalacenter/gradle-bloop",
-      "html_url": "https://github.com/scalacenter/gradle-bloop",
-      "description": "Gradle plugin for Bloop",
-      "language": "Scala",
-      "stargazers_count": 8,
-      "forks_count": 7,
-      "open_issues_count": 12,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 143409363,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNDM0MDkzNjM=",
-      "name": "example-scalafix-rule",
-      "full_name": "scalacenter/example-scalafix-rule",
-      "html_url": "https://github.com/scalacenter/example-scalafix-rule",
-      "description": null,
-      "language": "Scala",
-      "stargazers_count": 3,
-      "forks_count": 4,
-      "open_issues_count": 0,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 100618336,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMDA2MTgzMzY=",
-      "name": "sbt-scalafix-example",
-      "full_name": "scalacenter/sbt-scalafix-example",
-      "html_url": "https://github.com/scalacenter/sbt-scalafix-example",
-      "description": "Example sbt build using scalafix ",
-      "language": "Scala",
-      "stargazers_count": 4,
-      "forks_count": 12,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 294039914,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyOTQwMzk5MTQ=",
-      "name": "scala3-migrate",
-      "full_name": "scalacenter/scala3-migrate",
-      "html_url": "https://github.com/scalacenter/scala3-migrate",
-      "description": "A tool to help migrating from Scala 2 to Scala 3",
-      "language": "Scala",
-      "stargazers_count": 110,
-      "forks_count": 24,
-      "open_issues_count": 13,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "scala",
-        "scala3",
-        "tool"
-      ]
-    },
-    {
       "id": 290253424,
       "node_id": "MDEwOlJlcG9zaXRvcnkyOTAyNTM0MjQ=",
       "name": "effective-scala-slide-code",
@@ -705,29 +904,9 @@
       "description": null,
       "language": "Scala",
       "stargazers_count": 6,
-      "forks_count": 5,
-      "open_issues_count": 8,
+      "forks_count": 6,
+      "open_issues_count": 9,
       "license": null,
-      "topics": []
-    },
-    {
-      "id": 165665628,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNjU2NjU2Mjg=",
-      "name": "library-example",
-      "full_name": "scalacenter/library-example",
-      "html_url": "https://github.com/scalacenter/library-example",
-      "description": null,
-      "language": "Scala",
-      "stargazers_count": 7,
-      "forks_count": 7,
-      "open_issues_count": 24,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
       "topics": []
     },
     {
@@ -738,107 +917,11 @@
       "html_url": "https://github.com/scalacenter/advisoryboard",
       "description": "Scala Center Advisory Board planning",
       "language": "Scala",
-      "stargazers_count": 102,
-      "forks_count": 31,
-      "open_issues_count": 2,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 118747685,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMTg3NDc2ODU=",
-      "name": "homebrew-bloop",
-      "full_name": "scalacenter/homebrew-bloop",
-      "html_url": "https://github.com/scalacenter/homebrew-bloop",
-      "description": "Homebrew formula for Bloop",
-      "language": "Ruby",
-      "stargazers_count": 2,
-      "forks_count": 7,
+      "stargazers_count": 101,
+      "forks_count": 32,
       "open_issues_count": 3,
-      "license": {
-        "key": "other",
-        "name": "Other",
-        "spdx_id": "NOASSERTION",
-        "url": null,
-        "node_id": "MDc6TGljZW5zZTA="
-      },
-      "topics": []
-    },
-    {
-      "id": 161190150,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxNjExOTAxNTA=",
-      "name": "scoop-bloop",
-      "full_name": "scalacenter/scoop-bloop",
-      "html_url": "https://github.com/scalacenter/scoop-bloop",
-      "description": null,
-      "language": null,
-      "stargazers_count": 0,
-      "forks_count": 3,
-      "open_issues_count": 3,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 459622227,
-      "node_id": "R_kgDOG2VHUw",
-      "name": "GoogleSummerOfCode",
-      "full_name": "scalacenter/GoogleSummerOfCode",
-      "html_url": "https://github.com/scalacenter/GoogleSummerOfCode",
-      "description": "Ideas list for GSoC 2025 mentored by Scala Center",
-      "language": null,
-      "stargazers_count": 69,
-      "forks_count": 23,
-      "open_issues_count": 0,
       "license": null,
       "topics": []
-    },
-    {
-      "id": 571992283,
-      "node_id": "R_kgDOIhfo2w",
-      "name": "steward",
-      "full_name": "scalacenter/steward",
-      "html_url": "https://github.com/scalacenter/steward",
-      "description": "Scala Center Scala Steward",
-      "language": null,
-      "stargazers_count": 0,
-      "forks_count": 3,
-      "open_issues_count": 0,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 99112925,
-      "node_id": "MDEwOlJlcG9zaXRvcnk5OTExMjkyNQ==",
-      "name": "scalac-profiling",
-      "full_name": "scalacenter/scalac-profiling",
-      "html_url": "https://github.com/scalacenter/scalac-profiling",
-      "description": "Compilation profiling tool for Scala 2 projects",
-      "language": "Scala",
-      "stargazers_count": 133,
-      "forks_count": 18,
-      "open_issues_count": 6,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": [
-        "implicit-searches",
-        "macros",
-        "reproducibility",
-        "sbt-plugin",
-        "scala-development",
-        "scalac",
-        "statistics"
-      ]
     },
     {
       "id": 147673372,
@@ -850,41 +933,6 @@
       "language": "Scala",
       "stargazers_count": 4,
       "forks_count": 7,
-      "open_issues_count": 1,
-      "license": null,
-      "topics": []
-    },
-    {
-      "id": 93752237,
-      "node_id": "MDEwOlJlcG9zaXRvcnk5Mzc1MjIzNw==",
-      "name": "scalafix.g8",
-      "full_name": "scalacenter/scalafix.g8",
-      "html_url": "https://github.com/scalacenter/scalafix.g8",
-      "description": "Giter8 template to implement custom rewrites",
-      "language": "Scala",
-      "stargazers_count": 10,
-      "forks_count": 9,
-      "open_issues_count": 2,
-      "license": null,
-      "topics": [
-        "giter8",
-        "giter8-template",
-        "refactoring",
-        "scala",
-        "scalafix",
-        "scalameta"
-      ]
-    },
-    {
-      "id": 741022962,
-      "node_id": "R_kgDOLCsc8g",
-      "name": "FlameGraph",
-      "full_name": "scalacenter/FlameGraph",
-      "html_url": "https://github.com/scalacenter/FlameGraph",
-      "description": "Stack trace visualizer",
-      "language": "Perl",
-      "stargazers_count": 1,
-      "forks_count": 0,
       "open_issues_count": 0,
       "license": null,
       "topics": []
@@ -897,9 +945,9 @@
       "html_url": "https://github.com/scalacenter/sbt-version-policy",
       "description": "Compatibility checks for your dependencies",
       "language": "Scala",
-      "stargazers_count": 85,
-      "forks_count": 15,
-      "open_issues_count": 22,
+      "stargazers_count": 86,
+      "forks_count": 17,
+      "open_issues_count": 24,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -917,9 +965,103 @@
       "html_url": "https://github.com/scalacenter/bloop-maven-plugin",
       "description": "Maven Plugin for Bloop",
       "language": "Scala",
+      "stargazers_count": 3,
+      "forks_count": 6,
+      "open_issues_count": 5,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 569289613,
+      "node_id": "R_kgDOIe6rjQ",
+      "name": "bloop-config",
+      "full_name": "scalacenter/bloop-config",
+      "html_url": "https://github.com/scalacenter/bloop-config",
+      "description": "Bloop configuration library",
+      "language": "Scala",
+      "stargazers_count": 1,
+      "forks_count": 7,
+      "open_issues_count": 4,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 161190150,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNjExOTAxNTA=",
+      "name": "scoop-bloop",
+      "full_name": "scalacenter/scoop-bloop",
+      "html_url": "https://github.com/scalacenter/scoop-bloop",
+      "description": null,
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 2,
+      "open_issues_count": 2,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 118747685,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMTg3NDc2ODU=",
+      "name": "homebrew-bloop",
+      "full_name": "scalacenter/homebrew-bloop",
+      "html_url": "https://github.com/scalacenter/homebrew-bloop",
+      "description": "Homebrew formula for Bloop",
+      "language": "Ruby",
       "stargazers_count": 2,
-      "forks_count": 4,
-      "open_issues_count": 8,
+      "forks_count": 6,
+      "open_issues_count": 2,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "topics": []
+    },
+    {
+      "id": 571992283,
+      "node_id": "R_kgDOIhfo2w",
+      "name": "steward",
+      "full_name": "scalacenter/steward",
+      "html_url": "https://github.com/scalacenter/steward",
+      "description": "Scala Center Scala Steward",
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 3,
+      "open_issues_count": 0,
+      "license": null,
+      "topics": []
+    },
+    {
+      "id": 341824166,
+      "node_id": "MDEwOlJlcG9zaXRvcnkzNDE4MjQxNjY=",
+      "name": "tasty-query",
+      "full_name": "scalacenter/tasty-query",
+      "html_url": "https://github.com/scalacenter/tasty-query",
+      "description": null,
+      "language": "Scala",
+      "stargazers_count": 58,
+      "forks_count": 15,
+      "open_issues_count": 16,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -938,8 +1080,8 @@
       "description": null,
       "language": "Scala",
       "stargazers_count": 238,
-      "forks_count": 101,
-      "open_issues_count": 100,
+      "forks_count": 99,
+      "open_issues_count": 105,
       "license": {
         "key": "other",
         "name": "Other",
@@ -954,6 +1096,26 @@
       ]
     },
     {
+      "id": 811401847,
+      "node_id": "R_kgDOMF0Cdw",
+      "name": "scala3-binary-decoder",
+      "full_name": "scalacenter/scala3-binary-decoder",
+      "html_url": "https://github.com/scalacenter/scala3-binary-decoder",
+      "description": "Decodes binary symbols from class files to TASTy",
+      "language": "Scala",
+      "stargazers_count": 0,
+      "forks_count": 2,
+      "open_issues_count": 3,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
       "id": 429798456,
       "node_id": "R_kgDOGZ40OA",
       "name": "scala-advent-of-code",
@@ -961,8 +1123,8 @@
       "html_url": "https://github.com/scalacenter/scala-advent-of-code",
       "description": "Scala Center's solution of Advent of Code",
       "language": "Scala",
-      "stargazers_count": 63,
-      "forks_count": 86,
+      "stargazers_count": 64,
+      "forks_count": 91,
       "open_issues_count": 0,
       "license": {
         "key": "apache-2.0",
@@ -978,68 +1140,56 @@
       ]
     },
     {
-      "id": 115106798,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMTUxMDY3OTg=",
-      "name": "docs.scala-lang",
-      "full_name": "scalacenter/docs.scala-lang",
-      "html_url": "https://github.com/scalacenter/docs.scala-lang",
-      "description": "The Scala Documentation website",
-      "language": "HTML",
-      "stargazers_count": 1,
-      "forks_count": 4,
+      "id": 561372745,
+      "node_id": "R_kgDOIXXeSQ",
+      "name": "tasty-mima",
+      "full_name": "scalacenter/tasty-mima",
+      "html_url": "https://github.com/scalacenter/tasty-mima",
+      "description": "TASTy Migration Manager",
+      "language": "Scala",
+      "stargazers_count": 12,
+      "forks_count": 3,
+      "open_issues_count": 2,
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "topics": []
+    },
+    {
+      "id": 459622227,
+      "node_id": "R_kgDOG2VHUw",
+      "name": "GoogleSummerOfCode",
+      "full_name": "scalacenter/GoogleSummerOfCode",
+      "html_url": "https://github.com/scalacenter/GoogleSummerOfCode",
+      "description": "Ideas list for GSoC 2025 mentored by Scala Center",
+      "language": null,
+      "stargazers_count": 79,
+      "forks_count": 23,
       "open_issues_count": 0,
       "license": null,
-      "topics": []
-    },
-    {
-      "id": 341824166,
-      "node_id": "MDEwOlJlcG9zaXRvcnkzNDE4MjQxNjY=",
-      "name": "tasty-query",
-      "full_name": "scalacenter/tasty-query",
-      "html_url": "https://github.com/scalacenter/tasty-query",
-      "description": null,
-      "language": "Scala",
-      "stargazers_count": 56,
-      "forks_count": 13,
-      "open_issues_count": 14,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
-      "topics": []
-    },
-    {
-      "id": 811401847,
-      "node_id": "R_kgDOMF0Cdw",
-      "name": "scala3-binary-decoder",
-      "full_name": "scalacenter/scala3-binary-decoder",
-      "html_url": "https://github.com/scalacenter/scala3-binary-decoder",
-      "description": "Decodes binary symbols from class files to TASTy",
-      "language": "Scala",
-      "stargazers_count": 0,
-      "forks_count": 2,
-      "open_issues_count": 1,
-      "license": {
-        "key": "apache-2.0",
-        "name": "Apache License 2.0",
-        "spdx_id": "Apache-2.0",
-        "url": "https://api.github.com/licenses/apache-2.0",
-        "node_id": "MDc6TGljZW5zZTI="
-      },
       "topics": []
     }
   ],
   "contributorsDetails": [
     {
-      "login": "adpi2",
-      "id": 13123162,
-      "node_id": "MDQ6VXNlcjEzMTIzMTYy",
-      "avatar_url": "https://avatars.githubusercontent.com/u/13123162?v=4",
-      "html_url": "https://github.com/adpi2",
-      "contributions": 1067
+      "login": "jvican",
+      "id": 2462974,
+      "node_id": "MDQ6VXNlcjI0NjI5NzQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2462974?v=4",
+      "html_url": "https://github.com/jvican",
+      "contributions": 387
+    },
+    {
+      "login": "danicheg",
+      "id": 19841757,
+      "node_id": "MDQ6VXNlcjE5ODQxNzU3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19841757?v=4",
+      "html_url": "https://github.com/danicheg",
+      "contributions": 287
     },
     {
       "login": "scala-center-steward[bot]",
@@ -1047,7 +1197,95 @@
       "node_id": "BOT_kgDOBqyclw",
       "avatar_url": "https://avatars.githubusercontent.com/in/231409?v=4",
       "html_url": "https://github.com/apps/scala-center-steward",
-      "contributions": 83
+      "contributions": 136
+    },
+    {
+      "login": "tanishiking",
+      "id": 9353584,
+      "node_id": "MDQ6VXNlcjkzNTM1ODQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9353584?v=4",
+      "html_url": "https://github.com/tanishiking",
+      "contributions": 16
+    },
+    {
+      "login": "SethTisue",
+      "id": 161079,
+      "node_id": "MDQ6VXNlcjE2MTA3OQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/161079?v=4",
+      "html_url": "https://github.com/SethTisue",
+      "contributions": 12
+    },
+    {
+      "login": "sjrd",
+      "id": 535934,
+      "node_id": "MDQ6VXNlcjUzNTkzNA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/535934?v=4",
+      "html_url": "https://github.com/sjrd",
+      "contributions": 1
+    },
+    {
+      "login": "lolgab",
+      "id": 5793054,
+      "node_id": "MDQ6VXNlcjU3OTMwNTQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5793054?v=4",
+      "html_url": "https://github.com/lolgab",
+      "contributions": 2
+    },
+    {
+      "login": "DSlug",
+      "id": 157650919,
+      "node_id": "U_kgDOCWWP5w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/157650919?v=4",
+      "html_url": "https://github.com/DSlug",
+      "contributions": 1
+    },
+    {
+      "login": "jatcwang",
+      "id": 4957161,
+      "node_id": "MDQ6VXNlcjQ5NTcxNjE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4957161?v=4",
+      "html_url": "https://github.com/jatcwang",
+      "contributions": 1
+    },
+    {
+      "login": "jtjeferreira",
+      "id": 943051,
+      "node_id": "MDQ6VXNlcjk0MzA1MQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/943051?v=4",
+      "html_url": "https://github.com/jtjeferreira",
+      "contributions": 1
+    },
+    {
+      "login": "yanns",
+      "id": 51669,
+      "node_id": "MDQ6VXNlcjUxNjY5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51669?v=4",
+      "html_url": "https://github.com/yanns",
+      "contributions": 1
+    },
+    {
+      "login": "SakulK",
+      "id": 1440804,
+      "node_id": "MDQ6VXNlcjE0NDA4MDQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1440804?v=4",
+      "html_url": "https://github.com/SakulK",
+      "contributions": 1
+    },
+    {
+      "login": "adpi2",
+      "id": 13123162,
+      "node_id": "MDQ6VXNlcjEzMTIzMTYy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13123162?v=4",
+      "html_url": "https://github.com/adpi2",
+      "contributions": 179
+    },
+    {
+      "login": "tgodzik",
+      "id": 3807253,
+      "node_id": "MDQ6VXNlcjM4MDcyNTM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3807253?v=4",
+      "html_url": "https://github.com/tgodzik",
+      "contributions": 29
     },
     {
       "login": "scala-steward",
@@ -1055,7 +1293,7 @@
       "node_id": "MDQ6VXNlcjQzMDQ3NTYy",
       "avatar_url": "https://avatars.githubusercontent.com/u/43047562?v=4",
       "html_url": "https://github.com/scala-steward",
-      "contributions": 95
+      "contributions": 108
     },
     {
       "login": "iusildra",
@@ -1074,14 +1312,6 @@
       "contributions": 73
     },
     {
-      "login": "tgodzik",
-      "id": 3807253,
-      "node_id": "MDQ6VXNlcjM4MDcyNTM=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/3807253?v=4",
-      "html_url": "https://github.com/tgodzik",
-      "contributions": 55
-    },
-    {
       "login": "tdudzik",
       "id": 6402694,
       "node_id": "MDQ6VXNlcjY0MDI2OTQ=",
@@ -1090,20 +1320,12 @@
       "contributions": 32
     },
     {
-      "login": "sjrd",
-      "id": 535934,
-      "node_id": "MDQ6VXNlcjUzNTkzNA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/535934?v=4",
-      "html_url": "https://github.com/sjrd",
-      "contributions": 1
-    },
-    {
       "login": "dependabot[bot]",
       "id": 49699333,
       "node_id": "MDM6Qm90NDk2OTkzMzM=",
       "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
       "html_url": "https://github.com/apps/dependabot",
-      "contributions": 2
+      "contributions": 18
     },
     {
       "login": "ckipp01",
@@ -1111,7 +1333,7 @@
       "node_id": "MDQ6VXNlcjEzOTc0MTEy",
       "avatar_url": "https://avatars.githubusercontent.com/u/13974112?v=4",
       "html_url": "https://github.com/ckipp01",
-      "contributions": 83
+      "contributions": 9
     },
     {
       "login": "rochala",
@@ -1146,6 +1368,14 @@
       "contributions": 2
     },
     {
+      "login": "nedsociety",
+      "id": 11943013,
+      "node_id": "MDQ6VXNlcjExOTQzMDEz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11943013?v=4",
+      "html_url": "https://github.com/nedsociety",
+      "contributions": 2
+    },
+    {
       "login": "jrossett",
       "id": 36693100,
       "node_id": "MDQ6VXNlcjM2NjkzMTAw",
@@ -1159,7 +1389,7 @@
       "node_id": "MDQ6VXNlcjI2NjA2NjYy",
       "avatar_url": "https://avatars.githubusercontent.com/u/26606662?v=4",
       "html_url": "https://github.com/kasiaMarek",
-      "contributions": 1
+      "contributions": 2
     },
     {
       "login": "danielkarch",
@@ -1167,14 +1397,6 @@
       "node_id": "MDQ6VXNlcjY3MzcwMzA=",
       "avatar_url": "https://avatars.githubusercontent.com/u/6737030?v=4",
       "html_url": "https://github.com/danielkarch",
-      "contributions": 1
-    },
-    {
-      "login": "jkciesluk",
-      "id": 72950514,
-      "node_id": "MDQ6VXNlcjcyOTUwNTE0",
-      "avatar_url": "https://avatars.githubusercontent.com/u/72950514?v=4",
-      "html_url": "https://github.com/jkciesluk",
       "contributions": 1
     },
     {
@@ -1194,19 +1416,83 @@
       "contributions": 1
     },
     {
-      "login": "alexarchambault",
-      "id": 7063723,
-      "node_id": "MDQ6VXNlcjcwNjM3MjM=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/7063723?v=4",
-      "html_url": "https://github.com/alexarchambault",
+      "login": "mlachkar",
+      "id": 7843237,
+      "node_id": "MDQ6VXNlcjc4NDMyMzc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7843237?v=4",
+      "html_url": "https://github.com/mlachkar",
+      "contributions": 217
+    },
+    {
+      "login": "gianick",
+      "id": 8497852,
+      "node_id": "MDQ6VXNlcjg0OTc4NTI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8497852?v=4",
+      "html_url": "https://github.com/gianick",
+      "contributions": 4
+    },
+    {
+      "login": "BusyByte",
+      "id": 3882422,
+      "node_id": "MDQ6VXNlcjM4ODI0MjI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3882422?v=4",
+      "html_url": "https://github.com/BusyByte",
+      "contributions": 2
+    },
+    {
+      "login": "aholland",
+      "id": 1101312,
+      "node_id": "MDQ6VXNlcjExMDEzMTI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1101312?v=4",
+      "html_url": "https://github.com/aholland",
+      "contributions": 2
+    },
+    {
+      "login": "SourceCodeBot",
+      "id": 12783809,
+      "node_id": "MDQ6VXNlcjEyNzgzODA5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12783809?v=4",
+      "html_url": "https://github.com/SourceCodeBot",
       "contributions": 1
     },
     {
-      "login": "kubukoz",
-      "id": 894884,
-      "node_id": "MDQ6VXNlcjg5NDg4NA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/894884?v=4",
-      "html_url": "https://github.com/kubukoz",
+      "login": "sjoerdmulder",
+      "id": 235745,
+      "node_id": "MDQ6VXNlcjIzNTc0NQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/235745?v=4",
+      "html_url": "https://github.com/sjoerdmulder",
+      "contributions": 1
+    },
+    {
+      "login": "sergiuszkierat",
+      "id": 699573,
+      "node_id": "MDQ6VXNlcjY5OTU3Mw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/699573?v=4",
+      "html_url": "https://github.com/sergiuszkierat",
+      "contributions": 1
+    },
+    {
+      "login": "mblund",
+      "id": 506762,
+      "node_id": "MDQ6VXNlcjUwNjc2Mg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/506762?v=4",
+      "html_url": "https://github.com/mblund",
+      "contributions": 1
+    },
+    {
+      "login": "keyno63",
+      "id": 11615248,
+      "node_id": "MDQ6VXNlcjExNjE1MjQ4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11615248?v=4",
+      "html_url": "https://github.com/keyno63",
+      "contributions": 1
+    },
+    {
+      "login": "KacperFKorban",
+      "id": 39772805,
+      "node_id": "MDQ6VXNlcjM5NzcyODA1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/39772805?v=4",
+      "html_url": "https://github.com/KacperFKorban",
       "contributions": 1
     },
     {
@@ -1218,13 +1504,21 @@
       "contributions": 1
     },
     {
-      "login": "lolgab",
-      "id": 5793054,
-      "node_id": "MDQ6VXNlcjU3OTMwNTQ=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/5793054?v=4",
-      "html_url": "https://github.com/lolgab",
+      "login": "Divine-Shadow",
+      "id": 11306048,
+      "node_id": "MDQ6VXNlcjExMzA2MDQ4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11306048?v=4",
+      "html_url": "https://github.com/Divine-Shadow",
+      "contributions": 1
+    },
+    {
+      "login": "plokhotnyuk",
+      "id": 890289,
+      "node_id": "MDQ6VXNlcjg5MDI4OQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/890289?v=4",
+      "html_url": "https://github.com/plokhotnyuk",
       "contributions": 1
     }
   ],
-  "activeOrg": true
+  "activeOrg": false
 }
